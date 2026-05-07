@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "crossbeam-permits",
+  "description": "Open-source plan-check skills for every California city. 22 simple permit types per city — reroof, EV charger, water heater, HVAC, solar, and more. Free for cities, builders, and homeowners.",
+  "owner": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "metadata": {
+    "version": "0.1.0",
+    "pluginRoot": "./cities"
+  },
+  "plugins": [
+    {
+      "name": "huntington-beach",
+      "source": "huntington-beach",
+      "description": "Huntington Beach, CA — plan-check skills for simple permits with HBMC local amendments. Currently includes reroof, EV charger, and water heater. Tier 1 (vetted). More permit types coming.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Onboard Dot AI LLC"
+      },
+      "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/huntington-beach",
+      "license": "Apache-2.0",
+      "keywords": [
+        "california",
+        "huntington-beach",
+        "orange-county",
+        "plan-check",
+        "permits",
+        "reroof",
+        "ev-charger",
+        "water-heater",
+        "HBMC",
+        "tier-1"
+      ]
+    }
+  ]
+}
