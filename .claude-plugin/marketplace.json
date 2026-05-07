@@ -32,7 +32,7 @@
     {
       "name": "agoura-hills",
       "source": "agoura-hills",
-      "description": "Plan-check skills for Agoura Hills, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Agoura Hills, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -44,7 +44,11 @@
         "agoura-hills",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "agoura hills",
+        "agoura",
+        "hills"
       ]
     },
     {
@@ -68,7 +72,7 @@
     {
       "name": "albany",
       "source": "albany",
-      "description": "Plan-check skills for Albany, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Albany, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -80,7 +84,8 @@
         "albany",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "alameda-county"
       ]
     },
     {
@@ -116,7 +121,10 @@
         "aliso-viejo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "aliso viejo",
+        "aliso",
+        "viejo"
       ]
     },
     {
@@ -134,7 +142,9 @@
         "alturas",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "modoc-county",
+        "city of alturas"
       ]
     },
     {
@@ -152,7 +162,12 @@
         "amador-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "amador-county",
+        "amador city",
+        "amador",
+        "city",
+        "city of amador city"
       ]
     },
     {
@@ -170,7 +185,10 @@
         "american-canyon",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "american canyon",
+        "american",
+        "canyon"
       ]
     },
     {
@@ -206,7 +224,9 @@
         "anderson",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "shasta-county",
+        "city of anderson"
       ]
     },
     {
@@ -224,7 +244,12 @@
         "angels-camp",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "calaveras-county",
+        "angels camp",
+        "angels",
+        "camp",
+        "city of angels camp"
       ]
     },
     {
@@ -260,7 +285,10 @@
         "apple-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "apple valley",
+        "apple",
+        "valley"
       ]
     },
     {
@@ -314,7 +342,10 @@
         "arroyo-grande",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "arroyo grande",
+        "arroyo",
+        "grande"
       ]
     },
     {
@@ -368,7 +399,8 @@
         "atascadero",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-luis-obispo-county"
       ]
     },
     {
@@ -422,7 +454,8 @@
         "auburn",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "placer-county"
       ]
     },
     {
@@ -482,7 +515,7 @@
     {
       "name": "bakersfield",
       "source": "bakersfield",
-      "description": "Plan-check skills for Bakersfield, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Bakersfield, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -494,13 +527,14 @@
         "bakersfield",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "kern-county"
       ]
     },
     {
       "name": "baldwin-park",
       "source": "baldwin-park",
-      "description": "Plan-check skills for Baldwin Park, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Baldwin Park, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -512,7 +546,11 @@
         "baldwin-park",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "baldwin park",
+        "baldwin",
+        "park"
       ]
     },
     {
@@ -572,7 +610,7 @@
     {
       "name": "bell",
       "source": "bell",
-      "description": "Plan-check skills for Bell, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Bell, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -584,7 +622,8 @@
         "bell",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -602,13 +641,16 @@
         "bell-gardens",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "bell gardens",
+        "bell",
+        "gardens"
       ]
     },
     {
       "name": "bellflower",
       "source": "bellflower",
-      "description": "Plan-check skills for Bellflower, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Bellflower, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -620,7 +662,8 @@
         "bellflower",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -644,7 +687,7 @@
     {
       "name": "belvedere",
       "source": "belvedere",
-      "description": "Plan-check skills for Belvedere, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Belvedere, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -656,7 +699,8 @@
         "belvedere",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "marin-county"
       ]
     },
     {
@@ -674,7 +718,11 @@
         "belvedere-tiburon",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "belvedere tiburon",
+        "belvedere",
+        "tiburon",
+        "belvedere/tiburon"
       ]
     },
     {
@@ -716,7 +764,7 @@
     {
       "name": "beverly-hills",
       "source": "beverly-hills",
-      "description": "Plan-check skills for Beverly Hills, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Beverly Hills, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -728,7 +776,11 @@
         "beverly-hills",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "beverly hills",
+        "beverly",
+        "hills"
       ]
     },
     {
@@ -746,7 +798,11 @@
         "big-bear-lake",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "big bear lake",
+        "big",
+        "bear",
+        "lake"
       ]
     },
     {
@@ -800,7 +856,11 @@
         "blue-lake",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "humboldt-county",
+        "blue lake",
+        "blue",
+        "lake"
       ]
     },
     {
@@ -926,7 +986,8 @@
         "buellton",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-barbara-county"
       ]
     },
     {
@@ -944,13 +1005,16 @@
         "buena-park",
         "plan-check",
         "permits",
-        "tier-1"
+        "tier-1",
+        "buena park",
+        "buena",
+        "park"
       ]
     },
     {
       "name": "burbank",
       "source": "burbank",
-      "description": "Plan-check skills for Burbank, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Burbank, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -962,7 +1026,8 @@
         "burbank",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -1034,7 +1099,9 @@
         "california-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "california city",
+        "city"
       ]
     },
     {
@@ -1058,7 +1125,7 @@
     {
       "name": "calipatria",
       "source": "calipatria",
-      "description": "Plan-check skills for Calipatria, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Calipatria, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1142,13 +1209,16 @@
         "canyon-lake",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "canyon lake",
+        "canyon",
+        "lake"
       ]
     },
     {
       "name": "capitola",
       "source": "capitola",
-      "description": "Plan-check skills for Capitola, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Capitola, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1160,7 +1230,8 @@
         "capitola",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-cruz-county"
       ]
     },
     {
@@ -1196,13 +1267,18 @@
         "carmel-by-the-sea",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "carmel by the sea",
+        "carmel",
+        "by",
+        "the",
+        "sea"
       ]
     },
     {
       "name": "carpinteria",
       "source": "carpinteria",
-      "description": "Plan-check skills for Carpinteria, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Carpinteria, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1214,13 +1290,14 @@
         "carpinteria",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-barbara-county"
       ]
     },
     {
       "name": "carson",
       "source": "carson",
-      "description": "Plan-check skills for Carson, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Carson, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1232,7 +1309,8 @@
         "carson",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -1250,13 +1328,16 @@
         "cathedral-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "cathedral city",
+        "cathedral",
+        "city"
       ]
     },
     {
       "name": "ceres",
       "source": "ceres",
-      "description": "Plan-check skills for Ceres, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Ceres, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1268,7 +1349,8 @@
         "ceres",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "stanislaus-county"
       ]
     },
     {
@@ -1340,7 +1422,10 @@
         "chino-hills",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "chino hills",
+        "chino",
+        "hills"
       ]
     },
     {
@@ -1376,7 +1461,10 @@
         "chula-vista",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "chula vista",
+        "chula",
+        "vista"
       ]
     },
     {
@@ -1394,7 +1482,10 @@
         "citrus-heights",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "citrus heights",
+        "citrus",
+        "heights"
       ]
     },
     {
@@ -1454,7 +1545,7 @@
     {
       "name": "cloverdale",
       "source": "cloverdale",
-      "description": "Plan-check skills for Cloverdale, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Cloverdale, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1466,13 +1557,14 @@
         "cloverdale",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "sonoma-county"
       ]
     },
     {
       "name": "clovis",
       "source": "clovis",
-      "description": "Plan-check skills for Clovis, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Clovis, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1484,7 +1576,8 @@
         "clovis",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fresno-county"
       ]
     },
     {
@@ -1508,7 +1601,7 @@
     {
       "name": "coalinga",
       "source": "coalinga",
-      "description": "Plan-check skills for Coalinga, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Coalinga, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1520,7 +1613,8 @@
         "coalinga",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fresno-county"
       ]
     },
     {
@@ -1538,7 +1632,8 @@
         "colfax",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "placer-county"
       ]
     },
     {
@@ -1592,13 +1687,15 @@
         "colusa",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "colusa-county",
+        "city of colusa"
       ]
     },
     {
       "name": "commerce",
       "source": "commerce",
-      "description": "Plan-check skills for Commerce, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Commerce, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1610,13 +1707,14 @@
         "commerce",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
       "name": "compton",
       "source": "compton",
-      "description": "Plan-check skills for Compton, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Compton, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1628,7 +1726,8 @@
         "compton",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -1736,7 +1835,10 @@
         "corte-madera",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "corte madera",
+        "corte",
+        "madera"
       ]
     },
     {
@@ -1754,7 +1856,10 @@
         "costa-mesa",
         "plan-check",
         "permits",
-        "tier-1"
+        "tier-1",
+        "costa mesa",
+        "costa",
+        "mesa"
       ]
     },
     {
@@ -1778,7 +1883,7 @@
     {
       "name": "covina",
       "source": "covina",
-      "description": "Plan-check skills for Covina, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Covina, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1790,7 +1895,8 @@
         "covina",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -1808,13 +1914,16 @@
         "crescent-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "crescent city",
+        "crescent",
+        "city"
       ]
     },
     {
       "name": "cudahy",
       "source": "cudahy",
-      "description": "Plan-check skills for Cudahy, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Cudahy, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1826,7 +1935,8 @@
         "cudahy",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -1844,7 +1954,10 @@
         "culver-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "culver city",
+        "culver",
+        "city"
       ]
     },
     {
@@ -1898,7 +2011,10 @@
         "daly-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "daly city",
+        "daly",
+        "city"
       ]
     },
     {
@@ -1916,7 +2032,10 @@
         "dana-point",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "dana point",
+        "dana",
+        "point"
       ]
     },
     {
@@ -1970,13 +2089,16 @@
         "del-mar",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "del mar",
+        "del",
+        "mar"
       ]
     },
     {
       "name": "del-rey-oaks",
       "source": "del-rey-oaks",
-      "description": "Plan-check skills for Del Rey Oaks, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Del Rey Oaks, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -1988,13 +2110,18 @@
         "del-rey-oaks",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monterey-county",
+        "del rey oaks",
+        "del",
+        "rey",
+        "oaks"
       ]
     },
     {
       "name": "delano",
       "source": "delano",
-      "description": "Plan-check skills for Delano, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Delano, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2006,7 +2133,8 @@
         "delano",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "kern-county"
       ]
     },
     {
@@ -2024,13 +2152,17 @@
         "desert-hot-springs",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "desert hot springs",
+        "desert",
+        "hot",
+        "springs"
       ]
     },
     {
       "name": "diamond-bar",
       "source": "diamond-bar",
-      "description": "Plan-check skills for Diamond Bar, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Diamond Bar, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2042,7 +2174,11 @@
         "diamond-bar",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "diamond bar",
+        "diamond",
+        "bar"
       ]
     },
     {
@@ -2096,13 +2232,15 @@
         "dorris",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "siskiyou-county",
+        "city of dorris"
       ]
     },
     {
       "name": "dos-palos",
       "source": "dos-palos",
-      "description": "Plan-check skills for Dos Palos, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Dos Palos, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2114,13 +2252,17 @@
         "dos-palos",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "merced-county",
+        "dos palos",
+        "dos",
+        "palos"
       ]
     },
     {
       "name": "downey",
       "source": "downey",
-      "description": "Plan-check skills for Downey, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Downey, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2132,13 +2274,14 @@
         "downey",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
       "name": "duarte",
       "source": "duarte",
-      "description": "Plan-check skills for Duarte, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Duarte, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2150,7 +2293,8 @@
         "duarte",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -2186,7 +2330,9 @@
         "dunsmuir",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "siskiyou-county",
+        "city of dunsmuir"
       ]
     },
     {
@@ -2204,7 +2350,11 @@
         "east-palo-alto",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "east palo alto",
+        "east",
+        "palo",
+        "alto"
       ]
     },
     {
@@ -2240,13 +2390,16 @@
         "el-cajon",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "el cajon",
+        "el",
+        "cajon"
       ]
     },
     {
       "name": "el-centro",
       "source": "el-centro",
-      "description": "Plan-check skills for El Centro, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for El Centro, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2258,13 +2411,17 @@
         "el-centro",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "imperial-county",
+        "el centro",
+        "el",
+        "centro"
       ]
     },
     {
       "name": "el-cerrito",
       "source": "el-cerrito",
-      "description": "Plan-check skills for El Cerrito, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for El Cerrito, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2276,7 +2433,11 @@
         "el-cerrito",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "contra-costa-county",
+        "el cerrito",
+        "el",
+        "cerrito"
       ]
     },
     {
@@ -2294,7 +2455,10 @@
         "el-monte",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "el monte",
+        "el",
+        "monte"
       ]
     },
     {
@@ -2312,13 +2476,16 @@
         "el-segundo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "el segundo",
+        "el",
+        "segundo"
       ]
     },
     {
       "name": "elk-grove",
       "source": "elk-grove",
-      "description": "Plan-check skills for Elk Grove, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Elk Grove, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2330,7 +2497,11 @@
         "elk-grove",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "sacramento-county",
+        "elk grove",
+        "elk",
+        "grove"
       ]
     },
     {
@@ -2438,7 +2609,9 @@
         "eureka",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "humboldt-county",
+        "city of eureka"
       ]
     },
     {
@@ -2498,7 +2671,7 @@
     {
       "name": "ferndale",
       "source": "ferndale",
-      "description": "Plan-check skills for Ferndale, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Ferndale, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2510,13 +2683,14 @@
         "ferndale",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "humboldt-county"
       ]
     },
     {
       "name": "fillmore",
       "source": "fillmore",
-      "description": "Plan-check skills for Fillmore, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Fillmore, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2528,7 +2702,8 @@
         "fillmore",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "ventura-county"
       ]
     },
     {
@@ -2600,13 +2775,16 @@
         "fort-bragg",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fort bragg",
+        "fort",
+        "bragg"
       ]
     },
     {
       "name": "fort-jones",
       "source": "fort-jones",
-      "description": "Plan-check skills for Town of Fort Jones, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Town of Fort Jones, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2618,7 +2796,12 @@
         "fort-jones",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "siskiyou-county",
+        "fort jones",
+        "fort",
+        "jones",
+        "town of fort jones"
       ]
     },
     {
@@ -2642,7 +2825,7 @@
     {
       "name": "foster-city",
       "source": "foster-city",
-      "description": "Plan-check skills for Foster City, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Foster City, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2654,7 +2837,11 @@
         "foster-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-mateo-county",
+        "foster city",
+        "foster",
+        "city"
       ]
     },
     {
@@ -2672,7 +2859,10 @@
         "fountain-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fountain valley",
+        "fountain",
+        "valley"
       ]
     },
     {
@@ -2714,7 +2904,7 @@
     {
       "name": "fresno",
       "source": "fresno",
-      "description": "Plan-check skills for Fresno, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Fresno, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2726,7 +2916,8 @@
         "fresno",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fresno-county"
       ]
     },
     {
@@ -2780,13 +2971,16 @@
         "garden-grove",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "garden grove",
+        "garden",
+        "grove"
       ]
     },
     {
       "name": "gardena",
       "source": "gardena",
-      "description": "Plan-check skills for Gardena, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Gardena, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2798,7 +2992,8 @@
         "gardena",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -2822,7 +3017,7 @@
     {
       "name": "glendale",
       "source": "glendale",
-      "description": "Plan-check skills for Glendale, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Glendale, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2834,7 +3029,8 @@
         "glendale",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -2858,7 +3054,7 @@
     {
       "name": "goleta",
       "source": "goleta",
-      "description": "Plan-check skills for Goleta, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Goleta, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2870,7 +3066,8 @@
         "goleta",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-barbara-county"
       ]
     },
     {
@@ -2888,7 +3085,8 @@
         "gonzales",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monterey-county"
       ]
     },
     {
@@ -2906,7 +3104,10 @@
         "grand-terrace",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "grand terrace",
+        "grand",
+        "terrace"
       ]
     },
     {
@@ -2924,7 +3125,10 @@
         "grass-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "grass valley",
+        "grass",
+        "valley"
       ]
     },
     {
@@ -2978,13 +3182,16 @@
         "grover-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "grover beach",
+        "grover",
+        "beach"
       ]
     },
     {
       "name": "guadalupe",
       "source": "guadalupe",
-      "description": "Plan-check skills for Guadalupe, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Guadalupe, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -2996,7 +3203,8 @@
         "guadalupe",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-barbara-county"
       ]
     },
     {
@@ -3032,13 +3240,18 @@
         "half-moon-bay",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-mateo-county",
+        "half moon bay",
+        "half",
+        "moon",
+        "bay"
       ]
     },
     {
       "name": "hanford",
       "source": "hanford",
-      "description": "Plan-check skills for Hanford, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Hanford, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3050,13 +3263,14 @@
         "hanford",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "kings-county"
       ]
     },
     {
       "name": "hawaiian-gardens",
       "source": "hawaiian-gardens",
-      "description": "Plan-check skills for Hawaiian Gardens, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Hawaiian Gardens, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3068,7 +3282,11 @@
         "hawaiian-gardens",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "hawaiian gardens",
+        "hawaiian",
+        "gardens"
       ]
     },
     {
@@ -3164,7 +3382,7 @@
     {
       "name": "hermosa-beach",
       "source": "hermosa-beach",
-      "description": "Plan-check skills for Hermosa Beach, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Hermosa Beach, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3176,7 +3394,11 @@
         "hermosa-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "hermosa beach",
+        "hermosa",
+        "beach"
       ]
     },
     {
@@ -3200,7 +3422,7 @@
     {
       "name": "hidden-hills",
       "source": "hidden-hills",
-      "description": "Plan-check skills for Hidden Hills, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Hidden Hills, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3212,7 +3434,11 @@
         "hidden-hills",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "hidden hills",
+        "hidden",
+        "hills"
       ]
     },
     {
@@ -3320,7 +3546,10 @@
         "huntington-beach",
         "plan-check",
         "permits",
-        "tier-1"
+        "tier-1",
+        "huntington beach",
+        "huntington",
+        "beach"
       ]
     },
     {
@@ -3338,13 +3567,16 @@
         "huntington-park",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "huntington park",
+        "huntington",
+        "park"
       ]
     },
     {
       "name": "huron",
       "source": "huron",
-      "description": "Plan-check skills for Huron, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Huron, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3356,7 +3588,8 @@
         "huron",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fresno-county"
       ]
     },
     {
@@ -3392,7 +3625,10 @@
         "imperial-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "imperial beach",
+        "imperial",
+        "beach"
       ]
     },
     {
@@ -3410,7 +3646,10 @@
         "indian-wells",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "indian wells",
+        "indian",
+        "wells"
       ]
     },
     {
@@ -3446,7 +3685,8 @@
         "industry",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "city of industry"
       ]
     },
     {
@@ -3470,7 +3710,7 @@
     {
       "name": "ione",
       "source": "ione",
-      "description": "Plan-check skills for Ione, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Ione, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3482,7 +3722,8 @@
         "ione",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "amador-county"
       ]
     },
     {
@@ -3506,7 +3747,7 @@
     {
       "name": "irwindale",
       "source": "irwindale",
-      "description": "Plan-check skills for Irwindale, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Irwindale, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3518,7 +3759,8 @@
         "irwindale",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -3572,13 +3814,16 @@
         "jurupa-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "jurupa valley",
+        "jurupa",
+        "valley"
       ]
     },
     {
       "name": "kerman",
       "source": "kerman",
-      "description": "Plan-check skills for Kerman, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Kerman, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3590,7 +3835,8 @@
         "kerman",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fresno-county"
       ]
     },
     {
@@ -3608,7 +3854,11 @@
         "king-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monterey-county",
+        "king city",
+        "king",
+        "city"
       ]
     },
     {
@@ -3632,7 +3882,7 @@
     {
       "name": "la-canada-flintridge",
       "source": "la-canada-flintridge",
-      "description": "Plan-check skills for La Canada Flintridge, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for La Canada Flintridge, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3644,7 +3894,12 @@
         "la-canada-flintridge",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "la canada flintridge",
+        "la",
+        "canada",
+        "flintridge"
       ]
     },
     {
@@ -3662,13 +3917,16 @@
         "la-habra",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "la habra",
+        "la",
+        "habra"
       ]
     },
     {
       "name": "la-habra-heights",
       "source": "la-habra-heights",
-      "description": "Plan-check skills for La Habra Heights, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for La Habra Heights, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3680,7 +3938,12 @@
         "la-habra-heights",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "la habra heights",
+        "la",
+        "habra",
+        "heights"
       ]
     },
     {
@@ -3698,7 +3961,10 @@
         "la-mesa",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "la mesa",
+        "la",
+        "mesa"
       ]
     },
     {
@@ -3716,7 +3982,10 @@
         "la-mirada",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "la mirada",
+        "la",
+        "mirada"
       ]
     },
     {
@@ -3734,13 +4003,16 @@
         "la-palma",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "la palma",
+        "la",
+        "palma"
       ]
     },
     {
       "name": "la-puente",
       "source": "la-puente",
-      "description": "Plan-check skills for La Puente, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for La Puente, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3752,7 +4024,11 @@
         "la-puente",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "la puente",
+        "la",
+        "puente"
       ]
     },
     {
@@ -3770,7 +4046,10 @@
         "la-quinta",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "la quinta",
+        "la",
+        "quinta"
       ]
     },
     {
@@ -3788,13 +4067,16 @@
         "la-verne",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "la verne",
+        "la",
+        "verne"
       ]
     },
     {
       "name": "lafayette",
       "source": "lafayette",
-      "description": "Plan-check skills for Lafayette, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Lafayette, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3806,7 +4088,8 @@
         "lafayette",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "contra-costa-county"
       ]
     },
     {
@@ -3824,7 +4107,10 @@
         "laguna-beach",
         "plan-check",
         "permits",
-        "tier-1"
+        "tier-1",
+        "laguna beach",
+        "laguna",
+        "beach"
       ]
     },
     {
@@ -3842,7 +4128,10 @@
         "laguna-hills",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "laguna hills",
+        "laguna",
+        "hills"
       ]
     },
     {
@@ -3860,7 +4149,10 @@
         "laguna-niguel",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "laguna niguel",
+        "laguna",
+        "niguel"
       ]
     },
     {
@@ -3878,7 +4170,10 @@
         "laguna-woods",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "laguna woods",
+        "laguna",
+        "woods"
       ]
     },
     {
@@ -3896,7 +4191,10 @@
         "lake-elsinore",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "lake elsinore",
+        "lake",
+        "elsinore"
       ]
     },
     {
@@ -3914,7 +4212,10 @@
         "lake-forest",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "lake forest",
+        "lake",
+        "forest"
       ]
     },
     {
@@ -3938,7 +4239,7 @@
     {
       "name": "lakewood",
       "source": "lakewood",
-      "description": "Plan-check skills for Lakewood, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Lakewood, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3950,7 +4251,8 @@
         "lakewood",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -3974,7 +4276,7 @@
     {
       "name": "larkspur",
       "source": "larkspur",
-      "description": "Plan-check skills for Larkspur, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Larkspur, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -3986,7 +4288,8 @@
         "larkspur",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "marin-county"
       ]
     },
     {
@@ -4040,7 +4343,10 @@
         "lemon-grove",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "lemon grove",
+        "lemon",
+        "grove"
       ]
     },
     {
@@ -4076,7 +4382,8 @@
         "lincoln",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "placer-county"
       ]
     },
     {
@@ -4112,7 +4419,10 @@
         "live-oak",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "live oak",
+        "live",
+        "oak"
       ]
     },
     {
@@ -4130,13 +4440,14 @@
         "livermore",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "alameda-county"
       ]
     },
     {
       "name": "livingston",
       "source": "livingston",
-      "description": "Plan-check skills for Livingston, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Livingston, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4148,7 +4459,8 @@
         "livingston",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "merced-county"
       ]
     },
     {
@@ -4184,13 +4496,16 @@
         "loma-linda",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "loma linda",
+        "loma",
+        "linda"
       ]
     },
     {
       "name": "lomita",
       "source": "lomita",
-      "description": "Plan-check skills for Lomita, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Lomita, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4202,13 +4517,14 @@
         "lomita",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
       "name": "lompoc",
       "source": "lompoc",
-      "description": "Plan-check skills for Lompoc, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Lompoc, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4220,7 +4536,8 @@
         "lompoc",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-barbara-county"
       ]
     },
     {
@@ -4238,13 +4555,16 @@
         "long-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "long beach",
+        "long",
+        "beach"
       ]
     },
     {
       "name": "loomis",
       "source": "loomis",
-      "description": "Plan-check skills for Loomis, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Loomis, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4256,7 +4576,8 @@
         "loomis",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "placer-county"
       ]
     },
     {
@@ -4274,7 +4595,10 @@
         "los-alamitos",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los alamitos",
+        "los",
+        "alamitos"
       ]
     },
     {
@@ -4292,13 +4616,16 @@
         "los-altos",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los altos",
+        "los",
+        "altos"
       ]
     },
     {
       "name": "los-altos-hills",
       "source": "los-altos-hills",
-      "description": "Plan-check skills for Los Altos Hills, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Los Altos Hills, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4310,7 +4637,12 @@
         "los-altos-hills",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-clara-county",
+        "los altos hills",
+        "los",
+        "altos",
+        "hills"
       ]
     },
     {
@@ -4328,7 +4660,10 @@
         "los-angeles",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los angeles",
+        "los",
+        "angeles"
       ]
     },
     {
@@ -4346,7 +4681,10 @@
         "los-banos",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los banos",
+        "los",
+        "banos"
       ]
     },
     {
@@ -4364,7 +4702,10 @@
         "los-gatos",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los gatos",
+        "los",
+        "gatos"
       ]
     },
     {
@@ -4388,7 +4729,7 @@
     {
       "name": "lynwood",
       "source": "lynwood",
-      "description": "Plan-check skills for Lynwood, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Lynwood, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4400,7 +4741,8 @@
         "lynwood",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -4436,7 +4778,8 @@
         "malibu",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -4454,7 +4797,10 @@
         "mammoth-lakes",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "mammoth lakes",
+        "mammoth",
+        "lakes"
       ]
     },
     {
@@ -4472,7 +4818,10 @@
         "manhattan-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "manhattan beach",
+        "manhattan",
+        "beach"
       ]
     },
     {
@@ -4514,7 +4863,7 @@
     {
       "name": "marina",
       "source": "marina",
-      "description": "Plan-check skills for Marina, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Marina, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4526,7 +4875,8 @@
         "marina",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monterey-county"
       ]
     },
     {
@@ -4652,13 +5002,16 @@
         "menlo-park",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "menlo park",
+        "menlo",
+        "park"
       ]
     },
     {
       "name": "merced",
       "source": "merced",
-      "description": "Plan-check skills for Merced, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Merced, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4670,7 +5023,8 @@
         "merced",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "merced-county"
       ]
     },
     {
@@ -4688,7 +5042,10 @@
         "mill-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "mill valley",
+        "mill",
+        "valley"
       ]
     },
     {
@@ -4742,7 +5099,10 @@
         "mission-viejo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "mission viejo",
+        "mission",
+        "viejo"
       ]
     },
     {
@@ -4766,7 +5126,7 @@
     {
       "name": "monrovia",
       "source": "monrovia",
-      "description": "Plan-check skills for Monrovia, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Monrovia, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4778,13 +5138,14 @@
         "monrovia",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
       "name": "montague",
       "source": "montague",
-      "description": "Plan-check skills for City of Montague, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for City of Montague, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4796,7 +5157,9 @@
         "montague",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "siskiyou-county",
+        "city of montague"
       ]
     },
     {
@@ -4832,13 +5195,16 @@
         "monte-sereno",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monte sereno",
+        "monte",
+        "sereno"
       ]
     },
     {
       "name": "montebello",
       "source": "montebello",
-      "description": "Plan-check skills for Montebello, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Montebello, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4850,13 +5216,14 @@
         "montebello",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
       "name": "monterey",
       "source": "monterey",
-      "description": "Plan-check skills for Monterey, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Monterey, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4868,13 +5235,14 @@
         "monterey",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monterey-county"
       ]
     },
     {
       "name": "monterey-park",
       "source": "monterey-park",
-      "description": "Plan-check skills for Monterey Park, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Monterey Park, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4886,13 +5254,17 @@
         "monterey-park",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "monterey park",
+        "monterey",
+        "park"
       ]
     },
     {
       "name": "moorpark",
       "source": "moorpark",
-      "description": "Plan-check skills for Moorpark, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Moorpark, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -4904,7 +5276,8 @@
         "moorpark",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "ventura-county"
       ]
     },
     {
@@ -4940,7 +5313,10 @@
         "moreno-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "moreno valley",
+        "moreno",
+        "valley"
       ]
     },
     {
@@ -4958,7 +5334,10 @@
         "morgan-hill",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "morgan hill",
+        "morgan",
+        "hill"
       ]
     },
     {
@@ -4976,7 +5355,10 @@
         "morro-bay",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "morro bay",
+        "morro",
+        "bay"
       ]
     },
     {
@@ -4994,13 +5376,16 @@
         "mount-shasta",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "mount shasta",
+        "mount",
+        "shasta"
       ]
     },
     {
       "name": "mountain-house",
       "source": "mountain-house",
-      "description": "Plan-check skills for City of Mountain House, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for City of Mountain House, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5012,7 +5397,12 @@
         "mountain-house",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-joaquin-county",
+        "mountain house",
+        "mountain",
+        "house",
+        "city of mountain house"
       ]
     },
     {
@@ -5030,7 +5420,10 @@
         "mountain-view",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "mountain view",
+        "mountain",
+        "view"
       ]
     },
     {
@@ -5084,7 +5477,10 @@
         "national-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "national city",
+        "national",
+        "city"
       ]
     },
     {
@@ -5120,7 +5516,10 @@
         "nevada-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "nevada city",
+        "nevada",
+        "city"
       ]
     },
     {
@@ -5138,7 +5537,8 @@
         "newark",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "alameda-county"
       ]
     },
     {
@@ -5174,7 +5574,10 @@
         "newport-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "newport beach",
+        "newport",
+        "beach"
       ]
     },
     {
@@ -5216,7 +5619,7 @@
     {
       "name": "novato",
       "source": "novato",
-      "description": "Plan-check skills for Novato, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Novato, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5228,7 +5631,8 @@
         "novato",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "marin-county"
       ]
     },
     {
@@ -5306,7 +5710,7 @@
     {
       "name": "ojai",
       "source": "ojai",
-      "description": "Plan-check skills for Ojai, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Ojai, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5318,7 +5722,8 @@
         "ojai",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "ventura-county"
       ]
     },
     {
@@ -5372,7 +5777,10 @@
         "orange-cove",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "orange cove",
+        "orange",
+        "cove"
       ]
     },
     {
@@ -5432,7 +5840,7 @@
     {
       "name": "oxnard",
       "source": "oxnard",
-      "description": "Plan-check skills for Oxnard, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Oxnard, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5444,13 +5852,14 @@
         "oxnard",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "ventura-county"
       ]
     },
     {
       "name": "pacific-grove",
       "source": "pacific-grove",
-      "description": "Plan-check skills for Pacific Grove, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Pacific Grove, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5462,7 +5871,11 @@
         "pacific-grove",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monterey-county",
+        "pacific grove",
+        "pacific",
+        "grove"
       ]
     },
     {
@@ -5498,7 +5911,10 @@
         "palm-desert",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "palm desert",
+        "palm",
+        "desert"
       ]
     },
     {
@@ -5516,7 +5932,10 @@
         "palm-springs",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "palm springs",
+        "palm",
+        "springs"
       ]
     },
     {
@@ -5552,13 +5971,16 @@
         "palo-alto",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "palo alto",
+        "palo",
+        "alto"
       ]
     },
     {
       "name": "palos-verdes-estates",
       "source": "palos-verdes-estates",
-      "description": "Plan-check skills for Palos Verdes Estates, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Palos Verdes Estates, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5570,7 +5992,12 @@
         "palos-verdes-estates",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "palos verdes estates",
+        "palos",
+        "verdes",
+        "estates"
       ]
     },
     {
@@ -5594,7 +6021,7 @@
     {
       "name": "paramount",
       "source": "paramount",
-      "description": "Plan-check skills for Paramount, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Paramount, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5606,7 +6033,8 @@
         "paramount",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -5630,7 +6058,7 @@
     {
       "name": "pasadena",
       "source": "pasadena",
-      "description": "Plan-check skills for Pasadena, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Pasadena, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5642,7 +6070,8 @@
         "pasadena",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -5660,7 +6089,10 @@
         "paso-robles",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "paso robles",
+        "paso",
+        "robles"
       ]
     },
     {
@@ -5678,7 +6110,8 @@
         "patterson",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "stanislaus-county"
       ]
     },
     {
@@ -5732,7 +6165,10 @@
         "pico-rivera",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "pico rivera",
+        "pico",
+        "rivera"
       ]
     },
     {
@@ -5756,7 +6192,7 @@
     {
       "name": "pinole",
       "source": "pinole",
-      "description": "Plan-check skills for Pinole, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Pinole, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5768,13 +6204,14 @@
         "pinole",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "contra-costa-county"
       ]
     },
     {
       "name": "pismo-beach",
       "source": "pismo-beach",
-      "description": "Plan-check skills for Pismo Beach, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Pismo Beach, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5786,7 +6223,11 @@
         "pismo-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-luis-obispo-county",
+        "pismo beach",
+        "pismo",
+        "beach"
       ]
     },
     {
@@ -5828,7 +6269,7 @@
     {
       "name": "placerville",
       "source": "placerville",
-      "description": "Plan-check skills for Placerville, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Placerville, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -5840,7 +6281,8 @@
         "placerville",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "el-dorado-county"
       ]
     },
     {
@@ -5858,7 +6300,10 @@
         "pleasant-hill",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "pleasant hill",
+        "pleasant",
+        "hill"
       ]
     },
     {
@@ -5894,7 +6339,9 @@
         "plymouth",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "amador-county",
+        "city of plymouth"
       ]
     },
     {
@@ -5912,7 +6359,10 @@
         "point-arena",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "point arena",
+        "point",
+        "arena"
       ]
     },
     {
@@ -5948,7 +6398,10 @@
         "port-hueneme",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "port hueneme",
+        "port",
+        "hueneme"
       ]
     },
     {
@@ -6002,7 +6455,10 @@
         "portola-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "portola valley",
+        "portola",
+        "valley"
       ]
     },
     {
@@ -6038,7 +6494,10 @@
         "rancho-cordova",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "rancho cordova",
+        "rancho",
+        "cordova"
       ]
     },
     {
@@ -6056,7 +6515,10 @@
         "rancho-cucamonga",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "rancho cucamonga",
+        "rancho",
+        "cucamonga"
       ]
     },
     {
@@ -6074,13 +6536,16 @@
         "rancho-mirage",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "rancho mirage",
+        "rancho",
+        "mirage"
       ]
     },
     {
       "name": "rancho-palos-verdes",
       "source": "rancho-palos-verdes",
-      "description": "Plan-check skills for Rancho Palos Verdes, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Rancho Palos Verdes, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6092,7 +6557,12 @@
         "rancho-palos-verdes",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "rancho palos verdes",
+        "rancho",
+        "palos",
+        "verdes"
       ]
     },
     {
@@ -6110,7 +6580,11 @@
         "rancho-santa-margarita",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "rancho santa margarita",
+        "rancho",
+        "santa",
+        "margarita"
       ]
     },
     {
@@ -6128,7 +6602,10 @@
         "red-bluff",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "red bluff",
+        "red",
+        "bluff"
       ]
     },
     {
@@ -6170,7 +6647,7 @@
     {
       "name": "redondo-beach",
       "source": "redondo-beach",
-      "description": "Plan-check skills for Redondo Beach, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Redondo Beach, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6182,7 +6659,11 @@
         "redondo-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "redondo beach",
+        "redondo",
+        "beach"
       ]
     },
     {
@@ -6200,7 +6681,10 @@
         "redwood-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "redwood city",
+        "redwood",
+        "city"
       ]
     },
     {
@@ -6272,7 +6756,12 @@
         "rio-dell",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "humboldt-county",
+        "rio dell",
+        "rio",
+        "dell",
+        "city of rio dell"
       ]
     },
     {
@@ -6290,7 +6779,10 @@
         "rio-vista",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "rio vista",
+        "rio",
+        "vista"
       ]
     },
     {
@@ -6314,7 +6806,7 @@
     {
       "name": "riverbank",
       "source": "riverbank",
-      "description": "Plan-check skills for Riverbank, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Riverbank, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6326,7 +6818,8 @@
         "riverbank",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "stanislaus-county"
       ]
     },
     {
@@ -6380,13 +6873,16 @@
         "rohnert-park",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "rohnert park",
+        "rohnert",
+        "park"
       ]
     },
     {
       "name": "rolling-hills",
       "source": "rolling-hills",
-      "description": "Plan-check skills for Rolling Hills, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Rolling Hills, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6398,13 +6894,17 @@
         "rolling-hills",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "rolling hills",
+        "rolling",
+        "hills"
       ]
     },
     {
       "name": "rolling-hills-estates",
       "source": "rolling-hills-estates",
-      "description": "Plan-check skills for Rolling Hills Estates, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Rolling Hills Estates, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6416,7 +6916,12 @@
         "rolling-hills-estates",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "rolling hills estates",
+        "rolling",
+        "hills",
+        "estates"
       ]
     },
     {
@@ -6458,7 +6963,7 @@
     {
       "name": "ross",
       "source": "ross",
-      "description": "Plan-check skills for Ross, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Ross, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6470,7 +6975,8 @@
         "ross",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "marin-county"
       ]
     },
     {
@@ -6506,7 +7012,10 @@
         "saint-helena",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "saint helena",
+        "saint",
+        "helena"
       ]
     },
     {
@@ -6542,7 +7051,10 @@
         "san-anselmo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san anselmo",
+        "san",
+        "anselmo"
       ]
     },
     {
@@ -6560,7 +7072,10 @@
         "san-bernardino",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san bernardino",
+        "san",
+        "bernardino"
       ]
     },
     {
@@ -6578,13 +7093,16 @@
         "san-bruno",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san bruno",
+        "san",
+        "bruno"
       ]
     },
     {
       "name": "san-carlos",
       "source": "san-carlos",
-      "description": "Plan-check skills for San Carlos, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for San Carlos, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6596,7 +7114,11 @@
         "san-carlos",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-mateo-county",
+        "san carlos",
+        "san",
+        "carlos"
       ]
     },
     {
@@ -6614,7 +7136,10 @@
         "san-clemente",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san clemente",
+        "san",
+        "clemente"
       ]
     },
     {
@@ -6632,13 +7157,16 @@
         "san-diego",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san diego",
+        "san",
+        "diego"
       ]
     },
     {
       "name": "san-dimas",
       "source": "san-dimas",
-      "description": "Plan-check skills for San Dimas, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for San Dimas, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6650,7 +7178,11 @@
         "san-dimas",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "san dimas",
+        "san",
+        "dimas"
       ]
     },
     {
@@ -6668,13 +7200,16 @@
         "san-fernando",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san fernando",
+        "san",
+        "fernando"
       ]
     },
     {
       "name": "san-francisco",
       "source": "san-francisco",
-      "description": "Plan-check skills for San Francisco, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for San Francisco, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6686,13 +7221,17 @@
         "san-francisco",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-francisco-county",
+        "san francisco",
+        "san",
+        "francisco"
       ]
     },
     {
       "name": "san-gabriel",
       "source": "san-gabriel",
-      "description": "Plan-check skills for San Gabriel, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for San Gabriel, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6704,7 +7243,11 @@
         "san-gabriel",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "san gabriel",
+        "san",
+        "gabriel"
       ]
     },
     {
@@ -6722,7 +7265,10 @@
         "san-jacinto",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san jacinto",
+        "san",
+        "jacinto"
       ]
     },
     {
@@ -6740,7 +7286,11 @@
         "san-joaquin",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "fresno-county",
+        "san joaquin",
+        "san",
+        "joaquin"
       ]
     },
     {
@@ -6758,7 +7308,11 @@
         "san-jose",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san jose",
+        "san",
+        "jose",
+        "san josé"
       ]
     },
     {
@@ -6776,7 +7330,13 @@
         "san-juan-bautista",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-benito-county",
+        "san juan bautista",
+        "san",
+        "juan",
+        "bautista",
+        "city of san juan bautista"
       ]
     },
     {
@@ -6794,7 +7354,11 @@
         "san-juan-capistrano",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san juan capistrano",
+        "san",
+        "juan",
+        "capistrano"
       ]
     },
     {
@@ -6812,13 +7376,16 @@
         "san-leandro",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san leandro",
+        "san",
+        "leandro"
       ]
     },
     {
       "name": "san-luis-obispo",
       "source": "san-luis-obispo",
-      "description": "Plan-check skills for San Luis Obispo, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for San Luis Obispo, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6830,7 +7397,12 @@
         "san-luis-obispo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-luis-obispo-county",
+        "san luis obispo",
+        "san",
+        "luis",
+        "obispo"
       ]
     },
     {
@@ -6848,13 +7420,16 @@
         "san-marcos",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san marcos",
+        "san",
+        "marcos"
       ]
     },
     {
       "name": "san-marino",
       "source": "san-marino",
-      "description": "Plan-check skills for San Marino, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for San Marino, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6866,7 +7441,11 @@
         "san-marino",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "san marino",
+        "san",
+        "marino"
       ]
     },
     {
@@ -6884,7 +7463,10 @@
         "san-mateo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san mateo",
+        "san",
+        "mateo"
       ]
     },
     {
@@ -6902,7 +7484,10 @@
         "san-pablo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san pablo",
+        "san",
+        "pablo"
       ]
     },
     {
@@ -6920,13 +7505,16 @@
         "san-rafael",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san rafael",
+        "san",
+        "rafael"
       ]
     },
     {
       "name": "san-ramon",
       "source": "san-ramon",
-      "description": "Plan-check skills for San Ramon, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for San Ramon, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -6938,7 +7526,11 @@
         "san-ramon",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "contra-costa-county",
+        "san ramon",
+        "san",
+        "ramon"
       ]
     },
     {
@@ -6956,7 +7548,10 @@
         "sand-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "sand city",
+        "sand",
+        "city"
       ]
     },
     {
@@ -6992,7 +7587,10 @@
         "santa-ana",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa ana",
+        "santa",
+        "ana"
       ]
     },
     {
@@ -7010,7 +7608,10 @@
         "santa-barbara",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa barbara",
+        "santa",
+        "barbara"
       ]
     },
     {
@@ -7028,7 +7629,10 @@
         "santa-clara",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa clara",
+        "santa",
+        "clara"
       ]
     },
     {
@@ -7046,13 +7650,16 @@
         "santa-clarita",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa clarita",
+        "santa",
+        "clarita"
       ]
     },
     {
       "name": "santa-cruz",
       "source": "santa-cruz",
-      "description": "Plan-check skills for Santa Cruz, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Santa Cruz, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7064,13 +7671,17 @@
         "santa-cruz",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-cruz-county",
+        "santa cruz",
+        "santa",
+        "cruz"
       ]
     },
     {
       "name": "santa-fe-springs",
       "source": "santa-fe-springs",
-      "description": "Plan-check skills for Santa Fe Springs, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Santa Fe Springs, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7082,13 +7693,18 @@
         "santa-fe-springs",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "santa fe springs",
+        "santa",
+        "fe",
+        "springs"
       ]
     },
     {
       "name": "santa-maria",
       "source": "santa-maria",
-      "description": "Plan-check skills for Santa Maria, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Santa Maria, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7100,7 +7716,11 @@
         "santa-maria",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-barbara-county",
+        "santa maria",
+        "santa",
+        "maria"
       ]
     },
     {
@@ -7118,7 +7738,10 @@
         "santa-monica",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa monica",
+        "santa",
+        "monica"
       ]
     },
     {
@@ -7136,7 +7759,10 @@
         "santa-paula",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa paula",
+        "santa",
+        "paula"
       ]
     },
     {
@@ -7154,7 +7780,10 @@
         "santa-rosa",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa rosa",
+        "santa",
+        "rosa"
       ]
     },
     {
@@ -7214,7 +7843,7 @@
     {
       "name": "scotts-valley",
       "source": "scotts-valley",
-      "description": "Plan-check skills for Scotts Valley, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Scotts Valley, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7226,7 +7855,11 @@
         "scotts-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-cruz-county",
+        "scotts valley",
+        "scotts",
+        "valley"
       ]
     },
     {
@@ -7244,7 +7877,10 @@
         "seal-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "seal beach",
+        "seal",
+        "beach"
       ]
     },
     {
@@ -7334,7 +7970,12 @@
         "shasta-lake",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "shasta-county",
+        "shasta lake",
+        "shasta",
+        "lake",
+        "city of shasta lake"
       ]
     },
     {
@@ -7352,7 +7993,10 @@
         "sierra-madre",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "sierra madre",
+        "sierra",
+        "madre"
       ]
     },
     {
@@ -7370,7 +8014,10 @@
         "signal-hill",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "signal hill",
+        "signal",
+        "hill"
       ]
     },
     {
@@ -7388,7 +8035,11 @@
         "simi-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "ventura-county",
+        "simi valley",
+        "simi",
+        "valley"
       ]
     },
     {
@@ -7406,7 +8057,10 @@
         "solana-beach",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "solana beach",
+        "solana",
+        "beach"
       ]
     },
     {
@@ -7424,13 +8078,14 @@
         "soledad",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "monterey-county"
       ]
     },
     {
       "name": "solvang",
       "source": "solvang",
-      "description": "Plan-check skills for Solvang, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Solvang, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7442,7 +8097,8 @@
         "solvang",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-barbara-county"
       ]
     },
     {
@@ -7478,7 +8134,9 @@
         "sonora",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "tuolumne-county",
+        "city of sonora"
       ]
     },
     {
@@ -7496,13 +8154,17 @@
         "south-el-monte",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "south el monte",
+        "south",
+        "el",
+        "monte"
       ]
     },
     {
       "name": "south-gate",
       "source": "south-gate",
-      "description": "Plan-check skills for South Gate, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for South Gate, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7514,7 +8176,11 @@
         "south-gate",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "south gate",
+        "south",
+        "gate"
       ]
     },
     {
@@ -7532,13 +8198,17 @@
         "south-lake-tahoe",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "south lake tahoe",
+        "south",
+        "lake",
+        "tahoe"
       ]
     },
     {
       "name": "south-pasadena",
       "source": "south-pasadena",
-      "description": "Plan-check skills for South Pasadena, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for South Pasadena, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7550,13 +8220,17 @@
         "south-pasadena",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "south pasadena",
+        "south",
+        "pasadena"
       ]
     },
     {
       "name": "south-san-francisco",
       "source": "south-san-francisco",
-      "description": "Plan-check skills for South San Francisco, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for South San Francisco, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7568,7 +8242,12 @@
         "south-san-francisco",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "san-mateo-county",
+        "south san francisco",
+        "south",
+        "san",
+        "francisco"
       ]
     },
     {
@@ -7622,13 +8301,16 @@
         "suisun-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "suisun city",
+        "suisun",
+        "city"
       ]
     },
     {
       "name": "sunnyvale",
       "source": "sunnyvale",
-      "description": "Plan-check skills for City of Sunnyvale, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for City of Sunnyvale, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7640,7 +8322,9 @@
         "sunnyvale",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "santa-clara-county",
+        "city of sunnyvale"
       ]
     },
     {
@@ -7676,13 +8360,16 @@
         "sutter-creek",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "sutter creek",
+        "sutter",
+        "creek"
       ]
     },
     {
       "name": "taft",
       "source": "taft",
-      "description": "Plan-check skills for Taft, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Taft, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7694,7 +8381,8 @@
         "taft",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "kern-county"
       ]
     },
     {
@@ -7712,7 +8400,8 @@
         "tehachapi",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "kern-county"
       ]
     },
     {
@@ -7730,7 +8419,9 @@
         "tehama",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "tehama-county",
+        "city of tehama"
       ]
     },
     {
@@ -7754,7 +8445,7 @@
     {
       "name": "temple-city",
       "source": "temple-city",
-      "description": "Plan-check skills for Temple City, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Temple City, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7766,13 +8457,17 @@
         "temple-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "temple city",
+        "temple",
+        "city"
       ]
     },
     {
       "name": "thousand-oaks",
       "source": "thousand-oaks",
-      "description": "Plan-check skills for Thousand Oaks, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Thousand Oaks, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7784,7 +8479,11 @@
         "thousand-oaks",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "ventura-county",
+        "thousand oaks",
+        "thousand",
+        "oaks"
       ]
     },
     {
@@ -7808,7 +8507,7 @@
     {
       "name": "torrance",
       "source": "torrance",
-      "description": "Plan-check skills for Torrance, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Torrance, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7820,7 +8519,8 @@
         "torrance",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
@@ -7892,7 +8592,8 @@
         "tulare",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "tulare-county"
       ]
     },
     {
@@ -7910,7 +8611,9 @@
         "tulelake",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "siskiyou-county",
+        "city of tulelake"
       ]
     },
     {
@@ -7964,13 +8667,16 @@
         "twentynine-palms",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "twentynine palms",
+        "twentynine",
+        "palms"
       ]
     },
     {
       "name": "ukiah",
       "source": "ukiah",
-      "description": "Plan-check skills for Ukiah, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Ukiah, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -7982,7 +8688,8 @@
         "ukiah",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "mendocino-county"
       ]
     },
     {
@@ -8000,7 +8707,10 @@
         "union-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "union city",
+        "union",
+        "city"
       ]
     },
     {
@@ -8042,7 +8752,7 @@
     {
       "name": "vallejo",
       "source": "vallejo",
-      "description": "Plan-check skills for Vallejo, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Vallejo, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8054,7 +8764,8 @@
         "vallejo",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "solano-county"
       ]
     },
     {
@@ -8126,13 +8837,16 @@
         "villa-park",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "villa park",
+        "villa",
+        "park"
       ]
     },
     {
       "name": "visalia",
       "source": "visalia",
-      "description": "Plan-check skills for Visalia, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Visalia, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8144,7 +8858,8 @@
         "visalia",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "tulare-county"
       ]
     },
     {
@@ -8180,13 +8895,14 @@
         "walnut",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county"
       ]
     },
     {
       "name": "walnut-creek",
       "source": "walnut-creek",
-      "description": "Plan-check skills for Walnut Creek, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Walnut Creek, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8198,13 +8914,17 @@
         "walnut-creek",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "contra-costa-county",
+        "walnut creek",
+        "walnut",
+        "creek"
       ]
     },
     {
       "name": "wasco",
       "source": "wasco",
-      "description": "Plan-check skills for Wasco, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Wasco, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8216,7 +8936,8 @@
         "wasco",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "kern-county"
       ]
     },
     {
@@ -8270,7 +8991,9 @@
         "weed",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "siskiyou-county",
+        "city of weed"
       ]
     },
     {
@@ -8288,13 +9011,16 @@
         "west-covina",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "west covina",
+        "west",
+        "covina"
       ]
     },
     {
       "name": "west-hollywood",
       "source": "west-hollywood",
-      "description": "Plan-check skills for West Hollywood, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for West Hollywood, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8306,7 +9032,11 @@
         "west-hollywood",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "west hollywood",
+        "west",
+        "hollywood"
       ]
     },
     {
@@ -8324,13 +9054,16 @@
         "west-sacramento",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "west sacramento",
+        "west",
+        "sacramento"
       ]
     },
     {
       "name": "westlake-village",
       "source": "westlake-village",
-      "description": "Plan-check skills for Westlake Village, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Westlake Village, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8342,7 +9075,11 @@
         "westlake-village",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "los-angeles-county",
+        "westlake village",
+        "westlake",
+        "village"
       ]
     },
     {
@@ -8366,7 +9103,7 @@
     {
       "name": "westmorland",
       "source": "westmorland",
-      "description": "Plan-check skills for Westmorland, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Westmorland, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8378,7 +9115,8 @@
         "westmorland",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "imperial-county"
       ]
     },
     {
@@ -8468,7 +9206,9 @@
         "willits",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "mendocino-county",
+        "city of willits"
       ]
     },
     {
@@ -8594,13 +9334,16 @@
         "yorba-linda",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "yorba linda",
+        "yorba",
+        "linda"
       ]
     },
     {
       "name": "yountville",
       "source": "yountville",
-      "description": "Plan-check skills for Yountville, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+      "description": "Plan-check skills for Yountville, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
       "version": "0.1.0",
       "author": {
         "name": "Onboard Dot AI LLC"
@@ -8612,7 +9355,8 @@
         "yountville",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "napa-county"
       ]
     },
     {
@@ -8648,7 +9392,10 @@
         "yuba-city",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "yuba city",
+        "yuba",
+        "city"
       ]
     },
     {
@@ -8684,7 +9431,10 @@
         "yucca-valley",
         "plan-check",
         "permits",
-        "tier-3"
+        "tier-3",
+        "yucca valley",
+        "yucca",
+        "valley"
       ]
     }
   ]

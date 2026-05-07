@@ -1,6 +1,6 @@
 {
   "name": "duarte",
-  "description": "Plan-check skills for Duarte, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "description": "Plan-check skills for Duarte, CA — simple permits with local code amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
   "version": "0.1.0",
   "author": {
     "name": "Onboard Dot AI LLC",
