@@ -1,0 +1,200 @@
+---
+description: "Ltia Demolition permits in Del Mar, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Del Mar local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Del Mar."
+version: "1.0"
+source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
+authority: "California Building Standards Commission"
+law_as_of: "January 1, 2025"
+---
+
+# Del Mar — Ltia Demolition Permit
+
+Handles ltia demolition permits in Del Mar end-to-end.
+
+**First thing in every conversation:** ask which mode the user is in.
+
+> "Are you (A) planning to file a ltia demolition permit, or (B) a city reviewer checking a submitted one?"
+
+- Mode A → walk **Builder / Homeowner Intake** below
+- Mode B → walk **City Reviewer Checklist** below
+
+Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+
+---
+
+## City Info
+
+| | |
+|---|---|
+| Permit portal | https://delm-trk.aspgov.com/eTRAKiT/ |
+| Municipal code | https://library.municode.com/ca/del_mar/codes/municipal_code |
+| Fire agency | Del Mar Fire Department (contracted to Encinitas) |
+| Code edition | Title 23 Building · Title 30 Zoning · 2025 CBC/CRC · Ch. 30.91 ADU |
+| Code prefix | DMMC |
+
+---
+
+## Key Del Mar deltas vs state baseline
+
+City-specific checks layered on top of state code. Each is tagged `[DMMC]` in the checklist below.
+
+- **1** CDP — all demolitions — **flag**
+- **2** Doc 9058 — Demo Permit Application — **flag**
+- **3** Coastal Commission — appealable jurisdiction — **flag**
+- **4** Historic/village character review — **flag**
+- **5** Pre-demo asbestos survey — pre-1979 structures — **flag**
+- **6** AQMD notification — **flag**
+- **7** Lead paint survey — pre-1978 structures — **flag**
+- **8** Utility disconnects — required before demolition — **flag**
+- **9** Site fencing and adjacent property protection — **flag**
+- **10** Grading permit — **flag**
+- **11** CALGreen waste management plan — **flag**
+- **12** Contractor license — **flag**
+- **13** Electronic submittal only — **flag**
+- **14** Del Mar Fire Department — **flag**
+
+---
+
+## MODE A — Builder / Homeowner Intake
+
+### A1. Intake
+
+Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+
+### A2. Pre-submission Compliance Check
+
+Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+- **FAIL** → tell the user the specific change needed before they submit
+- **FLAG** → tell them what additional info or documentation they need to gather
+- **PASS** → confirm, move on
+
+### A3. Submission Guide
+
+When compliance is clean (or flag-only), produce a submission guide:
+
+```
+## Ready to Submit — Del Mar Ltia Demolition Permit
+
+**Portal:** https://delm-trk.aspgov.com/eTRAKiT/
+**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+
+### Required uploads
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+
+### Inspection sequence
+[Generated per skill — standard inspection milestones]
+```
+
+### A4. Optional — portal automation
+
+If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+
+---
+
+## MODE B — City Reviewer
+
+### Procedure
+
+1. Accept submitted form data (JSON, PDF, photos, or pasted text)
+2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Plan-Check Checklist below in order
+4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+
+### Output format
+
+```
+PLAN CHECK — {address} ({permit})
+
+❌ CORRECTIONS REQUIRED (N)
+   [plan-check severity=fail items that are not satisfied]
+
+⚠️ VERIFY BEFORE ISSUANCE (N)
+   [plan-check severity=flag items needing documentation or clarification]
+
+ℹ️ LOCAL FLAGS (N) — city discretion
+   [DMMC-specific flag items — parcel overlays, city-specific checks]
+
+✓ {N} checks PASS (expand for detail)
+
+➡ {N} checks deferred to inspection
+
+—
+Generated by CrossBeam Permits · crossbeam-permits.com
+```
+
+Summary verdict at the end: **APPROVE** | **CORRECTIONS REQUIRED** | **NEED ADDITIONAL INFO**
+
+Do not list inspection items as corrections. Do not enumerate every passing item unless the user asks. Respect the plan checker's time.
+
+---
+
+## Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+
+| # | Check | Severity | What to verify | Code |
+|---|---|---|---|---|
+| 1 | **Scope is non-structural?** | ❌ **fail** | Plans clearly indicate ONLY non-load-bearing partitions are removed. No structural columns, load-bearing walls, shear walls, or exterior envelope work. Structural columns identified and marked for protection. | CEBC 701.2, 805.2, 805.3 |
+| 2 | **Demolition plan complete?** | ⚠️ **flag** | Existing and demo floor plan shows all rooms, doors, demising walls. Demolition scope clearly indicated. Area of demolition stated in SF. Occupancy type listed per room. | CBC 3303.1, CEBC 601.2 |
+| 3 | **Demising walls remain?** | ❌ **fail** | Walls between adjacent tenant spaces (fire partitions) are shown to remain. Fire-resistance rating noted. | CBC 708.1, 708.3 |
+| 4 | **Fire separation walls shown?** | ❌ **fail** | Fire barriers, fire-rated corridors, and door ratings identified on plans. Penetrations through fire-rated assemblies will be firestopped. | CBC 707.1, 707.7, 714.2, 716.1 |
+| 5 | **Egress path shown?** | ❌ **fail** | Egress path from tenant space to building exits clearly marked. All exit locations shown. Dead-end corridors comply with limits. | CBC 1003.6, 1020.5, 3303.3, 3310.2 |
+| 6 | **Accessibility / path of travel shown?** | ⚠️ **flag** | Path of travel from public sidewalk/parking to tenant space shown. Main entrance, restrooms, drinking fountains identified. Note on plans that accessibility requirements will be maintained. | CBC 11B-206, 11B-207 |
+| 7 | **Reflected ceiling plan (if applicable)?** | ⚠️ **flag** | If ceiling demolition is in scope, reflected ceiling plan provided showing items to be removed and items to remain (sprinklers, smoke detectors). | Standard practice |
+| 8 | **Utility capping addressed?** | ❌ **fail** | Plans indicate that all electrical, plumbing, gas, and HVAC will be properly capped/disconnected. Note on plans: "All utility lines must be properly and safely capped as needed." | CBC 3303.6, CPC 1206.3 |
+| 13 | **Waste diversion note on plans?** | ❌ **fail** | Plans include: "65% minimum of nonhazardous construction and demolition waste shall be recycled and/or salvaged for reuse." (CALGreen 5.408.1) | CALGreen 5.408.1 |
+| 14 | **Lead/asbestos testing noted?** | ❌ **fail** | For buildings pre-1978: lead testing may be required. AQMD notification for asbestos prior to permit issuance. | State/federal hazmat regulations |
+| 15 | **Universal waste addressed?** | ⚠️ **flag** | Fluorescent lamps, ballasts, mercury thermostats to be disposed as universal waste, not in general debris. | CALGreen 5.408.2 |
+| 16 | **Required notes on plans?** | ⚠️ **flag** | General compliance note, fire/life safety/accessibility note, utility capping note, shoring note, waste diversion note, scope limitation note. | Various |
+| 17 | **Shoring note present?** | ⚠️ **flag** | Plans include: "Contractor is responsible for all temporary shoring prior to the start of demolition." | Standard practice |
+| 18 | **Door removal scope complete?** | ⚠️ **flag** | ALL doors and frames at demolition walls AND at walls slated to remain shall be removed (except exterior doors and doors required for egress or fire separation). This includes doors at non-demo partition walls within the tenant space. | Standard practice |
+| 19 | **Site plan requirements met?** | ⚠️ **flag** | Site plan shows: property lines, adjacent buildings, easements, building footprint, tenant space location within building, access points (pedestrian and vehicular), north arrow, fire department access. For buildings pre-1978, hazardous material inventory noted on site plan. | CBC 106.1 |
+| 20 | **Post-demolition conditions addressed?** | ⚠️ **flag** | Plans address: contractor coordination with MEP trades and telecom prior to demo; field verification of conditions/dimensions before demo begins; patching/texturing/repair of surfaces where demo meets remaining construction; floors left clean and smooth; walls to receive tape and texture; objects protruding above slab verified and protected/removed/ground/capped; tenant space left broom clean. | Standard practice |
+| 1 | **CDP — all demolitions** `[DMMC]` | ⚠️ **flag** | CDP required for every demolition in Del Mar — no location-based exemptions; integrated with building/demo permit via eTRAKiT | Ch. 30.70; Del Mar LCP |
+| 2 | **Doc 9058 — Demo Permit Application** `[DMMC]` | ⚠️ **flag** | Use Del Mar's Demo Permit Application (Doc 9058); obtain from Building Division at (858) 755-9313 or via eTRAKiT; this form integrates the demolition permit and CDP application | Del Mar Building Division |
+| 3 | **Coastal Commission — appealable jurisdiction** `[DMMC]` | ⚠️ **flag** | If demolition is within 100 ft of mean high tide or in a designated coastal bluff/shoreline appeal area: notify California Coastal Commission; Commission retains right to appeal city-issued CDP | Pub. Resources Code § 30603; Ch. 30.70 |
+| 4 | **Historic/village character review** `[DMMC]` | ⚠️ **flag** | Before approving demolition CDP: confirm structure is not historically significant or a character-contributing building; Del Mar's village character is a recognized value under its LCP — DRB review may be required for contributing structures | Del Mar Municipal Code Title 30; Del Mar LCP |
+| 5 | **Pre-demo asbestos survey — pre-1979 structures** `[DMMC]` | ⚠️ **flag** | For any structure built before 1979: pre-demolition asbestos survey by a Certified Asbestos Consultant (CAC) required before demolition begins; if RACM found, abatement by licensed contractor required before demo | SCAQMD Rule 1403 |
+| 6 | **AQMD notification** `[DMMC]` | ⚠️ **flag** | AQMD (Air Quality Management District — SDAPCD for San Diego County) notification may be required for demolition with regulated asbestos-containing material (100+ sq ft RACM or heating duct regardless of age); notify SDAPCD before demolition commences | SDAPCD (San Diego Air Pollution Control District); SCAQMD Rule 1403 analogue |
+| 7 | **Lead paint survey — pre-1978 structures** `[DMMC]` | ⚠️ **flag** | For structures built before 1978: lead-based paint presumed present unless tested and documented absent; Cal OSHA CCR Title 8 § 1532.1 governs lead exposure — requires exposure assessment, engineering controls, and worker protection | Cal OSHA CCR Title 8 § 1532.1 |
+| 8 | **Utility disconnects — required before demolition** `[DMMC]` | ⚠️ **flag** | All utilities must be physically disconnected and confirmed before demolition starts: **(a)** SDG&E — electric meter must be pulled before work begins; **(b)** SoCalGas — gas service capped at meter before work begins; **(c)** Water — confirm water provider (may be City of Del Mar or other district); **(d)** Sewer — lateral capped at property line per Public Works | City requirement; CEC 2025; CPC 2025 |
+| 9 | **Site fencing and adjacent property protection** `[DMMC]` | ⚠️ **flag** | Temporary fencing required around demolition site during active work; shoring plan required if demolition is adjacent to an occupied structure | Del Mar building requirements |
+| 10 | **Grading permit** `[DMMC]` | ⚠️ **flag** | If demolition creates significant grade change, excavation, or foundation removal requiring backfill — confirm whether a grading permit is required with Building Division | Del Mar Municipal Code Ch. 23; CBC 2025 Ch. 18 |
+| 11 | **CALGreen waste management plan** `[DMMC]` | ⚠️ **flag** | 65% minimum diversion from landfill for demolition debris; waste management plan required at permit application; post-demo waste diversion report required | CALGreen § 4.408; § 5.408 |
+| 12 | **Contractor license** `[DMMC]` | ⚠️ **flag** | **B (General Building)** or **C-21 (Building Moving / Demolition)** contractor required; current CSLB license required | CSLB |
+| 13 | **Electronic submittal only** `[DMMC]` | ⚠️ **flag** | All applications via eTRAKiT — https://delm-trk.aspgov.com/eTRAKiT/ | Del Mar CITY.md |
+| 14 | **Del Mar Fire Department** `[DMMC]` | ⚠️ **flag** | Fire review and HAZ-MAT questions route to Del Mar FD (contracted to City of Encinitas) — 2200 Jimmy Durante Blvd, Del Mar, CA 92014 | Del Mar CITY.md |
+
+---
+
+## Documentation Items (informational)
+
+Procedural / informational items with no enforceable rule. Include in the submission record; don't fail or flag in plan check.
+
+| # | Item | Note |
+|---|---|---|
+| 22 | **Separate TI permit noted?** | Scope-limitation note on plans; no independent code citation. |
+
+---
+
+## Deferred to Inspection
+
+These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+
+| # | Inspector verifies | What to look for | Code |
+|---|---|---|---|
+| 9 | **Electrical tie-back to panels?** | Electrical components at removed fixtures/devices to be tied back to panels. Circuits de-energized and properly terminated. | CEC, CBC 3303.6 |
+| 10 | **Gas piping capped gastight?** | Gas outlets capped with screw joint fittings, gastight. Branch valve shut off. | CPC 1206.3 |
+| 11 | **Plumbing capped?** | Water supply lines capped at nearest valve. DWV connections capped/plugged. Plumbing stacks to be reused (not demolished). | CPC, CBC 3303.6 |
+| 12 | **HVAC ducts capped?** | Open duct ends sealed. Fire/smoke dampers preserved. Shared ductwork maintained. | CMC, CBC 3303.6 |
+| 21 | **Pre-existing penetrations addressed?** | Non-conforming penetrations through fire-rated assemblies discovered during demolition shall be firestopped with UL-approved materials per CBC 714. | CBC 714.2 |
+
+---
+
+## References
+
+Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/ltia-demolition/`. City overlay source: `skills/cities/del-mar/ltia-demolition/`.
+
+---
+
+*Generated by CrossBeam Permits · crossbeam-permits.com · © Onboard Dot AI LLC · Apache-2.0*
+*Informational use only; not legal advice; jurisdiction governs.*

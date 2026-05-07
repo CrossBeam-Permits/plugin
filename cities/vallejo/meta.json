@@ -1,0 +1,38 @@
+{
+  "city": "Vallejo",
+  "slug": "vallejo",
+  "state": "CA",
+  "county": "Solano",
+  "population": 120000,
+  "climateZone": 3,
+  "portal": {
+    "system": "eTRAKiT",
+    "url": "https://vall-trk.aspgov.com/eTRAKiT/",
+    "solarInstantIssuance": "https://symbium.com/projects/new"
+  },
+  "buildingDivision": {
+    "address": "555 Santa Clara Street, 2nd Floor, Vallejo, CA 94590",
+    "phone": "(707) 648-4522",
+    "inspectionIVR": "(707) 648-4384",
+    "inspectionDeadline": "3:00 PM prior business day"
+  },
+  "fireAuthority": {
+    "name": "Vallejo Fire Department — Fire Prevention Division",
+    "address": "970 Nimitz Avenue, Vallejo, CA 94592",
+    "phone": "(707) 648-4566"
+  },
+  "utilities": {
+    "electric": "PG&E",
+    "gas": "PG&E",
+    "water": "City of Vallejo Water Division",
+    "wastewater": "Vallejo Flood and Wastewater District (VFWD)"
+  },
+  "adoptedCodeCycle": "2025",
+  "codeEffectiveDate": "2026-01-01",
+  "wuiCoverage": null,
+  "coastalZone": false,
+  "minimumPermitFee": 253.09,
+  "feeSchedule": "FY 2024-2025 Master Fee Schedule",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/vallejo/codes/code_of_ordinances"
+}

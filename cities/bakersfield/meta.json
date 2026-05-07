@@ -1,0 +1,46 @@
+{
+  "city": "Bakersfield",
+  "slug": "bakersfield",
+  "county": "Kern",
+  "state": "CA",
+  "population": 403000,
+  "climateZones": ["CZ13"],
+  "fireAgency": "Bakersfield Fire Department",
+  "vhfhsz": false,
+  "wuiPartial": true,
+  "muniCodePlatform": "general-code",
+  "muniCodeUrl": "https://bakersfield.municipal.codes/Code",
+  "buildingDept": {
+    "name": "City of Bakersfield Building Division",
+    "phone": "(661) 326-3720",
+    "address": "300 W. 4th Street, Bakersfield, CA 93301"
+  },
+  "utility": {
+    "electric": "PG&E",
+    "sewer": "Kern Regional Wastewater Management District (KRNWM)"
+  },
+  "specialOverlays": ["oil-field-methane", "mbhcp-fees", "urm-retrofit"],
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "hvac",
+    "water-heater",
+    "panel-upgrade",
+    "rewire",
+    "repipe",
+    "swimming-pool",
+    "reroof",
+    "fence",
+    "retaining-wall",
+    "sign",
+    "patio-cover"
+  ],
+  "onboardedAt": "2026-04-16",
+  "smokeTestedAt": "2026-04-16",
+  "readyForPromotion": true
+}

@@ -1,0 +1,24 @@
+{
+  "displayName": "Fairfax",
+  "ordinanceLabel": "Fairfax Municipal Code · American Legal Publishing · Title 15 (Buildings & Construction) · Title 17 (Zoning) · Title 8 (Fire)",
+  "codePrefix": "FMC",
+  "fireAgency": "Ross Valley Fire Department (RVFD) · planreview@rossvalleyfire.org · (415) 258-4673 · rossvalleyfire.org",
+  "portalName": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/FAIRFAX/Default.aspx",
+  "climateZone": "2",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "coastalZone": false,
+  "calGreenTier1": true,
+  "wuiPartialCoverage": true,
+  "suggestedQuestions": [
+    "What are the ADU rules in Fairfax?",
+    "Is my Fairfax property in a WUI or fire hazard zone?",
+    "What are the EV charger requirements for new construction in Fairfax?",
+    "How do I submit plans for a building permit in Fairfax?",
+    "What does CALGreen Tier 1 mean for my Fairfax project?",
+    "Does my Fairfax project need a Vegetation Management Plan?",
+    "What are the solar permit requirements in Fairfax?",
+    "Does Fairfax have an ADU amnesty program?"
+  ]
+}

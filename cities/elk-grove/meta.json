@@ -1,0 +1,57 @@
+{
+  "city": "Elk Grove",
+  "slug": "elk-grove",
+  "state": "CA",
+  "county": "Sacramento",
+  "population": 185000,
+  "climateZone": 12,
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/ElkGrove/",
+  "buildingDepartment": {
+    "name": "City of Elk Grove Building Safety, Inspection & Permits",
+    "address": "8401 Laguna Palms Way, Elk Grove, CA 95758",
+    "phone": "(916) 478-2235",
+    "url": "https://elkgrove.gov/departments-and-divisions/building-safety-inspection-and-permits",
+    "portal": "https://elgr-trk.aspgov.com/etrakit/",
+    "portalName": "eTRAKiT"
+  },
+  "fireAgency": {
+    "name": "Cosumnes Community Services District (CCSD) Fire Department",
+    "address": "10573 E. Stockton Blvd., Elk Grove, CA 95624",
+    "portal": "https://cosumnes.my.site.com/",
+    "email": "eplan@cosumnescsd.gov",
+    "url": "https://www.cosumnescsd.gov/303/Plan-Review-and-Inspections",
+    "separatePlanCheckRequired": true,
+    "separatePlanCheckFor": ["new-construction", "solar", "fire-sprinkler", "fire-alarm", "lp-tank", "fireworks"]
+  },
+  "fhsz": false,
+  "coastalZone": false,
+  "onboardedTypes": [
+    "single-family-residential",
+    "multi-unit-residential",
+    "adu",
+    "residential-addition",
+    "solar",
+    "reroof",
+    "swimming-pool",
+    "hvac",
+    "panel-upgrade",
+    "window-replacement",
+    "restaurant-ti"
+  ],
+  "hasLocalAmendments": [
+    "single-family-residential",
+    "multi-unit-residential"
+  ],
+  "stateSkillOnly": [
+    "adu",
+    "residential-addition",
+    "solar",
+    "reroof",
+    "swimming-pool",
+    "hvac",
+    "panel-upgrade",
+    "window-replacement",
+    "restaurant-ti"
+  ]
+}

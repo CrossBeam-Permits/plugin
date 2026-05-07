@@ -1,0 +1,17 @@
+{
+  "displayName": "Mountain View",
+  "ordinanceLabel": "MVMC Ch. 8 (Building) · Ch. 8 Div. III Reach Code eff. Jan 1, 2025",
+  "codePrefix": "MVMC",
+  "fireAgency": "Mountain View Fire Department (MVFD)",
+  "portal": "ePermitsMV",
+  "portalUrl": "https://epermits.mountainview.gov/",
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "Can I get a same-day permit for a water heater replacement?",
+    "What is the prewiring requirement for my new home?",
+    "What are the setback rules for a detached ADU?",
+    "Do I need a permit for a metal fence?",
+    "How do I submit a solar permit in Mountain View?",
+    "Does Mountain View have fire hazard zone requirements?"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "displayName": "Redding",
+  "ordinanceLabel": "RMC Title 16 (Building) · Title 9 Ch 9.20 (Fire) · Title 18 (Zoning)",
+  "codePrefix": "RMC",
+  "fireAgency": "Redding Fire Department — Community Risk Reduction Division",
+  "portal": "EnerGov Self-Service",
+  "portalUrl": "https://ilms.ci.redding.ca.us/EnerGov_PROD/SelfService",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "Does my property require wildfire-resistant construction (WUI)?",
+    "What are Redding's pre-approved ADU plan sets?",
+    "Do I need a grading permit for my project?",
+    "What roofing materials are required in a fire hazard zone?",
+    "Is my property in a Very High Fire Hazard Severity Zone?",
+    "What is the construction excise tax for new construction in Redding?"
+  ]
+}

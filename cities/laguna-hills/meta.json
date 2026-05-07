@@ -1,0 +1,16 @@
+{
+  "displayName": "Laguna Hills",
+  "ordinanceLabel": "Ordinance No. 2025-6 · Adopted September 9, 2025",
+  "codePrefix": "LHMC",
+  "fireAgency": "OCFA",
+  "portalSystem": "Tyler Technologies EnerGov",
+  "muniCodePlatform": "city-hosted (codepublishing.com)",
+  "suggestedQuestions": [
+    "Do I need Class A roofing materials citywide?",
+    "What are the setback requirements for a detached ADU?",
+    "My property is in a Fire Hazard Severity Zone — what extra steps do I need?",
+    "Does my solar system qualify for SolarAPP+ fast-track approval?",
+    "What is the 50% reconstruction rule and how does it affect my remodel?",
+    "How do I submit plans through EnerGov and what are the fees?"
+  ]
+}

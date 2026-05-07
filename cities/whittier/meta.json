@@ -1,0 +1,17 @@
+{
+  "displayName": "Whittier",
+  "ordinanceLabel": "Whittier Municipal Code · Municode · Title 15 (Building) · Title 18 (Zoning) · Ord. 3147/3167 (ADU)",
+  "codePrefix": "WMC",
+  "fireAgency": "Los Angeles County Fire Department (LACoFD) · fire.lacounty.gov/fire-prevention/",
+  "portal": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/whittier/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "What are the ADU height and size limits in Whittier?",
+    "Does Whittier require Class A roofing everywhere, not just in fire zones?",
+    "Can I get an instant solar permit in Whittier?",
+    "Do I need a permit for a retaining wall in Whittier?",
+    "Does my Whittier property need WUI ignition-resistant construction?",
+    "Who does fire plan check in Whittier — city or county fire?"
+  ]
+}

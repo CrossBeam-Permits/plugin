@@ -1,0 +1,51 @@
+{
+  "city": "Ceres",
+  "slug": "ceres",
+  "county": "Stanislaus",
+  "state": "CA",
+  "population": 49000,
+  "climateZones": ["CZ12"],
+  "fireAgency": "Modesto-Ceres Fire Protection Agency JPA",
+  "vhfhsz": false,
+  "wuiPartial": false,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/ceres/codes/municipal_code",
+  "buildingDept": {
+    "name": "City of Ceres Planning and Building Division",
+    "phone": "(209) 538-5753",
+    "address": "2220 Magnolia Street, Ceres, CA 95307",
+    "email": "rhonda.rose@ceres.gov",
+    "hours": "8:30 AM–4:30 PM, Tuesday–Friday (limited Monday)"
+  },
+  "permitPortal": {
+    "platform": "Stanislaus County Accela",
+    "url": "https://aca-prod.accela.com/STANCO/",
+    "electronicOnly": true,
+    "electronicOnlySince": "2024-07-01"
+  },
+  "utility": {
+    "electric": "PG&E",
+    "gas": "PG&E"
+  },
+  "inspectionLine": "(209) 525-6557",
+  "specialOverlays": [],
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "reroof",
+    "hvac",
+    "panel-upgrade",
+    "swimming-pool",
+    "water-heater",
+    "solar",
+    "patio-cover",
+    "window-replacement",
+    "ev-charger"
+  ],
+  "onboardedAt": "2026-04-24",
+  "smokeTestedAt": null,
+  "readyForPromotion": false
+}

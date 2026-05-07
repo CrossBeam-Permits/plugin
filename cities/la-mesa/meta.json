@@ -1,0 +1,24 @@
+{
+  "displayName": "La Mesa",
+  "ordinanceLabel": "2025 California Building Standards Code · La Mesa Municipal Code Title 14",
+  "codePrefix": "LMMC",
+  "fireAgency": "Heartland Fire & Rescue",
+  "portalName": "MaintStar",
+  "portalUrl": "https://h9.maintstar.co/LaMesa/portal/#/",
+  "climateZone": "7",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in La Mesa?",
+    "Does La Mesa have pre-approved ADU plan sets?",
+    "How do I apply for a permit in La Mesa?",
+    "What are the solar permit requirements in La Mesa?",
+    "Is my property in a fire hazard zone in La Mesa?",
+    "What fire agency covers La Mesa?",
+    "What are the fence height limits in La Mesa?",
+    "What are the building department hours in La Mesa?",
+    "Does La Mesa require a soils report for ADUs?",
+    "What is the Hillside Overlay Zone in La Mesa?"
+  ]
+}

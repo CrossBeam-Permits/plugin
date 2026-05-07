@@ -1,0 +1,38 @@
+{
+  "name": "Temple City",
+  "slug": "temple-city",
+  "county": "Los Angeles",
+  "state": "CA",
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/templecityca/latest/overview",
+  "buildingDept": {
+    "name": "Temple City Building & Safety Division",
+    "address": "9701 Las Tunas Dr, Temple City, CA 91780",
+    "phone": "(626) 285-0488",
+    "email": "building@templecity.us",
+    "portal": "https://www.templecityca.gov/1157/Permit-Project-Portal",
+    "planCheckSoftware": "e-PlanSoft"
+  },
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department",
+    "station": "Station 47 — 5946 Kauffman Ave, Temple City, CA 91780",
+    "planCheckPortal": "https://fire.lacounty.gov (EPIC-LA system)"
+  },
+  "wuiCoverage": "none",
+  "fhszDesignation": "none",
+  "codeAdoption": "LA County Building Code suite (Titles 26-30, 33) by reference per Ord. 22-1066, eff. January 1, 2023",
+  "feeStructure": "120% of LA County DPW fees",
+  "onboardedTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "swimming-pool",
+    "reroof",
+    "hvac",
+    "water-heater"
+  ]
+}

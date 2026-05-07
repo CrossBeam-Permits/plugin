@@ -1,0 +1,33 @@
+{
+  "city": "Pinole",
+  "slug": "pinole",
+  "state": "CA",
+  "county": "Contra Costa",
+  "climateZone": 3,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/pinole/latest/overview",
+  "buildingDept": {
+    "name": "City of Pinole Building Division",
+    "phone": "510-724-8912",
+    "url": "https://www.pinole.gov/departments/building/"
+  },
+  "fireAgency": {
+    "name": "Contra Costa County Fire Protection District (ConFire)",
+    "phone": "(925) 941-3300",
+    "email": "permittech@cccfpd.org"
+  },
+  "wuiCoverage": "partial",
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "solar",
+    "reroof",
+    "hvac",
+    "swimming-pool",
+    "restaurant-ti",
+    "wildfire-wui"
+  ],
+  "onboardedAt": "2026-04-22"
+}

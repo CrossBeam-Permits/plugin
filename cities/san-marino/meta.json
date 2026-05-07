@@ -1,0 +1,35 @@
+{
+  "city": "San Marino",
+  "slug": "san-marino",
+  "county": "Los Angeles",
+  "state": "CA",
+  "population": 14500,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/sanmarinoca/latest/sanmarino_ca/0-0-0-1",
+  "fireAgency": {
+    "name": "San Marino Fire Department",
+    "type": "city-operated",
+    "phone": "(626) 300-0735",
+    "email": "fire@sanmarinoca.gov"
+  },
+  "wuiCoverage": "partial",
+  "portalPlatform": "CommunityCore",
+  "portalUrl": "https://www.communitycore.com/sanmarino",
+  "onlinePermitTypes": ["reroof", "electrical", "plumbing", "solar"],
+  "solarApp": "SolarAPP+",
+  "permitTypesOnboarded": [
+    "adu",
+    "fence",
+    "multi-unit-residential",
+    "patio-cover",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "window-replacement"
+  ],
+  "onboardedAt": "2026-04-16",
+  "onboardVersion": "1.0"
+}

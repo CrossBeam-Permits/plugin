@@ -1,0 +1,24 @@
+{
+  "displayName": "Bell Gardens",
+  "ordinanceLabel": "BGMC Title 6 (Building) | Title 9 (Zoning) · eCode360 BE4350 · Ord. 962 (2025 CBC + LA Co. Titles 26–31)",
+  "codePrefix": "BGMC",
+  "fireAgency": "Los Angeles County Fire Department (LACoFD) — Station 39",
+  "portal": "Bell Gardens Building and Safety (in-person)",
+  "portalUrl": "https://www.bellgardens.org",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingDept": "City of Bell Gardens — Building and Safety Division",
+  "buildingDeptNote": "Bell Gardens operates its own Building and Safety Division. No confirmed online permit portal as of recon. Contact Building and Safety at 7100 Garfield Ave, Bell Gardens, CA 90201.",
+  "climateZone": "9",
+  "wui": false,
+  "coastal": false,
+  "solarApp": true,
+  "suggestedQuestions": [
+    "How do I apply for a building permit in Bell Gardens?",
+    "What are the ADU rules in Bell Gardens?",
+    "Does Bell Gardens use SolarAPP+ for solar permits?",
+    "Who handles fire plan check in Bell Gardens?",
+    "What zones allow multi-family housing in Bell Gardens?",
+    "Does Bell Gardens have a WUI or fire hazard zone?",
+    "What LA County code amendments apply in Bell Gardens?"
+  ]
+}

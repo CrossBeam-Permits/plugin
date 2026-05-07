@@ -1,0 +1,22 @@
+{
+  "displayName": "Reedley",
+  "ordinanceLabel": "2022 California Building Standards Code · Local Amendments per Reedley Municipal Code",
+  "codePrefix": "RMC",
+  "fireAgency": "Reedley Fire Department",
+  "portalName": "Counter Submittal",
+  "portalUrl": "https://reedley.ca.gov/community-development-department/building-division/",
+  "climateZone": "13",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Reedley?",
+    "Do I need a permit for a fence in Reedley?",
+    "What are the solar permit requirements in Reedley?",
+    "How do I submit plans to Reedley Building Division?",
+    "What zones allow multi-family housing in Reedley?",
+    "What are the restaurant tenant improvement requirements in Reedley?",
+    "Is Reedley in a fire hazard severity zone?",
+    "Does Reedley have an online permit portal?"
+  ]
+}

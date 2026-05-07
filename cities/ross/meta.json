@@ -1,0 +1,86 @@
+{
+  "city": "Ross",
+  "slug": "ross",
+  "state": "CA",
+  "county": "Marin",
+  "climateZone": 2,
+  "seismicDesignCategory": "D",
+  "fhsz": true,
+  "fhszCoverage": "partial",
+  "wui": true,
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.townofrossca.gov/administration/page/municipal-code",
+  "department": "Building Division",
+  "address": "31 Sir Francis Drake Boulevard, Ross, CA 94957",
+  "phone": "(415) 453-1453",
+  "buildingDeptUrl": "https://www.townofrossca.gov/building",
+  "permitServicesUrl": "https://www.townofrossca.gov/building/page/permit-services",
+  "portalUrl": "https://rossca-trk.aspgov.com/eTRAKiT/",
+  "submissionMethod": "counter or portal (eTRAKiT)",
+  "counterHours": "Mon–Thu 8:30am–12pm",
+  "inspectionDays": "Monday and Wednesday mornings only",
+  "planCheckTurnaround": "4–6 weeks",
+  "fireAgency": {
+    "name": "Ross Valley Fire Department (RVFD)",
+    "type": "JPA (Joint Powers Authority)",
+    "website": "https://rossvalleyfire.org",
+    "address": "777 San Anselmo Avenue, San Anselmo, CA 94960",
+    "preventionPhone": "(415) 258-4673",
+    "preventionEmail": "prevention@rossvalleyfire.org",
+    "planCheckTurnaround": "10 business days (goal)",
+    "sprinklerRule": "Substantial remodels do NOT trigger sprinkler retrofit in Ross (RVFD local rule). New SFR requires sprinklers per CRC R313.",
+    "resaleInspection": "$190, exterior only, required in Ross"
+  },
+  "codesAdopted": {
+    "cycle": "2025",
+    "effectiveDate": "2026-01-01",
+    "notes": "Adopted 2025 California Building Standards Code (Title 24) effective January 1, 2026. Standard statewide adoption with minor local amendments per Title 15 RMC."
+  },
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti"
+  ],
+  "notableAmendments": [
+    {
+      "id": "design-review",
+      "description": "Design review (ADRG + Town Council) required for most new construction, additions, and exterior changes",
+      "rmc": "Chapter 18.41"
+    },
+    {
+      "id": "hillside-ordinance",
+      "description": "Hillside Lot Ordinance applies to lots with 30%+ slope or Slope Stability Hazard Zones 3/4; restricts FAR per formula",
+      "rmc": "Chapter 18.39"
+    },
+    {
+      "id": "adu-no-sprinkler",
+      "description": "ADU/JADU fire sprinklers not required if primary dwelling does not require them",
+      "rmc": "18.42.075(d)"
+    },
+    {
+      "id": "adu-dark-sky",
+      "description": "ADU exterior lighting must be dark sky compliant — shielded, downward-facing, 3,500K or lower color temp",
+      "rmc": "18.42.055(c)"
+    },
+    {
+      "id": "driveway-access",
+      "description": "Driveway required if exterior wall >150 ft from fire apparatus access road (12 ft wide, 13.5 ft clearance, turnaround at 150 ft)",
+      "rmc": "18.40.095"
+    },
+    {
+      "id": "baaqmd-fireplace",
+      "description": "New wood-burning devices must be EPA-certified or pellet-fueled per Bay Area Air Quality Management District rules",
+      "authority": "BAAQMD"
+    },
+    {
+      "id": "restaurant-cup",
+      "description": "Restaurants are conditionally permitted in C-L zone only; use permit from Town Council required",
+      "rmc": "18.20.030(a)(3)"
+    }
+  ],
+  "openIssues": [],
+  "onboardedAt": "2026-04-22T01:00:00.000Z",
+  "onboardVersion": "1.0"
+}

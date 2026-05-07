@@ -1,0 +1,16 @@
+{
+  "displayName": "Turlock",
+  "ordinanceLabel": "Turlock Municipal Code · eCode360 · Turlock Fire Department · Turlock Irrigation District (TID)",
+  "codePrefix": "TMC",
+  "fireAgency": "Turlock Fire Department",
+  "suggestedQuestions": [
+    "What are the ADU rules in Turlock?",
+    "Does Turlock have pre-drawn ADU plans?",
+    "How do I submit a permit — what portal does Turlock use?",
+    "Who handles fire plan review in Turlock?",
+    "What utility serves Turlock for electrical permits?",
+    "Is my property in a fire hazard severity zone in Turlock?",
+    "What building codes has Turlock adopted?",
+    "What are the design criteria (seismic, wind) for Turlock projects?"
+  ]
+}

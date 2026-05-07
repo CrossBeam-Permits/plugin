@@ -1,0 +1,17 @@
+{
+  "displayName": "Corcoran",
+  "ordinanceLabel": "Corcoran Municipal Code · AMLegal · Kings County Fire Dept (contract)",
+  "codePrefix": "CMC",
+  "fireAgency": "Kings County Fire Department (contract)",
+  "portal": "email",
+  "portalUrl": "mailto:Buildingplanningpermits@cityofcorcoran.ca.gov",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "How do I submit a permit in Corcoran — is there an online portal?",
+    "What are the ADU rules in Corcoran?",
+    "Does Corcoran require fire sprinklers for new single-family homes?",
+    "What zoning district is my property in?",
+    "How long does plan check take in Corcoran?",
+    "Who handles fire plan review for Corcoran projects?"
+  ]
+}

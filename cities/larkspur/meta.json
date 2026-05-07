@@ -1,0 +1,38 @@
+{
+  "city": "Larkspur",
+  "slug": "larkspur",
+  "state": "CA",
+  "county": "Marin",
+  "climateZone": 3,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://larkspur.municipal.codes/LMC",
+  "permitPortal": "https://lark.csqrcloud.com/community-etrakit/default.aspx",
+  "buildingDept": {
+    "name": "City of Larkspur Building Division",
+    "address": "400 Magnolia Avenue, Second Floor, Larkspur, CA 94939",
+    "phone": "415-927-5110",
+    "email": "permits@cityoflarkspur.org",
+    "hours": "Mon & Wed 9am-5pm; Thu 9am-noon"
+  },
+  "fireAgency": {
+    "name": "Central Marin Fire Department",
+    "phone": "415-927-5077",
+    "jurisdiction": "JPA of Larkspur and Corte Madera"
+  },
+  "utility": "PG&E",
+  "wuiCoverage": "partial",
+  "onboardedTypes": [
+    "adu",
+    "hvac",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar",
+    "water-heater",
+    "wildfire-wui",
+    "window-replacement"
+  ]
+}

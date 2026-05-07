@@ -1,0 +1,23 @@
+{
+  "displayName": "Soledad",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Ordinance 747 · Municode",
+  "codePrefix": "SMC",
+  "fireAgency": "CAL FIRE — Mission-Soledad Fire Protection District, Station 37 · (831) 223-5100",
+  "portalName": "SmartGov",
+  "portalUrl": "https://www.cityofsoledad.com/departments/community-and-economic-development/building-and-safety/",
+  "climateZone": "3",
+  "seismicCategory": "D",
+  "fhsz": null,
+  "coastalZone": false,
+  "county": "Monterey",
+  "suggestedQuestions": [
+    "What are the ADU setback and height rules in Soledad?",
+    "Does Soledad have pre-approved ADU plans?",
+    "How do I submit a solar permit in Soledad?",
+    "What are the EV charger permit requirements in Soledad?",
+    "How do I submit a building permit in Soledad?",
+    "What are the residential addition permit requirements in Soledad?",
+    "What fire agency reviews plans in Soledad?",
+    "What permits does Soledad process through SmartGov?"
+  ]
+}

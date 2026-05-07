@@ -1,0 +1,24 @@
+{
+  "displayName": "City of Eureka",
+  "ordinanceLabel": "Eureka Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "EMC",
+  "fireAgency": "Humboldt Bay Fire",
+  "portal": "OpenGov (ViewPoint Cloud)",
+  "portalUrl": "https://eurekaca.viewpointcloud.com/login",
+  "solarPortalUrl": "https://eurekaca.viewpointcloud.com/login",
+  "solarAppPlus": true,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/eureka/latest/",
+  "coastalZone": true,
+  "county": "Humboldt",
+  "suggestedQuestions": [
+    "Does my project require a Coastal Development Permit in Eureka?",
+    "Can I use SolarAPP+ for my residential solar permit in Eureka?",
+    "What are the ADU setback and size rules under EMC 155.316?",
+    "Does my building permit trigger the sewer lateral CCTV inspection requirement?",
+    "Is my parcel adjacent to the Gulch & Greenway Overlay (Cooper Gulch, Second Gulch, or Martin Slough)?",
+    "Where do I submit a building permit application in Eureka and what are the department contact details?"
+  ]
+}

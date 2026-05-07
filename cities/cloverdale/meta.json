@@ -1,0 +1,37 @@
+{
+  "city": "Cloverdale",
+  "slug": "cloverdale",
+  "state": "CA",
+  "county": "Sonoma",
+  "climateZone": 2,
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Cloverdale/",
+  "permitPortal": "https://cloverdaleca.portal.opengov.com/",
+  "buildingDept": {
+    "address": "124 N Cloverdale Boulevard, Cloverdale, CA 95425",
+    "phone": "(707) 894-1725",
+    "hours": "Monday–Thursday, 7:30am–12:00pm and 1:00pm–5:00pm"
+  },
+  "fireAgency": {
+    "name": "Cloverdale Fire Protection District",
+    "address": "451 S Cloverdale Blvd, Cloverdale, CA 95425",
+    "phone": "(707) 894-3545",
+    "website": "https://cloverdalefire.specialdistrict.org/"
+  },
+  "wuiCoverage": "partial",
+  "fhszDesignation": "VHFHSZ-LRA",
+  "utility": "PG&E",
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "reroof",
+    "solar",
+    "wildfire-wui",
+    "ev-charger"
+  ],
+  "onboardedAt": "2026-04-22",
+  "onboardVersion": "1.0"
+}

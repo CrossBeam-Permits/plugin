@@ -1,0 +1,30 @@
+{
+  "city": "Ukiah",
+  "slug": "ukiah",
+  "state": "CA",
+  "county": "Mendocino",
+  "climateZone": 2,
+  "wuiCoverage": "partial",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/ukiah/codes/code_of_ordinances",
+  "onboardedTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "wildfire-wui"
+  ],
+  "buildingDept": {
+    "name": "City of Ukiah Community Development Department, Building Division",
+    "address": "300 Seminary Ave, Ukiah, CA 95482",
+    "phone": "(707) 467-5786",
+    "email": "buildingdivision@cityofukiah.com",
+    "portal": "Citizenserve"
+  },
+  "fireAgency": {
+    "name": "Ukiah Valley Fire Authority (UVFA)",
+    "phone": "(707) 463-5786",
+    "email": "fireprevention@cityofukiah.com"
+  }
+}

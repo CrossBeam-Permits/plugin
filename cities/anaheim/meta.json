@@ -1,0 +1,17 @@
+{
+  "displayName": "Anaheim",
+  "ordinanceLabel": "Ord. 6620 · January 13, 2026 (ADU) | Ord. 6613 · September 23, 2025 (Building Codes)",
+  "codePrefix": "AMC",
+  "fireAgency": "Anaheim Fire & Rescue",
+  "portal": "Accela (Anaheim Next)",
+  "portalUrl": "https://aca-prod.accela.com/anaheim/default.aspx",
+  "electricUtility": "Anaheim Public Utilities (city-owned — NOT SCE)",
+  "suggestedQuestions": [
+    "Can I get an ADU permit in 1 day with the Express Program?",
+    "How do I get an online instant permit for solar or EV charger?",
+    "What are the setback requirements for a detached ADU?",
+    "Do I need fire sprinklers for my ADU?",
+    "What building codes apply — 2022 or 2025?",
+    "How many ADU units are allowed on my lot?"
+  ]
+}

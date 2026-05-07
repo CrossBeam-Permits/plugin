@@ -1,0 +1,34 @@
+{
+  "city": "Placerville",
+  "slug": "placerville",
+  "state": "CA",
+  "county": "El Dorado",
+  "climateZone": 12,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/placervilleca/latest/placerville_ca/0-0-0-1",
+  "portal": "https://app.oncamino.com",
+  "buildingDivision": {
+    "phone": "(530) 642-5240",
+    "email": "pville.building@gmail.com",
+    "address": "3101 Center Street, City Hall 2nd Floor, Placerville, CA 95667",
+    "counterHours": "8:00 AM – 10:00 AM Mon–Fri",
+    "inspectionHours": "10:00 AM – 2:00 PM Mon–Fri"
+  },
+  "fireAgency": {
+    "name": "El Dorado County Fire Protection District",
+    "phone": "(530) 644-9630",
+    "address": "4040 Carson Rd, Camino, CA 95709"
+  },
+  "wuiCoverage": "partial",
+  "fhszAdoptedDate": "2026-04",
+  "onboardedTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "reroof",
+    "wildfire-wui",
+    "solar"
+  ]
+}

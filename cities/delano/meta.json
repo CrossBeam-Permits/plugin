@@ -1,0 +1,45 @@
+{
+  "city": "Delano",
+  "slug": "delano",
+  "county": "Kern",
+  "state": "CA",
+  "population": 50000,
+  "region": "Southern San Joaquin Valley",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/delano/codes/code_of_ordinances",
+  "buildingDept": {
+    "address": "1015 11th Avenue, Delano, CA 93215",
+    "phone": "661-721-3303",
+    "phone2": "661-721-3360",
+    "portal": "https://ci-delano-ca.smartgovcommunity.com/public/home",
+    "portalPlatform": "SmartGov"
+  },
+  "fireAgency": {
+    "name": "Kern County Fire Department (KCFD)",
+    "type": "contract",
+    "phone": "661-391-3310",
+    "email": "fireprevention@kerncountyfire.org",
+    "portal": "https://inspections.kerncountyfire.org/en/"
+  },
+  "wuiCoverage": "omit",
+  "localAmendments": false,
+  "applicableCodes": ["2025 CBC", "2025 CFC", "2025 CMC", "2025 CEC", "2025 CPC"],
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "water-heater",
+    "hvac",
+    "swimming-pool",
+    "ev-charger",
+    "panel-upgrade",
+    "fence",
+    "window-replacement"
+  ],
+  "planReviewWeeks": "4-6",
+  "planReviewDepts": ["Building", "Engineering", "Planning"]
+}

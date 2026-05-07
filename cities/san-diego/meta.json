@@ -1,0 +1,21 @@
+{
+  "displayName": "San Diego",
+  "ordinanceLabel": "SDMC Ch. 14 Building · Ch. 13 Zoning · 2022 CBC (CBC Ch.29 NOT adopted — CPC exclusive) · SDMC §§145.0703-0711 VHFHSZ · IB-301 Solar Self-Issue · IB-400 ADU/JADU · LCP Coastal CDPs · SDMC §143.13xx SB9",
+  "codePrefix": "SDMC",
+  "fireAgency": "San Diego Fire-Rescue Department (SDFD) — city department",
+  "muniCodeUrl": "https://www.sandiego.gov/city-clerk/officialdocs/municipal-code",
+  "permitPortal": "Accela OPR (aca.accela.com/SANDIEGO)",
+  "planCheck": "City of San Diego Development Services Department (DSD)",
+  "climateZone": "7 (coastal) / 10 (inland)",
+  "seismicDesignCategory": "D",
+  "suggestedQuestions": [
+    "Is my property in the VHFHSZ (Very High Fire Hazard Severity Zone) in San Diego?",
+    "Do I need a Coastal Development Permit (CDP) for my project in San Diego?",
+    "What are San Diego's rules for ADUs and JADUs under IB-400?",
+    "Can I get a self-issued solar permit in San Diego under IB-301?",
+    "What is San Diego's fence permit height threshold (7 ft vs. 6 ft)?",
+    "Does CBC Chapter 29 apply to plumbing in San Diego?",
+    "What is the garage door battery backup requirement in San Diego (SDMC §145.0406)?",
+    "What are San Diego's VHFHSZ requirements for gutters, windows, and spark arresters?"
+  ]
+}

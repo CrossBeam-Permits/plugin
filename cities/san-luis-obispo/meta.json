@@ -1,0 +1,51 @@
+{
+  "city": "San Luis Obispo",
+  "slug": "san-luis-obispo",
+  "state": "CA",
+  "county": "San Luis Obispo County",
+  "population": 47000,
+  "buildingDepartment": {
+    "name": "Community Development — Building & Safety Division",
+    "phone": "(805) 781-7180",
+    "address": "919 Palm Street, San Luis Obispo, CA 93401",
+    "url": "https://www.slocity.org/government/department-directory/community-development/building-safety",
+    "portal": "Tyler Community Access",
+    "portalVendor": "Tyler Technologies"
+  },
+  "fireAgency": {
+    "name": "City of San Luis Obispo Fire Department",
+    "type": "city_department",
+    "phone": "(805) 781-7180",
+    "planCheckUrl": "https://www.slocity.org/government/department-directory/fire-department/fire-prevention/fire-prevention-services-programs/plan-check-review",
+    "planCheckPath": "In-house — plans submitted via Community Development portal, auto-routed to Fire Prevention Division",
+    "fireInspectionNote": "Fire and Demo inspections must be scheduled by phone — NOT via portal"
+  },
+  "muniCodePlatform": "codify",
+  "muniCodeUrl": "https://sanluisobispo.municipal.codes",
+  "buildingCodeFramework": "SLO Building Construction and Fire Prevention Code (BCFPC)",
+  "localAmendmentOrdinances": ["Ord. 1723 (2022)", "Ord. 1751 (2025)", "Ord. 1754 (2026-01-20)"],
+  "fhszCoverage": "partial",
+  "fhszNote": "Approximately 64% of parcels in Moderate/High/Very High FHSZ per updated State Fire Marshal map adopted by City Council",
+  "wuiApplicable": true,
+  "solarAPPPlus": true,
+  "zones": ["R-1", "R-2", "R-3", "R-4", "C-D", "C-R"],
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "water-heater",
+    "hvac",
+    "reroof",
+    "sign",
+    "window-replacement",
+    "panel-upgrade",
+    "swimming-pool",
+    "wildfire-wui"
+  ],
+  "onboardedAt": "2026-04-16",
+  "lastUpdated": "2026-04-16"
+}

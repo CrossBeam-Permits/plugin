@@ -1,0 +1,22 @@
+{
+  "displayName": "Irvine",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Irvine Municipal Code",
+  "codePrefix": "IMC",
+  "fireAgency": "OCFA",
+  "portalName": "ePlan (ProjectDox)",
+  "portalUrl": "https://www.cityofirvine.org/community-development/building-safety",
+  "climateZone": "6",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Irvine? Is the local ordinance still valid?",
+    "Does Irvine require fire sprinklers in all new residential buildings?",
+    "What are the Class A roofing requirements in Irvine?",
+    "How do I submit a permit through Irvine's ePlan portal?",
+    "Is my Irvine property in a fire hazard severity zone?",
+    "What are the pool barrier requirements in Irvine?",
+    "Do I need HOA approval before applying for a building permit in Irvine?",
+    "What are the solar permit requirements in Irvine?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "displayName": "Santa Barbara",
+  "ordinanceLabel": "Ord. 6093 · Nov 15, 2022 (Building Codes) | Ord. 6094 · Nov 15, 2022 (Fire Code) | Title 25 ODDS · Mar 27, 2025",
+  "codePrefix": "SBMC",
+  "fireAgency": "Santa Barbara City Fire Department",
+  "portal": "Accela + DigEplan",
+  "portalUrl": "https://www.santabarbaraca.gov/government/departments/community-development/building-and-safety",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/SA5006",
+  "climateZone": "CZ6",
+  "hasHistoricOverlay": true,
+  "historicDistrict": "El Pueblo Viejo Landmark District",
+  "hasCoastalOverlay": true,
+  "hasCertifiedLCP": true,
+  "coastalOverlayZone": "S-D-3",
+  "wuiCoverage": "partial",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "Can I build an ADU in the El Pueblo Viejo historic district?",
+    "What are the coastal development permit requirements for my property?",
+    "Is my property in the Wildland-Urban Interface fire hazard zone?",
+    "How do I get an OnDemand permit for solar or a water heater?",
+    "What Mediterranean architectural style requirements apply to my exterior remodel?",
+    "Do I need ABR review for my window replacement in the historic district?",
+    "What are the ADU setback requirements in Santa Barbara?",
+    "Can I use the ODDS streamlined path for my multi-unit project?"
+  ]
+}

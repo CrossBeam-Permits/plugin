@@ -1,0 +1,54 @@
+{
+  "city": "Covina",
+  "slug": "covina",
+  "state": "CA",
+  "county": "Los Angeles",
+  "population": 48000,
+  "buildingDept": {
+    "name": "City of Covina Building & Safety Division",
+    "address": "125 E. College Street, Covina, CA 91723",
+    "phone": "(626) 384-5460",
+    "email": "building@covinaca.gov",
+    "hours": "Mon–Thu 7:00 AM–6:00 PM (closed 1–2 PM)",
+    "url": "https://covinaca.gov/city-departments/community-development/building-safety/"
+  },
+  "permitPortal": {
+    "platform": "Clariti",
+    "submissionMethod": "in-person or email",
+    "solarApp": true
+  },
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Covina/",
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department",
+    "phone": "(626) 974-8335",
+    "notes": "EPIC-LA for new development. Local fire inspector for TI/commercial."
+  },
+  "fhsz": {
+    "designation": "VHFHSZ",
+    "coverage": "partial",
+    "jurisdictionType": "LRA",
+    "muniCodeChapter": "CMC Chapter 14.13"
+  },
+  "permitTypes": [
+    "adu",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "patio-cover",
+    "residential-addition",
+    "reroof",
+    "restaurant-ti",
+    "retaining-wall",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater",
+    "wildfire-wui",
+    "window-replacement"
+  ],
+  "onboardedAt": "2026-04-16",
+  "onboardedBy": "batch-onboard-agent"
+}

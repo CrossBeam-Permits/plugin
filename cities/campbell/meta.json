@@ -1,0 +1,23 @@
+{
+  "displayName": "Campbell",
+  "ordinanceLabel": "Campbell Municipal Code · Municode · Title 18 (Building) · Title 21 (Zoning) · Ord. 2290 + Electrification Reach Code (Ch. 18.11) · Zero NOx Ordinance (Sept 2024)",
+  "codePrefix": "CMC",
+  "fireAgency": "Santa Clara County Fire Department (SCCFD) · (408) 341-4420 · sccfd.org · 1315 Dell Ave, Campbell, CA 95008",
+  "portalName": "MyGovernmentOnline (MGO Connect)",
+  "portalUrl": "https://www.mgoconnect.org/cp?JID=187",
+  "climateZone": "4",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "utility": "PG&E",
+  "suggestedQuestions": [
+    "What are the ADU setback rules in Campbell?",
+    "Does Campbell require all-electric appliances for new construction?",
+    "What is Campbell's Zero NOx ordinance and how does it affect my remodel?",
+    "How do I submit a building permit in Campbell through MyGovernmentOnline?",
+    "When does the BAAQMD gas water heater ban take effect in Campbell?",
+    "Does my Campbell project need SCCFD fire plan check?",
+    "Is my Campbell property in a Fire Hazard Severity Zone?",
+    "What are the EV charger permit requirements in Campbell?"
+  ]
+}

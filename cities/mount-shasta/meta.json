@@ -1,0 +1,17 @@
+{
+  "displayName": "Mount Shasta",
+  "ordinanceLabel": "CCO-25-03 · July 28, 2025",
+  "codePrefix": "MSMC",
+  "fireAgency": "Mount Shasta Fire Protection District / City Fire Department",
+  "portal": null,
+  "portalUrl": null,
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "What roof slope is required for a new house in Mount Shasta?",
+    "Does the entire city require WUI ignition-resistant construction?",
+    "Can I install wood siding in a fire zone?",
+    "What are the ADU rules for short-term rentals in Mount Shasta?",
+    "Do I need a burn permit for open burning?",
+    "Is a city water connection required for an ADU?"
+  ]
+}

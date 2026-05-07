@@ -1,0 +1,25 @@
+{
+  "displayName": "Lake Forest",
+  "ordinanceLabel": "Lake Forest Municipal Code (eCode360) · 2025 California Building Standards Code (Ord. 382, Nov. 18, 2025)",
+  "codePrefix": "LFMC",
+  "fireAgency": "OCFA",
+  "portalSystem": "Tyler Technologies EnerGov",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/LA4954",
+  "portalUrl": "https://cityoflakeforestca-energovweb.tylerhost.net/apps/selfservice",
+  "solarApp": true,
+  "utility": {
+    "electric": "SCE (Southern California Edison)",
+    "gas": "SoCalGas",
+    "water": "El Toro Water District (ETWD) — most of city; portions served by Moulton Niguel Water District (MNWD)"
+  },
+  "suggestedQuestions": [
+    "My property is in a WUI/FHSZ zone — what fire-hardening requirements apply?",
+    "Does my solar system qualify for SolarAPP+ fast-track approval?",
+    "What are the Class B roofing requirements for my re-roof?",
+    "My project is in Baker Ranch / Foothill Ranch / Portola Hills — do PC zone standards apply?",
+    "Does my ADU require a JADU deed restriction?",
+    "What triggers the OCFA fire screening requirement?",
+    "How do I submit permits through eLakeForest (EnerGov)?"
+  ]
+}

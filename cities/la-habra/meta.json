@@ -1,0 +1,22 @@
+{
+  "displayName": "La Habra",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per La Habra Municipal Code (through Ord. CC 2025-15)",
+  "codePrefix": "LHMC",
+  "fireAgency": "OCFA",
+  "portalName": "EnerGov",
+  "portalUrl": "https://cityoflahabraca-energovweb.tylerhost.net/apps/selfservice#/home",
+  "climateZone": "8",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in La Habra?",
+    "Do I need a permit for a block wall in La Habra?",
+    "What are the fence height limits in La Habra?",
+    "How do I submit plans through EnerGov in La Habra?",
+    "What are the solar permit requirements in La Habra?",
+    "What are the counter hours for La Habra Building & Safety?",
+    "Do I need a permit for a reroof in La Habra?",
+    "What are the EV charger requirements in La Habra?"
+  ]
+}

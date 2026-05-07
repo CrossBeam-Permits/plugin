@@ -1,0 +1,21 @@
+{
+  "displayName": "Paso Robles",
+  "ordinanceLabel": "2025 CBC Adoption Ordinance · November 4, 2025 (second reading) + Ord. 1133",
+  "codePrefix": "PRMC",
+  "fireAgency": "Paso Robles Fire and Emergency Services (PRFES)",
+  "portal": "PasoPermits (Accela)",
+  "portalUrl": "https://www.pasopermits.com",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/el_paso_de_robles",
+  "wuiCoverage": "partial",
+  "suggestedQuestions": [
+    "Can I install an EV charger in my parking garage in Paso Robles?",
+    "What ADU rules apply in Paso Robles?",
+    "Does my Paso Robles property fall in a fire hazard zone?",
+    "How do I submit a permit application in Paso Robles?",
+    "What local building code amendments has Paso Robles adopted?",
+    "Do I need a fire sprinkler system for my ADU or addition?",
+    "What are the setback requirements for ADUs in Paso Robles?",
+    "Does Paso Robles have preapproved ADU plans?"
+  ]
+}

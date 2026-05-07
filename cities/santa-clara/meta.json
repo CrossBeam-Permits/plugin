@@ -1,0 +1,22 @@
+{
+  "displayName": "Santa Clara",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Santa Clara Municipal Code · Ord. 2081 / Resolution No. 25-9502 (eff. Jan 1, 2026)",
+  "codePrefix": "SCMC",
+  "fireAgency": "Santa Clara Fire Department (city-owned) · (408) 615-4970 · crrdbilling@santaclaraca.gov",
+  "portalName": "Permitting Online Portal (POP)",
+  "portalUrl": "https://www.santaclaraca.gov/permits",
+  "climateZone": "4",
+  "fhsz": false,
+  "coastalZone": false,
+  "electricUtility": "Silicon Valley Power (SVP) — city-owned municipal utility, NOT PG&E",
+  "suggestedQuestions": [
+    "What are the ADU size and setback rules in Santa Clara?",
+    "Does Santa Clara allow gas appliances in new construction?",
+    "What are the EV charging requirements for new homes in Santa Clara?",
+    "How do I submit a permit through the Santa Clara POP portal?",
+    "Does Santa Clara use SolarAPP+ for solar permits?",
+    "What are the SVP interconnection requirements for solar in Santa Clara?",
+    "Is my Santa Clara property in a fire hazard zone?",
+    "What is Santa Clara's Simple Permit pathway and what qualifies?"
+  ]
+}

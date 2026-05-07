@@ -1,0 +1,21 @@
+{
+  "name": "blue-lake",
+  "description": "Plan-check skills for Blue Lake, CA — simple permits with BLMC local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/blue-lake",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "blue-lake",
+    "plan-check",
+    "permits",
+    "humboldt-county",
+    "blue",
+    "lake"
+  ]
+}

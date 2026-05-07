@@ -1,0 +1,21 @@
+{
+  "displayName": "Patterson",
+  "ordinanceLabel": "Patterson Municipal Code · Code Publishing Co. · Fire Ord. 885 (2025)",
+  "codePrefix": "PMC",
+  "fireAgency": "Patterson Fire Department / West Stanislaus County Fire Protection District",
+  "portal": "counter",
+  "portalUrl": "https://www.pattersonca.gov/280/Building-Permits-Applications",
+  "electricUtility": "PG&E",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Patterson/",
+  "wuiCoverage": "partial",
+  "county": "Stanislaus",
+  "suggestedQuestions": [
+    "Does my property fall in Patterson's fire hazard severity zone (FHSZ)?",
+    "What are the ADU rules in Patterson?",
+    "How do I submit a permit application to the City of Patterson?",
+    "Is my project in Patterson's high-density residential zone?",
+    "What utility serves Patterson for electrical permits?",
+    "Are WUI construction requirements required for my property?"
+  ]
+}

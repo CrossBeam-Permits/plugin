@@ -1,0 +1,24 @@
+{
+  "displayName": "Belvedere/Tiburon",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments: Belvedere BMC Title 16; Tiburon TMC Chapter 13/13A",
+  "codePrefix": "BMC/TMC",
+  "fireAgency": "TFPD",
+  "portalName": "Tiburon eTRAKiT / Belvedere Counter",
+  "portalUrl": "https://trakit.townoftiburon.org/eTRAKiT/",
+  "planCheckContractor": null,
+  "climateZone": "3",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "closedFridays": true,
+  "suggestedQuestions": [
+    "What are the ADU size limits in Tiburon?",
+    "Does Belvedere require Design Review for exterior changes?",
+    "What is the fire sprinkler threshold for new homes in Belvedere?",
+    "Does Tiburon have an electrification reach code?",
+    "Do I need a BCDC permit for a bay-fronting property in Tiburon or Belvedere?",
+    "Who handles fire plan check in Belvedere and Tiburon?",
+    "What are the counter hours for the Tiburon Building Division?",
+    "Is Belvedere or Tiburon in a Fire Hazard Severity Zone?"
+  ]
+}

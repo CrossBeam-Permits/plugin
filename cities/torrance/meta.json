@@ -1,0 +1,42 @@
+{
+  "city": "Torrance",
+  "slug": "torrance",
+  "county": "Los Angeles",
+  "state": "CA",
+  "population": 147478,
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Torrance/",
+  "muniCodeCurrentThrough": "Ordinance 3963, January 13, 2026",
+  "law_as_of": "2026-01-01",
+  "permitTypes": [
+    "single-family-residential",
+    "residential-addition",
+    "adu",
+    "multi-unit-residential",
+    "restaurant-ti"
+  ],
+  "buildingDepartment": {
+    "name": "City of Torrance Building & Safety Division",
+    "address": "3031 Torrance Blvd., Torrance, CA 90503",
+    "phone": "(310) 328-5310",
+    "aduPhone": "(310) 618-5910",
+    "hours": "Mon–Thu 8am–5pm; every other Friday",
+    "portal": "https://www.torranceca.gov/our-city/community-development/online-permit-portal/building-and-safety",
+    "digitalSubmittal": true,
+    "digitalSubmittalNote": "Fully electronic only (effective January 5, 2026 — paper plans no longer accepted)"
+  },
+  "fireAgency": {
+    "name": "Torrance Fire Department — Community Risk Reduction Division",
+    "phone": "(310) 618-2973",
+    "planCheckTurnaround": "3–4 weeks",
+    "planCheckUrl": "https://www.torranceca.gov/government/fire/community-risk-reduction-division/plan-check"
+  },
+  "seismicDesignCategory": "D0/D1/D2",
+  "coastalZone": true,
+  "lcp": "none",
+  "wuiCoverage": "partial",
+  "permitExpiration": {
+    "commenceWithin": "180 days",
+    "completeWithin": "3 years"
+  }
+}

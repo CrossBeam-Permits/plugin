@@ -1,0 +1,21 @@
+{
+  "displayName": "Cypress",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Cypress Municipal Code",
+  "codePrefix": "CMC",
+  "fireAgency": "OCFA",
+  "portalUrl": "https://www.cypressca.org/departments/community-development/building-division",
+  "climateZone": "8",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Cypress?",
+    "Do I need a permit for a fence in Cypress?",
+    "What are the setback requirements in Cypress?",
+    "How do I apply for a solar permit in Cypress?",
+    "Does Cypress use SolarAPP+ for solar permits?",
+    "What are the EV charger permit requirements in Cypress?",
+    "What roof materials are required in Cypress?",
+    "What are the retaining wall rules in Cypress?"
+  ]
+}

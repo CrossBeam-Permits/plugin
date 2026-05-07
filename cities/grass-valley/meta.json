@@ -1,0 +1,22 @@
+{
+  "displayName": "Grass Valley",
+  "ordinanceLabel": "2025 California Building Standards Code · Grass Valley Municipal Code (Municode) · Title 15 Buildings & Construction · Title 17 Development Code",
+  "codePrefix": "GVMC",
+  "fireAgency": "Grass Valley Fire Department (GVFD) · 125 E. Main St., Grass Valley, CA 95945 · JOA with NCCFD and Nevada City FD",
+  "portalName": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/grassvalley/default.aspx",
+  "climateZone": "11",
+  "fhsz": true,
+  "fhszCoverage": "partial",
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "Is my Grass Valley property in a Fire Hazard Severity Zone?",
+    "What WUI / ignition-resistant construction requirements apply to my Grass Valley project?",
+    "What are the ADU rules in Grass Valley?",
+    "How do I submit a building permit in Grass Valley through Accela?",
+    "Does Grass Valley have fire sprinkler requirements beyond state minimums?",
+    "What are the multi-family zoning options in Grass Valley (R-2A, R-3, SP)?",
+    "How does SB10 apply to the Town Core zone in Grass Valley?",
+    "What plan check fees does Grass Valley charge for residential projects?"
+  ]
+}

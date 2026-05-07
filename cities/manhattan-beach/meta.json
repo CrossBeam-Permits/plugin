@@ -1,0 +1,14 @@
+{
+  "displayName": "Manhattan Beach",
+  "ordinanceLabel": "MBMC Title 9 Building Regulations · LCP Certified 1994",
+  "codePrefix": "MBMC",
+  "fireAgency": "Manhattan Beach Fire Department (MBFD)",
+  "suggestedQuestions": [
+    "Does my project need a Coastal Development Permit?",
+    "What are the ADU setback and height limits in Manhattan Beach?",
+    "Do I need fire sprinklers for a new single-family home?",
+    "What permits are required for a second-story addition in the coastal zone?",
+    "What are the sign regulations in the downtown CD-CZ district?",
+    "How do I submit a CDP concurrent with my building permit?"
+  ]
+}

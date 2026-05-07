@@ -1,0 +1,16 @@
+{
+  "displayName": "Palo Alto",
+  "ordinanceLabel": "Palo Alto Municipal Code · American Legal · Title 16 (Building) · Title 18 (Zoning) · Ord. 5627 (Energy, eff. Oct 4, 2024)",
+  "codePrefix": "PAMC",
+  "fireAgency": "Palo Alto Fire Department (PAFD) — Fire Prevention Bureau · City fire department (NOT Santa Clara County Fire) · Apply via Accela ACA · firepermits@cityofpaloalto.org · (650) 329-2981 · Fire plan check: 8% of permit fee (SFR), 40% (MF/commercial) · Express fire check: $481",
+  "utility": "City of Palo Alto Utilities (CPAU) — city-owned municipal utility, NOT PG&E · Engineering: (650) 566-4500 · 1007 Elwell Court, Palo Alto, CA 94303 · NEM 2 (not NEM 3.0 — exempt from CPUC) · CPAU pre-approval required BEFORE building permit for solar/ESS · Building Inspector grants PTO at final inspection",
+  "suggestedQuestions": [
+    "What are the ADU rules in Palo Alto?",
+    "Does Palo Alto require CPAU pre-approval before a solar building permit?",
+    "What is the 'One Margin' energy reach code in Palo Alto?",
+    "Is my Palo Alto property in a wildfire/WUI zone?",
+    "Does Palo Alto require a Green Building Special Inspector?",
+    "What is the fence height limit in Palo Alto?",
+    "Does Palo Alto have an all-electric mandate for new construction?"
+  ]
+}

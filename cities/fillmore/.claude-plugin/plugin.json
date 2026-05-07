@@ -1,0 +1,19 @@
+{
+  "name": "fillmore",
+  "description": "Plan-check skills for Fillmore, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/fillmore",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "fillmore",
+    "plan-check",
+    "permits",
+    "ventura-county"
+  ]
+}

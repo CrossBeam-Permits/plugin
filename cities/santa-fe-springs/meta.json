@@ -1,0 +1,49 @@
+{
+  "city": "Santa Fe Springs",
+  "slug": "santa-fe-springs",
+  "state": "CA",
+  "county": "Los Angeles",
+  "population": 17000,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/santa_fe_springs/codes/code_of_ordinances",
+  "buildingDept": {
+    "name": "City of Santa Fe Springs Building & Safety Division",
+    "phone": "(562) 868-0511 ext. 7560",
+    "url": "https://www.santafesprings.gov/departments/planning_and_development_department/building/index.php"
+  },
+  "fireAgency": {
+    "name": "City of Santa Fe Springs Department of Fire-Rescue",
+    "type": "city-own",
+    "email": "Fire@santafesprings.gov"
+  },
+  "wuiApplicable": false,
+  "solarAppActive": true,
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "panel-upgrade",
+    "water-heater",
+    "hvac",
+    "reroof",
+    "window-replacement",
+    "patio-cover",
+    "swimming-pool",
+    "block-wall",
+    "fence",
+    "sign",
+    "repipe",
+    "kitchen-bath-remodel",
+    "retaining-wall",
+    "deck-patio-repair",
+    "rewire",
+    "siding-replacement",
+    "temporary-power",
+    "ltia-demolition"
+  ],
+  "generatedAt": "2026-04-16T00:00:00Z"
+}

@@ -1,0 +1,22 @@
+{
+  "displayName": "Walnut",
+  "slug": "walnut",
+  "county": "Los Angeles County",
+  "ordinanceLabel": "Walnut Municipal Code · eCode360 (WA5028) — through Ord. 25-05 (Oct. 8, 2025)",
+  "codePrefix": "WMC",
+  "fireAgency": "Los Angeles County Fire Department (LACoFD — contract city)",
+  "firePortal": "EPIC-LA — https://epicla.lacounty.gov",
+  "buildingCodeModel": "LA County Title 26 (2021 IBC / 2023 LA County BC) adopted by reference",
+  "permitPortal": null,
+  "permitPortalNote": "No online portal. In-person counter only at City Hall — 21201 La Puente Road, Walnut, CA 91789. Mon–Thu 7am–6pm (4/10, closed Fridays).",
+  "wuiCoverage": "partial",
+  "wuiOrdinance": "Ord. 25-03 (June 11, 2025) — CalFire LRA FHSZ map adopted",
+  "suggestedQuestions": [
+    "Is my parcel in a Fire Hazard Severity Zone — do WUI building standards apply?",
+    "Does Walnut have an ADU pre-approved plan program?",
+    "What are the fence height limits in Walnut?",
+    "What pool safety enclosure requirements apply in Walnut?",
+    "How do I submit plans — is there an online portal?",
+    "Does Walnut require a Fuel Modification Plan for my project?"
+  ]
+}

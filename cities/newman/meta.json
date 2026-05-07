@@ -1,0 +1,21 @@
+{
+  "displayName": "Newman",
+  "ordinanceLabel": "NMC — Newman Municipal Code (eCode360 NE4557)",
+  "codePrefix": "NMC",
+  "fireAgency": "Newman Fire Department (city-operated)",
+  "portal": "None — in-person or email only",
+  "portalUrl": null,
+  "solarPortal": "Symbium",
+  "solarPortalUrl": "https://symbium.com/instantpermitting",
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "City of Newman Public Works",
+  "suggestedQuestions": [
+    "What are the setback requirements for a detached ADU in Newman?",
+    "How do I get an instant solar permit in Newman?",
+    "What is the fence height limit in my front yard?",
+    "What are the development impact fees for a new home in Newman?",
+    "Does Newman allow salt-based water softeners?",
+    "What permits can I submit by email vs. in-person only?"
+  ]
+}

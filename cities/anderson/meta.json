@@ -1,0 +1,23 @@
+{
+  "displayName": "City of Anderson",
+  "ordinanceLabel": "Anderson Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "AMC",
+  "fireAgency": "Anderson Fire Department",
+  "portal": "iWorQ",
+  "portalUrl": "https://andersonca.portal.iworq.net/portalhome/anderson",
+  "solarPortalUrl": "https://andersonca.portal.iworq.net/portalhome/anderson",
+  "solarAppPlus": true,
+  "electricUtility": "PG&E",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/anderson/codes/code_of_ordinances",
+  "wuiCoverage": "partial",
+  "county": "Shasta",
+  "suggestedQuestions": [
+    "Does my parcel fall within a Fire Hazard Severity Zone in Anderson?",
+    "Can I use SolarAPP+ for my residential solar permit in Anderson?",
+    "What are the ADU setback and height rules for Anderson?",
+    "Where do I submit a building permit application in Anderson?",
+    "What are Anderson's building department hours and contact information?",
+    "Are there local building code amendments beyond the California state code?"
+  ]
+}

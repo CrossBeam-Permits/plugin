@@ -1,0 +1,49 @@
+{
+  "name": "mountain-house",
+  "displayName": "City of Mountain House",
+  "state": "CA",
+  "county": "San Joaquin",
+  "population": 25000,
+  "timezone": "America/Los_Angeles",
+  "climateZone": 12,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/city_of_mountain_house/codes/code_of_ordinances",
+  "buildingPortal": "GreenVue",
+  "buildingPortalUrl": "https://greenvue.csgengr.com/mountainhouse/public/PermitLogin.aspx",
+  "buildingDept": {
+    "name": "Community Development Department — Building Division",
+    "address": "251 E. Main Street, Mountain House, CA 95391",
+    "phone": "209-831-5037",
+    "email": "mhbuilding@sjgov.org",
+    "hours": "Mon–Fri 8am–5pm (closed noon–1pm)"
+  },
+  "fireAgency": {
+    "name": "French Camp McKinley Fire District",
+    "website": "https://www.frenchcampfire.com/mountain-house-fire-department"
+  },
+  "fhsz": false,
+  "coastal": false,
+  "onboardedPermitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "solar",
+    "water-heater",
+    "hvac",
+    "swimming-pool",
+    "reroof",
+    "ev-charger",
+    "panel-upgrade",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "patio-cover",
+    "fence",
+    "retaining-wall",
+    "block-wall",
+    "restaurant-ti",
+    "siding-replacement",
+    "sign",
+    "deck-patio-repair"
+  ]
+}

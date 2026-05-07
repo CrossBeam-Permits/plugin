@@ -1,0 +1,18 @@
+{
+  "displayName": "Milpitas",
+  "ordinanceLabel": "Ord. 65.155 (2025 CBC adoption) | Ord. 65.144 (Streamlined Solar) | All-Electric Mandate (City Council Jan 17, 2023)",
+  "codePrefix": "MMC",
+  "fireAgency": "Milpitas Fire Department — Bureau of Fire Prevention (city-operated, plan check via Building Dept One-Stop Center)",
+  "portal": "One-Stop Permit Center",
+  "portalUrl": "https://www.milpitas.gov/183/Building-Safety",
+  "electricUtility": "PG&E (distribution) / Silicon Valley Clean Energy (SVCE, supply)",
+  "gasUtility": "PG&E (distribution — no new gas connections for new construction)",
+  "suggestedQuestions": [
+    "Does Milpitas require all-electric construction for new homes?",
+    "What are the ADU setback requirements in Milpitas?",
+    "Is there a permit fee waiver for ADUs in Milpitas?",
+    "Does Milpitas have any wildfire or FHSZ requirements?",
+    "How do I get a streamlined solar permit in Milpitas?",
+    "Who handles food facility plan checks in Milpitas?"
+  ]
+}

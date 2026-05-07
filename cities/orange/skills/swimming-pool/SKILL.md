@@ -1,0 +1,184 @@
+---
+description: "Swimming Pool permits in Orange, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orange local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Orange."
+version: "1.0"
+source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
+authority: "California Building Standards Commission"
+law_as_of: "January 1, 2025"
+---
+
+# Orange — Swimming Pool Permit
+
+Handles swimming pool permits in Orange end-to-end.
+
+**First thing in every conversation:** ask which mode the user is in.
+
+> "Are you (A) planning to file a swimming pool permit, or (B) a city reviewer checking a submitted one?"
+
+- Mode A → walk **Builder / Homeowner Intake** below
+- Mode B → walk **City Reviewer Checklist** below
+
+Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+
+---
+
+## City Info
+
+| | |
+|---|---|
+| Permit portal | https://epermit.cityoforange.org/etrakit3/ |
+| Municipal code | https://ecode360.com/OR5214 |
+| Fire agency | Orange Fire Department |
+| Code edition | 2025 CBC/CRC · ecode360 OR5214 · Current through Ord. 19-25 (Dec 2025) |
+| Code prefix | OMC |
+
+---
+
+## Key Orange deltas vs state baseline
+
+City-specific checks layered on top of state code. Each is tagged `[OMC]` in the checklist below.
+
+- **1** Portal submittal — **flag**
+- **2** R-1 setbacks — pool structure — **flag**
+- **3** SDC D structural calcs — **flag**
+- **4** Pool barrier — 60-inch minimum — **flag**
+- **5** Gate requirements — **flag**
+- **6** Pool alarm — **flag**
+- **7** Water fill — City of Orange Public Utilities — **flag**
+- **8** Pool discharge — sanitary sewer — **flag**
+- **9** CEC 680 bonding and grounding — **flag**
+- **10** GFCI protection — **flag**
+- **11** Anti-entrapment drain covers — **flag**
+- **12** Contractor license — C-53 — **flag**
+- **13** Fire jurisdiction — Orange Fire Department — **flag**
+- **14** Historic District — Old Towne — **flag**
+- **15** FHSZ / WUI — eastern parcels — **flag**
+- **16** Grading / excavation permit — **flag**
+
+---
+
+## MODE A — Builder / Homeowner Intake
+
+### A1. Intake
+
+Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+
+### A2. Pre-submission Compliance Check
+
+Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+- **FAIL** → tell the user the specific change needed before they submit
+- **FLAG** → tell them what additional info or documentation they need to gather
+- **PASS** → confirm, move on
+
+### A3. Submission Guide
+
+When compliance is clean (or flag-only), produce a submission guide:
+
+```
+## Ready to Submit — Orange Swimming Pool Permit
+
+**Portal:** https://epermit.cityoforange.org/etrakit3/
+**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+
+### Required uploads
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+
+### Inspection sequence
+[Generated per skill — standard inspection milestones]
+```
+
+### A4. Optional — portal automation
+
+If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+
+---
+
+## MODE B — City Reviewer
+
+### Procedure
+
+1. Accept submitted form data (JSON, PDF, photos, or pasted text)
+2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Plan-Check Checklist below in order
+4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+
+### Output format
+
+```
+PLAN CHECK — {address} ({permit})
+
+❌ CORRECTIONS REQUIRED (N)
+   [plan-check severity=fail items that are not satisfied]
+
+⚠️ VERIFY BEFORE ISSUANCE (N)
+   [plan-check severity=flag items needing documentation or clarification]
+
+ℹ️ LOCAL FLAGS (N) — city discretion
+   [OMC-specific flag items — parcel overlays, city-specific checks]
+
+✓ {N} checks PASS (expand for detail)
+
+➡ {N} checks deferred to inspection
+
+—
+Generated by CrossBeam Permits · crossbeam-permits.com
+```
+
+Summary verdict at the end: **APPROVE** | **CORRECTIONS REQUIRED** | **NEED ADDITIONAL INFO**
+
+Do not list inspection items as corrections. Do not enumerate every passing item unless the user asks. Respect the plan checker's time.
+
+---
+
+## Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+
+| # | Check | Severity | What to verify | Code |
+|---|---|---|---|---|
+| 1 | **Site plan complete?** | ⚠️ **flag** | Property lines, all structures with dimensions and setbacks, proposed pool location, easements, driveways, fencing locations with heights, utility locations, north arrow, scale | CBC 107.2 |
+| 2 | **Pool/spa plan details?** | ⚠️ **flag** | Structural details, dimensions, material specifications, cross-sections showing existing slopes and retaining walls to 5 ft beyond property lines | CBC 3109, 107.2 |
+| 3 | **Structural calculations?** | ❌ **fail** | Required if non-standard plan. Standard plans (where approved by jurisdiction) may be exempt. | CBC 1901, 3109 |
+| 4 | **Slope setback adequate?** | ❌ **fail** | Pool-to-slope setback = half the building footing setback distance. Pool wall within 7 ft horizontal of slope top must support water without soil support. Soil report required if pool is within 15 ft of slope top or 8 ft of slope toe (slope steeper than 1:3). | CBC 1808.7.3 |
+| 5 | **Concrete/shotcrete specs?** | ❌ **fail** | Min f'c = 4,500 psi 28-day, Type V cement (sulfate-resistant), max w/c ratio = 0.45 per ACI 318. Special inspection required for gunite/shotcrete per CBC 1705.3, 1908. | CBC Ch. 19, ACI 318 |
+| 6 | **Soil report provided (if required)?** | ❌ **fail** | Required when pool is near slopes (see item 4). Geotechnical memo confirming excavation suitability required before steel inspection. | CBC 1803.2 |
+| 7 | **Barrier/enclosure compliant?** | ❌ **fail** | Min 60" high, max 2" ground clearance, no 4" sphere passage, no climbable features, gates self-closing/self-latching with latch at min 60" above ground, gates swing away from pool | HS Code 115923, CRC App. CI |
+| 8 | **Drowning prevention features (2-of-7)?** | ❌ **fail** | Two different qualifying features from seven options. Certain combinations prohibited (e.g., exit alarm + door latch on same door, pool cover + pool alarm). | HS Code 115922 |
+| 9 | **Safety glazing near pool?** | ❌ **fail** | Required for glazing within 60" above standing surface and within 60" horizontal of water's edge | CRC R324.4.5 |
+| 10 | **Equipotential bonding grid?** | ❌ **fail** | Pool shell rebar bonded, perimeter surfaces bonded within 3 ft of pool edge, all metallic components bonded. Bonding to perimeter at min 4 points uniformly spaced. Conductor: min #8 AWG solid copper. | CEC 680.26 |
+| 11 | **GFCI protection adequate?** | ❌ **fail** | All 125V receptacles within 20 ft of pool edge GFCI-protected. Receptacle required 6-20 ft from pool edge. No receptacles within 6 ft. | CEC 680.22 |
+| 12 | **Underwater lighting compliant?** | ❌ **fail** | Wet-niche fixtures: GFCI-protected, max 150V, forming shell grounded to equipment grounding conductor. Low-voltage (15V or less) listed LED fixtures permitted. | CEC 680.23 |
+| 13 | **Pool pump/motor wiring?** | ❌ **fail** | Disconnect within sight and min 5 ft from pool edge. Motors GFCI-protected per 680.21(C). Wiring methods suitable for corrosive environments. No aluminum conduit. | CEC 680.21, 680.13, 680.14 |
+| 14 | **Pool heater compliant?** | ❌ **fail** | Gas: installed per CPC, manufacturer instructions, Energy Code 110.4 certification. Electric: proper circuit sizing, disconnect. Cover required if outdoor heat pump or gas heater (Cal Energy Code 110.4). | CPC, CEC 680.9 |
+| 15 | **Suction outlets anti-entrapment?** | ❌ **fail** | Min 2 suction outlets per pump, hydraulically balanced, min 3 ft apart. Anti-entrapment grates per ANSI/APSP-16, removable only with tools. | HS Code 115928 |
+| 16 | **Drain system adequate?** | ❌ **fail** | Two return drains required -- one at bottom, one at side 2" within bottom, min 4 ft apart, with anti-vortex covers. | HS Code 115928, CPC |
+| 17 | **Plumbing/filtration per code?** | ❌ **fail** | Water supply with backflow prevention, filtration system, water heater piping per CPC. All drains/grates/skimmer covers approved before installation. | CPC Ch. 7, 12 |
+| 18 | **Drainage/grading adequate?** | ⚠️ **flag** | Deck and surrounding grade slope minimum 2% away from structures. Pool drainage does not increase runoff to neighboring properties. | CBC 1804.4 |
+| 19 | **Erosion/sediment control?** | ⚠️ **flag** | Erosion and sediment control plan required. BMP measures during construction. NPDES compliance for dewatering. | CBC 3304.1.5 |
+| 20 | **Equipment listing?** | ❌ **fail** | All pool equipment (pump, filter, heater, lighting, GFCI devices) listed and installed per manufacturer instructions. | CEC 110.3(B), CBC 3109 |
+| 1 | **Portal submittal** `[OMC]` | ⚠️ **flag** | All permit applications submitted online via **Maintstar eTRAKiT** at https://epermit.cityoforange.org/etrakit3/ — no walk-in applications for pool permits | City policy |
+| 2 | **R-1 setbacks — pool structure** `[OMC]` | ⚠️ **flag** | Pool water's edge and equipment must comply with R-1 zone setbacks per Title 17. **ecode360.com/OR5214 is WAF-blocked — specific Orange pool setback values NOT confirmed via automated scrape.** Typical OC city values: **5 ft side/rear, 20 ft front** — verify with Orange Planning Division at (714) 744-7220 before finalizing site plan | Title 17 (ecode360 WAF-blocked); typical OC practice |
+| 3 | **SDC D structural calcs** `[OMC]` | ⚠️ **flag** | Pool is in **Seismic Design Category D** — structural calculations required for gunite/shotcrete shell; licensed structural engineer stamp required; special inspection required per CBC 1705.3 / 1908 | CBC 2025 / CRC 2025; SDC D |
+| 4 | **Pool barrier — 60-inch minimum** `[OMC]` | ⚠️ **flag** | Pool must be fully enclosed with a barrier meeting minimum **60-inch height** measured from outside grade before pool use; no openings allowing passage of a 4-inch sphere; max 2-inch ground clearance | CA H&S Code §115923; CRC App. CI |
+| 5 | **Gate requirements** `[OMC]` | ⚠️ **flag** | All pool enclosure gates must be **self-closing, self-latching**; latch mechanism positioned on pool side and at minimum **60 inches above grade** (or shielded if lower); gate must swing away from pool | CA H&S Code §115923; CRC R326 |
+| 6 | **Pool alarm** `[OMC]` | ⚠️ **flag** | **Pool alarm** detecting unauthorized entry into water required as one of the two-of-seven drowning prevention features if selected — must meet ASTM F2208, independently certified; alarm must be audible inside dwelling | CA H&S Code §115923 |
+| 7 | **Water fill — City of Orange Public Utilities** `[OMC]` | ⚠️ **flag** | Water service is **City of Orange Public Utilities** (city-operated, not GSWC or private). Residential pool fill is typically through residential hose bib; no special fill permit required for standard-size residential pool. **For large-volume fills** (commercial, multi-unit pool, or oversized residential pool), contact Public Utilities at (714) 744-5560 to confirm fill approach, meter size, and any coordination requirements | City of Orange Public Utilities |
+| 8 | **Pool discharge — sanitary sewer** `[OMC]` | ⚠️ **flag** | Pool backwash and drain water must be discharged to the **sanitary sewer system** — not to street, gutter, or storm drain. City of Orange Public Works manages sewer. Confirm discharge point on plumbing plans. | City of Orange Public Works; NPDES stormwater requirements |
+| 9 | **CEC 680 bonding and grounding** `[OMC]` | ⚠️ **flag** | Equipotential bonding grid required for all metallic parts of pool structure and equipment; bonding conductor min **#8 AWG solid copper**, connecting pool shell rebar and all metallic components; grounding per CEC 680.26 | CEC 2025 Art. 680.26 |
+| 10 | **GFCI protection** `[OMC]` | ⚠️ **flag** | GFCI required for all 125V receptacles within 20 ft of pool edge; pool pump motors GFCI-protected; underwater lighting GFCI-protected per CEC 680.22–680.23 | CEC 2025 Art. 680 |
+| 11 | **Anti-entrapment drain covers** `[OMC]` | ⚠️ **flag** | Drain covers must meet **ANSI/APSP-16** and federal Virginia Graeme Baker Pool & Spa Safety Act (VGBA) — dual suction outlets, min 3 ft apart, hydraulically balanced, anti-vortex covers | CA H&S Code §115928; VGBA (federal) |
+| 12 | **Contractor license — C-53** `[OMC]` | ⚠️ **flag** | **C-53 (Swimming Pool and Hot Tub)** contractor required; verify current CSLB license; City of Orange business license required | CSLB; City requirement |
+| 13 | **Fire jurisdiction — Orange Fire Department** `[OMC]` | ⚠️ **flag** | **Orange Fire Department** (city-operated, NOT OCFA). Fire plan review not typically required for standard residential pool; verify with Building if project includes pool house, cabana, or new structure. Contact: (714) 744-5566 | City fire dept.; 2025 CFC with city local amendments |
+| 14 | **Historic District — Old Towne** `[OMC]` | ⚠️ **flag** | If project address is within **Old Towne Orange Historic District** (~1 sq mile near traffic circle): DRC review may be required for any exterior changes including fencing/barrier visible from street. Confirm with Planning Division | City historic overlay; Secretary of Interior Standards |
+| 15 | **FHSZ / WUI — eastern parcels** `[OMC]` | ⚠️ **flag** | Eastern hillside portions of Orange are in Fire Hazard Severity Zone (FHSZ). Pool equipment screening, landscape, and adjacent structures may have stricter requirements. Verify parcel-level fire zone at cal-fire.ca.gov or with Orange Fire Department | 2025 CFC; FHSZ designation |
+| 16 | **Grading / excavation permit** `[OMC]` | ⚠️ **flag** | Significant pool excavation may trigger a separate grading permit under city grading ordinance. Confirm with Public Works (714) 744-5560 if excavation exceeds standard thresholds | City grading ordinance; CBC 3304 |
+
+---
+
+## References
+
+Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/swimming-pool/`. City overlay source: `skills/cities/orange/swimming-pool/`.
+
+---
+
+*Generated by CrossBeam Permits · crossbeam-permits.com · © Onboard Dot AI LLC · Apache-2.0*
+*Informational use only; not legal advice; jurisdiction governs.*

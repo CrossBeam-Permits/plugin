@@ -1,0 +1,18 @@
+{
+  "displayName": "Morgan Hill",
+  "ordinanceLabel": "MHMC Title 15 (Building) | Title 18 Zoning | Ch. 18.84 (ADU) | Ord. 2306 (Reach Code — contested)",
+  "codePrefix": "MHMC",
+  "fireAgency": "Morgan Hill Fire Department — Building & Fire Prevention Division (city-integrated; permits@morganhill.ca.gov; 408-310-4654)",
+  "portal": "eTRAKiT (CentralSquare)",
+  "portalUrl": "https://morg-trk.aspgov.com/eTRAKiT/Search/permit.aspx",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "gasUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "Is my Morgan Hill property in a fire hazard severity zone?",
+    "Does Morgan Hill require an all-electric build or can I use gas?",
+    "What are the ADU setback and height rules in Morgan Hill?",
+    "Can I get a solar permit instantly through SolarAPP+ in Morgan Hill?",
+    "What documents do I need for a heat pump water heater installation?",
+    "What codes does Morgan Hill enforce for residential construction?"
+  ]
+}

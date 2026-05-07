@@ -1,0 +1,17 @@
+{
+  "displayName": "La Mirada",
+  "ordinanceLabel": "La Mirada Municipal Code | LA County B&S Contract City",
+  "codePrefix": "LMMC",
+  "fireAgency": "Los Angeles County Fire Department (LACoFD)",
+  "portal": "LA County Building & Safety Division (county-contract city — no standalone portal)",
+  "portalUrl": "https://www.cityoflamirada.org/government/departments/community-development",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "What are the ADU setback requirements in La Mirada?",
+    "Does La Mirada have an expedited solar permit path?",
+    "Where do I submit building plans — City Hall or LA County?",
+    "What building codes apply in La Mirada?",
+    "Do I need a fire department plan check for my project?",
+    "What is the maximum fence height in La Mirada?"
+  ]
+}

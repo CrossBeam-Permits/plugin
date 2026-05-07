@@ -1,0 +1,44 @@
+{
+  "city": "Pacific Grove",
+  "slug": "pacific-grove",
+  "state": "CA",
+  "county": "Monterey",
+  "population": 15569,
+  "climateZone": 3,
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/PacificGrove/",
+  "permitPortal": "https://pacificgrove.portal.iworq.net/",
+  "permitPortalPlatform": "iWorQ",
+  "buildingDept": {
+    "name": "City of Pacific Grove Building Division",
+    "address": "300 Forest Avenue, 2nd Floor, Pacific Grove, CA 93950",
+    "phone": "(831) 648-3191",
+    "inspectionsPhone": "(831) 648-3194",
+    "email": "building@cityofpacificgrove.org",
+    "hours": "Monday–Thursday 8am–11:30am and 1pm–4pm; closed Fridays"
+  },
+  "fireAgency": {
+    "name": "Monterey Fire Department",
+    "jurisdiction": "Pacific Grove (merged 2008)",
+    "planCheckEmail": "fireprevention@monterey.gov",
+    "planCheckPhone": "(831) 646-3908",
+    "planCheckPath": "Submit deferred submittal permit + fire sprinkler/alarm plans to fireprevention@monterey.gov. 10–14 business day review.",
+    "notes": "Pacific Grove Fire Department merged into Monterey City FD in December 2008. MFD handles all fire prevention plan review and inspections for Pacific Grove."
+  },
+  "wuiCoverage": "partial",
+  "coastalZone": true,
+  "historicDistrict": true,
+  "adoptedCodes": {
+    "ordinance": "25-019",
+    "effectiveDate": "2026-01-01",
+    "cycle": "2025"
+  },
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "wildfire-wui"
+  ]
+}

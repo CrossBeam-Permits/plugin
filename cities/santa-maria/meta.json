@@ -1,0 +1,43 @@
+{
+  "name": "City of Santa Maria",
+  "slug": "santa-maria",
+  "county": "Santa Barbara County",
+  "state": "CA",
+  "climateZone": "3",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/SA5007",
+  "permitPortal": "eTRAKiT",
+  "permitPortalUrl": "https://sntm-trk.aspgov.com/eTRAKiT/",
+  "fireAgency": {
+    "name": "Santa Maria Fire Department",
+    "type": "city-department",
+    "planCheckPath": "Internal routing through Community Development — do NOT submit separately to SMFD",
+    "contact": "Fire Marshal Jim Austin — jaustin@cityofsantamaria.org — (805) 925-0951 ext. 1578",
+    "localAmendment": "Automatic sprinkler threshold 5,000 sf for Group B (vs CBC 12,000 sf)",
+    "ref": "SMMC Ch. 9-64, eCode360 §43657051"
+  },
+  "wuiCoverage": "partial",
+  "wuiNotes": "Only Moderate FHSZ in two small pockets: (1) NE near Santa Maria River riverbed, (2) SW near Santa Maria Public Airport. No Very High or High FHSZ. Moderate FHSZ does NOT trigger CWUIC construction requirements. Parcel-level verification required.",
+  "localAmendmentOrdinance": "Ordinance 2022-06",
+  "localAmendmentEffective": "2023-01-01",
+  "healthDept": {
+    "name": "Santa Barbara County Environmental Health Services",
+    "address": "2125 S Centerpointe Pkwy, Santa Maria, CA 93455",
+    "phone": "(805) 346-8451",
+    "url": "https://www.countyofsb.org/2226/Environmental-Health-Services",
+    "note": "County health dept handles food facility plan review — not the City"
+  },
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "wildfire-wui",
+    "window-replacement"
+  ],
+  "onboardedAt": "2026-04-16",
+  "version": "1.0"
+}

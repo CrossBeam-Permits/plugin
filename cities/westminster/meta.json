@@ -1,0 +1,19 @@
+{
+  "displayName": "Westminster",
+  "ordinanceLabel": "Ordinance No. 2632 · Effective January 1, 2026",
+  "codePrefix": "WMC",
+  "fireAgency": "OCFA",
+  "portalPlatform": "EnerGov",
+  "portalBrand": "Westminster Build",
+  "climateZone": 8,
+  "isCoastal": false,
+  "muniCodeURL": "https://ecode360.com/WE5033",
+  "suggestedQuestions": [
+    "What are the ADU setback and height rules in Westminster?",
+    "Does Westminster require a Certificate of Occupancy for new SFR?",
+    "How do I submit plans through Westminster Build?",
+    "What are the R1 development standards (setbacks, height, lot coverage)?",
+    "Does Westminster use SolarAPP+ for solar permits?",
+    "What OCFA fees are collected at permit issuance?"
+  ]
+}

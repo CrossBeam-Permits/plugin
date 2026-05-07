@@ -1,0 +1,14 @@
+{
+  "displayName": "Exeter",
+  "ordinanceLabel": "Exeter Municipal Code · Municode · Tulare County Building Dept (contract) · Tulare County Fire Dept (contract) · SJVAPCD",
+  "codePrefix": "EMC",
+  "fireAgency": "Tulare County Fire Department (contract)",
+  "suggestedQuestions": [
+    "What are the ADU rules in Exeter?",
+    "How do I submit a building permit in Exeter?",
+    "Does SJVAPCD Rule 4905 apply to gas water heater replacements in Exeter?",
+    "What utility serves Exeter for solar interconnection?",
+    "Is my property in a fire hazard severity zone in Exeter?",
+    "What zoning district rules apply to my project in Exeter?"
+  ]
+}

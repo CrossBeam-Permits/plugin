@@ -1,0 +1,18 @@
+{
+  "displayName": "Citrus Heights",
+  "ordinanceLabel": "City of Citrus Heights Municipal Code · Municode · Zoning Code Title 106 (July 2025) · Chapter 18 (Building)",
+  "codePrefix": "CHMC",
+  "fireAgency": "Sacramento Metropolitan Fire District (Metro Fire) · (916) 859-4300 · metrofire.ca.gov",
+  "portal": "PermitCity",
+  "portalUrl": "https://citizen.citrusheights.permitcity.com",
+  "electricUtility": "SMUD (Sacramento Municipal Utility District)",
+  "gasUtility": "PG&E",
+  "suggestedQuestions": [
+    "What are the ADU setback rules in Citrus Heights?",
+    "Does my project require Metro Fire plan check?",
+    "What are the fence height limits in Citrus Heights?",
+    "Does Citrus Heights use SolarAPP+ for solar permits?",
+    "What impact fees apply to my ADU or new SFR?",
+    "Is my property in a Fire Hazard Severity Zone in Citrus Heights?"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "displayName": "Rancho Cucamonga",
+  "ordinanceLabel": "Rancho Cucamonga Municipal Code · Title 15 (Building) & Title 17 (Development Code) (ecode360)",
+  "codePrefix": "RCMC",
+  "fireAgency": "Rancho Cucamonga Fire Protection District (RCFD)",
+  "suggestedQuestions": [
+    "Is my property in the Wildland-Urban Interface Fire Area (WUIFA)?",
+    "Does my ADU require fire sprinklers in Rancho Cucamonga?",
+    "Can I use SolarAPP+ for my residential solar permit?",
+    "What are the setback and height limits for a detached ADU in Rancho Cucamonga?",
+    "Does CBC Chapter 7A apply to my project in the foothills area?",
+    "How do I submit plans through the Accela portal?"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "city": "Hanford",
+  "slug": "hanford",
+  "county": "Kings County",
+  "state": "California",
+  "climateZone": 13,
+  "seismicDesignCategory": "D",
+  "windSpeed": "85 mph Exposure C",
+  "frostDepth": "0.0 ft",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/HA4933",
+  "buildingDivision": {
+    "name": "City of Hanford Building Division",
+    "address": "315-321 North Douty Street, Hanford, CA 93230",
+    "phone": "559-585-2580",
+    "inspectionsPhone": "559-537-7980",
+    "email": "permithelp@cityofhanfordca.com",
+    "buildingOfficial": "Mitch Couch",
+    "portal": "https://selfservice.cityofhanfordca.com"
+  },
+  "fireAgency": {
+    "name": "Hanford Fire Department",
+    "address": "350 West Grangeville Boulevard, Hanford, CA 93230",
+    "phone": "559-585-2545",
+    "email": "fireadmin@hanfordca.gov"
+  },
+  "fhsz": false,
+  "coastalZone": false,
+  "aduPreApprovedPlans": true,
+  "solarAppPlus": true,
+  "onboardedPermitTypes": [
+    "adu",
+    "multi-unit-residential",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar",
+    "water-heater"
+  ]
+}

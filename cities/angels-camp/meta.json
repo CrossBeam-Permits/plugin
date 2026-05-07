@@ -1,0 +1,29 @@
+{
+  "displayName": "City of Angels Camp",
+  "ordinanceLabel": "Angels Camp Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "ACMC",
+  "fireAgency": "Angels Camp Fire Department",
+  "fireAgencyType": "city-fire",
+  "responsibilityArea": "LRA",
+  "portal": "iWorQ",
+  "portalUrl": "https://angelscamp2345.portal.iworq.net/portalhome/angelscamp2345",
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "Angels Camp Water Division",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Angels/",
+  "wuiCoverage": "partial",
+  "climateZone": 12,
+  "county": "Calaveras",
+  "population": 3500,
+  "suggestedQuestions": [
+    "Does my parcel fall within a Very High Fire Hazard Severity Zone in Angels Camp?",
+    "Can I build an ADU in a fire hazard zone in Angels Camp?",
+    "What are the ADU setback and height rules for Angels Camp?",
+    "Where do I submit a building permit application in Angels Camp?",
+    "What is the Angels Camp fire department's role in permit review?",
+    "What building codes has Angels Camp adopted?",
+    "What is the permit fee for a solar installation in Angels Camp?"
+  ]
+}

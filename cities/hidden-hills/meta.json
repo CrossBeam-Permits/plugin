@@ -1,0 +1,37 @@
+{
+  "displayName": "Hidden Hills",
+  "slug": "hidden-hills",
+  "county": "Los Angeles County",
+  "state": "CA",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/hidden_hills",
+  "portalUrl": "https://hiddenhills.cts.city",
+  "buildingOfficial": "Dennis Tarango",
+  "fireAgency": "Los Angeles County Fire Department (Station 68)",
+  "electricUtility": "Southern California Edison (SCE)",
+  "gasUtility": "SoCalGas",
+  "waterUtility": "Las Virgenes Municipal Water District",
+  "fhszCoverage": "Moderate, High, and Very High throughout city (2025 CAL FIRE draft maps)",
+  "wuiRisk": "high",
+  "hhcaRequired": true,
+  "hhcaNote": "HHCA Architectural Committee approval required before all building permit applications",
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "restaurant-ti",
+    "solar",
+    "swimming-pool",
+    "ev-charger",
+    "reroof",
+    "wildfire-wui"
+  ],
+  "suggestedQuestions": [
+    "Do I need HHCA approval before applying for a building permit?",
+    "What is the maximum size for an ADU in Hidden Hills?",
+    "Does my project need Chapter 7A fire-resistant construction?",
+    "Can I use wood shingles on my roof in Hidden Hills?",
+    "How do I get gate access for my contractors?",
+    "Does my solar panel installation need HHCA approval?"
+  ]
+}

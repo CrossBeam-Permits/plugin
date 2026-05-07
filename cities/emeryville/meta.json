@@ -1,0 +1,22 @@
+{
+  "displayName": "Emeryville",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Emeryville Municipal Code (Ordinance 22-013)",
+  "codePrefix": "EMC",
+  "fireAgency": "ACFD",
+  "portalName": "Email Submittal",
+  "portalUrl": "mailto:cbarrett@emeryville.org",
+  "climateZone": "3",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Emeryville?",
+    "Does Emeryville require all-electric construction?",
+    "Do I need City Council approval to demolish a building in Emeryville?",
+    "What are the multi-family residential permit requirements in Emeryville?",
+    "Can a restaurant use gas equipment in Emeryville?",
+    "How do I submit plans to Emeryville Building Division?",
+    "What are the reroof requirements in Emeryville?",
+    "Does Emeryville have wildfire construction requirements?"
+  ]
+}

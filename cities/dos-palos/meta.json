@@ -1,0 +1,66 @@
+{
+  "city": "Dos Palos",
+  "slug": "dos-palos",
+  "state": "CA",
+  "county": "Merced",
+  "climateZone": 12,
+  "fhsz": false,
+  "coastal": false,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/DO2597",
+  "buildingDept": {
+    "name": "Unconfirmed — likely Community Development or Public Works",
+    "address": "City Hall, Dos Palos, CA 93620",
+    "phone": "Unconfirmed",
+    "email": "Unconfirmed",
+    "website": "https://cityofdospalos.org (SSL expired April 2026)",
+    "hours": "Unconfirmed",
+    "portal": "None identified — presumed in-person at City Hall"
+  },
+  "fireAgency": {
+    "name": "Merced County Fire Department",
+    "notes": "Pattern-matched from Livingston peer city; unconfirmed — city website SSL expired"
+  },
+  "utilities": {
+    "electric": "PG&E",
+    "gas": "PG&E",
+    "water": "City of Dos Palos Public Works",
+    "sewer": "City of Dos Palos Public Works"
+  },
+  "adoptedCodes": {
+    "status": "unconfirmed",
+    "notes": "ecode360 WAF-blocked, city website SSL expired. Current statewide cycle is 2025 CBC/CRC/CEC/CMC/CPC. Verify with building department at site access."
+  },
+  "onboardedTypes": [
+    "adu",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "residential-addition",
+    "reroof",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater"
+  ],
+  "hasLocalAmendments": [],
+  "stateSkillOnly": [
+    "adu",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "residential-addition",
+    "reroof",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater"
+  ],
+  "lawAsOf": "2026-04-24"
+}

@@ -1,0 +1,23 @@
+{
+  "displayName": "Buellton",
+  "ordinanceLabel": "2025 CBSC statewide — no local amendment ordinance",
+  "codePrefix": "BMC",
+  "fireAgency": "Santa Barbara County Fire Department",
+  "portal": "SB County E-Permit (Accela)",
+  "portalUrl": "https://aca.accela.com/sbcounty/",
+  "electricUtility": "SCE",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/BU4908",
+  "wuiCoverage": "partial",
+  "county": "Santa Barbara",
+  "permitModel": "county-contracted",
+  "permitModelNote": "Buellton contracts all building permit review and inspection to SB County Building and Safety. Most projects require a two-step process: (1) zoning clearance from Buellton Planning, then (2) building permit via SB County Accela portal.",
+  "suggestedQuestions": [
+    "Do I need a city zoning clearance before applying for a building permit in Buellton?",
+    "What permits can I pull directly through SB County without a city clearance?",
+    "Does my property fall in a fire hazard severity zone (FHSZ)?",
+    "What are Buellton's ADU setback and height requirements?",
+    "Which zoning district is my parcel in — RS, RM, CN, or Village Specific Plan?",
+    "How do I submit plans to Santa Barbara County Building and Safety?"
+  ]
+}

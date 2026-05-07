@@ -1,0 +1,21 @@
+{
+  "displayName": "Chula Vista",
+  "ordinanceLabel": "CVMC Title 15 Building · Title 19 Zoning · Title 20 Solar · 2022 CBC · CVMC 19.83 CDP · Gov. Code §65852.2 ADU",
+  "codePrefix": "CVMC",
+  "fireAgency": "Chula Vista Fire Department (CVFD) — city-owned",
+  "muniCodeUrl": "https://chulavista.municipal.codes/CVMC",
+  "permitPortal": "Accela Citizen Access (aca-prod.accela.com/CHULAVISTA)",
+  "planCheck": "City of Chula Vista Development Services Department (DSD)",
+  "climateZone": "7",
+  "seismicDesignCategory": "D",
+  "suggestedQuestions": [
+    "Do I need a Coastal Development Permit for my project in Chula Vista?",
+    "What is the SnapADU pre-approved plans program in Chula Vista?",
+    "What are Chula Vista's Title 20 solar pre-wiring requirements for new construction?",
+    "How does SolarAPP+ work for solar permits in Chula Vista?",
+    "Is my property in a Fire Hazard Severity Zone in Chula Vista?",
+    "What permits are exempt from a building permit in Chula Vista (fences, sheds, patio covers)?",
+    "How do I submit plans through the Chula Vista Accela EPR portal?",
+    "What are the ADU rules in Chula Vista after Ordinance 3592 repealed the local ADU ordinance?"
+  ]
+}

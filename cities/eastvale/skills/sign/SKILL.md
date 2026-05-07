@@ -1,0 +1,179 @@
+---
+description: "Sign permits in Eastvale, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Eastvale local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Eastvale."
+version: "1.0"
+source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
+authority: "California Building Standards Commission"
+law_as_of: "January 1, 2025"
+---
+
+# Eastvale — Sign Permit
+
+Handles sign permits in Eastvale end-to-end.
+
+**First thing in every conversation:** ask which mode the user is in.
+
+> "Are you (A) planning to file a sign permit, or (B) a city reviewer checking a submitted one?"
+
+- Mode A → walk **Builder / Homeowner Intake** below
+- Mode B → walk **City Reviewer Checklist** below
+
+Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+
+---
+
+## City Info
+
+| | |
+|---|---|
+| Permit portal | https://www.eastvaleca.gov/government/community-development-department/building-safety |
+| Municipal code | https://library.municode.com/ca/eastvale/codes/code_of_ordinances |
+| Fire agency | Riverside County Fire / CAL FIRE |
+| Code edition | 2025 California Building Standards Code · Eastvale Municipal Code |
+| Code prefix | EMC |
+
+---
+
+## Key Eastvale deltas vs state baseline
+
+City-specific checks layered on top of state code. Each is tagged `[EMC]` in the checklist below.
+
+- **1** Planning Clearance — Required for Most Commercial Signs — **flag**
+- **2** Zone-Specific Sign Standards — C-1/C-P and C-P-S — **flag**
+- **3** Goodman Commerce Center SP — Sign Standards — **flag**
+- **4** I-15 Corridor SP — Sign Standards — **flag**
+- **5** 99 Ranch / Merge / Campus / Ranch at Archibald & Limonite — Tenant Sign Programs — **flag**
+- **6** Digital / Electronic Message Center (EMC) Signs — **flag**
+- **7** 110 mph Wind — Monument and Pole Sign Foundations — **flag**
+- **8** SDC D — Sign Foundation and Attachment Seismic Design — **flag**
+- **9** No FHSZ — No Fire-Related Sign Restrictions — **flag**
+- **10** CAL FIRE / Riverside County Fire — Not Applicable for Signs — **flag**
+- **11** Contractor Licensing — C-45 Required — **flag**
+- **12** Submittal Process — Building + Planning — **flag**
+
+---
+
+## MODE A — Builder / Homeowner Intake
+
+### A1. Intake
+
+Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+
+### A2. Pre-submission Compliance Check
+
+Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+- **FAIL** → tell the user the specific change needed before they submit
+- **FLAG** → tell them what additional info or documentation they need to gather
+- **PASS** → confirm, move on
+
+### A3. Submission Guide
+
+When compliance is clean (or flag-only), produce a submission guide:
+
+```
+## Ready to Submit — Eastvale Sign Permit
+
+**Portal:** https://www.eastvaleca.gov/government/community-development-department/building-safety
+**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+
+### Required uploads
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+
+### Inspection sequence
+[Generated per skill — standard inspection milestones]
+```
+
+### A4. Optional — portal automation
+
+If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+
+---
+
+## MODE B — City Reviewer
+
+### Procedure
+
+1. Accept submitted form data (JSON, PDF, photos, or pasted text)
+2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Plan-Check Checklist below in order
+4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+
+### Output format
+
+```
+PLAN CHECK — {address} ({permit})
+
+❌ CORRECTIONS REQUIRED (N)
+   [plan-check severity=fail items that are not satisfied]
+
+⚠️ VERIFY BEFORE ISSUANCE (N)
+   [plan-check severity=flag items needing documentation or clarification]
+
+ℹ️ LOCAL FLAGS (N) — city discretion
+   [EMC-specific flag items — parcel overlays, city-specific checks]
+
+✓ {N} checks PASS (expand for detail)
+
+➡ {N} checks deferred to inspection
+
+—
+Generated by CrossBeam Permits · crossbeam-permits.com
+```
+
+Summary verdict at the end: **APPROVE** | **CORRECTIONS REQUIRED** | **NEED ADDITIONAL INFO**
+
+Do not list inspection items as corrections. Do not enumerate every passing item unless the user asks. Respect the plan checker's time.
+
+---
+
+## Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+
+| # | Check | Severity | What to verify | Code |
+|---|---|---|---|---|
+| 1 | **Sign Type Classification** | ❌ **fail** | Classify the sign as wall, projecting, ground/monument, pole, roof, marquee, channel letter, awning, digital/electronic, or portable/temporary. The type determines which CBC Appendix H sections apply and material/height requirements. | H102.1 |
+| 2 | **Permit Exemption Check** | ⚠️ **flag** | Verify whether the sign requires a permit. Exempt: painted nonilluminated signs, temporary sale/rent signs, transportation authority signs, projecting signs <=2.5 sq ft, and changing moveable parts of an approved changeable sign. | H101.2 |
+| 3 | **Location Restrictions** | ❌ **fail** | Sign must not obstruct exit signs, fire escapes, means of egress doors/windows, or required ventilation openings. Must not be attached to a fire escape. Must not prevent free passage on a roof. Must not confuse or interfere with traffic signs/signals. | H101.1, H103.1 |
+| 4 | **Material Compliance** | ❌ **fail** | Verify materials comply with sign type requirements. Wall signs >40 sq ft: noncombustible. Projecting, roof, marquee signs: entirely noncombustible (with exceptions for letters/trim per H107.1 and internally illuminated facings per H106.1.1). Plastics: must pass ASTM D635 (<=2.5 in/min burn rate). Electric sign plastic faces: max 200 sq ft each. | H107, H110.1, H111.1, H112.1, H113.1 |
+| 5 | **Height and Projection Limits** | ❌ **fail** | Verify sign does not exceed height limits for its type. Ground signs: 35 ft (combustible) / 100 ft (noncombustible). Roof signs: 24 ft (solid), 75/40 ft (open by construction type), 50/35 ft (closed). Projecting signs: must not exceed roof/cornice height (limited exception for 18" perpendicular signs). Marquee signs: max 6 ft above, 1 ft below, 8 ft total vertical. | H109.1, H110.3-H110.5, H112.4, H113.3-H113.4 |
+| 6 | **Clearance Requirements** | ❌ **fail** | Ground signs: min 3 ft bottom clearance above grade. Roof signs: min 6 ft between roof and lowest sign part, min 5 ft between supports. Vehicle areas: min 14 ft above grade (CEC 600.9). Pedestrian clearances: per local code (state code sets vehicle height only). | H109.2, H110.1, CEC 600.9(A) |
+| 7 | **Structural — Wind Load Design** `[EMC]` | ❌ **fail** | Signs must be designed for wind loads per CBC Chapter 16 / ASCE 7. Verify wind speed for project location (typically 110-115 mph V for Risk Category II in CA). Freestanding signs: ASCE 7 Section 29.3. Attached signs: components and cladding per Chapter 30. Construction documents must show loads, stresses, and anchors. | H105.3, CBC 1609, ASCE 7 Ch 29 |
+| 8 | **Structural — Seismic Design** `[EMC]` | ⚠️ **flag** | Signs designed for wind are generally deemed adequate for seismic (H105.4), but ASCE 7 Chapter 13 (nonstructural components) and Chapter 15 (nonbuilding structures) may apply. In Seismic Design Categories D-F (most of CA), verify seismic analysis for large or heavy signs. | H105.4, CBC 1613, ASCE 7 Ch 13/15 |
+| 9 | **Structural — Attachment** | ❌ **fail** | Attachment to masonry/concrete/steel: metal anchors, bolts, or expansion screws of sufficient size. Wall signs: min 3/8" diameter, min 5" embedment. No wood block anchorage (except on wood buildings). Projecting signs: no nails/staples, min 3/8" supports, min 5/8" lag screws, turnbuckles required. No anchorage to unbraced parapets. | H105.6, H111.2, H112.1-H112.3 |
+| 10 | **Structural — Foundation (Freestanding)** | ❌ **fail** | For ground/pole signs: verify foundation design per CBC Chapter 18. Must resist overturning from wind and seismic. Wood in ground contact must be pressure treated. Soil bearing analysis required for large signs. | H109.3, CBC Ch 18 |
+| 11 | **Electrical — Branch Circuit** | ❌ **fail** | Each commercial occupancy must have a dedicated 20A branch circuit at each pedestrian entrance for signs. Neon signs: max 30A branch circuit. All other signs: max 20A. Sign loads are continuous loads (125% sizing). | CEC 600.5 |
+| 12 | **Electrical — Disconnect** | ❌ **fail** | Each sign must have an externally operable switch or circuit breaker opening all ungrounded conductors, controlling no other load. Must be accessible. Located at point of entry to sign, within sight of sign, within sight of controller, or at marked remote location. Switch must be rated for inductive loads or 2x transformer/power supply current. | CEC 600.6 |
+| 13 | **Electrical — Grounding & Bonding** | ❌ **fail** | All metal equipment must be grounded via equipment grounding conductor. All metal parts bonded together and to transformer/power supply EGC. Metal building parts shall NOT be used for bonding. Bonding conductors: copper min 14 AWG or copper-clad aluminum min 12 AWG. | CEC 600.7 |
+| 14 | **Electrical — Listing & Labeling** | ❌ **fail** | Electric signs must be listed and labeled (UL 48), with installation instructions, and installed per listing. Field-installed skeleton tubing exempt from listing if installed per CEC. Markings: manufacturer name, input voltage, current rating, visible after installation. | CEC 600.3, 600.4 |
+| 15 | **Electrical — Enclosure** | ❌ **fail** | Live parts (other than lamps/neon tubing) must be enclosed. Enclosures: metal or listed. Min metal thickness: copper/aluminum 0.020", steel 0.016". Metal parts protected from corrosion. | CEC 600.8 |
+| 16 | **Electrical — GFCI** | ❌ **fail** | Portable/mobile signs in wet or damp locations: listed GFCI protection required, integral to attachment plug or within 12" of it. Cords: hard-service type with EGC. | CEC 600.10(C)(2) |
+| 17 | **Electrical — Transformers/Power Supplies** | ❌ **fail** | Must be listed, accessible, securely fastened. Neon transformers: secondary-circuit ground-fault protection required (with exceptions). Max secondary voltage 15,000V. Max secondary current 300 mA. Working space: min 3 ft x 3 ft x 3 ft. Secondary outputs NOT in parallel or series. | CEC 600.21-600.24 |
+| 18 | **Combustible Material Proximity** | ❌ **fail** | Sign must not subject adjacent combustible materials to temperatures >194 deg F. Min 2" spacing between wood/combustibles and incandescent/HID lamps. Internally illuminated signs: 2" min clearance from wiring to facing. Illumination by electrical means only — no open flames. | CEC 600.9(C), H106.1, H106.1.1 |
+| 19 | **Wet Location Compliance** | ❌ **fail** | Exterior signs (wet location): weatherproof or listed watertight. Drain holes: 1/4" to 1/2", at every low point, no obstructions. Transformers/power supplies: weatherproof or outdoor type protected in sign body. | CEC 600.9(D), 600.21(C) |
+| 20 | **Animated/Moving Devices** | ❌ **fail** | Signs with moving sections/ornaments: fail-safe device required to prevent release. Must support full dead weight. Max center-of-gravity shift: 15 inches. Fail-safe independent of operating mechanism. | H108.1 |
+| 21 | **Sign Identification** | ⚠️ **flag** | Outdoor advertising display signs requiring permits must be marked with erector/maintainer name and permit number (or approved ID) on front. | H104.1 |
+| 22 | **Construction Documents** | ⚠️ **flag** | Plans must show dimensions, materials, construction details, loads, stresses, and anchors. For illuminated signs: electrical plan showing branch circuit, disconnect location, transformer/power supply, and wiring methods. | H105.2, CEC 600.5(D) |
+| 23 | **Contractor Licensing** | ❌ **fail** | C-45 (Electrical Sign) license required for installing, altering, or repairing all types of signs. C-10 (Electrical) for electrical wiring to sign. B (General Building) may perform structural work. | B&P Code 7028 |
+| 1 | **Planning Clearance — Required for Most Commercial Signs** `[EMC]` | ⚠️ **flag** | Eastvale's Planning Division requires a planning clearance or sign permit approval from the Planning Division before the Building Division will issue a sign building permit. The planning clearance verifies compliance with the Sign Ordinance (Title 17): maximum sign area per frontage, number of signs per tenant, sign type allowed in the zone, setbacks, and design standards. Submit to Planning first (or concurrently, depending on current process). Contact Planning at (951) 703-4460. | Eastvale Municipal Code Title 17; Sign Ordinance |
+| 2 | **Zone-Specific Sign Standards — C-1/C-P and C-P-S** `[EMC]` | ⚠️ **flag** | Signs in the C-1/C-P (General Commercial) and C-P-S (Specialized Commercial) zones are subject to Eastvale's Sign Ordinance area limits, height limits, and setback requirements. Common limits in similar Riverside County cities: wall signs limited to 1 sq ft per linear foot of building frontage; monument/ground signs max 8 ft height, max 50 sq ft per face; one freestanding sign per street frontage. Verify current limits with Planning at (951) 703-4460 — Eastvale's Sign Ordinance text should be confirmed before advising. | Title 17 (Sign Ordinance); Eastvale Planning Division |
+| 3 | **Goodman Commerce Center SP — Sign Standards** `[EMC]` | ⚠️ **flag** | Signs within the Goodman Commerce Center Specific Plan (SP-GCC) are subject to the specific plan's sign program, which governs industrial/logistics signage for distribution and warehouse facilities. Tenant identification signs, building identification signs, and directional signage must comply with the SP-GCC sign program in addition to Title 17. Obtain the SP-GCC sign program from Planning before designing signs for this area. | SP-GCC Specific Plan; Title 17 |
+| 4 | **I-15 Corridor SP — Sign Standards** `[EMC]` | ⚠️ **flag** | Signs within the SP-I-15-C (I-15 Corridor Specific Plan) are subject to the specific plan's sign program, which may include height bonuses for freeway-visible signs or additional restrictions on sign illumination and design. Verify with Planning at (951) 703-4460. | SP-I-15-C Specific Plan; Title 17 |
+| 5 | **99 Ranch / Merge / Campus / Ranch at Archibald & Limonite — Tenant Sign Programs** `[EMC]` | ⚠️ **flag** | Commercial centers at Archibald & Limonite (99 Ranch, Merge, Campus, The Ranch) operate under approved tenant sign programs established by the center's master sign plan. Individual tenant sign permits must comply with the approved sign program for the center. Obtain the applicable master sign program from the property management or city Planning Division before issuing building permit. | Title 17; approved master sign plan per development |
+| 6 | **Digital / Electronic Message Center (EMC) Signs** `[EMC]` | ⚠️ **flag** | Eastvale's approach to digital/electronic signs (EMCs) is governed by Title 17. Brightness/dimming requirements, hours of operation restrictions, and minimum dwell time for changeable copy may apply. Confirm with Planning Division whether EMC signs are permitted in the applicable zone and what conditions apply before designing an electronic sign. | Title 17 (Sign Ordinance); Eastvale Planning Division |
+| 7 | **110 mph Wind — Monument and Pole Sign Foundations** `[EMC]` | ⚠️ **flag** | Freestanding monument and pole signs must be engineered for 110 mph Vult wind loading at base overturning moment. Foundation design per CBC Chapter 18 must account for full wind load at design speed. For signs in unpaved areas, soil bearing capacity must be specified or assumed conservatively. PE-stamped foundation design required for signs exceeding approximately 32 sq ft in combined face area or 8 ft in height. | CBC H109.3; CBC Ch. 18; ASCE 7-22 §29.3 |
+| 8 | **SDC D — Sign Foundation and Attachment Seismic Design** `[EMC]` | ⚠️ **flag** | In SDC D, sign foundations must be designed for seismic overturning in addition to wind. For pole signs, verify pole base plate anchor bolts are designed for combined seismic and wind load per ASCE 7 Chapter 15. For wall-mounted signs >4 sq ft: verify anchorage to structural substrate (not just veneer or cladding) per CBC H111.2. | CBC 1613; ASCE 7-22 Ch. 13, 15; CBC H105.4 |
+| 9 | **No FHSZ — No Fire-Related Sign Restrictions** `[EMC]` | ⚠️ **flag** | Eastvale has no Fire Hazard Severity Zone. No WUI-specific restrictions on sign materials, placement, or illumination apply. Standard CEC Article 600 electrical requirements and CBC Appendix H material requirements govern. | CITY.md; OSFM FHSZ maps |
+| 10 | **CAL FIRE / Riverside County Fire — Not Applicable for Signs** `[EMC]` | ⚠️ **flag** | Sign permits do not typically require fire plan check. If a sign is attached to a new building that requires fire plan review, the sign may be included in that review scope. Submit fire plans to Riverside County Fire Marshal (rvcfire.org) if required for the broader project. | CITY.md |
+| 11 | **Contractor Licensing — C-45 Required** `[EMC]` | ⚠️ **flag** | Installing, altering, or repairing any sign (illuminated or not) in California requires a C-45 (Electrical Sign) contractor's license. C-10 (Electrical) license required for branch circuit wiring to the sign disconnect. Verify contractor license at CSLB (cslb.ca.gov) before permit issuance. | CA B&P Code § 7028; CSLB |
+| 12 | **Submittal Process — Building + Planning** `[EMC]` | ⚠️ **flag** | Sign permit in Eastvale requires two approvals: (1) Planning clearance from Planning Division (sign program compliance, zone allowance, aesthetics if in specific plan area); (2) Building permit from Building Safety Division (structural, electrical, CBC compliance). Submit to both concurrently or obtain planning clearance first. Contact Building at (951) 703-4450 and Planning at (951) 703-4460. | City of Eastvale Community Development Department |
+
+---
+
+## References
+
+Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/sign/`. City overlay source: `skills/cities/eastvale/sign/`.
+
+---
+
+*Generated by CrossBeam Permits · crossbeam-permits.com · © Onboard Dot AI LLC · Apache-2.0*
+*Informational use only; not legal advice; jurisdiction governs.*

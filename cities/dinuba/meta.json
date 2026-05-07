@@ -1,0 +1,31 @@
+{
+  "displayName": "Dinuba",
+  "ordinanceLabel": "2025 California Building Standards Code (No Local Technical Amendments — DMC Title 14)",
+  "codePrefix": "DMC",
+  "fireAgency": "Dinuba Fire Department",
+  "portalName": "eSuite",
+  "portalUrl": "https://esuite.dinuba.org/eSuite.Permits/",
+  "permitEmail": "permits@dinuba.ca.gov",
+  "planCheckContractor": null,
+  "climateZone": "13",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "closedFridays": false,
+  "airDistrict": "SJVAPCD",
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "solarApp": true,
+  "suggestedQuestions": [
+    "How do I submit a building permit in Dinuba?",
+    "What are the ADU rules in Dinuba?",
+    "Does Dinuba have any local building code amendments?",
+    "How do I get a solar permit in Dinuba?",
+    "Does Dinuba have SolarAPP+?",
+    "What SJVAPCD low-NOx requirements apply to gas water heaters in Dinuba?",
+    "Do I need a permit for a fence in Dinuba?",
+    "Do I need a permit for a pool in Dinuba?",
+    "What are the setback requirements for Dinuba?",
+    "What fire code does Dinuba use?"
+  ]
+}

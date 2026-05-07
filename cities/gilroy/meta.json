@@ -1,0 +1,18 @@
+{
+  "displayName": "Gilroy",
+  "ordinanceLabel": "GCC §30.54 Z25-02 (ADU) | Ord 2025-06 (Building) | Ord 2025-07 (Fire) | Ord 2025-05 (FHSZ)",
+  "codePrefix": "GCC",
+  "fireAgency": "Gilroy Fire Department — Fire Prevention Division (city-integrated, no separate agency submission)",
+  "portal": "GO Permit",
+  "portalUrl": "https://www.cityofgilroy.org/986/GO-Permit",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "gasUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "What are the setback and height requirements for a detached ADU in Gilroy?",
+    "Is my hillside parcel in a WUI fire hazard zone?",
+    "Does Gilroy require a Class A roof for my reroof project?",
+    "What codes does Gilroy enforce for new residential construction?",
+    "How do I submit a permit application through GO Permit?",
+    "What are the multi-family ADU rules for my R-3 property?"
+  ]
+}

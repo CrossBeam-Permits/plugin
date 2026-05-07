@@ -1,0 +1,22 @@
+{
+  "displayName": "Lakeport",
+  "ordinanceLabel": "2022 California Building Standards Code adopted via Ordinance 938 · Lakeport Municipal Code · eCode360 (https://ecode360.com/LA4510) · Chapter 15.04 (Construction Codes) · Title 17 (Zoning)",
+  "codePrefix": "LMC",
+  "fireAgency": "Lakeport Fire Protection District (LFPD) · Independent special district · permits@lakeportfire.com · (707) 263-4396 · 445 N. Main Street, Lakeport · Separate plan check and $2.00/sqft mitigation fee required before city permit issuance",
+  "portalName": "OpenGov",
+  "portalUrl": "https://lakeportca.portal.opengov.com/",
+  "climateZone": "2",
+  "fhsz": "partial",
+  "coastalZone": false,
+  "closedFridays": true,
+  "suggestedQuestions": [
+    "What are the ADU rules in Lakeport?",
+    "Is my Lakeport property in a Fire Hazard Severity Zone?",
+    "Do I need a separate fire district plan check for my Lakeport project?",
+    "How is the Lakeport Fire Protection District mitigation fee calculated?",
+    "What are the building permit submittal hours in Lakeport?",
+    "Can I build a multi-family apartment in Lakeport?",
+    "What does the City of Lakeport require for new single-family home construction?",
+    "How do I submit a residential addition permit in Lakeport?"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "displayName": "Stockton",
+  "ordinanceLabel": "SMC Ch. 15.08 (2025 CBC) · January 1, 2026 | SMC Ch. 15.10 (2022 CRC) · January 1, 2023",
+  "codePrefix": "SMC",
+  "fireAgency": "Stockton Fire Department — Fire Prevention Division",
+  "portal": "Accela (Stockton)",
+  "portalUrl": "https://aca-prod.accela.com/STOCKTON/Default.aspx",
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "Do I need fire sprinklers for my residential addition in Stockton?",
+    "What is the 50% rule for additions requiring sprinklers?",
+    "Can I get an OTC permit for solar or water heater online?",
+    "What are ADU setback requirements in Stockton?",
+    "Does Stockton have pre-approved ADU floor plans?",
+    "What fire alarm requirements apply to my commercial project?"
+  ]
+}

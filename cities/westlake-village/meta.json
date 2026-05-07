@@ -1,0 +1,32 @@
+{
+  "city": "Westlake Village",
+  "slug": "westlake-village",
+  "county": "Los Angeles",
+  "state": "CA",
+  "population": 8500,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/westlake_village/codes/code_of_ordinances",
+  "permitPortal": "https://pw.lacounty.gov/permits/epicla/",
+  "permitPortalName": "EPIC-LA (LA County DPW/BSD)",
+  "buildingDeptPhone": "(818) 880-4150",
+  "planningEmail": "planning@wlv.org",
+  "planningPhone": "(818) 706-1613",
+  "fireAgency": "Los Angeles County Fire Protection District (LACoFD)",
+  "fireStation": "Station 144",
+  "wuiCoverage": "partial",
+  "fhszClassification": "VHFHSZ (LRA) — partial",
+  "contractCity": true,
+  "contractCounty": "Los Angeles",
+  "twoStepWorkflow": true,
+  "zoningClearanceRequired": true,
+  "expressSolarExemptFromZoningClearance": true,
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "wildfire-wui"
+  ],
+  "onboardedAt": "2026-04-15"
+}

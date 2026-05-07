@@ -1,0 +1,19 @@
+{
+  "displayName": "San Marcos",
+  "ordinanceLabel": "SMMC Title 17 Building · Title 20 Zoning · 2025 CBC · Ch. 20.410 ADU",
+  "codePrefix": "SMMC",
+  "fireAgency": "City of San Marcos Fire Department (city-owned)",
+  "muniCodeUrl": "https://library.municode.com/ca/san_marcos/codes/code_of_ordinances",
+  "permitPortal": "Clariti (app.oncamino.com/sanmarcosca/)",
+  "planCheck": "City of San Marcos Building Division (in-house)",
+  "climateZone": "10",
+  "seismicDesignCategory": "D",
+  "suggestedQuestions": [
+    "What is the CFD annexation rule for ADUs over 749 sq ft in San Marcos?",
+    "How does the PRADU pre-approved ADU program work in San Marcos?",
+    "How do I use SolarAPP+ to get a solar permit in San Marcos?",
+    "Is my San Marcos property in a Wildland-Urban Interface (WUI) zone?",
+    "How do I submit a permit through the Clariti portal in San Marcos?",
+    "What are San Marcos's setback and height rules for ADUs?"
+  ]
+}

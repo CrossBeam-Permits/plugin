@@ -1,0 +1,20 @@
+{
+  "displayName": "McFarland",
+  "ordinanceLabel": "Ord. 1-2024 · ADU update; Zoning Ord. 0004-2023",
+  "codePrefix": "McFMC",
+  "fireAgency": "Kern County Fire Department (KCFD)",
+  "portal": "GovWell",
+  "portalUrl": "https://app.govwell.com/mcfarland/267/pick",
+  "buildingServicesProvider": null,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/mcfarland",
+  "wuiCoverage": false,
+  "suggestedQuestions": [
+    "What ADU rules apply in McFarland?",
+    "How do I submit a permit application in McFarland?",
+    "Does McFarland have any local building code amendments?",
+    "What fire department serves McFarland for permit review?",
+    "Is my McFarland property in a wildfire hazard zone?",
+    "What permit types are available through the GovWell portal?"
+  ]
+}

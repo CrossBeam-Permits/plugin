@@ -1,0 +1,20 @@
+{
+  "displayName": "South El Monte",
+  "ordinanceLabel": "SEMC Title 15 (Building, LA County Title 26 by ref) | Title 17 (Zoning) · ecode360 SO5015",
+  "codePrefix": "SEMC",
+  "fireAgency": "Los Angeles County Fire Department",
+  "portal": "Accela",
+  "portalUrl": "https://aca-prod.accela.com/SOELMONTE/Default.aspx",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingDept": "City of South El Monte Building & Safety Division",
+  "buildingDeptNote": "South El Monte operates its own Building & Safety Division. Permits are applied for through the city's Accela portal. Inspections on Monday, Wednesday, and Thursday with 24-hour advance notice required.",
+  "climateZone": "9",
+  "suggestedQuestions": [
+    "How do I apply for a building permit in South El Monte?",
+    "What are the ADU rules in South El Monte?",
+    "What days does South El Monte do inspections?",
+    "Do I need a planning permit for a fence in South El Monte?",
+    "Who handles fire plan check in South El Monte?",
+    "What zones allow multi-family housing in South El Monte?"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "displayName": "Lincoln",
+  "ordinanceLabel": "Lincoln Municipal Code (LMC) | 2025 CBSC in effect",
+  "codePrefix": "LMC",
+  "fireAgency": "Lincoln Fire Department",
+  "portal": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/LINCOLNCA/Default.aspx",
+  "electricUtility": "PG&E",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/lincoln/codes/code_of_ordinances",
+  "wuiCoverage": "partial",
+  "county": "Placer",
+  "suggestedQuestions": [
+    "Does my parcel fall within Lincoln's 2025 Very High FHSZ designation?",
+    "What fire sprinkler requirements apply to my new construction in Lincoln?",
+    "What are the minimum dwelling size and setback requirements in Lincoln?",
+    "Is Lincoln's ADU ordinance currently compliant with state law?",
+    "Which permit types can be submitted via email OTC in Lincoln?",
+    "What are Lincoln's building department hours and contact info?"
+  ]
+}

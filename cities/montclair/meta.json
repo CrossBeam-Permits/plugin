@@ -1,0 +1,19 @@
+{
+  "displayName": "Montclair",
+  "ordinanceLabel": "Ord. 25-1016 · Jan 14, 2026 (Building Codes) | Ord. 24-1006 · Jul 31, 2024 (ADU)",
+  "codePrefix": "MMC",
+  "fireAgency": "Montclair Fire Department (city-owned)",
+  "firePhone": "(909) 447-3552",
+  "portal": "Counter only",
+  "portalUrl": "https://www.cityofmontclair.org/building-division/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "counterHours": "Mon–Thu 7–9 AM and 4–5:30 PM only; closed Fridays",
+  "suggestedQuestions": [
+    "What are the ADU size and setback requirements in Montclair?",
+    "What building codes does Montclair use?",
+    "How do I submit plans to the Montclair Building Division?",
+    "Does Montclair require fire sprinklers for new ADUs?",
+    "What are the accessory structure rules in R-1 zones?",
+    "Is my property in a fire hazard zone?"
+  ]
+}

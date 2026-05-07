@@ -1,0 +1,40 @@
+{
+  "slug": "westmorland",
+  "name": "Westmorland",
+  "state": "CA",
+  "county": "Imperial",
+  "population": 2014,
+  "climateZone": "15",
+  "fhszDesignation": "none",
+  "coastalZone": false,
+  "wuiOverlay": false,
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.cityofwestmorland.net",
+  "utility": "Imperial Irrigation District (IID)",
+  "buildingDept": {
+    "name": "Planning, Building & Engineering Department",
+    "phone": "(760) 344-3411",
+    "address": "230 W. Main Street, Westmorland, CA 92281"
+  },
+  "fireAuthority": {
+    "name": "Westmorland Fire Department",
+    "type": "city-operated",
+    "chief": "Sergio Cruz",
+    "email": "scruz@cityofwestmorland.net",
+    "phone": "(760) 587-6277"
+  },
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "water-heater",
+    "reroof",
+    "panel-upgrade",
+    "fence"
+  ],
+  "onboardedAt": "2026-04-16",
+  "readyForPromotion": true
+}

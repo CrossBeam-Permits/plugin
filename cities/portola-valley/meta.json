@@ -1,0 +1,14 @@
+{
+  "displayName": "Portola Valley",
+  "ordinanceLabel": "Town Municipal Code · Current 2025 (Municode)",
+  "codePrefix": "PVMC",
+  "fireAgency": "Woodside Fire Protection District",
+  "suggestedQuestions": [
+    "Does my project need to comply with the wildfire construction requirements?",
+    "What roofing materials are allowed in Portola Valley?",
+    "What are the local ADU size limits?",
+    "Do I need a separate fire inspection for my solar permit?",
+    "When does my fence require a building permit?",
+    "Is gas equipment still allowed given the all-electric reach code?"
+  ]
+}

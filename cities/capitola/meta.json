@@ -1,0 +1,58 @@
+{
+  "city": "Capitola",
+  "slug": "capitola",
+  "state": "CA",
+  "county": "Santa Cruz County",
+  "climateZone": 3,
+  "coastalZone": true,
+  "wuiCoverage": "partial",
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Capitola/",
+  "buildingDept": {
+    "address": "City Hall, 420 Capitola Avenue, Capitola, CA 95010",
+    "phone": "(831) 475-7300",
+    "email": "Building@ci.capitola.ca.us",
+    "hours": "Mon–Fri 9AM–12PM (counter); inspections daily 1PM–4PM",
+    "website": "https://www.cityofcapitola.gov/building"
+  },
+  "permitPortal": {
+    "url": "https://capitola.portal.iworq.net/portalhome/capitola",
+    "platform": "iworq"
+  },
+  "feeScheduleUrl": "https://www.cityofcapitola.gov/finance/page/fee-schedule",
+  "fireAgency": {
+    "name": "Central Fire District of Santa Cruz County",
+    "website": "https://www.centralfiresc.org",
+    "planCheckEmail": "plansubmittal@centralfiresc.org",
+    "planCheckPhone": "(831) 685-6698",
+    "planCheckAddress": "930 17th Avenue, Santa Cruz, CA 95062",
+    "reviewDaysMinimum": 14,
+    "fireMarshal": "Erin Collins"
+  },
+  "onboardedPermitTypes": [
+    "adu",
+    "block-wall",
+    "coastal-development",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "kitchen-bath-remodel",
+    "ltia-demolition",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "patio-cover",
+    "repipe",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "retaining-wall",
+    "rewire",
+    "sign",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater",
+    "wildfire-wui",
+    "window-replacement"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "displayName": "Tehachapi",
+  "ordinanceLabel": "2025 CBSC (Kern County local amendments) | LRA FHSZ map adopted per Gov. Code 51178",
+  "codePrefix": "TMC",
+  "fireAgency": "Kern County Fire Department (KCFD)",
+  "portal": "Accela",
+  "portalUrl": "https://www.liveuptehachapi.com/328/Building-Department",
+  "solarPortal": "SolarAPP+",
+  "electricUtility": "PG&E",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/tehachapi/codes/code_of_ordinances",
+  "wuiCoverage": "partial",
+  "county": "Kern",
+  "elevation": "3970ft",
+  "suggestedQuestions": [
+    "Does my parcel fall in a Fire Hazard Severity Zone (FHSZ)?",
+    "How do I route fire plans through Kern County Fire Department?",
+    "What are the ADU rules in Tehachapi — any local restrictions?",
+    "Does elevation affect snow load requirements for my project?",
+    "Can I use SolarAPP+ for an instant solar permit?",
+    "Who handles health department review for my restaurant TI?"
+  ]
+}

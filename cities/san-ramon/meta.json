@@ -1,0 +1,85 @@
+{
+  "city": "San Ramon",
+  "slug": "san-ramon",
+  "county": "Contra Costa",
+  "state": "CA",
+  "climateZone": 12,
+  "population": 84600,
+  "muniCodePlatform": "encodeplus",
+  "muniCodeUrl": "https://online.encodeplus.com/regs/sanramon-ca/",
+  "onlinePermitPlatform": "CSS (Civic Solutions System)",
+  "onlinePermitUrl": "https://sanramon.ca.gov/csspermits",
+  "buildingDept": {
+    "name": "City of San Ramon — Building and Safety Services",
+    "address": "7000 Bollinger Canyon Rd, San Ramon, CA 94583",
+    "phone": "(925) 973-2580 opt. 2",
+    "email": "PermitCenter@SanRamon.ca.gov",
+    "cbo": "Josh DeMello",
+    "hours": "Monday–Friday, 8:30 AM–5:00 PM"
+  },
+  "fireAgency": {
+    "name": "San Ramon Valley Fire Protection District (SRVFPD)",
+    "type": "special-district",
+    "address": "2401 Crow Canyon Road, Suite A, San Ramon, CA 94583",
+    "phone": "(925) 838-6600",
+    "website": "https://www.firedepartment.org",
+    "submitPortal": "https://firedepartment.geocivix.com",
+    "submitMethod": "electronic-only",
+    "reviewFees": "https://www.firedepartment.org/business/submit-plans/plan-review-fees"
+  },
+  "utility": {
+    "electric": "Pacific Gas and Electric (PG&E)",
+    "gas": "Pacific Gas and Electric (PG&E)"
+  },
+  "codeInEffect": "2022 California Building Standards Code with local amendments (Ordinance 516). SRVFPD local fire code amendments.",
+  "wuiCoverage": "partial",
+  "wuiNotes": "Eastern hillside areas bordering Mt. Diablo foothills and Tassajara Valley: Very High FHSZ. Valley floor (Dougherty Valley, Bishop Ranch corridor): generally not FHSZ.",
+  "fhszVerification": "https://osfm.fire.ca.gov/FHSZ",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "solar",
+    "swimming-pool",
+    "fence",
+    "hvac",
+    "water-heater",
+    "reroof",
+    "ev-charger",
+    "panel-upgrade",
+    "sign",
+    "restaurant-ti",
+    "wildfire-wui"
+  ],
+  "stateSkillOnly": ["window-replacement"],
+  "notSupported": ["commercial-ti"],
+  "localAmendments": [
+    "CBC §1905.1.7 — ACI 318 §14.1.4 concrete construction modification",
+    "CPC §422.1 — Fixture count",
+    "CPC §612.0 — Drain/grease interceptor provisions",
+    "Division C8 — Rooftop solar (local chapter)",
+    "Division C9 — EV charging systems (local chapter)"
+  ],
+  "legacyCodes": [
+    "Uniform Sign Code",
+    "Uniform Solar Energy Code",
+    "Uniform Swimming Pool, Spa and Hot Tub Code",
+    "Uniform Housing and Abatement of Dangerous Buildings Code",
+    "Uniform Security Code"
+  ],
+  "aduAcceleratorProgram": {
+    "active": true,
+    "sponsor": "Senator Steve Glazer (SD-7)",
+    "tiers": [
+      { "maxSqFt": 500, "rebate": 7500 },
+      { "maxSqFt": 750, "rebate": 5000 },
+      { "maxSqFt": 1000, "rebate": 2500 }
+    ],
+    "totalFunding": 154319,
+    "eligibleAfter": "2025-04-14",
+    "finalInspectionDeadline": "2026-08-31"
+  },
+  "onboardedAt": "2026-04-22",
+  "onboardedBy": "batch-onboard-autonomous"
+}

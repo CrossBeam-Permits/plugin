@@ -1,0 +1,17 @@
+{
+  "displayName": "Hayward",
+  "ordinanceLabel": "Reach Code Ord. Nov 15, 2022 (updated June 17, 2025) | EV Ord. 17-11 (July 2017) | 2025 CBC cycle (eff. Jan 1, 2026)",
+  "codePrefix": "HMC",
+  "fireAgency": "Hayward Fire Department (HFD)",
+  "portal": "EnerGov (Tyler Technologies)",
+  "portalUrl": "https://www.hayward-ca.gov/epermits",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "What are the setback requirements for a detached ADU in Hayward?",
+    "Is my property in the Hayward Hills fire hazard zone?",
+    "Does Hayward require a geology site visit for retaining walls?",
+    "What is Hayward's EV charging reach code requirement for new construction?",
+    "Do I need to route my fire plan check to HFD or Fairview FPD?",
+    "Can I get a same-day EV charger permit in Hayward?"
+  ]
+}

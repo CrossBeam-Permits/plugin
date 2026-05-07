@@ -1,0 +1,41 @@
+{
+  "city": "Lomita",
+  "slug": "lomita",
+  "state": "CA",
+  "county": "Los Angeles",
+  "region": "South Bay",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/lomita",
+  "buildingDept": {
+    "name": "LA County DPW Building and Safety (contract)",
+    "portal": "https://epicla.lacounty.gov",
+    "address": "24320 S. Narbonne Ave., Lomita CA 90717",
+    "phone": "(310) 325-7110"
+  },
+  "planningDept": {
+    "name": "City of Lomita CED — Planning Division",
+    "phone": "(310) 325-7110",
+    "email": "planning@lomitacity.com",
+    "website": "https://lomitacity.com"
+  },
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department",
+    "station": "Station 6",
+    "address": "25517 S. Narbonne Ave., Lomita CA 90717",
+    "phone": "(310) 326-2461"
+  },
+  "buildingCode": "2025 CBC",
+  "localAdoptionOrdinance": "Ord. 881 (February 2026)",
+  "fireCode": "LA County Title 32 (Ord. 864)",
+  "fhsz": false,
+  "wui": false,
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti"
+  ],
+  "onboardedDate": "2026-04-15",
+  "notes": "Contract city — building permits via LA County DPW/BSOP/EPIC-LA. ADU Ord. 838: 2-story max citywide; south of PCH max 1-story/16 ft."
+}

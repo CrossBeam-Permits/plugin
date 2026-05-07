@@ -1,0 +1,25 @@
+{
+  "displayName": "Livermore",
+  "ordinanceLabel": "2025 California Building Standards Code · All-electric reach code (Ord. 2139) · Class B roofing citywide (Ord. 2138) · CodePublishing",
+  "codePrefix": "LMC",
+  "fireAgency": "Livermore-Pleasanton Fire Department (LPFD) · (925) 454-2361",
+  "portalName": "Accela Citizen Access (ACA)",
+  "portalUrl": "https://aca-prod.accela.com/LIVERMORE/",
+  "solarPortal": null,
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "climateZone": "12",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "coastalZone": false,
+  "county": "Alameda",
+  "suggestedQuestions": [
+    "How do I submit a building permit in Livermore?",
+    "What are the ADU rules in Livermore, CA?",
+    "Does Livermore require all-electric construction?",
+    "What fire classification is required for roofs in Livermore?",
+    "Does my Livermore property require WUI / fire-hardening construction?",
+    "What permits can I apply for online in Livermore?",
+    "How do I schedule an inspection in Livermore?",
+    "What are LPFD fire review requirements for new construction?"
+  ]
+}

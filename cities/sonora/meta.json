@@ -1,0 +1,30 @@
+{
+  "displayName": "City of Sonora",
+  "ordinanceLabel": "Sonora Municipal Code | 2025 CBSC in effect | Ord. 825 (2015) + Ord. 853 (2019)",
+  "codePrefix": "SMC",
+  "fireAgency": "Sonora Fire Department",
+  "fireAgencyType": "city-fire",
+  "responsibilityArea": "LRA",
+  "portal": "iWorQ",
+  "portalUrl": "https://sonora.portal.iworq.net",
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "City of Sonora Public Works",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/sonora/codes/municipal_code",
+  "wuiCoverage": "partial",
+  "climateZone": 12,
+  "county": "Tuolumne",
+  "population": 4700,
+  "suggestedQuestions": [
+    "Does my parcel fall within a Fire Hazard Severity Zone in Sonora?",
+    "What are the WUI construction requirements for a new home in Sonora?",
+    "Can I defer fire sprinkler calculations in Sonora?",
+    "What days does Sonora conduct building inspections?",
+    "What is the permit fee for a solar installation in Sonora?",
+    "Does Chapter 17.34 Hillside Preservation apply to my lot?",
+    "Do I need Design Review for exterior work in downtown Sonora?",
+    "Where do I submit a building permit application in Sonora?"
+  ]
+}

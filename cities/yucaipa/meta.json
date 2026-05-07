@@ -1,0 +1,17 @@
+{
+  "displayName": "Yucaipa",
+  "ordinanceLabel": "Yucaipa Municipal Code §15.04 (Building) · Development Code §84.0570 (ADU) · American Legal · 2022 CBC/CRC adopted June 2024",
+  "codePrefix": "YMC",
+  "fireAgency": "Yucaipa Fire Department (CAL FIRE contract) · (909) 797-2489 Ext. 246 · csanchez@yucaipa.org",
+  "portal": "Tyler EnerGov (Yucaipa Permit Exchange)",
+  "portalUrl": "https://cityofyucaipaca-energovweb.tylerhost.net/apps/selfservice#/home",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "What are the ADU setback and height rules in Yucaipa?",
+    "Does Yucaipa have a pre-approved ADU plan I can use?",
+    "Is my property in a Fire Hazard Severity Zone in Yucaipa?",
+    "What are the patio cover height and openness requirements in Yucaipa?",
+    "How do I submit a permit through the Yucaipa Permit Exchange?",
+    "What are the solar permit fees in Yucaipa?"
+  ]
+}

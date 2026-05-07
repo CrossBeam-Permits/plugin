@@ -1,0 +1,25 @@
+{
+  "displayName": "Los Altos",
+  "ordinanceLabel": "Los Altos Municipal Code · Municode · Title 12 (Building) · Title 14 (Zoning) · Chapter 14.14 (ADU)",
+  "codePrefix": "LAMC",
+  "fireAgency": "Santa Clara County Fire Department (SCCFD) · 650-947-2779 · sccfd.org",
+  "portalName": "eTRAKiT",
+  "portalUrl": "https://trakit.losaltosca.gov/etrakit/",
+  "climateZone": "4",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "fhszNote": "Predominantly no FHSZ designation. 2025 CAL Fire LRA map pending final adoption as of April 2026; western parcels near Los Altos Hills border may receive Moderate/High designation.",
+  "coastalZone": false,
+  "reachCode": true,
+  "reachCodeNote": "All-electric mandate for all new construction (LAMC Title 12, eff. 2023-01-01). No gas/propane in new buildings. Cooking appliance/fireplace exception for new SFR.",
+  "suggestedQuestions": [
+    "What are the ADU size and setback rules in Los Altos?",
+    "Does Los Altos require all-electric construction for new homes?",
+    "Do I need design review before my building permit in Los Altos?",
+    "Is my Los Altos property in a fire hazard zone?",
+    "What permits can I get over-the-counter (OTC) in Los Altos?",
+    "Does Los Altos have tree protection rules that affect my project?",
+    "Who is the fire AHJ for Los Altos — city or county fire?",
+    "What are the EV-ready requirements for new construction in Los Altos?"
+  ]
+}

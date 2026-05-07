@@ -1,0 +1,14 @@
+{
+  "displayName": "Lawndale",
+  "ordinanceLabel": "Lawndale Municipal Code Title 15 (Building) & Title 17 (Zoning)",
+  "codePrefix": "LMC",
+  "fireAgency": "LA County Fire Department (Station 21)",
+  "suggestedQuestions": [
+    "What are the ADU height and size limits in Lawndale?",
+    "Does Lawndale use SolarApp+ for solar permits?",
+    "How do I submit a building permit in Lawndale?",
+    "What are the fence permit requirements in Lawndale?",
+    "Does Lawndale have any WUI or fire zone requirements?",
+    "What commercial zones allow restaurants in Lawndale?"
+  ]
+}

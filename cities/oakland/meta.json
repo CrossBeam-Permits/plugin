@@ -1,0 +1,21 @@
+{
+  "displayName": "Oakland",
+  "ordinanceLabel": "Ord. 13717 C.M.S. (2022 CBC cycle) | 2025 CBC local amendments eff. January 1, 2026",
+  "codePrefix": "OMC",
+  "fireAgency": "Oakland Fire Department — Fire Prevention Bureau (FPB)",
+  "portal": "Accela Citizen Access (ACA)",
+  "portalUrl": "https://aca-prod.accela.com/OAKLAND",
+  "electricUtility": "Pacific Gas and Electric (PG&E)",
+  "gasUtility": "Pacific Gas and Electric (PG&E)",
+  "climateZone": "3",
+  "wuiCoverage": "partial",
+  "solarAppPlus": true,
+  "suggestedQuestions": [
+    "Do I need fire sprinklers for my new ADU in Oakland?",
+    "Is my property in a fire hazard zone in the Oakland hills?",
+    "Can I get a same-day solar permit with SolarAPP+?",
+    "What are Oakland's local fees for a residential addition?",
+    "Do I need health department approval for my restaurant buildout?",
+    "Are there restrictions on ADUs for historic buildings in Oakland?"
+  ]
+}

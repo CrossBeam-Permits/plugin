@@ -1,0 +1,62 @@
+{
+  "city": "Carpinteria",
+  "slug": "carpinteria",
+  "state": "CA",
+  "county": "Santa Barbara",
+  "population": 13040,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/carpinteria/codes/code_of_ordinances",
+  "buildingDept": {
+    "name": "Community Development Department — Building and Safety Division",
+    "address": "5775 Carpinteria Avenue, Carpinteria, CA 93013",
+    "phone": "(805) 684-5405",
+    "website": "https://www.carpinteriaca.gov/city-hall/community-development/building-and-safety/"
+  },
+  "fireAgency": {
+    "name": "Carpinteria-Summerland Fire Protection District (CSFPD)",
+    "phone": "(805) 684-4591",
+    "website": "https://carpfire.com"
+  },
+  "coastalZone": true,
+  "lcpCertified": true,
+  "wuiFhsz": false,
+  "solarPlatform": "SolarAPP+",
+  "solarFee": 25,
+  "keyLocalAmendments": [
+    "Grading permit required before building permit (expansive soils, seismic faults)",
+    "Certificate of Occupancy required for R/A/B/M/E/F/I/H occupancies",
+    "Pool enclosure: building official discretion for modifications (CBC §3109.4)"
+  ],
+  "overTheCounterPermits": [
+    "water-heater",
+    "hvac",
+    "reroof",
+    "panel-upgrade"
+  ],
+  "aduOrdinance": "Ordinance No. 758 (effective 2023-02-22) + March 2024 amendments",
+  "aduPrototypePlans": [
+    { "name": "Plan 1", "sqft": 400, "type": "detached" },
+    { "name": "Plan 2", "sqft": 480, "type": "detached" }
+  ],
+  "permitTypesOnboarded": [
+    "adu",
+    "coastal-development",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "kitchen-bath-remodel",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "retaining-wall",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater",
+    "window-replacement"
+  ],
+  "onboardedAt": "2026-04-16",
+  "onboardVersion": "1.0"
+}

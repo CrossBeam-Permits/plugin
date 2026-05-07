@@ -1,0 +1,20 @@
+{
+  "displayName": "Artesia",
+  "ordinanceLabel": "AMC Title 8 (Building) | Title 9 Article 45 (ADU) · ecode360 AR4900",
+  "codePrefix": "AMC",
+  "fireAgency": "Los Angeles County Fire Department",
+  "portal": "EPIC-LA (LA County BSD)",
+  "portalUrl": "https://epicla.lacounty.gov",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingDept": "Los Angeles County Building and Safety Division (contracted)",
+  "buildingDeptNote": "Artesia contracts all building and safety services to LA County BSD. Permits are issued and inspected through the EPIC-LA portal.",
+  "climateZone": "9",
+  "suggestedQuestions": [
+    "How do I apply for a building permit in Artesia?",
+    "Do I need to submit a form to the Planning Department before applying for solar?",
+    "What are the ADU owner-occupancy rules in Artesia?",
+    "Can I get an express solar permit in Artesia?",
+    "Who handles fire plan check in Artesia?",
+    "What zones allow multi-family housing in Artesia?"
+  ]
+}

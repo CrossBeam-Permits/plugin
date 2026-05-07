@@ -1,0 +1,17 @@
+{
+  "displayName": "Maywood",
+  "ordinanceLabel": "Ord. 24-02 (ADU) | 2025 California Building Standards Code",
+  "codePrefix": "MMC",
+  "fireAgency": "LA County Fire Department (Station 1633)",
+  "portal": "GOGov",
+  "portalUrl": "https://app.govoutreach.com/maywoodcityca/public/permits",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "What are the ADU rules in Maywood?",
+    "When is the building counter open in Maywood?",
+    "Do I need a permit for a residential addition in Maywood?",
+    "What zoning allows multi-family in Maywood?",
+    "How do I get a restaurant tenant improvement permit in Maywood?",
+    "What are the setback requirements for a new home in Maywood?"
+  ]
+}

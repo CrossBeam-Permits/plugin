@@ -1,0 +1,16 @@
+{
+  "displayName": "Redwood City",
+  "ordinanceLabel": "Redwood City Municipal Code (RCMC) · Municode · Chapter 9 (Building) · Chapter 12 (Fire) · Zoning Code Article 37 (ADU) · Reach Code Ord. 522 (2020, amended Nov 2022)",
+  "codePrefix": "RCMC",
+  "fireAgency": "Redwood City Fire Department (RCFD) — Fire Prevention Bureau · City-operated (not county contracted) · Plan check at Building Counter, 1017 Middlefield Rd · Fire flow test required for ADUs (allow up to 6 weeks)",
+  "utility": "PG&E (Pacific Gas and Electric) · Electric + gas utility · All-electric reach code mandates no gas in new construction",
+  "suggestedQuestions": [
+    "Does Redwood City require all-electric for new construction?",
+    "What are the ADU setbacks and height limits in Redwood City?",
+    "Does my project need fire sprinklers in Redwood City?",
+    "How do I submit a building permit in Redwood City?",
+    "Is my property in a fire hazard zone in Redwood City?",
+    "How long does ADU permit review take in Redwood City?",
+    "What is the fire flow requirement for ADUs in Redwood City?"
+  ]
+}

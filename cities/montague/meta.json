@@ -1,0 +1,42 @@
+{
+  "name": "montague",
+  "displayName": "City of Montague",
+  "state": "CA",
+  "county": "Siskiyou",
+  "population": 1400,
+  "timezone": "America/Los_Angeles",
+  "climateZone": 16,
+  "muniCodePlatform": "municipal.codes",
+  "muniCodeUrl": "https://montague.municipal.codes/",
+  "buildingPortal": null,
+  "buildingPortalUrl": null,
+  "buildingDept": {
+    "name": "City of Montague — Building / Public Works",
+    "address": "230 S. 13th St., Montague, CA 96064",
+    "phone": "530-459-3030",
+    "email": null,
+    "hours": "Monday–Thursday 7:30 AM–4:00 PM; closed Friday"
+  },
+  "fireAgency": {
+    "name": "Montague Fire Department",
+    "address": "121 S. 10th St., Montague, CA 96064",
+    "phone": "530-459-5343"
+  },
+  "fhsz": true,
+  "coastal": false,
+  "onboardedPermitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "hvac",
+    "water-heater",
+    "swimming-pool",
+    "patio-cover",
+    "fence",
+    "wildfire-wui"
+  ]
+}

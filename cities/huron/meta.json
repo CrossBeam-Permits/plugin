@@ -1,0 +1,49 @@
+{
+  "city": "Huron",
+  "slug": "huron",
+  "county": "Fresno",
+  "state": "CA",
+  "population": 6206,
+  "climateZones": ["CZ13"],
+  "fireAgency": "Fresno County Sheriff — Fire Warden Division (unconfirmed; city lists no fire department)",
+  "vhfhsz": false,
+  "wuiPartial": false,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/huron/codes/code_of_ordinances",
+  "buildingDept": {
+    "name": "City of Huron — Community Development Department, Planning and Building Division",
+    "phone": "(559) 945-2241, Option 4",
+    "address": "36311 S Lassen Ave (P.O. Box 339), Huron, CA 93234",
+    "email": null,
+    "portal": "https://huronca.portal.iworq.net/portalhome/huronca",
+    "portalPlatform": "iWorQ"
+  },
+  "planningDept": {
+    "name": "City of Huron — Community Development Department, Planning Division",
+    "phone": "(559) 945-2241",
+    "address": "36311 S Lassen Ave (P.O. Box 339), Huron, CA 93234"
+  },
+  "fireDept": {
+    "name": "Fresno County Sheriff — Fire Warden Division (unconfirmed)",
+    "phone": null,
+    "notes": "City of Huron lists no fire department. Fire authority likely Fresno County. Verify before fire plan check routing."
+  },
+  "utility": {
+    "electric": "PG&E (unconfirmed — typical for Fresno County area; verify with city)",
+    "gas": "PG&E (unconfirmed)",
+    "water": "City of Huron Public Utilities",
+    "sewer": "City of Huron Public Utilities"
+  },
+  "specialOverlays": [],
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar"
+  ],
+  "onboardedAt": "2026-04-24",
+  "smokeTestedAt": null,
+  "readyForPromotion": false
+}

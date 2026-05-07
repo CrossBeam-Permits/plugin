@@ -1,0 +1,18 @@
+{
+  "displayName": "Calabasas",
+  "ordinanceLabel": "2025 Title 24 (no local amendments) | LACoFD 2022 Consolidated Fire Code | CMC § 17.12.170 (ADU — pending Q2 2026 update)",
+  "codePrefix": "CMC",
+  "fireAgency": "Los Angeles County Fire Department (LACoFD)",
+  "portal": "SmartGov by Granicus",
+  "portalUrl": "https://ci-calabasas-ca.smartgovcommunity.com/Public/Home",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "Does my property need a fuel modification plan from LACoFD?",
+    "What WUI construction materials are required for my project?",
+    "Can I build an ADU in Calabasas and what are the setback rules?",
+    "Are pre-approved ADU plans available in Calabasas?",
+    "Do I need to submit to EPIC-LA for fire review?",
+    "What building codes are in effect in Calabasas?",
+    "Can I use SolarApp+ for my solar permit?"
+  ]
+}

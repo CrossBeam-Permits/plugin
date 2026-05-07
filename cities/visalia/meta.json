@@ -1,0 +1,45 @@
+{
+  "city": "Visalia",
+  "slug": "visalia",
+  "county": "Tulare",
+  "state": "CA",
+  "population": 145000,
+  "climateZones": ["CZ13"],
+  "fireAgency": "Visalia Fire Department",
+  "vhfhsz": false,
+  "wuiPartial": false,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/visalia/latest/overview",
+  "buildingDept": {
+    "name": "City of Visalia — Building Safety Division",
+    "phone": "(559) 713-4444",
+    "address": "315 E. Acequia Ave., Visalia, CA 93291"
+  },
+  "utility": {
+    "electric": "Southern California Edison (SCE)",
+    "gas": "PG&E / SoCal Gas (verify by address)"
+  },
+  "specialOverlays": ["sfr-objective-design-standards"],
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "swimming-pool",
+    "reroof",
+    "hvac",
+    "panel-upgrade",
+    "water-heater",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "ev-charger",
+    "retaining-wall",
+    "fence",
+    "patio-cover"
+  ],
+  "onboardedAt": "2026-04-24",
+  "smokeTestedAt": null,
+  "readyForPromotion": false
+}

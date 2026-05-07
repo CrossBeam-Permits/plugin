@@ -1,0 +1,29 @@
+{
+  "displayName": "City of San Juan Bautista",
+  "ordinanceLabel": "San Juan Bautista Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "SJBMC",
+  "fireAgency": "San Juan Bautista Fire Department",
+  "fireAgencyType": "volunteer-fire",
+  "responsibilityArea": "LRA",
+  "portal": "counter",
+  "portalUrl": "https://www.san-juan-bautista.ca.us",
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "City of San Juan Bautista",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/SanJuanBautista/",
+  "wuiCoverage": "partial",
+  "climateZone": 4,
+  "county": "San Benito",
+  "population": 2100,
+  "suggestedQuestions": [
+    "Does my parcel fall within a Very High Fire Hazard Severity Zone in San Juan Bautista?",
+    "What are the ADU setback and size rules in San Juan Bautista?",
+    "What building codes has San Juan Bautista adopted?",
+    "Where do I submit a building permit application in San Juan Bautista?",
+    "What are the local fire code amendments in San Juan Bautista?",
+    "Can I install solar panels on my historic property in San Juan Bautista?",
+    "What is the permit process for a residential addition in San Juan Bautista?"
+  ]
+}

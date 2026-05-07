@@ -1,0 +1,56 @@
+{
+  "city": "Ojai",
+  "slug": "ojai",
+  "state": "CA",
+  "county": "Ventura",
+  "population": 7500,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/OJ4979",
+  "buildingDept": {
+    "address": "401 S. Ventura St., Ojai, CA 93023",
+    "phone": "(805) 646-5581",
+    "email": null,
+    "portal": "https://www.ojai.ca.gov/departments/community_development/building_division.php"
+  },
+  "fireAHJ": {
+    "name": "Ventura County Fire Department (VCFD)",
+    "phone": "(805) 389-9738",
+    "email": "fireprevention@ventura.org",
+    "portal": "https://onestoppermits.venturacounty.gov/departments/fire-department"
+  },
+  "wuiZone": "all",
+  "vhfhsz": true,
+  "currentCodeCycle": 2025,
+  "ordinances": {
+    "adu": "Ord 950 (March 2024)",
+    "energyFlexpath": "Ord 968 (August 2025)",
+    "buildingCode2025": "Ord 969 (December 2025)"
+  },
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "swimming-pool",
+    "hvac",
+    "water-heater",
+    "window-replacement",
+    "patio-cover",
+    "retaining-wall",
+    "fence",
+    "panel-upgrade",
+    "ev-charger",
+    "reroof",
+    "repipe",
+    "wildfire-wui",
+    "block-wall"
+  ],
+  "notSupported": [
+    "commercial-ti",
+    "coastal-development",
+    "fireworks-temp-use",
+    "ltia-demolition"
+  ]
+}

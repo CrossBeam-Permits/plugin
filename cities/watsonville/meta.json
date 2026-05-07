@@ -1,0 +1,19 @@
+{
+  "displayName": "Watsonville",
+  "ordinanceLabel": "Watsonville Municipal Code, Title 14 Ch. 14-23 (ADU, July 2025) | 2025 California Building Standards Code (eff. Jan 1, 2026)",
+  "codePrefix": "WMC",
+  "fireAgency": "Watsonville Fire Department",
+  "portal": "Digital Plan Review (city-hosted)",
+  "portalUrl": "https://watsonville.gov/155/Digital-Plan-Review",
+  "solarPermitPath": "SolarAPP+",
+  "electricUtility": "Pacific Gas and Electric (PG&E)",
+  "climateZone": 3,
+  "suggestedQuestions": [
+    "How do I submit plans for an ADU in Watsonville?",
+    "Does my property fall in a Fire Hazard Severity Zone?",
+    "Can I get an expedited solar permit through SolarAPP+?",
+    "What are the hours for over-the-counter plan check?",
+    "Do I need a permit to replace windows in Watsonville?",
+    "What ADU size limits apply under Chapter 14-23?"
+  ]
+}

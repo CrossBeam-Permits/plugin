@@ -1,0 +1,20 @@
+{
+  "displayName": "El Segundo",
+  "ordinanceLabel": "Ord. 1641 · November 15, 2022 (Building Codes)",
+  "codePrefix": "ESMC",
+  "fireAgency": "El Segundo Fire Department (city-owned — NOT LA County Fire)",
+  "portal": "EZ Permit Hub (OpenGov)",
+  "portalUrl": "https://elsegundoca.portal.opengov.com",
+  "electricUtility": "Southern California Edison (SCE)",
+  "coastalZone": true,
+  "lcpCertified": true,
+  "wuiApplicable": false,
+  "suggestedQuestions": [
+    "Do I need to meet noise insulation standards because of LAX?",
+    "Do I need fire sprinklers for my new home or ADU?",
+    "How do I get an instant solar permit through SolarAPP+?",
+    "What are the ADU setback requirements in El Segundo?",
+    "Is my property in the Coastal Zone?",
+    "Does El Segundo use LA County Fire or their own fire department?"
+  ]
+}

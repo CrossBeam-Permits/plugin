@@ -1,0 +1,61 @@
+{
+  "city": "Walnut Creek",
+  "slug": "walnut-creek",
+  "county": "Contra Costa",
+  "state": "CA",
+  "population": 70127,
+  "climateZone": 12,
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/WalnutCreek/",
+  "muniCodeCurrentThrough": "Ordinance 2251, August 16, 2025",
+  "law_as_of": "2026-01-01",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "swimming-pool",
+    "fence",
+    "ev-charger",
+    "reroof"
+  ],
+  "buildingDepartment": {
+    "name": "City of Walnut Creek Community Development Department — Building Division",
+    "address": "1666 North Main Street, Walnut Creek, CA 94596",
+    "phone": "925-943-5834",
+    "email": "Buildingtech@walnutcreekca.gov",
+    "planningEmail": "DutyPlanner@walnut-creek.org",
+    "portal": "https://aca-prod.accela.com/WC/Default.aspx",
+    "portalName": "Accela Citizen Access",
+    "digitalSubmittal": true,
+    "digitalSubmittalNote": "All applications submitted online only — no paper or email accepted"
+  },
+  "fireAgency": {
+    "name": "Contra Costa County Fire Protection District (Con Fire)",
+    "address": "4005 Port Chicago Highway, Suite 250, Concord, CA 94520",
+    "phone": "925-941-3300",
+    "email": "permittech@cccfpd.org",
+    "portal": "https://confire.vision33cloud.com/citizenportal",
+    "website": "https://www.cccfpd.org/",
+    "submitPath": "Separate submission required — applicants submit directly to Con Fire; city building dept does not route to fire district"
+  },
+  "seismicDesignCategory": "D",
+  "coastalZone": false,
+  "wuiCoverage": "partial",
+  "measureA": true,
+  "floodFreeboard": "BFE+2ft",
+  "suggestedQuestions": [
+    "What are the ADU rules in Walnut Creek?",
+    "What are the setbacks for R-8 zoning in Walnut Creek?",
+    "Do I need a permit for a fence in Walnut Creek?",
+    "What is the Measure A height freeze?",
+    "What are the pool barrier requirements in Walnut Creek?",
+    "How do I get an expedited solar permit in Walnut Creek?",
+    "What are the seismic bracing restrictions in Walnut Creek?",
+    "Does Walnut Creek have a threshold FAR for design review?",
+    "What is the 3-year lookback rule for substantial improvement?",
+    "How do I submit plans to Walnut Creek building department?"
+  ]
+}

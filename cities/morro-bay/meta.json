@@ -1,0 +1,20 @@
+{
+  "displayName": "Morro Bay",
+  "ordinanceLabel": "Ord. 655 · November 22, 2022 (Building Codes) | Ord. 654 · November 2022 (Zoning)",
+  "codePrefix": "MBMC",
+  "fireAgency": "Morro Bay Fire Department (internal plan check)",
+  "portal": "Building Division counter (general) | Symbium (solar — automated)",
+  "portalUrl": "https://www.morrobayca.gov/207",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "coastalZone": true,
+  "lcpCertified": true,
+  "wuiCoverage": "partial",
+  "suggestedQuestions": [
+    "Do all properties in Morro Bay need a Coastal Development Permit?",
+    "How do I get an ADU permit in Morro Bay — do I need a coastal permit?",
+    "Can I use the city's pre-designed ADU stock plans?",
+    "Does my property fall in a Wildfire Hazard Severity Zone?",
+    "How do I get a solar permit in Morro Bay — is it through Symbium?",
+    "What zoning zone is my property in — RM or RH?"
+  ]
+}

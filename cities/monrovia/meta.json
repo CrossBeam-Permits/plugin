@@ -1,0 +1,53 @@
+{
+  "displayName": "Monrovia",
+  "city": "Monrovia",
+  "slug": "monrovia",
+  "county": "Los Angeles",
+  "state": "CA",
+  "population": 37000,
+  "muniCodePlatform": "amlegal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/monrovia/latest/overview",
+  "onlinePermitPlatform": "unknown",
+  "onlinePermitUrl": null,
+  "buildingDeptPhone": "(626) 932-5565",
+  "buildingDeptEmail": "building@monroviaca.gov",
+  "buildingDeptAddress": "415 S. Ivy Avenue, Monrovia, CA 91016",
+  "buildingDeptHours": "Mon–Thu 7:00 a.m.–6:00 p.m., Fri 7:00 a.m.–4:00 p.m. (verify with Building Division)",
+  "climateZone": "9",
+  "codeInEffect": "2025 California Building Standards Code (local amendments via Ord. 2022-09, Ch. 15.04)",
+  "utility": "Southern California Edison (SCE)",
+  "gasUtility": "SoCalGas",
+  "fireAgency": {
+    "name": "Monrovia Fire & Rescue",
+    "type": "independent",
+    "phone": "(626) 256-8181",
+    "email": "mfd@monroviaca.gov",
+    "inspector": {
+      "name": "Laura Bednar",
+      "phone": "(626) 926-5477",
+      "email": "lbednar@ci.monrovia.ca.us"
+    },
+    "notes": "Double fees for work begun without fire dept permit. Full fire plan check and inspection authority."
+  },
+  "wuiCoverage": "partial",
+  "wuiNotes": "RF, HR, and HWP zones border Angeles National Forest and include VHFHSZ areas. Flatland RL/RH/RM zones generally NOT in FHSZ. CAL FIRE LRA maps updated March 24, 2025.",
+  "solarAppPlus": false,
+  "preApprovedAdu": false,
+  "localAmendmentOrd": "2022-09",
+  "localAmendmentChapter": "15.04",
+  "muniCodeAgentNote": "amlegal returns HTTP 403 on automated WebFetch — do not attempt to scrape directly",
+  "lastUpdated": "2026-04-16",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "panel-upgrade",
+    "rewire",
+    "water-heater",
+    "wildfire-wui"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "displayName": "Folsom",
+  "ordinanceLabel": "Ord. 1358 · December 9, 2025 (2025 CPC, CA Fire Code, CA WUI Code, ISPSC adoption)",
+  "codePrefix": "FMC",
+  "fireAgency": "Folsom Fire Department",
+  "portal": "eTRAKiT",
+  "portalUrl": "https://www.folsom.ca.us/government/community-development/epermit-center",
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Folsom/",
+  "wuiCoverage": "partial",
+  "suggestedQuestions": [
+    "What ADU size limits and setbacks apply in Folsom?",
+    "Does my property need a fuel modification plan?",
+    "What are the fire sprinkler requirements for a new home in Folsom?",
+    "Is my project in a Very High Fire Hazard Severity Zone?",
+    "What are Folsom's structural design criteria (wind speed, seismic zone)?",
+    "Do I need a remote disconnect for my solar system in Folsom?"
+  ]
+}

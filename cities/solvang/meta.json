@@ -1,0 +1,38 @@
+{
+  "city": "Solvang",
+  "slug": "solvang",
+  "county": "Santa Barbara",
+  "state": "CA",
+  "population": 5700,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/SO5014",
+  "buildingDeptUrl": "https://www.cityofsolvang.com/575/Building-Division",
+  "buildingDeptEmail": "buildingdept@cityofsolvang.com",
+  "buildingDeptPhone": "805-688-5575",
+  "fireAgency": {
+    "name": "Santa Barbara County Fire Department",
+    "station": "Station 30, 1644 Oak Street, Solvang CA 93463",
+    "phone": "(805) 681-5523",
+    "deputyFireMarshal": "Vince LaRocco",
+    "deputyFireMarshalPhone": "805-705-6431",
+    "deputyFireMarshalEmail": "vlarocco@countyofsb.org"
+  },
+  "wuiCoverage": "partial",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "reroof",
+    "hvac",
+    "swimming-pool",
+    "window-replacement",
+    "retaining-wall",
+    "patio-cover",
+    "solar",
+    "panel-upgrade",
+    "water-heater",
+    "wildfire-wui"
+  ]
+}

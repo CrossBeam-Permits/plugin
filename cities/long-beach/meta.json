@@ -1,0 +1,19 @@
+{
+  "displayName": "Long Beach",
+  "ordinanceLabel": "LBMC Title 18 (Building) & Title 21 (Zoning) | 2025 CBSC effective Jan 1, 2026",
+  "codePrefix": "LBMC",
+  "fireAgency": "Long Beach Fire Department (LBFD) — Fire Prevention Bureau",
+  "portal": "LBDS Online (Accela)",
+  "portalUrl": "https://lbpermits.longbeach.gov",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "Is my property near an oil well — do I need a methane investigation?",
+    "Is my home in a Long Beach historic district? Do I need a Certificate of Appropriateness?",
+    "What are the ADU setback and height rules in Long Beach?",
+    "Does Long Beach have pre-approved ADU plans (PAADU)?",
+    "Do I need a Coastal Development Permit for my project in the Coastal Zone?",
+    "What are the seismic requirements for a new foundation in Long Beach?",
+    "How do I pull a solar permit in Long Beach?",
+    "What building codes apply in Long Beach — 2022 or 2025?"
+  ]
+}

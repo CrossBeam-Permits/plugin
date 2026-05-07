@@ -1,0 +1,36 @@
+{
+  "city": "Pismo Beach",
+  "slug": "pismo-beach",
+  "state": "CA",
+  "county": "San Luis Obispo",
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/pismobeach/latest/overview",
+  "buildingDept": {
+    "name": "City of Pismo Beach Building Division",
+    "address": "760 Mattie Road, Pismo Beach, CA 93449",
+    "phone": "(805) 773-7040",
+    "hours": "Monday–Friday 8:00 AM–5:00 PM",
+    "portalType": "electronic",
+    "website": "https://www.pismobeach.org/259/Building-Permits"
+  },
+  "fireAgency": {
+    "name": "City of Pismo Beach Fire Department",
+    "cooperative": "CAL FIRE SLO Unit",
+    "address": "760 Mattie Road, Pismo Beach, CA 93449",
+    "planReviewIntegrated": true
+  },
+  "coastalZone": true,
+  "lcpSegments": ["1983", "1998"],
+  "wuiCoverage": "partial",
+  "localAmendmentOrdinance": "O-2025-007",
+  "codeYear": 2025,
+  "dualZoningCode": true,
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti"
+  ],
+  "onboardedAt": "2026-04-16"
+}

@@ -1,0 +1,24 @@
+{
+  "displayName": "El Cajon",
+  "ordinanceLabel": "2025 California Building Standards Code · El Cajon Municipal Code Title 15",
+  "codePrefix": "ECMC",
+  "fireAgency": "Heartland Fire & Rescue",
+  "portalName": "PACO",
+  "portalUrl": "https://www.elcajon.gov/doing-business/project-assistance-center",
+  "climateZone": "7",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in El Cajon?",
+    "Does El Cajon require a sewer lateral inspection for ADUs?",
+    "How do I apply for a permit in El Cajon?",
+    "What is the PACO permit portal?",
+    "What are the solar permit requirements in El Cajon?",
+    "What fire agency covers El Cajon?",
+    "What are the fence height limits in El Cajon?",
+    "How long does plan check take in El Cajon?",
+    "What are the sign regulations in El Cajon?",
+    "Does El Cajon have an ADU loan program?"
+  ]
+}

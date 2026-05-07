@@ -1,0 +1,72 @@
+{
+  "city": "Bellflower",
+  "slug": "bellflower",
+  "state": "CA",
+  "county": "Los Angeles",
+  "population": 77000,
+  "areaSqMi": 6.1,
+  "website": "https://www.bellflower.org",
+  "buildingDeptName": "Building & Safety Division",
+  "buildingDeptParent": "City of Bellflower",
+  "buildingDeptUrl": "https://www.bellflower.org/departments/building_and_safety",
+  "buildingDeptPhone": "(562) 804-1424",
+  "buildingDeptAddress": "16600 Civic Center Drive, Bellflower, CA 90706",
+  "onlinePermitPortal": "https://www.bellflower.org/departments/building_and_safety",
+  "permitPortalPlatform": "unknown",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/43106425",
+  "climateZone": "9",
+  "seismicDesignCategory": "D",
+  "wuiCoverage": "omit",
+  "coastalZone": false,
+  "fireAgency": "LACoFD",
+  "fireStation": "23",
+  "fireAgencyFull": "Consolidated Fire Protection District of Los Angeles County",
+  "fireAgencyUrl": "https://fire.lacounty.gov/permits-and-fees/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "gasUtility": "Southern California Gas (SoCalGas)",
+  "codeAdoption": {
+    "cycle": "2025",
+    "effectiveDate": "2026-01-01",
+    "ordinances": ["Ord. No. 1449", "Urgency Ord. No. 1450"]
+  },
+  "localAmendments": [
+    {
+      "ref": "BMC Chapter 15.20",
+      "description": "Pool/spa enclosures — stricter barrier requirements beyond state CPC/CBC minimums"
+    },
+    {
+      "ref": "BMC Chapter 15.40",
+      "description": "LA County Fire Chief designated as Fire Official; CFC enforced by LACoFD"
+    },
+    {
+      "ref": "BMC §15.04.040",
+      "description": "Building Official authority — only Bellflower Building Official issues permits"
+    },
+    {
+      "ref": "BMC §15.04 / ecode360.com/43106821",
+      "description": "Small Residential Rooftop Solar Review Process per CA Gov. Code §65850.5"
+    }
+  ],
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "reroof",
+    "swimming-pool",
+    "patio-cover",
+    "window-replacement",
+    "ev-charger",
+    "solar",
+    "hvac",
+    "water-heater",
+    "repipe",
+    "panel-upgrade",
+    "rewire",
+    "block-wall",
+    "siding-replacement",
+    "restaurant-ti",
+    "ltia-demolition"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "displayName": "Crescent City",
+  "ordinanceLabel": "Ord. 859 · December 2025 (ADU) | Ord. ~857 · October 4, 2023 (ADU STR)",
+  "codePrefix": "CCMC",
+  "fireAgency": "Crescent City Fire & Rescue",
+  "portal": "MyGov",
+  "portalUrl": "https://public.mygov.us/crescent_city_ca",
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "Can I rent out my ADU on Airbnb?",
+    "Do I need a structural engineer for my foundation?",
+    "What ADU setbacks apply in Crescent City?",
+    "Are there wildfire construction requirements for my project?",
+    "What zoning allows multi-family housing in Crescent City?",
+    "Do I need an asbestos survey for my restaurant remodel?"
+  ]
+}

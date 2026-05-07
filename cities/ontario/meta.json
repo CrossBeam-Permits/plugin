@@ -1,0 +1,14 @@
+{
+  "displayName": "Ontario",
+  "ordinanceLabel": "Ontario Municipal Code · Ch. 9 & Development Code (American Legal)",
+  "codePrefix": "OMC",
+  "fireAgency": "Ontario Fire Department (OFD)",
+  "suggestedQuestions": [
+    "Can I use Symbium for my residential solar permit in Ontario?",
+    "What are the ADU size and setback limits in Ontario?",
+    "Does my project need a separate OFD fire plan check?",
+    "What zoning district allows my project type in Ontario?",
+    "Is Ontario in a Fire Hazard Severity Zone (FHSZ)?",
+    "How do I submit a permit through Accela in Ontario?"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "displayName": "El Monte",
+  "ordinanceLabel": "El Monte Municipal Code (Municode) | 2025 CBC effective Jan 1, 2026",
+  "codePrefix": "EMMC",
+  "fireAgency": "LA County Fire — Division IX (East Operations Bureau)",
+  "portal": "EnerGov/Tyler CSS Self-Service",
+  "portalUrl": "https://elmonteca-energovweb.tylerhost.net/Apps/SelfService",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "What is El Monte's maximum ADU size?",
+    "How do I get a solar permit in El Monte — does SolarAPP+ work here?",
+    "Can I get a panel upgrade or water heater permit online?",
+    "Who handles fire plan check in El Monte?",
+    "What building codes apply in El Monte — 2022 or 2025?",
+    "Is El Monte in a Wildfire Hazard Severity Zone?"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "displayName": "Orinda",
+  "ordinanceLabel": "MOFD Ord. 26-01/26-02 · January 2026 (Fire/WUI Codes)",
+  "codePrefix": "OMC",
+  "fireAgency": "Moraga-Orinda Fire District (MOFD)",
+  "portal": "Contra Costa County ePermits",
+  "portalUrl": "https://epermits.cccounty.us",
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "Do I need MOFD fire plan check for my ADU or addition?",
+    "Is my property in the Very High Fire Hazard Severity Zone?",
+    "What are the setback requirements for a detached ADU in Orinda?",
+    "Are there creek setback restrictions that affect my project?",
+    "Do I need a Hillside Grading Permit for my project?",
+    "How do I get a building permit — who issues them in Orinda?"
+  ]
+}

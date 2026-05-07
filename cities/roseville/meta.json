@@ -1,0 +1,17 @@
+{
+  "displayName": "Roseville",
+  "ordinanceLabel": "Ord. 6990 · September 17, 2025 (Building Codes) | Ord. 6997 · October 1, 2025 (Fire Code)",
+  "codePrefix": "RMC",
+  "fireAgency": "Roseville Fire Department",
+  "portal": "Accela (OPS Portal)",
+  "portalUrl": "https://permitsonline.roseville.ca.us/",
+  "electricUtility": "Roseville Electric Utility (REU) — city-owned; NOT PG&E",
+  "suggestedQuestions": [
+    "Does my property need WUI fire-hardening materials?",
+    "Can I get my solar permit through SolarAPP+?",
+    "What are the ADU setback and size limits in Roseville?",
+    "Who do I contact for solar interconnection — REU or PG&E?",
+    "How do I schedule a building inspection?",
+    "Is my property in a fire hazard severity zone?"
+  ]
+}

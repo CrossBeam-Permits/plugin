@@ -1,6 +1,6 @@
 {
   "name": "huntington-beach",
-  "description": "Plan-check skills for Huntington Beach, CA — simple permits with HBMC local amendments. Currently includes reroof, EV charger, and water heater. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide for the Accela portal; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 1 (vetted).",
+  "description": "Plan-check skills for Huntington Beach, CA — simple permits with HBMC local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 1.",
   "version": "0.1.0",
   "author": {
     "name": "Onboard Dot AI LLC",
@@ -12,8 +12,9 @@
   "keywords": [
     "california",
     "huntington-beach",
-    "orange-county",
     "plan-check",
-    "permits"
+    "permits",
+    "huntington",
+    "beach"
   ]
 }

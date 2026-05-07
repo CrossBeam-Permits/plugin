@@ -1,0 +1,28 @@
+{
+  "city": "La Habra Heights",
+  "slug": "la-habra-heights",
+  "county": "Los Angeles",
+  "state": "CA",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/LaHabraHeights/",
+  "cityWebsite": "https://www.lhhcity.org",
+  "buildingDept": {
+    "name": "Building and Safety Division",
+    "address": "1245 N Hacienda Road, La Habra Heights, CA 90631",
+    "phone": "(562) 694-6302 Ext. 220",
+    "fax": "(562) 690-5010",
+    "hours": "Monday–Thursday 8:00 AM–5:30 PM",
+    "planCheckVendor": "Scott Fazekas & Associates, Inc.",
+    "buildingOfficial": "Scott Fazekas, AIA, NCARB, CBO, CASp, LEED AP"
+  },
+  "fireAgency": {
+    "name": "La Habra Heights Fire Department",
+    "type": "city",
+    "phone": "(562) 694-8283",
+    "firePreventionExt": "327"
+  },
+  "wuiCoverage": "all",
+  "hasCitySewerSystem": false,
+  "hasCommercialZones": false,
+  "permitTypes": ["adu", "single-family-residential", "residential-addition", "multi-unit-residential"]
+}

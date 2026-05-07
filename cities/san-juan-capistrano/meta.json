@@ -1,0 +1,17 @@
+{
+  "displayName": "San Juan Capistrano",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per San Juan Capistrano Municipal Code (Ord. No. 1131, Feb 17, 2026)",
+  "codePrefix": "SJCMC",
+  "fireAgency": "OCFA",
+  "coastalCity": false,
+  "utilityElectric": "SCE",
+  "utilityGas": "SoCalGas",
+  "suggestedQuestions": [
+    "What are the ADU size and lot coverage rules in San Juan Capistrano?",
+    "Does my project need OCFA review?",
+    "Does San Juan Capistrano require a soils report at permit application?",
+    "Is my property in a historic district (MRD or TOC)?",
+    "What are the permit expiration rules and seasonal suspension periods?",
+    "Does San Juan Capistrano have HOA approval requirements?"
+  ]
+}

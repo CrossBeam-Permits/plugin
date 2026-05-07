@@ -1,0 +1,19 @@
+{
+  "name": "soledad",
+  "description": "Plan-check skills for Soledad, CA — simple permits with SMC local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/soledad",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "soledad",
+    "plan-check",
+    "permits",
+    "monterey-county"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "displayName": "Rancho Cordova",
+  "ordinanceLabel": "Ord. 8-2024 (ADU) | Ord. 17-2022 (Building Codes — 2022 cycle adoption)",
+  "codePrefix": "RCMC",
+  "fireAgency": "Sacramento Metropolitan Fire District (Metro Fire)",
+  "portal": "Rancho Cordova Online",
+  "portalUrl": "https://www.cityofranchocordova.org",
+  "electricUtility": "Sacramento Municipal Utility District (SMUD — NOT PG&E)",
+  "climateZone": 12,
+  "fhsz": "Moderate LRA (WUI does not apply)",
+  "suggestedQuestions": [
+    "What are the setback requirements for a detached ADU in Rancho Cordova?",
+    "Does Rancho Cordova require fire sprinklers for a new ADU?",
+    "Who handles fire plan check in Rancho Cordova?",
+    "Is Rancho Cordova served by SMUD or PG&E?",
+    "What energy code climate zone applies in Rancho Cordova?",
+    "Does WUI/Chapter 7A apply to my project in Rancho Cordova?"
+  ]
+}

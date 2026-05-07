@@ -1,0 +1,24 @@
+{
+  "displayName": "Palmdale",
+  "ordinanceLabel": "Ord. No. 1661 · October 21, 2025 (Building Codes + Local Amendments)",
+  "codePrefix": "PMC",
+  "fireAgency": "Los Angeles County Fire Department (LACFD) — Battalion 17",
+  "portal": "Accela",
+  "portalUrl": "https://aca-prod.accela.com/PALMDALE/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "snowLoad": "20 psf (CBC §1608.2 local amendment — critical override)",
+  "climateZone": "14",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/PA4578",
+  "wuiCoverage": "partial",
+  "needsHuman": true,
+  "needsHumanReason": "HCD TA letter 2025-12-05 on Palmdale ADU ordinance — verify compliance before ADU skill promotion",
+  "suggestedQuestions": [
+    "What is the snow load requirement for Palmdale — do I need to design for snow?",
+    "Is my property in a Fire Hazard Severity Zone (FHSZ) in Palmdale?",
+    "Do I need a Zoning Clearance before applying for a building permit?",
+    "What are the ADU setback and size rules in Palmdale?",
+    "Who handles the health plan check for a new restaurant in Palmdale?",
+    "How many permit extensions can I get and for how long?"
+  ]
+}

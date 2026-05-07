@@ -1,0 +1,40 @@
+{
+  "city": "Beverly Hills",
+  "slug": "beverly-hills",
+  "state": "CA",
+  "county": "Los Angeles",
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/beverlyhillsca/latest/beverlyhills_ca/",
+  "muniCodeScrapeable": false,
+  "muniCodeNote": "amlegal WAF blocks direct WebFetch (HTTP 403). Use search snippets or city FAQ pages as fallback.",
+  "permitPortal": "ProjectDox",
+  "permitPortalUrl": "https://cs.beverlyhills.org/csportal/",
+  "fireAgency": "Beverly Hills Fire Department",
+  "fireAgencyType": "municipal",
+  "fireAgencyEmail": "csohn@beverlyhills.org",
+  "fireAgencyNote": "BHFD is independent municipal fire dept — NOT LAFD. Fire plan check submitted through Building & Safety (ProjectDox); BHFD coordinates internally. ~3 week turnaround.",
+  "wuiCoverage": "partial",
+  "wuiNote": "Northern hillside areas (north of Sunset Blvd, Trousdale Estates) in VHFHSZ. Flatland portions not in VHFHSZ. State updated FHSZ boundaries April 2025 — verify current map at CalFire FHSZ viewer.",
+  "architecturalCommission": true,
+  "architecturalCommissionNote": "Required for exterior design review before building permit issuance. Trousdale Estates has stricter standards.",
+  "localCodeAmendments": [
+    "§9-1-202: Rooftop equipment must be enclosed/screened with finishes matching building exterior",
+    "§9-1-202: All wood roof coverings must be Class A fire-retardant or treated with fire-retardant spray (citywide, not just VHFHSZ)"
+  ],
+  "codeAdoptionOrd": "22-O-2868",
+  "codeAdoptionDate": "2023-01-01",
+  "operativeCode": "2025 California Building Standards Code (Title 24)",
+  "onboardedPermitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "wildfire-wui"
+  ],
+  "onboardedAt": "2026-04-16",
+  "needsHumanReview": [
+    "ADU local cap (650 sq ft) may conflict with state 850 sq ft minimum — verify compliance",
+    "April 2025 FHSZ boundary update — verify exact new boundaries at CalFire FHSZ viewer"
+  ]
+}

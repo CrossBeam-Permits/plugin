@@ -1,0 +1,23 @@
+{
+  "displayName": "Aliso Viejo",
+  "ordinanceLabel": "Aliso Viejo Municipal Code (Code Publishing) · 2025 California Building Standards Code",
+  "codePrefix": "AVMC",
+  "fireAgency": "OCFA",
+  "portalSystem": "CSS Portal (Customer Self-Service)",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/AlisoViejo/",
+  "portalUrl": "https://avcity.org/154/Building-Safety",
+  "utility": {
+    "electric": "SCE (Southern California Edison)",
+    "gas": "SoCalGas",
+    "water": "Santa Margarita Water District (SMWD)"
+  },
+  "suggestedQuestions": [
+    "Does my project require a Zoning Compliance Application (PS-240) before Building submittal?",
+    "Is my property in the Aliso Viejo Coastal Zone — do I need a Coastal Development Permit?",
+    "What are the ADU setback and size requirements under Ordinance 2023-235?",
+    "Does my project require OCFA fire review?",
+    "How do I submit plans through the CSS Portal?",
+    "What is the permit validity period — how long before I must start work?"
+  ]
+}

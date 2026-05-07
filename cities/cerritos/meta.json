@@ -1,0 +1,22 @@
+{
+  "displayName": "Cerritos",
+  "ordinanceLabel": "CMC Title 15 (Building) | Title 22 (Zoning) · CodePublishing Ord. 1052",
+  "codePrefix": "CMC",
+  "fireAgency": "Los Angeles County Fire Department",
+  "portal": "EPIC-LA (LA County BSD)",
+  "portalUrl": "https://epicla.lacounty.gov",
+  "electricUtility": "Southern California Edison (SCE)",
+  "gasUtility": "Southern California Gas (SoCalGas)",
+  "buildingDept": "Los Angeles County Building and Safety Division (contracted)",
+  "buildingDeptNote": "Cerritos contracts all building and safety services to LA County BSD. Permits are issued and inspected through the EPIC-LA portal.",
+  "climateZone": "9",
+  "wuiApplies": false,
+  "suggestedQuestions": [
+    "How do I apply for a building permit in Cerritos?",
+    "What are the ADU rules in Cerritos?",
+    "Can I get an expedited solar permit in Cerritos?",
+    "Who handles fire plan check in Cerritos?",
+    "What are the setback requirements for a block wall in Cerritos?",
+    "Does Cerritos require planning approval before building permits?"
+  ]
+}

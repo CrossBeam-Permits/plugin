@@ -1,0 +1,37 @@
+{
+  "city": "Clovis",
+  "slug": "clovis",
+  "state": "CA",
+  "county": "Fresno",
+  "climateZone": 13,
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Clovis/",
+  "buildingDept": {
+    "address": "1033 Fifth Street, Clovis, CA 93612",
+    "phone": "(559) 324-2390",
+    "inspectionPhone": "(559) 324-2337",
+    "hours": "Monday–Friday, 8:00 AM – 4:30 PM",
+    "portal": "https://css.cityofclovis.com/EnerGov_Prod/SelfService#/home"
+  },
+  "fireAgency": {
+    "name": "Clovis Fire Department",
+    "type": "city",
+    "lra": true
+  },
+  "wuiCoverage": "partial",
+  "coastal": false,
+  "onboardedTypes": [
+    "adu",
+    "ev-charger",
+    "hvac",
+    "multi-unit-residential",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater",
+    "wildfire-wui"
+  ]
+}

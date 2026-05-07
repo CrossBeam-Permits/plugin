@@ -1,0 +1,21 @@
+{
+  "displayName": "Atascadero",
+  "ordinanceLabel": "Ord. 693 · Feb 24, 2026 (2025 CBSC adoption) | Ord. 691 · Jan 27, 2026 (ADU update)",
+  "codePrefix": "AMC",
+  "fireAgency": "Atascadero Fire & Emergency Services",
+  "portal": "eTRAKiT",
+  "portalUrl": "https://permits.atascadero.org/eTrakit/",
+  "electricUtility": "PG&E",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/AT4901",
+  "wuiCoverage": "partial",
+  "county": "San Luis Obispo",
+  "suggestedQuestions": [
+    "What ADU height and setback limits apply in Atascadero?",
+    "Does my property fall in a fire hazard severity zone (FHSZ)?",
+    "What are the local WUI construction requirements for my hillside lot?",
+    "Can I use the city's pre-approved ADU stock plans?",
+    "What is the permit tier for my project — Major, Minor, or OTC?",
+    "How do I schedule a permit counter appointment?"
+  ]
+}

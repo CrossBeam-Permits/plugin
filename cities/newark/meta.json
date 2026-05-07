@@ -1,0 +1,26 @@
+{
+  "displayName": "Newark",
+  "ordinanceLabel": "2025 California Building Standards Code · No confirmed local amendments · Municode",
+  "codePrefix": "NMC",
+  "fireAgency": "Alameda County Fire Department (contracted) · (510) 578-4218",
+  "portalName": "eTRAKiT",
+  "portalUrl": "https://nwca-trk.aspgov.com/eTRAKiT/",
+  "solarPortal": "SolarAPP+",
+  "solarPortalUrl": "https://gosolarapp.org",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "climateZone": "3",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "county": "Alameda",
+  "suggestedQuestions": [
+    "How do I submit a building permit in Newark?",
+    "What are the ADU rules in Newark, CA?",
+    "Does Newark have a pre-approved ADU program?",
+    "How do I get a solar permit in Newark?",
+    "What are the setback requirements for a fence or block wall in Newark?",
+    "Does Newark require fire sprinklers for residential additions?",
+    "What permits does Newark issue online via eTRAKiT?",
+    "What are the inspection request hours for Newark Building Division?"
+  ]
+}

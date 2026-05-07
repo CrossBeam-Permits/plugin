@@ -1,0 +1,19 @@
+{
+  "displayName": "Lancaster",
+  "ordinanceLabel": "Ord. 1094 · January 1, 2023 (Building Code Local Amendments)",
+  "codePrefix": "LMC",
+  "fireAgency": "Los Angeles County Fire Department",
+  "portal": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/LANCASTER/Default.aspx",
+  "expeditedPortal": "Symbium",
+  "expeditedPortalUrl": "https://symbium.com/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "Does Lancaster allow wood shake roofing?",
+    "What are the pre-approved ADU plan options in Lancaster?",
+    "Do I need LA County Fire approval for my solar array?",
+    "What are the setback requirements for a detached ADU?",
+    "How do I submit a solar permit in Lancaster?",
+    "Is my property in a fire hazard severity zone?"
+  ]
+}

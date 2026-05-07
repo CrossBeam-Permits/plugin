@@ -1,0 +1,22 @@
+{
+  "displayName": "Auburn",
+  "ordinanceLabel": "Auburn City Code (ACC) | 2025 CBSC in effect",
+  "codePrefix": "ACC",
+  "fireAgency": "Auburn City Fire Department",
+  "portal": "Civic Access (CivicPlus)",
+  "portalUrl": "https://www.auburn.ca.gov/754/Apply-for-a-Building-Permit",
+  "solarPortalUrl": "https://www.auburn.ca.gov/700/Symbium-Permits",
+  "electricUtility": "PG&E",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://auburn.municipalcodeonline.com/",
+  "wuiCoverage": "partial",
+  "county": "Placer",
+  "suggestedQuestions": [
+    "Does my parcel fall within Auburn's 2025 updated fire hazard severity zone?",
+    "What WUI construction requirements apply to my property in Auburn?",
+    "What ADU setback and size limits apply in Auburn?",
+    "Which portal do I use for permits — Civic Access or Symbium?",
+    "What are Auburn's building department hours and contact info?",
+    "Are there local code amendments beyond the state California Building Code?"
+  ]
+}

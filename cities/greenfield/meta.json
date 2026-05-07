@@ -1,0 +1,21 @@
+{
+  "displayName": "Greenfield",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Greenfield Municipal Code (Ord. 542 2019, Ord. 561 2023)",
+  "codePrefix": "GMC",
+  "fireAgency": "Greenfield Fire Department · (831) 674-5591 · 380 Oak Ave, Greenfield CA 93927",
+  "planCheckContractor": "Mark Meyers (Building Official, consultant)",
+  "climateZone": "4",
+  "seismicCategory": "D",
+  "fhsz": "partial",
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Greenfield?",
+    "Does Greenfield allow NFPA 13D fire sprinklers in residential buildings?",
+    "What are the solar rooftop access pathway requirements in Greenfield?",
+    "Is my Greenfield property in a Fire Hazard Severity Zone?",
+    "How do I submit a building permit in Greenfield?",
+    "What are the restaurant tenant improvement requirements in Greenfield?",
+    "What fire code amendments has Greenfield adopted?",
+    "Does my Greenfield project need WUI ignition-resistant construction?"
+  ]
+}

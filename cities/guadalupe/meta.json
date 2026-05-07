@@ -1,0 +1,31 @@
+{
+  "name": "Guadalupe",
+  "slug": "guadalupe",
+  "county": "Santa Barbara",
+  "state": "CA",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://www.ecode360.com/guadalupe",
+  "cityWebsite": "https://www.cityofguadalupe.org",
+  "buildingDept": {
+    "name": "Guadalupe Community Development Department",
+    "address": "918 Obispo Street, Guadalupe, CA 93434",
+    "phone": "(805) 343-1045",
+    "contractInspector": "JAS Pacific"
+  },
+  "fireDept": {
+    "name": "City of Guadalupe Fire Department",
+    "address": "918 Obispo Street, Guadalupe, CA 93434",
+    "phone": "(805) 356-3905"
+  },
+  "fhszDesignation": null,
+  "wui": false,
+  "onboardedPermitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti"
+  ],
+  "notSupported": ["commercial-ti"],
+  "onboardedAt": "2026-04-16"
+}

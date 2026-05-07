@@ -1,0 +1,25 @@
+{
+  "displayName": "Los Banos",
+  "ordinanceLabel": "2025 California Building Standards Code · Los Banos Municipal Code (eCode360, Ord. 1207 March 2025) · No local amendments filed with CBSC for 2025 cycle",
+  "codePrefix": "LBMC",
+  "fireAgency": "Los Banos Fire Department · (209) 827-7000 · losbanos.org/city-government/departments/fire",
+  "portalName": null,
+  "portalUrl": null,
+  "planCheckContractor": "CSG Engineers & Consultants · losbanosbldg@csgengr.com · (209) 827-7000 ext. 1300",
+  "climateZone": "12",
+  "seismicCategory": "C/D",
+  "fhsz": false,
+  "coastalZone": false,
+  "solarInstantPermit": "Symbium · https://symbium.com/instantpermitting",
+  "suggestedQuestions": [
+    "What are the ADU rules in Los Banos?",
+    "How do I submit a building permit in Los Banos?",
+    "Does Los Banos have an online permit portal?",
+    "What are the solar permit requirements in Los Banos?",
+    "How do I get an instant solar permit in Los Banos?",
+    "What are the EV charger requirements in Los Banos?",
+    "Does my Los Banos project need a fire plan check?",
+    "What are the swimming pool barrier requirements in Los Banos?",
+    "Does Los Banos have any FHSZ or WUI areas?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "displayName": "Solana Beach",
+  "ordinanceLabel": "Solana Beach Municipal Code (CodePublishing) · 2025 California Building Standards Code",
+  "codePrefix": "SBMC",
+  "fireAgency": "Solana Beach Fire Department (city-operated, ISO Class 1)",
+  "portalSystem": "eTrakit",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/SolanaBeach/",
+  "portalUrl": "https://solab-trk.aspgov.com/etrakit",
+  "planCheckProvider": "Interwest Consulting Group",
+  "coastalZone": true,
+  "coastalZoneNote": "ENTIRE city is within California Coastal Zone. CCC CDP required before city building permit for all development.",
+  "utility": {
+    "electric": "SDG&E (San Diego Gas & Electric)",
+    "gas": "SDG&E (San Diego Gas & Electric)",
+    "water": "Solana Beach Water District"
+  },
+  "climateZone": "7",
+  "seismicDesignCategory": "D",
+  "suggestedQuestions": [
+    "Does my project in Solana Beach require a Coastal Development Permit from the CCC?",
+    "What are the ADU rules in Solana Beach — does the PADU program apply to my project?",
+    "My project is on Highway 101 — does the Specific Plan impose additional requirements?",
+    "Do I need Planning approval before submitting my building permit application?",
+    "How do I submit a permit through the eTrakit portal?",
+    "My pool excavation is over 100 cubic yards — do I need a Development Review Permit?"
+  ]
+}

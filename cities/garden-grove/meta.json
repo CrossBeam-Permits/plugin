@@ -1,0 +1,19 @@
+{
+  "displayName": "Garden Grove",
+  "ordinanceLabel": "Ordinance No. 2971 · Adopted November 12, 2025",
+  "codePrefix": "GGMC",
+  "fireAgency": "OCFA",
+  "portalPlatform": "PermitSoft",
+  "portalBrand": "PermitSoft",
+  "climateZone": 8,
+  "isCoastal": false,
+  "muniCodeURL": "https://ecode360.com/GA4928",
+  "suggestedQuestions": [
+    "What are the ADU setback and height rules in Garden Grove?",
+    "Does Garden Grove use SolarAPP+ for solar permits?",
+    "What are the R-1 development standards (setbacks, height, lot coverage)?",
+    "Does my project need OCFA fire review?",
+    "How do I submit plans through the PermitSoft portal?",
+    "What are the sign permit requirements along Garden Grove Blvd?"
+  ]
+}

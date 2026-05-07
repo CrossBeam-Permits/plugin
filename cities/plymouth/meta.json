@@ -1,0 +1,31 @@
+{
+  "displayName": "City of Plymouth",
+  "ordinanceLabel": "Plymouth Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "PMC",
+  "fireAgency": "Amador Fire Protection District",
+  "fireAgencyType": "district-contracted",
+  "responsibilityArea": "LRA",
+  "portal": null,
+  "portalUrl": null,
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "City of Plymouth / Amador Water Agency",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://qcode.us/codes/plymouth/",
+  "wuiCoverage": "partial",
+  "climateZone": 12,
+  "county": "Amador",
+  "population": 1078,
+  "suggestedQuestions": [
+    "Does my parcel in Plymouth fall within a Fire Hazard Severity Zone?",
+    "What are the ADU rules for Plymouth, CA?",
+    "Where do I submit a building permit in Plymouth?",
+    "What building codes has Plymouth adopted?",
+    "What impact fees apply to a new home in Plymouth?",
+    "What are the WUI construction requirements for my Plymouth project?",
+    "What is the Amador Fire Protection District's role in permit review?",
+    "What is the permit fee for a solar installation in Plymouth?",
+    "Do I need HOA approval before submitting a permit in Plymouth?"
+  ]
+}

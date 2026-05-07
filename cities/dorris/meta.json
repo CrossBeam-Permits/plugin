@@ -1,0 +1,32 @@
+{
+  "displayName": "City of Dorris",
+  "ordinanceLabel": "Dorris Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "DMC",
+  "fireAgency": "Dorris Volunteer Fire Department",
+  "fireAgencyType": "volunteer",
+  "responsibilityArea": "LRA",
+  "portal": null,
+  "portalUrl": "https://www.dorrisca.us/departments/building/",
+  "solarAppPlus": false,
+  "electricUtility": "Pacific Power (PacifiCorp)",
+  "gasUtility": "Pacific Power (PacifiCorp)",
+  "waterUtility": "City of Dorris",
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.dorrisca.us/wp-content/uploads/2023/05/Dorrisfullcode0123.pdf",
+  "wuiCoverage": null,
+  "climateZone": 16,
+  "county": "Siskiyou",
+  "population": 800,
+  "buildingDeptContractedTo": "City of Weed Building Department",
+  "buildingDeptPhone": "530-938-5025",
+  "buildingDeptEmail": "buildingdept@ci.weed.ca.us",
+  "suggestedQuestions": [
+    "Who handles building permits for the City of Dorris?",
+    "What are the ADU size and setback rules in Dorris?",
+    "How do I submit a building permit application in Dorris?",
+    "Does Dorris have any Fire Hazard Severity Zones?",
+    "What building codes are in effect in Dorris?",
+    "What is the climate zone for Dorris, California?",
+    "What are the solar permit requirements in Dorris?"
+  ]
+}

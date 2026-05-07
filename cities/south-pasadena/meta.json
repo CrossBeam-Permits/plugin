@@ -1,0 +1,46 @@
+{
+  "city": "South Pasadena",
+  "slug": "south-pasadena",
+  "county": "Los Angeles",
+  "state": "CA",
+  "population": 26000,
+  "incorporated": 1888,
+  "timezone": "America/Los_Angeles",
+  "buildingDivision": {
+    "address": "City Hall, 1414 Mission Street, South Pasadena, CA 91030",
+    "phone": "(626) 403-7240",
+    "website": "https://www.southpasadenaca.gov/government/departments/community-development/building-division"
+  },
+  "fireAuthority": {
+    "name": "South Pasadena Fire Department (SPFD)",
+    "address": "817 Mound Ave, South Pasadena, CA 91030",
+    "phone": "(626) 403-7300",
+    "inHousePlanCheck": true
+  },
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/SouthPasadena/",
+  "codeAdoptionOrdinances": ["2407", "2408", "2410"],
+  "codeEffectiveDate": "2026-01-01",
+  "fhszCoverage": "partial",
+  "fhszDesignationDate": "2025-08-20",
+  "historicDistricts": 5,
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "swimming-pool",
+    "fence",
+    "reroof",
+    "ev-charger",
+    "water-heater",
+    "hvac",
+    "panel-upgrade",
+    "wildfire-wui",
+    "window-replacement",
+    "sign"
+  ],
+  "onboardedAt": "2026-04-16"
+}

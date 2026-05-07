@@ -1,0 +1,30 @@
+{
+  "displayName": "City of Willits",
+  "ordinanceLabel": "Willits Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "WMC",
+  "fireAgency": "Little Lake Fire Protection District",
+  "fireAgencyType": "fire-district",
+  "responsibilityArea": "LRA",
+  "portal": "iWorQ",
+  "portalUrl": "https://cityofwillits.portal.iworq.net/portalhome/cityofwillits",
+  "solarAppPlus": true,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "City of Willits",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/willits/codes/code_of_ordinances?nodeId=TIT15BUCO",
+  "wuiCoverage": "partial",
+  "climateZone": 2,
+  "county": "Mendocino",
+  "population": 5000,
+  "suggestedQuestions": [
+    "Does my parcel in Willits fall within a mapped LRA Fire Hazard Severity Zone?",
+    "Can I use SolarAPP+ for my solar permit in Willits?",
+    "Where do I submit a building permit application in Willits?",
+    "What are the building department hours in Willits?",
+    "What is the permit fee basis for Willits building permits?",
+    "Does Willits have any local amendments to state building codes?",
+    "What fire agency reviews building permits in Willits?",
+    "What climate zone is Willits in for Title 24 energy compliance?"
+  ]
+}

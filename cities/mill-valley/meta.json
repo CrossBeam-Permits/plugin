@@ -1,0 +1,25 @@
+{
+  "displayName": "Mill Valley",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Mill Valley Municipal Code (Ord. 1363/1364, Dec. 2025)",
+  "codePrefix": "MVMC",
+  "fireAgency": "Southern Marin Fire Protection District (SMFD) · prevention@smfd.org · ~14 business day plan check",
+  "portalName": "OpenGov",
+  "portalUrl": "https://millvalleyca.portal.opengov.com",
+  "climateZone": "3",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "wuiCitywide": true,
+  "coastalZone": false,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/MI4968",
+  "suggestedQuestions": [
+    "What are the ADU rules in Mill Valley?",
+    "Does Mill Valley require WUI ignition-resistant construction?",
+    "How do I submit a building permit in Mill Valley?",
+    "What is the SMFD fire plan check process for Mill Valley?",
+    "What are the solar permit requirements in Mill Valley?",
+    "Does Mill Valley have a pre-approval program for ADUs?",
+    "What are the swimming pool requirements in Mill Valley?",
+    "What are the restaurant TI permit requirements in Mill Valley?"
+  ]
+}

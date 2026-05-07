@@ -1,0 +1,19 @@
+{
+  "displayName": "Point Arena",
+  "ordinanceLabel": "Title 18 Zoning (Ord 243, Apr 2024) · LCP (Ord 242, Sept 2023) · FHSZ (Ord 245)",
+  "codePrefix": "PA",
+  "fireAgency": "CAL FIRE Mendocino Unit (Battalion 5)",
+  "muniCodeUrl": "https://ecode360.com/PO4990",
+  "permitPortal": "Mendocino County Planning & Building Services (contracted)",
+  "planCheck": "Mendocino County Building Division (contracted)",
+  "climateZone": "1",
+  "seismicDesignCategory": "D",
+  "suggestedQuestions": [
+    "Do I need a Coastal Development Permit for my project in Point Arena?",
+    "What are the ADU setback rules in Point Arena's coastal zone?",
+    "Is my property in a Fire Hazard Severity Zone in Point Arena?",
+    "Who issues building permits in Point Arena — the city or county?",
+    "What is the density limit for multifamily development in Point Arena?",
+    "How does Point Arena's Local Coastal Program affect my ADU application?"
+  ]
+}

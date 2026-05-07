@@ -1,0 +1,26 @@
+{
+  "displayName": "Ventura",
+  "officialName": "City of San Buenaventura",
+  "ordinanceLabel": "ADU Ord. 2023-09 · 2025 CBSC (statewide cycle)",
+  "codePrefix": "SBMC",
+  "fireAgency": "Ventura City Fire Department",
+  "portal": "VenturaOPS (Accela)",
+  "portalUrl": "https://www.cityofventura.ca.gov/1451/Building-Permits",
+  "instantPermitsPortal": "Symbium",
+  "instantPermitsPortalUrl": "https://ventura.permitflow.com",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/san_buenaventura",
+  "climateZones": ["CZ6"],
+  "wuiCoverage": "partial",
+  "hasCertifiedLCP": true,
+  "hasHistoricOverlay": true,
+  "historicDistricts": 5,
+  "suggestedQuestions": [
+    "What ADU size limits apply in Ventura?",
+    "Does my property need a Coastal Development Permit?",
+    "Is my property in a historic district — do I need CHC approval?",
+    "Is my property in a wildfire/FHSZ zone requiring Chapter 7A?",
+    "Can I use the instant permit portal for my window or reroof project?",
+    "What is the plan check turnaround time in Ventura?"
+  ]
+}

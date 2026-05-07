@@ -1,0 +1,22 @@
+{
+  "displayName": "Stanton",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Stanton Municipal Code (through Ord. 1168)",
+  "codePrefix": "SMC",
+  "fireAgency": "OCFA",
+  "portalName": "CTS Plan Check",
+  "portalUrl": "https://stanton.cts.city",
+  "climateZone": "8",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Stanton?",
+    "Do I need a permit for a patio cover in Stanton?",
+    "What are the solar permit requirements in Stanton?",
+    "How do I submit plans in Stanton?",
+    "What are the counter hours for Stanton Building Division?",
+    "What are the EV charger requirements in Stanton?",
+    "Do I need a permit for a kitchen remodel in Stanton?",
+    "What are the swimming pool requirements in Stanton?"
+  ]
+}

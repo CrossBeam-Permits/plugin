@@ -1,0 +1,23 @@
+{
+  "displayName": "King City",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per KCMC Title 12 Ch. 12.04 · eCode360 KI4948",
+  "codePrefix": "KCMC",
+  "fireAgency": "King City Fire Department · (831) 385-3430",
+  "portalName": "Citizenserve",
+  "portalUrl": "https://www2.citizenserve.com/Portal/PortalController?Action=showPermit&ctzPagePrefix=Portal_&installationID=367",
+  "climateZone": "4",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "county": "Monterey",
+  "suggestedQuestions": [
+    "What are the ADU rules in King City?",
+    "Does King City have pre-approved ADU plans?",
+    "How do I submit a building permit in King City?",
+    "What are the solar permit requirements in King City?",
+    "What are the inspection hours for King City Building Division?",
+    "What commercial tenant improvement permits does King City require?",
+    "Does King City have a wildfire/WUI overlay?",
+    "What are the setback requirements for R-1 zoning in King City?"
+  ]
+}

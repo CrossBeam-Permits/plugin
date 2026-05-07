@@ -1,0 +1,21 @@
+{
+  "displayName": "Cupertino",
+  "ordinanceLabel": "Ord. 25-2278 · November 2025 (2025 CA Codes) | CMC Ch. 19.112 · September 2025 (ADU)",
+  "codePrefix": "CMC",
+  "fireAgency": "Santa Clara County Fire Department (SCCFD) · sccfd.org",
+  "portalName": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/CUPERTINO/Default.aspx",
+  "solarApp": true,
+  "climateZone": "4",
+  "seismicCategory": "D",
+  "fhsz": "partial",
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "Do I need fire sprinklers for my new home or ADU in Cupertino?",
+    "Does my project need Class A roofing — even outside the WUI zone?",
+    "What seismic bracing methods are prohibited in Cupertino?",
+    "Is my property in the Cupertino fire hazard severity zone (FHSZ)?",
+    "What are the ADU size limits in Cupertino for a non-streamlined project?",
+    "Does my chimney need a spark arrestor in Cupertino?"
+  ]
+}

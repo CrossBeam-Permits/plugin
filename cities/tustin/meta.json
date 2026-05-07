@@ -1,0 +1,22 @@
+{
+  "displayName": "Tustin",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Tustin City Code",
+  "codePrefix": "TCC",
+  "fireAgency": "OCFA",
+  "portalName": "EnerGov",
+  "portalUrl": "https://tustinca-energovpub.tylerhost.net/Apps/SelfService",
+  "climateZone": "8",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Tustin?",
+    "Do I need a permit for a fence in Tustin?",
+    "What are the solar permit requirements in Tustin?",
+    "How do I submit plans to Tustin Building Division?",
+    "What are the EV charger requirements in Tustin?",
+    "What are the swimming pool barrier requirements in Tustin?",
+    "What are the patio cover rules in Tustin?",
+    "What are the retaining wall requirements in Tustin?"
+  ]
+}

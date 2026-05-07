@@ -1,0 +1,32 @@
+{
+  "city": "Fillmore",
+  "slug": "fillmore",
+  "state": "CA",
+  "county": "Ventura",
+  "population": 15700,
+  "website": "https://www.fillmoreca.gov",
+  "buildingDept": {
+    "name": "City of Fillmore Building & Safety",
+    "url": "https://www.fillmoreca.gov/165/Building-Safety",
+    "phone": "805-524-7125",
+    "address": "250 Central Avenue, Fillmore, CA 93015",
+    "hours": "Monday–Friday, 8 AM–4 PM",
+    "inspections": "Tuesday–Thursday, 8:30 AM–12 PM",
+    "planCheckContractor": "Bureau Veritas"
+  },
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/fillmore/codes/code_of_ordinances",
+  "wuiCoverage": "partial",
+  "fireAgency": "City of Fillmore Fire Department (independent municipal)",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "swimming-pool",
+    "window-replacement"
+  ]
+}

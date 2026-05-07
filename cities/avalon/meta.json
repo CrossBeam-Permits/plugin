@@ -1,0 +1,24 @@
+{
+  "displayName": "Avalon",
+  "ordinanceLabel": "Avalon Municipal Code Title 8 (Building) | Title 9 (Planning/Zoning/ADU) | ecode360 AV4054",
+  "codePrefix": "AMC",
+  "fireAgency": "Avalon Fire Department (city-operated — NOT LACoFD)",
+  "portal": "Planning & Building Department (in-person)",
+  "portalUrl": "https://www.cityofavalon.com",
+  "electricUtility": "Southern California Edison (SCE)",
+  "climateZone": "CZ6",
+  "wuiCoverage": "all",
+  "fhsz": "VHFHSZ",
+  "coastalZone": "full",
+  "island": true,
+  "noNaturalGas": true,
+  "adjacentLandTrust": "Catalina Island Conservancy",
+  "suggestedQuestions": [
+    "Does my project need a Coastal Development Permit?",
+    "Do Chapter 7A WUI requirements apply to my project in Avalon?",
+    "Can I get an ADU permit in Avalon?",
+    "How do I submit a building permit application in Avalon?",
+    "What roofing materials are required in Avalon's fire hazard zone?",
+    "Does Avalon have natural gas service?"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": "San Gabriel",
+  "slug": "san-gabriel",
+  "state": "CA",
+  "county": "Los Angeles",
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/sangabriel/latest/sangabriel_ca/0-0-0-1",
+  "muniCodeScrapeable": false,
+  "muniCodeNote": "amlegal WAF blocks direct WebFetch (HTTP 403 on all attempts). Use city website forms pages and web search snippets as fallback.",
+  "permitPortal": "eTRAKiT",
+  "permitPortalUrl": "https://etrakit.sgcityhall.com/",
+  "submissionEmail": "CommDevInfo@sgch.org",
+  "fireAgency": "San Gabriel Fire Prevention Bureau",
+  "fireAgencyType": "municipal",
+  "fireAgencyPhone": "(626) 476-2505",
+  "fireAgencyAddress": "1303 S. Del Mar Ave., San Gabriel, CA 91776",
+  "fireAgencyContact": "Deputy Fire Marshal Simon Melkumyan",
+  "fireAgencyNote": "San Gabriel has its own municipal fire department — NOT LA County Fire. Fire plan check submitted through San Gabriel Fire Prevention Bureau.",
+  "wuiCoverage": "none",
+  "wuiNote": "No part of San Gabriel is in Moderate, High, or Very High FHSZ. Ord. 719 adopted CalFire LRA FHSZ map. Fire Chief confirmed no WUI designation.",
+  "climateZone": "9",
+  "seismicDesignCategory": "D",
+  "localCodeAmendments": [
+    "Ord. 686 (November 2022): Adopted 2022 California Building Standards Code with local amendments (Ch. 150 SGMC). Full text blocked by amlegal WAF — operator review recommended.",
+    "Ord. 706 (April 16, 2024): ADU ordinance implementing AB 897/AB 2221 (§153.047 SGMC)",
+    "Ord. 719: Adopted CalFire LRA FHSZ map — no city parcels in FHSZ"
+  ],
+  "codeAdoptionOrd": "686",
+  "codeAdoptionDate": "2022-11-01",
+  "operativeCode": "2025 California Building Standards Code (Title 24, effective January 1, 2026)",
+  "solarApp": true,
+  "solarAppNote": "San Gabriel uses SolarAPP+ for expedited residential solar permits",
+  "onboardedPermitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "fence"
+  ],
+  "stateSkillOnlyTypes": [
+    "solar",
+    "reroof",
+    "pool-demolition",
+    "swimming-pool",
+    "window-replacement",
+    "water-heater",
+    "hvac",
+    "panel-upgrade",
+    "rewire",
+    "repipe",
+    "kitchen-bath-remodel",
+    "retaining-wall",
+    "ev-charger"
+  ],
+  "onboardedAt": "2026-04-16",
+  "needsHumanReview": [
+    "Full text of SGMC Ch. 150 local amendments not retrieved (amlegal 403). Structural amendments from LA Basin committee not confirmed. Review Ch. 150 directly before publishing SFR/residential-addition overlays."
+  ]
+}

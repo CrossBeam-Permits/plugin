@@ -1,0 +1,26 @@
+{
+  "displayName": "Napa",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Napa Municipal Code (ecode360) Title 15",
+  "codePrefix": "NMC",
+  "fireAgency": "City of Napa Fire Prevention Division · (707) 257-9590",
+  "portalName": null,
+  "portalUrl": null,
+  "climateZone": "2",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "fhszCoverage": "partial",
+  "coastalZone": false,
+  "closedFridays": true,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/NA4976",
+  "suggestedQuestions": [
+    "What are the ADU rules in Napa?",
+    "Is my Napa property in a Fire Hazard Severity Zone?",
+    "Do I need a geotechnical report for a pool in Napa?",
+    "What are the water efficiency requirements for new construction in Napa?",
+    "How do I submit a building permit in Napa?",
+    "What are the solar permit requirements in Napa?",
+    "Does Napa have a Health Officer food permit requirement for restaurants?",
+    "What are the review timelines at Napa Building Division?"
+  ]
+}

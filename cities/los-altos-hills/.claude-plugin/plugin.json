@@ -1,0 +1,22 @@
+{
+  "name": "los-altos-hills",
+  "description": "Plan-check skills for Los Altos Hills, CA — simple permits with local local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/los-altos-hills",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "los-altos-hills",
+    "plan-check",
+    "permits",
+    "santa-clara-county",
+    "los",
+    "altos",
+    "hills"
+  ]
+}

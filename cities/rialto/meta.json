@@ -1,0 +1,18 @@
+{
+  "displayName": "Rialto",
+  "ordinanceLabel": "Ord. 1590 (ADU) · Ord. 1691 + Res. 8179 (Fire Code) · 2022 California Building Standards Code",
+  "codePrefix": "RMC",
+  "fireAgency": "Rialto Fire Department — Fire Prevention Division · (909) 820-2505",
+  "portal": "Online Permitting Center (OPC) — TylerHost EnerGov",
+  "portalUrl": "https://cityofrialtoca-energovweb.tylerhost.net/apps/selfservice",
+  "electricUtility": "Southern California Edison (SCE)",
+  "gasUtility": "Southern California Gas Company (SoCalGas)",
+  "suggestedQuestions": [
+    "Does Rialto require solar panels on a new detached ADU?",
+    "Do I need separate utility meters for my ADU in Rialto?",
+    "How do I submit a building permit in Rialto?",
+    "Is my property in a Fire Hazard Severity Zone in Rialto?",
+    "What are the setback requirements for a new ADU in Rialto?",
+    "Does my Rialto project need WUI ignition-resistant construction?"
+  ]
+}

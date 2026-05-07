@@ -1,0 +1,33 @@
+{
+  "city": "Coalinga",
+  "slug": "coalinga",
+  "county": "Fresno",
+  "state": "CA",
+  "population": 17000,
+  "climateZones": ["CZ13"],
+  "fireAgency": "Coalinga Fire Department",
+  "vhfhsz": false,
+  "wuiPartial": false,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/coalinga/codes/code_of_ordinances",
+  "buildingDept": {
+    "name": "City of Coalinga Building Division",
+    "phone": "(559) 935-1533 ext. 146",
+    "address": "155 W. Durian Street, Coalinga, CA 93210"
+  },
+  "healthDept": {
+    "name": "Fresno County Department of Public Health and Animal Services",
+    "notes": "Handles food facility plan review and inspections for all cities in Fresno County including Coalinga"
+  },
+  "permitTypes": [
+    "adu",
+    "multi-unit-residential",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar"
+  ],
+  "onboardedAt": "2026-04-24",
+  "readyForPromotion": false
+}

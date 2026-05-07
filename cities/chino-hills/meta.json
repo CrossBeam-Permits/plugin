@@ -1,0 +1,14 @@
+{
+  "displayName": "Chino Hills",
+  "ordinanceLabel": "Chino Hills Municipal Code · Title 16 (Municode)",
+  "codePrefix": "CHMC",
+  "fireAgency": "Chino Valley Independent Fire District (CVIFD)",
+  "suggestedQuestions": [
+    "Is my property in the ADU Ineligibility District?",
+    "My lot is in the Fire Hazard Overlay — does the 30-ft ADU separation rule apply to me?",
+    "Does my project need a separate CVIFD fire plan check before the city permit?",
+    "What are the setback and height limits for a detached ADU in Chino Hills?",
+    "How do I submit plans through the EnerGov portal?",
+    "Is my property in a Very High Fire Hazard Severity Zone — do WUI building standards apply?"
+  ]
+}

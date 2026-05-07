@@ -1,0 +1,30 @@
+{
+  "city": "Lafayette",
+  "slug": "lafayette",
+  "state": "CA",
+  "county": "Contra Costa County",
+  "climateZone": 12,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/lafayette/codes/code_of_ordinances",
+  "planCheckAuthority": "CCCBID",
+  "planCheckUrl": "https://epermits.cccounty.us",
+  "fireAuthority": "CCCFPD",
+  "fireSubmitUrl": "https://confire.vision33cloud.com/citizenportal/app/login",
+  "wuiCoverage": "partial",
+  "fhszVeryHigh": true,
+  "populationApprox": 26000,
+  "permitTypesSupported": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "swimming-pool",
+    "wildfire-wui"
+  ],
+  "notSupported": ["commercial-ti"],
+  "lastUpdated": "2026-04-22",
+  "onboardVersion": "1.0"
+}

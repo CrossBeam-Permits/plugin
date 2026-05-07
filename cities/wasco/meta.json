@@ -1,0 +1,44 @@
+{
+  "city": "Wasco",
+  "slug": "wasco",
+  "state": "CA",
+  "county": "Kern",
+  "population": 28000,
+  "muniCodePlatform": "codify",
+  "muniCodeUrl": "https://wasco.municipal.codes/",
+  "permitPortal": "mygov",
+  "permitPortalUrl": "https://public.mygov.us/wasco_ca/templates?module=pi",
+  "buildingDept": {
+    "name": "Community Development Department",
+    "phone": "661-758-7250",
+    "email": "wascocd@cityofwasco.org",
+    "address": "764 E Street, Wasco, CA 93280"
+  },
+  "fireAgency": {
+    "name": "Kern County Fire Department",
+    "type": "contract",
+    "planCheckPhone": "661-391-3310",
+    "station": "Station 31 — 2424 7th Street, Wasco, CA 93280"
+  },
+  "fhsz": null,
+  "wui": false,
+  "coastal": false,
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "swimming-pool",
+    "patio-cover",
+    "window-replacement",
+    "hvac",
+    "water-heater",
+    "siding-replacement",
+    "retaining-wall",
+    "fence",
+    "panel-upgrade"
+  ]
+}

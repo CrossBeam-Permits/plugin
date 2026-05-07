@@ -1,0 +1,23 @@
+{
+  "displayName": "San Clemente",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per San Clemente Municipal Code Title 15",
+  "codePrefix": "SCMC",
+  "fireAgency": "OCFA",
+  "coastalCity": true,
+  "lcpStatus": "partial",
+  "cdpAuthority": "California Coastal Commission (LCP IP pending — city CDP authority not yet active)",
+  "utilityElectric": "SCE",
+  "utilityGas": "SoCalGas",
+  "utilityWater": "City of San Clemente Public Works",
+  "solarPortal": "SolarAPP+",
+  "permitPortal": "eTRAKiT",
+  "climateZone": "6",
+  "suggestedQuestions": [
+    "Is my project in the San Clemente Coastal Zone and do I need a CDP?",
+    "Can I use SolarAPP+ for my solar permit in San Clemente?",
+    "What are the ADU standards at §17.28.270?",
+    "Is my parcel in a Specific Plan area (Talega, Marblehead, Pier Bowl, etc.)?",
+    "Does OCFA need to approve my fire sprinkler system before I get a building permit?",
+    "What utility provider handles interconnection for my solar or panel upgrade in San Clemente?"
+  ]
+}

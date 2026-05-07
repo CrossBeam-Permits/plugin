@@ -1,0 +1,51 @@
+{
+  "name": "Baldwin Park",
+  "slug": "baldwin-park",
+  "state": "CA",
+  "county": "Los Angeles County",
+  "population": 75000,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/baldwinpark/latest/baldwinpark_ca/0-0-0-1",
+  "buildingDepartment": {
+    "name": "City of Baldwin Park Building & Safety Division",
+    "address": "14403 Pacific Avenue, Baldwin Park, CA 91706",
+    "phone": "626-813-5265",
+    "email": "BPBuilding@baldwinpark.com",
+    "hours": "Monday–Thursday 8am–5pm, closed Friday",
+    "buildingOfficial": "Long Tang",
+    "type": "city-run",
+    "portal": null
+  },
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department",
+    "station": "Station 29",
+    "address": "14334 Los Angeles St, Baldwin Park, CA 91706",
+    "phone": "626-337-0525",
+    "planCheckRequired": true,
+    "planCheckScope": "New construction with fire sprinklers, commercial projects, FHSZ Fuel Modification Plans"
+  },
+  "wuiCoverage": "omit",
+  "aduParkingExemptionCitywide": true,
+  "transitProximityNote": "All residential areas within ½ mile of public transit — ADU parking exemption applies citywide",
+  "onboardedPermitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "water-heater",
+    "hvac",
+    "panel-upgrade",
+    "swimming-pool",
+    "ev-charger",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "fence",
+    "retaining-wall",
+    "patio-cover"
+  ],
+  "createdAt": "2026-04-16",
+  "onboardVersion": "1.0"
+}

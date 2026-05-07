@@ -1,0 +1,27 @@
+{
+  "name": "Cudahy",
+  "slug": "cudahy",
+  "county": "Los Angeles",
+  "state": "CA",
+  "muniCodeUrl": "https://cudahy.municipal.codes/",
+  "muniCodePlatform": "codify",
+  "fireAgency": "Los Angeles County Fire Department",
+  "wuiCoverage": false,
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "water-heater",
+    "hvac",
+    "panel-upgrade"
+  ],
+  "buildingDept": {
+    "address": "5220 Santa Ana Street, Cudahy, CA 90201",
+    "phone": "323-773-5143 ext. 243",
+    "hours": "Monday–Thursday 7:00 AM–12:00 PM and 1:00 PM–5:00 PM",
+    "buildingOfficial": "Raul Diaz"
+  }
+}

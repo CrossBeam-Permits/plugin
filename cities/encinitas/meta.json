@@ -1,0 +1,19 @@
+{
+  "displayName": "Encinitas",
+  "ordinanceLabel": "Title 23 Building · Title 30 Zoning · 2022 CBC · Ch. 30.48 ADU · Ch. 30.80 CDP",
+  "codePrefix": "EMC",
+  "fireAgency": "Encinitas Fire Department (city-operated)",
+  "muniCodeUrl": "https://ecode360.com/EN5042",
+  "permitPortal": "CSS (govaccess.org)",
+  "planCheck": "EsGil Corporation (contracted)",
+  "climateZone": "7",
+  "seismicDesignCategory": "D",
+  "suggestedQuestions": [
+    "Do I need a Coastal Development Permit for my project in Encinitas?",
+    "What are Encinitas ADU size limits and the PRADU program?",
+    "How does the SolarAPP+ expedited process work in Encinitas?",
+    "What is the 1-day OTC permit for a heat pump water heater?",
+    "Is my property in a Fire Hazard Severity Zone in Encinitas?",
+    "How do I submit permits through the CSS portal?"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "displayName": "Arcadia",
+  "ordinanceLabel": "AMC Art. VIII (Building) | Art. IX (Zoning) · Municode",
+  "codePrefix": "AMC",
+  "fireAgency": "Arcadia Fire Department — Fire Prevention Bureau (in-house)",
+  "portal": "EDGE ePermitting",
+  "portalUrl": "https://www.arcadiaca.gov",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingDept": "Development Services — Building Services Division",
+  "buildingDeptNote": "Kenneth Fields, CBO CASp — Building Official. Phone: (626) 574-5416. AFD Fire Prevention Bureau reviews all fire/life-safety; in-house plan check — not LACoFD. EDGE ePermitting platform.",
+  "climateZone": "10",
+  "suggestedQuestions": [
+    "Is my property in the Arcadia VHFHSZ fire zone?",
+    "What are the ADU height and setback rules in Arcadia?",
+    "Does Arcadia have pre-approved ADU plans?",
+    "Who reviews fire plans in Arcadia — city or county?",
+    "What WUI construction requirements apply to my Arcadia project?",
+    "Does Arcadia use the EDGE permit system?"
+  ]
+}

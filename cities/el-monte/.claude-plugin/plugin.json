@@ -1,0 +1,20 @@
+{
+  "name": "el-monte",
+  "description": "Plan-check skills for El Monte, CA — simple permits with EMMC local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/el-monte",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "el-monte",
+    "plan-check",
+    "permits",
+    "el",
+    "monte"
+  ]
+}

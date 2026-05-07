@@ -1,0 +1,38 @@
+{
+  "city": "Commerce",
+  "slug": "commerce",
+  "county": "Los Angeles",
+  "state": "CA",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/commerce/codes/code_of_ordinances",
+  "onlinePermitPlatform": "eTRAKiT",
+  "onlinePermitUrl": "https://comc.csqrcloud.com/community-etrakit/",
+  "buildingDeptPhone": "(323) 722-4805",
+  "buildingDeptEmail": "permittechnician@commerceca.gov",
+  "buildingDeptAddress": "2535 Commerce Way, Commerce, CA 90040",
+  "climateZone": "9",
+  "codeInEffect": "2025 California Building Standards Code (LA County Title 26/27/28/29/32 amendments as baseline via contract services)",
+  "utility": "Southern California Edison (SCE)",
+  "gasUtility": "SoCalGas",
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department (LACFD)",
+    "type": "contract",
+    "notes": "Fire plan check submitted through city Building & Safety and routed to LACFD. Stations 22, 27 (Bn 3 HQ), and 50 serve Commerce.",
+    "feesUrl": "https://fire.lacounty.gov/fire-prevention-fees/"
+  },
+  "wuiCoverage": false,
+  "solarAppPlus": true,
+  "solarAppPlusEmail": "permittechnician@commerceca.gov",
+  "aduNote": "Ordinance 761 (2020) found noncompliant by HCD (15 findings, May 17, 2024). As of Dec 5, 2025 HCD TA letter, not corrected. Apply state ADU law (Gov. Code §66310 et seq.) directly per §66316.",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "water-heater",
+    "hvac",
+    "panel-upgrade"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "displayName": "Laguna Beach",
+  "ordinanceLabel": "Title 14 Building & Housing · 2025 CBC/CRC",
+  "codePrefix": "LBMC",
+  "fireAgency": "Laguna Beach Fire",
+  "suggestedQuestions": [
+    "What's the max height for a detached ADU?",
+    "Do I need coastal development permit review?",
+    "What are the solar permit requirements?",
+    "How do I submit plans to the city?",
+    "What are the wildland-urban interface requirements?",
+    "Can I build an ADU on a hillside lot?"
+  ]
+}

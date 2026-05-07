@@ -1,0 +1,18 @@
+{
+  "displayName": "City of Industry",
+  "ordinanceLabel": "Title 15 (Building) · Title 17 (Zoning) · Chapter 17.80 (ADU) | Industry Municipal Code via eCode360",
+  "codePrefix": "IMC",
+  "fireAgency": "LA County Fire Department (LACFD) — EPIC-LA portal",
+  "portal": "BSOP (LA County Building & Safety Online Portal)",
+  "portalUrl": "https://bsop.lacounty.gov/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "notes": "Building and safety contracted to LA County Building & Safety (LACBS). Two-step process: City Planning clearance first, then LACBS building permit. No traditional residential zones — residential only in Housing Overlay Zone (I-HO, Ch. 17.22). Climate Zone 9. No WUI/FHSZ.",
+  "suggestedQuestions": [
+    "How do I get a building permit in City of Industry?",
+    "Do I need city planning approval before applying for a building permit?",
+    "Can I build an ADU in City of Industry?",
+    "What zoning applies to my property in City of Industry?",
+    "Which building codes apply in City of Industry?",
+    "How do I submit for fire plan review in City of Industry?"
+  ]
+}

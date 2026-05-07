@@ -1,0 +1,18 @@
+{
+  "displayName": "Parlier",
+  "ordinanceLabel": "Parlier Municipal Code · Municode · Fresno County Fire Protection District (CAL FIRE Fresno-Kings Unit)",
+  "codePrefix": "PMC",
+  "fireAgency": "Fresno County Fire Protection District (CAL FIRE Fresno-Kings Unit — contract)",
+  "portal": "Paper PDF",
+  "portalUrl": "https://parlier.ca.us/157/Community-Development",
+  "solarPortal": "https://gosolarapp.org/",
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "What permits does Parlier require for an ADU?",
+    "How do I submit a solar permit in Parlier — does the city use SolarAPP+?",
+    "What are the setback requirements for a detached garage conversion in Parlier?",
+    "Does Parlier have a Wildland-Urban Interface (WUI) zone?",
+    "Who reviews fire/life-safety plans for Parlier building permits?",
+    "What zoning districts exist in Parlier — R-1, R-3, commercial?"
+  ]
+}

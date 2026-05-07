@@ -1,0 +1,20 @@
+{
+  "displayName": "Santa Paula",
+  "ordinanceLabel": "SPMC Title XV (Building) | Title XVI (Dev Code) · American Legal · through Ord 1327 (2023)",
+  "codePrefix": "SPMC",
+  "fireAgency": "Ventura County Fire Protection District (VCFPD) — email fireprevention@ventura.org with Form 610",
+  "portal": "Counter-based — no dedicated online permit portal",
+  "portalUrl": "https://www.spcity.org/168/Building-Safety-Division",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingDept": "Building & Safety Division, Community and Economic Development",
+  "buildingDeptNote": "200 S. 10th Street, Santa Paula, CA 93060. Phone: (805) 933-4218. Email: buildsafe@spcity.org. Hours: M-F 8am-Noon, 1-4:30pm (closed every other Friday). Fire plans: VCFPD — email fireprevention@ventura.org with Form 610. All new structures/additions require fire sprinklers per VCFPD.",
+  "climateZone": "6",
+  "suggestedQuestions": [
+    "Is my Santa Paula property in the WUI fire hazard zone?",
+    "What are the ADU rules in Santa Paula?",
+    "Does Santa Paula have standard/pre-approved ADU plans?",
+    "Who reviews fire plans for Santa Paula projects — city or county?",
+    "How do I submit fire plans to VCFPD for a Santa Paula project?",
+    "Does Santa Paula require fire sprinklers for new construction?"
+  ]
+}

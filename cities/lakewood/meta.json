@@ -1,0 +1,83 @@
+{
+  "name": "Lakewood",
+  "slug": "lakewood",
+  "county": "Los Angeles",
+  "state": "CA",
+  "population": 81040,
+  "incorporatedYear": 1954,
+  "contractCity": true,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/LA6869",
+  "buildingDeptUrl": "https://www.lakewoodca.gov/Development-Services/Building",
+  "permitPortalUrl": "https://lakw-trk.aspgov.com/eTRAKiT/",
+  "buildingDeptPhone": "562-866-9771 x2350",
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department",
+    "abbreviation": "LACoFD",
+    "battalion": "Battalion 9",
+    "commercialPlanCheck": "LA County Fire Prevention Bureau, 5823 Rickenbacker Rd, Commerce CA 90040",
+    "commercialPlanCheckPhone": "(323) 890-4125"
+  },
+  "wuiCoverage": false,
+  "fhszDesignation": "none",
+  "climateZone": 9,
+  "utility": {
+    "electric": "Southern California Edison (SCE)",
+    "gas": "Southern California Gas (SoCal Gas)"
+  },
+  "codeAdoption": {
+    "code": "2025 California Building Standards Code",
+    "ordinance": "Ord. 2025-2",
+    "adoptedDate": "2025-11-11"
+  },
+  "localAmendments": [
+    {
+      "section": "CBC §105.2 Item 2",
+      "description": "Wire fences ≤12 ft and other fences ≤6 ft exempt from permit; masonry walls >42 in still subject to code",
+      "ordinance": "Ord. 2025-2"
+    },
+    {
+      "section": "Flood Hazard",
+      "description": "Buildings prohibited in flood hazard areas without approved mitigation",
+      "ordinance": "Ord. 2025-2"
+    }
+  ],
+  "aduLocalRules": {
+    "minRentalTerm": "31 days",
+    "ownerOccupancyRequired": true,
+    "ownerOccupancyEffective": "2025-01-01",
+    "noticeOfConditionRequired": true
+  },
+  "feeSchedule": {
+    "building": "https://pw.lacounty.gov/bsd/lib/fp/fees/Contract%20Cities/Lakewood/2025-2026%20City%20of%20Lakewood%20Building%20Code%20Fees.pdf",
+    "electrical": "https://pw.lacounty.gov/bsd/lib/fp/fees/Contract%20Cities/Lakewood/2025-2026%20City%20of%20Lakewood%20Electrical%20Code%20Fees.pdf",
+    "buildingValuation": "https://pw.lacounty.gov/bsd/lib/fp/fees/Contract%20Cities/Lakewood/2025-2026%20City%20of%20Lakewood%20Building%20Valuation%20Fee%20Table.pdf",
+    "issuanceFee": 47.19,
+    "effectiveDate": "2025-07-01"
+  },
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "water-heater",
+    "reroof",
+    "hvac",
+    "panel-upgrade",
+    "swimming-pool",
+    "fence",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "ev-charger"
+  ],
+  "notSupported": [
+    {
+      "type": "commercial-ti",
+      "reason": "Commercial zones exist (C-1 through C-4 + MU overlay) but commercial-ti is explicitly out-of-scope for CrossBeam."
+    }
+  ],
+  "onboardedAt": "2026-04-16",
+  "onboardVersion": "1.0"
+}

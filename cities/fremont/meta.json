@@ -1,0 +1,18 @@
+{
+  "displayName": "Fremont",
+  "ordinanceLabel": "FMC §18.190.005 (ADU, eff. Aug 11 2023) | FMC §15.35 (Sprinklers) | FMC §15.48 (CALGreen Reach Code)",
+  "codePrefix": "FMC",
+  "fireAgency": "Fremont Fire Department — Fire Prevention Bureau (city-integrated, no separate agency submission)",
+  "portal": "Citizen Access Portal",
+  "portalUrl": "https://cityoffremont.citizenaccess.com",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "gasUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "Do I need fire sprinklers for my new SFR in Fremont?",
+    "What are the setback requirements for a detached ADU in Fremont?",
+    "Is my parcel in the VHFHSZ fire hazard zone?",
+    "Does my new home require solar PV or an EV charger?",
+    "Can I use SolarAPP+ for an instant solar permit in Fremont?",
+    "What garage separation does Fremont require beyond state code?"
+  ]
+}

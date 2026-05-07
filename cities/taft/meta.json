@@ -1,0 +1,42 @@
+{
+  "slug": "taft",
+  "name": "Taft",
+  "state": "CA",
+  "county": "Kern",
+  "population": 9000,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/taftca/latest/overview",
+  "buildingDept": {
+    "address": "209 E. Kern Street, Taft, CA 93268",
+    "phone": "(661) 763-1222",
+    "ext": "x133",
+    "hours": "Mon–Thu and every other Friday, 8:00 AM–4:00 PM",
+    "email": "buildingdept@cityoftaft.org"
+  },
+  "fireAgency": {
+    "name": "Kern County Fire Department (contract)",
+    "station": "Station 21, 303 10th Street, Taft, CA 93268"
+  },
+  "zoning": {
+    "residential": ["R-1", "R-2", "R-3", "RS"],
+    "commercial": ["DTSP"],
+    "special": ["PE", "DI", "H", "CF"]
+  },
+  "solarPlatform": "SolarAPP+",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "reroof",
+    "hvac",
+    "water-heater",
+    "panel-upgrade",
+    "rewire",
+    "solar",
+    "swimming-pool",
+    "patio-cover",
+    "window-replacement"
+  ]
+}

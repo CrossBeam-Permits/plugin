@@ -1,0 +1,23 @@
+{
+  "displayName": "Big Bear Lake",
+  "ordinanceLabel": "Ord. 2026-527 (ADU) | Ord. 2024-520 (R-3) | Design Loads Doc May 2024 | Retaining Wall Standard Jan 2025",
+  "codePrefix": "BBLMC",
+  "fireAgency": "Big Bear Fire Department (Big Bear Lake Fire Protection District)",
+  "portal": "Accela",
+  "portalUrl": "https://citybigbearlake.com/index.php/en/services-main/online-permitting-portal",
+  "electricUtility": "Southern California Edison (SCE)",
+  "climateZone": "CZ16",
+  "snowLoadRoofPsf": 100,
+  "snowLoadGroundPsf": 85,
+  "frostDepthIn": 18,
+  "wuiCoverage": "all",
+  "fhsz": "VHFHSZ",
+  "suggestedQuestions": [
+    "What snow load must my deck be designed for in Big Bear Lake?",
+    "Does Chapter 7A apply to my ADU or deck project?",
+    "What roofing materials are allowed in Big Bear Lake's VHFHSZ?",
+    "Do I need a soils report for my home addition?",
+    "What are the ADU setback and height limits in Big Bear Lake?",
+    "What frost depth is required for my deck footings?"
+  ]
+}

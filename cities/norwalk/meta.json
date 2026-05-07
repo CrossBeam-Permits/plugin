@@ -1,0 +1,17 @@
+{
+  "displayName": "Norwalk",
+  "ordinanceLabel": "Ord. 25-1762 · Jan 1, 2026 (ADU) | Ord. 25-1761 · Jan 1, 2026 (Building Codes)",
+  "codePrefix": "NMC",
+  "fireAgency": "Los Angeles County Fire Department (contract city)",
+  "portal": "EdgeSoft CAP",
+  "portalUrl": "https://norwalk.edgesoftinc.com/cap/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "Can I get an ADU permit over the counter?",
+    "Does my project need engineered drawings for the foundation?",
+    "How do I use SolarAPP+ for a residential solar permit?",
+    "Who handles fire plan check in Norwalk?",
+    "What's the expedited process for an EV charger?",
+    "My house was built in 1965 — do I need asbestos testing before a remodel?"
+  ]
+}

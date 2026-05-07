@@ -1,0 +1,41 @@
+{
+  "name": "fort-jones",
+  "displayName": "Town of Fort Jones",
+  "state": "CA",
+  "county": "Siskiyou",
+  "population": 695,
+  "timezone": "America/Los_Angeles",
+  "climateZone": 16,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/fort_jones",
+  "buildingPortal": null,
+  "buildingPortalUrl": null,
+  "buildingDept": {
+    "name": "Town Hall — Building / Planning",
+    "address": "11960 East Street, Fort Jones, CA 96032",
+    "phone": "(530) 468-2281",
+    "email": null,
+    "hours": "Contact Town Hall for current hours"
+  },
+  "healthDept": {
+    "name": "Siskiyou County Environmental Health Program",
+    "phone": "(530) 841-2100",
+    "notes": "Required for food facility permits (restaurant TI). Submit concurrently with building permit."
+  },
+  "fireAgency": {
+    "name": "Fort Jones Fire Department (volunteer)",
+    "address": "31 Newton St., Fort Jones, CA 96032",
+    "phone": "(530) 468-2261",
+    "email": "info@fortjonesfire.org",
+    "notes": "CAL FIRE Siskiyou Unit co-located at 12137 N. Main St. Contact for hood suppression acceptance and large commercial projects."
+  },
+  "fhsz": "all",
+  "coastal": false,
+  "onboardedPermitTypes": [
+    "adu",
+    "multi-unit-residential",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential"
+  ]
+}

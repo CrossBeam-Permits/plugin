@@ -1,0 +1,25 @@
+{
+  "displayName": "Jackson",
+  "ordinanceLabel": "City of Jackson Municipal Code · eCode360 · Title 14 §14.04.030 (Building Code amendments) · Title 17 (Development Code)",
+  "codePrefix": "JMC",
+  "fireAgency": "Amador Fire Protection District · (209) 223-6391 · amadorfire.org",
+  "hasLocalAmendments": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "swimming-pool",
+    "wildfire-wui",
+    "restaurant-ti"
+  ],
+  "suggestedQuestions": [
+    "What snow load does Jackson require for new SFR construction?",
+    "Does Jackson require fire sprinklers in all new homes?",
+    "What are the ADU setback and size requirements in Jackson?",
+    "How does Jackson's grading-permit threshold work?",
+    "Is my parcel in the Historic Corridor or Visual Corridor overlay?",
+    "Is my property in a Fire Hazard Severity Zone in Jackson?",
+    "What does a restaurant tenant improvement require in downtown Jackson?",
+    "How do I submit a building permit through Jackson's iworq portal?"
+  ]
+}

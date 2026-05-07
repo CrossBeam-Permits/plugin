@@ -1,0 +1,14 @@
+{
+  "displayName": "Maricopa",
+  "ordinanceLabel": "Maricopa Zoning Ordinance · Kern County Building Code · Kern County Public Works (contract)",
+  "codePrefix": "MCZO",
+  "fireAgency": "Kern County Fire Department (KCFD)",
+  "suggestedQuestions": [
+    "Who handles building permits in Maricopa — city or county?",
+    "Does WUI / Chapter 7A apply to my project in Maricopa?",
+    "What are the ADU rules in Maricopa?",
+    "How do I submit permit plans — what portal does Kern County use?",
+    "Does APCD clearance apply to my demolition project?",
+    "What fire setbacks apply in the Drilling Island (DI) zone?"
+  ]
+}

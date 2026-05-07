@@ -1,0 +1,25 @@
+{
+  "displayName": "City of Shasta Lake",
+  "ordinanceLabel": "Shasta Lake Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "SLMC",
+  "fireAgency": "Shasta Lake Fire Protection District",
+  "portal": null,
+  "portalUrl": null,
+  "permitEmail": "permit@cityofshastalake.org",
+  "solarEmail": "COSLSolar@CityofShastaLake.org",
+  "solarPortalUrl": null,
+  "solarAppPlus": false,
+  "electricUtility": "City of Shasta Lake Electric Department (municipal utility)",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/shasta_lake/codes/code_of_ordinances",
+  "wuiCoverage": "partial",
+  "county": "Shasta",
+  "suggestedQuestions": [
+    "Does my parcel fall within a Fire Hazard Severity Zone in Shasta Lake?",
+    "Does Shasta Lake require Class A roofing for all projects?",
+    "What is the two-step solar permit process in Shasta Lake?",
+    "Where do I submit a building permit application in Shasta Lake?",
+    "What ADU standards apply in Shasta Lake — are there local rules stricter than state?",
+    "What are the snow load and seismic design requirements in Shasta Lake?"
+  ]
+}

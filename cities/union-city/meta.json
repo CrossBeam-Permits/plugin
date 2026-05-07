@@ -1,0 +1,24 @@
+{
+  "displayName": "Union City",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Union City Municipal Code",
+  "codePrefix": "UCMC",
+  "fireAgency": "Alameda County Fire Department (ACFD)",
+  "portalName": "Counter (in-person / email)",
+  "portalUrl": "https://www.unioncityca.gov/210/Building",
+  "climateZone": "3",
+  "seismicCategory": "D",
+  "fhsz": "partial",
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Union City?",
+    "Do I need a permit for a fence in Union City?",
+    "What are the solar permit requirements in Union City?",
+    "How do I submit plans to Union City Building Division?",
+    "Does my project need fire sprinklers in Union City?",
+    "What are the swimming pool permit requirements in Union City?",
+    "What are the rules for a residential addition in Union City?",
+    "How does SolarAPP+ work for Union City solar permits?",
+    "What are the setback requirements for an ADU in Union City?",
+    "Is my property in a fire hazard zone in Union City?"
+  ]
+}

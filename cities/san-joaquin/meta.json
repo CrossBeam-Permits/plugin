@@ -1,0 +1,30 @@
+{
+  "displayName": "San Joaquin",
+  "ordinanceLabel": "City of San Joaquin Municipal Code · American Legal Publishing · Chapter 150 (Building) · Chapter 154 (Zoning)",
+  "codePrefix": "SJMC",
+  "county": "Fresno",
+  "state": "CA",
+  "climateZone": "13",
+  "population": 4000,
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/sanjoaquin/latest/overview",
+  "muniCodeCurrentThrough": "Ordinance 2021-03, December 7, 2021",
+  "fireAgency": "City of San Joaquin / Fresno County Fire District · (559) 698-5500",
+  "portalName": null,
+  "portalUrl": "https://cityofsanjoaquin.org/home/online-forms/",
+  "digitalSubmittal": false,
+  "digitalSubmittalNote": "Paper-based permit submission at City Hall (21900 Colorado Ave); online portal in development as of 2024",
+  "suggestedQuestions": [
+    "What are the ADU setback and size rules in San Joaquin?",
+    "What is the fire sprinkler threshold for commercial remodels in San Joaquin?",
+    "How do I submit a building permit in San Joaquin?",
+    "What building codes has San Joaquin adopted?",
+    "What are the zoning districts in San Joaquin that allow multi-family?",
+    "Does San Joaquin require school fees and what are the current rates?",
+    "What is the plan check turnaround time for San Joaquin?",
+    "Are SB 35 ministerial approvals available in San Joaquin?"
+  ]
+}

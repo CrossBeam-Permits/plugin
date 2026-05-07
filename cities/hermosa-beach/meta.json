@@ -1,0 +1,32 @@
+{
+  "city": "Hermosa Beach",
+  "slug": "hermosa-beach",
+  "state": "CA",
+  "county": "Los Angeles",
+  "muniCodePlatform": "codify",
+  "muniCodeUrl": "https://online.encodeplus.com/regs/hermosabeach-ca/",
+  "portalUrl": "https://aca-prod.accela.com/HERMOSABEACH/",
+  "portalType": "accela",
+  "fireAgency": "Los Angeles County Fire Department",
+  "fireStation": "Station 100, 540 Pier Ave, Hermosa Beach CA 90254",
+  "inCoastalZone": true,
+  "cdpAuthority": "California Coastal Commission — South Coast District",
+  "lcpStatus": "no-lcp",
+  "wuiCoverage": false,
+  "solarAppPlus": true,
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "water-heater",
+    "reroof",
+    "coastal-development"
+  ],
+  "notSupported": ["commercial-ti"],
+  "onboardedAt": "2026-04-16",
+  "onboardVersion": "1.0"
+}

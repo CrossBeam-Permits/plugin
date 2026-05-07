@@ -1,0 +1,17 @@
+{
+  "displayName": "Vacaville",
+  "ordinanceLabel": "Ord. 2008 · October 28, 2025 (current through)",
+  "codePrefix": "VMC",
+  "fireAgency": "Vacaville Fire Department — Fire Prevention Bureau",
+  "portal": "eTRAKiT",
+  "portalUrl": "https://permits.cityofvacaville.gov/eTRAKiT3/",
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "Do I qualify for Vacaville's pre-approved ADU program?",
+    "Can I get an instant solar permit through Symbium?",
+    "Is my property in the wildfire hazard zone (FHSZ)?",
+    "What are the local fire sprinkler requirements for new construction?",
+    "How does Vacaville's bedroom definition affect my project?",
+    "Does my restaurant need a CUP or just a minor use permit?"
+  ]
+}

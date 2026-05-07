@@ -1,0 +1,23 @@
+{
+  "displayName": "Danville",
+  "ordinanceLabel": "2025 California Building Standards Code · Town of Danville Municipal Code",
+  "codePrefix": "DTMC",
+  "fireAgency": "SRVFPD",
+  "portalName": "CSS Online Permit Portal",
+  "portalUrl": "https://www.danville.ca.gov/CSS",
+  "climateZone": "12",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "fhszNotes": "Partial — hillside and East Bay Hills areas designated VHFHSZ (LRA) per State Fire Marshal 2025 updated maps. Valley floor areas are not in VHFHSZ.",
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Danville?",
+    "What is the Garden Cottage ADU Program in Danville?",
+    "Does my property require SRVFPD fire district review?",
+    "What are the setback requirements for an ADU in Danville?",
+    "Do I need a permit for a fence in Danville?",
+    "What are the solar permit requirements in Danville?",
+    "Is my property in a fire hazard zone in Danville?",
+    "How do I submit plans to the Town of Danville Building Division?"
+  ]
+}

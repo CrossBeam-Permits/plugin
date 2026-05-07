@@ -1,0 +1,21 @@
+{
+  "displayName": "Oceanside",
+  "ordinanceLabel": "Municipal Code Ch. 6 Building · Ch. 11 Fire · Zoning Ord. §3006 ADU · 2022 CBC · Certified LCP",
+  "codePrefix": "OMC",
+  "fireAgency": "City of Oceanside Fire Department (municipal)",
+  "muniCodeUrl": "https://library.municode.com/ca/oceanside/codes/code_of_ordinances",
+  "permitPortal": "eTRAKiT (crw.cityofoceanside.com/etrakit3)",
+  "planCheck": "City of Oceanside Building Division (in-house)",
+  "climateZone": "7",
+  "seismicDesignCategory": "D",
+  "hasCoastalZone": true,
+  "aduHcdNonCompliant": true,
+  "suggestedQuestions": [
+    "Do I need a Coastal Development Permit for my project in Oceanside?",
+    "What are Oceanside's ADU height and setback rules — and how does the HCD non-compliance affect them?",
+    "How do I submit a permit through the Oceanside eTRAKiT portal?",
+    "Does my Oceanside ADU need a CDP if it's near the beach?",
+    "What is the RT zone in Oceanside and why does it matter for permits?",
+    "How does SolarAPP+ work for solar permits in Oceanside?"
+  ]
+}

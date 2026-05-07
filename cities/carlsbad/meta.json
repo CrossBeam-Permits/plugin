@@ -1,0 +1,19 @@
+{
+  "displayName": "Carlsbad",
+  "ordinanceLabel": "CMC Title 18 Building · Title 21 Zoning · 2022 CBC · Ch. 21.10 ADU · Ch. 21.201 CDP",
+  "codePrefix": "CMC",
+  "fireAgency": "Carlsbad Fire Department (city-owned)",
+  "muniCodeUrl": "https://ecode360.com/CA4913",
+  "permitPortal": "CSS (carlsbadca.gov)",
+  "planCheck": "City of Carlsbad Building Division (in-house)",
+  "climateZone": "7",
+  "seismicDesignCategory": "D",
+  "suggestedQuestions": [
+    "Do I need a Coastal Development Permit for my project in Carlsbad?",
+    "What is the Carlsbad Permit Ready ADU program and how do I use it?",
+    "How does SolarAPP+ work for solar permits in Carlsbad?",
+    "What are Carlsbad's ADU height limits and setback rules?",
+    "Is my property in a Fire Hazard Severity Zone in Carlsbad?",
+    "How do I submit permits through the Carlsbad CSS portal?"
+  ]
+}

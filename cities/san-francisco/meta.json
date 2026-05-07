@@ -1,0 +1,85 @@
+{
+  "city": "San Francisco",
+  "slug": "san-francisco",
+  "county": "San Francisco",
+  "state": "CA",
+  "population": 874961,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://www.amlegal.com/codes/client/san-francisco_ca/",
+  "muniCodeAltUrl": "https://up.codes/codes/san_francisco",
+  "law_as_of": "2026-04-01",
+  "climateZone": 3,
+  "permitTypes": [
+    "single-family-residential",
+    "residential-addition",
+    "adu",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "hvac",
+    "water-heater",
+    "panel-upgrade",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "ev-charger",
+    "deck-patio-repair",
+    "siding-replacement",
+    "fence",
+    "swimming-pool",
+    "wildfire-wui"
+  ],
+  "buildingDepartment": {
+    "name": "San Francisco Department of Building Inspection (DBI)",
+    "address": "49 South Van Ness Ave, San Francisco, CA 94103",
+    "phone": "(628) 652-3200",
+    "email": "dbicustomerservice@sfgov.org",
+    "portal": "https://sanfranciscoca.portal.opengov.com/",
+    "electronicPlanReview": "dbi.epr@sfgov.org",
+    "digitalSubmittal": true,
+    "digitalSubmittalNote": "100% electronic submittal accepted; registered contractors can pull many permits online via PermitSF"
+  },
+  "planningDepartment": {
+    "name": "San Francisco Planning Department",
+    "address": "49 South Van Ness Ave, Suite 1400, San Francisco, CA 94103",
+    "phone": "(628) 652-7600",
+    "url": "https://sfplanning.org"
+  },
+  "fireAgency": {
+    "name": "San Francisco Fire Department (SFFD)",
+    "address": "49 South Van Ness Ave, Suite 560, San Francisco, CA 94103",
+    "phone": "(628) 652-3472",
+    "email": "permitcenter@sfgov.org",
+    "hours": "M/T/Th/F 7:30am-4pm; W 9am-4pm",
+    "residentialExemption": "1- and 2-unit residential buildings exempt from general SFFD plan check"
+  },
+  "healthDepartment": {
+    "name": "SF Department of Public Health — Environmental Health",
+    "phone": "(415) 252-3800",
+    "url": "https://www.sfdph.org/dph/eh/Food/Permits/",
+    "notes": "Required for all food facility permits including restaurants, bars, bakeries. Apply ≥6 weeks before planned opening."
+  },
+  "seismicDesignCategory": "D",
+  "seismicNote": "Entire city is SDC D. No parcel-level determination needed. Hayward Fault Zone traces Eastern Neighborhoods — geotechnical investigation required for new construction within Alquist-Priolo zone.",
+  "coastalZone": false,
+  "wuiCoverage": "partial",
+  "wuiNote": "LRA 2024 FHSZ designations released March 2025. Designated areas: Twin Peaks, McLaren Park, Mt. Davidson slopes, Presidio perimeter, Bernal Heights ridge. Majority of SF parcels are NOT in FHSZ.",
+  "allElectricOrdinance": {
+    "citation": "SFBC §106A.1.14 (Ord. 225-20)",
+    "operativeDate": "2021-06-01",
+    "applies": "All new buildings — SFR, ADU (new construction), multi-unit, commercial",
+    "doesNotApply": "Additions/alterations to existing buildings with gas in place",
+    "exception": "Gas cooking equipment in commercial kitchens and restaurants",
+    "waiverPath": "SFBC §106A.1.17 — technical infeasibility waiver with third-party professional review"
+  },
+  "softStoryProgram": {
+    "citation": "Ord. 66-13",
+    "applies": "Wood-frame, 3+ stories (or 2-story over basement), 5+ units, built before 1978",
+    "complianceDeadline": "2021-09-15 (all tiers passed)",
+    "database": "https://www.sfgov.org/sfc/esip/soft-story"
+  },
+  "permitExpiration": {
+    "commenceWithin": "180 days",
+    "completeWithin": "3 years"
+  }
+}

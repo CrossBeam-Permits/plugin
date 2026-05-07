@@ -1,0 +1,52 @@
+{
+  "city": "Marina",
+  "slug": "marina",
+  "county": "Monterey",
+  "state": "CA",
+  "climateZone": 3,
+  "muniCodePlatform": "codify",
+  "muniCodeUrl": "https://marina.municipal.codes/",
+  "portalPlatform": "CitizenServe",
+  "portalInstallationId": 272,
+  "portalUrl": "https://www2.citizenserve.com/Portal/?installationid=272",
+  "buildingDivision": {
+    "name": "Marina Building Division",
+    "department": "Community Development Department",
+    "address": "211 Hillcrest Avenue, Marina, CA 93933",
+    "phone": "(831) 884-1214",
+    "inspectionPhone": "(831) 884-1241",
+    "cbo": "William \"Bill\" Moritz",
+    "cboPhone": "(831) 884-1256"
+  },
+  "fireAgency": {
+    "name": "Marina Fire Department",
+    "phone": "(831) 275-1700",
+    "email": "FD@cityofmarina.org",
+    "wuiEmail": "Hazard@cityofmarina.org",
+    "type": "city-operated"
+  },
+  "healthAgency": {
+    "name": "Monterey County Environmental Health Bureau",
+    "phone": "(831) 755-4500",
+    "url": "https://www.co.monterey.ca.us/government/departments-a-h/health/environmental-health"
+  },
+  "waterDistrict": "Marina Coast Water District (MCWD)",
+  "utilityElectric": "Pacific Gas & Electric (PG&E)",
+  "wuiCoverage": "partial",
+  "wuiFhszDate": "2025-03-10",
+  "permitTypesOnboarded": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof"
+  ],
+  "adoptedCodes": {
+    "ordinance": "2022-06",
+    "localAmendments": ["CBC §105.3.2", "CBC §105.5", "CBC §1505.1.1"]
+  },
+  "onboardedAt": "2026-04-21",
+  "version": "1.0"
+}

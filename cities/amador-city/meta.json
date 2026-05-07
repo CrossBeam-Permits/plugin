@@ -1,0 +1,28 @@
+{
+  "displayName": "City of Amador City",
+  "ordinanceLabel": "Amador City Municipal Code | 2025 CBSC in effect",
+  "codePrefix": "ACMC",
+  "fireAgency": "Amador Fire Protection District",
+  "fireAgencyType": "district-fire",
+  "responsibilityArea": "LRA",
+  "portal": "in-person",
+  "portalUrl": "https://amador-city.com/government-planning-building/",
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "Amador City (city-operated)",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/amador_city/codes/code_of_ordinances",
+  "climateZone": 12,
+  "county": "Amador",
+  "population": 200,
+  "suggestedQuestions": [
+    "Where do I submit a building permit in Amador City?",
+    "What are the ADU rules for Amador City?",
+    "What building codes has Amador City adopted?",
+    "What is the Amador Fire Protection District's role in permit review?",
+    "What are the permit fees for a residential addition in Amador City?",
+    "When is the building department open in Amador City?",
+    "Does Amador City have any local building code amendments?"
+  ]
+}

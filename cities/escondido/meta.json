@@ -1,0 +1,21 @@
+{
+  "displayName": "Escondido",
+  "ordinanceLabel": "EMC Article 70 ADU · 2022 CBC/CRC · ecode360 ES4926 · Cityworks Portal",
+  "codePrefix": "EMC",
+  "fireAgency": "Escondido Fire Department (city-operated)",
+  "muniCodeUrl": "https://ecode360.com/ES4926",
+  "permitPortal": "Cityworks (cwols.escondido.org)",
+  "planReviewPlatform": "Avolve / ProjectDox",
+  "climateZone": "10",
+  "seismicDesignCategory": "D",
+  "coastalZone": false,
+  "utility": "SDG&E",
+  "suggestedQuestions": [
+    "What are Escondido's ADU size limits and how does the pre-approved ADU program work?",
+    "How do I submit a permit in Escondido — what portal does the city use?",
+    "Does Escondido have a VHFHSZ overlay and what extra requirements apply?",
+    "What are the retaining wall design requirements in Escondido (Guidelines 2 and 25)?",
+    "Does Escondido offer SolarAPP+ or streamlined solar permitting?",
+    "How does fire plan review work in Escondido — who reviews and what's the timeline?"
+  ]
+}

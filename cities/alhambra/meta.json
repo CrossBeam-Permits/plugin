@@ -1,0 +1,21 @@
+{
+  "displayName": "Alhambra",
+  "ordinanceLabel": "AMC Title XX (Building) · American Legal",
+  "codePrefix": "AMC",
+  "fireAgency": "Alhambra Fire Department — Community Risk Reduction Division (in-house)",
+  "portal": "EnerGov/Tyler Self-Service",
+  "portalUrl": "https://alhambraca-energovpub.tylerhost.net/Apps/SelfService#/home",
+  "ePlanUrl": "https://gopost-transtech.eplansoftreview.com/#/login?portal=alhambra",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingDept": "Community Development — Building Division",
+  "buildingDeptNote": "111 South First Street, Alhambra CA 91801. Phone: (626) 570-5032. Counter hours: Mon–Thu 7am–Noon and 1:30–4:30pm. EnerGov/Tyler portal for permit applications. GoPost-Transtech ePlan Check for digital plan submittals.",
+  "climateZone": "10",
+  "suggestedQuestions": [
+    "What ADU rules apply in Alhambra?",
+    "How do I submit solar plans in Alhambra?",
+    "Who reviews fire plans in Alhambra — city or county?",
+    "What are the sign permit requirements in Alhambra?",
+    "Does Alhambra have expedited solar permitting?",
+    "How do I apply for an EV charger permit in Alhambra?"
+  ]
+}

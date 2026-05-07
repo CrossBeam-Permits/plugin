@@ -1,0 +1,15 @@
+{
+  "displayName": "Belmont",
+  "ordinanceLabel": "Belmont City Code · Municode · Chapter 7 (Buildings) · Ord. 2023-1169",
+  "codePrefix": "BCC",
+  "fireAgency": "San Mateo Consolidated Fire Department (SMCFD) · Serves Belmont via JPA · fire@smcfire.org · (650) 522-7900 · smcfire.org · Separate fire plan check required for sprinklers, alarms, suppression systems",
+  "utility": "Pacific Gas & Electric (PG&E) · pge.com · (800) 743-5000",
+  "suggestedQuestions": [
+    "Do all new homes in Belmont require fire sprinklers?",
+    "What roofing class is required in Belmont — even outside fire zones?",
+    "How do I submit a building permit in Belmont?",
+    "Is my Belmont property in a wildfire hazard zone?",
+    "Can I add an ADU to my Belmont property?",
+    "Does Belmont require all-electric construction for new buildings?"
+  ]
+}

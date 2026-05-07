@@ -1,0 +1,20 @@
+{
+  "displayName": "Tracy",
+  "ordinanceLabel": "Tracy Municipal Code · Municode · Title 9 (Buildings) · Title 10 (Planning & Zoning)",
+  "codePrefix": "TMC",
+  "fireAgency": "Tracy Fire Department — Fire Prevention Division · (209) 831-6400 · co-located with Building Safety, 333 Civic Center Plaza",
+  "portal": "eTRAKiT (ASP.NET)",
+  "portalUrl": "https://etrakit.cityoftracy.org/",
+  "electricUtility": "PG&E (Pacific Gas & Electric)",
+  "gasUtility": "PG&E (Pacific Gas & Electric)",
+  "waterUtility": "City of Tracy (municipal)",
+  "submittalEmail": "plancheck@cityoftracy.org",
+  "suggestedQuestions": [
+    "What are the ADU rules in Tracy?",
+    "How do I submit a building permit in Tracy?",
+    "Does Tracy require a CALGreen special inspector?",
+    "What permit types does Tracy offer online through eTRAKiT?",
+    "What are the setback requirements for a new home in Tracy?",
+    "Who is the fire authority having jurisdiction for Tracy building permits?"
+  ]
+}

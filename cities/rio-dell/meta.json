@@ -1,0 +1,28 @@
+{
+  "displayName": "City of Rio Dell",
+  "ordinanceLabel": "Rio Dell Municipal Code | 2025 CBSC + 2024 IPMC (RDMC §15.05.020 / Ord. 420-2026) | FHSZ map RDMC Ch. 8.45 / Ord. 413-2025",
+  "codePrefix": "RDMC",
+  "fireAgency": "Rio Dell Volunteer Fire Department",
+  "fireAgencyType": "city-volunteer",
+  "responsibilityArea": "LRA",
+  "portal": null,
+  "portalUrl": null,
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "waterUtility": "City of Rio Dell",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/RioDell/",
+  "climateZone": 1,
+  "county": "Humboldt",
+  "population": 3353,
+  "suggestedQuestions": [
+    "What permits does Rio Dell require for a new single-family home?",
+    "How do I submit a building permit application in Rio Dell?",
+    "What are the ADU rules in Rio Dell?",
+    "What fire agency reviews plans in Rio Dell?",
+    "What building codes has Rio Dell adopted?",
+    "What are Rio Dell's fees for a reroof permit?",
+    "Is my parcel in a fire hazard zone in Rio Dell?"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "east-palo-alto",
+  "description": "Plan-check skills for East Palo Alto, CA — simple permits with EPAMC local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/east-palo-alto",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "east-palo-alto",
+    "plan-check",
+    "permits",
+    "east",
+    "palo",
+    "alto"
+  ]
+}

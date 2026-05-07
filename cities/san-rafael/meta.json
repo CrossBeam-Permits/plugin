@@ -1,0 +1,23 @@
+{
+  "displayName": "San Rafael",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per San Rafael Municipal Code (SRMC) · Title 12 (Building) · Title 14 (Zoning) · Title 4 (Fire)",
+  "codePrefix": "SRMC",
+  "fireAgency": "San Rafael Fire Department (SRFD) · Fire Prevention Bureau: (415) 485-3308 · Vegetation Management: (415) 485-3054",
+  "portalName": "OpenGov",
+  "portalUrl": "https://cityofsanrafaelca.portal.opengov.com",
+  "climateZone": "2",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "wuiCitywide": true,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "Does San Rafael require WUI fire-resistant construction citywide or only in FHSZ areas?",
+    "Do I need a Vegetation Management Plan (VMP) for my San Rafael building permit?",
+    "What are the ADU size, height, and setback rules in San Rafael?",
+    "My San Rafael home still has a wood shake roof — what's the replacement deadline?",
+    "What are the hillside overlay design review requirements for additions in San Rafael?",
+    "How do I submit a building permit application in San Rafael?",
+    "What are the zoning setbacks and lot coverage limits for single-family homes in San Rafael?",
+    "Does replacing windows in San Rafael require fire-resistant glazing?"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "city": "Loomis",
+  "slug": "loomis",
+  "state": "CA",
+  "county": "Placer",
+  "type": "town",
+  "population": 7000,
+  "climateZone": 11,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/LO4962",
+  "buildingDept": {
+    "email": "bldgpermit@loomis.ca.gov",
+    "phone": "(916) 652-1840",
+    "hours": "M-Th 8:00 AM - 5:00 PM",
+    "submissionMethod": "email"
+  },
+  "fireAgency": {
+    "name": "South Placer Fire District",
+    "phone": "(916) 791-7059",
+    "planSetsRequired": 3
+  },
+  "fhsz": {
+    "coverage": "partial",
+    "zones": ["Moderate", "High"],
+    "effectiveDate": "2025-08"
+  },
+  "onboardedPermitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "wildfire-wui",
+    "restaurant-ti"
+  ],
+  "onboardedAt": "2026-04-23"
+}

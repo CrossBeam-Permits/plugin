@@ -1,0 +1,55 @@
+{
+  "name": "dunsmuir",
+  "displayName": "City of Dunsmuir",
+  "state": "CA",
+  "county": "Siskiyou",
+  "population": 1650,
+  "timezone": "America/Los_Angeles",
+  "climateZone": 16,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/dunsmuir",
+  "buildingPortal": "iWorq",
+  "buildingPortalUrl": "https://www.ci.dunsmuir.ca.us/building-department",
+  "buildingDept": {
+    "name": "City of Dunsmuir Building Department",
+    "contact": "Anthony Hanner, Building Official",
+    "phone": "530-776-4024"
+  },
+  "planningDept": {
+    "contact": "Amber DePaola, City Planner",
+    "firm": "DevCom CA",
+    "phone": "530-235-4822 option 3",
+    "email": "adepaola@devcomca.com"
+  },
+  "fireAgency": {
+    "name": "Dunsmuir-Castella Fire Department",
+    "phone": "530-235-4822 ext 106",
+    "address": "5915 Dunsmuir Avenue, Dunsmuir, CA 96025"
+  },
+  "fhsz": true,
+  "wuiCoverage": "all",
+  "coastal": false,
+  "historicDistrict": true,
+  "ordinanceLabel": "Dunsmuir Municipal Code (DMC)",
+  "codePrefix": "DMC",
+  "onboardedPermitTypes": [
+    "adu",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "kitchen-bath-remodel",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "retaining-wall",
+    "sign",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater",
+    "wildfire-wui",
+    "window-replacement"
+  ]
+}

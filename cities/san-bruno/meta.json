@@ -1,0 +1,17 @@
+{
+  "displayName": "San Bruno",
+  "ordinanceLabel": "San Bruno Municipal Code (eCode360) | Ch. 11.04 (Building) | Ch. 11.24 (Fire) | Ch. 12.90 (ADU)",
+  "codePrefix": "SBMC",
+  "fireAgency": "San Bruno Fire Department (city-operated)",
+  "portal": "MGO Connect (MyGovernmentOnline)",
+  "portalUrl": "https://www.mgoconnect.org/cp?JID=403",
+  "electricUtility": "PG&E",
+  "suggestedQuestions": [
+    "What are the setback requirements for a detached ADU in San Bruno?",
+    "Do I need fire sprinklers for my home addition in San Bruno?",
+    "Is my property in a Fire Hazard Severity Zone in San Bruno?",
+    "What roof covering class is required for a reroof in San Bruno?",
+    "How do I submit a building permit in San Bruno?",
+    "What are the ADU regulations in San Bruno?"
+  ]
+}

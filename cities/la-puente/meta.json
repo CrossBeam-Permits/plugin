@@ -1,0 +1,50 @@
+{
+  "slug": "la-puente",
+  "name": "La Puente",
+  "state": "CA",
+  "county": "Los Angeles",
+  "population": 40000,
+  "climateZone": "10",
+  "seismicDesignCategory": "D",
+  "fhsz": null,
+  "wui": false,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://www.amlegal.com/codes/client/la-puente_ca/",
+  "buildingDept": {
+    "name": "Building and Safety Division",
+    "address": "15900 E. Main St., La Puente, CA 91744",
+    "phone": "(626) 855-1500",
+    "url": "https://www.lapuente.org/building-and-safety/",
+    "onlinePermits": false
+  },
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department",
+    "battalion": "12",
+    "planCheckPortal": "https://epicla.lacounty.gov"
+  },
+  "healthDept": {
+    "name": "Los Angeles County Department of Public Health",
+    "jurisdiction": "county"
+  },
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "hvac",
+    "water-heater",
+    "reroof",
+    "panel-upgrade",
+    "swimming-pool",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "fence",
+    "sign"
+  ],
+  "notSupported": ["commercial-ti"],
+  "onboardedAt": "2026-04-15",
+  "readyForPromotion": true
+}

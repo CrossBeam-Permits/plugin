@@ -1,0 +1,72 @@
+{
+  "city": "Palos Verdes Estates",
+  "slug": "palos-verdes-estates",
+  "state": "CA",
+  "county": "Los Angeles",
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/PalosVerdesEstates/",
+  "muniCodeNote": "CodePublishing.com returns 403 on direct chapter WebFetch; use web search or cached summaries.",
+  "buildingDept": {
+    "name": "Palos Verdes Estates Department of Building and Safety",
+    "address": "340 Palos Verdes Dr West, Palos Verdes Estates, CA 90274",
+    "phone": "(310) 791-8400 ext 112",
+    "email": "BUILDING@PVESTATES.ORG",
+    "portal": "https://ci-palosverdesestates-ca.smartgovcommunity.com/",
+    "portalPlatform": "SmartGov",
+    "counterHours": "Monday–Thursday 8:00–10:00 AM walk-in; appointments via email",
+    "inspectionNote": "Call ext 112 by 4:00 PM for next-day inspection (Mon–Thu only)"
+  },
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department (LACoFD)",
+    "type": "contract",
+    "planCheckPortal": "https://eplan.lacounty.gov",
+    "feeSchedule": "https://fire.lacounty.gov/fire-prevention-fees/"
+  },
+  "fhsz": {
+    "coverage": "partial",
+    "zones": ["Moderate", "High", "Very High"],
+    "updateDate": "2026-03",
+    "note": "March 2025 SFM update. Not city-wide — verify parcel-level designation."
+  },
+  "coastalZone": {
+    "hasLcp": true,
+    "lcpCertified": true,
+    "cdpIssuedBy": "City Planning Department",
+    "coverage": "partial"
+  },
+  "keyLocalRequirements": [
+    {
+      "id": "pvha-art-jury",
+      "name": "PVHA Art Jury",
+      "description": "Palos Verdes Homes Association Art Jury approval required for all exterior construction. Private review body (est. 1924), separate from city building permit. Fees $1,000–$15,000; adds 2–8+ weeks.",
+      "contact": "PVHA, 3 Malaga Cove Plaza, Palos Verdes Estates, CA 90274",
+      "appliesTo": "all"
+    },
+    {
+      "id": "underground-utilities",
+      "name": "Underground Service Laterals",
+      "description": "Ch. 15.12 local amendment requires all new electric, telephone, and community antenna laterals underground. Limited hardship exceptions.",
+      "appliesTo": "new-construction-and-additions"
+    }
+  ],
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "wildfire-wui",
+    "coastal-development",
+    "swimming-pool"
+  ],
+  "solarAppPlus": {
+    "accepted": true,
+    "submissionMethod": "email",
+    "email": "BUILDING@PVESTATES.ORG",
+    "turnaround": "24 business hours",
+    "essNote": "ESS/BESS requires LACoFD fire review via EPIC-LA before SolarAPP+ submission"
+  },
+  "onboarded": "2026-04-16",
+  "currentThrough": "Ord. 768 (July 8, 2025)"
+}

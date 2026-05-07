@@ -1,0 +1,22 @@
+{
+  "displayName": "City of Weed",
+  "ordinanceLabel": "Weed Municipal Code | 2025 CBSC in effect | Municode platform",
+  "codePrefix": "WMC",
+  "fireAgency": "City of Weed Fire Department",
+  "portal": null,
+  "portalUrl": null,
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/weed/codes/code_of_ordinances",
+  "wuiCoverage": "partial",
+  "county": "Siskiyou",
+  "suggestedQuestions": [
+    "Is my parcel in a Fire Hazard Severity Zone in Weed?",
+    "How do I submit a building permit application in Weed?",
+    "What are the ADU rules for my Weed property?",
+    "Does my project need WUI/Chapter 7A construction in Weed?",
+    "What are the building department hours and contact info for Weed?",
+    "Are there local building code amendments in Weed beyond California state code?"
+  ]
+}

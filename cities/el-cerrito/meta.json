@@ -1,0 +1,48 @@
+{
+  "city": "El Cerrito",
+  "slug": "el-cerrito",
+  "state": "CA",
+  "county": "Contra Costa",
+  "climateZone": "3",
+  "population": 25962,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/el_cerrito/codes/code_of_ordinances",
+  "buildingDept": {
+    "name": "El Cerrito Building Division",
+    "address": "10890 San Pablo Avenue, El Cerrito, CA 94530",
+    "phone": "(510) 215-4360",
+    "email": "buildingapplications@elcerrito.gov",
+    "portalUrl": "https://elcr-trk.aspgov.com/eTRAKiT/",
+    "portalSystem": "eTRAKiT (ASP GovTech)"
+  },
+  "fireAgency": {
+    "name": "El Cerrito Fire Department",
+    "type": "city",
+    "contact": "fpo@elcerrito.gov | (510) 215-4457"
+  },
+  "wuiCoverage": "partial",
+  "reachCode": {
+    "allElectric": false
+  },
+  "permitTypes": [
+    "adu",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "kitchen-bath-remodel",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "patio-cover",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "retaining-wall",
+    "siding-replacement",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater",
+    "wildfire-wui",
+    "window-replacement"
+  ]
+}

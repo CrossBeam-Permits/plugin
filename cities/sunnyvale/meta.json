@@ -1,0 +1,45 @@
+{
+  "name": "sunnyvale",
+  "displayName": "City of Sunnyvale",
+  "state": "CA",
+  "county": "Santa Clara",
+  "population": 155000,
+  "timezone": "America/Los_Angeles",
+  "climateZone": 4,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/SU5020",
+  "buildingPortal": "E-OneStop",
+  "buildingPortalUrl": "https://www.sunnyvale.ca.gov/business-and-development/planning-and-building/permit-center/online-services-help",
+  "buildingDept": {
+    "name": "City of Sunnyvale — Community Development, One-Stop Permit Center",
+    "address": "456 W. Olive Ave, City Hall, Sunnyvale, CA 94086",
+    "phone": "408-730-7444",
+    "email": "building@sunnyvale.ca.gov",
+    "hours": "Mon–Fri 8am–5pm (closed 12:30–1pm)"
+  },
+  "fireAgency": {
+    "name": "Sunnyvale Department of Public Safety (DPS) — Fire Prevention Services",
+    "website": "https://www.sunnyvale.ca.gov/your-government/departments-and-offices/public-safety/fire-services"
+  },
+  "fhsz": false,
+  "coastal": false,
+  "onboardedPermitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "solar",
+    "ev-charger",
+    "panel-upgrade",
+    "water-heater",
+    "hvac",
+    "reroof",
+    "swimming-pool",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "fence",
+    "retaining-wall",
+    "patio-cover",
+    "restaurant-ti"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "displayName": "Riverside",
+  "ordinanceLabel": "Riverside Municipal Code · Title 16 & 19 (Municode)",
+  "codePrefix": "RMC",
+  "fireAgency": "City of Riverside Fire Department",
+  "suggestedQuestions": [
+    "Does my property require automatic fire sprinklers under Riverside's 1993 ordinance?",
+    "Is my parcel in a Fire Hazard Severity Zone (FHSZ) — do WUI/Chapter 7A rules apply?",
+    "Can I use the Permit-Ready ADU plan library to speed up my ADU permit?",
+    "Does my project qualify for SolarAPP+ instant permit approval?",
+    "What fees and surcharges does Riverside add on top of the base permit fee?",
+    "My property is near the Mission Inn Historic District — are there additional review requirements?"
+  ]
+}

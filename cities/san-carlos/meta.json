@@ -1,0 +1,32 @@
+{
+  "city": "San Carlos",
+  "slug": "san-carlos",
+  "county": "San Mateo",
+  "state": "CA",
+  "climateZone": 3,
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/SanCarlos/",
+  "cityWebsite": "https://www.cityofsancarlos.org",
+  "buildingDeptUrl": "https://www.cityofsancarlos.org/city_hall/departments_and_divisions/community_development/building/building_permits/index.php",
+  "permitPortalUrl": "https://sancarlosca-energovweb.tylerhost.net/apps/selfservice#/home",
+  "wuiCoverage": "partial",
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "multi-unit-residential",
+    "swimming-pool",
+    "wildfire-wui",
+    "residential-addition",
+    "restaurant-ti",
+    "reroof",
+    "hvac"
+  ],
+  "citySkillTypes": [
+    "adu",
+    "single-family-residential",
+    "multi-unit-residential",
+    "swimming-pool",
+    "wildfire-wui"
+  ],
+  "onboardedAt": "2026-04-22"
+}

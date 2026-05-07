@@ -1,0 +1,23 @@
+{
+  "city": "El Centro",
+  "slug": "el-centro",
+  "state": "CA",
+  "county": "Imperial",
+  "population": 45000,
+  "buildingDept": {
+    "name": "Community Development Department, Building & Safety Division",
+    "address": "1275 W. Main Street, El Centro, CA 92243",
+    "phone": "760-337-4508",
+    "cbo": "Frank Soto",
+    "url": "https://cityofelcentro.org/communitydevelopment/permits/"
+  },
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/el_centro/codes/code_of_ordinances",
+  "fireAgency": "El Centro Fire Department (collaborative via CDD)",
+  "utility": "Imperial Irrigation District (IID)",
+  "climateZone": "15",
+  "wui": false,
+  "coastal": false,
+  "permitTypes": ["single-family-residential", "adu", "residential-addition", "multi-unit-residential", "restaurant-ti", "solar", "reroof"],
+  "onboardedAt": "2026-04-16"
+}

@@ -1,0 +1,23 @@
+{
+  "displayName": "Gonzales",
+  "ordinanceLabel": "2022 California Building Standards Code · Local Amendments per Ordinance 2022-135 · eCode360 GO4462",
+  "codePrefix": "GMC",
+  "fireAgency": "Gonzales Fire Department · (831) 675-5000",
+  "portalName": "SmartGov",
+  "portalUrl": "https://ci-gonzales-ca.smartgovcommunity.com/Public/Home",
+  "climateZone": "3",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "county": "Monterey",
+  "suggestedQuestions": [
+    "What are the ADU setback and height rules in Gonzales?",
+    "Does Gonzales require a minimum fire rating for roofing materials?",
+    "How do I submit a building permit in Gonzales?",
+    "What are the solar permit requirements in Gonzales?",
+    "What are the window replacement permit rules in Gonzales?",
+    "Does Gonzales have an online permit portal?",
+    "What are the inspection hours for Gonzales Building Division?",
+    "What commercial tenant improvement permits does Gonzales require?"
+  ]
+}

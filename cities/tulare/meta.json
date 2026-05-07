@@ -1,0 +1,57 @@
+{
+  "city": "Tulare",
+  "slug": "tulare",
+  "county": "Tulare",
+  "state": "CA",
+  "population": 70000,
+  "climateZones": ["CZ13"],
+  "fireAgency": "City of Tulare Fire Department — Fire Prevention Bureau",
+  "vhfhsz": false,
+  "wuiPartial": false,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/tulare/latest/overview",
+  "buildingDept": {
+    "name": "City of Tulare — Community Development Department, Building Division",
+    "phone": "(559) 684-4218",
+    "address": "411 E. Kern Avenue, Tulare, CA 93274"
+  },
+  "utility": {
+    "electric": "Pacific Gas & Electric (PG&E)",
+    "water": "City of Tulare Public Works",
+    "sewer": "City of Tulare Public Works"
+  },
+  "specialOverlays": [],
+  "solarPermitting": "SolarAPP+",
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "hvac",
+    "water-heater",
+    "reroof",
+    "panel-upgrade",
+    "swimming-pool",
+    "patio-cover",
+    "retaining-wall",
+    "fence",
+    "block-wall",
+    "ev-charger"
+  ],
+  "onboardedAt": "2026-04-24",
+  "smokeTestedAt": "2026-04-24",
+  "readyForPromotion": true,
+  "displayName": "Tulare",
+  "ordinanceLabel": "2025 CBSC · No confirmed local amendments (muni code blocked)",
+  "codePrefix": "TMC",
+  "suggestedQuestions": [
+    "Does Tulare have a pre-approved ADU program?",
+    "Do I submit solar permits through SolarAPP+?",
+    "What are the setback requirements for my project in Tulare?",
+    "How do I submit plans and what is the fee schedule?",
+    "What zoning district allows multi-family housing in Tulare?",
+    "Does Tulare have any local building code amendments?"
+  ]
+}

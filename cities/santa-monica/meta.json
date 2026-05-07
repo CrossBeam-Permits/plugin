@@ -1,0 +1,14 @@
+{
+  "displayName": "Santa Monica",
+  "ordinanceLabel": "Santa Monica Municipal Code · SMMC (ecode360)",
+  "codePrefix": "SMMC",
+  "fireAgency": "Santa Monica Fire Department (SMFD)",
+  "suggestedQuestions": [
+    "Is my Santa Monica property in the Coastal Zone — do I need a Coastal Development Permit?",
+    "What are the ADU size and height limits for Santa Monica, and is the Preapproved ADU Program available?",
+    "Does Santa Monica prohibit staple fasteners for sheathing in seismic design — what nailing schedule is required?",
+    "My project is a 5-story apartment building — does Santa Monica's single-stairway ordinance apply?",
+    "Who reviews fire plans in Santa Monica — SMFD or LA County Fire?",
+    "Does the high-rise threshold change (75 ft) affect my multi-family project in Santa Monica?"
+  ]
+}

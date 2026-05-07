@@ -1,0 +1,17 @@
+{
+  "displayName": "San Fernando",
+  "ordinanceLabel": "Ord. No. 1733 · April 21, 2025 (Building Codes) | Ord. No. 1732 · May 5, 2025 (Zoning)",
+  "codePrefix": "SFMC",
+  "fireAgency": "Los Angeles Fire Department (LAFD) — Valley Bureau",
+  "portal": "EdgeSoft Online Permit Counter (OPC)",
+  "portalUrl": "https://aims.edgesoftinc.com/opc/jsp/index.jsp",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "How do I get an ADU permit in San Fernando?",
+    "Does my deck need a permit in San Fernando?",
+    "How do I get a solar permit — does San Fernando use Symbium?",
+    "What building codes apply in San Fernando — LABC or CBC?",
+    "Who handles fire plan review for San Fernando projects?",
+    "Can I build a detached ADU on my multi-family lot?"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "displayName": "Paradise",
+  "ordinanceLabel": "Town of Paradise Municipal Code | 2022 California Building Standards Code (eff. July 1, 2024)",
+  "codePrefix": "TPMC",
+  "fireAgency": "Town of Paradise Fire Marshal / CAL FIRE Butte Unit (cooperative)",
+  "portal": "GovWell",
+  "portalUrl": "https://app.govwell.com/paradise",
+  "electricUtility": "Paradise Irrigation District",
+  "suggestedQuestions": [
+    "Do WUI requirements apply to my project in Paradise?",
+    "What materials are required for new construction in the VHFHSZ?",
+    "Do I need a fire flow test for my ADU permit?",
+    "What is the Administrative Use Permit process for an ADU?",
+    "How does the Camp Fire rebuild program expedite my permit?",
+    "What is the maximum ADU size allowed in Paradise?"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "displayName": "Santa Ana",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per SAMC Chapter 8",
+  "codePrefix": "SAMC",
+  "fireAgency": "OCFA",
+  "portalName": "ProjectDox",
+  "portalUrl": "https://santa-ana-ca-us.avolvecloud.com",
+  "climateZone": "9",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Santa Ana?",
+    "How do I get a same-day express permit in Santa Ana?",
+    "What are the EV charger permit pathways in Santa Ana?",
+    "Does Santa Ana use SolarAPP+ for solar permits?",
+    "What are the fence height limits in Santa Ana?",
+    "Is my property in a historic district (SD-19 or SD-40)?",
+    "What are the counter hours for Santa Ana Building Safety?",
+    "What are the swimming pool barrier requirements in Santa Ana?"
+  ]
+}

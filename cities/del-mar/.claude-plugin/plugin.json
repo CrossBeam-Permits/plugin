@@ -1,0 +1,20 @@
+{
+  "name": "del-mar",
+  "description": "Plan-check skills for Del Mar, CA — simple permits with DMMC local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 3.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/cities/del-mar",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "del-mar",
+    "plan-check",
+    "permits",
+    "del",
+    "mar"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "displayName": "Victorville",
+  "ordinanceLabel": "Victorville Municipal Code · Title 16 Development Code · Municode · VFD Fire",
+  "codePrefix": "VMC",
+  "fireAgency": "Victorville Fire Department (city-run, internal plan check)",
+  "suggestedQuestions": [
+    "What ADU rules apply in Victorville?",
+    "Does Victorville use SolarAPP+ for residential solar?",
+    "Who handles fire plan checks in Victorville?",
+    "What portal does Victorville use for permit applications?",
+    "What are the zoning districts in Victorville?",
+    "Is there a wildfire hazard zone in Victorville?",
+    "What air quality district is Victorville in?",
+    "Does Victorville require a separate fire agency fee?"
+  ]
+}

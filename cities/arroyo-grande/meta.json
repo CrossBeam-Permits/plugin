@@ -1,0 +1,20 @@
+{
+  "displayName": "Arroyo Grande",
+  "ordinanceLabel": "Ord. 2025-006 · November 25, 2025 (2025 CBSC adoption, Titles 8 & 15)",
+  "codePrefix": "AGMC",
+  "fireAgency": "Five Cities Fire Authority (FCFA)",
+  "portal": "CitizenServe",
+  "portalUrl": "https://www2.citizenserve.com/arroyogrande",
+  "buildingServicesProvider": "JAS Pacific (contracted)",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/arroyo_grande",
+  "wuiCoverage": "partial",
+  "suggestedQuestions": [
+    "What ADU size limits apply in Arroyo Grande?",
+    "Do I need fire sprinklers for my ADU or addition?",
+    "How do I submit a permit application in Arroyo Grande?",
+    "What zoning district allows multi-family in Arroyo Grande?",
+    "Does my property fall in a WUI fire hazard zone?",
+    "What is the driveway turnaround rule for long driveways?"
+  ]
+}

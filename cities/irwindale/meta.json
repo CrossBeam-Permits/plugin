@@ -1,0 +1,46 @@
+{
+  "name": "Irwindale",
+  "slug": "irwindale",
+  "county": "Los Angeles",
+  "state": "CA",
+  "population": 1472,
+  "climateZone": "9",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/irwindale/codes/code_of_ordinances",
+  "permitPortal": "https://irwindale.cts.city",
+  "permitPortalPlatform": "CTS City",
+  "fireAgency": {
+    "name": "Los Angeles County Fire Department (LACoFD)",
+    "office": "East Regional Operations Bureau — Irwindale Fire Prevention Office",
+    "address": "5200 Irwindale Ave., Suite 210, Irwindale, CA 91706",
+    "phone": "(626) 430-3050",
+    "email": "FIRE-FPIrwindale@fire.lacounty.gov",
+    "feeScheduleUrl": "https://fire.lacounty.gov/fire-prevention-fees/"
+  },
+  "healthDepartment": {
+    "name": "LA County Department of Public Health — Environmental Health",
+    "url": "http://www.publichealth.lacounty.gov/eh/"
+  },
+  "wuiCoverage": "partial",
+  "wuiNote": "Flat industrial city; FHSZ limited to northern fringe near San Gabriel Mountains. Verify per parcel on CAL FIRE FHSZ map.",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti"
+  ],
+  "zoningDistricts": {
+    "residential": ["R1", "R2", "R3"],
+    "commercial": ["C1", "C2", "C3"],
+    "industrial": ["M1", "M2", "BP"],
+    "other": ["OS", "Q"]
+  },
+  "localAmendments": {
+    "ordinances": ["Ord. 768 (building)", "Ord. 769-Fire (fire code)"],
+    "filedWithCBSC": true,
+    "note": "Full text on Municode Title 15 (JS-rendered, not directly scraped)"
+  },
+  "onboardedAt": "2026-04-15",
+  "onboardVersion": "1.0"
+}

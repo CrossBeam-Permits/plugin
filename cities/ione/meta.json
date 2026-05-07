@@ -1,0 +1,60 @@
+{
+  "city": "Ione",
+  "slug": "ione",
+  "state": "CA",
+  "county": "Amador County",
+  "population": 7129,
+  "climateZone": 12,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/ione/codes/code_of_ordinances",
+  "cityWebsite": "https://www.ione.ca.gov",
+  "buildingDept": "https://www.ione.ca.gov/planning",
+  "fireAgency": {
+    "name": "City of Ione Fire Department",
+    "type": "city-owned combination",
+    "planCheckPath": "Through city building department; Fire Chief reviews fire safety setbacks and sprinkler-trigger waivers"
+  },
+  "wuiCoverage": "partial",
+  "onboardedTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "hvac",
+    "water-heater",
+    "panel-upgrade",
+    "swimming-pool",
+    "window-replacement",
+    "wildfire-wui"
+  ],
+  "stateSkillOnly": [
+    "restaurant-ti",
+    "solar",
+    "hvac",
+    "water-heater",
+    "panel-upgrade",
+    "swimming-pool",
+    "window-replacement",
+    "wildfire-wui"
+  ],
+  "hasLocalAmendments": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "reroof"
+  ],
+  "scrapeStatus": "verified",
+  "scrapeNotes": "Title 15 (40 pages, all 14 chapters) captured via Municode browser-sweep 2026-05-06. Title 17 zoning chapters did not load through the sweep — §17.62 ADU content continues to derive from the Phase 2 MCCLibrary PDF (Ord. 520) fallback. State-preemption directive on §17.62.030.C is unaffected.",
+  "browserSweep": {
+    "date": "2026-05-06",
+    "method": "Municode browser-sweep launcher",
+    "result": "Title 15 (Buildings and Construction) fully captured; Title 17 (Zoning) did not load — ADU rules continue to use MCCLibrary PDF (Ord. 520).",
+    "rawMd": "data/batch-onboard/cities/ione/muni-code-raw.md",
+    "amendmentsAdded": 4
+  },
+  "onboardedAt": "2026-05-06"
+}

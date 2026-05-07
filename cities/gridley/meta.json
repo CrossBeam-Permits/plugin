@@ -1,0 +1,24 @@
+{
+  "displayName": "Gridley",
+  "ordinanceLabel": "Gridley Municipal Code · American Legal Publishing · Title 15 (Buildings) adopts California Building Code by reference · Ord. 848-2023",
+  "codePrefix": "GMC",
+  "fireAgency": "Gridley Fire Department / CAL FIRE Butte Unit · 47 East Gridley Road, Gridley CA 95948 · (530) 846-5711 · Combination department; CAL FIRE career staff + volunteers",
+  "utility": "Gridley Electric — city-owned municipal electric utility, NOT PG&E · (530) 846-3906 · Natural gas served by PG&E",
+  "portalName": "Accela Citizen Access (Butte County DDS)",
+  "portalUrl": "https://aca-prod.accela.com/BUTTECO/Default.aspx",
+  "planCheckContractor": "Butte County Department of Development Services — Building Division · 7 County Center Drive, Oroville CA 95965 · (530) 552-3700",
+  "climateZone": "11",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "How do I submit a building permit in Gridley?",
+    "Who is the electric utility in Gridley — PG&E or someone else?",
+    "What are the ADU rules in Gridley?",
+    "Is my Gridley property in a Fire Hazard Severity Zone?",
+    "How does solar interconnection work in Gridley?",
+    "Who handles building inspections in Gridley?",
+    "What fire department reviews building plans in Gridley?",
+    "Does Gridley have any local building code amendments?"
+  ]
+}

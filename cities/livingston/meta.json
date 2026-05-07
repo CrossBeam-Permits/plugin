@@ -1,0 +1,76 @@
+{
+  "city": "Livingston",
+  "slug": "livingston",
+  "state": "CA",
+  "county": "Merced",
+  "climateZone": 12,
+  "fhsz": false,
+  "coastal": false,
+  "muniCodePlatform": "american-legal",
+  "muniCodeUrl": "https://codelibrary.amlegal.com/codes/livingstonca/latest/overview",
+  "buildingDept": {
+    "name": "Community Development Department — Building Division",
+    "address": "1416 C Street, Livingston, CA 95334",
+    "phone": "(209) 394-8041",
+    "phoneExt": "120 / 124",
+    "email": "buildingpermit@livingstoncity.com",
+    "website": "https://www.cityoflivingston.org/commdev/page/building-division",
+    "hours": "Mon–Thu 8:00 AM–1:00 PM; Fri 8:00 AM–4:30 PM (no Fri inspections)",
+    "portal": "GreenVue (CSG Consultants) — account required"
+  },
+  "fireAgency": {
+    "name": "Merced County Fire Department",
+    "station": "Station 96 — 1430 C St, Livingston, CA 95334",
+    "planCheckAddress": "735 Martin Luther King Jr. Way, Merced, CA",
+    "planCheckFee": "$85/hr"
+  },
+  "utilities": {
+    "electric": "PG&E",
+    "gas": "PG&E",
+    "water": "City of Livingston Public Works",
+    "sewer": "City of Livingston Public Works"
+  },
+  "adoptedCodes": {
+    "cbc": "2022",
+    "crc": "2022",
+    "cec": "2022",
+    "cmc": "2022",
+    "cpc": "2022",
+    "energyCode": "2022",
+    "calgreen": "2022",
+    "ordinance": "Ord 650 (CBC/CRC adoption); current through Ord 662 (2026-01-06)"
+  },
+  "onboardedTypes": [
+    "adu",
+    "ev-charger",
+    "fence",
+    "hvac",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "residential-addition",
+    "reroof",
+    "restaurant-ti",
+    "sign",
+    "single-family-residential",
+    "solar",
+    "swimming-pool",
+    "water-heater",
+    "window-replacement"
+  ],
+  "hasLocalAmendments": ["adu", "fence", "swimming-pool"],
+  "stateSkillOnly": [
+    "ev-charger",
+    "hvac",
+    "multi-unit-residential",
+    "panel-upgrade",
+    "residential-addition",
+    "reroof",
+    "restaurant-ti",
+    "sign",
+    "single-family-residential",
+    "solar",
+    "water-heater",
+    "window-replacement"
+  ],
+  "lawAsOf": "2026-05-04"
+}

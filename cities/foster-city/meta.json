@@ -1,0 +1,60 @@
+{
+  "city": "Foster City",
+  "slug": "foster-city",
+  "state": "CA",
+  "county": "San Mateo",
+  "climateZone": 3,
+  "fireAgency": "San Mateo Consolidated Fire Department (SMCFD)",
+  "fhsz": false,
+  "coastalZone": false,
+  "bcdc": true,
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/FosterCity/",
+  "permitPortal": "https://permit.fostercity.org/etrakit/",
+  "permitPortalType": "etrakit",
+  "buildingPhone": "(650) 286-3227",
+  "buildingEmail": "building@fostercity.org",
+  "onboardedTypes": [
+    "adu",
+    "fence",
+    "hvac",
+    "multi-unit-residential",
+    "reroof",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential",
+    "solar",
+    "swimming-pool"
+  ],
+  "hasLocalAmendments": [
+    "adu",
+    "multi-unit-residential",
+    "residential-addition",
+    "single-family-residential",
+    "solar"
+  ],
+  "stateSkillOnly": [
+    "fence",
+    "hvac",
+    "reroof",
+    "restaurant-ti",
+    "swimming-pool"
+  ],
+  "overlays": {},
+  "keyLocalAmendments": [
+    "Ord 655 — Class B minimum roof covering citywide (upgrades state Class C floor)",
+    "Ord 692 (Aug 2025) — ADU rules: 1,200 sf SFR cap, STR prohibition, JADU owner-occupancy, pre-approval program",
+    "Policy P-92-2001 — 15-ft waterfront setback from lagoon bank/bulkhead",
+    "Ch. 17.96 (Ord 673/674) — MF objective design standards for R-3/R-4/mixed-use",
+    "Ch. 15.45 + SolarAPP+ — automated solar permit program with business license prerequisite"
+  ],
+  "notes": {
+    "floodZone": "FEMA Zone X (levee-protected city). Chapter 15.36 Floodplain Management Regulations applies in any remaining flood-prone areas.",
+    "soils": "Bay-fill compressible soils — geotechnical reports commonly required for new construction and significant additions.",
+    "muniCodeAccess": "codepublishing.com WAF-blocked (403 on all chapter-level URLs). Content recovered via search snippets and city ordinance references.",
+    "reachCodes": "No reach codes confirmed as adopted (May 2026). City developing green building reach code per Climate Action Plan; not yet enacted.",
+    "planningPermit": "Exterior changes to residential/commercial buildings require concurrent Planning permit with Building permit."
+  },
+  "onboardedAt": "2026-05-06",
+  "onboardVersion": "1.0"
+}

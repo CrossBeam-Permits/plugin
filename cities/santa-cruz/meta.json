@@ -1,0 +1,53 @@
+{
+  "name": "Santa Cruz",
+  "slug": "santa-cruz",
+  "state": "CA",
+  "county": "Santa Cruz County",
+  "climateZone": 3,
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/SantaCruz/",
+  "buildingCode": "2025 California Building Standards Code (Title 24), effective January 1, 2026",
+  "wuiCoverage": "partial",
+  "coastalZone": true,
+  "contact": {
+    "buildingPhone": "(831) 420-5120",
+    "buildingEmail": "permits@santacruzca.gov",
+    "counterEmail": "bcounter@santacruzca.gov",
+    "address": "809 Center Street, Room 206, Santa Cruz, CA 95060",
+    "counterHours": "Mon–Thu 7:30 AM–Noon and 1:00–3:00 PM; closed Fridays",
+    "planningPhone": "(831) 420-5100",
+    "planningEmail": "planningcounter@santacruzca.gov"
+  },
+  "fireAgency": {
+    "name": "City of Santa Cruz Fire Department",
+    "phone": "(831) 420-5150",
+    "address": "337 Locust Street, Santa Cruz, CA 95060"
+  },
+  "solarPermit": "SolarApp+",
+  "onboardedPermitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "reroof",
+    "coastal-development",
+    "wildfire-wui",
+    "solar",
+    "hvac",
+    "water-heater",
+    "panel-upgrade",
+    "window-replacement",
+    "ev-charger",
+    "kitchen-bath-remodel",
+    "swimming-pool",
+    "fence",
+    "retaining-wall",
+    "patio-cover",
+    "deck-patio-repair",
+    "sign",
+    "siding-replacement",
+    "repipe",
+    "rewire",
+    "restaurant-ti"
+  ]
+}

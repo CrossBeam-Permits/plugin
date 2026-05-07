@@ -1,0 +1,26 @@
+{
+  "displayName": "Trinidad",
+  "ordinanceLabel": "Ordinance 2024-01 (Zoning Code Update, 2024) | Title 15 Building Regulations",
+  "codePrefix": "TMC",
+  "fireAgency": "Trinidad Volunteer Fire Department / CAL FIRE Humboldt-Del Norte Unit",
+  "portal": "Contact City Hall",
+  "portalUrl": "https://www.trinidad.ca.gov/planning-building-services",
+  "muniCodePlatform": "codepublishing",
+  "muniCodeUrl": "https://www.codepublishing.com/CA/Trinidad/",
+  "climateZone": "CZ1",
+  "hasCoastalOverlay": true,
+  "hasCertifiedLCP": false,
+  "coastalAuthority": "California Coastal Commission — North Coast District (Eureka office, (707) 445-7833)",
+  "wuiCoverage": null,
+  "fhszConfirmed": false,
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "Does my project need a Coastal Development Permit from the Coastal Commission?",
+    "Can I build an ADU on my property in Trinidad?",
+    "What are the setback requirements in the SR Zone?",
+    "Is Design Review required for my project?",
+    "What is the height limit in Trinidad?",
+    "Does Trinidad have a certified Local Coastal Program?",
+    "Who do I contact for building permits in Trinidad?"
+  ]
+}

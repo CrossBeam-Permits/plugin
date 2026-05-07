@@ -1,0 +1,24 @@
+{
+  "displayName": "Los Alamitos",
+  "ordinanceLabel": "2022 California Building Standards Code · Local Amendments per Los Alamitos Municipal Code (Ord. No. 2025-12)",
+  "codePrefix": "LAAMC",
+  "fireAgency": "OCFA",
+  "portalName": "CityTech Solutions",
+  "portalUrl": "https://losalamitos.cts.city",
+  "planCheckContractor": null,
+  "climateZone": "8",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "closedFridays": true,
+  "suggestedQuestions": [
+    "What are the ADU rules in Los Alamitos?",
+    "Does Los Alamitos have pre-approved ADU plans and how do I use them?",
+    "Does Los Alamitos have SolarAPP+ for solar permits?",
+    "What are the counter hours for Los Alamitos Building & Safety?",
+    "What OCFA fire requirements apply to new residential construction in Los Alamitos?",
+    "Do I need a permit for a pool in Los Alamitos?",
+    "Do I need a permit for a fence in Los Alamitos?",
+    "How do I get a permit for an EV charger in Los Alamitos?"
+  ]
+}

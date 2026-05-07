@@ -1,0 +1,68 @@
+{
+  "city": "Glendale",
+  "slug": "glendale",
+  "state": "CA",
+  "county": "Los Angeles",
+  "population": 200000,
+  "incorporated": 1906,
+  "ahj": "City of Glendale Building & Safety Division",
+  "permitPortal": "https://glendaleca-energovweb.tylerhost.net/apps/SelfService",
+  "permitPortalSystem": "energov",
+  "muniCode": {
+    "platform": "ecode360",
+    "url": "https://ecode360.com/GL4929"
+  },
+  "buildingDept": {
+    "address": "613 E. Broadway, Glendale CA 91206",
+    "phone": "(818) 548-3200",
+    "hours": "Mon–Thu 7:00–12:00; Tue & Thu 1:30–16:00; closed Fri"
+  },
+  "fireAuthority": {
+    "name": "Glendale Fire Department",
+    "type": "city-operated",
+    "isLACFD": false,
+    "address": "780 Flower St, Glendale CA 91201",
+    "planCheckPhone": "(818) 548-4810",
+    "permitLinkPhone": "(818) 548-3207"
+  },
+  "wui": {
+    "hasFHSZ": true,
+    "fhszType": "VHFHSZ",
+    "coverage": "partial",
+    "affectedArea": "Verdugo Mountains / northern hillside",
+    "acresApprox": 14968
+  },
+  "keyAmendments": [
+    "all-electric-new-construction",
+    "adu-local-rules",
+    "solar-reach-code",
+    "ev-charging-reach-code",
+    "hillside-grading-ch-15.12",
+    "demolition-ch-15.22"
+  ],
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "swimming-pool",
+    "solar",
+    "panel-upgrade",
+    "reroof",
+    "hvac",
+    "window-replacement",
+    "fence",
+    "patio-cover",
+    "retaining-wall",
+    "ev-charger",
+    "water-heater",
+    "rewire",
+    "repipe",
+    "wildfire-wui",
+    "sign",
+    "kitchen-bath-remodel"
+  ],
+  "onboardedAt": "2026-04-16",
+  "onboardVersion": "1.0"
+}

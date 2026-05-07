@@ -1,0 +1,32 @@
+{
+  "city": "Scotts Valley",
+  "slug": "scotts-valley",
+  "state": "CA",
+  "county": "Santa Cruz",
+  "climateZone": 3,
+  "fhszCoverage": "partial",
+  "coastal": false,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/scotts_valley/codes/code_of_ordinances",
+  "permitPortal": "https://scottsvalleyca.portal.opengov.com/",
+  "buildingDept": {
+    "email": "svbuildingdepartment@scottsvalley.gov",
+    "buildingOfficial": "Nelson Alfaro",
+    "phone": null
+  },
+  "fireAgency": {
+    "name": "Scotts Valley Fire Protection District",
+    "fireMarshal": "E. Collins",
+    "email": "ecollins@scottsvalleyfire.com",
+    "planSubmittal": "https://www.scottsvalleyfire.com/plan-submittal/"
+  },
+  "onboardedTypes": [
+    "adu",
+    "multi-unit-residential",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential",
+    "wildfire-wui"
+  ],
+  "onboardedAt": "2026-05-06"
+}

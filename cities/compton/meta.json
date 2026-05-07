@@ -1,0 +1,64 @@
+{
+  "city": "Compton",
+  "slug": "compton",
+  "state": "CA",
+  "county": "Los Angeles",
+  "population": 97000,
+  "areaSqMi": 10.1,
+  "website": "https://www.comptoncity.org",
+  "buildingDeptName": "Building & Safety Division",
+  "buildingDeptParent": "City of Compton",
+  "buildingDeptUrl": "https://www.comptoncity.org/departments/building",
+  "buildingDeptPhone": "(310) 605-5509",
+  "buildingDeptAddress": "205 S. Willowbrook Ave, Compton, CA 90220",
+  "onlinePermitPortal": "https://www5.citizenserve.com/Portal/PortalController?Action=showHomePage&ctzPagePrefix=Portal_&installationID=202",
+  "permitPortalPlatform": "citizenserve",
+  "permitPortalNotes": "Application initiation only; no online payments or document submittals; in-person processing required",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/CO4057",
+  "climateZone": "9",
+  "seismicDesignCategory": "D",
+  "wuiCoverage": "omit",
+  "coastalZone": false,
+  "fireAgency": "Compton Fire Department",
+  "fireAgencyType": "independent-city-dept",
+  "fireAgencyUrl": "https://www.comptoncity.org/departments/fire",
+  "electricUtility": "Southern California Edison (SCE)",
+  "gasUtility": "Southern California Gas (SoCalGas)",
+  "codeAdoption": {
+    "cycle": "2025",
+    "notes": "2025 CBSC in effect statewide per preemption. Ord. 803 filed with BSC for 2022 cycle. eCode360 text reflects 2019 cycle — not dispositive."
+  },
+  "localAmendments": [
+    {
+      "ref": "Ord. 2339",
+      "description": "Repealed standalone plumbing chapter within Ch. 15; renamed Ch. 14"
+    },
+    {
+      "ref": "Ord. 803",
+      "description": "Filed with BSC for 2022 code cycle adoption; details blocked by eCode360 403"
+    },
+    {
+      "ref": "Ord. 2341",
+      "description": "ADU ordinance (Dec 28, 2021) — 13 HCD non-compliance findings (Apr 9, 2025); compliance status unknown as of Apr 2026"
+    }
+  ],
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof",
+    "window-replacement",
+    "water-heater",
+    "rewire",
+    "repipe",
+    "panel-upgrade",
+    "sign",
+    "hvac",
+    "kitchen-bath-remodel",
+    "ltia-demolition"
+  ]
+}

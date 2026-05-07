@@ -1,0 +1,17 @@
+{
+  "displayName": "La Verne",
+  "ordinanceLabel": "Ord. 1114 · 2022 (Building Codes — LA County adoption)",
+  "codePrefix": "LVMC",
+  "fireAgency": "La Verne Fire Department (LVFD)",
+  "portal": "GeoViewer",
+  "portalUrl": "https://laverne.geoviewer.io",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "What are the ADU rules in La Verne?",
+    "Do I need fire sprinklers for a new home in La Verne?",
+    "How do I get a solar permit in La Verne?",
+    "Is my property in a fire hazard zone (VHFHSZ)?",
+    "What building codes apply in La Verne?",
+    "How do I submit a permit application in La Verne?"
+  ]
+}

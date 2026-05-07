@@ -1,0 +1,20 @@
+{
+  "displayName": "Santa Rosa",
+  "ordinanceLabel": "SRCC Title 18 (Building Codes) | SRCC §18-16.903.2.18.1 (Sprinkler Mandate) | ADU Standards (srcity.org/2280)",
+  "codePrefix": "SRCC",
+  "fireAgency": "Santa Rosa Fire Department",
+  "portal": "Online Permit Center",
+  "portalUrl": "https://srcity.org/262/Building-Permits",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/SA5009",
+  "climateZone": 2,
+  "suggestedQuestions": [
+    "Do I need fire sprinklers for my new home or ADU in Santa Rosa?",
+    "Can I get an instant permit for solar through SolarApp+?",
+    "What are the ADU height limits in Santa Rosa?",
+    "Is my property in a WUI/fire hazard zone?",
+    "Do I need an engineer for my retaining wall?",
+    "What are the fence height rules in Santa Rosa?"
+  ]
+}

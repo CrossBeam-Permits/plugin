@@ -1,0 +1,24 @@
+{
+  "displayName": "West Covina",
+  "ordinanceLabel": "WCMC Chapter 7 (Building) · Chapter 26 (Zoning, Ord. 2519 March 2024) · Municode",
+  "codePrefix": "WCMC",
+  "fireAgency": "West Covina Fire Department — Fire Prevention Bureau (city-operated, not LA County Fire)",
+  "portal": "GoPost/TransTech ePlan",
+  "portalUrl": "https://gopost-transtech.eplansoftreview.com/#/login?portal=westcovinabldg",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingDept": "Community Development — Building Division",
+  "buildingDeptNote": "1444 W Garvey Avenue S, Room 215, West Covina CA 91790. Phone: (626) 939-8425. Hours: Mon–Thu 7:30 AM – 5:30 PM. Digital-only submittals via GoPost/TransTech portal (no paper/email since 2023). Fire Prevention Bureau: Room 218, (626) 939-8824, wcfdplancheck@gmail.com.",
+  "climateZone": "10",
+  "wuiCoverage": "partial",
+  "aduOrdinance": "No. 2480 (April 20, 2021)",
+  "suggestedQuestions": [
+    "What ADU rules apply in West Covina?",
+    "Can I put a separate address or meter on my ADU in West Covina?",
+    "How do I submit plans to West Covina Building Division?",
+    "Who reviews fire plans in West Covina — city or county fire?",
+    "Does West Covina have WUI / fire hazard zones?",
+    "What are the multi-family zoning designations in West Covina?",
+    "How do I get a solar permit in West Covina?",
+    "What is the Development Code Ordinance 2519 in West Covina?"
+  ]
+}

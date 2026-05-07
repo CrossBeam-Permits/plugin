@@ -1,0 +1,81 @@
+{
+  "city": "Albany",
+  "slug": "albany",
+  "state": "CA",
+  "county": "Alameda",
+  "climateZone": 3,
+  "seismicDesignCategory": "D",
+  "fhsz": false,
+  "wui": false,
+  "muniCodePlatform": "ecode360",
+  "muniCodeUrl": "https://ecode360.com/AL4074",
+  "department": "Community Development Department",
+  "address": "1000 San Pablo Avenue, Albany, CA 94706",
+  "phone": "(510) 528-5760",
+  "email": "permits@albanyca.gov",
+  "website": "https://www.albanyca.gov",
+  "submissionMethod": "email",
+  "fireAgency": {
+    "name": "Albany Fire Department",
+    "type": "city-operated",
+    "routedThrough": "Community Development"
+  },
+  "codesAdopted": {
+    "cycle": "2022",
+    "ordinance": "Ord. 2023-01",
+    "effectiveDate": "2023-03-20"
+  },
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "window-replacement",
+    "reroof",
+    "hvac",
+    "water-heater"
+  ],
+  "notableAmendments": [
+    {
+      "id": "seismic-retrofit",
+      "description": "Mandatory soft-story seismic retrofit for multifamily wood-frame buildings (4-tier compliance schedule)",
+      "ordinance": "Ord. 2023-04",
+      "amc": "Article 12-15",
+      "effective": "2023-10-15"
+    },
+    {
+      "id": "solar-streamlined",
+      "description": "Streamlined permitting for residential rooftop solar ≤10kW AC / ≤30kW thermal; one-inspection rule",
+      "amc": "§12-14",
+      "ordinance": "Ord. 2023-01"
+    },
+    {
+      "id": "ev-charger-streamlined",
+      "description": "Streamlined EV charger permitting per CA Gov Code §65850.7",
+      "ordinance": "Ord. 2023-01"
+    },
+    {
+      "id": "photoelectric-smoke-alarms",
+      "description": "Photoelectric-only smoke alarms required; ionization and dual-type prohibited in required locations; building-wide upgrade triggered by any construction/renovation/TI",
+      "amc": "§11-8.1",
+      "ordinance": "Ord. 2019-11, amended Ord. 2023-01"
+    },
+    {
+      "id": "mechanical-equipment-setbacks",
+      "description": "Exterior mechanical equipment (HVAC, water heaters, generators) subject to setback table Table 3.B; amended by Ord. 2025-02",
+      "amc": "§20.24.180",
+      "ordinance": "Ord. 04-09, amended Ord. 2025-02",
+      "effective": "2025-02-03"
+    }
+  ],
+  "openIssues": [
+    "albany-001: albanyca.gov returns 403 — fee schedule PDFs not retrieved",
+    "albany-002: ecode360.com returns 403 — code content via muni-code-raw.md sweep"
+  ],
+  "onboardedAt": "2026-04-22T00:00:00Z",
+  "onboardVersion": "1.0",
+  "enrichedAt": "2026-05-04T00:00:00Z",
+  "enrichVersion": "2.0"
+}

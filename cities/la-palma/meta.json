@@ -1,0 +1,24 @@
+{
+  "displayName": "La Palma",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per LPMC Ordinances 2025-02, 2025-03",
+  "codePrefix": "LPMC",
+  "fireAgency": "OCFA",
+  "portalName": "OpenGov",
+  "portalUrl": "https://cityoflapalmaca.portal.opengov.com",
+  "planCheckContractor": "Bureau Veritas North America, Inc.",
+  "climateZone": "8",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "closedFridays": true,
+  "suggestedQuestions": [
+    "What are the ADU rules in La Palma?",
+    "Do I need a permit for a fence in La Palma?",
+    "What roof materials are required in La Palma?",
+    "How do I submit a permit through OpenGov in La Palma?",
+    "Are sprinklers required for my new home in La Palma?",
+    "What are the counter hours for La Palma Building & Safety?",
+    "Does La Palma have SolarAPP+ for solar permits?",
+    "What are the pool barrier requirements in La Palma?"
+  ]
+}

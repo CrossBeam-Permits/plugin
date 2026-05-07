@@ -1,0 +1,17 @@
+{
+  "displayName": "Rosemead",
+  "ordinanceLabel": "Ord. No. 1029 · June 10, 2025 (Building Codes — 2025 CBC)",
+  "codePrefix": "RMC",
+  "fireAgency": "Los Angeles County Fire Department (LACoFD)",
+  "portal": "Email-based — buildinginfo@rosemeadca.gov",
+  "portalUrl": "https://rosemeadca.gov/government/city_departments/community_development/building_and_safety",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "How do I submit a permit application in Rosemead?",
+    "Can I build an ADU in Rosemead? What are the rules?",
+    "Does Rosemead have a pre-approved ADU plans program?",
+    "What building codes apply in Rosemead?",
+    "Does Rosemead use SolarAPP+ for solar permits?",
+    "Do I need LA County Fire Department review for my project?"
+  ]
+}

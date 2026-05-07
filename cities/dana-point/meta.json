@@ -1,0 +1,17 @@
+{
+  "displayName": "Dana Point",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per Dana Point Municipal Code Title 8",
+  "codePrefix": "DPMC",
+  "fireAgency": "OCFA",
+  "coastalCity": true,
+  "utilityElectric": "SDG&E",
+  "utilityGas": "SoCalGas",
+  "suggestedQuestions": [
+    "Do I need a Coastal Development Permit for my project?",
+    "What is the SDG&E service work order requirement?",
+    "Can I use aluminum wire for my panel upgrade?",
+    "How does Symbium instant solar permitting work in Dana Point?",
+    "What are the ADU impact fee exemptions?",
+    "Does OCFA need to approve my fire sprinkler system before I get a building permit?"
+  ]
+}

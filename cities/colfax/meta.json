@@ -1,0 +1,21 @@
+{
+  "displayName": "Colfax",
+  "county": "Placer",
+  "population": 2000,
+  "elevation_ft": 2400,
+  "climateZone": 11,
+  "codePrefix": "Colfax Mun. Code",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/colfax/codes/code_of_ordinances",
+  "fireAgency": "Placer County Fire Department / CAL FIRE Nevada-Yuba-Placer Unit (NEU) — Station 30 (Battalion 13 HQ)",
+  "submittals": "Email to City of Colfax Building Department, 33 S. Main St, Colfax CA 95713. Phone: (530) 346-2313. Planning Director office hours: Tue/Thu 9am–4:30pm.",
+  "wuiCoverage": "all",
+  "suggestedQuestions": [
+    "Do WUI/fire-hardening requirements apply to my project in Colfax?",
+    "What are the setback requirements for an ADU in Colfax?",
+    "How do I submit a building permit to the City of Colfax?",
+    "Does Colfax require fire sprinklers for new single-family homes?",
+    "What building codes apply in Colfax for a roof replacement?",
+    "Who reviews fire/WUI plans for projects in Colfax?"
+  ]
+}

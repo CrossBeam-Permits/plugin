@@ -1,0 +1,22 @@
+{
+  "displayName": "Rancho Santa Margarita",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per RSMMC Title 10",
+  "codePrefix": "RSMMC",
+  "fireAgency": "OCFA",
+  "portalName": "CityTech Solutions",
+  "portalUrl": "https://rsm.cts.city",
+  "climateZone": "10",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "coastalZone": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Rancho Santa Margarita?",
+    "Does RSM have fire hazard severity zones that affect my permit?",
+    "How do I submit a permit through the CityTech Solutions portal?",
+    "What are the pool barrier requirements in Rancho Santa Margarita?",
+    "What are the fence height limits in RSM?",
+    "Is my property in a VHFHSZ area in Rancho Santa Margarita?",
+    "What are the counter hours for RSM Building Safety?",
+    "What did the HCD findings letter say about RSM's ADU ordinance?"
+  ]
+}

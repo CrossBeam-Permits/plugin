@@ -1,0 +1,201 @@
+---
+description: "Pool Demolition permits in Orange, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orange local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Orange."
+version: "1.0"
+source: "2025 California Building Code (Title 24, Part 2) — Chapters 18, 33, Appendix J; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6, 7, 12"
+authority: "California Building Standards Commission"
+law_as_of: "January 1, 2025"
+---
+
+# Orange — Pool Demolition Permit
+
+Handles pool demolition permits in Orange end-to-end.
+
+**First thing in every conversation:** ask which mode the user is in.
+
+> "Are you (A) planning to file a pool demolition permit, or (B) a city reviewer checking a submitted one?"
+
+- Mode A → walk **Builder / Homeowner Intake** below
+- Mode B → walk **City Reviewer Checklist** below
+
+Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+
+---
+
+## City Info
+
+| | |
+|---|---|
+| Permit portal | https://epermit.cityoforange.org/etrakit3/ |
+| Municipal code | https://ecode360.com/OR5214 |
+| Fire agency | Orange Fire Department |
+| Code edition | 2025 CBC/CRC · ecode360 OR5214 · Current through Ord. 19-25 (Dec 2025) |
+| Code prefix | OMC |
+
+---
+
+## Key Orange deltas vs state baseline
+
+City-specific checks layered on top of state code. Each is tagged `[OMC]` in the checklist below.
+
+- **1** Permit required — **flag**
+- **2** Demolition method declared — **flag**
+- **3** Full removal — haul and backfill — **flag**
+- **4** Abandonment-in-place — perforation and fill — **flag**
+- **5** Compaction report — both methods — **flag**
+- **6** Pre-1978 asbestos survey — **flag**
+- **7** SCAQMD Rule 1403 — all projects — **flag**
+- **8** Water disconnect — City of Orange Public Utilities — **flag**
+- **9** Electrical disconnect — pool equipment circuits — **flag**
+- **10** Dedicated sub-panel / SCE disconnect — **flag**
+- **11** Gas disconnect (if heated pool) — **flag**
+- **12** Separate permits — electrical and plumbing — **flag**
+- **13** Seismic Design Category D — **flag**
+- **14** Fire Department — Orange Fire — **flag**
+- **15** Contractor license — **flag**
+- **16** Old Towne Historic District — **flag**
+
+---
+
+## MODE A — Builder / Homeowner Intake
+
+### A1. Intake
+
+Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+
+### A2. Pre-submission Compliance Check
+
+Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+- **FAIL** → tell the user the specific change needed before they submit
+- **FLAG** → tell them what additional info or documentation they need to gather
+- **PASS** → confirm, move on
+
+### A3. Submission Guide
+
+When compliance is clean (or flag-only), produce a submission guide:
+
+```
+## Ready to Submit — Orange Pool Demolition Permit
+
+**Portal:** https://epermit.cityoforange.org/etrakit3/
+**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+
+### Required uploads
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+
+### Inspection sequence
+[Generated per skill — standard inspection milestones]
+```
+
+### A4. Optional — portal automation
+
+If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+
+---
+
+## MODE B — City Reviewer
+
+### Procedure
+
+1. Accept submitted form data (JSON, PDF, photos, or pasted text)
+2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Plan-Check Checklist below in order
+4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+
+### Output format
+
+```
+PLAN CHECK — {address} ({permit})
+
+❌ CORRECTIONS REQUIRED (N)
+   [plan-check severity=fail items that are not satisfied]
+
+⚠️ VERIFY BEFORE ISSUANCE (N)
+   [plan-check severity=flag items needing documentation or clarification]
+
+ℹ️ LOCAL FLAGS (N) — city discretion
+   [OMC-specific flag items — parcel overlays, city-specific checks]
+
+✓ {N} checks PASS (expand for detail)
+
+➡ {N} checks deferred to inspection
+
+—
+Generated by CrossBeam Permits · crossbeam-permits.com
+```
+
+Summary verdict at the end: **APPROVE** | **CORRECTIONS REQUIRED** | **NEED ADDITIONAL INFO**
+
+Do not list inspection items as corrections. Do not enumerate every passing item unless the user asks. Respect the plan checker's time.
+
+---
+
+## Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+
+| # | Check | Severity | What to verify | Code |
+|---|---|---|---|---|
+| 1 | **Permit type correct?** | ❌ **fail** | Pool/spa demolition permit; partial demo (shell remains below grade) for landscape use only. If structure will be built over the area, full removal with geotech report is required -- different permit process. | CBC 105.1 |
+| 2 | **Site plan complete?** | ❌ **fail** | Property lines with dimensions, all buildings/structures shown, pool/spa location, easements/setbacks, driveways, streets, north arrow, fence locations with heights, electrical panel and gas meter locations, proposed fill material specified, debris/backfill storage location, erosion control measures. | CBC 107.2.6 |
+| 3 | **Scope of work defined?** | ❌ **fail** | Permit is for demolition of existing pool/spa including capping of associated plumbing and electrical. No other improvements allowed under this permit. | CBC 3303.1 |
+| 4 | **Pool dimensions provided?** | ⚠️ **flag** | Length, width, deepest depth, shallowest depth, estimated volume in gallons. These determine backfill quantity and inspection scope. | -- |
+| 5 | **Drainage holes adequate?** | ❌ **fail** | Pool: 2 holes at 36" dia, one at lowest point. Spa: 1 hole at 36" dia at lowest point. Holes equally spaced across deep end and levels. | CBC 3303.5 |
+| 6 | **Gravel layer specified?** | ❌ **fail** | 12-inch layer of #4 rock (1" to 2.5" Class II permeable free-draining rock) over drain holes and pool shell bottom. | CBC 3303.5 |
+| 7 | **Coping/bond beam removal adequate?** | ❌ **fail** | Remove pool coping, bond beam, and steel rebar around entire perimeter to at least 18 inches below finished grade. | CBC 3303.4 |
+| 8 | **Backfill material specified?** | ❌ **fail** | Self-compacting fill sand (SE25 type), clean fill dirt, or as specified in soils report. No organic material, construction debris, cobbles, or boulders. Fill to within 30 inches of final surface, then planting medium for upper 18 inches. | CBC 1804.3, J107.4 |
+| 9 | **Compaction method specified?** | ❌ **fail** | Hand compaction equipment, 6-inch lifts, prudent use of water. 90% minimum (90-95% typical) per ASTM D1557 Modified Proctor. Soil compaction report required at final inspection. | CBC 1804.6, 1705.6, J107.5 |
+| 10 | **Geotechnical filter fabric?** | ⚠️ **flag** | Filter fabric applied after backfilling, before planting medium layer. Separates structural backfill from planting medium. | -- |
+| 16 | **Pool water discharge plan?** | ❌ **fail** | Water must be de-chlorinated before discharge to storm drain. Chlorinated/contaminated water must go off-site. No filter backwash or cleaning wastewater to storm drain. | NPDES/BMP |
+| 17 | **Drainage/grading adequate?** | ❌ **fail** | Finished grade slopes minimum 2% away from all existing structures. Drainage pattern does not increase runoff to neighboring properties. | CBC 1804.4 |
+| 18 | **Erosion control measures?** | ❌ **fail** | BMP measures during construction: silt fencing, gravel bags at storm drains, covered stockpiles. Erosion control on finished slopes before final inspection. | CBC 3304.1.5, J110.1 |
+| 1 | **Permit required** `[OMC]` | ⚠️ **flag** | Building/demolition permit required for all pool demolition, regardless of method (full removal or abandonment-in-place) | City of Orange Building and Safety Services requirement |
+| 2 | **Demolition method declared** `[OMC]` | ⚠️ **flag** | Two accepted methods must be clearly declared on plans: **(A) Full removal** — excavate entire shell, haul away debris, backfill, and compact; or **(B) Abandonment-in-place (fill)** — perforate/punch pool bottom for drainage, backfill with engineered fill, compact | City standard practice |
+| 3 | **Full removal — haul and backfill** `[OMC]` | ⚠️ **flag** | Full removal requires: excavation of entire shell and deck, proper disposal/haul-away of concrete debris, clean backfill material, and a **soil compaction report** from a licensed geotechnical engineer confirming structural adequacy of compacted backfill | City requirement |
+| 4 | **Abandonment-in-place — perforation and fill** `[OMC]` | ⚠️ **flag** | Abandonment-in-place requires: puncturing/perforating pool bottom at regular intervals for drainage, filling with **engineered fill** (compacted gravel or approved material), and a **soil compaction report** from a licensed geotechnical engineer | City requirement |
+| 5 | **Compaction report — both methods** `[OMC]` | ⚠️ **flag** | A **geotechnical compaction report** is required after fill and compaction operations for BOTH full removal and abandonment-in-place methods; report must be from a licensed geotechnical engineer and submitted before final inspection | City requirement |
+| 6 | **Pre-1978 asbestos survey** `[OMC]` | ⚠️ **flag** | Pools built **pre-1978**: pool decking (especially older concrete/tile), equipment housings, and pipe insulation may contain ACM — a pre-demolition **asbestos survey by a Certified Asbestos Consultant (CAC)** is required before any demolition work begins | **SCAQMD Rule 1403**; Cal/OSHA 8 CCR §1529 |
+| 7 | **SCAQMD Rule 1403 — all projects** `[OMC]` | ⚠️ **flag** | **SCAQMD Rule 1403** pre-demolition notification and asbestos survey requirements apply in Orange County — for any demolition (not only pre-1978), verify survey/notification compliance before work begins; SCAQMD District is South Coast AQMD | SCAQMD Rule 1403 |
+| 8 | **Water disconnect — City of Orange Public Utilities** `[OMC]` | ⚠️ **flag** | **City of Orange Public Utilities** must disconnect the water supply line serving the pool before demolition begins; contact Public Works: (714) 744-5560 | City of Orange Public Utilities requirement |
+| 9 | **Electrical disconnect — pool equipment circuits** `[OMC]` | ⚠️ **flag** | All pool equipment electrical circuits (pump motor, heater, lighting, underwater lights, bonding grid) must be **properly disconnected and abandoned** at the main panel or sub-panel by a licensed electrician; a **separate electrical permit** may be required | 2025 CEC; City requirement |
+| 10 | **Dedicated sub-panel / SCE disconnect** `[OMC]` | ⚠️ **flag** | If the pool has a dedicated electrical sub-panel or a meter tap from SCE, **SCE must be contacted** to disconnect at the meter before demolition of electrical equipment begins; coordinate with SCE prior to scheduling demolition | SCE service requirements |
+| 11 | **Gas disconnect (if heated pool)** `[OMC]` | ⚠️ **flag** | If the pool has a gas heater, **SoCalGas must disconnect** the gas supply line to the equipment before demolition; a **separate plumbing permit** may be required to cap the gas line | 2025 CPC; SoCalGas requirement |
+| 12 | **Separate permits — electrical and plumbing** `[OMC]` | ⚠️ **flag** | Utility disconnections (electrical circuit abandonment, gas line cap) require **separate electrical and/or plumbing permits** in addition to the demolition permit — verify at counter which ancillary permits apply to the specific scope | City of Orange Building and Safety Services |
+| 13 | **Seismic Design Category D** `[OMC]` | ⚠️ **flag** | Orange is **SDC D** — for full removal with significant excavation adjacent to structures, footings, or retaining walls, verify slope stability and shoring adequacy; geotechnical input may be required beyond compaction report | 2025 CBC; CITY.md |
+| 14 | **Fire Department — Orange Fire** `[OMC]` | ⚠️ **flag** | Fire authority is **Orange Fire Department** (city-operated, NOT OCFA); contact for any hazmat or ACM disposal questions: (714) 744-5566 | CITY.md |
+| 15 | **Contractor license** `[OMC]` | ⚠️ **flag** | **C-53 (Swimming Pool and Hot Tub)** or **B (General Building)** contractor license required; current CSLB license required; City of Orange business license required | CSLB; City requirement |
+| 16 | **Old Towne Historic District** `[OMC]` | ⚠️ **flag** | If project address is within **Old Towne Orange Historic District** (approx. 1 sq mi near traffic circle), verify whether DRC review is triggered for any demolition visible from the public way or affecting historic fabric | City of Orange Municipal Code; CITY.md |
+
+---
+
+## Documentation Items (informational)
+
+Procedural / informational items with no enforceable rule. Include in the submission record; don't fail or flag in plan check.
+
+| # | Item | Note |
+|---|---|---|
+| 19 | **Owner disclosure signed?** | Real estate disclosure requirement, not a code rule. |
+
+---
+
+## Deferred to Inspection
+
+These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+
+| # | Inspector verifies | What to look for | Code |
+|---|---|---|---|
+| 11 | **Electrical properly decommissioned?** | Sub-panel and all related conductors removed back to service supply connection. Pool bonding system disconnected. Separate permit required if converting electrical for other uses. | CEC 680.13, CBC 3303.6 |
+| 12 | **Gas line capped at both ends?** | Gas line disconnected and capped gastight at BOTH the meter AND the equipment location. Must use screw joint fitting. | CPC 1206.3, 1210.8.1 |
+| 13 | **Water supply capped?** | Water supply line to pool fill/autofill disconnected and capped at nearest active branch. | CPC 601.1, 309.6 |
+| 14 | **Sewer/drain capped?** | Pool drain connection to sanitary sewer properly capped to prevent sewer gas and debris entry. | CPC 305.1, 701.1 |
+| 15 | **Above-ground equipment removed?** | All above-ground pool equipment (pump, filter, heater, chlorinator, etc.) and associated plumbing removed. | CBC 3303.6 |
+
+---
+
+## References
+
+Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/pool-demolition/`. City overlay source: `skills/cities/orange/pool-demolition/`.
+
+---
+
+*Generated by CrossBeam Permits · crossbeam-permits.com · © Onboard Dot AI LLC · Apache-2.0*
+*Informational use only; not legal advice; jurisdiction governs.*

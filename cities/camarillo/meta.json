@@ -1,0 +1,23 @@
+{
+  "displayName": "Camarillo",
+  "ordinanceLabel": "Ord. 2034 · 2025 California Building Standards Code, effective Jan 1, 2026",
+  "codePrefix": "CMC",
+  "fireAgency": "Ventura County Fire Department (VCFD)",
+  "portal": "OpenGov",
+  "portalUrl": "https://camarilloca.portal.opengov.com/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "buildingServices": "Charles Abbott Associates, Inc. (contracted)",
+  "feeSurcharges": {
+    "generalPlanMaintenance": "17.89%",
+    "technology": "11.34%",
+    "effectiveDate": "2025-07-01"
+  },
+  "suggestedQuestions": [
+    "Does Camarillo accept SolarAPP+ for solar permits?",
+    "What are the ADU setback and height rules in Camarillo?",
+    "Is my property in a Fire Hazard Severity Zone?",
+    "How do I apply for a permit through the OpenGov portal?",
+    "What fee surcharges apply to building permits in Camarillo?",
+    "Who provides plan check services in Camarillo?"
+  ]
+}

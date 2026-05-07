@@ -1,0 +1,23 @@
+{
+  "displayName": "Fairfield",
+  "ordinanceLabel": "Fairfield Municipal Code · codepublishing.com/CA/Fairfield · Current through Ord 2025-08",
+  "codePrefix": "FMC",
+  "fireAgency": "City of Fairfield Fire Department — Fire Prevention Bureau · (707) 399-5627 · fireprevention@fairfield.ca.gov",
+  "portalName": "Fairfield BUILD",
+  "portalUrl": "https://www.fairfield.ca.gov/our-city/building-permits",
+  "climateZone": "12",
+  "seismicCategory": "D",
+  "fhsz": true,
+  "fhszCoverage": "partial",
+  "coastalZone": false,
+  "solarApp": true,
+  "suggestedQuestions": [
+    "Does my Fairfield project require fire sprinklers?",
+    "What are the ADU rules in Fairfield?",
+    "Is my Fairfield property in a Fire Hazard Severity Zone?",
+    "How do I submit a building permit through Fairfield BUILD?",
+    "Does Fairfield have SolarAPP+ for solar permits?",
+    "What triggers the sprinkler requirement for a remodel or addition in Fairfield?",
+    "What are the setback rules for ADUs in Fairfield?"
+  ]
+}

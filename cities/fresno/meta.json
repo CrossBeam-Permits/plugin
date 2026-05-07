@@ -1,0 +1,69 @@
+{
+  "city": "Fresno",
+  "slug": "fresno",
+  "county": "Fresno",
+  "state": "CA",
+  "population": 542107,
+  "climateZones": ["CZ13"],
+  "fireAgency": "City of Fresno Fire Department",
+  "vhfhsz": false,
+  "wuiPartial": true,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/fresno/codes/code_of_ordinances",
+  "buildingDept": {
+    "name": "City of Fresno Development and Resource Management — Building and Safety Services Division",
+    "phone": "(559) 621-8084",
+    "address": "2600 Fresno Street, Room 3043, Fresno, CA 93721",
+    "email": "DARM.building@fresno.gov",
+    "portal": "https://aca-prod.accela.com/FRESNO/Default.aspx",
+    "portalPlatform": "Accela Citizen Access (ACA)"
+  },
+  "planningDept": {
+    "name": "City of Fresno Planning Division",
+    "phone": "(559) 621-8277",
+    "address": "2600 Fresno Street, Room 3043, Fresno, CA 93721"
+  },
+  "fireDept": {
+    "name": "City of Fresno Fire Department — Prevention Division",
+    "phone": "(559) 621-4181",
+    "email": "firepreventionbureau@fresno.gov",
+    "address": "911 H Street, Fresno, CA 93721"
+  },
+  "utility": {
+    "electric": "PG&E",
+    "gas": "PG&E",
+    "water": "City of Fresno Department of Public Utilities",
+    "sewer": "City of Fresno Department of Public Utilities"
+  },
+  "specialOverlays": ["wood-burning-ban", "galvanized-pipe-ban"],
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "solar",
+    "reroof",
+    "swimming-pool",
+    "hvac",
+    "panel-upgrade",
+    "water-heater",
+    "ev-charger",
+    "retaining-wall",
+    "block-wall",
+    "patio-cover",
+    "window-replacement",
+    "fence",
+    "sign",
+    "wildfire-wui",
+    "repipe",
+    "kitchen-bath-remodel",
+    "deck-patio-repair",
+    "siding-replacement",
+    "rewire",
+    "restaurant-ti",
+    "temporary-power"
+  ],
+  "onboardedAt": "2026-04-24",
+  "smokeTestedAt": null,
+  "readyForPromotion": false
+}

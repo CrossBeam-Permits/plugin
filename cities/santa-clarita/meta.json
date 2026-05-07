@@ -1,0 +1,17 @@
+{
+  "displayName": "Santa Clarita",
+  "ordinanceLabel": "Ord. 25-4 · July 8, 2025 (2025 Building Standards Codes, effective Jan 1, 2026)",
+  "codePrefix": "SCMC",
+  "fireAgency": "Los Angeles County Fire Department (Division 3 / Battalion 6)",
+  "portal": "Accela ePMT",
+  "portalUrl": "https://aca-prod.accela.com/santaclarita/",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "Can I get an instant online permit for a panel upgrade or water heater?",
+    "What are the ADU height and setback rules in Santa Clarita?",
+    "Does my property need a fuel modification plan?",
+    "How do I get a solar permit through Symbium?",
+    "Is my property in a Fire Hazard Severity Zone?",
+    "What building codes apply — 2022 or 2025?"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "displayName": "Hollister",
+  "ordinanceLabel": "Ord. 1224 (Building Codes) | 2022 Fire Code Amendments (10/27/2022)",
+  "codePrefix": "HMC",
+  "fireAgency": "Hollister Fire Department — Fire Prevention Bureau (831) 636-4300 — integrated fire plan check with building permit",
+  "portal": "Accela",
+  "portalUrl": "https://aca-prod.accela.com/HOLLISTER",
+  "electricUtility": "Pacific Gas & Electric (PG&E)",
+  "gasUtility": "Pacific Gas & Electric (PG&E)",
+  "suggestedQuestions": [
+    "Does my new house in Hollister need fire sprinklers?",
+    "What roof class is required for my reroof project in Hollister?",
+    "Is my Hollister property in a fire hazard severity zone?",
+    "What are the ADU rules in Hollister — height, setbacks, and size?",
+    "Does Hollister require a fire alarm system for a new single-family home?",
+    "What permits does Hollister require for a new multi-unit building?"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "displayName": "San José",
+  "ordinanceLabel": "San José Municipal Code · Ord. No. 31256 · 2025 California Building Standards Code",
+  "codePrefix": "SJMC",
+  "fireAgency": "San José Fire Department (SJFD) · Bureau of Fire Prevention · 408-535-7750 · sanjoseca.gov",
+  "portalName": "SJPermits.org",
+  "portalUrl": "https://sjpermits.org",
+  "planReviewPlatform": "SJePlans (Bluebeam)",
+  "climateZone": "4",
+  "seismicCategory": "D",
+  "fhsz": "partial",
+  "fhszNotes": "Very High FHSZ in East Foothills (Alum Rock, Evergreen) and Almaden Valley/Bernal Hills. Urban core is not FHSZ-designated.",
+  "coastalZone": false,
+  "baaqmdRegion": true,
+  "utility": "PG&E",
+  "suggestedQuestions": [
+    "What are the ADU rules in San José?",
+    "Is my property in a Fire Hazard Severity Zone in San José?",
+    "Does San José allow tiny homes on wheels (THOWs)?",
+    "What is the Streamlined Restaurant Program and how do I qualify?",
+    "When does the BAAQMD gas appliance ban take effect for water heaters?",
+    "How do I submit plans through SJePlans?",
+    "What are the three local building code amendments San José retained in 2025?",
+    "Does my project need SJFD fire plan check?"
+  ]
+}

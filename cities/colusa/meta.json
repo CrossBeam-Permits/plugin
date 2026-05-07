@@ -1,0 +1,24 @@
+{
+  "displayName": "City of Colusa",
+  "ordinanceLabel": "Colusa Municipal Code · Municode · 2025 CBSC in effect · Local amendments to CFC (Ch. 9 Art. I — Ord. 460/495) and frontage improvements (Ch. 16B — Ord. 425) and impact fees (Ch. 7B)",
+  "codePrefix": "CMC",
+  "fireAgency": "City of Colusa Fire Department · (530) 458-7721 · 750 Market Street, Colusa, CA 95932",
+  "portal": "iWorQ",
+  "portalUrl": "https://colusaca.portal.iworq.net/portalhome/colusaca",
+  "solarAppPlus": false,
+  "electricUtility": "PG&E",
+  "gasUtility": "PG&E",
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/colusa/codes/code_of_ordinances",
+  "county": "Colusa County",
+  "climateZone": 11,
+  "wuiCoverage": null,
+  "suggestedQuestions": [
+    "What permits do I need for a new ADU in Colusa?",
+    "How do I submit a building permit application in Colusa?",
+    "What are the setback requirements for a fence in Colusa?",
+    "Does Colusa have any local building code amendments?",
+    "What are the ADU size and setback rules in Colusa?",
+    "Where do I contact the Colusa building department?"
+  ]
+}

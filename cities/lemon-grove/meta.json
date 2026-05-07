@@ -1,0 +1,26 @@
+{
+  "displayName": "Lemon Grove",
+  "ordinanceLabel": "2025 California Building Standards Code · Lemon Grove Municipal Code Title 15",
+  "codePrefix": "LGMC",
+  "fireAgency": "Heartland Fire & Rescue",
+  "portalName": null,
+  "portalUrl": null,
+  "solarApp": true,
+  "climateZone": "7",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "utility": "SDG&E",
+  "suggestedQuestions": [
+    "What are the ADU rules in Lemon Grove?",
+    "How do I apply for a permit in Lemon Grove?",
+    "Does Lemon Grove accept Solar App+?",
+    "What are the solar permit requirements in Lemon Grove?",
+    "What fire agency covers Lemon Grove?",
+    "What are the fence height limits in Lemon Grove?",
+    "What are the building department hours in Lemon Grove?",
+    "Can I rent my ADU short-term in Lemon Grove?",
+    "What are the sign permit rules in Lemon Grove?",
+    "What zoning districts exist in Lemon Grove?"
+  ]
+}

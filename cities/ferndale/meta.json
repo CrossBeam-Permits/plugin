@@ -1,0 +1,25 @@
+{
+  "city": "Ferndale",
+  "slug": "ferndale",
+  "state": "CA",
+  "county": "Humboldt",
+  "climateZone": 1,
+  "muniCodePlatform": "city-hosted",
+  "muniCodeUrl": "https://ci.ferndale.ca.us/documents/laws/",
+  "fireAgency": {
+    "name": "Ferndale Fire Protection District (Ferndale Volunteer Fire Department)",
+    "address": "436 Brown Street, PO Box 485, Ferndale, CA 95536",
+    "submitPath": "needs_human"
+  },
+  "fhsz": "unconfirmed",
+  "floodZone": true,
+  "historicDistrict": true,
+  "designControlZone": true,
+  "onboardedTypes": [
+    "adu",
+    "multi-unit-residential",
+    "residential-addition",
+    "restaurant-ti",
+    "single-family-residential"
+  ]
+}

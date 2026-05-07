@@ -1,0 +1,17 @@
+{
+  "displayName": "Pico Rivera",
+  "ordinanceLabel": "Ord. 1200 · November 12, 2025",
+  "codePrefix": "PRMC",
+  "fireAgency": "Los Angeles County Fire Department (LACoFD)",
+  "portal": "Email Submittal",
+  "portalUrl": "mailto:buildingdivision@pico-rivera.org",
+  "electricUtility": "Southern California Edison (SCE)",
+  "suggestedQuestions": [
+    "What are Pico Rivera's ADU size and setback rules?",
+    "Does Pico Rivera have a pre-approved ADU plans program?",
+    "How do I submit a permit application in Pico Rivera?",
+    "Do I need LACoFD approval for my project?",
+    "Is Pico Rivera in a fire hazard zone?",
+    "Can I get a solar permit instantly with SolarAPP+?"
+  ]
+}

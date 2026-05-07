@@ -1,0 +1,24 @@
+{
+  "displayName": "Avenal",
+  "ordinanceLabel": "2025 California Building Standards Code (No Local Technical Amendments — AMC §8-1.05 Reserved)",
+  "codePrefix": "AMC",
+  "fireAgency": "Avenal Fire Department",
+  "portalName": "OpenGov",
+  "portalUrl": "https://avenalca.portal.opengov.com/",
+  "planCheckContractor": "A&M Engineering",
+  "climateZone": "13",
+  "seismicCategory": "D",
+  "fhsz": false,
+  "coastalZone": false,
+  "closedFridays": false,
+  "suggestedQuestions": [
+    "What are the ADU rules in Avenal?",
+    "Does Avenal have any local building code amendments?",
+    "How do I submit a building permit in Avenal?",
+    "What are the ADU design requirements in Avenal — roof form and exterior materials?",
+    "Do I need a permit for a pool in Avenal?",
+    "Do I need a permit for a fence in Avenal?",
+    "How do I get a solar permit in Avenal?",
+    "What SJVAPCD low-NOx requirements apply to gas water heaters in Avenal?"
+  ]
+}

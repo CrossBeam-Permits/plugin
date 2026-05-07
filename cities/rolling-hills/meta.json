@@ -1,0 +1,33 @@
+{
+  "city": "Rolling Hills",
+  "slug": "rolling-hills",
+  "state": "CA",
+  "county": "Los Angeles",
+  "region": "Palos Verdes Peninsula / South Bay",
+  "population": 1900,
+  "muniCodePlatform": "municode",
+  "muniCodeUrl": "https://library.municode.com/ca/rolling_hills/codes/code_of_ordinances",
+  "buildingAuthority": "LA County Building & Safety",
+  "buildingPortal": "EPIC-LA",
+  "buildingPortalUrl": "https://epicla.lacounty.gov",
+  "fireAgency": "LA County Fire Department — Station 56",
+  "wuiCoverage": "all",
+  "wuiFhsz": "Very High",
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "swimming-pool",
+    "solar",
+    "reroof",
+    "wildfire-wui",
+    "retaining-wall",
+    "hvac",
+    "panel-upgrade",
+    "water-heater",
+    "window-replacement",
+    "ev-charger"
+  ],
+  "onboardedAt": "2026-04-15",
+  "notes": "100% residential gated community. RAS-1/RAS-2 zoning only. Single-story only. LA County B&S issues all permits via EPIC-LA. RHCA architectural review is a private covenant layer. WUI Very High FHSZ citywide. Class A non-reflective roofing required by local ordinance."
+}
