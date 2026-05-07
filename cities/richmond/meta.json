@@ -1,0 +1,16 @@
+{
+  "displayName": "Richmond",
+  "ordinanceLabel": "2025 California Building Standards Code · Local Amendments per RMC Chapter 6.02 (Ordinance No. 01-26 N.S.)",
+  "codePrefix": "RMC",
+  "fireAgency": "Richmond Fire Department",
+  "suggestedQuestions": [
+    "Is my parcel in Richmond's Very High Fire Hazard Severity Zone (VHFHSZ)?",
+    "Do I need Chapter 7A wildfire-resistant materials for my project?",
+    "What ADU sizes are allowed in Richmond under RMC §15.04.610?",
+    "How do I legalize unpermitted residential work under CBC §109.4.2?",
+    "Does my project need Richmond Fire Department plan review?",
+    "What is the climate zone for energy compliance in Richmond?",
+    "How do I submit plans through the iMS permit portal?",
+    "Are pre-approved ADU plans available from the city?"
+  ]
+}
