@@ -10,8 +10,16 @@ In Claude Code:
 
 ```
 /plugin marketplace add CrossBeam-Permits/plugin
-/plugin
-# search your city, install
+/plugin install <your-city>@crossbeam-permits
+```
+
+City slugs are kebab-case (`huntington-beach`, `san-luis-obispo`, `agoura-hills`). To browse all available cities interactively, run `/plugin` and search.
+
+Example:
+
+```
+/plugin marketplace add CrossBeam-Permits/plugin
+/plugin install huntington-beach@crossbeam-permits
 ```
 
 ## What you get per city
