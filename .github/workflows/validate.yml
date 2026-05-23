@@ -1,0 +1,25 @@
+name: Validate plugins
+
+on:
+  pull_request:
+    paths:
+      - 'cities/**'
+      - '.claude-plugin/**'
+      - 'scripts/validate_marketplace.py'
+      - '.github/workflows/validate.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'cities/**'
+      - '.claude-plugin/**'
+      - 'scripts/validate_marketplace.py'
+      - '.github/workflows/validate.yml'
+
+jobs:
+  validate:
+    name: marketplace.json + per-city manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run validator
+        run: python3 scripts/validate_marketplace.py
