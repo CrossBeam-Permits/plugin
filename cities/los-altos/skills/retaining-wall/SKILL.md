@@ -1,5 +1,5 @@
 ---
-description: "Retaining Wall permits in Los Altos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Altos local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Los Altos."
+description: "Retaining Wall permits in Los Altos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Altos local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Los Altos."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC), 2025 California Residential Code (Title 24, Part 2.5 CRC), ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eTRAKiT |
+| Permit portal | https://trakit.losaltosca.gov/etrakit/ |
 | Fire agency | Santa Clara County Fire Department (SCCFD) · 650-947-2779 · sccfd.org |
 | Code edition | Los Altos Municipal Code · Municode · Title 12 (Building) · Title 14 (Zoning) · Chapter 14.14 (ADU) |
 | Code prefix | LAMC |

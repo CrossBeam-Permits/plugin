@@ -1,9 +1,9 @@
 ---
-description: "Swimming Pool permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Laguna Beach."
+description: "Swimming Pool and spa permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — establishes the LBMC planning route, checks state and local compliance, and hands confirmed facts to the Laguna submit plugin; (B) CITY REVIEWER — checks a submitted pool/spa project and produces tight corrections output. Covers the 3-foot Design Review split, coastal/CDP analysis, 25-foot bluff setback, geotechnical triggers, and the separate six-part equipment test effective 2026-08-20."
 version: "1.0"
-source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
-authority: "California Building Standards Commission"
-law_as_of: "January 1, 2025"
+source: "2025 CBC §§107.2, 1808.7.3, 3109; 2025 CRC Appendix CI; 2025 CEC Article 680; 2025 CPC Chapters 7 and 12; Health & Safety Code §§115920-115929; LBMC §§7.25.130, 25.05.040, 25.05.045, 25.07.008, 25.50.004; Laguna Beach Ordinances 1731, 1732, and 1733"
+authority: "California Building Standards Commission and City of Laguna Beach"
+law_as_of: "2026-08-24"
 ---
 
 # Laguna Beach — Swimming Pool Permit
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Tyler EnerGov Civic Access |
+| Permit portal | https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/home |
 | Municipal code | https://ecode360.com/LA4953 |
 | Fire agency | Laguna Beach Fire |
 | Code edition | Title 14 Building & Housing · 2025 CBC/CRC |
@@ -36,7 +38,58 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Before naming any Planning route, ask and establish:
+
+1. Is the pool/spa more than 3 feet above **adjacent legal ground elevation**, no more than
+   3 feet, or still unknown? If it is a portable spa, is it more than 600 gallons?
+2. Is the parcel/work in the coastal zone, and does any CDP-exemption exception apply?
+3. Is the parcel oceanfront or bluff-adjacent, and has the top of bluff been established?
+
+Unknown answers stay unknown. Do not assume Design Review, Zone Clearance, a CDP
+exemption, or bluff compliance. Then collect the remaining project, applicant, and
+plan-check facts naturally, using the checklist below as the coverage floor.
+
+#### Laguna Planning route
+
+Route the pool/spa structure and its equipment separately:
+
+- **Structure more than 3 feet above adjacent legal grade:** Design Review Board / Planning
+  Commission under LBMC §25.05.040(B)(1)(j), using the one Design Review Application.
+- **Structure no more than 3 feet, or portable spa no more than 600 gallons:** Zone
+  Clearance under §25.05.040(B)(2)(t) and §25.05.045; this finishes through a Planning
+  appointment, not online type 114.
+- **Environmentally sensitive area:** an otherwise lower-tier item goes to (B)(1) unless
+  the licensed-professional determination and peer review establish no impact.
+
+The governing design-review tier is singular: `drb` outranks `admin_dr`, which outranks
+`zone_clearance`. Name all matched components, but include the City's Design Review
+Application only once. Add CDP, CUP, variance, and ADU/JADU forms when independently
+required. CDP is a parallel completeness track and never substitutes for Design Review.
+
+For equipment in or adjacent to a residential area, record each part of the
+§7.25.130(C) test separately (effective 2026-08-20):
+
+1. ground-mounted or wall-mounted at ground level;
+2. outside required front and side setbacks;
+3. at least 5 feet from every property line;
+4. specification sheet with decibel rating, no more than 60 dB day / 50 dB night at the
+   property line, and two maintained sound-attenuation techniques;
+5. City-provided form computing property-line sound under ARI Standard 275 (1984, as
+   amended)—the City's form title is unconfirmed, so do not invent it; and
+6. a 3-foot path of travel around every structure.
+
+All six yes → equipment Zone Clearance without Design Review under
+§25.05.040(B)(2)(v). Any no → Administrative Design Review under
+§25.05.040(B)(3)(a)(v). Any unknown → equipment route undetermined. This test does not
+downgrade the structure route. The contractor acknowledgment in §7.25.130(A) remains an
+issuance requirement.
+
+Independently analyze the §25.07.008(A)(1) pool CDP exemption and its exceptions. For an
+oceanfront/bluff parcel, enforce the 25-foot pool/spa setback from top of bluff in
+§25.50.004(B)(4) using survey/geotechnical evidence. Require the City geotechnical branch
+for a new pool on an ungraded lot, in a floodplain, or on a coastal bluff top; also flag
+steep-hillside, liquefaction, prior-failure, unconventional-foundation, and Building
+Official-discretion conditions.
 
 ### A2. Pre-submission Compliance Check
 
@@ -47,12 +100,15 @@ Once you have enough info, walk the Plan-Check Checklist below using the user's 
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When the Planning route is established and compliance is clean (or flag-only), produce a
+route-specific submission guide. Do not promise over-the-counter issuance:
 
 ```
 ## Ready to Submit — Laguna Beach Swimming Pool Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [Zone Clearance appointment, or the one Design Review Application]
+**Parallel/additive applications:** [CDP, ADU/JADU, CUP, variance, or none]
+**Building after Planning:** one pool Building application and its own valuation
 
 ### Required uploads
 [Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
@@ -63,7 +119,16 @@ When compliance is clean (or flag-only), produce a submission guide:
 
 ### A4. Optional — portal automation
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+If the dependent Laguna submit plugin is installed, hand the confirmed facts and filing
+theory to `$laguna-permit-preparer`. It fills only verified official forms, uses a visible
+browser abstraction when portal filing is supported, and stops at `portal_ready` with an
+exact handoff when browser control is unavailable. It never submits without a fresh final
+approval and a terminal confirmation receipt.
+
+Zone Clearance remains an appointment workflow. For type 114, include all confirmed
+Planning forms once in the single `Application` PDF and keep the CDP checklist/result
+separate. After Planning approval is effective, create the pool Building record separately
+from remodel, ADU, or other Building scopes, each with its own valuation.
 
 ---
 

@@ -1,0 +1,89 @@
+name: Laguna permit plugin
+
+on:
+  pull_request:
+    paths:
+      - ".claude-plugin/marketplace.json"
+      - "cities/laguna-beach/**"
+      - "data/**"
+      - "scripts/**"
+      - "submit/laguna-beach/**"
+      - ".github/workflows/laguna-permit-skill.yml"
+  push:
+    branches: [main]
+    paths:
+      - ".claude-plugin/marketplace.json"
+      - "cities/laguna-beach/**"
+      - "data/**"
+      - "scripts/**"
+      - "submit/laguna-beach/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install runtime and validation dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          python -m pip install -r submit/laguna-beach/requirements.txt
+          npm install --global @anthropic-ai/claude-code
+      - name: Check generated portal facts
+        run: node scripts/sync-permit-portals.mjs --check
+      - name: Verify operative Laguna law sources
+        run: node scripts/check-laguna-law-sources.mjs --verify-remote
+      - name: Regenerate semantic maps and require a clean diff
+        run: |
+          python submit/laguna-beach/scripts/author-semantic-maps.py
+          git diff --exit-code -- submit/laguna-beach/assets/field-maps
+      - name: Run deterministic contract and form-map evals
+        working-directory: submit/laguna-beach
+        run: python evals/run-evals.py
+      - name: Validate marketplace and submit plugin
+        run: |
+          claude plugin validate . --strict
+          python submit/laguna-beach/scripts/validate-plugin.py
+
+  model-evals:
+    needs: deterministic
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Claude Code
+        run: npm install --global @anthropic-ai/claude-code
+      - name: Run model routing evals with a no-plugin baseline
+        if: ${{ env.ANTHROPIC_API_KEY != '' || env.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+        run: >-
+          claude plugin eval submit/laguna-beach
+          --runs 3
+          --ablation with-without
+          --no-scaffold
+          --no-publish
+          --threshold 1
+          --output-dir submit/laguna-beach/evals/model/results/ci
+      - name: Report unavailable model credentials
+        if: ${{ env.ANTHROPIC_API_KEY == '' && env.CLAUDE_CODE_OAUTH_TOKEN == '' }}
+        run: echo "Model evals skipped because this repository has no Claude credential secret."
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: laguna-plugin-model-evals
+          path: submit/laguna-beach/evals/model/results/ci
+          if-no-files-found: ignore

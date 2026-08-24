@@ -10,5 +10,7 @@
     "Is Barstow in a wildfire hazard zone?",
     "What building codes has Barstow adopted?",
     "How do I submit plans to Barstow Building & Safety?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

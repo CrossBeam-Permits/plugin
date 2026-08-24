@@ -10,5 +10,7 @@
     "How do I submit plans through the Accela portal?",
     "Do I need a Hillside Development Permit?",
     "Can I use SolarAPP+ for my solar installation?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

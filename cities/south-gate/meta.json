@@ -21,7 +21,10 @@
   "wuiCoverage": "omit",
   "coastalZone": false,
   "fireAgency": "LACoFD",
-  "fireStations": ["54 — 4867 Southern Ave", "57 — 5720 Gardendale St"],
+  "fireStations": [
+    "54 — 4867 Southern Ave",
+    "57 — 5720 Gardendale St"
+  ],
   "fireSubmittal": "EPIC-LA portal — https://epicla.lacounty.gov",
   "feeSchedule": "City of South Gate adopted fee resolution; double fee penalty for work without permit (Ch. 9.02)",
   "doubleFeeOnUnpermittedWork": true,
@@ -59,5 +62,7 @@
     "fireworks-temp-use",
     "ltia-demolition",
     "cleanout"
-  ]
+  ],
+  "permitSystem": "EdgeSoft eGov",
+  "portalUrl": "https://southgate.edgesoftinc.com/opc/"
 }

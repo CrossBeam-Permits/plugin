@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Tehama, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tehama local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Tehama."
+description: "Fireworks Temp Use permits in Tehama, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tehama local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Tehama."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | viewpointcloud |
+| Permit portal | https://tehamacountyca.viewpointcloud.com/ |
 | Fire agency | CAL FIRE Tehama-Glenn Unit (TGU) |
 | Code edition | Tehama Municipal Code (Title 15/17, Municode — unverified) | Tehama County Ord. 2127 | 2025 CBSC in effect |
 | Code prefix | TMC |

@@ -10,5 +10,7 @@
     "Is Brawley in a wildfire hazard zone?",
     "What building codes has Brawley adopted?",
     "How do I submit plans to Brawley Building Division?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

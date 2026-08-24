@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Adelanto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Adelanto local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Adelanto."
+description: "Patio Cover permits in Adelanto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Adelanto local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Adelanto."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://app.oncamino.com/adelanto-ca/ |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | San Bernardino County Fire Protection District (SBCFPD) |
 | Code edition | Adelanto Municipal Code · American Legal · SBCFPD Fire |
 | Code prefix | AMC |

@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Lindsay, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lindsay local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Lindsay."
+description: "Fireworks Temp Use permits in Lindsay, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lindsay local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Lindsay."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://lindsay.municipalcodeonline.com/book?type=ordinances |
 | Fire agency | City of Lindsay Fire Services Division |
 | Code edition | Lindsay Municipal Code · Municode (SPA) · 2025 CA Building Standards Code (no local amendments) |

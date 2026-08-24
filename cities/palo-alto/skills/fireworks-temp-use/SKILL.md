@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Palo Alto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Palo Alto local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Palo Alto."
+description: "Fireworks Temp Use permits in Palo Alto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Palo Alto local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Palo Alto."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Palo Alto Fire Department (PAFD) — Fire Prevention Bureau · City fire department (NOT Santa Clara County Fire) · Apply via Accela ACA · firepermits@cityofpaloalto.org · (650) 329-2981 · Fire plan check: 8% of permit fee (SFR), 40% (MF/commercial) · Express fire check: $481 |
 | Code edition | Palo Alto Municipal Code · American Legal · Title 16 (Building) · Title 18 (Zoning) · Ord. 5627 (Energy, eff. Oct 4, 2024) |
 | Code prefix | PAMC |

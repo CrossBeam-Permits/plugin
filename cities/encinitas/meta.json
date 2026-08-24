@@ -15,5 +15,7 @@
     "What is the 1-day OTC permit for a heat pump water heater?",
     "Is my property in a Fire Hazard Severity Zone in Encinitas?",
     "How do I submit permits through the CSS portal?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

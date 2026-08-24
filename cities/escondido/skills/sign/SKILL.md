@@ -1,5 +1,5 @@
 ---
-description: "Sign permits in Escondido, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Escondido local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Escondido."
+description: "Sign permits in Escondido, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Escondido local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Escondido."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://cwols.escondido.org |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/ES4926 |
 | Fire agency | Escondido Fire Department (city-operated) |
 | Code edition | EMC Article 70 ADU · 2022 CBC/CRC · ecode360 ES4926 · Cityworks Portal |

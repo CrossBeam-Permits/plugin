@@ -54,5 +54,7 @@
     "temporary-power",
     "pool-demolition",
     "fireworks-temp-use"
-  ]
+  ],
+  "permitSystem": "OpenGov",
+  "portalUrl": "https://bellca.portal.opengov.com/"
 }

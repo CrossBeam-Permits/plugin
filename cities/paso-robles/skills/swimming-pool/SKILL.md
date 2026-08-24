@@ -1,5 +1,5 @@
 ---
-description: "Swimming Pool permits in Paso Robles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Paso Robles local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Paso Robles."
+description: "Swimming Pool permits in Paso Robles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Paso Robles local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Paso Robles."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://www.pasopermits.com |
+| Permit system | PasoPermits (Accela) |
+| Permit portal | https://www.pasopermits.com/ |
 | Municipal code | https://library.municode.com/ca/el_paso_de_robles |
 | Fire agency | Paso Robles Fire and Emergency Services (PRFES) |
 | Code edition | 2025 CBC Adoption Ordinance · November 4, 2025 (second reading) + Ord. 1133 |

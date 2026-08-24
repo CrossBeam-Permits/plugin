@@ -1,0 +1,2742 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "building-application",
+  "field_map_version": "2.0.0",
+  "generated_at": "2026-08-23T00:58:49.288185Z",
+  "source_sha256": "027f35f624587cb77182cbc1ef074c1dee654ccc4b24be9c638ef1a0bbfbfa1e",
+  "field_tree_sha256": "b357bc7fe9404f70abf6c6c3884d00e5270f3ca3b2787a7d2fa31c56766cfde3",
+  "canonical_mappings": [
+    {
+      "fact_id": "application.date",
+      "pdf_fields": [
+        "DATE"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.address",
+      "pdf_fields": [
+        "PROJECT ADDRESS"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "project.description.{record_id}",
+      "pdf_fields": [
+        "Description of Work 1",
+        "Description of Work 2",
+        "Description of Work 3",
+        "Description of Work 4",
+        "Description of Work 5",
+        "Description of Work 6"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "lines",
+      "font_size": 7
+    },
+    {
+      "fact_id": "project.use.residential",
+      "pdf_fields": [
+        "Residential"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "project.use.commercial",
+      "pdf_fields": [
+        "Commercial"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "project.use.fire",
+      "pdf_fields": [
+        "Fire"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "project.use.multi_family",
+      "pdf_fields": [
+        "MultiFamily"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "project.valuation.{record_id}",
+      "pdf_fields": [
+        "Valuation of Work"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "currency",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.name",
+      "pdf_fields": [
+        "APPLICANT NAME If none of the below"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.phone",
+      "pdf_fields": [
+        "Phone"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.email",
+      "pdf_fields": [
+        "Email Address"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.name",
+      "pdf_fields": [
+        "LEGAL PROPERTY OWNER NAME"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_fields": [
+        "Phone_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_fields": [
+        "Email Address_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.mailing_address",
+      "pdf_fields": [
+        "Mailing Address City State Zip"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "contractor.license_name",
+      "pdf_fields": [
+        "CONTRACTOR As Shown on License"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "contractor.dba",
+      "pdf_fields": [
+        "DBA"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "contractor.license_number",
+      "pdf_fields": [
+        "License"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "contractor.license_class",
+      "pdf_fields": [
+        "Class"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "contractor.phone",
+      "pdf_fields": [
+        "Phone_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "contractor.email",
+      "pdf_fields": [
+        "Email"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "contractor.mailing_address",
+      "pdf_fields": [
+        "Mailing Address City State Zip_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "architect_designer.name",
+      "pdf_fields": [
+        "Architect/Designer"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "architect_designer.license_number",
+      "pdf_fields": [
+        "License_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "architect_designer.phone",
+      "pdf_fields": [
+        "Phone_4"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "architect_designer.email",
+      "pdf_fields": [
+        "Email_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "architect_designer.mailing_address",
+      "pdf_fields": [
+        "Mailing Address City State Zip_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "engineer.name",
+      "pdf_fields": [
+        "ENGINEER"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "engineer.license_number",
+      "pdf_fields": [
+        "License_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "engineer.phone",
+      "pdf_fields": [
+        "Phone_5"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "engineer.email",
+      "pdf_fields": [
+        "Email_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "engineer.mailing_address",
+      "pdf_fields": [
+        "Mailing Address City State Zip_4"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.new_structure_sqft",
+      "pdf_fields": [
+        "New Structure SF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.new_garage_sqft",
+      "pdf_fields": [
+        "New Garage SF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.new_structure_sqft",
+      "pdf_fields": [
+        "New Structure SF_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.new_garage_sqft",
+      "pdf_fields": [
+        "New Garage SF_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.adu_sqft",
+      "pdf_fields": [
+        "ADU SF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.adu_attached",
+      "pdf_fields": [
+        "Attached"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.residential.adu_detached",
+      "pdf_fields": [
+        "Detached"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.commercial.addition_sqft",
+      "pdf_fields": [
+        "undefined"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.addition_sqft",
+      "pdf_fields": [
+        "undefined_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.tenant_improvement_sqft",
+      "pdf_fields": [
+        "Tenant Improvement SF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.tenant_improvement_interior",
+      "pdf_fields": [
+        "Interior"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.commercial.tenant_improvement_exterior",
+      "pdf_fields": [
+        "Exterior"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.residential.remodel_sqft",
+      "pdf_fields": [
+        "Remodel SF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.remodel_interior",
+      "pdf_fields": [
+        "Interior_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.residential.remodel_exterior",
+      "pdf_fields": [
+        "Exterior_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.commercial.outside_seating_sqft",
+      "pdf_fields": [
+        "undefined_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.pool_spa_sqft",
+      "pdf_fields": [
+        "1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.patio_cover_sqft",
+      "pdf_fields": [
+        "2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.sign_awning",
+      "pdf_fields": [
+        "SIGN  Awning"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.patio_cover_sqft",
+      "pdf_fields": [
+        "undefined_4"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.deck_sqft",
+      "pdf_fields": [
+        "undefined_5"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.deck_sqft",
+      "pdf_fields": [
+        "undefined_6"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.wall_fence_sqft",
+      "pdf_fields": [
+        "Wall  Fence SF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.wall_fence_retaining",
+      "pdf_fields": [
+        "Retaining"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.residential.wall_fence_property_line",
+      "pdf_fields": [
+        "Property Line"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.commercial.wall_fence_sqft",
+      "pdf_fields": [
+        "Wall  Fence SF_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.wall_fence_retaining",
+      "pdf_fields": [
+        "Retaining_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.commercial.wall_fence_property_line",
+      "pdf_fields": [
+        "Property Line_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.residential.reroof_sqft",
+      "pdf_fields": [
+        "Reroof SF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.residential.reroof_flat",
+      "pdf_fields": [
+        "Flat"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.residential.reroof_changes_color_or_material",
+      "pdf_fields": [
+        "Change Color Material"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.commercial.reroof_sqft",
+      "pdf_fields": [
+        "Reroof SF_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.reroof_flat",
+      "pdf_fields": [
+        "Flat_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.commercial.reroof_changes_color_or_material",
+      "pdf_fields": [
+        "Change Color Material_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/On"
+    },
+    {
+      "fact_id": "building.residential.solar_description",
+      "pdf_fields": [
+        "Solar"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "building.commercial.solar_description",
+      "pdf_fields": [
+        "Solar_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    }
+  ],
+  "review_fields": [
+    "Date",
+    "PERMIT NO",
+    "Signature3"
+  ],
+  "fields": [
+    {
+      "name": "1",
+      "type": "/Tx",
+      "tooltip": "[1]",
+      "flags": 0
+    },
+    {
+      "name": "2",
+      "type": "/Tx",
+      "tooltip": "[2]",
+      "flags": 0
+    },
+    {
+      "name": "ADU SF",
+      "type": "/Tx",
+      "tooltip": "ADU: SF",
+      "flags": 0
+    },
+    {
+      "name": "APPLICANT NAME If none of the below",
+      "type": "/Tx",
+      "tooltip": "APPLICANT NAME (If none of the below",
+      "flags": 8388608
+    },
+    {
+      "name": "Architect/Designer",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 8388608
+    },
+    {
+      "name": "Attached",
+      "type": "/Btn",
+      "tooltip": "Attached",
+      "flags": 0
+    },
+    {
+      "name": "CONTRACTOR As Shown on License",
+      "type": "/Tx",
+      "tooltip": "CONTRACTOR (As Shown on License",
+      "flags": 8388608
+    },
+    {
+      "name": "Change Color Material",
+      "type": "/Btn",
+      "tooltip": "Change Color/ Material",
+      "flags": 0
+    },
+    {
+      "name": "Change Color Material_2",
+      "type": "/Btn",
+      "tooltip": "Change Color/ Material",
+      "flags": 0
+    },
+    {
+      "name": "Class",
+      "type": "/Tx",
+      "tooltip": "Class",
+      "flags": 8388608
+    },
+    {
+      "name": "Commercial",
+      "type": "/Btn",
+      "tooltip": "Commercial",
+      "flags": 0
+    },
+    {
+      "name": "DATE",
+      "type": "/Tx",
+      "tooltip": "DATE",
+      "flags": 8388608
+    },
+    {
+      "name": "DBA",
+      "type": "/Tx",
+      "tooltip": "DBA",
+      "flags": 8388608
+    },
+    {
+      "name": "Date",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Description of Work 1",
+      "type": "/Tx",
+      "tooltip": "Description of Work [1]",
+      "flags": 8388608
+    },
+    {
+      "name": "Description of Work 2",
+      "type": "/Tx",
+      "tooltip": "Description of Work [2]",
+      "flags": 8388608
+    },
+    {
+      "name": "Description of Work 3",
+      "type": "/Tx",
+      "tooltip": "Description of Work [3]",
+      "flags": 8388608
+    },
+    {
+      "name": "Description of Work 4",
+      "type": "/Tx",
+      "tooltip": "Description of Work [4]",
+      "flags": 8388608
+    },
+    {
+      "name": "Description of Work 5",
+      "type": "/Tx",
+      "tooltip": "Description of Work [5]",
+      "flags": 8388608
+    },
+    {
+      "name": "Description of Work 6",
+      "type": "/Tx",
+      "tooltip": "Description of Work [6]",
+      "flags": 8388608
+    },
+    {
+      "name": "Detached",
+      "type": "/Btn",
+      "tooltip": "Detached",
+      "flags": 0
+    },
+    {
+      "name": "ENGINEER",
+      "type": "/Tx",
+      "tooltip": "ENGINEER",
+      "flags": 8388608
+    },
+    {
+      "name": "Email",
+      "type": "/Tx",
+      "tooltip": "Email",
+      "flags": 8388608
+    },
+    {
+      "name": "Email Address",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 8388608
+    },
+    {
+      "name": "Email Address_2",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 8388608
+    },
+    {
+      "name": "Email_2",
+      "type": "/Tx",
+      "tooltip": "Email",
+      "flags": 8388608
+    },
+    {
+      "name": "Email_3",
+      "type": "/Tx",
+      "tooltip": "Email",
+      "flags": 8388608
+    },
+    {
+      "name": "Exterior",
+      "type": "/Btn",
+      "tooltip": "Exterior",
+      "flags": 0
+    },
+    {
+      "name": "Exterior_2",
+      "type": "/Btn",
+      "tooltip": "Exterior",
+      "flags": 0
+    },
+    {
+      "name": "Fire",
+      "type": "/Btn",
+      "tooltip": "Fire",
+      "flags": 0
+    },
+    {
+      "name": "Flat",
+      "type": "/Btn",
+      "tooltip": "Flat",
+      "flags": 0
+    },
+    {
+      "name": "Flat_2",
+      "type": "/Btn",
+      "tooltip": "Flat",
+      "flags": 0
+    },
+    {
+      "name": "Interior",
+      "type": "/Btn",
+      "tooltip": "Interior",
+      "flags": 0
+    },
+    {
+      "name": "Interior_2",
+      "type": "/Btn",
+      "tooltip": "Interior",
+      "flags": 0
+    },
+    {
+      "name": "LEGAL PROPERTY OWNER NAME",
+      "type": "/Tx",
+      "tooltip": "LEGAL PROPERTY OWNER NAME",
+      "flags": 8388608
+    },
+    {
+      "name": "License",
+      "type": "/Tx",
+      "tooltip": "License",
+      "flags": 8388608
+    },
+    {
+      "name": "License_2",
+      "type": "/Tx",
+      "tooltip": "License",
+      "flags": 8388608
+    },
+    {
+      "name": "License_3",
+      "type": "/Tx",
+      "tooltip": "License",
+      "flags": 8388608
+    },
+    {
+      "name": "Mailing Address City State Zip",
+      "type": "/Tx",
+      "tooltip": "Mailing Address (City, State, Zip",
+      "flags": 8388608
+    },
+    {
+      "name": "Mailing Address City State Zip_2",
+      "type": "/Tx",
+      "tooltip": "Mailing Address (City, State, Zip",
+      "flags": 8388608
+    },
+    {
+      "name": "Mailing Address City State Zip_3",
+      "type": "/Tx",
+      "tooltip": "Mailing Address (City, State, Zip",
+      "flags": 8388608
+    },
+    {
+      "name": "Mailing Address City State Zip_4",
+      "type": "/Tx",
+      "tooltip": "Mailing Address (City, State, Zip",
+      "flags": 8388608
+    },
+    {
+      "name": "MultiFamily",
+      "type": "/Btn",
+      "tooltip": "Multi-Family",
+      "flags": 0
+    },
+    {
+      "name": "New Garage SF",
+      "type": "/Tx",
+      "tooltip": "New Garage: SF",
+      "flags": 0
+    },
+    {
+      "name": "New Garage SF_2",
+      "type": "/Tx",
+      "tooltip": "New Garage: SF",
+      "flags": 0
+    },
+    {
+      "name": "New Structure SF",
+      "type": "/Tx",
+      "tooltip": "New Structure: SF",
+      "flags": 0
+    },
+    {
+      "name": "New Structure SF_2",
+      "type": "/Tx",
+      "tooltip": "New Structure: SF",
+      "flags": 0
+    },
+    {
+      "name": "PERMIT NO",
+      "type": "/Tx",
+      "tooltip": "PERMIT NO",
+      "flags": 8388608
+    },
+    {
+      "name": "PROJECT ADDRESS",
+      "type": "/Tx",
+      "tooltip": "PROJECT ADDRESS",
+      "flags": 8388608
+    },
+    {
+      "name": "Phone",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 8388608
+    },
+    {
+      "name": "Phone_2",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 8388608
+    },
+    {
+      "name": "Phone_3",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 8388608
+    },
+    {
+      "name": "Phone_4",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 8388608
+    },
+    {
+      "name": "Phone_5",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 8388608
+    },
+    {
+      "name": "Property Line",
+      "type": "/Btn",
+      "tooltip": "Property Line",
+      "flags": 0
+    },
+    {
+      "name": "Property Line_2",
+      "type": "/Btn",
+      "tooltip": "Property Line",
+      "flags": 0
+    },
+    {
+      "name": "Remodel SF",
+      "type": "/Tx",
+      "tooltip": "Remodel: SF",
+      "flags": 0
+    },
+    {
+      "name": "Reroof SF",
+      "type": "/Tx",
+      "tooltip": "Reroof: SF",
+      "flags": 0
+    },
+    {
+      "name": "Reroof SF_2",
+      "type": "/Tx",
+      "tooltip": "Reroof: SF",
+      "flags": 0
+    },
+    {
+      "name": "Residential",
+      "type": "/Btn",
+      "tooltip": "Residential",
+      "flags": 0
+    },
+    {
+      "name": "Retaining",
+      "type": "/Btn",
+      "tooltip": "Retaining",
+      "flags": 0
+    },
+    {
+      "name": "Retaining_2",
+      "type": "/Btn",
+      "tooltip": "Retaining",
+      "flags": 0
+    },
+    {
+      "name": "SIGN  Awning",
+      "type": "/Tx",
+      "tooltip": "SIGN / Awning:",
+      "flags": 0
+    },
+    {
+      "name": "Signature3",
+      "type": "/Sig",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Solar",
+      "type": "/Tx",
+      "tooltip": "Solar:",
+      "flags": 0
+    },
+    {
+      "name": "Solar_2",
+      "type": "/Tx",
+      "tooltip": "Solar:",
+      "flags": 0
+    },
+    {
+      "name": "Tenant Improvement SF",
+      "type": "/Tx",
+      "tooltip": "Tenant Improvement: SF",
+      "flags": 0
+    },
+    {
+      "name": "Valuation of Work",
+      "type": "/Tx",
+      "tooltip": "Valuation of Work",
+      "flags": 8388608
+    },
+    {
+      "name": "Wall  Fence SF",
+      "type": "/Tx",
+      "tooltip": "Wall / Fence: SF",
+      "flags": 0
+    },
+    {
+      "name": "Wall  Fence SF_2",
+      "type": "/Tx",
+      "tooltip": "Wall / Fence: SF",
+      "flags": 0
+    },
+    {
+      "name": "undefined",
+      "type": "/Tx",
+      "tooltip": "undefined",
+      "flags": 0
+    },
+    {
+      "name": "undefined_2",
+      "type": "/Tx",
+      "tooltip": "undefined",
+      "flags": 0
+    },
+    {
+      "name": "undefined_3",
+      "type": "/Tx",
+      "tooltip": "undefined",
+      "flags": 0
+    },
+    {
+      "name": "undefined_4",
+      "type": "/Tx",
+      "tooltip": "undefined",
+      "flags": 0
+    },
+    {
+      "name": "undefined_5",
+      "type": "/Tx",
+      "tooltip": "undefined",
+      "flags": 0
+    },
+    {
+      "name": "undefined_6",
+      "type": "/Tx",
+      "tooltip": "undefined",
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 1,
+      "field_name": "DATE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        69.7928,
+        678.324,
+        250.033,
+        689.556
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "PERMIT NO",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        365.52,
+        678.72,
+        568.2,
+        689.16
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "PROJECT ADDRESS",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        150.96,
+        662.16,
+        576.24,
+        675.375
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/Filter",
+        "/Resources"
+      ],
+      "rect": [
+        138.96,
+        646.68,
+        575.76,
+        659.895
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.0,
+        634.56,
+        576.36,
+        646.189
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.3964,
+        621.444,
+        576.876,
+        634.658
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.3964,
+        609.12,
+        576.876,
+        621.542
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 5",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.0,
+        596.004,
+        576.12,
+        608.822
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 6",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.0,
+        583.8,
+        576.24,
+        596.222
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Residential",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        34.2,
+        565.08,
+        48.24,
+        574.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Commercial",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        110.76,
+        565.08,
+        124.8,
+        574.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Fire",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        195.0,
+        565.08,
+        209.04,
+        574.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "MultiFamily",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        238.92,
+        565.08,
+        252.96,
+        574.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Valuation of Work",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        450.84,
+        564.0,
+        576.6,
+        576.818
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "APPLICANT NAME If none of the below",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        217.32,
+        537.0,
+        573.48,
+        551.007
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.4,
+        520.08,
+        224.64,
+        534.88
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        295.2,
+        520.08,
+        575.52,
+        534.484
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "LEGAL PROPERTY OWNER NAME",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        186.36,
+        491.4,
+        574.8,
+        505.407
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.7963,
+        474.876,
+        225.036,
+        488.884
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email Address_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        295.596,
+        474.48,
+        574.836,
+        488.487
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Mailing Address City State Zip",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        184.44,
+        457.56,
+        573.6,
+        470.775
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "CONTRACTOR As Shown on License",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        206.16,
+        428.88,
+        575.04,
+        442.095
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "DBA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        60.0,
+        412.08,
+        280.08,
+        426.087
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "License",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        336.84,
+        412.08,
+        441.0,
+        426.087
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Class",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.236,
+        412.08,
+        576.036,
+        426.087
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.4,
+        395.16,
+        204.6,
+        408.771
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        236.88,
+        395.16,
+        573.12,
+        408.375
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Mailing Address City State Zip_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        185.4,
+        378.24,
+        575.76,
+        392.247
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "License_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        486.72,
+        349.56,
+        573.24,
+        363.171
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.4,
+        332.64,
+        204.72,
+        346.647
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        237.0,
+        332.64,
+        573.24,
+        346.647
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Mailing Address City State Zip_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        184.44,
+        315.324,
+        574.92,
+        329.331
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "ENGINEER",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        87.96,
+        287.04,
+        436.08,
+        301.444
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "License_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        486.12,
+        287.04,
+        573.12,
+        301.047
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone_5",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.4,
+        270.24,
+        204.72,
+        285.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        237.0,
+        270.24,
+        573.12,
+        284.247
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Mailing Address City State Zip_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        184.44,
+        253.32,
+        574.44,
+        266.535
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "New Structure SF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        114.48,
+        209.4,
+        175.44,
+        219.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "New Garage SF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        246.84,
+        209.4,
+        297.24,
+        219.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "New Structure SF_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        383.4,
+        209.4,
+        439.2,
+        219.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "New Garage SF_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        508.8,
+        209.4,
+        568.68,
+        219.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "ADU SF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        76.44,
+        194.807,
+        141.24,
+        206.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Attached",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        149.4,
+        194.04,
+        159.84,
+        204.48
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Detached",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        207.84,
+        194.52,
+        218.4,
+        204.96
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "undefined",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        362.28,
+        195.6,
+        427.2,
+        206.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "undefined_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        93.36,
+        181.08,
+        158.28,
+        191.52
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Tenant Improvement SF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        414.24,
+        181.08,
+        459.6,
+        191.52
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Interior",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        466.2,
+        180.6,
+        476.76,
+        191.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Exterior",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        524.04,
+        180.6,
+        534.48,
+        191.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Remodel SF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        94.56,
+        167.28,
+        159.6,
+        177.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Interior_2",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        165.84,
+        166.8,
+        176.28,
+        177.24
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Exterior_2",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        225.84,
+        166.32,
+        236.28,
+        176.76
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "undefined_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        393.6,
+        167.28,
+        474.0,
+        177.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        105.12,
+        139.56,
+        160.44,
+        150.0
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        105.0,
+        125.76,
+        150.24,
+        136.2
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "SIGN  Awning",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        371.64,
+        136.92,
+        578.676,
+        149.64
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "undefined_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        373.92,
+        125.76,
+        424.32,
+        136.2
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "undefined_5",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        77.88,
+        111.84,
+        152.64,
+        122.28
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "undefined_6",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        346.8,
+        111.84,
+        421.56,
+        122.28
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Wall  Fence SF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        109.2,
+        98.4,
+        154.44,
+        108.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Retaining",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        168.96,
+        97.56,
+        179.52,
+        108.0
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Property Line",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        228.0,
+        97.8,
+        238.44,
+        108.24
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Wall  Fence SF_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        378.12,
+        98.4,
+        408.36,
+        108.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Retaining_2",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        429.48,
+        97.08,
+        439.92,
+        107.52
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Property Line_2",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        503.52,
+        97.08,
+        513.96,
+        107.52
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Reroof SF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        85.68,
+        84.6,
+        145.56,
+        95.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Flat",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        149.88,
+        83.64,
+        160.32,
+        94.08
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Change Color Material",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        186.72,
+        83.52,
+        197.16,
+        93.96
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Reroof SF_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        354.6,
+        84.6,
+        414.48,
+        95.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Flat_2",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        419.76,
+        82.92,
+        431.16,
+        93.96
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Change Color Material_2",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/On"
+      ],
+      "rect": [
+        456.0,
+        82.8,
+        467.52,
+        93.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Solar",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        63.36,
+        66.24,
+        302.88,
+        79.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Solar_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        332.28,
+        66.24,
+        578.28,
+        79.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Architect/Designer",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        145.074,
+        349.445,
+        437.372,
+        363.914
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Signature3",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        108.607,
+        15.6061,
+        336.693,
+        34.1293
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Date",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        445.923,
+        16.4894,
+        568.177,
+        33.7329
+      ]
+    }
+  ],
+  "review_widgets": []
+}

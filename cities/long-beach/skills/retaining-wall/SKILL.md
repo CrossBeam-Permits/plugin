@@ -1,5 +1,5 @@
 ---
-description: "Retaining Wall permits in Long Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Long Beach local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Long Beach."
+description: "Retaining Wall permits in Long Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Long Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Long Beach."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC), 2025 California Residential Code (Title 24, Part 2.5 CRC), ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://lbpermits.longbeach.gov |
+| Permit system | LBDS Online (Accela) |
+| Permit portal | https://lbpermits.longbeach.gov/ |
 | Municipal code | https://library.municode.com/ca/long_beach |
 | Building & Safety | 411 |
 | Fire agency | Long Beach Fire Department (LBFD) — Fire Prevention Bureau |

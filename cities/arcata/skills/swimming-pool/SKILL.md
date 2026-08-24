@@ -1,5 +1,5 @@
 ---
-description: "Swimming Pool permits in Arcata, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Arcata local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Arcata."
+description: "Swimming Pool permits in Arcata, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Arcata local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Arcata."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Arcata Fire District · arcatafire.org · (707) 825-2000 · 2149 Central Avenue, McKinleyville · Fire Marshal: Ed Laidlaw (elaidlaw@arcatafire.org) · Concurrent plan check for fire protection systems |
 | Code edition | Arcata Municipal Code · Code Publishing (https://www.codepublishing.com/CA/Arcata/) · Title VIII (Building Regulations) · 2025 CBC/CRC adopted via Ord. 1583 (eff. January 16, 2026) |
 | Code prefix | AMC |

@@ -10,5 +10,7 @@
     "How do I get a solar permit in Wildomar?",
     "What are the R-3 zone development standards?",
     "Who is the fire marshal and when is fire review required?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

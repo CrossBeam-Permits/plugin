@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Los Angeles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Angeles local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Los Angeles."
+description: "Fireworks Temp Use permits in Los Angeles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Angeles local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Los Angeles."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | PermitLA (express) + ePlanLA (plan check) |
+| Permit portal | https://permitla.lacitydbs.org/ |
 | Municipal code | https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-107363 |
 | Fire agency | LAFD — Los Angeles Fire Department (city-owned — NOT LA County Fire) |
 | Code edition | Ord. 25-1217 · December 4, 2025 (2025 CBSC adoption, eff. Jan 1, 2026) |

@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Desert Hot Springs, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Desert Hot Springs local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Desert Hot Springs."
+description: "Temporary Power permits in Desert Hot Springs, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Desert Hot Springs local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Desert Hot Springs."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://deserthotspringsca.portal.opengov.com |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/DE4923 |
 | Fire agency | Riverside County Fire / Cal Fire |
 | Code edition | Desert Hot Springs Municipal Code · Title 15 (2025 CBC) · Title 17 (Zoning) |

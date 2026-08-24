@@ -35,8 +35,16 @@
   ],
   "aduOrdinance": "Ordinance No. 758 (effective 2023-02-22) + March 2024 amendments",
   "aduPrototypePlans": [
-    { "name": "Plan 1", "sqft": 400, "type": "detached" },
-    { "name": "Plan 2", "sqft": 480, "type": "detached" }
+    {
+      "name": "Plan 1",
+      "sqft": 400,
+      "type": "detached"
+    },
+    {
+      "name": "Plan 2",
+      "sqft": 480,
+      "type": "detached"
+    }
   ],
   "permitTypesOnboarded": [
     "adu",
@@ -58,5 +66,7 @@
     "window-replacement"
   ],
   "onboardedAt": "2026-04-16",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": null,
+  "portalUrl": null
 }

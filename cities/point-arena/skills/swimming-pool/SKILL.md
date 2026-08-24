@@ -1,5 +1,5 @@
 ---
-description: "Swimming Pool permits in Point Arena, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Point Arena local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Point Arena."
+description: "Swimming Pool permits in Point Arena, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Point Arena local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Point Arena."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://www.mendocinocounty.gov/departments/planning-building-services/building-division |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/PO4990 |
 | Fire agency | CAL FIRE Mendocino Unit (Battalion 5) |
 | Code edition | Title 18 Zoning (Ord 243, Apr 2024) · LCP (Ord 242, Sept 2023) · FHSZ (Ord 245) |

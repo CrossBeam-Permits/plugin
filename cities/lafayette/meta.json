@@ -24,7 +24,11 @@
     "swimming-pool",
     "wildfire-wui"
   ],
-  "notSupported": ["commercial-ti"],
+  "notSupported": [
+    "commercial-ti"
+  ],
   "lastUpdated": "2026-04-22",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Belvedere Tiburon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Belvedere Tiburon local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Belvedere Tiburon."
+description: "Cleanout permits in Belvedere Tiburon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Belvedere Tiburon local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Belvedere Tiburon."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Tiburon eTRAKiT / Belvedere Counter |
+| Permit portal | https://trakit.townoftiburon.org/eTRAKiT/ |
 | Fire agency | TFPD |
 | Code edition | 2025 California Building Standards Code · Local Amendments: Belvedere BMC Title 16; Tiburon TMC Chapter 13/13A |
 | Code prefix | BMC/TMC |

@@ -1,5 +1,5 @@
 ---
-description: "Swimming Pool permits in Gilroy, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Gilroy local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Gilroy."
+description: "Swimming Pool permits in Gilroy, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Gilroy local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Gilroy."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | GO Permit |
+| Permit portal | https://www.cityofgilroy.org/986/GO-Permit |
 | Fire agency | Gilroy Fire Department — Fire Prevention Division (city-integrated, no separate agency submission) |
 | Code edition | GCC §30.54 Z25-02 (ADU) | Ord 2025-06 (Building) | Ord 2025-07 (Fire) | Ord 2025-05 (FHSZ) |
 | Code prefix | GCC |

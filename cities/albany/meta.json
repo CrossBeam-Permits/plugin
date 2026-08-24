@@ -77,5 +77,7 @@
   "onboardedAt": "2026-04-22T00:00:00Z",
   "onboardVersion": "1.0",
   "enrichedAt": "2026-05-04T00:00:00Z",
-  "enrichVersion": "2.0"
+  "enrichVersion": "2.0",
+  "permitSystem": null,
+  "portalUrl": null
 }

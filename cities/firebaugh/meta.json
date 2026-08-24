@@ -10,5 +10,7 @@
     "What utility serves Firebaugh for solar interconnection?",
     "Does Firebaugh require SJVAPCD permits for restaurant equipment?",
     "What zoning district applies to my property in Firebaugh?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -82,5 +82,6 @@
   ],
   "openIssues": [],
   "onboardedAt": "2026-04-22T01:00:00.000Z",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": null
 }

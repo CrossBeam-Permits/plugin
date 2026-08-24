@@ -15,5 +15,7 @@
     "What are Carlsbad's ADU height limits and setback rules?",
     "Is my property in a Fire Hazard Severity Zone in Carlsbad?",
     "How do I submit permits through the Carlsbad CSS portal?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

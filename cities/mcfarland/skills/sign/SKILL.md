@@ -1,5 +1,5 @@
 ---
-description: "Sign permits in Mcfarland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Mcfarland local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Mcfarland."
+description: "Sign permits in Mcfarland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Mcfarland local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Mcfarland."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | GovWell |
 | Permit portal | https://app.govwell.com/mcfarland/267/pick |
 | Municipal code | https://library.municode.com/ca/mcfarland |
 | Fire agency | Kern County Fire Department (KCFD) |

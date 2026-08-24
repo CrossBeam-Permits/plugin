@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Rocklin, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rocklin local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Rocklin."
+description: "Fireworks Temp Use permits in Rocklin, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rocklin local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Rocklin."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://www.rocklin.ca.us/etrakit-1 |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://library.municode.com/ca/rocklin/codes/code_of_ordinances |
 | Fire agency | Rocklin Fire Department |
 | Code edition | Rocklin Municipal Code · Municode · Updated through 2025 |

@@ -17,5 +17,6 @@
     "Is my property in the Cupertino fire hazard severity zone (FHSZ)?",
     "What are the ADU size limits in Cupertino for a non-streamlined project?",
     "Does my chimney need a spark arrestor in Cupertino?"
-  ]
+  ],
+  "permitSystem": "Accela Citizen Access"
 }

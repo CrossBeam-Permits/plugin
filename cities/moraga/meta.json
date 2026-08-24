@@ -11,5 +11,7 @@
     "What fire-resistant materials are required for construction in Moraga's WUI areas?",
     "How do I submit a permit for a project in Moraga — Town Planning or County DCD first?",
     "Does Moraga have a pre-approved ADU (PADU) program?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Rewire permits in Palmdale, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Palmdale local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Palmdale."
+description: "Rewire permits in Palmdale, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Palmdale local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Palmdale."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela |
 | Permit portal | https://aca-prod.accela.com/PALMDALE/ |
 | Fire agency | Los Angeles County Fire Department (LACFD) — Battalion 17 |
 | Code edition | Ord. No. 1661 · October 21, 2025 (Building Codes + Local Amendments) |

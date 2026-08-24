@@ -21,7 +21,10 @@
   },
   "fhsz": {
     "coverage": "partial",
-    "zones": ["Moderate", "High"],
+    "zones": [
+      "Moderate",
+      "High"
+    ],
     "effectiveDate": "2025-08"
   },
   "onboardedPermitTypes": [
@@ -32,5 +35,7 @@
     "wildfire-wui",
     "restaurant-ti"
   ],
-  "onboardedAt": "2026-04-23"
+  "onboardedAt": "2026-04-23",
+  "permitSystem": null,
+  "portalUrl": null
 }

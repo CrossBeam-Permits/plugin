@@ -42,5 +42,7 @@
     "sign",
     "restaurant-ti",
     "ev-charger"
-  ]
+  ],
+  "permitSystem": "eTRAKiT",
+  "portalUrl": "https://buildgardena.ci.gardena.ca.us/etrakit3/"
 }

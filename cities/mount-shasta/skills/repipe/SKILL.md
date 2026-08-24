@@ -1,5 +1,5 @@
 ---
-description: "Repipe permits in Mount Shasta, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Mount Shasta local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Mount Shasta."
+description: "Repipe permits in Mount Shasta, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Mount Shasta local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Mount Shasta."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Mount Shasta Fire Protection District / City Fire Department |
 | Code edition | CCO-25-03 · July 28, 2025 |
 | Code prefix | MSMC |

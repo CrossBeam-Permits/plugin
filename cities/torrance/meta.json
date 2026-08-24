@@ -38,5 +38,7 @@
   "permitExpiration": {
     "commenceWithin": "180 days",
     "completeWithin": "3 years"
-  }
+  },
+  "permitSystem": null,
+  "portalUrl": "https://www.torranceca.gov/our-city/community-development/online-permit-portal/building-and-safety"
 }

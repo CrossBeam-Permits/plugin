@@ -4,7 +4,7 @@
   "codePrefix": "SJMC",
   "fireAgency": "San José Fire Department (SJFD) · Bureau of Fire Prevention · 408-535-7750 · sanjoseca.gov",
   "portalName": "SJPermits.org",
-  "portalUrl": "https://sjpermits.org",
+  "portalUrl": "https://sjpermits.org/",
   "planReviewPlatform": "SJePlans (Bluebeam)",
   "climateZone": "4",
   "seismicCategory": "D",
@@ -22,5 +22,6 @@
     "How do I submit plans through SJePlans?",
     "What are the three local building code amendments San José retained in 2025?",
     "Does my project need SJFD fire plan check?"
-  ]
+  ],
+  "permitSystem": "SJPermits.org"
 }

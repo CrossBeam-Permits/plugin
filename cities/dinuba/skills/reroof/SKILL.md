@@ -1,5 +1,5 @@
 ---
-description: "Reroof permits in Dinuba, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Dinuba local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Dinuba."
+description: "Reroof permits in Dinuba, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Dinuba local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Dinuba."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eSuite |
+| Permit portal | https://esuite.dinuba.org/eSuite.Permits/ |
 | Fire agency | Dinuba Fire Department |
 | Code edition | 2025 California Building Standards Code (No Local Technical Amendments — DMC Title 14) |
 | Code prefix | DMC |

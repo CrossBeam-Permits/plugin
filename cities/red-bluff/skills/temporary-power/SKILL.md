@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Red Bluff, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Red Bluff local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Red Bluff."
+description: "Temporary Power permits in Red Bluff, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Red Bluff local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Red Bluff."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Red Bluff Fire Department (LRA) · rbfd.org · (530) 527-1126 · 555 Washington St Suite C, Red Bluff, CA 96080 · Chief: Michael Bachmeyer · Concurrent plan check via eTRAKiT/Community Development |
 | Code edition | Red Bluff Municipal Code · American Legal (https://codelibrary.amlegal.com/codes/redbluff/latest/overview) · Chapter 5 (Construction Regulations) · Chapter 25 (Zoning) · State CBC/CRC adopted without confirmed local amendments |
 | Code prefix | RBMC |

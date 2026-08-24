@@ -10,5 +10,7 @@
     "Is there a Yolo County Environmental Health requirement for restaurant permits?",
     "What is the maximum height for a single-story ADU?",
     "Are there local amendments to the California Building Code?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

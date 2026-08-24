@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Escondido, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Escondido local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Escondido."
+description: "Temporary Power permits in Escondido, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Escondido local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Escondido."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://cwols.escondido.org |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/ES4926 |
 | Fire agency | Escondido Fire Department (city-operated) |
 | Code edition | EMC Article 70 ADU · 2022 CBC/CRC · ecode360 ES4926 · Cityworks Portal |

@@ -10,5 +10,7 @@
     "What utility serves Exeter for solar interconnection?",
     "Is my property in a fire hazard severity zone in Exeter?",
     "What zoning district rules apply to my project in Exeter?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

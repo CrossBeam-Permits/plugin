@@ -79,5 +79,7 @@
     }
   ],
   "onboardedAt": "2026-04-16",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": null,
+  "portalUrl": "https://lakw-trk.aspgov.com/eTRAKiT/"
 }

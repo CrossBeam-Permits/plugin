@@ -1,5 +1,5 @@
 ---
-description: "Water Heater permits in Pico Rivera, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pico Rivera local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Pico Rivera."
+description: "Water Heater permits in Pico Rivera, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pico Rivera local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Pico Rivera."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5), 2025 California Mechanical Code (Title 24, Part 4), 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Email Submittal |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/PI4985 |
 | Fire agency | Los Angeles County Fire Department (LACoFD) |
 | Code edition | Ord. 1200 · November 12, 2025 |

@@ -13,5 +13,7 @@
     "How does Symbium instant solar permitting work in Dana Point?",
     "What are the ADU impact fee exemptions?",
     "Does OCFA need to approve my fire sprinkler system before I get a building permit?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

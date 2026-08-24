@@ -31,5 +31,7 @@
     "wildfire-wui",
     "window-replacement"
   ],
-  "onboardedAt": "2026-04-15"
+  "onboardedAt": "2026-04-15",
+  "permitSystem": null,
+  "portalUrl": null
 }

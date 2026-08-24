@@ -34,5 +34,7 @@
     "water-heater",
     "hvac",
     "panel-upgrade"
-  ]
+  ],
+  "permitSystem": "eTRAKiT",
+  "portalUrl": "https://comc.csqrcloud.com/community-etrakit/"
 }

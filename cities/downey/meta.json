@@ -27,7 +27,9 @@
   "codeAdoption": {
     "cycle": "2025",
     "effectiveDate": "2026-01-01",
-    "ordinances": ["Ordinance presented to City Council Jan 27, 2026 (number unconfirmed)"]
+    "ordinances": [
+      "Ordinance presented to City Council Jan 27, 2026 (number unconfirmed)"
+    ]
   },
   "localAmendments": [
     {
@@ -47,7 +49,12 @@
       "description": "Downey Administrative Building and Housing Code — local enforcement rules"
     }
   ],
-  "crcAppendicesAdopted": ["H", "K", "Q", "V"],
+  "crcAppendicesAdopted": [
+    "H",
+    "K",
+    "Q",
+    "V"
+  ],
   "permitTypes": [
     "single-family-residential",
     "adu",
@@ -73,5 +80,7 @@
     "deck-patio-repair",
     "ev-charger",
     "ltia-demolition"
-  ]
+  ],
+  "permitSystem": "accela",
+  "portalUrl": "https://permits.downeyca.org/CitizenAccess/Default.aspx"
 }

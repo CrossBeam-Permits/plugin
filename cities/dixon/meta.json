@@ -10,5 +10,7 @@
     "Does Dixon have a pre-approved ADU plan program?",
     "How do I submit a permit through EnerGov?",
     "Are there WUI or fire hazard zone requirements in Dixon?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

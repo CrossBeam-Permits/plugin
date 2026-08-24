@@ -1,5 +1,5 @@
 ---
-description: "Ev Charger permits in Bellflower, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Bellflower local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Bellflower."
+description: "Ev Charger permits in Bellflower, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Bellflower local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Bellflower."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
 | Permit portal | https://www.bellflower.org/departments/building_and_safety |
 | Municipal code | https://ecode360.com/43106425 |
 | Fire agency | LACoFD |

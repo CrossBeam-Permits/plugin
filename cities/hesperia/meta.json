@@ -10,5 +10,7 @@
     "Is my property in a wildfire hazard zone in Hesperia?",
     "What are the zoning districts in Hesperia?",
     "What portal does Hesperia use for permit applications?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

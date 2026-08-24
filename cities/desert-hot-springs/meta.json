@@ -10,5 +10,7 @@
     "Can I use the pre-approved ADU plans?",
     "What are the block wall and retaining wall standards?",
     "How do I submit plans through the OpenGov portal?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

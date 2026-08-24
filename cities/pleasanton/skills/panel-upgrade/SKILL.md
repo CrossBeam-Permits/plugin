@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Pleasanton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pleasanton local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Pleasanton."
+description: "Panel Upgrade permits in Pleasanton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pleasanton local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Pleasanton."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Livermore-Pleasanton Fire Department (LPFD) — joint fire authority serving Livermore and Pleasanton · NOT Alameda County Fire · Plan check via Accela ACA portal · 21-day target review · (925) 454-2361 · lpfire.org |
 | Code edition | Pleasanton Municipal Code · eCode360 · PMC Chapters 18, 20.08, 20.24, 20.28 · Ord. 2302 (Dec 16, 2025) |
 | Code prefix | PMC |

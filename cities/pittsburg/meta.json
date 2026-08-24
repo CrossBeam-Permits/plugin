@@ -10,5 +10,7 @@
     "Is Pittsburg in a wildfire hazard zone?",
     "What are the multi-family zoning districts in Pittsburg?",
     "Does Pittsburg require a separate fire plan check?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Repipe permits in Windsor, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Windsor local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Windsor."
+description: "Repipe permits in Windsor, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Windsor local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Windsor."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Sonoma County Fire District (SCFD) · (707) 838-1170 · sonomacountyfd.org |
 | Code edition | Town of Windsor Municipal Code · Municode · Title 17 (Zoning) · Title 8 (Building) |
 | Code prefix | WMC |

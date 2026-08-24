@@ -15,5 +15,7 @@
     "Does my project need OCFA fire review?",
     "How do I submit plans through the PermitSoft portal?",
     "What are the sign permit requirements along Garden Grove Blvd?"
-  ]
+  ],
+  "permitSystem": "PermitSoft",
+  "portalUrl": null
 }

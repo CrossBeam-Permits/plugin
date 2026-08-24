@@ -10,5 +10,7 @@
     "How do I submit permit plans — what portal does Kern County use?",
     "Does APCD clearance apply to my demolition project?",
     "What fire setbacks apply in the Drilling Island (DI) zone?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

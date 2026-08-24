@@ -11,5 +11,7 @@
     "Can I do an over-the-counter permit in Daly City?",
     "What is the plan review turnaround time in Daly City?",
     "Does Daly City allow SolarApp+ for solar permits?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

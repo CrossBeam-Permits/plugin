@@ -1,5 +1,5 @@
 ---
-description: "Siding Replacement permits in Milpitas, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Milpitas local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions siding replacement in Milpitas."
+description: "Siding Replacement permits in Milpitas, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Milpitas local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions siding replacement in Milpitas."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | One-Stop Permit Center |
+| Permit portal | https://www.milpitas.gov/183/Building-Safety |
 | Fire agency | Milpitas Fire Department — Bureau of Fire Prevention (city-operated, plan check via Building Dept One-Stop Center) |
 | Code edition | Ord. 65.155 (2025 CBC adoption) | Ord. 65.144 (Streamlined Solar) | All-Electric Mandate (City Council Jan 17, 2023) |
 | Code prefix | MMC |

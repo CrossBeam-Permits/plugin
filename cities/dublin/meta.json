@@ -11,5 +11,7 @@
     "Is my Dublin property in a WUI or Fire Hazard Severity Zone?",
     "Can I use SolarApp+ for a rooftop solar permit in Dublin?",
     "What is DSRSD and do I need a will-serve letter for my project?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

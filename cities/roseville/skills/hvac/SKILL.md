@@ -1,5 +1,5 @@
 ---
-description: "Hvac permits in Roseville, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Roseville local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Roseville."
+description: "Hvac permits in Roseville, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Roseville local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Roseville."
 version: "1.0"
 source: "2025 California Mechanical Code (Title 24, Part 4); 2025 California Plumbing Code (Title 24, Part 5); 2025 California Electrical Code (Title 24, Part 3); 2025 California Residential Code (Title 24, Part 2.5); 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO / NEC with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela (OPS Portal) |
 | Permit portal | https://permitsonline.roseville.ca.us/ |
 | Municipal code | https://ecode360.com/RO4998 |
 | Fire agency | Roseville Fire Department |

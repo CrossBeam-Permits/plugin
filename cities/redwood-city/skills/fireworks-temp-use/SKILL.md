@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Redwood City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redwood City local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Redwood City."
+description: "Fireworks Temp Use permits in Redwood City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redwood City local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Redwood City."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Redwood City Fire Department (RCFD) — Fire Prevention Bureau · City-operated (not county contracted) · Plan check at Building Counter, 1017 Middlefield Rd · Fire flow test required for ADUs (allow up to 6 weeks) |
 | Code edition | Redwood City Municipal Code (RCMC) · Municode · Chapter 9 (Building) · Chapter 12 (Fire) · Zoning Code Article 37 (ADU) · Reach Code Ord. 522 (2020, amended Nov 2022) |
 | Code prefix | RCMC |

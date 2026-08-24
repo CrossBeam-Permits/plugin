@@ -31,16 +31,36 @@
     "restaurant-ti"
   ],
   "zoningDistricts": {
-    "residential": ["R1", "R2", "R3"],
-    "commercial": ["C1", "C2", "C3"],
-    "industrial": ["M1", "M2", "BP"],
-    "other": ["OS", "Q"]
+    "residential": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "commercial": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "industrial": [
+      "M1",
+      "M2",
+      "BP"
+    ],
+    "other": [
+      "OS",
+      "Q"
+    ]
   },
   "localAmendments": {
-    "ordinances": ["Ord. 768 (building)", "Ord. 769-Fire (fire code)"],
+    "ordinances": [
+      "Ord. 768 (building)",
+      "Ord. 769-Fire (fire code)"
+    ],
     "filedWithCBSC": true,
     "note": "Full text on Municode Title 15 (JS-rendered, not directly scraped)"
   },
   "onboardedAt": "2026-04-15",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": "CTS City",
+  "portalUrl": "https://irwindale.cts.city/"
 }

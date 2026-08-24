@@ -1,5 +1,5 @@
 ---
-description: "Reroof permits in Canyon Lake, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Canyon Lake local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Canyon Lake."
+description: "Reroof permits in Canyon Lake, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Canyon Lake local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Canyon Lake."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Canyon Lake Fire Department |
 | Code edition | Municipal Code · American Legal · Riverside County base code (local amendments) |
 | Code prefix | CLMC |

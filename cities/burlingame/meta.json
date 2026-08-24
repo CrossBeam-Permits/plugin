@@ -10,5 +10,7 @@
     "How do I submit a solar permit in Burlingame?",
     "What is the declining height envelope in R-1 zones?",
     "Does Burlingame have an online permit portal?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -45,5 +45,6 @@
     "Is Blue Lake in a fire hazard zone?",
     "What are the building department hours in Blue Lake?",
     "Does Blue Lake have any local solar permit requirements?"
-  ]
+  ],
+  "permitSystem": null
 }

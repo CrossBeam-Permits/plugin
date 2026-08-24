@@ -47,5 +47,7 @@
     "patio-cover"
   ],
   "createdAt": "2026-04-16",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": null,
+  "portalUrl": null
 }

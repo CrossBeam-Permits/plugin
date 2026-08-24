@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Redwood City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redwood City local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Redwood City."
+description: "Ltia Demolition permits in Redwood City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redwood City local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Redwood City."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Redwood City Fire Department (RCFD) — Fire Prevention Bureau · City-operated (not county contracted) · Plan check at Building Counter, 1017 Middlefield Rd · Fire flow test required for ADUs (allow up to 6 weeks) |
 | Code edition | Redwood City Municipal Code (RCMC) · Municode · Chapter 9 (Building) · Chapter 12 (Fire) · Zoning Code Article 37 (ADU) · Reach Code Ord. 522 (2020, amended Nov 2022) |
 | Code prefix | RCMC |

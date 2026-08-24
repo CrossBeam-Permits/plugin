@@ -1,5 +1,5 @@
 ---
-description: "Deck Patio Repair permits in Fairfield, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fairfield local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Fairfield."
+description: "Deck Patio Repair permits in Fairfield, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fairfield local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Fairfield."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Fairfield BUILD |
+| Permit portal | https://www.fairfield.ca.gov/our-city/building-permits |
 | Fire agency | City of Fairfield Fire Department — Fire Prevention Bureau · (707) 399-5627 · fireprevention@fairfield.ca.gov |
 | Code edition | Fairfield Municipal Code · codepublishing.com/CA/Fairfield · Current through Ord 2025-08 |
 | Code prefix | FMC |

@@ -52,5 +52,7 @@
     "coastal-development",
     "fireworks-temp-use",
     "ltia-demolition"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://www.ojai.ca.gov/departments/community_development/building_division.php"
 }

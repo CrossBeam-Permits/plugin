@@ -12,5 +12,7 @@
     "Is my property in a fire hazard severity zone in Turlock?",
     "What building codes has Turlock adopted?",
     "What are the design criteria (seismic, wind) for Turlock projects?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

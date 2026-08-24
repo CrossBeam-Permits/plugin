@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in San Bernardino, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Bernardino local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in San Bernardino."
+description: "Cleanout permits in San Bernardino, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Bernardino local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in San Bernardino."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://aca.accela.com/SBCITY/ |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | San Bernardino County Fire District Division 6 |
 | Code edition | San Bernardino Development Code · Title 19 (amlegal) |
 | Code prefix | SBMC |

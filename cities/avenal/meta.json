@@ -20,5 +20,6 @@
     "Do I need a permit for a fence in Avenal?",
     "How do I get a solar permit in Avenal?",
     "What SJVAPCD low-NOx requirements apply to gas water heaters in Avenal?"
-  ]
+  ],
+  "permitSystem": "OpenGov"
 }

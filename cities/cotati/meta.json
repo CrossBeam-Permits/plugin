@@ -11,5 +11,7 @@
     "What is the minimum rental term for ADUs in Cotati?",
     "Which zones allow multi-family housing in Cotati?",
     "How do I submit a building permit application in Cotati?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

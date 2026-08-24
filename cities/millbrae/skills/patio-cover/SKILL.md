@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Millbrae, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Millbrae local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Millbrae."
+description: "Patio Cover permits in Millbrae, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Millbrae local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Millbrae."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Central County Fire Department (CCFD) · 1399 Rollins Road, Burlingame CA 94010 · (650) 558-7600 · info@ccfd.org · ccfd.org |
 | Code edition | Millbrae Municipal Code · CodePublishing · MMC Title 9 (Building) · MMC Chapter 10.05 (Zoning) · Ord. 782 (ADU) |
 | Code prefix | MMC |

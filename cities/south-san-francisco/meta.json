@@ -41,5 +41,7 @@
     "hvac",
     "restaurant-ti"
   ],
-  "onboarded": "2026-04-22"
+  "onboarded": "2026-04-22",
+  "permitSystem": null,
+  "portalUrl": null
 }

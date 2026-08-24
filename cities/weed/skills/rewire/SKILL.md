@@ -1,5 +1,5 @@
 ---
-description: "Rewire permits in Weed, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Weed local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Weed."
+description: "Rewire permits in Weed, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Weed local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Weed."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | City of Weed Fire Department |
 | Code edition | Weed Municipal Code | 2025 CBSC in effect | Municode platform |
 | Code prefix | WMC |

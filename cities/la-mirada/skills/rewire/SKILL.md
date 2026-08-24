@@ -1,5 +1,5 @@
 ---
-description: "Rewire permits in La Mirada, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + La Mirada local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in La Mirada."
+description: "Rewire permits in La Mirada, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + La Mirada local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in La Mirada."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | LA County Building & Safety Division (county-contract city — no standalone portal) |
+| Permit portal | https://www.cityoflamirada.org/government/departments/community-development |
 | Municipal code | https://codelibrary.amlegal.com/codes/lamirada/latest/overview |
 | Fire agency | Los Angeles County Fire Department (LACoFD) |
 | Code edition | La Mirada Municipal Code | LA County B&S Contract City |

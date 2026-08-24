@@ -1,5 +1,5 @@
 ---
-description: "Water Heater permits in Maywood, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Maywood local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Maywood."
+description: "Water Heater permits in Maywood, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Maywood local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Maywood."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5), 2025 California Mechanical Code (Title 24, Part 4), 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | GOGov |
 | Permit portal | https://app.govoutreach.com/maywoodcityca/public/permits |
 | Municipal code | https://library.municode.com/ca/maywood |
 | Fire agency | LA County Fire Department (Station 1633) |

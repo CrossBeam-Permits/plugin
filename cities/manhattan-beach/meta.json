@@ -10,5 +10,7 @@
     "What permits are required for a second-story addition in the coastal zone?",
     "What are the sign regulations in the downtown CD-CZ district?",
     "How do I submit a CDP concurrent with my building permit?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

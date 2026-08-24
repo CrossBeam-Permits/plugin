@@ -10,5 +10,7 @@
     "Do I need architectural review before applying for a building permit?",
     "What are the ADU setback requirements?",
     "How do I submit plans through SmartGov?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

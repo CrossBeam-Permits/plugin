@@ -18,5 +18,6 @@
     "Can I build a multi-family apartment in Lakeport?",
     "What does the City of Lakeport require for new single-family home construction?",
     "How do I submit a residential addition permit in Lakeport?"
-  ]
+  ],
+  "permitSystem": "OpenGov"
 }

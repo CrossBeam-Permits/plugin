@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in San Fernando, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Fernando local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in San Fernando."
+description: "Cleanout permits in San Fernando, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Fernando local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in San Fernando."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | EdgeSoft Online Permit Counter (OPC) |
 | Permit portal | https://aims.edgesoftinc.com/opc/jsp/index.jsp |
 | Municipal code | https://library.municode.com/ca/san_fernando/codes/code_of_ordinances |
 | Fire agency | Los Angeles Fire Department (LAFD) — Valley Bureau |

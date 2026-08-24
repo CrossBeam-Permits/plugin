@@ -10,5 +10,7 @@
     "What is the reach code energy requirement for renovations in Piedmont?",
     "How do I submit a building permit in Piedmont?",
     "Does my Piedmont project need WUI ignition-resistant construction?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

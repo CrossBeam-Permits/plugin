@@ -11,5 +11,7 @@
     "Do I need a Conditional Use Permit for a restaurant in Millbrae?",
     "How do I submit a building permit in Millbrae?",
     "What is the plan check turnaround time in Millbrae?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

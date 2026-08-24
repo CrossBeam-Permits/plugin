@@ -1,5 +1,5 @@
 ---
-description: "Rewire permits in Clayton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Clayton local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Clayton."
+description: "Rewire permits in Clayton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Clayton local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Clayton."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Contra Costa County Fire Protection District (ConFire) · (925) 941-3300 · confire.vision33cloud.com/citizenportal · 4005 Port Chicago Hwy, Suite 250, Concord CA 94520 |
 | Code edition | Clayton Municipal Code · Municode · Title 15 (Building and Construction) · Title 17 (Zoning) |
 | Code prefix | CMC |

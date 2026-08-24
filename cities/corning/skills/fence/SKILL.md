@@ -1,5 +1,5 @@
 ---
-description: "Fence permits in Corning, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Corning local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fence in Corning."
+description: "Fence permits in Corning, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Corning local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fence in Corning."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Corning Volunteer Fire Department · (530) 824-7044 · 814 Fifth St., Corning CA 96021 · Residential plan check through City Building Department; no separate fire plan check for standard residential permits |
 | Code edition | Corning Municipal Code · Municode (https://library.municode.com/ca/corning) · Title 15 (Buildings and Construction) · Title 17 (Zoning) · 2022 CBC/CRC/CPC/CMC/CEC adopted as state law |
 | Code prefix | CMC |

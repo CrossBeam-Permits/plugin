@@ -24,7 +24,11 @@
   },
   "fhsz": {
     "coverage": "partial",
-    "zones": ["Moderate", "High", "Very High"],
+    "zones": [
+      "Moderate",
+      "High",
+      "Very High"
+    ],
     "updateDate": "2026-03",
     "note": "March 2025 SFM update. Not city-wide — verify parcel-level designation."
   },
@@ -68,5 +72,7 @@
     "essNote": "ESS/BESS requires LACoFD fire review via EPIC-LA before SolarAPP+ submission"
   },
   "onboarded": "2026-04-16",
-  "currentThrough": "Ord. 768 (July 8, 2025)"
+  "currentThrough": "Ord. 768 (July 8, 2025)",
+  "permitSystem": "SmartGov",
+  "portalUrl": "https://ci-palosverdesestates-ca.smartgovcommunity.com/"
 }

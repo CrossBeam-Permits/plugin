@@ -26,5 +26,7 @@
     "name": "Ukiah Valley Fire Authority (UVFA)",
     "phone": "(707) 463-5786",
     "email": "fireprevention@cityofukiah.com"
-  }
+  },
+  "permitSystem": "Citizenserve",
+  "portalUrl": null
 }

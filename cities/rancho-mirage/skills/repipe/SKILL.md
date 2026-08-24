@@ -1,5 +1,5 @@
 ---
-description: "Repipe permits in Rancho Mirage, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Mirage local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Rancho Mirage."
+description: "Repipe permits in Rancho Mirage, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Mirage local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Rancho Mirage."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/RA4993 |
 | Fire agency | Riverside County Fire / CAL FIRE — City Fire Marshal Jacqueline Garcia |
 | Code edition | Ordinance No. 1226 · Current through November 20, 2025 |

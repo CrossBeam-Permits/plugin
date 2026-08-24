@@ -52,8 +52,12 @@
     "restaurant-ti",
     "wildfire-wui"
   ],
-  "stateSkillOnly": ["window-replacement"],
-  "notSupported": ["commercial-ti"],
+  "stateSkillOnly": [
+    "window-replacement"
+  ],
+  "notSupported": [
+    "commercial-ti"
+  ],
   "localAmendments": [
     "CBC §1905.1.7 — ACI 318 §14.1.4 concrete construction modification",
     "CPC §422.1 — Fixture count",
@@ -72,14 +76,25 @@
     "active": true,
     "sponsor": "Senator Steve Glazer (SD-7)",
     "tiers": [
-      { "maxSqFt": 500, "rebate": 7500 },
-      { "maxSqFt": 750, "rebate": 5000 },
-      { "maxSqFt": 1000, "rebate": 2500 }
+      {
+        "maxSqFt": 500,
+        "rebate": 7500
+      },
+      {
+        "maxSqFt": 750,
+        "rebate": 5000
+      },
+      {
+        "maxSqFt": 1000,
+        "rebate": 2500
+      }
     ],
     "totalFunding": 154319,
     "eligibleAfter": "2025-04-14",
     "finalInspectionDeadline": "2026-08-31"
   },
   "onboardedAt": "2026-04-22",
-  "onboardedBy": "batch-onboard-autonomous"
+  "onboardedBy": "batch-onboard-autonomous",
+  "permitSystem": "CSS (Civic Solutions System)",
+  "portalUrl": "https://sanramon.ca.gov/csspermits"
 }

@@ -4,7 +4,7 @@
   "codePrefix": "SRMC",
   "fireAgency": "San Rafael Fire Department (SRFD) · Fire Prevention Bureau: (415) 485-3308 · Vegetation Management: (415) 485-3054",
   "portalName": "OpenGov",
-  "portalUrl": "https://cityofsanrafaelca.portal.opengov.com",
+  "portalUrl": "https://cityofsanrafaelca.portal.opengov.com/",
   "climateZone": "2",
   "seismicCategory": "D",
   "fhsz": true,
@@ -19,5 +19,6 @@
     "How do I submit a building permit application in San Rafael?",
     "What are the zoning setbacks and lot coverage limits for single-family homes in San Rafael?",
     "Does replacing windows in San Rafael require fire-resistant glazing?"
-  ]
+  ],
+  "permitSystem": "OpenGov"
 }

@@ -45,5 +45,6 @@
     "fence",
     "ev-charger",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": "Cloudpermit"
 }

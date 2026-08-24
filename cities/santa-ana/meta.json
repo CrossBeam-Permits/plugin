@@ -4,7 +4,7 @@
   "codePrefix": "SAMC",
   "fireAgency": "OCFA",
   "portalName": "ProjectDox",
-  "portalUrl": "https://santa-ana-ca-us.avolvecloud.com",
+  "portalUrl": "https://santa-ana-ca-us.avolvecloud.com/",
   "climateZone": "9",
   "seismicCategory": "D",
   "fhsz": false,
@@ -18,5 +18,6 @@
     "Is my property in a historic district (SD-19 or SD-40)?",
     "What are the counter hours for Santa Ana Building Safety?",
     "What are the swimming pool barrier requirements in Santa Ana?"
-  ]
+  ],
+  "permitSystem": "ProjectDox"
 }

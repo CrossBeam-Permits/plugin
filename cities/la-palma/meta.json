@@ -4,7 +4,7 @@
   "codePrefix": "LPMC",
   "fireAgency": "OCFA",
   "portalName": "OpenGov",
-  "portalUrl": "https://cityoflapalmaca.portal.opengov.com",
+  "portalUrl": "https://cityoflapalmaca.portal.opengov.com/",
   "planCheckContractor": "Bureau Veritas North America, Inc.",
   "climateZone": "8",
   "seismicCategory": "D",
@@ -20,5 +20,6 @@
     "What are the counter hours for La Palma Building & Safety?",
     "Does La Palma have SolarAPP+ for solar permits?",
     "What are the pool barrier requirements in La Palma?"
-  ]
+  ],
+  "permitSystem": "OpenGov"
 }

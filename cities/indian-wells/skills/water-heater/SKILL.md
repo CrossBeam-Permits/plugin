@@ -1,5 +1,5 @@
 ---
-description: "Water Heater permits in Indian Wells, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Indian Wells local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Indian Wells."
+description: "Water Heater permits in Indian Wells, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Indian Wells local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Indian Wells."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5), 2025 California Mechanical Code (Title 24, Part 4), 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/IN4940 |
 | Fire agency | Riverside County Fire / CAL FIRE Desert Division |
 | Code edition | Ordinance No. 769 · Adopted February 5, 2026 |

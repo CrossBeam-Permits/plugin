@@ -4,7 +4,7 @@
   "codePrefix": "RCMC",
   "fireAgency": "Sacramento Metropolitan Fire District (Metro Fire)",
   "portal": "Rancho Cordova Online",
-  "portalUrl": "https://www.cityofranchocordova.org",
+  "portalUrl": "https://www.cityofranchocordova.org/",
   "electricUtility": "Sacramento Municipal Utility District (SMUD — NOT PG&E)",
   "climateZone": 12,
   "fhsz": "Moderate LRA (WUI does not apply)",
@@ -15,5 +15,6 @@
     "Is Rancho Cordova served by SMUD or PG&E?",
     "What energy code climate zone applies in Rancho Cordova?",
     "Does WUI/Chapter 7A apply to my project in Rancho Cordova?"
-  ]
+  ],
+  "permitSystem": "Rancho Cordova Online"
 }

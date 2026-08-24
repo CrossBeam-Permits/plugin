@@ -19,5 +19,6 @@
     "Does my project require OCFA fire review?",
     "How do I submit plans through the CSS Portal?",
     "What is the permit validity period — how long before I must start work?"
-  ]
+  ],
+  "permitSystem": "CSS Portal (Customer Self-Service)"
 }

@@ -1,5 +1,5 @@
 ---
-description: "Deck Patio Repair permits in Woodside, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Woodside local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Woodside."
+description: "Deck Patio Repair permits in Woodside, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Woodside local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Woodside."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Woodside Fire Protection District (independent special district) · Bureau of Fire Prevention and Life Safety · woodsidefire.org · Plan check required for applicable projects · Contact via woodsidefire.org |
 | Code edition | Woodside Municipal Code · Municode · No local building code amendments filed |
 | Code prefix | WMC |

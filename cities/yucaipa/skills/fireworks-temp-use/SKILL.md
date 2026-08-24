@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Yucaipa, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Yucaipa local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Yucaipa."
+description: "Fireworks Temp Use permits in Yucaipa, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Yucaipa local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Yucaipa."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Tyler EnerGov (Yucaipa Permit Exchange) |
 | Permit portal | https://cityofyucaipaca-energovweb.tylerhost.net/apps/selfservice#/home |
 | Fire agency | Yucaipa Fire Department (CAL FIRE contract) · (909) 797-2489 Ext. 246 · csanchez@yucaipa.org |
 | Code edition | Yucaipa Municipal Code §15.04 (Building) · Development Code §84.0570 (ADU) · American Legal · 2022 CBC/CRC adopted June 2024 |

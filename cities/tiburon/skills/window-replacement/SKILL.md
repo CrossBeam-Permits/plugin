@@ -1,5 +1,5 @@
 ---
-description: "Window Replacement permits in Tiburon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tiburon local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Tiburon."
+description: "Window Replacement permits in Tiburon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tiburon local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Tiburon."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Tiburon Fire Protection District · Independent district (not Marin County Fire) · Community Risk Reduction Bureau · (415) 435-7200 · 1679 Tiburon Blvd., Tiburon CA 94920 |
 | Code edition | Town of Tiburon Municipal Code · Municode · Chapter 13 (Building) · Chapter 13A (Resale Inspection) · Chapter 16 (Zoning) |
 | Code prefix | TMC |

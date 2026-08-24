@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Dorris, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Dorris local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Dorris."
+description: "Cleanout permits in Dorris, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Dorris local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Dorris."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | https://www.dorrisca.us/departments/building/ |
 | Fire agency | Dorris Volunteer Fire Department |
 | Code edition | Dorris Municipal Code | 2025 CBSC in effect |
 | Code prefix | DMC |

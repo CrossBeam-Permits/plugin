@@ -11,5 +11,7 @@
     "What are the setback requirements for a fence in Imperial?",
     "Does Imperial have any local building code amendments?",
     "Who handles fire plan review for Imperial permits?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

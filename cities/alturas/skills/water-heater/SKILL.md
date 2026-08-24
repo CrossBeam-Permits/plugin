@@ -1,5 +1,5 @@
 ---
-description: "Water Heater permits in Alturas, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Alturas local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Alturas."
+description: "Water Heater permits in Alturas, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Alturas local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Alturas."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5), 2025 California Mechanical Code (Title 24, Part 4), 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | iworq |
+| Permit portal | https://modocbuildingpermit.portal.iworq.net/portalhome/modocbuildingpermit |
 | Fire agency | Alturas Fire Department (city LRA) |
 | Code edition | Alturas Municipal Code | Ord. 221-J (local amendments) | 2025 CBSC in effect |
 | Code prefix | AMC |

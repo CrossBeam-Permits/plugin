@@ -1,5 +1,5 @@
 ---
-description: "Hvac permits in Fremont, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fremont local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Fremont."
+description: "Hvac permits in Fremont, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fremont local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Fremont."
 version: "1.0"
 source: "2025 California Mechanical Code (Title 24, Part 4); 2025 California Plumbing Code (Title 24, Part 5); 2025 California Electrical Code (Title 24, Part 3); 2025 California Residential Code (Title 24, Part 2.5); 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO / NEC with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Citizen Access Portal |
+| Permit portal | https://cityoffremont.citizenaccess.com/ |
 | Fire agency | Fremont Fire Department — Fire Prevention Bureau (city-integrated, no separate agency submission) |
 | Code edition | FMC §18.190.005 (ADU, eff. Aug 11 2023) | FMC §15.35 (Sprinklers) | FMC §15.48 (CALGreen Reach Code) |
 | Code prefix | FMC |

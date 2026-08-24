@@ -27,5 +27,6 @@
     "Do I need a permit for a pool in Dinuba?",
     "What are the setback requirements for Dinuba?",
     "What fire code does Dinuba use?"
-  ]
+  ],
+  "permitSystem": "eSuite"
 }

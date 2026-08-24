@@ -37,5 +37,7 @@
     "restaurant-ti"
   ],
   "onboardedDate": "2026-04-15",
-  "notes": "Contract city — building permits via LA County DPW/BSOP/EPIC-LA. ADU Ord. 838: 2-story max citywide; south of PCH max 1-story/16 ft."
+  "notes": "Contract city — building permits via LA County DPW/BSOP/EPIC-LA. ADU Ord. 838: 2-story max citywide; south of PCH max 1-story/16 ft.",
+  "permitSystem": null,
+  "portalUrl": "https://epicla.lacounty.gov/"
 }

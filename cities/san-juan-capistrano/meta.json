@@ -13,5 +13,7 @@
     "Is my property in a historic district (MRD or TOC)?",
     "What are the permit expiration rules and seasonal suspension periods?",
     "Does San Juan Capistrano have HOA approval requirements?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

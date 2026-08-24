@@ -10,5 +10,7 @@
     "How do I submit permit plans in Mission Viejo?",
     "Do I need Planning Division approval before a sign permit?",
     "What are the height limits in RPD-30 zones?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

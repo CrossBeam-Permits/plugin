@@ -30,5 +30,7 @@
     "reroof",
     "wildfire-wui",
     "solar"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://app.oncamino.com/"
 }

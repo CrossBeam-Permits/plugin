@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Sonoma, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sonoma local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Sonoma."
+description: "Cleanout permits in Sonoma, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sonoma local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Sonoma."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Sonoma Valley Fire District (SVFD) · 630 2nd Street West, Sonoma CA 95476 · (707) 996-2102 · sonomavalleyfire.org |
 | Code edition | Sonoma Municipal Code · Codify · Ch. 14.10 (Construction Codes) · Ch. 19 (Zoning) · Current through Ord. 13-2025 (Dec 3, 2025) |
 | Code prefix | SMC |

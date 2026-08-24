@@ -38,5 +38,7 @@
     "patio-cover",
     "fence",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

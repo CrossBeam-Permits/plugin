@@ -11,5 +11,7 @@
     "What is the seismic gas shutoff valve requirement in Arcata?",
     "Are fire sprinklers required for new homes in Arcata?",
     "How do I submit a building permit in Arcata?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -20,5 +20,6 @@
     "What are the building department hours in La Mesa?",
     "Does La Mesa require a soils report for ADUs?",
     "What is the Hillside Overlay Zone in La Mesa?"
-  ]
+  ],
+  "permitSystem": "MaintStar"
 }

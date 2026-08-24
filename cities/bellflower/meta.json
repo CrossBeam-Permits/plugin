@@ -28,7 +28,10 @@
   "codeAdoption": {
     "cycle": "2025",
     "effectiveDate": "2026-01-01",
-    "ordinances": ["Ord. No. 1449", "Urgency Ord. No. 1450"]
+    "ordinances": [
+      "Ord. No. 1449",
+      "Urgency Ord. No. 1450"
+    ]
   },
   "localAmendments": [
     {
@@ -68,5 +71,7 @@
     "siding-replacement",
     "restaurant-ti",
     "ltia-demolition"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://www.bellflower.org/departments/building_and_safety"
 }

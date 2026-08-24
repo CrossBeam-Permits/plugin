@@ -14,5 +14,6 @@
     "Does Parlier have a Wildland-Urban Interface (WUI) zone?",
     "Who reviews fire/life-safety plans for Parlier building permits?",
     "What zoning districts exist in Parlier — R-1, R-3, commercial?"
-  ]
+  ],
+  "permitSystem": "Paper PDF"
 }

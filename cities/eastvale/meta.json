@@ -10,5 +10,7 @@
     "Is Eastvale in a Fire Hazard Severity Zone?",
     "What water district serves my parcel?",
     "What's the maximum ADU size allowed on my lot?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

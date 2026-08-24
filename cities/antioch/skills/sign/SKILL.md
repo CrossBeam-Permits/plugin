@@ -1,5 +1,5 @@
 ---
-description: "Sign permits in Antioch, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Antioch local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Antioch."
+description: "Sign permits in Antioch, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Antioch local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Antioch."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Contra Costa County Fire Protection District (ConFire) · (925) 941-3300 · confire.vision33cloud.com/citizenportal |
 | Code edition | Antioch Municipal Code · American Legal Publishing · Title 8 (Building) · Title 9 (Zoning) |
 | Code prefix | AMC |

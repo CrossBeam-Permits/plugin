@@ -10,5 +10,7 @@
     "Does MPFPD need to approve my solar before the building permit?",
     "Are ADUs under 750 sq ft exempt from impact fees?",
     "How do I submit plans — is there an online portal?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

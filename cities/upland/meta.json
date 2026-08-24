@@ -11,5 +11,7 @@
     "My property is in north Upland — do WUI / fire-resistant construction requirements apply?",
     "What zoning district am I in — RS-4 vs RS-7.5 vs RS-10?",
     "Is a fence permit required, or is my fence exempt?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

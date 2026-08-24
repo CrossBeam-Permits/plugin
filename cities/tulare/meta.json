@@ -4,7 +4,9 @@
   "county": "Tulare",
   "state": "CA",
   "population": 70000,
-  "climateZones": ["CZ13"],
+  "climateZones": [
+    "CZ13"
+  ],
   "fireAgency": "City of Tulare Fire Department — Fire Prevention Bureau",
   "vhfhsz": false,
   "wuiPartial": false,
@@ -53,5 +55,7 @@
     "How do I submit plans and what is the fee schedule?",
     "What zoning district allows multi-family housing in Tulare?",
     "Does Tulare have any local building code amendments?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

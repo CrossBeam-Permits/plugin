@@ -1,5 +1,5 @@
 ---
-description: "Sign permits in Rancho Cordova, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Cordova local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Rancho Cordova."
+description: "Sign permits in Rancho Cordova, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Cordova local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Rancho Cordova."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Rancho Cordova Online |
+| Permit portal | https://www.cityofranchocordova.org/ |
 | Municipal code | https://www.codepublishing.com/CA/RanchoCordova/ |
 | Fire agency | Sacramento Metropolitan Fire District (Metro Fire) |
 | Code edition | Ord. 8-2024 (ADU) | Ord. 17-2022 (Building Codes — 2022 cycle adoption) |

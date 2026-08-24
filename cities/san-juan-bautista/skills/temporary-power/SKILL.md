@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in San Juan Bautista, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Juan Bautista local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in San Juan Bautista."
+description: "Temporary Power permits in San Juan Bautista, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Juan Bautista local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in San Juan Bautista."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | counter |
+| Permit portal | https://www.san-juan-bautista.ca.us/ |
 | Fire agency | San Juan Bautista Fire Department |
 | Code edition | San Juan Bautista Municipal Code | 2025 CBSC in effect |
 | Code prefix | SJBMC |

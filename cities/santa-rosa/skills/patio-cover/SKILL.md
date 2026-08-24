@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Santa Rosa, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Santa Rosa local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Santa Rosa."
+description: "Patio Cover permits in Santa Rosa, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Santa Rosa local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Santa Rosa."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Online Permit Center |
 | Permit portal | https://srcity.org/262/Building-Permits |
 | Municipal code | https://ecode360.com/SA5009 |
 | Fire agency | Santa Rosa Fire Department |

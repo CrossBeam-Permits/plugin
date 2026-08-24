@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Imperial, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Imperial local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Imperial."
+description: "Ltia Demolition permits in Imperial, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Imperial local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Imperial."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://www.cityofimperial.org/permits-hub |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Imperial County Fire Department (contract) |
 | Code edition | Imperial Municipal Code · City-hosted PDFs · Imperial County Fire (contract) |
 | Code prefix | IMC |

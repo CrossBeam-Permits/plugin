@@ -10,5 +10,7 @@
     "Does Oakley use SolarAPP+ for solar permits?",
     "What is the fence height limit in Oakley?",
     "Is there a wildfire construction requirement in Oakley?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

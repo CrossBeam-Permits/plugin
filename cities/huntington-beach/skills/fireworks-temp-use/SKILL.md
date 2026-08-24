@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Huntington Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Huntington Beach local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Huntington Beach."
+description: "Fireworks Temp Use permits in Huntington Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Huntington Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Huntington Beach."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela Citizen Access |
 | Permit portal | https://engage.huntingtonbeachca.gov/CitizenAccess/Default.aspx |
 | Municipal code | https://ecode360.com/HU4937 |
 | Building & Safety | (714) 536-5271 |

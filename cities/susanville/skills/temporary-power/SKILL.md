@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Susanville, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Susanville local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Susanville."
+description: "Temporary Power permits in Susanville, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Susanville local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Susanville."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Susanville Fire Department · 1505 Main St, Susanville, CA 96130 · 530-257-5152 · fire@cityofsusanville.org · Fire plan review coordinated through Building Division |
 | Code edition | Susanville Municipal Code · eCode360 (https://ecode360.com/SU5021) · Title 15 (Buildings and Construction) · 2022 CBSC adopted via Ord. 22-1038 with local amendments |
 | Code prefix | SMC |

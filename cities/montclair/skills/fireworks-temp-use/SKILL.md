@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Montclair, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Montclair local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Montclair."
+description: "Fireworks Temp Use permits in Montclair, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Montclair local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Montclair."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Counter only |
+| Permit portal | https://www.cityofmontclair.org/building-division/ |
 | Fire agency | Montclair Fire Department (city-owned) |
 | Code edition | Ord. 25-1016 · Jan 14, 2026 (Building Codes) | Ord. 24-1006 · Jul 31, 2024 (ADU) |
 | Code prefix | MMC |

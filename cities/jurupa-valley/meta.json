@@ -10,5 +10,7 @@
     "Is my parcel in a Fire Hazard Severity Zone?",
     "What is the PRADU pre-approved ADU program?",
     "What water district serves my property — JCSD or WMWD?"
-  ]
+  ],
+  "permitSystem": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/jurupa/"
 }

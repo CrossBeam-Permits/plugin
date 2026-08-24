@@ -1,5 +1,5 @@
 ---
-description: "Retaining Wall permits in Oakley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Oakley local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Oakley."
+description: "Retaining Wall permits in Oakley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Oakley local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Oakley."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC), 2025 California Residential Code (Title 24, Part 2.5 CRC), ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Contra Costa County Fire Protection District (ConFire) · (925) 941-3300 · confire.vision33cloud.com/citizenportal |
 | Code edition | Oakley Municipal Code · CodePublishing · Title 7 (Building and Housing) · Title 9 (Land Use) |
 | Code prefix | OMC |

@@ -10,5 +10,7 @@
     "How do I submit plans for fire review in San Mateo?",
     "Does San Mateo offer automated permitting for solar?",
     "What seismic wall bracing methods are prohibited in San Mateo?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

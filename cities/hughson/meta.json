@@ -10,5 +10,7 @@
     "Does Hughson have any local amendments to the California Building Code?",
     "What utility serves Hughson for solar and electrical permits?",
     "Does Hughson require SJVAPCD review for my HVAC or water heater replacement?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

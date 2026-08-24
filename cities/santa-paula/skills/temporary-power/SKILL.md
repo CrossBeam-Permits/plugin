@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Santa Paula, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Santa Paula local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Santa Paula."
+description: "Temporary Power permits in Santa Paula, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Santa Paula local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Santa Paula."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Counter-based — no dedicated online permit portal |
+| Permit portal | https://www.spcity.org/168/Building-Safety-Division |
 | Municipal code | https://codelibrary.amlegal.com/codes/santapaula/latest/overview |
 | Fire agency | Ventura County Fire Protection District (VCFPD) — email fireprevention@ventura.org with Form 610 |
 | Code edition | SPMC Title XV (Building) | Title XVI (Dev Code) · American Legal · through Ord 1327 (2023) |

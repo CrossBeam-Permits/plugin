@@ -1,5 +1,5 @@
 ---
-description: "Ev Charger permits in Mission Viejo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Mission Viejo local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Mission Viejo."
+description: "Ev Charger permits in Mission Viejo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Mission Viejo local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Mission Viejo."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://portal.cityofmissionviejo.org/energovprod/selfservice#/home |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://library.municode.com/ca/mission_viejo/codes/code_of_ordinances |
 | Fire agency | OCFA |
 | Code edition | 2025 California Building Standards Code · Local Amendments per MVMC Title 8 (OC Coalition for Building Code Uniformity) |

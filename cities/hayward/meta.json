@@ -13,5 +13,6 @@
     "What is Hayward's EV charging reach code requirement for new construction?",
     "Do I need to route my fire plan check to HFD or Fairview FPD?",
     "Can I get a same-day EV charger permit in Hayward?"
-  ]
+  ],
+  "permitSystem": "EnerGov (Tyler Technologies)"
 }

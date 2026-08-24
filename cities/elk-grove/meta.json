@@ -22,7 +22,14 @@
     "email": "eplan@cosumnescsd.gov",
     "url": "https://www.cosumnescsd.gov/303/Plan-Review-and-Inspections",
     "separatePlanCheckRequired": true,
-    "separatePlanCheckFor": ["new-construction", "solar", "fire-sprinkler", "fire-alarm", "lp-tank", "fireworks"]
+    "separatePlanCheckFor": [
+      "new-construction",
+      "solar",
+      "fire-sprinkler",
+      "fire-alarm",
+      "lp-tank",
+      "fireworks"
+    ]
   },
   "fhsz": false,
   "coastalZone": false,
@@ -53,5 +60,7 @@
     "panel-upgrade",
     "window-replacement",
     "restaurant-ti"
-  ]
+  ],
+  "permitSystem": "eTRAKiT",
+  "portalUrl": "https://elgr-trk.aspgov.com/etrakit/"
 }

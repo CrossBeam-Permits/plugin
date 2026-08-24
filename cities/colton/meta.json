@@ -10,5 +10,7 @@
     "Does my project need Colton Fire Department review — what's the $800 deposit about?",
     "What are the setback requirements for my zone in Colton?",
     "Which codes does Colton use — 2022 or 2025 California Building Standards?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

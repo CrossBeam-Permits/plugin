@@ -16,5 +16,6 @@
     "What permit types does Tracy offer online through eTRAKiT?",
     "What are the setback requirements for a new home in Tracy?",
     "Who is the fire authority having jurisdiction for Tracy building permits?"
-  ]
+  ],
+  "permitSystem": "eTRAKiT (ASP.NET)"
 }

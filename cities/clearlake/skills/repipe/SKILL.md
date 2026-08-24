@@ -1,5 +1,5 @@
 ---
-description: "Repipe permits in Clearlake, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Clearlake local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Clearlake."
+description: "Repipe permits in Clearlake, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Clearlake local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Clearlake."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Lake County Fire Protection District (LCFPD) |
 | Code edition | Ordinance 278-2025 · 2025 CA BSC in effect |
 | Code prefix | CMC |

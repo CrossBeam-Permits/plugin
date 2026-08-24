@@ -1,5 +1,5 @@
 ---
-description: "Water Heater permits in San Rafael, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Rafael local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in San Rafael."
+description: "Water Heater permits in San Rafael, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Rafael local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in San Rafael."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5), 2025 California Mechanical Code (Title 24, Part 4), 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | OpenGov |
+| Permit portal | https://cityofsanrafaelca.portal.opengov.com/ |
 | Fire agency | San Rafael Fire Department (SRFD) · Fire Prevention Bureau: (415) 485-3308 · Vegetation Management: (415) 485-3054 |
 | Code edition | 2025 California Building Standards Code · Local Amendments per San Rafael Municipal Code (SRMC) · Title 12 (Building) · Title 14 (Zoning) · Title 4 (Fire) |
 | Code prefix | SRMC |

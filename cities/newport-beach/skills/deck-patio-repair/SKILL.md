@@ -1,5 +1,5 @@
 ---
-description: "Deck Patio Repair permits in Newport Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Newport Beach local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Newport Beach."
+description: "Deck Patio Repair permits in Newport Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Newport Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Newport Beach."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://www.newportbeachca.gov/government/departments/community-development/building-division/online-permitting-ipermit |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://www.codepublishing.com/CA/NewportBeach/ |
 | Fire agency | Newport Beach Fire |
 | Code edition | NBMC Title 15 · 2022 CBC/CRC (→ 2025) |

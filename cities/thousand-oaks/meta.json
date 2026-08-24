@@ -24,7 +24,10 @@
     "bureauAddress": "2400 Conejo Spectrum St, Thousand Oaks, CA 91320",
     "bureauHours": "7:30am–5:00pm",
     "planSubmitEmail": "fireprevention@ventura.org",
-    "requiredForms": ["Form 610 – Fire Permit Application", "Form 625 – Fire Flow Verification"],
+    "requiredForms": [
+      "Form 610 – Fire Permit Application",
+      "Form 625 – Fire Flow Verification"
+    ],
     "website": "https://fire.venturacounty.gov/fire-prevention/",
     "fireCode": "VCFC Ord. 32 (eff. Jan 1, 2023) with CFC Ch. 49 amendments; Ord. 33 (eff. Jul 1, 2025) FHSZ updates"
   },
@@ -59,5 +62,7 @@
     "siding-replacement",
     "repipe",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": "TO/24",
+  "portalUrl": "https://toaks.gov/to24"
 }

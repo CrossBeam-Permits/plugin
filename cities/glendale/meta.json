@@ -64,5 +64,7 @@
     "kitchen-bath-remodel"
   ],
   "onboardedAt": "2026-04-16",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": "energov",
+  "portalUrl": "https://glendaleca-energovweb.tylerhost.net/apps/SelfService"
 }

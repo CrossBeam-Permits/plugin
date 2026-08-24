@@ -12,5 +12,7 @@
     "How do I submit a building permit in Fort Bragg?",
     "Is my Fort Bragg property in a fire hazard zone?",
     "What is the EV charger permit process in Fort Bragg?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

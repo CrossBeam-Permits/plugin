@@ -5,7 +5,7 @@
   "state": "CA",
   "muniCodePlatform": "municode",
   "muniCodeUrl": "https://library.municode.com/ca/hidden_hills",
-  "portalUrl": "https://hiddenhills.cts.city",
+  "portalUrl": "https://hiddenhills.cts.city/",
   "buildingOfficial": "Dennis Tarango",
   "fireAgency": "Los Angeles County Fire Department (Station 68)",
   "electricUtility": "Southern California Edison (SCE)",
@@ -33,5 +33,6 @@
     "Can I use wood shingles on my roof in Hidden Hills?",
     "How do I get gate access for my contractors?",
     "Does my solar panel installation need HHCA approval?"
-  ]
+  ],
+  "permitSystem": null
 }

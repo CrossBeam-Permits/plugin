@@ -20,5 +20,6 @@
     "Does my building permit trigger the sewer lateral CCTV inspection requirement?",
     "Is my parcel adjacent to the Gulch & Greenway Overlay (Cooper Gulch, Second Gulch, or Martin Slough)?",
     "Where do I submit a building permit application in Eureka and what are the department contact details?"
-  ]
+  ],
+  "permitSystem": "OpenGov (ViewPoint Cloud)"
 }

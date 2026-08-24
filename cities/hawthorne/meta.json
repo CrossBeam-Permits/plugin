@@ -10,5 +10,7 @@
     "Is SolarAPP+ required for a solar permit in Hawthorne?",
     "What is the pool fence height requirement in Hawthorne?",
     "How do I submit a building permit in Hawthorne?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

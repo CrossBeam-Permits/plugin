@@ -11,5 +11,7 @@
     "What permits are required for a new roof in Willows?",
     "How do I get a solar permit in Willows?",
     "What zoning districts allow multi-family housing in Willows?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

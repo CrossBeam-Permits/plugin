@@ -1,5 +1,5 @@
 ---
-description: "Swimming Pool permits in Fairfax, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fairfax local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Fairfax."
+description: "Swimming Pool permits in Fairfax, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fairfax local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Fairfax."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela Citizen Access |
+| Permit portal | https://aca-prod.accela.com/FAIRFAX/Default.aspx |
 | Fire agency | Ross Valley Fire Department (RVFD) · planreview@rossvalleyfire.org · (415) 258-4673 · rossvalleyfire.org |
 | Code edition | Fairfax Municipal Code · American Legal Publishing · Title 15 (Buildings & Construction) · Title 17 (Zoning) · Title 8 (Fire) |
 | Code prefix | FMC |

@@ -4,7 +4,9 @@
   "county": "Fresno",
   "state": "CA",
   "population": 17000,
-  "climateZones": ["CZ13"],
+  "climateZones": [
+    "CZ13"
+  ],
   "fireAgency": "Coalinga Fire Department",
   "vhfhsz": false,
   "wuiPartial": false,
@@ -29,5 +31,7 @@
     "solar"
   ],
   "onboardedAt": "2026-04-24",
-  "readyForPromotion": false
+  "readyForPromotion": false,
+  "permitSystem": null,
+  "portalUrl": null
 }

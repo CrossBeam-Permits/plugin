@@ -22,5 +22,6 @@
     "Does Newark require fire sprinklers for residential additions?",
     "What permits does Newark issue online via eTRAKiT?",
     "What are the inspection request hours for Newark Building Division?"
-  ]
+  ],
+  "permitSystem": "eTRAKiT"
 }

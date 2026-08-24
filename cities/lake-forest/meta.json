@@ -21,5 +21,6 @@
     "Does my ADU require a JADU deed restriction?",
     "What triggers the OCFA fire screening requirement?",
     "How do I submit permits through eLakeForest (EnerGov)?"
-  ]
+  ],
+  "permitSystem": "Tyler Technologies EnerGov"
 }

@@ -45,5 +45,7 @@
     "temporary-power",
     "ltia-demolition"
   ],
-  "generatedAt": "2026-04-16T00:00:00Z"
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "permitSystem": null,
+  "portalUrl": null
 }

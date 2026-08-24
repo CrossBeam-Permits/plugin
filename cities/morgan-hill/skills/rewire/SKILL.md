@@ -1,5 +1,5 @@
 ---
-description: "Rewire permits in Morgan Hill, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Morgan Hill local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Morgan Hill."
+description: "Rewire permits in Morgan Hill, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Morgan Hill local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Morgan Hill."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eTRAKiT (CentralSquare) |
+| Permit portal | https://morg-trk.aspgov.com/eTRAKiT/Search/permit.aspx |
 | Fire agency | Morgan Hill Fire Department — Building & Fire Prevention Division (city-integrated; permits@morganhill.ca.gov; 408-310-4654) |
 | Code edition | MHMC Title 15 (Building) | Title 18 Zoning | Ch. 18.84 (ADU) | Ord. 2306 (Reach Code — contested) |
 | Code prefix | MHMC |

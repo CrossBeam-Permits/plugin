@@ -10,5 +10,7 @@
     "What's the creek setback for my lot?",
     "Does my restaurant TI need Environmental Health review?",
     "What are the demolition controls for residential units?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -10,5 +10,7 @@
     "Are permit forms and counter service available in Spanish?",
     "Does Calexico require a separate fire department plan check, or is it handled by Building?",
     "How do I submit plans — is there an online portal or do I need to come in person?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

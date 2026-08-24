@@ -10,5 +10,7 @@
     "What fees does Oroville charge for building permits?",
     "Who handles fire plan review in Oroville?",
     "What are the zoning districts in Oroville?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

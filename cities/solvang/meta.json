@@ -34,5 +34,7 @@
     "panel-upgrade",
     "water-heater",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

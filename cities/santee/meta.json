@@ -10,5 +10,7 @@
     "Does Santee require solar and EV for new residential?",
     "What roof material is required in a fire hazard zone?",
     "What utility provider handles solar interconnection in Santee?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

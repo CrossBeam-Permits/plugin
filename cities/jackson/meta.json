@@ -21,5 +21,7 @@
     "Is my property in a Fire Hazard Severity Zone in Jackson?",
     "What does a restaurant tenant improvement require in downtown Jackson?",
     "How do I submit a building permit through Jackson's iworq portal?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

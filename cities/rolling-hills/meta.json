@@ -29,5 +29,7 @@
     "ev-charger"
   ],
   "onboardedAt": "2026-04-15",
-  "notes": "100% residential gated community. RAS-1/RAS-2 zoning only. Single-story only. LA County B&S issues all permits via EPIC-LA. RHCA architectural review is a private covenant layer. WUI Very High FHSZ citywide. Class A non-reflective roofing required by local ordinance."
+  "notes": "100% residential gated community. RAS-1/RAS-2 zoning only. Single-story only. LA County B&S issues all permits via EPIC-LA. RHCA architectural review is a private covenant layer. WUI Very High FHSZ citywide. Class A non-reflective roofing required by local ordinance.",
+  "permitSystem": null,
+  "portalUrl": "https://epicla.lacounty.gov/"
 }

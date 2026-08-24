@@ -44,5 +44,7 @@
     "water-heater",
     "wildfire-wui",
     "window-replacement"
-  ]
+  ],
+  "permitSystem": "eTRAKiT (ASP GovTech)",
+  "portalUrl": "https://elcr-trk.aspgov.com/eTRAKiT/"
 }

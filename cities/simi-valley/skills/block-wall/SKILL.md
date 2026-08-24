@@ -1,5 +1,5 @@
 ---
-description: "Block Wall permits in Simi Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Simi Valley local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Simi Valley."
+description: "Block Wall permits in Simi Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Simi Valley local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Simi Valley."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | City Self-Service Portal |
+| Permit portal | https://selfservice.simivalley.org/ |
 | Fire agency | Ventura County Fire Department (VCFD) |
 | Code edition | Ord. 13-66 · November 17, 2025 (2025 Building Standards Codes, effective January 1, 2026) |
 | Code prefix | SVMC |

@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Susanville, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Susanville local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Susanville."
+description: "Patio Cover permits in Susanville, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Susanville local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Susanville."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Susanville Fire Department · 1505 Main St, Susanville, CA 96130 · 530-257-5152 · fire@cityofsusanville.org · Fire plan review coordinated through Building Division |
 | Code edition | Susanville Municipal Code · eCode360 (https://ecode360.com/SU5021) · Title 15 (Buildings and Construction) · 2022 CBSC adopted via Ord. 22-1038 with local amendments |
 | Code prefix | SMC |

@@ -40,5 +40,7 @@
     "multi-unit-residential",
     "restaurant-ti",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": "iWorQ",
+  "portalUrl": "https://pacificgrove.portal.iworq.net/"
 }

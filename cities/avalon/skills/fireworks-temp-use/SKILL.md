@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Avalon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Avalon local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Avalon."
+description: "Fireworks Temp Use permits in Avalon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Avalon local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Avalon."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Planning & Building Department (in-person) |
+| Permit portal | https://www.cityofavalon.com/ |
 | Municipal code | https://ecode360.com/AV4054 |
 | Fire agency | Avalon Fire Department (city-operated — NOT LACoFD) |
 | Code edition | Avalon Municipal Code Title 8 (Building) | Title 9 (Planning/Zoning/ADU) | ecode360 AV4054 |

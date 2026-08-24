@@ -18,6 +18,16 @@
   "climateZone": "15",
   "wui": false,
   "coastal": false,
-  "permitTypes": ["single-family-residential", "adu", "residential-addition", "multi-unit-residential", "restaurant-ti", "solar", "reroof"],
-  "onboardedAt": "2026-04-16"
+  "permitTypes": [
+    "single-family-residential",
+    "adu",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "reroof"
+  ],
+  "onboardedAt": "2026-04-16",
+  "permitSystem": null,
+  "portalUrl": null
 }

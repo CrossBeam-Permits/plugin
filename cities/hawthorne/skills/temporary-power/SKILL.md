@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Hawthorne, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hawthorne local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Hawthorne."
+description: "Temporary Power permits in Hawthorne, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hawthorne local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Hawthorne."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Los Angeles County Fire Department (contracted) · Station 161 (Bn 18 HQ) & Station 162 · Fire Prevention: (310) 349-2990 (via Building & Safety) |
 | Code edition | City of Hawthorne Municipal Code · ecode360 · Title 15 (Buildings & Construction) · Title 17 (Zoning) |
 | Code prefix | HMC |

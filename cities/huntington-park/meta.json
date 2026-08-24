@@ -10,5 +10,7 @@
     "Is there a wildfire hazard zone in Huntington Park?",
     "What are the hours for Huntington Park Building & Safety?",
     "What permit types can be reviewed over the counter in Huntington Park?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

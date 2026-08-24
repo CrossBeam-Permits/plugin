@@ -11,5 +11,7 @@
     "Does my project in the coastal zone need a CDP?",
     "What are the setback rules for a new detached ADU?",
     "Does Five Cities Fire Authority review my building permit plans?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

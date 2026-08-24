@@ -29,5 +29,7 @@
     "restaurant-ti",
     "wildfire-wui"
   ],
-  "onboardedAt": "2026-04-22"
+  "onboardedAt": "2026-04-22",
+  "permitSystem": null,
+  "portalUrl": null
 }

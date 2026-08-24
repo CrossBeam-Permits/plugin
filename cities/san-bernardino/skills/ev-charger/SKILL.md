@@ -1,5 +1,5 @@
 ---
-description: "Ev Charger permits in San Bernardino, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Bernardino local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in San Bernardino."
+description: "Ev Charger permits in San Bernardino, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Bernardino local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in San Bernardino."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://aca.accela.com/SBCITY/ |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | San Bernardino County Fire District Division 6 |
 | Code edition | San Bernardino Development Code · Title 19 (amlegal) |
 | Code prefix | SBMC |

@@ -10,5 +10,7 @@
     "Does Chico use PG&E for solar interconnection?",
     "What zoning district rules apply to my project in Chico?",
     "Does WUI / Chapter 7A apply to my parcel in Chico?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

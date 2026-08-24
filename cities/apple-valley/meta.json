@@ -10,5 +10,7 @@
     "What portal does Apple Valley use for permit applications?",
     "What are the zoning districts in Apple Valley?",
     "Is there a wildfire hazard zone in Apple Valley?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

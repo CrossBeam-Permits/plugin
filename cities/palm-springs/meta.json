@@ -10,5 +10,7 @@
     "What are the wall and fence height limits?",
     "How do I submit solar or EV charger permits?",
     "Does my property fall within the Fire Hazard Severity Zone (foothills)?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -10,5 +10,7 @@
     "How do I submit plans through the Accela portal?",
     "Can I use the pre-approved ADU master plans?",
     "What are the solar permitting options in Perris?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

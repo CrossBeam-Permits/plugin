@@ -10,5 +10,7 @@
     "How do I submit a permit in Hillsborough — is eTRAKiT the right portal?",
     "What is Hillsborough's energy reach code status after the 9th Circuit ruling?",
     "Does CCFD need to sign off on my ADU or addition plan check in Hillsborough?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

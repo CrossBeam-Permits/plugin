@@ -8,7 +8,11 @@
   "coastal": true,
   "lcpCertified": true,
   "wuiCoverage": "partial",
-  "fhszZones": ["moderate", "high", "very-high"],
+  "fhszZones": [
+    "moderate",
+    "high",
+    "very-high"
+  ],
   "muniCodePlatform": "general-code",
   "muniCodeUrl": "https://monterey.municipal.codes",
   "permitPortal": "https://mymontereyportal.org",
@@ -18,7 +22,11 @@
   "buildingDeptPhone": null,
   "codeAdoptionOrdinance": "Ord. 3712",
   "codeAdoptionYear": 2025,
-  "historicOverlays": ["H-1", "H-2", "H-D"],
+  "historicOverlays": [
+    "H-1",
+    "H-2",
+    "H-D"
+  ],
   "airportInfluenceArea": true,
   "airportName": "Monterey Regional Airport (MRAD)",
   "sprinklerMandate": true,
@@ -39,5 +47,7 @@
     "window-replacement"
   ],
   "onboardedAt": "2026-04-21",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": "opengov",
+  "portalUrl": "https://mymontereyportal.org/"
 }

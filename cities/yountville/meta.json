@@ -31,5 +31,7 @@
     "window-replacement",
     "ev-charger",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://yountvilleca.viewpointcloud.com/"
 }

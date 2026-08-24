@@ -15,5 +15,6 @@
     "What are the hours for over-the-counter plan check?",
     "Do I need a permit to replace windows in Watsonville?",
     "What ADU size limits apply under Chapter 14-23?"
-  ]
+  ],
+  "permitSystem": "Digital Plan Review (city-hosted)"
 }

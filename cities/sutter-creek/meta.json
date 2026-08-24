@@ -10,5 +10,7 @@
     "Is my property in a Fire Hazard Severity Zone in Sutter Creek?",
     "What are the solar permit requirements in Sutter Creek?",
     "Does Sutter Creek require a Class A roof in FHSZ areas?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

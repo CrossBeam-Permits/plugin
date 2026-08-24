@@ -10,5 +10,7 @@
     "Does Yucca Valley have an online permit portal?",
     "What are the solar permit requirements in Yucca Valley?",
     "Does my Yucca Valley project need WUI ignition-resistant construction?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

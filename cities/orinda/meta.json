@@ -4,7 +4,7 @@
   "codePrefix": "OMC",
   "fireAgency": "Moraga-Orinda Fire District (MOFD)",
   "portal": "Contra Costa County ePermits",
-  "portalUrl": "https://epermits.cccounty.us",
+  "portalUrl": "https://epermits.cccounty.us/",
   "electricUtility": "PG&E",
   "suggestedQuestions": [
     "Do I need MOFD fire plan check for my ADU or addition?",
@@ -13,5 +13,6 @@
     "Are there creek setback restrictions that affect my project?",
     "Do I need a Hillside Grading Permit for my project?",
     "How do I get a building permit — who issues them in Orinda?"
-  ]
+  ],
+  "permitSystem": "Contra Costa County ePermits"
 }

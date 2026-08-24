@@ -10,5 +10,7 @@
     "How do I submit a permit through the Fountain Valley Permit Center?",
     "What restaurant TI projects require fire sprinkler retrofit?",
     "Is my project in a Fire Hazard Severity Zone?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

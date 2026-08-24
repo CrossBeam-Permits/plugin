@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Hawthorne, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hawthorne local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Hawthorne."
+description: "Cleanout permits in Hawthorne, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hawthorne local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Hawthorne."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Los Angeles County Fire Department (contracted) · Station 161 (Bn 18 HQ) & Station 162 · Fire Prevention: (310) 349-2990 (via Building & Safety) |
 | Code edition | City of Hawthorne Municipal Code · ecode360 · Title 15 (Buildings & Construction) · Title 17 (Zoning) |
 | Code prefix | HMC |

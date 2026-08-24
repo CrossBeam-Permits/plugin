@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Brisbane, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Brisbane local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Brisbane."
+description: "Temporary Power permits in Brisbane, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Brisbane local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Brisbane."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | North County Fire Authority (NCFA) · 25 Park Place Suite B, Brisbane CA 94005 · JPA: Brisbane, Daly City, Pacifica · (650) 800-6580 · northcountyfire.gov · Commercial and multi-unit residential require NCFA fire plan check |
 | Code edition | Brisbane Municipal Code · Municode · Title 15 (Buildings & Construction) · Ord. 691 (eff. July 1, 2024) |
 | Code prefix | BMC |

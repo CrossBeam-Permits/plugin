@@ -10,5 +10,7 @@
     "Is my project subject to Coronado Fire Department plan check?",
     "What are the solar permit requirements under Ch. 70.35?",
     "Does the Orange Avenue Corridor Specific Plan affect my restaurant or sign permit?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

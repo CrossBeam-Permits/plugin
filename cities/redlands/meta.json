@@ -10,5 +10,7 @@
     "Does my solar installation qualify for expedited over-the-counter review in Redlands?",
     "What are the sign permit requirements in Redlands — does it need Planning and Building approval?",
     "What are the setback and height requirements for my R-1 zone project in Redlands?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

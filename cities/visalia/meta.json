@@ -4,7 +4,9 @@
   "county": "Tulare",
   "state": "CA",
   "population": 145000,
-  "climateZones": ["CZ13"],
+  "climateZones": [
+    "CZ13"
+  ],
   "fireAgency": "Visalia Fire Department",
   "vhfhsz": false,
   "wuiPartial": false,
@@ -19,7 +21,9 @@
     "electric": "Southern California Edison (SCE)",
     "gas": "PG&E / SoCal Gas (verify by address)"
   },
-  "specialOverlays": ["sfr-objective-design-standards"],
+  "specialOverlays": [
+    "sfr-objective-design-standards"
+  ],
   "permitTypes": [
     "adu",
     "single-family-residential",
@@ -41,5 +45,7 @@
   ],
   "onboardedAt": "2026-04-24",
   "smokeTestedAt": null,
-  "readyForPromotion": false
+  "readyForPromotion": false,
+  "permitSystem": null,
+  "portalUrl": null
 }

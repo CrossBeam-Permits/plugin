@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Los Angeles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Angeles local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Los Angeles."
+description: "Panel Upgrade permits in Los Angeles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Angeles local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Los Angeles."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | PermitLA (express) + ePlanLA (plan check) |
+| Permit portal | https://permitla.lacitydbs.org/ |
 | Municipal code | https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-107363 |
 | Fire agency | LAFD — Los Angeles Fire Department (city-owned — NOT LA County Fire) |
 | Code edition | Ord. 25-1217 · December 4, 2025 (2025 CBSC adoption, eff. Jan 1, 2026) |

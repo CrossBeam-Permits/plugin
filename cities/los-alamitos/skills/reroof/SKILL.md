@@ -1,5 +1,5 @@
 ---
-description: "Reroof permits in Los Alamitos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Alamitos local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Los Alamitos."
+description: "Reroof permits in Los Alamitos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Alamitos local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Los Alamitos."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://losalamitos.cts.city |
+| Permit system | CityTech Solutions |
+| Permit portal | https://losalamitos.cts.city/ |
 | Fire agency | OCFA |
 | Code edition | 2022 California Building Standards Code · Local Amendments per Los Alamitos Municipal Code (Ord. No. 2025-12) |
 | Code prefix | LAAMC |

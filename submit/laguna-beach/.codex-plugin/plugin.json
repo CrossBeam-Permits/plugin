@@ -1,0 +1,39 @@
+{
+  "name": "laguna-beach-submit",
+  "version": "0.2.0",
+  "description": "Prepare verified Laguna Beach permit forms and guide a user-controlled Tyler EnerGov filing through receipt capture.",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com",
+    "url": "https://crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/submit/laguna-beach",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "laguna-beach",
+    "permit-submittal",
+    "tyler-energov",
+    "forms"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Laguna Beach Permit Submit",
+    "shortDescription": "Prepare forms and guide a safe Laguna filing",
+    "longDescription": "Uses one shared skill and deterministic Python tools to prepare official Laguna Beach forms, assemble a portal-ready packet, and guide a user-controlled EnerGov filing without ever submitting without fresh approval.",
+    "developerName": "Onboard Dot AI LLC",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://crossbeam-permits.com",
+    "privacyPolicyURL": "https://crossbeam-permits.com/privacy",
+    "termsOfServiceURL": "https://crossbeam-permits.com/terms",
+    "defaultPrompt": [
+      "Use $laguna-permit-preparer to decide what I need, prepare the official forms, and guide me to a portal-ready Laguna Beach permit packet."
+    ]
+  }
+}

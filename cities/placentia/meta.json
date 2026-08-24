@@ -10,5 +10,7 @@
     "How do I submit plans to the city?",
     "Are there fee exemptions for small ADUs?",
     "Can I convert my garage to an ADU?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

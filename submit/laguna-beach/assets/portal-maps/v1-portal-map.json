@@ -1,0 +1,3229 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-22T17:40:00-07:00",
+  "source": {
+    "path": "data/cities/laguna-beach/portal/online-intake-summary.json",
+    "sha256": "55d72de74d16a05c217c9adb40f4ef737c6f4b7fec94bae1fa7c6562dbfa4e64",
+    "source_verified_at": "2026-08-10",
+    "compiled_at": "2026-08-22"
+  },
+  "routes": [
+    {
+      "menuId": 183,
+      "typeId": "3cf7acb1-2e7b-4eb7-a352-b544b460ad2e",
+      "typeName": "Residential",
+      "label": "Residential Permit",
+      "module": "PERMITS",
+      "category": "RESIDENTIAL",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/183",
+      "allowsInternetSubmission": null,
+      "eReviewsEnabled": true,
+      "feeEstimateAvailable": false,
+      "internetApplyType": "Review First",
+      "workClassId": "11fe35e6-3f2d-da3c-3423-f5acf16266df",
+      "workClassName": "Residential",
+      "templateName": "Building Permit (R) - New -*",
+      "requires": {
+        "address": true,
+        "contractorLicense": false,
+        "description": true,
+        "signature": true,
+        "squareFootage": false,
+        "valuation": false
+      },
+      "requiredAttachments": [
+        "Permit Application",
+        "Plans"
+      ],
+      "attachments": [
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Building Application",
+          "maxFiles": 1,
+          "name": "Permit Application",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Plans for Reviews",
+          "maxFiles": 1,
+          "name": "Plans",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Address Assignment Request",
+          "maxFiles": null,
+          "name": "Address Assignment Request",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project AM&M",
+          "maxFiles": null,
+          "name": "AM&M",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Asbestos Clearance Certification",
+          "maxFiles": null,
+          "name": "Asbestos Clearance Certification",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Asbestos Report",
+          "maxFiles": null,
+          "name": "Asbestos Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpg,.jpeg",
+          "description": "Building Plan Check Response",
+          "maxFiles": null,
+          "name": "Building Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Change of Registered Professional",
+          "maxFiles": null,
+          "name": "Change of Registered Professional",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Energy Calculation Addendum",
+          "maxFiles": null,
+          "name": "Energy Calculation Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Energy Calculations",
+          "maxFiles": null,
+          "name": "Energy Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "ESR Sheet",
+          "maxFiles": null,
+          "name": "ESR Sheet",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Fabrication or Shop Drawings",
+          "maxFiles": null,
+          "name": "Fabrication or Shop Drawings",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "Fire Plan Check Response",
+          "maxFiles": null,
+          "name": "Fire Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "For Reference Only",
+          "maxFiles": null,
+          "name": "For Reference Only",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Fuel Modification or Fire Study",
+          "maxFiles": null,
+          "name": "Fuel Modification or Fire Study",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Geotechnical Report Addendum",
+          "maxFiles": null,
+          "name": "Geotechnical Report Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Grading Plans",
+          "maxFiles": null,
+          "name": "Grading Plans",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Hold Harmless",
+          "maxFiles": null,
+          "name": "Hold Harmless",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Hydrology Report",
+          "maxFiles": null,
+          "name": "Hydrology Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Installation Manual",
+          "maxFiles": null,
+          "name": "Installation Manual",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Mechanical Equipment Guide - REQUIRED FOR ALL A/C PERMITS BY PLANNING",
+          "maxFiles": null,
+          "name": "Mechanical Equipment Guide",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+          "description": "Project Miscellaneous Files",
+          "maxFiles": null,
+          "name": "Miscellaneous",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".doc,.docx,.pdf,.jpg,.jpeg",
+          "description": "Plan Check Responses",
+          "maxFiles": null,
+          "name": "Plan Check Responses",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".doc,.docx,.jpeg,.jpg,.pdf",
+          "description": "Planning Plan Check Response",
+          "maxFiles": null,
+          "name": "Planning Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Plans: Digitized Paper for Reference Only (NOT REVIEWED)",
+          "maxFiles": null,
+          "name": "Plans: Reference Only Digitized Paper (NO REVIEW)",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "Public Works Plan Check Response",
+          "maxFiles": null,
+          "name": "Public Works Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revised Permit Application",
+          "maxFiles": null,
+          "name": "Revised Permit Application",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revised Structural Calculations",
+          "maxFiles": null,
+          "name": "Revised Structural Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revision Form",
+          "maxFiles": null,
+          "name": "Revision Form",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Roof Material Color Swatch (Manufacturer Product Sheet) - REQUIRED FOR REROOF PERMITS. Please circle or otherwise clearly indicate the exact color you are using for your reroof project. This helps staff verify color compliance with local guidelines.",
+          "maxFiles": null,
+          "name": "Roof Material Color Swatch",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Soils Report or Geotechnical Report ",
+          "maxFiles": null,
+          "name": "Soils Report or Geotechnical Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Specification Sheets",
+          "maxFiles": null,
+          "name": "Specification Sheets",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Structural Calculation Addendum",
+          "maxFiles": null,
+          "name": "Structural Calculation Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Structural Calculations",
+          "maxFiles": null,
+          "name": "Structural Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Survey",
+          "maxFiles": null,
+          "name": "Survey",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "Water Quality Plan Check Response",
+          "maxFiles": null,
+          "name": "Water Quality Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project WELO Calculations/Report",
+          "maxFiles": null,
+          "name": "WELO Calculations/Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "WQ (Water Quality) LID (Low Impact Development) Checklist",
+          "maxFiles": null,
+          "name": "WQ LID Checklist",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "WQMP",
+          "maxFiles": null,
+          "name": "WQMP",
+          "required": false
+        }
+      ],
+      "contactTypes": [
+        {
+          "name": "Applicant",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Architect",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Contractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Designer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Engineer",
+          "required": false,
+          "validatesLicense": false
+        }
+      ],
+      "questionCount": 113,
+      "questionGroups": [
+        {
+          "group": "Electrical",
+          "questions": [
+            {
+              "fieldName": "NUM_OutletsSwitcheseach",
+              "label": "Outlets/Switches: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_LightFixtureseach",
+              "label": "Light Fixtures: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_EleCircuitConduitOutletAssemblies",
+              "label": "Electrical Circuit/Conduit/Outlet Assemblies ",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DeviceBoxes",
+              "label": "Device Boxes",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TimeClock",
+              "label": "Time Clock",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_LowVoltageSystemeach",
+              "label": "Low Voltage System: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ACDisconnect",
+              "label": "AC Disconnect",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Range",
+              "label": "Range",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_CookingUnit",
+              "label": "Cooking Unit",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ElectricApplianceNotListed",
+              "label": "Electric Appliance Not Listed",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ResidentialSelfContainedAppliance",
+              "label": "Residential Self-Contained Appliance",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_CommercialSelfContainedApplianceUpto1hp",
+              "label": "Commercial Self-Contained Appliance (Up to 1hp)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Washer",
+              "label": "Washer",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Dryer",
+              "label": "Dryer",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_MiscConduitapparatusconductorseach",
+              "label": "Misc Conduit, apparatus, conductors: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_UndergroundServiceConduitper100",
+              "label": "Underground Service Conduit per 100'",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_MiscNotListedeach",
+              "label": "Misc Not Listed: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BuswayMultipleOutletAssembliesper100",
+              "label": "Busway /Multiple Outlet Assemblies per 100'",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AlarmsFireSprinklersMiscElectrical",
+              "label": "Alarms /Fire Sprinklers /Misc Electrical",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryPowerPolePiggyback",
+              "label": "Temporary Power Pole /Piggyback",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryConstructionSubPole",
+              "label": "Temporary Construction Sub Pole",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryConstructionLighting",
+              "label": "Temporary Construction Lighting",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryDistributionSystems",
+              "label": "Temporary Distribution Systems",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PanelUpto600amps",
+              "label": "Panel/Sub Panel: Up to 600 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Panel600to1000amps",
+              "label": "Panel/Sub Panel: 600-1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PanelOver1000amps",
+              "label": "Panel/Sub Panel: Over 1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SerMetersSBUpto600amps",
+              "label": "Services/ Meters/ Switchboards: Up to 600 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ServMetersSB600to1000amps",
+              "label": "Services/ Meters/ Switchboards: 600-1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ServMetersSBOver1000amps",
+              "label": "Services/ Meters/ Switchboards: Over 1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GenUpto1",
+              "label": "Generators/Motors: Up to 1 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Gen2to10",
+              "label": "Generators/Motors: 2-10 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Gen11to50",
+              "label": "Generators/Motors: 11-50 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Gen51to100",
+              "label": "Generators/Motors: 51-100 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GenOver100",
+              "label": "Generators/Motors: Over 100 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SignMarquees1BranchCircuit",
+              "label": "Sign /Marquees: (One branch circuit)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TheatricaltypeLightingFixtureAssemblies",
+              "label": "Theatrical-type Lighting Fixture /Assemblies",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SpecialEventEachGeneratorElectrical",
+              "label": "Special Event Each Generator: Electrical",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SpecialEventLighting",
+              "label": "Special Event Lighting",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_StreetLightPole",
+              "label": "Street Light Pole",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PedestalMeter",
+              "label": "Pedestal Meter",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PolePlatformMountedLightFixture",
+              "label": "Pole /Platform Mounted Light Fixture",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            }
+          ]
+        },
+        {
+          "group": "Mechanical",
+          "questions": [
+            {
+              "fieldName": "NUM_FAUupto100KBTU",
+              "label": "F.A.U. up to 100K BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FAUover100KBTU",
+              "label": "F.A.U. over 100K BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ACCoil",
+              "label": "AC Coil",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirConditionerorHeatPump0to5Tons",
+              "label": "Air Conditioner or Heat Pump 0 - 5 Tons",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirConditionerorHeatPumpover5Tons",
+              "label": "Air Conditioner or Heat Pump Over 5 Tons",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirHandlingUnitUpto10000CFM",
+              "label": "Air Handling Unit Up to 10,000 CFM",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirHandlingUnitOver10000CFM",
+              "label": "Air Handling Unit Over 10,000 CFM",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FloorFurnace",
+              "label": "Floor Furnace",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WallSuspendedFloormountedHeater",
+              "label": "Wall /Suspended /Floor-mounted Heater",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DuctRegisterReturnEachitem",
+              "label": "Duct /Register /Return (Each item)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VentInstallrelocatereplaceEach",
+              "label": "Vent: Install, relocate, replace (Each)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VentilationFan",
+              "label": "Ventilation Fan",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HeatUpto100000BTU",
+              "label": "Heating Systems & Ducting: Up to 100,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Heat100001to500000BTU",
+              "label": "Heating Systems & Ducting: 100,001-500,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Heat500001to1000000BTU",
+              "label": "Heating Systems & Ducting: 500,001-1,000,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Heat1000001to1750000BTU",
+              "label": "Heating System & Ducting: 1,000,001-1,750,000  BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HeatOver1750000BTU",
+              "label": "Heating Systems & Ducting: Over 1,750,000  BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ExhaustSystemResidential",
+              "label": "Exhaust System Residential",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ExhaustSystemCommercial",
+              "label": "Exhaust System Commercial",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_EvaporativeCoolernotportable",
+              "label": "Evaporative Cooler (not portable)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WholeHouseFan",
+              "label": "Whole House Fan",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FireplaceFactoryBuilt",
+              "label": "Fireplace/Factory Built ",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasFireplaceincgaslineelectrical",
+              "label": "Gas Fireplace (inc gas line & electrical)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HoodorCanopy",
+              "label": "Hood or Canopy",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VAVBoxes",
+              "label": "VAV Boxes (Each)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RefrigerationSystemUpto100000BTU",
+              "label": "Refrigeration System Up to 100,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RefrigerationSystem100000to500000BTU",
+              "label": "Refrigeration System 100,000 - 500,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BoilUpto3hpupto100KBTUs",
+              "label": "Boiler or Compressors: Up to 3 HP; up to 100K BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Boil415hp100K500KBTUs",
+              "label": "Boiler or Comp: Over 3-15 HP; over 100K-500K BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_1630hp500KMBTUs",
+              "label": "Boiler or Comp: Over 15-30 HP; over 500K- 1M BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_3150hp1M2MBTUs",
+              "label": "Boiler or Comp: Over 30-50 HP; over 1M-1.75M BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Over50HP2MBTUs",
+              "label": "Boiler or Compressors: Over 50 HP; 1.75M+ BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FireSmokeDamper",
+              "label": "Fire /Smoke Damper",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RepairAlterationofAddlapplianceeach",
+              "label": "Repair /Alteration of /Add'l appliance: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_MecMiscNotListedeach",
+              "label": "Misc Not Listed: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            }
+          ]
+        },
+        {
+          "group": "Plumbing",
+          "questions": [
+            {
+              "fieldName": "NUM_KitchenSink",
+              "label": "Kitchen Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Dishwasher",
+              "label": "Dishwasher",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GarbageDisposal",
+              "label": "Garbage Disposal",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ShowerTub",
+              "label": "Shower /Tub",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BathroomSink",
+              "label": "Bathroom Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ToiletWaterClosetUrinal",
+              "label": "Toilet /Water Closet /Urinal",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ServiceSink",
+              "label": "Service Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterPipingperFixture",
+              "label": "Water Piping per Fixture",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HoseBibb",
+              "label": "Hose Bibb",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_LawnSprinklerSystem",
+              "label": "Lawn Sprinkler System (1 Meter; inc backflow)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VentFixture",
+              "label": "Vent Fixture",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BuildingSewer",
+              "label": "Building Sewer",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SewerCap",
+              "label": "Sewer Cap",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SewerConnection",
+              "label": "Sewer Connection",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SewageDisposalSystem",
+              "label": "Sewage Disposal System",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Cesspool",
+              "label": "Cesspool",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VacuumBreakers",
+              "label": "Vacuum Breakers (inc <=5) ($4 each additional)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterSoftenerWaterTreatment",
+              "label": "Water Softener /Water Treatment",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PlumbFixtureNotListed",
+              "label": "Fixture Not Listed",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterHeater",
+              "label": "Water Heater",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterHeaterNewVent",
+              "label": "Water Heater New Vent ",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterHeaterTankless",
+              "label": "Water Heater, Tankless",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterService",
+              "label": "Water Service",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BackflowDevice2orsmaller",
+              "label": "Backflow Device (2\" or smaller)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BackflowDeviceover2",
+              "label": "Backflow Device (over 2\")",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RoofDrain",
+              "label": "Roof Drain",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DrainDrainPiping",
+              "label": "Drain /Drain Piping (each)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RainwaterSystemperDrain",
+              "label": "Rainwater System per Drain",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FloorSink",
+              "label": "Floor Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FloorDrain",
+              "label": "Floor Drain",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DrinkingFountains",
+              "label": "Drinking Fountains",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GreaseInterceptorTrap",
+              "label": "Grease Interceptor /Trap",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasPipingeachoutlet",
+              "label": "Gas Piping: each outlet",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryGasService",
+              "label": "Temporary Gas Service",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasPressureRegulatoreach",
+              "label": "Gas Pressure Regulator each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasServiceMeterRelease",
+              "label": "Gas Service /Meter Release",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PlumbMiscNotListedEach",
+              "label": "Misc Not Listed: Each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            }
+          ]
+        }
+      ],
+      "submitSuccessMessage": "Thank you for your Residential Permit application. A permit technician will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
+    },
+    {
+      "menuId": 186,
+      "typeId": "8c517347-afda-461c-a3de-d5178065dee5",
+      "typeName": "Mechanical",
+      "label": "Mechanical Permit",
+      "module": "PERMITS",
+      "category": "MECHANICAL, ELECTRICAL, AND PLUMBING",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/186",
+      "allowsInternetSubmission": null,
+      "eReviewsEnabled": true,
+      "feeEstimateAvailable": false,
+      "internetApplyType": "Review First",
+      "workClassId": "d615a8ff-5027-30e5-ecdb-70d0476d3470",
+      "workClassName": "Mechanical",
+      "templateName": "Mechanical Permit -*",
+      "requires": {
+        "address": true,
+        "contractorLicense": false,
+        "description": true,
+        "signature": true,
+        "squareFootage": false,
+        "valuation": false
+      },
+      "requiredAttachments": [
+        "Permit Application"
+      ],
+      "attachments": [
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Building Application",
+          "maxFiles": 1,
+          "name": "Permit Application",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Energy Calculation Addendum",
+          "maxFiles": null,
+          "name": "Energy Calculation Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Energy Calculations",
+          "maxFiles": null,
+          "name": "Energy Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Mechanical Equipment Guide - REQUIRED FOR ALL A/C PERMITS BY PLANNING",
+          "maxFiles": null,
+          "name": "Mechanical Equipment Guide",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+          "description": "Project Miscellaneous Files",
+          "maxFiles": null,
+          "name": "Miscellaneous",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".doc,.docx,.pdf,.jpg,.jpeg",
+          "description": "Plan Check Responses",
+          "maxFiles": null,
+          "name": "Plan Check Responses",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Plans for Reviews",
+          "maxFiles": 1,
+          "name": "Plans",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revision Form",
+          "maxFiles": null,
+          "name": "Revision Form",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Specification Sheets",
+          "maxFiles": null,
+          "name": "Specification Sheets",
+          "required": false
+        }
+      ],
+      "contactTypes": [
+        {
+          "name": "Applicant",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Agent",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Architect",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Contractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Contractor – Prior",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Designer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Engineer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Other",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner - Prior",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner/Builder",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Subcontractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Tenant",
+          "required": false,
+          "validatesLicense": false
+        }
+      ],
+      "questionCount": 36,
+      "questionGroups": [
+        {
+          "group": "Mechanical",
+          "questions": [
+            {
+              "fieldName": "NUM_FAUupto100KBTU",
+              "label": "F.A.U. up to 100K BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FAUover100KBTU",
+              "label": "F.A.U. over 100K BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ACCoil",
+              "label": "AC Coil",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirConditionerorHeatPump0to5Tons",
+              "label": "Air Conditioner or Heat Pump 0 - 5 Tons",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirConditionerorHeatPumpover5Tons",
+              "label": "Air Conditioner or Heat Pump Over 5 Tons",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirHandlingUnitUpto10000CFM",
+              "label": "Air Handling Unit Up to 10,000 CFM",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AirHandlingUnitOver10000CFM",
+              "label": "Air Handling Unit Over 10,000 CFM",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FloorFurnace",
+              "label": "Floor Furnace",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WallSuspendedFloormountedHeater",
+              "label": "Wall /Suspended /Floor-mounted Heater",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DuctRegisterReturnEachitem",
+              "label": "Duct /Register /Return (Each item)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VentInstallrelocatereplaceEach",
+              "label": "Vent: Install, relocate, replace (Each)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VentilationFan",
+              "label": "Ventilation Fan",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HeatUpto100000BTU",
+              "label": "Heating Systems & Ducting: Up to 100,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Heat100001to500000BTU",
+              "label": "Heating Systems & Ducting: 100,001-500,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Heat500001to1000000BTU",
+              "label": "Heating Systems & Ducting: 500,001-1,000,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Heat1000001to1750000BTU",
+              "label": "Heating System & Ducting: 1,000,001-1,750,000  BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HeatOver1750000BTU",
+              "label": "Heating Systems & Ducting: Over 1,750,000  BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ExhaustSystemResidential",
+              "label": "Exhaust System Residential",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ExhaustSystemCommercial",
+              "label": "Exhaust System Commercial",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_EvaporativeCoolernotportable",
+              "label": "Evaporative Cooler (not portable)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WholeHouseFan",
+              "label": "Whole House Fan",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FireplaceFactoryBuilt",
+              "label": "Fireplace/Factory Built ",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasFireplaceincgaslineelectrical",
+              "label": "Gas Fireplace (inc gas line & electrical)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HoodorCanopy",
+              "label": "Hood or Canopy",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VAVBoxes",
+              "label": "VAV Boxes (Each)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RefrigerationSystemUpto100000BTU",
+              "label": "Refrigeration System Up to 100,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RefrigerationSystem100000to500000BTU",
+              "label": "Refrigeration System 100,000 - 500,000 BTU",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BoilUpto3hpupto100KBTUs",
+              "label": "Boiler or Compressors: Up to 3 HP; up to 100K BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Boil415hp100K500KBTUs",
+              "label": "Boiler or Comp: Over 3-15 HP; over 100K-500K BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_1630hp500KMBTUs",
+              "label": "Boiler or Comp: Over 15-30 HP; over 500K-1M BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_3150hp1M2MBTUs",
+              "label": "Boiler or Comp: Over 30-50 HP; over 1M-1.75M BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Over50HP2MBTUs",
+              "label": "Boiler or Compressors: Over 50 HP; 1.75M+ BTUs",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FireSmokeDamper",
+              "label": "Fire /Smoke Damper",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RepairAlterationofAddlapplianceeach",
+              "label": "Repair /Alteration of /Add'l appliance: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_MECH_ACDisconnect",
+              "label": "AC Disconnect",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_MecMiscNotListedeach",
+              "label": "Misc Not Listed: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            }
+          ]
+        }
+      ],
+      "submitSuccessMessage": "Thank you for your Mechanical Permit application. A permit technician will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
+    },
+    {
+      "menuId": 187,
+      "typeId": "cdfac61f-3e7a-4575-a54e-db7cea8ecf44",
+      "typeName": "Electrical",
+      "label": "Electrical Permit",
+      "module": "PERMITS",
+      "category": "MECHANICAL, ELECTRICAL, AND PLUMBING",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/187",
+      "allowsInternetSubmission": null,
+      "eReviewsEnabled": true,
+      "feeEstimateAvailable": false,
+      "internetApplyType": "Review First",
+      "workClassId": "d66cd620-2589-14d5-3252-971da5a5ce91",
+      "workClassName": "Electrical",
+      "templateName": "Electrical Permit -*",
+      "requires": {
+        "address": true,
+        "contractorLicense": false,
+        "description": true,
+        "signature": true,
+        "squareFootage": false,
+        "valuation": false
+      },
+      "requiredAttachments": [
+        "Permit Application"
+      ],
+      "attachments": [
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Building Application",
+          "maxFiles": 1,
+          "name": "Permit Application",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Energy Calculation Addendum",
+          "maxFiles": null,
+          "name": "Energy Calculation Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Energy Calculations",
+          "maxFiles": null,
+          "name": "Energy Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Mechanical Equipment Guide - REQUIRED FOR ALL A/C PERMITS BY PLANNING",
+          "maxFiles": null,
+          "name": "Mechanical Equipment Guide",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+          "description": "Project Miscellaneous Files",
+          "maxFiles": null,
+          "name": "Miscellaneous",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".doc,.docx,.pdf,.jpg,.jpeg",
+          "description": "Plan Check Responses",
+          "maxFiles": null,
+          "name": "Plan Check Responses",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Plans for Reviews",
+          "maxFiles": 1,
+          "name": "Plans",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revision Form",
+          "maxFiles": null,
+          "name": "Revision Form",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Specification Sheets",
+          "maxFiles": null,
+          "name": "Specification Sheets",
+          "required": false
+        }
+      ],
+      "contactTypes": [
+        {
+          "name": "Applicant",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Agent",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Architect",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Contractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Contractor – Prior",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Designer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Engineer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Other",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner - Prior",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner/Builder",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Subcontractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Tenant",
+          "required": false,
+          "validatesLicense": false
+        }
+      ],
+      "questionCount": 41,
+      "questionGroups": [
+        {
+          "group": "Electrical",
+          "questions": [
+            {
+              "fieldName": "NUM_OutletsSwitcheseach",
+              "label": "Outlets/Switches: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_LightFixtureseach",
+              "label": "Light Fixtures: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_EleCircuitConduitOutletAssemblies",
+              "label": "Electrical Circuit/Conduit/Outlet Assemblies ",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DeviceBoxes",
+              "label": "Device Boxes",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TimeClock",
+              "label": "Time Clock",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_LowVoltageSystemeach",
+              "label": "Low Voltage System: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ACDisconnect",
+              "label": "AC Disconnect",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Range",
+              "label": "Range",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_CookingUnit",
+              "label": "Cooking Unit",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ElectricApplianceNotListed",
+              "label": "Electric Appliance Not Listed",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ResidentialSelfContainedAppliance",
+              "label": "Residential Self-Contained Appliance",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_CommercialSelfContainedApplianceUpto1hp",
+              "label": "Commercial Self-Contained Appliance (Up to 1hp)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Washer",
+              "label": "Washer",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Dryer",
+              "label": "Dryer",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_MiscConduitapparatusconductorseach",
+              "label": "Misc Conduit, apparatus, conductors: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_UndergroundServiceConduitper100",
+              "label": "Underground Service Conduit per 100'",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BuswayMultipleOutletAssembliesper100",
+              "label": "Busway /Multiple Outlet Assemblies per 100'",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_AlarmsFireSprinklersMiscElectrical",
+              "label": "Alarms /Fire Sprinklers /Misc Electrical",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryPowerPolePiggyback",
+              "label": "Temporary Power Pole /Piggyback",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryConstructionSubPole",
+              "label": "Temporary Construction Sub Pole",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryConstructionLighting",
+              "label": "Temporary Construction Lighting",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryDistributionSystems",
+              "label": "Temporary Distribution Systems",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PanelUpto600amps",
+              "label": "Panel/Sub Panel: Up to 200 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Panel600to1000amps",
+              "label": "Panel/Sub Panel: Over 200 - 1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PanelOver1000amps",
+              "label": "Panel/Sub Panel: Over 1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SerMetersSBUpto600amps",
+              "label": "Services/ Meters/ Switchboards: Up to 600 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ServMetersSB600to1000amps",
+              "label": "Services/ Meters/ Switchboards: 600-1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ServMetersSBOver1000amps",
+              "label": "Services/ Meters/ Switchboards: Over 1,000 amps",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GenUpto1",
+              "label": "Generators/Motors: Up to 1 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Gen2to10",
+              "label": "Generators/Motors: 2-10 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Gen11to50",
+              "label": "Generators/Motors: 11-50 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Gen51to100",
+              "label": "Generators/Motors: 51-100 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GenOver100",
+              "label": "Generators/Motors: Over 100 (per HP/kW/kVAR/CVA)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SignMarquees1BranchCircuit",
+              "label": "Sign /Marquees: (One branch circuit)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TheatricaltypeLightingFixtureAssemblies",
+              "label": "Theatrical-type Lighting Fixture /Assemblies",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SpecialEventEachGeneratorElectrical",
+              "label": "Special Event Each Generator: Electrical",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SpecialEventLighting",
+              "label": "Special Event Lighting",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_StreetLightPole",
+              "label": "Street Light Pole",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PedestalMeter",
+              "label": "Pedestal Meter",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PolePlatformMountedLightFixture",
+              "label": "Pole /Platform Mounted Light Fixture",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_MiscNotListedeach",
+              "label": "Misc Not Listed: each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            }
+          ]
+        }
+      ],
+      "submitSuccessMessage": "Thank you for your Electrical Permit application. A permit technician will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
+    },
+    {
+      "menuId": 188,
+      "typeId": "178bb0e0-4fe1-42ca-a23b-bc15dcb5c61e",
+      "typeName": "Plumbing",
+      "label": "Plumbing Permit",
+      "module": "PERMITS",
+      "category": "MECHANICAL, ELECTRICAL, AND PLUMBING",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/188",
+      "allowsInternetSubmission": null,
+      "eReviewsEnabled": true,
+      "feeEstimateAvailable": false,
+      "internetApplyType": "Review First",
+      "workClassId": "fd8cb24e-1eeb-8478-85ae-61ab99bb1db5",
+      "workClassName": "Plumbing",
+      "templateName": "Plumbing Permit -*",
+      "requires": {
+        "address": true,
+        "contractorLicense": false,
+        "description": true,
+        "signature": true,
+        "squareFootage": false,
+        "valuation": false
+      },
+      "requiredAttachments": [
+        "Permit Application"
+      ],
+      "attachments": [
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Building Application",
+          "maxFiles": 1,
+          "name": "Permit Application",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Energy Calculation Addendum",
+          "maxFiles": null,
+          "name": "Energy Calculation Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Energy Calculations",
+          "maxFiles": null,
+          "name": "Energy Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Mechanical Equipment Guide - REQUIRED FOR ALL A/C PERMITS BY PLANNING",
+          "maxFiles": null,
+          "name": "Mechanical Equipment Guide",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+          "description": "Project Miscellaneous Files",
+          "maxFiles": null,
+          "name": "Miscellaneous",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".doc,.docx,.pdf,.jpg,.jpeg",
+          "description": "Plan Check Responses",
+          "maxFiles": null,
+          "name": "Plan Check Responses",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Plans for Reviews",
+          "maxFiles": 1,
+          "name": "Plans",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revision Form",
+          "maxFiles": null,
+          "name": "Revision Form",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Specification Sheets",
+          "maxFiles": null,
+          "name": "Specification Sheets",
+          "required": false
+        }
+      ],
+      "contactTypes": [
+        {
+          "name": "Applicant",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Agent",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Architect",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Contractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Contractor – Prior",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Designer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Engineer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Other",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner - Prior",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner/Builder",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Subcontractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Tenant",
+          "required": false,
+          "validatesLicense": false
+        }
+      ],
+      "questionCount": 38,
+      "questionGroups": [
+        {
+          "group": "Plumbing",
+          "questions": [
+            {
+              "fieldName": "NUM_KitchenSink",
+              "label": "Kitchen Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Dishwasher",
+              "label": "Dishwasher",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GarbageDisposal",
+              "label": "Garbage Disposal",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ShowerTub",
+              "label": "Shower /Tub",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BathroomSink",
+              "label": "Bathroom Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ToiletWaterClosetUrinal",
+              "label": "Toilet /Water Closet /Urinal",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ServiceSink",
+              "label": "Service Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterPipingperFixture",
+              "label": "Water Piping per Fixture",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_HoseBibb",
+              "label": "Hose Bibb",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_LawnSprinklerSystem",
+              "label": "Lawn Sprinkler System (1 Meter; inc backflow)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VentFixture",
+              "label": "Vent Fixture",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BuildingSewer",
+              "label": "Building Sewer",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SewerCap",
+              "label": "Sewer Cap",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SewerConnection",
+              "label": "Sewer Connection",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_SewageDisposalSystem",
+              "label": "Sewage Disposal System",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_Cesspool",
+              "label": "Cesspool",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_VacuumBreakers",
+              "label": "Vacuum Breakers (inc <=5) ($4 each additional)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterSoftenerWaterTreatment",
+              "label": "Water Softener /Water Treatment",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PlumbFixtureNotListed",
+              "label": "Fixture Not Listed",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterHeater",
+              "label": "Water Heater",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterHeaterNewVent",
+              "label": "Water Heater New Vent ",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterHeaterTankless",
+              "label": "Water Heater, Tankless",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_WaterService",
+              "label": "Water Service",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BackflowDevice2orsmaller",
+              "label": "Backflow Device (2\" or smaller)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_BackflowDeviceover2",
+              "label": "Backflow Device (over 2\")",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RoofDrain",
+              "label": "Roof Drain",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DrainDrainPiping",
+              "label": "Drain /Drain Piping (each)",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_RainwaterSystemperDrain",
+              "label": "Rainwater System per Drain",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FloorSink",
+              "label": "Floor Sink",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_FloorDrain",
+              "label": "Floor Drain",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_DrinkingFountains",
+              "label": "Drinking Fountains",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GreaseInterceptorTrap",
+              "label": "Grease Interceptor /Trap",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasPipingeachoutlet",
+              "label": "Gas Piping: each outlet",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_TemporaryGasService",
+              "label": "Temporary Gas Service",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasPressureRegulatoreach",
+              "label": "Gas Pressure Regulator each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_GasServiceMeterRelease",
+              "label": "Gas Service /Meter Release",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_ClothesWasher",
+              "label": "Clothes Washer",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            },
+            {
+              "fieldName": "NUM_PlumbMiscNotListedEach",
+              "label": "Misc Not Listed: Each",
+              "pickList": null,
+              "readOnly": false,
+              "required": false,
+              "tip": null
+            }
+          ]
+        }
+      ],
+      "submitSuccessMessage": "Thank you for your Plumbing Permit application. A permit technician will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
+    },
+    {
+      "menuId": 214,
+      "typeId": "523d8238-e3fc-434e-acf3-f6ba5e80477f",
+      "typeName": "Grading",
+      "label": "Grading Permit",
+      "module": "PERMITS",
+      "category": "GRADING",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/214",
+      "allowsInternetSubmission": null,
+      "eReviewsEnabled": true,
+      "feeEstimateAvailable": true,
+      "internetApplyType": "Review First",
+      "workClassId": "37d01afa-9917-e7c1-9e23-31b468a478bb",
+      "workClassName": "Grading",
+      "templateName": "Grading Permit -*",
+      "requires": {
+        "address": true,
+        "contractorLicense": false,
+        "description": true,
+        "signature": true,
+        "squareFootage": false,
+        "valuation": false
+      },
+      "requiredAttachments": [
+        "Permit Application",
+        "Plans"
+      ],
+      "attachments": [
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Building Application",
+          "maxFiles": 1,
+          "name": "Permit Application",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Plans for Reviews",
+          "maxFiles": 1,
+          "name": "Plans",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Address Assignment Request",
+          "maxFiles": null,
+          "name": "Address Assignment Request",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project AM&M",
+          "maxFiles": null,
+          "name": "AM&M",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Asbestos Clearance Certification",
+          "maxFiles": null,
+          "name": "Asbestos Clearance Certification",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Asbestos Report",
+          "maxFiles": null,
+          "name": "Asbestos Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpg,.jpeg",
+          "description": "Building Plan Check Response",
+          "maxFiles": null,
+          "name": "Building Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Change of Registered Professional",
+          "maxFiles": null,
+          "name": "Change of Registered Professional",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Energy Calculation Addendum",
+          "maxFiles": null,
+          "name": "Energy Calculation Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Energy Calculations",
+          "maxFiles": null,
+          "name": "Energy Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "ESR Sheet",
+          "maxFiles": null,
+          "name": "ESR Sheet",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Fabrication or Shop Drawings",
+          "maxFiles": null,
+          "name": "Fabrication or Shop Drawings",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "Fire Plan Check Response",
+          "maxFiles": null,
+          "name": "Fire Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "For Reference Only",
+          "maxFiles": null,
+          "name": "For Reference Only",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Fuel Modification or Fire Study",
+          "maxFiles": null,
+          "name": "Fuel Modification or Fire Study",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Geotechnical Report Addendum",
+          "maxFiles": null,
+          "name": "Geotechnical Report Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Grading Plans",
+          "maxFiles": null,
+          "name": "Grading Plans",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Hold Harmless",
+          "maxFiles": null,
+          "name": "Hold Harmless",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Hydrology Report",
+          "maxFiles": null,
+          "name": "Hydrology Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Installation Manual",
+          "maxFiles": null,
+          "name": "Installation Manual",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Mechanical Equipment Guide - REQUIRED FOR ALL A/C PERMITS BY PLANNING",
+          "maxFiles": null,
+          "name": "Mechanical Equipment Guide",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+          "description": "Project Miscellaneous Files",
+          "maxFiles": null,
+          "name": "Miscellaneous",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".doc,.docx,.pdf,.jpg,.jpeg",
+          "description": "Plan Check Responses",
+          "maxFiles": null,
+          "name": "Plan Check Responses",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".doc,.docx,.jpeg,.jpg,.pdf",
+          "description": "Planning Plan Check Response",
+          "maxFiles": null,
+          "name": "Planning Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Plans: Digitized Paper for Reference Only (NOT REVIEWED)",
+          "maxFiles": null,
+          "name": "Plans: Reference Only Digitized Paper (NO REVIEW)",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "Public Works Plan Check Response",
+          "maxFiles": null,
+          "name": "Public Works Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revised Permit Application",
+          "maxFiles": null,
+          "name": "Revised Permit Application",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revised Structural Calculations",
+          "maxFiles": null,
+          "name": "Revised Structural Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Revision Form",
+          "maxFiles": null,
+          "name": "Revision Form",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Roof Material Color Swatch (Manufacturer Product Sheet) - REQUIRED FOR REROOF PERMITS. Please circle or otherwise clearly indicate the exact color you are using for your reroof project. This helps staff verify color compliance with local guidelines.",
+          "maxFiles": null,
+          "name": "Roof Material Color Swatch",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Soils Report or Geotechnical Report ",
+          "maxFiles": null,
+          "name": "Soils Report or Geotechnical Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Specification Sheets",
+          "maxFiles": null,
+          "name": "Specification Sheets",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Structural Calculation Addendum",
+          "maxFiles": null,
+          "name": "Structural Calculation Addendum",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Structural Calculations",
+          "maxFiles": null,
+          "name": "Structural Calculations",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Survey",
+          "maxFiles": null,
+          "name": "Survey",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "Water Quality Plan Check Response",
+          "maxFiles": null,
+          "name": "Water Quality Plan Check Response",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project WELO Calculations/Report",
+          "maxFiles": null,
+          "name": "WELO Calculations/Report",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "WQ (Water Quality) LID (Low Impact Development) Checklist",
+          "maxFiles": null,
+          "name": "WQ LID Checklist",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf,.doc,.docx,.jpeg,.jpg",
+          "description": "WQMP",
+          "maxFiles": null,
+          "name": "WQMP",
+          "required": false
+        }
+      ],
+      "contactTypes": [
+        {
+          "name": "Applicant",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Architect",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Contractor",
+          "required": false,
+          "validatesLicense": true
+        },
+        {
+          "name": "Designer",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Engineer",
+          "required": false,
+          "validatesLicense": false
+        }
+      ],
+      "questionCount": 0,
+      "questionGroups": [],
+      "submitSuccessMessage": "Thank you for your Grading Permit application. A permit technician will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
+    },
+    {
+      "menuId": 114,
+      "typeId": "d1c3da85-1287-4578-9312-bdc56e2ae963",
+      "typeName": "Zoning Plan Check - Residential",
+      "label": "Residential Planning Entitlements ",
+      "module": "PLANS",
+      "category": "PLANNING ENTITLEMENTS",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114",
+      "allowsInternetSubmission": true,
+      "eReviewsEnabled": true,
+      "feeEstimateAvailable": false,
+      "internetApplyType": "Review First",
+      "workClassId": "6c1ac741-1447-403d-a218-ac5715c6d9a9",
+      "workClassName": "Zoning Plan Check",
+      "templateName": "Zoning Plan Check - Residential/Commercial -* ",
+      "requires": {
+        "address": true,
+        "contractorLicense": false,
+        "description": true,
+        "signature": true,
+        "squareFootage": true,
+        "valuation": false
+      },
+      "requiredAttachments": [
+        "Application",
+        "Plans"
+      ],
+      "attachments": [
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "",
+          "maxFiles": 1,
+          "name": "Application",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Plans for Reviews",
+          "maxFiles": 1,
+          "name": "Plans",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+          "description": "Project Miscellaneous Files",
+          "maxFiles": null,
+          "name": "Miscellaneous",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Reports Files",
+          "maxFiles": null,
+          "name": "Reports",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "",
+          "maxFiles": null,
+          "name": "Technical Studies",
+          "required": false
+        }
+      ],
+      "contactTypes": [
+        {
+          "name": "Applicant",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Architect",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Contractor",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Engineer",
+          "required": false,
+          "validatesLicense": false
+        }
+      ],
+      "questionCount": 0,
+      "questionGroups": [],
+      "submitSuccessMessage": "Thank you for your submittal. A planner will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
+    },
+    {
+      "menuId": 182,
+      "typeId": "d1c3da85-1287-4578-9312-bdc56e2ae963",
+      "typeName": "Zoning Plan Check - Residential",
+      "label": "Accessory Dwelling Units (ADUs) and Junior Accessory Dwelling Units (JADUs)",
+      "module": "PLANS",
+      "category": "PLANNING ENTITLEMENTS",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/182",
+      "allowsInternetSubmission": true,
+      "eReviewsEnabled": true,
+      "feeEstimateAvailable": false,
+      "internetApplyType": "Review First",
+      "workClassId": "6622f8b0-73d6-ab83-7140-dc8b300e7ad0",
+      "workClassName": "Accessory Dwelling Units (ADU)",
+      "templateName": "Zoning Plan Check - Residential/Commercial -* ",
+      "requires": {
+        "address": true,
+        "contractorLicense": false,
+        "description": true,
+        "signature": true,
+        "squareFootage": true,
+        "valuation": false
+      },
+      "requiredAttachments": [
+        "ADU or JADU Application",
+        "Plans"
+      ],
+      "attachments": [
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "ADU or JADU Application",
+          "maxFiles": 1,
+          "name": "ADU or JADU Application",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Project Plans for Reviews",
+          "maxFiles": 1,
+          "name": "Plans",
+          "required": true
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Landscape Plan Check Files",
+          "maxFiles": null,
+          "name": "Landscape Plans",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Planning Division Plan Check Files",
+          "maxFiles": null,
+          "name": "Planning",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Public Works Plan Check Files",
+          "maxFiles": null,
+          "name": "Public Works Plans",
+          "required": false
+        },
+        {
+          "allowedFileTypes": ".pdf",
+          "description": "Water Quality Plan Check Files",
+          "maxFiles": null,
+          "name": "Water Quality Plans",
+          "required": false
+        }
+      ],
+      "contactTypes": [
+        {
+          "name": "Applicant",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Owner",
+          "required": true,
+          "validatesLicense": false
+        },
+        {
+          "name": "Architect",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Contractor",
+          "required": false,
+          "validatesLicense": false
+        },
+        {
+          "name": "Engineer",
+          "required": false,
+          "validatesLicense": false
+        }
+      ],
+      "questionCount": 0,
+      "questionGroups": [],
+      "submitSuccessMessage": "Thank you for your ADU/JADU submittal. A planner will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
+    }
+  ]
+}

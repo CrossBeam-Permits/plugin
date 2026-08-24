@@ -4,7 +4,9 @@
   "county": "Merced",
   "state": "CA",
   "population": 90000,
-  "climateZones": ["CZ12"],
+  "climateZones": [
+    "CZ12"
+  ],
   "fireAgency": "City of Merced Fire Department",
   "fhsz": "partial",
   "fhszNotes": "Moderate FHSZ in northeast section of city limits (LRA designation per Gov. Code §51178.5). Majority of urban core is NOT in FHSZ.",
@@ -25,7 +27,11 @@
     "sewer": "City of Merced Public Works"
   },
   "aduPreApprovedPlans": true,
-  "aduPreApprovedPlanSizes": [498, 749, 1190],
+  "aduPreApprovedPlanSizes": [
+    498,
+    749,
+    1190
+  ],
   "sjvapcd": true,
   "permitTypes": [
     "adu",
@@ -58,5 +64,7 @@
   ],
   "onboardedAt": "2026-04-24",
   "smokeTestedAt": "2026-04-24",
-  "readyForPromotion": false
+  "readyForPromotion": false,
+  "permitSystem": "Civic Access",
+  "portalUrl": "https://www.cityofmerced.gov/business-and-development/permits-entitlements-and-licensing-portal"
 }

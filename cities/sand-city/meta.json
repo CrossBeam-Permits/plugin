@@ -12,5 +12,7 @@
     "Can I build an ADU in Sand City's coastal zone?",
     "Does my ADU project need an owner-occupant deed restriction in Sand City?",
     "What is the coastal access in-lieu fee in Sand City?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

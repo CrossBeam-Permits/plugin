@@ -11,5 +11,7 @@
     "What zoning districts allow multi-family housing in Hercules?",
     "Does Hercules require all-electric construction for new buildings?",
     "What is the two-step permit process in Hercules?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Hvac permits in Healdsburg, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Healdsburg local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Healdsburg."
+description: "Hvac permits in Healdsburg, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Healdsburg local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Healdsburg."
 version: "1.0"
 source: "2025 California Mechanical Code (Title 24, Part 4); 2025 California Plumbing Code (Title 24, Part 5); 2025 California Electrical Code (Title 24, Part 3); 2025 California Residential Code (Title 24, Part 2.5); 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO / NEC with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Healdsburg Fire Prevention Bureau · 601 Healdsburg Avenue, Healdsburg, CA 95448 · Fire Inspector: (707) 431-3357 · Fire Marshal / Division Chief Lance Macdonald: (707) 431-3125 · All fire plan review and inspection for City of Healdsburg projects — NOT Permit Sonoma |
 | Code edition | Healdsburg Municipal Code (HMC) · eCode360 · Title 15 (Building) · Title 20 (Land Use) · Ord. 1250/1252 (2025 Building/Fire Code) · Updated January 2026 |
 | Code prefix | HMC |

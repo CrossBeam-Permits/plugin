@@ -17,5 +17,6 @@
     "Is my project in Patterson's high-density residential zone?",
     "What utility serves Patterson for electrical permits?",
     "Are WUI construction requirements required for my property?"
-  ]
+  ],
+  "permitSystem": "counter"
 }

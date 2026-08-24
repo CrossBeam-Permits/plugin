@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Los Alamitos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Alamitos local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Los Alamitos."
+description: "Temporary Power permits in Los Alamitos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Alamitos local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Los Alamitos."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://losalamitos.cts.city |
+| Permit system | CityTech Solutions |
+| Permit portal | https://losalamitos.cts.city/ |
 | Fire agency | OCFA |
 | Code edition | 2022 California Building Standards Code · Local Amendments per Los Alamitos Municipal Code (Ord. No. 2025-12) |
 | Code prefix | LAAMC |

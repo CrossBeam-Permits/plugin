@@ -1,5 +1,5 @@
 ---
-description: "Block Wall permits in Hayward, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hayward local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Hayward."
+description: "Block Wall permits in Hayward, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hayward local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Hayward."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | EnerGov (Tyler Technologies) |
+| Permit portal | https://www.hayward-ca.gov/epermits |
 | Municipal code | https://library.municode.com/ca/hayward/codes/municipal_code |
 | Fire agency | Hayward Fire Department (HFD) |
 | Code edition | Reach Code Ord. Nov 15, 2022 (updated June 17, 2025) | EV Ord. 17-11 (July 2017) | 2025 CBC cycle (eff. Jan 1, 2026) |

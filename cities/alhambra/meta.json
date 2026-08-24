@@ -17,5 +17,6 @@
     "What are the sign permit requirements in Alhambra?",
     "Does Alhambra have expedited solar permitting?",
     "How do I apply for an EV charger permit in Alhambra?"
-  ]
+  ],
+  "permitSystem": "EnerGov/Tyler Self-Service"
 }

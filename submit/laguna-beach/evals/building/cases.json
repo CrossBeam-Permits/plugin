@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "cases": [
+    {
+      "id": "1639-eleanor-multi-record",
+      "address": "1639 Eleanor Lane, Laguna Beach, CA",
+      "records": [
+        {"id": "sfr", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.sfr"},
+        {"id": "demolition", "channel": "counter", "portal_type_id": null, "valuation_fact_id": "project.valuation.demolition"},
+        {"id": "grading", "channel": "online", "portal_type_id": 214, "valuation_fact_id": "project.valuation.grading"},
+        {"id": "adu", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.adu"}
+      ],
+      "separate_applications": true,
+      "separate_valuations": true
+    },
+    {
+      "id": "310-lookout-multi-record",
+      "address": "310 Lookout Drive, Laguna Beach, CA",
+      "records": [
+        {"id": "addition", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.addition"},
+        {"id": "grading", "channel": "online", "portal_type_id": 214, "valuation_fact_id": "project.valuation.grading"},
+        {"id": "pool", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.pool"}
+      ],
+      "shared_plans_allowed": true,
+      "separate_applications": true,
+      "separate_valuations": true
+    },
+    {
+      "id": "reroof",
+      "records": [{"id": "reroof", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.reroof"}],
+      "required_categories": ["Permit Application", "Plans", "Roof Material Color Swatch"]
+    },
+    {
+      "id": "panel-upgrade",
+      "records": [{"id": "panel", "channel": "online", "portal_type_id": 187, "valuation_fact_id": "project.valuation.panel"}],
+      "required_confirmations": ["contractor.license", "contractor.class", "utility.authorization"],
+      "required_portal_field": "NUM_PanelUpto600amps"
+    },
+    {
+      "id": "water-heater-in-kind",
+      "records": [{"id": "water-heater", "channel": "online", "portal_type_id": 188, "valuation_fact_id": "project.valuation.water-heater"}],
+      "forbidden_portal_type_ids": [183],
+      "required_portal_field": "NUM_WaterHeater"
+    }
+  ]
+}

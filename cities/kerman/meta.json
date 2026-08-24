@@ -4,7 +4,9 @@
   "county": "Fresno",
   "state": "CA",
   "population": 16000,
-  "climateZones": ["CZ13"],
+  "climateZones": [
+    "CZ13"
+  ],
   "fireAgency": "North Central Fire Protection District (NCFPD)",
   "vhfhsz": false,
   "wuiCoverage": null,
@@ -52,5 +54,7 @@
   ],
   "onboardedAt": "2026-04-24",
   "smokeTestedAt": "2026-04-24",
-  "readyForPromotion": false
+  "readyForPromotion": false,
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -4,7 +4,7 @@
   "codePrefix": "PMC",
   "fireAgency": "Los Angeles County Fire Department (LACFD) — county-contracted; transition monitoring April 2026",
   "portal": "HDL Government (Citizen Access Portal)",
-  "portalUrl": "https://pomona.hdlgov.com",
+  "portalUrl": "https://pomona.hdlgov.com/",
   "electricUtility": "Southern California Edison (SCE)",
   "suggestedQuestions": [
     "Can I build an ADU on my Pomona property?",
@@ -13,5 +13,6 @@
     "Does my re-roof require Class A materials in Pomona?",
     "Who reviews fire plans for Pomona projects?",
     "How long does plan review take for a new SFR in Pomona?"
-  ]
+  ],
+  "permitSystem": "HDL Government (Citizen Access Portal)"
 }

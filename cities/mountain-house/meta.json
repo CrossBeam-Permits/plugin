@@ -45,5 +45,7 @@
     "siding-replacement",
     "sign",
     "deck-patio-repair"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://greenvue.csgengr.com/mountainhouse/public/PermitLogin.aspx"
 }

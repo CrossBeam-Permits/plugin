@@ -12,5 +12,7 @@
     "Is my property in a fire hazard zone in Redwood City?",
     "How long does ADU permit review take in Redwood City?",
     "What is the fire flow requirement for ADUs in Redwood City?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

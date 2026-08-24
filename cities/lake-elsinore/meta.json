@@ -10,5 +10,7 @@
     "How do I submit plans — online or in person?",
     "Is solar required on my new detached ADU?",
     "What fire hazard severity zone is my property in?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

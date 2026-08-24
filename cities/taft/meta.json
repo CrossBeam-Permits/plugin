@@ -18,9 +18,21 @@
     "station": "Station 21, 303 10th Street, Taft, CA 93268"
   },
   "zoning": {
-    "residential": ["R-1", "R-2", "R-3", "RS"],
-    "commercial": ["DTSP"],
-    "special": ["PE", "DI", "H", "CF"]
+    "residential": [
+      "R-1",
+      "R-2",
+      "R-3",
+      "RS"
+    ],
+    "commercial": [
+      "DTSP"
+    ],
+    "special": [
+      "PE",
+      "DI",
+      "H",
+      "CF"
+    ]
   },
   "solarPlatform": "SolarAPP+",
   "permitTypes": [
@@ -38,5 +50,7 @@
     "swimming-pool",
     "patio-cover",
     "window-replacement"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

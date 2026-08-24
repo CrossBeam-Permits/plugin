@@ -12,5 +12,7 @@
     "Does my solar system qualify for SolarAPP+ fast-track approval?",
     "What is the 50% reconstruction rule and how does it affect my remodel?",
     "How do I submit plans through EnerGov and what are the fees?"
-  ]
+  ],
+  "permitSystem": "Tyler Technologies EnerGov",
+  "portalUrl": null
 }

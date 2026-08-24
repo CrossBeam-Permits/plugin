@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Orinda, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orinda local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Orinda."
+description: "Ltia Demolition permits in Orinda, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orinda local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Orinda."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Contra Costa County ePermits |
+| Permit portal | https://epermits.cccounty.us/ |
 | Fire agency | Moraga-Orinda Fire District (MOFD) |
 | Code edition | MOFD Ord. 26-01/26-02 · January 2026 (Fire/WUI Codes) |
 | Code prefix | OMC |

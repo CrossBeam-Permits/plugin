@@ -4,7 +4,7 @@
   "codePrefix": "AMC",
   "fireAgency": "Los Angeles County Fire Department (LACoFD) — Battalion 16",
   "portal": "City-hosted permit system",
-  "portalUrl": "https://www.azusaca.gov",
+  "portalUrl": "https://www.azusaca.gov/",
   "electricUtility": "Azusa Light & Water (municipal) / Southern California Edison (SCE)",
   "buildingDept": "Community Development Department — Building Division",
   "buildingDeptNote": "Azusa operates its own building division. Permit portal is a city-hosted legacy ASP system. Fire plan check coordinated through LACoFD Battalion 16 (contract since 1983).",
@@ -16,5 +16,6 @@
     "What are the ADU setback requirements in Azusa?",
     "Can I short-term rent my ADU in Azusa?",
     "What zones allow multi-family housing in Azusa?"
-  ]
+  ],
+  "permitSystem": "City-hosted permit system"
 }

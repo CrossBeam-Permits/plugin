@@ -10,5 +10,7 @@
     "Is my property in a fire hazard severity zone in Chowchilla?",
     "What utility serves Chowchilla for electrical and solar permits?",
     "What climate zone does Chowchilla use for energy compliance?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Block Wall permits in San Diego, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Diego local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in San Diego."
+description: "Block Wall permits in San Diego, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Diego local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in San Diego."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://aca.accela.com/SANDIEGO |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://www.sandiego.gov/city-clerk/officialdocs/municipal-code |
 | Fire agency | San Diego Fire-Rescue Department (SDFD) — city department |
 | Code edition | SDMC Ch. 14 Building · Ch. 13 Zoning · 2022 CBC (CBC Ch.29 NOT adopted — CPC exclusive) · SDMC §§145.0703-0711 VHFHSZ · IB-301 Solar Self-Issue · IB-400 ADU/JADU · LCP Coastal CDPs · SDMC §143.13xx SB9 |

@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Paso Robles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Paso Robles local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Paso Robles."
+description: "Patio Cover permits in Paso Robles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Paso Robles local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Paso Robles."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://www.pasopermits.com |
+| Permit system | PasoPermits (Accela) |
+| Permit portal | https://www.pasopermits.com/ |
 | Municipal code | https://library.municode.com/ca/el_paso_de_robles |
 | Fire agency | Paso Robles Fire and Emergency Services (PRFES) |
 | Code edition | 2025 CBC Adoption Ordinance · November 4, 2025 (second reading) + Ord. 1133 |

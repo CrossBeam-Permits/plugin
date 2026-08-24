@@ -15,5 +15,7 @@
     "Who issues building permits in Point Arena — the city or county?",
     "What is the density limit for multifamily development in Point Arena?",
     "How does Point Arena's Local Coastal Program affect my ADU application?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

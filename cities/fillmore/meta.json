@@ -28,5 +28,7 @@
     "ev-charger",
     "swimming-pool",
     "window-replacement"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

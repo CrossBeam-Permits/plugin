@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0",
+  "jurisdiction": "City of Laguna Beach, California",
+  "lawAsOf": "2026-08-24",
+  "nextReviewOn": "2026-09-24",
+  "reviewMethod": "Official eCode360 ordinance PDFs are checksum-verified headlessly. Current chapter pages return HTTP 403 to direct clients and require a visible browser or Parallel AI for monthly semantic review.",
+  "sources": [
+    {
+      "id": "laguna-urgency-ordinance-1732",
+      "url": "https://ecode360.com/LA4953/laws/LF2759074.pdf",
+      "adoptedOn": "2026-07-21",
+      "effectiveOn": "2026-07-21",
+      "status": "effective; extended by Ordinance 1733",
+      "sha256": "11da656771c38b33a37310f47d281cdb624a47f09f277a4e542fdf237b8d5f4f",
+      "bytes": 687177,
+      "pages": 83
+    },
+    {
+      "id": "laguna-ordinance-1733",
+      "url": "https://ecode360.com/LA4953/laws/LF2782335.pdf",
+      "adoptedOn": "2026-08-04",
+      "effectiveOn": "2026-08-04",
+      "status": "extends Urgency Ordinance 1732 for 22 months and 15 days unless earlier repealed",
+      "sha256": "2321715c307b67ee81d2974703a0218b76bd01620da5d76f10f8204a48a602a3",
+      "bytes": 4569185,
+      "pages": 10
+    },
+    {
+      "id": "laguna-ordinance-1731",
+      "url": "https://ecode360.com/LA4953/laws/LF2759073.pdf",
+      "adoptedOn": "2026-07-21",
+      "effectiveOn": "2026-08-20",
+      "status": "effective",
+      "sha256": "96c3c6d683221f241a2b0c1ed3eb1c55da222246347bc01669bfbb06ff7fb6eb",
+      "bytes": 150501,
+      "pages": 6
+    }
+  ],
+  "currentCodePages": [
+    "https://ecode360.com/42898558",
+    "https://ecode360.com/42898824",
+    "https://ecode360.com/42901675",
+    "https://ecode360.com/42887299"
+  ],
+  "contentChecks": [
+    {
+      "path": "cities/laguna-beach/skills/swimming-pool/SKILL.md",
+      "contains": [
+        "law_as_of: \"2026-08-24\"",
+        "§25.05.040(B)(1)(j)",
+        "§25.05.040(B)(2)(t)",
+        "§25.05.040(B)(2)(v)",
+        "§25.05.040(B)(3)(a)(v)",
+        "effective 2026-08-20",
+        "a 3-foot path of travel around every structure"
+      ]
+    },
+    {
+      "path": "submit/laguna-beach/references/planning-routing.md",
+      "contains": [
+        "Urgency Ordinance 1732",
+        "Ordinance 1733",
+        "Ordinance 1731",
+        "https://ecode360.com/LA4953/laws/LF2759074.pdf",
+        "https://ecode360.com/LA4953/laws/LF2782335.pdf",
+        "https://ecode360.com/LA4953/laws/LF2759073.pdf"
+      ]
+    }
+  ]
+}

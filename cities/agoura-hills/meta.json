@@ -41,5 +41,7 @@
     "panel-upgrade",
     "wildfire-wui",
     "pool-demolition"
-  ]
+  ],
+  "permitSystem": "MGO (MyGovernmentOnline)",
+  "portalUrl": "https://www.agourahillscity.org/department/community-development/building-and-safety/permit-administration/online-permitting-mgo"
 }

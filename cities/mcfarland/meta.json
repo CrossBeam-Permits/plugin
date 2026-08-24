@@ -16,5 +16,6 @@
     "What fire department serves McFarland for permit review?",
     "Is my McFarland property in a wildfire hazard zone?",
     "What permit types are available through the GovWell portal?"
-  ]
+  ],
+  "permitSystem": "GovWell"
 }

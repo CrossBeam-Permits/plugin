@@ -1,5 +1,5 @@
 ---
-description: "Siding Replacement permits in Lake Forest, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lake Forest local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions siding replacement in Lake Forest."
+description: "Siding Replacement permits in Lake Forest, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lake Forest local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions siding replacement in Lake Forest."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Tyler Technologies EnerGov |
 | Permit portal | https://cityoflakeforestca-energovweb.tylerhost.net/apps/selfservice |
 | Municipal code | https://ecode360.com/LA4954 |
 | Fire agency | OCFA |

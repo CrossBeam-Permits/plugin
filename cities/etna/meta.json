@@ -10,5 +10,7 @@
     "What zoning district is my property in Etna?",
     "Does Etna require solar on new homes?",
     "What are the setback and lot coverage rules in Etna's R-1-10 zone?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

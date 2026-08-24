@@ -16,7 +16,10 @@
   "wuiCoverage": "partial",
   "wuiNote": "FHSZ adopted via WHMC §14.04.060 (Sept 15, 2025) following Cal Fire March 2025 map update. Flat urban city — Very High FHSZ unlikely; some Moderate/High areas possible. Interactive FHSZ lookup: engage.weho.org/firemaps.",
   "codeHierarchy": "2025 CBC (base) → LA County Titles 26/27/28 (amendments) → WHMC (controls on conflict)",
-  "codeAdoptionOrds": ["25-25U (Dec 15, 2025)", "25-26 (Feb 2, 2026)"],
+  "codeAdoptionOrds": [
+    "25-25U (Dec 15, 2025)",
+    "25-26 (Feb 2, 2026)"
+  ],
   "operativeCode": "2025 California Building Standards Code (Title 24), effective January 1, 2026",
   "aduProgram": "Pre-Approved ADU Plan Program; governed by WHMC Chapter 19.43; 60-day ministerial approval",
   "solarFeeWaiver": true,
@@ -42,5 +45,7 @@
     "patio-cover"
   ],
   "onboardedAt": "2026-04-16",
-  "needsHumanReview": []
+  "needsHumanReview": [],
+  "permitSystem": null,
+  "portalUrl": "https://www.weho.org/city-government/city-departments/community-development-department/building-and-safety"
 }

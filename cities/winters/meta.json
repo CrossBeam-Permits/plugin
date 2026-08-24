@@ -11,5 +11,7 @@
     "Who handles health department review for restaurant TIs?",
     "Are there impact fee exemptions for ADUs under 750 sq ft?",
     "What plan sets do I need to submit?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

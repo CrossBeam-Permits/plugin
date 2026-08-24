@@ -1,5 +1,5 @@
 ---
-description: "Ev Charger permits in Lemoore, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lemoore local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Lemoore."
+description: "Ev Charger permits in Lemoore, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lemoore local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Lemoore."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Lemoore Volunteer Fire Department (LVFD) · (559) 924-6744 ext. 768 · lemoore.com/departments/fire-lvfd |
 | Code edition | City of Lemoore Municipal Code · American Legal · codelibrary.amlegal.com/codes/lemooreca/latest |
 | Code prefix | LMC |

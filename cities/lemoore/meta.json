@@ -10,5 +10,7 @@
     "Does Lemoore have an online permit portal?",
     "What design parameters apply in Lemoore (seismic, wind)?",
     "Is Lemoore in a Fire Hazard Severity Zone?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

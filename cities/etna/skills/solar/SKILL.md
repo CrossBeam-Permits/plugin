@@ -1,5 +1,5 @@
 ---
-description: "Solar permits in Etna, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Etna local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in Etna."
+description: "Solar permits in Etna, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Etna local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in Etna."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) -- Articles 690, 705, 250, 310; 2025 California Fire Code (Title 24, Part 9) -- Chapter 12; 2025 California Residential Code (Title 24, Part 2.5) -- Section R329"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / International Fire Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Etna Fire Department (volunteer) · Fire Chief: Jacob Deegan · (530) 467-5256 · Building plan check via Siskiyou County Building Division |
 | Code edition | Etna Municipal Code · ecode360 (ET4432) · Title 8 (Public Safety / Fire) · Title 15 (Buildings) · Title 17 (Zoning) |
 | Code prefix | EMC |

@@ -1,5 +1,5 @@
 ---
-description: "Window Replacement permits in Sonora, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sonora local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Sonora."
+description: "Window Replacement permits in Sonora, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sonora local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Sonora."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | iWorQ |
+| Permit portal | https://sonora.portal.iworq.net/ |
 | Fire agency | Sonora Fire Department |
 | Code edition | Sonora Municipal Code | 2025 CBSC in effect | Ord. 825 (2015) + Ord. 853 (2019) |
 | Code prefix | SMC |

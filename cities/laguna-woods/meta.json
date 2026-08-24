@@ -32,5 +32,6 @@
     "Does my property in Laguna Woods fall in a fire hazard zone?",
     "What are the EV charger permit requirements in Laguna Woods?",
     "What are the counter hours for Laguna Woods Building & Safety?"
-  ]
+  ],
+  "permitSystem": null
 }

@@ -34,5 +34,7 @@
     "reroof",
     "hvac",
     "water-heater"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://www.templecityca.gov/1157/Permit-Project-Portal"
 }

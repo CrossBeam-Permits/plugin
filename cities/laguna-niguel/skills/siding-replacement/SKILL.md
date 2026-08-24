@@ -1,5 +1,5 @@
 ---
-description: "Siding Replacement permits in Laguna Niguel, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Niguel local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions siding replacement in Laguna Niguel."
+description: "Siding Replacement permits in Laguna Niguel, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Niguel local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions siding replacement in Laguna Niguel."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Tyler Technologies EnerGov |
 | Permit portal | https://cityoflagunaniguelca-energovweb.tylerhost.net/apps/selfservice |
 | Municipal code | https://library.municode.com/ca/laguna_niguel/codes/code_of_ordinances |
 | Fire agency | OCFA |

@@ -1,5 +1,5 @@
 ---
-description: "Hvac permits in Ventura, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Ventura local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Ventura."
+description: "Hvac permits in Ventura, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Ventura local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Ventura."
 version: "1.0"
 source: "2025 California Mechanical Code (Title 24, Part 4); 2025 California Plumbing Code (Title 24, Part 5); 2025 California Electrical Code (Title 24, Part 3); 2025 California Residential Code (Title 24, Part 2.5); 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO / NEC with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | VenturaOPS (Accela) |
 | Permit portal | https://www.cityofventura.ca.gov/1451/Building-Permits |
 | Municipal code | https://library.municode.com/ca/san_buenaventura |
 | Fire agency | Ventura City Fire Department |

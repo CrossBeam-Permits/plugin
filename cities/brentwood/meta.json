@@ -10,5 +10,7 @@
     "What are the WUI construction requirements for east Brentwood?",
     "How do I submit a building permit in Brentwood?",
     "What is the underground gas piping rule in Brentwood?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

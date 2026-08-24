@@ -1,5 +1,5 @@
 ---
-description: "Water Heater permits in Monte Sereno, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Monte Sereno local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Monte Sereno."
+description: "Water Heater permits in Monte Sereno, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Monte Sereno local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Monte Sereno."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5), 2025 California Mechanical Code (Title 24, Part 4), 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Santa Clara County Fire Department (SCCFD) · Fire plan check jurisdiction · Quito Fire Station, Monte Sereno · (408) 378-4010 · sccfd.org |
 | Code edition | Monte Sereno Municipal Code · Municode · Title 9 (Building) & Title 10 (Planning) · Santa Clara County Fire Department (SCCFD) as fire AHJ |
 | Code prefix | MSMC |

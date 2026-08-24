@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Morgan Hill, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Morgan Hill local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Morgan Hill."
+description: "Patio Cover permits in Morgan Hill, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Morgan Hill local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Morgan Hill."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eTRAKiT (CentralSquare) |
+| Permit portal | https://morg-trk.aspgov.com/eTRAKiT/Search/permit.aspx |
 | Fire agency | Morgan Hill Fire Department — Building & Fire Prevention Division (city-integrated; permits@morganhill.ca.gov; 408-310-4654) |
 | Code edition | MHMC Title 15 (Building) | Title 18 Zoning | Ch. 18.84 (ADU) | Ord. 2306 (Reach Code — contested) |
 | Code prefix | MHMC |

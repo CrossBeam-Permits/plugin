@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Rio Dell, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rio Dell local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Rio Dell."
+description: "Cleanout permits in Rio Dell, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rio Dell local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Rio Dell."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Rio Dell Volunteer Fire Department |
 | Code edition | Rio Dell Municipal Code | 2025 CBSC + 2024 IPMC (RDMC §15.05.020 / Ord. 420-2026) | FHSZ map RDMC Ch. 8.45 / Ord. 413-2025 |
 | Code prefix | RDMC |

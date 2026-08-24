@@ -60,5 +60,7 @@
     "hvac",
     "kitchen-bath-remodel",
     "ltia-demolition"
-  ]
+  ],
+  "permitSystem": "citizenserve",
+  "portalUrl": "https://www5.citizenserve.com/Portal/PortalController?Action=showHomePage&ctzPagePrefix=Portal_&installationID=202"
 }

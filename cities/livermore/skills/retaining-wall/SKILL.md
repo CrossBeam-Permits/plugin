@@ -1,5 +1,5 @@
 ---
-description: "Retaining Wall permits in Livermore, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Livermore local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Livermore."
+description: "Retaining Wall permits in Livermore, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Livermore local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in Livermore."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC), 2025 California Residential Code (Title 24, Part 2.5 CRC), ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela Citizen Access (ACA) |
+| Permit portal | https://aca-prod.accela.com/LIVERMORE/ |
 | Fire agency | Livermore-Pleasanton Fire Department (LPFD) · (925) 454-2361 |
 | Code edition | 2025 California Building Standards Code · All-electric reach code (Ord. 2139) · Class B roofing citywide (Ord. 2138) · CodePublishing |
 | Code prefix | LMC |

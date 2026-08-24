@@ -10,5 +10,7 @@
     "What permits are required for a swimming pool in Rancho Mirage?",
     "How do I submit a permit application online?",
     "What are the construction hour restrictions?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

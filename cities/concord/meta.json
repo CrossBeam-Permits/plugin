@@ -11,5 +11,7 @@
     "Is my Concord property in a wildfire hazard zone?",
     "Does Concord require a separate fire district application?",
     "What is the plan review timeline for Concord building permits?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

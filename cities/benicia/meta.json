@@ -11,5 +11,7 @@
     "Can I use vinyl windows on an ADU in Benicia's historic district?",
     "How do I submit a building permit in Benicia?",
     "Does Benicia use SolarAPP+ for solar permits?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -10,5 +10,7 @@
     "Does my project require Architectural Review in the Historic District?",
     "How do I submit an ADU permit in Nevada City?",
     "What WUI requirements apply to my FHSZ parcel?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

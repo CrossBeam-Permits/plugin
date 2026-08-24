@@ -1,5 +1,5 @@
 ---
-description: "Deck Patio Repair permits in Clayton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Clayton local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Clayton."
+description: "Deck Patio Repair permits in Clayton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Clayton local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Clayton."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Contra Costa County Fire Protection District (ConFire) · (925) 941-3300 · confire.vision33cloud.com/citizenportal · 4005 Port Chicago Hwy, Suite 250, Concord CA 94520 |
 | Code edition | Clayton Municipal Code · Municode · Title 15 (Building and Construction) · Title 17 (Zoning) |
 | Code prefix | CMC |

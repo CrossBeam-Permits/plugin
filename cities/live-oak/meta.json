@@ -10,5 +10,7 @@
     "Does Live Oak have any wildfire or FHSZ requirements?",
     "What utility serves Live Oak for electrical permits?",
     "What are the development impact fees for new construction in Live Oak?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

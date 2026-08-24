@@ -1,5 +1,5 @@
 ---
-description: "Fence permits in Grass Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Grass Valley local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fence in Grass Valley."
+description: "Fence permits in Grass Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Grass Valley local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fence in Grass Valley."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela Citizen Access |
+| Permit portal | https://aca-prod.accela.com/grassvalley/default.aspx |
 | Fire agency | Grass Valley Fire Department (GVFD) · 125 E. Main St., Grass Valley, CA 95945 · JOA with NCCFD and Nevada City FD |
 | Code edition | 2025 California Building Standards Code · Grass Valley Municipal Code (Municode) · Title 15 Buildings & Construction · Title 17 Development Code |
 | Code prefix | GVMC |

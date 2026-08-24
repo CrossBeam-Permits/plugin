@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Hayward, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hayward local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Hayward."
+description: "Panel Upgrade permits in Hayward, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hayward local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Hayward."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | EnerGov (Tyler Technologies) |
+| Permit portal | https://www.hayward-ca.gov/epermits |
 | Municipal code | https://library.municode.com/ca/hayward/codes/municipal_code |
 | Fire agency | Hayward Fire Department (HFD) |
 | Code edition | Reach Code Ord. Nov 15, 2022 (updated June 17, 2025) | EV Ord. 17-11 (July 2017) | 2025 CBC cycle (eff. Jan 1, 2026) |

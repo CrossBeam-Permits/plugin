@@ -10,5 +10,7 @@
     "What are the WUI construction requirements for the Sand Creek area?",
     "How do I submit a building permit in Antioch?",
     "What are the multi-family zoning rules in Antioch?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

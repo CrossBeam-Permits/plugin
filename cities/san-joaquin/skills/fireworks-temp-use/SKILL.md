@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in San Joaquin, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Joaquin local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in San Joaquin."
+description: "Fireworks Temp Use permits in San Joaquin, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Joaquin local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in San Joaquin."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | https://cityofsanjoaquin.org/home/online-forms/ |
 | Fire agency | City of San Joaquin / Fresno County Fire District · (559) 698-5500 |
 | Code edition | City of San Joaquin Municipal Code · American Legal Publishing · Chapter 150 (Building) · Chapter 154 (Zoning) |
 | Code prefix | SJMC |

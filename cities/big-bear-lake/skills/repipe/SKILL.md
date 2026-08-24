@@ -1,5 +1,5 @@
 ---
-description: "Repipe permits in Big Bear Lake, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Big Bear Lake local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Big Bear Lake."
+description: "Repipe permits in Big Bear Lake, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Big Bear Lake local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Big Bear Lake."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela |
 | Permit portal | https://citybigbearlake.com/index.php/en/services-main/online-permitting-portal |
 | Fire agency | Big Bear Fire Department (Big Bear Lake Fire Protection District) |
 | Code edition | Ord. 2026-527 (ADU) | Ord. 2024-520 (R-3) | Design Loads Doc May 2024 | Retaining Wall Standard Jan 2025 |

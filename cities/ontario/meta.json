@@ -10,5 +10,7 @@
     "What zoning district allows my project type in Ontario?",
     "Is Ontario in a Fire Hazard Severity Zone (FHSZ)?",
     "How do I submit a permit through Accela in Ontario?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

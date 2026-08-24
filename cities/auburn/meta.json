@@ -18,5 +18,6 @@
     "Which portal do I use for permits — Civic Access or Symbium?",
     "What are Auburn's building department hours and contact info?",
     "Are there local code amendments beyond the state California Building Code?"
-  ]
+  ],
+  "permitSystem": "Civic Access (CivicPlus)"
 }

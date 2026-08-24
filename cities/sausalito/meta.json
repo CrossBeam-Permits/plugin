@@ -11,5 +11,7 @@
     "Does Sausalito have a hillside ordinance?",
     "How do I get a building permit in Sausalito?",
     "What is the pre-approved ADU program in Sausalito?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

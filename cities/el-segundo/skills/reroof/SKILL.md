@@ -1,5 +1,5 @@
 ---
-description: "Reroof permits in El Segundo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + El Segundo local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in El Segundo."
+description: "Reroof permits in El Segundo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + El Segundo local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in El Segundo."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://elsegundoca.portal.opengov.com |
+| Permit system | EZ Permit Hub (OpenGov) |
+| Permit portal | https://elsegundoca.portal.opengov.com/ |
 | Fire agency | El Segundo Fire Department (city-owned — NOT LA County Fire) |
 | Code edition | Ord. 1641 · November 15, 2022 (Building Codes) |
 | Code prefix | ESMC |

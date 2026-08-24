@@ -35,5 +35,7 @@
     "window-replacement",
     "wildfire-wui",
     "deck-patio-repair"
-  ]
+  ],
+  "permitSystem": "accela",
+  "portalUrl": "https://aca-prod.accela.com/SANDIMAS/"
 }

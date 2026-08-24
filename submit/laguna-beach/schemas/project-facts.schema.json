@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crossbeam.example/skills/laguna-permit-preparer/project-facts.schema.json",
+  "title": "Laguna permit project facts",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "jurisdiction", "created_at", "updated_at", "facts"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "jurisdiction": {"const": "laguna-beach-ca"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "facts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/fact"}
+    }
+  },
+  "$defs": {
+    "receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "captured_at"],
+      "properties": {
+        "kind": {"enum": ["file", "user_answer", "portal_state", "site_facts"]},
+        "captured_at": {"type": "string", "format": "date-time"},
+        "file": {"type": ["string", "null"]},
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "sheet": {"type": ["string", "null"]},
+        "field": {"type": ["string", "null"]},
+        "record_id": {"type": ["string", "null"]},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "receipt"],
+      "properties": {
+        "kind": {"enum": ["user_confirmed", "plan", "application", "title_report", "site_facts", "portal"]},
+        "receipt": {"$ref": "#/$defs/receipt"}
+      }
+    },
+    "confirmation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "status": {"enum": ["not_required", "pending", "confirmed", "rejected"]},
+        "confirmed_at": {"type": ["string", "null"], "format": "date-time"},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "consumer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "target"],
+      "properties": {
+        "kind": {"enum": ["routing", "form_field", "portal_field", "attachment_rule", "receipt"]},
+        "target": {"type": "string", "minLength": 1}
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "source", "status"],
+      "properties": {
+        "value": {},
+        "source": {"$ref": "#/$defs/source"},
+        "status": {"enum": ["unresolved", "rejected", "accepted"]},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "value", "source", "confidence", "confirmation", "consumers", "conflicts"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "value": {},
+        "source": {"anyOf": [{"$ref": "#/$defs/source"}, {"type": "null"}]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "confirmation": {"$ref": "#/$defs/confirmation"},
+        "consumers": {"type": "array", "items": {"$ref": "#/$defs/consumer"}},
+        "conflicts": {"type": "array", "items": {"$ref": "#/$defs/conflict"}},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

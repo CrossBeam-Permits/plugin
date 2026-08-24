@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Millbrae, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Millbrae local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Millbrae."
+description: "Fireworks Temp Use permits in Millbrae, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Millbrae local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Millbrae."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Central County Fire Department (CCFD) · 1399 Rollins Road, Burlingame CA 94010 · (650) 558-7600 · info@ccfd.org · ccfd.org |
 | Code edition | Millbrae Municipal Code · CodePublishing · MMC Title 9 (Building) · MMC Chapter 10.05 (Zoning) · Ord. 782 (ADU) |
 | Code prefix | MMC |

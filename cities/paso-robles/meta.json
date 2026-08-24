@@ -4,7 +4,7 @@
   "codePrefix": "PRMC",
   "fireAgency": "Paso Robles Fire and Emergency Services (PRFES)",
   "portal": "PasoPermits (Accela)",
-  "portalUrl": "https://www.pasopermits.com",
+  "portalUrl": "https://www.pasopermits.com/",
   "muniCodePlatform": "municode",
   "muniCodeUrl": "https://library.municode.com/ca/el_paso_de_robles",
   "wuiCoverage": "partial",
@@ -17,5 +17,6 @@
     "Do I need a fire sprinkler system for my ADU or addition?",
     "What are the setback requirements for ADUs in Paso Robles?",
     "Does Paso Robles have preapproved ADU plans?"
-  ]
+  ],
+  "permitSystem": "PasoPermits (Accela)"
 }

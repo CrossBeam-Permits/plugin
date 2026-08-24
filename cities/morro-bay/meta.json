@@ -16,5 +16,6 @@
     "Does my property fall in a Wildfire Hazard Severity Zone?",
     "How do I get a solar permit in Morro Bay — is it through Symbium?",
     "What zoning zone is my property in — RM or RH?"
-  ]
+  ],
+  "permitSystem": "Building Division counter (general) | Symbium (solar — automated)"
 }

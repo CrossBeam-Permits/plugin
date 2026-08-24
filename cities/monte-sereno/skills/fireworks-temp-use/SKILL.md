@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Monte Sereno, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Monte Sereno local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Monte Sereno."
+description: "Fireworks Temp Use permits in Monte Sereno, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Monte Sereno local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Monte Sereno."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Santa Clara County Fire Department (SCCFD) · Fire plan check jurisdiction · Quito Fire Station, Monte Sereno · (408) 378-4010 · sccfd.org |
 | Code edition | Monte Sereno Municipal Code · Municode · Title 9 (Building) & Title 10 (Planning) · Santa Clara County Fire Department (SCCFD) as fire AHJ |
 | Code prefix | MSMC |

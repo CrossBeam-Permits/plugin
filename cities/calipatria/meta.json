@@ -11,5 +11,7 @@
     "What building codes has Calipatria adopted?",
     "What zoning districts allow multi-family in Calipatria?",
     "What climate zone is Calipatria in for Title 24 energy compliance?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

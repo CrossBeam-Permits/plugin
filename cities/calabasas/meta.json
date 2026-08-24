@@ -14,5 +14,6 @@
     "Do I need to submit to EPIC-LA for fire review?",
     "What building codes are in effect in Calabasas?",
     "Can I use SolarApp+ for my solar permit?"
-  ]
+  ],
+  "permitSystem": "SmartGov by Granicus"
 }

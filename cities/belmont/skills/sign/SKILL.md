@@ -1,5 +1,5 @@
 ---
-description: "Sign permits in Belmont, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Belmont local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Belmont."
+description: "Sign permits in Belmont, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Belmont local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Belmont."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | San Mateo Consolidated Fire Department (SMCFD) · Serves Belmont via JPA · fire@smcfire.org · (650) 522-7900 · smcfire.org · Separate fire plan check required for sprinklers, alarms, suppression systems |
 | Code edition | Belmont City Code · Municode · Chapter 7 (Buildings) · Ord. 2023-1169 |
 | Code prefix | BCC |

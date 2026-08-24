@@ -10,5 +10,7 @@
     "Does Highland use SolarAPP+ for residential solar permits?",
     "What are the setback requirements for my zone in Highland?",
     "Which codes does Highland use — 2022 or 2025 California Building Standards?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -16,5 +16,6 @@
     "What zoning district allows multi-family in Arroyo Grande?",
     "Does my property fall in a WUI fire hazard zone?",
     "What is the driveway turnaround rule for long driveways?"
-  ]
+  ],
+  "permitSystem": "CitizenServe"
 }
