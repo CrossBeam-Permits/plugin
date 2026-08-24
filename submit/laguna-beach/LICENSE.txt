@@ -1,0 +1,5 @@
+Copyright 2026 CrossBeam / OnBreeze LLC. All rights reserved.
+
+This standalone skill package does not grant rights beyond the license of the
+repository in which it is distributed. Select and approve a public distribution
+license before publishing the ZIP outside that repository.

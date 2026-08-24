@@ -4,7 +4,7 @@
   "state": "CA",
   "county": "Los Angeles",
   "population": 14200,
-  "area_sq_miles": 1.0,
+  "area_sq_miles": 1,
   "zip": "90716",
   "climate_zone": "8",
   "seismic_design_category": "D",
@@ -20,7 +20,11 @@
     "phone": "(562) 420-2641 ext. 224",
     "email": "buildingtech@hgcity.org",
     "website": "https://www.hgcity.org/government/departments/community-development/building-safety-division",
-    "inspection_days": ["Monday", "Tuesday", "Thursday"],
+    "inspection_days": [
+      "Monday",
+      "Tuesday",
+      "Thursday"
+    ],
     "inspection_hours": "1:00 PM - 4:00 PM",
     "inspection_advance_notice_hrs": 24,
     "submission_method": "email"
@@ -39,14 +43,42 @@
     "submission": "email to buildingtech@hgcity.org"
   },
   "permit_types_supported": [
-    "adu", "single-family-residential", "residential-addition", "multi-unit-residential",
-    "restaurant-ti", "solar", "ev-charger", "water-heater", "hvac", "panel-upgrade",
-    "rewire", "repipe", "cleanout", "reroof", "window-replacement", "kitchen-bath-remodel",
-    "fence", "retaining-wall", "swimming-pool", "pool-demolition", "patio-cover",
-    "sign", "siding-replacement", "temporary-power", "ltia-demolition", "deck-patio-repair",
-    "block-wall", "fireworks-temp-use"
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential",
+    "restaurant-ti",
+    "solar",
+    "ev-charger",
+    "water-heater",
+    "hvac",
+    "panel-upgrade",
+    "rewire",
+    "repipe",
+    "cleanout",
+    "reroof",
+    "window-replacement",
+    "kitchen-bath-remodel",
+    "fence",
+    "retaining-wall",
+    "swimming-pool",
+    "pool-demolition",
+    "patio-cover",
+    "sign",
+    "siding-replacement",
+    "temporary-power",
+    "ltia-demolition",
+    "deck-patio-repair",
+    "block-wall",
+    "fireworks-temp-use"
   ],
-  "permit_types_not_supported": ["commercial-ti", "coastal-development", "wildfire-wui"],
+  "permit_types_not_supported": [
+    "commercial-ti",
+    "coastal-development",
+    "wildfire-wui"
+  ],
   "onboarded": "2026-04-15",
-  "version": "1.0"
+  "version": "1.0",
+  "permitSystem": null,
+  "portalUrl": null
 }

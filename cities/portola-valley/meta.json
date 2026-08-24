@@ -10,5 +10,7 @@
     "Do I need a separate fire inspection for my solar permit?",
     "When does my fence require a building permit?",
     "Is gas equipment still allowed given the all-electric reach code?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

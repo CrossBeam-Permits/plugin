@@ -4,7 +4,9 @@
   "county": "Kern",
   "state": "CA",
   "population": 403000,
-  "climateZones": ["CZ13"],
+  "climateZones": [
+    "CZ13"
+  ],
   "fireAgency": "Bakersfield Fire Department",
   "vhfhsz": false,
   "wuiPartial": true,
@@ -19,7 +21,11 @@
     "electric": "PG&E",
     "sewer": "Kern Regional Wastewater Management District (KRNWM)"
   },
-  "specialOverlays": ["oil-field-methane", "mbhcp-fees", "urm-retrofit"],
+  "specialOverlays": [
+    "oil-field-methane",
+    "mbhcp-fees",
+    "urm-retrofit"
+  ],
   "permitTypes": [
     "single-family-residential",
     "adu",
@@ -42,5 +48,7 @@
   ],
   "onboardedAt": "2026-04-16",
   "smokeTestedAt": "2026-04-16",
-  "readyForPromotion": true
+  "readyForPromotion": true,
+  "permitSystem": null,
+  "portalUrl": null
 }

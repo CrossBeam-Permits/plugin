@@ -11,5 +11,7 @@
     "Is my Belmont property in a wildfire hazard zone?",
     "Can I add an ADU to my Belmont property?",
     "Does Belmont require all-electric construction for new buildings?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

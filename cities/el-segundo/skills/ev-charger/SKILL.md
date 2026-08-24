@@ -1,5 +1,5 @@
 ---
-description: "Ev Charger permits in El Segundo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + El Segundo local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in El Segundo."
+description: "Ev Charger permits in El Segundo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + El Segundo local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in El Segundo."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://elsegundoca.portal.opengov.com |
+| Permit system | EZ Permit Hub (OpenGov) |
+| Permit portal | https://elsegundoca.portal.opengov.com/ |
 | Fire agency | El Segundo Fire Department (city-owned — NOT LA County Fire) |
 | Code edition | Ord. 1641 · November 15, 2022 (Building Codes) |
 | Code prefix | ESMC |

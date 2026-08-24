@@ -13,5 +13,7 @@
     "How do I get a solar permit in Sonoma?",
     "What are the WUI construction requirements for my Sonoma property?",
     "Does Sonoma have an all-electric requirement for new construction?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Willows, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Willows local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Willows."
+description: "Ltia Demolition permits in Willows, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Willows local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Willows."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Willows Fire Department (city-operated LRA) · 445 South Butte Street, Willows CA 95988 · (530) 934-3323 · Concurrent plan check via Community Development & Services Dept |
 | Code edition | Willows Municipal Code · CodePublishing (https://www.codepublishing.com/CA/Willows/) · Current through Ord. 763-25 (Feb. 25, 2025) · Local amendments unverified (scrape blocked) |
 | Code prefix | WMC |

@@ -17,5 +17,6 @@
     "Can I use the city's pre-approved ADU stock plans?",
     "What is the permit tier for my project — Major, Minor, or OTC?",
     "How do I schedule a permit counter appointment?"
-  ]
+  ],
+  "permitSystem": "eTRAKiT"
 }

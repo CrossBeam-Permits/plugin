@@ -15,5 +15,7 @@
     "Is my San Marcos property in a Wildland-Urban Interface (WUI) zone?",
     "How do I submit a permit through the Clariti portal in San Marcos?",
     "What are San Marcos's setback and height rules for ADUs?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

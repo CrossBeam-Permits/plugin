@@ -19,5 +19,6 @@
     "How do I apply for a permit through the OpenGov portal?",
     "What fee surcharges apply to building permits in Camarillo?",
     "Who provides plan check services in Camarillo?"
-  ]
+  ],
+  "permitSystem": "OpenGov"
 }

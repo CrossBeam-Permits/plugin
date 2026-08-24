@@ -10,5 +10,7 @@
     "Does my patio cover need a permit?",
     "What EV charging requirements apply to my new building?",
     "Does my restaurant tenant improvement need Health Dept approval first?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

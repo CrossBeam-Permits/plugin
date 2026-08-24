@@ -4,7 +4,7 @@
   "codePrefix": "EMC",
   "fireAgency": "ACFD",
   "portalName": "Email Submittal",
-  "portalUrl": "mailto:cbarrett@emeryville.org",
+  "portalUrl": null,
   "climateZone": "3",
   "seismicCategory": "D",
   "fhsz": false,
@@ -18,5 +18,6 @@
     "How do I submit plans to Emeryville Building Division?",
     "What are the reroof requirements in Emeryville?",
     "Does Emeryville have wildfire construction requirements?"
-  ]
+  ],
+  "permitSystem": "Email Submittal"
 }

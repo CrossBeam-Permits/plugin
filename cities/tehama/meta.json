@@ -10,7 +10,7 @@
   "fireAgencyNote": "Fire prevention plan check handled through Tehama County Building Department (contracted); TGU provides fire suppression",
   "fireAgencyPhone": "(530) 529-1855",
   "portal": "viewpointcloud",
-  "portalUrl": "https://tehamacountyca.viewpointcloud.com",
+  "portalUrl": "https://tehamacountyca.viewpointcloud.com/",
   "solarAppPlus": false,
   "electricUtility": "Pacific Gas & Electric (PG&E)",
   "healthAuthority": "Tehama County Environmental Health Division",
@@ -41,5 +41,6 @@
     "What are the building department contact details for projects in Tehama?",
     "Who reviews site plans and setbacks for construction in the City of Tehama?",
     "Do I need an Elevation Certificate for my project in Tehama?"
-  ]
+  ],
+  "permitSystem": "viewpointcloud"
 }

@@ -25,13 +25,42 @@
     "hillside": true,
     "seismic": true
   },
-  "seismicFaultZones": ["Raymond Fault"],
+  "seismicFaultZones": [
+    "Raymond Fault"
+  ],
   "seismicNote": "Raymond Fault is part of the Sierra Madre Fault system and is an Alquist-Priolo Earthquake Fault Zone. Parcels in AP zone require geological investigation per CBC §1803.5.12.",
   "historicDistrictCount": 17,
   "historicDistrictNote": "Certificate of Appropriateness (CoA) required before building permit for exterior alterations visible from public ROW in landmark districts. Governed by PMC Chapter 17.62. Review by Design Commission (major) or planning staff (minor).",
-  "historicExemptions": ["interior work", "paint", "landscaping", "solar panels", "routine maintenance", "exterior work not visible from public ROW"],
-  "historicAffectedPermitTypes": ["window-replacement", "reroof", "siding-replacement", "residential-addition", "adu", "single-family-residential", "block-wall", "patio-cover", "fence", "sign"],
-  "historicUnaffectedPermitTypes": ["panel-upgrade", "rewire", "hvac", "kitchen-bath-remodel", "solar", "ev-charger", "water-heater", "repipe"],
+  "historicExemptions": [
+    "interior work",
+    "paint",
+    "landscaping",
+    "solar panels",
+    "routine maintenance",
+    "exterior work not visible from public ROW"
+  ],
+  "historicAffectedPermitTypes": [
+    "window-replacement",
+    "reroof",
+    "siding-replacement",
+    "residential-addition",
+    "adu",
+    "single-family-residential",
+    "block-wall",
+    "patio-cover",
+    "fence",
+    "sign"
+  ],
+  "historicUnaffectedPermitTypes": [
+    "panel-upgrade",
+    "rewire",
+    "hvac",
+    "kitchen-bath-remodel",
+    "solar",
+    "ev-charger",
+    "water-heater",
+    "repipe"
+  ],
   "wildfireNote": "VHFHSZ covers hillside/foothill areas along San Gabriel Mountain foothills (Linda Vista, upper Arroyo Seco, Altadena-adjacent). Flat urban core is non-FHSZ. 2025 FHSZ maps adopted.",
   "hillsideOrdinance": "PMC Chapter 14.05 Hillside Grading Ordinance",
   "hillsidePermitNote": "Hillside Development Permit required for grading/construction in designated hillside areas — planning permit separate from building permit.",
@@ -70,5 +99,7 @@
     "wildfire-wui",
     "window-replacement"
   ],
-  "onboardedAt": "2026-04-16"
+  "onboardedAt": "2026-04-16",
+  "permitSystem": "Accela Citizen Access",
+  "portalUrl": "https://mypermits.cityofpasadena.net/"
 }

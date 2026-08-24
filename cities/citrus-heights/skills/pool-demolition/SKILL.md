@@ -1,5 +1,5 @@
 ---
-description: "Pool Demolition permits in Citrus Heights, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Citrus Heights local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Citrus Heights."
+description: "Pool Demolition permits in Citrus Heights, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Citrus Heights local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Citrus Heights."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapters 18, 33, Appendix J; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6, 7, 12"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://citizen.citrusheights.permitcity.com |
+| Permit system | PermitCity |
+| Permit portal | https://citizen.citrusheights.permitcity.com/ |
 | Municipal code | https://library.municode.com/ca/citrus_heights/codes/code_of_ordinances |
 | Fire agency | Sacramento Metropolitan Fire District (Metro Fire) · (916) 859-4300 · metrofire.ca.gov |
 | Code edition | City of Citrus Heights Municipal Code · Municode · Zoning Code Title 106 (July 2025) · Chapter 18 (Building) |

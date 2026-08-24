@@ -6,7 +6,7 @@
   "fireAgencyType": "volunteer-fire",
   "responsibilityArea": "LRA",
   "portal": "counter",
-  "portalUrl": "https://www.san-juan-bautista.ca.us",
+  "portalUrl": "https://www.san-juan-bautista.ca.us/",
   "solarAppPlus": false,
   "electricUtility": "PG&E",
   "gasUtility": "PG&E",
@@ -25,5 +25,6 @@
     "What are the local fire code amendments in San Juan Bautista?",
     "Can I install solar panels on my historic property in San Juan Bautista?",
     "What is the permit process for a residential addition in San Juan Bautista?"
-  ]
+  ],
+  "permitSystem": "counter"
 }

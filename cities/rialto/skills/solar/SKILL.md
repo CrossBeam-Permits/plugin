@@ -1,5 +1,5 @@
 ---
-description: "Solar permits in Rialto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rialto local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in Rialto."
+description: "Solar permits in Rialto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rialto local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in Rialto."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) -- Articles 690, 705, 250, 310; 2025 California Fire Code (Title 24, Part 9) -- Chapter 12; 2025 California Residential Code (Title 24, Part 2.5) -- Section R329"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / International Fire Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Online Permitting Center (OPC) — TylerHost EnerGov |
+| Permit portal | https://cityofrialtoca-energovweb.tylerhost.net/apps/selfservice |
 | Fire agency | Rialto Fire Department — Fire Prevention Division · (909) 820-2505 |
 | Code edition | Ord. 1590 (ADU) · Ord. 1691 + Res. 8179 (Fire Code) · 2022 California Building Standards Code |
 | Code prefix | RMC |

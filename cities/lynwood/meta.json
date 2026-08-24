@@ -45,5 +45,7 @@
     "rewire",
     "repipe",
     "kitchen-bath-remodel"
-  ]
+  ],
+  "permitSystem": "EdgeSoft Citizen Access Portal",
+  "portalUrl": "https://lynwood.edgesoftinc.com/cap/"
 }

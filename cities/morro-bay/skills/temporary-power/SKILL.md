@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Morro Bay, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Morro Bay local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Morro Bay."
+description: "Temporary Power permits in Morro Bay, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Morro Bay local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Morro Bay."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Building Division counter (general) \| Symbium (solar — automated) |
+| Permit portal | https://www.morrobayca.gov/207 |
 | Municipal code | https://library.municode.com/ca/morro_bay |
 | Fire agency | Morro Bay Fire Department (internal plan check) |
 | Code edition | Ord. 655 · November 22, 2022 (Building Codes) | Ord. 654 · November 2022 (Zoning) |

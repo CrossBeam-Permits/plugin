@@ -1,5 +1,5 @@
 ---
-description: "Swimming Pool permits in Rancho Cordova, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Cordova local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Rancho Cordova."
+description: "Swimming Pool permits in Rancho Cordova, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Cordova local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions swimming pool in Rancho Cordova."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Rancho Cordova Online |
+| Permit portal | https://www.cityofranchocordova.org/ |
 | Municipal code | https://www.codepublishing.com/CA/RanchoCordova/ |
 | Fire agency | Sacramento Metropolitan Fire District (Metro Fire) |
 | Code edition | Ord. 8-2024 (ADU) | Ord. 17-2022 (Building Codes — 2022 cycle adoption) |

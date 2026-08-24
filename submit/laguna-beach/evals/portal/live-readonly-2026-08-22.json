@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at": "2026-08-22T18:00:00-07:00",
+  "browser_surface": "user-visible in-app browser, signed out",
+  "mutation": "none",
+  "domain": "lagunabeachca-energovweb.tylerhost.net",
+  "results": [
+    {"type_id": 114, "deep_link_reached": true, "visible_state": "processing_or_auth_gate", "label_verified_live": false},
+    {"type_id": 182, "deep_link_reached": true, "visible_state": "processing_or_auth_gate", "label_verified_live": false},
+    {"type_id": 183, "deep_link_reached": true, "visible_state": "SSO login redirect", "label_verified_live": false},
+    {"type_id": 186, "deep_link_reached": true, "visible_state": "Apply for Permit", "label_verified_live": true},
+    {"type_id": 187, "deep_link_reached": true, "visible_state": "SSO login redirect", "label_verified_live": false},
+    {"type_id": 188, "deep_link_reached": true, "visible_state": "Apply for Permit", "label_verified_live": true},
+    {"type_id": 214, "deep_link_reached": true, "visible_state": "SSO login redirect", "label_verified_live": false}
+  ],
+  "conclusion": "Official portal domain and deep links are reachable. The signed-out surface exposes some type labels and gates others behind login/processing. No draft was created. Full P1-P7 verification requires a City-authorized signed-in account and filing."
+}

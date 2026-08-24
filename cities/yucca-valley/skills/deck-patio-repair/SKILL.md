@@ -1,5 +1,5 @@
 ---
-description: "Deck Patio Repair permits in Yucca Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Yucca Valley local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Yucca Valley."
+description: "Deck Patio Repair permits in Yucca Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Yucca Valley local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Yucca Valley."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | San Bernardino County Fire Protection District (SBCoFD) · (909) 386-8400 · sbcfire.org |
 | Code edition | Town of Yucca Valley Municipal Code · American Legal · Title 8 (Building) · Title 9 (Development Code) |
 | Code prefix | YVMC |

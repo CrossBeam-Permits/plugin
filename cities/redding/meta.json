@@ -13,5 +13,6 @@
     "What roofing materials are required in a fire hazard zone?",
     "Is my property in a Very High Fire Hazard Severity Zone?",
     "What is the construction excise tax for new construction in Redding?"
-  ]
+  ],
+  "permitSystem": "EnerGov Self-Service"
 }

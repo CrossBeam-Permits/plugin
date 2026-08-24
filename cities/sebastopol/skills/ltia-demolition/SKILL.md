@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Sebastopol, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sebastopol local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Sebastopol."
+description: "Ltia Demolition permits in Sebastopol, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sebastopol local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Sebastopol."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Gold Ridge Fire Protection District (formerly Sebastopol FD, merged July 1 2025) · goldridgefire.org · City of Sebastopol remains AHJ under CFC (SMC 15.04.120) |
 | Code edition | Sebastopol Municipal Code · municipal.codes (Codify) · Current through Ordinance 1159 (November 4, 2025) · 2022 CBC/CRC adopted with local amendments (SMC 15.04.040/15.04.050) |
 | Code prefix | SMC |

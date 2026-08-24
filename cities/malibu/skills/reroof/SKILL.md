@@ -1,5 +1,5 @@
 ---
-description: "Reroof permits in Malibu, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Malibu local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Malibu."
+description: "Reroof permits in Malibu, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Malibu local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions reroof in Malibu."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Malibu Development Portal |
+| Permit portal | https://mlb-pptsrv.ci.malibu.ca.us/ |
 | Fire agency | Los Angeles County Fire Department (LACoFD) |
 | Code edition | 2025 CA Building Standards Code (eff. Jan 1, 2026) via LA County Title 26–29 | MMC Title 15 (Building) + Title 17 (Zoning/LCP) | LACoFD 2022 Consolidated Fire Code | WUI Code Part 7 (2025) citywide |
 | Code prefix | MMC |

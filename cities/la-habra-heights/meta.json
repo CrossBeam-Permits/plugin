@@ -24,5 +24,12 @@
   "wuiCoverage": "all",
   "hasCitySewerSystem": false,
   "hasCommercialZones": false,
-  "permitTypes": ["adu", "single-family-residential", "residential-addition", "multi-unit-residential"]
+  "permitTypes": [
+    "adu",
+    "single-family-residential",
+    "residential-addition",
+    "multi-unit-residential"
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -12,5 +12,7 @@
     "Does Davis have an all-electric mandate?",
     "What solar requirement applies to new commercial buildings in Davis?",
     "Is Davis in a wildfire hazard zone?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

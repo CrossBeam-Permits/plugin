@@ -10,5 +10,7 @@
     "Can I use my ADU as a vacation rental?",
     "Is my property in a Very High Fire Hazard Severity Zone?",
     "What are the ADU size limits in South Lake Tahoe?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

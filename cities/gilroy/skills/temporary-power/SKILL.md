@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Gilroy, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Gilroy local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Gilroy."
+description: "Temporary Power permits in Gilroy, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Gilroy local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Gilroy."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | GO Permit |
+| Permit portal | https://www.cityofgilroy.org/986/GO-Permit |
 | Fire agency | Gilroy Fire Department — Fire Prevention Division (city-integrated, no separate agency submission) |
 | Code edition | GCC §30.54 Z25-02 (ADU) | Ord 2025-06 (Building) | Ord 2025-07 (Fire) | Ord 2025-05 (FHSZ) |
 | Code prefix | GCC |

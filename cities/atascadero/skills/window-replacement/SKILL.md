@@ -1,5 +1,5 @@
 ---
-description: "Window Replacement permits in Atascadero, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Atascadero local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Atascadero."
+description: "Window Replacement permits in Atascadero, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Atascadero local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Atascadero."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eTRAKiT |
 | Permit portal | https://permits.atascadero.org/eTrakit/ |
 | Fire agency | Atascadero Fire & Emergency Services |
 | Code edition | Ord. 693 · Feb 24, 2026 (2025 CBSC adoption) | Ord. 691 · Jan 27, 2026 (ADU update) |

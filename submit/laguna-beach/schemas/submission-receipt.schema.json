@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crossbeam.example/skills/laguna-permit-preparer/submission-receipt.schema.json",
+  "title": "Laguna permit submission receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "record_id", "status", "portal_type_id", "scope", "timestamp", "user_identity_label", "portal_record_number", "uploaded_files", "confirmation_text", "page_state_receipts", "payment_state", "expected_city_response", "next_action"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "record_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["submitted", "saved_draft"]},
+    "portal_type_id": {"enum": [114, 182, 183, 186, 187, 188, 214]},
+    "scope": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "user_identity_label": {"type": "string", "minLength": 1},
+    "portal_record_number": {"type": ["string", "null"]},
+    "uploaded_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["filename", "category", "sha256"],
+        "properties": {
+          "filename": {"type": "string", "minLength": 1},
+          "category": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    "confirmation_text": {"type": "string", "minLength": 1},
+    "page_state_receipts": {"type": "array", "items": {"type": "string"}},
+    "payment_state": {"enum": ["not_requested", "pending_invoice", "paid", "unknown"]},
+    "expected_city_response": {"type": "string", "minLength": 1},
+    "next_action": {"type": "string", "minLength": 1},
+    "in_person_follow_up": {"type": ["string", "null"]},
+    "recovery_note": {"type": ["string", "null"]}
+  }
+}

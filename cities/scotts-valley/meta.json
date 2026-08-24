@@ -28,5 +28,7 @@
     "single-family-residential",
     "wildfire-wui"
   ],
-  "onboardedAt": "2026-05-06"
+  "onboardedAt": "2026-05-06",
+  "permitSystem": null,
+  "portalUrl": "https://scottsvalleyca.portal.opengov.com/"
 }

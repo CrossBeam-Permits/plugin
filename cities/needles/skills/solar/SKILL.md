@@ -1,5 +1,5 @@
 ---
-description: "Solar permits in Needles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Needles local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in Needles."
+description: "Solar permits in Needles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Needles local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in Needles."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) -- Articles 690, 705, 250, 310; 2025 California Fire Code (Title 24, Part 9) -- Chapter 12; 2025 California Residential Code (Title 24, Part 2.5) -- Section R329"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / International Fire Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | San Bernardino County Fire Protection District (SBCoFD) — OFM at 598 S. Tippecanoe Ave, San Bernardino |
 | Code edition | 2022 California Building Standards Code · Municipal Code Chapter 6 & Title 17 (MunicipalCodeOnline) |
 | Code prefix | NMC |

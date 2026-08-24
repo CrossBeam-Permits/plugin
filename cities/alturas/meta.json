@@ -35,5 +35,6 @@
     "Who is the health authority for restaurant permits in Alturas?",
     "What are Alturas building department hours and contact information?",
     "Are there local building code amendments beyond the California state code in Alturas?"
-  ]
+  ],
+  "permitSystem": "iworq"
 }

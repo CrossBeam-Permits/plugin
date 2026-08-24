@@ -34,5 +34,7 @@
   "minimumPermitFee": 253.09,
   "feeSchedule": "FY 2024-2025 Master Fee Schedule",
   "muniCodePlatform": "municode",
-  "muniCodeUrl": "https://library.municode.com/ca/vallejo/codes/code_of_ordinances"
+  "muniCodeUrl": "https://library.municode.com/ca/vallejo/codes/code_of_ordinances",
+  "permitSystem": null,
+  "portalUrl": null
 }

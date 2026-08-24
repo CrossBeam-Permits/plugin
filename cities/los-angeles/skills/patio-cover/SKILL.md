@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Los Angeles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Angeles local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Los Angeles."
+description: "Patio Cover permits in Los Angeles, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Angeles local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Los Angeles."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | PermitLA (express) + ePlanLA (plan check) |
+| Permit portal | https://permitla.lacitydbs.org/ |
 | Municipal code | https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-107363 |
 | Fire agency | LAFD — Los Angeles Fire Department (city-owned — NOT LA County Fire) |
 | Code edition | Ord. 25-1217 · December 4, 2025 (2025 CBSC adoption, eff. Jan 1, 2026) |

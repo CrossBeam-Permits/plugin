@@ -15,5 +15,7 @@
     "What are the R1 development standards (setbacks, height, lot coverage)?",
     "Does Westminster use SolarAPP+ for solar permits?",
     "What OCFA fees are collected at permit issuance?"
-  ]
+  ],
+  "permitSystem": "EnerGov",
+  "portalUrl": null
 }

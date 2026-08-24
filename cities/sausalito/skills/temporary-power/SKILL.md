@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Sausalito, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sausalito local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Sausalito."
+description: "Temporary Power permits in Sausalito, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sausalito local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Sausalito."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Southern Marin Fire Protection District (SMFD) · smfd.org · Portions of city designated Moderate to High FHSZ in LRA (first reading April 2025) · Verify FHSZ status per parcel |
 | Code edition | Sausalito Municipal Code · eCode360 · Title 8 (Building) · Title 10 (Zoning) · SMC Chapter 8.08 local amendments effective January 1, 2026 |
 | Code prefix | SMC |

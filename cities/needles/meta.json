@@ -11,5 +11,7 @@
     "What energy climate zone is Needles in?",
     "How long are building permits valid in Needles?",
     "Are there special requirements for air conditioning systems in Needles?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

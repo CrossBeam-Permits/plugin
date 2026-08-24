@@ -11,5 +11,7 @@
     "Does Alameda require Design Review for exterior work?",
     "Who is the electric utility in Alameda — PG&E or someone else?",
     "Is my Alameda property in a flood zone or liquefaction zone?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

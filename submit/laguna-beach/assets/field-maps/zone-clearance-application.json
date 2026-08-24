@@ -1,0 +1,7102 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "zone-clearance-application",
+  "field_map_version": "2.0.0",
+  "generated_at": "2026-08-23T00:58:49.277166Z",
+  "source_sha256": "ec6fee57c42ae574c76451e766a8e94cfae0756d46d4abc79678a925ed7996ed",
+  "field_tree_sha256": "2ae6b0bb3fec61b578d4baa67e0cb167b920a895c0fe7c96ac1e906f414a9016",
+  "canonical_mappings": [
+    {
+      "fact_id": "site.address",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text1",
+          "rect": [
+            96.2186,
+            470.871,
+            246.219,
+            492.871
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.apn",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text2",
+          "rect": [
+            361.311,
+            469.562,
+            511.311,
+            491.562
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.company_name",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text3",
+          "rect": [
+            136.801,
+            387.744,
+            286.801,
+            409.744
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text4",
+          "rect": [
+            399.275,
+            386.435,
+            549.275,
+            408.435
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text5",
+          "rect": [
+            134.837,
+            366.798,
+            284.837,
+            388.798
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text6",
+          "rect": [
+            397.965,
+            366.144,
+            547.965,
+            388.144
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.phone",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text7",
+          "rect": [
+            99.4913,
+            346.507,
+            249.491,
+            368.507
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.email",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text8",
+          "rect": [
+            397.965,
+            344.544,
+            547.965,
+            366.544
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.company_name",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text9",
+          "rect": [
+            137.455,
+            260.761,
+            287.455,
+            282.761
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text10",
+          "rect": [
+            394.693,
+            262.07,
+            544.693,
+            284.07
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text11",
+          "rect": [
+            133.528,
+            239.816,
+            283.528,
+            261.816
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text12",
+          "rect": [
+            394.038,
+            238.507,
+            544.038,
+            260.507
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.phone",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text13",
+          "rect": [
+            99.4913,
+            218.87,
+            249.491,
+            240.87
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.email",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text14",
+          "rect": [
+            396.656,
+            218.216,
+            546.656,
+            240.216
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text15",
+          "rect": [
+            127.637,
+            176.325,
+            277.637,
+            198.325
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text16",
+          "rect": [
+            135.492,
+            156.688,
+            285.492,
+            178.688
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text17",
+          "rect": [
+            100.8,
+            135.088,
+            250.8,
+            157.088
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text18",
+          "rect": [
+            392.074,
+            154.07,
+            542.074,
+            176.07
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_widgets": [
+        {
+          "page": 1,
+          "field_name": "Text19",
+          "rect": [
+            394.693,
+            135.088,
+            544.693,
+            157.088
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "project.description",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text20",
+          "rect": [
+            47.782,
+            555.053,
+            582.548,
+            616.581
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    }
+  ],
+  "review_fields": [
+    "Address 1",
+    "Address 2",
+    "Address 3",
+    "Address 4",
+    "Authorized Signer Name (if applicable) 1",
+    "Authorized Signer Name (if applicable) 2",
+    "COMMENTSCOMBINED TOTAL",
+    "COMMENTSRow1",
+    "COMMENTSRow1_2",
+    "COMMENTSRow2",
+    "COMMENTSRow2_2",
+    "COMMENTSRow3",
+    "COMMENTSRow3_2",
+    "COMMENTSTOTAL",
+    "COMMENTSTOTAL_2",
+    "CONFORMS yesnoLOT AREA",
+    "CONFORMS yesnoLOT DEPTH AVG",
+    "CONFORMS yesnoLOT WIDTH AVG",
+    "CONFORMS yesnoMAX BUILDING HEIGHT",
+    "CONFORMS yesnoMAX HEIGHT FROM GRADE",
+    "Check Box1",
+    "Check Box1(1)",
+    "Check Box1(2)",
+    "Check Box1(3)",
+    "Check Box1(4)",
+    "Check Box1(5)",
+    "Check Box1(6)",
+    "Check Box1(7)",
+    "Check Box1(8)",
+    "Check Box1(9)",
+    "DEMO TOTAL FLOOR AREA",
+    "DEMO TOTAL LOWER LEVEL",
+    "DEMO TOTAL ROOF AREA",
+    "DEMO TOTAL TOTAL EXTERIOR WALL",
+    "DEMO TOTAL TOTAL FLOOR  ROOF",
+    "DEMO TOTAL UPPER LEVEL",
+    "DIMENSIONS L x W x DPOOL",
+    "DIMENSIONS L x W x DPOOL_2",
+    "DIMENSIONS L x W x DSPA",
+    "DIMENSIONS L x W x DSPA_2",
+    "Date Signed by Owner",
+    "EXISTING EGRESS DOORS",
+    "EXISTING FIXTURE COUNT",
+    "EXISTING FIXTURE COUNT_2",
+    "EXISTINGELEVATED DECKTERRACE",
+    "EXISTINGFLOOR AREA",
+    "EXISTINGGARAGE",
+    "EXISTINGHARDSCAPE INCL DRIVEWAY",
+    "EXISTINGHARDSCAPE INCL DRIVEWAY_2",
+    "EXISTINGLIVING AREA",
+    "EXISTINGLOT AREA",
+    "EXISTINGLOT DEPTH AVG",
+    "EXISTINGLOT WIDTH AVG",
+    "EXISTINGLOWER LEVEL",
+    "EXISTINGLOWER LEVEL_2",
+    "EXISTINGMAX BUILDING HEIGHT",
+    "EXISTINGMAX HEIGHT FROM GRADE",
+    "EXISTINGMECHANICAL",
+    "EXISTINGROOF AREA",
+    "EXISTINGSTORAGE",
+    "EXISTINGSTRUCTURE",
+    "EXISTINGSTRUCTURE_2",
+    "EXISTINGTOTAL",
+    "EXISTINGTOTAL EXTERIOR WALL",
+    "EXISTINGTOTAL FLOOR  ROOF",
+    "EXISTINGTOTAL_2",
+    "EXISTINGTOTAL_3",
+    "EXISTINGUPPER LEVEL",
+    "EXISTINGUPPER LEVEL_2",
+    "Email Address",
+    "Email Address 2",
+    "FIXTURE TYPERow1",
+    "FIXTURE TYPERow1_2",
+    "FIXTURE TYPERow2",
+    "FIXTURE TYPERow2_2",
+    "FIXTURE TYPERow3",
+    "FIXTURE TYPERow3_2",
+    "FLOOR AREA RATIO",
+    "Front Yard",
+    "INSIDE BUILDING FOOTPRINTCUT",
+    "INSIDE BUILDING FOOTPRINTFILL",
+    "INSIDE BUILDING FOOTPRINTNET EXPORT",
+    "IRRIGATED AREA",
+    "LANDSCAPE OPEN SPACE",
+    "LOT COVERAGE BSC",
+    "LOT SLOPE",
+    "LUMENSRow1",
+    "LUMENSRow1_2",
+    "LUMENSRow2",
+    "LUMENSRow2_2",
+    "LUMENSRow3",
+    "LUMENSRow3_2",
+    "OUTSIDE BUILDING FOOTPRINTCUT",
+    "OUTSIDE BUILDING FOOTPRINTFILL",
+    "OUTSIDE BUILDING FOOTPRINTNET EXPORT",
+    "Owner / Entity Name 1",
+    "Owner Name",
+    "Owner Signature",
+    "Owner/ Entity Name 2",
+    "PARKING",
+    "POOLSPACUT",
+    "POOLSPAFILL",
+    "POOLSPANET EXPORT",
+    "PROPOSED EGRESS DOORS",
+    "PROPOSED FIXTURE COUNT",
+    "PROPOSED FIXTURE COUNT_2",
+    "PROPOSEDELEVATED DECKTERRACE",
+    "PROPOSEDGARAGE",
+    "PROPOSEDHARDSCAPE INCL DRIVEWAY",
+    "PROPOSEDHARDSCAPE INCL DRIVEWAY_2",
+    "PROPOSEDLIVING AREA",
+    "PROPOSEDLOT AREA",
+    "PROPOSEDLOT DEPTH AVG",
+    "PROPOSEDLOT WIDTH AVG",
+    "PROPOSEDLOWER LEVEL",
+    "PROPOSEDMAX BUILDING HEIGHT",
+    "PROPOSEDMAX HEIGHT FROM GRADE",
+    "PROPOSEDMECHANICAL",
+    "PROPOSEDSTORAGE",
+    "PROPOSEDSTRUCTURE",
+    "PROPOSEDSTRUCTURE_2",
+    "PROPOSEDTOTAL",
+    "PROPOSEDTOTAL_2",
+    "PROPOSEDTOTAL_3",
+    "PROPOSEDUPPER LEVEL",
+    "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative",
+    "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
+    "QUANTITYCOMBINED TOTAL",
+    "QUANTITYRow1",
+    "QUANTITYRow1_2",
+    "QUANTITYRow2",
+    "QUANTITYRow2_2",
+    "QUANTITYRow3",
+    "QUANTITYRow3_2",
+    "QUANTITYTOTAL",
+    "QUANTITYTOTAL_2",
+    "REMAININGFLOOR AREA",
+    "REMAININGLOWER LEVEL",
+    "REMAININGROOF AREA",
+    "REMAININGTOTAL EXTERIOR WALL",
+    "REMAININGTOTAL FLOOR  ROOF",
+    "REMAININGUPPER LEVEL",
+    "REMODELELEVATED DECKTERRACE",
+    "REMODELGARAGE",
+    "REMODELLIVING AREA",
+    "REMODELLOWER LEVEL",
+    "REMODELMECHANICAL",
+    "REMODELSTORAGE",
+    "REMODELTOTAL",
+    "REMODELUPPER LEVEL",
+    "REMOVEDFLOOR AREA",
+    "REMOVEDLOWER LEVEL",
+    "REMOVEDROOF AREA",
+    "REMOVEDTOTAL EXTERIOR WALL",
+    "REMOVEDTOTAL FLOOR  ROOF",
+    "REMOVEDUPPER LEVEL",
+    "REQUIREDLOT AREA",
+    "REQUIREDLOT DEPTH AVG",
+    "REQUIREDLOT WIDTH AVG",
+    "REQUIREDMAX BUILDING HEIGHT",
+    "REQUIREDMAX HEIGHT FROM GRADE",
+    "Rear Yard",
+    "Side Yards combinedeach",
+    "Site Address",
+    "TOTALCUT",
+    "TOTALELEVATED DECKTERRACE",
+    "TOTALFILL",
+    "TOTALGARAGE",
+    "TOTALLIVING AREA",
+    "TOTALLOWER LEVEL",
+    "TOTALMECHANICAL",
+    "TOTALNET EXPORT",
+    "TOTALSTORAGE",
+    "TOTALTOTAL",
+    "TOTALUPPER LEVEL",
+    "Text1(1)",
+    "Text1(10)",
+    "Text1(11)",
+    "Text1(12)",
+    "Text1(13)",
+    "Text1(14)",
+    "Text1(15)",
+    "Text1(16)",
+    "Text1(2)",
+    "Text1(3)",
+    "Text1(4)",
+    "Text1(5)",
+    "Text1(6)",
+    "Text1(7)",
+    "Text1(8)",
+    "Text1(9)",
+    "USE",
+    "VOLUMEGALLONSPOOL",
+    "VOLUMEGALLONSSPA",
+    "VOLUMEGALLONSTOTAL",
+    "WATTAGERow1",
+    "WATTAGERow1_2",
+    "WATTAGERow2",
+    "WATTAGERow2_2",
+    "WATTAGERow3",
+    "WATTAGERow3_2",
+    "ZONE"
+  ],
+  "fields": [
+    {
+      "name": "Address 1",
+      "type": "/Tx",
+      "tooltip": "Address 1",
+      "flags": 0
+    },
+    {
+      "name": "Address 2",
+      "type": "/Tx",
+      "tooltip": " Address 2",
+      "flags": 0
+    },
+    {
+      "name": "Address 3",
+      "type": "/Tx",
+      "tooltip": "Address 3",
+      "flags": 0
+    },
+    {
+      "name": "Address 4",
+      "type": "/Tx",
+      "tooltip": "Address 4",
+      "flags": 0
+    },
+    {
+      "name": "Authorized Signer Name (if applicable) 1",
+      "type": "/Tx",
+      "tooltip": "Authorized Signer Name (if applicable) 1",
+      "flags": 0
+    },
+    {
+      "name": "Authorized Signer Name (if applicable) 2",
+      "type": "/Tx",
+      "tooltip": "Authorized Signer Name (if applicable) 2",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSCOMBINED TOTAL",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_COMBINED TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSRow1",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSRow1_2",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSRow2",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSRow2_2",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSRow3",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSRow3_2",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSTOTAL",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "COMMENTSTOTAL_2",
+      "type": "/Tx",
+      "tooltip": "COMMENTS_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "CONFORMS yesnoLOT AREA",
+      "type": "/Tx",
+      "tooltip": "CONFORMS (yes/no)_LOT AREA",
+      "flags": 0
+    },
+    {
+      "name": "CONFORMS yesnoLOT DEPTH AVG",
+      "type": "/Tx",
+      "tooltip": "CONFORMS (yes/no)_LOT DEPTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "CONFORMS yesnoLOT WIDTH AVG",
+      "type": "/Tx",
+      "tooltip": "CONFORMS (yes/no)_LOT WIDTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "CONFORMS yesnoMAX BUILDING HEIGHT",
+      "type": "/Tx",
+      "tooltip": "CONFORMS (yes/no)_MAX. BUILDING HEIGHT",
+      "flags": 0
+    },
+    {
+      "name": "CONFORMS yesnoMAX HEIGHT FROM GRADE",
+      "type": "/Tx",
+      "tooltip": "CONFORMS (yes/no)_MAX. HEIGHT FROM GRADE",
+      "flags": 0
+    },
+    {
+      "name": "Check Box1",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(1)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(2)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(3)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(4)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(5)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(6)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(7)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(8)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box1(9)",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "DEMO TOTAL FLOOR AREA",
+      "type": "/Tx",
+      "tooltip": "DEMO TOTAL %_FLOOR AREA",
+      "flags": 0
+    },
+    {
+      "name": "DEMO TOTAL LOWER LEVEL",
+      "type": "/Tx",
+      "tooltip": "DEMO TOTAL %_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "DEMO TOTAL ROOF AREA",
+      "type": "/Tx",
+      "tooltip": "DEMO TOTAL %_ROOF AREA",
+      "flags": 0
+    },
+    {
+      "name": "DEMO TOTAL TOTAL EXTERIOR WALL",
+      "type": "/Tx",
+      "tooltip": "DEMO TOTAL %_TOTAL EXTERIOR WALL",
+      "flags": 0
+    },
+    {
+      "name": "DEMO TOTAL TOTAL FLOOR  ROOF",
+      "type": "/Tx",
+      "tooltip": "DEMO TOTAL %_TOTAL FLOOR + ROOF",
+      "flags": 0
+    },
+    {
+      "name": "DEMO TOTAL UPPER LEVEL",
+      "type": "/Tx",
+      "tooltip": "DEMO TOTAL %_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "DIMENSIONS L x W x DPOOL",
+      "type": "/Tx",
+      "tooltip": "DIMENSIONS (L x W x D)_POOL",
+      "flags": 0
+    },
+    {
+      "name": "DIMENSIONS L x W x DPOOL_2",
+      "type": "/Tx",
+      "tooltip": "DIMENSIONS (L x W x D)_POOL",
+      "flags": 0
+    },
+    {
+      "name": "DIMENSIONS L x W x DSPA",
+      "type": "/Tx",
+      "tooltip": "DIMENSIONS (L x W x D)_SPA",
+      "flags": 0
+    },
+    {
+      "name": "DIMENSIONS L x W x DSPA_2",
+      "type": "/Tx",
+      "tooltip": "DIMENSIONS (L x W x D)_SPA",
+      "flags": 0
+    },
+    {
+      "name": "Date Signed by Owner",
+      "type": "/Tx",
+      "tooltip": "Date Signed by Owner",
+      "flags": 0
+    },
+    {
+      "name": "EXISTING EGRESS DOORS",
+      "type": "/Tx",
+      "tooltip": "EXISTING EGRESS DOORS",
+      "flags": 0
+    },
+    {
+      "name": "EXISTING FIXTURE COUNT",
+      "type": "/Tx",
+      "tooltip": "EXISTING FIXTURE COUNT",
+      "flags": 0
+    },
+    {
+      "name": "EXISTING FIXTURE COUNT_2",
+      "type": "/Tx",
+      "tooltip": "EXISTING FIXTURE COUNT",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGELEVATED DECKTERRACE",
+      "type": "/Tx",
+      "tooltip": "EXISTING_ELEVATED DECK/TERRACE",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGFLOOR AREA",
+      "type": "/Tx",
+      "tooltip": "EXISTING_FLOOR AREA",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGGARAGE",
+      "type": "/Tx",
+      "tooltip": "EXISTING_GARAGE",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGHARDSCAPE INCL DRIVEWAY",
+      "type": "/Tx",
+      "tooltip": "EXISTING_HARDSCAPE (INCL. DRIVEWAY)",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGHARDSCAPE INCL DRIVEWAY_2",
+      "type": "/Tx",
+      "tooltip": "EXISTING_HARDSCAPE (INCL. DRIVEWAY)",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGLIVING AREA",
+      "type": "/Tx",
+      "tooltip": "EXISTING_LIVING AREA:",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGLOT AREA",
+      "type": "/Tx",
+      "tooltip": "EXISTING_LOT AREA",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGLOT DEPTH AVG",
+      "type": "/Tx",
+      "tooltip": "EXISTING_LOT DEPTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGLOT WIDTH AVG",
+      "type": "/Tx",
+      "tooltip": "EXISTING_LOT WIDTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGLOWER LEVEL",
+      "type": "/Tx",
+      "tooltip": "EXISTING_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGLOWER LEVEL_2",
+      "type": "/Tx",
+      "tooltip": "EXISTING_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGMAX BUILDING HEIGHT",
+      "type": "/Tx",
+      "tooltip": "EXISTING_MAX. BUILDING HEIGHT",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGMAX HEIGHT FROM GRADE",
+      "type": "/Tx",
+      "tooltip": "EXISTING_MAX. HEIGHT FROM GRADE",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGMECHANICAL",
+      "type": "/Tx",
+      "tooltip": "EXISTING_MECHANICAL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGROOF AREA",
+      "type": "/Tx",
+      "tooltip": "EXISTING_ROOF AREA",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGSTORAGE",
+      "type": "/Tx",
+      "tooltip": "EXISTING_STORAGE",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGSTRUCTURE",
+      "type": "/Tx",
+      "tooltip": "EXISTING_STRUCTURE",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGSTRUCTURE_2",
+      "type": "/Tx",
+      "tooltip": "EXISTING_STRUCTURE",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGTOTAL",
+      "type": "/Tx",
+      "tooltip": "EXISTING_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGTOTAL EXTERIOR WALL",
+      "type": "/Tx",
+      "tooltip": "EXISTING_TOTAL EXTERIOR WALL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGTOTAL FLOOR  ROOF",
+      "type": "/Tx",
+      "tooltip": "EXISTING_TOTAL FLOOR + ROOF",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGTOTAL_2",
+      "type": "/Tx",
+      "tooltip": "EXISTING_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGTOTAL_3",
+      "type": "/Tx",
+      "tooltip": "EXISTING_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGUPPER LEVEL",
+      "type": "/Tx",
+      "tooltip": "EXISTING_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "EXISTINGUPPER LEVEL_2",
+      "type": "/Tx",
+      "tooltip": "EXISTING_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "Email Address",
+      "type": "/Tx",
+      "tooltip": "Email",
+      "flags": 0
+    },
+    {
+      "name": "Email Address 2",
+      "type": "/Tx",
+      "tooltip": "Email Address 2",
+      "flags": 0
+    },
+    {
+      "name": "FIXTURE TYPERow1",
+      "type": "/Tx",
+      "tooltip": "FIXTURE TYPE_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "FIXTURE TYPERow1_2",
+      "type": "/Tx",
+      "tooltip": "FIXTURE TYPE_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "FIXTURE TYPERow2",
+      "type": "/Tx",
+      "tooltip": "FIXTURE TYPE_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "FIXTURE TYPERow2_2",
+      "type": "/Tx",
+      "tooltip": "FIXTURE TYPE_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "FIXTURE TYPERow3",
+      "type": "/Tx",
+      "tooltip": "FIXTURE TYPE_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "FIXTURE TYPERow3_2",
+      "type": "/Tx",
+      "tooltip": "FIXTURE TYPE_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "FLOOR AREA RATIO",
+      "type": "/Tx",
+      "tooltip": "FLOOR AREA RATIO",
+      "flags": 0
+    },
+    {
+      "name": "Front Yard",
+      "type": "/Tx",
+      "tooltip": "Front Yard",
+      "flags": 0
+    },
+    {
+      "name": "INSIDE BUILDING FOOTPRINTCUT",
+      "type": "/Tx",
+      "tooltip": "INSIDE BUILDING FOOTPRINT_CUT",
+      "flags": 0
+    },
+    {
+      "name": "INSIDE BUILDING FOOTPRINTFILL",
+      "type": "/Tx",
+      "tooltip": "INSIDE BUILDING FOOTPRINT_FILL",
+      "flags": 0
+    },
+    {
+      "name": "INSIDE BUILDING FOOTPRINTNET EXPORT",
+      "type": "/Tx",
+      "tooltip": "INSIDE BUILDING FOOTPRINT_NET EXPORT",
+      "flags": 0
+    },
+    {
+      "name": "IRRIGATED AREA",
+      "type": "/Tx",
+      "tooltip": "IRRIGATED AREA",
+      "flags": 0
+    },
+    {
+      "name": "LANDSCAPE OPEN SPACE",
+      "type": "/Tx",
+      "tooltip": "LANDSCAPE OPEN SPACE",
+      "flags": 0
+    },
+    {
+      "name": "LOT COVERAGE BSC",
+      "type": "/Tx",
+      "tooltip": "LOT COVERAGE (BSC)",
+      "flags": 0
+    },
+    {
+      "name": "LOT SLOPE",
+      "type": "/Tx",
+      "tooltip": "LOT SLOPE (%)",
+      "flags": 0
+    },
+    {
+      "name": "LUMENSRow1",
+      "type": "/Tx",
+      "tooltip": "LUMENS_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "LUMENSRow1_2",
+      "type": "/Tx",
+      "tooltip": "LUMENS_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "LUMENSRow2",
+      "type": "/Tx",
+      "tooltip": "LUMENS_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "LUMENSRow2_2",
+      "type": "/Tx",
+      "tooltip": "LUMENS_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "LUMENSRow3",
+      "type": "/Tx",
+      "tooltip": "LUMENS_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "LUMENSRow3_2",
+      "type": "/Tx",
+      "tooltip": "LUMENS_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "OUTSIDE BUILDING FOOTPRINTCUT",
+      "type": "/Tx",
+      "tooltip": "OUTSIDE BUILDING FOOTPRINT_CUT",
+      "flags": 0
+    },
+    {
+      "name": "OUTSIDE BUILDING FOOTPRINTFILL",
+      "type": "/Tx",
+      "tooltip": "OUTSIDE BUILDING FOOTPRINT_FILL",
+      "flags": 0
+    },
+    {
+      "name": "OUTSIDE BUILDING FOOTPRINTNET EXPORT",
+      "type": "/Tx",
+      "tooltip": "OUTSIDE BUILDING FOOTPRINT_NET EXPORT",
+      "flags": 0
+    },
+    {
+      "name": "Owner / Entity Name 1",
+      "type": "/Tx",
+      "tooltip": " Owner / Entity Name 1",
+      "flags": 0
+    },
+    {
+      "name": "Owner Name",
+      "type": "/Tx",
+      "tooltip": "Owner Name",
+      "flags": 0
+    },
+    {
+      "name": "Owner Signature",
+      "type": "/Sig",
+      "tooltip": "Owner Signature",
+      "flags": 0
+    },
+    {
+      "name": "Owner/ Entity Name 2",
+      "type": "/Tx",
+      "tooltip": "Owner/ Entity Name 2",
+      "flags": 0
+    },
+    {
+      "name": "PARKING",
+      "type": "/Tx",
+      "tooltip": "PARKING",
+      "flags": 0
+    },
+    {
+      "name": "POOLSPACUT",
+      "type": "/Tx",
+      "tooltip": "POOL/SPA_CUT",
+      "flags": 0
+    },
+    {
+      "name": "POOLSPAFILL",
+      "type": "/Tx",
+      "tooltip": "POOL/SPA_FILL",
+      "flags": 0
+    },
+    {
+      "name": "POOLSPANET EXPORT",
+      "type": "/Tx",
+      "tooltip": "POOL/SPA_NET EXPORT",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSED EGRESS DOORS",
+      "type": "/Tx",
+      "tooltip": "PROPOSED EGRESS DOORS",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSED FIXTURE COUNT",
+      "type": "/Tx",
+      "tooltip": "PROPOSED FIXTURE COUNT",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSED FIXTURE COUNT_2",
+      "type": "/Tx",
+      "tooltip": "PROPOSED FIXTURE COUNT",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDELEVATED DECKTERRACE",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_ELEVATED DECK/TERRACE",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDGARAGE",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_GARAGE",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDHARDSCAPE INCL DRIVEWAY",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_HARDSCAPE (INCL. DRIVEWAY)",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDHARDSCAPE INCL DRIVEWAY_2",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_HARDSCAPE (INCL. DRIVEWAY)",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDLIVING AREA",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_LIVING AREA:",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDLOT AREA",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_LOT AREA",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDLOT DEPTH AVG",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_LOT DEPTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDLOT WIDTH AVG",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_LOT WIDTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDLOWER LEVEL",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDMAX BUILDING HEIGHT",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_MAX. BUILDING HEIGHT",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDMAX HEIGHT FROM GRADE",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_MAX. HEIGHT FROM GRADE",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDMECHANICAL",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_MECHANICAL",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDSTORAGE",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_STORAGE",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDSTRUCTURE",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_STRUCTURE",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDSTRUCTURE_2",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_STRUCTURE",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDTOTAL",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDTOTAL_2",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDTOTAL_3",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "PROPOSEDUPPER LEVEL",
+      "type": "/Tx",
+      "tooltip": "PROPOSED_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative",
+      "type": null,
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
+      "type": "/Tx",
+      "tooltip": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages.",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYCOMBINED TOTAL",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_COMBINED TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYRow1",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYRow1_2",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYRow2",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYRow2_2",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYRow3",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYRow3_2",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYTOTAL",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "QUANTITYTOTAL_2",
+      "type": "/Tx",
+      "tooltip": "QUANTITY_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "REMAININGFLOOR AREA",
+      "type": "/Tx",
+      "tooltip": "REMAINING_FLOOR AREA",
+      "flags": 0
+    },
+    {
+      "name": "REMAININGLOWER LEVEL",
+      "type": "/Tx",
+      "tooltip": "REMAINING_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "REMAININGROOF AREA",
+      "type": "/Tx",
+      "tooltip": "REMAINING_ROOF AREA",
+      "flags": 0
+    },
+    {
+      "name": "REMAININGTOTAL EXTERIOR WALL",
+      "type": "/Tx",
+      "tooltip": "REMAINING_TOTAL EXTERIOR WALL",
+      "flags": 0
+    },
+    {
+      "name": "REMAININGTOTAL FLOOR  ROOF",
+      "type": "/Tx",
+      "tooltip": "REMAINING_TOTAL FLOOR + ROOF",
+      "flags": 0
+    },
+    {
+      "name": "REMAININGUPPER LEVEL",
+      "type": "/Tx",
+      "tooltip": "REMAINING_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "REMODELELEVATED DECKTERRACE",
+      "type": "/Tx",
+      "tooltip": "REMODEL_ELEVATED DECK/TERRACE",
+      "flags": 0
+    },
+    {
+      "name": "REMODELGARAGE",
+      "type": "/Tx",
+      "tooltip": "REMODEL_GARAGE",
+      "flags": 0
+    },
+    {
+      "name": "REMODELLIVING AREA",
+      "type": "/Tx",
+      "tooltip": "REMODEL_LIVING AREA:",
+      "flags": 0
+    },
+    {
+      "name": "REMODELLOWER LEVEL",
+      "type": "/Tx",
+      "tooltip": "REMODEL_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "REMODELMECHANICAL",
+      "type": "/Tx",
+      "tooltip": "REMODEL_MECHANICAL",
+      "flags": 0
+    },
+    {
+      "name": "REMODELSTORAGE",
+      "type": "/Tx",
+      "tooltip": "REMODEL_STORAGE",
+      "flags": 0
+    },
+    {
+      "name": "REMODELTOTAL",
+      "type": "/Tx",
+      "tooltip": "REMODEL_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "REMODELUPPER LEVEL",
+      "type": "/Tx",
+      "tooltip": "REMODEL_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "REMOVEDFLOOR AREA",
+      "type": "/Tx",
+      "tooltip": "REMOVED_FLOOR AREA",
+      "flags": 0
+    },
+    {
+      "name": "REMOVEDLOWER LEVEL",
+      "type": "/Tx",
+      "tooltip": "REMOVED_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "REMOVEDROOF AREA",
+      "type": "/Tx",
+      "tooltip": "REMOVED_ROOF AREA",
+      "flags": 0
+    },
+    {
+      "name": "REMOVEDTOTAL EXTERIOR WALL",
+      "type": "/Tx",
+      "tooltip": "REMOVED_TOTAL EXTERIOR WALL",
+      "flags": 0
+    },
+    {
+      "name": "REMOVEDTOTAL FLOOR  ROOF",
+      "type": "/Tx",
+      "tooltip": "REMOVED_TOTAL FLOOR + ROOF",
+      "flags": 0
+    },
+    {
+      "name": "REMOVEDUPPER LEVEL",
+      "type": "/Tx",
+      "tooltip": "REMOVED_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "REQUIREDLOT AREA",
+      "type": "/Tx",
+      "tooltip": "REQUIRED_LOT AREA",
+      "flags": 0
+    },
+    {
+      "name": "REQUIREDLOT DEPTH AVG",
+      "type": "/Tx",
+      "tooltip": "REQUIRED_LOT DEPTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "REQUIREDLOT WIDTH AVG",
+      "type": "/Tx",
+      "tooltip": "REQUIRED_LOT WIDTH (AVG.)",
+      "flags": 0
+    },
+    {
+      "name": "REQUIREDMAX BUILDING HEIGHT",
+      "type": "/Tx",
+      "tooltip": "REQUIRED_MAX. BUILDING HEIGHT",
+      "flags": 0
+    },
+    {
+      "name": "REQUIREDMAX HEIGHT FROM GRADE",
+      "type": "/Tx",
+      "tooltip": "REQUIRED_MAX. HEIGHT FROM GRADE",
+      "flags": 0
+    },
+    {
+      "name": "Rear Yard",
+      "type": "/Tx",
+      "tooltip": "Rear Yard",
+      "flags": 0
+    },
+    {
+      "name": "Side Yards combinedeach",
+      "type": "/Tx",
+      "tooltip": "Side Yards (combined/each)",
+      "flags": 0
+    },
+    {
+      "name": "Site Address",
+      "type": "/Tx",
+      "tooltip": "Site Address",
+      "flags": 0
+    },
+    {
+      "name": "TOTALCUT",
+      "type": "/Tx",
+      "tooltip": "TOTAL_CUT",
+      "flags": 0
+    },
+    {
+      "name": "TOTALELEVATED DECKTERRACE",
+      "type": "/Tx",
+      "tooltip": "TOTAL_ELEVATED DECK/TERRACE",
+      "flags": 0
+    },
+    {
+      "name": "TOTALFILL",
+      "type": "/Tx",
+      "tooltip": "TOTAL_FILL",
+      "flags": 0
+    },
+    {
+      "name": "TOTALGARAGE",
+      "type": "/Tx",
+      "tooltip": "TOTAL_GARAGE",
+      "flags": 0
+    },
+    {
+      "name": "TOTALLIVING AREA",
+      "type": "/Tx",
+      "tooltip": "TOTAL_LIVING AREA:",
+      "flags": 0
+    },
+    {
+      "name": "TOTALLOWER LEVEL",
+      "type": "/Tx",
+      "tooltip": "TOTAL_LOWER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "TOTALMECHANICAL",
+      "type": "/Tx",
+      "tooltip": "TOTAL_MECHANICAL",
+      "flags": 0
+    },
+    {
+      "name": "TOTALNET EXPORT",
+      "type": "/Tx",
+      "tooltip": "TOTAL_NET EXPORT",
+      "flags": 0
+    },
+    {
+      "name": "TOTALSTORAGE",
+      "type": "/Tx",
+      "tooltip": "TOTAL_STORAGE",
+      "flags": 0
+    },
+    {
+      "name": "TOTALTOTAL",
+      "type": "/Tx",
+      "tooltip": "TOTAL_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "TOTALUPPER LEVEL",
+      "type": "/Tx",
+      "tooltip": "TOTAL_UPPER LEVEL",
+      "flags": 0
+    },
+    {
+      "name": "Text1",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(1)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(10)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(11)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(12)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(13)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(14)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(15)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(16)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(2)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(3)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(4)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(5)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(6)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(7)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(8)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text1(9)",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text10",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text11",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text12",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text13",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text14",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text15",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text16",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text17",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text18",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text19",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text2",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text20",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text3",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text4",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text5",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text6",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text7",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text8",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text9",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "USE",
+      "type": "/Tx",
+      "tooltip": "USE",
+      "flags": 0
+    },
+    {
+      "name": "VOLUMEGALLONSPOOL",
+      "type": "/Tx",
+      "tooltip": "VOLUME/GALLONS_POOL",
+      "flags": 0
+    },
+    {
+      "name": "VOLUMEGALLONSSPA",
+      "type": "/Tx",
+      "tooltip": "VOLUME/GALLONS_SPA",
+      "flags": 0
+    },
+    {
+      "name": "VOLUMEGALLONSTOTAL",
+      "type": "/Tx",
+      "tooltip": "VOLUME/GALLONS_TOTAL",
+      "flags": 0
+    },
+    {
+      "name": "WATTAGERow1",
+      "type": "/Tx",
+      "tooltip": "WATTAGE_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "WATTAGERow1_2",
+      "type": "/Tx",
+      "tooltip": "WATTAGE_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "WATTAGERow2",
+      "type": "/Tx",
+      "tooltip": "WATTAGE_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "WATTAGERow2_2",
+      "type": "/Tx",
+      "tooltip": "WATTAGE_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "WATTAGERow3",
+      "type": "/Tx",
+      "tooltip": "WATTAGE_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "WATTAGERow3_2",
+      "type": "/Tx",
+      "tooltip": "WATTAGE_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "ZONE",
+      "type": "/Tx",
+      "tooltip": "ZONE",
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 1,
+      "field_name": "Text1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        96.2186,
+        470.871,
+        246.219,
+        492.871
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        361.311,
+        469.562,
+        511.311,
+        491.562
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        136.801,
+        387.744,
+        286.801,
+        409.744
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        399.275,
+        386.435,
+        549.275,
+        408.435
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text5",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        134.837,
+        366.798,
+        284.837,
+        388.798
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text6",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        397.965,
+        366.144,
+        547.965,
+        388.144
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text7",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        99.4913,
+        346.507,
+        249.491,
+        368.507
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text8",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        397.965,
+        344.544,
+        547.965,
+        366.544
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text9",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        137.455,
+        260.761,
+        287.455,
+        282.761
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text10",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        394.693,
+        262.07,
+        544.693,
+        284.07
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text11",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        133.528,
+        239.816,
+        283.528,
+        261.816
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text12",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        394.038,
+        238.507,
+        544.038,
+        260.507
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text13",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        99.4913,
+        218.87,
+        249.491,
+        240.87
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text14",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        396.656,
+        218.216,
+        546.656,
+        240.216
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text15",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        127.637,
+        176.325,
+        277.637,
+        198.325
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text16",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        135.492,
+        156.688,
+        285.492,
+        178.688
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text17",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        100.8,
+        135.088,
+        250.8,
+        157.088
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text18",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        392.074,
+        154.07,
+        542.074,
+        176.07
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Text19",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        394.693,
+        135.088,
+        544.693,
+        157.088
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Text20",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        47.782,
+        555.053,
+        582.548,
+        616.581
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        632.4,
+        348.0,
+        646.8
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Site Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        276.12,
+        471.24,
+        540.12,
+        485.64
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Address 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.127,
+        632.2191,
+        479.127,
+        646.619
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.562,
+        600.415,
+        479.781,
+        614.815
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Owner / Entity Name 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.129,
+        664.017,
+        479.129,
+        678.4171
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Address 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.126,
+        616.709,
+        479.126,
+        631.109
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Authorized Signer Name (if applicable) 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        310.784,
+        648.1281,
+        478.784,
+        662.528
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Owner/ Entity Name 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.91,
+        511.762,
+        481.547,
+        528.526
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Authorized Signer Name (if applicable) 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.856,
+        494.308,
+        481.493,
+        511.071
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Address 3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.802,
+        477.999,
+        481.438,
+        494.762
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Address 4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.238,
+        463.235,
+        480.875,
+        479.999
+      ]
+    },
+    {
+      "page": 18,
+      "field_name": "Email Address 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.82,
+        447.489,
+        481.456,
+        464.253
+      ]
+    },
+    {
+      "page": 19,
+      "field_name": "Date Signed by Owner",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        120.535,
+        322.287,
+        240.535,
+        351.087
+      ]
+    },
+    {
+      "page": 19,
+      "field_name": "Owner Signature",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        111.273,
+        385.598,
+        261.273,
+        417.598
+      ]
+    },
+    {
+      "page": 19,
+      "field_name": "Owner Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        113.673,
+        421.78,
+        230.291,
+        443.78
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "USE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        134.76,
+        958.8,
+        221.64,
+        970.92
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "ZONE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        315.72,
+        958.8,
+        397.92,
+        970.92
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LOT SLOPE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        487.44,
+        958.8,
+        574.32,
+        970.92
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REQUIREDLOT AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        911.16,
+        274.32,
+        923.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGLOT AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        911.16,
+        374.28,
+        923.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDLOT AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        911.16,
+        474.36,
+        923.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "CONFORMS yesnoLOT AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        911.16,
+        574.32,
+        923.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REQUIREDLOT WIDTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        897.96,
+        274.32,
+        910.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGLOT WIDTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        897.96,
+        374.28,
+        910.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDLOT WIDTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        897.96,
+        474.36,
+        910.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "CONFORMS yesnoLOT WIDTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        897.96,
+        574.32,
+        910.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REQUIREDLOT DEPTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        884.64,
+        274.32,
+        896.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGLOT DEPTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        884.64,
+        374.28,
+        896.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDLOT DEPTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        884.64,
+        474.36,
+        896.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "CONFORMS yesnoLOT DEPTH AVG",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        884.64,
+        574.32,
+        896.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REQUIREDMAX BUILDING HEIGHT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        871.44,
+        274.32,
+        883.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGMAX BUILDING HEIGHT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        871.44,
+        374.28,
+        883.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDMAX BUILDING HEIGHT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        871.44,
+        474.36,
+        883.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "CONFORMS yesnoMAX BUILDING HEIGHT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        871.44,
+        574.32,
+        883.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REQUIREDMAX HEIGHT FROM GRADE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        858.12,
+        274.32,
+        870.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGMAX HEIGHT FROM GRADE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        858.12,
+        374.28,
+        870.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDMAX HEIGHT FROM GRADE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        858.12,
+        474.36,
+        870.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "CONFORMS yesnoMAX HEIGHT FROM GRADE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        858.12,
+        574.32,
+        870.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Front Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        831.72,
+        274.32,
+        843.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Rear Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        818.4,
+        274.32,
+        830.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Side Yards combinedeach",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        805.2,
+        274.32,
+        817.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LOT COVERAGE BSC",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        791.88,
+        274.32,
+        804.12
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FLOOR AREA RATIO",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        778.68,
+        274.32,
+        790.8
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LANDSCAPE OPEN SPACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        765.48,
+        274.32,
+        777.6
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "IRRIGATED AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        752.16,
+        274.32,
+        764.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PARKING",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        738.96,
+        274.32,
+        751.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGLIVING AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        695.16,
+        274.32,
+        707.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDLIVING AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        695.16,
+        374.28,
+        707.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALLIVING AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        695.16,
+        474.36,
+        707.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELLIVING AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        695.16,
+        574.32,
+        707.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGLOWER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        681.84,
+        274.32,
+        694.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDLOWER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        681.84,
+        374.28,
+        694.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALLOWER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        681.84,
+        474.36,
+        694.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELLOWER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        681.84,
+        574.32,
+        694.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGUPPER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        668.64,
+        274.32,
+        680.76
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDUPPER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        668.64,
+        374.28,
+        680.76
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALUPPER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        668.64,
+        474.36,
+        680.76
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELUPPER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        668.64,
+        574.32,
+        680.76
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGSTORAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        655.32,
+        274.32,
+        667.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDSTORAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        655.32,
+        374.28,
+        667.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALSTORAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        655.32,
+        474.36,
+        667.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELSTORAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        655.32,
+        574.32,
+        667.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGTOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        642.12,
+        274.32,
+        654.24
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDTOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        642.12,
+        374.28,
+        654.24
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALTOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        642.12,
+        474.36,
+        654.24
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELTOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        642.12,
+        574.32,
+        654.24
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGGARAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        628.92,
+        274.32,
+        641.04
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDGARAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        628.92,
+        374.28,
+        641.04
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALGARAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        628.92,
+        474.36,
+        641.04
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELGARAGE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        628.92,
+        574.32,
+        641.04
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGELEVATED DECKTERRACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        615.6,
+        274.32,
+        627.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDELEVATED DECKTERRACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        615.6,
+        374.28,
+        627.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALELEVATED DECKTERRACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        615.6,
+        474.36,
+        627.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELELEVATED DECKTERRACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        615.6,
+        574.32,
+        627.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGMECHANICAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        602.4,
+        274.32,
+        614.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDMECHANICAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        602.4,
+        374.28,
+        614.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALMECHANICAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        602.4,
+        474.36,
+        614.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMODELMECHANICAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        602.4,
+        574.32,
+        614.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGROOF AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        568.08,
+        274.32,
+        580.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMOVEDROOF AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        568.08,
+        374.28,
+        580.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMAININGROOF AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        568.08,
+        474.36,
+        580.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DEMO TOTAL ROOF AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        568.08,
+        574.32,
+        580.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGFLOOR AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        554.76,
+        274.32,
+        567.0
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMOVEDFLOOR AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        554.76,
+        374.28,
+        567.0
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMAININGFLOOR AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        554.76,
+        474.36,
+        567.0
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DEMO TOTAL FLOOR AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        554.76,
+        574.32,
+        567.0
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGLOWER LEVEL_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        541.56,
+        274.32,
+        553.68
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMOVEDLOWER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        541.56,
+        374.28,
+        553.68
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMAININGLOWER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        541.56,
+        474.36,
+        553.68
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DEMO TOTAL LOWER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        541.56,
+        574.32,
+        553.68
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGUPPER LEVEL_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        528.36,
+        274.32,
+        540.48
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMOVEDUPPER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        528.36,
+        374.28,
+        540.48
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMAININGUPPER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        528.36,
+        474.36,
+        540.48
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DEMO TOTAL UPPER LEVEL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        528.36,
+        574.32,
+        540.48
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGTOTAL FLOOR  ROOF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        515.04,
+        274.32,
+        527.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMOVEDTOTAL FLOOR  ROOF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        515.04,
+        374.28,
+        527.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMAININGTOTAL FLOOR  ROOF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        515.04,
+        474.36,
+        527.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DEMO TOTAL TOTAL FLOOR  ROOF",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        515.04,
+        574.32,
+        527.28
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGTOTAL EXTERIOR WALL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        501.84,
+        274.32,
+        513.96
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMOVEDTOTAL EXTERIOR WALL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        501.84,
+        374.28,
+        513.96
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "REMAININGTOTAL EXTERIOR WALL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        501.84,
+        474.36,
+        513.96
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DEMO TOTAL TOTAL EXTERIOR WALL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        501.84,
+        574.32,
+        513.96
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "OUTSIDE BUILDING FOOTPRINTCUT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        446.4,
+        274.32,
+        458.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "INSIDE BUILDING FOOTPRINTCUT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        446.4,
+        374.28,
+        458.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "POOLSPACUT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        446.4,
+        474.36,
+        458.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALCUT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        446.4,
+        574.32,
+        458.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "OUTSIDE BUILDING FOOTPRINTFILL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        433.2,
+        274.32,
+        445.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "INSIDE BUILDING FOOTPRINTFILL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        433.2,
+        374.28,
+        445.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "POOLSPAFILL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        433.2,
+        474.36,
+        445.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALFILL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        433.2,
+        574.32,
+        445.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "OUTSIDE BUILDING FOOTPRINTNET EXPORT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        420.48,
+        274.32,
+        432.12
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "INSIDE BUILDING FOOTPRINTNET EXPORT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        420.48,
+        374.28,
+        432.12
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "POOLSPANET EXPORT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        420.48,
+        474.36,
+        432.12
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "TOTALNET EXPORT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        420.48,
+        574.32,
+        432.12
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGSTRUCTURE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        375.6,
+        274.32,
+        388.44
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDSTRUCTURE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        375.6,
+        374.28,
+        388.44
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGSTRUCTURE_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        375.6,
+        474.36,
+        388.44
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDSTRUCTURE_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        375.6,
+        574.32,
+        388.44
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGHARDSCAPE INCL DRIVEWAY",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        362.28,
+        274.32,
+        374.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDHARDSCAPE INCL DRIVEWAY",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        362.28,
+        374.28,
+        374.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGHARDSCAPE INCL DRIVEWAY_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        362.28,
+        474.36,
+        374.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDHARDSCAPE INCL DRIVEWAY_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        362.28,
+        574.32,
+        374.52
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGTOTAL_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        349.08,
+        274.32,
+        361.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDTOTAL_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        349.08,
+        374.28,
+        361.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTINGTOTAL_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        349.08,
+        474.36,
+        361.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSEDTOTAL_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.68,
+        349.08,
+        574.32,
+        361.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DIMENSIONS L x W x DPOOL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        305.28,
+        274.32,
+        317.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DIMENSIONS L x W x DPOOL_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        305.28,
+        374.28,
+        317.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "VOLUMEGALLONSPOOL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        305.28,
+        474.36,
+        317.4
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DIMENSIONS L x W x DSPA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.68,
+        291.96,
+        274.32,
+        304.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "DIMENSIONS L x W x DSPA_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.64,
+        291.96,
+        374.28,
+        304.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "VOLUMEGALLONSSPA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        291.96,
+        474.36,
+        304.2
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "VOLUMEGALLONSTOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.6,
+        278.76,
+        474.36,
+        290.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTING EGRESS DOORS",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        178.92,
+        244.44,
+        309.84,
+        256.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSED EGRESS DOORS",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        443.4,
+        244.44,
+        574.32,
+        256.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTING FIXTURE COUNT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        178.92,
+        231.12,
+        309.84,
+        243.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSED FIXTURE COUNT",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        443.4,
+        231.12,
+        574.32,
+        243.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FIXTURE TYPERow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        46.68,
+        204.72,
+        151.08,
+        216.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "WATTAGERow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.4,
+        204.72,
+        256.92,
+        216.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LUMENSRow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        258.24,
+        204.72,
+        362.76,
+        216.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYRow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        204.72,
+        468.48,
+        216.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSRow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        204.72,
+        574.32,
+        216.84
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FIXTURE TYPERow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        46.68,
+        191.4,
+        151.08,
+        203.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "WATTAGERow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.4,
+        191.4,
+        256.92,
+        203.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LUMENSRow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        258.24,
+        191.4,
+        362.76,
+        203.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYRow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        191.4,
+        468.48,
+        203.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSRow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        191.4,
+        574.32,
+        203.64
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FIXTURE TYPERow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        46.68,
+        178.2,
+        151.08,
+        190.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "WATTAGERow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.4,
+        178.2,
+        256.92,
+        190.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LUMENSRow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        258.24,
+        178.2,
+        362.76,
+        190.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYRow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        178.2,
+        468.48,
+        190.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSRow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        178.2,
+        574.32,
+        190.32
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYTOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        164.88,
+        468.48,
+        177.12
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSTOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        164.88,
+        574.32,
+        177.12
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "EXISTING FIXTURE COUNT_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        178.92,
+        138.48,
+        309.84,
+        150.6
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PROPOSED FIXTURE COUNT_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        443.4,
+        138.48,
+        574.32,
+        150.6
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FIXTURE TYPERow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        46.68,
+        111.96,
+        151.08,
+        124.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "WATTAGERow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.4,
+        111.96,
+        256.92,
+        124.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LUMENSRow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        258.24,
+        111.96,
+        362.76,
+        124.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYRow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        111.96,
+        468.48,
+        124.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSRow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        111.96,
+        574.32,
+        124.08
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FIXTURE TYPERow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        46.68,
+        98.64,
+        151.08,
+        110.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "WATTAGERow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.4,
+        98.64,
+        256.92,
+        110.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LUMENSRow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        258.24,
+        98.64,
+        362.76,
+        110.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYRow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        98.64,
+        468.48,
+        110.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSRow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        98.64,
+        574.32,
+        110.88
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FIXTURE TYPERow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        46.68,
+        85.43999,
+        151.08,
+        97.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "WATTAGERow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.4,
+        85.43999,
+        256.92,
+        97.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LUMENSRow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        258.24,
+        85.43999,
+        362.76,
+        97.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYRow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        85.43999,
+        468.48,
+        97.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSRow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        85.43999,
+        574.32,
+        97.56
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYTOTAL_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        72.12,
+        468.48,
+        84.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSTOTAL_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        72.12,
+        574.32,
+        84.36
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "QUANTITYCOMBINED TOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        364.08,
+        58.92,
+        468.48,
+        71.04
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "COMMENTSCOMBINED TOTAL",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        469.8,
+        58.92,
+        574.32,
+        71.04
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Front Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.541,
+        831.804,
+        374.181,
+        843.924
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Front Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.9,
+        831.621,
+        474.54,
+        843.741
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Front Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        476.258,
+        831.8441,
+        574.898,
+        843.9641
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Rear Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.136,
+        818.74,
+        373.776,
+        830.9791
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Side Yards combinedeach",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.136,
+        805.54,
+        373.776,
+        817.66
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LOT COVERAGE BSC",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.136,
+        792.22,
+        373.776,
+        804.46
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FLOOR AREA RATIO",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.136,
+        779.02,
+        373.776,
+        791.14
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LANDSCAPE OPEN SPACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.136,
+        765.82,
+        373.776,
+        777.94
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "IRRIGATED AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.136,
+        752.5,
+        373.776,
+        764.74
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PARKING",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        275.136,
+        739.299,
+        373.776,
+        751.419
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Rear Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.494,
+        818.1511,
+        474.134,
+        830.3911
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Side Yards combinedeach",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.494,
+        804.951,
+        474.134,
+        817.071
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LOT COVERAGE BSC",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.494,
+        791.631,
+        474.134,
+        803.871
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FLOOR AREA RATIO",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.494,
+        778.431,
+        474.134,
+        790.551
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LANDSCAPE OPEN SPACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.494,
+        765.231,
+        474.134,
+        777.351
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "IRRIGATED AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.494,
+        751.911,
+        474.134,
+        764.1511
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PARKING",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.494,
+        738.7111,
+        474.134,
+        750.8311
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Rear Yard",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.447,
+        817.968,
+        574.087,
+        830.2081
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "Side Yards combinedeach",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.447,
+        804.7681,
+        574.087,
+        816.8881
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LOT COVERAGE BSC",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.447,
+        791.4481,
+        574.087,
+        803.688
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "FLOOR AREA RATIO",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.447,
+        778.248,
+        574.087,
+        790.368
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "LANDSCAPE OPEN SPACE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.447,
+        765.048,
+        574.087,
+        777.168
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "IRRIGATED AREA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.447,
+        751.728,
+        574.087,
+        763.968
+      ]
+    },
+    {
+      "page": 23,
+      "field_name": "PARKING",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        475.447,
+        738.528,
+        574.087,
+        750.648
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        78.2583,
+        473.6174,
+        127.7304,
+        484.1486
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(1)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        175.978,
+        473.6174,
+        225.4501,
+        484.1486
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(2)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        267.33,
+        473.6174,
+        316.8021,
+        484.1486
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(3)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        127.7304,
+        427.574,
+        177.2025,
+        438.1052
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(4)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        78.2583,
+        580.2515,
+        304.1535,
+        590.7827
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(5)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        78.25831,
+        556.5067,
+        304.1535,
+        567.0379
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        241.0311,
+        451.3428,
+        247.6924,
+        458.7128
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(1)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        255.3142,
+        451.3428,
+        261.9755,
+        458.7129
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(2)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        467.5815,
+        405.0699,
+        474.2429,
+        412.4399
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(3)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        481.9555,
+        405.0699,
+        488.6168,
+        412.4399
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(4)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        314.7933,
+        313.2225,
+        321.4547,
+        320.5926
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(5)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        329.9823,
+        313.2225,
+        336.6436,
+        320.5926
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(6)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        284.531,
+        302.0563,
+        291.1924,
+        309.4263
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(7)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        299.4908,
+        302.0563,
+        306.1521,
+        309.4263
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(6)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        78.25831,
+        532.8629,
+        304.1535,
+        543.3941
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(7)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        78.25831,
+        509.9025,
+        304.1535,
+        520.4337
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(8)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.4995,
+        580.2515,
+        537.3947,
+        590.7827
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(9)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.4995,
+        556.5067,
+        537.3947,
+        567.0379
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(10)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.4995,
+        532.8629,
+        537.3947,
+        543.3941
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(11)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.4995,
+        509.9024,
+        537.3947,
+        520.4337
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(12)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        78.2583,
+        165.4658,
+        304.1535,
+        175.9969
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(13)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        78.2583,
+        141.4848,
+        304.1535,
+        152.016
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(14)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        78.2583,
+        118.4021,
+        304.1535,
+        128.9333
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(15)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.4995,
+        164.8739,
+        537.3947,
+        175.4051
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Text1(16)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        311.4995,
+        141.4848,
+        537.3947,
+        152.016
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(8)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        311.4626,
+        131.6519,
+        318.124,
+        139.0219
+      ]
+    },
+    {
+      "page": 35,
+      "field_name": "Check Box1(9)",
+      "field_type": "/Btn",
+      "value": "/Off",
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        367.3559,
+        131.6519,
+        374.0173,
+        139.0219
+      ]
+    }
+  ],
+  "review_widgets": [
+    {
+      "page": 35,
+      "field_name": "Text1",
+      "rect": [
+        78.2583,
+        473.6174,
+        127.7304,
+        484.1486
+      ]
+    }
+  ]
+}

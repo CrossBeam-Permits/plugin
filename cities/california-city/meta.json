@@ -10,5 +10,7 @@
     "Is California City in a wildfire hazard zone?",
     "What building codes has California City adopted?",
     "What are California City's local plumbing requirements?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

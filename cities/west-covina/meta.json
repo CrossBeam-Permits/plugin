@@ -20,5 +20,6 @@
     "What are the multi-family zoning designations in West Covina?",
     "How do I get a solar permit in West Covina?",
     "What is the Development Code Ordinance 2519 in West Covina?"
-  ]
+  ],
+  "permitSystem": "GoPost/TransTech ePlan"
 }

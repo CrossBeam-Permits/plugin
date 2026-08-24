@@ -4,7 +4,7 @@
   "codePrefix": "MVMC",
   "fireAgency": "Southern Marin Fire Protection District (SMFD) · prevention@smfd.org · ~14 business day plan check",
   "portalName": "OpenGov",
-  "portalUrl": "https://millvalleyca.portal.opengov.com",
+  "portalUrl": "https://millvalleyca.portal.opengov.com/",
   "climateZone": "3",
   "seismicCategory": "D",
   "fhsz": true,
@@ -21,5 +21,6 @@
     "Does Mill Valley have a pre-approval program for ADUs?",
     "What are the swimming pool requirements in Mill Valley?",
     "What are the restaurant TI permit requirements in Mill Valley?"
-  ]
+  ],
+  "permitSystem": "OpenGov"
 }

@@ -11,5 +11,7 @@
     "What foundation rebar is required in Susanville?",
     "How do I submit a building permit in Susanville?",
     "What are the R-4 zone density limits in Susanville?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

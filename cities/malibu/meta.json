@@ -46,5 +46,6 @@
     "fence",
     "siding-replacement",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": "Malibu Development Portal"
 }

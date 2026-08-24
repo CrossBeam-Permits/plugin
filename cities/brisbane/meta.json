@@ -12,5 +12,7 @@
     "What is Brisbane's energy reach code (Ord. 691)?",
     "Does Brisbane require EV charging for new construction?",
     "Who handles fire plan check in Brisbane — NCFA or the city?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

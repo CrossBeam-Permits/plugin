@@ -24,5 +24,6 @@
     "What are the permit fees for a residential addition in Amador City?",
     "When is the building department open in Amador City?",
     "Does Amador City have any local building code amendments?"
-  ]
+  ],
+  "permitSystem": "in-person"
 }

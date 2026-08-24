@@ -1,5 +1,5 @@
 ---
-description: "Pool Demolition permits in Redlands, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redlands local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Redlands."
+description: "Pool Demolition permits in Redlands, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redlands local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Redlands."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapters 18, 33, Appendix J; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6, 7, 12"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://gis.cityofredlands.org/pol |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | City of Redlands Fire Department |
 | Code edition | Redlands Municipal Code · Title 15 & 18 (American Legal / amlegal.com) |
 | Code prefix | RMC |

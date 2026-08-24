@@ -10,5 +10,7 @@
     "How do I submit a permit through eTRAKiT?",
     "Is Rocklin in a Fire Hazard Severity Zone?",
     "Can I build a second ADU on my single-family lot?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

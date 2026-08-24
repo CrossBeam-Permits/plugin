@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Benicia, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Benicia local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Benicia."
+description: "Panel Upgrade permits in Benicia, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Benicia local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Benicia."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Benicia Fire Department (city-operated; NOT Solano County Fire) · Fire Chief Josh Chadwick · Two stations · Plan check via Building Safety Division portal · (707) 746-4275 · FireDept@ci.benicia.ca.us |
 | Code edition | Benicia Municipal Code · CodePublishing · BMC Title 15 (Building) · BMC Title 17 (Zoning) · BMC § 17.90.020 (ADU/JADU, Ord. 25-12) |
 | Code prefix | BMC |

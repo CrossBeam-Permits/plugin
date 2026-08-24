@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Huron, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Huron local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Huron."
+description: "Ltia Demolition permits in Huron, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Huron local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Huron."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | iWorQ |
+| Permit portal | https://huronca.portal.iworq.net/portalhome/huronca |
 | Municipal code | https://library.municode.com/ca/huron/codes/code_of_ordinances |
 | Fire agency | Fresno County Sheriff — Fire Warden Division (unconfirmed; city lists no fire department) |
 | Code edition | 2025 California Building Standards Code |

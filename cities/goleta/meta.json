@@ -31,5 +31,7 @@
     "wildfire-wui",
     "swimming-pool"
   ],
-  "onboardedAt": "2026-04-16"
+  "onboardedAt": "2026-04-16",
+  "permitSystem": null,
+  "portalUrl": "https://goleta.onlinegovt.com/"
 }

@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Coronado, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Coronado local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Coronado."
+description: "Temporary Power permits in Coronado, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Coronado local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Coronado."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://coronado.municipal.codes/ |
 | Fire agency | Coronado Fire Department (city-operated, in-house fire plan check — NOT OCFA) |
 | Code edition | Title 70 Building · Title 86 Zoning · Title 88 Orange Ave Corridor · 2025 CBC/CRC · Ch. 86.56.105 ADU · Ch. 86.70 Coastal · LCP Certified 1983 |

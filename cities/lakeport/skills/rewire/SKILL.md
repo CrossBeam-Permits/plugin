@@ -1,5 +1,5 @@
 ---
-description: "Rewire permits in Lakeport, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lakeport local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Lakeport."
+description: "Rewire permits in Lakeport, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Lakeport local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Lakeport."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | OpenGov |
+| Permit portal | https://lakeportca.portal.opengov.com/ |
 | Fire agency | Lakeport Fire Protection District (LFPD) · Independent special district · permits@lakeportfire.com · (707) 263-4396 · 445 N. Main Street, Lakeport · Separate plan check and $2.00/sqft mitigation fee required before city permit issuance |
 | Code edition | 2022 California Building Standards Code adopted via Ordinance 938 · Lakeport Municipal Code · eCode360 (https://ecode360.com/LA4510) · Chapter 15.04 (Construction Codes) · Title 17 (Zoning) |
 | Code prefix | LMC |

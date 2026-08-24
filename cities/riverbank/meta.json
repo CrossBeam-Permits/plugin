@@ -4,7 +4,9 @@
   "county": "Stanislaus",
   "state": "CA",
   "population": 24000,
-  "climateZones": ["CZ12"],
+  "climateZones": [
+    "CZ12"
+  ],
   "fireAgency": "Stanislaus Consolidated Fire Protection District (SCFPD)",
   "vhfhsz": false,
   "wuiPartial": false,
@@ -51,5 +53,7 @@
   ],
   "onboardedAt": "2026-04-24",
   "smokeTestedAt": "2026-04-24",
-  "readyForPromotion": true
+  "readyForPromotion": true,
+  "permitSystem": null,
+  "portalUrl": null
 }

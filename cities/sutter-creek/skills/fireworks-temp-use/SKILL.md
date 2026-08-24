@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Sutter Creek, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sutter Creek local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Sutter Creek."
+description: "Fireworks Temp Use permits in Sutter Creek, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sutter Creek local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Sutter Creek."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Sutter Creek Fire Protection District · (209) 267-0285 · suttercreekfire@sbcglobal.net |
 | Code edition | City of Sutter Creek Municipal Code · Municode · Title 15 (Building Code) · Title 18 (Zoning Ordinance) |
 | Code prefix | SCMC |

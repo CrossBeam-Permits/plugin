@@ -11,5 +11,7 @@
     "Who is the fire department for San Anselmo permits?",
     "What utility do I use for solar interconnection in San Anselmo?",
     "Are there school fees for my addition or ADU in San Anselmo?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Hollister, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hollister local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Hollister."
+description: "Panel Upgrade permits in Hollister, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hollister local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Hollister."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela |
+| Permit portal | https://aca-prod.accela.com/HOLLISTER |
 | Fire agency | Hollister Fire Department — Fire Prevention Bureau (831) 636-4300 — integrated fire plan check with building permit |
 | Code edition | Ord. 1224 (Building Codes) | 2022 Fire Code Amendments (10/27/2022) |
 | Code prefix | HMC |

@@ -1,59 +1,68 @@
 # CrossBeam Permits
 
-> Open-source plan-check skills for every California city. 22 simple permit types per city — free for cities, builders, and homeowners.
+Open-source permit guidance for all 484 California cities. Each city plugin provides 22 simple-permit skills for homeowners, builders, and public-agency reviewers. Laguna Beach also has an optional submittal plugin that prepares verified City forms and guides a user-controlled Tyler EnerGov filing.
 
-A Claude Code plugin marketplace. A plan reviewer in any California city installs their city's plugin and gets ready-to-use permit-review skills tailored to that city's portal, fire agency, code amendments, and overlays.
+## Install with Claude Code
 
-## Install
+Add the marketplace once. Sparse checkout keeps the marketplace catalog small; installing a plugin then fetches only that plugin's subdirectory.
 
-In Claude Code:
-
-```
-/plugin marketplace add CrossBeam-Permits/plugin
-/plugin
-# search your city, install
+```sh
+claude plugin marketplace add CrossBeam-Permits/plugin --sparse .claude-plugin
+claude plugin install laguna-beach@crossbeam-permits
 ```
 
-## What you get per city
+For the complete Laguna preparation and submittal workflow, install the submit plugin. Its Claude manifest declares the Laguna city plugin as a dependency, so this is the only install command needed:
 
-Skills for the 22 simple permit types every California city issues:
+```sh
+claude plugin install laguna-beach-submit@crossbeam-permits
+```
 
-reroof · ev-charger · solar · water-heater · hvac · window-replacement · panel-upgrade · temporary-power · repipe · siding-replacement · fence · block-wall · retaining-wall · patio-cover · deck-patio-repair · pool-demolition · ltia-demolition · cleanout · sign · fireworks-temp-use · swimming-pool · rewire
+## Install with Codex
 
-Each skill works in two modes:
+```sh
+codex plugin marketplace add CrossBeam-Permits/plugin --sparse .claude-plugin
+codex plugin add laguna-beach@crossbeam-permits
+codex plugin add laguna-beach-submit@crossbeam-permits
+```
 
-- **Builder / Homeowner** — intake → compliance check → submission guide for the city's portal
-- **City Reviewer** — runs the plan-check checklist against a submittal, produces tight corrections output
+Claude Code and Codex load the same canonical Laguna preparer instructions and deterministic Python tools. Codex currently installs the city and submit plugins separately.
 
-## Status
+## What each city includes
 
-**This is the v0.1 scaffold.** Currently shipping:
+The catalog contains 10,648 skills: 22 permit types for each of 484 cities.
 
-- ✅ **Huntington Beach** (Tier 1, vetted) — reroof, EV charger, water heater
-- 🔜 Buena Park, Costa Mesa, Laguna Beach (Tier 1)
-- 🔜 ~480 more California cities (Tier 2/3)
-- 🔜 All 22 permit types per city
+`reroof` · `ev-charger` · `solar` · `water-heater` · `hvac` · `window-replacement` · `panel-upgrade` · `temporary-power` · `repipe` · `siding-replacement` · `fence` · `block-wall` · `retaining-wall` · `patio-cover` · `deck-patio-repair` · `pool-demolition` · `ltia-demolition` · `cleanout` · `sign` · `fireworks-temp-use` · `swimming-pool` · `rewire`
 
-The full ~485-city × 22-permit run lands shortly. Watch this repo for releases.
+Each skill supports two modes:
 
-## Tier labels
+- **Builder or homeowner:** guided intake, compliance review, and a submission guide.
+- **City reviewer:** checklist-based plan review and concise correction output.
 
-- **Tier 1** — hand-reviewed, vetted end-to-end (HB, BP, Costa Mesa, Laguna Beach)
-- **Tier 2** — onboarder-generated, spot-checked
-- **Tier 3** — onboarder-generated, not yet human-reviewed
+Permit-system facts are generated from the repository's onboarding data. The current catalog has a known system or documented offline intake method for 166 cities and an absolute HTTP(S) portal URL for 195 cities. Unknown facts remain `null`; a skill does not guess a vendor or URL.
 
-Each city's plugin metadata declares its tier honestly.
+## Laguna Beach submittal plugin
 
-## Contributing
+`laguna-beach-submit` adds the transaction layer to the Laguna city guidance:
 
-Cities, contractors, plan reviewers, and developers welcome. CONTRIBUTING.md coming with the full release.
+- guided project-fact intake with provenance and unknown values kept null;
+- cited Planning and Building routing, including pool height, coastal, bluff, geotechnical, and equipment questions;
+- SHA-256-pinned official forms and exact semantic field maps;
+- local fill, render, verification, and packet-assembly tools;
+- Tyler EnerGov draft navigation, duplicate checks, effective-value review, and receipt capture;
+- a safe `portal_ready` handoff when browser control is unavailable.
 
-## Disclaimer
+City form downloads can reject headless clients. Acquire blocked forms in a user-visible browser, then run the included freshness verifier against the pinned receipt before filling them.
 
-Informational use only. Not legal advice. The jurisdiction issuing the permit governs all final decisions. See [NOTICE](NOTICE) for full disclaimer.
+The plugin never treats preparation as authority to file. The applicant enters signatures, credentials, MFA, and payment information personally. It pauses for fresh approval immediately before each final Submit action and reports `submitted` only after a terminal portal confirmation and written receipt. Development and CI never file a live application.
+
+## Source quality
+
+Source quality varies by city, and the catalog retains each plugin's review-tier label. A higher tier means more local review; it does not override the issuing agency. Statutory and form-source receipts are checked in CI, while time-sensitive Laguna law sources also have a scheduled freshness check.
+
+This project is informational and is not legal advice. The issuing jurisdiction controls every final interpretation and permit decision. See [NOTICE](NOTICE).
 
 ## License
 
 [Apache-2.0](LICENSE)
 
-CrossBeam Permits is a brand of [Onboard Dot AI LLC](https://crossbeam-permits.com). The CrossBeam paid product handles complex permits (ADUs, single-family, multi-unit, residential additions, restaurant TI) with proprietary plan-extraction and review tools — see https://crossbeam-permits.com.
+CrossBeam Permits is a project of [Onboard Dot AI LLC](https://crossbeam-permits.com). The paid CrossBeam product handles more complex review workflows such as ADUs, additions, multi-unit projects, and tenant improvements.

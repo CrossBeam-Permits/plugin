@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Sand City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sand City local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Sand City."
+description: "Fireworks Temp Use permits in Sand City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Sand City local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Sand City."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Monterey Fire Department (contract) |
 | Code edition | Sand City Municipal Code · eCode360 SA5005 · Title 15 (Buildings and Construction — local amendments not yet extracted; treated as state default + 2022 CBC/CRC) · Title 18 (Zoning) verified via browser sweep 2026-05-06: Ch. 18.63 ADU (Ord. 25-01, 2/18/2025), Ch. 18.84 LCP / coastal access in-lieu fees, CZ-prefixed coastal zoning districts |
 | Code prefix | SCMC |

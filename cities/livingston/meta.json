@@ -57,7 +57,11 @@
     "water-heater",
     "window-replacement"
   ],
-  "hasLocalAmendments": ["adu", "fence", "swimming-pool"],
+  "hasLocalAmendments": [
+    "adu",
+    "fence",
+    "swimming-pool"
+  ],
   "stateSkillOnly": [
     "ev-charger",
     "hvac",
@@ -72,5 +76,7 @@
     "water-heater",
     "window-replacement"
   ],
-  "lawAsOf": "2026-05-04"
+  "lawAsOf": "2026-05-04",
+  "permitSystem": "GreenVue (CSG Consultants) — account required",
+  "portalUrl": null
 }

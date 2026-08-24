@@ -10,7 +10,10 @@
   "muniCodePlatform": "ecode360",
   "muniCodeUrl": "https://ecode360.com/LA4950",
   "fireAgency": "Los Angeles County Fire Department (LACoFD)",
-  "fireStations": ["Station 19", "Station 82 (Battalion 4 HQ)"],
+  "fireStations": [
+    "Station 19",
+    "Station 82 (Battalion 4 HQ)"
+  ],
   "wuiCoverage": "all",
   "fhszDesignation": "VHFHSZ",
   "fhszSource": "2025 CalFire LRA maps, March 24, 2025",
@@ -49,5 +52,7 @@
     "water-heater",
     "wildfire-wui",
     "window-replacement"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://lcf.ca.gov/connectlcf-submittals/"
 }

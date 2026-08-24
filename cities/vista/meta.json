@@ -12,5 +12,7 @@
     "What permits require in-person submittal in Vista?",
     "What is the ADU Fee Waiver Program and how do I apply?",
     "What fire agency reviews my plans and do I submit to them separately?"
-  ]
+  ],
+  "permitSystem": "In-person only (Development Services Counter)",
+  "portalUrl": null
 }

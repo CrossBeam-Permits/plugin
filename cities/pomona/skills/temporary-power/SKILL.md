@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Pomona, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pomona local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Pomona."
+description: "Temporary Power permits in Pomona, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pomona local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Pomona."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://pomona.hdlgov.com |
+| Permit system | HDL Government (Citizen Access Portal) |
+| Permit portal | https://pomona.hdlgov.com/ |
 | Municipal code | https://library.municode.com/ca/pomona/codes/city_code |
 | Fire agency | Los Angeles County Fire Department (LACFD) — county-contracted; transition monitoring April 2026 |
 | Code edition | Zoning Ord. 4345 · July 31, 2024 (Zoning & Development Code) | 2025 CBC statewide |

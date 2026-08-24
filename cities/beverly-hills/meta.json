@@ -36,5 +36,7 @@
   "needsHumanReview": [
     "ADU local cap (650 sq ft) may conflict with state 850 sq ft minimum — verify compliance",
     "April 2025 FHSZ boundary update — verify exact new boundaries at CalFire FHSZ viewer"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://cs.beverlyhills.org/csportal/"
 }

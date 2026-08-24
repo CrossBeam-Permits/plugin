@@ -40,5 +40,7 @@
     "rewire",
     "sign"
   ],
-  "lastUpdated": "2026-04-16"
+  "lastUpdated": "2026-04-16",
+  "permitSystem": null,
+  "portalUrl": "https://aca-prod.accela.com/MONTEREYPARK/Default.aspx"
 }

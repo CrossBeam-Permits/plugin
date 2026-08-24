@@ -12,5 +12,7 @@
     "Is my San Leandro property in a WUI or fire hazard severity zone?",
     "How do I submit a building permit in San Leandro?",
     "What are the ADU rules in San Leandro?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

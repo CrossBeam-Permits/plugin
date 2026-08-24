@@ -1,5 +1,5 @@
 ---
-description: "Water Heater permits in Dublin, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Dublin local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Dublin."
+description: "Water Heater permits in Dublin, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Dublin local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions water heater in Dublin."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5), 2025 California Mechanical Code (Title 24, Part 4), 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Alameda County Fire Department (ACFD) — operating as Dublin Fire Prevention Bureau (contract fire agency) · Plan check via ACFD · ~10 business day turnaround · (925) 833-6650 |
 | Code edition | Dublin Municipal Code (DMC) · Code Publishing · codepublishing.com/CA/Dublin · Local amendments via Ord. 8-25 (2025 code cycle) |
 | Code prefix | DMC |

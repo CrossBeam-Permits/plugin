@@ -1,5 +1,5 @@
 ---
-description: "Rewire permits in Hidden Hills, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hidden Hills local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Hidden Hills."
+description: "Rewire permits in Hidden Hills, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Hidden Hills local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Hidden Hills."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://hiddenhills.cts.city |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | https://hiddenhills.cts.city/ |
 | Municipal code | https://library.municode.com/ca/hidden_hills |
 | Fire agency | Los Angeles County Fire Department (Station 68) |
 | Code edition | 2025 California Building Standards Code |

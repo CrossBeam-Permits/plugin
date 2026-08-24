@@ -44,7 +44,11 @@
     "fence",
     "sign"
   ],
-  "notSupported": ["commercial-ti"],
+  "notSupported": [
+    "commercial-ti"
+  ],
   "onboardedAt": "2026-04-15",
-  "readyForPromotion": true
+  "readyForPromotion": true,
+  "permitSystem": null,
+  "portalUrl": null
 }

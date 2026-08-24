@@ -63,5 +63,7 @@
     "ADU Ordinance 3264-23 (Nov 2023) — exact local standards (size caps, setbacks) not confirmed from scrape; verify current RBMC Article vs. state minimums",
     "Coastal Zone boundary — verify parcel-specific CDP requirement with Planning Dept",
     "eCode360 WAF blocked — local amendment details sourced from search snippets; direct ordinance text not verified"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://redondobeachca.portal.iworq.net/"
 }

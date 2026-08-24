@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Arcata, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Arcata local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Arcata."
+description: "Fireworks Temp Use permits in Arcata, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Arcata local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Arcata."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Arcata Fire District · arcatafire.org · (707) 825-2000 · 2149 Central Avenue, McKinleyville · Fire Marshal: Ed Laidlaw (elaidlaw@arcatafire.org) · Concurrent plan check for fire protection systems |
 | Code edition | Arcata Municipal Code · Code Publishing (https://www.codepublishing.com/CA/Arcata/) · Title VIII (Building Regulations) · 2025 CBC/CRC adopted via Ord. 1583 (eff. January 16, 2026) |
 | Code prefix | AMC |

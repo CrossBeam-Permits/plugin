@@ -24,5 +24,6 @@
     "Do I need Planning approval before submitting my building permit application?",
     "How do I submit a permit through the eTrakit portal?",
     "My pool excavation is over 100 cubic yards — do I need a Development Review Permit?"
-  ]
+  ],
+  "permitSystem": "eTrakit"
 }

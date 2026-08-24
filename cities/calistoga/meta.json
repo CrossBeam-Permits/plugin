@@ -10,5 +10,7 @@
     "Do I need two fire access roads for my development?",
     "Do I need Napa County Environmental Health review for my restaurant?",
     "Can I use wood shake roofing on my home?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

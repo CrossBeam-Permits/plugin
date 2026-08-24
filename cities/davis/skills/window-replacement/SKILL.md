@@ -1,5 +1,5 @@
 ---
-description: "Window Replacement permits in Davis, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Davis local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Davis."
+description: "Window Replacement permits in Davis, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Davis local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Davis."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Davis Fire Department — Fire Prevention Bureau · City-owned (not Yolo County Fire) · Submit fire system plans to fireprevention@cityofdavis.org · Fire code: 2022 CFC w/ local amendments eff. Jan 1 2026 · (530) 757-5610 |
 | Code edition | Davis Municipal Code · eCode360 (ecode360.com/DA4922) · Chapter 8 (Buildings) · Current through Ord. 2680 (Nov 18, 2025) |
 | Code prefix | DMC |

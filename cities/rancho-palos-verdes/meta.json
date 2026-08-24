@@ -13,7 +13,7 @@
     "website": "https://www.rpvca.gov/289/Building-Safety"
   },
   "portalType": "etrakit+gopost",
-  "portalUrl": "https://etrakit.rpvca.gov",
+  "portalUrl": "https://etrakit.rpvca.gov/",
   "fireAgency": {
     "name": "Los Angeles County Fire Department (LACoFD)",
     "battalion": "Battalion 14",
@@ -56,5 +56,6 @@
     "restaurant-ti"
   ],
   "onboardedDate": "2026-04-16",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": null
 }

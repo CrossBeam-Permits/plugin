@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in San Anselmo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Anselmo local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in San Anselmo."
+description: "Patio Cover permits in San Anselmo, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Anselmo local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in San Anselmo."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Ross Valley Fire Department (RVFD) — Joint Powers Authority serving Fairfax, Ross, San Anselmo, Sleepy Hollow FPD · Plans route through Town Building Dept → RVFD · 10 business day turnaround · prevention@rossvalleyfire.org · (415) 258-4673 |
 | Code edition | San Anselmo Municipal Code · Municode · Title 9 (Building Regulations) · Title 10 (Planning and Zoning) |
 | Code prefix | SAMC |

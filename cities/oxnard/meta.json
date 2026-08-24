@@ -4,7 +4,9 @@
   "state": "california",
   "county": "Ventura",
   "population": 202000,
-  "climateZones": ["CZ6"],
+  "climateZones": [
+    "CZ6"
+  ],
   "fireAgency": "Oxnard Fire Department",
   "muniCodePlatform": "american-legal",
   "muniCodeUrl": "https://codelibrary.amlegal.com/codes/oxnard/latest/overview",
@@ -44,9 +46,19 @@
     "reroof"
   ],
   "zoningDistricts": {
-    "residential": ["R-1", "R-2", "R-3", "R-4"],
-    "commercial": ["C-1", "C-2"],
-    "mixedUse": ["DT"]
+    "residential": [
+      "R-1",
+      "R-2",
+      "R-3",
+      "R-4"
+    ],
+    "commercial": [
+      "C-1",
+      "C-2"
+    ],
+    "mixedUse": [
+      "DT"
+    ]
   },
   "muniCodeChapters": {
     "building": "Chapter 14",
@@ -81,5 +93,7 @@
     "deck-patio-repair",
     "kitchen-bath-remodel",
     "siding-replacement"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

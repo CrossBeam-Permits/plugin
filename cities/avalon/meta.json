@@ -4,7 +4,7 @@
   "codePrefix": "AMC",
   "fireAgency": "Avalon Fire Department (city-operated — NOT LACoFD)",
   "portal": "Planning & Building Department (in-person)",
-  "portalUrl": "https://www.cityofavalon.com",
+  "portalUrl": "https://www.cityofavalon.com/",
   "electricUtility": "Southern California Edison (SCE)",
   "climateZone": "CZ6",
   "wuiCoverage": "all",
@@ -20,5 +20,6 @@
     "How do I submit a building permit application in Avalon?",
     "What roofing materials are required in Avalon's fire hazard zone?",
     "Does Avalon have natural gas service?"
-  ]
+  ],
+  "permitSystem": "Planning & Building Department (in-person)"
 }

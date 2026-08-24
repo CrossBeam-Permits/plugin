@@ -34,5 +34,7 @@
     "water-heater",
     "wildfire-wui",
     "window-replacement"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://lark.csqrcloud.com/community-etrakit/default.aspx"
 }

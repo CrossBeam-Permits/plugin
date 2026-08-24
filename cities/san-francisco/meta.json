@@ -81,5 +81,7 @@
   "permitExpiration": {
     "commenceWithin": "180 days",
     "completeWithin": "3 years"
-  }
+  },
+  "permitSystem": null,
+  "portalUrl": "https://sanfranciscoca.portal.opengov.com/"
 }

@@ -1,5 +1,5 @@
 ---
-description: "Pool Demolition permits in Villa Park, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Villa Park local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Villa Park."
+description: "Pool Demolition permits in Villa Park, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Villa Park local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Villa Park."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapters 18, 33, Appendix J; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6, 7, 12"
 authority: "California Building Standards Commission"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | iWorQ |
 | Permit portal | https://villapark.portal.iworq.net/VILLAPARK/new-permit/600/411 |
 | Municipal code | https://library.municode.com/ca/villa_park |
 | Fire agency | OCFA |

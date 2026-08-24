@@ -1,5 +1,5 @@
 ---
-description: "Pool Demolition permits in Truckee, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Truckee local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Truckee."
+description: "Pool Demolition permits in Truckee, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Truckee local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Truckee."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2) — Chapters 18, 33, Appendix J; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6, 7, 12"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Truckee Fire Protection District · (530) 582-7850 · truckeefire.org/plan-review · Fire sprinkler/alarm: Engineered Fire Systems Inc. (530) 274-9400 · Adopted 2022 CFC via Ord. 01-2022 |
 | Code edition | Truckee Municipal Code · Municode (library.municode.com/ca/truckee) · Title 15 (Building) · Title 18 (Development Code) · Current through 2025 amendments |
 | Code prefix | TMC |

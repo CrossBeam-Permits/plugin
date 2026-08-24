@@ -12,5 +12,7 @@
     "Does my project need an HBFD plan check?",
     "What permits are expedited for EV charger installation?",
     "Can I use the AB 2188 Solar Toolkit for my solar permit?"
-  ]
+  ],
+  "permitSystem": "Accela Citizen Access",
+  "portalUrl": "https://engage.huntingtonbeachca.gov/CitizenAccess/Default.aspx"
 }

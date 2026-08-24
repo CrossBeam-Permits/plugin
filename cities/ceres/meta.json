@@ -4,7 +4,9 @@
   "county": "Stanislaus",
   "state": "CA",
   "population": 49000,
-  "climateZones": ["CZ12"],
+  "climateZones": [
+    "CZ12"
+  ],
   "fireAgency": "Modesto-Ceres Fire Protection Agency JPA",
   "vhfhsz": false,
   "wuiPartial": false,
@@ -47,5 +49,7 @@
   ],
   "onboardedAt": "2026-04-24",
   "smokeTestedAt": null,
-  "readyForPromotion": false
+  "readyForPromotion": false,
+  "permitSystem": null,
+  "portalUrl": null
 }

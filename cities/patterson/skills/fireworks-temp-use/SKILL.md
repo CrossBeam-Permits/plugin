@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Patterson, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Patterson local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Patterson."
+description: "Fireworks Temp Use permits in Patterson, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Patterson local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Patterson."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | counter |
+| Permit portal | https://www.pattersonca.gov/280/Building-Permits-Applications |
 | Fire agency | Patterson Fire Department / West Stanislaus County Fire Protection District |
 | Code edition | Patterson Municipal Code · Code Publishing Co. · Fire Ord. 885 (2025) |
 | Code prefix | PMC |

@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Angels Camp, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Angels Camp local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Angels Camp."
+description: "Cleanout permits in Angels Camp, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Angels Camp local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Angels Camp."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | iWorQ |
 | Permit portal | https://angelscamp2345.portal.iworq.net/portalhome/angelscamp2345 |
 | Fire agency | Angels Camp Fire Department |
 | Code edition | Angels Camp Municipal Code | 2025 CBSC in effect |

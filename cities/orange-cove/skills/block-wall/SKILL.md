@@ -1,5 +1,5 @@
 ---
-description: "Block Wall permits in Orange Cove, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orange Cove local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Orange Cove."
+description: "Block Wall permits in Orange Cove, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orange Cove local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Orange Cove."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Orange Cove Fire Protection District (OCFPD) |
 | Code edition | Orange Cove Municipal Code · Municode · Orange Cove Fire Protection District (OCFPD) · SJVAPCD |
 | Code prefix | OCMC |

@@ -1,5 +1,5 @@
 ---
-description: "Fence permits in Garden Grove, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Garden Grove local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fence in Garden Grove."
+description: "Fence permits in Garden Grove, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Garden Grove local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fence in Garden Grove."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC)"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://ch.ggcity.org/permitsoft |
+| Permit system | PermitSoft |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/GA4928 |
 | Fire agency | OCFA |
 | Code edition | Ordinance No. 2971 · Adopted November 12, 2025 |

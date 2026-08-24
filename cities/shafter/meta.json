@@ -10,5 +10,7 @@
     "Is Shafter in a wildfire hazard zone?",
     "What building codes has Shafter adopted?",
     "How do I submit plans to Shafter Building Department?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

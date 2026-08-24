@@ -4,7 +4,7 @@
   "codePrefix": "SMC",
   "fireAgency": "OCFA",
   "portalName": "CTS Plan Check",
-  "portalUrl": "https://stanton.cts.city",
+  "portalUrl": "https://stanton.cts.city/",
   "climateZone": "8",
   "seismicCategory": "D",
   "fhsz": false,
@@ -18,5 +18,6 @@
     "What are the EV charger requirements in Stanton?",
     "Do I need a permit for a kitchen remodel in Stanton?",
     "What are the swimming pool requirements in Stanton?"
-  ]
+  ],
+  "permitSystem": "CTS Plan Check"
 }

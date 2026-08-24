@@ -57,5 +57,7 @@
     "Does Walnut Creek have a threshold FAR for design review?",
     "What is the 3-year lookback rule for substantial improvement?",
     "How do I submit plans to Walnut Creek building department?"
-  ]
+  ],
+  "permitSystem": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/WC/Default.aspx"
 }

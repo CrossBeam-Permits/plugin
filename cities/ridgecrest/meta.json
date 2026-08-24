@@ -10,5 +10,7 @@
     "What energy code requirements apply in CZ14?",
     "Is my property near the China Lake military zone?",
     "How do I submit permits to Ridgecrest Building?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

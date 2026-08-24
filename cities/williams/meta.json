@@ -10,5 +10,7 @@
     "Is my property in the FEMA flood zone?",
     "What are the inspection scheduling requirements in Williams?",
     "What zoning district rules apply to my project in Williams?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

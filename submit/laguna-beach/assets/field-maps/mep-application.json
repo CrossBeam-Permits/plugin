@@ -1,0 +1,5240 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "mep-application",
+  "field_map_version": "1.0.0",
+  "generated_at": "2026-08-23T00:58:49.304246Z",
+  "source_sha256": "656ec5d0f3df1d85cc1f6196d6ce5883b76146450ccb53fe37c06ed6499a5efb",
+  "field_tree_sha256": "9a19933bad5265437186406c3e9b07617b75335bb82b7b2741aa3a37c7da109a",
+  "canonical_mappings": [
+    {
+      "fact_id": "site.address",
+      "pdf_fields": [
+        "PROJECT ADDRESS"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.description.{record_id}",
+      "pdf_fields": [
+        "Description of Work 1",
+        "Description of Work 2",
+        "Description of Work 3",
+        "Description of Work 4",
+        "Description of Work 5"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "lines"
+    },
+    {
+      "fact_id": "project.valuation.{record_id}",
+      "pdf_fields": [
+        "Valuation of Work"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "currency"
+    },
+    {
+      "fact_id": "applicant.name",
+      "pdf_fields": [
+        "APPLICANT NAME If none of the below"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string"
+    },
+    {
+      "fact_id": "applicant.phone",
+      "pdf_fields": [
+        "Phone"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string"
+    },
+    {
+      "fact_id": "applicant.email",
+      "pdf_fields": [
+        "Email Address"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string"
+    },
+    {
+      "fact_id": "owner.name",
+      "pdf_fields": [
+        "LEGAL PROPERTY OWNER NAME"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string"
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_fields": [
+        "Phone_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string"
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_fields": [
+        "Email Address_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string"
+    },
+    {
+      "fact_id": "owner.mailing_address",
+      "pdf_fields": [
+        "Mailing Address City State Zip"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.000",
+      "pdf_fields": [
+        "46Pole Platform Mounted Light Fixture"
+      ],
+      "pdf_label": "$46_Pole/ Platform Mounted Light Fixture",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.002",
+      "pdf_fields": [
+        "CONTRACTOR Shown on License"
+      ],
+      "pdf_label": "CONTRACTOR (Shown on License",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.003",
+      "pdf_fields": [
+        "Check Box57"
+      ],
+      "pdf_label": "Check Box57",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "form.mep-application.field.004",
+      "pdf_fields": [
+        "Check Box58"
+      ],
+      "pdf_label": "Check Box58",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "form.mep-application.field.005",
+      "pdf_fields": [
+        "Class"
+      ],
+      "pdf_label": "Class",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.006",
+      "pdf_fields": [
+        "Date56_af_date"
+      ],
+      "pdf_label": "Date56_af_date",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.014",
+      "pdf_fields": [
+        "Email Address_3"
+      ],
+      "pdf_label": "Email Address",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.016",
+      "pdf_fields": [
+        "License"
+      ],
+      "pdf_label": "License",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.018",
+      "pdf_fields": [
+        "Mailing Address City State Zip_2"
+      ],
+      "pdf_label": "Mailing Address (City, State, Zip",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.019",
+      "pdf_fields": [
+        "PERMIT NO"
+      ],
+      "pdf_label": "PERMIT NO",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.023",
+      "pdf_fields": [
+        "Phone_3"
+      ],
+      "pdf_label": "Phone",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.024",
+      "pdf_fields": [
+        "QTY EA1000001  1750000 BTU"
+      ],
+      "pdf_label": "QTY EA_1,000,001 – 1,750,000 BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.025",
+      "pdf_fields": [
+        "QTY EA100001  500000 BTU"
+      ],
+      "pdf_label": "QTY EA_100,001 – 500,000 BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.026",
+      "pdf_fields": [
+        "QTY EA11  50 per HP kW kVAR CVA"
+      ],
+      "pdf_label": "QTY EA_11 – 50 (per HP/ kW/ kVAR/ CVA)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.027",
+      "pdf_fields": [
+        "QTY EA2  10 per HP kW kVAR CVA"
+      ],
+      "pdf_label": "QTY EA_2 – 10 (per HP/ kW/ kVAR/ CVA)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.028",
+      "pdf_fields": [
+        "QTY EA500001  1000000 BTU"
+      ],
+      "pdf_label": "QTY EA_500,001 – 1,000,000 BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.029",
+      "pdf_fields": [
+        "QTY EA51  100 per HP kW kVAR CVA"
+      ],
+      "pdf_label": "QTY EA_51 – 100 (per HP/ kW/ kVAR/ CVA)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.030",
+      "pdf_fields": [
+        "QTY EA600  1000 amps"
+      ],
+      "pdf_label": "QTY EA_600 – 1,000 amps",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.031",
+      "pdf_fields": [
+        "QTY EA600  1000 amps_2"
+      ],
+      "pdf_label": "QTY EA_600 – 1,000 amps",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.032",
+      "pdf_fields": [
+        "QTY EAAC Coil"
+      ],
+      "pdf_label": "QTY EA_AC Coil",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.033",
+      "pdf_fields": [
+        "QTY EAAC Disconnect"
+      ],
+      "pdf_label": "QTY EA_AC Disconnect",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.034",
+      "pdf_fields": [
+        "QTY EAAC Disconnect_2"
+      ],
+      "pdf_label": "QTY EA_AC Disconnect",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.035",
+      "pdf_fields": [
+        "QTY EAAir Conditioner or Heat Pump 0  5 Tons"
+      ],
+      "pdf_label": "QTY EA_Air Conditioner or Heat Pump 0 – 5 Tons",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.036",
+      "pdf_fields": [
+        "QTY EAAir Conditioner or Heat Pump over 5 Tons"
+      ],
+      "pdf_label": "QTY EA_Air Conditioner or Heat Pump over 5 Tons",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.037",
+      "pdf_fields": [
+        "QTY EAAir Handling Unit Over to 10000 CFM"
+      ],
+      "pdf_label": "QTY EA_Air Handling Unit Over to 10,000 CFM",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.038",
+      "pdf_fields": [
+        "QTY EAAir Handling Unit Up to 10000 CFM"
+      ],
+      "pdf_label": "QTY EA_Air Handling Unit Up to 10,000 CFM",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.039",
+      "pdf_fields": [
+        "QTY EAAlarms Fire Sprinklers Misc Electrical"
+      ],
+      "pdf_label": "QTY EA_Alarms/ Fire Sprinklers/ Misc Electrical",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.040",
+      "pdf_fields": [
+        "QTY EABackflow Device 2 or smaller"
+      ],
+      "pdf_label": "QTY EA_Backflow Device (2” or smaller)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.041",
+      "pdf_fields": [
+        "QTY EABackflow Device Over 2"
+      ],
+      "pdf_label": "QTY EA_Backflow Device (Over 2”)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.042",
+      "pdf_fields": [
+        "QTY EABathroom Sink"
+      ],
+      "pdf_label": "QTY EA_Bathroom Sink",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.043",
+      "pdf_fields": [
+        "QTY EABuilding Sewer"
+      ],
+      "pdf_label": "QTY EA_Building Sewer",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.044",
+      "pdf_fields": [
+        "QTY EABusway Multiple Outlet Assemblies per 100"
+      ],
+      "pdf_label": "QTY EA_Busway/ Multiple Outlet Assemblies per 100’",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.045",
+      "pdf_fields": [
+        "QTY EACesspool"
+      ],
+      "pdf_label": "QTY EA_Cesspool",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.046",
+      "pdf_fields": [
+        "QTY EACommercial SelfContained Appliance Up to 1hp"
+      ],
+      "pdf_label": "QTY EA_Commercial Self-Contained Appliance (Up to 1hp)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.047",
+      "pdf_fields": [
+        "QTY EACooking Unit"
+      ],
+      "pdf_label": "QTY EA_Cooking Unit",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.048",
+      "pdf_fields": [
+        "QTY EADevice Boxes"
+      ],
+      "pdf_label": "QTY EA_Device Boxes",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.049",
+      "pdf_fields": [
+        "QTY EADishwasher"
+      ],
+      "pdf_label": "QTY EA_Dishwasher",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.050",
+      "pdf_fields": [
+        "QTY EADrain Drain Piping each"
+      ],
+      "pdf_label": "QTY EA_Drain/ Drain Piping (each)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.051",
+      "pdf_fields": [
+        "QTY EADrinking Fountains"
+      ],
+      "pdf_label": "QTY EA_Drinking Fountains",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.052",
+      "pdf_fields": [
+        "QTY EADryer"
+      ],
+      "pdf_label": "QTY EA_Dryer",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.053",
+      "pdf_fields": [
+        "QTY EADuct  Register Return each item"
+      ],
+      "pdf_label": "QTY EA_Duct / Register/ Return (each item)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.054",
+      "pdf_fields": [
+        "QTY EAElectric Appliance Not Listed"
+      ],
+      "pdf_label": "QTY EA_Electric Appliance Not Listed",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.055",
+      "pdf_fields": [
+        "QTY EAElectrical Circuit Conduit Outlet Assemblies"
+      ],
+      "pdf_label": "QTY EA_Electrical Circuit/ Conduit/ Outlet Assemblies",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.056",
+      "pdf_fields": [
+        "QTY EAEvaporative Cooler not portable"
+      ],
+      "pdf_label": "QTY EA_Evaporative Cooler (not portable)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.057",
+      "pdf_fields": [
+        "QTY EAExhaust System Commercial"
+      ],
+      "pdf_label": "QTY EA_Exhaust System Commercial",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.058",
+      "pdf_fields": [
+        "QTY EAExhaust System Residential"
+      ],
+      "pdf_label": "QTY EA_Exhaust System Residential",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.059",
+      "pdf_fields": [
+        "QTY EAFAU over 100k BTU"
+      ],
+      "pdf_label": "QTY EA_F.A.U over 100k BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.060",
+      "pdf_fields": [
+        "QTY EAFAU up to 100k BTU"
+      ],
+      "pdf_label": "QTY EA_F.A.U up to 100k BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.061",
+      "pdf_fields": [
+        "QTY EAFire Smoke Damper"
+      ],
+      "pdf_label": "QTY EA_Fire/ Smoke Damper",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.062",
+      "pdf_fields": [
+        "QTY EAFireplace Factory Built"
+      ],
+      "pdf_label": "QTY EA_Fireplace/ Factory Built",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.063",
+      "pdf_fields": [
+        "QTY EAFixture Not Listed"
+      ],
+      "pdf_label": "QTY EA_Fixture Not Listed",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.064",
+      "pdf_fields": [
+        "QTY EAFloor Drain"
+      ],
+      "pdf_label": "QTY EA_Floor Drain",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.065",
+      "pdf_fields": [
+        "QTY EAFloor Furnace"
+      ],
+      "pdf_label": "QTY EA_Floor Furnace",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.066",
+      "pdf_fields": [
+        "QTY EAFloor Sink"
+      ],
+      "pdf_label": "QTY EA_Floor Sink",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.067",
+      "pdf_fields": [
+        "QTY EAGarbage Disposal"
+      ],
+      "pdf_label": "QTY EA_Garbage Disposal",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.068",
+      "pdf_fields": [
+        "QTY EAGas Fireplace inc gas line  electrical"
+      ],
+      "pdf_label": "QTY EA_Gas Fireplace (inc gas line & electrical)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.069",
+      "pdf_fields": [
+        "QTY EAGas Piping each outlet"
+      ],
+      "pdf_label": "QTY EA_Gas Piping: each outlet",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.070",
+      "pdf_fields": [
+        "QTY EAGas Pressure Regulator each"
+      ],
+      "pdf_label": "QTY EA_Gas Pressure Regulator each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.071",
+      "pdf_fields": [
+        "QTY EAGas Service Meter Release"
+      ],
+      "pdf_label": "QTY EA_Gas Service/ Meter Release",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.072",
+      "pdf_fields": [
+        "QTY EAGrease Interceptor Trap"
+      ],
+      "pdf_label": "QTY EA_Grease Interceptor/ Trap",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.073",
+      "pdf_fields": [
+        "QTY EAHood or Canopy"
+      ],
+      "pdf_label": "QTY EA_Hood or Canopy",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.074",
+      "pdf_fields": [
+        "QTY EAHose Bibb"
+      ],
+      "pdf_label": "QTY EA_Hose Bibb",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.075",
+      "pdf_fields": [
+        "QTY EAKitchen Sink"
+      ],
+      "pdf_label": "QTY EA_Kitchen Sink",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.076",
+      "pdf_fields": [
+        "QTY EALawn Sprinkler System 1 Meter inc backflow"
+      ],
+      "pdf_label": "QTY EA_Lawn Sprinkler System (1 Meter; inc backflow)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.077",
+      "pdf_fields": [
+        "QTY EALight Fixtures each"
+      ],
+      "pdf_label": "QTY EA_Light Fixtures: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.078",
+      "pdf_fields": [
+        "QTY EALow Voltage System each"
+      ],
+      "pdf_label": "QTY EA_Low Voltage System: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.079",
+      "pdf_fields": [
+        "QTY EAMisc Conduit apparatus conductors each"
+      ],
+      "pdf_label": "QTY EA_Misc Conduit, apparatus, conductors: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.080",
+      "pdf_fields": [
+        "QTY EAMisc Not Listed each"
+      ],
+      "pdf_label": "QTY EA_Misc Not Listed: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.081",
+      "pdf_fields": [
+        "QTY EAMisc Not Listed each_2"
+      ],
+      "pdf_label": "QTY EA_Misc Not Listed: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.082",
+      "pdf_fields": [
+        "QTY EAMisc Not Listed each_3"
+      ],
+      "pdf_label": "QTY EA_Misc Not Listed: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.083",
+      "pdf_fields": [
+        "QTY EAOutlets Switches each"
+      ],
+      "pdf_label": "QTY EA_Outlets/ Switches: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.084",
+      "pdf_fields": [
+        "QTY EAOver 100 per HP kW kVAR CVA"
+      ],
+      "pdf_label": "QTY EA_Over 100 (per HP/ kW/ kVAR/ CVA)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.085",
+      "pdf_fields": [
+        "QTY EAOver 1000 amps"
+      ],
+      "pdf_label": "QTY EA_Over 1,000 amps",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.086",
+      "pdf_fields": [
+        "QTY EAOver 1000 amps_2"
+      ],
+      "pdf_label": "QTY EA_Over 1,000 amps",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.087",
+      "pdf_fields": [
+        "QTY EAOver 15  30 HP over 500K  M BTUs"
+      ],
+      "pdf_label": "QTY EA_Over 15 – 30 HP; over 500K – M BTUs",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.088",
+      "pdf_fields": [
+        "QTY EAOver 1750000 BTU"
+      ],
+      "pdf_label": "QTY EA_Over 1,750,000 BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.089",
+      "pdf_fields": [
+        "QTY EAOver 3  15 HP over 100K  500K BTUs"
+      ],
+      "pdf_label": "QTY EA_Over 3 – 15 HP; over 100K – 500K BTUs",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.090",
+      "pdf_fields": [
+        "QTY EAOver 30  50 HP over 1M  175M BTUs"
+      ],
+      "pdf_label": "QTY EA_Over 30 – 50 HP; over 1M – 1.75M BTUs",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.091",
+      "pdf_fields": [
+        "QTY EAOver 50 HP 175M BTUs"
+      ],
+      "pdf_label": "QTY EA_Over 50 HP; 1.75M+ BTUs",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.092",
+      "pdf_fields": [
+        "QTY EAPedestal Meter"
+      ],
+      "pdf_label": "QTY EA_Pedestal Meter",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.093",
+      "pdf_fields": [
+        "QTY EAPole Platform Mounted Light Fixture"
+      ],
+      "pdf_label": "QTY EA_Pole/ Platform Mounted Light Fixture",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.094",
+      "pdf_fields": [
+        "QTY EARainwater System Per Drain"
+      ],
+      "pdf_label": "QTY EA_Rainwater System Per Drain",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.095",
+      "pdf_fields": [
+        "QTY EARange"
+      ],
+      "pdf_label": "QTY EA_Range",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.096",
+      "pdf_fields": [
+        "QTY EARefrigeration System 100000  500000 BTU"
+      ],
+      "pdf_label": "QTY EA_Refrigeration System 100,000 – 500,000 BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.097",
+      "pdf_fields": [
+        "QTY EARefrigeration System up to 100000 BTU"
+      ],
+      "pdf_label": "QTY EA_Refrigeration System up to 100,000 BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.098",
+      "pdf_fields": [
+        "QTY EARepair Alteration of Addl appliance each"
+      ],
+      "pdf_label": "QTY EA_Repair/ Alteration of/ Add’l appliance: each",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.099",
+      "pdf_fields": [
+        "QTY EAResidential SelfContained Appliance"
+      ],
+      "pdf_label": "QTY EA_Residential Self-Contained Appliance",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.100",
+      "pdf_fields": [
+        "QTY EARoof Drain"
+      ],
+      "pdf_label": "QTY EA_Roof Drain",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.101",
+      "pdf_fields": [
+        "QTY EAService Sink"
+      ],
+      "pdf_label": "QTY EA_Service Sink",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.102",
+      "pdf_fields": [
+        "QTY EASewer Cap"
+      ],
+      "pdf_label": "QTY EA_Sewer Cap",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.103",
+      "pdf_fields": [
+        "QTY EASewer Connection"
+      ],
+      "pdf_label": "QTY EA_Sewer Connection",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.104",
+      "pdf_fields": [
+        "QTY EASewer Disposal System"
+      ],
+      "pdf_label": "QTY EA_Sewer Disposal System",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.105",
+      "pdf_fields": [
+        "QTY EAShower Tub"
+      ],
+      "pdf_label": "QTY EA_Shower/ Tub",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.106",
+      "pdf_fields": [
+        "QTY EASign Marquees One branch circuit"
+      ],
+      "pdf_label": "QTY EA_Sign/ Marquees: (One branch circuit)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.107",
+      "pdf_fields": [
+        "QTY EASpecial Event Each Generator Electrical"
+      ],
+      "pdf_label": "QTY EA_Special Event Each Generator: Electrical",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.108",
+      "pdf_fields": [
+        "QTY EASpecial Event Lighting"
+      ],
+      "pdf_label": "QTY EA_Special Event Lighting",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.109",
+      "pdf_fields": [
+        "QTY EAStreet Light Pole"
+      ],
+      "pdf_label": "QTY EA_Street Light Pole",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.110",
+      "pdf_fields": [
+        "QTY EATemporary Construction Lighting"
+      ],
+      "pdf_label": "QTY EA_Temporary Construction Lighting",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.111",
+      "pdf_fields": [
+        "QTY EATemporary Construction Sub Pole"
+      ],
+      "pdf_label": "QTY EA_Temporary Construction Sub Pole",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.112",
+      "pdf_fields": [
+        "QTY EATemporary Distribution Systems"
+      ],
+      "pdf_label": "QTY EA_Temporary Distribution Systems",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.113",
+      "pdf_fields": [
+        "QTY EATemporary Gas Service"
+      ],
+      "pdf_label": "QTY EA_Temporary Gas Service",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.114",
+      "pdf_fields": [
+        "QTY EATemporary Power Pole Piggyback"
+      ],
+      "pdf_label": "QTY EA_Temporary Power Pole/ Piggyback",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.115",
+      "pdf_fields": [
+        "QTY EATheatricalType Lighting Fixture Assemblies"
+      ],
+      "pdf_label": "QTY EA_Theatrical-Type Lighting Fixture/ Assemblies",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.116",
+      "pdf_fields": [
+        "QTY EATime Clock"
+      ],
+      "pdf_label": "QTY EA_Time Clock",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.117",
+      "pdf_fields": [
+        "QTY EAToilet Water Closet Urinal"
+      ],
+      "pdf_label": "QTY EA_Toilet/ Water Closet/ Urinal",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.118",
+      "pdf_fields": [
+        "QTY EAUnderground Service Conduit per 100"
+      ],
+      "pdf_label": "QTY EA_Underground Service Conduit per 100’",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.119",
+      "pdf_fields": [
+        "QTY EAUp to 1 per HP kW kVAR CVA"
+      ],
+      "pdf_label": "QTY EA_Up to 1 (per HP/ kW/ kVAR/ CVA)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.120",
+      "pdf_fields": [
+        "QTY EAUp to 100000 BTU"
+      ],
+      "pdf_label": "QTY EA_Up to 100,000 BTU",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.121",
+      "pdf_fields": [
+        "QTY EAUp to 3 HP up to 100k BTUs"
+      ],
+      "pdf_label": "QTY EA_Up to 3 HP; up to 100k BTUs",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.122",
+      "pdf_fields": [
+        "QTY EAUp to 600 amps"
+      ],
+      "pdf_label": "QTY EA_Up to 600 amps",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.123",
+      "pdf_fields": [
+        "QTY EAUp to 600 amps_2"
+      ],
+      "pdf_label": "QTY EA_Up to 600 amps",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.124",
+      "pdf_fields": [
+        "QTY EAVAV Boxes each"
+      ],
+      "pdf_label": "QTY EA_VAV Boxes (each)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.125",
+      "pdf_fields": [
+        "QTY EAVacuum Breakers inc 5 4 each additional"
+      ],
+      "pdf_label": "QTY EA_Vacuum Breakers (inc <=5) ($4 each additional)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.126",
+      "pdf_fields": [
+        "QTY EAVent Fixture"
+      ],
+      "pdf_label": "QTY EA_Vent Fixture",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.127",
+      "pdf_fields": [
+        "QTY EAVent Install relocate replace each"
+      ],
+      "pdf_label": "QTY EA_Vent: Install, relocate, replace (each)",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.128",
+      "pdf_fields": [
+        "QTY EAVentilation Fan"
+      ],
+      "pdf_label": "QTY EA_Ventilation Fan",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.129",
+      "pdf_fields": [
+        "QTY EAWall  Suspended  Floormounted Heater"
+      ],
+      "pdf_label": "QTY EA_Wall / Suspended / Floor-mounted Heater",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.130",
+      "pdf_fields": [
+        "QTY EAWasher"
+      ],
+      "pdf_label": "QTY EA_Washer",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.131",
+      "pdf_fields": [
+        "QTY EAWater Heater"
+      ],
+      "pdf_label": "QTY EA_Water Heater",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.132",
+      "pdf_fields": [
+        "QTY EAWater Heater New Vent"
+      ],
+      "pdf_label": "QTY EA_Water Heater New Vent",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.133",
+      "pdf_fields": [
+        "QTY EAWater Heater Tankless"
+      ],
+      "pdf_label": "QTY EA_Water Heater, Tankless",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.134",
+      "pdf_fields": [
+        "QTY EAWater Piping per Fixture"
+      ],
+      "pdf_label": "QTY EA_Water Piping per Fixture",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.135",
+      "pdf_fields": [
+        "QTY EAWater Service"
+      ],
+      "pdf_label": "QTY EA_Water Service",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.136",
+      "pdf_fields": [
+        "QTY EAWater Softener Water Treatment"
+      ],
+      "pdf_label": "QTY EA_Water Softener/ Water Treatment",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "form.mep-application.field.137",
+      "pdf_fields": [
+        "QTY EAWhole House Fan"
+      ],
+      "pdf_label": "QTY EA_Whole House Fan",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    }
+  ],
+  "review_fields": [
+    "Date56_af_date"
+  ],
+  "fields": [
+    {
+      "name": "46Pole Platform Mounted Light Fixture",
+      "type": "/Tx",
+      "tooltip": "$46_Pole/ Platform Mounted Light Fixture",
+      "flags": 0
+    },
+    {
+      "name": "APPLICANT NAME If none of the below",
+      "type": "/Tx",
+      "tooltip": "APPLICANT NAME (If none of the below",
+      "flags": 0
+    },
+    {
+      "name": "CONTRACTOR Shown on License",
+      "type": "/Tx",
+      "tooltip": "CONTRACTOR (Shown on License",
+      "flags": 0
+    },
+    {
+      "name": "Check Box57",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box58",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Class",
+      "type": "/Tx",
+      "tooltip": "Class",
+      "flags": 0
+    },
+    {
+      "name": "Date56_af_date",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Description of Work 1",
+      "type": "/Tx",
+      "tooltip": "Description of Work [1]",
+      "flags": 0
+    },
+    {
+      "name": "Description of Work 2",
+      "type": "/Tx",
+      "tooltip": "Description of Work [2]",
+      "flags": 0
+    },
+    {
+      "name": "Description of Work 3",
+      "type": "/Tx",
+      "tooltip": "Description of Work [3]",
+      "flags": 0
+    },
+    {
+      "name": "Description of Work 4",
+      "type": "/Tx",
+      "tooltip": "Description of Work [4]",
+      "flags": 0
+    },
+    {
+      "name": "Description of Work 5",
+      "type": "/Tx",
+      "tooltip": "Description of Work [5]",
+      "flags": 0
+    },
+    {
+      "name": "Email Address",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "Email Address_2",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "Email Address_3",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "LEGAL PROPERTY OWNER NAME",
+      "type": "/Tx",
+      "tooltip": "LEGAL PROPERTY OWNER NAME",
+      "flags": 0
+    },
+    {
+      "name": "License",
+      "type": "/Tx",
+      "tooltip": "License",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address City State Zip",
+      "type": "/Tx",
+      "tooltip": "Mailing Address (City, State, Zip",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address City State Zip_2",
+      "type": "/Tx",
+      "tooltip": "Mailing Address (City, State, Zip",
+      "flags": 0
+    },
+    {
+      "name": "PERMIT NO",
+      "type": "/Tx",
+      "tooltip": "PERMIT NO",
+      "flags": 0
+    },
+    {
+      "name": "PROJECT ADDRESS",
+      "type": "/Tx",
+      "tooltip": "PROJECT ADDRESS",
+      "flags": 0
+    },
+    {
+      "name": "Phone",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Phone_2",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Phone_3",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA1000001  1750000 BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_1,000,001 – 1,750,000 BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA100001  500000 BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_100,001 – 500,000 BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA11  50 per HP kW kVAR CVA",
+      "type": "/Tx",
+      "tooltip": "QTY EA_11 – 50 (per HP/ kW/ kVAR/ CVA)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA2  10 per HP kW kVAR CVA",
+      "type": "/Tx",
+      "tooltip": "QTY EA_2 – 10 (per HP/ kW/ kVAR/ CVA)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA500001  1000000 BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_500,001 – 1,000,000 BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA51  100 per HP kW kVAR CVA",
+      "type": "/Tx",
+      "tooltip": "QTY EA_51 – 100 (per HP/ kW/ kVAR/ CVA)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA600  1000 amps",
+      "type": "/Tx",
+      "tooltip": "QTY EA_600 – 1,000 amps",
+      "flags": 0
+    },
+    {
+      "name": "QTY EA600  1000 amps_2",
+      "type": "/Tx",
+      "tooltip": "QTY EA_600 – 1,000 amps",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAC Coil",
+      "type": "/Tx",
+      "tooltip": "QTY EA_AC Coil",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAC Disconnect",
+      "type": "/Tx",
+      "tooltip": "QTY EA_AC Disconnect",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAC Disconnect_2",
+      "type": "/Tx",
+      "tooltip": "QTY EA_AC Disconnect",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAir Conditioner or Heat Pump 0  5 Tons",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Air Conditioner or Heat Pump 0 – 5 Tons",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAir Conditioner or Heat Pump over 5 Tons",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Air Conditioner or Heat Pump over 5 Tons",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAir Handling Unit Over to 10000 CFM",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Air Handling Unit Over to 10,000 CFM",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAir Handling Unit Up to 10000 CFM",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Air Handling Unit Up to 10,000 CFM",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAAlarms Fire Sprinklers Misc Electrical",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Alarms/ Fire Sprinklers/ Misc Electrical",
+      "flags": 0
+    },
+    {
+      "name": "QTY EABackflow Device 2 or smaller",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Backflow Device (2” or smaller)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EABackflow Device Over 2",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Backflow Device (Over 2”)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EABathroom Sink",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Bathroom Sink",
+      "flags": 0
+    },
+    {
+      "name": "QTY EABuilding Sewer",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Building Sewer",
+      "flags": 0
+    },
+    {
+      "name": "QTY EABusway Multiple Outlet Assemblies per 100",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Busway/ Multiple Outlet Assemblies per 100’",
+      "flags": 0
+    },
+    {
+      "name": "QTY EACesspool",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Cesspool",
+      "flags": 0
+    },
+    {
+      "name": "QTY EACommercial SelfContained Appliance Up to 1hp",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Commercial Self-Contained Appliance (Up to 1hp)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EACooking Unit",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Cooking Unit",
+      "flags": 0
+    },
+    {
+      "name": "QTY EADevice Boxes",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Device Boxes",
+      "flags": 0
+    },
+    {
+      "name": "QTY EADishwasher",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Dishwasher",
+      "flags": 0
+    },
+    {
+      "name": "QTY EADrain Drain Piping each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Drain/ Drain Piping (each)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EADrinking Fountains",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Drinking Fountains",
+      "flags": 0
+    },
+    {
+      "name": "QTY EADryer",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Dryer",
+      "flags": 0
+    },
+    {
+      "name": "QTY EADuct  Register Return each item",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Duct / Register/ Return (each item)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAElectric Appliance Not Listed",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Electric Appliance Not Listed",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAElectrical Circuit Conduit Outlet Assemblies",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Electrical Circuit/ Conduit/ Outlet Assemblies",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAEvaporative Cooler not portable",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Evaporative Cooler (not portable)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAExhaust System Commercial",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Exhaust System Commercial",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAExhaust System Residential",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Exhaust System Residential",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFAU over 100k BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_F.A.U over 100k BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFAU up to 100k BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_F.A.U up to 100k BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFire Smoke Damper",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Fire/ Smoke Damper",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFireplace Factory Built",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Fireplace/ Factory Built",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFixture Not Listed",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Fixture Not Listed",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFloor Drain",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Floor Drain",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFloor Furnace",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Floor Furnace",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAFloor Sink",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Floor Sink",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAGarbage Disposal",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Garbage Disposal",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAGas Fireplace inc gas line  electrical",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Gas Fireplace (inc gas line & electrical)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAGas Piping each outlet",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Gas Piping: each outlet",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAGas Pressure Regulator each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Gas Pressure Regulator each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAGas Service Meter Release",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Gas Service/ Meter Release",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAGrease Interceptor Trap",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Grease Interceptor/ Trap",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAHood or Canopy",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Hood or Canopy",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAHose Bibb",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Hose Bibb",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAKitchen Sink",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Kitchen Sink",
+      "flags": 0
+    },
+    {
+      "name": "QTY EALawn Sprinkler System 1 Meter inc backflow",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Lawn Sprinkler System (1 Meter; inc backflow)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EALight Fixtures each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Light Fixtures: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EALow Voltage System each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Low Voltage System: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAMisc Conduit apparatus conductors each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Misc Conduit, apparatus, conductors: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAMisc Not Listed each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Misc Not Listed: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAMisc Not Listed each_2",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Misc Not Listed: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAMisc Not Listed each_3",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Misc Not Listed: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOutlets Switches each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Outlets/ Switches: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 100 per HP kW kVAR CVA",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 100 (per HP/ kW/ kVAR/ CVA)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 1000 amps",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 1,000 amps",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 1000 amps_2",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 1,000 amps",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 15  30 HP over 500K  M BTUs",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 15 – 30 HP; over 500K – M BTUs",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 1750000 BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 1,750,000 BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 3  15 HP over 100K  500K BTUs",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 3 – 15 HP; over 100K – 500K BTUs",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 30  50 HP over 1M  175M BTUs",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 30 – 50 HP; over 1M – 1.75M BTUs",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAOver 50 HP 175M BTUs",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Over 50 HP; 1.75M+ BTUs",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAPedestal Meter",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Pedestal Meter",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAPole Platform Mounted Light Fixture",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Pole/ Platform Mounted Light Fixture",
+      "flags": 0
+    },
+    {
+      "name": "QTY EARainwater System Per Drain",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Rainwater System Per Drain",
+      "flags": 0
+    },
+    {
+      "name": "QTY EARange",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Range",
+      "flags": 0
+    },
+    {
+      "name": "QTY EARefrigeration System 100000  500000 BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Refrigeration System 100,000 – 500,000 BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EARefrigeration System up to 100000 BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Refrigeration System up to 100,000 BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EARepair Alteration of Addl appliance each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Repair/ Alteration of/ Add’l appliance: each",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAResidential SelfContained Appliance",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Residential Self-Contained Appliance",
+      "flags": 0
+    },
+    {
+      "name": "QTY EARoof Drain",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Roof Drain",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAService Sink",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Service Sink",
+      "flags": 0
+    },
+    {
+      "name": "QTY EASewer Cap",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Sewer Cap",
+      "flags": 0
+    },
+    {
+      "name": "QTY EASewer Connection",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Sewer Connection",
+      "flags": 0
+    },
+    {
+      "name": "QTY EASewer Disposal System",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Sewer Disposal System",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAShower Tub",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Shower/ Tub",
+      "flags": 0
+    },
+    {
+      "name": "QTY EASign Marquees One branch circuit",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Sign/ Marquees: (One branch circuit)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EASpecial Event Each Generator Electrical",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Special Event Each Generator: Electrical",
+      "flags": 0
+    },
+    {
+      "name": "QTY EASpecial Event Lighting",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Special Event Lighting",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAStreet Light Pole",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Street Light Pole",
+      "flags": 0
+    },
+    {
+      "name": "QTY EATemporary Construction Lighting",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Temporary Construction Lighting",
+      "flags": 0
+    },
+    {
+      "name": "QTY EATemporary Construction Sub Pole",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Temporary Construction Sub Pole",
+      "flags": 0
+    },
+    {
+      "name": "QTY EATemporary Distribution Systems",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Temporary Distribution Systems",
+      "flags": 0
+    },
+    {
+      "name": "QTY EATemporary Gas Service",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Temporary Gas Service",
+      "flags": 0
+    },
+    {
+      "name": "QTY EATemporary Power Pole Piggyback",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Temporary Power Pole/ Piggyback",
+      "flags": 0
+    },
+    {
+      "name": "QTY EATheatricalType Lighting Fixture Assemblies",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Theatrical-Type Lighting Fixture/ Assemblies",
+      "flags": 0
+    },
+    {
+      "name": "QTY EATime Clock",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Time Clock",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAToilet Water Closet Urinal",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Toilet/ Water Closet/ Urinal",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAUnderground Service Conduit per 100",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Underground Service Conduit per 100’",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAUp to 1 per HP kW kVAR CVA",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Up to 1 (per HP/ kW/ kVAR/ CVA)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAUp to 100000 BTU",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Up to 100,000 BTU",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAUp to 3 HP up to 100k BTUs",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Up to 3 HP; up to 100k BTUs",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAUp to 600 amps",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Up to 600 amps",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAUp to 600 amps_2",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Up to 600 amps",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAVAV Boxes each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_VAV Boxes (each)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAVacuum Breakers inc 5 4 each additional",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Vacuum Breakers (inc <=5) ($4 each additional)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAVent Fixture",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Vent Fixture",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAVent Install relocate replace each",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Vent: Install, relocate, replace (each)",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAVentilation Fan",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Ventilation Fan",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWall  Suspended  Floormounted Heater",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Wall / Suspended / Floor-mounted Heater",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWasher",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Washer",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWater Heater",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Water Heater",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWater Heater New Vent",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Water Heater New Vent",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWater Heater Tankless",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Water Heater, Tankless",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWater Piping per Fixture",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Water Piping per Fixture",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWater Service",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Water Service",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWater Softener Water Treatment",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Water Softener/ Water Treatment",
+      "flags": 0
+    },
+    {
+      "name": "QTY EAWhole House Fan",
+      "type": "/Tx",
+      "tooltip": "QTY EA_Whole House Fan",
+      "flags": 0
+    },
+    {
+      "name": "Valuation of Work",
+      "type": "/Tx",
+      "tooltip": "Valuation of Work",
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 1,
+      "field_name": "PERMIT NO",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        315.36,
+        670.44,
+        575.52,
+        685.56
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "PROJECT ADDRESS",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        150.96,
+        650.76,
+        576.12,
+        665.88
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        150.36,
+        631.8,
+        575.52,
+        646.92
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.0,
+        617.64,
+        576.12,
+        630.96
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.0,
+        603.6,
+        576.12,
+        616.92
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.0,
+        589.44,
+        576.12,
+        602.88
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Description of Work 5",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        36.0,
+        575.4,
+        576.12,
+        588.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Valuation of Work",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        356.76,
+        555.6,
+        571.92,
+        570.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "APPLICANT NAME If none of the below",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        217.44,
+        525.36,
+        537.36,
+        540.48
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.52,
+        508.44,
+        192.48,
+        523.56
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        268.56,
+        508.44,
+        508.44,
+        523.56
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "LEGAL PROPERTY OWNER NAME",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        186.72,
+        478.56,
+        542.76,
+        493.68
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.52,
+        461.64,
+        192.48,
+        476.76
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email Address_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        268.56,
+        461.64,
+        508.44,
+        476.76
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Mailing Address City State Zip",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        185.28,
+        444.72,
+        541.44,
+        459.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "CONTRACTOR Shown on License",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        192.48,
+        414.84,
+        540.48,
+        429.96
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "License",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        83.52,
+        397.92,
+        139.56,
+        413.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Class",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        176.88,
+        397.92,
+        244.8,
+        413.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Phone_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        68.52,
+        381.0,
+        192.48,
+        396.12
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email Address_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        268.56,
+        381.0,
+        508.44,
+        396.12
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Mailing Address City State Zip_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        185.28,
+        364.08,
+        541.44,
+        379.2
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAFAU up to 100k BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        302.52,
+        282.12,
+        314.88
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAExhaust System Residential",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        302.52,
+        548.88,
+        314.88
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAFAU over 100k BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        289.08,
+        282.12,
+        301.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAExhaust System Commercial",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        289.08,
+        548.88,
+        301.44
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAAC Coil",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        275.64,
+        282.12,
+        288.0
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAEvaporative Cooler not portable",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        275.64,
+        548.88,
+        288.0
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAAir Conditioner or Heat Pump 0  5 Tons",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        262.2,
+        282.12,
+        274.56
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAWhole House Fan",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        262.2,
+        548.88,
+        274.56
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAAir Conditioner or Heat Pump over 5 Tons",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        248.76,
+        282.12,
+        261.12
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAFireplace Factory Built",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        248.76,
+        548.88,
+        261.12
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAAir Handling Unit Up to 10000 CFM",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        235.2,
+        282.12,
+        247.68
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAGas Fireplace inc gas line  electrical",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        235.2,
+        548.88,
+        247.68
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAAir Handling Unit Over to 10000 CFM",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        221.76,
+        282.12,
+        234.12
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAHood or Canopy",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        221.76,
+        548.88,
+        234.12
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAFloor Furnace",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        208.32,
+        282.12,
+        220.68
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAVAV Boxes each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        208.32,
+        548.88,
+        220.68
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAWall  Suspended  Floormounted Heater",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        194.88,
+        282.12,
+        207.24
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EARefrigeration System up to 100000 BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        194.88,
+        548.88,
+        207.24
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EADuct  Register Return each item",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        181.44,
+        282.12,
+        193.8
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EARefrigeration System 100000  500000 BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        181.44,
+        548.88,
+        193.8
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAVent Install relocate replace each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        168.0,
+        282.12,
+        180.36
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAVentilation Fan",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        154.56,
+        282.12,
+        166.92
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAAC Disconnect",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        141.12,
+        282.12,
+        153.48
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAUp to 3 HP up to 100k BTUs",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        141.12,
+        548.88,
+        153.48
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAOver 3  15 HP over 100K  500K BTUs",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        127.68,
+        548.88,
+        140.04
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAOver 15  30 HP over 500K  M BTUs",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        114.24,
+        548.88,
+        126.6
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAUp to 100000 BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        100.8,
+        282.12,
+        113.16
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAOver 30  50 HP over 1M  175M BTUs",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        100.8,
+        548.88,
+        113.16
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EA100001  500000 BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        87.36,
+        282.12,
+        99.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAOver 50 HP 175M BTUs",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        87.36,
+        548.88,
+        99.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EA500001  1000000 BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        73.8,
+        282.12,
+        86.28
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EA1000001  1750000 BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        60.36,
+        282.12,
+        72.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAFire Smoke Damper",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        60.36,
+        548.88,
+        72.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAOver 1750000 BTU",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        46.92,
+        282.12,
+        59.28
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EARepair Alteration of Addl appliance each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        46.92,
+        548.88,
+        59.28
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "QTY EAMisc Not Listed each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        33.48,
+        548.88,
+        45.84
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Date56_af_date",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        72.6549,
+        671.163,
+        222.655,
+        693.163
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box57",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        39.9274,
+        552.108,
+        57.9274,
+        570.108
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box58",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        134.182,
+        552.108,
+        152.182,
+        570.108
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAOutlets Switches each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        720.24,
+        282.12,
+        732.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EALight Fixtures each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        706.8,
+        282.12,
+        719.16
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAUp to 600 amps",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        706.8,
+        548.88,
+        719.16
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAElectrical Circuit Conduit Outlet Assemblies",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        693.36,
+        282.12,
+        705.72
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EA600  1000 amps",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        693.36,
+        548.88,
+        705.72
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EADevice Boxes",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        679.92,
+        282.12,
+        692.28
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAOver 1000 amps",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        679.92,
+        548.88,
+        692.28
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EATime Clock",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        666.48,
+        282.12,
+        678.84
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EALow Voltage System each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        653.04,
+        282.12,
+        665.4
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAAC Disconnect_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        639.6,
+        282.12,
+        651.96
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAUp to 1 per HP kW kVAR CVA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        639.6,
+        548.88,
+        651.96
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EARange",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        626.16,
+        282.12,
+        638.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EA2  10 per HP kW kVAR CVA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        626.16,
+        548.88,
+        638.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EACooking Unit",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        612.72,
+        282.12,
+        625.08
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EA11  50 per HP kW kVAR CVA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        612.72,
+        548.88,
+        625.08
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAResidential SelfContained Appliance",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        599.28,
+        282.12,
+        611.64
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EA51  100 per HP kW kVAR CVA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        599.28,
+        548.88,
+        611.64
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EACommercial SelfContained Appliance Up to 1hp",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        585.84,
+        282.12,
+        598.2
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAOver 100 per HP kW kVAR CVA",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        585.84,
+        548.88,
+        598.2
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAWasher",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        572.28,
+        282.12,
+        584.76
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EADryer",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        558.84,
+        282.12,
+        571.2
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAMisc Conduit apparatus conductors each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        545.4,
+        282.12,
+        557.76
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAUp to 600 amps_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        545.4,
+        548.88,
+        557.76
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAUnderground Service Conduit per 100",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        531.96,
+        282.12,
+        544.32
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EA600  1000 amps_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        531.96,
+        548.88,
+        544.32
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EABusway Multiple Outlet Assemblies per 100",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        518.52,
+        282.12,
+        530.88
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAOver 1000 amps_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        518.52,
+        548.88,
+        530.88
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAAlarms Fire Sprinklers Misc Electrical",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        505.08,
+        282.12,
+        517.44
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EATemporary Power Pole Piggyback",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        491.64,
+        282.12,
+        504.0
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAPedestal Meter",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        491.64,
+        548.88,
+        504.0
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EATemporary Construction Sub Pole",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        478.2,
+        282.12,
+        490.56
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EASign Marquees One branch circuit",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        478.2,
+        548.88,
+        490.56
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EATemporary Construction Lighting",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        464.76,
+        282.12,
+        477.12
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EATheatricalType Lighting Fixture Assemblies",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        464.76,
+        548.88,
+        477.12
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EATemporary Distribution Systems",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        451.32,
+        282.12,
+        463.68
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EASpecial Event Each Generator Electrical",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        451.32,
+        548.88,
+        463.68
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EASpecial Event Lighting",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        437.88,
+        548.88,
+        450.24
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAElectric Appliance Not Listed",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        424.44,
+        282.12,
+        436.8
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAStreet Light Pole",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        424.44,
+        548.88,
+        436.8
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAMisc Not Listed each_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        410.88,
+        282.12,
+        423.36
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAPole Platform Mounted Light Fixture",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        410.88,
+        548.88,
+        423.36
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "46Pole Platform Mounted Light Fixture",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        550.2,
+        410.88,
+        582.24,
+        423.36
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAKitchen Sink",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        355.32,
+        282.12,
+        367.68
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAWater Heater",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        355.32,
+        548.88,
+        367.68
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EADishwasher",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        341.88,
+        282.12,
+        354.24
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAWater Heater New Vent",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        341.88,
+        548.88,
+        354.24
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAGarbage Disposal",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        328.44,
+        282.12,
+        340.8
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAWater Heater Tankless",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        328.44,
+        548.88,
+        340.8
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAShower Tub",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        315.0,
+        282.12,
+        327.36
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAWater Service",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        315.0,
+        548.88,
+        327.36
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EABathroom Sink",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        301.56,
+        282.12,
+        313.92
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EABackflow Device 2 or smaller",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        301.56,
+        548.88,
+        313.92
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAToilet Water Closet Urinal",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        288.12,
+        282.12,
+        300.48
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EABackflow Device Over 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        288.12,
+        548.88,
+        300.48
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAService Sink",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        274.68,
+        282.12,
+        287.04
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EARoof Drain",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        274.68,
+        548.88,
+        287.04
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAWater Piping per Fixture",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        261.12,
+        282.12,
+        273.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EADrain Drain Piping each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        261.12,
+        548.88,
+        273.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAHose Bibb",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        247.68,
+        282.12,
+        260.04
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EARainwater System Per Drain",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        247.68,
+        548.88,
+        260.04
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EALawn Sprinkler System 1 Meter inc backflow",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        234.24,
+        282.12,
+        246.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAFloor Sink",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        234.24,
+        548.88,
+        246.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAVent Fixture",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        220.8,
+        282.12,
+        233.16
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAFloor Drain",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        220.8,
+        548.88,
+        233.16
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EABuilding Sewer",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        207.36,
+        282.12,
+        219.72
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EADrinking Fountains",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        207.36,
+        548.88,
+        219.72
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EASewer Cap",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        193.92,
+        282.12,
+        206.28
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAGrease Interceptor Trap",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        193.92,
+        548.88,
+        206.28
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EASewer Connection",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        180.48,
+        282.12,
+        192.84
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAGas Piping each outlet",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        180.48,
+        548.88,
+        192.84
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EASewer Disposal System",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        167.04,
+        282.12,
+        179.4
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EATemporary Gas Service",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        167.04,
+        548.88,
+        179.4
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EACesspool",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        153.6,
+        282.12,
+        165.96
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAGas Pressure Regulator each",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        153.6,
+        548.88,
+        165.96
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAVacuum Breakers inc 5 4 each additional",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        140.16,
+        282.12,
+        152.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAGas Service Meter Release",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        140.16,
+        548.88,
+        152.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAWater Softener Water Treatment",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        126.72,
+        282.12,
+        139.08
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAFixture Not Listed",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        113.16,
+        282.12,
+        125.64
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "QTY EAMisc Not Listed each_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        509.16,
+        113.16,
+        548.88,
+        125.64
+      ]
+    }
+  ]
+}

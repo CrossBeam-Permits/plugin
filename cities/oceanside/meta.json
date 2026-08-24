@@ -17,5 +17,7 @@
     "Does my Oceanside ADU need a CDP if it's near the beach?",
     "What is the RT zone in Oceanside and why does it matter for permits?",
     "How does SolarAPP+ work for solar permits in Oceanside?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

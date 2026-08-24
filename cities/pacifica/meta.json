@@ -10,5 +10,7 @@
     "Can I use SolarAPP+ for a solar permit in Pacifica?",
     "How do I contact the Pacifica Building Division?",
     "What fees apply if I add a bedroom to my home?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

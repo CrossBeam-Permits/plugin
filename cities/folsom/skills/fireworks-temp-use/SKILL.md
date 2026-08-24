@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Folsom, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Folsom local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Folsom."
+description: "Fireworks Temp Use permits in Folsom, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Folsom local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Folsom."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eTRAKiT |
+| Permit portal | https://www.folsom.ca.us/government/community-development/epermit-center |
 | Fire agency | Folsom Fire Department |
 | Code edition | Ord. 1358 · December 9, 2025 (2025 CPC, CA Fire Code, CA WUI Code, ISPSC adoption) |
 | Code prefix | FMC |

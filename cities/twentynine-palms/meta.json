@@ -10,5 +10,7 @@
     "Is my property in a Fire Hazard Severity Zone?",
     "What are the setback rules for my zone (RS, RM, CG)?",
     "What is the plan review timeline for solar permits?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

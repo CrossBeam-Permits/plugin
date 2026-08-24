@@ -36,5 +36,7 @@
     "single-family-residential",
     "solar",
     "water-heater"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

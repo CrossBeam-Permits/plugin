@@ -21,7 +21,10 @@
     "type": "contract",
     "address": "1061 S. Grand Ave, Diamond Bar, CA 91765",
     "phone": "(909) 620-2216",
-    "stations": ["Station 119 (Diamond Bar / City of Industry)", "Station 120 (Diamond Bar)"]
+    "stations": [
+      "Station 119 (Diamond Bar / City of Industry)",
+      "Station 120 (Diamond Bar)"
+    ]
   },
   "wuiCoverage": "partial",
   "wuiNotes": "Hillside and canyon areas (Sycamore Canyon, Summitridge Drive corridor, eastern/southern hillsides) in VHFHSZ (LRA, LACFD authority). Not citywide. Verify at https://www.diamondbarca.gov/1187/Fire-Hazard-Severity-Zones",
@@ -45,5 +48,7 @@
     "retaining-wall",
     "patio-cover",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": "eDocs (city-hosted)",
+  "portalUrl": "http://edocs.diamondbarca.gov/"
 }

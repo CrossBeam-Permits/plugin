@@ -1,0 +1,7 @@
+interface:
+  display_name: "Laguna Permit Preparer"
+  short_description: "Prepare and submit Laguna permit applications"
+  default_prompt: "Use $laguna-permit-preparer to prepare my Laguna Beach permit packet and guide it through the correct online or in-person submittal endpoint."
+
+policy:
+  allow_implicit_invocation: true

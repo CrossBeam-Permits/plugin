@@ -10,5 +10,7 @@
     "What are the permit fees for solar in Waterford?",
     "Is Waterford in a wildfire hazard zone?",
     "What utility providers serve Waterford?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

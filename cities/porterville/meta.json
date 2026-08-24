@@ -10,5 +10,7 @@
     "Is my property in a fire hazard severity zone in Porterville?",
     "What utility serves Porterville for electrical permits?",
     "Does Porterville require a trash enclosure for my apartment project?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

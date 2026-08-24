@@ -19,5 +19,6 @@
     "Does my Campbell project need SCCFD fire plan check?",
     "Is my Campbell property in a Fire Hazard Severity Zone?",
     "What are the EV charger permit requirements in Campbell?"
-  ]
+  ],
+  "permitSystem": "MyGovernmentOnline (MGO Connect)"
 }

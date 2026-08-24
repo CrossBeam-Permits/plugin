@@ -10,5 +10,7 @@
     "Does the city offer pre-approved ADU plan sets?",
     "My property might be in an FHSZ — do WUI building standards apply?",
     "What zoning district am I in — how do RD2, RD4.5, RD8 zones work?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

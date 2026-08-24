@@ -98,5 +98,7 @@
     "siding-replacement",
     "deck-patio-repair",
     "sign"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://www.cityofbelvedere.org/planning-building-applications-forms/"
 }

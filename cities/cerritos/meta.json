@@ -4,7 +4,7 @@
   "codePrefix": "CMC",
   "fireAgency": "Los Angeles County Fire Department",
   "portal": "EPIC-LA (LA County BSD)",
-  "portalUrl": "https://epicla.lacounty.gov",
+  "portalUrl": "https://epicla.lacounty.gov/",
   "electricUtility": "Southern California Edison (SCE)",
   "gasUtility": "Southern California Gas (SoCalGas)",
   "buildingDept": "Los Angeles County Building and Safety Division (contracted)",
@@ -18,5 +18,6 @@
     "Who handles fire plan check in Cerritos?",
     "What are the setback requirements for a block wall in Cerritos?",
     "Does Cerritos require planning approval before building permits?"
-  ]
+  ],
+  "permitSystem": "EPIC-LA (LA County BSD)"
 }

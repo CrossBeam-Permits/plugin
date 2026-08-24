@@ -19,5 +19,6 @@
     "What are the residential addition permit requirements in Soledad?",
     "What fire agency reviews plans in Soledad?",
     "What permits does Soledad process through SmartGov?"
-  ]
+  ],
+  "permitSystem": "SmartGov"
 }

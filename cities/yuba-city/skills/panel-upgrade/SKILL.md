@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Yuba City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Yuba City local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Yuba City."
+description: "Panel Upgrade permits in Yuba City, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Yuba City local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Yuba City."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Yuba City Fire Department · Fire Prevention Bureau · 824 Clark Ave · (530) 822-4614 · Fire sprinkler/alarm plans submitted directly to Fire Dept (not routed through Building Division) |
 | Code edition | Ord. No. 013-22 / 014-22 · Adopted December 20, 2022 · Municode |
 | Code prefix | YCMC |

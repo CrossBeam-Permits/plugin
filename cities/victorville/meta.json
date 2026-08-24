@@ -12,5 +12,7 @@
     "Is there a wildfire hazard zone in Victorville?",
     "What air quality district is Victorville in?",
     "Does Victorville require a separate fire agency fee?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

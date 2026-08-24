@@ -62,5 +62,7 @@
     "swimming-pool",
     "water-heater"
   ],
-  "lawAsOf": "2026-04-24"
+  "lawAsOf": "2026-04-24",
+  "permitSystem": null,
+  "portalUrl": null
 }

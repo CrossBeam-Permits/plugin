@@ -10,5 +10,7 @@
     "Is my property served by SMUD or PG&E?",
     "What are the efficiency dwelling unit minimums for my apartment project?",
     "Do I need an illuminated address sign on my new building?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

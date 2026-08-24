@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Colusa, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Colusa local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Colusa."
+description: "Temporary Power permits in Colusa, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Colusa local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Colusa."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | iWorQ |
 | Permit portal | https://colusaca.portal.iworq.net/portalhome/colusaca |
 | Municipal code | https://library.municode.com/ca/colusa/codes/code_of_ordinances |
 | Fire agency | City of Colusa Fire Department · (530) 458-7721 · 750 Market Street, Colusa, CA 95932 |

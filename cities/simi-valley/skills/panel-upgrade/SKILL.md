@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Simi Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Simi Valley local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Simi Valley."
+description: "Panel Upgrade permits in Simi Valley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Simi Valley local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Simi Valley."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | City Self-Service Portal |
+| Permit portal | https://selfservice.simivalley.org/ |
 | Fire agency | Ventura County Fire Department (VCFD) |
 | Code edition | Ord. 13-66 · November 17, 2025 (2025 Building Standards Codes, effective January 1, 2026) |
 | Code prefix | SVMC |

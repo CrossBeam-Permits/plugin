@@ -10,5 +10,7 @@
     "How do I apply for a solar permit using SolarApp+?",
     "What are the foundation rules for SDC D?",
     "Is my project in a Fire Hazard Severity Zone?"
-  ]
+  ],
+  "permitSystem": "Accela Citizen Access",
+  "portalUrl": "https://aca-prod.accela.com/BREA/CommunityView"
 }

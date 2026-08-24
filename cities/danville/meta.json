@@ -19,5 +19,6 @@
     "What are the solar permit requirements in Danville?",
     "Is my property in a fire hazard zone in Danville?",
     "How do I submit plans to the Town of Danville Building Division?"
-  ]
+  ],
+  "permitSystem": "CSS Online Permit Portal"
 }

@@ -12,5 +12,7 @@
     "Does Palo Alto require a Green Building Special Inspector?",
     "What is the fence height limit in Palo Alto?",
     "Does Palo Alto have an all-electric mandate for new construction?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

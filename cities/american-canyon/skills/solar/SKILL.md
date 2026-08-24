@@ -1,5 +1,5 @@
 ---
-description: "Solar permits in American Canyon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + American Canyon local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in American Canyon."
+description: "Solar permits in American Canyon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + American Canyon local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in American Canyon."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) -- Articles 690, 705, 250, 310; 2025 California Fire Code (Title 24, Part 9) -- Chapter 12; 2025 California Residential Code (Title 24, Part 2.5) -- Section R329"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / International Fire Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | American Canyon Fire Protection District (ACFPD) · amcanfire.ca.gov · Subsidiary special district of the City · Concurrent plan check for fire protection systems · Fire Capital Facilities Fee per Ord. 2023-02 |
 | Code edition | American Canyon Municipal Code · Open Law Library · Title 16 (Buildings and Construction) · Ord. 2022-05 (eff. 2023-01-01) |
 | Code prefix | ACMC |

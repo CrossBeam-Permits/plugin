@@ -1,5 +1,5 @@
 ---
-description: "Block Wall permits in Cerritos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Cerritos local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Cerritos."
+description: "Block Wall permits in Cerritos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Cerritos local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Cerritos."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://epicla.lacounty.gov |
+| Permit system | EPIC-LA (LA County BSD) |
+| Permit portal | https://epicla.lacounty.gov/ |
 | Municipal code | https://www.codepublishing.com/CA/Cerritos/ |
 | Fire agency | Los Angeles County Fire Department |
 | Code edition | CMC Title 15 (Building) | Title 22 (Zoning) · CodePublishing Ord. 1052 |

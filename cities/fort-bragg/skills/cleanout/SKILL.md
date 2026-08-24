@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Fort Bragg, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fort Bragg local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Fort Bragg."
+description: "Cleanout permits in Fort Bragg, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Fort Bragg local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Fort Bragg."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Fort Bragg Fire Protection Authority (JPA) · fortbraggfire.specialdistrict.org · Concurrent plan review referral from CDD · CFC 2022 adopted per FBMC Ch. 15.05 |
 | Code edition | Fort Bragg Municipal Code · Code Publishing (https://www.codepublishing.com/CA/FortBragg/) · Title 15 (Buildings and Construction) — Ch. 15.04 (codes adopted), 15.05 (CFC), 15.06 (sprinklers), 15.08 (permit fees), 15.12 (numbering), 15.32 (floodplain — +2 ft freeboard), 15.34 (C&D recycling), 15.38 (EV streamlined) · 2022 cycle adopted via Ord. 994 (05-13-2024); current through Ord. 1021 (01-12-2026) |
 | Code prefix | FBMC |

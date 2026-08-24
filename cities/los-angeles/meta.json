@@ -4,10 +4,13 @@
   "codePrefix": "LAMC",
   "fireAgency": "LAFD — Los Angeles Fire Department (city-owned — NOT LA County Fire)",
   "portal": "PermitLA (express) + ePlanLA (plan check)",
-  "portalUrl": "https://permitla.lacitydbs.org",
+  "portalUrl": "https://permitla.lacitydbs.org/",
   "ePlanUrl": "https://eplanla.lacity.org",
   "electricUtility": "LADWP (city-owned — NOT SCE)",
-  "climateZones": ["CZ8", "CZ9"],
+  "climateZones": [
+    "CZ8",
+    "CZ9"
+  ],
   "climateZoneNote": "CZ8 coastal/basin, CZ9 inland valleys (San Fernando Valley). Mountain parcels may be CZ16.",
   "hasHillsideOrdinance": true,
   "bhoNote": "Baseline Hillside Ordinance (LAMC §12.21-A.17) — verify parcel in Hillside Area via ZIMAS",
@@ -32,5 +35,6 @@
     "Does my building need a soft-story retrofit?",
     "Do I need LAFD plan check approval for my project?",
     "How does LADWP interconnection work for solar?"
-  ]
+  ],
+  "permitSystem": "PermitLA (express) + ePlanLA (plan check)"
 }

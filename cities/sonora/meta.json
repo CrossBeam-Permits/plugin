@@ -6,7 +6,7 @@
   "fireAgencyType": "city-fire",
   "responsibilityArea": "LRA",
   "portal": "iWorQ",
-  "portalUrl": "https://sonora.portal.iworq.net",
+  "portalUrl": "https://sonora.portal.iworq.net/",
   "solarAppPlus": false,
   "electricUtility": "PG&E",
   "gasUtility": "PG&E",
@@ -26,5 +26,6 @@
     "Does Chapter 17.34 Hillside Preservation apply to my lot?",
     "Do I need Design Review for exterior work in downtown Sonora?",
     "Where do I submit a building permit application in Sonora?"
-  ]
+  ],
+  "permitSystem": "iWorQ"
 }

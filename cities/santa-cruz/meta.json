@@ -49,5 +49,7 @@
     "repipe",
     "rewire",
     "restaurant-ti"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

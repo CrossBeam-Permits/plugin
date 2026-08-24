@@ -10,5 +10,7 @@
     "How do I submit permit plans — what portal does Banning use?",
     "What fire access road width is required for my project?",
     "Does Chapter 7A WUI construction apply to my renovation?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

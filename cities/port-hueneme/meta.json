@@ -10,5 +10,7 @@
     "Do I need separate fire plan check from VCFPD?",
     "What are the setback requirements for a patio cover?",
     "What inspections are required for an EV charger permit?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

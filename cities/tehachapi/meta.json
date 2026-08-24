@@ -19,5 +19,6 @@
     "Does elevation affect snow load requirements for my project?",
     "Can I use SolarAPP+ for an instant solar permit?",
     "Who handles health department review for my restaurant TI?"
-  ]
+  ],
+  "permitSystem": "Accela"
 }

@@ -10,5 +10,7 @@
     "Can I use SolarAPP+ for my solar permit in Woodland?",
     "What are the fence height and permit requirements in Woodland?",
     "Who handles fire plan review for building permits in Woodland?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

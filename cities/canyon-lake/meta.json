@@ -10,5 +10,7 @@
     "How do I submit plans — is there a portal?",
     "What is the permit review turnaround time?",
     "Can I build a multi-family project in Canyon Lake?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

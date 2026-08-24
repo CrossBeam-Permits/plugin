@@ -10,5 +10,7 @@
     "What are the ADU size limits and setback rules for Culver City?",
     "How do I apply for a solar permit under Culver City's expedited program?",
     "Does my multi-unit building need a soft-story (SWOF) retrofit evaluation?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

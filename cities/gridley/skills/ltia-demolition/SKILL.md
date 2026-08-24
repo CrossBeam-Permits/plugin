@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Gridley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Gridley local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Gridley."
+description: "Ltia Demolition permits in Gridley, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Gridley local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Gridley."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela Citizen Access (Butte County DDS) |
+| Permit portal | https://aca-prod.accela.com/BUTTECO/Default.aspx |
 | Fire agency | Gridley Fire Department / CAL FIRE Butte Unit · 47 East Gridley Road, Gridley CA 95948 · (530) 846-5711 · Combination department; CAL FIRE career staff + volunteers |
 | Code edition | Gridley Municipal Code · American Legal Publishing · Title 15 (Buildings) adopts California Building Code by reference · Ord. 848-2023 |
 | Code prefix | GMC |

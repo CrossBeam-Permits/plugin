@@ -10,5 +10,7 @@
     "What are the fence permit requirements in Lawndale?",
     "Does Lawndale have any WUI or fire zone requirements?",
     "What commercial zones allow restaurants in Lawndale?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -17,5 +17,6 @@
     "Is Lincoln's ADU ordinance currently compliant with state law?",
     "Which permit types can be submitted via email OTC in Lincoln?",
     "What are Lincoln's building department hours and contact info?"
-  ]
+  ],
+  "permitSystem": "Accela Citizen Access"
 }

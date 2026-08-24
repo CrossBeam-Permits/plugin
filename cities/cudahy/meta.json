@@ -23,5 +23,7 @@
     "phone": "323-773-5143 ext. 243",
     "hours": "Monday–Thursday 7:00 AM–12:00 PM and 1:00 PM–5:00 PM",
     "buildingOfficial": "Raul Diaz"
-  }
+  },
+  "permitSystem": null,
+  "portalUrl": null
 }

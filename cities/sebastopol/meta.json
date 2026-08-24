@@ -11,5 +11,7 @@
     "What are the height limits for a detached ADU in Sebastopol?",
     "Which zones allow multi-family housing in Sebastopol?",
     "How do I submit a building permit application in Sebastopol?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

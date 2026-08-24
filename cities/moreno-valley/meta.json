@@ -12,5 +12,7 @@
     "Does my project need WUI Chapter 7A construction?",
     "What is the permit code for my project type?",
     "How do I submit through the SimpliCITY portal?"
-  ]
+  ],
+  "permitSystem": "SimpliCITY (Accela)",
+  "portalUrl": "https://aca-prod.accela.com/MOVAL/Default.aspx"
 }

@@ -10,5 +10,7 @@
     "How do I get a solar permit using SolarApp+?",
     "Do I need WUI ignition-resistant construction for my addition?",
     "What permits are required for a retaining wall in the hillside zones?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

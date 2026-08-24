@@ -11,5 +11,7 @@
     "Is my property in a fire hazard zone in Red Bluff?",
     "Which zones allow multi-family housing in Red Bluff?",
     "What permits are required for a solar panel installation in Red Bluff?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

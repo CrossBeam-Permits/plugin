@@ -66,7 +66,13 @@
   },
   "submissionMethods": {
     "primary": "eTRAKiT (mandatory since 2024-07-01)",
-    "emailEligible": ["kitchen-bath-remodel", "water-heater", "reroof", "solar", "hvac"]
+    "emailEligible": [
+      "kitchen-bath-remodel",
+      "water-heater",
+      "reroof",
+      "solar",
+      "hvac"
+    ]
   },
   "scrapeStatus": {
     "muniCodeScraped": false,
@@ -75,5 +81,7 @@
     "humanReviewRequired": true
   },
   "onboardedAt": "2026-05-06",
-  "lastUpdated": "2026-05-06"
+  "lastUpdated": "2026-05-06",
+  "permitSystem": null,
+  "portalUrl": "https://trakit.losaltoshills.ca.gov/etrakit/"
 }

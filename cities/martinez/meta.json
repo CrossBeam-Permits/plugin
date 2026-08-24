@@ -10,5 +10,7 @@
     "Can I submit my solar permit online in Martinez?",
     "What are the WUI construction requirements for hillside lots in Martinez?",
     "How do I submit a building permit in Martinez?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

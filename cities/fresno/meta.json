@@ -4,7 +4,9 @@
   "county": "Fresno",
   "state": "CA",
   "population": 542107,
-  "climateZones": ["CZ13"],
+  "climateZones": [
+    "CZ13"
+  ],
   "fireAgency": "City of Fresno Fire Department",
   "vhfhsz": false,
   "wuiPartial": true,
@@ -35,7 +37,10 @@
     "water": "City of Fresno Department of Public Utilities",
     "sewer": "City of Fresno Department of Public Utilities"
   },
-  "specialOverlays": ["wood-burning-ban", "galvanized-pipe-ban"],
+  "specialOverlays": [
+    "wood-burning-ban",
+    "galvanized-pipe-ban"
+  ],
   "permitTypes": [
     "adu",
     "single-family-residential",
@@ -65,5 +70,7 @@
   ],
   "onboardedAt": "2026-04-24",
   "smokeTestedAt": null,
-  "readyForPromotion": false
+  "readyForPromotion": false,
+  "permitSystem": "Accela Citizen Access (ACA)",
+  "portalUrl": "https://aca-prod.accela.com/FRESNO/Default.aspx"
 }

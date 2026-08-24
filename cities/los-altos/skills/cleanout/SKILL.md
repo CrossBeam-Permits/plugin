@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in Los Altos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Altos local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Los Altos."
+description: "Cleanout permits in Los Altos, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Los Altos local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in Los Altos."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eTRAKiT |
+| Permit portal | https://trakit.losaltosca.gov/etrakit/ |
 | Fire agency | Santa Clara County Fire Department (SCCFD) · 650-947-2779 · sccfd.org |
 | Code edition | Los Altos Municipal Code · Municode · Title 12 (Building) · Title 14 (Zoning) · Chapter 14.14 (ADU) |
 | Code prefix | LAMC |

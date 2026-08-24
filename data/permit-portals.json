@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "verifiedAt": "2026-08-24",
+  "cities": {
+    "brea": {
+      "permitSystem": "Accela Citizen Access",
+      "portalUrl": "https://aca-prod.accela.com/BREA/CommunityView",
+      "sources": [
+        "cities/brea/skills/reroof/SKILL.md",
+        "cities/brea/skills/swimming-pool/SKILL.md"
+      ]
+    },
+    "huntington-beach": {
+      "permitSystem": "Accela Citizen Access",
+      "portalUrl": "https://engage.huntingtonbeachca.gov/CitizenAccess/Default.aspx",
+      "sources": [
+        "cities/huntington-beach/skills/reroof/SKILL.md",
+        "cities/huntington-beach/skills/window-replacement/SKILL.md"
+      ]
+    },
+    "jurupa-valley": {
+      "permitSystem": "Accela Citizen Access",
+      "portalUrl": "https://aca-prod.accela.com/jurupa/",
+      "sources": [
+        "cities/jurupa-valley/skills/reroof/SKILL.md",
+        "cities/jurupa-valley/skills/swimming-pool/SKILL.md"
+      ]
+    },
+    "laguna-beach": {
+      "permitSystem": "Tyler EnerGov Civic Access",
+      "portalUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/home",
+      "sources": [
+        "submit/laguna-beach/assets/portal-maps/v1-portal-map.json",
+        "submit/laguna-beach/evals/portal/live-readonly-2026-08-22.json"
+      ]
+    },
+    "moreno-valley": {
+      "permitSystem": "SimpliCITY (Accela)",
+      "portalUrl": "https://aca-prod.accela.com/MOVAL/Default.aspx",
+      "sources": [
+        "cities/moreno-valley/skills/panel-upgrade/SKILL.md",
+        "cities/moreno-valley/skills/reroof/SKILL.md"
+      ]
+    },
+    "villa-park": {
+      "permitSystem": "iWorQ",
+      "portalUrl": "https://villapark.portal.iworq.net/VILLAPARK/new-permit/600/411",
+      "sources": [
+        "cities/villa-park/skills/hvac/SKILL.md",
+        "cities/villa-park/skills/window-replacement/SKILL.md"
+      ]
+    }
+  }
+}

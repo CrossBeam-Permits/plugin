@@ -10,5 +10,7 @@
     "Is my property in the coastal zone?",
     "What solar permit forms does Imperial Beach require?",
     "Does my project require fire plan check from Imperial Beach Fire-Rescue?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

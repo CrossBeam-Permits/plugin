@@ -4,7 +4,7 @@
   "codePrefix": "CHMC",
   "fireAgency": "Sacramento Metropolitan Fire District (Metro Fire) · (916) 859-4300 · metrofire.ca.gov",
   "portal": "PermitCity",
-  "portalUrl": "https://citizen.citrusheights.permitcity.com",
+  "portalUrl": "https://citizen.citrusheights.permitcity.com/",
   "electricUtility": "SMUD (Sacramento Municipal Utility District)",
   "gasUtility": "PG&E",
   "suggestedQuestions": [
@@ -14,5 +14,6 @@
     "Does Citrus Heights use SolarAPP+ for solar permits?",
     "What impact fees apply to my ADU or new SFR?",
     "Is my property in a Fire Hazard Severity Zone in Citrus Heights?"
-  ]
+  ],
+  "permitSystem": "PermitCity"
 }

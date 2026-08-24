@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Saratoga, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Saratoga local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Saratoga."
+description: "Fireworks Temp Use permits in Saratoga, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Saratoga local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Saratoga."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Santa Clara County Fire Department (SCCFD) · Fire plan check jurisdiction · 1315 Dell Ave, Campbell CA 95008 · (408) 378-4010 · sccfd.org · 10-day turnaround for original submittals |
 | Code edition | Saratoga City Code · Municode · Ch. 15 (Zoning) & Ch. 16 (Building) · Ord. 395 (2022 CBC local amendments) |
 | Code prefix | SMC |

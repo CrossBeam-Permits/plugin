@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Oakland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Oakland local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Oakland."
+description: "Temporary Power permits in Oakland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Oakland local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Oakland."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela Citizen Access (ACA) |
+| Permit portal | https://aca-prod.accela.com/OAKLAND |
 | Fire agency | Oakland Fire Department — Fire Prevention Bureau (FPB) |
 | Code edition | Ord. 13717 C.M.S. (2022 CBC cycle) | 2025 CBC local amendments eff. January 1, 2026 |
 | Code prefix | OMC |

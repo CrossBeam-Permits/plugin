@@ -15,7 +15,12 @@
   "wuiCoverage": "partial",
   "portalPlatform": "CommunityCore",
   "portalUrl": "https://www.communitycore.com/sanmarino",
-  "onlinePermitTypes": ["reroof", "electrical", "plumbing", "solar"],
+  "onlinePermitTypes": [
+    "reroof",
+    "electrical",
+    "plumbing",
+    "solar"
+  ],
   "solarApp": "SolarAPP+",
   "permitTypesOnboarded": [
     "adu",
@@ -31,5 +36,6 @@
     "window-replacement"
   ],
   "onboardedAt": "2026-04-16",
-  "onboardVersion": "1.0"
+  "onboardVersion": "1.0",
+  "permitSystem": "CommunityCore"
 }

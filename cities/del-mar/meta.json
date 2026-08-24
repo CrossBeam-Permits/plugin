@@ -10,5 +10,7 @@
     "How do I submit permits through eTRAKiT?",
     "What's the expedited path for solar or EV charger permits?",
     "Does my project require Architectural Design Review?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

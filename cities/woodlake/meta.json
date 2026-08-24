@@ -10,5 +10,7 @@
     "Is my property in a fire hazard severity zone in Woodlake?",
     "What utility serves Woodlake for electrical permits?",
     "What zoning district standards apply to my project in Woodlake?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

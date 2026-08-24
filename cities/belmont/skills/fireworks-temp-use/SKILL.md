@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Belmont, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Belmont local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Belmont."
+description: "Fireworks Temp Use permits in Belmont, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Belmont local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Belmont."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | San Mateo Consolidated Fire Department (SMCFD) · Serves Belmont via JPA · fire@smcfire.org · (650) 522-7900 · smcfire.org · Separate fire plan check required for sprinklers, alarms, suppression systems |
 | Code edition | Belmont City Code · Municode · Chapter 7 (Buildings) · Ord. 2023-1169 |
 | Code prefix | BCC |

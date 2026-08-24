@@ -24,7 +24,10 @@
     "planCheckEmail": "fireprevention@ventura.org",
     "phone": "(805) 389-9738",
     "paymentAddress": "VCFD Fire Prevention Bureau, 2400 Conejo Spectrum Street, Thousand Oaks, CA 91320",
-    "requiredForms": ["Form 610 (Fire Permit Application)", "Form 625 (Fire Flow Verification — new structures)"]
+    "requiredForms": [
+      "Form 610 (Fire Permit Application)",
+      "Form 625 (Fire Flow Verification — new structures)"
+    ]
   },
   "suggestedQuestions": [
     "Can I get an instant online permit for a panel upgrade or solar?",
@@ -60,5 +63,7 @@
     "sign",
     "rewire",
     "repipe"
-  ]
+  ],
+  "permitSystem": "City Self-Service Portal",
+  "portalUrl": "https://selfservice.simivalley.org/"
 }

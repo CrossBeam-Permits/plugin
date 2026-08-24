@@ -15,5 +15,6 @@
     "Is my project in a Very High Fire Hazard Severity Zone?",
     "What are Folsom's structural design criteria (wind speed, seismic zone)?",
     "Do I need a remote disconnect for my solar system in Folsom?"
-  ]
+  ],
+  "permitSystem": "eTRAKiT"
 }

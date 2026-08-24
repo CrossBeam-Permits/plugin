@@ -18,5 +18,6 @@
     "What are the restaurant tenant improvement requirements in Reedley?",
     "Is Reedley in a fire hazard severity zone?",
     "Does Reedley have an online permit portal?"
-  ]
+  ],
+  "permitSystem": "Counter Submittal"
 }

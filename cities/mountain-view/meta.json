@@ -13,5 +13,6 @@
     "Do I need a permit for a metal fence?",
     "How do I submit a solar permit in Mountain View?",
     "Does Mountain View have fire hazard zone requirements?"
-  ]
+  ],
+  "permitSystem": "ePermitsMV"
 }

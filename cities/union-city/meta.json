@@ -20,5 +20,6 @@
     "How does SolarAPP+ work for Union City solar permits?",
     "What are the setback requirements for an ADU in Union City?",
     "Is my property in a fire hazard zone in Union City?"
-  ]
+  ],
+  "permitSystem": "Counter (in-person / email)"
 }

@@ -1,0 +1,25 @@
+{
+  "name": "laguna-beach-submit",
+  "description": "Prepare verified Laguna Beach permit forms and guide a user-controlled Tyler EnerGov filing through receipt capture.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/submit/laguna-beach",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "california",
+    "laguna-beach",
+    "permit-submittal",
+    "tyler-energov",
+    "forms"
+  ],
+  "experimental": {
+    "evals": "evals/model"
+  },
+  "dependencies": [
+    "laguna-beach"
+  ]
+}

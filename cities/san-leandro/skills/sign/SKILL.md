@@ -1,5 +1,5 @@
 ---
-description: "Sign permits in San Leandro, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Leandro local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in San Leandro."
+description: "Sign permits in San Leandro, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Leandro local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in San Leandro."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Alameda County Fire Department — Fire Prevention Division (contracted) · Co-located at City Hall, 835 E 14th St · Plans via Accela portal · (510) 577-3317 |
 | Code edition | San Leandro Municipal Code · eCode360 · §7-5 (Building Code) · Ord. 2022-014, Ord. 2024-017 |
 | Code prefix | SLMC |

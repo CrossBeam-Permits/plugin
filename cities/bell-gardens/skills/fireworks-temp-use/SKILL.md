@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Bell Gardens, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Bell Gardens local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Bell Gardens."
+description: "Fireworks Temp Use permits in Bell Gardens, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Bell Gardens local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Bell Gardens."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Bell Gardens Building and Safety (in-person) |
+| Permit portal | https://www.bellgardens.org/ |
 | Municipal code | https://ecode360.com/BE4350 |
 | Fire agency | Los Angeles County Fire Department (LACoFD) — Station 39 |
 | Code edition | BGMC Title 6 (Building) | Title 9 (Zoning) · eCode360 BE4350 · Ord. 962 (2025 CBC + LA Co. Titles 26–31) |

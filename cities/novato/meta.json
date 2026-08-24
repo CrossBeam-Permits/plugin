@@ -25,7 +25,10 @@
   "calGreenTier": 1,
   "calGreenOrdinance": "1553",
   "solarAppPlus": true,
-  "expressPermits": ["reroof-like-for-like", "window-replacement-like-for-like"],
+  "expressPermits": [
+    "reroof-like-for-like",
+    "window-replacement-like-for-like"
+  ],
   "hillsideOrdinance": "NMC Division 19.26",
   "hillsideSlopeThreshold": 10,
   "historicOverlay": true,
@@ -52,5 +55,7 @@
     "sign",
     "wildfire-wui"
   ],
-  "onboardedDate": "2026-04-23"
+  "onboardedDate": "2026-04-23",
+  "permitSystem": "MaintStar",
+  "portalUrl": "https://www.novato.gov/permits"
 }

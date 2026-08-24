@@ -4,7 +4,7 @@
   "codePrefix": "LAAMC",
   "fireAgency": "OCFA",
   "portalName": "CityTech Solutions",
-  "portalUrl": "https://losalamitos.cts.city",
+  "portalUrl": "https://losalamitos.cts.city/",
   "planCheckContractor": null,
   "climateZone": "8",
   "seismicCategory": "D",
@@ -20,5 +20,6 @@
     "Do I need a permit for a pool in Los Alamitos?",
     "Do I need a permit for a fence in Los Alamitos?",
     "How do I get a permit for an EV charger in Los Alamitos?"
-  ]
+  ],
+  "permitSystem": "CityTech Solutions"
 }

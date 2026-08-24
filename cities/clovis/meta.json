@@ -33,5 +33,7 @@
     "swimming-pool",
     "water-heater",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://css.cityofclovis.com/EnerGov_Prod/SelfService#/home"
 }

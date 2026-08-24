@@ -13,5 +13,6 @@
     "What building codes apply in Rosemead?",
     "Does Rosemead use SolarAPP+ for solar permits?",
     "Do I need LA County Fire Department review for my project?"
-  ]
+  ],
+  "permitSystem": "Email-based — buildinginfo@rosemeadca.gov"
 }

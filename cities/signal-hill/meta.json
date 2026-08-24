@@ -10,5 +10,7 @@
     "Which fire department reviews commercial plans in Signal Hill?",
     "What is the iWorQ permit portal process?",
     "Are there oil well setback requirements for my project?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

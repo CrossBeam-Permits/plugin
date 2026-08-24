@@ -1,5 +1,5 @@
 ---
-description: "Block Wall permits in Rancho Santa Margarita, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Santa Margarita local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Rancho Santa Margarita."
+description: "Block Wall permits in Rancho Santa Margarita, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rancho Santa Margarita local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Rancho Santa Margarita."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | CityTech Solutions |
+| Permit portal | https://rsm.cts.city/ |
 | Fire agency | OCFA |
 | Code edition | 2025 California Building Standards Code · Local Amendments per RSMMC Title 10 |
 | Code prefix | RSMMC |

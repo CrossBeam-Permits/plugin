@@ -10,5 +10,7 @@
     "Does my project need Loma Linda Fire Department review?",
     "What are the setback requirements for my zone?",
     "Can I build a restaurant in a C-1 or C-2 zone in Loma Linda?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

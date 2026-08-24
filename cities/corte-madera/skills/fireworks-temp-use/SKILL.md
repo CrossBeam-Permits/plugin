@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Corte Madera, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Corte Madera local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Corte Madera."
+description: "Fireworks Temp Use permits in Corte Madera, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Corte Madera local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Corte Madera."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Central Marin Fire Department · Serves Corte Madera & Larkspur · (415) 927-5077 · centralmarinfire.org |
 | Code edition | Corte Madera Municipal Code · Municode · Title 15 (Buildings & Construction) · Ord. 1048 (eff. Jan 1, 2026) · ADU: Ch. 18.31 Ord. 1043 (eff. Jan 16, 2025) |
 | Code prefix | CMMC |

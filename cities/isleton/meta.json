@@ -10,5 +10,7 @@
     "Is my property in a fire hazard severity zone in Isleton?",
     "When does Isleton do inspections?",
     "What zoning district rules apply to my project in Isleton?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

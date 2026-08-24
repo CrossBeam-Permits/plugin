@@ -10,5 +10,7 @@
     "What are the setback requirements for a detached ADU?",
     "Is my project in a fire hazard zone?",
     "What fees apply to my permit?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

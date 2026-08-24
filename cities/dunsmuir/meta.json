@@ -51,5 +51,7 @@
     "water-heater",
     "wildfire-wui",
     "window-replacement"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://www.ci.dunsmuir.ca.us/building-department"
 }

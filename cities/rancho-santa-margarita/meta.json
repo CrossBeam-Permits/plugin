@@ -4,7 +4,7 @@
   "codePrefix": "RSMMC",
   "fireAgency": "OCFA",
   "portalName": "CityTech Solutions",
-  "portalUrl": "https://rsm.cts.city",
+  "portalUrl": "https://rsm.cts.city/",
   "climateZone": "10",
   "seismicCategory": "D",
   "fhsz": true,
@@ -18,5 +18,6 @@
     "Is my property in a VHFHSZ area in Rancho Santa Margarita?",
     "What are the counter hours for RSM Building Safety?",
     "What did the HCD findings letter say about RSM's ADU ordinance?"
-  ]
+  ],
+  "permitSystem": "CityTech Solutions"
 }

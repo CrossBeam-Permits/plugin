@@ -10,5 +10,7 @@
     "Is my property in a Fire Hazard Severity Zone in Rohnert Park?",
     "Does Rohnert Park have an all-electric requirement for new construction?",
     "Does my tenant improvement project trigger fire sprinklers in Rohnert Park?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

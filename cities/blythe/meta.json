@@ -10,5 +10,7 @@
     "What is the permit review turnaround time?",
     "What energy climate zone is Blythe in?",
     "Are there special requirements for properties near the Colorado River?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

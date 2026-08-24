@@ -11,5 +11,7 @@
     "Is my parcel in a fire hazard severity zone in Yreka?",
     "What are the instant permit options for Yreka?",
     "How long does plan check take in Yreka?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

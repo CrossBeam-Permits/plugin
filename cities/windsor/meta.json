@@ -10,5 +10,7 @@
     "How do I submit a building permit in Windsor?",
     "What fire sprinkler requirements apply to new construction in Windsor?",
     "Does Windsor require Class A roofing on reroof projects?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

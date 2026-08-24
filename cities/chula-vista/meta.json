@@ -17,5 +17,7 @@
     "What permits are exempt from a building permit in Chula Vista (fences, sheds, patio covers)?",
     "How do I submit plans through the Chula Vista Accela EPR portal?",
     "What are the ADU rules in Chula Vista after Ordinance 3592 repealed the local ADU ordinance?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Tracy, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tracy local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Tracy."
+description: "Fireworks Temp Use permits in Tracy, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tracy local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Tracy."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | eTRAKiT (ASP.NET) |
+| Permit portal | https://etrakit.cityoftracy.org/ |
 | Fire agency | Tracy Fire Department — Fire Prevention Division · (209) 831-6400 · co-located with Building Safety, 333 Civic Center Plaza |
 | Code edition | Tracy Municipal Code · Municode · Title 9 (Buildings) · Title 10 (Planning & Zoning) |
 | Code prefix | TMC |

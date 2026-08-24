@@ -1,5 +1,5 @@
 ---
-description: "Repipe permits in Anaheim, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Anaheim local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Anaheim."
+description: "Repipe permits in Anaheim, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Anaheim local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions repipe in Anaheim."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela (Anaheim Next) |
 | Permit portal | https://aca-prod.accela.com/anaheim/default.aspx |
 | Municipal code | https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-51668 |
 | Fire agency | Anaheim Fire & Rescue |

@@ -40,5 +40,7 @@
     "retaining-wall",
     "fence",
     "panel-upgrade"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": "https://public.mygov.us/wasco_ca/templates?module=pi"
 }

@@ -10,5 +10,7 @@
     "What are the driveway grade limits for fire access?",
     "How do I submit plans through eTRAKiT?",
     "What triggers the sprinkler requirement for an addition?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

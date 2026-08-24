@@ -18,7 +18,10 @@
   "fireAgency": {
     "name": "Ventura County Fire Department (VCFD)",
     "type": "contract",
-    "stations": ["Station 40 (Mountain Meadows)", "Station 42"],
+    "stations": [
+      "Station 40 (Mountain Meadows)",
+      "Station 42"
+    ],
     "battalion": "Battalion 4",
     "oneStopUrl": "https://onestoppermits.venturacounty.gov/departments/fire-department",
     "website": "https://fire.venturacounty.gov/"
@@ -52,5 +55,7 @@
     "ev-charger",
     "sign",
     "wildfire-wui"
-  ]
+  ],
+  "permitSystem": "SHOP (EnerGov)",
+  "portalUrl": "https://css.moorparkca.gov/EnerGov_Prod/SelfService"
 }

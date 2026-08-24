@@ -1,5 +1,5 @@
 ---
-description: "Sign permits in Oakland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Oakland local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Oakland."
+description: "Sign permits in Oakland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Oakland local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions sign in Oakland."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela Citizen Access (ACA) |
+| Permit portal | https://aca-prod.accela.com/OAKLAND |
 | Fire agency | Oakland Fire Department — Fire Prevention Bureau (FPB) |
 | Code edition | Ord. 13717 C.M.S. (2022 CBC cycle) | 2025 CBC local amendments eff. January 1, 2026 |
 | Code prefix | OMC |

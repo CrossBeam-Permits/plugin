@@ -10,5 +10,7 @@
     "Is my project in the coastal zone in National City?",
     "What is the minimum roof covering class required in National City?",
     "How do I contact the National City Fire Department for plan review?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

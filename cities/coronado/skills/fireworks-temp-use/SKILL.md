@@ -1,5 +1,5 @@
 ---
-description: "Fireworks Temp Use permits in Coronado, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Coronado local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Coronado."
+description: "Fireworks Temp Use permits in Coronado, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Coronado local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fireworks temp use in Coronado."
 version: "1.0"
 source: "California Health & Safety Code Division 11, Part 2; Title 19 CCR Chapter 6"
 authority: "California Office of the State Fire Marshal (OSFM / CAL FIRE)"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://coronado.municipal.codes/ |
 | Fire agency | Coronado Fire Department (city-operated, in-house fire plan check — NOT OCFA) |
 | Code edition | Title 70 Building · Title 86 Zoning · Title 88 Orange Ave Corridor · 2025 CBC/CRC · Ch. 86.56.105 ADU · Ch. 86.70 Coastal · LCP Certified 1983 |

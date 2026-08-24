@@ -1,0 +1,1360 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "floodplain-development-residential",
+  "field_map_version": "2.0.0",
+  "source_sha256": "cd7f302f0ca23ece61d061a474688ef9762ae6f5d271603afb1429065b72e0b6",
+  "field_tree_sha256": "0ccdb721bcac3120c206bcbad8d444549b5b7b192d566998ff8eac464c62f1dd",
+  "canonical_mappings": [
+    {
+      "fact_id": "site.address",
+      "pdf_fields": [
+        "Project Address"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.apn",
+      "pdf_fields": [
+        "APN"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.name",
+      "pdf_fields": [
+        "Property Owner Name"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_fields": [
+        "Telephone"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_fields": [
+        "Email"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.mailing_address",
+      "pdf_fields": [
+        "Mailing Address"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "authorized_agent.name",
+      "pdf_fields": [
+        "Agent Name"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "authorized_agent.phone",
+      "pdf_fields": [
+        "Telephone_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "authorized_agent.email",
+      "pdf_fields": [
+        "Email_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "floodplain.development.new_construction",
+      "pdf_fields": [
+        "Check Box2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "floodplain.development.residential",
+      "pdf_fields": [
+        "Check Box3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "floodplain.development.fill",
+      "pdf_fields": [
+        "Check Box4"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "floodplain.development.improvement_to_existing_structure",
+      "pdf_fields": [
+        "Check Box5"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "floodplain.development.watercourse_alteration",
+      "pdf_fields": [
+        "Check Box6"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "floodplain.development.other",
+      "pdf_fields": [
+        "Check Box7"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "checkbox",
+      "on_value": "/Yes"
+    },
+    {
+      "fact_id": "floodplain.development.other_description",
+      "pdf_fields": [
+        "Describe"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    }
+  ],
+  "review_fields": [
+    "Date",
+    "Signature1_es_:signer:signature",
+    "Date_2",
+    "undefined_2",
+    "Receipt",
+    "File",
+    "Staff Initials",
+    "Flood Zone",
+    "Panel",
+    "Floodway",
+    "Flood Fringe",
+    "Step Backwater Analysis Required",
+    "Value of Proposed Improvement",
+    "Value of Existing  Structure",
+    "Base Flood Elevation",
+    "Bench Mark Elevation",
+    "Bench Mark",
+    "Check Box8",
+    "Check Box9",
+    "Check Box10",
+    "Check Box11",
+    "Check Box12",
+    "Check Box13",
+    "Check Box14",
+    "Check Box15",
+    "Check Box16",
+    "Check Box17",
+    "Check Box18"
+  ],
+  "fields": [
+    {
+      "name": "APN",
+      "type": "/Tx",
+      "tooltip": "APN",
+      "flags": 0
+    },
+    {
+      "name": "Agent Name",
+      "type": "/Tx",
+      "tooltip": "Agent Name",
+      "flags": 0
+    },
+    {
+      "name": "Base Flood Elevation",
+      "type": "/Tx",
+      "tooltip": "Base Flood Elevation",
+      "flags": 0
+    },
+    {
+      "name": "Bench Mark",
+      "type": "/Tx",
+      "tooltip": "Bench Mark",
+      "flags": 0
+    },
+    {
+      "name": "Bench Mark Elevation",
+      "type": "/Tx",
+      "tooltip": "Bench Mark Elevation",
+      "flags": 0
+    },
+    {
+      "name": "Check Box10",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box11",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box12",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box13",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box14",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box15",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box16",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box17",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box18",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box2",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box3",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box4",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box5",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box6",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box7",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box8",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box9",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Date",
+      "type": "/Tx",
+      "tooltip": "Date",
+      "flags": 0
+    },
+    {
+      "name": "Date_2",
+      "type": "/Tx",
+      "tooltip": "Date",
+      "flags": 0
+    },
+    {
+      "name": "Describe",
+      "type": "/Tx",
+      "tooltip": "Other (describe",
+      "flags": 0
+    },
+    {
+      "name": "Email",
+      "type": "/Tx",
+      "tooltip": "Email",
+      "flags": 0
+    },
+    {
+      "name": "Email_2",
+      "type": "/Tx",
+      "tooltip": "Email",
+      "flags": 0
+    },
+    {
+      "name": "File",
+      "type": "/Tx",
+      "tooltip": "File",
+      "flags": 0
+    },
+    {
+      "name": "Flood Fringe",
+      "type": "/Tx",
+      "tooltip": "Flood Fringe",
+      "flags": 0
+    },
+    {
+      "name": "Flood Zone",
+      "type": "/Tx",
+      "tooltip": "Flood Zone",
+      "flags": 0
+    },
+    {
+      "name": "Floodway",
+      "type": "/Tx",
+      "tooltip": "Floodway",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address",
+      "type": "/Tx",
+      "tooltip": "Mailing Address",
+      "flags": 0
+    },
+    {
+      "name": "Panel",
+      "type": "/Tx",
+      "tooltip": "Panel",
+      "flags": 0
+    },
+    {
+      "name": "Project Address",
+      "type": "/Tx",
+      "tooltip": "Project Address",
+      "flags": 0
+    },
+    {
+      "name": "Property Owner Name",
+      "type": "/Tx",
+      "tooltip": "Property Owner (Name",
+      "flags": 0
+    },
+    {
+      "name": "Receipt",
+      "type": "/Tx",
+      "tooltip": "Receipt",
+      "flags": 0
+    },
+    {
+      "name": "Signature1_es_:signer:signature",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Staff Initials",
+      "type": "/Tx",
+      "tooltip": "Staff Initials",
+      "flags": 0
+    },
+    {
+      "name": "Step Backwater Analysis Required",
+      "type": "/Tx",
+      "tooltip": "Step Backwater Analysis Required",
+      "flags": 0
+    },
+    {
+      "name": "Telephone",
+      "type": "/Tx",
+      "tooltip": "Telephone",
+      "flags": 0
+    },
+    {
+      "name": "Telephone_2",
+      "type": "/Tx",
+      "tooltip": "Telephone",
+      "flags": 0
+    },
+    {
+      "name": "Value of Existing  Structure",
+      "type": "/Tx",
+      "tooltip": "Value of Existing  Structure",
+      "flags": 0
+    },
+    {
+      "name": "Value of Proposed Improvement",
+      "type": "/Tx",
+      "tooltip": "Value of Proposed Improvement",
+      "flags": 0
+    },
+    {
+      "name": "undefined_2",
+      "type": "/Tx",
+      "tooltip": "undefined",
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 1,
+      "field_name": "Project Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        129.6,
+        636.6,
+        359.4,
+        658.8
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "APN",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        379.92,
+        636.6,
+        527.16,
+        658.8
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Property Owner Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        165.24,
+        613.56,
+        527.16,
+        635.76
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Telephone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        106.32,
+        590.52,
+        353.52,
+        612.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        378.48,
+        590.52,
+        527.16,
+        612.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Mailing Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        130.2,
+        567.6,
+        527.16,
+        589.68
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Agent Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        114.6,
+        544.56,
+        527.16,
+        566.76
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Telephone_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        106.32,
+        521.52,
+        353.52,
+        543.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        378.48,
+        521.52,
+        527.16,
+        543.72
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Describe",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        401.76,
+        408.72,
+        530.64,
+        430.92
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Date",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        82.0582,
+        84.1745,
+        179.378,
+        106.374
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Signature1_es_:signer:signature",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        295.658,
+        84.1745,
+        531.218,
+        106.374
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box2",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        84.3382,
+        456.975,
+        102.338,
+        474.975
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box3",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        84.3382,
+        431.457,
+        102.338,
+        449.457
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box4",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        84.3382,
+        408.967,
+        102.338,
+        426.967
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box5",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        304.05,
+        456.11,
+        322.05,
+        474.11
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box6",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        304.483,
+        432.322,
+        322.483,
+        450.322
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box7",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        304.05,
+        407.237,
+        322.05,
+        425.237
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Date_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        100.44,
+        269.64,
+        203.52,
+        291.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "undefined_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        272.04,
+        269.64,
+        357.6,
+        291.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Receipt",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        446.16,
+        269.4,
+        510.6,
+        291.36
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "File",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        107.28,
+        246.36,
+        278.52,
+        268.32
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Staff Initials",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        423.6,
+        246.6,
+        517.68,
+        268.56
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Flood Zone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        129.12,
+        224.76,
+        257.16,
+        245.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Panel",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        337.08,
+        224.88,
+        518.4,
+        245.76
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Floodway",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        120.24,
+        198.96,
+        180.12,
+        220.92
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Flood Fringe",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        359.52,
+        201.84,
+        405.36,
+        223.8
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Step Backwater Analysis Required",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        230.52,
+        165.0,
+        447.6,
+        186.96
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Value of Proposed Improvement",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        241.92,
+        133.92,
+        376.92,
+        155.88
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Value of Existing  Structure",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        207.6,
+        112.92,
+        358.32,
+        133.08
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Base Flood Elevation",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        165.84,
+        85.68,
+        289.08,
+        107.64
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Bench Mark Elevation",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        433.92,
+        87.72,
+        530.52,
+        109.68
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Bench Mark",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        147.36,
+        29.64,
+        234.96,
+        51.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box8",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        310.105,
+        732.912,
+        328.105,
+        750.912
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box9",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        310.538,
+        716.044,
+        328.538,
+        734.044
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box10",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        78.7157,
+        687.932,
+        96.7157,
+        705.932
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box11",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        79.1482,
+        668.037,
+        97.1482,
+        686.037
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box12",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        80.8782,
+        607.486,
+        98.8782,
+        625.486
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box13",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        81.3107,
+        562.073,
+        99.3107,
+        580.073
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box14",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        81.7432,
+        488.547,
+        99.7432,
+        506.547
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box15",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        82.1757,
+        443.567,
+        100.176,
+        461.567
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box16",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        81.7432,
+        411.129,
+        99.7432,
+        429.129
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box17",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        81.3107,
+        389.937,
+        99.3107,
+        407.937
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box18",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        81.3107,
+        369.176,
+        99.3107,
+        387.176
+      ]
+    }
+  ]
+}

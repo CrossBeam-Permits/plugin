@@ -1,5 +1,5 @@
 ---
-description: "Block Wall permits in Tiburon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tiburon local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Tiburon."
+description: "Block Wall permits in Tiburon, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Tiburon local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Tiburon."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Tiburon Fire Protection District · Independent district (not Marin County Fire) · Community Risk Reduction Bureau · (415) 435-7200 · 1679 Tiburon Blvd., Tiburon CA 94920 |
 | Code edition | Town of Tiburon Municipal Code · Municode · Chapter 13 (Building) · Chapter 13A (Resale Inspection) · Chapter 16 (Zoning) |
 | Code prefix | TMC |

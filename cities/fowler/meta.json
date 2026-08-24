@@ -10,5 +10,7 @@
     "Is my property in a fire hazard severity zone?",
     "What utility serves Fowler for electrical and gas permits?",
     "Does Fowler have any local building code amendments?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

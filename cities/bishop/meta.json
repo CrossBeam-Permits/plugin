@@ -10,5 +10,7 @@
     "Does Bishop have a WUI or fire hazard zone overlay?",
     "What are the solar permit requirements in Bishop?",
     "What is the seismic design category for Bishop, CA?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

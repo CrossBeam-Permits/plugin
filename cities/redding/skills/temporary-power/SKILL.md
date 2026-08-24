@@ -1,5 +1,5 @@
 ---
-description: "Temporary Power permits in Redding, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redding local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Redding."
+description: "Temporary Power permits in Redding, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Redding local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions temporary power in Redding."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Article 590, 230, 240, 250, 310, 400, 408; 2025 California Fire Code (Title 24, Part 9) — Sections 313, 605, 1206"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments / California Fire Code"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | EnerGov Self-Service |
+| Permit portal | https://ilms.ci.redding.ca.us/EnerGov_PROD/SelfService |
 | Fire agency | Redding Fire Department — Community Risk Reduction Division |
 | Code edition | RMC Title 16 (Building) · Title 9 Ch 9.20 (Fire) · Title 18 (Zoning) |
 | Code prefix | RMC |

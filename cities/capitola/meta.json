@@ -54,5 +54,7 @@
     "water-heater",
     "wildfire-wui",
     "window-replacement"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

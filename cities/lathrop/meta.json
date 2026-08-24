@@ -10,5 +10,7 @@
     "How do I submit my permit application through the LCAP eSuite portal?",
     "What school impact fee certificates do I need at permit issuance in Lathrop?",
     "What are the zoning rules for multi-family housing in River Islands TOD-RI?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

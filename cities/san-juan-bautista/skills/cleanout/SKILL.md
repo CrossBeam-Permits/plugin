@@ -1,5 +1,5 @@
 ---
-description: "Cleanout permits in San Juan Bautista, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Juan Bautista local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in San Juan Bautista."
+description: "Cleanout permits in San Juan Bautista, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + San Juan Bautista local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions cleanout in San Juan Bautista."
 version: "1.0"
 source: "2025 California Plumbing Code (Title 24, Part 5) — Chapter 7, Section 707"
 authority: "California Building Standards Commission / Uniform Plumbing Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | counter |
+| Permit portal | https://www.san-juan-bautista.ca.us/ |
 | Fire agency | San Juan Bautista Fire Department |
 | Code edition | San Juan Bautista Municipal Code | 2025 CBSC in effect |
 | Code prefix | SJBMC |

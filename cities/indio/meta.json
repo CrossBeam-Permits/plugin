@@ -10,5 +10,7 @@
     "What electrical utility serves Indio — SCE or IID?",
     "What are the multi-family zoning options in Indio?",
     "Does Indio require a fire sprinkler system for my project?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

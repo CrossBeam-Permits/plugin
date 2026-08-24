@@ -10,5 +10,7 @@
     "How do I submit plans to the city?",
     "What are the wildland-urban interface requirements?",
     "Can I build an ADU on a hillside lot?"
-  ]
+  ],
+  "permitSystem": "Tyler EnerGov Civic Access",
+  "portalUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/home"
 }

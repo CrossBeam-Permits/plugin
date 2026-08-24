@@ -10,5 +10,7 @@
     "What are the setback and height limits for a detached ADU in Chino Hills?",
     "How do I submit plans through the EnerGov portal?",
     "Is my property in a Very High Fire Hazard Severity Zone — do WUI building standards apply?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

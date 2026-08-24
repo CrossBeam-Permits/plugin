@@ -10,5 +10,7 @@
     "What portal does Adelanto use for permit applications?",
     "What are the zoning districts in Adelanto?",
     "Is there a wildfire hazard zone in Adelanto?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

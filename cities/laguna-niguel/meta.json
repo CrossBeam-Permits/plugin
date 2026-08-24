@@ -8,7 +8,10 @@
   "muniCodeUrl": "https://library.municode.com/ca/laguna_niguel/codes/code_of_ordinances",
   "portalUrl": "https://cityoflagunaniguelca-energovweb.tylerhost.net/apps/selfservice",
   "utility": {
-    "electric": ["SCE", "SDG&E"],
+    "electric": [
+      "SCE",
+      "SDG&E"
+    ],
     "gas": "SoCalGas",
     "water": "Moulton Niguel Water District (MNWD)"
   },
@@ -19,5 +22,6 @@
     "My re-roof uses wood shingles — is that allowed?",
     "Does my project require OCFA fire review?",
     "How do I submit plans through EnerGov and what forms are required?"
-  ]
+  ],
+  "permitSystem": "Tyler Technologies EnerGov"
 }

@@ -50,5 +50,7 @@
     "window-replacement"
   ],
   "onboardedAt": "2026-04-16",
-  "onboardedBy": "batch-onboard-agent"
+  "onboardedBy": "batch-onboard-agent",
+  "permitSystem": null,
+  "portalUrl": null
 }

@@ -54,5 +54,7 @@
     "vhfhszPartial": true,
     "bapAduProgram": true,
     "firePreventionBureauSeparatePlanCheck": true
-  }
+  },
+  "permitSystem": null,
+  "portalUrl": null
 }

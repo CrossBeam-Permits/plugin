@@ -6,3 +6,7 @@ node_modules/
 *.bak
 .vscode/
 .idea/
+tmp/
+**/__pycache__/
+*.py[cod]
+**/evals/results/

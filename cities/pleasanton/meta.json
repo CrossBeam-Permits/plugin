@@ -11,5 +11,7 @@
     "How do I submit a building permit in Pleasanton?",
     "Does Pleasanton participate in SolarAPP+ for solar permits?",
     "What is the ADU rebate program in Pleasanton?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

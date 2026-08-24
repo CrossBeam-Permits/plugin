@@ -10,5 +10,7 @@
     "How do I submit a permit through iWorQ?",
     "What fence heights are allowed in Villa Park?",
     "What are the pool barrier requirements?"
-  ]
+  ],
+  "permitSystem": "iWorQ",
+  "portalUrl": "https://villapark.portal.iworq.net/VILLAPARK/new-permit/600/411"
 }

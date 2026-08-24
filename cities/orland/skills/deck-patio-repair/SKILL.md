@@ -1,5 +1,5 @@
 ---
-description: "Deck Patio Repair permits in Orland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orland local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Orland."
+description: "Deck Patio Repair permits in Orland, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Orland local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Orland."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | iWorQ |
+| Permit portal | https://orlandciteng.portal.iworq.net/portalhome/orlandciteng |
 | Fire agency | Orland Volunteer Fire Department / Orland Fire Protection District of Glenn County |
 | Code edition | Orland Municipal Code · Municode · 2025 California Building Codes |
 | Code prefix | OMC |

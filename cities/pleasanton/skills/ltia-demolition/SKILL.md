@@ -1,5 +1,5 @@
 ---
-description: "Ltia Demolition permits in Pleasanton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pleasanton local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Pleasanton."
+description: "Ltia Demolition permits in Pleasanton, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Pleasanton local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ltia demolition in Pleasanton."
 version: "1.0"
 source: "2025 California Building Code (CBC, Part 2), California Existing Building Code (CEBC, Part 10), California Electrical Code (CEC, Part 3), California Mechanical Code (CMC, Part 4), California Plumbing Code (CPC, Part 5), California Green Building Standards Code (CALGreen, Part 11)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Livermore-Pleasanton Fire Department (LPFD) — joint fire authority serving Livermore and Pleasanton · NOT Alameda County Fire · Plan check via Accela ACA portal · 21-day target review · (925) 454-2361 · lpfire.org |
 | Code edition | Pleasanton Municipal Code · eCode360 · PMC Chapters 18, 20.08, 20.24, 20.28 · Ord. 2302 (Dec 16, 2025) |
 | Code prefix | PMC |

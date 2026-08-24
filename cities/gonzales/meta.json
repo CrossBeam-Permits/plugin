@@ -19,5 +19,6 @@
     "Does Gonzales have an online permit portal?",
     "What are the inspection hours for Gonzales Building Division?",
     "What commercial tenant improvement permits does Gonzales require?"
-  ]
+  ],
+  "permitSystem": "SmartGov"
 }

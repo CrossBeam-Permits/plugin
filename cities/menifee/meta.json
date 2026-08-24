@@ -10,5 +10,7 @@
     "What FHSZ zone is my property in?",
     "How do I submit plans and who do I contact?",
     "Is my ADU project eligible for the PRADU pre-approved plans?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

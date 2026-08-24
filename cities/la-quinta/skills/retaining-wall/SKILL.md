@@ -1,5 +1,5 @@
 ---
-description: "Retaining Wall permits in La Quinta, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + La Quinta local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in La Quinta."
+description: "Retaining Wall permits in La Quinta, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + La Quinta local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions retaining wall in La Quinta."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2 CBC), 2025 California Residential Code (Title 24, Part 2.5 CRC), ASCE 7-22"
 authority: "California Building Standards Commission"
@@ -25,7 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
-| Permit portal | https://www.laquintaca.gov/business/design-and-development/building-division/obtaining-a-permit |
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Municipal code | https://library.municode.com/ca/la_quinta |
 | Fire agency | Riverside County Fire / CAL FIRE |
 | Code edition | Ordinance No. 627 · 2025 CBC Effective January 1, 2026 |

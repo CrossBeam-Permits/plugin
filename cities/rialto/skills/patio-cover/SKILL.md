@@ -1,5 +1,5 @@
 ---
-description: "Patio Cover permits in Rialto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rialto local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Rialto."
+description: "Patio Cover permits in Rialto, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Rialto local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Rialto."
 version: "1.0"
 source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
 authority: "California Building Standards Commission"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Online Permitting Center (OPC) — TylerHost EnerGov |
+| Permit portal | https://cityofrialtoca-energovweb.tylerhost.net/apps/selfservice |
 | Fire agency | Rialto Fire Department — Fire Prevention Division · (909) 820-2505 |
 | Code edition | Ord. 1590 (ADU) · Ord. 1691 + Res. 8179 (Fire Code) · 2022 California Building Standards Code |
 | Code prefix | RMC |

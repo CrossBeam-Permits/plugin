@@ -1,5 +1,5 @@
 ---
-description: "Deck Patio Repair permits in Santa Clarita, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Santa Clarita local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Santa Clarita."
+description: "Deck Patio Repair permits in Santa Clarita, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Santa Clarita local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Santa Clarita."
 version: "1.0"
 source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
 authority: "California Building Standards Commission"
@@ -25,6 +25,7 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Accela ePMT |
 | Permit portal | https://aca-prod.accela.com/santaclarita/ |
 | Municipal code | https://www.codepublishing.com/CA/SantaClarita/ |
 | Fire agency | Los Angeles County Fire Department (Division 3 / Battalion 6) |

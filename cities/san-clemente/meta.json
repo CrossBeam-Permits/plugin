@@ -19,5 +19,7 @@
     "Is my parcel in a Specific Plan area (Talega, Marblehead, Pier Bowl, etc.)?",
     "Does OCFA need to approve my fire sprinkler system before I get a building permit?",
     "What utility provider handles interconnection for my solar or panel upgrade in San Clemente?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }

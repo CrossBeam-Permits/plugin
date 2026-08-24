@@ -1,5 +1,5 @@
 ---
-description: "Hvac permits in Campbell, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Campbell local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Campbell."
+description: "Hvac permits in Campbell, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Campbell local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions hvac in Campbell."
 version: "1.0"
 source: "2025 California Mechanical Code (Title 24, Part 4); 2025 California Plumbing Code (Title 24, Part 5); 2025 California Electrical Code (Title 24, Part 3); 2025 California Residential Code (Title 24, Part 2.5); 2025 California Energy Code (Title 24, Part 6)"
 authority: "California Building Standards Commission / IAPMO / NEC with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | MyGovernmentOnline (MGO Connect) |
+| Permit portal | https://www.mgoconnect.org/cp?JID=187 |
 | Fire agency | Santa Clara County Fire Department (SCCFD) · (408) 341-4420 · sccfd.org · 1315 Dell Ave, Campbell, CA 95008 |
 | Code edition | Campbell Municipal Code · Municode · Title 18 (Building) · Title 21 (Zoning) · Ord. 2290 + Electrification Reach Code (Ch. 18.11) · Zero NOx Ordinance (Sept 2024) |
 | Code prefix | CMC |

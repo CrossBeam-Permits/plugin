@@ -1,5 +1,5 @@
 ---
-description: "Panel Upgrade permits in Cotati, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Cotati local amendments, produces an Accela-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Cotati."
+description: "Panel Upgrade permits in Cotati, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Cotati local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Cotati."
 version: "1.0"
 source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
 authority: "California Building Standards Commission / National Electrical Code with California Amendments"
@@ -25,6 +25,8 @@ Both modes share the same rules. The difference is direction of travel — build
 
 | | |
 |---|---|
+| Permit system | Not confirmed — verify with City |
+| Permit portal | Not confirmed — verify with City |
 | Fire agency | Rancho Adobe Fire Protection District (RAFD) · rafd.org · (707) 795-6011 · Station 1: 1 East Cotati Avenue, Cotati · Concurrent plan check for fire protection systems |
 | Code edition | Cotati Municipal Code · eCode360 (https://ecode360.com/CO4398) · Title 14 (Buildings and Construction) · 2022 CBC/CRC adopted with local amendments |
 | Code prefix | CMC |

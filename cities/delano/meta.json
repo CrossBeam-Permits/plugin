@@ -23,7 +23,13 @@
   },
   "wuiCoverage": "omit",
   "localAmendments": false,
-  "applicableCodes": ["2025 CBC", "2025 CFC", "2025 CMC", "2025 CEC", "2025 CPC"],
+  "applicableCodes": [
+    "2025 CBC",
+    "2025 CFC",
+    "2025 CMC",
+    "2025 CEC",
+    "2025 CPC"
+  ],
   "permitTypes": [
     "single-family-residential",
     "adu",
@@ -41,5 +47,11 @@
     "window-replacement"
   ],
   "planReviewWeeks": "4-6",
-  "planReviewDepts": ["Building", "Engineering", "Planning"]
+  "planReviewDepts": [
+    "Building",
+    "Engineering",
+    "Planning"
+  ],
+  "permitSystem": "SmartGov",
+  "portalUrl": "https://ci-delano-ca.smartgovcommunity.com/public/home"
 }

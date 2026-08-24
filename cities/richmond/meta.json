@@ -12,5 +12,7 @@
     "What is the climate zone for energy compliance in Richmond?",
     "How do I submit plans through the iMS permit portal?",
     "Are pre-approved ADU plans available from the city?"
-  ]
+  ],
+  "permitSystem": null,
+  "portalUrl": null
 }
