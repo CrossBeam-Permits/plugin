@@ -25,4 +25,8 @@ Type 183 has 113 MEP count fields. Populate counts only from plan evidence or us
 
 ## Requirements source
 
-The source repository's `skills/cities/laguna-beach/submittal-requirements/ROUTING.md`, `scope-map.yaml`, and Building reference corpus remain the authoritative scope-to-requirements layer. This skill compiles the transaction boundary, not a parallel semantic classifier. Where a project falls outside the declared source coverage, say so and get City guidance.
+This reference compiles the **transaction boundary** — which portal type, which record separation, which base form. It is not a scope-to-requirements classifier and does not enumerate every Building submittal item.
+
+The authoritative scope-to-requirements layer for the Building lane is the companion `laguna-beach` city plugin, installed as a dependency. Its per-scope skills (`swimming-pool`, `reroof`, `panel-upgrade`, and the rest) carry the checklist detail. Read the scope skill for what a submittal must contain; read this file for how the filing is structured.
+
+Where a project falls outside both the scope skills and the routes above, say so plainly, name the uncovered scope, and get City guidance. Do not adapt a neighbouring route to close the gap.

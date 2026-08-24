@@ -302,14 +302,19 @@ def check_manifests_and_maps() -> None:
             ), (form["id"], widget)
     assert not list(ROOT.rglob("*.pdf"))
 
-    repository_root = ROOT.parent.parent
-    snapshot = repository_root / "data/cities/laguna-beach/portal/online-intake-summary.json"
-    if snapshot.is_file():
-        run(
-            str(SCRIPTS / "check-portal-freshness.py"),
-            "--portal-map", str(ROOT / "assets/portal-maps/v1-portal-map.json"),
-            "--snapshot", str(snapshot),
-        )
+    # The portal snapshot ships with the plugin so this drift check always runs.
+    # It is the only defense against EnerGov renaming or removing a type under a
+    # live filing, so a missing snapshot is a hard failure, never a silent skip.
+    snapshot = ROOT / "assets/portal-maps/online-intake-snapshot.json"
+    assert snapshot.is_file(), (
+        f"portal snapshot missing: {snapshot}. The portal drift check cannot run "
+        "without it; restore the pinned snapshot rather than skipping the check."
+    )
+    run(
+        str(SCRIPTS / "check-portal-freshness.py"),
+        "--portal-map", str(ROOT / "assets/portal-maps/v1-portal-map.json"),
+        "--snapshot", str(snapshot),
+    )
 
 
 def check_form_and_transaction_round_trip(temp: Path) -> None:
