@@ -1,7 +1,7 @@
 {
   "name": "laguna-beach",
-  "description": "Plan-check skills for Laguna Beach, CA — simple permits with LBMC local amendments. Works in two modes: (A) Builder/Homeowner — intake → compliance check → submission guide; (B) City Reviewer — runs plan-check checklist against a submittal and produces tight corrections output. Tier 1.",
-  "version": "0.1.0",
+  "description": "Laguna Beach, CA permits end to end \u2014 decide what to file, check compliance against state code plus LBMC local amendments, fill the official City forms, and guide a user-controlled Tyler EnerGov filing through receipt capture. Also runs as a City Reviewer plan-check. Tier 1.",
+  "version": "0.3.0",
   "author": {
     "name": "Onboard Dot AI LLC",
     "email": "info@crossbeam-permits.com"
@@ -10,12 +10,21 @@
   "repository": "https://github.com/CrossBeam-Permits/plugin",
   "license": "Apache-2.0",
   "keywords": [
+    "beach",
     "california",
-    "laguna-beach",
-    "plan-check",
-    "permits",
-    "laguna beach",
+    "coastal",
+    "design-review",
+    "forms",
     "laguna",
-    "beach"
-  ]
+    "laguna beach",
+    "laguna-beach",
+    "permit-submittal",
+    "permits",
+    "plan-check",
+    "tyler-energov"
+  ],
+  "displayName": "Laguna Beach Permits",
+  "experimental": {
+    "evals": "evals/model"
+  }
 }

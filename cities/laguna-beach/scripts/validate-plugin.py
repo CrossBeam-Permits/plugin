@@ -58,31 +58,39 @@ def main() -> int:
 
     claude_manifest = load(root / ".claude-plugin/plugin.json")
     codex_manifest = load(root / ".codex-plugin/plugin.json")
-    if claude_manifest["name"] != "laguna-beach-submit":
-        raise SystemExit("Claude plugin name must be laguna-beach-submit")
+    if claude_manifest["name"] != "laguna-beach":
+        raise SystemExit("Claude plugin name must be laguna-beach")
     if codex_manifest["name"] != claude_manifest["name"]:
         raise SystemExit("Claude and Codex plugin names differ")
     if codex_manifest.get("skills") != "./skills/":
         raise SystemExit("Codex must load the thin wrapper from ./skills/")
-    dependencies = {
-        item if isinstance(item, str) else item["name"]
-        for item in claude_manifest.get("dependencies", [])
-    }
-    if "laguna-beach" not in dependencies:
-        raise SystemExit("the Laguna city plugin dependency is missing")
+    # The city guidance and the submittal layer are ONE plugin. There is no
+    # dependency to resolve; instead assert the per-scope skills actually ship
+    # beside the preparer, because building-routing.md now points at them.
+    if claude_manifest.get("dependencies"):
+        raise SystemExit(
+            "laguna-beach is a single self-contained plugin; it must not declare dependencies"
+        )
+    scope_skills = {path.name for path in (root / "skills").iterdir() if path.is_dir()}
+    required_scopes = {"swimming-pool", "reroof", "panel-upgrade", "laguna-permit-preparer"}
+    missing_scopes = sorted(required_scopes - scope_skills)
+    if missing_scopes:
+        raise SystemExit(f"city scope skills missing from the plugin: {missing_scopes}")
+    if len(scope_skills) < 23:
+        raise SystemExit(f"expected 22 city skills plus the preparer, found {len(scope_skills)}")
 
     marketplace = load(repository_root / ".claude-plugin/marketplace.json")
     entries = {item["name"]: item for item in marketplace["plugins"]}
-    for name in ("laguna-beach", "laguna-beach-submit"):
+    for name in ("laguna-beach",):
         if name not in entries:
             raise SystemExit(f"marketplace entry is missing: {name}")
-    submit_source = entries["laguna-beach-submit"]["source"]
-    if submit_source != {
+    city_source = entries["laguna-beach"]["source"]
+    if city_source != {
         "source": "git-subdir",
         "url": "https://github.com/CrossBeam-Permits/plugin.git",
-        "path": "submit/laguna-beach",
+        "path": "cities/laguna-beach",
     }:
-        raise SystemExit("submit plugin must use the sparse git-subdir marketplace source")
+        raise SystemExit("the city plugin must use the sparse git-subdir marketplace source")
 
     binary_pdfs = sorted(root.rglob("*.pdf")) + sorted(root.rglob("*.PDF"))
     archives = sorted(root.rglob("*.zip"))
