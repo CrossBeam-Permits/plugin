@@ -47,16 +47,16 @@
       "path": "cities/laguna-beach/skills/swimming-pool/SKILL.md",
       "contains": [
         "law_as_of: \"2026-08-24\"",
-        "§25.05.040(B)(1)(j)",
-        "§25.05.040(B)(2)(t)",
-        "§25.05.040(B)(2)(v)",
-        "§25.05.040(B)(3)(a)(v)",
+        "\u00a725.05.040(B)(1)(j)",
+        "\u00a725.05.040(B)(2)(t)",
+        "\u00a725.05.040(B)(2)(v)",
+        "\u00a725.05.040(B)(3)(a)(v)",
         "effective 2026-08-20",
         "a 3-foot path of travel around every structure"
       ]
     },
     {
-      "path": "submit/laguna-beach/references/planning-routing.md",
+      "path": "cities/laguna-beach/references/planning-routing.md",
       "contains": [
         "Urgency Ordinance 1732",
         "Ordinance 1733",

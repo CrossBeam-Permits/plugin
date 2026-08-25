@@ -30,8 +30,8 @@
       "permitSystem": "Tyler EnerGov Civic Access",
       "portalUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/home",
       "sources": [
-        "submit/laguna-beach/assets/portal-maps/v1-portal-map.json",
-        "submit/laguna-beach/evals/portal/live-readonly-2026-08-22.json"
+        "cities/laguna-beach/assets/portal-maps/v1-portal-map.json",
+        "cities/laguna-beach/evals/portal/live-readonly-2026-08-22.json"
       ]
     },
     "moreno-valley": {
