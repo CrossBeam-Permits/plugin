@@ -59,7 +59,10 @@ def custom_field_facts(facts: dict[str, dict[str, Any]], route: dict[str, Any], 
             if not usable:
                 blocked.append(f"unusable portal fact {fact_id}: {reason}")
                 continue
-            mapped[field_name] = {"fact_id": fact_id, "value": value}
+            if field_name in mapped:
+                blocked.append(f"multiple facts target portal field: {field_name}")
+                continue
+            mapped[field_name] = {"field_name": field_name, "fact_id": fact_id, "value": value}
     for name, question in question_by_name.items():
         if question.get("required") and name not in mapped:
             blocked.append(f"required portal field has no sourced fact: {name}")
@@ -89,14 +92,17 @@ def main() -> int:
         if record["channel"] != "online":
             continue
         blocked = list(record.get("blocked_reasons") or [])
+        if record.get("status") != "confirmed":
+            blocked.append(f"record is not confirmed: {record.get('status')}")
+        for prerequisite_id in record["prerequisites"]:
+            if usable_fact(facts, prerequisite_id, blocked) is not True:
+                blocked.append(f"prerequisite is not satisfied: {prerequisite_id}")
         portal = record.get("portal")
         if not portal:
-            blocked.append("online record has no portal configuration")
-            continue
+            raise SystemExit(f"online record {record['id']} has no portal configuration")
         route = routes.get(portal["type_id"])
         if route is None:
-            blocked.append(f"portal type {portal['type_id']} is not supported")
-            continue
+            raise SystemExit(f"record {record['id']}: portal type {portal['type_id']} is not supported")
         if route["module"] != portal["module"] or route["label"].strip() != portal["label"].strip():
             blocked.append("application-set portal label/module differs from pinned map")
 
@@ -174,7 +180,7 @@ def main() -> int:
     if not transactions:
         raise SystemExit("application set contains no online records")
     output = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "run_id": application_set["run_id"],
         "generated_at": utc_now(),
         "records": transactions,

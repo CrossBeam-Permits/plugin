@@ -24,7 +24,7 @@ codex plugin add laguna-beach@crossbeam-permits
 
 Substitute any of the 484 city slugs for `laguna-beach`. Adding the marketplace is a one-time step; installing a city then fetches only that city's subdirectory.
 
-Claude Code, Codex, and Cowork load the same skills and the same deterministic Python tools.
+The package shares one skill tree and the same Python helpers across runtimes. Actual browser control and installation must be qualified on each host. For ChatGPT Work distribution, follow the [official plugin guidance](https://learn.chatgpt.com/docs/build-skills); this repository is not evidence of a public directory listing.
 
 ## What each city includes
 
@@ -53,3 +53,12 @@ Most cities ship the 22 plan-check skills. Laguna Beach adds a full preparation 
 Nothing is ever submitted without fresh, explicit, per-record approval. You enter your own signature. A filing is only reported as submitted when the portal shows a terminal confirmation and a receipt is written.
 
 City form downloads reject headless clients. Acquire blocked forms in a user-visible browser, then run the included freshness verifier against the pinned receipt before filling them.
+
+## Laguna qualification status
+
+The [September 8 release plan](docs/plans/PLAN-laguna-concierge-0908.md) defines the
+homeowner-to-filing standard, verified behavior, remaining City/host dependencies, and
+the filmed-pilot gate. Local form and instruction tests do not prove a live filing.
+Zone Clearance requires online submission under the current City form, but its exact
+portal entry still needs verification. The revised ADU form needs remapping. Building
+application submission and final in-person permit issuance are separate milestones.

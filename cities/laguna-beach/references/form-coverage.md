@@ -7,6 +7,11 @@ and stop that record as `unsupported_form` / `needs_source` with the City's Appl
 
 ## Supported and SHA-pinned
 
+Current source-page audit (2026-09-08): the City now links ADU document **27032**
+(`639238583151930000`), while the manifest pins document **26710**. ADU form preparation
+is blocked pending revision inspection and remapping, even if the old URL's checksum
+still passes. Other forms must also be checked against the current linked revision.
+
 - ADU & JADU Application
 - Coastal Development Permit Application
 - Conditional Use Permit Application

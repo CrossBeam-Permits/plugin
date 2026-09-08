@@ -23,6 +23,7 @@ Take a Laguna Beach project from plain-language scope to the City's real intake 
 |---|---|
 | Start and facts | `references/guided-intake.md`, `references/privacy-and-untrusted-files.md` |
 | Determine lane/stage | `references/process-stage.md` |
+| Plain-language pool request, prior review, drawings, or follow-up | `references/homeowner-journey.md` |
 | Planning record set | `references/planning-routing.md` |
 | Building record set | `references/building-routing.md` |
 | Form coverage / unsupported routes | `references/form-coverage.md` |
@@ -72,6 +73,11 @@ python3 scripts/inventory-files.py permit-work/input --output permit-work/state/
 
 Read every relevant source once and populate `project-facts.json` with provenance. Ask unresolved questions progressively. Reconcile contradictions before using a fact.
 
+For requests such as “we want a pool in Laguna Beach,” own the whole journey in
+`references/homeowner-journey.md`. Ask whether plans exist and whether the City or a
+private reviewer has already reviewed this version. Draft the application and supporting
+materials as far as the evidence permits; identify exactly what is needed next.
+
 ### 2. Propose the filing theory
 
 Use `references/process-stage.md` and the applicable routing reference. Planning can require a set of entitlement forms in one portal record; Building generally requires one record, application, and valuation per distinct scope.
@@ -88,7 +94,9 @@ Do not fill forms or create portal records until the user confirms this filing t
 
 ### 3. Acquire current official forms
 
-Use `assets/form-manifest.json`. Download from each official URL into `assets/forms-cache/` or the task's private cache, then verify:
+Use `assets/form-manifest.json`. First inspect the current official source page and compare
+its linked revision with the manifest URL. An old URL can still return a valid, obsolete PDF.
+Download into the task's private cache, then verify:
 
 ```sh
 python3 scripts/check-source-freshness.py \
@@ -164,13 +172,16 @@ If browser control is unavailable, deliver a `portal_ready` packet, exact deep l
 
 ### 7. Finish at the real channel
 
-- Zone Clearance: produce the current packet and appointment-ready handoff; book only after explicit date/time approval.
+- Zone Clearance: the current official form requires online submittal. Prepare the packet and verify the live portal type with the City before creating a record; see `references/planning-routing.md`.
 - Standalone demolition: produce the Building packet and current counter/appointment handoff; never label it online-submitted.
 - ADU/JADU: submit Planning type 182 first. Create Building type 183 only after the Planning approval is effective.
 - Most Building types: online filing is complete at the confirmation, but later permit issuance is in person.
 - Payment: show invoice details and obtain separate approval; the user enters payment credentials.
 
 End with the exact status for every record and what happens next.
+
+Continue corrections and issuance using `references/homeowner-journey.md`; retain the
+existing record identity and distinguish filing, payment, approval, and permit issuance.
 
 ## Release self-check
 

@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-08",
+  "release_candidate": "0.4.0",
+  "baseline_commit": "88323a8ab244bae92f6962481bc274d1650e60e1",
+  "instruction_model_evals": {
+    "passed": 9,
+    "total": 9,
+    "method": "Tool-free Claude print CLI and separate structured semantic grading. One run per case. First-exchange case rerun after a targeted UX correction; context hashes preserve both evaluated versions. No installation or browser-transaction qualification implied.",
+    "cases": [
+      {
+        "case": "mixed-remodel-pool-adu",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "689b06132fa8563dbe408aa7df2ef6be8e1abf005b275359c39d7586131eac6e"
+      },
+      {
+        "case": "pool-bluff-geotech",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "f31edcb3a44b3b5ed3e89952ac195d3b21f6250d65f833c2d5f11d8d5fb6faaf"
+      },
+      {
+        "case": "pool-design-review-coastal",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "57138161451a532cc3673ea23f692a142488688555f19ddd5910f5ac56125f09"
+      },
+      {
+        "case": "pool-equipment-six-part",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "a8a644eeaf2a748c16b065444abb870d80f26022f5a0b8d2252bee8200f13edd"
+      },
+      {
+        "case": "pool-no-plans",
+        "passed": true,
+        "context_sha256": "907236db0b0e62fb7deac10658fde60f343296b46dcb58ce49bbcaf0e171ca70",
+        "response_sha256": "66b47cd3b5e89d763a753e5c4819207ea7bb1b0665f806f1fdfee508d7f19824"
+      },
+      {
+        "case": "pool-unknowns",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "2a1e1d4b4fa415616fdce2409250e14c4d53c655904c1b51c0ce05d8237b98d3"
+      },
+      {
+        "case": "pool-zone-clearance",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "f973406147b09b6e238347e902bfb2fcb3ee01dff32d030de192387067c5a057"
+      },
+      {
+        "case": "private-review-not-city-approval",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "778ae7579a39ff23599eddabf1d73d43266b8aa54a567ec490cc585c78cf8352"
+      },
+      {
+        "case": "submission-confirmation",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "b99f9fd46cb88667893e6866102638c182efc5214181f7b04b41f094815eb1fa"
+      }
+    ]
+  },
+  "deterministic": "pass",
+  "codex_manifest_and_23_skill_names": "pass",
+  "claude_manifest_and_marketplace": "pass",
+  "remote_ordinance_receipts": "pass",
+  "official_dr_full_targets": 205,
+  "official_dr_partial_filled": 89,
+  "official_dr_withheld_targets_blank": 116,
+  "official_dr_unknown_conformance_facts_blank": 13,
+  "official_dr_visual_review": "pass: pages 2 and 25",
+  "official_pdf_dependencies": {
+    "pypdf": "6.18.0",
+    "reportlab": "4.5.1"
+  },
+  "browser_observation": "Public portal categories and Residential Permit login boundary observed. No application created. Zone Clearance menu mapping not established.",
+  "live_submission": "not_run",
+  "host_installations": "not_verified",
+  "release_ready": false,
+  "blockers": [
+    "Verify Zone Clearance portal mapping with City",
+    "Qualify installation and browser workflow on each promoted host",
+    "Complete consenting applicant pilot through actual receipt",
+    "Remap revised ADU form before claiming ADU preparation support"
+  ]
+}

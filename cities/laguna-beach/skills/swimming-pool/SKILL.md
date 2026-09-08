@@ -1,5 +1,6 @@
 ---
-description: "Swimming Pool and spa permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — establishes the LBMC planning route, checks state and local compliance, and hands confirmed facts to the Laguna submit plugin; (B) CITY REVIEWER — checks a submitted pool/spa project and produces tight corrections output. Covers the 3-foot Design Review split, coastal/CDP analysis, 25-foot bluff setback, geotechnical triggers, and the separate six-part equipment test effective 2026-08-20."
+name: swimming-pool
+description: "Swimming Pool and spa permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — establishes the LBMC planning route, checks state and local compliance, and hands confirmed facts to the included Laguna permit-preparer skill; (B) CITY REVIEWER — checks a submitted pool/spa project and produces tight corrections output. Covers the 3-foot Design Review split, coastal/CDP analysis, 25-foot bluff setback, geotechnical triggers, and the separate six-part equipment test effective 2026-08-20."
 version: "1.0"
 source: "2025 CBC §§107.2, 1808.7.3, 3109; 2025 CRC Appendix CI; 2025 CEC Article 680; 2025 CPC Chapters 7 and 12; Health & Safety Code §§115920-115929; LBMC §§7.25.130, 25.05.040, 25.05.045, 25.07.008, 25.50.004; Laguna Beach Ordinances 1731, 1732, and 1733"
 authority: "California Building Standards Commission and City of Laguna Beach"
@@ -10,7 +11,7 @@ law_as_of: "2026-08-24"
 
 Handles swimming pool permits in Laguna Beach end-to-end.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** “We want a pool” clearly selects Builder/Homeowner. Ask only when the role is ambiguous.
 
 > "Are you (A) planning to file a swimming pool permit, or (B) a city reviewer checking a submitted one?"
 
@@ -56,8 +57,9 @@ Route the pool/spa structure and its equipment separately:
 - **Structure more than 3 feet above adjacent legal grade:** Design Review Board / Planning
   Commission under LBMC §25.05.040(B)(1)(j), using the one Design Review Application.
 - **Structure no more than 3 feet, or portable spa no more than 600 gallons:** Zone
-  Clearance under §25.05.040(B)(2)(t) and §25.05.045; this finishes through a Planning
-  appointment, not online type 114.
+  Clearance under §25.05.040(B)(2)(t) and §25.05.045. The current official Zone Clearance
+  form p. 1 requires online submission. Verify its exact portal entry with the City; do not
+  assume type 114 or promise an appointment-only process.
 - **Environmentally sensitive area:** an otherwise lower-tier item goes to (B)(1) unless
   the licensed-professional determination and peer review establish no impact.
 
@@ -106,7 +108,7 @@ route-specific submission guide. Do not promise over-the-counter issuance:
 ```
 ## Ready to Submit — Laguna Beach Swimming Pool Permit
 
-**Planning route:** [Zone Clearance appointment, or the one Design Review Application]
+**Planning route:** [Zone Clearance (portal entry to verify), or the one Design Review Application]
 **Parallel/additive applications:** [CDP, ADU/JADU, CUP, variance, or none]
 **Building after Planning:** one pool Building application and its own valuation
 
@@ -119,13 +121,14 @@ route-specific submission guide. Do not promise over-the-counter issuance:
 
 ### A4. Optional — portal automation
 
-If the dependent Laguna submit plugin is installed, hand the confirmed facts and filing
-theory to `$laguna-permit-preparer`. It fills only verified official forms, uses a visible
+Hand the confirmed facts and filing theory to this plugin’s included
+`$laguna-permit-preparer` skill. It fills only verified official forms, uses a visible
 browser abstraction when portal filing is supported, and stops at `portal_ready` with an
 exact handoff when browser control is unavailable. It never submits without a fresh final
 approval and a terminal confirmation receipt.
 
-Zone Clearance remains an appointment workflow. For type 114, include all confirmed
+Zone Clearance requires online submission, with its exact portal entry still to verify.
+For confirmed type 114 records, include all applicable
 Planning forms once in the single `Application` PDF and keep the CDP checklist/result
 separate. After Planning approval is effective, create the pool Building record separately
 from remodel, ADU, or other Building scopes, each with its own valuation.

@@ -190,7 +190,7 @@ def check_manifest_consistency() -> None:
         used = {record["portal_type_id"] for record in case["records"] if record["portal_type_id"] is not None}
         assert not used.intersection(case.get("forbidden_portal_type_ids", []))
     zone = next(item for item in planning if item["id"] == "zone-clearance-only")
-    assert zone["records"] == [{"lane": "planning", "channel": "appointment", "portal_type_id": None}]
+    assert zone["records"] == [{"lane": "planning", "channel": "unverified", "portal_type_id": None}]
 
     building = load(ROOT / "evals/building/cases.json")["cases"]
     portal_questions = {
@@ -409,7 +409,51 @@ def check_form_and_transaction_round_trip(temp: Path) -> None:
         "final_submit": "fresh_explicit_approval_required",
         "payment": "separate_explicit_approval_required",
     }
-    assert transaction["custom_fields"] == [{"fact_id": "mep.water_heater.count", "value": 1}]
+    assert transaction["custom_fields"] == [{"field_name": "NUM_WaterHeater", "fact_id": "mep.water_heater.count", "value": 1}]
+
+    # The set may be confirmed while an individual record still awaits Planning.
+    pending = copy.deepcopy(application_set)
+    pending["records"][0]["status"] = "prerequisite_pending"
+    dump(application_path, pending)
+    command = (
+        str(SCRIPTS / "build-submission-plan.py"),
+        "--facts", str(facts_path), "--application-set", str(application_path),
+        "--portal-map", str(ROOT / "assets/portal-maps/v1-portal-map.json"),
+        "--output", str(submission_path),
+    )
+    run(*command, expected=2)
+    assert load(submission_path)["records"][0]["status"] == "blocked"
+    pending["records"][0]["status"] = "confirmed"
+    pending["records"][0]["prerequisites"] = ["planning.approval_effective"]
+    dump(application_path, pending)
+    for value in (None, False, True):
+        with_prerequisite = copy.deepcopy(facts_document)
+        with_prerequisite["facts"].append(fact("planning.approval_effective", value, controlled=False))
+        dump(facts_path, with_prerequisite)
+        run(*command, expected=0 if value is True else 2)
+        result = load(submission_path)
+        validate("submission-plan.schema.json", result)
+        assert result["records"][0]["status"] == ("portal_ready" if value is True else "blocked")
+    dump(facts_path, facts_document)
+    dump(application_path, application_set)
+
+    duplicate = copy.deepcopy(facts_document)
+    duplicate["facts"].append(fact("mep.other.count", 2, controlled=True,
+        consumers=[{"kind": "portal_field", "target": "portal:183:NUM_WaterHeater"}]))
+    dump(facts_path, duplicate)
+    run(*command, expected=2)
+    assert "multiple facts target portal field: NUM_WaterHeater" in load(submission_path)["records"][0]["blocked_reasons"]
+    dump(facts_path, facts_document)
+
+    # A malformed record must never disappear from an otherwise successful batch.
+    for portal_value in (None, {"type_id": 999}):
+        malformed = copy.deepcopy(application_set)
+        extra = copy.deepcopy(malformed["records"][0])
+        extra.update(id="unmapped", portal=portal_value)
+        malformed["records"].append(extra)
+        dump(application_path, malformed)
+        run(*command, expected=1)
+    dump(application_path, application_set)
 
     missing = copy.deepcopy(facts_document)
     missing["facts"] = [item for item in missing["facts"] if item["id"] != "project.valuation.residential"]

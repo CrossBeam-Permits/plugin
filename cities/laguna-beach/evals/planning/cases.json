@@ -22,7 +22,7 @@
     {
       "id": "zone-clearance-only",
       "forms": ["zone-clearance-application"],
-      "records": [{"lane": "planning", "channel": "appointment", "portal_type_id": null}],
+      "records": [{"lane": "planning", "channel": "unverified", "portal_type_id": null}],
       "forbidden_portal_type_ids": [114, 182, 183]
     }
   ]

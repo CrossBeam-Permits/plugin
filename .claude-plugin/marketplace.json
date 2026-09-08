@@ -5389,7 +5389,7 @@
         "path": "cities/laguna-beach"
       },
       "description": "Laguna Beach, CA permits end to end \u2014 decide what to file, check compliance against state code plus LBMC local amendments, fill the official City forms, and guide a user-controlled Tyler EnerGov filing through receipt capture. Includes the full Planning entitlement routing (Design Review, CDP, Zone Clearance) and SHA-pinned official City applications. Tier 1.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": {
         "name": "Onboard Dot AI LLC"
       },

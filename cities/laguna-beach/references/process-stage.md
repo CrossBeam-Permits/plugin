@@ -19,7 +19,7 @@ Evidence can include City approval letters, portal status, record numbers, stamp
 - Planning produces an entitlement/application **set**. Multiple entitlement forms can share one type-114 portal record.
 - ADU/JADU uses Planning type 182, then Building type 183 only after approval is effective.
 - Building produces separate records for materially distinct scopes. Each record has its own description, valuation, application, portal type, and receipt.
-- Standalone demolition and Zone Clearance are non-online routes in V1 even when adjacent work is submitted online.
+- Standalone demolition has a non-online V1 handoff. Zone Clearance requires online submission under the current official form, but its exact portal mapping is not yet verified; prepare it with channel `unverified` and status `blocked`.
 - A saved draft is an existing transaction. Resume it; never create another because a browser step timed out.
 
 Before filling or portal navigation, show the stage and prerequisite logic to the user and obtain confirmation of the proposed filing theory.
