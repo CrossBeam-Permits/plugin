@@ -56,7 +56,7 @@ python3 demos/laguna-pool/fill-official-demo.py \
 ```
 
 This verifies the source hash against the installed manifest, invokes the installed
-schema/fill/verification helpers, fills the six known contact/project fields, labels
+schema/fill/verification helpers, fills all 20 mapped contact/location/project text fields with explicit fictional values, labels
 all 43 pages, and updates the packet manifest to use `zone-clearance-demo.pdf` for
 Application. Other fields stay unresolved; this is not a complete filing packet.
 Inspect rendered output before recording. No official City PDFs are bundled here.
@@ -104,3 +104,7 @@ manual semantic review; process success alone is not a pass. The September 8 ret
 automatically selected the pool skill and read the homeowner journey, then asked about
 address, scope, and drawings/prior review. This proves CLI opening behavior, not a
 complete fresh-conversation run in the desktop filming app.
+
+`packet-components.json` tracks the remaining filming documents against physical pages
+of the official packet. The generated packet copies this register alongside the manifest.
+A successful field fill or upload does not resolve the unfinished components.

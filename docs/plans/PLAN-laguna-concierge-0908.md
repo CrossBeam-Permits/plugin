@@ -214,3 +214,16 @@ and the distinction between public configuration and unobserved authenticated UI
 The mapped browser run also passes: eight values and both PDF byte streams match,
 missing signature/uploads block, and reloading retains the same DEMO receipt. See
 [the mapped browser evidence](../qualification/laguna-mapped-browser-0908.json).
+
+## Official packet audit and contact completion
+
+All 20 mapped location/contact/scope text targets now fill from explicit fictional
+values, including a visibly invalid demo APN and an absent separate representative.
+Installed-helper verification and rendered pages 1–2 pass. This extends the earlier
+six-field browser sample; that earlier receipt remains evidence for its exact bytes.
+
+The [component register](../../demos/laguna-pool/packet-components.json) now tracks
+requirements against physical PDF pages. The new packet reference makes non-widget
+signatures and the older matrix/current ordinance distinction visible to the agent.
+Remaining film work includes the fictional survey, complete site/section/summary and
+grading exhibits, conditional study decisions, and visibly simulated declarations.

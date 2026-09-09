@@ -37,7 +37,9 @@ def build(output):
         + '\nMissing: real survey/constraints, structural/geotechnical design, hydraulic/electrical design, '
         'equipment specifications, barrier/safety details, and complete supporting materials required by the applicable City forms.\n'
     )
-    manifest = {'fixture':fixture, 'files':{}}
+    components = json.loads((ROOT / 'packet-components.json').read_text())
+    (output / 'packet-components.json').write_text(json.dumps(components, indent=2)+'\n')
+    manifest = {'fixture':fixture, 'files':{}, 'component_register':'packet-components.json'}
     for category, filename in [('Application','sample-application.pdf'),('Plans','sample-plans.pdf')]:
         raw = (output / filename).read_bytes()
         manifest['files'][category] = dict(name=filename, size=len(raw), sha256=hashlib.sha256(raw).hexdigest())

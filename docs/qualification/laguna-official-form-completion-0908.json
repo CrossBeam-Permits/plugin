@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-08",
+  "method": "Installed plugin fill and AcroForm/widget verification, followed by rendered review of affected pages 1 and 2",
+  "installed_version": "0.4.0+codex.20260909022054",
+  "form": "zone-clearance-application",
+  "mapped_fields_filled_and_verified": 20,
+  "source_sha256": "ec6fee57c42ae574c76451e766a8e94cfae0756d46d4abc79678a925ed7996ed",
+  "output_sha256": "48bfe030df3dda038e07a3b7eaaed375c5c9bf2ae53905218902ff392796eedc",
+  "visual_review": "pass: all filled values legible on pages 1 and 2; no text-field clipping",
+  "complete_packet": false,
+  "findings": [
+    "Physical pages 33, 41 and 43 have signature lines without AcroForm widgets.",
+    "Exhibit C physical page 21 lists pool title, survey, site plan and cross-sections; use current ordinance for route rather than the older matrix heading.",
+    "The fictional pool section water volume exceeds 20 cubic yards before shell/overexcavation; grading/drainage remains a packet requirement."
+  ],
+  "component_register": "../../demos/laguna-pool/packet-components.json"
+}

@@ -141,3 +141,7 @@ and supporting packet. Briefly attribute type 114 to the City’s type/work-clas
 and say these are verified public configuration requirements; the authenticated screens
 and actual filing have not been exercised. This keeps the evidence limit visible without
 turning the answer into a technical checklist.
+
+For Zone Clearance preparation, read `zone-clearance-packet.md` before deciding the
+Application and Plans PDFs are complete. It identifies non-widget signatures, the
+physical PDF page numbering, and the pool-specific document matrix discrepancy.

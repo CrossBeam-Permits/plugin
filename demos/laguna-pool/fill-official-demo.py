@@ -33,7 +33,7 @@ def main():
         raise ValueError('Official source hash differs from the installed plugin; refresh/remap first')
     maps = json.loads((plugin/'assets/field-maps/zone-clearance-application.json').read_text())['canonical_mappings']
     fields = fixture['fields']
-    values = {'site.address':fields['address'], 'applicant.contact_name':fields['applicant'],
+    values = {**fixture['official_form_facts'], 'site.address':fields['address'], 'applicant.contact_name':fields['applicant'],
               'applicant.phone':fixture['contacts']['applicant_phone'], 'applicant.email':fields['email'],
               'owner.contact_name':fields['owner'], 'project.description':fields['description']}
     now = datetime.now(timezone.utc).isoformat()
@@ -78,7 +78,7 @@ def main():
     packet['files']['Application']={'name':final.name,'size':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
     packet['official_form']={'id':source['id'],'source_sha256':source['sha256'],
         'mapped_answers_filled':len(json.loads(answers.read_text())['answers']),
-        'unmapped_and_unknown_fields':'remain blank; not a complete or filing-ready project packet',
+        'unmapped_and_unknown_fields':'remaining exhibits and non-widget declarations require separate completion; not a filing-ready project packet',
         'all_pages_labeled':len(writer.pages),'visual_review':'required'}
     manifest_path.write_text(json.dumps(packet,indent=2)+'\n')
     print(json.dumps(packet['official_form']))

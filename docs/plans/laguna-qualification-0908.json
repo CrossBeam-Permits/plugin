@@ -102,7 +102,9 @@
       "Match demo flow to verified City mapping and complete final filming rehearsal"
     ],
     "fresh_cli_activation": "Passed after fixing direct swimming-pool skill opening; see ../qualification/laguna-codex-activation-0908.json. Desktop whole-journey activation remains unverified.",
-    "mapped_browser_evidence": "../qualification/laguna-mapped-browser-0908.json"
+    "mapped_browser_evidence": "../qualification/laguna-mapped-browser-0908.json",
+    "official_form_text_completion": "20 mapped text fields filled and visually verified; non-widget declarations and supporting exhibits remain open",
+    "component_register": "../../demos/laguna-pool/packet-components.json"
   },
   "evidence_directory": "../qualification",
   "zone_clearance_routing_retest": {

@@ -62,5 +62,21 @@
     ],
     "shallow_depth_ft": 3.5,
     "deep_depth_ft": 6
+  },
+  "official_form_facts": {
+    "site.apn": "DEMO-NOT-A-PARCEL",
+    "applicant.company_name": "Example Pool Project (fictional)",
+    "applicant.mailing_address": "505 Forest Avenue (DEMO ONLY)",
+    "applicant.city_state_zip": "Laguna Beach, CA 92651 (demo)",
+    "applicant_representative.company_name": "Not applicable - fictional applicant acts directly",
+    "applicant_representative.contact_name": "Not applicable - no separate representative",
+    "applicant_representative.mailing_address": "Not applicable",
+    "applicant_representative.city_state_zip": "Not applicable",
+    "applicant_representative.phone": "Not applicable",
+    "applicant_representative.email": "Not applicable",
+    "owner.mailing_address": "505 Forest Avenue (DEMO ONLY)",
+    "owner.phone": "949-555-0101",
+    "owner.city_state_zip": "Laguna Beach, CA 92651 (demo)",
+    "owner.email": "owner-demo@example.invalid"
   }
 }
