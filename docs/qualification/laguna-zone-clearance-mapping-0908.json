@@ -1,0 +1,33 @@
+{
+  "observed_at": "2026-09-08",
+  "method": "Codex in-app browser, public logged-out UI",
+  "status": "incomplete",
+  "source_page": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+  "official_form": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+  "verified_channel": "online; official Zone Clearance form page 1",
+  "portal": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationAssistant",
+  "observations": [
+    "Application Assistant exposes PLANS and PERMITS.",
+    "Zone autocomplete reports no matches; pressing Search shows the All category list. This is not proof that Zone Clearance is unavailable.",
+    "Residential Planning Entitlements links to #/plan/apply/114/0/0 and describes Residential Planning Entitlements, not Zone Clearance.",
+    "Apply Residential Planning Entitlements redirects to #/sso.html?redirectUrl=%2Fplan%2Fapply%2F114%2F0%2F0 and shows a Tyler Identity authorization dialog.",
+    "No account was entered and no application draft was created."
+  ],
+  "zone_clearance": {
+    "menu_id": null,
+    "type_id": null,
+    "category": null,
+    "required_fields": null,
+    "conditional_questions": null,
+    "attachment_categories": null,
+    "fee_timing": null,
+    "confirmation_semantics": null
+  },
+  "next_evidence_needed": [
+    "City documentation or test access identifying the exact Zone Clearance entry",
+    "Screenshots of every intake step including conditional fields, attachments, fees, and confirmation",
+    "Evidence tying those screens to the identified type and current portal revision"
+  ],
+  "demo_mapping": "Provisional local simulation. Application/Plans category names come from archived type 114; their applicability to Zone Clearance is unverified. No promotion of type 114 into the production Zone Clearance mapping.",
+  "documented_fee_condition": "Official Zone Clearance form p. 1 says the application is not deemed received until the required Zoning Plan Check fee is paid and the application is submitted. Actual portal payment sequence remains unobserved."
+}

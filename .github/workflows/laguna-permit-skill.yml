@@ -7,7 +7,7 @@ on:
       - "cities/laguna-beach/**"
       - "data/**"
       - "scripts/**"
-      - "cities/laguna-beach/**"
+      - "demos/laguna-pool/**"
       - ".github/workflows/laguna-permit-skill.yml"
   push:
     branches: [main]
@@ -16,7 +16,7 @@ on:
       - "cities/laguna-beach/**"
       - "data/**"
       - "scripts/**"
-      - "cities/laguna-beach/**"
+      - "demos/laguna-pool/**"
   workflow_dispatch:
 
 permissions:
@@ -50,6 +50,8 @@ jobs:
       - name: Run deterministic contract and form-map evals
         working-directory: cities/laguna-beach
         run: python evals/run-evals.py
+      - name: Test fictional browser demo transactions
+        run: python -m unittest discover -s demos/laguna-pool -p "test_*.py" -v
       - name: Validate marketplace and submit plugin
         run: |
           claude plugin validate . --strict

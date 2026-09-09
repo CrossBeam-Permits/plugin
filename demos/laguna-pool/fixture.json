@@ -1,0 +1,35 @@
+{
+  "fixture_id": "laguna-pool-video-001",
+  "label": "DEMONSTRATION - FICTIONAL PROJECT - NOT A CITY SUBMISSION",
+  "address_disclaimer": "505 Forest Avenue is a public demo address only. The residential project facts below do not describe City Hall or establish eligibility there.",
+  "fields": {
+    "address": "505 Forest Avenue (DEMO ONLY)",
+    "description": "Fictional residential pool, 12 by 24 feet, with associated equipment. This is a workflow demonstration, not a proposal for City Hall.",
+    "applicant": "Alex Example (fictional)",
+    "owner": "Jordan Example (fictional)",
+    "email": "pool-demo@example.invalid",
+    "prior_review": "No City or private review has been completed for this sample plan version."
+  },
+  "project_facts": {
+    "pool_width_ft": 12,
+    "pool_length_ft": 24,
+    "pool_area_sq_ft": 288,
+    "plan_revision": "DEMO-R1",
+    "real_parcel_apn": null,
+    "real_zoning": null,
+    "coastal_status": null,
+    "bluff_status": null,
+    "setbacks": null,
+    "city_approval": null
+  },
+  "route": {
+    "intended_rehearsal": "Zone Clearance intake",
+    "production_menu_id": null,
+    "production_mapping_status": "unverified",
+    "eligibility_determined": false
+  },
+  "contacts": {
+    "applicant_phone": "949-555-0100",
+    "note": "Reserved fictional example phone; not a real contact"
+  }
+}

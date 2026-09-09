@@ -1,0 +1,28 @@
+{
+  "case_id": "DEMO-B9199A327136",
+  "city_submission": false,
+  "fields_compared": 6,
+  "files_compared": 2,
+  "receipt": {
+    "record_number": "DEMO-B9199A327136",
+    "label": "DEMONSTRATION \u2014 NOT A CITY SUBMISSION",
+    "submitted_at": "2026-09-09T01:56:43.448158+00:00",
+    "city_submission": false,
+    "payment": "No payment \u2014 simulation",
+    "next_step": "Demo complete. No City review, approval, or permit was requested.",
+    "mapping_status": "Zone Clearance production entry remains unverified"
+  },
+  "uploaded_files": {
+    "Application": {
+      "name": "sample-application.pdf",
+      "size": 2575,
+      "sha256": "a5512eb1a9422781a7adbcad83bbd6a241783abe894b4dc95d549f83d8e3248e"
+    },
+    "Plans": {
+      "name": "sample-plans.pdf",
+      "size": 2689,
+      "sha256": "7a1e26aca5f5ccd9c404e4c56e2b37b10fd33eb3d8775815eb8889944347b671"
+    }
+  },
+  "result": "pass"
+}

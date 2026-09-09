@@ -78,7 +78,7 @@
   },
   "browser_observation": "Public portal categories and Residential Permit login boundary observed. No application created. Zone Clearance menu mapping not established.",
   "live_submission": "not_run",
-  "host_installations": "not_verified",
+  "host_installations": "Codex CLI 0.153.4 local candidate install and app-server skill discovery passed; fresh-conversation activation and other hosts not verified",
   "release_ready": false,
   "blockers": [
     "Verify Zone Clearance portal mapping",
@@ -89,19 +89,19 @@
   "demo_qualification": {
     "scope": "Fictional Laguna Beach pool demonstration; no real applicant account or packet required",
     "ready": false,
-    "primary_host": "Codex (candidate; not yet installation/browser qualified)",
+    "primary_host": "Codex: candidate installation/discovery and manual helper/browser operations verified",
     "zone_clearance_mapping": "incomplete",
-    "fictional_packet": "partial_demo_only",
-    "browser_demo_destination": "not_built",
-    "installed_host_browser_run": "not_run",
-    "end_to_end_rehearsal": "not_run",
+    "fictional_packet": "Coherent synthetic fixture plus partial official Zone Clearance form; full drawings/project packet incomplete",
+    "browser_demo_destination": "Local provisional simulation built; not verified City portal parity",
+    "installed_host_browser_run": "Manual installed-helper-to-browser run passed; fresh-conversation activation not run",
+    "end_to_end_rehearsal": "Manual fixture-to-demo-receipt and recovery checks passed; fresh-conversation whole-journey run not complete",
     "production_submission_required": false,
     "blockers": [
       "Complete evidence-backed Zone Clearance portal mapping",
-      "Assemble a coherent labeled fictional pool packet",
-      "Build a labeled local portal replica or obtain a City test environment",
-      "Verify installation and browser workflow in the filming host",
-      "Pass prompt-to-demo-receipt rehearsal and recovery checks"
+      "Complete fictional project documents and plan sheets needed for a convincing whole-journey demonstration",
+      "Verify automatic skill activation and uninterrupted workflow in a fresh conversation of the filming host",
+      "Match demo flow to verified City mapping and complete final filming rehearsal"
     ]
-  }
+  },
+  "evidence_directory": "../qualification"
 }

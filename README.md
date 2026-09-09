@@ -58,7 +58,10 @@ City form downloads reject headless clients. Acquire blocked forms in a user-vis
 
 The [September 8 release plan](docs/plans/PLAN-laguna-concierge-0908.md) defines the
 homeowner-to-filing standard, verified behavior, remaining City/host dependencies, and
-the filmed-pilot gate. Local form and instruction tests do not prove a live filing.
+the fictional video gates. A [local browser rehearsal](demos/laguna-pool/README.md) now
+supports sample uploads and durable demo receipts. Codex candidate installation and
+manual installed-helper/browser operations have passed; fresh-conversation activation
+is still unverified. Local demonstrations do not prove a live City filing.
 Zone Clearance requires online submission under the current City form, but its exact
 portal entry still needs verification. The revised ADU form needs remapping. Building
 application submission and final in-person permit issuance are separate milestones.
