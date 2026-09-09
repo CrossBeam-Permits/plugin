@@ -1,7 +1,7 @@
 # Laguna Beach permit concierge — release standard and execution
 
 Date: 2026-09-08. Baseline: public main `88323a8` (PRs #4 and #5).
-Status: local checks, Codex installation/discovery, and manual installed-helper-to-demo-browser rehearsal passed. Exact City mapping, fresh-conversation activation, and complete filming packet remain outstanding.
+Status: local checks, Codex installation/discovery, and manual installed-helper-to-demo-browser rehearsal passed. Fresh CLI opening activation also passes after a direct-scope fix. Public City configuration now verifies the Zone Clearance entry and required inputs. Desktop whole-journey activation, and a complete filming packet remain outstanding.
 Qualification: [machine-readable results](laguna-qualification-0908.json).
 
 ## The standard
@@ -23,6 +23,7 @@ or browser-transaction proof.
 - Private CrossBeam PR #917 was closed unmerged. Its replacement shipped in public PR
   #4 on August 24; PR #5 folded preparation into the single city plugin on August 25.
 - All 22 scope skills lacked the required `name` frontmatter. Added canonical names;
+  moved source/revision fields under supported `metadata` and verified strict skill headers;
   the official local Codex plugin validator now passes. Added a durable release check.
 - Added the homeowner journey: prior private/City review and plan revision, drafting
   inputs, packet readiness, corrections, follow-up, and observed issuance status.
@@ -32,8 +33,9 @@ or browser-transaction proof.
   records fail rather than disappear from a mixed batch. Submission-plan schema is 1.1.0.
 - Corrected Zone Clearance's false appointment-only instruction in the skill and evals.
   Current official form p. 1 and the current City source page both require online filing.
-  Exact portal entry remains unverified; use explicit `unverified` channel and blocked
-  record until confirmed. A search of the public portal did not establish that entry.
+  Fresh public API instructions now tie Zone Clearance to Residential Planning Entitlements
+  type 114. Required inputs and upload categories are bundled with dated source receipts;
+  authenticated screen layout and an actual City transaction remain unobserved.
 - Found a superseded ADU PDF: source page links document 27032; manifest pins 26710.
   ADU preparation is explicitly blocked pending remap. Do not widen the pool pilot to ADUs.
 - Reacquired Design Review from the current source-page link in a visible browser;
@@ -65,17 +67,18 @@ export and the portal demonstration must retain that distinction.
 
 | Order | Work | Deliverable and acceptance condition | Current state |
 |---|---|---|---|
-| 1 | Map Zone Clearance intake | Dated source/evidence bundle identifying the exact portal menu, application type/ID, category, step sequence, required fields, conditional questions, uploads, fees, and confirmation behavior. Distinguish observed UI from City documentation and unknowns. Do not assume Residential Planning Entitlements type 114 is Zone Clearance. Update the application-set mapping and its fixture tests only when supported. | Official online channel verified; exact entry and authenticated flow unresolved |
+| 1 | Map Zone Clearance intake | Dated source/evidence bundle identifying the exact portal menu, application type/ID, category, step sequence, required fields, conditional questions, uploads, fees, and confirmation behavior. Distinguish observed UI from City documentation and unknowns. Use the verified City type/work-class instructions tying Zone Clearance to type 114. Update the application-set mapping and its fixture tests only when supported. | Exact entry and public configuration verified; authenticated screen layout remains unobserved |
 | 2 | Build one coherent fictional pool case | Versioned fixture folder with project facts, fictional contacts, prior-review answer, sample plan inputs, matching completed forms and attachments. All exports labeled demonstration. Unknown real property facts stay unknown; mock facts stay explicitly synthetic. | Coherent browser fixture and sample plan inputs built; six facts filled in official Zone Clearance form. Full project packet/drawings outstanding |
-| 3 | Provide a browser demo destination | Prefer a City-provided test environment if available; otherwise build a local replica from the verified mapping. Support fields, validation, upload, review, Submit, and a persistent receipt with a DEMO-prefixed record ID. Show “DEMONSTRATION — NOT A CITY SUBMISSION” throughout, including the receipt. Save uploaded files and submitted values for comparison. Mark any unobserved portal behavior as simulated. | Local provisional simulation built and exercised; no City sandbox established; exact portal fidelity remains blocked on mapping |
-| 4 | Verify actual installation and browser operation | Start with Codex, the available filming candidate. Install the exact candidate artifact in a clean test scope, record its commit/version and host version, discover/invoke the skill from the pool prompt, read the fixtures, fill/render the PDFs, and use that host's browser tools to complete the demo destination. Save screenshots, tool/run evidence, and the resulting submission data. Repeat separately in Cowork and ChatGPT Work before promoting either. | Codex 0.153.4 install and 23-skill discovery pass; manual installed-helper/browser flow passes. Fresh-conversation activation and other hosts outstanding |
+| 3 | Provide a browser demo destination | Prefer a City-provided test environment if available; otherwise build a local replica from the verified mapping. Support fields, validation, upload, review, Submit, and a persistent receipt with a DEMO-prefixed record ID. Show “DEMONSTRATION — NOT A CITY SUBMISSION” throughout, including the receipt. Save uploaded files and submitted values for comparison. Mark any unobserved portal behavior as simulated. | Local provisional simulation built and exercised; no City sandbox established; required square footage, simulated signature, and uploads aligned and browser-tested; visual layout remains simulated |
+| 4 | Verify actual installation and browser operation | Start with Codex, the available filming candidate. Install the exact candidate artifact in a clean test scope, record its commit/version and host version, discover/invoke the skill from the pool prompt, read the fixtures, fill/render the PDFs, and use that host's browser tools to complete the demo destination. Save screenshots, tool/run evidence, and the resulting submission data. Repeat separately in Cowork and ChatGPT Work before promoting either. | Codex 0.153.4 install and 23-skill discovery pass; manual installed-helper/browser flow passes. Fresh CLI opening activation passed; desktop whole journey and other hosts outstanding |
 | 5 | Rehearse and inspect the result | Complete one uninterrupted prompt-to-demo-receipt run; compare every submitted value and attachment with the fixture. Also test a missing required attachment, an unknown project fact, and resuming the same saved case without duplicating submission. Confirm labels are readable and no credentials are visible. | Manual browser rehearsals pass, including missing inputs and same-receipt reload/server restart; uninterrupted fresh-conversation run outstanding |
 
 For work package 1, inspect the public portal first. If relevant pages require login,
 use a dedicated test account or City-supplied screenshots/test access; a real applicant's
-account is not a dependency. If that access is unavailable, keep the exact mapping
-unverified and document the missing screens. Public documents alone do not establish
-hidden required fields or receipt semantics. City clarification may resolve gaps; no
+account is not a dependency. The public API has now established the exact entry,
+configured required fields, upload categories, and post-submission message. Document
+remaining unobserved screen behavior as simulated; configuration evidence is not an
+observed production transaction. City clarification may resolve gaps; no
 message has been sent. Read-only production discovery and the fictional submission
 rehearsal are separate activities.
 
@@ -108,13 +111,24 @@ PDF generation, installed-plugin official-form filling, and a receipt/byte compa
   labeled PDF uploaded through the in-app browser and compared byte-for-byte at receipt.
   Remaining official form fields and project documents are not qualified as complete.
 - [Current portal mapping evidence](../qualification/laguna-zone-clearance-mapping-0908.json):
-  public search and type 114 login boundary checked; no evidence yet ties 114 to Zone
-  Clearance. This remains an explicit unresolved requirement.
+  public search and type 114 login boundary checked. Fresh unauthenticated API instructions
+  now explicitly tie Zone Clearance to type 114; the raw configuration and hashes are
+  bundled in `cities/laguna-beach/assets/portal-maps/zone-clearance-2026-09-08/`.
 
-These are manual agent-operated qualification runs in the current task. They do not
+- [Fresh CLI activation](../qualification/laguna-codex-activation-0908.json): an empty,
+  ephemeral session automatically selected the installed pool skill. The initial test
+  exposed a technical-question barrage that skipped review history; the retest reads
+  the homeowner journey and asks three short opening questions. This is CLI opening
+  qualification, not an uninterrupted desktop-browser workflow.
+- [Concept sheets](../qualification/laguna-concept-sheets-0908.json): DEMO-R2 now includes
+  three dimensioned fictional sheets and a drawing register, replacing the placeholder
+  upload page. All three rendered sheets inspected. These are conceptual drafts with
+  explicitly unresolved professional details, not a complete City project packet.
+
+The browser transactions above are manual agent-operated qualification runs in the current task. They do not
 prove automatic skill selection and full execution in a new user conversation. The
 browser demo's required fields, upload categories, and receipt are simulated controls.
-They are not substitutes for the missing production mapping.
+They must now be aligned with the verified configuration before the final recording.
 
 ## Broader product qualification
 
@@ -177,3 +191,26 @@ the published plugin.
 - [Ordinance 1733](https://ecode360.com/LA4953/laws/LF2782335.pdf)
 - [OpenAI skills and plugin distribution](https://learn.chatgpt.com/docs/build-skills)
 - [Claude plugin distribution](https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization)
+
+## Immediate filming checklist after configuration verification
+
+1. Completed and browser-verified: align the local demo with type 114: required square footage, Applicant/Owner,
+   Application and Plans PDFs, and an explicitly simulated signature step. Keep prior
+   review questions in CrossBeam intake, separate from City custom questions.
+2. Finish one consistent fictional packet for 505 Forest Avenue, labeled throughout
+   as a fictional scenario. The three concept sheets exist; reconcile remaining form
+   inputs and clearly identify conceptual versus completed supporting documents.
+3. Reinstall the final candidate and run the entire journey in a fresh Codex desktop
+   conversation: opening request, questions, documents, browser entry, uploads, review,
+   simulated Submit, and saved DEMO receipt. CLI opening and separate browser tests
+   already pass; their combination is still a required test.
+4. Compare every submitted value and file against the fixture, repeat missing-document
+   and resume checks, then record. The video should name only the qualified host and
+   visibly identify simulated submission. No real applicant, consent collection, or
+   production City filing is a prerequisite.
+
+The Zone Clearance instruction retest now passes after adding concise source attribution
+and the distinction between public configuration and unobserved authenticated UI.
+The mapped browser run also passes: eight values and both PDF byte streams match,
+missing signature/uploads block, and reloading retains the same DEMO receipt. See
+[the mapped browser evidence](../qualification/laguna-mapped-browser-0908.json).

@@ -25,7 +25,7 @@ class DemoTransactions(unittest.TestCase):
             return server.mutate(self.db, self.case['id'], action, data)
 
     def fill(self):
-        self.command('save', fields={key: 'Fictional demonstration' for key in server.FIELDS})
+        self.command('save', fields={**{key: 'Fictional demonstration' for key in server.FIELDS}, 'square_footage': '288'})
         for category in server.CATEGORIES:
             self.command('upload', category=category, name='sample.pdf',
                          base64=base64.b64encode(b'%PDF-1.4\nDEMONSTRATION').decode())
@@ -38,9 +38,22 @@ class DemoTransactions(unittest.TestCase):
         self.assertEqual(server.read_case(self.db, self.case['id'])['status'], 'saved_draft')
 
     def test_missing_attachment_blocks_even_with_all_fields(self):
-        self.command('save', fields={key: 'Synthetic' for key in server.FIELDS})
+        self.command('save', fields={**{key: 'Synthetic' for key in server.FIELDS}, 'square_footage': '288'})
         with self.assertRaisesRegex(ValueError, 'Application, Plans'):
             self.command('submit')
+
+    def test_signature_and_area_are_required_before_submission(self):
+        self.fill()
+        fields = server.read_case(self.db, self.case['id'])['fields']
+        for key in ('demo_signature', 'square_footage'):
+            self.command('save', fields={**fields, key: None})
+            with self.assertRaisesRegex(ValueError, key):
+                self.command('submit')
+        for value in ('NaN', 'Infinity', '-1', '0', 'not an area'):
+            with self.assertRaisesRegex(ValueError, 'positive finite'):
+                self.command('save', fields={**fields, 'square_footage': value})
+        self.command('save', fields=fields)
+        self.assertTrue(self.command('submit')['receipt']['signature_is_simulated'])
 
     def test_receipt_survives_restart_and_submit_retry(self):
         self.fill()

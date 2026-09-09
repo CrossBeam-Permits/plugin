@@ -81,6 +81,12 @@ def main() -> int:
         if not skill_text.startswith("---\n"):
             raise SystemExit(f"skill {scope} has no YAML frontmatter")
         frontmatter = skill_text.split("---", 2)[1].splitlines()
+        allowed_keys = {"name", "description", "license", "metadata", "allowed-tools"}
+        top_keys = {line.split(":", 1)[0] for line in frontmatter
+                    if line and not line[0].isspace() and not line.startswith("#")}
+        unexpected = sorted(top_keys - allowed_keys)
+        if unexpected:
+            raise SystemExit(f"skill {scope} has unsupported top-level metadata: {unexpected}; nest it under metadata")
         if f"name: {scope}" not in frontmatter:
             raise SystemExit(f"skill {scope} needs its canonical name for Codex discovery")
 

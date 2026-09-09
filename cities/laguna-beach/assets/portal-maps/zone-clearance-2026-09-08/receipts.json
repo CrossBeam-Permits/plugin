@@ -1,0 +1,34 @@
+[
+  {
+    "name": "menu",
+    "url": "https://lagunabeachca-energovweb.tylerhost.net/apps/selfservice/api/Home/Menu",
+    "status": 200,
+    "bytes": 41379,
+    "sha256": "36d071c8cfa6dd66de65b825b4a3e03e5c02761056a54425729534aa7dcb4547",
+    "retrieved_at": "2026-09-09T02:24:00.253Z"
+  },
+  {
+    "name": "setup",
+    "url": "https://lagunabeachca-energovweb.tylerhost.net/apps/selfservice/api/energov/plans/setup/d1c3da85-1287-4578-9312-bdc56e2ae963",
+    "status": 200,
+    "bytes": 27212,
+    "sha256": "f07f8e8368b9c8fa5005ec243f9cebc42b6ae01d684fbf8a4e3ad4e69adf2469",
+    "retrieved_at": "2026-09-09T02:24:01.231Z"
+  },
+  {
+    "name": "instructions",
+    "url": "https://lagunabeachca-energovweb.tylerhost.net/apps/selfservice/api/casetype/instructions/d1c3da85-1287-4578-9312-bdc56e2ae963/6c1ac741-1447-403d-a218-ac5715c6d9a9/",
+    "status": 200,
+    "bytes": 9930,
+    "sha256": "8b21c94daf2dfe268ef15c8074df13b6e2ec81f3245a180f315f6acf4418303b",
+    "retrieved_at": "2026-09-09T02:24:01.349Z"
+  },
+  {
+    "name": "questions",
+    "url": "https://lagunabeachca-energovweb.tylerhost.net/apps/selfservice/api/energov/customfields/template/5d856da8-f1f5-e856-34d8-5a5433213c34/8fdd31db-1b4a-40cb-bc17-e87fb54fc598",
+    "status": 200,
+    "bytes": 391,
+    "sha256": "c36b0309fc8793e455084f295e930344c7051c86aba6df96be097ca0281ada75",
+    "retrieved_at": "2026-09-09T02:24:01.525Z"
+  }
+]

@@ -46,7 +46,7 @@ def main():
         facts.append({'id':key, 'value':values[key],
           'source':{'kind':'user_confirmed' if controlled else 'plan', 'receipt':{
             'kind':'user_answer' if controlled else 'file', 'captured_at':now, 'file':'fixture.json',
-            'page':None,'sheet':'DEMO-R1','field':key,'record_id':None,
+            'page':None,'sheet':fixture['project_facts']['plan_revision'],'field':key,'record_id':None,
             'note':'Synthetic fixture authorization only; not a real applicant declaration. Phone is a reserved fictional example.'}},
           'confidence':1, 'confirmation':{'required':controlled,'status':'confirmed' if controlled else 'not_required',
             'confirmed_at':now if controlled else None,'note':'Fictional demonstration only'},

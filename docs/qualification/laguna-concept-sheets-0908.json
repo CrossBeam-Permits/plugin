@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-08",
+  "fixture": "demos/laguna-pool/fixture.json",
+  "revision": "DEMO-R2",
+  "pdf_sha256": "97afc2dba92f0a794affd147e6bd159bb446b67a837aa94ba7879c4990a03fbe",
+  "pages": 3,
+  "visual_review": "All three final sheets rendered and inspected; dimension-line alignment and street-label overlap corrected",
+  "sheets": [
+    {
+      "id": "A0",
+      "title": "Project brief and drawing index",
+      "status": "fictional concept"
+    },
+    {
+      "id": "A1",
+      "title": "Dimensioned fictional site layout",
+      "status": "fictional concept"
+    },
+    {
+      "id": "A2",
+      "title": "Pool section and equipment concept",
+      "status": "fictional concept"
+    }
+  ],
+  "facts": "All dimensions are authored synthetic inputs. Real City Hall parcel and eligibility facts remain unknown.",
+  "construction_or_city_submittal_ready": false,
+  "remaining_inputs": [
+    "Actual or fully specified demonstration survey/constraints",
+    "Structural/geotechnical and hydraulic/electrical design",
+    "Equipment specifications, noise analysis, and barrier/safety details",
+    "Applicable complete project attachment checklist; type 114 portal configuration is now verified"
+  ],
+  "evidence_scope": "Historical rendering before the A0 mapping-status sentence was updated; current browser-uploaded plan hash is recorded in laguna-mapped-browser-0908.json."
+}

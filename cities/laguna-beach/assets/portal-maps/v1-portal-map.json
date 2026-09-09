@@ -2,10 +2,11 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-08-22T17:40:00-07:00",
   "source": {
-    "path": "data/cities/laguna-beach/portal/online-intake-summary.json",
-    "sha256": "55d72de74d16a05c217c9adb40f4ef737c6f4b7fec94bae1fa7c6562dbfa4e64",
+    "path": "assets/portal-maps/online-intake-snapshot.json",
+    "sha256": "d2b50988fbed17d08ce7988d76a148fa9ad52c77db6ca2ac0ff0ecf386b67e7b",
     "source_verified_at": "2026-08-10",
-    "compiled_at": "2026-08-22"
+    "compiled_at": "2026-09-08",
+    "note": "Mixed-date snapshot: type 114 public configuration verified September 8 with raw receipts; other routes retain earlier source verification. See route_verifications."
   },
   "routes": [
     {
@@ -3111,7 +3112,7 @@
         {
           "name": "Contractor",
           "required": false,
-          "validatesLicense": false
+          "validatesLicense": true
         },
         {
           "name": "Engineer",
@@ -3225,5 +3226,12 @@
       "questionGroups": [],
       "submitSuccessMessage": "Thank you for your ADU/JADU submittal. A planner will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment."
     }
-  ]
+  ],
+  "route_verifications": {
+    "114": {
+      "verified_at": "2026-09-09T02:24:01Z",
+      "evidence": "zone-clearance-2026-09-08/mapping.json",
+      "scope": "Current public configuration and written instructions; authenticated UI and actual submission untested"
+    }
+  }
 }

@@ -8,13 +8,15 @@
     "applicant": "Alex Example (fictional)",
     "owner": "Jordan Example (fictional)",
     "email": "pool-demo@example.invalid",
-    "prior_review": "No City or private review has been completed for this sample plan version."
+    "prior_review": "No City or private review has been completed for this sample plan version.",
+    "square_footage": "288",
+    "demo_signature": "Alex Example (fictional)"
   },
   "project_facts": {
     "pool_width_ft": 12,
     "pool_length_ft": 24,
     "pool_area_sq_ft": 288,
-    "plan_revision": "DEMO-R1",
+    "plan_revision": "DEMO-R2",
     "real_parcel_apn": null,
     "real_zoning": null,
     "coastal_status": null,
@@ -24,12 +26,41 @@
   },
   "route": {
     "intended_rehearsal": "Zone Clearance intake",
-    "production_menu_id": null,
-    "production_mapping_status": "unverified",
+    "production_menu_id": 114,
+    "production_mapping_status": "public_configuration_verified",
     "eligibility_determined": false
   },
   "contacts": {
     "applicant_phone": "949-555-0100",
     "note": "Reserved fictional example phone; not a real contact"
+  },
+  "synthetic_site": {
+    "provenance": "Authored fictional concept only; no values describe City Hall or establish actual permit eligibility",
+    "lot_width_ft": 80,
+    "lot_depth_ft": 120,
+    "house_bounds_ft": [
+      20,
+      25,
+      40,
+      45
+    ],
+    "pool_origin_ft": [
+      40,
+      85
+    ],
+    "equipment_bounds_ft": [
+      56,
+      86,
+      6,
+      4
+    ],
+    "barrier_bounds_ft": [
+      34,
+      78,
+      32,
+      36
+    ],
+    "shallow_depth_ft": 3.5,
+    "deep_depth_ft": 6
   }
 }

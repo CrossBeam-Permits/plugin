@@ -147,6 +147,7 @@ $("submit").onclick = () =>
   act(async () => {
     $("submit").disabled = true;
     try {
+      await save();
       current = await request(`/api/cases/${current.id}/submit`, {});
       render();
     } finally {

@@ -60,8 +60,8 @@ The [September 8 release plan](docs/plans/PLAN-laguna-concierge-0908.md) defines
 homeowner-to-filing standard, verified behavior, remaining City/host dependencies, and
 the fictional video gates. A [local browser rehearsal](demos/laguna-pool/README.md) now
 supports sample uploads and durable demo receipts. Codex candidate installation and
-manual installed-helper/browser operations have passed; fresh-conversation activation
-is still unverified. Local demonstrations do not prove a live City filing.
-Zone Clearance requires online submission under the current City form, but its exact
-portal entry still needs verification. The revised ADU form needs remapping. Building
+manual installed-helper/browser operations have passed. Fresh CLI opening activation
+also passes; an uninterrupted desktop conversation-to-browser run is still unverified. Local demonstrations do not prove a live City filing.
+The current City public configuration verifies Zone Clearance under Residential
+Planning Entitlements, type 114. Authenticated screen layout remains unobserved. The revised ADU form needs remapping. Building
 application submission and final in-person permit issuance are separate milestones.

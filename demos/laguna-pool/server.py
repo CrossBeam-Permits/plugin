@@ -4,6 +4,7 @@ import argparse
 import base64
 import hashlib
 import json
+from decimal import Decimal, InvalidOperation
 import sqlite3
 from datetime import datetime, timezone
 from contextlib import closing
@@ -14,7 +15,7 @@ from uuid import uuid4
 
 ROOT = Path(__file__).resolve().parent
 LABEL = 'DEMONSTRATION — NOT A CITY SUBMISSION'
-FIELDS = ('address', 'description', 'applicant', 'owner', 'email', 'prior_review')
+FIELDS = ('address', 'description', 'applicant', 'owner', 'email', 'prior_review', 'square_footage', 'demo_signature')
 CATEGORIES = ('Application', 'Plans')
 LIMIT = 24 * 1024 * 1024
 
@@ -48,7 +49,15 @@ def validate_fields(fields):
         raise ValueError('Unexpected project fields')
     if any(not isinstance(v, (str, type(None))) or len(v or '') > 5000 for v in fields.values()):
         raise ValueError('Project values must be text or unknown (null)')
-    return {k: (fields.get(k) or '').strip() or None for k in FIELDS}
+    clean = {k: (fields.get(k) or '').strip() or None for k in FIELDS}
+    if clean['square_footage'] is not None:
+        try:
+            area = Decimal(clean['square_footage'])
+            if not area.is_finite() or area <= 0:
+                raise ValueError('Square footage must be a positive finite number')
+        except InvalidOperation as exc:
+            raise ValueError('Square footage must be a positive finite number') from exc
+    return clean
 
 
 def attachment(data):
@@ -92,9 +101,9 @@ def mutate(db, case_id, action, data):
         case['receipt'] = {
             'record_number': case['id'], 'label': LABEL,
             'submitted_at': datetime.now(timezone.utc).isoformat(),
-            'city_submission': False, 'payment': 'No payment — simulation',
+            'city_submission': False, 'signature_is_simulated': True, 'payment': 'No payment — simulation',
             'next_step': 'Demo complete. No City review, approval, or permit was requested.',
-            'mapping_status': 'Zone Clearance production entry remains unverified',
+            'mapping_status': 'Type 114 public configuration verified; screen layout and signature simulated',
         }
     else:
         raise LookupError('Unknown action')

@@ -23,9 +23,9 @@
           Prepare the paperwork and rehearse the submission, all in one place.
         </p>
         <p class="note">
-          Prototype: the exact City Zone Clearance entry is still unverified.
-          These screens simulate intake; they are not a verified replica of
-          Tyler's portal.
+          Zone Clearance uses Residential Planning Entitlements (type 114).
+          Required inputs follow the City’s public configuration. This screen
+          layout is a simulation.
         </p>
         <p id="case-id"></p>
         <p id="save-status" role="status"></p>
@@ -36,8 +36,7 @@
           <p class="eyebrow">LET'S BEGIN</p>
           <h2>Your fictional pool project</h2>
           <p>
-            Use sample files and fictional contacts. No account, signature, or
-            payment is needed.
+            Use sample files and fictional contacts. No City account or payment is needed. The signature step uses a fictional name.
           </p>
           <button id="create">Start demo application</button>
         </section>
@@ -60,6 +59,7 @@
                 rows="3"
               ></textarea>
             </label>
+            <label>Pool area (square feet)<input name="square_footage" type="number" min="0.01" step="any" /></label>
             <div class="grid">
               <label
                 >Fictional applicant<input
@@ -75,7 +75,7 @@
                 type="email"
                 autocomplete="off" /></label
             ><label
-              >Prior review for this plan version<textarea
+              >CrossBeam intake: prior review for this plan version<textarea
                 name="prior_review"
                 rows="2"
                 placeholder="Leave blank if unknown"
@@ -85,9 +85,8 @@
           <section id="documents" hidden>
             <h2>Add the sample packet</h2>
             <p>
-              Application and Plans mirror categories in the archived
-              Residential Planning map. Their applicability to Zone Clearance is
-              unverified.
+              Type 114 requires one Application PDF and one Plans PDF.
+              Include all applicable supporting materials in the sample packet.
             </p>
             <label
               >Application PDF<input
@@ -109,6 +108,7 @@
               No legal signature or fee is collected. Clicking below submits
               only to this local rehearsal.
             </p>
+            <label>Simulated signature — fictional name only<input name="demo_signature" form="project" autocomplete="off" /></label>
             <button id="submit">Submit demo application</button>
           </section>
         </section>

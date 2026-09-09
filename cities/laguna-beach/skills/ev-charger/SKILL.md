@@ -1,10 +1,11 @@
 ---
 name: ev-charger
 description: "Ev Charger permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Laguna Beach."
-version: "1.0"
-source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
-authority: "California Building Standards Commission / National Electrical Code with California Amendments"
-law_as_of: "January 1, 2025"
+metadata:
+  version: "1.0"
+  source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
+  authority: "California Building Standards Commission / National Electrical Code with California Amendments"
+  law_as_of: "January 1, 2025"
 ---
 
 # Laguna Beach — Ev Charger Permit

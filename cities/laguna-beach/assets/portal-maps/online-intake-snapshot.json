@@ -8935,7 +8935,7 @@
       {
         "name": "Contractor",
         "required": false,
-        "validatesLicense": false
+        "validatesLicense": true
       },
       {
         "name": "Engineer",

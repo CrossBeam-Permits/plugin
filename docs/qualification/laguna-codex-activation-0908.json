@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-08",
+  "host": "Codex CLI 0.153.4",
+  "method": "Three ephemeral read-only CLI sessions in empty directories; exact same natural-language prompt; no skill name in prompt",
+  "prompt": "Hey, we want to get a pool in Laguna Beach.",
+  "first_run": {
+    "answer": "I can help you work out the approval path and prepare the permit application. First, tell me:\n\n- **What\u2019s the property address?** Do you know whether it\u2019s in the coastal zone?\n- **What are you envisioning\u2014pool only, or pool and spa?** Will any part rise more than 3 feet above the adjacent legal ground level? \u201cNot sure\u201d is fine.\n- **Is the property oceanfront or near a coastal bluff?** If so, has a survey or geotechnical report identified the top of the bluff?\n\nIf you already have a sketch or plans, those can help us narrow this down.",
+    "answer_sha256": "4368f8ddf1adf40947b623bdd82b5c717fe9e1cbde143bda9d9ffa5eb555b028",
+    "events_sha256": "c2f70cdbe1089db866f668843b8c46e90626a01e1fcab854132448bd673dfb86",
+    "manual_verdict": "Automatic pool-skill selection passed, but first response omitted prior review and front-loaded technical questions; opening UX failed."
+  },
+  "retest": {
+    "answer": "I can help work out the City approval path and prepare the permit package. I can also help draft the project description and organize drawing inputs as the design develops.\n\n- What\u2019s the property address?\n- Are you thinking pool only, or pool plus spa?\n- Do you have drawings yet, and has the City or a private plan reviewer reviewed this version?",
+    "answer_sha256": "3796aa7ea41c5fc5688f7ba24b469dfa6fbb6221621e44c33de8d25b6895943b",
+    "events_sha256": "b689072796171864085abfa945ca50b374ff75cafb0520672abbf807e744e595",
+    "manual_verdict": "Pass: automatically read the installed pool skill and homeowner-journey reference; offered preparation help and asked three short opening questions about address, pool/spa scope, and drawings/prior review; no premature route conclusion.",
+    "installed_version": "0.4.0+codex.20260909021502",
+    "successful_reads": [
+      "skills/swimming-pool/SKILL.md",
+      "references/homeowner-journey.md"
+    ],
+    "pool_skill_sha256": "52725702ce69bc5bc31830cdecc5c1ca06cc442424329930124c3af7cfe86b43"
+  },
+  "browser_qualification": false,
+  "desktop_fresh_conversation_qualification": false,
+  "final_metadata_retest": {
+    "installed_version": "0.4.0+codex.20260909022054",
+    "answer": "I can help work out the approvals for your property, review plans, and prepare the permit packet. I can also help draft the project description and organize drawing inputs as the design develops.\n\n- What\u2019s the property address?\n- Are you thinking of a pool only, or a pool with a spa?\n- Do you have drawings yet, and has the City or a private plan reviewer reviewed this version?",
+    "events_sha256": "463bdfff6702c433d4f0e593e697656a8db8f7c01429e60062db2bc441f765b6",
+    "pool_skill_sha256": "988bb15ff111a06e95bc238afb10851b9652bd45776f0b63b4843bb900044e46",
+    "tool_reads": [
+      {
+        "command": "/bin/zsh -lc 'cat <installed-plugin>/0.4.0+codex.20260909022054/skills/swimming-pool/SKILL.md'",
+        "exit_code": 0,
+        "output_sha256": "988bb15ff111a06e95bc238afb10851b9652bd45776f0b63b4843bb900044e46"
+      },
+      {
+        "command": "/bin/zsh -lc 'cat <installed-plugin>/0.4.0+codex.20260909022054/references/homeowner-journey.md'",
+        "exit_code": 0,
+        "output_sha256": "d537243f4aa8b04da871aa35f4257f221943c80bda4d026f15d581cfe4ccfb07"
+      }
+    ],
+    "manual_verdict": "Pass: automatically read installed pool skill and homeowner journey, offered permit and drawing-input assistance, asked three opening questions including current-version review history, and did not guess a permit route. CLI opening only; desktop browser end-to-end remains unverified."
+  },
+  "evidence_scope": "Installed versions and hashes below precede the subsequent type 114 routing update. They prove opening activation for those exact artifacts; final candidate installation remains a separate gate."
+}

@@ -1,7 +1,7 @@
 {
   "observed_at": "2026-09-08",
   "method": "Codex in-app browser, public logged-out UI",
-  "status": "incomplete",
+  "status": "public_configuration_verified_authenticated_ui_unobserved",
   "source_page": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
   "official_form": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
   "verified_channel": "online; official Zone Clearance form page 1",
@@ -14,20 +14,200 @@
     "No account was entered and no application draft was created."
   ],
   "zone_clearance": {
-    "menu_id": null,
-    "type_id": null,
-    "category": null,
-    "required_fields": null,
-    "conditional_questions": null,
-    "attachment_categories": null,
-    "fee_timing": null,
-    "confirmation_semantics": null
+    "verified_at": "2026-09-09T02:24:01Z",
+    "method": "Four unauthenticated read-only GET requests to the City public portal API; raw bytes and SHA-256 receipts bundled alongside this mapping",
+    "status": "public_configuration_verified",
+    "menu_id": 114,
+    "portal_label": "Residential Planning Entitlements",
+    "module": "PLANS",
+    "category": "PLANNING ENTITLEMENTS",
+    "type_id": "d1c3da85-1287-4578-9312-bdc56e2ae963",
+    "work_class_id": "6c1ac741-1447-403d-a218-ac5715c6d9a9",
+    "apply_url": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114",
+    "decision": "Residential Zone Clearance uses this entry: the instructions keyed to this exact type/work-class explicitly direct a Zone Clearance Application when discretionary entitlement is not required. This is a reviewed semantic conclusion from the written City instructions, not a name/keyword route classifier.",
+    "instructions": {
+      "LocationInstructions": "ATTENTION: This application is for Residential Planning Entitlements only. Instructions: Click on the + sign to add a location. Enter address into the search field for the primary residence. Once populated, select the address. If address is not found, please click on \"Enter Manually.\"",
+      "BasicInfoInstructions": "Note: Please enter a detailed scope of work in the description field. Be sure to provide a comprehensive explanation of the work you plan to do, and ensure that this explanation matches your plans. Valuation is optional.",
+      "ContactInstructions": "Instructions: To search for an existing contact: Click the + sign. Enter the contact's name or business name in the search field. Once the search results are populated, select the contact you want to add and click the Add button. If the contact is not found: Click Enter Manually. Required Contacts: Applicant Owner Contractor (If applicable) Engineer (If applicable) Architect (If applicable)",
+      "MoreInfoInstructions": "Note: Please be sure to re view and submit all required documents to avoid delays in processing your application.",
+      "AttachmentInstructions": "Development applications submitted to the Planning Division must identify the specific entitlement or approval requested. Please complete and submit the applicable forms for each requested entitlement or approval. Consult the Laguna Beach Municipal Code to determine the requirements for your project. If no discretionary planning entitlement is required but zoning review is still necessary, submit a Zone Clearance Application. Attachments Note: To avoid delays, please submit all required documents. If you submit an incomplete application, we will send you a correction request before reviewing your plans. Instructions: Applicants must submit the following: All application forms that apply, based on the specific entitlements or approvals requested ( link to webpage ) All required application materials (plans, technical studies, etc.) as identified in the applicable application forms."
+    },
+    "required_inputs": {
+      "address": true,
+      "description": true,
+      "square_footage": true,
+      "valuation": false,
+      "signature": true
+    },
+    "contacts": [
+      {
+        "name": "Applicant",
+        "required": true,
+        "validates_license": false
+      },
+      {
+        "name": "Architect",
+        "required": false,
+        "validates_license": false
+      },
+      {
+        "name": "Contractor",
+        "required": false,
+        "validates_license": true
+      },
+      {
+        "name": "Engineer",
+        "required": false,
+        "validates_license": false
+      },
+      {
+        "name": "Owner",
+        "required": true,
+        "validates_license": false
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Technical Studies",
+        "required": false,
+        "allowed_file_types": ".pdf",
+        "maximum_files": null
+      },
+      {
+        "name": "Miscellaneous",
+        "required": false,
+        "allowed_file_types": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+        "maximum_files": null
+      },
+      {
+        "name": "Application",
+        "required": true,
+        "allowed_file_types": ".pdf",
+        "maximum_files": 1
+      },
+      {
+        "name": "Plans",
+        "required": true,
+        "allowed_file_types": ".pdf",
+        "maximum_files": 1
+      },
+      {
+        "name": "Reports",
+        "required": false,
+        "allowed_file_types": ".pdf",
+        "maximum_files": null
+      }
+    ],
+    "custom_question_groups": [],
+    "configured_success_message": "Thank you for your submittal. A planner will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment.",
+    "payment_and_receipt": "Configured message says staff contacts applicant for payment after submittal. Official Zone Clearance form p.1 says deemed received requires submission plus fee payment. Preserve submitted versus received/complete/approved/issued as separate states.",
+    "not_verified": [
+      "Authenticated page layout and conditional contact dialogs",
+      "An actual submitted record or payment",
+      "City review or permit issuance"
+    ],
+    "production_side_effects": false
   },
   "next_evidence_needed": [
-    "City documentation or test access identifying the exact Zone Clearance entry",
-    "Screenshots of every intake step including conditional fields, attachments, fees, and confirmation",
-    "Evidence tying those screens to the identified type and current portal revision"
+    "Align and verify demo against current public configuration",
+    "Authenticated visual walkthrough only if claiming exact City UI parity"
   ],
-  "demo_mapping": "Provisional local simulation. Application/Plans category names come from archived type 114; their applicability to Zone Clearance is unverified. No promotion of type 114 into the production Zone Clearance mapping.",
-  "documented_fee_condition": "Official Zone Clearance form p. 1 says the application is not deemed received until the required Zoning Plan Check fee is paid and the application is submitted. Actual portal payment sequence remains unobserved."
+  "demo_mapping": "Current public configuration verifies type 114 and Application/Plans categories. Local simulation still needs alignment with all required inputs; screen layout remains simulated.",
+  "documented_fee_condition": "Official Zone Clearance form p. 1 says the application is not deemed received until the required Zoning Plan Check fee is paid and the application is submitted. Actual portal payment sequence remains unobserved.",
+  "initial_logged_out_status": "incomplete",
+  "resolution": {
+    "verified_at": "2026-09-09T02:24:01Z",
+    "method": "Four unauthenticated read-only GET requests to the City public portal API; raw bytes and SHA-256 receipts bundled alongside this mapping",
+    "status": "public_configuration_verified",
+    "menu_id": 114,
+    "portal_label": "Residential Planning Entitlements",
+    "module": "PLANS",
+    "category": "PLANNING ENTITLEMENTS",
+    "type_id": "d1c3da85-1287-4578-9312-bdc56e2ae963",
+    "work_class_id": "6c1ac741-1447-403d-a218-ac5715c6d9a9",
+    "apply_url": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114",
+    "decision": "Residential Zone Clearance uses this entry: the instructions keyed to this exact type/work-class explicitly direct a Zone Clearance Application when discretionary entitlement is not required. This is a reviewed semantic conclusion from the written City instructions, not a name/keyword route classifier.",
+    "instructions": {
+      "LocationInstructions": "ATTENTION: This application is for Residential Planning Entitlements only. Instructions: Click on the + sign to add a location. Enter address into the search field for the primary residence. Once populated, select the address. If address is not found, please click on \"Enter Manually.\"",
+      "BasicInfoInstructions": "Note: Please enter a detailed scope of work in the description field. Be sure to provide a comprehensive explanation of the work you plan to do, and ensure that this explanation matches your plans. Valuation is optional.",
+      "ContactInstructions": "Instructions: To search for an existing contact: Click the + sign. Enter the contact's name or business name in the search field. Once the search results are populated, select the contact you want to add and click the Add button. If the contact is not found: Click Enter Manually. Required Contacts: Applicant Owner Contractor (If applicable) Engineer (If applicable) Architect (If applicable)",
+      "MoreInfoInstructions": "Note: Please be sure to re view and submit all required documents to avoid delays in processing your application.",
+      "AttachmentInstructions": "Development applications submitted to the Planning Division must identify the specific entitlement or approval requested. Please complete and submit the applicable forms for each requested entitlement or approval. Consult the Laguna Beach Municipal Code to determine the requirements for your project. If no discretionary planning entitlement is required but zoning review is still necessary, submit a Zone Clearance Application. Attachments Note: To avoid delays, please submit all required documents. If you submit an incomplete application, we will send you a correction request before reviewing your plans. Instructions: Applicants must submit the following: All application forms that apply, based on the specific entitlements or approvals requested ( link to webpage ) All required application materials (plans, technical studies, etc.) as identified in the applicable application forms."
+    },
+    "required_inputs": {
+      "address": true,
+      "description": true,
+      "square_footage": true,
+      "valuation": false,
+      "signature": true
+    },
+    "contacts": [
+      {
+        "name": "Applicant",
+        "required": true,
+        "validates_license": false
+      },
+      {
+        "name": "Architect",
+        "required": false,
+        "validates_license": false
+      },
+      {
+        "name": "Contractor",
+        "required": false,
+        "validates_license": true
+      },
+      {
+        "name": "Engineer",
+        "required": false,
+        "validates_license": false
+      },
+      {
+        "name": "Owner",
+        "required": true,
+        "validates_license": false
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Technical Studies",
+        "required": false,
+        "allowed_file_types": ".pdf",
+        "maximum_files": null
+      },
+      {
+        "name": "Miscellaneous",
+        "required": false,
+        "allowed_file_types": ".pdf,.tif,.tiff,.jpeg,.jpg,.png",
+        "maximum_files": null
+      },
+      {
+        "name": "Application",
+        "required": true,
+        "allowed_file_types": ".pdf",
+        "maximum_files": 1
+      },
+      {
+        "name": "Plans",
+        "required": true,
+        "allowed_file_types": ".pdf",
+        "maximum_files": 1
+      },
+      {
+        "name": "Reports",
+        "required": false,
+        "allowed_file_types": ".pdf",
+        "maximum_files": null
+      }
+    ],
+    "custom_question_groups": [],
+    "configured_success_message": "Thank you for your submittal. A planner will review your application to ensure all required information has been submitted, and contact you in 2 - 3 business days for payment.",
+    "payment_and_receipt": "Configured message says staff contacts applicant for payment after submittal. Official Zone Clearance form p.1 says deemed received requires submission plus fee payment. Preserve submitted versus received/complete/approved/issued as separate states.",
+    "not_verified": [
+      "Authenticated page layout and conditional contact dialogs",
+      "An actual submitted record or payment",
+      "City review or permit issuance"
+    ],
+    "production_side_effects": false
+  }
 }

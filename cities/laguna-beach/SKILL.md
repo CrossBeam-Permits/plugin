@@ -172,7 +172,7 @@ If browser control is unavailable, deliver a `portal_ready` packet, exact deep l
 
 ### 7. Finish at the real channel
 
-- Zone Clearance: the current official form requires online submittal. Prepare the packet and verify the live portal type with the City before creating a record; see `references/planning-routing.md`.
+- Zone Clearance: use the verified residential type 114 mapping and its current City instructions; see `references/planning-routing.md`. Perform normal visible portal drift checks and keep submission and fee-dependent receipt separate.
 - Standalone demolition: produce the Building packet and current counter/appointment handoff; never label it online-submitted.
 - ADU/JADU: submit Planning type 182 first. Create Building type 183 only after the Planning approval is effective.
 - Most Building types: online filing is complete at the confirmation, but later permit issuance is in person.

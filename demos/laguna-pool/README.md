@@ -1,10 +1,11 @@
 # Laguna pool browser rehearsal
 
 A local browser destination for a fictional agent demonstration. No City connection,
-account, signature, payment, or production record is created. The exact Zone Clearance
-portal entry is **unverified**. This is a provisional simulation, not a verified replica
-of the City portal. Its required fields and upload categories are rehearsal controls,
-not a statement of the City's complete requirements.
+account, legal signature, payment, or production record is created. Current public City
+configuration verifies Zone Clearance under **type 114, Residential Planning Entitlements**.
+This demo follows its required core inputs and Application/Plans PDF categories; the
+screen layout and fictional signature are simulated. Prior review is CrossBeam intake
+context. Required upload categories are not the City’s complete project checklist.
 
 ## Run
 
@@ -38,8 +39,10 @@ Use the Python dependencies declared in `cities/laguna-beach/requirements.txt`:
 python3 demos/laguna-pool/build-fixture.py --output-dir /absolute/private/demo-packet
 ```
 
-This creates a sample intake summary and sample plan inputs, both visibly fictional.
-The plan input PDF is not a construction plan or permit-ready plan sheet. Nothing in
+This creates a sample intake summary, a drawing register, and three visibly fictional
+concept sheets: project brief, dimensioned site layout, and pool section/equipment
+concept. `draw-plans.py` uses the shared synthetic geometry and a deterministic PDF
+canvas. These concepts are not construction plans or permit-ready plan sheets. Nothing in
 this generator establishes a permit route or professional compliance.
 
 To exercise the **installed plugin** against the official Zone Clearance form, acquire
@@ -84,3 +87,20 @@ The September 8 browser runs and Codex installation evidence are in
 manual installed-helper/browser operation, automatic skill activation in a fresh
 conversation, and production City filing are separate qualifications. Only the first
 two have evidence so far; do not report all four as passed.
+
+## Fresh-session activation test
+
+With the candidate installed and Codex authenticated, run this separately from browser
+qualification, using a new private output directory each time:
+
+```sh
+python3 cities/laguna-beach/evals/run-codex-activation.py \
+  --output-dir /absolute/private/new-activation-run
+```
+
+The runner opens an ephemeral read-only CLI session in an empty directory with only
+“Hey, we want to get a pool in Laguna Beach.” It saves the response and tool events for
+manual semantic review; process success alone is not a pass. The September 8 retest
+automatically selected the pool skill and read the homeowner journey, then asked about
+address, scope, and drawings/prior review. This proves CLI opening behavior, not a
+complete fresh-conversation run in the desktop filming app.

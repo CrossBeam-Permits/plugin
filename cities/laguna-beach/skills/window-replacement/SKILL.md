@@ -1,10 +1,11 @@
 ---
 name: window-replacement
 description: "Window Replacement permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Laguna Beach."
-version: "1.0"
-source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
-authority: "California Building Standards Commission"
-law_as_of: "January 1, 2025"
+metadata:
+  version: "1.0"
+  source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
+  authority: "California Building Standards Commission"
+  law_as_of: "January 1, 2025"
 ---
 
 # Laguna Beach — Window Replacement Permit

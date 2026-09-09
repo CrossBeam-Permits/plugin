@@ -189,8 +189,18 @@ def check_manifest_consistency() -> None:
             assert len(case["forms"]) == len(set(case["forms"]))
         used = {record["portal_type_id"] for record in case["records"] if record["portal_type_id"] is not None}
         assert not used.intersection(case.get("forbidden_portal_type_ids", []))
+    evidence = ROOT / "assets/portal-maps/zone-clearance-2026-09-08"
+    for receipt in load(evidence / "receipts.json"):
+        assert hashlib.sha256((evidence / (receipt["name"] + ".json")).read_bytes()).hexdigest() == receipt["sha256"]
+    proof = load(evidence / "mapping.json")
+    assert proof["menu_id"] == routes[114]["menuId"]
+    assert proof["type_id"] == routes[114]["typeId"]
+    assert proof["work_class_id"] == routes[114]["workClassId"]
+    assert proof["required_inputs"]["square_footage"] == routes[114]["requires"]["squareFootage"]
+    assert {a["name"] for a in proof["attachments"] if a["required"]} == set(routes[114]["requiredAttachments"])
+    assert proof["custom_question_groups"] == routes[114]["questionGroups"]
     zone = next(item for item in planning if item["id"] == "zone-clearance-only")
-    assert zone["records"] == [{"lane": "planning", "channel": "unverified", "portal_type_id": None}]
+    assert zone["records"] == [{"lane": "planning", "channel": "online", "portal_type_id": 114}]
 
     building = load(ROOT / "evals/building/cases.json")["cases"]
     portal_questions = {
