@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-08",
+  "codex_cli_version": "0.153.4",
+  "package_version": "0.4.0",
+  "source_commit": "42edec5e7a22f9166196b9c0ba77212b1f603d0b",
+  "installation_method": "CLI installation from a temporary local marketplace containing an exact copy of the worktree city directory",
+  "marketplace_install": "pass",
+  "cache_file_comparison": {
+    "files": 227,
+    "mismatches": 0,
+    "source_tree_sha256": "5b7326d024a0a36efa347b650449f178db1fab097d63acf737e5edbeada763e1"
+  },
+  "app_server_skills_list": {
+    "enabled": 23,
+    "discovered": 23,
+    "names": [
+      "laguna-beach:block-wall",
+      "laguna-beach:cleanout",
+      "laguna-beach:deck-patio-repair",
+      "laguna-beach:ev-charger",
+      "laguna-beach:fence",
+      "laguna-beach:fireworks-temp-use",
+      "laguna-beach:hvac",
+      "laguna-beach:laguna-permit-preparer",
+      "laguna-beach:ltia-demolition",
+      "laguna-beach:panel-upgrade",
+      "laguna-beach:patio-cover",
+      "laguna-beach:pool-demolition",
+      "laguna-beach:repipe",
+      "laguna-beach:reroof",
+      "laguna-beach:retaining-wall",
+      "laguna-beach:rewire",
+      "laguna-beach:siding-replacement",
+      "laguna-beach:sign",
+      "laguna-beach:solar",
+      "laguna-beach:swimming-pool",
+      "laguna-beach:temporary-power",
+      "laguna-beach:water-heater",
+      "laguna-beach:window-replacement"
+    ],
+    "errors": []
+  },
+  "fresh_conversation_activation": "not_tested",
+  "installed_helpers_to_browser_end_to_end": "Manual installed-helper test passed: official Zone Clearance source hash check, six synthetic facts filled/verified, labeled PDF uploaded through Codex in-app browser to local demo receipt. Not a fresh-conversation activation test or production mapping qualification.",
+  "public_remote_marketplace_install": "not_tested",
+  "cowork": "not_tested",
+  "chatgpt_work": "not_tested"
+}

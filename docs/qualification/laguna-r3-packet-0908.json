@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-08",
+  "revision": "DEMO-R3",
+  "purpose": "Fictional local filming packet; no real survey, engineering, legal execution or City filing readiness",
+  "plan_pages": 6,
+  "supporting_exhibit_pages": 4,
+  "official_application_plus_exhibits_pages": 47,
+  "mapped_text_fields_verified": 20,
+  "visual_review": "All six plans and four exhibits inspected; appended exhibits inspected in combined PDF; mapped contact/scope pages previously inspected",
+  "files": {
+    "sample-plans.pdf": "d4084227dd66d3ef5ec1fb540371b2e35b386ba16849df420cfb6d57cfe57917",
+    "fictional-exhibits.pdf": "dfc7faadfd64b832329e5e997e2c09d50d71ea21f695a4fd835d4925f4a15f4f",
+    "zone-clearance-demo.pdf": "f72d6e064f33f669542041fd065086c757ec74502bda9595d18b4892d6ec0d19"
+  },
+  "component_coverage": "Authored fictional exhibits cover the rehearsal register; actual professional/code conformance and legal signatures are not qualified",
+  "construction_or_city_filing_ready": false
+}

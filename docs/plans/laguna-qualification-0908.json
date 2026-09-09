@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-08",
+  "release_candidate": "0.4.0",
+  "baseline_commit": "88323a8ab244bae92f6962481bc274d1650e60e1",
+  "instruction_model_evals": {
+    "passed": 9,
+    "total": 9,
+    "method": "Tool-free Claude print CLI and separate structured semantic grading. One run per case. First-exchange case rerun after a targeted UX correction; context hashes preserve both evaluated versions. No installation or browser-transaction qualification implied.",
+    "cases": [
+      {
+        "case": "mixed-remodel-pool-adu",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "689b06132fa8563dbe408aa7df2ef6be8e1abf005b275359c39d7586131eac6e"
+      },
+      {
+        "case": "pool-bluff-geotech",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "f31edcb3a44b3b5ed3e89952ac195d3b21f6250d65f833c2d5f11d8d5fb6faaf"
+      },
+      {
+        "case": "pool-design-review-coastal",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "57138161451a532cc3673ea23f692a142488688555f19ddd5910f5ac56125f09"
+      },
+      {
+        "case": "pool-equipment-six-part",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "a8a644eeaf2a748c16b065444abb870d80f26022f5a0b8d2252bee8200f13edd"
+      },
+      {
+        "case": "pool-no-plans",
+        "passed": true,
+        "context_sha256": "907236db0b0e62fb7deac10658fde60f343296b46dcb58ce49bbcaf0e171ca70",
+        "response_sha256": "66b47cd3b5e89d763a753e5c4819207ea7bb1b0665f806f1fdfee508d7f19824"
+      },
+      {
+        "case": "pool-unknowns",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "2a1e1d4b4fa415616fdce2409250e14c4d53c655904c1b51c0ce05d8237b98d3"
+      },
+      {
+        "case": "pool-zone-clearance",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "f973406147b09b6e238347e902bfb2fcb3ee01dff32d030de192387067c5a057"
+      },
+      {
+        "case": "private-review-not-city-approval",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "778ae7579a39ff23599eddabf1d73d43266b8aa54a567ec490cc585c78cf8352"
+      },
+      {
+        "case": "submission-confirmation",
+        "passed": true,
+        "context_sha256": "ccc3e2498b8461ea0bc7652ff1826560fa1daf4eb37f8b5c45932ceefb808dfc",
+        "response_sha256": "b99f9fd46cb88667893e6866102638c182efc5214181f7b04b41f094815eb1fa"
+      }
+    ]
+  },
+  "deterministic": "pass",
+  "codex_manifest_and_23_skill_names": "pass",
+  "claude_manifest_and_marketplace": "pass",
+  "remote_ordinance_receipts": "pass",
+  "official_dr_full_targets": 205,
+  "official_dr_partial_filled": 89,
+  "official_dr_withheld_targets_blank": 116,
+  "official_dr_unknown_conformance_facts_blank": 13,
+  "official_dr_visual_review": "pass: pages 2 and 25",
+  "official_pdf_dependencies": {
+    "pypdf": "6.18.0",
+    "reportlab": "4.5.1"
+  },
+  "browser_observation": "Authenticated real Tyler type 114 wizard verified through nonempty server uploads and Signature; see ../qualification/laguna-real-tyler-0909.json.",
+  "live_submission": "not_run",
+  "host_installations": "Codex candidate install/discovery and fresh CLI opening activation passed; desktop whole journey and other hosts unverified",
+  "release_ready": false,
+  "blockers": [
+    "Qualify installation and browser workflow on each promoted host",
+    "Production submission and corrections/issuance remain untested; synthetic demo does not qualify these",
+    "Remap revised ADU form before claiming ADU preparation support"
+  ],
+  "demo_qualification": {
+    "scope": "User-authorized fictional project in real Tyler through uploads; no legal signature or final submission",
+    "ready": true,
+    "primary_host": "Codex: candidate installation/discovery and manual helper/browser operations verified",
+    "zone_clearance_mapping": "Authenticated type 114 visible fields and upload categories verified",
+    "fictional_packet": "DEMO-R3: six plan sheets, four fictional exhibits, 47-page combined official-form rehearsal. Component coverage for fictional filming only; no actual City filing readiness.",
+    "browser_demo_destination": "Real Tyler portal; previous local simulation evidence retained as historical only",
+    "installed_host_browser_run": "Manual installed-helper/browser run passed with eight values and two exact files; fresh CLI opening separately passed",
+    "end_to_end_rehearsal": "Fresh CLI prepared 53 fields and reached browser upload, then blocked on Chrome file access. Parent in-app browser recovery passed eight values/two files. Uninterrupted fresh desktop test remains pending.",
+    "production_submission_required": false,
+    "blockers": [],
+    "fresh_cli_activation": "Passed after fixing direct swimming-pool skill opening; see ../qualification/laguna-codex-activation-0908.json. Desktop whole-journey activation remains unverified.",
+    "mapped_browser_evidence": "../qualification/laguna-mapped-browser-0908.json",
+    "official_form_text_completion": "20 mapped text fields filled and visually verified; non-widget declarations and supporting exhibits remain open",
+    "component_register": "../../demos/laguna-pool/packet-components.json",
+    "fresh_rehearsal_evidence": "../qualification/laguna-fresh-rehearsal-0908.json",
+    "r3_packet_evidence": "../qualification/laguna-r3-packet-0908.json",
+    "real_portal_evidence": "../qualification/laguna-real-tyler-0909.json"
+  },
+  "evidence_directory": "../qualification",
+  "zone_clearance_routing_retest": {
+    "kind": "instruction-only-model-eval",
+    "context_sha256": "5e70f7c7db45d1db9d3557bc91bc671d3f9f2d518fb3ec09fa044bb61834de20",
+    "cases": [
+      {
+        "case": "pool-zone-clearance",
+        "prompt": "Use the Laguna Beach permit-preparer skill. My proposed in-ground pool's highest point is\n2 feet above adjacent legal ground elevation. The parcel is outside the coastal zone, is\nnot oceanfront or bluff-adjacent, and none of the environmentally sensitive-area triggers\napply. What is the Planning route and filing channel? Do not submit anything.",
+        "answer": "Your pool structure routes to Zone Clearance. The filing channel is online.\n\n| Item | Result |\n|---|---|\n| Pool structure tier | Zone Clearance |\n| Pool equipment tier | Undetermined, pending the six-part test |\n| Channel | Online, portal type 114, Residential Planning Entitlements, PLANS module |\n\nThe governing authority is LBMC \u00a725.05.040(B)(2)(t), as enacted by Urgency Ordinance 1732 and extended by Ordinance 1733. A pool no more than three feet above adjacent legal ground elevation falls on the Zone Clearance list rather than the Design Review Board list at (B)(1)(j). Your stated facts also clear the coastal development permit, oceanfront bluff setback, and environmentally sensitive area branches, so no Design Review tier is implicated by the structure itself.\n\nThe equipment routes independently and I cannot resolve it from what you have given. All six of these must be yes, and any single no moves the equipment to Administrative Design Review, which would raise the governing tier for the whole record and add a Design Review Application:\n\n- Ground-mounted, or wall-mounted at ground level.\n- Outside required front and side yard setbacks.\n- At least five feet from every property line.\n- Manufacturer specification sheet supplies the decibel rating, sound stays within the daytime and nighttime limits at the property line, and two maintained sound-attenuation techniques are provided.\n- The City sound form shows the property-line calculation under ARI Standard 275.\n- A three-foot path of travel remains around every structure.\n\nOn the channel, the City's instructions keyed to the type and work class for type 114 direct a Zone Clearance Application where no discretionary entitlement is required. That configuration requires a location, description, square footage, signature, Applicant and Owner contacts, and one PDF each in the Application and Plans upload slots. These are verified public configuration requirements. The authenticated screens and an actual filing have not been exercised, so I would re-check the visible portal before any real submission.\n\nOne timing point worth knowing now. The official application ties receipt to submission plus the Zoning Plan Check fee, so a submitted and unpaid application is not yet received.\n\nStill open before I can build a filing theory:\n\n- The property address, and whether any spa is included and its type and capacity.\n- The six equipment facts above.\n- Whether the lot is ungraded or mapped in a floodplain, either of which triggers a geotechnical or floodplain branch that is screened separately from the Design Review tier.\n\nNothing has been prepared or submitted. Give me the address and your available plans and I will start the fact table and the Zone Clearance packet. The Building permit for the pool is a separate record filed after Planning approval.",
+        "passed": true,
+        "reason": "All rubric requirements are satisfied. The response routes the pool structure to Zone Clearance under LBMC 25.05.040(B)(2)(t), contrasting it with the Design Review list at (B)(1)(j) and confirming the 2-foot height sits under the three-foot threshold. It calls for the Zone Clearance Application packet and online submission, carrying the official form's receipt condition that an application is not received until submitted with the Zoning Plan Check fee; the page number is not cited explicitly, but the substance of the first-page instruction is present. It identifies portal type 114 and attributes it to the City's type and work-class instructions, adding the Residential Planning Entitlements work class and PLANS module. It draws the verification line cleanly: field, contact, and upload-slot requirements are labeled verified public configuration, while authenticated screens and an actual filing are stated as not exercised, with advice to re-check the visible portal before filing. No appointment-only intake is claimed, no same-day over-the-counter approval is claimed, and the response states plainly that nothing has been prepared or submitted. The additional six-part pool equipment test and the geotechnical and floodplain screening are extra scope but are framed as independent branches and open questions, so they do not contradict the structure routing."
+      }
+    ]
+  }
+}

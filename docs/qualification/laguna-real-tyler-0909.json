@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-09-09",
+  "kind": "authenticated-real-Tyler-browser-test",
+  "host": "Codex in-app browser",
+  "route": "Residential Planning Entitlements",
+  "url": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114/0/0",
+  "location": "505 Forest Avenue, fictional project only",
+  "verified": [
+    "authenticated wizard",
+    "address lookup",
+    "description and square footage entry",
+    "automatic applicant and explicit fictional owner",
+    "More Info has no custom question inputs",
+    "nonempty Application and Plans cards",
+    "Next uploads files to Tyler and advances to Signature",
+    "Save Draft success and resumed project details",
+    "attachments absent upon draft resumption; reattached and uploaded again"
+  ],
+  "attachment_bytes": {
+    "Application": 8925401,
+    "Plans": 11751
+  },
+  "signature_entered": false,
+  "application_submitted": false,
+  "draft_saved": true,
+  "corrected_defects": [
+    "short application URL redirected home",
+    "missing local file path created zero-byte card; replaced with verified 11751-byte PDF"
+  ],
+  "limitations": [
+    "No file download or server hash was exposed for independent byte comparison",
+    "No legal signature, Review and Submit, payment, correction or issuance qualification",
+    "No other host or Building application qualification"
+  ],
+  "privacy": "Account identity, home address, session data and raw browser output excluded."
+}

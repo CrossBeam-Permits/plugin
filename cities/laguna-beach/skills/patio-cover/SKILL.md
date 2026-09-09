@@ -1,9 +1,11 @@
 ---
+name: patio-cover
 description: "Patio Cover permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions patio cover in Laguna Beach."
-version: "1.0"
-source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
-authority: "California Building Standards Commission"
-law_as_of: "January 1, 2025"
+metadata:
+  version: "1.0"
+  source: "2025 California Residential Code (Title 24, Part 2.5) — Appendix H, R301, R403, R507.9, R802; California Building Code (Title 24, Part 2) — Section 1507"
+  authority: "California Building Standards Commission"
+  law_as_of: "January 1, 2025"
 ---
 
 # Laguna Beach — Patio Cover Permit

@@ -76,6 +76,20 @@ def main() -> int:
     missing_scopes = sorted(required_scopes - scope_skills)
     if missing_scopes:
         raise SystemExit(f"city scope skills missing from the plugin: {missing_scopes}")
+    for scope in sorted(scope_skills):
+        skill_text = (root / "skills" / scope / "SKILL.md").read_text(encoding="utf-8")
+        if not skill_text.startswith("---\n"):
+            raise SystemExit(f"skill {scope} has no YAML frontmatter")
+        frontmatter = skill_text.split("---", 2)[1].splitlines()
+        allowed_keys = {"name", "description", "license", "metadata", "allowed-tools"}
+        top_keys = {line.split(":", 1)[0] for line in frontmatter
+                    if line and not line[0].isspace() and not line.startswith("#")}
+        unexpected = sorted(top_keys - allowed_keys)
+        if unexpected:
+            raise SystemExit(f"skill {scope} has unsupported top-level metadata: {unexpected}; nest it under metadata")
+        if f"name: {scope}" not in frontmatter:
+            raise SystemExit(f"skill {scope} needs its canonical name for Codex discovery")
+
     if len(scope_skills) < 23:
         raise SystemExit(f"expected 22 city skills plus the preparer, found {len(scope_skills)}")
 
@@ -84,6 +98,8 @@ def main() -> int:
     for name in ("laguna-beach",):
         if name not in entries:
             raise SystemExit(f"marketplace entry is missing: {name}")
+    if len({claude_manifest["version"], codex_manifest["version"], entries["laguna-beach"]["version"]}) != 1:
+        raise SystemExit("Laguna Claude, Codex, and marketplace versions must agree")
     city_source = entries["laguna-beach"]["source"]
     if city_source != {
         "source": "git-subdir",

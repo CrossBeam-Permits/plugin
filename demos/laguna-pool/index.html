@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CrossBeam · Laguna pool demonstration</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">
+      DEMONSTRATION — FICTIONAL PROJECT — NOT A CITY SUBMISSION
+    </div>
+    <header>
+      <span class="wordmark">CrossBeam</span
+      ><span>Laguna Beach · permit rehearsal</span>
+    </header>
+    <main>
+      <aside>
+        <p class="eyebrow">YOUR PROJECT</p>
+        <h1>A pool.<br />A clear next step.</h1>
+        <p>
+          Prepare the paperwork and rehearse the submission, all in one place.
+        </p>
+        <p class="note">
+          Zone Clearance uses Residential Planning Entitlements (type 114).
+          Required inputs follow the City’s public configuration. This screen
+          layout is a simulation.
+        </p>
+        <p id="case-id"></p>
+        <p id="save-status" role="status"></p>
+      </aside>
+      <article>
+        <p id="error" role="alert" hidden></p>
+        <section id="start">
+          <p class="eyebrow">LET'S BEGIN</p>
+          <h2>Your fictional pool project</h2>
+          <p>
+            Use sample files and fictional contacts. No City account or payment is needed. The signature step uses a fictional name.
+          </p>
+          <button id="create">Start demo application</button>
+        </section>
+        <section id="workflow" hidden>
+          <nav aria-label="Application steps">
+            <button data-step="0">1 · Project</button
+            ><button data-step="1">2 · Documents</button
+            ><button data-step="2">3 · Review</button>
+          </nav>
+          <form id="project">
+            <h2>Tell us about the project</h2>
+            <label
+              >Demo address<input name="address" autocomplete="off" /></label
+            ><small
+              >505 Forest Avenue is a placeholder; this is not a proposal for
+              City Hall.</small
+            ><label
+              >Project description<textarea
+                name="description"
+                rows="3"
+              ></textarea>
+            </label>
+            <label>Pool area (square feet)<input name="square_footage" type="number" min="0.01" step="any" /></label>
+            <div class="grid">
+              <label
+                >Fictional applicant<input
+                  name="applicant"
+                  autocomplete="off" /></label
+              ><label
+                >Fictional owner<input name="owner" autocomplete="off"
+              /></label>
+            </div>
+            <label
+              >Fictional email<input
+                name="email"
+                type="email"
+                autocomplete="off" /></label
+            ><label
+              >CrossBeam intake: prior review for this plan version<textarea
+                name="prior_review"
+                rows="2"
+                placeholder="Leave blank if unknown"
+              ></textarea></label
+            ><button type="submit">Save and continue</button>
+          </form>
+          <section id="documents" hidden>
+            <h2>Add the sample packet</h2>
+            <p>
+              Type 114 requires one Application PDF and one Plans PDF.
+              Include all applicable supporting materials in the sample packet.
+            </p>
+            <label
+              >Application PDF<input
+                type="file"
+                id="application"
+                accept="application/pdf"
+            /></label>
+            <p id="application-file">No file uploaded</p>
+            <label
+              >Plans PDF<input type="file" id="plans" accept="application/pdf"
+            /></label>
+            <p id="plans-file">No file uploaded</p>
+            <button id="review">Review application</button>
+          </section>
+          <section id="review-panel" hidden>
+            <h2>Review your demo application</h2>
+            <div id="review-data"></div>
+            <p>
+              No legal signature or fee is collected. Clicking below submits
+              only to this local rehearsal.
+            </p>
+            <label>Simulated signature — fictional name only<input name="demo_signature" form="project" autocomplete="off" /></label>
+            <button id="submit">Submit demo application</button>
+          </section>
+        </section>
+        <section id="receipt" hidden>
+          <p class="eyebrow">DEMONSTRATION COMPLETE</p>
+          <h2>Your demo submission is saved.</h2>
+          <p id="receipt-id" class="receipt-number"></p>
+          <p>
+            This is a sample receipt. Nothing has been submitted to the City.
+          </p>
+          <div id="receipt-data"></div>
+          <a id="download">Download demo receipt and manifest</a>
+        </section>
+      </article>
+    </main>
+    <footer>
+      CrossBeam demonstration · No City account or production connection
+    </footer>
+  </body>
+</html>

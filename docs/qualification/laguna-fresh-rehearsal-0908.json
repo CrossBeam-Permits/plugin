@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-08",
+  "host": "Codex CLI 0.153.4 with CUA Chrome extension",
+  "installed_version": "0.4.0+codex.20260909024945",
+  "source_payload_files_compared": 234,
+  "source_payload_mismatches": [],
+  "manifest_difference": "version cachebuster only",
+  "method": "One fresh ephemeral session from supplied fictional inputs through independent PDF preparation and browser entry; no interventions before terminal response",
+  "exit_code": 0,
+  "uninterrupted_workflow_pass": false,
+  "prepared_pdf_pages": 47,
+  "fields_independently_verified": 53,
+  "browser_case_id": "DEMO-4A15FDD1FDAA",
+  "terminal_state": "saved draft; upload blocked; no receipt at CLI completion",
+  "failure": "Chrome filechooser.setFiles returned Not allowed; native Chrome control was not approved. No browser permissions were changed.",
+  "input_request_sha256": "28fc23bda1cc93b358b9a282a2fba4f989c24117df3e28d167e37db5b15f7de3",
+  "events_sha256": "aa6915a9b0f8a7bae23423417afa7738a75976bfaafb12f9e98b3a3f0422adcd",
+  "answer_sha256": "967471d4644c3a7335f7a58fc6c16797b61707de7eef5160fbf4c281709319ec",
+  "later_recovery": {
+    "case_id": "DEMO-4A15FDD1FDAA",
+    "city_submission": false,
+    "fields_compared": 8,
+    "files_compared": 2,
+    "receipt": {
+      "record_number": "DEMO-4A15FDD1FDAA",
+      "label": "DEMONSTRATION \u2014 NOT A CITY SUBMISSION",
+      "submitted_at": "2026-09-09T03:00:09.739783+00:00",
+      "city_submission": false,
+      "signature_is_simulated": true,
+      "payment": "No payment \u2014 simulation",
+      "next_step": "Demo complete. No City review, approval, or permit was requested.",
+      "mapping_status": "Type 114 public configuration verified; screen layout and signature simulated"
+    },
+    "uploaded_files": {
+      "Application": {
+        "name": "DEMO-Application.pdf",
+        "size": 8925401,
+        "sha256": "ff31bd0df165c929c64b8a332237820f8021aa4b59200ccc47c14371b4bf1efd"
+      },
+      "Plans": {
+        "name": "fictional-plans.pdf",
+        "size": 11751,
+        "sha256": "d4084227dd66d3ef5ec1fb540371b2e35b386ba16849df420cfb6d57cfe57917"
+      }
+    },
+    "result": "pass"
+  },
+  "recovery_method": "Parent task resumed the same draft in Codex in-app browser, uploaded the fresh session files, entered simulated name and submitted. Reload retained same receipt. This is assisted recovery, not an uninterrupted fresh-session pass."
+}

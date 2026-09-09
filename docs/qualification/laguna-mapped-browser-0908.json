@@ -1,0 +1,39 @@
+{
+  "case_id": "DEMO-039D4971B958",
+  "city_submission": false,
+  "fields_compared": 8,
+  "files_compared": 2,
+  "receipt": {
+    "record_number": "DEMO-039D4971B958",
+    "label": "DEMONSTRATION \u2014 NOT A CITY SUBMISSION",
+    "submitted_at": "2026-09-09T02:36:06.310900+00:00",
+    "city_submission": false,
+    "signature_is_simulated": true,
+    "payment": "No payment \u2014 simulation",
+    "next_step": "Demo complete. No City review, approval, or permit was requested.",
+    "mapping_status": "Type 114 public configuration verified; screen layout and signature simulated"
+  },
+  "uploaded_files": {
+    "Application": {
+      "name": "zone-clearance-demo.pdf",
+      "size": 9086762,
+      "sha256": "238d642e2a2103da71c83c8c087160b6fffe461d5f3edc6557692f2c4cdd1b87"
+    },
+    "Plans": {
+      "name": "sample-plans.pdf",
+      "size": 6574,
+      "sha256": "486509005916fa8c03d1309e979675e86f4d9793d8b8faa14128013449921265"
+    }
+  },
+  "result": "pass",
+  "method": "Codex in-app browser, manual agent-operated run on mapped local demo",
+  "observed_at": "2026-09-08",
+  "missing_signature_and_uploads_blocked": true,
+  "reload_same_receipt": true,
+  "whole_fresh_conversation": false,
+  "limitations": [
+    "Screen layout and signature simulated",
+    "Official PDF has six known fields filled; complete fictional project packet remains outstanding",
+    "This is not a City submission"
+  ]
+}

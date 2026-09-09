@@ -7,7 +7,7 @@ on:
       - "cities/laguna-beach/**"
       - "data/**"
       - "scripts/**"
-      - "cities/laguna-beach/**"
+      - "demos/laguna-pool/**"
       - ".github/workflows/laguna-permit-skill.yml"
   push:
     branches: [main]
@@ -16,7 +16,7 @@ on:
       - "cities/laguna-beach/**"
       - "data/**"
       - "scripts/**"
-      - "cities/laguna-beach/**"
+      - "demos/laguna-pool/**"
   workflow_dispatch:
 
 permissions:
@@ -50,13 +50,33 @@ jobs:
       - name: Run deterministic contract and form-map evals
         working-directory: cities/laguna-beach
         run: python evals/run-evals.py
+      - name: Test fictional browser demo transactions
+        run: python -m unittest discover -s demos/laguna-pool -p "test_*.py" -v
       - name: Validate marketplace and submit plugin
         run: |
           claude plugin validate . --strict
           python cities/laguna-beach/scripts/validate-plugin.py
 
+  model-availability:
+    runs-on: ubuntu-latest
+    outputs:
+      available: ${{ steps.credentials.outputs.available }}
+    steps:
+      - id: credentials
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -n "$ANTHROPIC_API_KEY$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "Model behavior NOT VERIFIED: no credential configured. The model job is skipped; deterministic success is not a release qualification." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
   model-evals:
-    needs: deterministic
+    needs: [deterministic, model-availability]
+    if: ${{ needs.model-availability.outputs.available == 'true' }}
     runs-on: ubuntu-latest
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -66,24 +86,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Install Claude Code
         run: npm install --global @anthropic-ai/claude-code
-      - name: Run model routing evals with a no-plugin baseline
-        if: ${{ env.ANTHROPIC_API_KEY != '' || env.CLAUDE_CODE_OAUTH_TOKEN != '' }}
-        run: >-
-          claude plugin eval cities/laguna-beach
-          --runs 3
-          --ablation with-without
-          --no-scaffold
-          --no-publish
-          --threshold 1
-          --output-dir cities/laguna-beach/evals/model/results/ci
-      - name: Report unavailable model credentials
-        if: ${{ env.ANTHROPIC_API_KEY == '' && env.CLAUDE_CODE_OAUTH_TOKEN == '' }}
-        run: echo "Model evals skipped because this repository has no Claude credential secret."
+      - name: Run actual instruction behavior evals
+        run: python cities/laguna-beach/evals/run-model-evals.py --output-dir model-results
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: laguna-plugin-model-evals
-          path: cities/laguna-beach/evals/model/results/ci
-          if-no-files-found: ignore
+          path: model-results
+          if-no-files-found: error

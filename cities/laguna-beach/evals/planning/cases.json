@@ -4,26 +4,63 @@
     {
       "id": "27-smithcliffs-new-coastal-sfd",
       "address": "27 Smithcliffs Road, Laguna Beach, CA",
-      "forms": ["design-review-application", "coastal-development-permit-application", "variance-application"],
-      "records": [{"lane": "planning", "channel": "online", "portal_type_id": 114}],
-      "forbidden_portal_type_ids": [183],
+      "forms": [
+        "design-review-application",
+        "coastal-development-permit-application",
+        "variance-application"
+      ],
+      "records": [
+        {
+          "lane": "planning",
+          "channel": "online",
+          "portal_type_id": 114
+        }
+      ],
+      "forbidden_portal_type_ids": [
+        183
+      ],
       "application_pdf_count": 1
     },
     {
       "id": "remodel-pool-adu-coastal",
-      "forms": ["design-review-application", "adu-application", "coastal-development-permit-application"],
+      "forms": [
+        "design-review-application",
+        "adu-application",
+        "coastal-development-permit-application"
+      ],
       "records": [
-        {"lane": "planning", "channel": "online", "portal_type_id": 114},
-        {"lane": "planning", "channel": "online", "portal_type_id": 182}
+        {
+          "lane": "planning",
+          "channel": "online",
+          "portal_type_id": 114
+        },
+        {
+          "lane": "planning",
+          "channel": "online",
+          "portal_type_id": 182
+        }
       ],
       "unique_forms": true,
-      "forbidden_portal_type_ids": [183]
+      "forbidden_portal_type_ids": [
+        183
+      ]
     },
     {
       "id": "zone-clearance-only",
-      "forms": ["zone-clearance-application"],
-      "records": [{"lane": "planning", "channel": "appointment", "portal_type_id": null}],
-      "forbidden_portal_type_ids": [114, 182, 183]
+      "forms": [
+        "zone-clearance-application"
+      ],
+      "records": [
+        {
+          "lane": "planning",
+          "channel": "online",
+          "portal_type_id": 114
+        }
+      ],
+      "forbidden_portal_type_ids": [
+        182,
+        183
+      ]
     }
   ]
 }
