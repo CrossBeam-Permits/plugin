@@ -36,6 +36,15 @@ Stop on a new field, changed wording, new validation, unsupported address, licen
 
 ## P4 - Upload and verify
 
+Authenticated type 114 verification (2026-09-09) found:
+
+- Follow the full catalog URL `#/plan/apply/114/0/0`; the shortened `#/plan/apply/114` redirected home.
+- Before opening a chooser, verify each absolute local path exists, is nonempty, and matches its packet hash. The browser bridge can produce a zero-byte file from a missing path. Reject any zero-byte attachment card.
+- Selecting files creates cards; Next triggers the actual Saving Files transfer. Wait until it completes and the Signature step appears before reporting upload success.
+- Tyler explicitly reports that attachments cannot be saved in a draft. On resumption, inspect and reattach the exact files; a saved project draft does not prove file persistence.
+- Signature consent and an electronic signature are required before Review and Submit. A demonstration authorized only through uploads stops here without signing.
+
+
 - Upload each exact local file to its mapped City category.
 - Re-read category, filename, completion state, and file count.
 - Where preview/download is exposed, verify the first and last page or hash/download receipt so an older same-named file is not mistaken for the current one.

@@ -1,7 +1,9 @@
 # Laguna Beach permit concierge — release standard and execution
 
 Date: 2026-09-08. Baseline: public main `88323a8` (PRs #4 and #5).
-Status: local checks, Codex installation/discovery, and manual installed-helper-to-demo-browser rehearsal passed. Fresh CLI opening activation also passes after a direct-scope fix. Public City configuration now verifies the Zone Clearance entry and required inputs. The uninterrupted fresh desktop workflow remains outstanding.
+Status: real authenticated Tyler type 114 tested through nonempty uploads and the Signature step on 2026-09-09. A fictional demonstration video can use this actual portal workflow. A separate fresh desktop conversation is not a filming requirement. Legal signature, final submission, Building filing and other hosts remain unqualified.
+
+Current evidence: `../qualification/laguna-real-tyler-0909.json`. The working catalog URL ends in `/114/0/0`. Next performs server uploads; saved drafts do not retain attachments. Earlier local-demo and fresh-task filming gates below are historical and superseded by this result.
 Qualification: [machine-readable results](laguna-qualification-0908.json).
 
 ## The standard
@@ -246,6 +248,6 @@ subsequently recovered the same case through the in-app browser; eight values an
 both prepared files match the DEMO receipt. This recovery does not qualify an
 uninterrupted fresh conversation.
 
-The remaining filming gate is a fresh desktop test using the working in-app browser.
+Historical gate (withdrawn): a separate fresh desktop test was unnecessarily treated as a filming requirement. Real portal upload testing now supplies the footage evidence.
 A request to create one disposable test task is pending explicit user instruction;
 no applicant account, real filing, or browser-permission expansion is needed for it.

@@ -76,35 +76,33 @@
     "pypdf": "6.18.0",
     "reportlab": "4.5.1"
   },
-  "browser_observation": "Public menu and login boundary observed; fresh public API verifies Zone Clearance type 114 configuration. Authenticated UI remains unobserved.",
+  "browser_observation": "Authenticated real Tyler type 114 wizard verified through nonempty server uploads and Signature; see ../qualification/laguna-real-tyler-0909.json.",
   "live_submission": "not_run",
   "host_installations": "Codex candidate install/discovery and fresh CLI opening activation passed; desktop whole journey and other hosts unverified",
   "release_ready": false,
   "blockers": [
-    "Align demonstration with verified Zone Clearance public configuration",
     "Qualify installation and browser workflow on each promoted host",
     "Production submission and corrections/issuance remain untested; synthetic demo does not qualify these",
     "Remap revised ADU form before claiming ADU preparation support"
   ],
   "demo_qualification": {
-    "scope": "Fictional Laguna Beach pool demonstration; no real applicant account or packet required",
-    "ready": false,
+    "scope": "User-authorized fictional project in real Tyler through uploads; no legal signature or final submission",
+    "ready": true,
     "primary_host": "Codex: candidate installation/discovery and manual helper/browser operations verified",
-    "zone_clearance_mapping": "Public configuration verified; authenticated visual layout unobserved",
+    "zone_clearance_mapping": "Authenticated type 114 visible fields and upload categories verified",
     "fictional_packet": "DEMO-R3: six plan sheets, four fictional exhibits, 47-page combined official-form rehearsal. Component coverage for fictional filming only; no actual City filing readiness.",
-    "browser_demo_destination": "Local simulation aligned to verified type 114 core fields and Application/Plans categories; visual layout simulated",
+    "browser_demo_destination": "Real Tyler portal; previous local simulation evidence retained as historical only",
     "installed_host_browser_run": "Manual installed-helper/browser run passed with eight values and two exact files; fresh CLI opening separately passed",
     "end_to_end_rehearsal": "Fresh CLI prepared 53 fields and reached browser upload, then blocked on Chrome file access. Parent in-app browser recovery passed eight values/two files. Uninterrupted fresh desktop test remains pending.",
     "production_submission_required": false,
-    "blockers": [
-      "Verify one uninterrupted fresh desktop conversation through the in-app browser; separate test task requires explicit user instruction"
-    ],
+    "blockers": [],
     "fresh_cli_activation": "Passed after fixing direct swimming-pool skill opening; see ../qualification/laguna-codex-activation-0908.json. Desktop whole-journey activation remains unverified.",
     "mapped_browser_evidence": "../qualification/laguna-mapped-browser-0908.json",
     "official_form_text_completion": "20 mapped text fields filled and visually verified; non-widget declarations and supporting exhibits remain open",
     "component_register": "../../demos/laguna-pool/packet-components.json",
     "fresh_rehearsal_evidence": "../qualification/laguna-fresh-rehearsal-0908.json",
-    "r3_packet_evidence": "../qualification/laguna-r3-packet-0908.json"
+    "r3_packet_evidence": "../qualification/laguna-r3-packet-0908.json",
+    "real_portal_evidence": "../qualification/laguna-real-tyler-0909.json"
   },
   "evidence_directory": "../qualification",
   "zone_clearance_routing_retest": {

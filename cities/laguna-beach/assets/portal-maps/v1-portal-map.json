@@ -3,10 +3,10 @@
   "generated_at": "2026-08-22T17:40:00-07:00",
   "source": {
     "path": "assets/portal-maps/online-intake-snapshot.json",
-    "sha256": "d2b50988fbed17d08ce7988d76a148fa9ad52c77db6ca2ac0ff0ecf386b67e7b",
+    "sha256": "c7ecbe5d03e7defa652442797722a73c184f2d96edb12bf855fbeb0c0936ddd3",
     "source_verified_at": "2026-08-10",
     "compiled_at": "2026-09-08",
-    "note": "Mixed-date snapshot: type 114 public configuration verified September 8 with raw receipts; other routes retain earlier source verification. See route_verifications."
+    "note": "Mixed-date snapshot: type 114 public configuration verified September 8 with raw receipts; other routes retain earlier source verification. See route_verifications. Type 114 full catalog URL verified in authenticated browser September 9; see docs/qualification/laguna-real-tyler-0909.json."
   },
   "routes": [
     {
@@ -3036,7 +3036,7 @@
       "label": "Residential Planning Entitlements ",
       "module": "PLANS",
       "category": "PLANNING ENTITLEMENTS",
-      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114",
+      "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114/0/0",
       "allowsInternetSubmission": true,
       "eReviewsEnabled": true,
       "feeEstimateAvailable": false,
