@@ -1,7 +1,7 @@
 # Laguna Beach permit concierge — release standard and execution
 
 Date: 2026-09-08. Baseline: public main `88323a8` (PRs #4 and #5).
-Status: local implementation qualified; draft release candidate. Live applicant release gate open.
+Status: local checks passed; draft release candidate. Fictional video demonstration is the next milestone; installation/browser and portal mapping remain unverified.
 Qualification: [machine-readable results](laguna-qualification-0908.json).
 
 ## The standard
@@ -47,45 +47,83 @@ or browser-transaction proof.
   model instruction runner using Claude print mode and semantic graders. CI skips the
   model job visibly if credentials are missing; missing evidence cannot qualify release.
 
-## Release gates and next execution
+## Next milestone: fictional video, no applicant dependency
+
+The requested video uses fictional project facts and a demo account/packet. It does not
+require a consenting applicant, a real applicant account, or a live applicant pilot.
+The agent should actually operate the installed tools and browser during the recording.
+A local replica or City-provided sandbox can demonstrate Submit and a clearly marked
+sample receipt; this is evidence of a demonstration workflow, not a production City filing.
+Do not insert fictional records into the City's production queue.
+
+505 Forest Avenue may be used as a visibly labeled demo address. Do not infer residential
+zoning, ownership, setbacks, or pool eligibility from that address: this scenario's
+residential parcel facts are fictional fixtures, not findings about City Hall. Every
+export and the portal demonstration must retain that distinction.
+
+## Before filming: executable work packages
+
+| Order | Work | Deliverable and acceptance condition | Current state |
+|---|---|---|---|
+| 1 | Map Zone Clearance intake | Dated source/evidence bundle identifying the exact portal menu, application type/ID, category, step sequence, required fields, conditional questions, uploads, fees, and confirmation behavior. Distinguish observed UI from City documentation and unknowns. Do not assume Residential Planning Entitlements type 114 is Zone Clearance. Update the application-set mapping and its fixture tests only when supported. | Official online channel verified; exact entry and authenticated flow unresolved |
+| 2 | Build one coherent fictional pool case | Versioned fixture folder with project facts, fictional contacts, prior-review answer, sample plan inputs, matching completed forms and attachments. All exports labeled demonstration. Unknown real property facts stay unknown; mock facts stay explicitly synthetic. | Partial form demonstration exists; coherent end-to-end fixture outstanding |
+| 3 | Provide a browser demo destination | Prefer a City-provided test environment if available; otherwise build a local replica from the verified mapping. Support fields, validation, upload, review, Submit, and a persistent receipt with a DEMO-prefixed record ID. Show “DEMONSTRATION — NOT A CITY SUBMISSION” throughout, including the receipt. Save uploaded files and submitted values for comparison. Mark any unobserved portal behavior as simulated. | Not built; no City sandbox availability established |
+| 4 | Verify actual installation and browser operation | Start with Codex, the available filming candidate. Install the exact candidate artifact in a clean test scope, record its commit/version and host version, discover/invoke the skill from the pool prompt, read the fixtures, fill/render the PDFs, and use that host's browser tools to complete the demo destination. Save screenshots, tool/run evidence, and the resulting submission data. Repeat separately in Cowork and ChatGPT Work before promoting either. | Manifest validation passed; actual host installation/browser runs outstanding |
+| 5 | Rehearse and inspect the result | Complete one uninterrupted prompt-to-demo-receipt run; compare every submitted value and attachment with the fixture. Also test a missing required attachment, an unknown project fact, and resuming the same saved case without duplicating submission. Confirm labels are readable and no credentials are visible. | Not run |
+
+For work package 1, inspect the public portal first. If relevant pages require login,
+use a dedicated test account or City-supplied screenshots/test access; a real applicant's
+account is not a dependency. If that access is unavailable, keep the exact mapping
+unverified and document the missing screens. Public documents alone do not establish
+hidden required fields or receipt semantics. City clarification may resolve gaps; no
+message has been sent. Read-only production discovery and the fictional submission
+rehearsal are separate activities.
+
+For work package 4, a passing manifest check or tool-free model eval does not count as
+installation evidence. Test the supported installation path and tool access in each
+actual app. A platform fails qualification if it cannot read/write the packet or operate
+the browser; record the limitation rather than silently substituting a different app.
+Filming requires one qualified host. It does not require all three hosts to pass, and
+video copy should name only the host(s) actually qualified.
+
+The video is ready when work packages 1–5 have their evidence saved and the first host
+passes. A clearly labeled prototype can be recorded earlier for internal review, but
+it must not claim verified parity with the City's unmapped screens. ADU remapping and
+a real applicant pilot are not prerequisites for this pool demonstration.
+
+## Broader product qualification
 
 | Gate | Evidence required | State |
 |---|---|---|
 | Deterministic transactions | Missing approvals, duplicate targets, invalid records, facts, packets tested | Local pass |
 | Current official form fill | Full/partial values, field tree, widget values, rendered pages | Local pass on DR |
 | Instruction behavior | All 9 real model cases, saved responses and semantic verdicts | 9/9 pass, plus targeted first-exchange retest |
-| Codex package | Every skill discoverable and manifest valid | Local validator pass; installed-host test outstanding |
-| Cowork / ChatGPT Work | Install the exact release artifact, invoke pool request, fill/render, browser handoff | Outstanding |
-| Zone Clearance channel | City-confirmed menu/type, fields, attachments, receipt semantics | Needs City mapping |
-| Real online filing | Consenting applicant, current packet, effective prerequisites, signed-in account, personal signature, explicit final click approval, terminal receipt | Needs applicant pilot |
-| Corrections / issuance | Resume same case, actual correction letter and City disposition; counter handoff when required | Needs real case progression |
-| All-Laguna breadth | Every supported scope current; revised ADU mapped; unsupported forms added and tested | Outstanding beyond pool pilot |
+| Installed hosts and browser | Work package 4 per promoted host | Outstanding |
+| Zone Clearance channel | Work package 1 | Incomplete |
+| Production submission | Evidence of actual City acceptance and receipt, beyond a simulated demonstration | Not tested; not a video prerequisite |
+| Corrections / issuance | Same-case continuation and observed City disposition; counter handoff when required | Not tested; not a video prerequisite |
+| All-Laguna breadth | Every supported scope current; revised ADU mapped; unsupported forms added and tested | Outside this pool video milestone |
 
-Execution order: finish local qualification and review the diff; test installation on each
-promoted host; acquire the City Zone Clearance mapping and a consenting pool project;
-prepare its actual packet and drawing gaps; conduct and record the authorized filing;
-then release the video with claims limited to the verified host and observed milestone.
-Do not claim all gates complete because deterministic CI is green. Do not silently copy
-an API key into the public repository's secrets to activate CI; owner-managed credential
-provisioning is a separate dependency. No City test records or fake submissions.
+Do not claim the production end-to-end standard from a simulated receipt or green CI.
+Owner-managed CI credential provisioning remains separate; do not silently copy API keys
+into the public repository's secrets.
 
 ## Video brief
 
-Target 35–45 seconds, filmed from the working host rather than a simulated submission UI.
+Target 35–45 seconds, captured from the qualified host actually operating the demo.
+Persistent label: “DEMONSTRATION — FICTIONAL PROJECT — NOT A CITY SUBMISSION.”
 
 1. “We want a pool in Laguna Beach.” Show the real opening prompt.
-2. Agent reads the plans and asks the one missing project/review question.
-3. Show cited route and completed official application; obscure applicant details.
-4. Agent fills the real City portal and uploads the verified packet.
-5. Applicant reviews/signs and approves the named application.
-6. End on the real confirmation/record number: “Application submitted. Here’s what’s next.”
+2. Agent reads the fictional project packet and asks the missing prior-review question.
+3. Show the cited route and filled official application using the fictional inputs.
+4. Agent fills the mapped demo portal and uploads the sample packet.
+5. Show review, then the agent clicking Submit in the demo environment.
+6. End on “Demo submission complete” and its visibly marked sample receipt/next steps.
 
-Until the live gate passes, show a local rehearsal with a persistent “DEMONSTRATION —
-NOT SUBMITTED” label and end at the prepared packet. Suggested verified-outcome wording:
-“From your pool idea to a prepared permit application, with CrossBeam’s Laguna Beach
-skills.” Upgrade to “prepared and submitted” only after capturing an actual receipt.
-Never edit an apparent successful submission into a rehearsal. Do not imply that a
-submitted application is an issued permit.
+Suggested wording: “See how CrossBeam's Laguna Beach skills help your agent prepare
+permit paperwork and work through the submission process. Fictional demonstration.”
+Do not present the sample receipt as City acceptance or an issued permit. A real filing
+claim requires separate production evidence; it is not necessary to make this video.
 
 ## Verification commands
 

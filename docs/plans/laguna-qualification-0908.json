@@ -81,9 +81,27 @@
   "host_installations": "not_verified",
   "release_ready": false,
   "blockers": [
-    "Verify Zone Clearance portal mapping with City",
+    "Verify Zone Clearance portal mapping",
     "Qualify installation and browser workflow on each promoted host",
-    "Complete consenting applicant pilot through actual receipt",
+    "Production submission and corrections/issuance remain untested; synthetic demo does not qualify these",
     "Remap revised ADU form before claiming ADU preparation support"
-  ]
+  ],
+  "demo_qualification": {
+    "scope": "Fictional Laguna Beach pool demonstration; no real applicant account or packet required",
+    "ready": false,
+    "primary_host": "Codex (candidate; not yet installation/browser qualified)",
+    "zone_clearance_mapping": "incomplete",
+    "fictional_packet": "partial_demo_only",
+    "browser_demo_destination": "not_built",
+    "installed_host_browser_run": "not_run",
+    "end_to_end_rehearsal": "not_run",
+    "production_submission_required": false,
+    "blockers": [
+      "Complete evidence-backed Zone Clearance portal mapping",
+      "Assemble a coherent labeled fictional pool packet",
+      "Build a labeled local portal replica or obtain a City test environment",
+      "Verify installation and browser workflow in the filming host",
+      "Pass prompt-to-demo-receipt rehearsal and recovery checks"
+    ]
+  }
 }

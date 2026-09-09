@@ -93,9 +93,15 @@ are different milestones. If issuance requires the counter, prepare the exact ha
 
 ## Demonstration standard
 
-A synthetic demonstration runs locally and displays “DEMONSTRATION — NOT SUBMITTED.”
-Never create a City record, signature, payment, or fake receipt for it. A real filmed
-submission needs a consenting applicant, their actual complete packet, an authorized
-account, personal signature entry, and record-specific final approval. Hide private
-contact details and credentials from the recording. End a filing video on the actual
-receipt; do not describe it as an issued permit unless issuance is verified.
+A synthetic demonstration uses fictional project facts and a local replica or a
+City-provided test environment. It does not require a real applicant account or packet.
+Display “DEMONSTRATION — NOT A CITY SUBMISSION” throughout. The agent may fill forms,
+upload sample files, and click Submit in that environment; any resulting receipt must
+be unmistakably a sample, with a DEMO-prefixed ID. Do not create fictional production
+City records, execute real payments, or represent a demonstration signature or receipt
+as authentic. A public demo address does not establish real residential property facts.
+
+A real filmed submission uses the actual complete packet and an authorized account;
+apply the usual personal signature and record-specific approval boundaries. Hide private
+contact details and credentials from the recording. Only an observed City receipt proves
+real submission; do not describe it as an issued permit unless issuance is verified.
