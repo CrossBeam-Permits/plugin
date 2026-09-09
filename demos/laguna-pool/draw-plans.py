@@ -64,6 +64,9 @@ def draw(output, fixture):
     lines(c,48,339,['A0  Project brief, scope, and unresolved professional inputs',
                    'A1  Dimensioned fictional site layout',
                    'A2  Concept pool section and equipment layout'])
+    lines(c,440,339,['A3  Fictional survey and site assumptions',
+                    'A4  Perpendicular site sections',
+                    'A5  Grading and project summary'])
     text(c,48,264,'WHAT THESE DRAWINGS ESTABLISH',11,'Helvetica-Bold')
     lines(c,48,241,['The illustrated dimensions are authored demonstration assumptions from fixture.json.',
                    'They provide a consistent example for intake questions, document preparation, and uploads.',
@@ -106,7 +109,7 @@ def draw(output, fixture):
         f'Pool to house: {py-hy-hh} ft',f'Equipment pad: {ew} x {eh} ft'],size=10,leading=22)
     text(c,464,292,'READ THIS AS A CONCEPT',11,'Helvetica-Bold')
     lines(c,464,268,['Dashed enclosure: barrier concept only.',
-        'Gate location and hardware unresolved.',
+        'Mock gate at south edge; see A3.',
         'Dimensions are not approved setbacks.',
         'No real boundaries or easements shown.',
         'Equipment noise and siting unverified.',
@@ -121,7 +124,7 @@ def draw(output, fixture):
     length=facts['pool_length_ft']; shallow=site['shallow_depth_ft'];deep=site['deep_depth_ft']
     path=c.beginPath();path.moveTo(x,y);path.lineTo(x+length*section_scale,y)
     path.lineTo(x+length*section_scale,y-deep*section_scale)
-    path.lineTo(x+6*section_scale,y-shallow*section_scale)
+    path.lineTo(x+site['shallow_run_ft']*section_scale,y-shallow*section_scale)
     path.lineTo(x,y-shallow*section_scale);path.close()
     c.setFillColor(BLUE);c.setStrokeColor(INK);c.drawPath(path,fill=1,stroke=1)
     dimension(c,(x,y+20),(x+length*section_scale,y+20),f'{length} ft water length')
@@ -129,7 +132,7 @@ def draw(output, fixture):
     dimension(c,(x+length*section_scale+15,y-deep*section_scale),(x+length*section_scale+15,y),f'{deep} ft',True)
     lines(c,540,453,['All section dimensions are fictional.',
         'Shell thickness / reinforcing: unresolved.',
-        'Coping / grade relationship: unresolved.',
+        'Coping flush with fictional grade.',
         'Drains / suction outlets: unresolved.',
         'No engineering or safety approval.'],size=9,leading=20)
     text(c,48,285,'EQUIPMENT PAD - DIAGRAMMATIC',11,'Helvetica-Bold')
@@ -139,11 +142,109 @@ def draw(output, fixture):
     text(c,90,184,'Locations to be designed',10)
     dimension(c,(72,125),(72+ew*36,125),f'{ew} ft pad')
     lines(c,365,245,[f'Pad assumption: {ew} x {eh} ft.',
-        'No equipment models, flow rates, or power loads selected.',
+        'Fictional equipment example in E2; no real product selected.',
         'Pipe sizing, electrical bonding, and protection require design.',
         'Barrier, gate, alarm, and other applicable safety details remain open.',
         'Use this sheet to ask for missing inputs, not to assert compliance.'],size=10,leading=23)
-    c.showPage();c.save()
+    c.showPage()
+    draw_support(c, fixture)
+    c.save()
+
+
+
+def draw_support(c, fixture):
+    site = fixture['synthetic_site']; facts = fixture['project_facts']
+    width, depth = site['lot_width_ft'], site['lot_depth_ft']
+    grade = site['grade_ft']; setbacks = site['required_setbacks_ft']
+    frame(c, 'A3', 'Fictional survey and site assumptions', fixture)
+    ox, oy, scale = 72, 88, 3.5
+    def pt(x, y): return ox+x*scale, oy+y*scale
+    def rect(bounds):
+        x,y,w,h=bounds; c.rect(*pt(x,y),w*scale,h*scale,stroke=1,fill=0)
+    c.setStrokeColor(INK); c.setLineWidth(.7)
+    rect([0,0,width,depth])
+    rect(site['house_bounds_ft'])
+    rect([*site['pool_origin_ft'],facts['pool_width_ft'],facts['pool_length_ft']])
+    rect(site['equipment_bounds_ft'])
+    c.setDash(3,3)
+    rect([setbacks['side'],setbacks['front'],width-2*setbacks['side'],
+          depth-setbacks['front']-setbacks['rear']])
+    rect([0,0,width,site['front_easement_ft']]); c.setDash()
+    for x,y in [(0,0),(width,0),(0,depth),(width,depth)]:
+        text(c,*pt(x+1,y+1),f'{grade:.2f}',7)
+    text(c,*pt(24,45),'EXISTING HOUSE',8)
+    text(c,*pt(40,96),'POOL',7)
+    text(c,*pt(2,4),'10 FT FICTIONAL EASEMENT',7)
+    c.line(405,460,405,505);c.line(405,505,400,495);c.line(405,505,410,495)
+    text(c,400,514,'N',9,'Helvetica-Bold')
+    lines(c,456,498,[
+        'MOCK SURVEY - NO PROFESSIONAL SEAL',
+        'No field measurements or County record.',
+        f'Lot: {width} x {depth} ft = {width*depth:,} sq ft.',
+        f'Fictional datum and flat lot grade: {grade:.2f} ft.',
+        'No 2 ft contour interval crosses this flat lot.',
+        'North is an authored diagram orientation.',
+        'Solid: boundary / existing house / proposed pool.',
+        'Dashed: example setbacks and front easement.',
+        f"Example setbacks: {setbacks['front']} ft front; {setbacks['rear']} ft rear;",
+        f"{setbacks['side']} ft each side. Not verified City standards.",
+        'Only easement shown: authored front 10 ft band.',
+        'Utilities: fictional connection at street front.',
+        'No street or right-of-way changes proposed.',
+        'Existing access/hardscape retained; no new deck.',
+        'Barrier: 5 ft enclosure; outward self-closing',
+        'and self-latching gate at south enclosure edge.',
+        'Safety details are demonstration assumptions.',
+        'Real survey and design require professionals.',
+    ],size=8,leading=22)
+    c.showPage()
+
+    frame(c, 'A4', 'Perpendicular fictional site sections', fixture)
+    text(c,48,500,'NORTH-SOUTH SECTION THROUGH HOUSE AND POOL',11,'Helvetica-Bold')
+    x,y,sc=65,390,4.5
+    c.setStrokeColor(INK);c.line(x,y,x+depth*sc,y)
+    hx,hy,hw,hh=site['house_bounds_ft']; px,py=site['pool_origin_ft']
+    c.rect(x+hy*sc,y,hh*sc,site['house_height_ft']*sc,stroke=1,fill=0)
+    text(c,x+hy*sc+8,y+30,'EXISTING HOUSE',8)
+    c.line(x+py*sc,y,x+py*sc,y-site['shallow_depth_ft']*sc)
+    c.line(x+py*sc,y-site['shallow_depth_ft']*sc,x+(py+site['shallow_run_ft'])*sc,y-site['shallow_depth_ft']*sc)
+    c.line(x+(py+site['shallow_run_ft'])*sc,y-site['shallow_depth_ft']*sc,x+(py+facts['pool_length_ft'])*sc,y-site['deep_depth_ft']*sc)
+    c.line(x+(py+facts['pool_length_ft'])*sc,y-site['deep_depth_ft']*sc,x+(py+facts['pool_length_ft'])*sc,y)
+    dimension(c,(x,y-48),(x+depth*sc,y-48),f'{depth} ft complete fictional site')
+    text(c,48,290,'EAST-WEST SECTION THROUGH POOL DEEP END',11,'Helvetica-Bold')
+    x,y,sc=65,233,6
+    c.line(x,y,x+width*sc,y)
+    c.rect(x+px*sc,y-site['deep_depth_ft']*sc,facts['pool_width_ft']*sc,site['deep_depth_ft']*sc,stroke=1,fill=0)
+    dimension(c,(x,y-60),(x+width*sc,y-60),f'{width} ft complete fictional site')
+    lines(c,48,125,[f'Existing/proposed surrounding grade: {grade:.2f} ft. Coping flush with grade in this fictional branch.',
+        'Pool depths: 3.5 ft shallow, 6 ft deep. Existing house height: 15 ft. No house alteration.',
+        'These sections establish demonstration geometry only; no structural or geotechnical design is certified.'],size=9,leading=20)
+    c.showPage()
+
+    frame(c, 'A5', 'Fictional grading and project summary', fixture)
+    ex,ey,ew,el=site['excavation_bounds_ft']; avg=site['excavation_average_depth_ft']
+    water=facts['pool_width_ft']*(site['shallow_run_ft']*site['shallow_depth_ft']+
+        (facts['pool_length_ft']-site['shallow_run_ft'])*(site['shallow_depth_ft']+site['deep_depth_ft'])/2)
+    cut=ew*el*avg/27
+    text(c,48,498,'GRADING QUANTITIES - AUTHORED DEMO ESTIMATE',11,'Helvetica-Bold')
+    lines(c,48,472,[f'Pool water prism: {water:,.0f} cu ft / 27 = {water/27:.2f} cu yd (not excavation).',
+        f'Example excavation envelope: {ew} x {el} ft at ({ex}, {ey}), average depth {avg} ft.',
+        f'Authored cut estimate: {cut:.2f} cu yd. Fill: 0.00 cu yd. Net export: {cut:.2f} cu yd.',
+        'Quantities exclude bulking, shoring, working room changes and actual soils. Not a bid quantity.',
+        'Coping remains at existing grade. Surrounding grades retained outside the excavation envelope.',
+        'Rehearsal drainage: temporary perimeter sediment controls and covered soil stockpile;',
+        'capture construction water for appropriate disposal; no discharge to street/storm drain.',
+        'Permanent drainage is unchanged outside the pool; final drainage design remains professional work.'],size=10,leading=23)
+    text(c,48,255,'PROJECT SUMMARY - FICTIONAL VALUES',11,'Helvetica-Bold')
+    house=site['house_bounds_ft'][2]*site['house_bounds_ft'][3]
+    pad=site['equipment_bounds_ft'][2]*site['equipment_bounds_ft'][3]
+    lines(c,48,230,[f'Lot: {width*depth:,} sq ft; average width {width} ft; average depth {depth} ft; slope 0%.',
+        f'Existing/proposed house footprint: {house:,} / {house:,} sq ft. No added floor area or parking change.',
+        f'Pool: 0 / {facts["pool_area_sq_ft"]} sq ft. Equipment pad: 0 / {pad} sq ft. New deck: 0 sq ft.',
+        f'New/replaced pool and pad surface: {facts["pool_area_sq_ft"]+pad} sq ft; landscape reduced by same amount.',
+        'Zoning, required coverage/FAR/open-space standards and legal conformance are not real findings.',
+        'See E1-E4 for authored constraints, conditional study branches and simulated declarations.'],size=10,leading=23)
+    c.showPage()
 
 
 if __name__=='__main__':

@@ -63,6 +63,7 @@ def main():
     # Preserve the complete interactive City form and mark every page as a demonstration.
     writer = PdfWriter()
     writer.clone_document_from_reader(PdfReader(working))
+    writer.append(PdfReader(output / 'fictional-exhibits.pdf'))
     for page in writer.pages:
         width,height = float(page.mediabox.width),float(page.mediabox.height)
         stream=io.BytesIO(); stamp=canvas.Canvas(stream,pagesize=(width,height))
@@ -78,7 +79,7 @@ def main():
     packet['files']['Application']={'name':final.name,'size':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
     packet['official_form']={'id':source['id'],'source_sha256':source['sha256'],
         'mapped_answers_filled':len(json.loads(answers.read_text())['answers']),
-        'unmapped_and_unknown_fields':'remaining exhibits and non-widget declarations require separate completion; not a filing-ready project packet',
+        'unmapped_and_unknown_fields':'fictional exhibits E1-E4 appended; original legal declarations remain unexecuted and no real filing readiness is claimed',
         'all_pages_labeled':len(writer.pages),'visual_review':'required'}
     manifest_path.write_text(json.dumps(packet,indent=2)+'\n')
     print(json.dumps(packet['official_form']))

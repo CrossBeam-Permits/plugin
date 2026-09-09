@@ -1,7 +1,7 @@
 # Laguna Beach permit concierge — release standard and execution
 
 Date: 2026-09-08. Baseline: public main `88323a8` (PRs #4 and #5).
-Status: local checks, Codex installation/discovery, and manual installed-helper-to-demo-browser rehearsal passed. Fresh CLI opening activation also passes after a direct-scope fix. Public City configuration now verifies the Zone Clearance entry and required inputs. Desktop whole-journey activation, and a complete filming packet remain outstanding.
+Status: local checks, Codex installation/discovery, and manual installed-helper-to-demo-browser rehearsal passed. Fresh CLI opening activation also passes after a direct-scope fix. Public City configuration now verifies the Zone Clearance entry and required inputs. The uninterrupted fresh desktop workflow remains outstanding.
 Qualification: [machine-readable results](laguna-qualification-0908.json).
 
 ## The standard
@@ -227,3 +227,25 @@ requirements against physical PDF pages. The new packet reference makes non-widg
 signatures and the older matrix/current ordinance distinction visible to the agent.
 Remaining film work includes the fictional survey, complete site/section/summary and
 grading exhibits, conditional study decisions, and visibly simulated declarations.
+
+## DEMO-R3 execution and remaining host gate
+
+Six plan sheets and four supporting exhibits now cover the fictional rehearsal
+components, including mock survey, perpendicular sections, grading/summary, scenario
+constraints and simulated declarations. These are visibly fictional; they do not
+qualify actual professional design, real parcel conformance or legal execution. The
+reproducible helper creates a 47-page combined application and verifies 20 mapped
+text targets. All ten new/revised exhibit and plan pages were visually inspected.
+
+A fresh ephemeral Codex CLI session independently used the installed plugin to
+prepare and verify 53 fields and the 47-page packet, then entered the browser form.
+Chrome denied file upload and native control; the session correctly stopped at a
+saved draft without claiming a receipt. Its raw private log hashes and outcome are
+recorded in `docs/qualification/laguna-fresh-rehearsal-0908.json`. The parent task
+subsequently recovered the same case through the in-app browser; eight values and
+both prepared files match the DEMO receipt. This recovery does not qualify an
+uninterrupted fresh conversation.
+
+The remaining filming gate is a fresh desktop test using the working in-app browser.
+A request to create one disposable test task is pending explicit user instruction;
+no applicant account, real filing, or browser-permission expansion is needed for it.

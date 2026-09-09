@@ -108,3 +108,21 @@ complete fresh-conversation run in the desktop filming app.
 `packet-components.json` tracks the remaining filming documents against physical pages
 of the official packet. The generated packet copies this register alongside the manifest.
 A successful field fill or upload does not resolve the unfinished components.
+
+## DEMO-R3 supporting packet
+
+`build-fixture.py` now produces six fictional plan sheets (A0-A5), four supporting
+exhibits (E1-E4), and the component register. The sample Application PDF includes
+the exhibits. `fill-official-demo.py` appends those same exhibits to the preserved
+43-page official form after filling all 20 mapped text targets, producing a 47-page
+Application PDF. The Plans upload remains the six-sheet PDF.
+
+The mock survey, site sections, grading estimate, constraints and declarations are
+authored rehearsal artifacts. They do not constitute an actual survey, engineering,
+legal execution, or a City determination about 505 Forest Avenue.
+
+For a fresh-session test, provide the fictional JSON, generated plans and exhibits,
+and freshly acquired blank official form in an input directory. Ask the installed
+agent to prepare and verify the application, operate the local browser destination,
+and save its DEMO receipt. Keep the generated output separate from the reference
+packet so verification compares independently prepared files and saved portal values.

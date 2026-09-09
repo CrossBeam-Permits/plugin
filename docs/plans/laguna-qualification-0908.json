@@ -91,20 +91,20 @@
     "ready": false,
     "primary_host": "Codex: candidate installation/discovery and manual helper/browser operations verified",
     "zone_clearance_mapping": "Public configuration verified; authenticated visual layout unobserved",
-    "fictional_packet": "DEMO-R2 includes three dimensioned fictional concept sheets, drawing register, and reproducible sample/official-form preparation. Professional project details and complete City-required packet remain unresolved.",
+    "fictional_packet": "DEMO-R3: six plan sheets, four fictional exhibits, 47-page combined official-form rehearsal. Component coverage for fictional filming only; no actual City filing readiness.",
     "browser_demo_destination": "Local simulation aligned to verified type 114 core fields and Application/Plans categories; visual layout simulated",
     "installed_host_browser_run": "Manual installed-helper/browser run passed with eight values and two exact files; fresh CLI opening separately passed",
-    "end_to_end_rehearsal": "Manual fixture-to-demo-receipt and recovery checks passed; fresh-conversation whole-journey run not complete",
+    "end_to_end_rehearsal": "Fresh CLI prepared 53 fields and reached browser upload, then blocked on Chrome file access. Parent in-app browser recovery passed eight values/two files. Uninterrupted fresh desktop test remains pending.",
     "production_submission_required": false,
     "blockers": [
-      "Complete fictional project documents and plan sheets needed for a convincing whole-journey demonstration",
-      "Verify automatic skill activation and uninterrupted workflow in a fresh conversation of the filming host",
-      "Match demo flow to verified City mapping and complete final filming rehearsal"
+      "Verify one uninterrupted fresh desktop conversation through the in-app browser; separate test task requires explicit user instruction"
     ],
     "fresh_cli_activation": "Passed after fixing direct swimming-pool skill opening; see ../qualification/laguna-codex-activation-0908.json. Desktop whole-journey activation remains unverified.",
     "mapped_browser_evidence": "../qualification/laguna-mapped-browser-0908.json",
     "official_form_text_completion": "20 mapped text fields filled and visually verified; non-widget declarations and supporting exhibits remain open",
-    "component_register": "../../demos/laguna-pool/packet-components.json"
+    "component_register": "../../demos/laguna-pool/packet-components.json",
+    "fresh_rehearsal_evidence": "../qualification/laguna-fresh-rehearsal-0908.json",
+    "r3_packet_evidence": "../qualification/laguna-r3-packet-0908.json"
   },
   "evidence_directory": "../qualification",
   "zone_clearance_routing_retest": {
