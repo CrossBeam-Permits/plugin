@@ -13,7 +13,7 @@ filing with the City.
 |---|---|---|
 | Full filing | Intake, routing, official form fill and verification, packet assembly, and a user-controlled EnerGov session through receipt capture | Claude Code, Codex, Claude Cowork |
 | Prepare only | Intake, routing, and a `portal_ready` handoff. The user files in their own browser | claude.ai chat, ChatGPT |
-| Skills only, best effort | The 23 skills load as instructions. Helpers run where the host has a shell. No supported browser path | Gemini CLI, Cursor, Grok |
+| Skills only, best effort | The skills load as instructions. Helpers run where the host has a shell. No supported browser path | Gemini CLI, Cursor, Grok |
 
 Full filing still needs a user-visible browser the agent can drive, a signed-in City
 account the user controls, and the user's own signature, approval, and payment. The

@@ -161,7 +161,7 @@ async function main() {
     // Per-scope plan-check skills carry a City Info table this script keeps in
     // sync. Cross-runtime entrypoints (the permit preparer wrapper) are not
     // plan-check skills and have no City Info section to update.
-    const NON_PLAN_CHECK_SKILLS = new Set(["laguna-permit-preparer"]);
+    const NON_PLAN_CHECK_SKILLS = new Set(["laguna-permit-preparer", "plan-set-check"]);
     const permitTypes = (await readdir(skillsRoot, { withFileTypes: true }))
       .filter((entry) => entry.isDirectory())
       .map((entry) => entry.name)

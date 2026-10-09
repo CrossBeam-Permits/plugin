@@ -70,7 +70,7 @@ For ChatGPT Work distribution, follow the [official plugin guidance](https://lea
 
 ## What each city includes
 
-The catalog contains 10,648 skills: 22 permit types for each of 484 cities.
+The catalog contains 22 permit types for each of 484 cities. Laguna Beach ships 37 skills: those 22, plus plan-set permits (new homes, ADUs, additions, remodels, commercial TI and more), a plan-set check, and the permit preparer that fills and files applications.
 
 `reroof` · `ev-charger` · `solar` · `water-heater` · `hvac` · `window-replacement` · `panel-upgrade` · `temporary-power` · `repipe` · `siding-replacement` · `fence` · `block-wall` · `retaining-wall` · `patio-cover` · `deck-patio-repair` · `pool-demolition` · `ltia-demolition` · `cleanout` · `sign` · `fireworks-temp-use` · `swimming-pool` · `rewire`
 
