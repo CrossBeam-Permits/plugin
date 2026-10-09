@@ -15,7 +15,7 @@ This is a completeness reference. It does not check the design against the build
 | Outside reviews (grading, fire, geotechnical, water quality) | `building/review-triggers.md` |
 | ADU items that state law changes | `building/adu-state-law.md` |
 | What is due after approval, before the permit issues | `issuance/issuance-checklist.md` |
-| Fee estimate | `fees/README.md`, `fees/fee-data.json`, `scripts/estimate-fees.py` |
+| Fee estimate (the `estimate-fees` command in `scripts/`) | `fees/README.md` (data: `fees/fee-schedule.json`) |
 
 ## Building checklists
 
