@@ -6,54 +6,36 @@
     "name": "crossbeam/scripts/plugin-publish/laguna",
     "version": "1.0.0",
     "files": {
-      "scripts/plugin-publish/laguna/index.mjs": "8b92b9d71ee762fc77887bcfc6946c415c2f1a386506ab9f0b16bc7d9ce63f35",
-      "scripts/plugin-publish/laguna/lib.mjs": "6752a42be0177854da139328da97d1027f433870c434ab0883a5f29527829df0",
-      "scripts/plugin-publish/laguna/modules/requirements-sanitize.mjs": "cdda81cafc97cbdbbf4bfe25500568629daba7fd9424ec7149560e2c5d3f5126",
-      "scripts/plugin-publish/laguna/modules/requirements.mjs": "8c0881ba90f192f3015e6800028ef2906c9be9c53afd0d2aba5b8c84590054b5",
-      "scripts/plugin-publish/laguna/modules/requirements.run.mjs": "8295f8bd43018eae63b630bb8a6ef1edc4b7176c60b8f5a76ed521d5a8780e07",
+      "scripts/plugin-publish/laguna/check-drift.mjs": "f3078a947679d4d95b15b0fca024c591a1f3cc83b10d95875691a096064f7436",
+      "scripts/plugin-publish/laguna/index.mjs": "bb564c42e05362c464a512a2258e72943eb1c01b72890013cdba06a73027f020",
+      "scripts/plugin-publish/laguna/lib.mjs": "dc2b84ad9a50eb368d7517d365ba9edeaeea8c47384461fd78026bf2ab433261",
+      "scripts/plugin-publish/laguna/modules/fees.mjs": "69f99846ad57ffb06d8d54e4f92a441346ba111ed692fdef84fc4224c379afec",
+      "scripts/plugin-publish/laguna/modules/requirements-sanitize.mjs": "77a7547e1b970627042e39c002eec84c2f3cfcd90e5b2769b50a3612cc023b2c",
+      "scripts/plugin-publish/laguna/modules/requirements.mjs": "e12e6eb0c998bef1cfaad865ac2e54336cf6ae2291f4e56cd7c972c0a8699dd2",
       "scripts/plugin-publish/laguna/modules/skills.mjs": "e3a178aa8e4b6695cf13ad0b837fd7686c451736bd2df5132e26fc6ccc850aba",
-      "scripts/plugin-publish/laguna/pending-backports/swimming-pool.mjs": "2899e65eac36dc87b5273409a46e96ddf2e6f71fb455b234093627e871235a6a"
+      "scripts/plugin-publish/laguna/pending-backports/swimming-pool.mjs": "2899e65eac36dc87b5273409a46e96ddf2e6f71fb455b234093627e871235a6a",
+      "scripts/plugin-publish/package-lock.json": "356af1aae271e45cd2ece5e789f64764ff13e3ee7a7e7a9d590bdb835dcbdd2a",
+      "scripts/plugin-publish/package.json": "95b2a1380d5f6568994e364f86bf55d3b1e92ac711b7f99c44fea2276fe77c59"
     }
   },
   "privateRepo": {
-    "commit": "98715c67c239742a526b4a0889e5845b2f9e65c9",
+    "commit": "5c6d82be7fbf919b30d7b71159997099859441ec",
     "dirty": false
   },
   "note": "Generated. Do not edit these files by hand; change the private corpus and re-run the generator.",
   "modules": {
     "requirements": {
-      "files": 36
+      "files": 34
+    },
+    "fees": {
+      "files": 4
     },
     "skills": {
       "files": 398
     }
   },
   "inputs": {
-    "scripts/plugin-publish/node_modules/js-yaml/index.js": "7d1ebc0d9929b9124997b439d1a1fd9aff8feb6bb0a1b59e977ea638944f34ba",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/common.js": "9211491f8e0058a419a4664e36bb4ec6509655aabe6bd537eddf941fdf34e734",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/dumper.js": "1a0c7fc01df0e950caf526c2a96b1e9fbac1dbc5dc125e83657f7b723a505ca3",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/exception.js": "3dcd70e20270a93b8769204174a1949a133a41afbc8f1a74a9c6ab73fd60a179",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/loader.js": "5056164fe1cb8acfc42172cfebaf4805ffe6f6c9eb7ebd53b4ffcdbf6be289c0",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/schema.js": "be14297ea2917dcb9ee11a7deb5b3a871f57ad978e5368c62407c83cd4dd18bf",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/schema/core.js": "d736e58b5a947a5b86056bf4b881c8002314b6534ab1a697a67cc47e1b2dc2a0",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/schema/default.js": "aa09d88b4be7c51d8b6cb0b533c51ae17f534deed476c576b8d4cd3ce1bf165a",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/schema/failsafe.js": "96d4b5b129b966f49d8028fc752a54cb9ca0c80cc4d076240766b946a2b329c5",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/schema/json.js": "aa53e414f077035b4d477d19095ac01e60d9df73af716a188fd2772314041f92",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/snippet.js": "1658b8ec688ebdd2e2dffc93fffc9cba0e9a93ad2a9a1d39b08ed5a1df5afade",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type.js": "11d7ff8e46ecc9ef8b5334aa491973ee95a5f43841afa27e14a0594cca464170",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/binary.js": "245745c866e306704407d6738e1a77776ce41e79e4cc3b2f418ae475bd00c3c9",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/bool.js": "634b7821ceb0877b5320a17b3b0fc3fb60ac3092b86c9d069722f18e2421c1db",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/float.js": "2d762d35ad3e06d96f512fb5ece8f7172e2543bb19c551f64c5e4005a66bbca2",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/int.js": "0dac842d32923113f2a6a153a280f6120f6ccc2da9024ba01fd4d99065d29fcf",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/map.js": "b9bf146012164a0a59ea8c5f6576052706d330a1e41ab8092e11a67d6b9ccf2c",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/merge.js": "bf34d9da7bb1158c5bdd8ae4474d11645c824440f68de79813c384cd77c4791b",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/null.js": "8f3abf27966dfc51e80ea72b363ca74b6d3bca0b15695f61e93bfee2858531f1",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/omap.js": "a4fa54ca0343665eb199503d772a4fe4aab792e4e08bee682e70c0d4a5ada043",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/pairs.js": "faebb6d8a9d1b0cd755f92113e49464711d87060f17d1e807695924866f89a4a",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/seq.js": "f3d76a1db2a6772a51ac32059dcc18b6666ae9c5a60a649467b5853a2fbaf425",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/set.js": "60d13edc50b58b037a6ef561d2f751c601826e455c011acf48c830baa1412107",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/str.js": "41e56af5fad426839bfe41c9a3f489de6efec71447490124a69f8f4785c46ab9",
-    "scripts/plugin-publish/node_modules/js-yaml/lib/type/timestamp.js": "9e4f77c8d504a3a8319108343d6d6b2b6ed95ba6e96f4fe9b204208d04cfd691",
+    "lib/fees/fee-calc.mjs": "81ef245064f69a4bab69d2ed8b8dcea638d60b16c75444265a65ad78ed2c3a93",
     "server/src/utils/config.ts": "66db59acbd93101fe5c8edc88b9aff5583437e731585887a796d0477aa835ac9",
     "skills/california/adu/SKILL.md": "536903750a14eeadb0f005d6af65269d8afa48b9e59736e1a1b1835e23904df0",
     "skills/california/adu/references/compliance-housing.md": "2fc6206727cc644f01fde93390ba015c0694b34bd221cdc1da8e8ee416e3b133",
@@ -402,8 +384,8 @@
     "skills/cities/laguna-beach/ev-charger/references/city-ev-checklists.md": "91b0e56b63df86d4615b00492e1f5d0ef6874c63dc1cecea11a0a8a2418c9a65",
     "skills/cities/laguna-beach/ev-charger/references/city-ev-guide.md": "a1510fa7d4e5d6a7387fcfba4fe84cc101aff1a21f0f57fd24c41a4818aa668f",
     "skills/cities/laguna-beach/ev-charger/references/city-ev-ordinance.md": "ed843dfcb4b0e7acd7da42ba63a48a0a6b6e657c0923185a74cd4fae9819d466",
-    "skills/cities/laguna-beach/fees/entitlement-map.yaml": "777884ce942d98b444cedaf32eca6c21ce5089e83c442b18a7eb9d5b7a960202",
     "skills/cities/laguna-beach/fees/fee-schedule.yaml": "934a13f59819358f8a2ffcbcb30592b866d009efe148455d147b144710deaee5",
+    "skills/cities/laguna-beach/fees/history/fee-schedule-2026-02-10.yaml": "43843a6416dda7d9c925a252f2a0e39f343f83bb6aec786fbb179ce931a45a13",
     "skills/cities/laguna-beach/fence/SKILL.md": "92dd0c62b239836b1218dd746598af6b58504b42079e5800fa919b22ebe79120",
     "skills/cities/laguna-beach/fence/references/city-block-wall-detail.md": "ab0f69366f2759fa5ad188429b4f730e3f4602ae1fbe9b1665d42414a794f6ad",
     "skills/cities/laguna-beach/general-building/SKILL.md": "865d4391de4938ff0289b496cc1dbffea5c69e7ecf7519b65de0015425352e3c",
@@ -508,7 +490,7 @@
     "cities/laguna-beach/meta.json": "5fa78f6e238b6d2e92a039c9708ae137d8c5bc36e642b6ba92bd225c9c1bef58"
   },
   "outputs": {
-    "requirements/README.md": "0e0da4e42d0ed79df93a75488db5f9591a981be157e988b299447bfa71a3de93",
+    "requirements/README.md": "12a44f33dc7859a73b8820201573fedb20b9560d41822233f9215e490ab6edab",
     "requirements/building/adu-state-law.json": "614bc47990fb5773c170120dec1b83ccab1b4b52449a31361444af4f17f2d8b8",
     "requirements/building/adu-state-law.md": "e591950ae9f654ca05f6ce5ea65262d4fb14fd5daf8f0e845ff9f5435cdb527b",
     "requirements/building/checklists.json": "b2971bdeecc2b752e4549b009d5df1be2c2114e5321f7651777221c25bf0b92d",
@@ -526,8 +508,8 @@
     "requirements/building/staff-reported.md": "7a8178bf013fa568aeecb8201d9d6ec400d6dc1d6add28356a951f79dc2ec5e1",
     "requirements/building/walls-fences.md": "fa612bae623972e663d9780b6a267664fcf117c697efb19063fcd3b8ffb42f40",
     "requirements/building/wui-amendments.md": "73498f4975cfa4edff601529ce4c15b706331344132fcd0fbee6631826e75292",
-    "requirements/fees/README.md": "123c49bc0f16b1d829079be1acc49e1b1e3fc739f123732f870002530df42c65",
-    "requirements/fees/fee-data.json": "b9f47f2d831b2b5601168fb1c61bc69f63aea789888a74049563af7329612420",
+    "requirements/fees/README.md": "f25854edcf5c677e44fe55c0eb8fad82e664d3ff75dcad44e8c13dfc76caa83e",
+    "requirements/fees/fee-schedule.json": "7f2da6e33b7b5ab5523d3c9a5110c08c8abab64b8a75a736523a23ef3c12f0d2",
     "requirements/issuance/issuance-checklist.json": "752ff121232df753d60eacf3e674bd196db7e00c2ff91feb15ee73ffe74ff76a",
     "requirements/issuance/issuance-checklist.md": "298346c198d583a70037d18999fbf5cd6c7eb77dff0d53e5d439a8355589c4b0",
     "requirements/plan-sheets/plan-sheet-matrix.json": "df1f8cd2e431061343f8e93369d2c106203d7e61dc520f7da30cec93a915a672",
@@ -544,6 +526,8 @@
     "requirements/planning/variance.md": "ee7fcd7091ea1ffff538e033acb38508e50ecdff611c453f9b3c28f3d9ac5e1f",
     "requirements/planning/wireless-facility-permit.md": "aad42dec39303a37942f6ddf6364da9fa2c96933b1538b5c4dade24d3fe0ffb5",
     "requirements/planning/zone-clearance.md": "2941e37f03428da8cab98783399a65ecc8a6e3af0a41f5792e9d95ba6fed4351",
+    "scripts/fees/README.md": "1800cc0cd4030a80e775de63c024c8933497dd64bbcd6009e78119909dbd40f0",
+    "scripts/fees/fee-calc.mjs": "0692e80e3372c604f4951315e6d33f46d18d009162436b15cb02a7b8b20b2ff1",
     "skills/adu/SKILL.md": "d520735defa4d9f734582c7f05f5085e45fd4016269a59824098247eed0a0b3a",
     "skills/adu/references/california-baseline.md": "e27f4b11c0767dce3abb02923943c4d4037061bd58ac10f1b0efd3c6f583022e",
     "skills/adu/references/city-adu-faq.md": "4b0886df1f3eacc7ff5ddb5a7ecf64a1848bfd2ad0df92be1f046a52d4be7d60",

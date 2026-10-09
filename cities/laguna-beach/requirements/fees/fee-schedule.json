@@ -1636,7 +1636,7 @@
     },
     {
       "id": "mechanical_furnaces_100k_btu",
-      "label": "Furnace up to 100,000 BTU/h",
+      "label": "Furnace up to 100,000 Btu/h",
       "trigger_scope": "mechanical_furnaces_100k_btu",
       "rule": {
         "type": "per_unit",
@@ -1652,7 +1652,7 @@
     },
     {
       "id": "mechanical_furnaces_over_100k_btu",
-      "label": "Furnace over 100,000 BTU/h",
+      "label": "Furnace over 100,000 Btu/h",
       "trigger_scope": "mechanical_furnaces_over_100k_btu",
       "rule": {
         "type": "per_unit",
@@ -1828,7 +1828,7 @@
     },
     {
       "id": "mechanical_ac_heat_pump_100k_btu",
-      "label": "Absorption/A-C/heat pump up to 100,000 BTU/h",
+      "label": "Absorption/A-C/heat pump up to 100,000 Btu/h",
       "trigger_scope": "mechanical_ac_heat_pump_100k_btu",
       "rule": {
         "type": "per_unit",
@@ -1844,7 +1844,7 @@
     },
     {
       "id": "mechanical_ac_heat_pump_100k_500k_btu",
-      "label": "Absorption/A-C/heat pump over 100,000 through 500,000 BTU/h",
+      "label": "Absorption/A-C/heat pump over 100,000 through 500,000 Btu/h",
       "trigger_scope": "mechanical_ac_heat_pump_100k_500k_btu",
       "rule": {
         "type": "per_unit",
@@ -1860,7 +1860,7 @@
     },
     {
       "id": "mechanical_ac_heat_pump_500k_1m_btu",
-      "label": "Absorption/A-C/heat pump over 500,000 through 1,000,000 BTU/h",
+      "label": "Absorption/A-C/heat pump over 500,000 through 1,000,000 Btu/h",
       "trigger_scope": "mechanical_ac_heat_pump_500k_1m_btu",
       "rule": {
         "type": "per_unit",
@@ -1876,7 +1876,7 @@
     },
     {
       "id": "mechanical_ac_heat_pump_1m_1750k_btu",
-      "label": "Absorption/A-C/heat pump over 1,000,000 through 1,750,000 BTU/h",
+      "label": "Absorption/A-C/heat pump over 1,000,000 through 1,750,000 Btu/h",
       "trigger_scope": "mechanical_ac_heat_pump_1m_1750k_btu",
       "rule": {
         "type": "per_unit",
@@ -1892,7 +1892,7 @@
     },
     {
       "id": "mechanical_ac_heat_pump_over_1750k_btu",
-      "label": "Absorption/A-C/heat pump over 1,750,000 BTU/h",
+      "label": "Absorption/A-C/heat pump over 1,750,000 Btu/h",
       "trigger_scope": "mechanical_ac_heat_pump_over_1750k_btu",
       "rule": {
         "type": "per_unit",
