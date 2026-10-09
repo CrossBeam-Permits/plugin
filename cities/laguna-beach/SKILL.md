@@ -29,7 +29,7 @@ Take a Laguna Beach project from plain-language scope to the City's real intake 
 | Building record set | `references/building-routing.md` |
 | Form coverage / unsupported routes | `references/form-coverage.md` |
 | Plan set completeness | `skills/plan-set-check/SKILL.md`, `requirements/README.md` |
-| Fee estimate | `requirements/fees/README.md` |
+| Fee estimate | `requirements/fees/README.md`, then `node scripts/estimate-fees.mjs --input <json>` (fields in `scripts/fees/README.md`). Show the ESTIMATE notice, keep Building and other-agency subtotals separate, and never price an item listed as not estimated |
 | City portal account | `references/portal-account.md` |
 | Forms and packets | `references/form-source-policy.md`, `references/packaging-checklist.md` |
 | Browser transaction | `references/online-submission.md`, then `references/portal-checkpoints.md` |
