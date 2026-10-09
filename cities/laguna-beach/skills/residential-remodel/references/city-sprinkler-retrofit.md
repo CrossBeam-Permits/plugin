@@ -15,7 +15,7 @@ triggers**. **Either one firing requires the full retrofit.** Test both on every
 | **B. LBMC Title 15 §1103.5.4** (adds CFC Ch. 11 §1103.5.4) | **Scope** | ALL existing Group R fire areas | Alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR addition of one or more stories | Ord. 1726, 12/18/2025 |
 
 State law is silent, so both triggers are pure city overlay. The parent state skill
-(`california-baseline.md`) correctly identifies that California amended out the
+(the California Residential Remodel rules, which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`)) correctly identifies that California amended out the
 IRC R313.2 retrofit, leaving an explicit state-level exemption: existing un-sprinklered SFRs are
 NOT required to retrofit on additions or alterations under state code. (R313 in the 2025 CA CRC
 is "ceiling height," not sprinklers.) Laguna fills that silence twice — once by valuation, once

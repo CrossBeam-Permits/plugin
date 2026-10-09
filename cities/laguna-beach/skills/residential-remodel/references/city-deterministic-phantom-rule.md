@@ -1,6 +1,6 @@
 # Laguna Beach — Deterministic Phantom-Remodel Rule (Codified 6th Signal)
 
-The parent state skill (`california-baseline.md`) runs a **heuristic** 5-signal phantom-remodel detector with a 2-of-5 / 3-of-5 decision rule (valuation ratio, demo vs structural mismatch, framing key tells, 100% new windows/doors, phased-permit history). Inside Laguna, the city has **codified an additional deterministic signal** in the May 2026 republish of the Building Plan Check Submittal Requirements that supplements (does not replace) the parent's heuristic detector.
+The parent state skill (the California Residential Remodel rules, which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`)) runs a **heuristic** 5-signal phantom-remodel detector with a 2-of-5 / 3-of-5 decision rule (valuation ratio, demo vs structural mismatch, framing key tells, 100% new windows/doors, phased-permit history). Inside Laguna, the city has **codified an additional deterministic signal** in the May 2026 republish of the Building Plan Check Submittal Requirements that supplements (does not replace) the parent's heuristic detector.
 
 ---
 
