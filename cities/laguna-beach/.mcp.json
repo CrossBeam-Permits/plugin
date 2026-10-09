@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "crossbeam": {
+      "type": "http",
+      "url": "https://crossbeam-mcp.old-cherry-b095.workers.dev/mcp"
+    }
+  }
+}

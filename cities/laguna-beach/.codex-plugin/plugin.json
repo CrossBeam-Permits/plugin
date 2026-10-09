@@ -1,6 +1,6 @@
 {
   "name": "laguna-beach",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Laguna Beach, CA permits end to end \u2014 decide what to file, check compliance, fill the official City forms, and guide a user-controlled Tyler EnerGov filing through receipt capture.",
   "author": {
     "name": "Onboard Dot AI LLC",
@@ -18,6 +18,7 @@
     "forms"
   ],
   "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Laguna Beach Permits",
     "shortDescription": "Scope, check, fill and file Laguna Beach permits",
