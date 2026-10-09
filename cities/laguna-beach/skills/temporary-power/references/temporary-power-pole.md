@@ -2,7 +2,7 @@
 title: "Temporary Power Pole Requirements"
 category: "Power Pole Specific"
 relevance: "Reviews involving temporary power poles (utility-fed)"
-key_code_sections: "CEC 590.4(A), 230 (Parts I-VIII), CFC 605.10, 240.24, 250.24, 250.50"
+key_code_sections: "CEC 230, 240.24, 250.24, 250.50, 590.3, 590.4(A); CFC 107, 603"
 ---
 
 # Temporary Power Pole Requirements
@@ -40,27 +40,26 @@ Temporary power pole services shall comply with **Article 230 Parts I through VI
 
 ---
 
-## Fire Code Requirements for Temporary Power Poles (CFC 605.10)
+## Fire-Code and Local/Utility Source Boundary
 
-### Installation (CFC 605.10.1)
+CFC 605 governs fuel-fired appliances and has no temporary-power-pole
+subsection 605.10. CFC 603.1 routes electrical equipment and wiring required by
+the CFC or CBC to the CEC; CFC 107 governs a temporary fire-code permit where
+one is required by CFC 105.
 
-- Shall be installed by a **qualified electrician** in accordance with the CEC and local utility requirements
-- Poles shall be **securely anchored and braced** to withstand environmental and operational conditions
+Apply pole construction, anchorage, bracing, service-drop connection and utility
+clearance details only from an applicable CEC provision or a local/utility source
+that supplies all of the following:
 
-### Clearances (CFC 605.10.2)
+1. named jurisdiction, utility, manufacturer or standards publisher;
+2. current document/product/standard title and edition or effective date;
+3. exact page, section, table or detail;
+4. geographic and project-type scope; and
+5. confirmation that the source remains current.
 
-- Maintain required clearances from buildings, roadways, overhead lines, and other structures
-- Minimum clearance per CEC and utility company standards
-
-### Overcurrent Protection (CFC 605.10.3)
-
-- Equipped with OCPDs (circuit breakers or fuses) to protect against overloads
-- A **disconnect switch** shall be installed for emergency shut-off
-
-### Grounding (CFC 605.10.4)
-
-- Grounded in accordance with CEC standards
-- Grounding conductors and electrodes properly installed and **tested for continuity and resistance**
+Do not attribute electrician qualification, pole bracing, clearances, emergency
+disconnect, grounding tests or utility construction details to nonexistent CFC
+605.10.1 through 605.10.4.
 
 ---
 
@@ -82,11 +81,11 @@ Since a temporary power pole is a service entrance, full grounding electrode sys
 ### Typical Power Pole Grounding
 
 For a temporary power pole on a construction site, the typical grounding electrode is a **driven ground rod**:
-- Copper-clad, minimum 5/8 inch diameter (CEC 250.52(A)(5))
+- Stainless steel, copper, or zinc-coated steel rod at least 5/8 inch in diameter, unless listed (CEC 250.52(A)(5)(2))
 - Minimum 8 ft in contact with soil (CEC 250.52(A)(5))
 - Driven vertically, fully below grade (CEC 250.53(A)(4))
 - If resistance exceeds 25 ohms, a **supplemental electrode** is required (CEC 250.53(A)(2))
-- Supplemental rod: minimum 6 ft from first rod (16 ft preferred) (CEC 250.53(A)(3))
+- Supplemental rod: minimum 6 ft from the first rod (CEC 250.53(A)(3))
 
 ### GEC Sizing
 
@@ -95,9 +94,12 @@ For a temporary power pole on a construction site, the typical grounding electro
 
 ---
 
-## Site Plan Requirements for Temporary Power Poles
+## Site Plan Information for Temporary Power Poles
 
-A site plan shall show:
+The enforcing agency or utility may require the following useful plan
+information. Treat it as a submittal checklist, not a statewide CFC mandate,
+unless the applicable current local/utility source passes the five-point gate
+above:
 
 1. **Property lines** with dimensions (lot width x depth)
 2. **All buildings** on the property (house, above-grade structures, patio covers, trash enclosures, etc.)
@@ -115,9 +117,14 @@ A site plan shall show:
 
 ## Electrical Plan Requirements
 
+Use the following as a technical-information checklist. Whether every item must
+appear in a particular submittal is determined by the applicable CEC provision,
+issued permit, and current utility/local submittal standard passing the
+five-point gate above.
+
 ### Single Line Diagram
 
-Shall show at minimum:
+Commonly needed information includes:
 - Types of feeder/wiring methods (conductor gauge, type, material, insulation, conduit)
 - Equipment voltages, amps, VA/watts, and AIC ratings
 - Grounding electrode and conductor types, amounts, and sizes
@@ -139,15 +146,17 @@ Shall show at minimum:
 
 ---
 
-## Maintenance and Inspection (CFC 605.11)
+## Maintenance and Inspection
 
-- Temporary power poles shall be **regularly inspected and tested** for safe operating condition
-- Inspections documented; deficiencies corrected immediately
-- Signage warning of electrical hazards, emergency shutdown procedures, and responsible personnel contact information required (CFC 605.11.2)
+CFC 605 has no temporary-power inspection or signage subsection 605.11. Apply
+maintenance, inspection, testing and signs from the CEC, equipment listing and
+manufacturer instructions, issued permit conditions, or a current local/utility
+source passing the five-point gate.
 
 ---
 
 ## Removal
 
 - Temporary wiring shall be **removed immediately** upon completion of construction or purpose (CEC 590.3(D))
-- Temporary power poles and wiring removed when no longer required (CFC 605.12.2)
+- CFC 605.12.2 does not exist; any additional pole-removal procedure must come
+  from the issued permit or a current local/utility source.

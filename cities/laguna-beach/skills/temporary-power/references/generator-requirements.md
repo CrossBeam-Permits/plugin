@@ -2,7 +2,7 @@
 title: "Temporary Generator Requirements — Electrical, Fire, and Air Quality"
 category: "Generator-Specific"
 relevance: "All temporary generator permit reviews"
-key_code_sections: "CEC 590.3, 590.4, 590.6, CFC 313, CFC 605.9, SCAQMD Rules"
+key_code_sections: "CEC 250.30, 250.34, 590.3, 590.4, 590.6; CFC 107, 313.1, 1203; applicable air-district rules"
 ---
 
 # Temporary Generator Requirements
@@ -16,23 +16,29 @@ Source: 2025 California Electrical Code (Title 24, Part 3), California Fire Code
 ### What Temporary Generator Permits Cover
 
 1. Installation of temporary generator(s) on residential, commercial, or industrial sites
-2. May only be used for **construction activities or outdoor events** where permanent power is not present or available
-3. **Shall NOT be used to power permanent structures or installations**
-4. **Shall NOT be used for work beyond the scope** of the temporary power installation
+2. The temporary wiring/use must stay within the purpose and duration authorized
+   by CEC 590.3 and the issued permits.
+3. Any local limit on supplying an existing permanent structure must come from
+   the named permitting authority's current permit condition; CEC Article 590
+   does not create the former categorical ban.
 
 ### Time Limits (CEC 590.3)
 
 - **Construction**: Permitted during the period of construction, remodeling, maintenance, repair, or demolition (590.3(A))
 - **Events/holiday lighting**: Not to exceed 90 days (590.3(B))
-- **Typical generator permit**: Valid for **90 days** from permit issuance
-- After 90 days: generator shall be removed, installation formally permitted for permanent installation using permanent wiring methods, or temporary permit renewed
+- A CFC 107 temporary fire-code permit, where required, is time-limited and may
+  not exceed 180 days; the fire code official may extend it for demonstrated
+  cause. Other permit duration/renewal conditions come from the issuing
+  authority and must be cited separately.
 - Temporary wiring shall be **removed immediately upon completion** of construction or purpose (590.3(D))
 
 ### Emergency vs. Non-Emergency Systems
 
-- Temporary generator permits are valid only for generators providing **non-emergency electrical power** not required by California codes
-- For **emergency electrical power systems required to be permanently installed** by California codes, a **separate review and permit** are required
-- Emergency and standby power systems must comply with CFC Section 1206
+- Determine whether the installation supplies an emergency or standby system
+  required by the CFC or CBC. Required emergency and standby power systems
+  comply with CFC 1203, including its installation route to the CBC, CEC,
+  NFPA 110 and NFPA 111. Do not cite CFC 1206; that section governs stationary
+  fuel-cell power systems.
 
 ---
 
@@ -106,100 +112,60 @@ Where the generator is a separately derived system (neutral not solidly intercon
 
 ## Fire Code Requirements (CFC)
 
-### General (CFC 605.9)
+### Temporary permit and conformance (CFC 107)
 
-Temporary power systems, including generators, **require permits and approvals from the AHJ** before installation and use.
+CFC 107 authorizes the fire code official to issue a time-limited permit for a
+temporary structure, use, equipment or system when required by CFC 105.5 or
+105.6. Temporary equipment must conform to the CFC as necessary for health,
+safety and general welfare. Section 605 is fuel-fired appliances and contains no
+temporary-generator permit rule.
 
-### Generator Location (CFC 313.1)
+### Fueled equipment in buildings (CFC 313.1)
 
-- Temporary generators shall be located **at least 20 feet away** from structures, building openings, combustible materials, and vehicles
-- Location shall be accessible for maintenance and emergency operations
+CFC 313.1 prohibits storing, operating or repairing fueled equipment, including
+portable generators, within a building except under its three stated
+exceptions. Section 313.1.1 authorizes the fire code official to require removal
+from a location found hazardous. Section 313 does **not** establish the former
+20-foot setback, ventilation-room, fuel-storage, grounding, physical-protection
+or signage recipes, and it has no subsections 313.3 through 313.5.
 
-### Ventilation (CFC 313.1.1)
+### Required emergency and standby systems (CFC 1203)
 
-- Generators shall be placed in **well-ventilated areas** to prevent CO and hazardous gas accumulation
-- Exhaust outlets shall be directed away from structures, building openings, and air intakes
-- **Interior installation**: room must be **2-hour fire rated with emergency egress**
+Where the generator serves a system required by the CFC or CBC, apply CFC 1203
+and the specific provision that requires the system. Stationary generators
+within 1203.1.1 are listed to UL 2200; installation is routed by 1203.1.3 to the
+CBC, CEC, NFPA 110 and NFPA 111.
 
-### Fuel Storage (CFC 313.2)
+### Project-specific fire and fuel review
 
-- Fuel stored in **approved containers**, located away from the generator
-- Comply with storage requirements for flammable and combustible liquids
-- Safety measures: secondary containment, spill control, proper ventilation
+Identify the fuel, container/tank capacity, indoor/outdoor location, temporary
+use, vehicle exposure, nearby openings/combustibles, and required-system status.
+Then route to the applicable CFC fuel-storage, fire-extinguisher, access,
+vehicle-impact, ventilation/exhaust, and referenced-standard provisions. Do not
+apply a numerical setback, containment, bollard, sign or extinguisher recipe
+without a source that supplies all of the following:
 
-### Fuel Tank Setbacks
-
-| Tank Capacity (Gallons) | Required Setback to Property Line | Required Setback to Adjacent Building |
-|------------------------|----------------------------------|--------------------------------------|
-| 0-275 | 10 feet | 5 feet |
-| 276-750 | 20 feet | 5 feet |
-| 751-1000 | 30 feet | 5 feet |
-
-### Generator Double-Wall Containment
-
-- If generator does not have double-walled containment, specify the type of secondary containment
-- Secondary containment required per WM-4 CASQA Spill Prevention and Control
-
-### Grounding and Bonding (CFC 313.3)
-
-- Generators shall be properly grounded and bonded to prevent electrical shock
-- Electrical cords, cables, and connections rated for the load and protected against physical damage
-- All connections weatherproof and properly insulated
-
-### Physical Protection (CFC 313.4)
-
-- Generators protected from physical damage by barriers or other means
-- Vehicle impact protection required (posts, bollards, etc.)
-- Additional protection **not required** for temporary installations on raised trailers
-
-### Signage (CFC 313.5)
-
-- Signage indicating "EMERGENCY GENERATOR" or equivalent
-- Include: fuel type, shut-off procedures, contact information for responsible personnel
-
-### Fire Access
-
-- Emergency vehicle access drive locations required, minimum **20-foot width**
-
-### Fire Extinguishers (CFC 605.11.1)
-
-- Appropriate fire extinguishers shall be **readily accessible** near temporary power equipment
-- Personnel trained in use of extinguishers and emergency shutdown procedures
+1. named jurisdiction, agency, manufacturer or standards publisher;
+2. current document/product/standard title and edition or effective date;
+3. exact page, section, table or detail;
+4. geographic and project-type scope; and
+5. confirmation that the source remains current.
 
 ---
 
-## SCAQMD Requirements (Southern California)
+## Air-District and Serving-Utility Routing
 
-### Air Quality Permits
+Determine the air district and serving utility for the actual site; SCAQMD and
+SCE do not apply statewide. Before asserting an air permit, operating-hour
+classification, engine/turbine rating threshold, registration path, form,
+utility approval, or utility inspection requirement, capture all five source
+elements listed above from the agency's or utility's current document.
 
-Separate approval by the **South Coast Air Quality Management District** is required prior to installation.
-
-- Emergency IC Engine Hotline: 909-396-3396
-
-### SCAQMD Definition of "Temporary" Generator
-
-A standby ICE or turbine for non-utility power generation that:
-- Does NOT operate more than **200 hours per year**
-- Only operated for emergency power failure or routine testing and maintenance
-- Considered an "emergency backup generator" for power generation
-
-### When SCAQMD Permit Required
-
-Generators that are ICEs **greater than 50 brake horsepower (BHP)** or gas turbines **greater than 2,975,000 BTU/hour** require a **Permit to Construct** from SCAQMD prior to installation.
-
-### Pre-Certified Generators
-
-- SCAQMD has pre-certified certain emergency generators meeting their rules
-- Facilities installing pre-certified units may use the **Permit Registration Program** (lower fees, shorter processing times)
-- Check SCAQMD website for Certified ICE-Emergency Generators List
-- Use Form EIC-RE (End-User Form for Emergency Generator)
-
----
-
-## Utility Notification (SCE)
-
-Separate notification and approval by **Southern California Edison** (or the serving utility) are required prior to installation.
-
-- SCE Information: 1(800) 655-4555
-- SCE forms and procedures: sce.com/partners/consultingservices/localplanning
-- Inspections and approval of the installation required after obtaining the temporary generator permit
+For a project in SCAQMD territory, route the actual engine or turbine type,
+rating, fuel and proposed use to the district's current stationary-source rules
+and permit/registration materials. For an SCE-served project, determine whether
+the proposed temporary generator configuration requires service coordination,
+interconnection review, notification, or inspection under SCE's current tariff
+or published service requirements. Until that provenance is attached, report
+the external approval as **verify with the current named authority**, not as a
+statewide or categorical permit condition.

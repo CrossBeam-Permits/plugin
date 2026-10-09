@@ -2,7 +2,7 @@
 title: "Air Conditioning & Refrigerant Piping — CMC Chapters 9/11"
 category: "Cooling Equipment"
 relevance: "All A/C condenser, heat pump, and split system installations"
-key_code_sections: "CMC 301.4, 311.2, 904.7, 1105.1, 1105.2, 1105.7, 1105.11, 1109.6, 1109.7"
+key_code_sections: "CMC 301.4, 311.2, 904.8, 1105.1, 1105.2, 1105.7, 1105.11, 1109.6, 1109.7"
 ---
 
 # Air Conditioning & Refrigerant Piping
@@ -21,13 +21,14 @@ Cooling equipment used for human comfort in residential buildings shall be selec
 
 All HVAC appliances shall be anchored in place to resist gravity loads, seismic forces, and wind forces.
 
-## Outdoor Unit Pad (CMC 1105.2)
+## Equipment Supports and Anchorage (CMC 1105.2)
 
-Outdoor condensing units shall be supported on noncombustible materials. In practice, this means a minimum **3 in. raised concrete or composite pad** above grade.
+Refrigeration equipment supports and anchorage shall be designed as required by
+CMC 1105.2 and made of noncombustible materials. Section 1105.2 does not create
+a universal 3-inch raised-pad requirement; any pad-height rule needs an
+applicable listed-product instruction or fully provenanced local source.
 
-> Note: The 3 in. pad requirement comes from common residential practice and the CRC M1305.1.4 reference. CMC 1105.2 requires noncombustible supports; the pad height prevents flooding and debris contact.
-
-## Blower Capacity (CMC 904.7(1))
+## Blower Capacity (CMC 904.8)
 
 Furnace with cooling coil shall have a blower capable of overcoming the resistance of the cooling coil and duct system friction losses.
 
@@ -37,11 +38,11 @@ Central air conditioning systems shall have an air filter installed. Filters sha
 
 ---
 
-## Condenser Clearances
+## Condenser-to-Dryer-Vent Clearance — CEnC §150.0(h)3A
 
-### Distance from Dryer Vent (CMC 311.2)
-
-Condenser shall NOT be installed within **5 ft** of a clothes dryer vent.
+Installed air-conditioner and heat-pump outdoor condensing units shall have at
+least **5 feet** of clearance from the outlet of any dryer vent. CMC 311.2
+governs air filters and is not the source of this requirement.
 
 ### Outdoor Air Intake Clearance (CMC 311.3)
 
@@ -125,8 +126,8 @@ The additional pan or drain line connection shall have a drain pipe of not less 
 |------|------------|------|
 | System sizing | ACCA Manual J & S | CMC 1105.1 |
 | Equipment anchored | To resist gravity/seismic/wind | CMC 303.4 |
-| Outdoor pad | Noncombustible, raised above grade | CMC 1105.2 |
-| Distance from dryer vent | >= 5 ft | CMC 311.2 |
+| Equipment support | Noncombustible support and anchorage designed under the applicable building-code path; no universal CMC pad height | CMC 1105.2 |
+| Dryer-exhaust separation | At least 5 ft from the outlet of any dryer vent | CEnC 150.0(h)3A |
 | Disconnect | Within sight of condenser | CMC 301.4 |
 | Service receptacle | 120V GFCI within 25 ft | CMC 301.4 |
 | Refrigerant line support | 6 ft from compressor, 2 ft from bends, 15 ft max interval | CMC 1109.6 |

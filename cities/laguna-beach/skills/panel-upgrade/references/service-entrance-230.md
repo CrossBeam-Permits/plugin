@@ -158,42 +158,66 @@ Overcurrent devices (including the main breaker/panel) must be:
 
 ---
 
-## California Fire Code — Panel Access and Marking (CFC 605)
+## California Fire and Electrical Codes — Panel Access and Marking (CFC 603; CEC 110, 230, 240, 408)
 
 The California Fire Code (Title 24, Part 9) includes requirements for electrical panels that apply statewide. These are commonly cited alongside CEC requirements during panel upgrade inspections.
 
-### CFC 605.3 — Marking and Labeling
+### CEC 110.21 — Marking and Labeling
 
-Electrical panels, switchboards, and panelboards shall be clearly marked to identify:
-- **Voltage, current, wattage, and power characteristics**
-- Labels must be **durable, permanent**, and made of materials that are **reflective and weather-resistant**
+CEC 110.21(A) requires electrical equipment to bear the manufacturer's name,
+trademark, or another descriptive marking that identifies the organization
+responsible for the product. Voltage, current, wattage, and other ratings are
+marked when another CEC provision requires them. Equipment markings must be
+sufficiently durable for the environment involved.
 
-### CFC 605.3.1 — Circuit Directory and Access
+When the CEC requires a field-applied caution, warning, or danger marking,
+110.21(B) requires an effective hazard marking that is durable for the
+environment and permanently affixed. It cannot be handwritten except for
+legible variable information. Section 110.21 does not independently require
+every panel to display every possible rating or require reflective and
+weather-resistant label material.
+
+### CEC 408.4 / CFC 603.4 — Circuit Directory and Access
 
 - Panels shall include a circuit directory identifying each circuit's purpose, location, and specific loads
 - **Clear access** shall be maintained to panels at all times
 - Panels shall not be blocked or obstructed by storage, equipment, or building elements
 
-### CFC 605.5 — Enclosures
+### CEC 110.27(B), 110.28 — Enclosures
 
 Electrical panels and equipment must be housed in appropriate enclosures rated for the type of installation and environmental conditions, including protection from moisture, dust, and physical damage.
 
-### CFC 605.5.1 — Physical Damage Protection
+### CEC 110.27(B) — Physical Damage Protection
 
 Electrical equipment shall be protected against physical damage, including installation of guards, barriers, or enclosures where necessary.
 
-### CFC 605.6 — Lockable Panels and Disconnects
+### CEC 110.25, 230.85(E) — Lockable Panels and Disconnects
 
-- Disconnect switches shall be capable of being **locked in the OFF position**
-- When locked, must be clearly labeled **"EMERGENCY DISCONNECT"** or similar language (CFC 605.6.1)
+- CEC 110.25 applies **when another CEC provision requires a disconnecting
+  means to be lockable open**. In that case, it must be capable of being locked
+  in the open position, and the locking provision must remain in place with or
+  without the lock installed.
+- CEC 230.85 separately requires an outdoor emergency disconnect for one- and
+  two-family dwelling units, subject to its stated scope and exceptions.
+  Section 230.85(E) requires the exact marking applicable to the disconnect
+  type: `EMERGENCY DISCONNECT, SERVICE DISCONNECT`; `EMERGENCY DISCONNECT,
+  METER DISCONNECT, NOT SERVICE EQUIPMENT`; or `EMERGENCY DISCONNECT, NOT
+  SERVICE EQUIPMENT`. The marking must be on the outside front of the
+  enclosure, with a red background, white text, and letters at least 1/2 inch
+  high.
 
-### CFC 605.10 — Residential Occupancies
+### CEC 110.22, 240.24, 408.4 — Residential Occupancies
 
 In Group R (residential) occupancies, electrical panels and disconnects must be in **readily accessible locations** and properly labeled to indicate purpose and areas served.
 
-### CFC 605.11 — Emergency Personnel Access
+### CEC 230.85 — Dwelling Emergency Disconnect Access
 
-Main electrical panels and OCPDs shall be properly labeled and installed in locations that are **readily accessible** so firefighters and emergency personnel can easily identify and operate them.
+For a one- or two-family dwelling within the scope of 230.85, install the
+emergency disconnect in a readily accessible outdoor location on or within
+sight of the dwelling and apply the exact 230.85(E) marking for the selected
+disconnect type. Do not infer from 110.25 that every panel or disconnect must
+be lockable, or from 230.85(E) that locking a device creates an emergency
+disconnect.
 
 ---
 

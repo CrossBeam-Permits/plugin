@@ -2,12 +2,12 @@
 title: "Gas Vent Termination and Roof Penetration Requirements"
 category: "Mechanical / Plumbing"
 relevance: "When reroof involves work around gas vent penetrations — must maintain clearances and flashing"
-key_code_sections: "CMC 802.6.1, 802.6.2; CPC 802.6.1, 802.6.2"
+key_code_sections: "CMC 802.6.1, 802.6.2, 802.7.3.3; CPC 509.6, 509.6.1, 509.7.3.4"
 ---
 
 # Gas Vent Termination and Roof Penetration Requirements
 
-Source: 2025 California Mechanical Code (Title 24, Part 4), Section 802.6; California Plumbing Code (Title 24, Part 5), Section 802.6.
+Source: 2025 California Mechanical Code (Title 24, Part 4), Section 802.6; California Plumbing Code (Title 24, Part 5), Sections 509.6 and 509.7.
 
 ---
 
@@ -21,7 +21,7 @@ During a reroof, all existing roof penetrations (gas vents, plumbing vents, exha
 
 ---
 
-## Gas Vent Termination Heights (CMC 802.6.1 / CPC 802.6.1)
+## Gas Vent Termination Heights (CMC 802.6.1 / CPC 509.6.1)
 
 ### Type B or L Vents (most residential gas appliances)
 
@@ -59,9 +59,9 @@ For low-slope residential roofs (< 6:12), the practical minimum is **12 inches a
 
 | Vent Type | Minimum Clearance to Combustibles |
 |---|---|
-| Single-wall metal pipe | **6 inches** |
-| Type B vent (double-wall) | **1 inch** |
-| Factory-built chimney | Per manufacturer (typically 2") |
+| Single-wall metal pipe | Select the applicable appliance row and conditions in CMC Table 802.7.3.3 and CPC Table 509.7.3.4(1) |
+| Type B vent (double-wall) | Per listing and manufacturer installation instructions under CMC 802.1/.1.1 and CPC 509.1/.1.1 |
+| Factory-built chimney | Per listing and manufacturer installation instructions |
 
 **During reroof:** Ensure that new roofing materials maintain these clearances around vent pipes. Roofing material must not contact the vent pipe directly.
 
@@ -69,7 +69,7 @@ For low-slope residential roofs (< 6:12), the practical minimum is **12 inches a
 
 ## Flashing and Roof Jack Requirements
 
-### General (CMC 802.6.1(6) / CPC 802.6.1(6))
+### General (CMC 802.6.1(6) / CPC 509.6.1(6))
 
 - **Flashing shall be provided** at every roof or wall vent penetration
 - All gas vents must extend through the **roof flashing, roof jack, or roof thimble**
@@ -85,7 +85,10 @@ For low-slope residential roofs (< 6:12), the practical minimum is **12 inches a
 ### Vent Support
 
 - Vents must be **adequately supported** — the vent pipe must not rely on the roofing material for structural support
-- Minimum **5 inches** above the water heater collar for Type B/L vents
+- Gas vents are supported and spaced under the manufacturer installation
+  instructions (CMC 802.6.4 / CPC 509.6.4). The separate termination-height
+  rule for Type B/L vents is 5 **feet** vertically above the highest connected
+  draft hood or flue collar (CMC 802.6.1 / CPC 509.6.1).
 
 ---
 
@@ -111,7 +114,7 @@ Direct vent appliances (wall-terminated) do NOT extend through the roof. These a
 | Vent height | Meets minimum per roof slope (see table above) |
 | Vent cap | Listed cap in place, not damaged |
 | Pipe jack/boot | New or in good condition, properly sealed |
-| Clearance to combustibles | 6" single-wall, 1" Type B |
+| Clearance to combustibles | Applicable single-wall table row; listed Type B clearance per manufacturer instructions |
 | Flashing integration | Pipe jack properly integrated with underlayment and covering |
 | Vent support | Pipe adequately supported, not relying on roofing |
 

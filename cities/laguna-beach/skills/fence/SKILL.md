@@ -1,25 +1,26 @@
 ---
 name: fence
-description: "Fence permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions fence in Laguna Beach."
+description: "Fence/Wall permits in Laguna Beach, CA. Fences, gates, and freestanding garden or privacy walls that hold no soil, at or below the local height limit. A garden wall that only encloses a yard is a fence. NOT a wall retaining soil. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions fence in Laguna Beach."
 metadata:
-  version: "1.0"
+  version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC)"
-  authority: "California Building Standards Commission"
+  authority: "California Building Standards Commission and City of Laguna Beach"
   law_as_of: "January 1, 2025"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
-# Laguna Beach — Fence Permit
+# Laguna Beach — Fence/Wall Permit
 
-Handles fence permits in Laguna Beach end-to-end.
+Handles fence/wall permits in Laguna Beach end-to-end. Scope: Fences, gates, and freestanding garden or privacy walls that hold no soil, at or below the local height limit. A garden wall that only encloses a yard is a fence. NOT a wall retaining soil.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
-> "Are you (A) planning to file a fence permit, or (B) a city reviewer checking a submitted one?"
+> "Are you (A) planning to file a fence/wall permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -36,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
-## Ready to Submit — Laguna Beach Fence Permit
+## Ready to Submit — Laguna Beach Fence/Wall Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -75,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -92,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -108,23 +122,101 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
+
+**Base skill:** `references/california-baseline.md`
+**This skill contains ONLY items where Laguna Beach differs from state code.**
+**All state checklist items apply unless explicitly overridden below.**
+
+Note: Fence/wall rules are predominantly local — most of this skill's content represents city-specific requirements.
+
+---
+
+### Decision Tree Router
+
+#### STEP 1: What Type of Wall/Fence?
+
+| Type | Route |
+|------|-------|
+| **CMU block wall (standard detail)** | Use city standard detail → `references/city-block-wall-detail.md` |
+| **Wood or metal fence** | OTC-eligible; survey waiver if within 3' of property line or public ROW |
+| **Retaining wall** | NOT covered by standard detail → requires registered design professional |
+| **Custom masonry / stone** | NOT covered by standard detail → requires engineering |
+
+#### STEP 2: Does It Need a Permit?
+
+| Condition | Permit Required? |
+|-----------|-----------------|
+| Block wall >30" height from adjacent grade | YES |
+| ANY wall/fence within 3' of property line or public right-of-way | YES |
+| Wood/metal fence >6' | YES |
+| Wood/metal fence ≤6' and >3' from property line | NO permit required |
+
+#### STEP 3: Additional Requirements Check
+
+| Trigger | Requirement |
+|---------|------------|
+| Within 3' of property line or public ROW | Licensed surveyor must certify location BEFORE footing inspection |
+| ANY wall/fence | Zoning/Planning must approve BEFORE building permit issued |
+| Near fire hydrant | No wall/fence within 36" |
+| Near water meter | No wall/fence/foundation within 12" |
+| Wall + railing/guard/screen | Total height must not exceed 6'-0" above lowest adjacent grade |
+| Slope >10% or adverse soil | Standard detail NOT applicable — engineer required |
+
+---
+
+### Full Review Checklist (Standard CMU Block Wall)
+
+| # | Check | What to Verify | Reference |
+|---|-------|---------------|-----------|
+| 1 | Permit required? | Height >30" OR within 3' of property line or public ROW | `references/city-block-wall-detail.md` |
+| 2 | Zoning approval? | Planning Division reviewed height, location, community design standards | City policy |
+| 3 | Survey required? | Within 3' of property line or public ROW → surveyor must certify before footing inspection | `references/city-block-wall-detail.md` |
+| 4 | Site conditions ok? | Slope <10%, no expansive soil/liquefaction/flood hazard | `references/city-block-wall-detail.md` |
+| 5 | Grade equal? | Max 6" offset between sides, no surcharge loads | `references/city-block-wall-detail.md` |
+| 6 | Block specs correct? | f'm ≥ 1,500 psi, Grade N, ASTM C90, running bond, solid grouted | `references/city-block-wall-detail.md` |
+| 7 | Steel sizing correct? | Vertical: <4' = #4@32"OC, 4'-6' = #4@24"OC; Horizontal: #4@24"OC | `references/city-block-wall-detail.md` |
+| 8 | Footing sized correctly? | Per table: 3'-4' wall = 18" or 24" footing; 5' = 24" or 30"; 6' = 30" or 36" | `references/city-block-wall-detail.md` |
+| 9 | Clearances ok? | 36" from hydrant, 12" from water meter, no ROW projections | `references/city-block-wall-detail.md` |
+| 10 | Expansion joints? | Max 30' spacing | `references/city-block-wall-detail.md` |
+| 11 | Clean-outs? | Required for lifts >4' | `references/city-block-wall-detail.md` |
+| 12 | Attachments? | Wall + railing/guard ≤6'-0" above lowest adjacent grade | `references/city-block-wall-detail.md` |
+
+---
+
+### Key Laguna Beach Wall/Fence Facts
+
+- **Standard detail available**: Yes — city provides pre-engineered CMU block wall detail
+- **Permit trigger**: >30" height OR any height within 3' of property line or public right-of-way
+- **Survey required**: Licensed surveyor must certify location before footing inspection (walls within 3' of property line or public ROW)
+- **Survey waiver**: Available for wood/metal fences (not CMU) via Request to Waive Survey form. Survey waiver form requires notarization.
+- **Retaining wall exemption**: Retaining walls not over 48" from footing to top are exempt from permit UNLESS supporting surcharge, impounding flammable liquids, or within 3' of property line/ROW (§14.50.022)
+- **Current planning route**: Fences, walls, and hedges complying with §25.50.012 require Zone Clearance under §25.05.040(B)(2)(l). Permanent chain-link/similar woven-metal fences and vinyl fences that do not simulate natural material require Design Review under §25.05.040(B)(1)(m). Apply the ESA override.
+- **Zoning approval**: Required BEFORE building permit — Planning reviews height, location, design standards
+- **Design criteria**: Seismic D, 95 mph basic wind speed exposure C (2025 CBC / ASCE 7-22), 1,500 psf soil bearing
+- **Standard-detail CMU**: both footing alternates are 6" min, solid grouted; a partially grouted wall has left the detail and needs an engineered design
+- **Inspections**: 3 required (footing, reinforcing steel, final)
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
 | 1 | **Permit Exemption** | ❌ **fail** | Fences <=7 ft are exempt from permit per state code. Retaining walls <=4 ft without surcharge are exempt. Cities may have lower thresholds — check city overlay. | CRC R105.2 |
 | 2 | **Height Measurement** | ❌ **fail** | Fence/wall height measured from finished grade on the higher side. For fences on retaining walls, total combined height measured from lower grade. Where fence on top of wall, both structures must independently comply. | CRC R105.2; local practice |
-| 3 | **Material Suitability** | ❌ **fail** | Wood: naturally durable species or pressure-treated (AWPA U1, Use Category 4B for ground contact). Vinyl: UV-stabilized, manufacturer wind rating. Chain link: galvanized or vinyl-coated, minimum 9 gauge. Masonry: ASTM C90 CMU, Type M or S mortar. Metal: galvanized, powder-coated, or corrosion-resistant. | CRC R304, R606.2; CBC 2103 |
+| 3 | **Material Suitability** | ❌ **fail** | Wood: naturally durable species or pressure-treated (AWPA U1, Use Category 4B for ground contact). Vinyl: UV-stabilized, manufacturer wind rating. Chain link: galvanized or vinyl-coated, minimum 9 gauge. Masonry: ASTM C90 CMU; mortar selected under Table R606.2.8 / ASTM C270 by use and SDC, including Type N where permitted. Metal: galvanized, powder-coated, or corrosion-resistant. | CRC R304, R606.2; CBC 2103 |
 | 4 | **Post Spacing & Size** | ❌ **fail** | Wood fence posts: typically 4x4 minimum, 6 ft to 8 ft OC maximum. Metal posts: per manufacturer specs. Post size increases with fence height and wind exposure. | Industry standard / manufacturer |
 | 5 | **Post Embedment Depth** | ❌ **fail** | Minimum 1/3 of total post length below grade (rule of thumb). For 6 ft fence: minimum 24" deep. For 8 ft fence: minimum 32" deep. Concrete footings recommended: minimum 8" diameter for 4x4 post, 10" for 4x6 or 6x6. Post must extend below frost line (minimal concern in most of CA). | CBC 1807.3 |
 | 6 | **Concrete Footing** | ❌ **fail** | Concrete backfill: minimum f'c 2,000 psi. Hole minimum 4" larger than post diameter. Footing should extend 1-2" above grade and slope away from post for drainage. Clean sand backfill with tamping is alternative. | CBC 1807.3.3 |
 | 7 | **Wind Load** | ❌ **fail** | Fences and freestanding walls must resist wind loads per ASCE 7-22 / CBC 1609. Solid fences (board-on-board, masonry) receive full wind pressure. Open fences (chain link, wrought iron, picket) receive reduced pressure proportional to solidity ratio. Most of California: 110-115 mph basic wind speed. | CBC 1609; ASCE 7-22 |
-| 8 | **Masonry/Block Wall — Materials** | ❌ **fail** | CMU: ASTM C90, Grade N, load-bearing. Mortar: Type M or S (Type M preferred for below-grade/ground contact). Grout: ASTM C476, f'c >= 2,000 psi. Rebar: ASTM A615/A706, Grade 60. Running bond required. | CRC R606.2-R606.5; CBC 2103 |
-| 9 | **Masonry/Block Wall — Reinforcement** | ❌ **fail** | Vertical rebar: #4 minimum, spacing per height (typical: #4@32" OC for walls <=4 ft, #4@24" OC for 4-6 ft). Horizontal rebar: #4@24" OC minimum. Bond beams at top course minimum. All cells with rebar fully grouted. Lap splice: 48 bar diameters minimum. | CRC R606.11; TMS 402 |
-| 10 | **Masonry/Block Wall — Foundation** | ❌ **fail** | Continuous concrete footing required. Width and depth increase with wall height. Typical: 12" wide x 12" deep for 3-4 ft walls, 18" wide x 18" deep for 5-6 ft walls. Footing depth below grade: 12" minimum. Rebar dowels from footing into wall: match vertical spacing. | CRC R403; CBC 1807.1.6 |
-| 11 | **Masonry/Block Wall — Expansion Joints** | ⚠️ **flag** | Control joints at maximum 20-25 ft spacing (TMS 402 recommends L/H ratio consideration). Also required at changes in height, thickness, or direction. | TMS 402 |
+| 8 | **Masonry/Block Wall — Materials and Bond** | ❌ **fail** | CMU: ASTM C90. Mortar: Table R606.2.8 or ASTM C270, with type selected by use and SDC under R606.2.8.1–R606.2.8.3. Use running or stack bond under R606.3.7; stack bond requires the R606.3.7.2 horizontal reinforcement. | CRC R606.2, R606.3.7 |
+| 9 | **Masonry/Block Wall — Reinforcement** | ❌ **fail** | Establish the wall function, assigned SDC, thickness, bond, unit/grout construction, and loads. Where applicable, use R606.12 with Figures R606.11(1)-(3), or an approved TMS 402/403 design. Fill cells containing reinforcement solidly with grout. | CRC R606.3.5.3, R606.12; Figures R606.11(1)-(3); TMS 402/403 |
+| 10 | **Masonry/Block Wall — Foundation** | ❌ **fail** | Size the footing and dowels for the wall loads, soil, assigned SDC, and applicable CRC/CBC design path. Do not use a wall-height-only footing or dowel schedule without an applicable code figure/table or fully sourced approved design. | CRC R403; CBC 1807.1.6 |
 | 12 | **Retaining Wall — Permit Trigger** | ❌ **fail** | Retaining walls >4 ft from bottom of footing to top of wall require a permit. Retaining walls supporting surcharge loads (driveways, structures, slopes) require a permit regardless of height. | CRC R105.2 |
 | 13 | **Retaining Wall — Engineering Required** | ❌ **fail** | Retaining walls >4 ft require design by a registered design professional (California licensed civil/structural engineer or architect). Soils report typically required. Must address overturning, sliding, bearing pressure, and water uplift. Safety factor: minimum 1.5 (1.1 with seismic). | CBC 1807.2 |
 | 14 | **Retaining Wall — Drainage** | ❌ **fail** | Drainage behind retaining walls is critical. Weep holes: 4" diameter at 6-8 ft OC along base, or perforated drain pipe behind wall with outlet. Filter fabric behind gravel drain fill to prevent soil migration. Surface drainage: grade away from top of wall. | CBC 1807.2; engineering practice |
@@ -140,11 +232,34 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 | 24 | **Wood Decay Protection** | ❌ **fail** | Wood fence posts in ground contact must be naturally durable species (redwood heartwood, cedar heartwood, black locust) or pressure-treated per AWPA U1, Use Category 4B. Metal post bases (Simpson, etc.) can elevate wood above grade to avoid ground contact. | CRC R304.1, R304.4 |
 | 25 | **Contractor Licensing** | ❌ **fail** | C-13 (Fencing) license for fencing work. C-29 (Masonry) for block/masonry walls. B (General Building) may also perform this work. C-12 (Earthwork/Paving) for grading associated with retaining walls. Workers' compensation insurance required. | B&P Code 7028 |
 
+### Checklist rows to place
+
+These state rows have no current stage tag. For each one, decide from its text whether it is a plan-check item (and whether a miss is a correction or a flag) or an inspection item.
+
+| # | Check | What to verify | Code |
+|---|---|---|---|
+| 11 | **Masonry/Block Wall — Control Joints** | Locate and detail control joints under the applicable current TMS provision or approved project design. Do not apply a fixed spacing without the exact standard, edition, provision, and project scope. | TMS 402/602 or approved design |
+
 ---
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/fence/`. City overlay source: `skills/cities/laguna-beach/fence/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/fence-height-materials.md` — Fence Height Limits, Materials, and Installation
+- `references/masonry-block-walls.md` — Masonry (CMU) Block Wall Construction Requirements
+- `references/pool-barriers.md` — Pool Barrier and Enclosure Requirements
+- `references/post-structural.md` — Fence Post Structural Requirements
+- `references/retaining-walls.md` — Retaining Wall Requirements and Engineering Triggers
+
+**Laguna Beach rules**
+
+- `references/city-block-wall-detail.md` — Laguna Beach Block Wall — Standard CMU Detail
 
 ---
 

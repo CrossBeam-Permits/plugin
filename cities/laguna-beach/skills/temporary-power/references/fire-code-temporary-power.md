@@ -1,183 +1,122 @@
 ---
-title: "California Fire Code Requirements for Temporary Power"
+title: "California Fire-Code Routing for Temporary Power"
 category: "Fire Safety"
-relevance: "All temporary power reviews — fire clearances, fuel storage, signage, access"
-key_code_sections: "CFC 313, CFC 605.9, CFC 605.10, CFC 605.11, CFC 605.12, CFC 1206"
+relevance: "Temporary generators, poles, wiring and required emergency/standby systems"
+key_code_sections: "CFC 107, 313.1, 603.1, 603.4, 1203; CEC Article 590"
 ---
 
-# California Fire Code Requirements for Temporary Power
+# California Fire-Code Routing for Temporary Power
 
-Source: 2025 California Fire Code (Title 24, Part 9), Sections 313, 605, and 1206.
+Source: 2025 California Fire Code (Title 24, Part 9), Sections 107, 313,
+603 and 1203; 2025 California Electrical Code Article 590.
 
----
+CFC Section 605 governs fuel-fired appliances. It contains no temporary-power
+subsections 605.9 through 605.12. Do not use those inherited numbers for
+temporary permits, poles, maintenance, extinguishers, signs or wiring.
 
-## Permits and Approvals (CFC 605.9)
+## Temporary Permit and Conformance — CFC 107
 
-Temporary power systems, including generators and temporary power poles, **require permits and approvals from the local AHJ** before installation and use. Compliance with local regulations and inspection requirements is mandatory.
+CFC 107 authorizes the fire code official to issue a permit for temporary
+structures, uses, equipment or systems when required by Sections 105.5 and
+105.6. The permit:
 
-All temporary power systems shall be installed, maintained, and used in accordance with the CEC and NEC as adopted by the local jurisdiction (CFC 605.9.1).
+- is limited as to time of service and cannot exceed 180 days;
+- may be extended by the fire code official for demonstrated cause; and
+- does not displace other CFC requirements needed for health, safety and general
+  welfare.
 
----
+Whether a particular generator, pole or event requires a CFC permit depends on
+the actual temporary use and applicable CFC 105 permit provision. CFC 107 is
+authority to issue a required temporary permit, not a universal permit trigger
+for every temporary conductor or device.
 
-## Temporary Generator Requirements (CFC 313)
+## Electrical Installation Route — CFC 603 / CEC Article 590
 
-### Location and Setbacks (CFC 313.1)
+CFC 603.1 requires electrical equipment, wiring and systems required by the CFC
+or CBC to be installed, used and maintained under the CEC and CFC 603.2 through
+603.9. CFC 603.4 separately preserves the CEC working space and clearance.
 
-Temporary generators shall be located at least **20 feet** away from:
-- Structures
-- Building openings
-- Combustible materials
-- Vehicles
+Use CEC Article 590 for temporary electrical installations, including:
 
-The location shall be **accessible for maintenance and emergency operations**.
+- allowed duration and removal under 590.3;
+- wiring methods and physical protection under 590.4;
+- grounding and bonding under the applicable Articles 250 and 590 provisions;
+- overcurrent and disconnect requirements under the applicable CEC provisions;
+  and
+- GFCI or assured-equipment-grounding-conductor protection under 590.6 as
+  applicable.
 
-### Ventilation (CFC 313.1.1)
+There is no CFC 605.10 temporary-pole installation, clearance, overcurrent or
+grounding schedule. Utility service requirements and local pole details must be
+identified separately and cannot be labeled statewide CFC rules.
 
-- Generators shall be in **well-ventilated areas** to prevent CO accumulation
-- Exhaust outlets **directed away from** structures, building openings, and air intakes
-- **Interior installation**: room must be **2-hour fire rated** with **emergency egress**
+## Fueled Equipment — CFC 313.1
 
-### Fuel Storage (CFC 313.2)
+CFC 313.1 prohibits fueled equipment, including portable generators, from being
+stored, operated or repaired within a building except under its three stated
+exceptions. CFC 313.1.1 authorizes the fire code official to require removal of
+fueled equipment from a location found hazardous.
 
-- Fuel stored in **approved containers**
-- Located **away from the generator**
-- Compliant with flammable/combustible liquids storage requirements
-- Required safety measures:
-  - **Secondary containment**
-  - **Spill control**
-  - **Proper ventilation**
+Section 313 does not establish a 20-foot generator setback, a two-hour generator
+room, tank setbacks, secondary containment, grounding/bonding, bollard, trailer,
+signage or ventilation recipes. Section 313.2 concerns fueled vehicles in Group
+R living space; it is not a generator fuel-storage schedule.
 
-### Fuel Tank Setback Table
+## Required Emergency and Standby Power — CFC 1203
 
-| Tank Capacity (Gallons) | Setback to Property Line | Setback to Adjacent Building |
-|------------------------|-------------------------|------------------------------|
-| 0-275 | 10 feet | 5 feet |
-| 276-750 | 20 feet | 5 feet |
-| 751-1000 | 30 feet | 5 feet |
+Emergency and standby power systems required by the CFC or CBC comply with CFC
+1203, not 1206. Section 1206 governs stationary fuel-cell power systems.
 
-### Grounding and Bonding (CFC 313.3)
+For a required system:
 
-- Generators shall be **properly grounded and bonded**
-- Electrical cords, cables, and connections **rated for the load**
-- Protected against physical damage
-- All connections **weatherproof and properly insulated**
+- stationary generators within 1203.1.1 are listed to UL 2200;
+- 1203.1.3 routes installation to the CBC, CEC, NFPA 110 and NFPA 111; and
+- the specific CFC/CBC provision requiring the system determines additional
+  transfer time, duration and other criteria.
 
-### Physical Protection (CFC 313.4)
+Do not infer that every temporary generator is a required emergency system or
+must have an automatic transfer switch.
 
-- Generators protected from physical damage by **barriers or other means**
-- Prevent accidental contact, vehicular impact, or other hazards
-- Vehicle impact protection such as **posts/bollards** required
-- **Exception**: Additional protection NOT required for temporary installations on **raised trailers**
+## Project-Specific Fire and Site Review
 
-### Signage (CFC 313.5)
+Identify these project facts before selecting other CFC provisions:
 
-Required signage on generators:
-- "EMERGENCY GENERATOR" or equivalent wording
-- **Fuel type**
-- **Shut-off procedures**
-- **Contact information** for responsible personnel
+1. fuel type and container/tank capacity;
+2. portable, vehicle-mounted or stationary equipment;
+3. indoor/outdoor location and proximity to openings or combustibles;
+4. vehicle exposure and physical-damage risk;
+5. whether required fire apparatus access is affected;
+6. occupancy and temporary-use type; and
+7. whether the generator supplies a code-required emergency/standby system.
 
----
+Then route to the applicable current CFC fuel, fire-extinguisher, fire-access,
+vehicle-impact, exhaust/ventilation and referenced-standard provisions. A site
+plan must not show temporary equipment obstructing access that is independently
+required by CFC 503.4.
 
-## Temporary Power Pole Requirements (CFC 605.10)
+## Local and External Source Gate
 
-### Installation (CFC 605.10.1)
+A numerical setback, tank, containment, pole, utility, bollard, sign,
+extinguisher, screening, inspection or maintenance recipe may be applied only
+with:
 
-- Installed by a **qualified electrician**
-- In accordance with CEC and local utility requirements
-- Poles **securely anchored and braced** to withstand environmental and operational conditions
+1. named jurisdiction, agency, utility, manufacturer or standards publisher;
+2. current document/product/standard title and edition or effective date;
+3. exact page, section, table or detail;
+4. geographic and project-type scope; and
+5. confirmation that the source remains current.
 
-### Clearances (CFC 605.10.2)
+Without all five, use a nonnumeric applicable-code/design route and flag the
+missing source. Do not copy a local standard into the statewide rule set.
 
-- Maintain required clearances from buildings, roadways, overhead lines, and other structures
-- Minimum clearance per CEC and utility company standards
+## Review Checklist
 
-### Overcurrent Protection (CFC 605.10.3)
-
-- Equipped with OCPDs (circuit breakers or fuses)
-- **Disconnect switch** for emergency shut-off
-
-### Grounding (CFC 605.10.4)
-
-- Grounded per CEC standards
-- Grounding conductors and electrodes properly installed
-- **Tested for continuity and resistance**
-
----
-
-## Maintenance and Inspection (CFC 605.11)
-
-### Regular Inspection (CFC 605.11)
-
-- Temporary power systems **regularly inspected and tested**
-- Inspections **documented**
-- Deficiencies corrected **immediately**
-
-### Fire Extinguishers (CFC 605.11.1)
-
-- Appropriate fire extinguishers **readily accessible** near temporary power equipment
-- Personnel **trained** in use of extinguishers and emergency shutdown procedures
-
-### Signage (CFC 605.11.2)
-
-- Warning of **electrical hazards**
-- **Emergency shutdown procedures**
-- **Contact information** for responsible personnel
-
----
-
-## Temporary Wiring (CFC 605.12)
-
-### General (CFC 605.12)
-
-- Temporary wiring suitable for conditions and **protected from physical damage**
-- Properly rated, insulated, and routed
-- Avoid tripping hazards
-- Avoid potential contact with water or combustible materials
-
-### Weatherproofing (CFC 605.12.1)
-
-- All temporary wiring shall be **weatherproof** and suitable for environmental conditions
-- Suitable for moisture, heat, and physical impact
-- **GFCI protection required** for all temporary wiring systems
-
-### Removal (CFC 605.12.2)
-
-Temporary power systems and wiring shall be **removed immediately** upon:
-- Completion of the project or event
-- When no longer required
-
-> This ensures no unnecessary electrical hazards remain.
-
----
-
-## Emergency Power Supply and Backup Systems (CFC 1206)
-
-### Emergency Generator Installations (CFC 1206)
-
-Where temporary generators serve as backup or emergency power:
-- Installation shall comply with emergency and standby power system requirements
-- Including: **automatic transfer switches**, fuel supply, and duration of operation
-
-### Maintenance (CFC 1206.1)
-
-- Emergency generators and power supply systems maintained and tested regularly
-- Per manufacturer's instructions and local fire code requirements
-- Ensure reliability and readiness during emergencies
-
----
-
-## Fire Access Requirements
-
-### Emergency Vehicle Access
-
-- Emergency vehicle access drive locations must be indicated on site plan
-- **Minimum 20-foot width** for fire access aisle
-- Temporary power equipment shall not obstruct fire access
-
-### Screening Requirements
-
-- Security or screening fencing location and details shall be shown on plans
-- Material type specified
-- **Screening required** for installations fronting streets
-- Screening **NOT required** for installations visible only from adjacent properties
+| Check | State-code route |
+|---|---|
+| Temporary fire permit, if required | CFC 107 and the applicable CFC 105 provision |
+| Electrical methods, protection and duration | CEC Article 590 and other applicable CEC articles |
+| Electrical working space | CFC 603.4 / CEC 110.26 |
+| Fueled portable generator inside a building | CFC 313.1 and its stated exceptions |
+| Required emergency/standby system | CFC 1203 and the provision requiring the system |
+| Fire access obstruction | CFC 503.4 where fire apparatus access is independently required |
+| Fuel, extinguisher, impact or local pole rule | Applicable project-specific source passing the five-point gate |

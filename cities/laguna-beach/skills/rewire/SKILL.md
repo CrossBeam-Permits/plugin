@@ -1,25 +1,26 @@
 ---
 name: rewire
-description: "Rewire permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions rewire in Laguna Beach."
+description: "Rewire permits in Laguna Beach, CA. Branch circuits or the wiring of an existing dwelling replaced or extended, without moving the service. Laguna issues this on the state skill alone, with no city delta. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions rewire in Laguna Beach."
 metadata:
-  version: "1.0"
+  version: "2.0"
   source: "2025 California Electrical Code (Title 24, Part 3) — Articles 210, 220, 310, 334; 2025 California Residential Code (Title 24, Part 2.5) — Sections R310, R311"
   authority: "California Building Standards Commission / National Electrical Code with California Amendments"
   law_as_of: "January 1, 2025"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
 # Laguna Beach — Rewire Permit
 
-Handles rewire permits in Laguna Beach end-to-end.
+Handles rewire permits in Laguna Beach end-to-end. Scope: Branch circuits or the wiring of an existing dwelling replaced or extended, without moving the service. Laguna issues this on the state skill alone, with no city delta.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
 > "Are you (A) planning to file a rewire permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -36,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
 ## Ready to Submit — Laguna Beach Rewire Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -75,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -92,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -108,9 +122,17 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit.
+
+Laguna Beach has no local amendment for this permit; the City issues it on the California rules alone (verified in the City's code research). The California checklist below applies in full. The citywide overlays above still apply when the scope reaches them.
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
@@ -126,7 +148,7 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 
 ## Deferred to Inspection
 
-These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+The inspector verifies these in the field. They are **not** plan-check corrections; the reviewer does not list them.
 
 | # | Inspector verifies | What to look for | Code |
 |---|---|---|---|
@@ -136,7 +158,16 @@ These items are verified by the inspector in the field — **not** part of plan-
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/rewire/`. City overlay source: `skills/cities/laguna-beach/rewire/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/gfci-afci-210.md` — CEC Sections 210.8 and 210.12 — GFCI and AFCI Protection
+- `references/outlet-spacing-210.md` — CEC Section 210.52 — Dwelling Unit Receptacle Outlet Spacing
+- `references/smoke-co-detectors.md` — CRC R310 / R311 — Smoke and CO Alarm Requirements Triggered by Rewire
 
 ---
 

@@ -194,25 +194,29 @@ When a fence is placed on top of a retaining wall and the guard requirement is t
 
 Retaining walls are frequently part of grading projects. A separate grading permit may be required in addition to the building permit for the wall.
 
-### Grading Permit Triggers (CBC Appendix J, Section J103)
+### Grading Permit Requirements (CBC Appendix J, Section J103)
 
-| Activity | Permit Required? | Threshold |
-|----------|-----------------|-----------|
-| Grading (cut or fill) | Yes | Exceeds 50 cubic yards OR cut/fill depth exceeds 5 ft |
-| Excavation for retaining wall footing | Usually no | Incidental to building permit |
-| Cut slope behind retaining wall | May require | If cut exceeds 5 ft or 50 cu yd |
-| Fill behind or in front of retaining wall | May require | If fill exceeds 50 cu yd |
+| Activity | Grading Permit Treatment | Code Section |
+|----------|--------------------------|--------------|
+| Grading, including cut or fill | Permit required unless a J103.2 exemption applies | J103.1 |
+| Isolated, self-contained grading that does not endanger the public or adversely affect adjoining properties | Exempt | J103.2, item 1 |
+| Excavation for construction of a structure permitted under the code | Exempt from the grading permit; the structural permit remains separate | J103.1; J103.2, item 2 |
+| Cemetery graves; regulated refuse-disposal sites; well or utility-trench excavations | Exempt within the stated category | J103.2, items 3–5 |
+| Regulated mining and similar material operations that do not affect adjoining-property support or significantly increase soil stresses | Exempt within the stated conditions | J103.2, item 6 |
+| Exploratory excavations directed by a registered design professional | Exempt | J103.2, item 7 |
 
-**Note**: Many cities have lower grading permit thresholds than the state code. Some cities require a grading permit for any grading over 50 cu yd; others set the threshold as low as 10-25 cu yd. Always check the city overlay.
+**Local-threshold source boundary:** Appendix J does not establish a statewide cubic-yard or cut/fill-depth threshold. Do not apply the former 50-cubic-yard or 5-foot values as state rules. Apply a local numerical threshold only after recording the named jurisdiction, current ordinance or grading document and edition or effective date, section/page/table locator, geographic scope, and project-type scope.
 
-### Maximum Slopes (CBC Appendix J, Section J107)
+### Maximum Slopes (CBC Appendix J, Sections J106–J108)
 
 | Slope Type | Maximum | Code Section |
 |------------|---------|--------------|
-| Cut slopes | 2H:1V (50%) unless approved steeper | J107.1 |
-| Fill slopes | 2H:1V (50%) unless approved steeper | J107.3 |
-| Top of cut to property line | H/2 setback, minimum 2 ft | J107.2 |
-| Toe of fill to property line | H/2 setback, minimum 2 ft | J107.4 |
+| Cut slopes | 2H:1V (50%) unless approved steeper | J106.1 |
+| Fill slopes | 2H:1V (50%) unless approved steeper | J107.6 |
+| Top of cut to property line | Per Figure J108.1, or as required to accommodate required interceptor drains, whichever is greater | J108.2 / Figure J108.1 |
+| Toe of fill to property line | Per Figure J108.1; provide additional protection approved by the building official where needed to protect adjacent property | J108.1, J108.3 / Figure J108.1 |
+
+**Figure backfill required:** The extracted state corpus includes the Figure J108.1 caption but not its setback dimensions. Do not use the former H/2 or 2-foot formulas until the authoritative figure from the current California Building Code is captured and checked with its edition and figure locator.
 
 ---
 
