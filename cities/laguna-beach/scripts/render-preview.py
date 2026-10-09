@@ -8,7 +8,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
-from _lib import sha256_file, utc_now, write_json
+from _lib import load_json, require_pypdf, sha256_file, utc_now, write_json
 
 
 def main() -> int:
@@ -16,6 +16,10 @@ def main() -> int:
     parser.add_argument("--pdf", required=True)
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--dpi", type=int, default=150)
+    parser.add_argument(
+        "--field-map",
+        help="Also render each signature block in this map as a close-up PNG for review.",
+    )
     args = parser.parse_args()
 
     executable = shutil.which("pdftoppm")
@@ -32,6 +36,15 @@ def main() -> int:
     pages = sorted(path.name for path in output_dir.glob("page-*.png"))
     if not pages:
         raise SystemExit("render produced no PNG pages")
+    crops = []
+    if args.field_map:
+        from _signature import page_sizes, signature_crops
+
+        blocks = load_json(args.field_map).get("signature_blocks") or []
+        reader = require_pypdf().PdfReader(str(source))
+        crops = signature_crops(
+            source, blocks, page_sizes(reader), None, output_dir / "signature-crops"
+        )
     write_json(
         output_dir / "render-manifest.json",
         {
@@ -41,6 +54,7 @@ def main() -> int:
             "source_sha256": sha256_file(source),
             "dpi": args.dpi,
             "pages": pages,
+            "signature_crops": crops,
             "visual_status": "manual_review_required",
         },
     )
