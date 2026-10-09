@@ -216,6 +216,22 @@ def transform(value: Any, mapping: dict[str, Any], field_count: int) -> list[str
     return [str(value)]
 
 
+def declaration_status(facts: dict[str, dict[str, Any]], fact_id: str) -> tuple[bool, Any, str | None]:
+    """A declaration counts only when the applicant stated and confirmed it."""
+
+    fact = facts.get(fact_id)
+    if fact is None:
+        return False, None, "declaration is absent; ask the applicant"
+    usable, value, reason = confirmed_fact_value(fact)
+    if not usable:
+        return False, None, reason
+    if (fact.get("source") or {}).get("kind") != "user_confirmed":
+        return False, None, "declaration must come from the applicant, not from documents or inference"
+    if (fact.get("confirmation") or {}).get("status") != "confirmed":
+        return False, None, "declaration is not confirmed by the applicant"
+    return True, value, None
+
+
 def sidecar(pdf: Path, suffix: str) -> Path:
     return pdf.with_name(pdf.stem + suffix)
 
@@ -236,6 +252,28 @@ def main() -> int:
     facts_document = load_json(args.facts)
     facts = fact_index(facts_document)
     field_map = load_json(args.field_map)
+
+    status = field_map.get("status", "pinned")
+    if status != "pinned":
+        raise SystemExit(
+            f"{field_map['form_id']}: field map status is {status}; "
+            f"{field_map.get('status_note') or 'pin and remap the current City revision first'}"
+        )
+
+    signature_fields = {
+        block["pdf_field"]
+        for block in field_map.get("signature_blocks") or []
+        if block.get("pdf_field")
+    }
+    for mapping in field_map["canonical_mappings"]:
+        targeted = set(mapping.get("pdf_fields") or []) | {
+            widget["field_name"] for widget in mapping.get("pdf_widgets") or []
+        }
+        if targeted & signature_fields:
+            raise SystemExit(
+                f"field map targets a signature field: {sorted(targeted & signature_fields)}; "
+                "signatures are entered only by the applicant"
+            )
 
     source_digest = sha256_file(source)
     if source_digest != field_map["source_sha256"]:
@@ -263,6 +301,15 @@ def main() -> int:
     output_y_offsets: dict[str, float] = {}
     answers: list[dict[str, Any]] = []
     unresolved: list[dict[str, Any]] = []
+    not_applicable: list[dict[str, Any]] = []
+    declarations: dict[str, Any] = {}
+
+    for declaration_id in field_map.get("required_declarations") or []:
+        usable, value, reason = declaration_status(facts, declaration_id)
+        if usable:
+            declarations[declaration_id] = value
+        else:
+            unresolved.append({"fact_id": declaration_id, "required": True, "reason": reason, "pdf_targets": []})
 
     for mapping in field_map["canonical_mappings"]:
         targets = mapping_targets(mapping)
@@ -277,6 +324,15 @@ def main() -> int:
             for target in targets
         ]
         fact_id = fact_id_for(mapping["fact_id"], args.record_id)
+        condition = mapping.get("only_when")
+        if condition:
+            usable, value, reason = declaration_status(facts, condition["fact_id"])
+            if not usable:
+                unresolved.append({"fact_id": fact_id, "required": mapping["required"], "reason": f"waiting on {condition['fact_id']}: {reason}", "pdf_targets": target_labels})
+                continue
+            if value != condition["equals"]:
+                not_applicable.append({"fact_id": fact_id, "reason": f"{condition['fact_id']} is {value}", "pdf_targets": target_labels})
+                continue
         fact = facts.get(fact_id)
         if fact is None:
             unresolved.append({"fact_id": fact_id, "required": mapping["required"], "reason": "fact is absent", "pdf_targets": target_labels})
@@ -326,7 +382,7 @@ def main() -> int:
 
     required_unresolved = [item for item in unresolved if item["required"]]
     if required_unresolved and not args.allow_partial:
-        write_json(sidecar(output, ".unresolved-fields.json"), {"schema_version": "1.0.0", "form_id": field_map["form_id"], "unresolved": unresolved})
+        write_json(sidecar(output, ".unresolved-fields.json"), {"schema_version": "1.0.0", "form_id": field_map["form_id"], "unresolved": unresolved, "not_applicable": not_applicable})
         print(f"Blocked: {len(required_unresolved)} required facts are unresolved")
         return 2
 
@@ -397,13 +453,21 @@ def main() -> int:
         "output_sha256": sha256_file(output),
     }
     write_json(sidecar(output, ".answers-used.json"), {**common, "answers": answers})
-    write_json(sidecar(output, ".unresolved-fields.json"), {**common, "unresolved": unresolved})
+    write_json(
+        sidecar(output, ".unresolved-fields.json"),
+        {**common, "unresolved": unresolved, "not_applicable": not_applicable},
+    )
     write_json(
         sidecar(output, ".review-and-sign.json"),
         {
             **common,
+            "declarations": declarations,
             "review_fields": field_map["review_fields"],
-            "instruction": "User must review the final rendered form and personally complete signatures/attestations.",
+            "signature_blocks": field_map.get("signature_blocks") or [],
+            "instruction": (
+                "User must review the final rendered form and personally complete signatures/attestations. "
+                "After signing, run verify-signed-form.py on the signed file and upload only that file."
+            ),
         },
     )
     print(f"Filled {len(answers)} exact fields -> {output}")

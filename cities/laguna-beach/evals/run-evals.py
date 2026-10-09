@@ -503,11 +503,19 @@ def check_form_and_transaction_round_trip(temp: Path) -> None:
     validate("submission-receipt.schema.json", receipt_document)
 
 
+# --- Form source, signing, and map round-trip evals (evals/forms) -------------------
+# Kept in its own runner; this block only calls it so a failure stops the release.
+def check_form_evals() -> None:
+    run(str(ROOT / "evals/forms/run-form-evals.py"))
+# --- end form evals block -------------------------------------------------------------
+
+
 def main() -> int:
     checks = [
         ("manifest consistency", check_manifest_consistency),
         ("approval/privacy policy", check_policy_contract),
         ("manifests and drift maps", check_manifests_and_maps),
+        ("form sources, sign-before-upload, and Building map round trip", check_form_evals),
     ]
     for name, check in checks:
         check()

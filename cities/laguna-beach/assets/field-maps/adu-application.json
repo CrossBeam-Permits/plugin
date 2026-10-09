@@ -2,6 +2,8 @@
   "schema_version": "1.0.0",
   "form_id": "adu-application",
   "field_map_version": "1.0.0",
+  "status": "needs_source",
+  "status_note": "The City links ADU & JADU Application document 27032 (https://www.lagunabeachcity.net/home/showpublisheddocument/27032/639238583151930000). This map is for obsolete document 26710; fill-form refuses it until the current revision is pinned and remapped.",
   "generated_at": "2026-08-23T00:58:48.988415Z",
   "source_sha256": "9979966e09f4c52dee1540c06efc1289f3d136ac8f02ecddaca381e44f4b970e",
   "field_tree_sha256": "aa8548a9ebce8dc76b246a8ea580707ecffd30abd8ed834c068f5dba58a9cde9",
