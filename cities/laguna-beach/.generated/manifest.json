@@ -19,7 +19,7 @@
     }
   },
   "privateRepo": {
-    "commit": "c6e6919313ea76eed278e9ef2c33e6886da242c1",
+    "commit": "c963443e442f417b72adc9a49d4c6fc584b99310",
     "dirty": false
   },
   "options": {
@@ -38,8 +38,8 @@
     }
   },
   "inputs": {
-    "9c58d5f12937b97b2c01b187fd93e21e1b260701fa2670a8d034b13dd3cbdd8b": "81ef245064f69a4bab69d2ed8b8dcea638d60b16c75444265a65ad78ed2c3a93",
-    "285f7e819af6602bf688e7d394704d37e9739dbf353acfd41acc69f4e7112723": "66db59acbd93101fe5c8edc88b9aff5583437e731585887a796d0477aa835ac9",
+    "9c58d5f12937b97b2c01b187fd93e21e1b260701fa2670a8d034b13dd3cbdd8b": "1c5c9ed774c3ef0c1632af70739a3999cfcbcc978244d938f8b86bdb464c2f3a",
+    "285f7e819af6602bf688e7d394704d37e9739dbf353acfd41acc69f4e7112723": "44ca8e5856b948ec78e71026d4b4a134730d19dff7bd26b041b2045b59cf3ea8",
     "ba418a844d8f0cf6c05e2e98406c58548c4b4e07b5df7d0c19648c2f12e83e2e": "536903750a14eeadb0f005d6af65269d8afa48b9e59736e1a1b1835e23904df0",
     "d21bda211896d61a238f725805b16526926563a09ecebe6410daaeb62628b531": "59851ec927c8a582199bc1720e8691bd1cdd4fe424f8853397c59d7ba9a61db8",
     "53281d1235795713ce1f418a7fbcc11d9233dbb51f8dbe4a28f152868e5c71ba": "1ed05e0c8340d76f81d672e59fe6da197fcfa1b9faad0566bf0ef371d34c8c72",
@@ -270,7 +270,7 @@
     "bad69243472fe2771416875a692c72a22b3848623e688a5433cc03560754f1a6": "91b0e56b63df86d4615b00492e1f5d0ef6874c63dc1cecea11a0a8a2418c9a65",
     "a294ea3dcd88e1e3681baec621243946d9066eba998fe40a00ea25ca31683904": "a1510fa7d4e5d6a7387fcfba4fe84cc101aff1a21f0f57fd24c41a4818aa668f",
     "cfb531ee99e1974c45b374b42b581af0309ebe0ea3ec6af87b7a9733430d4066": "ed843dfcb4b0e7acd7da42ba63a48a0a6b6e657c0923185a74cd4fae9819d466",
-    "6d4407f7fdc6d2c77c01497e88ddfd70f429ba4f7d88a63d584ed4aeef1e64c5": "934a13f59819358f8a2ffcbcb30592b866d009efe148455d147b144710deaee5",
+    "6d4407f7fdc6d2c77c01497e88ddfd70f429ba4f7d88a63d584ed4aeef1e64c5": "85d1bd1848b8ffed4109352eec41113d206370b52cbc1050f1e9c1b6546194d1",
     "d617714c7d73d432d32b7bf38032a75f0ceadaf93de74fe09c4997748b8bcef1": "43843a6416dda7d9c925a252f2a0e39f343f83bb6aec786fbb179ce931a45a13",
     "3c2b82a66cccf045ceaf1543838d913ab01b333c107caedc412aac1eb14d55be": "92dd0c62b239836b1218dd746598af6b58504b42079e5800fa919b22ebe79120",
     "bebec2117f0c6eea432f8ee546046f994531bb484c21deb74277ffaf7b0a83ee": "ab0f69366f2759fa5ad188429b4f730e3f4602ae1fbe9b1665d42414a794f6ad",
@@ -394,8 +394,8 @@
     "requirements/building/staff-reported.md": "7a8178bf013fa568aeecb8201d9d6ec400d6dc1d6add28356a951f79dc2ec5e1",
     "requirements/building/walls-fences.md": "fa612bae623972e663d9780b6a267664fcf117c697efb19063fcd3b8ffb42f40",
     "requirements/building/wui-amendments.md": "73498f4975cfa4edff601529ce4c15b706331344132fcd0fbee6631826e75292",
-    "requirements/fees/README.md": "f25854edcf5c677e44fe55c0eb8fad82e664d3ff75dcad44e8c13dfc76caa83e",
-    "requirements/fees/fee-schedule.json": "7f2da6e33b7b5ab5523d3c9a5110c08c8abab64b8a75a736523a23ef3c12f0d2",
+    "requirements/fees/README.md": "fed2a3a446b9fbb9ad2b7a42ed41a7f6b056a1a7020e50d3acb53b5fe3f9599e",
+    "requirements/fees/fee-schedule.json": "61681939cbd6917c0c4c64edfe96d8332143decd44aa57c931d9a7e01eea4c21",
     "requirements/issuance/issuance-checklist.json": "752ff121232df753d60eacf3e674bd196db7e00c2ff91feb15ee73ffe74ff76a",
     "requirements/issuance/issuance-checklist.md": "298346c198d583a70037d18999fbf5cd6c7eb77dff0d53e5d439a8355589c4b0",
     "requirements/plan-sheets/plan-sheet-matrix.json": "df1f8cd2e431061343f8e93369d2c106203d7e61dc520f7da30cec93a915a672",
@@ -413,7 +413,7 @@
     "requirements/planning/wireless-facility-permit.md": "aad42dec39303a37942f6ddf6364da9fa2c96933b1538b5c4dade24d3fe0ffb5",
     "requirements/planning/zone-clearance.md": "2941e37f03428da8cab98783399a65ecc8a6e3af0a41f5792e9d95ba6fed4351",
     "scripts/fees/README.md": "1800cc0cd4030a80e775de63c024c8933497dd64bbcd6009e78119909dbd40f0",
-    "scripts/fees/fee-calc.mjs": "0692e80e3372c604f4951315e6d33f46d18d009162436b15cb02a7b8b20b2ff1",
+    "scripts/fees/fee-calc.mjs": "9a1b0b167c3f55270d4f7cb23b05a0d651c95e560ee28b3cc8a392994cd830c3",
     "skills/adu/SKILL.md": "2a44f07ce522ca633457064b1a6e718d638e991559e42505d2b22cba717ae1db",
     "skills/adu/references/city-adu-faq.md": "4b0886df1f3eacc7ff5ddb5a7ecf64a1848bfd2ad0df92be1f046a52d4be7d60",
     "skills/adu/references/city-adu-ordinance.md": "1e16838f19e125b52f9d5d9875d437047203fc0344b51b4b282cd28d37f19b90",

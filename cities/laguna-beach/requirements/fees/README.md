@@ -12,31 +12,28 @@ An earlier schedule applied from 2026-02-10 through 2026-07-11. The estimator do
 
 ## Building permit fee
 
-The estimator does not compute the Building permit fee from the valuation table yet. It names the published row that applies and leaves the amount to the City. Plan review, the combination trade permit and the surcharges are percentages of that fee, so they are not computed either.
+The row base plus the per-unit amount for the valuation above the row floor. The per-$1,000 amount is prorated: a partial $1,000 is charged as a fraction. Half-cents round to the even cent.
 
-The adopted table does not define a safe calculation: row 1 omits its marginal amount, applying the printed $10.39 text to each later band can make the fee decrease at a boundary, and the table does not say how to handle a partial $1,000.
+Matches EnerGov: 28 of 31 FY26/27 Building Permit Fee ledgers to the cent. The City has not confirmed this formula in writing.
 
-| Row | Valuation | City text |
+| Valuation | Base | Per additional unit |
 |---|---|---|
-| 1 | $1 to $2,000 | $179.67 + per $1,000 |
-| 2 | $2,001 to $25,000 | $478.40 ($10.39/per additional 1000) |
-| 3 | $25,001 to $50,000 | $717.59 ($10.39/per additional 1000) |
-| 4 | $50,001 to $100,000 | $1,434.09 ($10.39/per additional 1000) |
-| 5 | $100,001 to $500,000 | $2,988.32 ($10.39/per additional 1000) |
-| 6 | $500,001 to $1,000,000 | $9,322.11 ($10.39/per additional 1000) |
-| 7 | $1,000,001 to $5,000,000 | $13,386.28 ($10.39/per additional 1000) |
-| 8 | $5,000,001 and over | $39,441.24 ($10.39/per additional 1000) |
+| Up to $2,000 | $179.67 | flat |
+| Over $2,000 to $25,000 | $478.40 | $10.39 per $1,000 |
+| Over $25,000 to $50,000 | $717.59 | $10.39 per $1,000 |
+| Over $50,000 to $100,000 | $1,434.09 | $10.39 per $1,000 |
+| Over $100,000 to $500,000 | $2,988.32 | $10.39 per $1,000 |
+| Over $500,000 to $1,000,000 | $9,322.11 | $10.39 per $1,000 |
+| Over $1,000,000 to $5,000,000 | $13,386.28 | $10.39 per $1,000 |
+| Over $5,000,000 | $39,441.24 | $10.39 per $1,000 |
 
-Plan review: 65% of the permit fee. Permit issuance: $80.90 for the first permit, $40.45 for each additional permit. Surcharges: Technology Surcharge 1.75%, General Plan Maintenance 3.50%.
+Plan review: 65% of the permit fee. Surcharges: Technology Surcharge 1.75%, General Plan Maintenance 3.50%.
 
 ## What the City has not confirmed
 
 The estimator lists these and never prices them. Tell the applicant the City decides them.
 
-- Building permit fee for `swimming-pool`: The City publishes the pool/spa permit as Building Permit Valuation + Combination Trade Permit Fees. Rows 1-8 do not define a safe operational valuation formula, so confirm both components with Building.
-- Building permit fee for `curb-gutter-paving-erosion`: Row 32 says only 'Same as Building Permit fees above'; rows 1-8 are operationally unresolved, so confirm the valuation formula with Building.
 - What is the fee for a Zone Clearance application? Is it bundled into building plan check, or is it free?
-- What Building permit fee does the City charge at valuations of $50,000, $50,001, $1,000,000, and $1,000,001, and how is a partial additional $1,000 handled?
 - Row 133 prints $1.87 per cubic yard for the first 2,500 cubic yards and a $4,684.76 maximum, but $1.87 x 2,500 is $4,675.00. At what quantity does the maximum apply?
 - The WQMP trigger facts are now sourced. Which current Master Fee Schedule row is the 'WQ BMP Site Fee': WQMP review, NPDES BMP inspection, WQMP construction inspection, or another charge?
 - The WQMP form states a $5,000 preliminary/final review deposit, while the New-Major handout states a $1,700 third-party review deposit plus $233 processing. Are these different instruments or revisions, and which applies?

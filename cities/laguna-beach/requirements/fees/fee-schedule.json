@@ -16,9 +16,9 @@
   },
   "statewide": {
     "smip": true,
-    "smip_residential_rate": 0.0001433,
+    "smip_residential_rate": 0.00013,
     "smip_requires_explicit_classification": true,
-    "smip_cite": "FY26/27 MFS Building Fees p. 26 row 108",
+    "smip_cite": "Cal. Pub. Res. Code §2705; FY26/27 MFS Building Fees p. 26 row 108",
     "smip_owner_division": "Building",
     "bsasrf": true,
     "bsasrf_cite": "California Health & Safety Code §18931.6",
@@ -55,74 +55,89 @@
     "owner_division": "Building",
     "planning_owner_division": "Planning",
     "permit_fee": {
-      "method": "confirm_at_intake",
+      "method": "stepped",
+      "increment": "prorated",
+      "rounding": "half_even",
+      "unlisted_permit_types": "confirm_at_intake",
+      "reason": "Confirm the Building permit fee with Building.",
       "cite": "FY26/27 MFS Building Fees p. 22 rows 1-8",
-      "reason": "The adopted table does not define a safe calculation: row 1 omits its marginal amount, applying the printed $10.39 text to each later band can make the fee decrease at a boundary, and the table does not say how to handle a partial $1,000.",
-      "published_rows": [
+      "basis_note": "Matches EnerGov: 28 of 31 FY26/27 Building Permit Fee ledgers to the cent. The City has not confirmed this formula in writing.",
+      "brackets": [
         {
-          "row": 1,
-          "from": 1,
+          "floor": 0,
           "up_to": 2000,
-          "text": "$179.67 + per $1,000"
+          "base": 179.67,
+          "per": 0,
+          "unit": 1000
         },
         {
-          "row": 2,
-          "from": 2001,
+          "floor": 2000,
           "up_to": 25000,
-          "text": "$478.40 ($10.39/per additional 1000)"
+          "base": 478.4,
+          "per": 10.39,
+          "unit": 1000
         },
         {
-          "row": 3,
-          "from": 25001,
+          "floor": 25000,
           "up_to": 50000,
-          "text": "$717.59 ($10.39/per additional 1000)"
+          "base": 717.59,
+          "per": 10.39,
+          "unit": 1000
         },
         {
-          "row": 4,
-          "from": 50001,
+          "floor": 50000,
           "up_to": 100000,
-          "text": "$1,434.09 ($10.39/per additional 1000)"
+          "base": 1434.09,
+          "per": 10.39,
+          "unit": 1000
         },
         {
-          "row": 5,
-          "from": 100001,
+          "floor": 100000,
           "up_to": 500000,
-          "text": "$2,988.32 ($10.39/per additional 1000)"
+          "base": 2988.32,
+          "per": 10.39,
+          "unit": 1000
         },
         {
-          "row": 6,
-          "from": 500001,
+          "floor": 500000,
           "up_to": 1000000,
-          "text": "$9,322.11 ($10.39/per additional 1000)"
+          "base": 9322.11,
+          "per": 10.39,
+          "unit": 1000
         },
         {
-          "row": 7,
-          "from": 1000001,
+          "floor": 1000000,
           "up_to": 5000000,
-          "text": "$13,386.28 ($10.39/per additional 1000)"
+          "base": 13386.28,
+          "per": 10.39,
+          "unit": 1000
         },
         {
-          "row": 8,
-          "from": 5000001,
+          "floor": 5000000,
           "up_to": null,
-          "text": "$39,441.24 ($10.39/per additional 1000)"
+          "base": 39441.24,
+          "per": 10.39,
+          "unit": 1000
         }
       ]
     },
     "plan_review_pct": 0.65,
     "plan_review_cite": "FY26/27 MFS Building Fees p. 26 row 109",
     "plan_review_mep_pct": 0.5,
-    "issuance": {
-      "first": 80.9,
-      "each_additional": 40.45,
-      "independent": true,
-      "cite": "FY26/27 MFS Building Fees p. 22 row 19"
-    },
     "trades_new": {
       "combination_pct": 0.1,
-      "cite": "FY26/27 MFS Building Fees p. 22 row 18"
+      "cite": "FY26/27 MFS Building Fees p. 22 row 18",
+      "asserts_scopes": [
+        "electrical_permit",
+        "mechanical_permit",
+        "plumbing_permit"
+      ],
+      "replaces_capture_groups": [
+        "electrical",
+        "mechanical",
+        "plumbing"
+      ]
     },
-    "trades_confirm_at_intake": "The City publishes 10% of the Building permit fee for qualifying new-construction combination permits. It can be computed only after Building confirms the underlying rows 1-8 valuation formula.",
     "surcharges": [
       {
         "id": "technology",
@@ -135,8 +150,7 @@
         "defer_until_scoped": true,
         "base_line_ids": [
           "building_permit",
-          "plan_review",
-          "trades"
+          "plan_review"
         ],
         "owner_division": "Building",
         "note": "FY26/27 MFS Building Fees p. 27 row 139"
@@ -152,8 +166,7 @@
         "defer_until_scoped": true,
         "base_line_ids": [
           "building_permit",
-          "plan_review",
-          "trades"
+          "plan_review"
         ],
         "base_surcharge_ids": [
           "technology"
@@ -1202,7 +1215,7 @@
     {
       "id": "pool_spa_plan_review",
       "label": "Pool/spa plan review",
-      "trigger_scope": "pool_spa",
+      "trigger_scope": "pool_spa_plan_review_only",
       "amount": 448.63,
       "outside_valuation": true,
       "due_at": "application",
@@ -1265,6 +1278,36 @@
       "cite": "FY26/27 MFS Building Fees p. 26 row 114"
     },
     {
+      "id": "electrical_permit_base_fee",
+      "label": "Electrical permit base fee",
+      "trigger_scope": "electrical_permit",
+      "amount": 80.9,
+      "outside_valuation": true,
+      "due_at": "issuance",
+      "owner_division": "Building",
+      "cite": "FY26/27 MFS Building Fees p. 22 row 19 (charged per trade in EnerGov)"
+    },
+    {
+      "id": "mechanical_permit_base_fee",
+      "label": "Mechanical permit base fee",
+      "trigger_scope": "mechanical_permit",
+      "amount": 80.9,
+      "outside_valuation": true,
+      "due_at": "issuance",
+      "owner_division": "Building",
+      "cite": "FY26/27 MFS Building Fees p. 22 row 19 (charged per trade in EnerGov)"
+    },
+    {
+      "id": "plumbing_permit_base_fee",
+      "label": "Plumbing permit base fee",
+      "trigger_scope": "plumbing_permit",
+      "amount": 80.9,
+      "outside_valuation": true,
+      "due_at": "issuance",
+      "owner_division": "Building",
+      "cite": "FY26/27 MFS Building Fees p. 22 row 19 (charged per trade in EnerGov)"
+    },
+    {
       "id": "electrical_outlets",
       "label": "Electrical outlets",
       "trigger_scope": "electrical_outlets",
@@ -1275,9 +1318,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 35"
     },
     {
@@ -1291,9 +1331,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 36"
     },
     {
@@ -1307,9 +1344,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 37"
     },
     {
@@ -1323,9 +1357,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 38"
     },
     {
@@ -1339,9 +1370,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 39"
     },
     {
@@ -1355,9 +1383,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 40"
     },
     {
@@ -1371,9 +1396,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 41"
     },
     {
@@ -1389,9 +1411,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 42"
     },
     {
@@ -1405,9 +1424,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 43"
     },
     {
@@ -1421,9 +1437,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 44"
     },
     {
@@ -1437,9 +1450,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 45"
     },
     {
@@ -1453,9 +1463,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 46"
     },
     {
@@ -1469,9 +1476,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 47"
     },
     {
@@ -1485,9 +1489,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 48"
     },
     {
@@ -1501,9 +1502,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 49"
     },
     {
@@ -1517,9 +1515,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 50"
     },
     {
@@ -1533,9 +1528,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 51"
     },
     {
@@ -1549,9 +1541,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 23 row 52"
     },
     {
@@ -1565,9 +1554,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 54"
     },
     {
@@ -1581,9 +1567,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 55"
     },
     {
@@ -1597,9 +1580,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 56"
     },
     {
@@ -1613,9 +1593,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 57"
     },
     {
@@ -1629,9 +1606,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 58"
     },
     {
@@ -1645,9 +1619,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 59"
     },
     {
@@ -1661,9 +1632,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 60"
     },
     {
@@ -1677,9 +1645,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 61"
     },
     {
@@ -1693,9 +1658,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 62"
     },
     {
@@ -1709,9 +1671,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 63"
     },
     {
@@ -1725,9 +1684,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 64"
     },
     {
@@ -1741,9 +1697,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 65"
     },
     {
@@ -1757,9 +1710,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 66"
     },
     {
@@ -1773,9 +1723,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 67"
     },
     {
@@ -1789,9 +1736,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 68"
     },
     {
@@ -1805,9 +1749,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 69"
     },
     {
@@ -1821,9 +1762,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 70"
     },
     {
@@ -1837,9 +1775,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 71"
     },
     {
@@ -1853,9 +1788,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 72"
     },
     {
@@ -1869,9 +1801,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 73"
     },
     {
@@ -1885,9 +1814,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 74"
     },
     {
@@ -1901,9 +1827,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 75"
     },
     {
@@ -1917,9 +1840,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 76"
     },
     {
@@ -1933,9 +1853,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 77"
     },
     {
@@ -1949,9 +1866,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 78"
     },
     {
@@ -1965,9 +1879,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 79"
     },
     {
@@ -1981,9 +1892,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 80"
     },
     {
@@ -1997,9 +1905,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 24 row 81"
     },
     {
@@ -2013,9 +1918,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 82"
     },
     {
@@ -2029,9 +1931,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 83"
     },
     {
@@ -2045,9 +1944,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 84"
     },
     {
@@ -2061,9 +1957,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 85"
     },
     {
@@ -2077,9 +1970,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 86"
     },
     {
@@ -2093,9 +1983,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 87"
     },
     {
@@ -2109,9 +1996,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 88"
     },
     {
@@ -2125,9 +2009,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 89"
     },
     {
@@ -2141,9 +2022,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 90"
     },
     {
@@ -2157,9 +2035,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 91"
     },
     {
@@ -2173,9 +2048,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 92"
     },
     {
@@ -2189,9 +2061,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 93"
     },
     {
@@ -2205,9 +2074,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 94"
     },
     {
@@ -2217,9 +2083,6 @@
       "amount": 22.05,
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 95"
     },
     {
@@ -2235,9 +2098,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 95"
     },
     {
@@ -2251,9 +2111,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 96"
     },
     {
@@ -2267,9 +2124,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 97"
     },
     {
@@ -2283,9 +2137,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 98"
     },
     {
@@ -2299,9 +2150,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 99"
     },
     {
@@ -2315,9 +2163,6 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
       "cite": "FY26/27 MFS Building Fees p. 25 row 99"
     },
     {
@@ -3195,7 +3040,10 @@
     {
       "id": "central_drainage_sfr",
       "label": "Central Drainage Area - single-family dwelling",
-      "trigger_scope": "central_drainage_sfr",
+      "trigger_scope": "new_residential_unit",
+      "permit_types": [
+        "new_sfr"
+      ],
       "condition": "city:central_drainage_area",
       "condition_group": "central_drainage_area",
       "condition_label": "Central Drainage Area applicability",
@@ -3215,7 +3063,7 @@
     {
       "id": "central_drainage_multifamily",
       "label": "Central Drainage Area - two-family/multifamily dwelling",
-      "trigger_scope": "central_drainage_multifamily",
+      "trigger_scope": "new_multifamily_units",
       "condition": "city:central_drainage_area",
       "condition_group": "central_drainage_area",
       "condition_label": "Central Drainage Area applicability",
@@ -3235,7 +3083,7 @@
     {
       "id": "central_drainage_commercial",
       "label": "Central Drainage Area - commercial/industrial",
-      "trigger_scope": "central_drainage_commercial",
+      "trigger_scope": "new_commercial_floor_area",
       "condition": "city:central_drainage_area",
       "condition_group": "central_drainage_area",
       "condition_label": "Central Drainage Area applicability",
@@ -3627,6 +3475,224 @@
       "cite": "Building Division written operational rule, 2026-08-13"
     }
   ],
+  "fee_capture": {
+    "note": "Values come from what the packet states: the application, a schedule or table on the plans, or a count form. A count is never tallied from drawing symbols.",
+    "groups": [
+      {
+        "id": "project",
+        "label": "Project",
+        "inputs": [
+          "valuation",
+          {
+            "id": "new_floor_area_sqft",
+            "label": "New floor area (habitable and non-habitable)",
+            "unit": "sq ft"
+          },
+          "adu_sqft",
+          "primary_dwelling_sqft",
+          "new_dwelling_units",
+          "stories",
+          "structure_use",
+          "existing_habitable_conversion",
+          "is_combination_permit"
+        ]
+      },
+      {
+        "id": "site",
+        "label": "Site work",
+        "inputs": [
+          {
+            "id": "grading_cubic_yards",
+            "label": "Grading (greater of cut or fill outside the footprint)",
+            "unit": "cu yd"
+          },
+          {
+            "id": "subdivision_gross_acres",
+            "label": "Subdivision gross acres",
+            "unit": "acres"
+          }
+        ]
+      },
+      {
+        "id": "electrical",
+        "label": "Electrical",
+        "scope": "electrical_permit",
+        "inputs": [
+          "electrical_outlets",
+          "electrical_lighting_fixtures",
+          "electrical_power_apparatus_1hp",
+          "electrical_power_apparatus_1_10hp",
+          "electrical_power_apparatus_10_50hp",
+          "electrical_power_apparatus_50_100hp",
+          "electrical_power_apparatus_over_100hp",
+          "electrical_busway_feet",
+          "electrical_sign_branch_circuits",
+          "electrical_services_600v_200a",
+          "electrical_services_600v_1000a",
+          "electrical_services_over_600v",
+          "electrical_misc_apparatus",
+          "electrical_special_event_generators",
+          "electrical_special_event_lighting",
+          "electrical_temporary_power_services",
+          "electrical_temporary_service_pedestals",
+          "electrical_temporary_distribution_controls",
+          "electrical_low_voltage_systems",
+          "electrical_pole_lighting_fixtures",
+          "electrical_theatrical_lighting_fixtures",
+          "electrical_residential_appliance_outlets",
+          "electrical_nonresidential_appliances_1hp"
+        ]
+      },
+      {
+        "id": "mechanical",
+        "label": "Mechanical",
+        "scope": "mechanical_permit",
+        "inputs": [
+          "mechanical_furnaces_100k_btu",
+          "mechanical_furnaces_over_100k_btu",
+          "mechanical_floor_furnaces",
+          "mechanical_unit_heaters",
+          "mechanical_gas_fireplaces",
+          "mechanical_appliance_vents",
+          "mechanical_heating_cooling_alterations",
+          "mechanical_boiler_compressor_3hp",
+          "mechanical_boiler_compressor_over_50hp",
+          "mechanical_boiler_compressor_3_15hp",
+          "mechanical_boiler_compressor_15_30hp",
+          "mechanical_boiler_compressor_30_50hp",
+          "mechanical_ac_heat_pump_100k_btu",
+          "mechanical_ac_heat_pump_100k_500k_btu",
+          "mechanical_ac_heat_pump_500k_1m_btu",
+          "mechanical_ac_heat_pump_1m_1750k_btu",
+          "mechanical_ac_heat_pump_over_1750k_btu",
+          "mechanical_air_handlers_10k_cfm",
+          "mechanical_air_handlers_over_10k_cfm",
+          "mechanical_evaporative_coolers",
+          "mechanical_single_duct_fans",
+          "mechanical_independent_ventilation_systems",
+          "mechanical_exhaust_hoods",
+          "mechanical_domestic_incinerators",
+          "mechanical_commercial_incinerators",
+          "mechanical_duct_registers",
+          "mechanical_other_equipment"
+        ]
+      },
+      {
+        "id": "plumbing",
+        "label": "Plumbing",
+        "scope": "plumbing_permit",
+        "inputs": [
+          "plumbing_fixtures_traps",
+          "plumbing_building_sewers",
+          "plumbing_rainwater_drains",
+          "plumbing_cesspools",
+          "plumbing_private_sewage_systems",
+          "plumbing_industrial_waste_interceptors",
+          "plumbing_water_piping_equipment",
+          "plumbing_drainage_vent_fixtures",
+          "plumbing_lawn_sprinkler_systems",
+          "plumbing_vacuum_breakers",
+          "plumbing_backflow_2in_or_smaller",
+          "plumbing_backflow_over_2in",
+          "plumbing_gas_outlets",
+          "plumbing_water_heaters",
+          "plumbing_tankless_water_heaters"
+        ]
+      }
+    ],
+    "scopes": [
+      {
+        "id": "grading",
+        "question": "Does the project need a grading permit?"
+      },
+      {
+        "id": "shoring",
+        "question": "Does the project need temporary or permanent shoring?"
+      },
+      {
+        "id": "geotechnical_peer_review",
+        "question": "Does the City's geotechnical peer review apply?"
+      },
+      {
+        "id": "demolition_one_family",
+        "question": "Does this permit demolish a whole one-family structure?"
+      },
+      {
+        "id": "demolition_simple_structure",
+        "question": "Does this permit demolish a simple structure such as a detached garage or shed?"
+      }
+    ],
+    "conditions": [
+      {
+        "group": "laguna_main_sewer",
+        "label": "City main-sewer service",
+        "choices": [
+          {
+            "id": "utility:laguna_main_sewer",
+            "label": "On the City main sewer"
+          }
+        ]
+      },
+      {
+        "group": "project_vacancy",
+        "label": "Vacant lot",
+        "choices": [
+          {
+            "id": "project:vacant_lot",
+            "label": "Vacant lot"
+          }
+        ]
+      },
+      {
+        "group": "ocpw_road_fee",
+        "label": "OC road-fee area",
+        "choices": [
+          {
+            "id": "ocpw:moulton",
+            "label": "Moulton Parkway"
+          },
+          {
+            "id": "ocpw:carits:2ab",
+            "label": "CARITS Zone 2A/2B"
+          },
+          {
+            "id": "ocpw:carits:2cd",
+            "label": "CARITS Zone 2C/2D"
+          }
+        ]
+      },
+      {
+        "group": "laguna_specific_plan",
+        "label": "Diamond/Crestview Specific Plan",
+        "choices": [
+          {
+            "id": "specific_plan:diamond_crest",
+            "label": "Inside the Diamond/Crestview Specific Plan"
+          }
+        ]
+      },
+      {
+        "group": "laguna_canyon_annexation_area",
+        "label": "Laguna Canyon Annexation Area",
+        "choices": [
+          {
+            "id": "city:laguna_canyon_annexation_area",
+            "label": "Inside the annexation area"
+          }
+        ]
+      },
+      {
+        "group": "central_drainage_area",
+        "label": "Central drainage area",
+        "choices": [
+          {
+            "id": "city:central_drainage_area",
+            "label": "Inside the central drainage area"
+          }
+        ]
+      }
+    ]
+  },
   "fee_review_triggers": [
     {
       "review": "Building",
@@ -3638,7 +3704,10 @@
       "fee_ids": [
         "building_permit",
         "plan_review",
-        "issuance",
+        "trades",
+        "electrical_permit_base_fee",
+        "mechanical_permit_base_fee",
+        "plumbing_permit_base_fee",
         "building_construction_tax_sfr",
         "building_construction_tax_adu",
         "library_impact_fee_sfr",
@@ -3777,18 +3846,6 @@
       "question": "What is the fee for a Zone Clearance application? Is it bundled into building plan check, or is it free?"
     },
     {
-      "id": "building_valuation_formula",
-      "status": "open",
-      "owner": "Building",
-      "trigger_scopes": [
-        "new_building",
-        "addition",
-        "remodel",
-        "pool_spa"
-      ],
-      "question": "What Building permit fee does the City charge at valuations of $50,000, $50,001, $1,000,000, and $1,000,001, and how is a partial additional $1,000 handled?"
-    },
-    {
       "id": "diamond_crestview_soil_maximum",
       "status": "open",
       "owner": "Building",
@@ -3805,7 +3862,8 @@
         "water_quality_bmp_site"
       ],
       "applies_when": "HIGH for new SFD/new commercial; LOW-MEDIUM for ADU, new pool, addition or retaining wall. Per site: a main-house-plus-ADU project is charged on the main-house permit only. New pools trigger; replaster, pool remodel and spa-only work do not.",
-      "question": "The WQMP trigger facts are now sourced. Which current Master Fee Schedule row is the 'WQ BMP Site Fee': WQMP review, NPDES BMP inspection, WQMP construction inspection, or another charge?"
+      "question": "The WQMP trigger facts are now sourced. Which current Master Fee Schedule row is the 'WQ BMP Site Fee': WQMP review, NPDES BMP inspection, WQMP construction inspection, or another charge?",
+      "evidence": "No FY26/27 MFS row prints $2,541."
     },
     {
       "id": "wqmp_deposit_conflict",
@@ -3862,7 +3920,7 @@
       "impact_fee_rule": "ca_adu_exemption",
       "school_fee": true,
       "sewer_connection": true,
-      "combination_trades": true
+      "combination_trades": false
     },
     "jadu": {
       "impact_fee_rule": "ca_adu_exemption",
@@ -3873,7 +3931,7 @@
       "impact_fee_rule": "none",
       "school_fee": true,
       "sewer_connection": true,
-      "combination_trades": true
+      "combination_trades": false
     },
     "addition": {
       "impact_fee_rule": "none",
@@ -3927,14 +3985,10 @@
       "statewide_fees": false
     },
     "swimming-pool": {
-      "building_fee_rule": "confirm_at_intake",
-      "building_fee_note": "The City publishes the pool/spa permit as Building Permit Valuation + Combination Trade Permit Fees. Rows 1-8 do not define a safe operational valuation formula, so confirm both components with Building.",
-      "building_fee_cite": "FY26/27 MFS Building Fees p. 22 row 17",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
-      "combination_trades": true,
-      "statewide_fees": false
+      "combination_trades": false
     },
     "demolition-one-family": {
       "building_fee_rule": "scope_addons_only",
@@ -3999,9 +4053,6 @@
       "statewide_fees": false
     },
     "curb-gutter-paving-erosion": {
-      "building_fee_rule": "confirm_at_intake",
-      "building_fee_note": "Row 32 says only 'Same as Building Permit fees above'; rows 1-8 are operationally unresolved, so confirm the valuation formula with Building.",
-      "building_fee_cite": "FY26/27 MFS Building Fees p. 23 row 32",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,

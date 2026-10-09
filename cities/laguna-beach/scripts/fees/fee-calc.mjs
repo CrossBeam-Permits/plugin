@@ -40,6 +40,27 @@ const ICC_BVD_PER_SQFT = {
 
 export const FEE_DUE_AT = ['application', 'issuance', 'certificate_of_occupancy'];
 
+/**
+ * The FeeInputs a schedule's `fee_capture` block may name directly, beside the
+ * quantities its own fee lines consume. Keyed by capture id.
+ */
+export const FEE_CAPTURE_BUILT_INS = {
+  valuation: { field: 'valuation', kind: 'number', label: 'Project valuation', unit: 'USD' },
+  new_floor_area_sqft: { field: 'newFloorAreaSqft', kind: 'number', label: 'New floor area', unit: 'sq ft' },
+  adu_sqft: { field: 'aduSqft', kind: 'number', label: 'ADU floor area', unit: 'sq ft' },
+  primary_dwelling_sqft: { field: 'primaryDwellingSqft', kind: 'number', label: 'Primary dwelling floor area', unit: 'sq ft' },
+  new_dwelling_units: { field: 'newDwellingUnits', kind: 'number', label: 'New dwelling units', unit: 'units' },
+  stories: { field: 'stories', kind: 'number', label: 'Stories', unit: 'stories' },
+  structure_use: { field: 'structureUse', kind: 'choice', label: 'Structure use', choices: ['residential', 'nonresidential'] },
+  existing_habitable_conversion: { field: 'existingHabitableConversion', kind: 'boolean', label: 'Converts existing habitable space' },
+  is_combination_permit: { field: 'isCombinationPermit', kind: 'boolean', label: 'Combination M/E/P permit' },
+};
+
+/** A `fee_capture` group input entry is an id, or `{ id, label?, unit? }`. */
+export function feeCaptureInputId(entry) {
+  return typeof entry === 'string' ? entry : entry?.id;
+}
+
 // ─────────────────────────── primitives ───────────────────────────
 
 /** Flat fee for the valuation band containing `valuation` (Laguna shape). */
@@ -50,21 +71,29 @@ export function flatBand(valuation, bands) {
   return bands.length ? bands[bands.length - 1].fee : 0;
 }
 
-/** base + marginal-per-unit over the bracket floor ("or fraction thereof" = ceil). */
-export function steppedSchedule(valuation, brackets) {
+/**
+ * base + marginal-per-unit over the bracket floor.
+ *
+ * `options.increment`: 'fraction_up' (default) charges each started unit in
+ * full ("or fraction thereof" = ceil); 'prorated' charges the exact fraction.
+ * `options.rounding`: 'half_up' (default) or 'half_even' for a schedule whose
+ * collecting system rounds half-cents to even.
+ */
+export function steppedSchedule(valuation, brackets, options = {}) {
+  const prorated = options.increment === 'prorated';
+  const money = options.rounding === 'half_even' ? round2HalfEven : round2;
+  const charge = (b) => {
+    if (b.per === 0 || b.unit === 0) return b.base;
+    const over = Math.max(0, valuation - b.floor) / b.unit;
+    return money(b.base + (prorated ? over : Math.ceil(over)) * b.per);
+  };
   for (const b of brackets) {
     const inBracket = b.up_to === null ? valuation > b.floor : valuation > b.floor && valuation <= b.up_to;
     // The first (minimum-fee) bracket has floor 0 and per 0; catch <= floor too.
-    if (inBracket || (b.floor === 0 && valuation <= (b.up_to ?? Infinity))) {
-      if (b.per === 0 || b.unit === 0) return b.base;
-      const over = Math.max(0, valuation - b.floor);
-      return round2(b.base + Math.ceil(over / b.unit) * b.per);
-    }
+    if (inBracket || (b.floor === 0 && valuation <= (b.up_to ?? Infinity))) return charge(b);
   }
   const top = brackets[brackets.length - 1];
-  if (!top) return 0;
-  const over = Math.max(0, valuation - top.floor);
-  return round2(top.base + Math.ceil(over / top.unit) * top.per);
+  return top ? charge(top) : 0;
 }
 
 /**
@@ -118,7 +147,8 @@ export function buildingPermitFee(valuation, b) {
   // area_band cities (e.g. Newport) keep a valuation_fallback for the work that
   // IS valuation-based (non-residential / multifamily 3+ / residential alterations).
   if (b.method === 'area_band' && b.valuation_fallback) return buildingPermitFee(valuation, b.valuation_fallback);
-  if (b.method === 'stepped' && b.brackets?.length) return steppedSchedule(valuation, b.brackets);
+  if (b.method === 'stepped' && b.brackets?.length)
+    return steppedSchedule(valuation, b.brackets, { increment: b.increment, rounding: b.rounding });
   if (b.bands?.length) return flatBand(valuation, b.bands);
   return 0;
 }
@@ -169,6 +199,22 @@ function round2(n) {
   return Math.round((n + Math.sign(n || 1) * correction) * 100) / 100;
 }
 
+/**
+ * Banker's rounding to the cent. A value within float noise of a half-cent goes
+ * to the even cent; everything else rounds normally. The noise band is a few
+ * hundred ulps of the cent value: a wider band would send a real 0.497-cent
+ * remainder to the even cent.
+ */
+function round2HalfEven(n) {
+  const cents = n * 100;
+  const floor = Math.floor(cents);
+  const fraction = cents - floor;
+  if (Math.abs(fraction - 0.5) < Number.EPSILON * 1024 * Math.max(1, Math.abs(cents))) {
+    return (floor % 2 === 0 ? floor : floor + 1) / 100;
+  }
+  return round2(n);
+}
+
 function formatDollars(n) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
 }
@@ -190,6 +236,77 @@ export function scheduleEffectiveTo(schedule) {
 }
 
 // ─────────────────────────── schedule validation (pure) ───────────────────────────
+
+/** The optional permit_fee options, each one of its allowed values when set. */
+const PERMIT_FEE_OPTIONS = {
+  increment: ['fraction_up', 'prorated'],
+  rounding: ['half_up', 'half_even'],
+  unlisted_permit_types: ['compute', 'confirm_at_intake'],
+};
+
+function validatePermitFeeOptions(permitFee) {
+  for (const [key, allowed] of Object.entries(PERMIT_FEE_OPTIONS)) {
+    if (permitFee[key] !== undefined && !allowed.includes(permitFee[key]))
+      throw new Error(`building.permit_fee.${key} must be ${allowed.join(' or ')}`);
+  }
+}
+
+/** Every fee_capture input must feed a fee line or be a built-in FeeInput. */
+function validateFeeCapture(obj) {
+  const capture = obj.fee_capture;
+  // A combination permit's replaced groups must name real capture groups: a typo
+  // would silently charge the itemized trade rows beside the combination line.
+  const replaced = obj.building?.trades_new?.replaces_capture_groups ?? [];
+  const groupIds = new Set(Array.isArray(capture?.groups) ? capture.groups.map((group) => group?.id) : []);
+  for (const id of replaced) {
+    if (!groupIds.has(id)) throw new Error(`building.trades_new.replaces_capture_groups ${id} is not a fee_capture group`);
+  }
+  if (capture === undefined) return;
+  if (!capture || !Array.isArray(capture.groups) || !capture.groups.length)
+    throw new Error('fee_capture requires non-empty groups');
+  const consumed = new Set(Object.keys(FEE_CAPTURE_BUILT_INS));
+  const scopes = new Set();
+  for (const addon of obj.scope_addons ?? []) {
+    scopes.add(addon.trigger_scope);
+    if (addon.rule?.input) consumed.add(addon.rule.input);
+    for (const key of ['first_input', 'second_input', 'primary_input']) if (addon.rule?.[key]) consumed.add(addon.rule[key]);
+  }
+  for (const deposit of [...(obj.building?.deposit ?? []), ...(obj.public_works?.deposit ?? [])]) scopes.add(deposit.trigger_scope);
+  for (const route of obj.fee_review_triggers ?? []) for (const scope of route.trigger_scopes ?? []) scopes.add(scope);
+  const seen = new Set();
+  for (const group of capture.groups) {
+    if (!group?.id || !group?.label || !Array.isArray(group.inputs) || !group.inputs.length)
+      throw new Error('fee_capture.groups entries require id, label, and non-empty inputs');
+    if (group.scope !== undefined && !scopes.has(group.scope))
+      throw new Error(`fee_capture.groups.${group.id}.scope ${group.scope} triggers no fee line`);
+    for (const entry of group.inputs) {
+      const input = feeCaptureInputId(entry);
+      if (!input) throw new Error(`fee_capture.groups.${group.id}.inputs entries require an id`);
+      if (!consumed.has(input)) throw new Error(`fee_capture input ${input} feeds no fee line`);
+      if (seen.has(input)) throw new Error(`fee_capture input ${input} is listed twice`);
+      seen.add(input);
+    }
+  }
+  for (const scope of capture.scopes ?? []) {
+    if (!scope?.id || !scope?.question) throw new Error('fee_capture.scopes entries require id and question');
+    if (!scopes.has(scope.id)) throw new Error(`fee_capture scope ${scope.id} triggers no fee line`);
+  }
+  const conditionsByGroup = new Map();
+  for (const spec of [...(obj.scope_addons ?? []), obj.sewer_connection ?? {}]) {
+    if (!spec.condition_group || !spec.condition) continue;
+    if (!conditionsByGroup.has(spec.condition_group)) conditionsByGroup.set(spec.condition_group, new Set());
+    conditionsByGroup.get(spec.condition_group).add(spec.condition);
+  }
+  for (const group of capture.conditions ?? []) {
+    const known = conditionsByGroup.get(group?.group);
+    if (!known || !group.label || !Array.isArray(group.choices) || !group.choices.length)
+      throw new Error(`fee_capture.conditions ${group?.group} must name a fee condition group, a label, and choices`);
+    for (const choice of group.choices) {
+      if (!choice?.label || !known.has(choice.id))
+        throw new Error(`fee_capture.conditions.${group.group} choice ${choice?.id} is not a condition of that group`);
+    }
+  }
+}
 
 /**
  * Validate + default a fee-schedule OBJECT (parsed from YAML, or read from the
@@ -218,6 +335,7 @@ export function validateFeeSchedule(input) {
     throw new Error('flat_band permit_fee missing bands');
   if (m === 'stepped' && !obj.building.permit_fee.brackets?.length)
     throw new Error('stepped permit_fee missing brackets');
+  validatePermitFeeOptions(obj.building.permit_fee);
   for (const band of obj.building.permit_fee.unresolved_bands ?? []) {
     if ((band.from !== undefined && typeof band.from !== 'number') ||
         (band.up_to !== null && typeof band.up_to !== 'number') || !band.note)
@@ -395,6 +513,7 @@ export function validateFeeSchedule(input) {
         throw new Error(`external_lookups.${lookup.id}.matches require a condition and string field values`);
     }
   }
+  validateFeeCapture(obj);
   // Fill safe defaults for optional blocks.
   obj.statewide ??= {};
   obj.status ??= 'scaffolded';
@@ -661,6 +780,18 @@ function evaluateAddon(addon, inputs, valuation, area, firm) {
 
 function applyScopedFees(schedule, inputs, context, firm, confirm) {
   const scopes = inferredScopes(context.permitType, inputs);
+  const captureGroups = schedule.fee_capture?.groups ?? [];
+  for (const group of captureGroups) {
+    if (group.scope && group.inputs.some((entry) => inputs.scopeQuantities?.[feeCaptureInputId(entry)] > 0)) {
+      scopes.add(group.scope);
+    }
+  }
+  // A combination permit asserts its trade scopes and replaces the itemized unit rows.
+  for (const scope of context.combinationTrades?.asserts_scopes ?? []) scopes.add(scope);
+  const replacedGroups = context.combinationTrades?.replaces_capture_groups ?? [];
+  const replacedInputs = new Set(captureGroups
+    .filter((group) => replacedGroups.includes(group.id))
+    .flatMap((group) => group.inputs.map(feeCaptureInputId)));
   const seenConfirm = new Set(confirm.map((line) => line.id));
   const addConfirm = (line) => {
     if (!seenConfirm.has(line.id)) {
@@ -671,6 +802,7 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
   for (const addon of schedule.scope_addons ?? []) {
     if (!scopes.has(addon.trigger_scope)) continue;
     if (addon.permit_types?.length && !addon.permit_types.includes(context.permitType)) continue;
+    if (replacedInputs.has(addon.trigger_scope) || replacedInputs.has(addon.rule?.input)) continue;
     const result = evaluateAddon(addon, inputs, context.valuation, context.area, firm);
     if (result.skip) continue;
     const state = conditionState(addon, inputs);
@@ -751,6 +883,22 @@ export function recomputeFeeTotals(breakdown) {
   return breakdown;
 }
 
+/** The per-permit issuance line, or null when the schedule or permit type charges none. */
+function issuanceLine(b, ptCfg, rawPermitCount, buildingFeeAtIntake) {
+  const permitCount = typeof rawPermitCount === 'number' ? Math.max(0, Math.floor(rawPermitCount)) : 1;
+  if (ptCfg?.issuance === false || !(permitCount > 0) || !(b.issuance?.first > 0)) return null;
+  if (buildingFeeAtIntake && b.issuance.independent !== true) return null;
+  const issuanceAmount = b.issuance.first + Math.max(0, permitCount - 1) * (b.issuance.each_additional ?? 0);
+  return {
+    id: 'issuance',
+    label: permitCount === 1 ? 'Permit issuance' : `Permit issuance (${permitCount} permits)`,
+    amount: round2(issuanceAmount),
+    tag: 'computable_now',
+    cite: b.issuance.cite,
+    ownerDivision: b.owner_division,
+  };
+}
+
 /** Run a project through a city's schedule → itemized, two-bucket breakdown. */
 export function calcFees(schedule, inputs) {
   const displayName = schedule.display_name ?? schedule.city_slug;
@@ -806,6 +954,7 @@ export function calcFees(schedule, inputs) {
   const buildingFeeAtIntake = !scopedOnly && (
     b.permit_fee.method === 'confirm_at_intake' ||
     ptCfg?.building_fee_rule === 'confirm_at_intake' ||
+    (!ptCfg && b.permit_fee.unlisted_permit_types === 'confirm_at_intake') ||
     Boolean(unresolvedBuildingBand));
 
   // 2) Building permit + plan review + issuance (the computable core).
@@ -935,26 +1084,19 @@ export function calcFees(schedule, inputs) {
   // Some schedules publish issuance independently from an unresolved permit
   // calculation. Preserve the historical all-or-intake behavior unless the
   // authored city schedule explicitly opts into that independent row.
-  const permitCount = typeof inputs.permitCount === 'number' ? Math.max(0, Math.floor(inputs.permitCount)) : 1;
-  if (ptCfg?.issuance !== false && permitCount > 0 && b.issuance.first > 0 &&
-      (!buildingFeeAtIntake || b.issuance.independent === true)) {
-    const issuanceAmount = b.issuance.first + Math.max(0, permitCount - 1) * (b.issuance.each_additional ?? 0);
-    firm.push({
-      id: 'issuance',
-      label: permitCount === 1 ? 'Permit issuance' : `Permit issuance (${permitCount} permits)`,
-      amount: round2(issuanceAmount),
-      tag: 'computable_now',
-      cite: b.issuance.cite,
-      ownerDivision: buildingOwner,
-    });
-  }
+  const issuance = issuanceLine(b, ptCfg, inputs.permitCount, buildingFeeAtIntake);
+  if (issuance) firm.push(issuance);
 
   // 3) Trade permits (new construction; gated on combination scope).
   const isCombination = inputs.isCombinationPermit ?? ptCfg?.combination_trades ?? Boolean(ptCfg);
+  // A combination permit can stand in for the itemized trade unit rows and carry
+  // its own trade scopes; the schedule says which (trades_new.*).
+  let combinationTrades = null;
   if (permitFee > 0 && b.trades_new && isCombination) {
     const t = b.trades_new;
     if (typeof t.combination_pct === 'number') {
       firm.push({ id: 'trades', label: `Combination M/E/P permit (${Math.round(t.combination_pct * 100)}% of permit fee, new construction)`, amount: round2(permitFee * t.combination_pct), tag: 'percent_of_base', cite: t.cite, ownerDivision: buildingOwner });
+      combinationTrades = t;
     } else {
       if (t.electrical_pct) firm.push({ id: 'electrical', label: `Electrical permit (${Math.round(t.electrical_pct * 100)}% of permit fee)`, amount: round2(permitFee * t.electrical_pct), tag: 'percent_of_base', cite: t.cite, ownerDivision: buildingOwner });
       if (t.plumbing_pct) firm.push({ id: 'plumbing', label: `Plumbing permit (${Math.round(t.plumbing_pct * 100)}% of permit fee)`, amount: round2(permitFee * t.plumbing_pct), tag: 'percent_of_base', cite: t.cite, ownerDivision: buildingOwner });
@@ -1029,7 +1171,9 @@ export function calcFees(schedule, inputs) {
   const schoolExcludedConversion = schedule.statewide.school_fee_excludes_existing_habitable_conversion === true &&
     inputs.existingHabitableConversion === true;
   if (!schoolExcludedConversion && schoolAreaApplies && schoolRate && (ptCfg?.school_fee ?? isResidential)) {
-    firm.push({ id: 'school', label: `School developer fee (≤ $${schoolRate.toFixed(2)}/sq ft × ${area.toLocaleString()} sq ft — district-set, often lower)`, amount: round2(area * schoolRate), tag: 'per_unit_lookup', cite: schedule.statewide.school_fee_cite, ownerDivision: schedule.statewide.school_fee_owner_division });
+    // Paid to the school district, which certifies payment before the permit issues
+    // (Ed. Code §17620); the city does not collect it.
+    firm.push({ id: 'school', label: `School developer fee (≤ $${schoolRate.toFixed(2)}/sq ft × ${area.toLocaleString()} sq ft — district-set, often lower)`, amount: round2(area * schoolRate), tag: 'per_unit_lookup', cite: schedule.statewide.school_fee_cite, ownerDivision: schedule.statewide.school_fee_owner_division, paidToOtherAgency: true });
   }
 
   // 8) Sewer connection (per the city's own table; additions ≥ min area).
@@ -1097,7 +1241,7 @@ export function calcFees(schedule, inputs) {
 
   // 12) Data-driven scope add-ons, refundable deposits, conditionally located
   // fees, and structured exclusions/open questions. No city-specific branches.
-  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area }, firm, confirm);
+  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades }, firm, confirm);
   if (ptCfg?.plan_review_of_scope_addons?.line_ids?.length) {
     const spec = ptCfg.plan_review_of_scope_addons;
     const base = firm.filter((line) => spec.line_ids.includes(line.id)).reduce((sum, line) => sum + line.amount, 0);
