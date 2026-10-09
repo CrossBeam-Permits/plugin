@@ -64,7 +64,7 @@ When the City says a permit is ready to issue:
 
 - Record `issuance.status: "ready_for_issuance"` with the date and the City's words.
 - Prepare a counter handoff: record number, work class, what to bring. The City issues to an owner-builder or a City-licensed contractor, and businesses working in the city need a Laguna Beach business licence (`portal-account.md` source 1, line 169). Owner-builder status and licences are applicant declarations; never fill them in.
-- The Building counter is at City Hall, 505 Forest Avenue. The City publishes more than one set of counter hours; tell the user to check the City's current hours before going. Appointment booking is its own approval (`online-submission.md` P8).
+- The Building counter is at 505 Forest Avenue. The City publishes more than one set of counter hours; tell the user to check the City's current hours before going. Appointment booking is its own approval (`online-submission.md` P8).
 - Mark `issued` only when the user has the issued permit or the portal shows it issued, and add the permit document to `city_documents` if they share it.
 
 ## Sources
