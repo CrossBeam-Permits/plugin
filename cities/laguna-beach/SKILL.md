@@ -69,7 +69,7 @@ python3 scripts/validate-json.py --schema schemas/project-facts.schema.json perm
 
 Paths under `scripts/`, `schemas/`, `assets/`, `references/`, `requirements/`, `skills/` and `evals/` are relative to the plugin root. The user's task directory is the working directory, so write them as absolute paths (`skills/laguna-permit-preparer/SKILL.md` explains how to find the root on each host). `permit-work/` paths stay relative to the task directory.
 
-The CrossBeam connector is optional. If its tools are missing or need sign-in, continue without them.
+The CrossBeam connector is optional. If its tools are missing or need sign-in, continue without them. For plan-set permits, California code compliance needs the connector. Without it, the permit skills check the Laguna rules and City checklists and list California code as not checked.
 
 ## Workflow
 

@@ -26,10 +26,31 @@ Host packaging:
   throwaway home and checks the skill list.
 - CI shows the model-eval job as skipped, not passed, when no Claude credential is set.
 
-Content (lead to fill in before release):
+Content:
 
-- TODO
-- TODO
+- Generated from the CrossBeam corpus by `scripts/plugin-publish/laguna/` in the private
+  repo; `.generated/manifest.json` records the source commit and hashes, and a CI drift
+  check fails when this copy falls behind. Fixes the fireworks advice (Laguna bans
+  fireworks), the reroof advice (Class A, color rules) and the "HBFD clearance" line that
+  had leaked into every city.
+- New plan-set permit skills: new single-family home, ADU, addition, remodel, kitchen and
+  bath, multi-unit, commercial and restaurant TI, demolition, coastal development and
+  general building. The plan-set kinds carry the Laguna Beach layer only; California
+  code compliance comes from the CrossBeam connector (`crossbeam_get_review_requirements`,
+  `crossbeam_ask`, a CrossBeam check). Without it, the skill says what it cannot check.
+- `requirements/`: the City's Building and Planning checklists, the plan-sheet matrix
+  (21 project types by 16 sheet columns), the issuance checklist and the fee schedule.
+- New `plan-set-check` skill: checks the merged plan set against the City's sheet lists
+  and cites pages.
+- Fee estimate runs the shared CrossBeam fee calculator (`scripts/estimate-fees.mjs`).
+- Building application re-pinned to the City's current 2-page form with the Stormwater
+  Quality Certification. The applicant signs before upload, and
+  `scripts/verify-signed-form.py` checks the signed copy.
+- Portal map v2: every online work class with its questions, uploads and fee timing. The
+  agent picks the work class by reasoning and the user confirms it. Standalone demolition
+  and Zone Clearance are filed online. A weekly job checks the live portal for drift.
+- New references: `plan-sheets.md` (drawing with CrossBeam permit-drawings and its
+  hand-off), `portal-account.md`, `after-filing.md`.
 
 ## 0.4.0 (2026-09-08, PR #6)
 
