@@ -1,0 +1,133 @@
+{
+  "fixture_id": "laguna-pool-video-001",
+  "source_pdf_sha256": "ec6fee57c42ae574c76451e766a8e94cfae0756d46d4abc79678a925ed7996ed",
+  "page_numbering": "Physical PDF pages, not printed application pages",
+  "purpose": "Fictional filming packet completion register; statuses are authored review findings, not semantic classification by code",
+  "components": [
+    {
+      "id": "application",
+      "requirement": "Location, contacts and scope",
+      "source_pages": [
+        1,
+        2
+      ],
+      "status": "facts_ready",
+      "artifact": "zone-clearance-demo.pdf pp. 1-2",
+      "action": "All 20 mapped targets have fictional inputs. Run fill-official-demo.py and inspect its verification report to establish generated-artifact completion. Email-update preference has no mapped widget and remains a separate item."
+    },
+    {
+      "id": "title_summary",
+      "requirement": "Title and project summary",
+      "source_pages": [
+        3,
+        22,
+        23
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "sample-plans.pdf A0/A5 and fictional-exhibits.pdf E1",
+      "action": "Authored fictional scope, legal-description label, constraints and summary supplied; actual zoning/conformance and professional inputs remain unverified."
+    },
+    {
+      "id": "survey",
+      "requirement": "Fictional survey exhibit",
+      "source_pages": [
+        3,
+        21,
+        24,
+        25,
+        26
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "sample-plans.pdf A3",
+      "action": "Fictional existing-conditions exhibit prepared without seal or claim of field measurements."
+    },
+    {
+      "id": "site",
+      "requirement": "Site plan",
+      "source_pages": [
+        4,
+        5,
+        21
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "sample-plans.pdf A1/A3",
+      "action": "Demo dimensions, north, grade, easement/setback assumptions, utility/access notes and barrier concept supplied. Not a construction site plan."
+    },
+    {
+      "id": "sections",
+      "requirement": "Two perpendicular site cross-sections",
+      "source_pages": [
+        5,
+        6,
+        21
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "sample-plans.pdf A2/A4",
+      "action": "Longitudinal pool and perpendicular full-site demonstration sections supplied."
+    },
+    {
+      "id": "grading",
+      "requirement": "Grading and drainage",
+      "source_pages": [
+        6
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "sample-plans.pdf A5",
+      "action": "Water-volume and separately authored excavation estimates supplied with grading/drainage notes. Final engineered drainage remains outside the fictional concept."
+    },
+    {
+      "id": "conditional",
+      "requirement": "Conditional sheets and studies",
+      "source_pages": [
+        6,
+        7,
+        8,
+        9,
+        21,
+        30,
+        31,
+        34,
+        35,
+        36,
+        38,
+        39
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "fictional-exhibits.pdf E1/E2",
+      "action": "Authored fictional branch assumptions cover constraints and study triggers. These are not real City determinations or study waivers."
+    },
+    {
+      "id": "affidavit",
+      "requirement": "Owner affidavit",
+      "source_pages": [
+        7,
+        33
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "fictional-exhibits.pdf E3",
+      "action": "Visibly simulated owner declaration supplied; no legal signature executed or represented."
+    },
+    {
+      "id": "declarations",
+      "requirement": "Completeness and hazardous-site statements",
+      "source_pages": [
+        41,
+        43
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "fictional-exhibits.pdf E4",
+      "action": "Visibly simulated applicant statements supplied; no real hazardous-site search or legal execution represented."
+    },
+    {
+      "id": "preferences",
+      "requirement": "Email update preference",
+      "source_pages": [
+        1
+      ],
+      "status": "fictional_exhibit_prepared",
+      "artifact": "fictional-exhibits.pdf E4",
+      "action": "Fictional email preference No supplied; no external communication."
+    }
+  ],
+  "qualification_limit": "Component coverage for a fictional rehearsal only. No actual permit-ready survey, engineering, conformance findings, legal signatures, or City completeness determination is claimed."
+}

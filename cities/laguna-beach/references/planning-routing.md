@@ -36,7 +36,7 @@ concurrently where allowed, but do not fold its checklist into Design Review.
 | Established fact | Governing result | Authority |
 |---|---|---|
 | Pool or spa more than 3 feet above adjacent legal grade, except a portable spa no more than 600 gallons | `drb`; one Design Review Application | LBMC §25.05.040(B)(1)(j) |
-| Pool or spa no more than 3 feet above adjacent legal grade, or portable spa no more than 600 gallons | `zone_clearance`; Zone Clearance Application and Planning appointment | LBMC §25.05.040(B)(2)(t), §25.05.045, as enacted by Urgency Ord. 1732 and extended by Ord. 1733 |
+| Pool or spa no more than 3 feet above adjacent legal grade, or portable spa no more than 600 gallons | `zone_clearance`; Zone Clearance Application; online type 114 (verified public City configuration) | LBMC §25.05.040(B)(2)(t), §25.05.045, as enacted by Urgency Ord. 1732 and extended by Ord. 1733 |
 | Development in an environmentally sensitive area, unless the licensed-professional determination and peer review establish no impact | `drb`, including an otherwise (B)(2)/(B)(3) item | LBMC §25.05.040(B)(1)(e), (B)(2) |
 | Equipment passes all six objective requirements below | equipment is `zone_clearance`, without Design Review | LBMC §7.25.130(C); §25.05.040(B)(2)(v) |
 | Equipment fails any one of the six requirements | equipment is `admin_dr` | LBMC §7.25.130(D); §25.05.040(B)(3)(a)(v) |
@@ -78,7 +78,7 @@ Before equipment permit issuance, the installation contractor also signs the
 
 | Filing | Channel |
 |---|---|
-| Zone Clearance | Current packet plus Planning appointment; do not use online type 114 |
+| Zone Clearance | Type 114 `Residential Planning Entitlements`, PLANS module; one `Application` PDF and one `Plans` PDF; verified through current City type/work-class instructions |
 | Design Review / Administrative Design Review | Type 114 `Residential Planning Entitlements`, one `Application` PDF and one `Plans` PDF |
 | Coastal Development Permit | Add to the type 114 Application PDF and preserve its separate checklist/completeness result |
 | Conditional Use Permit or Variance | Add the confirmed form to the one type 114 Application PDF |
@@ -104,3 +104,44 @@ Read `form-coverage.md` before promising form preparation for any other applicat
 - [City Applications & Handouts](https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts), verified 2026-08-22
 - Current form source receipts: `assets/form-manifest.json`
 - Current portal source receipt: `assets/portal-maps/v1-portal-map.json`
+
+## Channel correction verified 2026-09-08
+
+The [official Zone Clearance application](https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000), page 1, requires new applications through the Public Permit Portal and ties receipt to submission plus the Zoning Plan Check fee. Its footnote offers a City computer or a requested hard-copy accommodation. The current [Applications & Handouts page](https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts) also directs applications online. Earlier plugin guidance and evals incorrectly treated this as appointment-only.
+
+The current public portal configuration resolves the entry: **type 114, Residential
+Planning Entitlements, PLANS module**, type ID `d1c3da85-1287-4578-9312-bdc56e2ae963`
+and work-class ID `6c1ac741-1447-403d-a218-ac5715c6d9a9`. The City's instructions
+keyed to that exact pair explicitly direct a Zone Clearance Application where no
+discretionary entitlement is required. See `assets/portal-maps/zone-clearance-2026-09-08/mapping.json`
+for the reviewed mapping and adjacent raw API responses/hash receipts. This supersedes
+the earlier same-day unverified-entry finding; no City account was needed to obtain it.
+
+Represent a supported residential Zone Clearance record with `channel: "online"` and
+the confirmed type 114 portal mapping. Its readiness/status still depends on the user's
+filing theory, required facts and documents, and prerequisite checks. Never turn a
+confirmed route into a claim that the packet is complete or submitted.
+
+The public configuration requires a location, description, square footage, signature,
+Applicant and Owner contacts, and one PDF each in Application and Plans. Valuation is
+optional. Contractor/Engineer/Architect contacts are conditional; the Contractor contact
+validates a license when supplied. The mapped online custom-field layout has no question
+groups. Attach further materials required by the actual applicable forms; portal-required
+upload categories alone are not the complete project checklist.
+
+The configured success message says a planner will screen the submittal and contact
+the applicant for payment. The official form's deemed-received condition still requires
+both submission and the Zoning Plan Check fee. Record payment state separately from the
+submission receipt; do not describe a submitted/unpaid application as received, complete,
+approved, or issued. Actual authenticated UI and live submission have not been tested.
+Before a real filing, perform the usual visible portal drift and record checks.
+
+When explaining this route to the user, call for the current Zone Clearance application
+and supporting packet. Briefly attribute type 114 to the City’s type/work-class instructions
+and say these are verified public configuration requirements; the authenticated screens
+and actual filing have not been exercised. This keeps the evidence limit visible without
+turning the answer into a technical checklist.
+
+For Zone Clearance preparation, read `zone-clearance-packet.md` before deciding the
+Application and Plans PDFs are complete. It identifies non-widget signatures, the
+physical PDF page numbering, and the pool-specific document matrix discrepancy.

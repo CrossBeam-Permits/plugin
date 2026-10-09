@@ -1,0 +1,37 @@
+{
+  "case_id": "DEMO-A096E185B1D1",
+  "city_submission": false,
+  "fields_compared": 6,
+  "files_compared": 2,
+  "receipt": {
+    "record_number": "DEMO-A096E185B1D1",
+    "label": "DEMONSTRATION \u2014 NOT A CITY SUBMISSION",
+    "submitted_at": "2026-09-09T02:04:23.626166+00:00",
+    "city_submission": false,
+    "payment": "No payment \u2014 simulation",
+    "next_step": "Demo complete. No City review, approval, or permit was requested.",
+    "mapping_status": "Zone Clearance production entry remains unverified"
+  },
+  "uploaded_files": {
+    "Application": {
+      "name": "zone-clearance-demo.pdf",
+      "size": 9086762,
+      "sha256": "238d642e2a2103da71c83c8c087160b6fffe461d5f3edc6557692f2c4cdd1b87"
+    },
+    "Plans": {
+      "name": "sample-plans.pdf",
+      "size": 2689,
+      "sha256": "7a1e26aca5f5ccd9c404e4c56e2b37b10fd33eb3d8775815eb8889944347b671"
+    }
+  },
+  "result": "pass",
+  "official_form": {
+    "id": "zone-clearance-application",
+    "source_sha256": "ec6fee57c42ae574c76451e766a8e94cfae0756d46d4abc79678a925ed7996ed",
+    "mapped_answers_filled": 6,
+    "unmapped_and_unknown_fields": "remain blank; not a complete or filing-ready project packet",
+    "all_pages_labeled": 43,
+    "visual_review": "Filled pages 1 and 2 inspected; remaining reference pages not visually qualified"
+  },
+  "method": "Codex installed plugin Python helpers and Codex in-app browser UI operations; no direct API used to populate or submit the case"
+}

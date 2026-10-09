@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "run_id", "generated_at", "records"],
   "properties": {
-    "schema_version": {"const": "1.0.0"},
+    "schema_version": {"const": "1.1.0"},
     "run_id": {"type": "string", "minLength": 1},
     "generated_at": {"type": "string", "format": "date-time"},
     "records": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/transaction"}}
@@ -17,6 +17,16 @@
       "additionalProperties": false,
       "required": ["fact_id", "value"],
       "properties": {
+        "fact_id": {"type": "string", "minLength": 1},
+        "value": {}
+      }
+    },
+    "portalField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field_name", "fact_id", "value"],
+      "properties": {
+        "field_name": {"type": "string", "minLength": 1},
         "fact_id": {"type": "string", "minLength": 1},
         "value": {}
       }
@@ -75,7 +85,7 @@
         "address": {"$ref": "#/$defs/factValue"},
         "basic_info": {"type": "array", "items": {"$ref": "#/$defs/factValue"}},
         "contacts": {"type": "array", "items": {"$ref": "#/$defs/contact"}},
-        "custom_fields": {"type": "array", "items": {"$ref": "#/$defs/factValue"}},
+        "custom_fields": {"type": "array", "items": {"$ref": "#/$defs/portalField"}},
         "uploads": {"type": "array", "items": {"$ref": "#/$defs/upload"}},
         "checkpoints": {"$ref": "#/$defs/checkpoint"},
         "expected_confirmation": {"type": "string", "minLength": 1},

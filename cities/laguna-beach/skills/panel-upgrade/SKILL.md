@@ -1,9 +1,11 @@
 ---
+name: panel-upgrade
 description: "Panel Upgrade permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions panel upgrade in Laguna Beach."
-version: "1.0"
-source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
-authority: "California Building Standards Commission / National Electrical Code with California Amendments"
-law_as_of: "January 1, 2025"
+metadata:
+  version: "1.0"
+  source: "2025 California Electrical Code (Title 24, Part 3) — Articles 100, 110, 200, 210, 230, 240, 250, 300, 312, 408 + California Fire Code 605"
+  authority: "California Building Standards Commission / National Electrical Code with California Amendments"
+  law_as_of: "January 1, 2025"
 ---
 
 # Laguna Beach — Panel Upgrade Permit

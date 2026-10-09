@@ -8877,7 +8877,7 @@
   },
   {
     "allowsInternetSubmission": true,
-    "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114",
+    "applyUrl": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/plan/apply/114/0/0",
     "attachments": [
       {
         "allowedFileTypes": ".pdf",
@@ -8935,7 +8935,7 @@
       {
         "name": "Contractor",
         "required": false,
-        "validatesLicense": false
+        "validatesLicense": true
       },
       {
         "name": "Engineer",

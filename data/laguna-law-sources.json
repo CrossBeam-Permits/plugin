@@ -21,9 +21,11 @@
       "adoptedOn": "2026-08-04",
       "effectiveOn": "2026-08-04",
       "status": "extends Urgency Ordinance 1732 for 22 months and 15 days unless earlier repealed",
-      "sha256": "2321715c307b67ee81d2974703a0218b76bd01620da5d76f10f8204a48a602a3",
-      "bytes": 4569185,
-      "pages": 10
+      "sha256": "b4880510e5e3a0ab8d6bf61292b63cb820ecfe93a272bee576712dd087f61076",
+      "bytes": 4567356,
+      "pages": 10,
+      "reviewedOn": "2026-09-08",
+      "reviewNote": "Reacquired twice with matching bytes. Read all 10 pages. Section 4 still extends Ordinance 1732 for 22 months and 15 days unless earlier repealed or extended; adoption remains August 4, 2026. Previous binary unavailable for a binary/content diff. This refresh does not advance the overall municipal-code lawAsOf date."
     },
     {
       "id": "laguna-ordinance-1731",
