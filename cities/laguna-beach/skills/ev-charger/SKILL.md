@@ -1,25 +1,26 @@
 ---
 name: ev-charger
-description: "Ev Charger permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions ev charger in Laguna Beach."
+description: "EV Charger permits in Laguna Beach, CA. An EV charging circuit and its panel or service work at a dwelling or parking area. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions ev charger in Laguna Beach."
 metadata:
-  version: "1.0"
+  version: "2.0"
   source: "2025 California Electrical Code (Title 24, Part 3) — Articles 625, 220, 230, 240, 250, 310, 210, 110"
-  authority: "California Building Standards Commission / National Electrical Code with California Amendments"
+  authority: "California Building Standards Commission and City of Laguna Beach"
   law_as_of: "January 1, 2025"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
-# Laguna Beach — Ev Charger Permit
+# Laguna Beach — EV Charger Permit
 
-Handles ev charger permits in Laguna Beach end-to-end.
+Handles ev charger permits in Laguna Beach end-to-end. Scope: An EV charging circuit and its panel or service work at a dwelling or parking area.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
 > "Are you (A) planning to file a ev charger permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -36,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
-## Ready to Submit — Laguna Beach Ev Charger Permit
+## Ready to Submit — Laguna Beach EV Charger Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -75,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -92,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -108,9 +122,98 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
+
+**Base skill:** `references/california-baseline.md`
+**This skill contains ONLY items where Laguna Beach differs from state code.**
+**All state checklist items apply unless explicitly overridden below.**
+
+---
+
+### Decision Tree Router
+
+#### STEP 1: What's the Question About?
+
+| Topic | Load These References |
+|-------|----------------------|
+| **Residential permit review** | `references/city-ev-guide.md` + state skill |
+| **Non-residential or multi-family permit review** | `references/city-ev-checklists.md` + state skill |
+| **Load calculation verification** | `references/city-ev-guide.md` (load calc worksheet + panel sizing table) |
+| **Wire/conduit sizing** | `references/city-ev-guide.md` (wire/conduit table) |
+| **Permit process / timeline** | This SKILL.md (below) |
+| **Local ordinance** | This SKILL.md + municipal code Ch. 14.85 (when scraped) |
+
+#### STEP 2: Determine Building Type
+
+| Building Type | Checklist | Key Differences |
+|--------------|-----------|-----------------|
+| **Single-family / Duplex / ADU** | Residential checklist | No site plan or signed electrical plans required; load calc only for >40A OCPD |
+| **Non-residential** | Non-residential checklist | Site plan + electrical plans required; CALGreen + ADA accessibility compliance |
+| **Multi-family** | Multi-family checklist | Site plan + electrical plans required; CALGreen 10% EV-ready parking requirement |
+
+#### STEP 3: For Residential Permit Review — Walk the Checklist
+
+Use the state skill's checklist but augment with city-specific details from `references/city-ev-guide.md`:
+
+| # | Check | City-Specific Detail | Reference |
+|---|-------|---------------------|-----------|
+| 1 | Charger amperage valid? | City covers Level 1 through 100A (Level 2 - 19.2kW highest). The 70A is the wire sizing table's upper range; the code compliance checklists cover up to 100A. | `references/city-ev-guide.md` |
+| 2 | Wire sizing correct? | **Use city wire/conduit table** (20A=#12 through 70A=#6) | `references/city-ev-guide.md` |
+| 3 | Conduit sizing correct? | **City table covers EMT, RNC, FMC sizes per breaker** | `references/city-ev-guide.md` |
+| 4 | Load calc arithmetic correct? | **CRITICAL — independently add up every checked line item. Do NOT trust applicant's Total Watts Used.** Compare your sum to theirs. Verify against panel sizing table. | `references/city-ev-guide.md` |
+| 5 | Panel has capacity? | Total watts vs. city panel sizing table (24kW→60A, 48kW→100A, etc.) | `references/city-ev-guide.md` |
+| 6 | Separate branch circuit? | CEC §210.17 — no other outlets on EV circuit | State skill |
+| 7 | Disconnect (>60A or >150V)? | CEC §625.42 — lockable in open position per §110.25 | State + city checklist |
+| 8 | Equipment listed (NRTL)? | UL 2202/UL 2200 listing mark required | City checklist |
+| 9 | Not in public ROW? | **Outdoor installations: vehicle + ALL EVCS components must NOT be in public ROW** unless approved by Public Works | City checklist |
+| 10 | Conduit support spacing? | EMT=10', RNC=3', FMC=4.5', NMC=4.5' | `references/city-ev-guide.md` |
+| **11** | **Submittal complete?** | Electrical permit app + manufacturer specs. **Site plan and electrical plans NOT required for SFR/duplex/ADU.** | `references/city-ev-guide.md` |
+
+#### STEP 4: Output the Review Result
+
+Same format as state skill — PASS/FAIL/FLAG/N/A per item with code citations.
+
+> **Reminder**: For checklist item #4 (load calc arithmetic), always show your independent addition of the line items. This is the most common error.
+
+---
+
+### Quick-Reference: Laguna Beach vs. State Code
+
+| Standard | State Code (CEC) | Laguna Beach | Delta |
+|----------|------------------|-------------|-------|
+| **Wire/conduit sizing** | Table 310.16 (general) | City table with specific conduit combos | **City provides simplified lookup** |
+| **Panel sizing table** | Per calculation | City lookup table (24kW→60A, etc.) | **City provides simplified lookup** |
+| **Site plan (SFR)** | N/A | **NOT required** for SFR/duplex/ADU | **City simplification** |
+| **Electrical plans (SFR)** | N/A | **NOT required** for SFR/duplex/ADU | **City simplification** |
+| **Load calc trigger** | All installations | Only for >40A OCPD | **City has higher threshold** |
+| **Permit timeline** | N/A | **3 business days** (expedited) / 10 days (standard) — per administrative checklists, not ordinance | **City-specific** |
+| **Signing requirement** | N/A | CA Licensed Electrical Engineer or C-10 contractor | **City-specific** |
+| **HOA override** | Civil Code § 4080 | Same — HOA cannot block EVCS permit | Matches state |
+| **Public ROW** | N/A | Vehicle + components must NOT be in ROW | **City adds** |
+
+---
+
+### Key Laguna Beach EV Charger Facts
+
+- **Municipal code**: Chapter 14.85 — Electric Vehicle Charging Station Permits
+- **Permit type**: Streamlined (ministerial, no discretionary review)
+- **Expedited review timeline**: Up to **3 business days** if all checklist items pass (per city administrative checklists)
+- **Standard review timeline**: Up to **10 business days** (per city administrative checklists)
+- **Ordinance timeline language**: Ch. 14.85 states applications are "promptly processed" with no specific day count. The 3-business-day (expedited) and 10-business-day (standard) timelines come from the city's administrative code compliance checklists, not the ordinance itself.
+- **CUP trigger**: Building official may require conditional use permit if EVCS could have specific adverse impact on public health/safety (§14.85.060(d))
+- **Checklists available**: Residential, Non-Residential, Multi-Family (3 separate checklists)
+- **Residential submittal**: Electrical permit app + manufacturer specs only (no site plan, no electrical plans for SFR/duplex/ADU)
+- **Non-res/multi-family submittal**: Site plan + electrical plans + single-line diagram + load calc + manufacturer specs
+- **Contractor**: Licensed Electrical Engineer or C-10 electrical contractor
+- **HOA protection**: EVCS permit approval is NOT subject to HOA approval (Civil Code § 4080)
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
@@ -132,7 +235,7 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 
 ## Deferred to Inspection
 
-These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+The inspector verifies these in the field. They are **not** plan-check corrections; the reviewer does not list them.
 
 | # | Inspector verifies | What to look for | Code |
 |---|---|---|---|
@@ -144,7 +247,23 @@ These items are verified by the inspector in the field — **not** part of plan-
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/ev-charger/`. City overlay source: `skills/cities/laguna-beach/ev-charger/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/ev-systems-625.md` — CEC Article 625 — Electric Vehicle Power Transfer System
+- `references/gfci-location.md` — GFCI Protection and Equipment Location for EV Chargers
+- `references/load-calc-220.md` — CEC 220.83 — Optional Calculation for Existing Dwelling Units
+- `references/wire-sizing-310.md` — CEC Table 310.16 — Conductor Ampacity for EV Charger Installations
+
+**Laguna Beach rules**
+
+- `references/city-ev-checklists.md` — Laguna Beach EV Charger — Code Compliance Checklists (Non-Residential & Multi-Family)
+- `references/city-ev-guide.md` — Laguna Beach EV Charger — Installation Guidelines & Load Calculation
+- `references/city-ev-ordinance.md` — Laguna Beach EV Charger — Municipal Code Ch. 14.85
 
 ---
 

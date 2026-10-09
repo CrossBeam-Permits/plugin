@@ -2,7 +2,7 @@
 title: "Utility Disconnection & Capping -- CPC, CMC, CEC Requirements"
 category: "Utility Capping & Disconnection"
 relevance: "Every LTIA demolition review -- electrical, plumbing, gas, HVAC capping"
-key_code_sections: "CBC 3303.6, CPC 1206.1, 1206.3, CPC H1101.1, CMC 106.5, CMC 1313.5.1, CEC 225.52, CEC 230.70"
+key_code_sections: "CBC 3303.6, CPC 1206.1, 1206.3, CPC 722.1, CMC 106.5, CMC 1313.5.1, CEC 225.52, CEC 230.70"
 ---
 
 # Utility Disconnection & Capping
@@ -63,7 +63,7 @@ When fixtures connected to the DWV system are removed:
 2. Maintain trap seals on any remaining connected fixtures.
 3. Open vent pipes must be capped to prevent sewer gas from entering the occupied building.
 
-### Abandoned Sewers (CPC Appendix H, Section H1101.1)
+### Abandoned Sewers (CPC 722.1)
 
 An abandoned building sewer, or part thereof, shall be plugged or capped in an approved manner within 5 feet of the property line.
 

@@ -30,7 +30,7 @@ Source: 2025 California Building Code (Title 24, Part 2), Chapter 19 — Concret
 
 | Property | Requirement | Code Section |
 |----------|-------------|--------------|
-| Minimum compressive strength (f'c) | 2,500 psi (3,000 psi typical for retaining walls) | CBC 1904.2.1 |
+| Specified compressive strength (f'c) | Per structural design and ACI 318 durability/exposure requirements. For the qualifying Group R-2/R-3 scope in CBC 1904.1, weather-exposed basement, foundation, exterior and other vertical surfaces require at least 3,000 psi. | CBC 1904.1; ACI 318 |
 | Maximum water-cement ratio | 0.45 for exposure to deicing chemicals; 0.50 for moderate exposure | ACI 318 Table 19.3.2.1 |
 | Air entrainment | 4-7% for freeze-thaw exposure (mountain areas) | ACI 318 Table 19.3.3.1 |
 | Slump | 4-6 inches (typical for wall pours) | ACI 318 |
@@ -243,7 +243,7 @@ Timber retaining walls are limited to:
 
 | Material | Specification | Code Section |
 |----------|---------------|--------------|
-| Lumber treatment | Pressure-treated per AWPA U1, Use Category 4B (ground contact, heavy duty) | CRC R304.4 |
+| Lumber treatment | Naturally durable or AWPA U1 preservative-treated wood where R304.1 applies; embedded/ground-contact wood supporting permanent occupied structures uses approved treatment suitable for ground contact under R304.1.2. | CRC R304.1, R304.1.2 |
 | Treatment chemical | ACQ, CA-B, or CCA (CCA restricted to non-residential per EPA) | AWPA U1 |
 | Timber grade | #2 or better Southern Yellow Pine, Douglas Fir, or Hem-Fir | NDS |
 | Hardware | Hot-dip galvanized or stainless steel (no electro-galvanized near treated wood) | Industry practice |
@@ -312,14 +312,14 @@ When reviewing retaining wall plans, verify the following material specification
 
 | # | Item | What to Verify |
 |---|------|---------------|
-| 1 | Concrete strength (f'c) | Minimum 2,500 psi; 3,000 psi typical; sulfate-resistant cement if required by soils report |
+| 1 | Concrete strength (f'c) | Structural strength and durability per CBC 1904.1/ACI 318 and the project exposure/design; the 3,000-psi minimum applies only to CBC 1904.1's stated Group R-2/R-3 weather-exposed vertical-surface exception |
 | 2 | Rebar grade | ASTM A615 or A706 Grade 60 |
 | 3 | Rebar clear cover | 2" against earth, 1.5" exposed to weather |
 | 4 | CMU block type | ASTM C90, normal weight, Grade N (if CMU wall) |
 | 5 | Mortar type | Type M for below grade / ground contact; Type S for above grade |
 | 6 | Grout strength | f'g >= 2,000 psi (if CMU wall) |
 | 7 | SRW block standard | ASTM C1372 (if segmental wall) |
-| 8 | Timber treatment | AWPA U1, Use Category 4B (if timber wall) |
+| 8 | Timber durability/treatment | Naturally durable or preservative-treated wood where R304.1 applies; for R304.1.2 embedded/ground-contact occupied-structure scope, treatment must be approved and suitable for ground contact |
 | 9 | Geogrid type/strength | Per manufacturer or engineer (if SRW or MSE wall) |
 | 10 | Drain rock specification | 3/4"-1.5" clean crushed aggregate |
 | 11 | Filter fabric | Non-woven geotextile, minimum 4 oz/sy |

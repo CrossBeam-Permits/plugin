@@ -56,7 +56,7 @@ When compliance is clean (or flag-only), produce a submission guide:
 **Typical issuance:** same-day OTC if documents complete and no overlay triggers
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, El Centro Fire Department (collaborative via CDD) clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]

@@ -2,12 +2,12 @@
 title: "Pool Plumbing, Filtration, and Anti-Entrapment Requirements"
 category: "Plumbing / Safety"
 relevance: "Every swimming pool/spa construction review — suction outlets, anti-entrapment, drains, filtration, heaters, water supply"
-key_code_sections: "HS Code 115928; CPC Ch. 7, Ch. 12; CEC 680.9; Cal Energy Code 110.4; Virginia Graeme Baker Act (P.L. 110-140)"
+key_code_sections: "HS Code 115928; CPC Ch. 7, Ch. 12; CMC Ch. 8; CEC 680.9; Cal Energy Code 110.4; Virginia Graeme Baker Act (P.L. 110-140)"
 ---
 
 # Pool Plumbing, Filtration, and Anti-Entrapment Requirements
 
-Source: California Health & Safety Code Sections 115928-115929; 2025 California Plumbing Code (Title 24, Part 5), Chapters 7 and 12; 2025 California Electrical Code (Title 24, Part 3), Section 680.9; California Energy Code (Title 24, Part 6), Section 110.4; Virginia Graeme Baker Pool and Spa Safety Act (federal).
+Source: California Health & Safety Code Sections 115928-115929; 2025 California Plumbing Code (Title 24, Part 5), Chapters 7 and 12; 2025 California Mechanical Code (Title 24, Part 4), Chapter 8; 2025 California Electrical Code (Title 24, Part 3), Section 680.9; California Energy Code (Title 24, Part 6), Section 110.4; Virginia Graeme Baker Pool and Spa Safety Act (federal).
 
 This reference covers pool plumbing systems, filtration, suction outlet anti-entrapment, drain configuration, water supply, pool heaters, and water discharge requirements.
 
@@ -118,7 +118,7 @@ Anti-vortex drain covers are dome-shaped or otherwise designed to:
 |-------------|---------------|
 | **Installation** | Per CPC and manufacturer's instructions |
 | **Gas supply** | Sized per CPC gas pipe sizing tables for BTU input |
-| **Venting** | Per manufacturer specifications and CPC Chapter 8 |
+| **Venting** | Per the appliance listing/manufacturer instructions and the applicable CMC Chapter 8 venting route; do not cite CPC Chapter 8, which governs indirect wastes |
 | **Clearances** | Per manufacturer's listing and CPC |
 | **Certification** | Manufacturer must certify system per California Energy Code 110.4 |
 | **Cover** | Pool/spa cover required if outdoor pool/spa has a gas heater (Cal Energy Code 110.4) |

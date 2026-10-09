@@ -264,24 +264,22 @@ The seismic increment acts at approximately **0.6H** above the base (higher than
 
 | Requirement | Specification | Code Section |
 |-------------|---------------|--------------|
-| Minimum depth below lower grade | 12 inches | CBC 1809.4 |
-| Minimum width | Per structural analysis (typically 0.5-0.7 x wall height) | CBC 1809.7 |
-| Concrete strength | f'c >= 2,500 psi (typically 3,000 psi specified) | CBC 1904 |
+| Minimum depth below undisturbed ground surface | 12 inches | CBC 1809.4 |
+| Minimum width | At least 12 inches under CBC 1809.4; final width per the retaining-wall structural analysis and supporting-soil capacity | CBC 1809.4; CBC 1807.2 |
+| Concrete strength | Per structural design and ACI 318 durability/exposure requirements; apply the qualifying CBC 1904.1 3,000-psi minimum only within its stated Group R-2/R-3 weather-exposed vertical-surface scope | CBC 1904.1; ACI 318 |
 | Reinforcement | Per structural analysis; minimum per ACI 318 | ACI 318 |
-| Bearing on rock | May reduce footing size per geotechnical recommendation | CBC 1809.4 |
-| Stepped footings | Horizontal step length >= 2 ft; vertical step <= 2/3 horizontal | CBC 1809.8 |
+| Supporting material | Undisturbed soil, compacted fill or CLSM under 1809.2; use the approved geotechnical/design bearing capacity for final sizing | CBC 1809.2; CBC 1806 |
+| Stepped footings | Keep the top surface level; bottom slope may not exceed 1:10; step where needed to change top elevation or where ground slope exceeds 1:10. Apply the OSHPD-specific step limits only in that agency scope. | CBC 1809.3 |
 
-### Typical Footing Proportions (Cantilever Walls)
+### Footing Proportion Design Inputs
 
-| Wall Height (H) | Footing Width | Toe Length | Heel Length | Footing Depth |
-|-----------------|---------------|------------|-------------|---------------|
-| 4 ft | 2.5-3 ft | 0.5-1 ft | 1.5-2 ft | 10-12" |
-| 6 ft | 3.5-4.5 ft | 0.8-1.2 ft | 2-3 ft | 12-14" |
-| 8 ft | 5-6 ft | 1-1.5 ft | 3-4 ft | 14-18" |
-| 10 ft | 6-7.5 ft | 1.2-2 ft | 4-5 ft | 18-24" |
-| 12 ft | 7-9 ft | 1.5-2.5 ft | 5-6 ft | 20-24" |
-
-*These are approximate starting points. Actual dimensions determined by structural analysis based on soil conditions, surcharge, and seismic loads.*
+Do not select footing, toe, heel or thickness dimensions from a wall-height-only
+rule of thumb. Determine them by structural analysis using the actual soil
+bearing and lateral parameters, wall geometry, retained height, surcharge,
+groundwater, seismic demand, sliding/overturning/bearing stability, reinforcement
+and construction conditions. A local or external prescriptive table may be used
+only with named authority/publisher, current edition, exact section/table/detail,
+geographic and project scope, and confirmation that the source remains current.
 
 ### Shear Key
 
