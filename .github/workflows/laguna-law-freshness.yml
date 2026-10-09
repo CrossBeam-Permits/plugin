@@ -16,5 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Verify operative law receipts and review window
-        run: node scripts/check-laguna-law-sources.mjs --verify-remote --enforce-review-window
+      # Two steps so a failure says which check failed: a changed ordinance PDF,
+      # or an overdue human review of the current code pages.
+      - name: Verify operative ordinance PDFs against their receipts
+        run: node scripts/check-laguna-law-sources.mjs --verify-remote
+      - name: Enforce the semantic law review window
+        if: always()
+        run: node scripts/check-laguna-law-sources.mjs --enforce-review-window
