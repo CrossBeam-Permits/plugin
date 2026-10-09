@@ -1,0 +1,209 @@
+{
+  "kind": "laguna-host-install-smoke",
+  "date": "2026-10-09",
+  "plugin_version": "0.5.0",
+  "method": "Local-path marketplace holding an exact copy of cities/laguna-beach; each host CLI run with a throwaway HOME and an empty environment; no sign-in.",
+  "proves": "Install, skill discovery, connector declaration, and the installed copy's own validator. It does not prove skill activation, model behavior, browser control, or a filing.",
+  "hosts": [
+    {
+      "host": "claude-code",
+      "cli_version": "2.1.295 (Claude Code)",
+      "installed_version": "0.5.0",
+      "skills": [
+        "block-wall",
+        "cleanout",
+        "deck-patio-repair",
+        "ev-charger",
+        "fence",
+        "fireworks-temp-use",
+        "hvac",
+        "laguna-permit-preparer",
+        "ltia-demolition",
+        "panel-upgrade",
+        "patio-cover",
+        "pool-demolition",
+        "repipe",
+        "reroof",
+        "retaining-wall",
+        "rewire",
+        "siding-replacement",
+        "sign",
+        "solar",
+        "swimming-pool",
+        "temporary-power",
+        "water-heater",
+        "window-replacement"
+      ],
+      "connector_declared": true,
+      "connector_status_unauthenticated": [
+        "plugin:laguna-beach:crossbeam: https://crossbeam-mcp.old-cherry-b095.workers.dev/mcp (HTTP) - ! Needs authentication"
+      ],
+      "installed": {
+        "installed_path": "<tmp>/home-claude/.claude/plugins/cache/crossbeam-smoke/laguna-beach/0.5.0",
+        "files": 242,
+        "missing_in_install": [],
+        "changed_in_install": [],
+        "installed_validator": {
+          "exit": 0,
+          "last_line": [
+            "PASS Laguna Beach plugin 0.5.0 validation (no ZIP or bundled City PDFs)"
+          ]
+        },
+        "plugin_root_resolver": {
+          "exit": 0,
+          "last_line": [
+            "<tmp>/home-claude/.claude/plugins/cache/crossbeam-smoke/laguna-beach/0.5.0"
+          ],
+          "matches_install": true
+        }
+      },
+      "skills_expected": 23,
+      "skills_found": 23,
+      "skills_missing": [],
+      "skills_unexpected": [],
+      "checks": {
+        "installed": true,
+        "skills": true,
+        "connector_declared": true,
+        "copy_identical": true,
+        "installed_validator": true,
+        "plugin_root_resolver": true
+      },
+      "result": "pass"
+    },
+    {
+      "host": "codex-cli",
+      "cli_version": "codex-cli 0.162.0",
+      "installed_version": "0.5.0",
+      "auth_policy": "ON_INSTALL",
+      "skills": [
+        "block-wall",
+        "cleanout",
+        "deck-patio-repair",
+        "ev-charger",
+        "fence",
+        "fireworks-temp-use",
+        "hvac",
+        "laguna-permit-preparer",
+        "ltia-demolition",
+        "panel-upgrade",
+        "patio-cover",
+        "pool-demolition",
+        "repipe",
+        "reroof",
+        "retaining-wall",
+        "rewire",
+        "siding-replacement",
+        "sign",
+        "solar",
+        "swimming-pool",
+        "temporary-power",
+        "water-heater",
+        "window-replacement"
+      ],
+      "skill_errors": [],
+      "connector_declared": true,
+      "connector_status_unauthenticated": [
+        "crossbeam https://crossbeam-mcp.old-cherry-b095.workers.dev/mcp - enabled Not logged in"
+      ],
+      "installed": {
+        "installed_path": "<tmp>/home-codex/.codex/plugins/cache/crossbeam-smoke/laguna-beach/0.5.0",
+        "files": 242,
+        "missing_in_install": [],
+        "changed_in_install": [],
+        "installed_validator": {
+          "exit": 0,
+          "last_line": [
+            "PASS Laguna Beach plugin 0.5.0 validation (no ZIP or bundled City PDFs)"
+          ]
+        },
+        "plugin_root_resolver": {
+          "exit": 0,
+          "last_line": [
+            "<tmp>/home-codex/.codex/plugins/cache/crossbeam-smoke/laguna-beach/0.5.0"
+          ],
+          "matches_install": true
+        }
+      },
+      "skills_expected": 23,
+      "skills_found": 23,
+      "skills_missing": [],
+      "skills_unexpected": [],
+      "checks": {
+        "installed": true,
+        "skills": true,
+        "connector_declared": true,
+        "copy_identical": true,
+        "installed_validator": true,
+        "plugin_root_resolver": true
+      },
+      "result": "pass"
+    },
+    {
+      "host": "gemini-cli",
+      "cli_version": "0.63.0",
+      "installed_version": "0.5.0",
+      "skills": [
+        "block-wall",
+        "cleanout",
+        "deck-patio-repair",
+        "ev-charger",
+        "fence",
+        "fireworks-temp-use",
+        "hvac",
+        "laguna-permit-preparer",
+        "ltia-demolition",
+        "panel-upgrade",
+        "patio-cover",
+        "pool-demolition",
+        "repipe",
+        "reroof",
+        "retaining-wall",
+        "rewire",
+        "siding-replacement",
+        "sign",
+        "solar",
+        "swimming-pool",
+        "temporary-power",
+        "water-heater",
+        "window-replacement"
+      ],
+      "connector_declared": true,
+      "connector_status_unauthenticated": [
+        "\u2717 crossbeam (from laguna-beach): https://crossbeam-mcp.old-cherry-b095.workers.dev/mcp (http) - Disconnected"
+      ],
+      "installed": {
+        "installed_path": "<tmp>/home-gemini/.gemini/extensions/laguna-beach",
+        "files": 242,
+        "missing_in_install": [],
+        "changed_in_install": [],
+        "installed_validator": {
+          "exit": 0,
+          "last_line": [
+            "PASS Laguna Beach plugin 0.5.0 validation (no ZIP or bundled City PDFs)"
+          ]
+        },
+        "plugin_root_resolver": {
+          "exit": 0,
+          "last_line": [
+            "<tmp>/home-gemini/.gemini/extensions/laguna-beach"
+          ],
+          "matches_install": true
+        }
+      },
+      "skills_expected": 23,
+      "skills_found": 23,
+      "skills_missing": [],
+      "skills_unexpected": [],
+      "checks": {
+        "installed": true,
+        "skills": true,
+        "connector_declared": true,
+        "copy_identical": true,
+        "installed_validator": true,
+        "plugin_root_resolver": true
+      },
+      "result": "pass"
+    }
+  ]
+}

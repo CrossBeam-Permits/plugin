@@ -1,5 +1,13 @@
 name: Laguna permit plugin
 
+# Model evals need one repository secret (Settings > Secrets and variables >
+# Actions). Either works:
+#   ANTHROPIC_API_KEY        Anthropic API key
+#   CLAUDE_CODE_OAUTH_TOKEN  token from `claude setup-token`
+# Without one, the model-evals job is skipped (grey), never green, and the run
+# summary says model behavior was not verified. Pull requests from forks never
+# receive secrets, so their model-evals job is always skipped.
+
 on:
   pull_request:
     paths:
@@ -17,6 +25,7 @@ on:
       - "data/**"
       - "scripts/**"
       - "demos/laguna-pool/**"
+      - ".github/workflows/laguna-permit-skill.yml"
   workflow_dispatch:
 
 permissions:
@@ -52,10 +61,14 @@ jobs:
         run: python evals/run-evals.py
       - name: Test fictional browser demo transactions
         run: python -m unittest discover -s demos/laguna-pool -p "test_*.py" -v
-      - name: Validate marketplace and submit plugin
+      - name: Test host packaging helpers
+        run: python -m unittest discover -s cities/laguna-beach/evals -p "test_*.py" -v
+      - name: Validate marketplace and plugin
         run: |
           claude plugin validate . --strict
-          python cities/laguna-beach/scripts/validate-plugin.py
+          python cities/laguna-beach/scripts/validate-plugin.py --require-marketplace
+      - name: Install into a throwaway Claude Code home and check the skill list
+        run: bash cities/laguna-beach/evals/run-host-smoke.sh --host claude
 
   model-availability:
     runs-on: ubuntu-latest
@@ -71,13 +84,17 @@ jobs:
             echo "available=true" >> "$GITHUB_OUTPUT"
           else
             echo "available=false" >> "$GITHUB_OUTPUT"
-            echo "Model behavior NOT VERIFIED: no credential configured. The model job is skipped; deterministic success is not a release qualification." >> "$GITHUB_STEP_SUMMARY"
+            echo "::notice title=Model evals skipped::No ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN secret. Model behavior is NOT verified."
+            echo "Model behavior NOT VERIFIED: no ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN secret. The model-evals job is skipped; deterministic success is not a release qualification." >> "$GITHUB_STEP_SUMMARY"
           fi
 
   model-evals:
     needs: [deterministic, model-availability]
+    # A job skipped by `if` shows as skipped, not passed. Do not move this check
+    # into a step: a job whose steps all skip reports success.
     if: ${{ needs.model-availability.outputs.available == 'true' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
