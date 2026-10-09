@@ -523,6 +523,12 @@ def main() -> int:
     with tempfile.TemporaryDirectory(prefix="laguna-permit-skill-evals-") as directory:
         check_form_and_transaction_round_trip(Path(directory))
     print("PASS AcroForm, packet, provenance, and portal-plan round trip")
+
+    # --- Requirements, plan-set check, and fee estimate (evals/requirements) ---
+    run(str(ROOT / "evals/requirements/run.py"))
+    print("PASS requirements tree, plan-set check wiring, and fee estimate")
+    # --- end requirements block ---
+
     print("All Laguna permit skill evals passed")
     return 0
 
