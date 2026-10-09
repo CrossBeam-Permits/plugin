@@ -15,14 +15,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = ROOT / "scripts"
 SEMANTIC_FORM_IDS = (
-    "building-application",
     "coastal-development-permit-application",
     "design-review-application",
     "floodplain-development-residential",
     "zone-clearance-application",
 )
 PREVIEW_PAGES = {
-    "building-application": (1,),
     "coastal-development-permit-application": (2,),
     "design-review-application": (2, 25),
     "floodplain-development-residential": (1,),

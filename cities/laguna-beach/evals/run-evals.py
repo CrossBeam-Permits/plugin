@@ -169,6 +169,51 @@ def synthetic_field_map(pdf: Path) -> dict:
     }
 
 
+# ---- Portal map v2 (owned by the portal worker; keep portal edits inside this block) ----
+PORTAL_MAP = ROOT / "assets/portal-maps/v2-portal-map.json"
+PORTAL_SNAPSHOT = ROOT / "assets/portal-maps/portal-snapshot.json"
+# The reasoned, user-confirmed work class for the synthetic round-trip record.
+ROUND_TRIP_WORK_CLASS = {"id": "177caabf-ea6e-4cd5-91ea-8f19fa8f6f4d", "label": "Alteration"}
+
+
+def portal_routes() -> dict:
+    """A per-type view of the v2 map: each type's catalog work class and its layout."""
+    portal_map = load(PORTAL_MAP)
+    routes = {}
+    for item in portal_map["record_types"]:
+        klass = next(w for w in item["workClasses"] if w["id"] == item["catalogWorkClassId"])
+        layout = portal_map["layouts"].get(klass["layoutId"] or "", {"groups": []})
+        routes[item["menuId"]] = dict(item, workClassId=klass["id"], requiredAttachments=klass["requiredAttachments"], questionGroups=layout["groups"])
+    return routes
+
+
+def portal_args(temp: Path, record_id: str = "residential") -> list[str]:
+    selection = {
+        "schema_version": "1.0.0",
+        "run_id": "eval-run-001",
+        "portal_map_pulled_at": load(PORTAL_MAP)["source"]["pulled_at"],
+        "selections": [{
+            "record_id": record_id,
+            "portal_type_id": 183,
+            "work_class_id": ROUND_TRIP_WORK_CLASS["id"],
+            "work_class_label": ROUND_TRIP_WORK_CLASS["label"],
+            "reasoning": "Synthetic eval: confirmed interior alteration of an existing dwelling with no new floor area.",
+            "evidence_fact_ids": ["project.description.residential"],
+            "alternatives_considered": [{"work_class_label": "Remodel", "why_not": "synthetic eval fixture"}],
+            "status": "confirmed",
+            "confirmed_at": timestamp(),
+        }],
+    }
+    path = temp / "work-class-selection.json"
+    dump(path, selection)
+    return ["--portal-map", str(PORTAL_MAP), "--work-class-selection", str(path)]
+
+
+def check_portal_map_v2() -> None:
+    run(str(ROOT / "evals/portal/run-portal-map-evals.py"))
+# ---- end portal map v2 block ----
+
+
 def validate(schema_name: str, document: dict) -> None:
     schema = load(ROOT / "schemas" / schema_name)
     errors = validate_instance(document, schema)
@@ -178,8 +223,7 @@ def validate(schema_name: str, document: dict) -> None:
 def check_manifest_consistency() -> None:
     manifest = load(ROOT / "assets/form-manifest.json")
     form_ids = {item["id"] for item in manifest["forms"]}
-    portal_map = load(ROOT / "assets/portal-maps/v1-portal-map.json")
-    routes = {item["menuId"]: item for item in portal_map["routes"]}
+    routes = portal_routes()
     assert set(routes) == {114, 182, 183, 186, 187, 188, 214}
 
     planning = load(ROOT / "evals/planning/cases.json")["cases"]
@@ -219,7 +263,7 @@ def check_manifest_consistency() -> None:
             assert any(required_field in portal_questions[record["portal_type_id"]] for record in records if record["portal_type_id"] is not None)
     eleanor = next(item for item in building if item["id"] == "1639-eleanor-multi-record")
     assert len(eleanor["records"]) == 4
-    assert next(item for item in eleanor["records"] if item["id"] == "demolition")["channel"] == "counter"
+    assert next(item for item in eleanor["records"] if item["id"] == "demolition")["channel"] == "online"
 
 
 def check_policy_contract() -> None:
@@ -315,14 +359,14 @@ def check_manifests_and_maps() -> None:
     # The portal snapshot ships with the plugin so this drift check always runs.
     # It is the only defense against EnerGov renaming or removing a type under a
     # live filing, so a missing snapshot is a hard failure, never a silent skip.
-    snapshot = ROOT / "assets/portal-maps/online-intake-snapshot.json"
+    snapshot = PORTAL_SNAPSHOT
     assert snapshot.is_file(), (
         f"portal snapshot missing: {snapshot}. The portal drift check cannot run "
         "without it; restore the pinned snapshot rather than skipping the check."
     )
     run(
         str(SCRIPTS / "check-portal-freshness.py"),
-        "--portal-map", str(ROOT / "assets/portal-maps/v1-portal-map.json"),
+        "--portal-map", str(PORTAL_MAP),
         "--snapshot", str(snapshot),
     )
 
@@ -407,7 +451,7 @@ def check_form_and_transaction_round_trip(temp: Path) -> None:
         str(SCRIPTS / "build-submission-plan.py"),
         "--facts", str(facts_path),
         "--application-set", str(application_path),
-        "--portal-map", str(ROOT / "assets/portal-maps/v1-portal-map.json"),
+        *portal_args(temp),
         "--output", str(submission_path),
     )
     submission = load(submission_path)
@@ -428,7 +472,7 @@ def check_form_and_transaction_round_trip(temp: Path) -> None:
     command = (
         str(SCRIPTS / "build-submission-plan.py"),
         "--facts", str(facts_path), "--application-set", str(application_path),
-        "--portal-map", str(ROOT / "assets/portal-maps/v1-portal-map.json"),
+        *portal_args(temp),
         "--output", str(submission_path),
     )
     run(*command, expected=2)
@@ -516,6 +560,7 @@ def main() -> int:
         ("approval/privacy policy", check_policy_contract),
         ("manifests and drift maps", check_manifests_and_maps),
         ("form sources, sign-before-upload, and Building map round trip", check_form_evals),
+        ("portal map v2", check_portal_map_v2),
     ]
     for name, check in checks:
         check()
@@ -528,6 +573,9 @@ def main() -> int:
     run(str(ROOT / "evals/requirements/run.py"))
     print("PASS requirements tree, plan-set check wiring, and fee estimate")
     # --- end requirements block ---
+
+    run(str(ROOT / "evals/handoff/run-handoff-evals.py"))
+    print("PASS permit-drawings hand-off intake")
 
     print("All Laguna permit skill evals passed")
     return 0

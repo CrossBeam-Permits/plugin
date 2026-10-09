@@ -36,7 +36,7 @@ continue locally; that record must not be described as portal ready.
 
 ## Prepare drawings when requested
 
-Inventory the required sheets from the current official application and the relevant
+When there is no plan set, or the plans need drawing or fixing, follow `references/plan-sheets.md` first; it covers drawing with the CrossBeam permit-drawings skill and taking its hand-off. Otherwise inventory the required sheets from the current official application and the relevant
 scope skill. Create a sheet register in `permit-work/state/drawing-register.md` recording
 each sheet, source inputs, revision, author/reviewer, missing inputs, and readiness.
 

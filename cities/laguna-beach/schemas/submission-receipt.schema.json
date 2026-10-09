@@ -6,34 +6,134 @@
   "additionalProperties": false,
   "required": ["schema_version", "run_id", "record_id", "status", "portal_type_id", "scope", "timestamp", "user_identity_label", "portal_record_number", "uploaded_files", "confirmation_text", "page_state_receipts", "payment_state", "expected_city_response", "next_action"],
   "properties": {
-    "schema_version": {"const": "1.0.0"},
+    "schema_version": {"enum": ["1.0.0", "1.1.0"]},
     "run_id": {"type": "string", "minLength": 1},
     "record_id": {"type": "string", "minLength": 1},
     "status": {"enum": ["submitted", "saved_draft"]},
     "portal_type_id": {"enum": [114, 182, 183, 186, 187, 188, 214]},
+    "work_class": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "filing_behavior"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "label": {"type": "string", "minLength": 1},
+        "filing_behavior": {"enum": ["review_first", "pay_first", "simple"]}
+      }
+    },
     "scope": {"type": "string", "minLength": 1},
     "timestamp": {"type": "string", "format": "date-time"},
     "user_identity_label": {"type": "string", "minLength": 1},
     "portal_record_number": {"type": ["string", "null"]},
-    "uploaded_files": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["filename", "category", "sha256"],
-        "properties": {
-          "filename": {"type": "string", "minLength": 1},
-          "category": {"type": "string", "minLength": 1},
-          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
-        }
-      }
-    },
+    "uploaded_files": {"type": "array", "items": {"$ref": "#/$defs/uploadedFile"}},
     "confirmation_text": {"type": "string", "minLength": 1},
     "page_state_receipts": {"type": "array", "items": {"type": "string"}},
     "payment_state": {"enum": ["not_requested", "pending_invoice", "paid", "unknown"]},
     "expected_city_response": {"type": "string", "minLength": 1},
     "next_action": {"type": "string", "minLength": 1},
     "in_person_follow_up": {"type": ["string", "null"]},
-    "recovery_note": {"type": ["string", "null"]}
+    "recovery_note": {"type": ["string", "null"]},
+    "invoices": {"type": "array", "items": {"$ref": "#/$defs/invoice"}},
+    "payments": {"type": "array", "items": {"$ref": "#/$defs/payment"}},
+    "status_checks": {"type": "array", "items": {"$ref": "#/$defs/statusCheck"}},
+    "city_documents": {"type": "array", "items": {"$ref": "#/$defs/cityDocument"}},
+    "resubmittals": {"type": "array", "items": {"$ref": "#/$defs/resubmittal"}},
+    "issuance": {"anyOf": [{"$ref": "#/$defs/issuance"}, {"type": "null"}]}
+  },
+  "$defs": {
+    "uploadedFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["filename", "category", "sha256"],
+      "properties": {
+        "filename": {"type": "string", "minLength": 1},
+        "category": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "money": {"type": ["number", "null"], "minimum": 0},
+    "invoice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observed_at", "source", "invoice_number", "total", "fee_lines", "due_date"],
+      "properties": {
+        "observed_at": {"type": "string", "format": "date-time"},
+        "source": {"enum": ["portal", "email", "letter", "counter"]},
+        "invoice_number": {"type": ["string", "null"]},
+        "total": {"$ref": "#/$defs/money"},
+        "fee_lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["description", "amount"],
+            "properties": {
+              "description": {"type": "string", "minLength": 1},
+              "amount": {"$ref": "#/$defs/money"}
+            }
+          }
+        },
+        "due_date": {"type": ["string", "null"]},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "payment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approved_at", "paid_at", "amount", "invoice_number", "portal_receipt_number"],
+      "properties": {
+        "approved_at": {"type": "string", "format": "date-time", "description": "When the user gave the separate, explicit payment approval."},
+        "paid_at": {"type": "string", "format": "date-time"},
+        "amount": {"$ref": "#/$defs/money"},
+        "invoice_number": {"type": ["string", "null"]},
+        "portal_receipt_number": {"type": ["string", "null"]},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "statusCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["checked_at", "portal_status"],
+      "properties": {
+        "checked_at": {"type": "string", "format": "date-time"},
+        "portal_status": {"type": "string", "minLength": 1},
+        "workflow_step": {"type": ["string", "null"]},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "cityDocument": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["received_at", "kind", "filename", "sha256"],
+      "properties": {
+        "received_at": {"type": "string", "format": "date-time"},
+        "kind": {"enum": ["corrections_letter", "invoice", "approval", "issued_permit", "other"]},
+        "filename": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "resubmittal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["submitted_at", "confirmation_text", "uploaded_files"],
+      "properties": {
+        "submitted_at": {"type": "string", "format": "date-time"},
+        "confirmation_text": {"type": "string", "minLength": 1},
+        "uploaded_files": {"type": "array", "items": {"$ref": "#/$defs/uploadedFile"}},
+        "responds_to": {"type": ["string", "null"], "description": "Filename of the corrections letter answered."}
+      }
+    },
+    "issuance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "observed_at"],
+      "properties": {
+        "status": {"enum": ["not_ready", "ready_for_issuance", "issued", "unknown"]},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "permit_number": {"type": ["string", "null"]},
+        "note": {"type": ["string", "null"]}
+      }
+    }
   }
 }

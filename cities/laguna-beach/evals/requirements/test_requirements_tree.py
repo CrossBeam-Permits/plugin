@@ -29,7 +29,7 @@ class GeneratedTree(unittest.TestCase):
             "plan-sheets/plan-sheet-matrix.json",
             "plan-sheets/plan-sheet-matrix.md",
             "issuance/issuance-checklist.json",
-            "fees/fee-data.json",
+            "fees/fee-schedule.json",
             "fees/README.md",
         ]:
             self.assertTrue((REQ / rel).is_file(), rel)
@@ -81,11 +81,15 @@ class GeneratedTree(unittest.TestCase):
             self.assertTrue(item["handout_label"], item["id"])
             self.assertIn(item["decided_by"], {"project_scope", "city_record", "plans_examiner", "public_works", "city_staff"})
 
-    def test_fee_data_is_labelled_estimate(self):
-        fees = load("fees/fee-data.json")
+    def test_fee_schedule_is_labelled_estimate(self):
+        fees = load("fees/fee-schedule.json")
         self.assertIn("ESTIMATE", fees["estimate_notice"])
-        self.assertEqual(fees["building_valuation_fee"]["status"], "unconfirmed_estimate")
-        self.assertIn("ESTIMATE", (REQ / "fees/README.md").read_text(encoding="utf-8"))
+        self.assertEqual(fees["city_slug"], "laguna-beach")
+        self.assertTrue(fees["effective_from"])
+        readme = (REQ / "fees/README.md").read_text(encoding="utf-8")
+        self.assertIn("ESTIMATE", readme)
+        self.assertIn(fees["effective_from"], readme)
+        self.assertIn("What the City has not confirmed", readme)
         self.assertTrue(fees["source"]["url"].startswith("https://www.lagunabeachcity.net/"))
 
     def test_no_private_markers(self):

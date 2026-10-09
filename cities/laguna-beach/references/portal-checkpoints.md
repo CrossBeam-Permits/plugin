@@ -12,7 +12,8 @@
 After every successful, verified step update `browser-state.json` with:
 
 - local run ID and idempotency key;
-- portal type/module/visible label;
+- host browser capability flags (can read, type, click, attach a file), never tool names or tokens;
+- portal type/module/visible label and the selected work class;
 - existing draft/record identifier if visible;
 - current wizard step and completed steps;
 - verified effective values by canonical fact ID (no credentials);
@@ -24,15 +25,17 @@ Do not store HTML dumps containing PII, cookies, local/session storage, authoriz
 
 ## Drift check
 
-`assets/portal-maps/v1-portal-map.json` pins:
+`assets/portal-maps/v2-portal-map.json` pins, per record type:
 
-- route ID, label, module, category, deep link;
-- required and optional attachment categories/file rules;
-- contact roles and licence-validation flags;
-- More Info field names, labels, groups, required/read-only state, and pick lists;
-- expected terminal confirmation.
+- menu ID, label, module, category, catalog description, deep link, and the work class the catalog entry opens;
+- required Basic Info inputs and the configured success message;
+- every online work class: ID, label, filing behavior (Review First, Pay First, Simple), template name, and whether another catalog entry owns it;
+- per work class: the More Info layout (question field names, labels, groups, required/read-only state, field and control type IDs, pick lists), the upload categories with allowed file types and file limits, the contact roles with required and licence-validation flags, and a hash of the City's instruction text for each wizard step;
+- work classes the City keeps off the portal.
 
-Before browser mutation, run `scripts/check-portal-freshness.py` against a newly compiled public snapshot when available. During the wizard, a mismatch between visible state and the map is also drift. Stop only that route, capture a non-PII description of the difference, and rebuild/review the portal map before continuing.
+Run `python3 scripts/check-portal-freshness.py --live` before browser mutation when the host can reach the portal. It pulls the public catalog with GET requests, rebuilds a map, and prints a drift report. Blocking drift (a changed question, upload rule, contact rule, filing behavior, instruction text, or a missing/new work class) stops the affected records until the map is rebuilt and reviewed. A cosmetic change, such as Tyler's template-name marker moving from `-*` to `-**`, is a warning and does not stop filing. If the live check cannot run, say so and rely on the visible checks below; do not report the map as current.
+
+During the wizard, a mismatch between visible state and the map for the planned work class is also drift. Stop only that record, capture a non-PII description of the difference, and rebuild/review the portal map before continuing.
 
 ## Duplicate and timeout recovery
 
@@ -49,4 +52,6 @@ After a Submit timeout:
 
 ## Route map snapshot
 
-The bundled portal map was compiled from the repository's City EnerGov public catalog and raw instruction/custom-field mirrors on 2026-08-22. Its source digest is embedded in the map. Source refresh and live visible checks are both required; neither replaces the other.
+The bundled map was compiled on 2026-10-09 by `scripts/build-portal-map.py` from `assets/portal-maps/portal-snapshot.json`, which `scripts/pull-portal-catalog.py` read from the City's public EnerGov API with unauthenticated GET requests. The snapshot's SHA-256 is embedded in the map, and the evals rebuild the map from the snapshot to prove it was not hand-edited. A weekly workflow (`.github/workflows/laguna-portal-freshness.yml`) runs the live check. Source refresh and live visible checks are both required; neither replaces the other.
+
+`v1-portal-map.json` is superseded. It knew only one default work class per type and must not be used to build a submission plan.

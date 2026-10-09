@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "pinned_pulled_at": "2026-10-09T00:53:00Z",
+  "note": "Portal facts raised by the 2026-10-08 audit, checked offline against the pinned snapshot and map. When the City changes one, the freshness check fails first; update this file with the rebuilt map after review.",
+  "min_online_work_classes": {"183": 30},
+  "catalog_default_work_class": {"114": "Zoning Plan Check", "182": "Accessory Dwelling Units (ADU)", "183": "Residential", "186": "Mechanical", "187": "Electrical", "188": "Plumbing", "214": "Grading"},
+  "work_classes": [
+    {"type": 183, "label": "Residential", "filing_behavior": "review_first", "layout_question_count": 113},
+    {"type": 183, "label": "Reroof", "filing_behavior": "review_first", "layout_question_count": 165, "same_layout_as": "Pool"},
+    {"type": 183, "label": "Addition", "filing_behavior": "review_first", "same_layout_as": "Alteration"},
+    {"type": 183, "label": "ADU - Detached", "filing_behavior": "review_first", "layout_question_count": 124, "same_layout_as": "New Single Family Residence"},
+    {"type": 183, "label": "ADU - Attached", "filing_behavior": "review_first", "same_layout_as": "New Single Family Residence"},
+    {"type": 183, "label": "Demolition", "filing_behavior": "review_first"},
+    {"type": 183, "label": "Demolition - Single Family Residence", "filing_behavior": "review_first", "same_layout_as": "Demolition"},
+    {"type": 183, "label": "Demolition - ADU/JADU", "filing_behavior": "review_first", "same_layout_as": "Demolition"},
+    {"type": 183, "label": "Demolition - Duplex", "filing_behavior": "review_first", "same_layout_as": "Demolition"},
+    {"type": 183, "label": "Revision", "filing_behavior": "pay_first", "required_question": "RevisionNumber"},
+    {"type": 183, "label": "SolarAPP+", "filing_behavior": "simple", "own_catalog_entry": 124},
+    {"type": 187, "label": "Residential Electrical Service Panel up to 400 AMP", "filing_behavior": "pay_first"},
+    {"type": 214, "label": "0 - 20 Cubic Yards", "filing_behavior": "review_first", "same_layout_as": "Over 20 Cubic Yards"},
+    {"type": 214, "label": "Over 20 Cubic Yards", "filing_behavior": "review_first"},
+    {"type": 114, "label": "Zoning Plan Check", "filing_behavior": "review_first", "layout_question_count": 0},
+    {"type": 114, "label": "Accessory Dwelling Units (ADU)", "filing_behavior": "review_first", "own_catalog_entry": 182}
+  ],
+  "one_pdf_cards": ["Application", "Plans", "Permit Application", "Revised Plans", "ADU or JADU Application"]
+}

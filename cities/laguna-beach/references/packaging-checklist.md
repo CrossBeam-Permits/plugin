@@ -31,6 +31,7 @@ plan set before you assemble any packet that carries plans.
 - Editable form verified logically; all updated widgets have appearances.
 - Rendered preview inspected; no clipping, overlap, black glyphs, or stale values.
 - User-controlled signature/declaration fields are reviewed and personally completed.
+- Each uploaded application is the applicant-signed file whose SHA-256 matches `signed_sha256` in its signed verification (status `signed_verified`), and every signature crop was viewed (`scripts/verify-signed-form.py`).
 - Merged PDFs open, have the expected page order/count, and preserve every source page.
 - Final local filenames are unique, stable, descriptive, and hashed after assembly.
 

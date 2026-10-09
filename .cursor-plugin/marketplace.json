@@ -1,0 +1,17 @@
+{
+  "name": "crossbeam-permits",
+  "owner": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "metadata": {
+    "description": "CrossBeam permit plugins. Laguna Beach is the one packaged for Cursor."
+  },
+  "plugins": [
+    {
+      "name": "laguna-beach",
+      "source": "cities/laguna-beach",
+      "description": "Laguna Beach, CA permits: decide what to file, check the plan set, prepare the City forms, and file on the City's portal from a browser the user can see."
+    }
+  ]
+}
