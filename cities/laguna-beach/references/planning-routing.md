@@ -103,7 +103,7 @@ Read `form-coverage.md` before promising form preparation for any other applicat
 - [LBMC §25.50.004, oceanfront development standards](https://ecode360.com/42901675)
 - [City Applications & Handouts](https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts), verified 2026-08-22
 - Current form source receipts: `assets/form-manifest.json`
-- Current portal source receipt: `assets/portal-maps/v1-portal-map.json`
+- Current portal source receipt: `assets/portal-maps/v2-portal-map.json` (built from `assets/portal-maps/portal-snapshot.json`, read 2026-10-09)
 
 ## Channel correction verified 2026-09-08
 
@@ -118,7 +118,10 @@ for the reviewed mapping and adjacent raw API responses/hash receipts. This supe
 the earlier same-day unverified-entry finding; no City account was needed to obtain it.
 
 Represent a supported residential Zone Clearance record with `channel: "online"` and
-the confirmed type 114 portal mapping. Its readiness/status still depends on the user's
+the confirmed type 114 portal mapping. Its work class is **Zoning Plan Check**, the class
+the type 114 catalog entry opens (v2 map, read 2026-10-09). The same plan type's ADU class
+has its own catalog entry, 182; never file an ADU under 114. Record the work class in
+`work-class-selection.json` like any other online record. Its readiness/status still depends on the user's
 filing theory, required facts and documents, and prerequisite checks. Never turn a
 confirmed route into a claim that the packet is complete or submitted.
 

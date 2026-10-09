@@ -3,7 +3,7 @@
   "jurisdiction": "City of Laguna Beach, California",
   "lawAsOf": "2026-08-24",
   "nextReviewOn": "2026-09-24",
-  "reviewMethod": "Official eCode360 ordinance PDFs are checksum-verified headlessly. Current chapter pages return HTTP 403 to direct clients and require a visible browser or Parallel AI for monthly semantic review.",
+  "reviewMethod": "Official eCode360 ordinance PDFs are checksum-verified headlessly. When eCode360 re-issues a PDF with new bytes, the check passes only if every decoded page-content and image stream is identical to the receipted copy (contentStreamsSha256); any content change fails. Current chapter pages return HTTP 403 to direct clients and require a visible browser or Parallel AI for monthly semantic review.",
   "sources": [
     {
       "id": "laguna-urgency-ordinance-1732",
@@ -13,6 +13,7 @@
       "status": "effective; extended by Ordinance 1733",
       "sha256": "11da656771c38b33a37310f47d281cdb624a47f09f277a4e542fdf237b8d5f4f",
       "bytes": 687177,
+      "contentStreamsSha256": "8a8d6601561d0ba79bde224c49a1f0894099f4f01f1d3ae006b36f9ad890cd53",
       "pages": 83
     },
     {
@@ -21,11 +22,13 @@
       "adoptedOn": "2026-08-04",
       "effectiveOn": "2026-08-04",
       "status": "extends Urgency Ordinance 1732 for 22 months and 15 days unless earlier repealed",
-      "sha256": "b4880510e5e3a0ab8d6bf61292b63cb820ecfe93a272bee576712dd087f61076",
-      "bytes": 4567356,
+      "sha256": "c23ae3ed8bfaca28d43f40917e70520ea6e476a4c980e076d96c3ce6260a7ed1",
+      "bytes": 4567358,
+      "contentStreamsSha256": "a9bc2bc22ee363cfa2268ad7baed81784494bd535a1d1ffb38ce283129215673",
       "pages": 10,
-      "reviewedOn": "2026-09-08",
-      "reviewNote": "Reacquired twice with matching bytes. Read all 10 pages. Section 4 still extends Ordinance 1732 for 22 months and 15 days unless earlier repealed or extended; adoption remains August 4, 2026. Previous binary unavailable for a binary/content diff. This refresh does not advance the overall municipal-code lawAsOf date."
+      "pdfModDate": "2026-09-17T13:27:21-04:00",
+      "reviewedOn": "2026-10-09",
+      "reviewNote": "Re-receipted 2026-10-09. eCode360 re-issued this PDF on 2026-09-17 (PDF CreationDate/ModDate, iTextSharp 4.1.7), after the 2026-09-08 receipt of 4,567,356 bytes; main still held the August receipt of 4,569,185 bytes, which is why the weekly job has failed since 2026-09-07. Fetched twice on 2026-10-09 with identical bytes. Read all 10 pages of the text layer: title and recitals unchanged in substance; Section 4 still extends Urgency Ordinance 1732 for 22 months and 15 days unless earlier repealed or extended under Government Code 65858; adopted August 4, 2026. No earlier binary or web-archive copy exists for a byte diff. Ordinances 1731 and 1732 still match their receipts byte for byte. This refresh does not advance the overall municipal-code lawAsOf date."
     },
     {
       "id": "laguna-ordinance-1731",
@@ -35,6 +38,7 @@
       "status": "effective",
       "sha256": "96c3c6d683221f241a2b0c1ed3eb1c55da222246347bc01669bfbb06ff7fb6eb",
       "bytes": 150501,
+      "contentStreamsSha256": "2372d798ddf6ea659efbb5ba7e873a9966f033dd1dbe4605ba271443a50244d6",
       "pages": 6
     }
   ],

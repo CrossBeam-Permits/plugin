@@ -1,0 +1,85 @@
+name: Laguna portal freshness
+
+# Weekly read-only check that the plugin's pinned portal map still matches the
+# City's live EnerGov catalog, plus the official form revisions where the City
+# allows a headless download. GET requests only; no secrets are needed.
+on:
+  schedule:
+    - cron: "41 15 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portal-map:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compare the pinned v2 portal map with the live City catalog
+        working-directory: cities/laguna-beach
+        run: >
+          python scripts/check-portal-freshness.py --live
+          --save-snapshot "$RUNNER_TEMP/portal-snapshot.json"
+          --report "$RUNNER_TEMP/portal-drift.md"
+          --json "$RUNNER_TEMP/portal-drift.json"
+      - name: Publish the drift report
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/portal-drift.md" ]; then
+            cat "$RUNNER_TEMP/portal-drift.md" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Portal check did not produce a report; see the step log." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: laguna-portal-drift
+          path: |
+            ${{ runner.temp }}/portal-drift.md
+            ${{ runner.temp }}/portal-drift.json
+            ${{ runner.temp }}/portal-snapshot.json
+          if-no-files-found: warn
+
+  official-forms:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install form tooling
+        run: python -m pip install -r cities/laguna-beach/requirements.txt
+      - name: Check official form revisions where a headless download is allowed
+        working-directory: cities/laguna-beach
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, subprocess, sys
+          forms = json.load(open("assets/form-manifest.json"))["forms"]
+          cache = pathlib.Path(os.environ["RUNNER_TEMP"]) / "official-forms"
+          verified, refused, drifted = [], [], []
+          for form in forms:
+              result = subprocess.run(
+                  [sys.executable, "scripts/check-source-freshness.py", "--manifest", "assets/form-manifest.json",
+                   "--forms-dir", str(cache), "--only", form["id"], "--fetch"],
+                  text=True, capture_output=True)
+              if result.returncode == 0:
+                  verified.append(form["id"])
+              elif not (cache / form["cache_name"]).is_file() or not (cache / form["cache_name"]).read_bytes()[:5] == b"%PDF-":
+                  # No PDF arrived (refused, or a bot-check page): not drift, not verified.
+                  refused.append(form["id"])
+              else:
+                  drifted.append(form["id"])
+                  print(result.stdout)
+          lines = ["## Official Laguna forms", "",
+                   f"- Verified against receipts: {', '.join(verified) or 'none'}",
+                   f"- Not verifiable headlessly (City refused the download; check in a visible browser): {', '.join(refused) or 'none'}",
+                   f"- Changed since the receipt: {', '.join(drifted) or 'none'}", ""]
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+              summary.write("\n".join(lines))
+          print("\n".join(lines))
+          sys.exit(1 if drifted else 0)
+          PY
