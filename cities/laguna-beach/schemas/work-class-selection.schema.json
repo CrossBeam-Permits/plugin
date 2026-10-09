@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crossbeam.example/skills/laguna-permit-preparer/work-class-selection.schema.json",
+  "title": "Laguna EnerGov work class selection",
+  "description": "The agent's reasoned choice of portal work class for each online record. Written by the agent from the project facts and the City's work class list; confirmed by the user with the filing theory. Never derived by keyword matching.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "portal_map_pulled_at", "selections"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "portal_map_pulled_at": {"type": "string", "minLength": 1},
+    "selections": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/selection"}}
+  },
+  "$defs": {
+    "alternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["work_class_label", "why_not"],
+      "properties": {
+        "work_class_label": {"type": "string", "minLength": 1},
+        "why_not": {"type": "string", "minLength": 1}
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "portal_type_id", "work_class_id", "work_class_label", "reasoning", "evidence_fact_ids", "alternatives_considered", "status", "confirmed_at"],
+      "properties": {
+        "record_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "portal_type_id": {"enum": [114, 182, 183, 186, 187, 188, 214]},
+        "work_class_id": {"type": "string", "minLength": 1},
+        "work_class_label": {"type": "string", "minLength": 1},
+        "reasoning": {"type": "string", "minLength": 20},
+        "evidence_fact_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "alternatives_considered": {"type": "array", "items": {"$ref": "#/$defs/alternative"}},
+        "status": {"enum": ["proposed", "confirmed"]},
+        "confirmed_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    }
+  }
+}

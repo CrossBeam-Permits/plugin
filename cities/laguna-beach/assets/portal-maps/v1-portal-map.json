@@ -1,5 +1,9 @@
 {
   "schema_version": "1.0.0",
+  "status": "superseded",
+  "superseded_by": "assets/portal-maps/v2-portal-map.json",
+  "superseded_on": "2026-10-09",
+  "superseded_reason": "Knows one default work class per type; the live portal offers 43 online work classes across the mapped types, each with its own layout and upload rules. scripts/build-submission-plan.py refuses this map.",
   "generated_at": "2026-08-22T17:40:00-07:00",
   "source": {
     "path": "assets/portal-maps/online-intake-snapshot.json",
