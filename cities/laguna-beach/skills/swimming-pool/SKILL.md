@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Mechanical Code (Title 24, Part 4) — Chapter 8; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "January 1, 2025"
+  law_as_of: "2026-08-24"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -137,7 +137,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 | Topic | State Default | Laguna Beach Override |
 |---|---|---|
 | Design review | State silent | Current §25.05.040 (Ord. 1732) routes the pool/spa structure by height: more than 3 ft above adjacent legal ground elevation → Design Review under (B)(1)(j); no more than 3 ft, or a portable spa of no more than 600 gallons → Zone Clearance under (B)(2)(t) and §25.05.045 |
-| Pool/spa equipment | State mechanical/electrical | LBMC Section 7.25.130(C) six-part objective test (effective 2026-08-20): equipment meeting all six parts is approved without Design Review (Zone Clearance); equipment failing any part goes to Administrative Design Review per Section 25.05.040(B)(3)(a)(v). Section 25.05.040 design criteria still require noise mitigation and compatible associated fencing/site improvements for equipment that goes to design review |
+| Pool/spa equipment | State mechanical/electrical | LBMC Section 7.25.130(C) six-part objective test (effective 2026-08-20): equipment meeting all six parts is approved without Design Review (Zone Clearance); equipment failing any part goes to Administrative Design Review per Section 25.05.040(B)(3)(a)(v). Ord. 1732 removed the pool/spa design criteria from §25.05.040(H); equipment noise is judged by the §7.25.130(C) test |
 | Oceanfront bluff | State defers to local | LBMC Section 25.50.004(B)(4): pools and spas must be no closer than 25 ft to top of bluff |
 | Geotech | State project-specific | City geotech handout requires soils report for new pools on ungraded lots, floodplain areas, coastal bluff top, and other hillside/hazard conditions |
 | Coastal/CDP | State Coastal Act | SFR pools can be exempt under Section 25.07.008(A)(1), but exemption is lost for bluff/beach/wetland/ESA/highly scenic areas, certain appealable-area impacts, critical water supply areas, prior CDP conditions, or landform/vegetation alteration |
@@ -237,7 +237,7 @@ Pool projects can affect defensible space, vegetation, fuel modification, and fi
 | ID | Check | Pass Criteria |
 |---|---|---|
 | LB-POOL-1 | Design review route | Pool/spa structure routed by height above adjacent legal grade — more than 3 ft → Design Review under (B)(1)(j); no more than 3 ft, or a portable spa of no more than 600 gallons → Zone Clearance under (B)(2)(t); pool/spa equipment routed by the Section 7.25.130(C) six-part test (effective 2026-08-20) — pass all six → Zone Clearance with no Design Review, fail any part → Administrative Design Review per Section 25.05.040(B)(3)(a)(v) |
-| LB-POOL-2 | Equipment six-part test and design criteria | All six Section 7.25.130(C) parts checked by name, including the two sound attenuation techniques (part 4) and the 3-ft path of travel (part 6); contractor noise acknowledgment per Section 7.25.130(A) on file. For equipment that goes to design review, geology suitability, equipment noise mitigation, and compatible fencing/site improvements shown |
+| LB-POOL-2 | Equipment six-part test and design criteria | All six Section 7.25.130(C) parts checked by name, including the two sound attenuation techniques (part 4) and the 3-ft path of travel (part 6); contractor noise acknowledgment per Section 7.25.130(A) on file. Equipment that fails any part is routed to Administrative Design Review; geology is checked under the geotechnical triggers (check 3) |
 | LB-POOL-3 | Bluff setback | Oceanfront/bluff pools and spas at least 25 ft from top of bluff with bluff edge established |
 | LB-POOL-4 | Geotech report | Required city geotech triggers checked and report included where required |
 | LB-POOL-5 | Coastal/CDP | Section 25.07.008 SFR pool exemption and exceptions documented |

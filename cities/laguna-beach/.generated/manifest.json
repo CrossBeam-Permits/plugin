@@ -9,17 +9,17 @@
       "scripts/plugin-publish/laguna/check-drift.mjs": "56320d513d090c436e1db12dfe3b9bf9a9db86dbe456c3f6762510848d3a7b6b",
       "scripts/plugin-publish/laguna/index.mjs": "1bf455934430cedb6cce90cdb5f92401e85a0bfb8a2d8f1e578ada62c2e47819",
       "scripts/plugin-publish/laguna/lib.mjs": "93247b578d5a580dc1bfd443e06f22603749b72012f4d57d4cf6d1f533806f68",
-      "scripts/plugin-publish/laguna/modules/fees.mjs": "d90bb00c946c9b889fd32de03dc1a796cd8c7c0b46cbecb1558270f3f3182286",
+      "scripts/plugin-publish/laguna/modules/fees.mjs": "960f398036fa19f2acf4cf30ea8b0b90385fabeea756ee4c5265be3291ae774c",
       "scripts/plugin-publish/laguna/modules/requirements-sanitize.mjs": "238232210d4c13b29ab71508f89f9f66d708f2d58ba6236728ccec6d5ac96364",
       "scripts/plugin-publish/laguna/modules/requirements.mjs": "63c10dd92e1325ce6c8c009449669a9d6f39a098848e7e6cba55a0174d608d64",
-      "scripts/plugin-publish/laguna/modules/skills.mjs": "3e6c0cc708c2ecc631595dabcdd78df05e536a85475c0e96f9ea69b758bbc3fd",
-      "scripts/plugin-publish/laguna/pending-backports/swimming-pool.mjs": "2899e65eac36dc87b5273409a46e96ddf2e6f71fb455b234093627e871235a6a",
+      "scripts/plugin-publish/laguna/modules/skills.mjs": "6c3bac1450abcb73407e535bc2ee8207038f02350c9166c1715c6d51b2d1d070",
+      "scripts/plugin-publish/laguna/pending-backports/swimming-pool.mjs": "66f90852565506eb04b80ad5081e7ccd5f3075a3f272d75c8cad93c70d01b78a",
       "scripts/plugin-publish/package-lock.json": "356af1aae271e45cd2ece5e789f64764ff13e3ee7a7e7a9d590bdb835dcbdd2a",
       "scripts/plugin-publish/package.json": "95b2a1380d5f6568994e364f86bf55d3b1e92ac711b7f99c44fea2276fe77c59"
     }
   },
   "privateRepo": {
-    "commit": "c963443e442f417b72adc9a49d4c6fc584b99310",
+    "commit": "8e25a1c3fc3dfe2f51ad45215c9c705177476db6",
     "dirty": false
   },
   "options": {
@@ -413,7 +413,7 @@
     "requirements/planning/wireless-facility-permit.md": "aad42dec39303a37942f6ddf6364da9fa2c96933b1538b5c4dade24d3fe0ffb5",
     "requirements/planning/zone-clearance.md": "2941e37f03428da8cab98783399a65ecc8a6e3af0a41f5792e9d95ba6fed4351",
     "scripts/fees/README.md": "1800cc0cd4030a80e775de63c024c8933497dd64bbcd6009e78119909dbd40f0",
-    "scripts/fees/fee-calc.mjs": "9a1b0b167c3f55270d4f7cb23b05a0d651c95e560ee28b3cc8a392994cd830c3",
+    "scripts/fees/fee-calc.mjs": "069771559532659228c02c500d7ee48cf8c2a068102fec0b23128d9c3b665d37",
     "skills/adu/SKILL.md": "2a44f07ce522ca633457064b1a6e718d638e991559e42505d2b22cba717ae1db",
     "skills/adu/references/city-adu-faq.md": "4b0886df1f3eacc7ff5ddb5a7ecf64a1848bfd2ad0df92be1f046a52d4be7d60",
     "skills/adu/references/city-adu-ordinance.md": "1e16838f19e125b52f9d5d9875d437047203fc0344b51b4b282cd28d37f19b90",
@@ -642,7 +642,7 @@
     "skills/solar/references/pv-systems-690.md": "ce87ec29c2ec6e3ec5dc8a56aa03fda41a2e6df65f13381eac9cfd1e83adc343",
     "skills/solar/references/structural-roof-crc.md": "68c6a0d56253f9a536966c48a63d3ff7db43a0fb0ea1ef19e3b52e2a865f3cdb",
     "skills/solar/references/wire-sizing-solar.md": "f0b2d8b11c89dca8a093dfa9c258527d34e7248f108e6a146e81537f54872af5",
-    "skills/swimming-pool/SKILL.md": "47923859120d08e5009d94f54c24975b44401f8266a59bebfd071cabdf96c102",
+    "skills/swimming-pool/SKILL.md": "c59fb664a49b21f0c4e97859c197c665a05219df14e321126b10a5a641c95ffe",
     "skills/swimming-pool/references/barriers-enclosures.md": "860eb7d766e09af4e58721640660651323bafc0b11dbd08293ec98c7f9e88770",
     "skills/swimming-pool/references/california-baseline.md": "eb95164237b72f2ca3cd4e3e5549cf2f9f595145c39d840a4adc4736ca86ba7c",
     "skills/swimming-pool/references/electrical-bonding-680.md": "1ee177c9f91130926407da544b83252de4d7da0122a0c174a8555c1f9c776933",

@@ -28,7 +28,7 @@ Host packaging:
 
 Content:
 
-- Generated from the CrossBeam corpus by `scripts/plugin-publish/laguna/` in the private
+- Generated from the CrossBeam corpus by the plugin publisher in the private
   repo; `.generated/manifest.json` records the source commit and hashes, and a CI drift
   check fails when this copy falls behind. Fixes the fireworks advice (Laguna bans
   fireworks), the reroof advice (Class A, color rules) and the "HBFD clearance" line that

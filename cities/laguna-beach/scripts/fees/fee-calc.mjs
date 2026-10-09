@@ -1,30 +1,12 @@
 // GENERATED FILE. Do not edit by hand; the plugin publisher overwrites it.
-// A verbatim copy of the shared CrossBeam fee calculator. Only this header is added.
-// scripts/estimate-fees.mjs runs it over requirements/fees/fee-schedule.json.
+// A copy of the shared CrossBeam fee calculator. The code is unchanged; only internal
+// comments are replaced. scripts/estimate-fees.mjs runs it over requirements/fees/fee-schedule.json.
 /**
- * THE ONE permit-fee calculator — pure math, zero I/O.
- *
- * This is the single source of the fee ARITHMETIC. It is authored once here and
- * synced VERBATIM (no transpile) to both runtimes by `scripts/sync-fee-calc.mjs`:
- *   - the chatbot   → frontend/lib/chat/fee-calc.mjs   (imported by fee-estimator.ts)
- *   - the sandbox   → server/tools/fee-lookup/lib/fee-calc.mjs (imported by the CLI)
- *
- * Because both surfaces run the EXACT same `calcFees` over the EXACT same data,
- * a review letter and a chatbot estimate can never total differently. The
- * cross-check test (server/tools/fee-lookup/test.mjs) is the standing proof.
- *
- * Authored as plain ESM (.mjs) + a hand-written .d.ts on purpose: the Vercel
- * sandbox runs `node` with no transpiler, so the calculator must be runnable as-is
- * in both a Next.js (TS) build and a bare `node fee-lookup.mjs` invocation. Types
- * live in fee-calc.d.ts. No `fs`, no `js-yaml`, no `if (city === ...)` — every city
- * is the same engine over different data.
- *
- * The NUMBERS live in skills/cities/{city}/fees/fee-schedule.yaml (the authored
- * source), published to the canonical Supabase `fee_schedules` store and parsed
- * into the plain object this module consumes. This file holds only the MATH.
+ * CrossBeam permit-fee calculator: pure math, no I/O. Every city runs the same engine
+ * over its own fee-schedule data.
  */
 
-// ── Cities with an authored fee schedule (partner cities first) ──
+// ── Cities with an authored fee schedule ──
 export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county'];
 
 // ── ICC Building Valuation Data anchors (Feb 2026, Type V-B / typical wood frame) ──
@@ -1319,7 +1301,7 @@ function sumLines(lines, of) {
     .reduce((sum, l) => sum + l.amount, 0);
 }
 
-// ── City-slug resolution (mirrors permit-status's resolver; covers both partners) ──
+// ── City-slug resolution ──
 export function resolveFeeCity(rawCity) {
   if (!rawCity) return { slug: null, displayName: 'that city' };
   const normalized = rawCity.trim().toLowerCase().replace(/_/g, '-');
