@@ -12,13 +12,13 @@ Every online Building filing has two parts: the portal **record type** (the cata
 
 | Reasoned scope | Portal type | Work classes the City offers online (v2 map) | Required base uploads | Key boundary |
 |---|---:|---|---|---|
-| Residential new dwelling, addition, alteration, remodel, ADU after Planning, pool, reroof, deck/patio, fence/wall, hardscape, garage, shoring, slope repair, window/door, and similar residential building work | 183 Residential Permit | 32 classes, including New Single Family Residence, Addition, Alteration, Remodel, ADU - Attached/Detached, Pool, Reroof, and the default Residential class | Signed Building Application (`Permit Application`) + one merged `Plans` PDF | Reroof also needs the exact color swatch (`Roof Material Color Swatch`); issuance later in person |
+| Residential new dwelling, addition, alteration, remodel, ADU after Planning, pool, reroof, deck/patio, fence/wall, hardscape, garage, shoring, slope repair, window/door, and similar residential building work | 183 Residential Permit | 32 classes, including New Single Family Residence, Addition, Alteration, Remodel, ADU - Attached/Detached, Pool, Reroof, and the default Residential class | Signed Building Application (`Permit Application`; 2 pages, with the Stormwater Quality Certification) + one merged `Plans` PDF; `permittee.type` confirmed | Reroof also needs the exact color swatch (`Roof Material Color Swatch`); issuance later in person |
 | Standalone demolition | 183 Residential Permit | Demolition; Demolition - Single Family Residence; Demolition - ADU/JADU; Demolition - Duplex. All are online, Review First | `Permit Application` + `Plans` | Its own record and valuation; never ride on the new-building record |
 | Revision of an issued, approved permit | 183 Residential Permit | Revision (**Pay First**) | `Original Plans Approved/Stamped by City` + `Revised Plans` | Not for plan-check corrections or added scope; see below |
 | Mechanical work | 186 Mechanical Permit | Mechanical | Signed Building or MEP application | A/C requires Mechanical Equipment Guide despite optional portal flag |
 | Panel/service/electrical work | 187 Electrical Permit | Electrical; Residential Electrical Service Panel up to 400 AMP (**Pay First**) | Signed Building or MEP application; the panel class asks for its own uploads | Contractor/licence/utility facts must be confirmed; portal item counts |
 | In-kind same-location/same-type/size/rating water heater and other plumbing work | 188 Plumbing Permit | Plumbing | Signed Building or MEP application | Tankless conversion, relocation, capacity/fuel change is not the simple in-kind route |
-| Grading | 214 Grading Permit | Grading (default); 0 - 20 Cubic Yards; Over 20 Cubic Yards | Signed Building Application + Plans | Add soils/geotech, grading plans, hydrology, WQMP/LID, survey as triggered |
+| Grading | 214 Grading Permit | Grading (default); 0 - 20 Cubic Yards; Over 20 Cubic Yards | Signed Building Application (2 pages, with the Stormwater Quality Certification) + Plans | Add soils/geotech, grading plans, hydrology, WQMP/LID, survey as triggered |
 
 Run `python3 scripts/list-work-classes.py --type <id>` for the full, current list with each class's questions, uploads, contacts, and the City's own instruction text.
 
@@ -59,7 +59,7 @@ The City's Revision class instructions say it is "STRICTLY FOR A SUB-PERMIT TO R
 
 This reference compiles the **transaction boundary** — which portal type and work class, which record separation, which base form. It is not a scope-to-requirements classifier and does not enumerate every Building submittal item.
 
-The authoritative scope-to-requirements layer for the Building lane is this plugin's own per-scope skills (`swimming-pool`, `reroof`, `panel-upgrade`, and the rest under `skills/`). They carry the checklist detail. Read the scope skill for what a submittal must contain; read this file for how the filing is structured.
+The authoritative scope-to-requirements layer for the Building lane is the City checklists in `requirements/building/` (see `requirements/README.md`) and the plan-sheet matrix in `requirements/plan-sheets/`, checked with `skills/plan-set-check/SKILL.md`. The simple per-scope skills under `skills/` (`reroof`, `panel-upgrade` and the rest) add Laguna's local rules for those jobs. Read those for what a submittal must contain; read this file for how the filing is structured.
 
 Where a project falls outside both the scope skills and the routes above, say so plainly, name the uncovered scope, and get City guidance. Do not adapt a neighbouring route to close the gap.
 

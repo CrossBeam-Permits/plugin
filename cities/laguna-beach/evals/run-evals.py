@@ -263,7 +263,7 @@ def check_manifest_consistency() -> None:
             assert any(required_field in portal_questions[record["portal_type_id"]] for record in records if record["portal_type_id"] is not None)
     eleanor = next(item for item in building if item["id"] == "1639-eleanor-multi-record")
     assert len(eleanor["records"]) == 4
-    assert next(item for item in eleanor["records"] if item["id"] == "demolition")["channel"] == "counter"
+    assert next(item for item in eleanor["records"] if item["id"] == "demolition")["channel"] == "online"
 
 
 def check_policy_contract() -> None:
@@ -573,6 +573,9 @@ def main() -> int:
     run(str(ROOT / "evals/requirements/run.py"))
     print("PASS requirements tree, plan-set check wiring, and fee estimate")
     # --- end requirements block ---
+
+    run(str(ROOT / "evals/handoff/run-handoff-evals.py"))
+    print("PASS permit-drawings hand-off intake")
 
     print("All Laguna permit skill evals passed")
     return 0
