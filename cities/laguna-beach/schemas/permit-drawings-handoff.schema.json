@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "crossbeam.permit-drawings-handoff/1",
+  "title": "permit-drawings and city plugin hand-off",
+  "description": "Two documents pass between the permit-drawings skill and a city plugin that files permits. A drawn_set bundle goes from permit-drawings stage 8 (or stage 9 for a resubmittal) to the city plugin. A city_documents bundle goes from the city plugin, after filing, to permit-drawings stage 9. Paths are relative to the folder that holds the bundle file, and never contain '..'. Unknown facts stay null with a reason. The canonical copy is skills/shared/permit-drawings/schemas/city-plugin-handoff.schema.json; a city plugin ships a byte-identical copy.",
+  "anyOf": [
+    {"$ref": "#/$defs/DrawnSet"},
+    {"$ref": "#/$defs/CityDocuments"}
+  ],
+  "$defs": {
+    "SchemaId": {"const": "crossbeam.permit-drawings-handoff/1"},
+    "Sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "RelPath": {
+      "type": "string",
+      "pattern": "^(?!.*\\.\\.)[A-Za-z0-9_][A-Za-z0-9_. ()/-]*$",
+      "description": "A path relative to the folder that holds the bundle file. No leading slash and no '..'."
+    },
+    "DateTime": {"type": "string", "format": "date-time", "minLength": 1},
+    "Text": {"type": "string", "minLength": 1},
+    "TextOrNull": {"type": ["string", "null"]},
+    "City": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "state", "jurisdiction_id", "source"],
+      "properties": {
+        "name": {"$ref": "#/$defs/Text"},
+        "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
+        "jurisdiction_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "description": "The city plugin's jurisdiction id, for example laguna-beach-ca. The plugin refuses a bundle for another jurisdiction."
+        },
+        "source": {"$ref": "#/$defs/TextOrNull", "description": "Where the jurisdiction was settled, for example logs/scope.md."}
+      }
+    },
+    "CityPlugin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"$ref": "#/$defs/Text"},
+        "version": {"$ref": "#/$defs/TextOrNull"}
+      }
+    },
+    "Replaces": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["city_round", "path", "category"],
+      "properties": {
+        "city_round": {"type": "integer", "minimum": 0},
+        "path": {"anyOf": [{"$ref": "#/$defs/RelPath"}, {"type": "null"}]},
+        "category": {"$ref": "#/$defs/TextOrNull", "description": "The upload category the city shows for the earlier file, copied from the plugin's receipt."}
+      }
+    },
+    "File": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "role", "contents", "sha256", "bytes", "pages", "sheet_ids", "required_documents_row", "rule_source", "replaces", "status", "upload"],
+      "properties": {
+        "path": {"$ref": "#/$defs/RelPath"},
+        "role": {"enum": ["plan_set", "energy_report", "calculations", "product_data", "response_sheet", "inputs_for_preparer", "other_document"]},
+        "contents": {"$ref": "#/$defs/Text"},
+        "sha256": {"$ref": "#/$defs/Sha256"},
+        "bytes": {"type": "integer", "minimum": 1},
+        "pages": {"type": ["integer", "null"], "minimum": 1},
+        "sheet_ids": {"type": "array", "items": {"$ref": "#/$defs/Text"}},
+        "required_documents_row": {"type": ["integer", "null"], "minimum": 1},
+        "rule_source": {"$ref": "#/$defs/TextOrNull", "description": "The packaging rule source from the stage 8 manifest, or unknown: confirm with the city."},
+        "replaces": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/Replaces"}]},
+        "status": {"enum": ["final", "owner_to_sign", "signed", "inputs_for_preparer"]},
+        "upload": {"type": "boolean", "description": "True when the plugin uploads this file in this city round. In a resubmittal, an unchanged file the city did not ask for again is false."}
+      }
+    },
+    "PlanSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "pages", "sheet_size", "sheet_ids", "unlocked", "kit_qa_pass"],
+      "properties": {
+        "path": {"$ref": "#/$defs/RelPath"},
+        "sha256": {"$ref": "#/$defs/Sha256"},
+        "pages": {"type": "integer", "minimum": 1},
+        "sheet_size": {"$ref": "#/$defs/Text"},
+        "sheet_ids": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Text"}},
+        "unlocked": {"const": true},
+        "kit_qa_pass": {"const": true}
+      }
+    },
+    "FactSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "pointer", "source_id"],
+      "properties": {
+        "file": {"$ref": "#/$defs/RelPath", "description": "The permit-drawings file that holds the value, for example project.json or logs/scope.md."},
+        "pointer": {"$ref": "#/$defs/Text", "description": "Where in that file, for example project.address or values.new_area."},
+        "source_id": {"$ref": "#/$defs/TextOrNull", "description": "The project.json sources[] id behind the value, when there is one."}
+      }
+    },
+    "FactId": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+    "KnownValue": {"type": ["string", "number", "boolean", "array", "object"]},
+    "VerifiedFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "value", "unit", "status", "fv", "source", "on_sheets", "applicant_controlled", "null_reason", "note"],
+      "properties": {
+        "id": {"$ref": "#/$defs/FactId"},
+        "value": {"$ref": "#/$defs/KnownValue"},
+        "unit": {"$ref": "#/$defs/TextOrNull"},
+        "status": {"enum": ["MEASURED", "DERIVED", "PROPOSED", "MANUFACTURER", "DOCUMENT", "OWNER_ANSWER", "SITE_FACTS", "CROSSBEAM"]},
+        "fv": {"type": "null"},
+        "source": {"$ref": "#/$defs/FactSource"},
+        "on_sheets": {"type": "array", "items": {"$ref": "#/$defs/Text"}},
+        "applicant_controlled": {"type": "boolean"},
+        "null_reason": {"type": "null"},
+        "note": {"$ref": "#/$defs/TextOrNull"}
+      }
+    },
+    "AssumedFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "value", "unit", "status", "fv", "source", "on_sheets", "applicant_controlled", "null_reason", "note"],
+      "properties": {
+        "id": {"$ref": "#/$defs/FactId"},
+        "value": {"$ref": "#/$defs/KnownValue"},
+        "unit": {"$ref": "#/$defs/TextOrNull"},
+        "status": {"const": "ASSUMED"},
+        "fv": {"type": "string", "pattern": "^FV-[0-9]+$"},
+        "source": {"$ref": "#/$defs/FactSource"},
+        "on_sheets": {"type": "array", "items": {"$ref": "#/$defs/Text"}},
+        "applicant_controlled": {"type": "boolean"},
+        "null_reason": {"type": "null"},
+        "note": {"$ref": "#/$defs/TextOrNull"}
+      }
+    },
+    "UnknownFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "value", "unit", "status", "fv", "source", "on_sheets", "applicant_controlled", "null_reason", "note"],
+      "properties": {
+        "id": {"$ref": "#/$defs/FactId"},
+        "value": {"type": "null"},
+        "unit": {"$ref": "#/$defs/TextOrNull"},
+        "status": {"enum": ["PLACEHOLDER", "UNKNOWN"]},
+        "fv": {"type": ["string", "null"], "pattern": "^FV-[0-9]+$"},
+        "source": {"anyOf": [{"$ref": "#/$defs/FactSource"}, {"type": "null"}]},
+        "on_sheets": {"type": "array", "items": {"$ref": "#/$defs/Text"}},
+        "applicant_controlled": {"type": "boolean"},
+        "null_reason": {"$ref": "#/$defs/Text"},
+        "note": {"$ref": "#/$defs/TextOrNull"}
+      }
+    },
+    "Fact": {
+      "anyOf": [
+        {"$ref": "#/$defs/VerifiedFact"},
+        {"$ref": "#/$defs/AssumedFact"},
+        {"$ref": "#/$defs/UnknownFact"}
+      ]
+    },
+    "DocumentRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["row", "document", "required_by", "level", "who_prepares", "status", "file"],
+      "properties": {
+        "row": {"type": "integer", "minimum": 1},
+        "document": {"$ref": "#/$defs/Text"},
+        "required_by": {"$ref": "#/$defs/TextOrNull"},
+        "level": {"$ref": "#/$defs/TextOrNull"},
+        "who_prepares": {"$ref": "#/$defs/TextOrNull"},
+        "status": {"$ref": "#/$defs/Text", "description": "The status from logs/required-documents.md, word for word (02-path.md section 3, step 6)."},
+        "file": {"anyOf": [{"$ref": "#/$defs/RelPath"}, {"type": "null"}]}
+      }
+    },
+    "OwnerDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "words", "log"],
+      "properties": {
+        "status": {"enum": ["send_open", "pending"]},
+        "words": {"$ref": "#/$defs/TextOrNull"},
+        "log": {"$ref": "#/$defs/TextOrNull", "description": "The log entry that records the decision, for example logs/decisions.md D-031."}
+      }
+    },
+    "DecidedOwnerDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "words", "log"],
+      "properties": {
+        "status": {"const": "send_open"},
+        "words": {"$ref": "#/$defs/Text"},
+        "log": {"$ref": "#/$defs/Text"}
+      }
+    },
+    "SheetOpenItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "item", "changes_sheets", "owner_decision"],
+      "description": "An item printed open on the sheets. The owner chose to send it open in stage 7, so the decision is already made.",
+      "properties": {
+        "id": {"$ref": "#/$defs/Text"},
+        "kind": {"enum": ["field_verify", "deferred_decision", "code_question_waiting", "sheet_content_open"]},
+        "item": {"$ref": "#/$defs/Text"},
+        "changes_sheets": {"const": true},
+        "owner_decision": {"$ref": "#/$defs/DecidedOwnerDecision"}
+      }
+    },
+    "DocumentOpenItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "item", "changes_sheets", "owner_decision"],
+      "description": "A document or fact still open that does not change the sheets. In plugin mode the city plugin asks the send question for these.",
+      "properties": {
+        "id": {"$ref": "#/$defs/Text"},
+        "kind": {"enum": ["document", "manifest_unknown", "scope_unknown", "preparer_statement"]},
+        "item": {"$ref": "#/$defs/Text"},
+        "changes_sheets": {"const": false},
+        "owner_decision": {"$ref": "#/$defs/OwnerDecision"}
+      }
+    },
+    "OpenItem": {
+      "anyOf": [
+        {"$ref": "#/$defs/SheetOpenItem"},
+        {"$ref": "#/$defs/DocumentOpenItem"}
+      ]
+    },
+    "Approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approval", "log", "date"],
+      "properties": {
+        "approval": {"enum": ["skill_files_saved", "crossbeam_check_price", "crossbeam_check_with_open_items", "items_changing_sheets", "signature_on_drawings_document", "signature_image_consent", "dispute_accepted"]},
+        "log": {"$ref": "#/$defs/Text"},
+        "date": {"$ref": "#/$defs/Text"}
+      }
+    },
+    "PluginComment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "text", "planned_change"],
+      "description": "A city comment about the application, the portal or fees. The city plugin makes the change.",
+      "properties": {
+        "number": {"$ref": "#/$defs/Text"},
+        "text": {"$ref": "#/$defs/Text"},
+        "planned_change": {"$ref": "#/$defs/Text"}
+      }
+    },
+    "CorrectionsAnswered": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["answers_city_round", "city_documents", "response_sheet"],
+      "properties": {
+        "answers_city_round": {"type": "integer", "minimum": 0},
+        "city_documents": {"$ref": "#/$defs/Text", "description": "Path of the city_documents bundle, relative to permit-work/."},
+        "response_sheet": {"$ref": "#/$defs/RelPath"}
+      }
+    },
+    "DrawnSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "kind", "created_at", "producer", "consumer", "city", "city_round", "gate", "status_label", "plan_set", "project_file", "files", "facts", "required_documents", "open_items", "approvals_done", "left_to_plugin", "crossbeam", "corrections_answered", "comments_for_plugin"],
+      "properties": {
+        "schema": {"$ref": "#/$defs/SchemaId"},
+        "kind": {"const": "drawn_set"},
+        "created_at": {"$ref": "#/$defs/DateTime"},
+        "producer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["skill", "skill_version", "kit_version"],
+          "properties": {
+            "skill": {"const": "permit-drawings"},
+            "skill_version": {"$ref": "#/$defs/Text"},
+            "kit_version": {"$ref": "#/$defs/TextOrNull"}
+          }
+        },
+        "consumer": {"$ref": "#/$defs/CityPlugin"},
+        "city": {"$ref": "#/$defs/City"},
+        "city_round": {"type": "integer", "minimum": 0},
+        "gate": {"const": "PERMIT REVIEW"},
+        "status_label": {"$ref": "#/$defs/Text"},
+        "plan_set": {"$ref": "#/$defs/PlanSet"},
+        "project_file": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256"],
+          "properties": {
+            "path": {"$ref": "#/$defs/RelPath"},
+            "sha256": {"$ref": "#/$defs/Sha256"}
+          }
+        },
+        "files": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/File"}},
+        "facts": {"type": "array", "items": {"$ref": "#/$defs/Fact"}},
+        "required_documents": {"type": "array", "items": {"$ref": "#/$defs/DocumentRow"}},
+        "open_items": {"type": "array", "items": {"$ref": "#/$defs/OpenItem"}},
+        "approvals_done": {"type": "array", "items": {"$ref": "#/$defs/Approval"}},
+        "left_to_plugin": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"enum": ["filing_route", "city_application_forms", "applicant_fact_confirmations", "valuation", "fees", "city_signatures", "open_items_send_approval", "portal_upload", "final_submit", "payment", "after_filing_downloads"]}
+        },
+        "crossbeam": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["project_id", "passing_round", "package_hash"],
+          "properties": {
+            "project_id": {"$ref": "#/$defs/TextOrNull"},
+            "passing_round": {"type": ["integer", "null"], "minimum": 1},
+            "package_hash": {"$ref": "#/$defs/TextOrNull", "description": "The value CrossBeam returned, or none (web path)."}
+          }
+        },
+        "corrections_answered": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/CorrectionsAnswered"}]},
+        "comments_for_plugin": {"type": "array", "items": {"$ref": "#/$defs/PluginComment"}}
+      }
+    },
+    "CityDocument": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "kind", "sha256", "bytes", "pages", "downloaded_from", "captured_at"],
+      "properties": {
+        "path": {"$ref": "#/$defs/RelPath"},
+        "kind": {"enum": ["corrections_letter", "comment_list", "red_marked_set", "resubmittal_form", "email_body", "approval_document", "portal_status", "other"]},
+        "sha256": {"$ref": "#/$defs/Sha256"},
+        "bytes": {"type": "integer", "minimum": 1},
+        "pages": {"type": ["integer", "null"], "minimum": 1},
+        "downloaded_from": {"$ref": "#/$defs/TextOrNull", "description": "The portal page label or the official URL the file came from."},
+        "captured_at": {"$ref": "#/$defs/DateTime"}
+      }
+    },
+    "CityDocuments": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "kind", "created_at", "producer", "city", "outcome", "answers_city_round", "record", "city_round_marker", "documents", "instructions_seen", "original_submittal", "due_date", "notes"],
+      "properties": {
+        "schema": {"$ref": "#/$defs/SchemaId"},
+        "kind": {"const": "city_documents"},
+        "created_at": {"$ref": "#/$defs/DateTime"},
+        "producer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["plugin", "plugin_version"],
+          "properties": {
+            "plugin": {"$ref": "#/$defs/Text"},
+            "plugin_version": {"$ref": "#/$defs/TextOrNull"}
+          }
+        },
+        "city": {"$ref": "#/$defs/City"},
+        "outcome": {"enum": ["corrections", "approved", "other_notice"]},
+        "answers_city_round": {"type": "integer", "minimum": 0},
+        "record": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["record_id", "portal_record_number", "portal_type_id", "status_text"],
+          "properties": {
+            "record_id": {"$ref": "#/$defs/Text"},
+            "portal_record_number": {"$ref": "#/$defs/TextOrNull"},
+            "portal_type_id": {"type": ["integer", "null"]},
+            "status_text": {"$ref": "#/$defs/TextOrNull", "description": "The record status exactly as the portal shows it."}
+          }
+        },
+        "city_round_marker": {"$ref": "#/$defs/TextOrNull", "description": "A round marker the city applied, copied verbatim. Evidence only."},
+        "documents": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/CityDocument"}},
+        "instructions_seen": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text", "source"],
+            "properties": {
+              "text": {"$ref": "#/$defs/Text"},
+              "source": {"$ref": "#/$defs/Text"}
+            }
+          }
+        },
+        "original_submittal": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["drawn_set", "uploaded_files"],
+          "properties": {
+            "drawn_set": {"$ref": "#/$defs/TextOrNull", "description": "Path of the drawn_set bundle that was filed, relative to permit-work/."},
+            "uploaded_files": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["filename", "category", "sha256"],
+                "properties": {
+                  "filename": {"$ref": "#/$defs/Text"},
+                  "category": {"$ref": "#/$defs/Text"},
+                  "sha256": {"$ref": "#/$defs/Sha256"}
+                }
+              }
+            }
+          }
+        },
+        "due_date": {"$ref": "#/$defs/TextOrNull", "description": "Only a date the city states, with its source in notes."},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_note": "Fictional. The mapping an agent made by reading what each fact means (references/plan-sheets.md section 3, step 5). The eval checks the provenance it writes, not how it chose.",
+  "map": {
+    "site.address": "site.address",
+    "owner.name": "owner.name",
+    "preparer.name": "architect_designer.name",
+    "project.scope_statement": "project.description.residential",
+    "area.addition": "building.residential.addition_sqft",
+    "site.apn": "site.apn",
+    "valuation.owner_stated": "project.valuation.residential"
+  },
+  "not_mapped": {
+    "area.wall_t": "A drawing value. No City form asks for it."
+  }
+}
