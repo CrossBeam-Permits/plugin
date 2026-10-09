@@ -12,6 +12,7 @@ on:
   pull_request:
     paths:
       - ".claude-plugin/marketplace.json"
+      - ".cursor-plugin/**"
       - "cities/laguna-beach/**"
       - "data/**"
       - "scripts/**"
@@ -21,6 +22,7 @@ on:
     branches: [main]
     paths:
       - ".claude-plugin/marketplace.json"
+      - ".cursor-plugin/**"
       - "cities/laguna-beach/**"
       - "data/**"
       - "scripts/**"
@@ -50,6 +52,8 @@ jobs:
           npm install --global @anthropic-ai/claude-code
       - name: Check generated portal facts
         run: node scripts/sync-permit-portals.mjs --check
+      - name: Test the ordinance PDF fingerprint
+        run: node --test scripts/check-laguna-law-sources.test.mjs
       - name: Verify operative Laguna law sources
         run: node scripts/check-laguna-law-sources.mjs --verify-remote
       - name: Regenerate semantic maps and require a clean diff

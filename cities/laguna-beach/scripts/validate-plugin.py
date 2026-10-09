@@ -200,6 +200,10 @@ def main() -> int:
             raise SystemExit("the city plugin must use the sparse git-subdir marketplace source")
         if "sha" in pins and not (len(pins["sha"]) == 40 and all(c in "0123456789abcdef" for c in pins["sha"])):
             raise SystemExit("a marketplace sha pin must be a full 40-character lowercase commit SHA")
+        cursor_marketplace = marketplace_path.parent.parent / ".cursor-plugin/marketplace.json"
+        cursor_entries = {item["name"]: item for item in load(cursor_marketplace)["plugins"]} if cursor_marketplace.is_file() else {}
+        if (cursor_entries.get(PLUGIN_NAME) or {}).get("source") != MARKETPLACE_SOURCE["path"]:
+            raise SystemExit(f"the Cursor marketplace must list {PLUGIN_NAME} with source {MARKETPLACE_SOURCE['path']}")
     if len(set(versions.values())) != 1:
         raise SystemExit(f"Laguna manifest versions must agree: {versions}")
     version = claude_manifest["version"]

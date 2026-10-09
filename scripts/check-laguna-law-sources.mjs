@@ -49,9 +49,13 @@ export function pdfContentStreamsSha256(bytes) {
     if (open < 0) continue;
     const dictionary = text.slice(open, close + 1);
     const start = match.index + match[0].length;
-    const length = dictionary.match(/\/Length\s+(\d+)(?!\s+\d+\s+R)/);
-    let end = length ? start + Number(length[1]) : text.indexOf("endstream", start);
-    if (!length) while (end > start && (bytes[end - 1] === 0x0a || bytes[end - 1] === 0x0d)) end -= 1;
+    // A direct /Length gives the exact end. An indirect one ("/Length 12 0 R") or none
+    // falls back to the endstream keyword, minus the end-of-line before it.
+    const length = dictionary.match(/\/Length\s+(\d+)(\s+\d+\s+R)?/);
+    const direct = length && !length[2];
+    let end = direct ? start + Number(length[1]) : text.indexOf("endstream", start);
+    if (end < start || end > bytes.length) fail("truncated or malformed PDF stream");
+    if (!direct) while (end > start && (bytes[end - 1] === 0x0a || bytes[end - 1] === 0x0d)) end -= 1;
     keyword.lastIndex = end;
     const type = (dictionary.match(/\/Type\s*\/(\w+)/) || [])[1];
     if (["XRef", "ObjStm", "Metadata"].includes(type)) continue;

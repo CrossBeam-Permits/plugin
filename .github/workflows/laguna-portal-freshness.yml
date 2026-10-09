@@ -58,28 +58,42 @@ jobs:
         run: |
           python - <<'PY'
           import json, os, pathlib, subprocess, sys
+          temp = pathlib.Path(os.environ["RUNNER_TEMP"])
           forms = json.load(open("assets/form-manifest.json"))["forms"]
-          cache = pathlib.Path(os.environ["RUNNER_TEMP"]) / "official-forms"
-          verified, refused, drifted = [], [], []
+          verified, unpinned, refused, drifted, broken = [], [], [], [], []
           for form in forms:
+              receipt = temp / f"form-receipt-{form['id']}.json"
               result = subprocess.run(
                   [sys.executable, "scripts/check-source-freshness.py", "--manifest", "assets/form-manifest.json",
-                   "--forms-dir", str(cache), "--only", form["id"], "--fetch"],
+                   "--forms-dir", str(temp / "official-forms"), "--only", form["id"], "--fetch",
+                   "--receipt", str(receipt)],
                   text=True, capture_output=True)
-              if result.returncode == 0:
+              # Classify from the script's own receipt, never from exit codes alone.
+              if not receipt.is_file():
+                  broken.append(form["id"])  # the check crashed before writing its receipt
+                  print(result.stdout + result.stderr)
+                  continue
+              entries = json.loads(receipt.read_text())["forms"]
+              status = entries[0]["status"] if entries else None
+              if result.returncode == 0 and status == "current":
                   verified.append(form["id"])
-              elif not (cache / form["cache_name"]).is_file() or not (cache / form["cache_name"]).read_bytes()[:5] == b"%PDF-":
-                  # No PDF arrived (refused, or a bot-check page): not drift, not verified.
-                  refused.append(form["id"])
-              else:
+              elif status == "drift":
                   drifted.append(form["id"])
                   print(result.stdout)
+              elif status is not None:
+                  unpinned.append(f"{form['id']} ({status})")  # manifest already says this form is not pinned
+              else:
+                  refused.append(form["id"])  # no PDF arrived: refused or a bot-check page
           lines = ["## Official Laguna forms", "",
                    f"- Verified against receipts: {', '.join(verified) or 'none'}",
-                   f"- Not verifiable headlessly (City refused the download; check in a visible browser): {', '.join(refused) or 'none'}",
-                   f"- Changed since the receipt: {', '.join(drifted) or 'none'}", ""]
+                   f"- Not pinned in the manifest: {', '.join(unpinned) or 'none'}",
+                   f"- Not verifiable headlessly (the City refused the download; check in a visible browser): {', '.join(refused) or 'none'}",
+                   f"- Changed since the receipt: {', '.join(drifted) or 'none'}",
+                   f"- Check failed to run: {', '.join(broken) or 'none'}", ""]
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
               summary.write("\n".join(lines))
           print("\n".join(lines))
-          sys.exit(1 if drifted else 0)
+          if refused:
+              print(f"::warning title=Official forms not verified::{len(refused)} form(s) could not be downloaded headlessly: {', '.join(refused)}")
+          sys.exit(1 if drifted or broken else 0)
           PY
