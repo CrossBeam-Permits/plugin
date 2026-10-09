@@ -1,0 +1,1538 @@
+{
+  "source": "City of Laguna Beach Design Review Application Package, doc 26714, \"Updated August 2026\", page 23, \"Project Submittal Requirements for Planning Review\". The same matrix prints in the Zone Clearance Application (doc 26718, p21) and the ADU & JADU Application (doc 27032, p32).",
+  "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26714/639216204685500000",
+  "notes": [
+    "Staff may request additional items after review of an initial submittal. The matrix is the minimum for intake.",
+    "On the \"Revision (Construction)\" row the City prints one merged cell across the plan-sheet columns: submit the plan sheets the revision affects.",
+    "On the \"Tenant Improvement\" row the \"if req.\" entry is ambiguous between Elevation Views and Cross Sections; ask the City which one it needs.",
+    "\"if req.\" means the City decides from the project whether the sheet is needed. Treat it as conditional, and say why you think it applies or not."
+  ],
+  "review_levels": [
+    {
+      "id": "ministerial",
+      "heading": "Can be approved without public hearing (ministerially) under certain circumstances:"
+    },
+    {
+      "id": "administrative_design_review",
+      "heading": "Requires public hearing (Administrative Design Review):"
+    },
+    {
+      "id": "drb_or_pc_if_nonconforming",
+      "heading": "Requires public hearing (Design Review Board or Planning Commission) if there are nonconformities:"
+    },
+    {
+      "id": "drb_or_pc",
+      "heading": "Requires public hearing (Design Review Board or Planning Commission):"
+    }
+  ],
+  "columns": [
+    {
+      "key": "app-forms",
+      "heading": "App. Forms"
+    },
+    {
+      "key": "title-sheet",
+      "heading": "Title Sheet"
+    },
+    {
+      "key": "survey",
+      "heading": "Survey"
+    },
+    {
+      "key": "site-plan",
+      "heading": "Site Plan"
+    },
+    {
+      "key": "staking-plan",
+      "heading": "Staking Plan"
+    },
+    {
+      "key": "roof-plan",
+      "heading": "Roof Plan"
+    },
+    {
+      "key": "floor-plans",
+      "heading": "Floor Plans"
+    },
+    {
+      "key": "elevation-views",
+      "heading": "Elevation Views"
+    },
+    {
+      "key": "cross-sections",
+      "heading": "Cross Sections"
+    },
+    {
+      "key": "floor-area-calcs",
+      "heading": "Floor Area Calcs."
+    },
+    {
+      "key": "open-space-calcs",
+      "heading": "Open Space Calcs."
+    },
+    {
+      "key": "grading-drainage-when-20-cu-yd",
+      "heading": "Grading & Drainage (When > 20 Cu. Yd.)"
+    },
+    {
+      "key": "landscape-plan",
+      "heading": "Landscape Plan"
+    },
+    {
+      "key": "lighting-plan",
+      "heading": "Lighting Plan"
+    },
+    {
+      "key": "fire-dept-site-access-plan",
+      "heading": "Fire Dept. Site Access Plan"
+    },
+    {
+      "key": "site-and-right-of-way-imp-plan",
+      "heading": "Site and Right-of- Way Imp. Plan"
+    }
+  ],
+  "rows": [
+    {
+      "row_key": "matrix-accessory-dwelling-unit-attached-detached",
+      "project_type": "Accessory Dwelling Unit (Attached/Detached)",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-accessory-dwelling-unit-conversion",
+      "project_type": "Accessory Dwelling Unit (Conversion)",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-addition-10-of-existing-not-including-upper-level-or-15-above-grade",
+      "project_type": "Addition <10% of existing (Not including upper level or >15' above grade)",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-exterior-materials",
+      "project_type": "Exterior Materials",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "not_listed"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "not_listed"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-grading",
+      "project_type": "Grading",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "not_listed"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "required"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-hardscape",
+      "project_type": "Hardscape",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "not_listed"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "required"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-landscape-improvements",
+      "project_type": "Landscape Improvements",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "not_listed"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "required"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-retaining-walls",
+      "project_type": "Retaining Walls",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "conditional",
+          "city_text": "if out of grade"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-revision-construction",
+      "project_type": "Revision (Construction)",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "not_listed"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "not_listed"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "affected_sheets_only",
+          "city_text": "All Plan Sheets Affected by Proposed Revision"
+        },
+        "elevation-views": {
+          "status": "merged"
+        },
+        "cross-sections": {
+          "status": "merged"
+        },
+        "floor-area-calcs": {
+          "status": "merged"
+        },
+        "open-space-calcs": {
+          "status": "merged"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-tenant-improvement",
+      "project_type": "Tenant Improvement",
+      "review_level": "ministerial",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-deck-addition",
+      "project_type": "Deck Addition",
+      "review_level": "administrative_design_review",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "required"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-pedestrian-entry-feature",
+      "project_type": "Pedestrian Entry Feature",
+      "review_level": "administrative_design_review",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "conditional",
+          "city_text": "if in req. setback"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "not_listed"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-skylights",
+      "project_type": "Skylights",
+      "review_level": "administrative_design_review",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "not_listed"
+        },
+        "site-plan": {
+          "status": "not_listed"
+        },
+        "staking-plan": {
+          "status": "required"
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "cross-sections": {
+          "status": "not_listed"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-spa-pre-fabricated-or-in-ground-not-exceeding-600-gallons",
+      "project_type": "Spa (pre-fabricated or in-ground not exceeding 600 gallons)",
+      "review_level": "administrative_design_review",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-addition-10-and-50",
+      "project_type": "Addition >10% and <50%",
+      "review_level": "drb_or_pc_if_nonconforming",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "required"
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "landscape-plan": {
+          "status": "required"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-addition-aggregate",
+      "project_type": "Addition (Aggregate)",
+      "review_level": "drb_or_pc",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "required"
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "required"
+        },
+        "landscape-plan": {
+          "status": "required"
+        },
+        "lighting-plan": {
+          "status": "required"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-addition-50-major-remodel-or-new-single-family-dwelling",
+      "project_type": "Addition >50%, Major Remodel, or New Single Family Dwelling",
+      "review_level": "drb_or_pc",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "required"
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "required"
+        },
+        "landscape-plan": {
+          "status": "required"
+        },
+        "lighting-plan": {
+          "status": "required"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "required"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "required"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-new-multi-family-2-units",
+      "project_type": "New Multi-family (2+ units)",
+      "review_level": "drb_or_pc",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "required"
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "required"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "required"
+        },
+        "landscape-plan": {
+          "status": "required"
+        },
+        "lighting-plan": {
+          "status": "required"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "required"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "required"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-pool-spa-built-in",
+      "project_type": "Pool/Spa (Built-In)",
+      "review_level": "drb_or_pc",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "conditional",
+          "city_text": "if req."
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-slope-stabilization-slope-repair",
+      "project_type": "Slope Stabilization/Slope Repair",
+      "review_level": "drb_or_pc",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "not_listed"
+        },
+        "roof-plan": {
+          "status": "not_listed"
+        },
+        "floor-plans": {
+          "status": "not_listed"
+        },
+        "elevation-views": {
+          "status": "not_listed"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "not_listed"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "not_listed"
+        },
+        "landscape-plan": {
+          "status": "not_listed"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    },
+    {
+      "row_key": "matrix-upper-level-additions-or-15-ft-above-grade",
+      "project_type": "Upper-Level Additions or >15 ft above grade",
+      "review_level": "drb_or_pc",
+      "sheets": {
+        "app-forms": {
+          "status": "required"
+        },
+        "title-sheet": {
+          "status": "required"
+        },
+        "survey": {
+          "status": "required"
+        },
+        "site-plan": {
+          "status": "required"
+        },
+        "staking-plan": {
+          "status": "required"
+        },
+        "roof-plan": {
+          "status": "required"
+        },
+        "floor-plans": {
+          "status": "required"
+        },
+        "elevation-views": {
+          "status": "required"
+        },
+        "cross-sections": {
+          "status": "required"
+        },
+        "floor-area-calcs": {
+          "status": "required"
+        },
+        "open-space-calcs": {
+          "status": "not_listed"
+        },
+        "grading-drainage-when-20-cu-yd": {
+          "status": "required"
+        },
+        "landscape-plan": {
+          "status": "required"
+        },
+        "lighting-plan": {
+          "status": "not_listed"
+        },
+        "fire-dept-site-access-plan": {
+          "status": "not_listed"
+        },
+        "site-and-right-of-way-imp-plan": {
+          "status": "not_listed"
+        }
+      }
+    }
+  ],
+  "sheet_contents": {
+    "title-sheet": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "title_sheet",
+          "title": "Title Sheet",
+          "required": "baseline",
+          "detail": "provide address of site and assessor's parcel number, legal description of the site, and contact information for the property owner, project architect or designer, civil engineer, and other design professionals (names, addresses, phone numbers, email addresses).",
+          "must_show": [
+            "Include a detailed scope of work and a plan sheet index.",
+            "Include the Project Summary Table in the format and content of the City's template (Exhibit D).",
+            "State the zoning designation.",
+            "State site constraints, environmentally sensitive areas, and fire safety designation, if applicable. The City points to its GIS map for this information."
+          ]
+        }
+      ]
+    },
+    "survey": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "topographic_survey",
+          "title": "Topographic Survey",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires a survey for the project's type. Required scale 1/8\" = 1'-0\". Depict existing conditions and all public and private easements. Prepared, signed, and stamped by a licensed surveyor or civil engineer. The Site Survey Requirements handout (Exhibit E) carries additional requirements."
+        },
+        {
+          "key": "record_of_survey",
+          "title": "Record of Survey",
+          "required": "conditional",
+          "detail": "Show all property boundary lines, public and private easements, and whether new monuments were set to show the boundary lines. Prepared, signed, and stamped by a licensed surveyor or civil engineer, and filed for processing with the County Surveyor's Office for review and recordation."
+        }
+      ]
+    },
+    "site-plan": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "site_plan",
+          "title": "Site Plan",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires a site plan for the project's type. Required scale 1/8\" = 1'-0\".",
+          "must_show": [
+            "Include a north arrow (magnetic and project north).",
+            "Include a legend (line types, hatched and shaded areas, abbreviations).",
+            "Show and label all buildings on the lot. Delineate and dimension all lot boundaries, required setbacks, and existing and proposed structures at the narrowest point. Dimension the interior of garages and carports, exterior parking spaces, vehicular maneuvering, and back-up areas.",
+            "Show topographic contours at two-foot intervals covering the full site to the center of the right-of-way.",
+            "Label, locate, and dimension all proposed site hardscape improvements. Identify the height and material of all existing and proposed fences or walls, and show the location of any required pool security fencing.",
+            "Show average lot width and depth [LBMC 25.08.022].",
+            "Provide flagged height elevations at: the fixed datum point from a survey showing a permanent, identifiable benchmark in the field; the top of curb or centerline of the street right-of-way, midway between the projected side lot lines [LBMC 25.08.016]; the centerline of the street opposite the driveway and at the intersection of the driveway and front property line [LBMC 25.52.008(I)(3)(b)]; and both front and rear property corners [LBMC 25.08.034].",
+            "Label, dimension, and show the centerline of the right-of-way of record and the paved (improved) centerline width of all abutting streets and alleyways. Show all existing and proposed improvements within the right-of-way, including driveways, sidewalks, meters, and utility boxes and poles.",
+            "Depict the location and dimensions of all existing and proposed public or private easements and all property to be dedicated to the City for street or other purposes.",
+            "Note the average driveway gradient, calculated from the property line to the face of the garage or parking spaces [LBMC 25.52.008(I)(3)].",
+            "On vacant and oceanfront sites, show the immediate outline of existing structures on adjacent contiguous properties.",
+            "Locate and dimension the trash storage area [LBMC 25.53.012].",
+            "For new development, major remodels (defined in Exhibit F), and additions exceeding 50 percent of the existing structure size, note that all utility lines to the nearest existing pole will be undergrounded [LBMC 25.53.010]. Specify the type and location of the utility connection (pole or box) and indicate the size of all utility boxes.",
+            "Show the proposed connection to the public sewer system, if applicable."
+          ]
+        }
+      ]
+    },
+    "roof-plan": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "roof_plan",
+          "title": "Roof Plan",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires a roof plan for the project's type. Required scale 1/8\" = 1'-0\". Dimension and show the existing and proposed roof plans.",
+          "must_show": [
+            "On the existing roof plan, delineate and dimension the existing roof area and the proposed demolition areas (eaves are included in roof area). Provide a table that tallies the existing and demolition roof areas.",
+            "Show the roof form (ridges, hips, valleys, crickets, parapets) and note elevation heights of ridges, eaves, skylights, and chimneys. Show roof slopes and pitch, show the solar-ready roof area, and dimension eave overhangs."
+          ]
+        }
+      ]
+    },
+    "floor-plans": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "floor_plans",
+          "title": "Floor Plans (as-built and proposed)",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires floor plans for the project's type. Required scale 1/4\" = 1'-0\".",
+          "must_show": [
+            "Orient the plans to match the site plan, including a north arrow (magnetic and project north) and property lines.",
+            "Indicate the use and dimensions of all existing and proposed rooms and interior garages.",
+            "On the as-built floor plan, dimension and show the existing walls and the walls proposed to be demolished, rebuilt, and new. Provide a table that tallies the existing and demolished wall lengths in linear feet. Provide a legend identifying existing walls to remain (plain), existing walls to be rebuilt (shaded), walls to be demolished (dashed), and proposed new walls (dark shade).",
+            "Note the finish floor elevation of each level, including finish surface elevations for all decks, patios, terraces, and landings."
+          ]
+        }
+      ]
+    },
+    "elevation-views": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "elevations",
+          "title": "Elevation Views (as-built and proposed)",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires elevation views for the project's type. Required scale 1/4\" = 1'-0\".",
+          "must_show": [
+            "Label height elevations of roofs, floors, plate lines, decks, and railings. Dimension ceiling heights.",
+            "Differentiate new from existing construction using shading or crosshatching, and provide a legend stating what the shading or crosshatch represents.",
+            "Show existing grades as a dashed line and proposed grades as a solid line.",
+            "Illustrate the maximum allowed building envelope with dashed lines [LBMC 25.50.004(d)].",
+            "Include landscape site walls exceeding five feet in height.",
+            "On the as-built elevations, show and dimension the demolition areas using shading or crosshatch, and provide a legend stating what the shading or crosshatch represents."
+          ]
+        }
+      ]
+    },
+    "cross-sections": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "cross_sections",
+          "title": "Cross Sections",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires cross sections for the project's type. Required scale 1/4\" = 1'-0\". Provide a minimum of two perpendicular views through the complete site showing the structure and the lines of existing and proposed grade. Include the maximum allowed building envelope and elevation heights, and site improvements such as walls, terraces, and pools or spas. The City states that existing and proposed building heights are measured from the outside structural walls, including retaining walls when below grade."
+        }
+      ]
+    },
+    "floor-area-calcs": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "floor_area_calculations",
+          "title": "Floor Area Calculations",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires floor area calculations for the project's type. Required scale 1/4\" = 1'-0\". Provide a separate, dimensioned plan using geometric shapes to show the method used to determine the existing and proposed floor areas. Identify living, garage, deck, and storage or mechanical areas, referenced to a table that itemizes and tallies each area. Floor area is calculated from the outside structural wall, including retaining walls when below grade."
+        }
+      ]
+    },
+    "open-space-calcs": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "open_space_calculations",
+          "title": "Open Space Calculations",
+          "required": "conditional",
+          "detail": "the matrix marks no open space calculations for any of the ministerial project types. Required scale 1/4\" = 1'-0\". Trigger stated by the City: \"For projects that are subject to the open space requirements of LBMC 25.50.010, provide a separate dimensioned plan showing open space areas and calculations. Refer to the development standards of the underlying zoning district in Title 25 to determine applicability.\""
+        }
+      ]
+    },
+    "grading-drainage-when-20-cu-yd": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "grading_drainage_plan",
+          "title": "Grading and Drainage Plan",
+          "required": "conditional",
+          "detail": "trigger confirmed by staff: the project proposes grading and its cut and/or fill outside the existing building footprint exceeds 20 cubic yards; grading inside that footprint does not count. The matrix heads its column \"Grading & Drainage (When > 20 Cu. Yd.)\", marks it for the Grading and Hardscape project types, and marks it \"if req.\" for an accessory dwelling unit, an addition under 10 percent, and retaining walls.",
+          "must_show": [
+            "Provide a preliminary grading and drainage plan with the proposed cut and fill area delineated. Provide slope profiles to illustrate the extent of the proposed grading. Show contours for existing conditions and proposed work.",
+            "For project sites containing a mapped significant watercourse or sensitive habitat, show temporary protective barriers beyond the required setback for the protection of the watercourse and sensitive habitat during construction."
+          ]
+        }
+      ]
+    },
+    "landscape-plan": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "landscape_plan",
+          "title": "Landscape Plan",
+          "required": "conditional",
+          "detail": "the matrix marks a landscape plan for the Landscape Improvements project type only. Required scale 1/8\" = 1'-0\". When landscape scope is in play, provide landscape plans including new and existing-to-remain plant material. The Landscape Submittal Checklist (Exhibit G) carries the comprehensive list of requirements. A pool, ground-level lounge deck, patio cover, or lawn shown incidentally does not by itself create landscape scope.",
+          "must_show": [
+            "For R-1 zoned property, provide a landscape open space dimensioned plan [LBMC 25.10.008(O)]."
+          ]
+        }
+      ]
+    },
+    "lighting-plan": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "lighting_plan",
+          "title": "Lighting Plan",
+          "required": "conditional",
+          "detail": "trigger: Exhibit C requires a lighting plan for the project's type. The matrix marks no lighting plan for any of the ministerial project types, so on a Zone Clearance this sheet is rarely in play. Required scale 1/8\" = 1'-0\". Show exterior site lighting, including all lighting fixtures proposed for the exterior of the building (soffit and surface mounted). Include a summary table, keyed to the plan, indicating proposed fixture type, quantity, lumens, and wattage. Include lighting cut sheets for verification against the City's Good Neighbor Outdoor Lighting requirements [LBMC 7.70]."
+        }
+      ]
+    },
+    "fire-dept-site-access-plan": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "fire_department_site_access_plan",
+          "title": "Fire Department Site Access Plan",
+          "required": "conditional",
+          "detail": "Required only when proposed new building-type construction (a new home, detached ADU, or other detached structure) could block existing fire access. Attached ADUs, additions, grading alone, interior work, roof or deck work, and surface replacement never trigger it. Neither VHFHSZ nor another hazard overlay triggers it. A legible, project-identifiable site-access depiction satisfies intake. Completed Fire review and technical adequacy belong to Building/Fire."
+        },
+        {
+          "key": "fire_protection_plan",
+          "title": "Fire Protection Plan",
+          "required": "conditional",
+          "detail": "the current City application package or an identity-qualified official City designation combined with the form's exact VHFHSZ trigger may establish that this sheet applies. Planning checks presence, legibility, and identity only and routes it to Fire/Building."
+        },
+        {
+          "key": "fuel_modification_program",
+          "title": "Fuel modification program",
+          "required": "conditional",
+          "detail": "an identity-qualified official FM designation combined with the current form's exact trigger may establish applicability. Planning checks presence, legibility, and identity only. Fire/Building decides technical content and any Alternative Materials and Methods request; raw overlay truthiness is not the Planning decision rule."
+        }
+      ]
+    },
+    "site-and-right-of-way-imp-plan": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "site_right_of_way_improvement_plan",
+          "title": "Site and Right-of-Way Improvement Plan",
+          "required": "conditional",
+          "detail": "Required scale 1/8\" = 1'-0\". When applicable, provide a topographic survey (including public and private easements) and the improvement overlay."
+        }
+      ]
+    },
+    "additional-site-information": {
+      "source": "City of Laguna Beach Zone Clearance Application, \"Updated July 2026\", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance).",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000",
+      "items": [
+        {
+          "key": "arch_beach_heights_window_exhibit",
+          "title": "Arch Beach Heights neighboring-window exhibit",
+          "required": "conditional",
+          "detail": "trigger stated by the City: the parcel is in the Arch Beach Heights Specific Plan area and the project proposes new windows. Dash in the horizontally projected outline of windows on existing neighboring structures within 10 feet of the proposed new windows on the elevation views [LBMC 25.35.090(B)(3)]."
+        },
+        {
+          "key": "diamond_crestview_staging_plan",
+          "title": "Diamond Crestview Construction Staging Plan and Constraint Analysis",
+          "required": "conditional",
+          "detail": "trigger stated by the City: the Diamond Crestview Specific Plan applies. Refer to p. IV-10 of the Specific Plan."
+        }
+      ]
+    },
+    "staking-plan": {
+      "source": "City of Laguna Beach Residential Review Worksheet (7-14-25), Plan Submittal Requirements",
+      "url": null,
+      "items": [
+        {
+          "key": "staking_plan",
+          "title": "Staking Plan",
+          "required": "conditional",
+          "detail": "when story-pole staking applies, indicate plan scale and provide the following information. Current routing is component-specific: a B(1) first hearing requires constructed/certified staking 21 calendar days before the hearing; ADR requires staking 14 days before its public hearing only after the Director/designee decides it is required; directed restaking is 14 days; Zone Clearance alone requires none. An ADU or local ADU CDP does not inherit staking. Review any deck, access, grading, wall, or other component separately under LBMC 25.05.040(B).",
+          "must_show": [
+            "Show all property lines, building footprint, street names, north arrow and location of story poles. Poles should be placed to clearly represent the proposed building envelope. Roof ridges, eaves, decks, chimneys and other features that would be of significance to other property owners should be staked.",
+            "Note the fixed datum point (same as datum point used on site plan).",
+            "Note the appropriate height elevation of the top of each pole relative to the datum point.",
+            "Provide horizontal dimensions to at least one pole relative to the property lines as a reference point to assure the poles are correctly located on the site.",
+            "Note that story poles shall be strung and connected with ribbon or string to depict the building outline.",
+            "Include a certification table, with the pole number and proposed maximum elevation columns completed, and signature form. See the Information Guide for Staking for the correct format."
+          ]
+        }
+      ]
+    }
+  }
+}

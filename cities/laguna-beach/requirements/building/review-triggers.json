@@ -1,0 +1,113 @@
+{
+  "effective_date": "2026-08-13",
+  "source": "Matrix for Grading and Residential Fire Plan Review Determination, effective 08/13/2026",
+  "note": "Outside reviews the Building Division routes a project to. Each trigger is the City threshold. Decide each fact from the plans, application and site facts; an unknown fact stays unknown.",
+  "triggers": [
+    {
+      "id": "grading",
+      "review": "Grading",
+      "reviewed_by": "Building / Grading",
+      "triggered_when_any": [
+        "Project scope is new building",
+        "Project scope is new detached adu",
+        "Addition area (sq ft) is more than 1000",
+        "Basement excavation",
+        "Retaining wall with cut, back-cut or backfill",
+        "Cut-and-fill operation",
+        "Slope restoration, repair or modification",
+        "Landslide repair or removal",
+        "Tract grading",
+        "Civil drawings in the plan set"
+      ],
+      "source": "Matrix for Grading and Residential Fire Plan Review Determination, effective 08/13/2026"
+    },
+    {
+      "id": "shoring",
+      "review": "Shoring permit",
+      "reviewed_by": "Building",
+      "triggered_when_any": [
+        "Temporary or permanent shoring"
+      ],
+      "source": "When Is a Geotechnical/Soils Report Required?, effective 6/17/2026"
+    },
+    {
+      "id": "residential_fire_review",
+      "review": "Residential Fire",
+      "reviewed_by": "Fire Department",
+      "triggered_when_any": [
+        "Project scope is new building",
+        "Project scope is new detached adu",
+        "Creates a new dwelling unit",
+        "Project scope is new attached adu",
+        "Addition area (sq ft) is more than 1000",
+        "Remodel, alteration or renovation (% of the building) is more than 50",
+        "all of: Landscape or hardscape work; and Fire Hazard Severity Zone is one of very_high",
+        "Fire Department site access plan required"
+      ],
+      "source": "Matrix for Grading and Residential Fire Plan Review Determination, effective 08/13/2026"
+    },
+    {
+      "id": "geotechnical_peer_review",
+      "review": "Geotechnical peer review",
+      "reviewed_by": "Building / City geotechnical consultant",
+      "triggered_when_any": [
+        "Shoring cut depth (ft) is more than 6",
+        "Oceanfront site",
+        "A bluff setback applies to the parcel is more than 0",
+        "Site slope (%) is more than 50",
+        "State liquefaction hazard zone",
+        "Expansive soils",
+        "Mapped major landslide area",
+        "Soil or structure failure",
+        "Non-conventional foundation",
+        "Building Official requires it"
+      ],
+      "source": "When Is a Geotechnical/Soils Report Required?, effective 6/17/2026"
+    },
+    {
+      "id": "water_quality_bmp_site",
+      "review": "Water Quality Management Plan",
+      "reviewed_by": "Public Works / Water Quality",
+      "triggered_when_any": [
+        "Disturbed earth area (sq ft, including landscape and hardscape) is at least 500",
+        "Impervious area (sq ft) is at least 10000",
+        "all of: Impervious area (sq ft) is at least 5000; and Redevelopment project",
+        "all of: Impervious area (sq ft) is at least 5000; and Site slope (%) is at least 25",
+        "all of: Impervious area (sq ft) is at least 2500; and Water Quality Environmentally Sensitive Area"
+      ],
+      "source": "Water Quality Requirements for Land Development, Section C"
+    }
+  ],
+  "required_reviews": [
+    {
+      "id": "planning",
+      "label": "Planning Division Approval",
+      "trigger": "Planning approval applies to the project",
+      "separate_plan_set": false
+    },
+    {
+      "id": "fire",
+      "label": "Fire Department Approval",
+      "trigger_rule": "residential_fire_review",
+      "separate_plan_set": false
+    },
+    {
+      "id": "public_works",
+      "label": "Public Works Department Approval",
+      "trigger": "Work, improvements, grading, drainage, or staging within Public Works jurisdiction",
+      "separate_plan_set": true
+    },
+    {
+      "id": "water_quality",
+      "label": "Water Quality Management Plan Approval",
+      "trigger_rule": "water_quality_bmp_site",
+      "separate_plan_set": true
+    },
+    {
+      "id": "oc_environmental_health",
+      "label": "Orange County Environmental Health Approval",
+      "trigger": "Project includes a food operation or another Environmental Health-regulated use",
+      "separate_plan_set": false
+    }
+  ]
+}

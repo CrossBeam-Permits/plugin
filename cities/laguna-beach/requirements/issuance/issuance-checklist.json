@@ -1,0 +1,271 @@
+{
+  "effective_date": "2026-09-22",
+  "source": "City of Laguna Beach Building Division handout, \"Building Submittal Requirements Prior to Building Permit Issuance\" (current as of September 2026). \"When it applies\" is the City permit-technician criterion for each handout row.",
+  "note": "These items come after Building plan check approval and before the permit issues. They are not part of the application completeness check. Items marked with * on the handout depend on the City record for the parcel.",
+  "groups": [
+    {
+      "id": "required_reviews",
+      "label": "REQUIRED REVIEWS"
+    },
+    {
+      "id": "design_professional",
+      "label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS"
+    },
+    {
+      "id": "other",
+      "label": "OTHER REQUIREMENTS"
+    },
+    {
+      "id": "fees",
+      "label": "FEES AND MISCELLANEOUS"
+    }
+  ],
+  "items": [
+    {
+      "id": "planning_approval",
+      "group": "required_reviews",
+      "group_label": "REQUIRED REVIEWS",
+      "handout_row": 1,
+      "handout_label": "Planning Division Approval",
+      "when_it_applies": "FOR ALL EXTERIOR WORK, ADDITIONS, NEW CONSTRUCTION, COMMERCIAL",
+      "decided_by": "project_scope",
+      "required_review": "planning"
+    },
+    {
+      "id": "fire_approval",
+      "group": "required_reviews",
+      "group_label": "REQUIRED REVIEWS",
+      "handout_row": 2,
+      "handout_label": "Fire Department Approval",
+      "when_it_applies": "COMMERCIAL & MULTI-FAMILY: FIRE SPRINKLERS, FIRE ALARM, FIRE MONITORING, ADDITIONS, CELL SITES WITH BATTERY, COMMERCIAL OR MULTIFAMILY ENERGY SOTRAGE SYSTEMS (ESS)",
+      "decided_by": "project_scope",
+      "required_review": "fire"
+    },
+    {
+      "id": "public_works_approval",
+      "group": "required_reviews",
+      "group_label": "REQUIRED REVIEWS",
+      "handout_row": 3,
+      "handout_label": "Public Works Department Approval (submit separate set of plans)",
+      "when_it_applies": "R.O.W. ONLY",
+      "decided_by": "project_scope",
+      "required_review": "public_works"
+    },
+    {
+      "id": "water_quality_approval",
+      "group": "required_reviews",
+      "group_label": "REQUIRED REVIEWS",
+      "handout_row": 4,
+      "handout_label": "Water Quality Management Plan Approval (submit separate set of plans)",
+      "when_it_applies": "NEW CONSTRUCTION, LANDSCAPE, HARDSCAPE, T.I.s with work done to kitchen",
+      "decided_by": "project_scope",
+      "required_review": "water_quality"
+    },
+    {
+      "id": "health_approval",
+      "group": "required_reviews",
+      "group_label": "REQUIRED REVIEWS",
+      "handout_row": 5,
+      "handout_label": "Health Department Approval Letter (submit to Orange County Environmental Health)",
+      "when_it_applies": "FOOD ESTABLISHMENTS",
+      "decided_by": "project_scope",
+      "required_review": "oc_environmental_health"
+    },
+    {
+      "id": "unpermitted_work_cleared",
+      "group": "required_reviews",
+      "group_label": "REQUIRED REVIEWS",
+      "handout_row": 6,
+      "handout_label": "*Unpermitted work cleared or included in current submittal",
+      "when_it_applies": "IF PARCEL MANAGER SHOWS OPEN CODE CASES RELATED TO BUILDING",
+      "decided_by": "city_record"
+    },
+    {
+      "id": "expired_permits_cleared",
+      "group": "required_reviews",
+      "group_label": "REQUIRED REVIEWS",
+      "handout_row": 7,
+      "handout_label": "*Expired permits cleared or included in current submittal",
+      "when_it_applies": "IF PARCEL MANAGER SHOWS EXPIRED PERMITS",
+      "decided_by": "city_record"
+    },
+    {
+      "id": "architect_signature",
+      "group": "design_professional",
+      "group_label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS",
+      "handout_row": 8,
+      "handout_label": "Architect or Designer signature on each page of plans",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "engineer_signature",
+      "group": "design_professional",
+      "group_label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS",
+      "handout_row": 9,
+      "handout_label": "Engineer signature on each applicable page of plans",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "geotech_engineer_signature",
+      "group": "design_professional",
+      "group_label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS",
+      "handout_row": 10,
+      "handout_label": "Geotechnical Engineer signature on grading and foundation plans",
+      "when_it_applies": "ONLY WHEN SCOPE REQUIRES A GEOTECHNICAL REPORT (SOILS)",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "geotech_report_approved",
+      "group": "design_professional",
+      "group_label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS",
+      "handout_row": 11,
+      "handout_label": "Geotechnical Soils Report approved by the City's consultant (3rd party review)",
+      "when_it_applies": "TBD BY PLANS EXAMINER",
+      "decided_by": "plans_examiner"
+    },
+    {
+      "id": "record_of_survey",
+      "group": "design_professional",
+      "group_label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS",
+      "handout_row": 12,
+      "handout_label": "Record of Survey",
+      "when_it_applies": "IMPROVEMENT WITHIN 3' OF PL, ALL NEW CONSTRUCTION",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "staging_plan_affidavit",
+      "group": "design_professional",
+      "group_label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS",
+      "handout_row": 13,
+      "handout_label": "Construction Staging Plan and Affidavit (includes neighbor notification process)",
+      "when_it_applies": "NEW CONSTRUCTION (ALWAYS); SOME LARGE ADDITIONS (TBD BY PLANS EXAMINER)",
+      "decided_by": "plans_examiner"
+    },
+    {
+      "id": "assessor_set",
+      "group": "design_professional",
+      "group_label": "DESIGN PROFESSIONAL SIGNATURES/DOCUMENTS",
+      "handout_row": 14,
+      "handout_label": "Assessor set of plans (old submittal red line set accepted)",
+      "when_it_applies": "ONLY APPLIES TO PAPER SUBMITTALS",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "scaqmd_demolition",
+      "group": "other",
+      "group_label": "OTHER REQUIREMENTS",
+      "handout_row": 15,
+      "handout_label": "SCAQMD Demolition Notification (submit email receipt of 1403 notification)",
+      "when_it_applies": "DEMOLITIONS, REMODELS (WE KEEP COPY OF 1403 NOTIFICATION)",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "scaqmd_asbestos",
+      "group": "other",
+      "group_label": "OTHER REQUIREMENTS",
+      "handout_row": 16,
+      "handout_label": "SCAQMD Asbestos Notification (submit email receipt of 1403 notification)",
+      "when_it_applies": "DEMOLITIONS, REMODELS (WE KEEP COPY OF 1403 NOTIFICATION)",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "gas_meter_removed",
+      "group": "other",
+      "group_label": "OTHER REQUIREMENTS",
+      "handout_row": 17,
+      "handout_label": "Structure Demolition Only (gas meter removed)",
+      "when_it_applies": "FOR SCOPES THAT INDLUDE DEMO OF BUILDING (LIKE A SFR): NOTIFICATION FROM UTILITY COMPANIES THAT METERS WERE REMOVED",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "electric_meter_removed",
+      "group": "other",
+      "group_label": "OTHER REQUIREMENTS",
+      "handout_row": 18,
+      "handout_label": "Structure Demolition Only (electric meter removed)",
+      "when_it_applies": "FOR SCOPES THAT INDLUDE DEMO OF BUILDING (LIKE A SFR): NOTIFICATION FROM UTILITY COMPANIES THAT METERS WERE REMOVED",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "forward_lateral_sewer_video",
+      "group": "other",
+      "group_label": "OTHER REQUIREMENTS",
+      "handout_row": 19,
+      "handout_label": "Water Quality \"Forward Lateral\" (submit sewer video and payment to the Water Quality Department and provide email confirmation of receipt)",
+      "when_it_applies": "RES & COMM. VALUATION OVER $100K - Scope must include NEW plumbing per City staff. ***SOUTH LAGUNA EXEMPT (5 DIGIT ADDRESSES)*** POOLS ARE EXEMPT***",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "pre_grade_meeting",
+      "group": "other",
+      "group_label": "OTHER REQUIREMENTS",
+      "handout_row": 20,
+      "handout_label": "Schedule Pre-Grade Meeting",
+      "when_it_applies": "NEW CONSTRUCTION (TO BE SCHEDULED AT ISSUANCE)",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "pre_construction_meeting",
+      "group": "other",
+      "group_label": "OTHER REQUIREMENTS",
+      "handout_row": 21,
+      "handout_label": "Schedule Pre-Construction Meeting",
+      "when_it_applies": "NEW CONSTRUCTION (TO BE SCHEDULED AT ISSUANCE)",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "school_fees",
+      "group": "fees",
+      "group_label": "FEES AND MISCELLANEOUS",
+      "handout_row": 22,
+      "handout_label": "Laguna Beach Unified School District School Fee Receipt",
+      "when_it_applies": "ALL NEW CONSTRUCTION(NEW SFR, NEW COMM BLDG, ETC); ADDITIONS OVER 500 SF; ADUs OVER 750 SF",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "mep_counts",
+      "group": "fees",
+      "group_label": "FEES AND MISCELLANEOUS",
+      "handout_row": 23,
+      "handout_label": "Mechanical, electrical, plumbing (separate counts for project for fee calculation purposes)",
+      "when_it_applies": "ADDITIONS, REMODELS, NEW CONSTRUCTION, T.I.s",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "business_license",
+      "group": "fees",
+      "group_label": "FEES AND MISCELLANEOUS",
+      "handout_row": 24,
+      "handout_label": "City Business License Required (general contractor and all subcontractors on the project) *Must be documented on City form and submitted to receive Final Inspection*",
+      "when_it_applies": "REQUIRED FROM ALL CONTRACTORS",
+      "decided_by": "project_scope"
+    },
+    {
+      "id": "green_halo",
+      "group": "fees",
+      "group_label": "FEES AND MISCELLANEOUS",
+      "handout_row": 25,
+      "handout_label": "Green Halo Program sign up (Public Works Construction & Demolition Recycling Waste Management Plan) *separate check required",
+      "when_it_applies": "ALL NEW CONSTRUCTIONS, ADDITIONS, REMODELS, REROOFS (EXCEPT WHEN FLAT ROOFS) ***ALL OTHER SCOPES, TBD BY CITY STAFF IN PW***",
+      "decided_by": "public_works"
+    },
+    {
+      "id": "code_citations_paid",
+      "group": "fees",
+      "group_label": "FEES AND MISCELLANEOUS",
+      "handout_row": 27,
+      "handout_label": "Code Enforcement Citations Paid *submit copies of receipt",
+      "when_it_applies": "IF PARCEL MANAGER SHOWS OPEN CODE CASES RELATED TO BUILDING",
+      "decided_by": "city_record"
+    },
+    {
+      "id": "road_development_fees",
+      "group": "fees",
+      "group_label": "FEES AND MISCELLANEOUS",
+      "handout_row": 28,
+      "handout_label": "Road Development Fees: CARITS and Moulton Parkway",
+      "when_it_applies": "NEW CONSTRUCTION & ADDITIONS OVER 500 SF; ADUs OVER 750 SF. Check address on OC Road Fees Map to determine if job site is in the CARITS or Moulton fee area. NON-PROFITS ARE EXEMPT (only applies if they are exempt from property taxes)",
+      "decided_by": "project_scope"
+    }
+  ]
+}
