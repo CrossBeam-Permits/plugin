@@ -85,7 +85,7 @@ For each restaurant TI, document:
 
 ## Existing Building Code Coordination
 
-Where retrofit is required, the state CEBC (California Existing Building Code) governs the construction work itself. See `existing-building.md` for alteration levels and hazard category tables. LBMC Title 14/15 is the local trigger; CEBC is the state implementation rulebook for how to actually execute the work.
+Where retrofit is required, the state CEBC (California Existing Building Code) governs the construction work itself. See the California Restaurant Tenant Improvement rules (Existing Building Code — Alterations and Change of Occupancy), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`) for alteration levels and hazard category tables. LBMC Title 14/15 is the local trigger; CEBC is the state implementation rulebook for how to actually execute the work.
 
 ---
 

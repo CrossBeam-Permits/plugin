@@ -9,7 +9,7 @@ key_code_sections: "Gov. Code §65915 (Density Bonus); Gov. Code §65913.4 (SB 3
 
 Use when an applicant invokes any state housing law to override Laguna's local restrictions. State preemption frequently overrides Laguna's local rules — **including the 36 ft citywide height cap, R-3 density limits, multi-family parking ratios, and DRB discretion** — for qualifying projects.
 
-This reference covers the **Laguna-specific interaction** with state law. For the state law mechanics themselves, load `density-zoning.md` and `permit-process.md`.
+This reference covers the **Laguna-specific interaction** with state law. For the state law mechanics themselves, load the California Multi-Unit Residential rules (Density & Zoning — State Housing Laws for Multi-Unit Residential Projects), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`) and the California Multi-Unit Residential rules (Permit Process — Plan Review, Streamlining, CEQA, Inspections, and Certificate of Occupancy), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`).
 
 ## Quick-Reference Preemption Matrix
 

@@ -65,7 +65,7 @@ AB 592 (effective 2024) made outdoor dining authorization permanent and limits c
 - Cities may NOT impose moratoria solely targeted at outdoor dining or require restaurants to revert to pre-2020 footprints.
 - ABC license expansions associated with COVID-era authorizations may be made permanent per BPC Sec. 25750.5.
 
-The state baseline in `outdoor-dining.md` (`outdoor-dining.md` in the state skill) carries the substantive AB 592 rules. This file only documents Laguna-specific local procedure.
+The state baseline in the California Restaurant Tenant Improvement rules (AB 592 — Outdoor Dining and Open-Front Restaurant Operations), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`) (the California Restaurant Tenant Improvement rules (AB 592 — Outdoor Dining and Open-Front Restaurant Operations), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`) in the state skill) carries the substantive AB 592 rules. This file only documents Laguna-specific local procedure.
 
 ---
 
