@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | eTRAKiT |
 | Permit portal | https://elgr-trk.aspgov.com/etrakit/ |
-| Fire agency | [object Object] |
+| Fire agency | Cosumnes Community Services District (CCSD) Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

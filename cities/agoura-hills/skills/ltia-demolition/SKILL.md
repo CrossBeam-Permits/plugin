@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | MGO (MyGovernmentOnline) |
 | Permit portal | https://www.agourahillscity.org/department/community-development/building-and-safety/permit-administration/online-permitting-mgo |
-| Fire agency | [object Object] |
+| Fire agency | Los Angeles County Fire Department (LACFD) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

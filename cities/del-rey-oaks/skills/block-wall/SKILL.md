@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | Not confirmed — verify with City |
-| Fire agency | [object Object] |
+| Fire agency | Seaside Bureau of Fire Prevention (City of Seaside) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

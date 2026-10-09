@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://www.sunnyvale.ca.gov/business-and-development/planning-and-building/permit-center/online-services-help |
-| Fire agency | [object Object] |
+| Fire agency | Sunnyvale Department of Public Safety (DPS) — Fire Prevention Services |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | CTS City |
 | Permit portal | https://irwindale.cts.city/ |
-| Fire agency | [object Object] |
+| Fire agency | Los Angeles County Fire Department (LACoFD) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

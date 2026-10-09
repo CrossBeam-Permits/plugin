@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | SmartGov |
 | Permit portal | https://ci-delano-ca.smartgovcommunity.com/public/home |
-| Fire agency | [object Object] |
+| Fire agency | Kern County Fire Department (KCFD) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

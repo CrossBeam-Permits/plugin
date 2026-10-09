@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | iWorQ |
 | Permit portal | https://pacificgrove.portal.iworq.net/ |
-| Fire agency | [object Object] |
+| Fire agency | Monterey Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

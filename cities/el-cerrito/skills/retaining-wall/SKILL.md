@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | eTRAKiT (ASP GovTech) |
 | Permit portal | https://elcr-trk.aspgov.com/eTRAKiT/ |
-| Fire agency | [object Object] |
+| Fire agency | El Cerrito Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

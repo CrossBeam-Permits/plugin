@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | SHOP (EnerGov) |
 | Permit portal | https://css.moorparkca.gov/EnerGov_Prod/SelfService |
-| Fire agency | [object Object] |
+| Fire agency | Ventura County Fire Department (VCFD) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

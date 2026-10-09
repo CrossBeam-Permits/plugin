@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://scottsvalleyca.portal.opengov.com/ |
-| Fire agency | [object Object] |
+| Fire agency | Scotts Valley Fire Protection District |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

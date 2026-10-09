@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Accela Citizen Access |
 | Permit portal | https://aca-prod.accela.com/WC/Default.aspx |
-| Fire agency | [object Object] |
+| Fire agency | Contra Costa County Fire Protection District (Con Fire) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://public.mygov.us/wasco_ca/templates?module=pi |
-| Fire agency | [object Object] |
+| Fire agency | Kern County Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://www.ci.dunsmuir.ca.us/building-department |
-| Fire agency | [object Object] |
+| Fire agency | Dunsmuir-Castella Fire Department |
 | Code edition | Dunsmuir Municipal Code (DMC) |
 | Code prefix | DMC |
 

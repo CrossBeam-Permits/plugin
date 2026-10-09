@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://aca-prod.accela.com/MONTEREYPARK/Default.aspx |
-| Fire agency | [object Object] |
+| Fire agency | Monterey Park Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | eTRAKiT |
 | Permit portal | https://comc.csqrcloud.com/community-etrakit/ |
-| Fire agency | [object Object] |
+| Fire agency | Los Angeles County Fire Department (LACFD) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://www.torranceca.gov/our-city/community-development/online-permit-portal/building-and-safety |
-| Fire agency | [object Object] |
+| Fire agency | Torrance Fire Department — Community Risk Reduction Division |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

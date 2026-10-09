@@ -28,7 +28,7 @@ Both modes share the same rules. The difference is direction of travel — build
 | Permit system | Not confirmed — verify with City |
 | Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/AL4074 |
-| Fire agency | [object Object] |
+| Fire agency | Albany Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

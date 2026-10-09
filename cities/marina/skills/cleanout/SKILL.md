@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | CitizenServe |
 | Permit portal | https://www2.citizenserve.com/Portal/?installationid=272 |
-| Fire agency | [object Object] |
+| Fire agency | Marina Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 

@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | CSS (Civic Solutions System) |
 | Permit portal | https://sanramon.ca.gov/csspermits |
-| Fire agency | [object Object] |
+| Fire agency | San Ramon Valley Fire Protection District (SRVFPD) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 
