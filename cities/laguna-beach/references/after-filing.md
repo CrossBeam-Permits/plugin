@@ -63,12 +63,14 @@ The catalog descriptions for types 183, 186, 187, 188 and 214 say: "PLEASE BE AD
 When the City says a permit is ready to issue:
 
 - Record `issuance.status: "ready_for_issuance"` with the date and the City's words.
-- Prepare a counter handoff: record number, work class, what to bring. The City issues to an owner-builder or a City-licensed contractor, and businesses working in the city need a Laguna Beach business licence (`portal-account.md` source 1, line 169). Owner-builder status and licences are applicant declarations; never fill them in.
+- Prepare a counter handoff: record number, work class, what to bring. The City issues to an owner-builder or a City-licensed contractor, and businesses working in the city need a Laguna Beach business licence (`portal-account.md` source 2). Owner-builder status and licences are applicant declarations; never fill them in.
 - The Building counter is at 505 Forest Avenue. The City publishes more than one set of counter hours; tell the user to check the City's current hours before going. Appointment booking is its own approval (`online-submission.md` P8).
 - Mark `issued` only when the user has the issued permit or the portal shows it issued, and add the permit document to `city_documents` if they share it.
 
 ## Sources
 
 - City success messages, catalog descriptions, Revision instructions, and upload categories: City public portal API read 2026-10-09, pinned in `assets/portal-maps/portal-snapshot.json` and `v2-portal-map.json`.
-- Fees/Reviews/Attachments visible only to a contact on the record; public summary and workflow steps; counter address; owner-builder or City-licensed contractor and business licence at issuance; more than one published set of hours: CrossBeam private `skills/cities/laguna-beach/website/references/how-to-submit.md` lines 16, 129, 169, 176 and `data/cities/laguna-beach/portal/ui-walk/login-wall.md` (captured 2026-08-10).
+- Public summary and workflow steps, and Fees/Reviews/Attachments visible only to a contact on the record: City portal record search, https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/search, read 2026-08-10.
+- In-person issuance at the Building counter, 505 Forest Avenue: the catalog descriptions above, and `skills/city-reference/references/contacts-hours.md`, which also records the two published sets of counter hours.
+- Owner-builder or City-licensed contractor and business licence at issuance: https://www.lagunabeachcity.net/government/departments/community-development/building-permits, read 2026-07-08.
 - Zone Clearance deemed-received condition: `references/planning-routing.md`, "Channel correction verified 2026-09-08".

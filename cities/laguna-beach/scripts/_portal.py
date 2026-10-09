@@ -283,8 +283,10 @@ def pull_snapshot(
         raw_types = (setup.get("Result") or {}).get(list_key) or []
         raw_type = next(
             (item for item in raw_types if str(item.get("PermitTypeID") or item.get("PlanTypeID")).lower() == str(entry["typeId"]).lower()),
-            raw_types[0] if raw_types else {},
+            None,
         )
+        if raw_type is None:
+            raise RuntimeError(f"setup for {key} does not list type {entry['typeId']}; the API shape changed")
         work_classes = sorted((_work_class(item) for item in raw_type.get("WorkClassTemplates") or []), key=lambda item: str(item["name"]))
         types[key] = {
             "module": entry["module"],

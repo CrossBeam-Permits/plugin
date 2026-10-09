@@ -20,10 +20,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from _lib import load_json  # noqa: E402
+from _lib import load_json, plugin_root  # noqa: E402
 from _portal import attachments_for, contacts_for, record_type  # noqa: E402
 
-PLUGIN_ROOT = Path(__file__).resolve().parent.parent
+PLUGIN_ROOT = plugin_root()
 
 
 def main() -> int:

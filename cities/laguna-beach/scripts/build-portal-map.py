@@ -14,10 +14,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from _lib import load_json, sha256_file, write_json  # noqa: E402
+from _lib import load_json, plugin_root, sha256_file, write_json  # noqa: E402
 from _portal import compile_map  # noqa: E402
 
-PLUGIN_ROOT = Path(__file__).resolve().parent.parent
+PLUGIN_ROOT = plugin_root()
 
 
 def relative_label(path: Path) -> str:

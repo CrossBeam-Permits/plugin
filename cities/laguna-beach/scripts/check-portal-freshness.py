@@ -28,7 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from _lib import load_json, sha256_file, write_json  # noqa: E402
+from _lib import load_json, plugin_root, sha256_file, write_json  # noqa: E402
 from _portal import (  # noqa: E402
     MAP_SCHEMA_VERSION,
     PortalClient,
@@ -37,7 +37,7 @@ from _portal import (  # noqa: E402
     pull_snapshot,
 )
 
-PLUGIN_ROOT = Path(__file__).resolve().parent.parent
+PLUGIN_ROOT = plugin_root()
 DEFAULT_MAP = PLUGIN_ROOT / "assets/portal-maps/v2-portal-map.json"
 
 

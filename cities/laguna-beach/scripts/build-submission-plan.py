@@ -19,11 +19,11 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from _lib import confirmed_fact_value, fact_index, load_json, sha256_file, utc_now, write_json  # noqa: E402
+from _lib import confirmed_fact_value, fact_index, load_json, plugin_root, sha256_file, utc_now, write_json  # noqa: E402
 from _portal import MAP_SCHEMA_VERSION, attachments_for, contacts_for, layout_questions, record_type, work_class  # noqa: E402
 from _schema import validate_instance  # noqa: E402
 
-PLUGIN_ROOT = Path(__file__).resolve().parent.parent
+PLUGIN_ROOT = plugin_root()
 
 ROLE_FACTS = {
     "Applicant": "applicant.name",

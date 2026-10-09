@@ -169,7 +169,7 @@ def synthetic_field_map(pdf: Path) -> dict:
     }
 
 
-# ---- Portal map v2 (owned by the portal worker; keep portal edits inside this block) ----
+# Portal map v2
 PORTAL_MAP = ROOT / "assets/portal-maps/v2-portal-map.json"
 PORTAL_SNAPSHOT = ROOT / "assets/portal-maps/portal-snapshot.json"
 # The reasoned, user-confirmed work class for the synthetic round-trip record.
@@ -211,7 +211,6 @@ def portal_args(temp: Path, record_id: str = "residential") -> list[str]:
 
 def check_portal_map_v2() -> None:
     run(str(ROOT / "evals/portal/run-portal-map-evals.py"))
-# ---- end portal map v2 block ----
 
 
 def validate(schema_name: str, document: dict) -> None:
@@ -547,11 +546,9 @@ def check_form_and_transaction_round_trip(temp: Path) -> None:
     validate("submission-receipt.schema.json", receipt_document)
 
 
-# --- Form source, signing, and map round-trip evals (evals/forms) -------------------
-# Kept in its own runner; this block only calls it so a failure stops the release.
+# Form source, signing, and map round-trip evals live in evals/forms; a failure stops the release.
 def check_form_evals() -> None:
     run(str(ROOT / "evals/forms/run-form-evals.py"))
-# --- end form evals block -------------------------------------------------------------
 
 
 def main() -> int:
