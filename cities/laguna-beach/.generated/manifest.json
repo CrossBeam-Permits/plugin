@@ -7,7 +7,7 @@
     "version": "1.1.0",
     "files": {
       "scripts/plugin-publish/laguna/check-drift.mjs": "56320d513d090c436e1db12dfe3b9bf9a9db86dbe456c3f6762510848d3a7b6b",
-      "scripts/plugin-publish/laguna/index.mjs": "1bf455934430cedb6cce90cdb5f92401e85a0bfb8a2d8f1e578ada62c2e47819",
+      "scripts/plugin-publish/laguna/index.mjs": "9132738d1b7afe448f9a78b6efe59e03069eb977313cd6e2b5f0557640cc6bd6",
       "scripts/plugin-publish/laguna/lib.mjs": "93247b578d5a580dc1bfd443e06f22603749b72012f4d57d4cf6d1f533806f68",
       "scripts/plugin-publish/laguna/modules/fees.mjs": "960f398036fa19f2acf4cf30ea8b0b90385fabeea756ee4c5265be3291ae774c",
       "scripts/plugin-publish/laguna/modules/requirements-sanitize.mjs": "238232210d4c13b29ab71508f89f9f66d708f2d58ba6236728ccec6d5ac96364",
@@ -19,7 +19,7 @@
     }
   },
   "privateRepo": {
-    "commit": "8e25a1c3fc3dfe2f51ad45215c9c705177476db6",
+    "commit": "94b0a27d49f6223feda3a87773505d2e4453f910",
     "dirty": false
   },
   "options": {
@@ -38,7 +38,6 @@
     }
   },
   "inputs": {
-    "9c58d5f12937b97b2c01b187fd93e21e1b260701fa2670a8d034b13dd3cbdd8b": "1c5c9ed774c3ef0c1632af70739a3999cfcbcc978244d938f8b86bdb464c2f3a",
     "285f7e819af6602bf688e7d394704d37e9739dbf353acfd41acc69f4e7112723": "44ca8e5856b948ec78e71026d4b4a134730d19dff7bd26b041b2045b59cf3ea8",
     "ba418a844d8f0cf6c05e2e98406c58548c4b4e07b5df7d0c19648c2f12e83e2e": "536903750a14eeadb0f005d6af65269d8afa48b9e59736e1a1b1835e23904df0",
     "d21bda211896d61a238f725805b16526926563a09ecebe6410daaeb62628b531": "59851ec927c8a582199bc1720e8691bd1cdd4fe424f8853397c59d7ba9a61db8",
