@@ -66,6 +66,24 @@ Content:
 - The Sign Permit Application and the SB 9 application sections have no form fields.
   Their maps list `manual_sections`; `fill-form.py` prints them, and refuses a map with
   no mappings instead of writing an unchanged copy.
+- Conditional Use Permit re-pinned (2026-10-10). The City replaced document 26463 in
+  place: the new link (ticks 639252307038230000) and the old ticks both serve a 47-page,
+  178-field file printed "Updated August 2026" (sha256 `33b8e97b…`). Every printed CUP fee
+  fell, Exhibit A lost the fillable deposit agreement, and the Exhibit I affidavit gained
+  an owner signature. The July 2026 file (`4855c5cf…`) moves to `retired_forms`; the map
+  is now 2.0.0 (applicant and representative rows share field names in the new file).
+- Pinned three more Planning forms with semantic maps and round trips: Planning Commission
+  Concept Review (26904), the Starter Home Revitalization Act application (SB 684 /
+  SB 1123, 26902; its application sections have no fields, so the map lists
+  `manual_sections` and fills the page 41 project summary tables), and General Plan
+  Amendment (27396; the Application Type check boxes are a manual section).
+- `references/planning-routing.md` gives a sourced filing route for the Temporary Use
+  Permit, Revocable Encroachment Permit, Lot Line Adjustment, SB 9, Sign Permit, Concept
+  Review, SB 684 and General Plan Amendment forms, from the forms' own instructions and a
+  2026-10-10 read of public portal record types 114, 116, 197 and 315. The General Plan
+  Amendment record type is not published; the route says to ask Planning.
+- `form-source-policy.md`: the same document id and ticks do not prove the same file; only
+  the checksum decides.
 
 ## 0.4.0 (2026-09-08, PR #6)
 

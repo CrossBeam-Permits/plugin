@@ -1,0 +1,1039 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "general-plan-amendment-application",
+  "field_map_version": "1.0.0",
+  "generated_at": "2026-10-10T08:05:55.044293Z",
+  "source_sha256": "55a4fcd64512af5959b5d274eb9c52c523ccc58e109d12fd17666729fb839a0b",
+  "field_tree_sha256": "4ff4b2f76b54e3758e264c958ecf84200cfe5d490bf564774a11ea899852881c",
+  "canonical_mappings": [
+    {
+      "fact_id": "site.address",
+      "pdf_fields": [
+        "Text1"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.apn",
+      "pdf_fields": [
+        "Text2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.company_name",
+      "pdf_fields": [
+        "Text3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.contact_name",
+      "pdf_fields": [
+        "Text4"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.mailing_address",
+      "pdf_fields": [
+        "Text5"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.city_state_zip",
+      "pdf_fields": [
+        "Text6"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.phone",
+      "pdf_fields": [
+        "Text7"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.email",
+      "pdf_fields": [
+        "Text8"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.company_name",
+      "pdf_fields": [
+        "Text9"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.contact_name",
+      "pdf_fields": [
+        "Text10"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.mailing_address",
+      "pdf_fields": [
+        "Text11"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.city_state_zip",
+      "pdf_fields": [
+        "Text12"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.phone",
+      "pdf_fields": [
+        "Text13"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.email",
+      "pdf_fields": [
+        "Text14"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.company_name",
+      "pdf_fields": [
+        "Text15"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.contact_name",
+      "pdf_fields": [
+        "Text16"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.mailing_address",
+      "pdf_fields": [
+        "Text17"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.city_state_zip",
+      "pdf_fields": [
+        "Text18"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_fields": [
+        "Text19"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_fields": [
+        "Text20"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "general_plan_amendment.proposed_amendment",
+      "pdf_fields": [
+        "Text21"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    }
+  ],
+  "review_fields": [
+    "Address 1",
+    "Address 2",
+    "Address 3",
+    "Address 4",
+    "Authorized Signer Name (if applicable) 1",
+    "Authorized Signer Name (if applicable) 2",
+    "Date Signed by Owner",
+    "Email Address",
+    "Email Address 2",
+    "Owner / Entity Name 1",
+    "Owner Name",
+    "Owner Signature",
+    "Owner/ Entity Name 2",
+    "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative",
+    "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
+    "Site Address"
+  ],
+  "fields": [
+    {
+      "name": "Address 1",
+      "type": "/Tx",
+      "tooltip": "Address 1",
+      "flags": 0
+    },
+    {
+      "name": "Address 2",
+      "type": "/Tx",
+      "tooltip": " Address 2",
+      "flags": 0
+    },
+    {
+      "name": "Address 3",
+      "type": "/Tx",
+      "tooltip": "Address 3",
+      "flags": 0
+    },
+    {
+      "name": "Address 4",
+      "type": "/Tx",
+      "tooltip": "Address 4",
+      "flags": 0
+    },
+    {
+      "name": "Authorized Signer Name (if applicable) 1",
+      "type": "/Tx",
+      "tooltip": "Authorized Signer Name (if applicable) 1",
+      "flags": 0
+    },
+    {
+      "name": "Authorized Signer Name (if applicable) 2",
+      "type": "/Tx",
+      "tooltip": "Authorized Signer Name (if applicable) 2",
+      "flags": 0
+    },
+    {
+      "name": "Date Signed by Owner",
+      "type": "/Tx",
+      "tooltip": "Date Signed by Owner",
+      "flags": 0
+    },
+    {
+      "name": "Email Address",
+      "type": "/Tx",
+      "tooltip": "Email",
+      "flags": 0
+    },
+    {
+      "name": "Email Address 2",
+      "type": "/Tx",
+      "tooltip": "Email Address 2",
+      "flags": 0
+    },
+    {
+      "name": "Owner / Entity Name 1",
+      "type": "/Tx",
+      "tooltip": " Owner / Entity Name 1",
+      "flags": 0
+    },
+    {
+      "name": "Owner Name",
+      "type": "/Tx",
+      "tooltip": "Owner Name",
+      "flags": 0
+    },
+    {
+      "name": "Owner Signature",
+      "type": "/Sig",
+      "tooltip": "Owner Signature",
+      "flags": 0
+    },
+    {
+      "name": "Owner/ Entity Name 2",
+      "type": "/Tx",
+      "tooltip": "Owner/ Entity Name 2",
+      "flags": 0
+    },
+    {
+      "name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative",
+      "type": null,
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
+      "type": "/Tx",
+      "tooltip": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages.",
+      "flags": 0
+    },
+    {
+      "name": "Site Address",
+      "type": "/Tx",
+      "tooltip": "Site Address",
+      "flags": 0
+    },
+    {
+      "name": "Text1",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text10",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text11",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text12",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text13",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text14",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text15",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text16",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text17",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text18",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text19",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text2",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text20",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text21",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text3",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text4",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text5",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text6",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text7",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text8",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Text9",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 3,
+      "field_name": "Text1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        172.801,
+        669.854,
+        304.473,
+        691.854
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        358.693,
+        669.854,
+        508.693,
+        691.854
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        180.001,
+        546.144,
+        330.001,
+        568.144
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        423.493,
+        546.144,
+        573.493,
+        568.144
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text5",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        178.037,
+        529.126,
+        328.037,
+        551.126
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text6",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        419.565,
+        528.472,
+        569.565,
+        550.472
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text7",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        133.528,
+        512.108,
+        283.528,
+        534.108
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text8",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        421.529,
+        512.108,
+        571.529,
+        534.108
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text9",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        180.001,
+        461.708,
+        330.001,
+        483.708
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text10",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        423.493,
+        461.053,
+        573.493,
+        483.053
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text11",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        176.728,
+        443.38,
+        326.728,
+        465.38
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text12",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        418.256,
+        444.035,
+        568.256,
+        466.035
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text13",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        134.182,
+        426.362,
+        284.182,
+        448.362
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text14",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        420.875,
+        425.708,
+        570.875,
+        447.708
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text15",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        178.692,
+        375.962,
+        328.692,
+        397.962
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text16",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        423.493,
+        375.307,
+        573.493,
+        397.307
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text17",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        177.383,
+        360.253,
+        327.383,
+        382.253
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text18",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        419.565,
+        358.289,
+        569.565,
+        380.289
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text19",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        134.837,
+        342.58,
+        284.837,
+        364.58
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text20",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        420.875,
+        342.58,
+        570.875,
+        364.58
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Text21",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        55.6366,
+        212.325,
+        559.093,
+        293.234
+      ]
+    },
+    {
+      "page": 7,
+      "field_name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        632.4,
+        348.0,
+        646.8
+      ]
+    },
+    {
+      "page": 7,
+      "field_name": "Site Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        276.12,
+        471.24,
+        540.12,
+        485.64
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Address 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.127,
+        632.219,
+        479.127,
+        646.619
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.562,
+        600.415,
+        479.781,
+        614.815
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Owner / Entity Name 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.129,
+        664.017,
+        479.129,
+        678.417
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Address 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.126,
+        616.709,
+        479.126,
+        631.109
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Authorized Signer Name (if applicable) 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        310.784,
+        648.128,
+        478.784,
+        662.528
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Owner/ Entity Name 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.91,
+        511.762,
+        481.547,
+        528.526
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Authorized Signer Name (if applicable) 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.856,
+        494.308,
+        481.493,
+        511.071
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Address 3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.802,
+        477.999,
+        481.438,
+        494.762
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Address 4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.238,
+        463.235,
+        480.875,
+        479.999
+      ]
+    },
+    {
+      "page": 13,
+      "field_name": "Email Address 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        311.82,
+        447.489,
+        481.456,
+        464.253
+      ]
+    },
+    {
+      "page": 14,
+      "field_name": "Date Signed by Owner",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        120.535,
+        322.287,
+        240.535,
+        351.087
+      ]
+    },
+    {
+      "page": 14,
+      "field_name": "Owner Signature",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        111.273,
+        385.598,
+        261.273,
+        417.598
+      ]
+    },
+    {
+      "page": 14,
+      "field_name": "Owner Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": false,
+      "normal_appearance_states": [],
+      "rect": [
+        113.673,
+        421.78,
+        230.291,
+        443.78
+      ]
+    }
+  ],
+  "manual_sections": [
+    {
+      "pages": [
+        3
+      ],
+      "title": "Application Type check boxes (Initiation of Amendment / General Plan Amendment)"
+    }
+  ],
+  "review_widgets": []
+}

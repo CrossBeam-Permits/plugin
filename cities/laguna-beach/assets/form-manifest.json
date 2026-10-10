@@ -446,6 +446,123 @@
         "id_only_check": "/home/showpublisheddocument/26467 without ticks served the same bytes, so the City has not reissued this document under the same id.",
         "compared_with_prior": "Same document id, ticks, byte count, page count, and extracted text as the 2026-08-14 link inventory."
       }
+    },
+    {
+      "id": "planning-commission-concept-review-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Planning Commission Concept Review Application",
+      "download_name": "PC Concept Review 81926.pdf",
+      "cache_name": "planning-commission-concept-review-application.pdf",
+      "document_id": "26904",
+      "ticks": "639227554954730000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26904/639227554954730000",
+      "printed_revision": null,
+      "sha256": "b06764453b6cfca26acbdc0813d129f1bb022f22dd148ff623e1d8d1e9b4a5da",
+      "bytes": 177572,
+      "pages": 2,
+      "canonical_fields": 45,
+      "widgets": 45,
+      "field_tree_sha256": "54b868f6ddf1231283610e265051090fc055a628e533a44a1ec5c540a2bd9810",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:39Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Wed, 19 Aug 2026 15:58:15 GMT",
+        "pdf_creation_date": "2021-01-12T23:25:31-08:00",
+        "pdf_mod_date": "2026-08-19T14:00:37-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Planning Commission Concept Review",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26904 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Not in the 2026-08-14 link inventory; the page added it by 2026-09-29. Two pages: property and owner/applicant information, the concept submittal checklist, and the affidavit with applicant and owner signatures. No printed revision line."
+      }
+    },
+    {
+      "id": "sb-684-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Starter Home Revitalization Act (SHRA) Application (SB 684 / SB 1123)",
+      "download_name": "SHRA Application  FINAL 81926.pdf",
+      "cache_name": "sb-684-application.pdf",
+      "document_id": "26902",
+      "ticks": "639227554030430000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26902/639227554030430000",
+      "printed_revision": "Updated August 2026",
+      "sha256": "9f0c7f5457e3f2f4c9cfcfb0f09e4674245d57d4977f7a1d43655f7d8ab3f75f",
+      "bytes": 13264543,
+      "pages": 133,
+      "canonical_fields": 206,
+      "widgets": 229,
+      "field_tree_sha256": "c52a0e80acdd1fdc61b0cf7efc35b24dc04e8330ea849de6da710355010b8de6",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:42Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Wed, 19 Aug 2026 15:56:43 GMT",
+        "pdf_creation_date": "2026-08-13T15:20:31-07:00",
+        "pdf_mod_date": "2026-08-19T15:15:57-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Start Home Revitalization Act (SB684)",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26902 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Not in the 2026-08-14 link inventory; the page added it by 2026-09-29 (link text \"Start Home Revitalization Act (SB684)\"). 133 pages: project information, the SHRA subdivision and housing development submittal requirements, the City's reference checklists (Appendix A), exhibits, and a bundled Coastal Development Permit application package. Its application sections have no form fields."
+      }
+    },
+    {
+      "id": "general-plan-amendment-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "General Plan Amendment Application",
+      "download_name": "General Plan Amendment Application_Sept 2026.pdf",
+      "cache_name": "general-plan-amendment-application.pdf",
+      "document_id": "27396",
+      "ticks": "639263715770130000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/27396/639263715770130000",
+      "printed_revision": "September 2026",
+      "sha256": "55a4fcd64512af5959b5d274eb9c52c523ccc58e109d12fd17666729fb839a0b",
+      "bytes": 635777,
+      "pages": 17,
+      "canonical_fields": 37,
+      "widgets": 36,
+      "field_tree_sha256": "4ff4b2f76b54e3758e264c958ecf84200cfe5d490bf564774a11ea899852881c",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:44Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Wed, 30 Sep 2026 12:26:17 GMT",
+        "pdf_creation_date": "2026-09-29T11:17:20-07:00",
+        "pdf_mod_date": "2026-09-29T11:21:47-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "General Plan Amendment",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/27396 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Not in the 2026-08-14 link inventory; the page added it by 2026-10-09. 17 pages: the two-stage process (initiation by the City Council, then the application), the application form, submittal requirements, Exhibit A Advance Deposit and Reimbursement Agreement, Exhibit B Owner Affidavit, Exhibit C Government Code 65940 checklist."
+      }
     }
   ],
   "status_values": {

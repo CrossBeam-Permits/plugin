@@ -96,6 +96,54 @@ If commercial Planning is implicated, declare the V1 residential checklist unsup
 and obtain an authoritative commercial checklist. Never adapt the residential list.
 Read `form-coverage.md` before promising form preparation for any other application type.
 
+## Filing routes for the other pinned Planning forms (sourced 2026-10-10)
+
+Every form below says, on its first page, that new applications go through the Public
+Permit Portal, online or on a City computer at City Hall, with a hard-copy submittal only
+as an accommodation requested from Community Development at (949) 497-0713. None of them
+names a portal record type, and the portal has no record type for any of them. Route each
+from the evidence below. Choosing which form applies is a judgment over the project facts;
+never pick it from a keyword or a filename.
+
+What the portal itself says (public GETs of the EnerGov SelfService API, 2026-10-10; the
+type 114 entries match `assets/portal-maps/v2-portal-map.json`):
+
+- **Type 114, Residential Planning Entitlements, Zoning Plan Check work class.** Its
+  attachment instruction: "Development applications submitted to the Planning Division
+  must identify the specific entitlement or approval requested. Please complete and submit
+  the applicable forms for each requested entitlement or approval." Required uploads:
+  one `Application` PDF and one `Plans` PDF; optional `Miscellaneous`, `Reports`,
+  `Technical Studies`. It has no slot named for any form below, so every applicable form
+  goes into the one `Application` PDF.
+- **Type 116, Commercial Planning Entitlements, Zoning Plan Check - Commercial work
+  class.** Same instruction, plus optional slots named for these forms: `Temporary Uses`
+  ("Provide a full description of the temporary activities ..."), `Revocable Encroachment
+  Permit Application` ("Required when a project proposes private encroachments into an
+  otherwise unimproved, unused public right-of-way ..."), `Lot Line Adjustment`, `Sign
+  Plans`, `Planning Commission Concept Review Application` ("Required if a concept review
+  hearing is recommended by Planning staff."), and `Tentative Map`. Type 116 is outside
+  portal map v2 and commercial Planning is unsupported in V1: name the route and hand off.
+- **Type 197, Sign Permit (PERMITS module, Building).** Work classes Blade,
+  Miscellaneous, Monument, Sign, and Wall. The required upload is `Permit Application`,
+  described as "Building Application"; the instruction links the Building Applications &
+  Forms page; a permit technician screens it; final issuance is in person at the Building
+  counter. Type 197 is outside portal map v2.
+
+| Form (manifest id) | Route | `channel` | Source |
+|---|---|---|---|
+| Temporary Use Permit (`temporary-use-permit-application`) | Residential site: type 114, Zoning Plan Check, the TUP form in the `Application` PDF. Commercial site: type 116 with the activity description in `Temporary Uses` (unsupported in V1). File at least 30 days before a use of 5 days or less (Director), 90 days before a longer one (Planning Commission). A temporary use that needs a CDP files a separate CDP application. | `online` (114) | TUP form p. 1 and footnote 1; type 114 and 116 instructions and slots |
+| Revocable Encroachment Permit (`revocable-encroachment-permit-application`) | Type 114, Zoning Plan Check, in the `Application` PDF with the Design Review Application when that is also required ("Submit concurrent, if required"). The REP fee is charged in addition to the Zoning Plan Check fee. Commercial site: type 116, `Revocable Encroachment Permit Application` slot. After approval and the 14-day appeal period, the notarized license agreement (pp. 8-9) is recorded. This is a Planning approval, not the Public Works Right-of-Way Permit (type 315); the form does not say whether construction in the right-of-way also needs a type 315 permit, so ask Public Works. | `online` (114) | REP form pp. 1, 4-5; type 114 and 116 instructions and slots |
+| Lot Line Adjustment (`lot-line-adjustment-application`) | Type 114, Zoning Plan Check, in the `Application` PDF; the LLA fee is charged in addition to the Zoning Plan Check fee. Commercial parcels: type 116, `Lot Line Adjustment` slot. A CDP or other entitlement is a separate application. | `online` (114) | LLA form pp. 1, 3; type 114 and 116 instructions and slots |
+| SB 9 (`sb-9-application`) | Type 114, Zoning Plan Check, in the `Application` PDF; the SB 9 fee is charged in addition to the Zoning Plan Check fee. The application is not complete without the approved, final CDP, so the CDP is its own earlier type 114 filing. | `online` (114) | SB 9 form pp. 1, 5, 7, 10, 14 and footnote 1; type 114 instruction |
+| Sign Permit, Planning (`sign-permit-application`) | Two filings. (1) The Planning Sign Permit Application, screened by a planner: type 116 for a commercial site, with drawings in `Sign Plans` (unsupported in V1); type 114 for a residential site. (2) "Except for window decal signs, new signs generally require a building permit prior to installation": the Building Sign Permit, type 197, with the Building Division's permit application, never the Planning form. A new business also needs a City business license (LBMC Chapter 5.08). | `unverified` (116 and 197 are not in the portal map) | Sign Permit form pp. 1-2; type 116 and 197 setup and instructions |
+| Planning Commission Concept Review (`planning-commission-concept-review-application`) | Only after consulting Planning staff, and only when staff recommend a concept review hearing. Commercial: type 116, `Planning Commission Concept Review Application` slot. Residential: type 114, in the `Application` PDF. Needs a 300-foot mailed neighborhood notification and the concept review fee. | `online` (114) | Concept Review form p. 1, section I and III; type 116 slot description; type 114 instruction |
+| SB 684 / SHRA (`sb-684-application`) | The housing development part is "an application for Zoning Plan Check (Ministerial Design Review)"; the subdivision part pays the Zoning Plan Check fee in addition to the map deposit. File both on type 114, Zoning Plan Check, in the `Application` PDF; the portal has no SHRA or tentative map record type (type 116 has a `Tentative Map` slot, but it is the commercial type). Each part needs a legally approved, final CDP first. | `online` (114) | SB 684 package pp. 2-3, 5, 8, 13; type 114 instruction |
+| General Plan Amendment (`general-plan-amendment-application`) | Two stages. First a request to initiate (Application Type "Initiation of Amendment", the initiation deposit, a narrative and exhibits); the City Council decides at a noticed hearing, and without initiation the City will not accept the application. Then the amendment application, within two years. The form says to file through the Public Permit Portal; it does not say which record type, and neither type 114 nor 116 names legislative amendments. Ask Planning, (949) 497-0713, which record takes the request before filing. | `unverified` | GPA form pp. 1-4 |
+
+The SB 684 package labels its own exhibits inconsistently: its checklists say to sign
+"Exhibit H" (the affidavit is Exhibit I, page 67) and call the CDP form "Exhibit I" (the
+bundled CDP package starts on page 76). Use the page, not the letter.
+
 ## Sources
 
 - [LBMC §25.05.040, Design Review](https://ecode360.com/42898558)
@@ -104,9 +152,11 @@ Read `form-coverage.md` before promising form preparation for any other applicat
 - [Ordinance 1731, six-part LBMC §7.25.130 test](https://ecode360.com/LA4953/laws/LF2759073.pdf), effective 2026-08-20
 - [LBMC §25.07.008, coastal-development exemptions](https://ecode360.com/42898824)
 - [LBMC §25.50.004, oceanfront development standards](https://ecode360.com/42901675)
-- [City Applications & Handouts](https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts), verified 2026-08-22
+- [City Applications & Handouts](https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts), verified 2026-08-22; application links re-read 2026-10-10
 - Current form source receipts: `assets/form-manifest.json`
 - Current portal source receipt: `assets/portal-maps/v2-portal-map.json` (built from `assets/portal-maps/portal-snapshot.json`, read 2026-10-09)
+- Types 114, 116, 197 and 315, read 2026-10-10 with `scripts/pull-portal-catalog.py --menu-ids 114,116,197,315` (23 unauthenticated GETs: `energov/plans/setup/{typeId}`, `energov/permits/setup/{typeId}`, `casetype/instructions/{typeId}/{workClassId}`). The type 114 Zoning Plan Check instructions hash is unchanged from portal map v2 (`44b043e0...`).
+- Form pages cited in the routes table: the pinned PDFs in `assets/form-manifest.json` (each entry's `url`)
 
 ## Channel correction verified 2026-09-08
 

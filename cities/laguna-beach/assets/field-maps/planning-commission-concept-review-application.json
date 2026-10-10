@@ -1,0 +1,1340 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "planning-commission-concept-review-application",
+  "field_map_version": "1.0.0",
+  "generated_at": "2026-10-10T08:05:54.818560Z",
+  "source_sha256": "b06764453b6cfca26acbdc0813d129f1bb022f22dd148ff623e1d8d1e9b4a5da",
+  "field_tree_sha256": "54b868f6ddf1231283610e265051090fc055a628e533a44a1ec5c540a2bd9810",
+  "canonical_mappings": [
+    {
+      "fact_id": "site.address",
+      "pdf_fields": [
+        "Project Location"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.apn",
+      "pdf_fields": [
+        "Assessor Parcel Number"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.current_previous_use",
+      "pdf_fields": [
+        "Current and Previous Use"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.current_building_sqft",
+      "pdf_fields": [
+        "Size (SF)"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.current_parking_spaces",
+      "pdf_fields": [
+        "Number"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "zoning.lot_area_sqft.existing",
+      "pdf_fields": [
+        "Lot Area (SF)"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.contact_name",
+      "pdf_fields": [
+        "Legal Owner"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_fields": [
+        "Telephone"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.full_address",
+      "pdf_fields": [
+        "Address"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_fields": [
+        "Email"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.contact_name",
+      "pdf_fields": [
+        "Applicant"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.phone",
+      "pdf_fields": [
+        "Telephone_2"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.full_address",
+      "pdf_fields": [
+        "Address_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.email",
+      "pdf_fields": [
+        "Email_2"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    }
+  ],
+  "review_fields": [
+    "Check Box10",
+    "Check Box11",
+    "Check Box12",
+    "Check Box13",
+    "Check Box14",
+    "Check Box15",
+    "Check Box16",
+    "Check Box17",
+    "Check Box18",
+    "Check Box19",
+    "Check Box20",
+    "Check Box21",
+    "Check Box22",
+    "Check Box23",
+    "Check Box24",
+    "Check Box25",
+    "Check Box26",
+    "Check Box27",
+    "Check Box28",
+    "Check Box29",
+    "Check Box3",
+    "Check Box4",
+    "Check Box5",
+    "Check Box6",
+    "Check Box7",
+    "Check Box8",
+    "Check Box9",
+    "DATE",
+    "Leave Blank",
+    "Signature1_es_:signer:signature",
+    "Signature2_es_:signer:signature"
+  ],
+  "fields": [
+    {
+      "name": "Address",
+      "type": "/Tx",
+      "tooltip": "Address",
+      "flags": 0
+    },
+    {
+      "name": "Address_2",
+      "type": "/Tx",
+      "tooltip": "Address",
+      "flags": 0
+    },
+    {
+      "name": "Applicant",
+      "type": "/Tx",
+      "tooltip": "Applicant",
+      "flags": 0
+    },
+    {
+      "name": "Assessor Parcel Number",
+      "type": "/Tx",
+      "tooltip": "Assessor Parcel Number",
+      "flags": 0
+    },
+    {
+      "name": "Check Box10",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box11",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box12",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box13",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box14",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box15",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box16",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box17",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box18",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box19",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box20",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box21",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box22",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box23",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box24",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box25",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box26",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box27",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box28",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box29",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box3",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box4",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box5",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box6",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box7",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box8",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Check Box9",
+      "type": "/Btn",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Current and Previous Use",
+      "type": "/Tx",
+      "tooltip": "Current/Previous Use",
+      "flags": 0
+    },
+    {
+      "name": "DATE",
+      "type": "/Tx",
+      "tooltip": "DATE",
+      "flags": 0
+    },
+    {
+      "name": "Email",
+      "type": "/Tx",
+      "tooltip": "E-mail",
+      "flags": 0
+    },
+    {
+      "name": "Email_2",
+      "type": "/Tx",
+      "tooltip": "E-mail",
+      "flags": 0
+    },
+    {
+      "name": "Leave Blank",
+      "type": "/Tx",
+      "tooltip": "Concept Review Number",
+      "flags": 0
+    },
+    {
+      "name": "Legal Owner",
+      "type": "/Tx",
+      "tooltip": "Legal Owner",
+      "flags": 0
+    },
+    {
+      "name": "Lot Area (SF)",
+      "type": "/Tx",
+      "tooltip": "Current Lot Area",
+      "flags": 0
+    },
+    {
+      "name": "Number",
+      "type": "/Tx",
+      "tooltip": "Current Parking Spaces Provided",
+      "flags": 0
+    },
+    {
+      "name": "Project Location",
+      "type": "/Tx",
+      "tooltip": "Location",
+      "flags": 0
+    },
+    {
+      "name": "Signature1_es_:signer:signature",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Signature2_es_:signer:signature",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Size (SF)",
+      "type": "/Tx",
+      "tooltip": "Current Building/Suite Square Footage",
+      "flags": 0
+    },
+    {
+      "name": "Telephone",
+      "type": "/Tx",
+      "tooltip": "Telephone",
+      "flags": 0
+    },
+    {
+      "name": "Telephone_2",
+      "type": "/Tx",
+      "tooltip": "Telephone",
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 1,
+      "field_name": "Leave Blank",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        527.88,
+        691.32,
+        593.88,
+        707.88
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "DATE",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        485.88,
+        664.92,
+        594.0,
+        681.48
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Project Location",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        92.16,
+        461.76,
+        367.2,
+        478.32
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Assessor Parcel Number",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        478.92,
+        461.76,
+        583.92,
+        478.32
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Current and Previous Use",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        142.92,
+        444.48,
+        593.04,
+        460.92
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Size (SF)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        218.04,
+        427.2,
+        323.04,
+        443.76
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Number",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        482.64,
+        427.2,
+        592.56,
+        443.76
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Lot Area (SF)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        130.44,
+        409.92,
+        235.44,
+        426.36
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Legal Owner",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        109.08,
+        367.8,
+        364.08,
+        384.36
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Telephone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        422.76,
+        367.8,
+        592.92,
+        384.36
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        89.28,
+        350.52,
+        364.32,
+        366.96
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        422.76,
+        350.52,
+        592.92,
+        367.08
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Applicant",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        96.0,
+        333.24,
+        366.0,
+        349.8
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Telephone_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        422.76,
+        333.24,
+        592.92,
+        349.8
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Address_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        89.28,
+        315.96,
+        364.32,
+        332.52
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Email_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        421.56,
+        315.96,
+        591.6,
+        332.52
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box3",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.1649,
+        274.659,
+        79.1649,
+        292.659
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box4",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.1649,
+        257.035,
+        79.1649,
+        275.035
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box5",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.1649,
+        239.411,
+        79.1649,
+        257.411
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box6",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.3092,
+        221.345,
+        79.3092,
+        239.345
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box7",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.5273,
+        179.236,
+        79.5273,
+        197.236
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box8",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.7455,
+        161.781,
+        79.7455,
+        179.781
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box9",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.3092,
+        125.999,
+        79.3092,
+        143.999
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box10",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.091,
+        108.763,
+        79.091,
+        126.763
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box11",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.091,
+        90.2175,
+        79.091,
+        108.217
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box12",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.091,
+        72.7629,
+        79.091,
+        90.7629
+      ]
+    },
+    {
+      "page": 1,
+      "field_name": "Check Box13",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.5273,
+        42.2174,
+        79.5273,
+        60.2174
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Signature1_es_:signer:signature",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        54.0,
+        127.68,
+        259.08,
+        144.48
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Signature2_es_:signer:signature",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        378.0,
+        127.68,
+        583.08,
+        144.48
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box14",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.0001,
+        732.327,
+        78.0001,
+        750.327
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box15",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.2182,
+        714.436,
+        78.2182,
+        732.436
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box16",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.2182,
+        697.2,
+        78.2182,
+        715.2
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box17",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.4364,
+        649.2,
+        78.4364,
+        667.2
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box18",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.8728,
+        618.436,
+        78.8728,
+        636.436
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box19",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.6546,
+        588.982,
+        78.6546,
+        606.982
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box20",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.6546,
+        570.654,
+        78.6546,
+        588.654
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box21",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.4364,
+        540.545,
+        78.4364,
+        558.545
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box22",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.091,
+        498.218,
+        79.091,
+        516.218
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box23",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.091,
+        443.236,
+        79.091,
+        461.236
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box24",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.8728,
+        424.472,
+        78.8728,
+        442.472
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box25",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.6546,
+        406.581,
+        78.6546,
+        424.581
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box26",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.6546,
+        388.691,
+        78.6546,
+        406.691
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box27",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.6546,
+        373.418,
+        78.6546,
+        391.418
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box28",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        60.8728,
+        357.054,
+        78.8728,
+        375.054
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Check Box29",
+      "field_type": "/Btn",
+      "value": null,
+      "appearance_state": "/Off",
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/Off",
+        "/Yes"
+      ],
+      "rect": [
+        61.091,
+        336.109,
+        79.091,
+        354.109
+      ]
+    }
+  ],
+  "review_widgets": []
+}

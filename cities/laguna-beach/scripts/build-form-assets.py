@@ -70,6 +70,7 @@ def locate_form(directory: Path, form: dict[str, Any]) -> Path:
 UNSEEDED_FORMS = {
     "conditional-use-permit-application",
     "lot-line-adjustment-application",
+    "planning-commission-concept-review-application",
     "revocable-encroachment-permit-application",
     "sign-permit-application",
     "temporary-use-permit-application",

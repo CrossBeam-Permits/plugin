@@ -117,6 +117,15 @@ def contact_block(targets: dict[str, list[Any]]) -> list[dict[str, Any]]:
     return mappings
 
 
+def sequential_contacts(first: int) -> list[dict[str, Any]]:
+    """Contact blocks numbered Text{first}.. with six fields per role, read left to right,
+    top to bottom: company, contact, mailing address, city/state/zip, phone, email."""
+
+    return contact_block(
+        {item: [f"Text{first + role * 6 + offset}" for role in range(3)] for offset, item in enumerate(CONTACT_ITEMS)}
+    )
+
+
 def with_font(mappings: list[dict[str, Any]], size: float = 7) -> list[dict[str, Any]]:
     for mapping in mappings:
         if mapping["transform"] != "checkbox":
@@ -558,13 +567,7 @@ def adu(document: dict[str, Any]) -> list[dict[str, Any]]:
         direct("site.address", "Text38", required=True),
         direct("site.apn", "Text39"),
     ]
-    # Text40-57: six fields per role block, read left to right, top to bottom: company,
-    # contact, mailing address, city/state/zip, phone, email.
-    mappings.extend(
-        contact_block(
-            {item: [f"Text{40 + role * 6 + offset}" for role in range(3)] for offset, item in enumerate(CONTACT_ITEMS)}
-        )
-    )
+    mappings.extend(sequential_contacts(40))
     mappings.append(stacked_lines("project.description", document, 4, "Text58", 5))
     mappings.append(direct("adu.projected_annualized_rent", "Text59", controlled=True))
     return with_font(mappings) + project_summary_tables(document, 34)
@@ -726,6 +729,68 @@ def lot_line_adjustment() -> list[dict[str, Any]]:
     return with_font(mappings)
 
 
+def concept_review() -> list[dict[str, Any]]:
+    """Planning Commission Concept Review Application, document 26904 (PC Concept Review 81926.pdf).
+
+    Page 1 only. Each party has one Address line (street, city, state, ZIP), so those
+    facts are full addresses. The submittal checklist boxes, the header DATE, and the
+    City-use Concept Review Number stay review-only.
+    """
+
+    mappings = [
+        direct("site.address", "Project Location", required=True),
+        direct("site.apn", "Assessor Parcel Number"),
+        direct("site.current_previous_use", "Current and Previous Use"),
+        direct("site.current_building_sqft", "Size (SF)"),
+        direct("site.current_parking_spaces", "Number"),
+        direct("zoning.lot_area_sqft.existing", "Lot Area (SF)"),
+    ]
+    for role, suffix in (("owner", ""), ("applicant", "_2")):
+        name_field = "Legal Owner" if role == "owner" else "Applicant"
+        for item, field in (("contact_name", name_field), ("phone", f"Telephone{suffix}"), ("full_address", f"Address{suffix}"), ("email", f"Email{suffix}")):
+            fact_id = f"{role}.{item}"
+            mappings.append(direct(fact_id, field, required=fact_id in REQUIRED_CONTACTS, controlled=True))
+    return with_font(mappings)
+
+
+SB684_MANUAL_SECTIONS = [
+    {"pages": [1], "title": "SHRA Project Information table (applicant name, site address, APN, parcel and adjacent zoning, project proposal)"},
+    {"pages": [77], "title": "Bundled Coastal Development Permit Application Form"},
+]
+
+
+def sb684(document: dict[str, Any]) -> list[dict[str, Any]]:
+    """Starter Home Revitalization Act (SB 684) Application, document 26902 (SHRA Application  FINAL 81926.pdf).
+
+    Like SB 9, the City built the application sections without form fields. The Project
+    Summary Tables (page 41) are mapped; the deposit agreement, notices, water quality
+    form, and Exhibit J dates stay review-only.
+    """
+
+    return project_summary_tables(document, 41)
+
+
+GPA_MANUAL_SECTIONS = [
+    {"pages": [3], "title": "Application Type check boxes (Initiation of Amendment / General Plan Amendment)"},
+]
+
+
+def general_plan_amendment() -> list[dict[str, Any]]:
+    """General Plan Amendment Application, document 27396 (General Plan Amendment Application_Sept 2026.pdf).
+
+    Page 3 is the application face; its contact blocks are Text3-Text20. The application
+    type boxes are not fields. The deposit agreement (pages 7, 13, 14) stays review-only.
+    """
+
+    mappings = [
+        direct("site.address", "Text1", required=True),
+        direct("site.apn", "Text2"),
+        *sequential_contacts(3),
+        direct("general_plan_amendment.proposed_amendment", "Text21", required=True),
+    ]
+    return with_font(mappings)
+
+
 def target_key(target: dict[str, Any]) -> tuple[Any, ...]:
     return (
         target["page"],
@@ -848,6 +913,19 @@ def main() -> int:
         version="1.0.0",
     )
     finalize("lot-line-adjustment-application", lot_line_adjustment(), version="1.0.0")
+    finalize("planning-commission-concept-review-application", concept_review(), version="1.0.0")
+    finalize(
+        "sb-684-application",
+        sb684(load_json(MAPS / "sb-684-application.json")),
+        version="1.0.0",
+        extras={"manual_sections": SB684_MANUAL_SECTIONS},
+    )
+    finalize(
+        "general-plan-amendment-application",
+        general_plan_amendment(),
+        version="1.0.0",
+        extras={"manual_sections": GPA_MANUAL_SECTIONS},
+    )
     return 0
 
 

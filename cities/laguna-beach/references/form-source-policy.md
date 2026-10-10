@@ -29,7 +29,7 @@ Download in the applicant's own visible browser instead. This works on any host:
 
 1. Use whatever browser or computer-use tool the host provides that drives a browser the user can see. Do not assume a product or tool name. If the host has none, give the user the exact URL and ask them to download the form themselves.
 2. Open the official source page from the manifest (`source_pages`), not a search result or a saved copy.
-3. Find the named application link. Compare its document id and ticks with the manifest entry. A different id or ticks means the City has a new revision: stop that form as `needs_source` and report both links.
+3. Find the named application link. Compare its document id and ticks with the manifest entry. A different id or ticks means the City has a new revision: stop that form as `needs_source` and report both links. The same id and ticks do not prove the same file: the City can replace a file in place, and an older ticks value then serves the new bytes too (on 2026-10-10 the July 2026 Conditional Use Permit ticks served the October file). Only the checksum in step 5 decides.
 4. Download the file. Save it, or ask the user to move it, into `permit-work/input/official-forms/`.
 5. Run `check-source-freshness.py` as above. Only a passing check makes the file usable.
 
