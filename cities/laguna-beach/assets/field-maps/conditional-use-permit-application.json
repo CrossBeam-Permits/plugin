@@ -1,1971 +1,2280 @@
 {
   "schema_version": "1.0.0",
   "form_id": "conditional-use-permit-application",
-  "field_map_version": "1.0.0",
-  "generated_at": "2026-08-23T00:58:49.101074Z",
-  "source_sha256": "4855c5cf3b6cb7fb013894677dcaccadd0e06ebb58a0773f4c6232b3545ab487",
-  "field_tree_sha256": "e0e48373cba457a354352afe291dcb20a3dccde186e7224bfb5f272ba0d144b9",
+  "field_map_version": "2.0.0",
+  "generated_at": "2026-10-10T08:03:13.744680Z",
+  "source_sha256": "33b8e97b15ad787aa2998063b4f36fd7eaadc89eda02db5f1ab94af7997c3a8f",
+  "field_tree_sha256": "a94eb474ebba6b385ab4055f69da88c79d4410cf5c5290f843415ab1f62f4c79",
   "canonical_mappings": [
     {
       "fact_id": "site.address",
       "pdf_fields": [
-        "Site Address"
-      ],
-      "required": true,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "owner.name",
-      "pdf_fields": [
-        "Owner Name"
-      ],
-      "required": true,
-      "applicant_controlled": true,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.000",
-      "pdf_fields": [
-        "Address 1"
-      ],
-      "pdf_label": "Address 1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.001",
-      "pdf_fields": [
-        "Address 2"
-      ],
-      "pdf_label": " Address 2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.002",
-      "pdf_fields": [
-        "Address 3"
-      ],
-      "pdf_label": "Address 3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.003",
-      "pdf_fields": [
-        "Address 4"
-      ],
-      "pdf_label": "Address 4",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.004",
-      "pdf_fields": [
-        "Authorized Signer Name (if applicable) 1"
-      ],
-      "pdf_label": "Authorized Signer Name (if applicable) 1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.005",
-      "pdf_fields": [
-        "Authorized Signer Name (if applicable) 2"
-      ],
-      "pdf_label": "Authorized Signer Name (if applicable) 2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.006",
-      "pdf_fields": [
-        "COMMENTSCOMBINED TOTAL"
-      ],
-      "pdf_label": "COMMENTS_COMBINED TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.007",
-      "pdf_fields": [
-        "COMMENTSRow1"
-      ],
-      "pdf_label": "COMMENTS_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.008",
-      "pdf_fields": [
-        "COMMENTSRow1_2"
-      ],
-      "pdf_label": "COMMENTS_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.009",
-      "pdf_fields": [
-        "COMMENTSRow2"
-      ],
-      "pdf_label": "COMMENTS_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.010",
-      "pdf_fields": [
-        "COMMENTSRow2_2"
-      ],
-      "pdf_label": "COMMENTS_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.011",
-      "pdf_fields": [
-        "COMMENTSRow3"
-      ],
-      "pdf_label": "COMMENTS_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.012",
-      "pdf_fields": [
-        "COMMENTSRow3_2"
-      ],
-      "pdf_label": "COMMENTS_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.013",
-      "pdf_fields": [
-        "COMMENTSTOTAL"
-      ],
-      "pdf_label": "COMMENTS_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.014",
-      "pdf_fields": [
-        "COMMENTSTOTAL_2"
-      ],
-      "pdf_label": "COMMENTS_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.015",
-      "pdf_fields": [
-        "CONFORMS yesnoLOT AREA"
-      ],
-      "pdf_label": "CONFORMS (yes/no)_LOT AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.016",
-      "pdf_fields": [
-        "CONFORMS yesnoLOT DEPTH AVG"
-      ],
-      "pdf_label": "CONFORMS (yes/no)_LOT DEPTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.017",
-      "pdf_fields": [
-        "CONFORMS yesnoLOT WIDTH AVG"
-      ],
-      "pdf_label": "CONFORMS (yes/no)_LOT WIDTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.018",
-      "pdf_fields": [
-        "CONFORMS yesnoMAX BUILDING HEIGHT"
-      ],
-      "pdf_label": "CONFORMS (yes/no)_MAX. BUILDING HEIGHT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.019",
-      "pdf_fields": [
-        "CONFORMS yesnoMAX HEIGHT FROM GRADE"
-      ],
-      "pdf_label": "CONFORMS (yes/no)_MAX. HEIGHT FROM GRADE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.020",
-      "pdf_fields": [
-        "DEMO TOTAL FLOOR AREA"
-      ],
-      "pdf_label": "DEMO TOTAL %_FLOOR AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.021",
-      "pdf_fields": [
-        "DEMO TOTAL LOWER LEVEL"
-      ],
-      "pdf_label": "DEMO TOTAL %_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.022",
-      "pdf_fields": [
-        "DEMO TOTAL ROOF AREA"
-      ],
-      "pdf_label": "DEMO TOTAL %_ROOF AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.023",
-      "pdf_fields": [
-        "DEMO TOTAL TOTAL EXTERIOR WALL"
-      ],
-      "pdf_label": "DEMO TOTAL %_TOTAL EXTERIOR WALL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.024",
-      "pdf_fields": [
-        "DEMO TOTAL TOTAL FLOOR  ROOF"
-      ],
-      "pdf_label": "DEMO TOTAL %_TOTAL FLOOR + ROOF",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.025",
-      "pdf_fields": [
-        "DEMO TOTAL UPPER LEVEL"
-      ],
-      "pdf_label": "DEMO TOTAL %_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.026",
-      "pdf_fields": [
-        "DIMENSIONS L x W x DPOOL"
-      ],
-      "pdf_label": "DIMENSIONS (L x W x D)_POOL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.027",
-      "pdf_fields": [
-        "DIMENSIONS L x W x DPOOL_2"
-      ],
-      "pdf_label": "DIMENSIONS (L x W x D)_POOL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.028",
-      "pdf_fields": [
-        "DIMENSIONS L x W x DSPA"
-      ],
-      "pdf_label": "DIMENSIONS (L x W x D)_SPA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.029",
-      "pdf_fields": [
-        "DIMENSIONS L x W x DSPA_2"
-      ],
-      "pdf_label": "DIMENSIONS (L x W x D)_SPA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.030",
-      "pdf_fields": [
-        "Date Signed by Owner"
-      ],
-      "pdf_label": "Date Signed by Owner",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.031",
-      "pdf_fields": [
-        "EXISTING EGRESS DOORS"
-      ],
-      "pdf_label": "EXISTING EGRESS DOORS",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.032",
-      "pdf_fields": [
-        "EXISTING FIXTURE COUNT"
-      ],
-      "pdf_label": "EXISTING FIXTURE COUNT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.033",
-      "pdf_fields": [
-        "EXISTING FIXTURE COUNT_2"
-      ],
-      "pdf_label": "EXISTING FIXTURE COUNT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.034",
-      "pdf_fields": [
-        "EXISTINGELEVATED DECKTERRACE"
-      ],
-      "pdf_label": "EXISTING_ELEVATED DECK/TERRACE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.035",
-      "pdf_fields": [
-        "EXISTINGFLOOR AREA"
-      ],
-      "pdf_label": "EXISTING_FLOOR AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.036",
-      "pdf_fields": [
-        "EXISTINGGARAGE"
-      ],
-      "pdf_label": "EXISTING_GARAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.037",
-      "pdf_fields": [
-        "EXISTINGHARDSCAPE INCL DRIVEWAY"
-      ],
-      "pdf_label": "EXISTING_HARDSCAPE (INCL. DRIVEWAY)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.038",
-      "pdf_fields": [
-        "EXISTINGHARDSCAPE INCL DRIVEWAY_2"
-      ],
-      "pdf_label": "EXISTING_HARDSCAPE (INCL. DRIVEWAY)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.039",
-      "pdf_fields": [
-        "EXISTINGLIVING AREA"
-      ],
-      "pdf_label": "EXISTING_LIVING AREA:",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.040",
-      "pdf_fields": [
-        "EXISTINGLOT AREA"
-      ],
-      "pdf_label": "EXISTING_LOT AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.041",
-      "pdf_fields": [
-        "EXISTINGLOT DEPTH AVG"
-      ],
-      "pdf_label": "EXISTING_LOT DEPTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.042",
-      "pdf_fields": [
-        "EXISTINGLOT WIDTH AVG"
-      ],
-      "pdf_label": "EXISTING_LOT WIDTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.043",
-      "pdf_fields": [
-        "EXISTINGLOWER LEVEL"
-      ],
-      "pdf_label": "EXISTING_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.044",
-      "pdf_fields": [
-        "EXISTINGLOWER LEVEL_2"
-      ],
-      "pdf_label": "EXISTING_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.045",
-      "pdf_fields": [
-        "EXISTINGMAX BUILDING HEIGHT"
-      ],
-      "pdf_label": "EXISTING_MAX. BUILDING HEIGHT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.046",
-      "pdf_fields": [
-        "EXISTINGMAX HEIGHT FROM GRADE"
-      ],
-      "pdf_label": "EXISTING_MAX. HEIGHT FROM GRADE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.047",
-      "pdf_fields": [
-        "EXISTINGMECHANICAL"
-      ],
-      "pdf_label": "EXISTING_MECHANICAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.048",
-      "pdf_fields": [
-        "EXISTINGROOF AREA"
-      ],
-      "pdf_label": "EXISTING_ROOF AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.049",
-      "pdf_fields": [
-        "EXISTINGSTORAGE"
-      ],
-      "pdf_label": "EXISTING_STORAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.050",
-      "pdf_fields": [
-        "EXISTINGSTRUCTURE"
-      ],
-      "pdf_label": "EXISTING_STRUCTURE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.051",
-      "pdf_fields": [
-        "EXISTINGSTRUCTURE_2"
-      ],
-      "pdf_label": "EXISTING_STRUCTURE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.052",
-      "pdf_fields": [
-        "EXISTINGTOTAL"
-      ],
-      "pdf_label": "EXISTING_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.053",
-      "pdf_fields": [
-        "EXISTINGTOTAL EXTERIOR WALL"
-      ],
-      "pdf_label": "EXISTING_TOTAL EXTERIOR WALL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.054",
-      "pdf_fields": [
-        "EXISTINGTOTAL FLOOR  ROOF"
-      ],
-      "pdf_label": "EXISTING_TOTAL FLOOR + ROOF",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.055",
-      "pdf_fields": [
-        "EXISTINGTOTAL_2"
-      ],
-      "pdf_label": "EXISTING_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.056",
-      "pdf_fields": [
-        "EXISTINGTOTAL_3"
-      ],
-      "pdf_label": "EXISTING_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.057",
-      "pdf_fields": [
-        "EXISTINGUPPER LEVEL"
-      ],
-      "pdf_label": "EXISTING_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.058",
-      "pdf_fields": [
-        "EXISTINGUPPER LEVEL_2"
-      ],
-      "pdf_label": "EXISTING_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.059",
-      "pdf_fields": [
-        "Email Address"
-      ],
-      "pdf_label": "Email",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.060",
-      "pdf_fields": [
-        "Email Address 2"
-      ],
-      "pdf_label": "Email Address 2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.061",
-      "pdf_fields": [
-        "FIXTURE TYPERow1"
-      ],
-      "pdf_label": "FIXTURE TYPE_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.062",
-      "pdf_fields": [
-        "FIXTURE TYPERow1_2"
-      ],
-      "pdf_label": "FIXTURE TYPE_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.063",
-      "pdf_fields": [
-        "FIXTURE TYPERow2"
-      ],
-      "pdf_label": "FIXTURE TYPE_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.064",
-      "pdf_fields": [
-        "FIXTURE TYPERow2_2"
-      ],
-      "pdf_label": "FIXTURE TYPE_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.065",
-      "pdf_fields": [
-        "FIXTURE TYPERow3"
-      ],
-      "pdf_label": "FIXTURE TYPE_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.066",
-      "pdf_fields": [
-        "FIXTURE TYPERow3_2"
-      ],
-      "pdf_label": "FIXTURE TYPE_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.067",
-      "pdf_fields": [
-        "FLOOR AREA RATIO"
-      ],
-      "pdf_label": "FLOOR AREA RATIO",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.068",
-      "pdf_fields": [
-        "Front Yard"
-      ],
-      "pdf_label": "Front Yard",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.069",
-      "pdf_fields": [
-        "INSIDE BUILDING FOOTPRINTCUT"
-      ],
-      "pdf_label": "INSIDE BUILDING FOOTPRINT_CUT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.070",
-      "pdf_fields": [
-        "INSIDE BUILDING FOOTPRINTFILL"
-      ],
-      "pdf_label": "INSIDE BUILDING FOOTPRINT_FILL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.071",
-      "pdf_fields": [
-        "INSIDE BUILDING FOOTPRINTNET EXPORT"
-      ],
-      "pdf_label": "INSIDE BUILDING FOOTPRINT_NET EXPORT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.072",
-      "pdf_fields": [
-        "IRRIGATED AREA"
-      ],
-      "pdf_label": "IRRIGATED AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.073",
-      "pdf_fields": [
-        "LANDSCAPE OPEN SPACE"
-      ],
-      "pdf_label": "LANDSCAPE OPEN SPACE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.074",
-      "pdf_fields": [
-        "LOT COVERAGE BSC"
-      ],
-      "pdf_label": "LOT COVERAGE (BSC)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.075",
-      "pdf_fields": [
-        "LOT SLOPE"
-      ],
-      "pdf_label": "LOT SLOPE (%)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.076",
-      "pdf_fields": [
-        "LUMENSRow1"
-      ],
-      "pdf_label": "LUMENS_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.077",
-      "pdf_fields": [
-        "LUMENSRow1_2"
-      ],
-      "pdf_label": "LUMENS_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.078",
-      "pdf_fields": [
-        "LUMENSRow2"
-      ],
-      "pdf_label": "LUMENS_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.079",
-      "pdf_fields": [
-        "LUMENSRow2_2"
-      ],
-      "pdf_label": "LUMENS_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.080",
-      "pdf_fields": [
-        "LUMENSRow3"
-      ],
-      "pdf_label": "LUMENS_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.081",
-      "pdf_fields": [
-        "LUMENSRow3_2"
-      ],
-      "pdf_label": "LUMENS_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.082",
-      "pdf_fields": [
-        "OUTSIDE BUILDING FOOTPRINTCUT"
-      ],
-      "pdf_label": "OUTSIDE BUILDING FOOTPRINT_CUT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.083",
-      "pdf_fields": [
-        "OUTSIDE BUILDING FOOTPRINTFILL"
-      ],
-      "pdf_label": "OUTSIDE BUILDING FOOTPRINT_FILL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.084",
-      "pdf_fields": [
-        "OUTSIDE BUILDING FOOTPRINTNET EXPORT"
-      ],
-      "pdf_label": "OUTSIDE BUILDING FOOTPRINT_NET EXPORT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.085",
-      "pdf_fields": [
-        "Owner / Entity Name 1"
-      ],
-      "pdf_label": " Owner / Entity Name 1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.088",
-      "pdf_fields": [
-        "Owner/ Entity Name 2"
-      ],
-      "pdf_label": "Owner/ Entity Name 2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.089",
-      "pdf_fields": [
-        "PARKING"
-      ],
-      "pdf_label": "PARKING",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.090",
-      "pdf_fields": [
-        "POOLSPACUT"
-      ],
-      "pdf_label": "POOL/SPA_CUT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.091",
-      "pdf_fields": [
-        "POOLSPAFILL"
-      ],
-      "pdf_label": "POOL/SPA_FILL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.092",
-      "pdf_fields": [
-        "POOLSPANET EXPORT"
-      ],
-      "pdf_label": "POOL/SPA_NET EXPORT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.093",
-      "pdf_fields": [
-        "PROPOSED EGRESS DOORS"
-      ],
-      "pdf_label": "PROPOSED EGRESS DOORS",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.094",
-      "pdf_fields": [
-        "PROPOSED FIXTURE COUNT"
-      ],
-      "pdf_label": "PROPOSED FIXTURE COUNT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.095",
-      "pdf_fields": [
-        "PROPOSED FIXTURE COUNT_2"
-      ],
-      "pdf_label": "PROPOSED FIXTURE COUNT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.096",
-      "pdf_fields": [
-        "PROPOSEDELEVATED DECKTERRACE"
-      ],
-      "pdf_label": "PROPOSED_ELEVATED DECK/TERRACE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.097",
-      "pdf_fields": [
-        "PROPOSEDGARAGE"
-      ],
-      "pdf_label": "PROPOSED_GARAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.098",
-      "pdf_fields": [
-        "PROPOSEDHARDSCAPE INCL DRIVEWAY"
-      ],
-      "pdf_label": "PROPOSED_HARDSCAPE (INCL. DRIVEWAY)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.099",
-      "pdf_fields": [
-        "PROPOSEDHARDSCAPE INCL DRIVEWAY_2"
-      ],
-      "pdf_label": "PROPOSED_HARDSCAPE (INCL. DRIVEWAY)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.100",
-      "pdf_fields": [
-        "PROPOSEDLIVING AREA"
-      ],
-      "pdf_label": "PROPOSED_LIVING AREA:",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.101",
-      "pdf_fields": [
-        "PROPOSEDLOT AREA"
-      ],
-      "pdf_label": "PROPOSED_LOT AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.102",
-      "pdf_fields": [
-        "PROPOSEDLOT DEPTH AVG"
-      ],
-      "pdf_label": "PROPOSED_LOT DEPTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.103",
-      "pdf_fields": [
-        "PROPOSEDLOT WIDTH AVG"
-      ],
-      "pdf_label": "PROPOSED_LOT WIDTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.104",
-      "pdf_fields": [
-        "PROPOSEDLOWER LEVEL"
-      ],
-      "pdf_label": "PROPOSED_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.105",
-      "pdf_fields": [
-        "PROPOSEDMAX BUILDING HEIGHT"
-      ],
-      "pdf_label": "PROPOSED_MAX. BUILDING HEIGHT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.106",
-      "pdf_fields": [
-        "PROPOSEDMAX HEIGHT FROM GRADE"
-      ],
-      "pdf_label": "PROPOSED_MAX. HEIGHT FROM GRADE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.107",
-      "pdf_fields": [
-        "PROPOSEDMECHANICAL"
-      ],
-      "pdf_label": "PROPOSED_MECHANICAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.108",
-      "pdf_fields": [
-        "PROPOSEDSTORAGE"
-      ],
-      "pdf_label": "PROPOSED_STORAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.109",
-      "pdf_fields": [
-        "PROPOSEDSTRUCTURE"
-      ],
-      "pdf_label": "PROPOSED_STRUCTURE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.110",
-      "pdf_fields": [
-        "PROPOSEDSTRUCTURE_2"
-      ],
-      "pdf_label": "PROPOSED_STRUCTURE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.111",
-      "pdf_fields": [
-        "PROPOSEDTOTAL"
-      ],
-      "pdf_label": "PROPOSED_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.112",
-      "pdf_fields": [
-        "PROPOSEDTOTAL_2"
-      ],
-      "pdf_label": "PROPOSED_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.113",
-      "pdf_fields": [
-        "PROPOSEDTOTAL_3"
-      ],
-      "pdf_label": "PROPOSED_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.114",
-      "pdf_fields": [
-        "PROPOSEDUPPER LEVEL"
-      ],
-      "pdf_label": "PROPOSED_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.116",
-      "pdf_fields": [
-        "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages"
-      ],
-      "pdf_label": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages.",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.117",
-      "pdf_fields": [
-        "QUANTITYCOMBINED TOTAL"
-      ],
-      "pdf_label": "QUANTITY_COMBINED TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.118",
-      "pdf_fields": [
-        "QUANTITYRow1"
-      ],
-      "pdf_label": "QUANTITY_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.119",
-      "pdf_fields": [
-        "QUANTITYRow1_2"
-      ],
-      "pdf_label": "QUANTITY_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.120",
-      "pdf_fields": [
-        "QUANTITYRow2"
-      ],
-      "pdf_label": "QUANTITY_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.121",
-      "pdf_fields": [
-        "QUANTITYRow2_2"
-      ],
-      "pdf_label": "QUANTITY_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.122",
-      "pdf_fields": [
-        "QUANTITYRow3"
-      ],
-      "pdf_label": "QUANTITY_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.123",
-      "pdf_fields": [
-        "QUANTITYRow3_2"
-      ],
-      "pdf_label": "QUANTITY_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.124",
-      "pdf_fields": [
-        "QUANTITYTOTAL"
-      ],
-      "pdf_label": "QUANTITY_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.125",
-      "pdf_fields": [
-        "QUANTITYTOTAL_2"
-      ],
-      "pdf_label": "QUANTITY_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.126",
-      "pdf_fields": [
-        "REMAININGFLOOR AREA"
-      ],
-      "pdf_label": "REMAINING_FLOOR AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.127",
-      "pdf_fields": [
-        "REMAININGLOWER LEVEL"
-      ],
-      "pdf_label": "REMAINING_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.128",
-      "pdf_fields": [
-        "REMAININGROOF AREA"
-      ],
-      "pdf_label": "REMAINING_ROOF AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.129",
-      "pdf_fields": [
-        "REMAININGTOTAL EXTERIOR WALL"
-      ],
-      "pdf_label": "REMAINING_TOTAL EXTERIOR WALL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.130",
-      "pdf_fields": [
-        "REMAININGTOTAL FLOOR  ROOF"
-      ],
-      "pdf_label": "REMAINING_TOTAL FLOOR + ROOF",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.131",
-      "pdf_fields": [
-        "REMAININGUPPER LEVEL"
-      ],
-      "pdf_label": "REMAINING_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.132",
-      "pdf_fields": [
-        "REMODELELEVATED DECKTERRACE"
-      ],
-      "pdf_label": "REMODEL_ELEVATED DECK/TERRACE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.133",
-      "pdf_fields": [
-        "REMODELGARAGE"
-      ],
-      "pdf_label": "REMODEL_GARAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.134",
-      "pdf_fields": [
-        "REMODELLIVING AREA"
-      ],
-      "pdf_label": "REMODEL_LIVING AREA:",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.135",
-      "pdf_fields": [
-        "REMODELLOWER LEVEL"
-      ],
-      "pdf_label": "REMODEL_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.136",
-      "pdf_fields": [
-        "REMODELMECHANICAL"
-      ],
-      "pdf_label": "REMODEL_MECHANICAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.137",
-      "pdf_fields": [
-        "REMODELSTORAGE"
-      ],
-      "pdf_label": "REMODEL_STORAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.138",
-      "pdf_fields": [
-        "REMODELTOTAL"
-      ],
-      "pdf_label": "REMODEL_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.139",
-      "pdf_fields": [
-        "REMODELUPPER LEVEL"
-      ],
-      "pdf_label": "REMODEL_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.140",
-      "pdf_fields": [
-        "REMOVEDFLOOR AREA"
-      ],
-      "pdf_label": "REMOVED_FLOOR AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.141",
-      "pdf_fields": [
-        "REMOVEDLOWER LEVEL"
-      ],
-      "pdf_label": "REMOVED_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.142",
-      "pdf_fields": [
-        "REMOVEDROOF AREA"
-      ],
-      "pdf_label": "REMOVED_ROOF AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.143",
-      "pdf_fields": [
-        "REMOVEDTOTAL EXTERIOR WALL"
-      ],
-      "pdf_label": "REMOVED_TOTAL EXTERIOR WALL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.144",
-      "pdf_fields": [
-        "REMOVEDTOTAL FLOOR  ROOF"
-      ],
-      "pdf_label": "REMOVED_TOTAL FLOOR + ROOF",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.145",
-      "pdf_fields": [
-        "REMOVEDUPPER LEVEL"
-      ],
-      "pdf_label": "REMOVED_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.146",
-      "pdf_fields": [
-        "REQUIREDLOT AREA"
-      ],
-      "pdf_label": "REQUIRED_LOT AREA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.147",
-      "pdf_fields": [
-        "REQUIREDLOT DEPTH AVG"
-      ],
-      "pdf_label": "REQUIRED_LOT DEPTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.148",
-      "pdf_fields": [
-        "REQUIREDLOT WIDTH AVG"
-      ],
-      "pdf_label": "REQUIRED_LOT WIDTH (AVG.)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.149",
-      "pdf_fields": [
-        "REQUIREDMAX BUILDING HEIGHT"
-      ],
-      "pdf_label": "REQUIRED_MAX. BUILDING HEIGHT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.150",
-      "pdf_fields": [
-        "REQUIREDMAX HEIGHT FROM GRADE"
-      ],
-      "pdf_label": "REQUIRED_MAX. HEIGHT FROM GRADE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.151",
-      "pdf_fields": [
-        "Rear Yard"
-      ],
-      "pdf_label": "Rear Yard",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.152",
-      "pdf_fields": [
-        "Side Yards combinedeach"
-      ],
-      "pdf_label": "Side Yards (combined/each)",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.154",
-      "pdf_fields": [
-        "TOTALCUT"
-      ],
-      "pdf_label": "TOTAL_CUT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.155",
-      "pdf_fields": [
-        "TOTALELEVATED DECKTERRACE"
-      ],
-      "pdf_label": "TOTAL_ELEVATED DECK/TERRACE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.156",
-      "pdf_fields": [
-        "TOTALFILL"
-      ],
-      "pdf_label": "TOTAL_FILL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.157",
-      "pdf_fields": [
-        "TOTALGARAGE"
-      ],
-      "pdf_label": "TOTAL_GARAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.158",
-      "pdf_fields": [
-        "TOTALLIVING AREA"
-      ],
-      "pdf_label": "TOTAL_LIVING AREA:",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.159",
-      "pdf_fields": [
-        "TOTALLOWER LEVEL"
-      ],
-      "pdf_label": "TOTAL_LOWER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.160",
-      "pdf_fields": [
-        "TOTALMECHANICAL"
-      ],
-      "pdf_label": "TOTAL_MECHANICAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.161",
-      "pdf_fields": [
-        "TOTALNET EXPORT"
-      ],
-      "pdf_label": "TOTAL_NET EXPORT",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.162",
-      "pdf_fields": [
-        "TOTALSTORAGE"
-      ],
-      "pdf_label": "TOTAL_STORAGE",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.163",
-      "pdf_fields": [
-        "TOTALTOTAL"
-      ],
-      "pdf_label": "TOTAL_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.164",
-      "pdf_fields": [
-        "TOTALUPPER LEVEL"
-      ],
-      "pdf_label": "TOTAL_UPPER LEVEL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.165",
-      "pdf_fields": [
         "Text1"
       ],
-      "pdf_label": "Text1",
-      "required": false,
+      "required": true,
       "applicant_controlled": false,
-      "transform": "string"
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.166",
-      "pdf_fields": [
-        "Text10"
-      ],
-      "pdf_label": "Text10",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.167",
-      "pdf_fields": [
-        "Text11"
-      ],
-      "pdf_label": "Text11",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.168",
-      "pdf_fields": [
-        "Text12"
-      ],
-      "pdf_label": "Text12",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.169",
-      "pdf_fields": [
-        "Text13"
-      ],
-      "pdf_label": "Text13",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.170",
-      "pdf_fields": [
-        "Text14"
-      ],
-      "pdf_label": "Text14",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.171",
-      "pdf_fields": [
-        "Text15"
-      ],
-      "pdf_label": "Text15",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.172",
-      "pdf_fields": [
-        "Text16"
-      ],
-      "pdf_label": "Text16",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.173",
-      "pdf_fields": [
-        "Text17"
-      ],
-      "pdf_label": "Text17",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.174",
-      "pdf_fields": [
-        "Text18"
-      ],
-      "pdf_label": "Text18",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.175",
+      "fact_id": "site.apn",
       "pdf_fields": [
         "Text2"
       ],
-      "pdf_label": "Text2",
       "required": false,
       "applicant_controlled": false,
-      "transform": "string"
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.176",
-      "pdf_fields": [
-        "Text3"
+      "fact_id": "applicant.company_name",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text3",
+          "rect": [
+            179.133,
+            563.32,
+            274.981,
+            579.767
+          ]
+        }
       ],
-      "pdf_label": "Text3",
       "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.177",
-      "pdf_fields": [
-        "Text4"
+      "fact_id": "applicant.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text6",
+          "rect": [
+            423.821,
+            563.795,
+            540.448,
+            580.565
+          ]
+        }
       ],
-      "pdf_label": "Text4",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.178",
-      "pdf_fields": [
-        "Text5"
+      "fact_id": "applicant.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text4",
+          "rect": [
+            176.084,
+            545.386,
+            275.296,
+            562.14
+          ]
+        }
       ],
-      "pdf_label": "Text5",
       "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.179",
-      "pdf_fields": [
-        "Text6"
+      "fact_id": "applicant.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text7",
+          "rect": [
+            417.723,
+            546.787,
+            540.448,
+            562.795
+          ]
+        }
       ],
-      "pdf_label": "Text6",
       "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.180",
-      "pdf_fields": [
-        "Text7"
+      "fact_id": "applicant.phone",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text5",
+          "rect": [
+            133.397,
+            529.255,
+            267.597,
+            545.918
+          ]
+        }
       ],
-      "pdf_label": "Text7",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.181",
-      "pdf_fields": [
-        "Text8"
+      "fact_id": "applicant.email",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text8",
+          "rect": [
+            421.534,
+            529.017,
+            537.399,
+            544.263
+          ]
+        }
       ],
-      "pdf_label": "Text8",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.182",
+      "fact_id": "applicant_representative.company_name",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text3",
+          "rect": [
+            179.514,
+            478.296,
+            285.494,
+            493.572
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text6",
+          "rect": [
+            422.678,
+            478.327,
+            539.3051,
+            495.097
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text4",
+          "rect": [
+            177.99,
+            461.557,
+            284.331,
+            478.219
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text7",
+          "rect": [
+            417.342,
+            460.032,
+            540.067,
+            476.04
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.phone",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text5",
+          "rect": [
+            133.778,
+            444.186,
+            284.331,
+            461.032
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.email",
+      "pdf_widgets": [
+        {
+          "page": 2,
+          "field_name": "Text8",
+          "rect": [
+            421.915,
+            444.787,
+            537.78,
+            460.032
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.company_name",
       "pdf_fields": [
         "Text9"
       ],
-      "pdf_label": "Text9",
       "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.183",
+      "fact_id": "owner.contact_name",
+      "pdf_fields": [
+        "Text12"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.mailing_address",
+      "pdf_fields": [
+        "Text10"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.city_state_zip",
+      "pdf_fields": [
+        "Text13"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_fields": [
+        "Text11"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_fields": [
+        "Text14"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "project.description",
+      "pdf_fields": [
+        "Text15"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.use",
       "pdf_fields": [
         "USE"
       ],
-      "pdf_label": "USE",
       "required": false,
       "applicant_controlled": false,
       "transform": "string"
     },
     {
-      "fact_id": "form.conditional-use-permit-application.field.184",
-      "pdf_fields": [
-        "VOLUMEGALLONSPOOL"
-      ],
-      "pdf_label": "VOLUME/GALLONS_POOL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.185",
-      "pdf_fields": [
-        "VOLUMEGALLONSSPA"
-      ],
-      "pdf_label": "VOLUME/GALLONS_SPA",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.186",
-      "pdf_fields": [
-        "VOLUMEGALLONSTOTAL"
-      ],
-      "pdf_label": "VOLUME/GALLONS_TOTAL",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.187",
-      "pdf_fields": [
-        "WATTAGERow1"
-      ],
-      "pdf_label": "WATTAGE_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.188",
-      "pdf_fields": [
-        "WATTAGERow1_2"
-      ],
-      "pdf_label": "WATTAGE_Row_1",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.189",
-      "pdf_fields": [
-        "WATTAGERow2"
-      ],
-      "pdf_label": "WATTAGE_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.190",
-      "pdf_fields": [
-        "WATTAGERow2_2"
-      ],
-      "pdf_label": "WATTAGE_Row_2",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.191",
-      "pdf_fields": [
-        "WATTAGERow3"
-      ],
-      "pdf_label": "WATTAGE_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.192",
-      "pdf_fields": [
-        "WATTAGERow3_2"
-      ],
-      "pdf_label": "WATTAGE_Row_3",
-      "required": false,
-      "applicant_controlled": false,
-      "transform": "string"
-    },
-    {
-      "fact_id": "form.conditional-use-permit-application.field.193",
+      "fact_id": "site.zone",
       "pdf_fields": [
         "ZONE"
       ],
-      "pdf_label": "ZONE",
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "site.lot_slope_percent",
+      "pdf_fields": [
+        "LOT SLOPE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_area_sqft.required",
+      "pdf_fields": [
+        "REQUIREDLOT AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_area_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGLOT AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_area_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDLOT AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_area_sqft.conforms",
+      "pdf_fields": [
+        "CONFORMS yesnoLOT AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.lot_width_average_ft.required",
+      "pdf_fields": [
+        "REQUIREDLOT WIDTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_width_average_ft.existing",
+      "pdf_fields": [
+        "EXISTINGLOT WIDTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_width_average_ft.proposed",
+      "pdf_fields": [
+        "PROPOSEDLOT WIDTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_width_average_ft.conforms",
+      "pdf_fields": [
+        "CONFORMS yesnoLOT WIDTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.lot_depth_average_ft.required",
+      "pdf_fields": [
+        "REQUIREDLOT DEPTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_depth_average_ft.existing",
+      "pdf_fields": [
+        "EXISTINGLOT DEPTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_depth_average_ft.proposed",
+      "pdf_fields": [
+        "PROPOSEDLOT DEPTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.lot_depth_average_ft.conforms",
+      "pdf_fields": [
+        "CONFORMS yesnoLOT DEPTH AVG"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.max_building_height_ft.required",
+      "pdf_fields": [
+        "REQUIREDMAX BUILDING HEIGHT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.max_building_height_ft.existing",
+      "pdf_fields": [
+        "EXISTINGMAX BUILDING HEIGHT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.max_building_height_ft.proposed",
+      "pdf_fields": [
+        "PROPOSEDMAX BUILDING HEIGHT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.max_building_height_ft.conforms",
+      "pdf_fields": [
+        "CONFORMS yesnoMAX BUILDING HEIGHT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.max_height_from_grade_ft.required",
+      "pdf_fields": [
+        "REQUIREDMAX HEIGHT FROM GRADE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.max_height_from_grade_ft.existing",
+      "pdf_fields": [
+        "EXISTINGMAX HEIGHT FROM GRADE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.max_height_from_grade_ft.proposed",
+      "pdf_fields": [
+        "PROPOSEDMAX HEIGHT FROM GRADE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.max_height_from_grade_ft.conforms",
+      "pdf_fields": [
+        "CONFORMS yesnoMAX HEIGHT FROM GRADE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.front_yard_setback_ft.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Front Yard",
+          "rect": [
+            175.68,
+            831.72,
+            274.32,
+            843.84
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.front_yard_setback_ft.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Front Yard",
+          "rect": [
+            275.541,
+            831.804,
+            374.181,
+            843.924
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.front_yard_setback_ft.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Front Yard",
+          "rect": [
+            375.9,
+            831.621,
+            474.54,
+            843.741
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.front_yard_setback_ft.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Front Yard",
+          "rect": [
+            476.258,
+            831.8441,
+            574.898,
+            843.9641
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.rear_yard_setback_ft.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Rear Yard",
+          "rect": [
+            175.68,
+            818.4,
+            274.32,
+            830.64
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.rear_yard_setback_ft.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Rear Yard",
+          "rect": [
+            275.136,
+            818.74,
+            373.776,
+            830.9791
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.rear_yard_setback_ft.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Rear Yard",
+          "rect": [
+            375.494,
+            818.1511,
+            474.134,
+            830.3911
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.rear_yard_setback_ft.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Rear Yard",
+          "rect": [
+            475.447,
+            817.968,
+            574.087,
+            830.2081
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.side_yards_combined_each_ft.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Side Yards combinedeach",
+          "rect": [
+            175.68,
+            805.2,
+            274.32,
+            817.32
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.side_yards_combined_each_ft.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Side Yards combinedeach",
+          "rect": [
+            275.136,
+            805.54,
+            373.776,
+            817.66
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.side_yards_combined_each_ft.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Side Yards combinedeach",
+          "rect": [
+            375.494,
+            804.951,
+            474.134,
+            817.071
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.side_yards_combined_each_ft.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "Side Yards combinedeach",
+          "rect": [
+            475.447,
+            804.7681,
+            574.087,
+            816.8881
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.bsc_lot_coverage.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LOT COVERAGE BSC",
+          "rect": [
+            175.68,
+            791.88,
+            274.32,
+            804.12
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.bsc_lot_coverage.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LOT COVERAGE BSC",
+          "rect": [
+            275.136,
+            792.22,
+            373.776,
+            804.46
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.bsc_lot_coverage.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LOT COVERAGE BSC",
+          "rect": [
+            375.494,
+            791.631,
+            474.134,
+            803.871
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.bsc_lot_coverage.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LOT COVERAGE BSC",
+          "rect": [
+            475.447,
+            791.4481,
+            574.087,
+            803.688
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.floor_area_ratio.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "FLOOR AREA RATIO",
+          "rect": [
+            175.68,
+            778.68,
+            274.32,
+            790.8
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.floor_area_ratio.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "FLOOR AREA RATIO",
+          "rect": [
+            275.136,
+            779.02,
+            373.776,
+            791.14
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.floor_area_ratio.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "FLOOR AREA RATIO",
+          "rect": [
+            375.494,
+            778.431,
+            474.134,
+            790.551
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.floor_area_ratio.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "FLOOR AREA RATIO",
+          "rect": [
+            475.447,
+            778.248,
+            574.087,
+            790.368
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.landscape_open_space.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LANDSCAPE OPEN SPACE",
+          "rect": [
+            175.68,
+            765.48,
+            274.32,
+            777.6
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.landscape_open_space.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LANDSCAPE OPEN SPACE",
+          "rect": [
+            275.136,
+            765.82,
+            373.776,
+            777.94
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.landscape_open_space.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LANDSCAPE OPEN SPACE",
+          "rect": [
+            375.494,
+            765.231,
+            474.134,
+            777.351
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.landscape_open_space.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "LANDSCAPE OPEN SPACE",
+          "rect": [
+            475.447,
+            765.048,
+            574.087,
+            777.168
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.irrigated_area.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "IRRIGATED AREA",
+          "rect": [
+            175.68,
+            752.16,
+            274.32,
+            764.4
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.irrigated_area.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "IRRIGATED AREA",
+          "rect": [
+            275.136,
+            752.5,
+            373.776,
+            764.74
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.irrigated_area.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "IRRIGATED AREA",
+          "rect": [
+            375.494,
+            751.911,
+            474.134,
+            764.1511
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.irrigated_area.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "IRRIGATED AREA",
+          "rect": [
+            475.447,
+            751.728,
+            574.087,
+            763.968
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "zoning.parking_spaces.required",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "PARKING",
+          "rect": [
+            175.68,
+            738.96,
+            274.32,
+            751.08
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.parking_spaces.existing",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "PARKING",
+          "rect": [
+            275.136,
+            739.299,
+            373.776,
+            751.419
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.parking_spaces.proposed",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "PARKING",
+          "rect": [
+            375.494,
+            738.7111,
+            474.134,
+            750.8311
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "zoning.parking_spaces.conforms",
+      "pdf_widgets": [
+        {
+          "page": 25,
+          "field_name": "PARKING",
+          "rect": [
+            475.447,
+            738.528,
+            574.087,
+            750.648
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "yes_no"
+    },
+    {
+      "fact_id": "project.area.living_area_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGLIVING AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.living_area_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDLIVING AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.living_area_sqft.total",
+      "pdf_fields": [
+        "TOTALLIVING AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.living_area_sqft.remodel",
+      "pdf_fields": [
+        "REMODELLIVING AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.lower_level_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGLOWER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.lower_level_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDLOWER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.lower_level_sqft.total",
+      "pdf_fields": [
+        "TOTALLOWER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.lower_level_sqft.remodel",
+      "pdf_fields": [
+        "REMODELLOWER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.upper_level_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGUPPER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.upper_level_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDUPPER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.upper_level_sqft.total",
+      "pdf_fields": [
+        "TOTALUPPER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.upper_level_sqft.remodel",
+      "pdf_fields": [
+        "REMODELUPPER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.storage_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGSTORAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.storage_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDSTORAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.storage_sqft.total",
+      "pdf_fields": [
+        "TOTALSTORAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.storage_sqft.remodel",
+      "pdf_fields": [
+        "REMODELSTORAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.total_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGTOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.total_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDTOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.total_sqft.total",
+      "pdf_fields": [
+        "TOTALTOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.total_sqft.remodel",
+      "pdf_fields": [
+        "REMODELTOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.garage_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGGARAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.garage_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDGARAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.garage_sqft.total",
+      "pdf_fields": [
+        "TOTALGARAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.garage_sqft.remodel",
+      "pdf_fields": [
+        "REMODELGARAGE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.elevated_deck_terrace_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGELEVATED DECKTERRACE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.elevated_deck_terrace_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDELEVATED DECKTERRACE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.elevated_deck_terrace_sqft.total",
+      "pdf_fields": [
+        "TOTALELEVATED DECKTERRACE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.elevated_deck_terrace_sqft.remodel",
+      "pdf_fields": [
+        "REMODELELEVATED DECKTERRACE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.mechanical_sqft.existing",
+      "pdf_fields": [
+        "EXISTINGMECHANICAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.mechanical_sqft.proposed",
+      "pdf_fields": [
+        "PROPOSEDMECHANICAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.mechanical_sqft.total",
+      "pdf_fields": [
+        "TOTALMECHANICAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.area.mechanical_sqft.remodel",
+      "pdf_fields": [
+        "REMODELMECHANICAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.roof_area.existing",
+      "pdf_fields": [
+        "EXISTINGROOF AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.roof_area.removed",
+      "pdf_fields": [
+        "REMOVEDROOF AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.roof_area.remaining",
+      "pdf_fields": [
+        "REMAININGROOF AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.roof_area.demo_total_percent",
+      "pdf_fields": [
+        "DEMO TOTAL ROOF AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.floor_area.existing",
+      "pdf_fields": [
+        "EXISTINGFLOOR AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.floor_area.removed",
+      "pdf_fields": [
+        "REMOVEDFLOOR AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.floor_area.remaining",
+      "pdf_fields": [
+        "REMAININGFLOOR AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.floor_area.demo_total_percent",
+      "pdf_fields": [
+        "DEMO TOTAL FLOOR AREA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.lower_level.existing",
+      "pdf_fields": [
+        "EXISTINGLOWER LEVEL_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.lower_level.removed",
+      "pdf_fields": [
+        "REMOVEDLOWER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.lower_level.remaining",
+      "pdf_fields": [
+        "REMAININGLOWER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.lower_level.demo_total_percent",
+      "pdf_fields": [
+        "DEMO TOTAL LOWER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.upper_level.existing",
+      "pdf_fields": [
+        "EXISTINGUPPER LEVEL_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.upper_level.removed",
+      "pdf_fields": [
+        "REMOVEDUPPER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.upper_level.remaining",
+      "pdf_fields": [
+        "REMAININGUPPER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.upper_level.demo_total_percent",
+      "pdf_fields": [
+        "DEMO TOTAL UPPER LEVEL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_floor_and_roof.existing",
+      "pdf_fields": [
+        "EXISTINGTOTAL FLOOR  ROOF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_floor_and_roof.removed",
+      "pdf_fields": [
+        "REMOVEDTOTAL FLOOR  ROOF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_floor_and_roof.remaining",
+      "pdf_fields": [
+        "REMAININGTOTAL FLOOR  ROOF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_floor_and_roof.demo_total_percent",
+      "pdf_fields": [
+        "DEMO TOTAL TOTAL FLOOR  ROOF"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_exterior_wall.existing",
+      "pdf_fields": [
+        "EXISTINGTOTAL EXTERIOR WALL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_exterior_wall.removed",
+      "pdf_fields": [
+        "REMOVEDTOTAL EXTERIOR WALL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_exterior_wall.remaining",
+      "pdf_fields": [
+        "REMAININGTOTAL EXTERIOR WALL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.demolition.total_exterior_wall.demo_total_percent",
+      "pdf_fields": [
+        "DEMO TOTAL TOTAL EXTERIOR WALL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.cut.outside_building_footprint_cubic_yards",
+      "pdf_fields": [
+        "OUTSIDE BUILDING FOOTPRINTCUT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.cut.inside_building_footprint_cubic_yards",
+      "pdf_fields": [
+        "INSIDE BUILDING FOOTPRINTCUT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.cut.pool_spa_cubic_yards",
+      "pdf_fields": [
+        "POOLSPACUT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.cut.total_cubic_yards",
+      "pdf_fields": [
+        "TOTALCUT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.fill.outside_building_footprint_cubic_yards",
+      "pdf_fields": [
+        "OUTSIDE BUILDING FOOTPRINTFILL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.fill.inside_building_footprint_cubic_yards",
+      "pdf_fields": [
+        "INSIDE BUILDING FOOTPRINTFILL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.fill.pool_spa_cubic_yards",
+      "pdf_fields": [
+        "POOLSPAFILL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.fill.total_cubic_yards",
+      "pdf_fields": [
+        "TOTALFILL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.net_export.outside_building_footprint_cubic_yards",
+      "pdf_fields": [
+        "OUTSIDE BUILDING FOOTPRINTNET EXPORT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.net_export.inside_building_footprint_cubic_yards",
+      "pdf_fields": [
+        "INSIDE BUILDING FOOTPRINTNET EXPORT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.net_export.pool_spa_cubic_yards",
+      "pdf_fields": [
+        "POOLSPANET EXPORT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.grading.net_export.total_cubic_yards",
+      "pdf_fields": [
+        "TOTALNET EXPORT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.structure.lot_area.existing_sqft",
+      "pdf_fields": [
+        "EXISTINGSTRUCTURE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.structure.lot_area.proposed_sqft",
+      "pdf_fields": [
+        "PROPOSEDSTRUCTURE"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.structure.lot_percent.existing",
+      "pdf_fields": [
+        "EXISTINGSTRUCTURE_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.structure.lot_percent.proposed",
+      "pdf_fields": [
+        "PROPOSEDSTRUCTURE_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.hardscape_including_driveway.lot_area.existing_sqft",
+      "pdf_fields": [
+        "EXISTINGHARDSCAPE INCL DRIVEWAY"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.hardscape_including_driveway.lot_area.proposed_sqft",
+      "pdf_fields": [
+        "PROPOSEDHARDSCAPE INCL DRIVEWAY"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.hardscape_including_driveway.lot_percent.existing",
+      "pdf_fields": [
+        "EXISTINGHARDSCAPE INCL DRIVEWAY_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.hardscape_including_driveway.lot_percent.proposed",
+      "pdf_fields": [
+        "PROPOSEDHARDSCAPE INCL DRIVEWAY_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.total.lot_area.existing_sqft",
+      "pdf_fields": [
+        "EXISTINGTOTAL_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.total.lot_area.proposed_sqft",
+      "pdf_fields": [
+        "PROPOSEDTOTAL_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.total.lot_percent.existing",
+      "pdf_fields": [
+        "EXISTINGTOTAL_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.impervious.total.lot_percent.proposed",
+      "pdf_fields": [
+        "PROPOSEDTOTAL_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.pool.length_by_width",
+      "pdf_fields": [
+        "DIMENSIONS L x W x DPOOL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.pool.depth",
+      "pdf_fields": [
+        "DIMENSIONS L x W x DPOOL_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.pool.volume_gallons",
+      "pdf_fields": [
+        "VOLUMEGALLONSPOOL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.spa.length_by_width",
+      "pdf_fields": [
+        "DIMENSIONS L x W x DSPA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.spa.depth",
+      "pdf_fields": [
+        "DIMENSIONS L x W x DSPA_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.spa.volume_gallons",
+      "pdf_fields": [
+        "VOLUMEGALLONSSPA"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.pool_spa.total_volume_gallons",
+      "pdf_fields": [
+        "VOLUMEGALLONSTOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.existing_egress_doors",
+      "pdf_fields": [
+        "EXISTING EGRESS DOORS"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.proposed_egress_doors",
+      "pdf_fields": [
+        "PROPOSED EGRESS DOORS"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.existing_fixture_count",
+      "pdf_fields": [
+        "EXISTING FIXTURE COUNT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.proposed_fixture_count",
+      "pdf_fields": [
+        "PROPOSED FIXTURE COUNT"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.existing_fixture_count",
+      "pdf_fields": [
+        "EXISTING FIXTURE COUNT_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.proposed_fixture_count",
+      "pdf_fields": [
+        "PROPOSED FIXTURE COUNT_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.1.type",
+      "pdf_fields": [
+        "FIXTURE TYPERow1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.1.wattage",
+      "pdf_fields": [
+        "WATTAGERow1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.1.lumens",
+      "pdf_fields": [
+        "LUMENSRow1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.1.quantity",
+      "pdf_fields": [
+        "QUANTITYRow1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.1.comments",
+      "pdf_fields": [
+        "COMMENTSRow1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.2.type",
+      "pdf_fields": [
+        "FIXTURE TYPERow2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.2.wattage",
+      "pdf_fields": [
+        "WATTAGERow2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.2.lumens",
+      "pdf_fields": [
+        "LUMENSRow2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.2.quantity",
+      "pdf_fields": [
+        "QUANTITYRow2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.2.comments",
+      "pdf_fields": [
+        "COMMENTSRow2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.3.type",
+      "pdf_fields": [
+        "FIXTURE TYPERow3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.3.wattage",
+      "pdf_fields": [
+        "WATTAGERow3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.3.lumens",
+      "pdf_fields": [
+        "LUMENSRow3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.3.quantity",
+      "pdf_fields": [
+        "QUANTITYRow3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.fixtures.3.comments",
+      "pdf_fields": [
+        "COMMENTSRow3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.total_quantity",
+      "pdf_fields": [
+        "QUANTITYTOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.exterior.total_comments",
+      "pdf_fields": [
+        "COMMENTSTOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.1.type",
+      "pdf_fields": [
+        "FIXTURE TYPERow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.1.wattage",
+      "pdf_fields": [
+        "WATTAGERow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.1.lumens",
+      "pdf_fields": [
+        "LUMENSRow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.1.quantity",
+      "pdf_fields": [
+        "QUANTITYRow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.1.comments",
+      "pdf_fields": [
+        "COMMENTSRow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.2.type",
+      "pdf_fields": [
+        "FIXTURE TYPERow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.2.wattage",
+      "pdf_fields": [
+        "WATTAGERow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.2.lumens",
+      "pdf_fields": [
+        "LUMENSRow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.2.quantity",
+      "pdf_fields": [
+        "QUANTITYRow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.2.comments",
+      "pdf_fields": [
+        "COMMENTSRow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.3.type",
+      "pdf_fields": [
+        "FIXTURE TYPERow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.3.wattage",
+      "pdf_fields": [
+        "WATTAGERow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.3.lumens",
+      "pdf_fields": [
+        "LUMENSRow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.3.quantity",
+      "pdf_fields": [
+        "QUANTITYRow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.fixtures.3.comments",
+      "pdf_fields": [
+        "COMMENTSRow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.total_quantity",
+      "pdf_fields": [
+        "QUANTITYTOTAL_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.landscape.total_comments",
+      "pdf_fields": [
+        "COMMENTSTOTAL_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.combined.total_quantity",
+      "pdf_fields": [
+        "QUANTITYCOMBINED TOTAL"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string"
+    },
+    {
+      "fact_id": "project.lighting.combined.total_comments",
+      "pdf_fields": [
+        "COMMENTSCOMBINED TOTAL"
+      ],
       "required": false,
       "applicant_controlled": false,
       "transform": "string"
     }
   ],
   "review_fields": [
-    "Date Signed by Owner",
-    "Owner Signature"
+    "Text16",
+    "Text17",
+    "Text18"
   ],
   "fields": [
-    {
-      "name": "Address 1",
-      "type": "/Tx",
-      "tooltip": "Address 1",
-      "flags": 0
-    },
-    {
-      "name": "Address 2",
-      "type": "/Tx",
-      "tooltip": " Address 2",
-      "flags": 0
-    },
-    {
-      "name": "Address 3",
-      "type": "/Tx",
-      "tooltip": "Address 3",
-      "flags": 0
-    },
-    {
-      "name": "Address 4",
-      "type": "/Tx",
-      "tooltip": "Address 4",
-      "flags": 0
-    },
-    {
-      "name": "Authorized Signer Name (if applicable) 1",
-      "type": "/Tx",
-      "tooltip": "Authorized Signer Name (if applicable) 1",
-      "flags": 0
-    },
-    {
-      "name": "Authorized Signer Name (if applicable) 2",
-      "type": "/Tx",
-      "tooltip": "Authorized Signer Name (if applicable) 2",
-      "flags": 0
-    },
     {
       "name": "COMMENTSCOMBINED TOTAL",
       "type": "/Tx",
@@ -2108,12 +2417,6 @@
       "name": "DIMENSIONS L x W x DSPA_2",
       "type": "/Tx",
       "tooltip": "DIMENSIONS (L x W x D)_SPA",
-      "flags": 0
-    },
-    {
-      "name": "Date Signed by Owner",
-      "type": "/Tx",
-      "tooltip": "Date Signed by Owner",
       "flags": 0
     },
     {
@@ -2285,18 +2588,6 @@
       "flags": 0
     },
     {
-      "name": "Email Address",
-      "type": "/Tx",
-      "tooltip": "Email",
-      "flags": 0
-    },
-    {
-      "name": "Email Address 2",
-      "type": "/Tx",
-      "tooltip": "Email Address 2",
-      "flags": 0
-    },
-    {
       "name": "FIXTURE TYPERow1",
       "type": "/Tx",
       "tooltip": "FIXTURE TYPE_Row_1",
@@ -2438,30 +2729,6 @@
       "name": "OUTSIDE BUILDING FOOTPRINTNET EXPORT",
       "type": "/Tx",
       "tooltip": "OUTSIDE BUILDING FOOTPRINT_NET EXPORT",
-      "flags": 0
-    },
-    {
-      "name": "Owner / Entity Name 1",
-      "type": "/Tx",
-      "tooltip": " Owner / Entity Name 1",
-      "flags": 0
-    },
-    {
-      "name": "Owner Name",
-      "type": "/Tx",
-      "tooltip": "Owner Name",
-      "flags": 0
-    },
-    {
-      "name": "Owner Signature",
-      "type": "/Sig",
-      "tooltip": "Owner Signature",
-      "flags": 0
-    },
-    {
-      "name": "Owner/ Entity Name 2",
-      "type": "/Tx",
-      "tooltip": "Owner/ Entity Name 2",
       "flags": 0
     },
     {
@@ -2618,18 +2885,6 @@
       "name": "PROPOSEDUPPER LEVEL",
       "type": "/Tx",
       "tooltip": "PROPOSED_UPPER LEVEL",
-      "flags": 0
-    },
-    {
-      "name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative",
-      "type": null,
-      "tooltip": null,
-      "flags": 0
-    },
-    {
-      "name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
-      "type": "/Tx",
-      "tooltip": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages.",
       "flags": 0
     },
     {
@@ -2849,12 +3104,6 @@
       "flags": 0
     },
     {
-      "name": "Site Address",
-      "type": "/Tx",
-      "tooltip": "Site Address",
-      "flags": 0
-    },
-    {
       "name": "TOTALCUT",
       "type": "/Tx",
       "tooltip": "TOTAL_CUT",
@@ -2924,13 +3173,13 @@
       "name": "Text1",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text10",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text11",
@@ -2942,7 +3191,7 @@
       "name": "Text12",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text13",
@@ -2954,13 +3203,13 @@
       "name": "Text14",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text15",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text16",
@@ -2984,13 +3233,13 @@
       "name": "Text2",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text3",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text4",
@@ -3002,31 +3251,31 @@
       "name": "Text5",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text6",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text7",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text8",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "Text9",
       "type": "/Tx",
       "tooltip": null,
-      "flags": 0
+      "flags": 4096
     },
     {
       "name": "USE",
@@ -3137,8 +3386,8 @@
       "rect": [
         179.133,
         563.32,
-        274.417,
-        577.803
+        274.981,
+        579.767
       ]
     },
     {
@@ -3151,9 +3400,9 @@
       "normal_appearance_states": [],
       "rect": [
         176.084,
-        546.787,
-        271.367,
-        562.795
+        545.386,
+        275.296,
+        562.14
       ]
     },
     {
@@ -3167,8 +3416,8 @@
       "rect": [
         133.397,
         529.255,
-        266.794,
-        545.263
+        267.597,
+        545.918
       ]
     },
     {
@@ -3226,8 +3475,8 @@
       "normal_appearance_states": [],
       "rect": [
         179.514,
-        479.089,
-        284.707,
+        478.296,
+        285.494,
         493.572
       ]
     },
@@ -3242,8 +3491,8 @@
       "rect": [
         177.99,
         461.557,
-        282.42,
-        477.564
+        284.331,
+        478.219
       ]
     },
     {
@@ -3256,8 +3505,8 @@
       "normal_appearance_states": [],
       "rect": [
         133.778,
-        445.025,
-        282.42,
+        444.186,
+        284.331,
         461.032
       ]
     },
@@ -3272,7 +3521,7 @@
       "rect": [
         422.678,
         478.327,
-        539.305,
+        539.3051,
         495.097
       ]
     },
@@ -3316,8 +3565,8 @@
       "normal_appearance_states": [],
       "rect": [
         179.133,
-        391.809,
-        285.088,
+        393.118,
+        285.267,
         409.341
       ]
     },
@@ -3332,8 +3581,8 @@
       "rect": [
         177.608,
         376.564,
-        282.801,
-        391.809
+        283.449,
+        391.154
       ]
     },
     {
@@ -3346,8 +3595,8 @@
       "normal_appearance_states": [],
       "rect": [
         134.921,
-        358.269,
-        284.326,
+        359.108,
+        283.757,
         375.802
       ]
     },
@@ -3402,343 +3651,24 @@
       "field_type": "/Tx",
       "value": null,
       "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
       "rect": [
         54.8833,
-        288.141,
-        556.456,
+        214.564,
+        556.4561,
         302.624
       ]
     },
     {
-      "page": 2,
-      "field_name": "Text15",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        54.5022,
-        272.895,
-        556.075,
-        287.379
-      ]
-    },
-    {
-      "page": 2,
-      "field_name": "Text15",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        56.0191,
-        259.182,
-        557.592,
-        273.665
-      ]
-    },
-    {
-      "page": 2,
-      "field_name": "Text15",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        55.2492,
-        243.944,
-        556.822,
-        258.428
-      ]
-    },
-    {
-      "page": 2,
-      "field_name": "Text15",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        55.2415,
-        229.469,
-        556.814,
-        243.952
-      ]
-    },
-    {
-      "page": 2,
-      "field_name": "Text15",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        53.7399,
-        214.963,
-        555.312,
-        229.446
-      ]
-    },
-    {
-      "page": 15,
-      "field_name": "Provide the name of the property owner or, for trusts or entities, the entity name and authorized representative. Ensure this matches the contact and signature pages",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": true,
-      "normal_appearance_states": [
-        "/BBox",
-        "/FormType",
-        "/Matrix",
-        "/Resources",
-        "/Subtype",
-        "/Type"
-      ],
-      "rect": [
-        72.0,
-        632.4,
-        348.0,
-        646.8
-      ]
-    },
-    {
-      "page": 15,
-      "field_name": "Site Address",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": true,
-      "normal_appearance_states": [
-        "/BBox",
-        "/FormType",
-        "/Matrix",
-        "/Resources",
-        "/Subtype",
-        "/Type"
-      ],
-      "rect": [
-        276.12,
-        471.24,
-        540.12,
-        485.64
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Address 1",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.127,
-        632.219,
-        479.127,
-        646.619
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Email Address",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.562,
-        600.415,
-        479.781,
-        614.815
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Owner / Entity Name 1",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.129,
-        664.017,
-        479.129,
-        678.417
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Address 2",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.126,
-        616.709,
-        479.126,
-        631.109
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Authorized Signer Name (if applicable) 1",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        310.784,
-        648.128,
-        478.784,
-        662.528
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Owner/ Entity Name 2",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.91,
-        511.762,
-        481.547,
-        528.526
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Authorized Signer Name (if applicable) 2",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.856,
-        494.308,
-        481.493,
-        511.071
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Address 3",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.802,
-        477.999,
-        481.438,
-        494.762
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Address 4",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.238,
-        463.235,
-        480.875,
-        479.999
-      ]
-    },
-    {
-      "page": 21,
-      "field_name": "Email Address 2",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        311.82,
-        447.489,
-        481.456,
-        464.253
-      ]
-    },
-    {
-      "page": 22,
-      "field_name": "Date Signed by Owner",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": true,
-      "normal_appearance_states": [
-        "/BBox",
-        "/FormType",
-        "/Matrix",
-        "/Resources",
-        "/Subtype",
-        "/Type"
-      ],
-      "rect": [
-        120.535,
-        322.287,
-        240.535,
-        351.087
-      ]
-    },
-    {
-      "page": 22,
-      "field_name": "Owner Signature",
-      "field_type": "/Sig",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": true,
-      "normal_appearance_states": [
-        "/BBox",
-        "/Resources",
-        "/Subtype",
-        "/Type"
-      ],
-      "rect": [
-        111.273,
-        385.598,
-        261.273,
-        417.598
-      ]
-    },
-    {
-      "page": 22,
-      "field_name": "Owner Name",
-      "field_type": "/Tx",
-      "value": null,
-      "appearance_state": null,
-      "has_normal_appearance": false,
-      "normal_appearance_states": [],
-      "rect": [
-        113.673,
-        421.78,
-        230.291,
-        443.78
-      ]
-    },
-    {
-      "page": 31,
+      "page": 25,
       "field_name": "USE",
       "field_type": "/Tx",
       "value": null,
@@ -3760,7 +3690,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "ZONE",
       "field_type": "/Tx",
       "value": null,
@@ -3782,7 +3712,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LOT SLOPE",
       "field_type": "/Tx",
       "value": null,
@@ -3804,7 +3734,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REQUIREDLOT AREA",
       "field_type": "/Tx",
       "value": null,
@@ -3826,7 +3756,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGLOT AREA",
       "field_type": "/Tx",
       "value": null,
@@ -3848,7 +3778,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDLOT AREA",
       "field_type": "/Tx",
       "value": null,
@@ -3870,7 +3800,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "CONFORMS yesnoLOT AREA",
       "field_type": "/Tx",
       "value": null,
@@ -3892,7 +3822,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REQUIREDLOT WIDTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -3914,7 +3844,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGLOT WIDTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -3936,7 +3866,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDLOT WIDTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -3958,7 +3888,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "CONFORMS yesnoLOT WIDTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -3980,7 +3910,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REQUIREDLOT DEPTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -4002,7 +3932,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGLOT DEPTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -4024,7 +3954,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDLOT DEPTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -4046,7 +3976,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "CONFORMS yesnoLOT DEPTH AVG",
       "field_type": "/Tx",
       "value": null,
@@ -4068,7 +3998,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REQUIREDMAX BUILDING HEIGHT",
       "field_type": "/Tx",
       "value": null,
@@ -4090,7 +4020,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGMAX BUILDING HEIGHT",
       "field_type": "/Tx",
       "value": null,
@@ -4112,7 +4042,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDMAX BUILDING HEIGHT",
       "field_type": "/Tx",
       "value": null,
@@ -4134,7 +4064,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "CONFORMS yesnoMAX BUILDING HEIGHT",
       "field_type": "/Tx",
       "value": null,
@@ -4156,7 +4086,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REQUIREDMAX HEIGHT FROM GRADE",
       "field_type": "/Tx",
       "value": null,
@@ -4178,7 +4108,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGMAX HEIGHT FROM GRADE",
       "field_type": "/Tx",
       "value": null,
@@ -4200,7 +4130,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDMAX HEIGHT FROM GRADE",
       "field_type": "/Tx",
       "value": null,
@@ -4222,7 +4152,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "CONFORMS yesnoMAX HEIGHT FROM GRADE",
       "field_type": "/Tx",
       "value": null,
@@ -4244,7 +4174,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Front Yard",
       "field_type": "/Tx",
       "value": null,
@@ -4266,7 +4196,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Rear Yard",
       "field_type": "/Tx",
       "value": null,
@@ -4288,7 +4218,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Side Yards combinedeach",
       "field_type": "/Tx",
       "value": null,
@@ -4310,7 +4240,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LOT COVERAGE BSC",
       "field_type": "/Tx",
       "value": null,
@@ -4332,7 +4262,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FLOOR AREA RATIO",
       "field_type": "/Tx",
       "value": null,
@@ -4354,7 +4284,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LANDSCAPE OPEN SPACE",
       "field_type": "/Tx",
       "value": null,
@@ -4376,7 +4306,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "IRRIGATED AREA",
       "field_type": "/Tx",
       "value": null,
@@ -4398,7 +4328,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PARKING",
       "field_type": "/Tx",
       "value": null,
@@ -4420,7 +4350,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGLIVING AREA",
       "field_type": "/Tx",
       "value": null,
@@ -4442,7 +4372,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDLIVING AREA",
       "field_type": "/Tx",
       "value": null,
@@ -4464,7 +4394,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALLIVING AREA",
       "field_type": "/Tx",
       "value": null,
@@ -4486,7 +4416,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELLIVING AREA",
       "field_type": "/Tx",
       "value": null,
@@ -4508,7 +4438,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGLOWER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4530,7 +4460,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDLOWER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4552,7 +4482,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALLOWER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4574,7 +4504,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELLOWER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4596,7 +4526,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGUPPER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4618,7 +4548,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDUPPER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4640,7 +4570,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALUPPER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4662,7 +4592,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELUPPER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -4684,7 +4614,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGSTORAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4706,7 +4636,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDSTORAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4728,7 +4658,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALSTORAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4750,7 +4680,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELSTORAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4772,7 +4702,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGTOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -4794,7 +4724,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDTOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -4816,7 +4746,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALTOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -4838,7 +4768,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELTOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -4860,7 +4790,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGGARAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4882,7 +4812,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDGARAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4904,7 +4834,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALGARAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4926,7 +4856,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELGARAGE",
       "field_type": "/Tx",
       "value": null,
@@ -4948,7 +4878,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGELEVATED DECKTERRACE",
       "field_type": "/Tx",
       "value": null,
@@ -4970,7 +4900,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDELEVATED DECKTERRACE",
       "field_type": "/Tx",
       "value": null,
@@ -4992,7 +4922,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALELEVATED DECKTERRACE",
       "field_type": "/Tx",
       "value": null,
@@ -5014,7 +4944,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELELEVATED DECKTERRACE",
       "field_type": "/Tx",
       "value": null,
@@ -5036,7 +4966,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGMECHANICAL",
       "field_type": "/Tx",
       "value": null,
@@ -5058,7 +4988,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDMECHANICAL",
       "field_type": "/Tx",
       "value": null,
@@ -5080,7 +5010,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALMECHANICAL",
       "field_type": "/Tx",
       "value": null,
@@ -5102,7 +5032,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMODELMECHANICAL",
       "field_type": "/Tx",
       "value": null,
@@ -5124,7 +5054,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGROOF AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5146,7 +5076,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMOVEDROOF AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5168,7 +5098,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMAININGROOF AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5190,7 +5120,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DEMO TOTAL ROOF AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5212,7 +5142,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGFLOOR AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5234,7 +5164,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMOVEDFLOOR AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5256,7 +5186,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMAININGFLOOR AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5278,7 +5208,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DEMO TOTAL FLOOR AREA",
       "field_type": "/Tx",
       "value": null,
@@ -5300,7 +5230,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGLOWER LEVEL_2",
       "field_type": "/Tx",
       "value": null,
@@ -5322,7 +5252,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMOVEDLOWER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -5344,7 +5274,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMAININGLOWER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -5366,7 +5296,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DEMO TOTAL LOWER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -5388,7 +5318,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGUPPER LEVEL_2",
       "field_type": "/Tx",
       "value": null,
@@ -5410,7 +5340,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMOVEDUPPER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -5432,7 +5362,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMAININGUPPER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -5454,7 +5384,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DEMO TOTAL UPPER LEVEL",
       "field_type": "/Tx",
       "value": null,
@@ -5476,7 +5406,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGTOTAL FLOOR  ROOF",
       "field_type": "/Tx",
       "value": null,
@@ -5498,7 +5428,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMOVEDTOTAL FLOOR  ROOF",
       "field_type": "/Tx",
       "value": null,
@@ -5520,7 +5450,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMAININGTOTAL FLOOR  ROOF",
       "field_type": "/Tx",
       "value": null,
@@ -5542,7 +5472,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DEMO TOTAL TOTAL FLOOR  ROOF",
       "field_type": "/Tx",
       "value": null,
@@ -5564,7 +5494,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGTOTAL EXTERIOR WALL",
       "field_type": "/Tx",
       "value": null,
@@ -5586,7 +5516,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMOVEDTOTAL EXTERIOR WALL",
       "field_type": "/Tx",
       "value": null,
@@ -5608,7 +5538,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "REMAININGTOTAL EXTERIOR WALL",
       "field_type": "/Tx",
       "value": null,
@@ -5630,7 +5560,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DEMO TOTAL TOTAL EXTERIOR WALL",
       "field_type": "/Tx",
       "value": null,
@@ -5652,7 +5582,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "OUTSIDE BUILDING FOOTPRINTCUT",
       "field_type": "/Tx",
       "value": null,
@@ -5674,7 +5604,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "INSIDE BUILDING FOOTPRINTCUT",
       "field_type": "/Tx",
       "value": null,
@@ -5696,7 +5626,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "POOLSPACUT",
       "field_type": "/Tx",
       "value": null,
@@ -5718,7 +5648,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALCUT",
       "field_type": "/Tx",
       "value": null,
@@ -5740,7 +5670,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "OUTSIDE BUILDING FOOTPRINTFILL",
       "field_type": "/Tx",
       "value": null,
@@ -5762,7 +5692,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "INSIDE BUILDING FOOTPRINTFILL",
       "field_type": "/Tx",
       "value": null,
@@ -5784,7 +5714,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "POOLSPAFILL",
       "field_type": "/Tx",
       "value": null,
@@ -5806,7 +5736,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALFILL",
       "field_type": "/Tx",
       "value": null,
@@ -5828,7 +5758,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "OUTSIDE BUILDING FOOTPRINTNET EXPORT",
       "field_type": "/Tx",
       "value": null,
@@ -5850,7 +5780,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "INSIDE BUILDING FOOTPRINTNET EXPORT",
       "field_type": "/Tx",
       "value": null,
@@ -5872,7 +5802,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "POOLSPANET EXPORT",
       "field_type": "/Tx",
       "value": null,
@@ -5894,7 +5824,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "TOTALNET EXPORT",
       "field_type": "/Tx",
       "value": null,
@@ -5916,7 +5846,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGSTRUCTURE",
       "field_type": "/Tx",
       "value": null,
@@ -5938,7 +5868,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDSTRUCTURE",
       "field_type": "/Tx",
       "value": null,
@@ -5960,7 +5890,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGSTRUCTURE_2",
       "field_type": "/Tx",
       "value": null,
@@ -5982,7 +5912,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDSTRUCTURE_2",
       "field_type": "/Tx",
       "value": null,
@@ -6004,7 +5934,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGHARDSCAPE INCL DRIVEWAY",
       "field_type": "/Tx",
       "value": null,
@@ -6026,7 +5956,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDHARDSCAPE INCL DRIVEWAY",
       "field_type": "/Tx",
       "value": null,
@@ -6048,7 +5978,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGHARDSCAPE INCL DRIVEWAY_2",
       "field_type": "/Tx",
       "value": null,
@@ -6070,7 +6000,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDHARDSCAPE INCL DRIVEWAY_2",
       "field_type": "/Tx",
       "value": null,
@@ -6092,7 +6022,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGTOTAL_2",
       "field_type": "/Tx",
       "value": null,
@@ -6114,7 +6044,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDTOTAL_2",
       "field_type": "/Tx",
       "value": null,
@@ -6136,7 +6066,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTINGTOTAL_3",
       "field_type": "/Tx",
       "value": null,
@@ -6158,7 +6088,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSEDTOTAL_3",
       "field_type": "/Tx",
       "value": null,
@@ -6180,7 +6110,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DIMENSIONS L x W x DPOOL",
       "field_type": "/Tx",
       "value": null,
@@ -6202,7 +6132,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DIMENSIONS L x W x DPOOL_2",
       "field_type": "/Tx",
       "value": null,
@@ -6224,7 +6154,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "VOLUMEGALLONSPOOL",
       "field_type": "/Tx",
       "value": null,
@@ -6246,7 +6176,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DIMENSIONS L x W x DSPA",
       "field_type": "/Tx",
       "value": null,
@@ -6268,7 +6198,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "DIMENSIONS L x W x DSPA_2",
       "field_type": "/Tx",
       "value": null,
@@ -6290,7 +6220,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "VOLUMEGALLONSSPA",
       "field_type": "/Tx",
       "value": null,
@@ -6312,7 +6242,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "VOLUMEGALLONSTOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -6334,7 +6264,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTING EGRESS DOORS",
       "field_type": "/Tx",
       "value": null,
@@ -6356,7 +6286,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSED EGRESS DOORS",
       "field_type": "/Tx",
       "value": null,
@@ -6378,7 +6308,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTING FIXTURE COUNT",
       "field_type": "/Tx",
       "value": null,
@@ -6400,7 +6330,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSED FIXTURE COUNT",
       "field_type": "/Tx",
       "value": null,
@@ -6422,7 +6352,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FIXTURE TYPERow1",
       "field_type": "/Tx",
       "value": null,
@@ -6444,7 +6374,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "WATTAGERow1",
       "field_type": "/Tx",
       "value": null,
@@ -6466,7 +6396,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LUMENSRow1",
       "field_type": "/Tx",
       "value": null,
@@ -6488,7 +6418,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYRow1",
       "field_type": "/Tx",
       "value": null,
@@ -6510,7 +6440,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSRow1",
       "field_type": "/Tx",
       "value": null,
@@ -6532,7 +6462,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FIXTURE TYPERow2",
       "field_type": "/Tx",
       "value": null,
@@ -6554,7 +6484,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "WATTAGERow2",
       "field_type": "/Tx",
       "value": null,
@@ -6576,7 +6506,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LUMENSRow2",
       "field_type": "/Tx",
       "value": null,
@@ -6598,7 +6528,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYRow2",
       "field_type": "/Tx",
       "value": null,
@@ -6620,7 +6550,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSRow2",
       "field_type": "/Tx",
       "value": null,
@@ -6642,7 +6572,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FIXTURE TYPERow3",
       "field_type": "/Tx",
       "value": null,
@@ -6664,7 +6594,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "WATTAGERow3",
       "field_type": "/Tx",
       "value": null,
@@ -6686,7 +6616,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LUMENSRow3",
       "field_type": "/Tx",
       "value": null,
@@ -6708,7 +6638,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYRow3",
       "field_type": "/Tx",
       "value": null,
@@ -6730,7 +6660,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSRow3",
       "field_type": "/Tx",
       "value": null,
@@ -6752,7 +6682,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYTOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -6774,7 +6704,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSTOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -6796,7 +6726,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "EXISTING FIXTURE COUNT_2",
       "field_type": "/Tx",
       "value": null,
@@ -6818,7 +6748,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PROPOSED FIXTURE COUNT_2",
       "field_type": "/Tx",
       "value": null,
@@ -6840,7 +6770,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FIXTURE TYPERow1_2",
       "field_type": "/Tx",
       "value": null,
@@ -6862,7 +6792,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "WATTAGERow1_2",
       "field_type": "/Tx",
       "value": null,
@@ -6884,7 +6814,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LUMENSRow1_2",
       "field_type": "/Tx",
       "value": null,
@@ -6906,7 +6836,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYRow1_2",
       "field_type": "/Tx",
       "value": null,
@@ -6928,7 +6858,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSRow1_2",
       "field_type": "/Tx",
       "value": null,
@@ -6950,7 +6880,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FIXTURE TYPERow2_2",
       "field_type": "/Tx",
       "value": null,
@@ -6972,7 +6902,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "WATTAGERow2_2",
       "field_type": "/Tx",
       "value": null,
@@ -6994,7 +6924,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LUMENSRow2_2",
       "field_type": "/Tx",
       "value": null,
@@ -7016,7 +6946,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYRow2_2",
       "field_type": "/Tx",
       "value": null,
@@ -7038,7 +6968,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSRow2_2",
       "field_type": "/Tx",
       "value": null,
@@ -7060,7 +6990,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FIXTURE TYPERow3_2",
       "field_type": "/Tx",
       "value": null,
@@ -7076,13 +7006,13 @@
       ],
       "rect": [
         46.68,
-        85.44,
+        85.43999,
         151.08,
         97.56
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "WATTAGERow3_2",
       "field_type": "/Tx",
       "value": null,
@@ -7098,13 +7028,13 @@
       ],
       "rect": [
         152.4,
-        85.44,
+        85.43999,
         256.92,
         97.56
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LUMENSRow3_2",
       "field_type": "/Tx",
       "value": null,
@@ -7120,13 +7050,13 @@
       ],
       "rect": [
         258.24,
-        85.44,
+        85.43999,
         362.76,
         97.56
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYRow3_2",
       "field_type": "/Tx",
       "value": null,
@@ -7142,13 +7072,13 @@
       ],
       "rect": [
         364.08,
-        85.44,
+        85.43999,
         468.48,
         97.56
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSRow3_2",
       "field_type": "/Tx",
       "value": null,
@@ -7164,13 +7094,13 @@
       ],
       "rect": [
         469.8,
-        85.44,
+        85.43999,
         574.32,
         97.56
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYTOTAL_2",
       "field_type": "/Tx",
       "value": null,
@@ -7192,7 +7122,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSTOTAL_2",
       "field_type": "/Tx",
       "value": null,
@@ -7214,7 +7144,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "QUANTITYCOMBINED TOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -7236,7 +7166,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "COMMENTSCOMBINED TOTAL",
       "field_type": "/Tx",
       "value": null,
@@ -7258,7 +7188,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Front Yard",
       "field_type": "/Tx",
       "value": null,
@@ -7273,7 +7203,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Front Yard",
       "field_type": "/Tx",
       "value": null,
@@ -7288,7 +7218,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Front Yard",
       "field_type": "/Tx",
       "value": null,
@@ -7297,13 +7227,13 @@
       "normal_appearance_states": [],
       "rect": [
         476.258,
-        831.844,
+        831.8441,
         574.898,
-        843.964
+        843.9641
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Rear Yard",
       "field_type": "/Tx",
       "value": null,
@@ -7314,11 +7244,11 @@
         275.136,
         818.74,
         373.776,
-        830.979
+        830.9791
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Side Yards combinedeach",
       "field_type": "/Tx",
       "value": null,
@@ -7333,7 +7263,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LOT COVERAGE BSC",
       "field_type": "/Tx",
       "value": null,
@@ -7348,7 +7278,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FLOOR AREA RATIO",
       "field_type": "/Tx",
       "value": null,
@@ -7363,7 +7293,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LANDSCAPE OPEN SPACE",
       "field_type": "/Tx",
       "value": null,
@@ -7378,7 +7308,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "IRRIGATED AREA",
       "field_type": "/Tx",
       "value": null,
@@ -7393,7 +7323,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PARKING",
       "field_type": "/Tx",
       "value": null,
@@ -7408,7 +7338,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Rear Yard",
       "field_type": "/Tx",
       "value": null,
@@ -7417,13 +7347,13 @@
       "normal_appearance_states": [],
       "rect": [
         375.494,
-        818.151,
+        818.1511,
         474.134,
-        830.391
+        830.3911
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Side Yards combinedeach",
       "field_type": "/Tx",
       "value": null,
@@ -7438,7 +7368,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LOT COVERAGE BSC",
       "field_type": "/Tx",
       "value": null,
@@ -7453,7 +7383,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FLOOR AREA RATIO",
       "field_type": "/Tx",
       "value": null,
@@ -7468,7 +7398,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LANDSCAPE OPEN SPACE",
       "field_type": "/Tx",
       "value": null,
@@ -7483,7 +7413,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "IRRIGATED AREA",
       "field_type": "/Tx",
       "value": null,
@@ -7494,11 +7424,11 @@
         375.494,
         751.911,
         474.134,
-        764.151
+        764.1511
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PARKING",
       "field_type": "/Tx",
       "value": null,
@@ -7507,13 +7437,13 @@
       "normal_appearance_states": [],
       "rect": [
         375.494,
-        738.711,
+        738.7111,
         474.134,
-        750.831
+        750.8311
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Rear Yard",
       "field_type": "/Tx",
       "value": null,
@@ -7524,11 +7454,11 @@
         475.447,
         817.968,
         574.087,
-        830.208
+        830.2081
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "Side Yards combinedeach",
       "field_type": "/Tx",
       "value": null,
@@ -7537,13 +7467,13 @@
       "normal_appearance_states": [],
       "rect": [
         475.447,
-        804.768,
+        804.7681,
         574.087,
-        816.888
+        816.8881
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LOT COVERAGE BSC",
       "field_type": "/Tx",
       "value": null,
@@ -7552,13 +7482,13 @@
       "normal_appearance_states": [],
       "rect": [
         475.447,
-        791.448,
+        791.4481,
         574.087,
         803.688
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "FLOOR AREA RATIO",
       "field_type": "/Tx",
       "value": null,
@@ -7573,7 +7503,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "LANDSCAPE OPEN SPACE",
       "field_type": "/Tx",
       "value": null,
@@ -7588,7 +7518,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "IRRIGATED AREA",
       "field_type": "/Tx",
       "value": null,
@@ -7603,7 +7533,7 @@
       ]
     },
     {
-      "page": 31,
+      "page": 25,
       "field_name": "PARKING",
       "field_type": "/Tx",
       "value": null,
@@ -7618,7 +7548,7 @@
       ]
     },
     {
-      "page": 46,
+      "page": 40,
       "field_name": "Text16",
       "field_type": "/Tx",
       "value": null,
@@ -7633,7 +7563,7 @@
       ]
     },
     {
-      "page": 46,
+      "page": 40,
       "field_name": "Text17",
       "field_type": "/Tx",
       "value": null,
@@ -7644,11 +7574,11 @@
         387.994,
         513.772,
         503.859,
-        530.542
+        530.5421
       ]
     },
     {
-      "page": 46,
+      "page": 40,
       "field_name": "Text18",
       "field_type": "/Tx",
       "value": null,
@@ -7662,5 +7592,6 @@
         498.527
       ]
     }
-  ]
+  ],
+  "review_widgets": []
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "verified_at": "2026-10-09T21:03:41-07:00",
+  "verified_at": "2026-10-09T22:54:44-07:00",
   "redistribution_policy": "fetch_from_official_source_and_verify; City PDF binaries are not bundled",
   "source_pages": {
     "planning": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
@@ -73,20 +73,39 @@
       "lane": "planning",
       "status": "pinned",
       "official_name": "Conditional Use Permit Application",
-      "download_name": "CUP Application_July 2026_fillable.pdf",
+      "download_name": "CUP Application_Oct 2026_fillable.pdf",
       "cache_name": "conditional-use-permit-application.pdf",
       "document_id": "26463",
-      "ticks": "639198113884500000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639198113884500000",
-      "printed_revision": "Updated July 2026",
-      "sha256": "4855c5cf3b6cb7fb013894677dcaccadd0e06ebb58a0773f4c6232b3545ab487",
-      "bytes": 2906725,
-      "pages": 53,
-      "canonical_fields": 194,
-      "widgets": 228,
-      "field_tree_sha256": "e0e48373cba457a354352afe291dcb20a3dccde186e7224bfb5f272ba0d144b9",
-      "field_map_version": "1.0.0",
-      "redistribution": "fetch_only"
+      "ticks": "639252307038230000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639252307038230000",
+      "printed_revision": "Updated August 2026",
+      "sha256": "33b8e97b15ad787aa2998063b4f36fd7eaadc89eda02db5f1ab94af7997c3a8f",
+      "bytes": 2429047,
+      "pages": 47,
+      "canonical_fields": 178,
+      "widgets": 208,
+      "field_tree_sha256": "a94eb474ebba6b385ab4055f69da88c79d4410cf5c5290f843415ab1f62f4c79",
+      "field_map_version": "2.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:38Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Fri, 09 Oct 2026 08:25:29 GMT",
+        "pdf_creation_date": "2026-05-05T09:52:54-07:00",
+        "pdf_mod_date": "2026-10-09T09:22:46-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Conditional Use Permit Application",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26463 without ticks served the same bytes, and so did the previously pinned link (ticks 639198113884500000): the City replaced the file under the same document id. The new ticks decode to 2026-09-17; the file's HTTP Last-Modified and PDF ModDate are 2026-10-09.",
+        "compared_with_prior": "Replaces the 2026-07 file pinned under the same document id (CUP Application_July 2026_fillable.pdf, 2,906,725 bytes, 53 pages, 194 fields). The printed revision line moved from Updated July 2026 to Updated August 2026. The application form (page 2) has the same blocks, but the applicant and representative rows now share field names (Text3-Text8), so those targets are exact widgets. Every printed fee in submittal requirement 1 fell (Minor zoning plan check $1,390 to $945, Major $6,975 to $4,743, Intensification of Use $12,680 to $8,629, CUP with Major Design Review $42,740 to $29,081, CUP with Minor Design Review $14,110 to $9,601, Minor (no intensification) $7,250 to $4,931, Amendment $5,425 to $3,934); the $5,000 third-party review deposit is unchanged. Exhibit A no longer contains the fillable Advance Deposit and Reimbursement Agreement: it is a deposit table and the City's internal deposit procedure, which says the agreement is attached to the first incomplete letter. The Exhibit I affidavit now has applicant and owner signature lines and lists the acceptable signature forms (a typed name alone is not sufficient)."
+      }
     },
     {
       "id": "design-review-application",
@@ -467,6 +486,23 @@
       "id": "adu-application-doc-26710",
       "retired_at": "2026-10-10",
       "reason": "The Applications & Handouts page links ADU document 27032 (ADU_Application 090126_fillable.pdf), which replaces this one. The field tree is unchanged, but the printed application and deposit fee rose from $945 to $1,390. Document 26710 still serves this older file; a file with this checksum fails check-source-freshness."
+    },
+    {
+      "official_name": "Conditional Use Permit Application",
+      "download_name": "CUP Application_July 2026_fillable.pdf",
+      "document_id": "26463",
+      "ticks": "639198113884500000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639198113884500000",
+      "sha256": "4855c5cf3b6cb7fb013894677dcaccadd0e06ebb58a0773f4c6232b3545ab487",
+      "bytes": 2906725,
+      "pages": 53,
+      "canonical_fields": 194,
+      "widgets": 228,
+      "field_tree_sha256": "e0e48373cba457a354352afe291dcb20a3dccde186e7224bfb5f272ba0d144b9",
+      "field_map_version": "1.0.0",
+      "id": "conditional-use-permit-application-2026-07",
+      "retired_at": "2026-10-10",
+      "reason": "The Applications & Handouts page links document 26463 with ticks 639252307038230000, and both that link and this older ticks value now serve CUP Application_Oct 2026_fillable.pdf (47 pages, 178 fields, printed Updated August 2026). The City no longer serves this file. The new file lowers every printed CUP fee, drops the fillable deposit agreement from Exhibit A, and adds the owner signature to the Exhibit I affidavit. A file with this checksum fails check-source-freshness."
     }
   ],
   "pending_sources": []

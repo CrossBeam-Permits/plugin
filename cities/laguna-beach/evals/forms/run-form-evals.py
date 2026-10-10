@@ -33,6 +33,7 @@ FORM_ID = "building-application"
 # is pinned too, but the City form has no fields, so it must refuse to fill instead.
 PLANNING_ROUND_TRIP = (
     "adu-application",
+    "conditional-use-permit-application",
     "lot-line-adjustment-application",
     "revocable-encroachment-permit-application",
     "sb-9-application",

@@ -17,6 +17,7 @@ SCRIPTS = ROOT / "scripts"
 SEMANTIC_FORM_IDS = (
     "adu-application",
     "coastal-development-permit-application",
+    "conditional-use-permit-application",
     "design-review-application",
     "floodplain-development-residential",
     "lot-line-adjustment-application",
@@ -28,6 +29,7 @@ SEMANTIC_FORM_IDS = (
 PREVIEW_PAGES = {
     "adu-application": (3, 4, 9, 34),
     "coastal-development-permit-application": (2,),
+    "conditional-use-permit-application": (2, 25),
     "design-review-application": (2, 25),
     "floodplain-development-residential": (1,),
     "lot-line-adjustment-application": (2, 5, 10),

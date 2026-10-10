@@ -570,6 +570,26 @@ def adu(document: dict[str, Any]) -> list[dict[str, Any]]:
     return with_font(mappings) + project_summary_tables(document, 34)
 
 
+def conditional_use(document: dict[str, Any]) -> list[dict[str, Any]]:
+    """Conditional Use Permit Application, document 26463 (CUP Application_Oct 2026_fillable.pdf).
+
+    Page 2 is the application face. The applicant and representative rows share field
+    names Text3-Text8 (top row = applicant), so those targets are exact widgets; the owner
+    row is Text9-Text14. Page 25 holds the Project Summary Tables. The Exhibit J dates
+    (page 40) stay review-only.
+    """
+
+    shared = {"company_name": "Text3", "mailing_address": "Text4", "phone": "Text5", "contact_name": "Text6", "city_state_zip": "Text7", "email": "Text8"}
+    owner = {"company_name": "Text9", "mailing_address": "Text10", "phone": "Text11", "contact_name": "Text12", "city_state_zip": "Text13", "email": "Text14"}
+    mappings = [
+        direct("site.address", "Text1", required=True),
+        direct("site.apn", "Text2"),
+        *contact_block({item: [*stacked(document, 2, name, 2), owner[item]] for item, name in shared.items()}),
+        direct("project.description", "Text15", required=True),
+    ]
+    return with_font(mappings) + project_summary_tables(document, 25)
+
+
 SB9_MANUAL_SECTIONS = [
     {"pages": [2, 3, 4, 5], "title": "SB 9 Lot Split Application: I. Application Information, II. Property Owner's Letter of Agency, III. Project Information (questions 1-21)"},
     {"pages": [8, 9, 10], "title": "SB 9 Two-Unit Application: I. Application Information, II. Property Owner's Letter of Agency, III. Project Information"},
@@ -793,6 +813,10 @@ def main() -> int:
     design_document = load_json(MAPS / "design-review-application.json")
     finalize("design-review-application", design_review(design_document))
     finalize("coastal-development-permit-application", coastal_development())
+    finalize(
+        "conditional-use-permit-application",
+        conditional_use(load_json(MAPS / "conditional-use-permit-application.json")),
+    )
     zone_document = load_json(MAPS / "zone-clearance-application.json")
     finalize("zone-clearance-application", zone_clearance(zone_document))
     finalize(

@@ -299,6 +299,7 @@ def check_manifests_and_maps() -> None:
         "adu-application",
         "building-application",
         "coastal-development-permit-application",
+        "conditional-use-permit-application",
         "design-review-application",
         "floodplain-development-residential",
         "lot-line-adjustment-application",
