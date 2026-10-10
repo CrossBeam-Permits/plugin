@@ -48,7 +48,7 @@ Record each part separately as yes, no, or unknown. A blanket statement such as
 Administrative Design Review; any unknown leaves the equipment route undetermined.
 
 1. Ground-mounted, or wall-mounted at ground level.
-2. Outside required front and side yard setbacks.
+2. Outside the required front yard setback (Ord. 1731 struck "or side"; a side setback is fine if part 3 holds).
 3. At least five feet from every property line.
 4. Manufacturer specification sheet supplies the decibel rating; sound is limited to
    60 dB daytime / 50 dB nighttime at the property line; and two maintained sound-
