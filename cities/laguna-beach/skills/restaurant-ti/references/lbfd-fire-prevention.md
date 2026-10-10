@@ -64,7 +64,7 @@ Sprinkler system design submittals must include a **hydrant flow test ≤6 month
 LBMC Sec. 903.2 expands sprinkler requirements beyond the state baseline — sprinklers required throughout all new buildings and structures regardless of size in many configurations. New restaurants in shell buildings should treat sprinklers as required. For existing-building retrofits see `sprinkler-retrofit-triggers.md`.
 
 ### Group R Retrofit — LBMC Title 15 Sec. 1103.5.4
-Mixed-use buildings with residential above the restaurant: see `sprinkler-retrofit-triggers.md`. Scope-based trigger (50% building, 50% exterior, or added story) fires retrofit of the entire R fire area independent of building valuation.
+Mixed-use buildings with residential above the restaurant: see `sprinkler-retrofit-triggers.md`. Scope-based trigger (50% of the building or an added story; 50% exterior alone is UNSETTLED) fires retrofit of the entire R fire area independent of building valuation.
 
 ---
 

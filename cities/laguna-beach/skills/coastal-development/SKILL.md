@@ -3,7 +3,9 @@ name: coastal-development
 description: "Coastal Development Permit permits in Laguna Beach, CA. Work that needs a Coastal Development Permit in its own right. NOT ordinary building work that merely sits in the coastal zone. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions coastal development in Laguna Beach."
 metadata:
   version: "2.0"
+  source: "LBMC Ch. 25.07 (corpus codified through 2026-04-28); Urgency Ord. 1732 §§13-16 (25.07.006, 25.07.008(B), 25.07.012(J)-(K), 25.07.026) and 25.05.040; City CDP Application (March 2026); Coastal Commission report F9a (Nov. 2024); Gov. Code 66329"
   authority: "California Building Standards Commission and City of Laguna Beach"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -178,6 +180,22 @@ Common SFR improvements normally associated with a dwelling can be exempt, inclu
 
 If any exception applies or cannot be ruled out, flag CDP review.
 
+Scope notes:
+
+- The 10% floor-area, 10% height and detached-structure items apply **only** in the strip between the sea and the first public road, or within 300 ft of the beach or mean high tide line (§25.07.008(A)(1)(c)). Outside that strip they do not remove the exemption.
+- "Highly scenic" means designated highly scenic in the certified Land Use Plan (§25.07.008(A)(1)(b)). No map of those areas is in the corpus. When it matters, return UNSETTLED and confirm with Planning at pre-application.
+- UNSETTLED: Ord. 1732 added "slopes of 30% or greater" to the 25.08 definition of environmentally sensitive area. Ord. 1732 is not certified. Whether a steep lot is in an "environmentally sensitive area" for §25.07.008(A)(1)(b) is not decided; confirm with Planning at pre-application.
+- A major remodel is not an "improvement": the October 2026 Major Remodel Quick Guide classifies it as new development, and §25.56.011 makes it a new building. Treat it as needing a CDP (detail: `../residential-remodel/references/city-cdp-coastal-zone.md`).
+- An ADU is exempt only when the application converts existing livable space inside the primary dwelling (§25.07.008(A)(1)(a); Ord. 1713, LBMC 25.17.010(d)(1)(C)(ii)). See `../adu/SKILL.md`.
+
+#### STEP 3a - Does the E-93-1 categorical exclusion apply?
+
+Section 25.07.010 exempts development in a categorical exclusion area, except for the notice requirements of 14 CCR §13248. Categorical Exclusion Order E-93-1 covers "single family residential development" in eleven areas. Its Special Condition 8 requires conformity with the LCP or the order, whichever is more restrictive. In the Commission report F9a (Nov. 2024), the Executive Director found the LCP exemption list (§25.07.008) controls for an ADU added to a house (the City source document (not included in this plugin)).
+
+- ADU in an exclusion area: E-93-1 does not clear it.
+- Single-family remodel or accessory structure in an exclusion area: apply the stricter of §25.07.008 and the order. If §25.07.008 exempts the work, it is exempt either way. If not, whether E-93-1 clears it is UNSETTLED; confirm with Planning at pre-application.
+- New house or major remodel in an exclusion area: UNSETTLED; confirm with Planning at pre-application.
+
 #### STEP 4 - Is the project appealable?
 
 Apply LBMC Section 25.07.006:
@@ -191,6 +209,32 @@ Apply LBMC Section 25.07.006:
 | Major public works or major energy facility | Appealable |
 
 For appealable CDPs, local decision finality depends on Coastal Commission notice and the Commission appeal window.
+
+**ADU-only CDP.** A City CDP that covers only an ADU is decided within 60 days, concurrently with the ADU; no hearing is required; it is not appealable to the Coastal Commission even in the appealable area (Gov. Code 66329(a), (c); City ADU & JADU Application, footnote 4). A CDP that also covers other development follows this step.
+
+#### STEP 5 - Which kind of CDP, and who decides?
+
+| Kind | When | Decider | Source |
+|---|---|---|---|
+| De minimis waiver | Not appealable, not in an appeal area, no local hearing required, no possible adverse effect on coastal resources, no violation; not when there is known opposition or an LCP-conformity question | Director, written waiver; reported to City Council, which can void it | §25.07.009 |
+| Administrative CDP | "Minor development": consistent with the LCP, needs no discretionary approval other than the CDP, no adverse effect | Director; hearing only if requested within 15 working days of notice | §25.07.013 |
+| CDP with other permits | Project also needs Design Review, a variance, a CUP, etc. | The same body as the other permit, at the same time | §25.07.012(D) |
+| CDP alone | Only a CDP is needed and it is not de minimis or minor | Director, at a public hearing | §25.07.012(D) |
+
+- When Design Review goes with the CDP, the Design Review body (the DRB for single-family and two-family projects, the Planning Commission otherwise, §25.05.040(F)(1)) also makes the CDP findings in §25.07.012(F)-(G) (§25.05.040(F)(3)-(4)). CDP notice follows §25.07.014 instead of §25.05.065 (§25.05.040(E)).
+- A Zone Clearance or Administrative Design Review project "may still require a Coastal Development Permit" (§25.05.040(A)(2)(e); §25.05.045(C)(4)). A Zone Clearance does not clear the CDP question.
+
+#### STEP 6 - Ord. 1732 changes to Chapter 25.07 (not yet certified)
+
+Urgency Ord. 1732 (effective 2026-07-22) amended Chapter 25.07. These amendments, like the rest of Ord. 1732, are not certified by the Coastal Commission; the City Council adopted a resubmittal resolution on 2026-09-22. Whether they bind a CDP before certification is UNSETTLED; confirm with Planning at pre-application.
+
+- §25.07.008(B): the record of exemptions is kept on the City's website; exemptions for appealable development are reported to the Commission's Executive Director within 7 calendar days.
+- §25.07.012(J): changes to an approved CDP. The Director may approve minor changes without a hearing only if they are consistent with the LCP, do not touch a feature that was a basis for the environmental finding or a condition, do not expand the use, and do not alter the §25.07.012(G) findings. Other changes go back to the original review authority on a new application. Commission-issued CDPs are amended by the Commission.
+- §25.07.012(K): CDP staking. Poles and ribbons showing the full structure, including decks and eaves, in place and surveyor-certified at least 21 calendar days before the first public hearing; re-staked at least 14 days before a later hearing if required; removed within 20 days after the final decision. The Director may waive staking in writing.
+- §25.07.006: adds a definition of "Director of Community Development" (includes a designee).
+- §25.07.026: LCP amendment procedure repealed and replaced.
+
+Source: the City source document (not included in this plugin) (Sections 13-16; signed Ord. 1732 controls).
 
 ---
 
@@ -206,7 +250,10 @@ For appealable CDPs, local decision finality depends on Coastal Commission notic
 | LB-CDP-6 | Appealable status determined | Section 25.07.006 appealable area and major public works/energy facility triggers checked |
 | LB-CDP-7 | Portal/application package complete | March 2026 CDP application package submitted through Public Permit Portal with required plan sheets and project summary table |
 | LB-CDP-8 | Notice/appeal timing respected | Development does not commence until local and CCC appeal periods expire or appeals are exhausted |
-| LB-CDP-9 | Other entitlements sequenced | Design Review, variance, zoning plan check, floodplain, bluff/geotech, and building permit conditions are coordinated with CDP |
+| LB-CDP-9 | Other entitlements sequenced | Design Review, variance, zoning plan check, floodplain, bluff/geotech, and building permit conditions are coordinated with CDP; CDP decided by the same body as Design Review (§25.07.012(D)) |
+| LB-CDP-10 | Categorical exclusion checked | E-93-1 area: ADU never cleared; other single-family work per Step 3a, UNSETTLED items flagged |
+| LB-CDP-11 | CDP type identified | De minimis waiver, administrative, or regular CDP (Step 5); ADU-only CDP on the 66329 track |
+| LB-CDP-12 | Staking | If a CDP hearing is held: §25.07.012(K) staking 21 days before (Ord. 1732, uncertified) unless waived in writing |
 
 ---
 
@@ -217,6 +264,9 @@ For appealable CDPs, local decision finality depends on Coastal Commission notic
 - Do not treat an exempt building permit as exempt from CDP recordkeeping. LBMC Section 25.07.014(A) requires the city to maintain records for exempt development.
 - Do not tell the applicant to start work after city approval if the CDP is appealable. Wait for appeal periods to expire or appeals to be exhausted.
 - Do not route Blue Lagoon, Lower Irvine Cove, or Three Arch Bay CDPs to the city without confirming retained CCC jurisdiction.
+- Do not apply the §25.07.008(A)(1)(c) 10% items outside the first-road/300-ft strip.
+- Do not tell a resident E-93-1 clears an ADU.
+- Do not treat a Zone Clearance stamp as a CDP exemption. Planning records the exemption separately (§25.07.008(B)).
 
 ---
 

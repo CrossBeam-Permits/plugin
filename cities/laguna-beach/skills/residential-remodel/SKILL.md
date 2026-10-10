@@ -3,9 +3,9 @@ name: residential-remodel
 description: "Residential Remodel permits in Laguna Beach, CA. A whole-house or multi-room remodel, including bearing-wall work and new openings. Always a plan set. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against the Laguna Beach rules and the City submittal checklists, and prepares a portal-ready submission; (B) CITY REVIEWER — checks a submittal against the Laguna Beach rules and produces tight corrections output. California code compliance comes from the CrossBeam connector when it is connected. Use when the user mentions residential remodel in Laguna Beach."
 metadata:
   version: "2.0"
-  source: "2025 California Existing Building Code (Title 24 Part 10), 2025 California Residential Code (Title 24 Part 2.5), 2025 California Energy Code (Title 24 Part 6), 14 CCR Division 5.5 Coastal Commission Regulations, plus California Coastal Commission settled enforcement interpretation; LBMC Title 15 (Fire Prevention, Ord. 1726 12/18/2025), LBMC Title 25 (Zoning) Chapters 25.05 / 25.07 / 25.10 / 25.50 / 25.56 / 25.17, LBMC Title 14 Chapter 14.50 / 14.52 / 14.70 / 14.86, City of Laguna Beach Land Use Element (LCP), Major Remodel Quick Guide (Updated October 2026; standalone handout 23171 — SB 9 application Exhibit F still prints the June 2026 edition), Building Plan Check Submittal Requirements (May 2026 republish, mod date 2026-04-30), Bluff Edge Determinations Quick Guide (Mar 2024), Zoning Plan-Check Project Submittal Requirements table, CCC F9a-11-2024 Notice (ADU coastal exemption rejection), LBMC Title 12 (Trees and Vegetation) Chapters 12.08 / 12.16 as amended by the 2026 efficiency ordinance (effective 2026-08-20)"
+  source: "2025 California Existing Building Code (Title 24 Part 10), 2025 California Residential Code (Title 24 Part 2.5), 2025 California Energy Code (Title 24 Part 6), 14 CCR Division 5.5 Coastal Commission Regulations, plus California Coastal Commission settled enforcement interpretation; LBMC Title 15 (Fire Prevention, Ord. 1726 12/18/2025), LBMC Title 25 (Zoning) Chapters 25.05 / 25.07 / 25.10 / 25.50 / 25.56 / 25.17, LBMC Title 14 Chapter 14.50 / 14.52 / 14.70 / 14.86, City of Laguna Beach Land Use Element (LCP), Major Remodel Quick Guide (Updated October 2026; standalone handout 23171 — SB 9 application Exhibit F still prints the June 2026 edition), Building Plan Check Submittal Requirements (May 2026 republish, mod date 2026-04-30), Bluff Edge Determinations Quick Guide (Mar 2024), Zoning Plan-Check Project Submittal Requirements table, Coastal Commission report F9a, Nov. 2024 (E-93-1 does not clear an ADU); Urgency Ord. 1713 (LBMC 25.17.020(d)(2)), LBMC Title 12 (Trees and Vegetation) Chapters 12.08 / 12.16 as amended by the 2026 efficiency ordinance (effective 2026-08-20)"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-08-15"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -132,18 +132,18 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 > Laguna Beach's local layer for this permit. It adds to or overrides California law, which comes from the CrossBeam connector. Paths are relative to this file.
 
-This skill is the **city overlay** the parent state skill is told to invoke at every Laguna-Beach review. Its job is to (a) classify the project under Laguna's current closed-list planning routes, (b) determine major-remodel status using Laguna's dual coastal zone appealable / coastal zone non-appealable methodology, (c) run Laguna's deterministic 6th phantom-remodel signal on top of the parent's heuristic 5-signal detector, (d) layer in the city's two sprinkler retrofit triggers (Ch. 14.52.030 valuation and Title 15 §1103.5.4 scope), (e) layer in the bluff/CDP/VHFHSZ/view/tree/hillside overlays, and (f) flag the CCC F9a-11-2024 ADU-coastal-exemption pushback when relevant.
+This skill is the **city overlay** the parent state skill is told to invoke at every Laguna-Beach review. Its job is to (a) classify the project under Laguna's current closed-list planning routes, (b) determine major-remodel status using Laguna's dual coastal zone appealable / coastal zone non-appealable methodology, (c) run Laguna's Building-handout wall rule (6th phantom-remodel signal, scoped by area) on top of the parent's heuristic 5-signal detector, (d) layer in the city's two sprinkler retrofit triggers (Ch. 14.52.030 valuation and Title 15 §1103.5.4 scope), (e) layer in the bluff/CDP/VHFHSZ/view/tree/hillside overlays, and (f) flag, when an ADU is in scope, that Categorical Exclusion E-93-1 does not clear it (Coastal Commission report F9a, Nov. 2024).
 
 **What this covers (12 city-specific topics)**
 1. Major-remodel operative authority chain — LCP Land Use Element → October 2026 Major Remodel Handout → LBMC §25.10.008(O) statutory backstop
 2. Dual methodology — coastal zone appealable (foundation + walls + roof, removal AND reinforcement count) vs coastal zone non-appealable (exterior walls only, removal only); walls counted on each floor; each structure tested independently
-3. Deterministic phantom-remodel rule from the May 2026 Building Plan Check Submittal Requirements — Laguna's codified 6th signal
+3. Building-handout wall rule from the May 2026 Building Plan Check Submittal Requirements — Laguna's codified 6th signal, scoped by area (counts only in the appealable area)
 4. Sprinkler retrofit — two independent triggers: Ch. 14.52.030 (valuation) and Title 15 §1103.5.4 (scope). Either fires.
 5. Bluff overlay — §25.50.004(B)(4) 25-ft setback + §25.50.020 site-coverage shrinkage + anti-game buried-bluff rule + report stack
 6. Nonconforming structures — Ch. 25.56 three-rule structure, plus the October 2026 handout rule: nonconforming status ends at a major remodel
 7. Current project routing — §25.05.040 closed lists + §25.05.045 Zone Clearance, with ESA override
-8. CDP for major remodel in coastal zone — Ch. 25.07 fires regardless of E-93-1 categorical exclusion
-9. ADU coastal exemption pushback — CCC F9a-11-2024 (flag prominently)
+8. CDP for major remodel in coastal zone — Ch. 25.07 (major remodel is new development); E-93-1 areas UNSETTLED
+9. ADU coastal exemption — Commission report F9a, Nov. 2024: E-93-1 does not clear an ADU (flag prominently)
 10. Coastal Zone / Appealable Area / Bluff Overlay polygon integration pattern — point-in-polygon vs applicant fallback
 11. VHFHSZ + WUI amendments — Ch. 14.70 affecting major remodels
 12. View, Heritage Tree, Hillside overlays — when each triggers
@@ -163,11 +163,11 @@ The parent (the California Residential Remodel rules, which come from the CrossB
 
 1. **STEP A** — Run the **current project-route classifier** first. Route = Zone Clearance / Administrative Design Review / Design Review / `needs_source`, after the ESA override. The route drives notice timing, hearing requirements, and the approval authority.
 2. **STEP B** — Run the **major-remodel determination** using the coastal zone appealable vs coastal zone non-appealable methodology, once for each structure (operative-but-interpretive — see hedge in §1 below).
-3. **STEP C** — Run the **deterministic phantom-remodel signal** on top of the parent's 5-signal detector. This is Laguna's codified 6th signal. If it fires on coastal property, cite 11 Lagunita LLC v. CCC (2020) in the corrections-letter body.
+3. **STEP C** — Run the **Building-handout wall rule** on top of the parent's 5-signal detector, scoped by area. Structurally upgraded walls count toward the major-remodel test only in the coastal zone appealable area; drywall-only walls never count; in the non-appealable area the rule produces a FLAG, not a major-remodel finding. If it moves an appealable-area project to major remodel, cite 11 Lagunita LLC v. CCC (2020).
 4. **STEP D** — Apply **both sprinkler retrofit tests**: Ch. 14.52.030 (valuation) and Title 15 §1103.5.4 (scope). Either one firing requires the retrofit. Run both; never stop after one.
 5. **STEP E** — If oceanfront / on the bluff, apply the **bluff overlay** (25-ft setback, anti-game fill rule, report stack).
 6. **STEP F** — Apply **Ch. 25.56 nonconforming** rules where existing structure is nonconforming. Three rules; SFR vs multi-family distinctions matter. If Step B is YES, apply F.0 first: nonconforming status ends.
-7. **STEP G** — If coastal zone, **CDP required** for any major remodel regardless of the E-93-1 categorical exclusion. If scope includes an ADU, flag the CCC F9a-11-2024 pushback.
+7. **STEP G** — If coastal zone, a **CDP is required** for a major remodel; check the 25.07.008 exemption for a non-major remodel. If scope includes an ADU, flag that E-93-1 does not clear it (Commission report F9a, Nov. 2024).
 8. **STEP H** — Apply **VHFHSZ + WUI** overlays from Ch. 14.70.
 9. **STEP I** — Apply **View / Heritage Tree / Hillside** overlays where applicable.
 10. **STEP J** — Assemble output. For every overlay test, return PASS / FAIL / FLAG / N/A with the verbatim city citation that drove the decision.
@@ -192,7 +192,13 @@ The ESA override can promote a Zone Clearance or ADR item to Design Review unles
 
 Except for elevated decks/patios and qualifying minor historic work, an ADR hearing may be waived only if no other entitlement is required and the 15-working-day mailed/published notice-and-comment procedure produces no timely hearing request. If a public hearing occurs, §25.05.065(D) sets the mailed-notice minimum and the same values independently govern applicable staking deadlines; the day counts are in `../city-reference/SKILL.md` §"Design Review / Zone Clearance".
 
-Output the route, exact matched category, ESA analysis, referral possibility, CDP status, and hearing/waiver status. If no closed-list category can be matched, return `needs_source`. If Step B determines the work is a major remodel, use Design Review under §25.05.040(B)(1)(a).
+**Major remodel or not.** Step B decides it. A demolition, alteration or addition that "constitutes a major remodel" is Design Review under §25.05.040(B)(1)(a), with a landscape plan and an exterior lighting plan. One that "does not constitute a major remodel" is Zone Clearance under §25.05.040(B)(2)(a), unless another (B)(1) item applies (for example (c) over 15 ft or (e) ESA) or a (B)(3) item applies to part of the work.
+
+**Hearing body.** "The design review board shall conduct a noticed public hearing on design review applications for all single-family or two-family developments"; the Planning Commission hears all others, including three or more units, every project in the Downtown Specific Plan area, non-residential development, and projects where the Planning Commission is the primary authority, such as a CUP (§25.05.040(F)(1)). A single-family remodel in the Downtown Specific Plan area fits both clauses. UNSETTLED; confirm with Planning at pre-application.
+
+**The 15 ft rule on an existing upper floor.** (B)(1)(c) reaches "Any improvement that exceeds a height of 15 feet", measured by "Height, building" (§25.08, Ord. 1732) from a roof surface or rooftop appurtenance down to the lowest floor or grade. Exterior work on an existing upper floor that creates no new or raised roof surface, no new floor area or story, and no new rooftop appurtenance does not exceed 15 ft. Do not measure the existing building. Route it by the other lists: Zone Clearance under (B)(2)(a), (c), (r), (e) or (v), or ADR when a (B)(3) item is present (for example a roof pitch or size change (x), or a new or enlarged deck over 3 ft (iii)). City practice since Ord. 1732 confirms this (ZPC-2026-1825, ZPC-2026-1800, ZPC-2026-2045 at the counter; enlarged upper balcony DR-2026-2039 at ADR). Full method: a CrossBeam reference that is not included in this plugin Step 4f. A new story below an existing floor (walk-out or lower level) and a new or enlarged deck more than 15 ft up remain UNSETTLED there; give both readings.
+
+Output the route, exact matched category, ESA analysis, referral possibility, CDP status, and hearing/waiver status. If no closed-list category can be matched, return `needs_source`.
 
 Full content: `references/city-design-review-tiers.md`.
 
@@ -237,9 +243,9 @@ Verbatim from the October 2026 Major Remodel Handout, "COASTAL ZONE APPEALABLE A
 A structure IS a major remodel if **any** of:
 1. *"Demolition or reinforcement of 50% or more of either (a) the exterior walls alone, or (b) the roof, exterior walls, load-bearing interior walls, and foundation combined."* Apply B.2a to the wall figures. The combined prong includes load-bearing interior walls.
 
-#### B.2a How Floors Combine — Three-Way Rule
+#### B.2a How Floors Combine — Three-Way Rule (UNSETTLED; confirm with Planning at pre-application)
 
-The October 2026 handout computes walls "on each floor". It does not state how the floor results combine. For each structure, compute the **floor percentages** (one for each floor) and the **whole-structure total**: (wall LF removed or reinforced on all floors of that structure) ÷ (existing wall LF on all floors of that structure) × 100. Then:
+The October 2026 handout computes walls "on each floor". It does not state how the floor results combine. The City has not ruled on this. Tell the applicant to raise it at pre-application. For each structure, compute the **floor percentages** (one for each floor) and the **whole-structure total**: (wall LF removed or reinforced on all floors of that structure) ÷ (existing wall LF on all floors of that structure) × 100. Then:
 
 1. Every floor percentage is under 50% → the wall test is **not met**.
 2. At least one floor percentage is 50% or more AND the whole-structure total is 50% or more → the wall test is **met**. Both readings agree.
@@ -278,7 +284,7 @@ Verbatim from the handout (both sections, trigger 2): *"The floor area is measur
 
 #### B.5 Carveouts
 
-- **ADUs are exempt.** Verbatim: *"The construction and remodeling of accessory dwelling units are exempt from major remodel calculations."* This is the **only** carveout.
+- **ADUs are exempt.** Verbatim: *"The construction and remodeling of accessory dwelling units are exempt from major remodel calculations."* This is the **only** carveout. The code adds one exception: ADUs do not count "except as necessary to comply with section 30253 of the Coastal Act limiting alterations of existing bluff top, beachfront, and coastal canyons" (Ord. 1713, LBMC 25.17.020(d)(2); certified 25.17.030(A)(3)). On a bluff-top, beachfront or coastal-canyon lot, FLAG the ADU carveout for Planning confirmation.
 - **No 1,500 sf SFR exception.** That number appears in §25.56.008(C) but governs **parking** for nonconforming SFRs, NOT major-remodel calculation. Earlier research drafts misattributed; do not cite.
 
 #### B.6 Practical Cushion (city advisory)
@@ -298,20 +304,31 @@ Full content: `references/city-major-remodel-methodology.md`.
 
 ---
 
-### STEP C — Deterministic Phantom-Remodel Rule (Laguna's Codified 6th Signal)
+### STEP C — Building-Handout Wall Rule (Laguna's Codified 6th Signal), Scoped by Area
 
-The parent skill runs a heuristic 5-signal phantom detector with a 2-of-5 / 3-of-5 decision rule. Inside Laguna, the city has **codified** an additional deterministic signal in the May 2026 republish of the Building Plan Check Submittal Requirements (file mod date 2026-04-30), verbatim:
+The parent skill runs a heuristic 5-signal phantom detector with a 2-of-5 / 3-of-5 decision rule. Inside Laguna, the May 2026 republish of the Building Plan Check Submittal Requirements (file mod date 2026-04-30) adds a wall-legend rule, verbatim:
 
 > *"Existing walls with structural upgrades/modifications affecting the foundation or the lateral support (shear) are considered new walls. Existing walls with the drywall removed are considered part of the area of renovation."*
 
-How to apply (deterministic, not heuristic):
-1. From the demolition plan + structural plans, identify every wall annotated as "existing to remain" but that EITHER (a) carries new continuous footings, new shear panels, new hold-downs, or any other structural upgrade affecting foundation or lateral support, OR (b) shows drywall removal/replacement.
-2. Convert those walls' linear footage into the **renovation/new** column of the Step B calculation.
-3. Re-run the Step B coastal zone appealable or coastal zone non-appealable methodology with those walls counted as renovation, on each floor of the affected structure. Compare to 50%.
+This is a Building Division plan-legend rule. The major-remodel count belongs to the Planning handout (October 2026 Quick Guide, Step B). Where the two disagree, the October 2026 handout controls the major-remodel count. Apply the Building rule by area:
 
-When this rule re-classifies a project from "remodel" to "major remodel" on **coastal property**, cite **11 Lagunita LLC v. CCC (2020)** in the corrections-letter body alongside the verbatim §1103.5.4 fire-retrofit consequence (if it also fires) and the LCP/handout authority chain. 11 Lagunita is the operative California precedent: a Laguna oceanfront SFR owner pulled "remodel" permits on what was operationally a teardown; CCC reclassified as new construction; $1M penalty + cease-and-desist + seawall removal.
+| Area | Structurally upgraded "existing to remain" walls | Walls with only drywall removed |
+|---|---|---|
+| **Coastal zone appealable** | Count them in Step B. They are "reinforced", and the appealable method says "Both removal and reinforcement count as demolition." Use the Building rule to find walls the demolition plan mislabels as "existing to remain". | Do **not** count them. The handout says "The removal of drywall, stucco, or similar finishes does not count as demolition." |
+| **Coastal zone non-appealable** | Do **not** count them. The non-appealable formula counts removal only: "(linear feet of walls to be removed on each floor) ÷ (linear feet of existing walls on each floor) x 100". The appealable formula's words "or reinforced" are absent. Count a wall only where the plans show it actually removed or rebuilt (for example, studs or framing replaced, not just new sheathing, hold-downs or footings). | Do **not** count them (same handout text). |
+| **Outside the coastal zone** | The October 2026 handout gives methods only for the two coastal areas. UNSETTLED which method applies; confirm with Planning at pre-application. Report the result both ways. | Do not count them. |
 
-This is **deterministic** because the rule itself converts a wall to "renovation" by definition, no judgment call required. It supplements (does not replace) the parent's heuristic 5-signal detector — both run.
+How to apply:
+1. From the demolition and structural plans, list every wall labeled "existing to remain" that (a) gets a structural upgrade affecting the foundation or lateral support (new footing, shear panel, hold-down, strap), or (b) has drywall removed.
+2. Record both lists on the Building wall legend in every area. The Building Division requires the legend; walls in list (a) are "new walls" for Building plan check.
+3. Re-run Step B only as the table above allows: list (a) walls in the appealable area, on each floor of the affected structure. Never add list (b) walls to the major-remodel count.
+4. **Non-appealable FLAG.** If adding list (a) walls would carry a floor or the structure to 50% or more, return FLAG, not a major-remodel finding. State that the non-appealable method counts removal only, and that work which turns into removal during construction can stop the job until it is "re-entitled as new development" (handout cushion advisory, Step B.6).
+
+When the rule moves an appealable-area project to "major remodel", cite **11 Lagunita LLC v. CCC (2020)** in the corrections-letter body with the LCP/handout authority chain and the §1103.5.4 retrofit consequence if it also fires. 11 Lagunita: a Laguna oceanfront owner pulled "remodel" permits on what was operationally a teardown; the CCC reclassified it as new construction; $1M penalty, cease-and-desist, and seawall removal.
+
+The Building rule still matters for sprinklers in every area. Title 15 §1103.5.4 prong 1 ("alteration of 50 percent or more of a building") and the exterior clause (work on 50% or more of the exterior; UNSETTLED whether it is a standalone prong, see `references/city-sprinkler-retrofit.md`) are Building tests, not the Planning major-remodel count. Run them in Step D with the Building wall legend.
+
+It supplements (does not replace) the parent's heuristic 5-signal detector. Both run.
 
 Full content: `references/city-deterministic-phantom-rule.md`.
 
@@ -337,11 +354,11 @@ Verbatim (Fire Code Chapter 11 amendment):
 >
 > **Exception:** Work that consists only of the installation of fire-resistant siding.
 
-Any one of these prongs independently fires Trigger B:
+Prongs 1 and 3 fire Trigger B on any reading. Prong 2 is UNSETTLED (two readings in `references/city-sprinkler-retrofit.md`, Trigger B):
 
 1. **Alteration of 50% or more of the building** — use the Step B major-remodel methodology as the operational test.
-2. **Work on 50% or more of the building's exterior** — independent of major-remodel determination; e.g., a reroof + reside + fenestration replacement project that hits 50%+ of exterior cladding/roof can fire prong 2 alone.
-3. **Addition of one or more stories** — geometric, not %-based.
+2. **Work on 50% or more of the building's exterior** — tally it (reroof + reside + fenestration). Whether it fires Trigger B by itself, apart from prong 1, has not been decided by the City. When it alone decides the answer, give both readings, do not say sprinklers are required, and say "confirm with Building and Fire at pre-application".
+3. **Addition of one or more stories** — geometric, not %-based. Whether a new basement or lower level counts is UNSETTLED (see the reference).
 
 The fire-resistant-siding exception belongs to Trigger B only. It does not exempt a project from Trigger A.
 
@@ -432,21 +449,25 @@ Full content: `references/city-nonconforming.md`.
 
 Ch. 25.07 governs CDP procedure. The state skill (`../coastal-development/references/california-baseline.md`) covers the substantive CDP analysis. This step layers in two Laguna-specific notes:
 
-#### G.1 Major Remodel in Coastal Zone Always Requires CDP
+#### G.1 Major Remodel in the Coastal Zone Requires a CDP
 
-A "major remodel" — as determined by the Step B methodology — is **development** under §25.07.006(D) and is not within the §25.07.008 single-family-dwelling improvement exemption (the exemption applies only to "improvements ... [that] are normally associated with a single-family dwelling," and explicitly excludes any improvement to a structure between the sea and the first public roadway that "would constitute or result in ... an increase of ten percent or more of an internal floor area" or "an increase in height of more than ten percent" — let alone a 50% major remodel). A major remodel in the coastal zone therefore always requires a CDP regardless of any E-93-1 categorical exclusion.
+A major remodel "shall be classified as new development" (October 2026 handout, paragraph 1) and is a "new building" (§25.56.011, Ord. 1732). The §25.07.008(A)(1) exemption covers "Improvements to single-family dwellings". A replacement of half or more of a structure is treated as a replacement structure, not an improvement or repair (see 14 CCR §13252(b) in `../coastal-development/references/cdp-when-required.md`). So a major remodel in the coastal zone needs a CDP. It is decided by the Design Review body together with the Design Review (§25.07.012(D)).
 
-#### G.2 ADU Coastal Exemption Pushback — CCC F9a-11-2024
+Do not reason that the §25.07.008(A)(1)(c) items (10% floor area, 10% height, new detached structure) knock out the exemption everywhere. Those items apply **only** between the sea and the first public road paralleling the sea, or within 300 ft of the inland extent of any beach (or of the mean high tide line where there is no beach).
 
-The California Coastal Commission's F9a-11-2024 Notice of Pending Action / decision rejected Laguna's E-93-1 ADU categorical exemption as applied to ADUs in the coastal zone. **ADUs in Laguna's coastal zone still need a CDP.** When a residential remodel scope includes an ADU (attached/detached/JADU/conversion), flag prominently:
+**Inside a Categorical Exclusion Order E-93-1 area.** E-93-1 excludes "single family residential development" in eleven areas, and its Special Condition 8 requires conformity with the LCP or the order, whichever is more restrictive (the City source document (not included in this plugin)). Whether E-93-1 clears a major remodel there is UNSETTLED. Treat the CDP as required and confirm with Planning at pre-application.
 
-- ADU ≠ exempt from CDP merely because the city's E-93-1 categorical exclusion claims it
-- The ADU likely still needs a CDP processed under Ch. 25.07
-- This is independent of whether the rest of the remodel triggers a CDP
+#### G.2 Non-Major Remodel — Check the Exemption
 
-#### G.3 Categorical Exclusion (E-93-1) — Scope Limited
+A remodel that is not a major remodel is normally exempt under §25.07.008(A)(1), recorded by Planning (§25.07.008(B)). It loses the exemption if any of (A)(1)(b)-(g) applies: on a beach, wetland or stream, seaward of mean high tide, within 50 ft of a bluff edge, in an ESA, or in a highly scenic LUP area (b); in the first-road/300-ft strip, a 10% floor-area or height increase or a new detached structure (c); well or septic work (d); a critically short water area (e); a prior CDP condition (f); or significant landform alteration in protected areas (g). In the appealable area an exempt project cannot start until the Commission appeal period on the exemption record runs (§25.07.008(C)).
 
-§25.07.010 provides that "Development included in any categorical exclusion area adopted pursuant to the California Coastal Act is exempt from the regulations contained in this chapter except for the notice requirements contained within California Code of Regulations Section 13248." E-93-1 is Laguna's categorical exclusion. Its scope is narrower than Laguna staff historically assumed; CCC F9a-11-2024 narrowed it further for ADUs. For major remodels and bluff/oceanfront work, do not assume E-93-1 covers the project — apply the §25.07.008 analysis instead.
+#### G.3 ADU in the Scope — E-93-1 Does Not Clear It
+
+In the Commission report F9a (Nov. 2024), the Executive Director found that the LCP exemption list (§25.07.008) controls for an ADU added to a single-family home, so E-93-1 does not clear an ADU. When the remodel scope includes an ADU or JADU, flag:
+
+- The ADU needs a CDP unless it only converts existing livable space inside the primary dwelling (§25.07.008(A)(1)(a); Ord. 1713, LBMC 25.17.010(d)(1)(C)(ii)).
+- Keep the ADU on its own ADU & JADU Application and its own CDP application. An ADU-only CDP is decided within 60 days, with no required hearing and no Coastal Commission appeal (Gov. Code 66329(a), (c)). The City may not hold the ADU for the remodel's hearing; delay is allowed only when the ADU is filed with a new dwelling (25.17.010(e)(2)(B)(ii)).
+- Route to `../adu/SKILL.md`.
 
 Full content: `references/city-cdp-coastal-zone.md`.
 
@@ -479,13 +500,13 @@ Full content: `references/city-vhfhsz-wui.md`.
 
 Ch. 12.16 (View Restoration) is **vegetation-only**. Building view impacts are NOT enforced via Ch. 12.16; when Design Review applies, they are evaluated under current §25.05.040(H)(11) "View Equity." When a remodel proposes vegetation that will impact a neighboring view, route through Ch. 12.16. When a current Design Review category applies to building mass changes that may affect views, evaluate View Equity in that proceeding.
 
-**Prior view decisions bind this owner — §12.16.100, amended effective 2026-08-20.** Decisions by city staff and the View Restoration Committee on view restoration and view preservation **run with the land** and bind the claimant, the vegetation owner, and their heirs, successors and assigns. To the extent permitted they are recorded in Orange County official records and are set forth in any real property report required by **Ch. 14.76**. If a record of views or a view restoration order already exists for the subject property or an adjacent one, the current owner inherits it — a remodel landscape plan cannot quietly undo it. Check the property file and the real property report; the record of views is noted there under §12.16.040(b), as amended effective 2026-08-20. [source: the City source document (not included in this plugin) lines 123, 143]
+**Prior view decisions bind this owner — §12.16.100, amended effective 2026-08-20.** Decisions by city staff and the View Restoration Committee on view restoration and view preservation **run with the land** and bind the claimant, the vegetation owner, and their heirs, successors and assigns. To the extent permitted they are recorded in Orange County official records. Ord. 1731 struck the earlier "real property report" language from §12.16.100 and §12.16.040(b) (signed ordinance; codified text in `lookup_municipal_code 12.16`). If a record of views or a view restoration order already exists for the subject property or an adjacent one, the current owner inherits it — a remodel landscape plan cannot quietly undo it. Check the property file and the County records. [source: the City source document (not included in this plugin)]
 
 #### I.2 Heritage Tree (Ch. 12.06 + 12.08)
 
 A Tree Removal Permit (TRP) is required when project scope encroaches on the drip-line or critical root zone of any heritage tree. Heritage tree **removal** requires City Council approval (not DRB, not Director). When a remodel scope includes grading, foundation, or hardscape within ~10 ft of any tree on city's heritage tree register, flag for TRP analysis.
 
-**Development benefits now require a written agreement — §12.08.030(b), amended effective 2026-08-20.** Heritage tree owners remain eligible for benefits related to potential development improvements on the property. The amendment conditions the grant of any such benefit on a **written agreement between the city and the property owner** ensuring continued preservation and maintenance of the heritage tree(s) on the subject property, and that agreement must include a provision binding **subsequent** heritage tree owners to continue preservation and maintenance. If a remodel claims a heritage-tree development benefit, FLAG the written agreement as a required step before the benefit is granted — do not treat the designation alone as sufficient. Notice of the heritage tree also appears in the property file and in the real property report the city issues on sale. [source: the City source document (not included in this plugin) line 105]
+**Development benefits now require a written agreement — §12.08.030(b), amended effective 2026-08-20.** Heritage tree owners remain eligible for benefits related to potential development improvements on the property. The amendment conditions the grant of any such benefit on a **written agreement between the city and the property owner** ensuring continued preservation and maintenance of the heritage tree(s) on the subject property, and that agreement must include a provision binding **subsequent** heritage tree owners to continue preservation and maintenance. If a remodel claims a heritage-tree development benefit, FLAG the written agreement as a required step before the benefit is granted — do not treat the designation alone as sufficient. Notice of the heritage tree appears in the property file (§12.08.030(b); Ord. 1731 struck the real property report reference). [source: the City source document (not included in this plugin)]
 
 #### I.3 Hillside (R/HP zone, Ch. 25.15) + Title 22 (Grading)
 
@@ -518,8 +539,8 @@ Aggregate at the end of the city overlay:
 - **Sprinkler Retrofit Required:** YES / NO — state which trigger fired: Ch. 14.52.030 (valuation) and/or Title 15 §1103.5.4 (with which prong). If the documents do not state a valuation, report Trigger A as undetermined and request it.
 - **Bluff Overlay:** APPLICABLE / N/A
 - **VHFHSZ + WUI:** APPLICABLE / N/A
-- **CCC F9a-11-2024 ADU Pushback Flag:** YES / NO
-- **Phantom-Remodel Re-classification (deterministic):** TRIGGERED / NOT TRIGGERED (with which walls converted)
+- **ADU in scope (E-93-1 does not clear it; Commission report F9a, Nov. 2024):** YES / NO
+- **Building-handout wall rule:** TRIGGERED (appealable area) / FLAG (non-appealable) / NOT TRIGGERED, with the walls listed
 
 ---
 
@@ -528,14 +549,14 @@ Aggregate at the end of the city overlay:
 1. **Layer, don't duplicate.** State law lives in the parent skill. This skill only adds Laguna-specific overlays.
 2. **Route first.** Always run Step A's current closed-list classifier first — it determines the procedural envelope (notice timing, hearing requirement, and authority) that everything else hangs off of.
 3. **Major remodel is operative-but-interpretive.** The dual-methodology section is the city staff's interpretation of CCC staff's analysis, not statutory rule. Mirror the handout's own hedge in any output that quotes the methodology. A Municipal Code amendment is in process — re-check.
-4. **Sprinkler retrofit has two triggers and either one fires it.** Ch. 14.52.030 is the valuation test (50% cumulative in any three-year period). Title 15 §1103.5.4 is the scope test (50% building / 50% exterior / added story). Both are current, both were adopted 12/18/2025. Run both on every existing one- or two-family dwelling and name the one that fired. Never report the retrofit as governed by only one of them.
+4. **Sprinkler retrofit has two triggers and either one fires it.** Ch. 14.52.030 is the valuation test (50% cumulative in any three-year period). Title 15 §1103.5.4 is the scope test (50% of the building / added story; 50% of the exterior alone is UNSETTLED). Both are current, both were adopted 12/18/2025. Run both on every existing one- or two-family dwelling and name the one that fired. Never report the retrofit as governed by only one of them.
 5. **Cumulative baseline is January 13, 1993, not a rolling 3-year window.** The baseline belongs to each structure. It resets only on construction of a new structure or a post-1993 major remodel of that structure.
 6. **ADU is the only major-remodel carveout. No 1,500 sf SFR exception exists.** 1,500 sf is a parking rule (§25.56.008(C)).
 7. **Bluff = §25.50.004(B)(4) + §25.50.020.** Pre-existing rule (Ord. 811 1974 → Ord. 1416 2002), NOT Ord. 1688.
 8. **Ord. 1688 (7/11/2023) amended §25.07 CDP procedures, not bluff setbacks.**
 9. **Ch. 25.56 has three rules, not one.** Below the major-remodel threshold, there is no blanket loss of nonconforming protection at 50%. §25.56.014 50%-damage rule applies to **multi-family only**. At a major remodel, the October 2026 handout ends nonconforming status for the structure and, for a principal structure, for its accessory structures and improvements.
-10. **CDP required for major remodel in coastal zone regardless of E-93-1.** ADUs still need CDP per CCC F9a-11-2024.
-11. **Deterministic phantom rule supplements, not replaces, the parent's heuristic.** Both run.
+10. **CDP required for a major remodel in the coastal zone** (new development). The (A)(1)(c) 10% items apply only in the first-road/300-ft strip. E-93-1 areas: UNSETTLED. E-93-1 does not clear an ADU (Commission report F9a, Nov. 2024).
+11. **The Building-handout wall rule supplements, not replaces, the parent's heuristic.** Both run. It counts toward the major-remodel test only in the coastal zone appealable area.
 12. **Cite verbatim. Trace every load-bearing threshold to a specific on-disk source file in the City source document (not included in this plugin).**
 
 ---

@@ -151,7 +151,7 @@ Before formal submittal, verify:
 
 1. Zoning permits restaurant use in the parcel's zone (check zoning map and Title 25 use tables)
 2. Coastal Zone status — assume yes; CDP application planned
-3. CUP triggers identified (alcohol, entertainment, late hours, drive-thru, outdoor dining, intensification)
+3. CUP status identified from the zone use list (alcohol, entertainment, take-out, drive-in; all restaurants in LBP/SLV) and any Ch. 25.52 parking-relief CUP
 4. Design Review path identified (Admin DR vs PC, or N/A for interior-only)
 5. Parking demand calculated, intensification analysis run, in-lieu fee acknowledged if shortfall
 6. Sprinkler retrofit analysis run for both Group A (valuation) and Group R (scope) triggers

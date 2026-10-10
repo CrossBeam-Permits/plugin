@@ -3,9 +3,9 @@ name: residential-addition
 description: "Residential Addition permits in Laguna Beach, CA. Floor area or outdoor living area added to an existing dwelling, at any size, including a new or enlarged deck, balcony, or covered porch. Always a plan set. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against the Laguna Beach rules and the City submittal checklists, and prepares a portal-ready submission; (B) CITY REVIEWER — checks a submittal against the Laguna Beach rules and produces tight corrections output. California code compliance comes from the CrossBeam connector when it is connected. Use when the user mentions residential addition in Laguna Beach."
 metadata:
   version: "2.0"
-  source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 3 CEC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen)"
+  source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 3 CEC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen); Urgency Ord. 1732 (LBMC 25.05.040, 25.05.045, 25.56.011); LBMC Ch. 25.07, 25.45; Major Remodel Interpretation Quick Guide (Updated October 2026); LBMC 14.52.030; Title 15 §1103.5.4; Building Plan Check Submittal Requirements (May 2026)"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "January 1, 2025"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -178,15 +178,16 @@ When the principal structure is a major remodel, all associated accessory struct
 | Trigger | Required |
 |---------|----------|
 | Any construction/alteration | Building Permit |
-| Addition constitutes a major remodel | **Design Review** before the DRB/Planning Commission under current §25.05.040(B)(1)(a) |
+| Addition constitutes a major remodel | **Design Review** under current §25.05.040(B)(1)(a), heard by the Design Review Board for a single-family or two-family project (§25.05.040(F)(1)) |
 | Addition includes any improvement over 15 ft | **Design Review** under §25.05.040(B)(1)(c) |
 | Non-major addition and all improvements are no more than 15 ft | **Zone Clearance**, not Design Review, under §25.05.040(B)(2)(a)-(b), unless another closed-list trigger or ESA override applies |
-| Property in Coastal Zone (most of city) | **Coastal Development Permit** (Ch. 25.07) |
+| Property in Coastal Zone (most of city), addition is a major remodel | **Coastal Development Permit** (Ch. 25.07; a major remodel is new development). In a Categorical Exclusion E-93-1 area: UNSETTLED, confirm with Planning |
+| Property in Coastal Zone, addition is not a major remodel | Normally **exempt** as an improvement to a single-family dwelling (§25.07.008(A)(1)), recorded by Planning (§25.07.008(B)). **CDP required** if any of (A)(1)(b)-(g) applies: e.g., within 50 ft of a bluff edge, in an ESA or highly scenic area, or, only between the sea and the first public road or within 300 ft of the beach, a 10% or greater floor-area increase or a height increase over 10% |
 | Major remodel triggered | Classified as a new building under §25.56.011: current zone standards, undergrounding, required dedications, and new-development fees |
-| Property in VHFHSZ | **Sprinkler system** + WUI compliance |
-| Addition adds one or more stories, OR reaches ≥50% of the building or ≥50% of the exterior, OR the three-year cumulative valuation exceeds 50% of the pre-work valuation | **Full sprinkler retrofit** of the entire dwelling + attached garage — Ch. 14.52.030 **and** Title 15 §1103.5.4, either one fires |
+| Property in VHFHSZ or Fuel Modification area | **WUI compliance** (Ch. 14.70). The VHFHSZ alone does not require sprinklers in an existing house; the retrofit triggers below do. For a major remodel on an FM or VHFHSZ parcel, Fire Safety Standards Review (§25.05.040(C)(4)) |
+| Addition adds one or more stories, OR reaches ≥50% of the building, OR the three-year cumulative valuation exceeds 50% of the pre-work valuation (≥50% of the exterior alone: UNSETTLED, give both readings) | **Full sprinkler retrofit** of the entire dwelling + attached garage — Ch. 14.52.030 **and** Title 15 §1103.5.4, either one fires |
 | Hillside property | **Geotechnical report** may be required |
-| Property 50+ years old | **Heritage Committee** review may be required |
+| Property is a historic resource (city register, California or National Register listed or determined eligible, or one the City must treat as historic; §25.45.004 as amended by Ord. 1732) | Major modification: **Design Review** (B)(1)(d). Qualifying minor alteration: **Administrative Design Review** (B)(3)(a)(iv), no hearing waiver. Either way the Heritage Committee reviews and recommends first (§25.45.010). Age alone is not a code trigger; staff may ask for a historic resource assessment on an older structure (UNSETTLED; confirm with Planning at pre-application) |
 
 ---
 
@@ -195,12 +196,12 @@ When the principal structure is a major remodel, all associated accessory struct
 | # | Check | What to Verify |
 |---|-------|---------------|
 | 1 | Major remodel threshold? | Calculate using correct method (coastal zone appealable vs non-appealable), for each structure, walls on each floor |
-| 2 | Coastal Zone? | CDP required if in Coastal Zone (most of city) |
+| 2 | Coastal Zone? | Major remodel: CDP. Non-major addition: check the §25.07.008(A)(1) exemption and its (b)-(g) exceptions; the 10% items apply only in the first-road/300-ft strip |
 | 3 | Current planning route? | Match Ord. 1732's closed lists. Major remodel → Design Review `(B)(1)(a)`; improvement over 15 ft → Design Review `(B)(1)(c)`; otherwise a non-major addition/improvement no more than 15 ft → Zone Clearance `(B)(2)(a)-(b)`, unless another trigger or the ESA override applies. |
 | 4 | VHFHSZ compliance? | Sprinklers, fire-resistive construction per Ch. 14.70 |
-| 4a | Sprinkler retrofit? | **Two triggers, either one fires** — see `../residential-remodel/references/city-sprinkler-retrofit.md`. (A) Ch. 14.52.030: cumulative additions/alterations/repairs in any 3-year period > 50% of pre-work valuation. (B) Title 15 §1103.5.4: ≥50% of building altered, ≥50% of exterior worked on, or a story added. **An addition of a story fires (B) outright.** Addition valuation counts toward (A). |
+| 4a | Sprinkler retrofit? | **Two triggers, either one fires** — see `../residential-remodel/references/city-sprinkler-retrofit.md`. (A) Ch. 14.52.030: cumulative additions/alterations/repairs in any 3-year period > 50% of pre-work valuation. (B) Title 15 §1103.5.4: ≥50% of building altered, or a story added. **An addition of a story above grade fires (B) outright.** Whether ≥50% of the exterior alone fires (B), and whether a new basement or lower level is an "added story", are UNSETTLED; confirm with Building and Fire at pre-application. Addition valuation counts toward (A). |
 | 5 | Zoning compliance? | Setbacks, height, coverage, FAR per zoning table |
-| 6 | Heritage review? | Property 50+ years → potential Heritage Committee review |
+| 6 | Historic resource? | Ch. 25.45 definition; (B)(1)(d) or (B)(3)(a)(iv) |
 | 7 | Geotech required? | Hillside properties may need geotechnical report |
 | 8 | Submittal complete? | 4 sets 24"x36" plans for additions >=500 SF; 2 sets for additions <500 SF + 2 sets calcs (structural, energy, geotech) |
 | 9 | State code compliance? | CBC/CRC per state skills + city amendments |
@@ -229,7 +230,7 @@ These projects qualify for over-the-counter (same-day) plan review:
 
 Urgency Ordinance No. 1732 inverted the former exterior-work default. Use the three closed lists in §25.05.040(B), not the retired project-tier table:
 
-- **Design Review:** a major remodel under (B)(1)(a), an improvement over 15 feet under (B)(1)(c), or another listed (B)(1) trigger.
+- **Design Review:** a major remodel under (B)(1)(a), an improvement over 15 feet under (B)(1)(c), or another listed (B)(1) trigger. The Design Review Board hears single-family and two-family projects; the Planning Commission hears three or more units, Downtown Specific Plan projects and non-residential work (§25.05.040(F)(1)).
 - **Zone Clearance:** a non-major demolition/alteration/addition under (B)(2)(a) and an improvement no more than 15 feet under (B)(2)(b), unless another trigger applies.
 - **Administrative Design Review:** only when the work matches one of the 17 categories in (B)(3); it is no longer the residual route for exterior work.
 
@@ -267,7 +268,7 @@ City adopts CalGreen via Ch. 14.86. Major remodels trigger CalGreen requirements
 
 These are additional city-specific submittal and process requirements from the Building Plan Check Submittal Requirements handout:
 
-- **Water Quality Management Plan (WQMP)**: $1,700 deposit + $233 review fee required
+- **Water Quality Management Plan (WQMP)**: deposit and review fee required (amounts: fee tool, `estimate_fees`)
 - **Construction Staging Plan and Affidavit**: Required for constrained sites (limited access, narrow streets, or adjacent to public areas)
 - **Green Halo Program**: Sign-up required for C&D recycling and waste diversion compliance
 - **School Fee Receipt**: LBUSD school fee receipt required if applicable to the project

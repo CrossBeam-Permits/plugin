@@ -33,7 +33,7 @@ Use this path when seating is on the restaurant parcel itself (interior courtyar
 
 | Requirement | Detail |
 |-------------|--------|
-| Administrative Use Permit OR CUP | Depending on zone and intensity; alcohol/late-hour outdoor service typically requires CUP |
+| Use permit per zone list | E.g. C-1 permits outdoor tables for a non-alcohol full-service restaurant operated inside a building (25.20.004); alcohol, entertainment or take-out seating needs a CUP (25.20.006). See `conditional-use-permit.md` |
 | Planning route | Match the physical work to current Sec. 25.05.040 closed lists; street visibility alone is not a trigger — see `planning-design-review-routing.md` |
 | Coastal Development Permit | Almost always required for permanent outdoor dining additions — outdoor seating expansion is intensification of use per Sec. 25.07.006 — see `coastal-development-permit.md` |
 | Revised parking calculation | **Outdoor seating counts toward GFA** for parking under Ch. 25.52. See `parking-intensification.md`. |
@@ -47,10 +47,10 @@ Use this path when seating is on the restaurant parcel itself (interior courtyar
 
 Converting on-site parking stalls into outdoor seating is a common Laguna scope. Implications:
 
-1. **Loses parking** — recompute Ch. 25.52 ratio with new GFA (including new outdoor seating); shortfall may require in-lieu fee or CUP parking finding.
+1. **Loses parking** — recompute Ch. 25.52 ratio with new GFA (including new outdoor seating); shortfall needs in-lieu certificates (special parking district only, 25.52.006(E)) or a parking-relief CUP (Ch. 25.52).
 2. **Adds GFA** — outdoor seating counts.
 3. **Intensifies use** — additional CDP trigger.
-4. **Adds CUP trigger** — outdoor dining beyond temporary requires CUP.
+4. **May need a CUP** — where the zone list requires one for the restaurant or its outdoor seating, or parking relief is sought.
 
 In practice: a parking-lot conversion matches the commercial parking-area Design Review category at §25.05.040(B)(1)(l), and commonly also needs CDP + CUP + Building + LBFD + OCHCA review plus recalculated parking.
 
@@ -84,6 +84,6 @@ The state baseline in the California Restaurant Tenant Improvement rules (AB 592
 ## Output Findings
 
 - **PASS** — Correct path (ROW vs private) identified, all required permits in application, parking recomputed, OCHCA / LBFD coordination documented.
-- **FAIL** — Outdoor dining proposed without TUP/encroachment (ROW) or AUP/CUP (private); parking not recomputed; CDP not addressed.
+- **FAIL** — Outdoor dining proposed without TUP/encroachment (ROW) or the zone-required CUP (private); parking not recomputed; CDP not addressed.
 - **FLAG** — Outdoor dining location ambiguous (ROW vs property line); ABC license expansion status unclear; AB 592 vs local ROW conditions conflict.
 - **N/A** — No outdoor dining in scope.

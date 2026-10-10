@@ -15,13 +15,13 @@ Laguna runs a **sequenced multi-department intake**. Building Division does NOT 
 | Step | Department | Scope | Output |
 |------|-----------|-------|--------|
 | **1. Planning Division — Zoning Plan Check** | Planning | Setbacks, height, parking, open space, lot coverage, use, specific-plan compliance, sign program compliance | Zoning clearance / corrections |
-| **2. Planning Commission — Design Review** (concurrent with CDP if applicable) | Planning Commission | DR per §25.05.040; CDP per Ch. 25.07; LBFD concurrent review at ≥50% alteration | DR approval + CDP (where applicable) |
+| **2. Planning Commission — Design Review** (only if a current §25.05.040(B)(1) category matches; concurrent with CDP if applicable) | Planning Commission | DR per §25.05.040; CDP per Ch. 25.07; Fire Department or Building Division review before DR action for new construction and major remodels (§25.05.040(C)(4)). Interior-only work and a use change alone take Zone Clearance instead (§25.05.040(B)(2)(d); §25.05.045(B)(2)). A CDP with no other discretionary permit goes to a Director hearing (§25.07.012(D)(1)) | DR approval + CDP (where applicable) |
 | **3. Public Works** | Public Works | Encroachment, right-of-way, sidewalk, ADA path-of-travel in ROW, storm drainage | PW clearance / encroachment permit |
 | **4. Caltrans** (if applicable) | State (Caltrans District 12) | Frontage work on PCH (Hwy 1) or Laguna Canyon Rd (Hwy 133) | Caltrans encroachment permit |
 | **5. Building Plan Check** | Building Division | Full code review (CBC / CMC / CPC / CEC / Energy / CALGreen) + LBFD building-plan-check review | Building permit |
 | **6. LBFD Building Plan Check** | LBFD Fire Prevention | Fire-protection systems, fire alarm, sprinklers, FDC, hydrant flow, HMMP/HMIS | LBFD approval |
 
-Planning Commission DR + CDP run concurrently and produce a single approval action with two appeal windows (14-day City Council DR appeal; 10-working-day CCC appeal for appealable CDPs).
+When both apply, Planning Commission DR + CDP run concurrently and produce a single approval action with two appeal windows (14-day City Council DR appeal; 10-working-day CCC appeal for appealable CDPs).
 
 ---
 
@@ -84,7 +84,7 @@ Missing or stale (e.g., 2022-cycle) code edition statement → FAIL at intake.
 | Non-Priority Development Checklist | 5149 | Most commercial TIs (water quality) |
 | Non-Priority Development Notes | 5151 | Most commercial TIs (water quality) |
 | WELO Guidelines / WELO Requirements Info Guide | 14292 / 14294 | Only if landscape >500 sf modified |
-| Heritage Assessment Submittals | 5343 / 8904 / 5337 | If property 50+ years old or on 1980-81 inventory |
+| Heritage Assessment Submittals | 5343 / 8904 / 5337 | If the property is a historic resource or has a 1980-81 inventory rating (not age alone) |
 | Revocable Encroachment Permit | 18755 | Sidewalk café, awning into ROW, ADA path-of-travel in ROW |
 | Three Arch Bay private community application | 11971 | If parcel is inside Three Arch Bay |
 
@@ -183,7 +183,7 @@ For each commercial TI submittal completeness review, output:
 ```markdown
 **Submittal sequence:** Planning approved → Public Works approved → Building intake | Out of sequence (FLAG)
 **Plan sets (3 sets 24"×36"):** PASS | FAIL | FLAG
-**Supporting docs (2 sets geotech/calcs/energy):** PASS | FAIL | FLAG
+**Supporting docs (2 sets calcs/energy; geotech only when the scope touches foundations, grading or new structure; N/A for interior-only TI):** PASS | FAIL | FLAG | N/A
 **Wet stamp on first sheet:** PASS | FAIL
 **Cover sheet completeness (code references, building data, sprinkler note):** PASS | FAIL | FLAG
 **Site/plot plan completeness:** PASS | FAIL | FLAG

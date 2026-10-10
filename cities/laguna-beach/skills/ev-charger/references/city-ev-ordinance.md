@@ -42,7 +42,7 @@ Any level of EVSE designed and built in compliance with **CEC Article 625** (or 
 - Written findings based on substantial evidence
 - Specific, adverse impact with no feasible mitigation
 - Basis for rejection of feasible alternatives
-- **Appealable to Planning Commission** (§25.05.070)
+- **Appealable to Planning Commission** (§25.05.070, as replaced by Ord. 1732: file on the City form within 14 calendar days)
 
 **(f)** Any conditions must mitigate at **lowest possible cost**
 

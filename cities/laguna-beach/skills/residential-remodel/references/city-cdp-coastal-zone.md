@@ -1,6 +1,6 @@
 # Laguna Beach — Coastal Development Permit (Ch. 25.07)
 
-This file documents the Laguna-specific overlay for CDP review. The state skill `../../coastal-development/references/california-baseline.md` covers the substantive CDP analysis (appealable areas, categorical exclusions, LCP consistency, public access, resource protections). This file layers in the Laguna-specific procedural rules and two consequential overlay flags: (1) the major-remodel-in-coastal-zone CDP requirement regardless of E-93-1 categorical exclusion, and (2) the CCC F9a-11-2024 ADU coastal-exemption pushback.
+This file documents the Laguna-specific overlay for CDP review. The state skill `../../coastal-development/references/california-baseline.md` covers the substantive CDP analysis (appealable areas, categorical exclusions, LCP consistency, public access, resource protections). This file layers in the Laguna-specific procedural rules and two consequential overlay flags: (1) the CDP requirement for a major remodel in the coastal zone (new development, not an exempt improvement), with E-93-1 areas left UNSETTLED, and (2) the Coastal Commission F9a (Nov. 2024) finding that Categorical Exclusion E-93-1 does not clear an ADU. Law as of 2026-10-10.
 
 ---
 
@@ -44,7 +44,7 @@ A "major remodel" — per Step B — falls squarely within "the construction, re
 > *2. An increase in height of more than ten percent of any structure,*
 > *3. The construction, placement or establishment of a detached structure such as a garage, fence, shoreline protective works, or docks;"*
 
-A major remodel **automatically** crosses these thresholds (50% > 10%) — so SFR-improvement exemption does not apply to a major remodel in the appealable area.
+A major remodel crosses these thresholds (50% > 10%), so the SFR-improvement exemption does not apply to a major remodel **inside that strip** (first public road / 300 ft of the beach or mean high tide line). The strip is narrower than the appealable area, which also reaches 100 ft from wetlands and streams and 300 ft from bluffs. Outside the strip, (A)(1)(c) does not apply; the basis for a CDP is that a major remodel is new development (below).
 
 §25.07.008(A)(1)(b) — improvements **on a beach, in a wetland or stream, seaward of the mean high tide line, within fifty feet of a coastal bluff edge, in an ESA, or in a highly scenic area** — never exempt.
 
@@ -62,7 +62,7 @@ Verbatim:
 
 > *"Development included in any categorical exclusion area adopted pursuant to the California Coastal Act is exempt from the regulations contained in this chapter except for the notice requirements contained within California Code of Regulations Section 13248."*
 
-E-93-1 is Laguna's categorical exclusion. Its scope is **narrower** than Laguna staff historically assumed — see CCC F9a-11-2024 below.
+E-93-1 is Laguna's categorical exclusion for single-family residential development in eleven areas. It does not clear an ADU (Commission report F9a, Nov. 2024), and whether it clears a major remodel is UNSETTLED — see below.
 
 ### §25.07.012 — Procedure
 
@@ -79,69 +79,65 @@ Appealable development may be appealed to CCC by a qualified appellant within **
 
 ---
 
-## Major Remodel in Coastal Zone — Always Requires CDP
+## Major Remodel in the Coastal Zone — CDP Required
 
 ### Operative Rule
 
-A "major remodel" — as determined by the Step B methodology in `city-major-remodel-methodology.md` — is "development" under §25.07.006(D) and is NOT within the §25.07.008(A)(1) SFR-improvement exemption (because the carveouts in §25.07.008(A)(1)(c)(1) at 10% floor area, (c)(2) at 10% height, (c)(3) at detached-structure construction will all fire long before the project reaches the 50% major-remodel threshold).
+- A major remodel "shall be classified as new development subject to current zoning regulations and all requirements applicable to the construction of a new building or structure" (October 2026 Major Remodel Quick Guide, paragraph 1), and §25.56.011 (Ord. 1732) makes it a new building.
+- The §25.07.008(A)(1) exemption covers "Improvements to single-family dwellings". A replacement of half or more of a structure is treated as a replacement structure, not an improvement or repair (14 CCR §13252(b); `../../coastal-development/references/cdp-when-required.md`).
+- So a major remodel in the coastal zone needs a CDP. The Design Review body decides it with the Design Review (§25.07.012(D)); the DRB for single-family and two-family projects (§25.05.040(F)(1)).
+- Inside the first-road/300-ft strip, the (A)(1)(c) 10% items independently remove the exemption.
 
-A major remodel in the coastal zone therefore **always requires a CDP**, regardless of any E-93-1 categorical exclusion claim. The categorical exclusion mechanism in §25.07.010 doesn't reach a project of major-remodel scope.
+**UNSETTLED — E-93-1 areas.** Categorical Exclusion Order E-93-1 excludes "single family residential development" in eleven areas; its Special Condition 8 requires conformity with the LCP or the order, whichever is more restrictive (the City source document (not included in this plugin)). Whether E-93-1 clears a major remodel in one of those areas has not been decided. Treat the CDP as required and confirm with Planning at pre-application.
 
 ### Practical Application
 
 For any Laguna project where Step B classifies the work as a major remodel AND the parcel is in the coastal zone (Step J point-in-polygon or applicant-supplied):
 
-1. Cite **§25.07.004** (CDP required).
-2. Cite the **§25.07.008(A)(1)(c) carveouts** (10% floor area, 10% height) showing why SFR exemption does not apply.
-3. Determine whether the parcel is in the **appealable area** (§25.07.006(A)(1) — between sea and first public road; within 300 ft of inland extent of any beach; within 100 ft of any wetland/estuary/stream; within 300 ft of seaward face of any coastal bluff). This drives noticing + CCC appeal availability.
+1. Cite **§25.07.004** (CDP required) and the new-development classification (handout paragraph 1; §25.56.011).
+2. If the parcel is in the first-road/300-ft strip, also cite the **§25.07.008(A)(1)(c) items**.
+3. Determine whether the parcel is in the **appealable area** (§25.07.006: between sea and first public road; within 300 ft of the inland extent of any beach; within 100 ft of any wetland/estuary/stream; within 300 ft of the seaward face of any coastal bluff). This drives noticing and Commission appeal.
 4. Route to `../../coastal-development/references/california-baseline.md` for the substantive CDP analysis.
+
+### Non-Major Remodel
+
+A remodel that is not a major remodel is normally exempt under §25.07.008(A)(1) and recorded by Planning (§25.07.008(B)), unless one of (A)(1)(b)-(g) applies. Item (b) (beach, wetland, stream, seaward of mean high tide, within 50 ft of a bluff edge, ESA, highly scenic LUP area) applies anywhere; item (c) only in the strip. UNSETTLED: Ord. 1732 added slopes of 30% or more to the 25.08 ESA definition but is not certified by the Coastal Commission; whether a steep lot is an "environmentally sensitive area" for (A)(1)(b) is not decided. Confirm with Planning at pre-application.
 
 ---
 
-## CCC F9a-11-2024 — ADU Coastal Exemption Pushback
+## ADUs — E-93-1 Does Not Clear Them
 
-The California Coastal Commission's F9a-11-2024 Notice of Pending Action (and subsequent CCC enforcement direction) **rejected Laguna's E-93-1 ADU categorical exemption** as applied to ADUs in the coastal zone. ADUs in Laguna's coastal zone still need a Coastal Development Permit.
+In the Commission report F9a (Nov. 2024 meeting), the Executive Director found that the LCP exemption list (§25.07.008) controls for an ADU added to a single-family home, so Categorical Exclusion E-93-1 does not clear an ADU (the City source document (not included in this plugin); the Commission vote on that interpretation was not checked).
 
 ### Operative Rule
 
-When a residential remodel scope **includes an ADU** (attached, detached, JADU, or conversion) AND the parcel is in the coastal zone, **flag prominently**:
+When a residential remodel scope **includes an ADU** (attached, detached, JADU, or conversion) AND the parcel is in the coastal zone, flag:
 
-1. ADU is exempt from the major-remodel calculation (per `city-major-remodel-methodology.md`, the only carveout).
-2. ADU is **NOT** exempt from CDP merely because the city's E-93-1 categorical exclusion claims it.
-3. The ADU likely still needs a CDP processed under Ch. 25.07.
-4. This is **independent** of whether the rest of the remodel triggers a CDP.
-
-### Practical Application
-
-For any Laguna project where scope includes an ADU AND the parcel is in the coastal zone:
-
-1. Cite **CCC F9a-11-2024** (the CCC pushback) in the corrections-letter body.
-2. Cite **§25.07.010** (categorical exclusion provision) and note that its scope was narrowed for ADUs.
-3. Process the ADU CDP separately or concurrently with any rest-of-remodel CDP.
-4. Route to `../../adu/SKILL.md` for ADU-specific Laguna review.
-5. Route to `../../coastal-development/references/california-baseline.md` for the substantive CDP analysis on the ADU portion.
+1. The ADU is exempt from the major-remodel calculation (`city-major-remodel-methodology.md`), except Coastal Act section 30253 work on bluff-top, beachfront and coastal-canyon lots.
+2. The ADU needs a CDP unless it only converts existing livable space in the primary dwelling (§25.07.008(A)(1)(a); Ord. 1713, LBMC 25.17.010(d)(1)(C)(ii)).
+3. The ADU's CDP is separate from any CDP for the rest of the remodel. An ADU-only CDP is decided within 60 days, concurrently with the ADU, with no required hearing and no Coastal Commission appeal (Gov. Code 66329(a), (c)).
 
 ### Flag Format
 
 ```
-## CCC F9a-11-2024 — ADU Coastal Exemption Pushback
+## ADU in a Coastal Remodel Scope
 **Applicability:** Project scope includes ADU AND parcel is in coastal zone: YES | NO
 **Result:** FLAG (if YES) | N/A (if NO)
-**Code:** LBMC §25.07.010 (categorical exclusion); CCC F9a-11-2024 (Notice of Pending Action)
-**Finding:** The CCC F9a-11-2024 rejected Laguna's E-93-1 ADU categorical exemption as applied to ADUs in the coastal zone. The ADU portion of this scope likely still requires a CDP regardless of any E-93-1 exemption claim.
-**Action required:** Process ADU CDP under Ch. 25.07. Do not rely on E-93-1 categorical exclusion for the ADU portion. Route to `../../adu/SKILL.md` and `../../coastal-development/references/california-baseline.md` for CDP analysis.
+**Code:** LBMC §25.07.008(A)(1)(a); §25.07.010; Coastal Commission report F9a (Nov. 2024); Ord. 1713 LBMC 25.17.010(d)(1)
+**Finding:** E-93-1 does not clear an ADU. The ADU needs a CDP unless it only converts existing livable space in the primary dwelling.
+**Action required:** File the ADU & JADU Application with its own CDP Application. Route to `../../adu/SKILL.md`.
 ```
 
 ---
 
 ## Categorical Exclusion (E-93-1) — Scope Limited
 
-§25.07.010 incorporates "any categorical exclusion area adopted pursuant to the California Coastal Act." E-93-1 is Laguna's categorical exclusion order. Its scope is narrower than Laguna staff historically assumed; CCC F9a-11-2024 narrowed it further for ADUs.
+§25.07.010 incorporates "any categorical exclusion area adopted pursuant to the California Coastal Act." E-93-1 is Laguna's categorical exclusion order for single-family residential development in eleven areas, subject to Special Condition 8 (the LCP or the order, whichever is more restrictive).
 
-For major remodels and bluff/oceanfront work, **do not assume E-93-1 covers the project.** Apply the §25.07.008 analysis instead:
-- If the carveouts in §25.07.008(A)(1)(b) (beach, wetland, seaward of MHW, within 50 ft of bluff edge, ESA, highly scenic area) apply → never exempt.
-- If the carveouts in §25.07.008(A)(1)(c) (10% floor area, 10% height, detached structure) fire → SFR exemption does not apply.
-- For repair/maintenance carveouts under §25.07.008(A)(3): note that any addition/enlargement/expansion takes the project out of the repair/maintenance exemption.
+For major remodels and bluff/oceanfront work, **do not assume E-93-1 covers the project.** Apply the §25.07.008 analysis and FLAG the E-93-1 question for Planning:
+- If §25.07.008(A)(1)(b) applies (beach, wetland, seaward of mean high tide, within 50 ft of a bluff edge, ESA, highly scenic area) → not exempt.
+- If §25.07.008(A)(1)(c) applies (in the first-road/300-ft strip: 10% floor area, 10% height, detached structure) → not exempt.
+- For repair/maintenance under §25.07.008(A)(3): any addition, enlargement or expansion takes the project out of that exemption.
 
 ---
 
@@ -164,13 +160,13 @@ When citing CDP procedural rules, Ord. 1688 may be relevant. When citing the blu
 **Basis:**
   - §25.07.008(A)(1) SFR-improvement exemption applies: YES | NO (note carveouts)
   - §25.07.008(A)(1)(b) location-based carveout fires (beach/wetland/seaward MHW/within 50 ft bluff/ESA/highly scenic): YES | NO
-  - §25.07.008(A)(1)(c) project-scale carveout fires (10% floor area / 10% height / detached structure): YES | NO
-  - §25.07.010 categorical exclusion applicable: YES | NO (E-93-1 scope narrowed; do not assume coverage for major remodel or bluff/oceanfront work)
+  - §25.07.008(A)(1)(c) project-scale carveout fires (only in the first-road/300-ft strip: 10% floor area / 10% height / detached structure): YES | NO | N/A (outside strip)
+  - §25.07.010 categorical exclusion applicable: YES | NO | UNSETTLED (E-93-1; do not assume coverage for a major remodel or bluff/oceanfront work; never for an ADU)
   - §25.07.009 de minimis waiver applicable: YES | NO
 
-**Major Remodel + Coastal Zone:** AUTO-CDP-REQUIRED (if Step B = major remodel AND coastal zone = YES)
+**Major Remodel + Coastal Zone:** CDP REQUIRED (new development; E-93-1 area: FLAG UNSETTLED)
 
-**ADU + Coastal Zone:** CCC F9a-11-2024 FLAG (ADU still requires CDP regardless of E-93-1)
+**ADU + Coastal Zone:** FLAG — E-93-1 does not clear an ADU (Commission report F9a, Nov. 2024); separate ADU-only CDP under Gov. Code 66329
 
 **Procedural envelope:**
   - Approving authority per §25.07.012(D): [Director / DRB / PC]
@@ -178,6 +174,6 @@ When citing CDP procedural rules, Ord. 1688 may be relevant. When citing the blu
   - Notice period: 10 calendar days mail notice; 100 ft / 300 ft radius depending on appealable status
   - CCC appeal window: 10 working days from CCC receipt of notice of final action
 
-**Citation:** LBMC §25.07.004; §25.07.006; §25.07.008(A)(1); §25.07.010; §25.07.012; §25.07.014; CCC F9a-11-2024 (when ADU + coastal)
+**Citation:** LBMC §25.07.004; §25.07.006; §25.07.008(A)(1); §25.07.010; §25.07.012; §25.07.014; Commission report F9a, Nov. 2024 (when ADU + coastal)
 **Action required:** [Submit CDP application concurrently with building permit application per §25.07.012(D); provide 10-day notice; route appealable development to CCC after final local action.]
 ```

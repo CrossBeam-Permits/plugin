@@ -143,7 +143,7 @@ This skill replaces the older generic `../demolition/SKILL.md` route for LTIA-st
 | Definition emphasis | NESHAP/SCAQMD | City form says removal of even one load-bearing 2x4 can be demolition under Rule 1403 examples |
 | Permit issuance | State baseline | Copy of 1403 Asbestos and/or 1403 Demolition online confirmation must be submitted to city before permit issuance when applicable; asbestos abatement certification required when applicable |
 | Coastal zone | State Coastal Act | LBMC Section 25.07.006 defines development to include demolition; coastal-zone demolition requires CDP unless a specific exemption applies |
-| Historic resources | State CEQA/historic baseline | Historic register structures or structures 50+ years old should be flagged for Heritage/Historic review before demolition |
+| Historic resources | LBMC Ch. 25.45; State CEQA baseline | Structures on the Laguna Beach Historic Register or Historic Inventory are flagged for Heritage/Historic review before demolition. Age alone does not trigger City heritage review. Whether CEQA needs a historic resource evaluation for an older unlisted structure is a Planning call: confirm with Planning at pre-application |
 | Adjacent property | CBC baseline | Laguna Ch. 14.50 requires protection of adjoining property during demolition and 30-day certified notice for certain excavations near adjoining foundations |
 
 ---
@@ -155,7 +155,7 @@ This skill replaces the older generic `../demolition/SKILL.md` route for LTIA-st
 | Interior non-structural removal only | Confirm not a Rule 1403 demolition; still check asbestos/lead and waste diversion |
 | Load-bearing member removal, structural demolition, or full/partial building demolition | City Demolition Notification + SCAQMD Rule 1403 path |
 | Coastal-zone demolition | CDP analysis required before building/demolition permit issuance |
-| Historic register, potentially historic, or 50+ year structure | Heritage/Historic review flag |
+| Historic Register or Historic Inventory structure | Heritage/Historic review flag |
 | Demolition with excavation deeper than adjoining foundation and close to property line | 30-day certified notice to adjacent owner before permit |
 
 ---
@@ -179,12 +179,23 @@ LBMC Section 25.07.006 defines development to include demolition and alteration 
 
 For Laguna coastal-zone demolition, do not say CDP is merely "likely." Treat CDP as required unless a specific Section 25.07.008 or 25.07.010 exemption/exclusion is identified and documented.
 
+#### 2a. Planning Route (Ord. 1732, LBMC 25.05.040(B))
+
+Source: the City source document (not included in this plugin).
+
+- **Partial demolition that is not a major remodel:** Zone Clearance, 25.05.040(B)(2)(a) ("Demolition, alteration, or addition that does not constitute a major remodel").
+- **Demolition that is part of a major remodel:** Design Review, (B)(1)(a). Major remodel test: `../residential-remodel/references/city-major-remodel-methodology.md`.
+- **Removing a whole structure with nothing built in its place:** no list item clearly names it. **UNSETTLED; confirm with Planning at pre-application.**
+- **Historic resource:** demolition goes through LBMC 25.45.014: Heritage Committee recommendation to the design review authority, a CDP, CEQA unless exempt, a 90-day waiting period with advertising, and findings before the demolition permit issues. Design Review of historic resources that does not qualify for administrative approval is (B)(1)(d).
+- **Environmentally sensitive area** (includes slopes of 30% or greater): Design Review, (B)(1)(e), unless a peer-reviewed licensed professional finds no impact.
+- Design Review is heard by the Design Review Board for single-family and two-family developments and by the Planning Commission otherwise (25.05.040(F)(1)).
+
 #### 3. Historic and Heritage Review
 
 Flag demolition for Planning/Historic review when:
 
-- The structure is on the Laguna Beach Heritage Register.
-- The structure is 50+ years old and the application lacks a historic assessment.
+- The structure is on the Laguna Beach Heritage Register or is otherwise a "historic resource" under LBMC 25.45 as amended by Ord. 1732 § 40: listed on the City, California or National Register, officially determined eligible, or one the City must treat as historic on substantial evidence. A missing recorded preservation agreement is not, on its own, proof a property is not on the City register (the City source document (not included in this plugin)).
+- The structure is on the Historic Register or Historic Inventory and the application lacks a historic assessment.
 - The project is in a historic district or affects a designated historic resource.
 
 #### 4. Adjoining Property and Excavation Protection
@@ -202,7 +213,7 @@ Laguna Ch. 14.50 includes CBC 3307 protection requirements for adjoining public 
 | LB-DEMO-3 | Structural demolition classification | Load-bearing member removal identified and not misclassified as non-demolition |
 | LB-DEMO-4 | Asbestos/abatement documentation | Rule 1403 confirmation and abatement certification included where applicable |
 | LB-DEMO-5 | Coastal/CDP | Coastal-zone demolition has CDP or documented exemption |
-| LB-DEMO-6 | Historic/heritage | Historic register/50+ year structure review checked |
+| LB-DEMO-6 | Historic/heritage | Historic Register/Inventory status checked |
 | LB-DEMO-7 | Adjacent property protection | CBC 3307 protection and 30-day excavation notice checked where applicable |
 | LB-DEMO-8 | Utilities capped | Gas, electrical, water, sewer, and fire systems disconnected/capped per state skill and utility requirements |
 | LB-DEMO-9 | Waste diversion | CALGreen/Green Halo construction and demolition waste path documented |

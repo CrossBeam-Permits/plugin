@@ -138,8 +138,11 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 |-------|----------------------|
 | **Residential rooftop solar permit** | `references/city-solar-ordinance.md` + state skill |
 | **Permit timeline / process** | This SKILL.md |
-| **Fees** | This SKILL.md (§14.84.060) |
-| **Commercial solar** | NOT covered — standard plan review process |
+| **Fees** | Fee tool (`estimate_fees`, Master Fee Schedule). §14.84.060 sets only the cap |
+| **Which filing (SolarAPP+ or plan review)?** | "Filing Paths" below |
+| **Commercial or multifamily solar** | Not Ch. 14.84. Building plan review only; see "Planning Route" and "Non-Residential Storage" below + state skill |
+| **Planning approval?** | "Planning Route" below |
+| **CDP / Three Arch Bay** | "Coastal zone" row below |
 
 ---
 
@@ -155,6 +158,27 @@ If eligible AND meets city's checklist/standard plan → **3 business day permit
 
 ---
 
+### Filing Paths
+
+The City takes solar two ways. Name both and pick by the system.
+
+| Path | When | Evidence |
+|---|---|---|
+| **SolarAPP+ first, then EnerGov type 124** | The installer gets SolarAPP+ approval for the system. Type 124 carries the SolarAPP+ approval and spec sheets, not a plan set. The permit issues on submittal. SolarAPP+ eligibility is set by SolarAPP+, not by the 10 kW Ch. 14.84 test | City records: rooftop PV with battery storage applied for and issued the same day (Sept. 2026) |
+| **Standard plan review ("Residential - Solar" e-plan filing)** | The system is not run through SolarAPP+ (for example it falls outside SolarAPP+ scope, or the installer does not use it). Plans go through ordinary plan check | City records: a 16.2 kW rooftop PV system with 30 kWh of battery storage, filed as "Residential - Solar", work class Solar, with the reroof and skylight on a separate permit |
+
+**An open plan-review filing does not lock the system out of SolarAPP+.** The two paths are alternatives for the same system. If a "Residential - Solar" plan-review filing is open and the system fits SolarAPP+ scope, say the installer may run it through SolarAPP+ and file type 124 instead, and should ask the Building Division in writing to withdraw or void the plan-review filing so two permits are not open for one system. Whether any fee paid on the first filing is refunded is the City's call (not in our sources).
+
+**What rides on type 124, and what does not.** The City's type 124 form says, verbatim: "Separate permits are required for the following items: Generators, Ground-mounted PV systems, Service upgrades not within SolarAPP scope, Main panel upgrades, New service meter installations, Reroofs as part of solar install." Apply it this way:
+- Generators, ground-mounted PV, new meters and a reroof: always a separate permit.
+- A backup or critical-loads subpanel, a battery and other equipment inside the SolarAPP+ approval: not on the list, so they ride on type 124.
+- A main panel upgrade: the form lists it as separate, but City practice differs. Four Laguna SolarAPP+ permits marked "Main Panel Upgrade: Yes" issued with no separate electrical permit. Give the form's rule, then the practice: include the upgrade in the SolarAPP+ application, and file a separate electrical permit if the City asks for one. Do not state either one as the only answer.
+- A service upgrade outside SolarAPP+ scope: separate (the form).
+
+A system over 10 kW AC is not a Ch. 14.84 expedited system, so the 3-business-day clock does not apply to it; it can still use SolarAPP+ if SolarAPP+ accepts it.
+
+---
+
 ### Permit Review Checklist
 
 | # | Check | What to Verify |
@@ -163,7 +187,7 @@ If eligible AND meets city's checklist/standard plan → **3 business day permit
 | 2 | Meets checklist? | City's standard plan/checklist requirements |
 | 3 | State code compliance? | CEC, fire, structural per state solar skill |
 | 4 | Health/safety only? | Review limited to health/safety — no aesthetic review for qualifying systems |
-| 5 | Fee paid? | ≤10% of system cost, max $1,000. Fee may be waived upon WRITTEN DETERMINATION by the Director of Community Development that the system results in no significant aesthetic or view impacts (§14.84.060). This is not automatic. |
+| 5 | Fee paid? | Amount from the fee tool, not from memory. §14.84.060 caps the building permit fee at 10% of system cost and "in no case more than one thousand dollars", and requires conformity with Gov. Code 65850.55 and 66015. Fee may be waived upon WRITTEN DETERMINATION by the Director of Community Development that the system results in no significant aesthetic or view impacts (§14.84.060). This is not automatic. |
 | 6 | HOA not blocking? | City cannot condition on HOA approval |
 
 ---
@@ -175,7 +199,7 @@ If eligible AND meets city's checklist/standard plan → **3 business day permit
 | **Ordinance** | Ch. 14.84 (Ord. 1607, 2015) |
 | **Permit type** | Administrative, nondiscretionary |
 | **Expedited timeline** | **3 business days** |
-| **Max fee** | 10% of system cost, max **$1,000** |
+| **Fee** | Look up in the fee tool. Code cap: 10% of system cost, never over $1,000 (§14.84.060) |
 | **Fee waiver** | Requires WRITTEN DETERMINATION by Director of Community Development (§14.84.060) — not automatic |
 | **Inspections** | **1 only** (expedited-eligible) |
 | **Inspection scheduling** | Within **2 business days** of request |
@@ -185,6 +209,33 @@ If eligible AND meets city's checklist/standard plan → **3 business day permit
 | **Maintenance/like-kind** | No permit required |
 | **Re-inspection** | If system fails initial inspection, subsequent inspection is authorized but not bound by expedited timeline (§14.84.070(i)) |
 | **Coastal zone** | LBMC §25.07.008(A)(1) exempts improvements to single-family dwellings from a CDP. Rooftop panels add no floor area and no height. The City record shows no CDP exemption for rooftop PV, including on streets next to the ocean. Planning does not review it (Building Division, 2026-09-01). |
+| **Three Arch Bay (and other areas of deferred certification)** | The City's CDP exemption does not apply. Three Arch Bay, Blue Lagoon and Irvine Cove stay under Coastal Commission CDP jurisdiction (City LCP page; Commission LCP status chart; `../coastal-development/SKILL.md`). The Coastal Commission, not the City, decides whether the work is exempt or needs a CDP. Tell the applicant to get the Commission's exemption or CDP, and the Three Arch Bay association's review, before the City issues the building permit. Use the parcel's coastal flag; do not assume |
+
+---
+
+### Planning Route (Ord. 1732, LBMC 25.05.040(B))
+
+| Scope | Planning |
+|---|---|
+| Rooftop PV on a single-family home or duplex (Ch. 14.84 system) | None. Building Division administrative, nondiscretionary review only (§14.84.070); review is limited to health and safety. No Planning record exists for rooftop PV in the City permit data (a CrossBeam reference that is not included in this plugin Step 1) |
+| Reroof done with the PV | Planning applies to the reroof: Zone Clearance (B)(2)(e) if same shape and not white/light/glare; ADR (B)(3)(a)(ix)-(x) otherwise. Load `reroof` |
+| Ground-mounted array | Not a Ch. 14.84 rooftop system, but still a solar energy system: Gov. Code 65850.5(b) requires administrative approval through a building permit or similar nondiscretionary permit, so no Design Review of the array. Objective setbacks and height still apply. Whether the City checks them with a Zone Clearance ((B)(2)(b), 15 ft or less) is **UNSETTLED; confirm with Planning at pre-application** |
+| Carport or trellis that holds PV | The panels are a solar energy system (Gov. Code 65850.5(b)). Whether the carport or trellis structure itself is reviewed under the closed lists (Zone Clearance (B)(2)(b) if 15 ft or less; Design Review (B)(1)(c) if over 15 ft; "new building" (B)(1)(b)) is **UNSETTLED; confirm with Planning at pre-application** |
+| Battery storage that is part of a rooftop PV system on a house or duplex, indoors or on an outside wall | No discretionary Planning review: it is part of the solar energy system (Gov. Code 65850.5(b)), so no Design Review, ADR or CDP step comes from the lists. City practice: rooftop PV with a battery has issued through SolarAPP+ with no Planning record, and no Planning record names PV or its equipment in 403 City solar permits (2020-10 to 2026-09). If the counter asks for a zoning sign-off, it is a same-day zoning plan check stamp, not a review tier |
+| Battery storage not tied to a PV system (standalone), or a generator outside | **UNSETTLED.** LBMC 7.25.130 names only "HVAC and pool/spa equipment", so its six-part test does not by its terms reach a battery or generator. The lists' equipment items read "Mechanical equipment, including air conditioners and pool/spa equipment, that meets [or does not meet] Section 7.25.130(C)" ((B)(2)(v), (B)(3)(a)(v)); whether a battery is "mechanical equipment" is not decided. The other candidate is the utility-structure pair by height: under 4 ft (B)(2)(w) Zone Clearance, 4 ft or more (B)(3)(a)(xiv) ADR. Give both and confirm with Planning at pre-application (a CrossBeam reference that is not included in this plugin, generators). Load `hvac` for the noise test |
+| Commercial, mixed-use or multifamily PV, and battery storage that is part of it | None. Gov. Code 65850.5(b): "A city or county shall administratively approve applications to install solar energy systems through the issuance of a building permit or similar nondiscretionary permit." The duty is not limited to houses, and a solar energy system includes storage of solar energy (Civil Code 801.5(a)(1)). It is not a Ch. 14.84 expedited system, so it gets ordinary Building plan review. A use permit is allowed only on the building official's good-faith finding of a specific, adverse impact on public health and safety (65850.5(b); LBMC 14.84.070 for houses). A reroof, new structure or standalone equipment in the same job follows its own route |
+
+The Director may refer any Zone Clearance or ADR item up (25.05.040(A)(2)(d)). A CDP is a separate Ch. 25.07 question (see the Coastal zone and Three Arch Bay rows above).
+
+---
+
+### Non-Residential Storage (city delta only)
+
+Battery storage on a commercial, mixed-use or multifamily building is reviewed under CFC 1207 (permit and construction documents 1207.1.4-1207.1.5, size and separation 1207.5.1, indoor and outdoor locations 1207.7-1207.8, rooftop 1207.9 and 1207.9.5), not CRC R330. Rooftop PV on a building other than Group R-3 uses the CFC 1205.3 perimeter and interior pathways. Apply them from the state skill and the code; do not restate them here.
+
+The Laguna delta:
+- Laguna does not amend CFC Chapter 12. LBMC 15.01 amends Fire Code Chapters 1, 2, 3, 9, 11, 50, 56, 57, 61 and 80 only (LBMC 15.01.020-15.01.070).
+- The fire code official is the Laguna Beach Fire Department, not OCFA (`../city-reference/SKILL.md`). Route a CFC 1207 storage system to Fire review with the Building permit.
 
 ---
 
@@ -192,10 +243,10 @@ If eligible AND meets city's checklist/standard plan → **3 business day permit
 
 | Aspect | Buena Park | Costa Mesa | Laguna Beach |
 |--------|-----------|-----------|-------------|
-| **Process** | Symbium (SB 379) | SolarAPP+ via TESSA | SolarAPP+ → EnerGov type 124; expedited Ch. 14.84 |
-| **Timeline** | Instant (automated) | Instant (automated) | **3 business days** |
+| **Process** | Symbium (SB 379) | SolarAPP+ via TESSA | SolarAPP+ → EnerGov type 124, or a "Residential - Solar" plan-review filing; expedited Ch. 14.84 |
+| **Timeline** | Instant (automated) | Instant (automated) | SolarAPP+: issued on submittal. Ch. 14.84 expedited: **3 business days** |
 | **Inspections** | 1 | 1 | **1** |
-| **Max fee** | Varies | Varies | $1,000 or 10% |
+| **Fee cap in code** | Varies | Varies | 10% of cost, max $1,000 (actual fee: fee tool) |
 | **Electronic submit** | Yes | Yes | Yes |
 
 ---

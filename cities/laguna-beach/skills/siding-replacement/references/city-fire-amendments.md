@@ -34,7 +34,7 @@ Existing Group R (residential) buildings must be retrofitted with sprinklers whe
 
 **This is only one of the two residential retrofit triggers.** The other is **LBMC Ch. 14.52.030** (CRC R309.2 amendment, Ord. 1725, 12/18/2025) — a **valuation** test: cumulative additions, alterations and repairs to a one- or two-family dwelling and attached garage in any three-year period exceeding 50% of the pre-work valuation. **Either trigger firing requires the retrofit.** Run both from the single residential reference, `../../residential-remodel/references/city-sprinkler-retrofit.md`.
 
-**Re-roofing impact:** A full re-roof alone is unlikely to trigger this (it is exterior work but typically not "alteration of 50% or more of a building"). However, if a re-roof is combined with other work that collectively reaches the 50% threshold, sprinkler retrofit is required.
+**Exterior-only work:** a re-roof or re-side alone is not "alteration of 50% or more of a building". Whether exterior work of 50% or more fires the retrofit on its own is UNSETTLED (two readings of the "which includes or involves" clause; the City has not ruled). Give both readings and say "confirm with Building and Fire at pre-application" (`../../residential-remodel/references/city-sprinkler-retrofit.md`, Trigger B).
 
 ---
 

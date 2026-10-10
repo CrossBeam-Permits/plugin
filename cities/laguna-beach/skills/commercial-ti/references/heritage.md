@@ -2,7 +2,7 @@
 
 **Authority:** LBMC **Chapter 25.45** (Historic Preservation), current **§25.05.040(B)(1)(d)** and **(B)(3)(a)(iv)**, and **§25.05.065(F)** (demolition newspaper notice). Ord. 1732 replaced the former interior-only historic exception with major/minor historic-action routes.
 
-**Critical context:** The City's **1980-81 Historic Resources Inventory** identified **852 pre-1940 homes and commercial buildings**. Many Downtown, Forest Ave, North Laguna, and Heisler Park commercial properties are on the inventory. Any property **50+ years old** is potentially a historic-resource trigger.
+**Critical context:** The City's **1980-81 Historic Resources Inventory** identified **852 pre-1940 homes and commercial buildings**. Many Downtown, Forest Ave, North Laguna, and Heisler Park commercial properties are on the inventory. A property's age alone is not a trigger; status is (§25.45.004).
 
 ---
 
@@ -12,16 +12,10 @@
 |-----------|------------------|
 | Building is on the City's Historic Register | Heritage Committee review required for any alteration; DR for any change visible from public; Mills Act contract eligibility |
 | Building is on the 1980-81 Historic Resources Inventory but NOT on Register | Heritage Committee review at DRB/PC discretion; historic assessment submittal may be required |
-| Building is **50+ years old** (regardless of inventory status) | Historic assessment submittal **may be required** when DRB/PC determines historical significance; route through Heritage Committee for advisory comment |
+| Building is old but on no register, listing or inventory | **No age trigger.** Age alone does not make a property a historic resource (§25.45.004). Review only if Planning finds substantial evidence that it is a historic resource (§25.45.004 item (6), the CEQA standard); the Director may require an assessment (§25.45.010(C)) |
 | Demolition of historic-register structure | Published newspaper notice required (§25.05.065(F)); up to 180-day waiting period |
 
-The City defaults to "50+ years = historic assessment required" when:
-
-- The building is on the 1980-81 inventory
-- The structure has any of the architectural features identified in the inventory (Victorian, Craftsman, California Bungalow, Spanish Colonial Revival, Streamline Moderne, etc.)
-- A neighbor objects on historic-significance grounds during DR notice
-
-When the property's age or significance is unclear, the prudent approach is to require a historic assessment up front and route through Heritage Committee before Planning Commission DR action.
+Laguna keys historic review off the property's status, not its age: City register, California or National Register listing or official eligibility, or substantial evidence (§25.45.004 as amended by Ord. 1732). The 1981 inventory "is ineffective for the purposes of creating a presumption of historicity" (§25.45.002(H)), but an inventory rating (`historic.rating` in `lookup_property`) flags the property for a possible City-paid historic assessment (§25.45.010(C); a CrossBeam reference that is not included in this plugin). When status is unclear, FLAG for Planning; do not infer it from the year built.
 
 ---
 
@@ -108,7 +102,7 @@ For each commercial TI heritage review, output:
 **Building age:** <year built / age in years>
 **1980-81 Historic Resources Inventory status:** On inventory | Not on inventory | Verify with city records
 **Historic Register status:** On register | Not on register
-**50+ year trigger applies:** YES | NO
+**Inventory rating (site facts):** <rating> | none
 **Current historic-action route:** Major Design Review | Minor ADR | Interior Zone Clearance | needs_source
 **Historic assessment submittal required:** YES (doc IDs 5343 / 8904 / 5337) | NO
 **Heritage Committee review required:** YES (advisory to Planning Commission) | NO

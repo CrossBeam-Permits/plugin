@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen); LBMC Ch. 14.70 (WUI Code), Ch. 14.50 (Building Code amendments), Ch. 25.05 (Design Review), Ch. 7.19 (C&D waste), Title 15 (Fire Prevention); City Building Division REROOFING handout (2026-08-12)"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-08-15"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -144,10 +144,11 @@ the City source document (not included in this plugin).
 |-------------|-------|
 | **Re-roof**, no dimension/SF/pitch change, not white/light, no glare | OTC may be eligible; design-review **exempt with Zone Clearance** per current §25.05.040(B)(2)(e) → `references/city-roof-color-standards.md` for the separate color gate |
 | **Re-roof** resulting in a white/light roof or possible glare | **Administrative Design Review** under §25.05.040(B)(3)(a)(ix) |
-| **Re-roof** changing dimensions, square footage, or roof pitch | **Administrative Design Review** under §25.05.040(B)(3)(a)(x), unless a Design Review trigger independently applies |
+| **Re-roof** changing dimensions, square footage, or roof pitch | **Administrative Design Review** under §25.05.040(B)(3)(a)(x), unless a Design Review trigger independently applies. City practice: one roof pop-up lowering (130 sf) was approved at the counter (ZPC-2026-2029), so a pure reduction may not be treated as an (x) alteration; one record, unsettled (a CrossBeam reference that is not included in this plugin section 5) |
 | **Overlay (recover)** proposed over existing **wood shake** | City prohibits — tear-off required → "Overlay Limits" below |
-| **Re-roof** on a historic / Register-listed / 50+-year structure | FLAG for Planning — `../city-reference/SKILL.md` §5, `../single-family-residential/references/heritage-historic-committee.md` |
-| **Re-roof** as part of major remodel | Full plan review |
+| **Re-roof** on a historic resource | Replacing roofing material is a minor historic alteration: **Administrative Design Review** under §25.05.040(B)(3)(a)(iv) (Secretary of the Interior's Standards review; hearing cannot be waived). Register-listed, state/national listed, or carrying a 1981 inventory rating (`historic.rating` in `lookup_property`): FLAG for Planning. Age alone is not a trigger (LBMC 25.45.004; 25.45.002(H)) — `../city-reference/SKILL.md` §5, `../single-family-residential/references/heritage-historic-committee.md` |
+| **Re-roof** as part of major remodel | Full plan review + **Design Review** under §25.05.040(B)(1)(a) (Design Review Board for a house or duplex, Planning Commission otherwise, §25.05.040(F)(1)) |
+| **Re-roof** on a lot in an environmentally sensitive area (includes slopes of 30% or more) | The (B)(2) and (B)(3) preambles bar Zone Clearance/ADR in an ESA unless a licensed professional finds, subject to peer review, no impact; otherwise Design Review under (B)(1)(e). How Planning applies this to a same-shape reroof is **UNSETTLED; confirm with Planning** |
 
 ---
 
@@ -176,7 +177,7 @@ Headline rules (full standard, per-material table, the City's photo examples, an
 **`references/city-roof-color-standards.md`**):
 
 - **No light colors** — white, tan, light gray are banned; no highly reflective roof materials.
-- **Flat roofs** (TPO/EPDM/PVC membrane): dark brown, dark gray, or black.
+- **Flat roofs** (TPO/EPDM/PVC membrane): dark brown, dark gray, or black. When more than 50% of a low-slope roof is replaced, houses too must meet Energy Code §150.2(b)1Iiia (0.63 aged reflectance / SRI 75 in CZ 6). A dark roof meets it through the Table 150.2-E trade-off (R-10 continuous roof-deck insulation in CZ 6 removes the reflectance requirement). Ask for the path; do not FAIL on color or reflectance alone.
 - **Metal roofs**: acceptable **with condition** — matte finish coating to eliminate reflective glare.
 - **Color samples are a submittal item and an issuance gate** — an application naming a product but no color, or
   a color with no sample, is incomplete for issuance even when every state-code check passes.
@@ -189,14 +190,14 @@ Headline rules (full standard, per-material table, the City's photo examples, an
 
 The re-roof design-review exemption is **conditional**, not automatic. Both branches must be carried.
 
-Section 25.05.040 was replaced after the Building handout was issued. Current subsection (B)(2)(e) routes a reroof to **Zone Clearance** when it does not result in a white or light-colored roof, makes no change to dimensions, square footage, or roof pitch, and will not result in glare, as determined by the Community Development Director.
+The Building handout does not reflect Ord. 1732's routing. Current subsection (B)(2)(e) routes a reroof to **Zone Clearance** when it does not result in a white or light-colored roof, makes no change to dimensions, square footage, or roof pitch, and will not result in glare, as determined by the Community Development Director.
 
 Current Administrative Design Review categories separately cover:
 
 - white/light-colored roofs and possible glare, (B)(3)(a)(ix); and
 - changes to roof dimensions, square footage, or pitch, (B)(3)(a)(x).
 
-Do not use the pre-ordinance `(B)(2)(f)` test or treat a material change alone as a categorical ADR trigger. Class A and the City color policy remain separate Building/WUI requirements. Planning decides the Zone Clearance/ADR branch; historic-resource procedures may also apply.
+Do not use the pre-ordinance `(B)(2)(f)` test or treat a material change alone as a categorical ADR trigger. Class A and the City color policy remain separate Building/WUI requirements. Planning decides the Zone Clearance/ADR branch; on a historic resource, new roofing material is ADR under (B)(3)(a)(iv). The Director may refer any Zone Clearance or ADR reroof up to the board (§25.05.040(A)(2)(d)).
 
 ---
 
@@ -276,8 +277,10 @@ Note: Other fire-resistive roofing details (ember-resistant vents, eave/soffit c
 - **LBMC Ch. 14.52.030** (valuation, Ord. 1725 12/18/2025) — cumulative additions, alterations and repairs to a one- or
   two-family dwelling and attached garage in any three-year period exceeding 50% of the pre-work valuation. **A re-roof
   valuation counts toward that total**, so a re-roof stacked on recent permits can fire the retrofit by itself.
-- **LBMC Title 15 §1103.5.4** (scope, Ord. 1726 12/18/2025) — alteration of ≥50% of the building, OR work on ≥50% of the
-  exterior, OR an added story. A re-roof alone does not usually fire it, but roof area counts toward the exterior prong.
+- **LBMC Title 15 §1103.5.4** (scope, Ord. 1726 12/18/2025) — alteration of ≥50% of the building, OR an added story.
+  Whether work on ≥50% of the exterior fires it by itself is **UNSETTLED** (two readings in the sprinkler reference;
+  confirm with Building and Fire at pre-application). A re-roof alone does not alter 50% of the building. If the
+  exterior tally (roof counts) is what decides the answer, give both readings; do not say sprinklers are required.
 - **CBC-track Group R (including 3+ unit multi-family): LBMC §14.50.104/CBC §903.6(1),(5)** — run its
   50%-valuation and Building Official substantial-renovation tests in addition to Title 15 §1103.5.4.
 - **Other-than-R/U occupancies: LBMC §14.50.104/CBC §903.6(2)** — both the post-work
@@ -327,13 +330,13 @@ Walk these AFTER the state-level checklist. Record PASS / FAIL / FLAG / N/A with
 | LB-3 | **Metal roof finish** | Metal roofs acceptable only with a matte finish coating applied to eliminate reflective glare. Unmatted standing seam → FAIL. | City reroof handout, COLOR GUIDE (2026-08-12) | `references/city-roof-color-standards.md` |
 | LB-4 | **Color approved before issuance** | Material details and a color sample/swatch are in the submittal. Missing color or missing sample = incomplete for issuance regardless of code compliance. | City reroof handout, "Approval" (2026-08-12) | `references/city-roof-color-standards.md` |
 | LB-5 | **Overlay over wood shake** | If existing covering is wood shake and an overlay/recover is proposed → tear-off required; report it as failing the City's stated policy, not a code section (no LBMC amendment to CBC 1512 exists). State would allow it with noncombustible separation per CBC 1512.3.1 — say so, and route the applicant to the building official. | City reroof handout, "Rules & Color Restrictions" (2026-08-12) | "Overlay Limits" above; `references/reroof-overlay-rules.md` |
-| LB-6 | **Planning route** | Zone Clearance when current `(B)(2)(e)` conditions are met; ADR for a white/light or possibly glaring roof `(B)(3)(a)(ix)` or a dimension/SF/pitch change `(B)(3)(a)(x)`. Apply any independent ESA/Design Review trigger. | §25.05.040(B)(2)(e), (B)(3)(a)(ix)-(x) | `../residential-remodel/references/city-design-review-tiers.md` |
-| LB-7 | **Historic / 50+ year structure** | Register-listed, historic, or 50+-year structure → FLAG for Planning/Heritage; the handout warns of additional requirements without stating them. | LBMC Ch. 25.45 | `../single-family-residential/references/heritage-historic-committee.md`; `../city-reference/SKILL.md` §5 |
+| LB-6 | **Planning route** | Zone Clearance when current `(B)(2)(e)` conditions are met; ADR for a white/light or possibly glaring roof `(B)(3)(a)(ix)` or a dimension/SF/pitch change `(B)(3)(a)(x)`. ESA without a peer-reviewed no-impact finding → Design Review (B)(1)(e). | §25.05.040(B)(2)(e), (B)(3)(a)(ix)-(x), (B)(1)(e) | `../residential-remodel/references/city-design-review-tiers.md` |
+| LB-7 | **Historic resource or inventory rating** | Historic resource → new roofing material is ADR under §25.05.040(B)(3)(a)(iv). Register-listed, state/national listed, or 1981 inventory-rated property → FLAG for Planning/Heritage; a building's age alone is not a trigger (25.45.004); the handout warns of additional requirements without stating them. | LBMC Ch. 25.45; §25.05.040(B)(3)(a)(iv) | `../single-family-residential/references/heritage-historic-committee.md`; `../city-reference/SKILL.md` §5 |
 | LB-8 | **Evaluation report number** | Third-party evaluation report number from an approved agency (ICC, PRI, UL Product iQ, QAI, IAPMO) provided for the roofing product — all materials, not just tile. | City reroof handout (2026-08-12) | N/A |
 | LB-9 | **Waste plan + deposit** | Tear-off: Waste Management Plan **and** separate security deposit (check or cash) per LBMC Ch. 7.19. No tear-off (overlay) → exempt. State CALGreen 65% diversion still applies to tear-off. | LBMC Ch. 7.19; CALGreen 5.408 | N/A |
 | LB-10 | **Coastal routing** | Coastal Appealable Area → CDP Exemption + 10-working-day appeal window. Deferred Certification Zone → Appendix B forms + fees direct to the Coastal Commission. Straddling parcels must be reported as straddling. | Ch. 25.07 | `../coastal-development/SKILL.md` |
 | LB-11 | **Sprinkler retrofit** | Classify occupancy first. CRC-track house/townhouse → Ch. 14.52.026/.030 valuation plus Title 15 §1103.5.4 scope. CBC-track Group R → §14.50.104/§903.6(1),(5) plus Title 15 §1103.5.4. Other-than-R/U → apply the conditional §903.6(2) test and addition triggers. | Ch. 14.52.026/.030; Title 15 §1103.5.4; §14.50.104/§903.6 | `../residential-remodel/references/city-sprinkler-retrofit.md`; `references/city-fire-amendments.md` |
-| LB-12 | **Major remodel** | Coastal zone appealable area: roof area removed or reinforced ÷ existing roof area counts in the combined roof / exterior walls / load-bearing interior walls / foundation test for that structure; combined 50% or more → major remodel, full plan review. Coastal zone non-appealable area: roof does not count. | §25.05.040 | `../residential-addition/references/city-major-remodel.md` |
+| LB-12 | **Major remodel** | Coastal zone appealable area: roof area removed or reinforced ÷ existing roof area counts in the combined roof / exterior walls / load-bearing interior walls / foundation test for that structure; combined 50% or more → major remodel, Design Review (B)(1)(a). Coastal zone non-appealable area: roof does not count. | §25.05.040(B)(1)(a); October 2026 Major Remodel Quick Guide | `../residential-remodel/references/city-major-remodel-methodology.md` |
 
 #### Output Format
 
@@ -354,7 +357,7 @@ Walk these AFTER the state-level checklist. Record PASS / FAIL / FLAG / N/A with
 - **Overlay**: no overlay over **wood shake** (City policy, stricter than state — no LBMC amendment found), slate, clay, cement, or asbestos tile; max one overlay on asphalt/wood shingle (state floor)
 - **WUI code**: Ch. 14.70 — extensive fire-resistive requirements
 - **Planning route**: qualifying reroof → Zone Clearance under §25.05.040(B)(2)(e); white/light or glare → ADR `(B)(3)(a)(ix)`; dimensions/SF/pitch change → ADR `(B)(3)(a)(x)`
-- **Historic**: additional requirements may apply — FLAG for Planning (Ch. 25.45)
+- **Historic**: new roofing material on a historic resource → ADR `(B)(3)(a)(iv)`; other requirements may apply — FLAG for Planning (Ch. 25.45)
 - **Evaluation report**: third-party report number required for all roofing products
 - **Waste**: Waste Management Plan + separate security deposit per LBMC 7.19 on tear-off; exempt if no tear-off
 - **Major remodel**: Roof replacement counted in the combined roof / exterior walls / load-bearing interior walls / foundation test in the coastal zone appealable area

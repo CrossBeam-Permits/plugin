@@ -57,9 +57,9 @@ When intensity-of-use is unclear, default to "CDP required" and let the Director
 | Tier | Mechanism | Notice / Timeline | When applicable |
 |------|-----------|-------------------|------------------|
 | **Exempt** | §25.07.008 / §25.07.010 enumerated | None | Routine interior-only commercial TI with no intensity-of-use change, no envelope/landform alteration, not in restricted areas |
-| **De minimis waiver** | §25.07.009 — Director may waive | 10-day public notice; City Council may pull at next public hearing | Non-appealable scope, consistent with LCP, no adverse effect, similar projects routinely approved without conditions or opposition |
+| **De minimis waiver** | §25.07.009 — Director may waive | 10-day public notice; City Council may pull at next public hearing | Non-appealable scope, consistent with LCP, no adverse effect, similar projects routinely approved without conditions or opposition. **Barred** when the site has a violation: "If a project site involves a violation, or the waiver proposes development to address a violation, it is not de minimus" (§25.07.009(B)(3)); also ineligible with "known opposition or probable public controversy or on sites with alleged or outstanding violations of the LCP" (§25.07.009(D)(2)) |
 | **Administrative CDP** | §25.07.013 — public hearing may be waived | 15-working-day public-hearing-request window; deemed approved if no request | "Minor development," consistent with LCP, no other discretionary approvals needed, no adverse effect on coastal resources/access |
-| **Standard CDP (hearing)** | §25.07.012 — Planning Commission hearing | ≥21-day mailed notice (per §25.05.065(D)) | Default for any project not qualifying for the lower tiers; typically heard concurrently with Design Review |
+| **Standard CDP (hearing)** | §25.07.012(D) — approving body follows the project's other permits | Notice per §25.07.014 | Default for any project not qualifying for the lower tiers. If the CDP is the only discretionary permit, the Director of Community Development decides it after a Director's public hearing: "In the case where a project requires only a coastal development permit, such permit may be approved or denied by the Director of Community Development" (§25.07.012(D)(1)). If the project also needs Design Review, a CUP or a variance, the CDP is processed concurrently and "the approving body for the coastal development permit shall be the same as that for the permit required by the underlying zoning district" (§25.07.012(D)), e.g. the Planning Commission or Design Review Board. An appealable CDP always gets at least one public hearing (§25.07.012(E)) |
 
 ---
 
@@ -114,12 +114,12 @@ CDP lapses after **2 years** if work is not commenced. Extension provisions per 
 
 ## 9. Concurrent Processing With Design Review
 
-For commercial TI in the Coastal Zone with any exterior or intensity-of-use scope, the CDP and DR applications run concurrently:
+When a Coastal Zone commercial TI needs both a CDP and Design Review, the two applications run concurrently (§25.07.012(D)). A CDP-only project goes to a Director hearing instead (§25.07.012(D)(1)). Interior-only or other Zone Clearance scope does not create a Design Review hearing by itself (see `design-review.md`):
 
 1. Single intake at Planning Division
 2. Joint completeness review
 3. Joint staff report
-4. Joint Planning Commission hearing
+4. Joint hearing before the Design Review approving body (Planning Commission for non-residential Design Review, §25.05.040(F))
 5. Two appeal windows: 14 calendar days to City Council (DR), 10 working days to CCC (appealable CDP)
 
 The CCC appeal window runs from the city's "final action" date, which is typically the date the appeal period to City Council expires (or the date of any City Council action on appeal).

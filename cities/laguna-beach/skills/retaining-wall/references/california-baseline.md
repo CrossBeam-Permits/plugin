@@ -62,7 +62,7 @@ For a full permit review, check each item in order. The checklist tells you whic
 | 8 | **Wall stem design adequate?** | Stem thickness, vertical and horizontal reinforcement, concrete or masonry strength, dowel connections to footing. CMU walls: cells grouted, bond beams provided. | CBC 1807.2; ACI 318 / TMS 402 | `structural-design-cbc1807.md`, `materials-construction.md` |
 | 9 | **Drainage system shown?** | Drainage behind wall is critical. Verify: drain rock (12" min width), perforated drain pipe at base (4" min, sloped to daylight), filter fabric between drain rock and native soil. Weep holes as supplemental (4" dia, 6-8 ft OC). Surface drainage graded away from wall top. | Engineering practice; CBC 1805 | `drainage-waterproofing.md` |
 | 10 | **Waterproofing addressed?** | Below-grade portions: dampproofing or waterproofing per CBC 1805 where wall retains habitable space or where required by design. Waterproofing membrane on soil side of wall below grade. | CBC 1805 | `drainage-waterproofing.md` |
-| 11 | **Guards/railings required?** | Guards required where retaining wall is within 36" of a walking surface AND the drop exceeds 30" from the walking surface to grade below. Guard height: 42" min above walking surface. Openings: 4" sphere test. Loads: 200 lb concentrated at top. | CBC 1807.2.5; CRC R312.1 | `permit-engineering-triggers.md` |
+| 11 | **Guards/railings required?** | Guards required where retaining wall is within 36" of a walking surface AND the drop exceeds 30" from the walking surface to grade below. Guard height: 42" min above walking surface. Openings: 4" sphere test. Loads: 200 lb concentrated at top. | CBC 1807.2.5; CRC R321.1.1-R321.1.3 (2025 CRC; formerly R312.1); loads Table R301.5 | `permit-engineering-triggers.md` |
 | 12 | **Material specifications shown?** | Structural concrete strength/durability follows CBC 1904.1/ACI 318 and the exposure/design; the 3,000-psi minimum is limited to CBC 1904.1's stated Group R-2/R-3 weather-exposed vertical surfaces. Verify CMU/mortar/grout/rebar/SRW specifications under the applicable design. Timber uses an R304.1 naturally durable or treated path; R304.1.2 ground-contact treatment applies only in its stated scope. | CBC 1904.1, 2103; CRC R304.1, R304.1.2; applicable ASTM/ACI/TMS design | `materials-construction.md` |
 | 13 | **Tiered walls analyzed correctly?** | If multiple walls, check spacing. Influence zone = 2x height of lower wall measured from base of lower wall. Walls within influence zone must be analyzed as a single composite wall. Walls outside influence zone may be designed independently. | CBC 1807.2 | `permit-engineering-triggers.md` |
 | 14 | **Grading plan consistent?** | If retaining wall is part of a grading project, verify consistency with grading plan. Grading permits per CBC Appendix J when cut/fill exceeds thresholds (typically 50 cu yd or 5 ft depth of cut). | CBC Appendix J | `permit-engineering-triggers.md` |
@@ -147,7 +147,7 @@ For each checklist item, output one of:
 | Condition | Guard Required? | Min Height | Code Section |
 |-----------|----------------|------------|--------------|
 | Drop <=30" | No | N/A | CBC 1807.2.5 |
-| Drop >30", walking surface within 36" | Yes | 42" above walking surface | CBC 1807.2.5; CRC R312.1 |
+| Drop >30", walking surface within 36" | Yes | 42" above walking surface | CBC 1807.2.5; CRC R321.1 |
 | Not accessible to public | No (exception) | N/A | CBC 1807.2.5.1 |
 
 ---

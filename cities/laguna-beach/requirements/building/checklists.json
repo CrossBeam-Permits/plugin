@@ -26,6 +26,22 @@
           "label": "Residential solar"
         },
         {
+          "id": "residential-deck-patio-cover-new",
+          "label": "New, extended or replaced deck, balcony or patio cover"
+        },
+        {
+          "id": "residential-site-improvements",
+          "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+        },
+        {
+          "id": "residential-retaining-wall",
+          "label": "Engineered retaining wall"
+        },
+        {
+          "id": "residential-accessory-structure",
+          "label": "Detached accessory or storage structure, shed or container"
+        },
+        {
           "id": "residential-alteration-interior",
           "label": "Residential interior remodel (kitchen, bath, room alteration)"
         },
@@ -39,7 +55,7 @@
         },
         {
           "id": "residential-patio-cover",
-          "label": "Patio cover, deck or patio repair"
+          "label": "Deck, balcony or patio cover repair"
         },
         {
           "id": "residential-reroof",
@@ -48,6 +64,38 @@
         {
           "id": "commercial-reroof",
           "label": "Commercial reroof"
+        },
+        {
+          "id": "multi-unit-residential-addition",
+          "label": "Multi-unit residential addition"
+        },
+        {
+          "id": "multi-unit-residential-alteration-structural",
+          "label": "Multi-unit residential structural alteration or major remodel"
+        },
+        {
+          "id": "multi-unit-residential-alteration-interior",
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+        },
+        {
+          "id": "multi-unit-residential-exterior-repair",
+          "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+        },
+        {
+          "id": "multi-unit-residential-new",
+          "label": "Multi-unit residential new construction"
+        },
+        {
+          "id": "commercial-site-improvements",
+          "label": "Commercial or public site work (parking lot, site walls, hardscape)"
+        },
+        {
+          "id": "residential-deferred-submittal",
+          "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
+        },
+        {
+          "id": "commercial-deferred-submittal",
+          "label": "Commercial or multi-unit deferred submittal (roof trusses, elevator, fire sprinklers)"
         }
       ],
       "items": [
@@ -76,6 +124,22 @@
             {
               "id": "residential-solar",
               "label": "Residential solar"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "checked_against": "submittal",
@@ -107,6 +171,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "checked_against": "submittal",
@@ -153,7 +233,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-reroof",
@@ -162,6 +242,42 @@
             {
               "id": "commercial-reroof",
               "label": "Commercial reroof"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
+            },
+            {
+              "id": "multi-unit-residential-addition",
+              "label": "Multi-unit residential addition"
+            },
+            {
+              "id": "multi-unit-residential-alteration-structural",
+              "label": "Multi-unit residential structural alteration or major remodel"
+            },
+            {
+              "id": "multi-unit-residential-alteration-interior",
+              "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+            },
+            {
+              "id": "multi-unit-residential-new",
+              "label": "Multi-unit residential new construction"
+            },
+            {
+              "id": "commercial-site-improvements",
+              "label": "Commercial or public site work (parking lot, site walls, hardscape)"
             }
           ],
           "applies_when": {
@@ -169,7 +285,7 @@
             "if_yes": "The Planning approval must already be granted when the Building application is filed. Include the approval and its conditions with the Building submittal."
           },
           "checked_against": "city_record",
-          "detail": "\"Planning approval must be completed prior to Building submittal (if required).\" Laguna sequences the lanes: the Building packet is filed after the Planning entitlement or design review is approved, not alongside it. A packet can carry affirmative evidence that an approval exists — a DRB or CDP reference, a conditions sheet, a plan-check redline naming the approved plans — and that evidence is supporting, never conclusive. No packet can show that no Planning record exists. A reroof is (B)(2)(e) exterior work (Design Review when the roof is white or light, glares, or changes dimension, square footage or pitch), and Planning reviews every reroof.",
+          "detail": "\"Planning approval must be completed prior to Building submittal (if required).\" Laguna sequences the lanes: the Building packet is filed after the Planning entitlement or design review is approved, not alongside it. A packet can carry affirmative evidence that an approval exists — a DRB or CDP reference, a conditions sheet, a plan-check redline naming the approved plans — and that evidence is supporting, never conclusive. No packet can show that no Planning record exists. A reroof is (B)(2)(e) exterior work (Administrative Design Review, not Design Review, when the roof is white or light colored and may glare — LBMC 25.05.040(B)(3)(a)(ix) — or when the roof changes dimension, square footage or pitch — (B)(3)(a)(x); Ord. 1732), and Planning reviews every reroof.",
           "source": {
             "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Before You Submit\" and \"Checklist for a Complete Submittal\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -197,6 +313,46 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
+            },
+            {
+              "id": "multi-unit-residential-addition",
+              "label": "Multi-unit residential addition"
+            },
+            {
+              "id": "multi-unit-residential-alteration-structural",
+              "label": "Multi-unit residential structural alteration or major remodel"
+            },
+            {
+              "id": "multi-unit-residential-alteration-interior",
+              "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+            },
+            {
+              "id": "multi-unit-residential-new",
+              "label": "Multi-unit residential new construction"
+            },
+            {
+              "id": "commercial-site-improvements",
+              "label": "Commercial or public site work (parking lot, site walls, hardscape)"
             }
           ],
           "applies_when": {
@@ -232,6 +388,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "checked_against": "submittal",
@@ -263,6 +435,30 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
+            },
+            {
+              "id": "residential-deferred-submittal",
+              "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
+            },
+            {
+              "id": "commercial-deferred-submittal",
+              "label": "Commercial or multi-unit deferred submittal (roof trusses, elevator, fire sprinklers)"
             }
           ],
           "checked_against": "submittal",
@@ -294,6 +490,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "applies_when": {
@@ -330,6 +542,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "applies_when": {
@@ -366,6 +594,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "applies_when": {
@@ -402,6 +646,18 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "applies_when": {
@@ -543,6 +799,10 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
             }
           ],
           "applies_when": {
@@ -646,12 +906,12 @@
             }
           ],
           "applies_when": {
-            "question": "Is an automatic sprinkler system actually required for this work? A new primary dwelling is required to be sprinklered (CRC R313.2). An ADU is required to be sprinklered ONLY when the primary residence is sprinklered or is being sprinklered by this project — Government Code section 66314(d)(12) and LBMC 25.17.050. Read the cover sheet's existing-sprinkler statement for the primary residence before answering.",
+            "question": "Is an automatic sprinkler system actually required for this work? A new primary dwelling is required to be sprinklered (CRC R309.2 as amended by LBMC 14.52.030). An ADU is required to be sprinklered ONLY when the primary residence is sprinklered or is being sprinklered by this project — Government Code section 66314(d)(12) and LBMC 25.17.010(f)(3) (Urgency Ord. 1713). Read the cover sheet's existing-sprinkler statement for the primary residence before answering.",
             "if_yes": "Submit the sprinkler design or the Laguna deferred-submittal cover note committing to approval and a separate permit before framing inspection.",
             "if_no": "No sprinkler documentation is required."
           },
           "checked_against": "submittal",
-          "detail": "Show the applicable sprinkler design or exception. The cover still states whether sprinklers exist and carries the notation \"FIRE SPRINKLERS REQUIRED\" when applicable.",
+          "detail": "Show the applicable sprinkler design or exception. The cover still states whether sprinklers exist and carries the notation \"FIRE SPRINKLERS REQUIRED\" when applicable. An ADU is exempt when the primary residence has no automatic sprinkler system: Government Code section 66314(d)(12) forbids conditioning an ADU permit on installing sprinklers that are not required for the primary dwelling, and LBMC 25.17.010(f)(3) (Urgency Ord.",
           "source": {
             "citation": "Laguna Beach New and Major Building Submittal Requirements (2025), \"FIRE SPRINKLER PLANS (DEFERRED SUBMITTAL)\" and \"Deferred Submittal\"; Laguna Beach 2026 Building Requirement Sheet, GENERAL INFORMATION row 2",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -710,6 +970,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "applies_when": {
@@ -804,6 +1080,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "applies_when": {
@@ -840,6 +1132,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "applies_when": {
@@ -912,6 +1220,22 @@
             {
               "id": "residential-alteration-structural",
               "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
             }
           ],
           "checked_against": "city_record",
@@ -1666,7 +1990,7 @@
           "checked_against": "submittal",
           "detail": "Accept written notice from the gas and electric utilities that meter removal is scheduled or complete. The page also expressly accepts evidence that the applicant notified both utilities; the notice does not have to be a utility-issued confirmation.",
           "source": {
-            "citation": "City of Laguna Beach Building Division staff guidance",
+            "citation": "\"a notification to utility companies will suffice\" per City building staff on 2025-08-27",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
@@ -1877,7 +2201,7 @@
         },
         {
           "id": "residential-patio-cover",
-          "label": "Patio cover, deck or patio repair"
+          "label": "Deck, balcony or patio cover repair"
         },
         {
           "id": "residential-siding-replacement",
@@ -1889,11 +2213,15 @@
         },
         {
           "id": "residential-wall-fence",
-          "label": "Fence, block wall or retaining wall"
+          "label": "Fence, gate or freestanding block wall"
         },
         {
           "id": "sign",
           "label": "Sign permit"
+        },
+        {
+          "id": "multi-unit-residential-exterior-repair",
+          "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
         }
       ],
       "items": [
@@ -1909,7 +2237,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -1921,11 +2249,15 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "checked_against": "submittal",
@@ -1948,7 +2280,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -1960,11 +2292,15 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "checked_against": "submittal",
@@ -1987,7 +2323,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -1999,11 +2335,15 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "checked_against": "submittal",
@@ -2026,7 +2366,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -2038,11 +2378,15 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "checked_against": "submittal",
@@ -2065,7 +2409,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -2077,20 +2421,24 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "applies_when": {
-            "question": "Does the work include structural modification of a building or deck — a new or enlarged opening, a header, a beam, or a change to a load path? Ordinary fence posts, sign posts, and a wall that follows the City's unmodified standard detail do not count.",
+            "question": "Does the work include structural modification of a building, deck or sign support — a new or enlarged opening, a header, a beam, or a change to a load path? Ordinary fence posts and a wall that follows the City's unmodified standard detail do not count. A sign counts as OTC item 11 only when it is \"without structural alterations\"; when its support or mounting alters a structure, answer yes.",
             "if_yes": "Submit the engineered drawings, stamped and signed by the California-registered design professional who prepared them. The supporting calculation package is due before plan check, not at this intake counter.",
             "if_no": "A stamp, calculation, or engineering document that happens to be in the packet does not make the structural trigger apply."
           },
           "checked_against": "submittal",
-          "detail": "Where the work includes structural modification of a building or deck, the City's published item is stamped and signed engineered plans and calculations. Split that item at intake. The intake deliverable is the engineered DRAWINGS: plan sheets stamped and signed by the California-registered design professional who prepared them. Judge the file, not the portal slot. The City writes \"(if applicable)\", and the qualified-projects list says what makes it applicable: items 2 and 3 both read \"with minor structural modifications\". Item 10 is a wood or metal fence and item 11 is a commercial sign without structural alterations — those ordinary posts and footings are the trade, not this trigger. A wall filed against the City's unmodified Standard Block Wall Detail is answered by that bulletin's own row, not this one. A stamp and a signature are part of the drawings deliverable: an unstamped sheet is not engineered drawings.",
+          "detail": "Where the work includes structural modification of a building or deck, the City's published item is stamped and signed engineered plans and calculations. Split that item at intake. The intake deliverable is the engineered DRAWINGS: plan sheets stamped and signed by the California-registered design professional who prepared them. Judge the file, not the portal slot. The City writes \"(if applicable)\", and the qualified-projects list says what makes it applicable: items 2 and 3 both read \"with minor structural modifications\". Item 10 is a wood or metal fence: its ordinary posts and footings are the trade, not this trigger. Item 11 admits only \"Commercial signs without structural alterations\"; the handout does not say a sign's own posts, footing or mounting are non-structural, so a sign whose support or attachment alters a structure is outside item 11 and is a structural question, not an exclusion. A wall filed against the City's unmodified Standard Block Wall Detail is answered by that bulletin's own row, not this one. A stamp and a signature are part of the drawings deliverable: an unstamped sheet is not engineered drawings.",
           "source": {
             "citation": "Laguna Beach Building Plan Review Services (edition 06/08/2026), \"Submittal requirements for OTC review\": \"Two (2) sets of stamped and signed engineered plans and calculations (if applicable)\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -2109,7 +2457,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -2121,11 +2469,15 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "checked_against": "submittal",
@@ -2144,7 +2496,7 @@
           "scopes": [
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -2152,11 +2504,15 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "applies_when": {
@@ -2320,11 +2676,11 @@
         },
         {
           "id": "residential-patio-cover",
-          "label": "Patio cover, deck or patio repair"
+          "label": "Deck, balcony or patio cover repair"
         },
         {
           "id": "residential-wall-fence",
-          "label": "Fence, block wall or retaining wall"
+          "label": "Fence, gate or freestanding block wall"
         },
         {
           "id": "residential-mechanical-plumbing-minor",
@@ -2332,7 +2688,7 @@
         },
         {
           "id": "multi-unit-residential-new",
-          "label": "Multi-unit residential new construction or addition"
+          "label": "Multi-unit residential new construction"
         },
         {
           "id": "commercial-new",
@@ -2361,6 +2717,58 @@
         {
           "id": "sign",
           "label": "Sign permit"
+        },
+        {
+          "id": "residential-deck-patio-cover-new",
+          "label": "New, extended or replaced deck, balcony or patio cover"
+        },
+        {
+          "id": "residential-site-improvements",
+          "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+        },
+        {
+          "id": "residential-retaining-wall",
+          "label": "Engineered retaining wall"
+        },
+        {
+          "id": "residential-accessory-structure",
+          "label": "Detached accessory or storage structure, shed or container"
+        },
+        {
+          "id": "residential-deferred-submittal",
+          "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
+        },
+        {
+          "id": "commercial-deferred-submittal",
+          "label": "Commercial or multi-unit deferred submittal (roof trusses, elevator, fire sprinklers)"
+        },
+        {
+          "id": "multi-unit-residential-addition",
+          "label": "Multi-unit residential addition"
+        },
+        {
+          "id": "multi-unit-residential-alteration-structural",
+          "label": "Multi-unit residential structural alteration or major remodel"
+        },
+        {
+          "id": "multi-unit-residential-alteration-interior",
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+        },
+        {
+          "id": "multi-unit-residential-exterior-repair",
+          "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+        },
+        {
+          "id": "residential-solar-thermal",
+          "label": "Residential solar water or pool heating (solar thermal)"
+        },
+        {
+          "id": "commercial-site-improvements",
+          "label": "Commercial or public site work (parking lot, site walls, hardscape)"
+        },
+        {
+          "id": "commercial-solar",
+          "label": "Commercial solar and battery energy storage"
         }
       ],
       "items": [
@@ -2427,9 +2835,9 @@
             "if_yes": "The contractor's current City business license is on file or submitted with the application."
           },
           "checked_against": "submittal",
-          "detail": "The contractor holds a current Laguna Beach business license, issued in the same name as the CSLB record. The Building Permit Application form states the rule for every building permit and extends it past the general contractor: \"All contractors, including subcontractors, will need to obtain a city business license pursuant to section 5.08.200 of the Laguna Beach Municipal Code.\" It is due at ISSUANCE, not at submittal. An applicant who cannot produce one is sent to the Finance counter, which is where the license is verified. Its absence therefore never makes a submittal incomplete.",
+          "detail": "The contractor holds a current Laguna Beach business license, issued in the same name as the CSLB record. The Building Permit Application form states the rule for every building permit and extends it past the general contractor: \"All contractors, including subcontractors, will need to obtain a city business license pursuant to section 5.08.200 of the Laguna Beach Municipal Code.\" It is due at ISSUANCE, not at submittal. City permit staff ruled this on 2026-09-01: Laguna issues these simple permits only at the counter, and the technician asks for the license there. An applicant who cannot produce one is sent to the Finance counter, which is where the license is verified. Its absence therefore never makes a submittal incomplete.",
           "source": {
-            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Contractors to possess a current city business license\"; Reroofing guide, \"Contractors: Must have a valid City Business License matching CSLB records\"; Building Permit Application form, contractor block (\"CONTRACTOR (As Shown on License)… License #… Class\") and printed note \"City Business License required. All contractors, including subcontractors, will need to obtain a city business license pursuant to section 5.08.200 of the Laguna Beach Municipal Code\"",
+            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Contractors to possess a current city business license\"; Reroofing guide, \"Contractors: Must have a valid City Business License matching CSLB records\"; Building Permit Application form, contractor block (\"CONTRACTOR (As Shown on License)… License #… Class\") and printed note \"City Business License required. All contractors, including subcontractors, will need to obtain a city business license pursuant to section 5.08.200 of the Laguna Beach Municipal Code\"; STAGE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"Required for issuance. Need a way to verify when issuing online\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -2498,11 +2906,11 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "residential-mechanical-plumbing-minor",
@@ -2510,7 +2918,7 @@
             },
             {
               "id": "multi-unit-residential-new",
-              "label": "Multi-unit residential new construction or addition"
+              "label": "Multi-unit residential new construction"
             },
             {
               "id": "commercial-new",
@@ -2539,6 +2947,58 @@
             {
               "id": "sign",
               "label": "Sign permit"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
+            },
+            {
+              "id": "residential-deferred-submittal",
+              "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
+            },
+            {
+              "id": "commercial-deferred-submittal",
+              "label": "Commercial or multi-unit deferred submittal (roof trusses, elevator, fire sprinklers)"
+            },
+            {
+              "id": "multi-unit-residential-addition",
+              "label": "Multi-unit residential addition"
+            },
+            {
+              "id": "multi-unit-residential-alteration-structural",
+              "label": "Multi-unit residential structural alteration or major remodel"
+            },
+            {
+              "id": "multi-unit-residential-alteration-interior",
+              "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+            },
+            {
+              "id": "residential-solar-thermal",
+              "label": "Residential solar water or pool heating (solar thermal)"
+            },
+            {
+              "id": "commercial-site-improvements",
+              "label": "Commercial or public site work (parking lot, site walls, hardscape)"
+            },
+            {
+              "id": "commercial-solar",
+              "label": "Commercial solar and battery energy storage"
             }
           ],
           "applies_when": {
@@ -2606,9 +3066,9 @@
             "if_no": "No authorization letter is submitted when the license holder files the application directly."
           },
           "checked_against": "submittal",
-          "detail": "The letter is on company letterhead and carries four things: the name of the authorized agent, the license holder's printed name, the license holder's signature and date, and the CSLB license number. It is due at ISSUANCE, not at submittal. Its absence never makes a submittal incomplete.",
+          "detail": "The letter is on company letterhead and carries four things: the name of the authorized agent, the license holder's printed name, the license holder's signature and date, and the CSLB license number. It is due at ISSUANCE, not at submittal. City permit staff ruled this on 2026-09-01: Laguna issues these simple permits only at the counter, so the technician collects the letter when the permit issues. Its absence never makes a submittal incomplete.",
           "source": {
-            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Authorized Agent Requirements\"; Reroofing guide, \"Authorized Agent (contractor): Must provide an authorization letter on company letter head\"",
+            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Authorized Agent Requirements\"; Reroofing guide, \"Authorized Agent (contractor): Must provide an authorization letter on company letter head\"; STAGE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"needed for issuance, not submittal\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -2849,7 +3309,7 @@
             }
           ],
           "checked_against": "submittal",
-          "detail": "The City publishes the exact description text to copy onto the application, swapping in the project's own details: \"Tear off and reroof with GAF Timberline composition shingles ESR-1475 (Color: Charcoal Gray): 2811 SF. (1) layer of synthetic underlayment. *No light or white colors in Laguna Beach* CO/Smoke Detectors Required* Sheathing Inspection Required * Class A Fire Rated Materials Required\". A complete description therefore names: tear-off or overlay, manufacturer and product, the evaluation report number, the color, the roof area in square feet, the number and type of underlayment layers, and the four standard notes. The COLOR NAME is what the Building counter needs at intake, because Planning approves the color itself and the technician has nothing to forward without a name. A description reading \"color: TBD\" is incomplete on that ground, and she confirmed it happens often.",
+          "detail": "The City publishes the exact description text to copy onto the application, swapping in the project's own details: \"Tear off and reroof with GAF Timberline composition shingles ESR-1475 (Color: Charcoal Gray): 2811 SF. (1) layer of synthetic underlayment. *No light or white colors in Laguna Beach* CO/Smoke Detectors Required* Sheathing Inspection Required * Class A Fire Rated Materials Required\". A complete description therefore names: tear-off or overlay, manufacturer and product, the evaluation report number, the color, the roof area in square feet, the number and type of underlayment layers, and the four standard notes. The COLOR NAME is what the Building counter needs at intake, because Planning approves the color itself and the technician has nothing to forward without a name. City permit staff, 2026-09-01: \"they need ESR for roofing material, need name of color for planning.\" A description reading \"color: TBD\" is incomplete on that ground, and she confirmed it happens often.",
           "source": {
             "citation": "Laguna Beach Reroofing guide, \"3 Steps to Apply\" and \"Standard Description Example\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -2939,14 +3399,14 @@
             }
           ],
           "applies_when": {
-            "question": "Does this reroof tear off the existing roofing, or is it an overlay over the existing material?",
+            "question": "Does this reroof tear off any of the existing roofing, including a partial tear-off of one roof section, or is it an overlay over the existing material with nothing removed?",
             "if_yes": "A tear-off requires the Waste Management Plan and the separate security deposit, by check or cash, under LBMC 7.19.",
             "if_no": "An overlay with no tear-off is expressly exempt: no Waste Management Plan and no security deposit."
           },
           "checked_against": "submittal",
-          "detail": "Two deliverables, not one: the Waste Management Plan, and a separate security deposit paid by check or cash. The City's Solid Waste Division administers the C&D requirements at (949) 464-6677 or Recycle@LagunaBeachCity.net; deposit amounts changed effective 2026-07-01, so read the current fee schedule rather than quoting a figure. Both are due at ISSUANCE, not at submittal. Their absence never makes a submittal incomplete.",
+          "detail": "Two deliverables, not one: the Waste Management Plan, and a separate security deposit paid by check or cash. The City's Solid Waste Division administers the C&D requirements at (949) 464-6677 or Recycle@LagunaBeachCity.net; deposit amounts changed effective 2026-07-01, so read the current fee schedule rather than quoting a figure. Both are due at ISSUANCE, not at submittal. City permit staff ruled this on 2026-09-01: the Solid Waste Division takes the plan and the deposit at a different counter, the deposit is paid in cash or by check there, and Laguna issues reroof permits only in person. Their absence never makes a submittal incomplete. A PARTIAL reroof is still a reroof: the City files it as a Residential - Reroof permit, and the guide's only exemption is \"no tear-off\". Whether LBMC 7.19 itself exempts a small project by size or valuation is not in our sources: UNSETTLED, confirm with the Solid Waste Division. Never treat a small tear-off as exempt on our own reading.",
           "source": {
-            "citation": "Laguna Beach Reroofing guide, \"Rules & Color Restrictions\": \"Submit a Waste Management Plan and separate security deposit (check or cash) for tear-off reroofs, per Municipal Code 7.19 (exempt if no tear-off)\"; LBMC Ch. 7.19, Construction and Demolition Waste Disposal; § 7.19.050 submission of waste management plan, § 7.19.070 security deposit",
+            "citation": "Laguna Beach Reroofing guide, \"Rules & Color Restrictions\": \"Submit a Waste Management Plan and separate security deposit (check or cash) for tear-off reroofs, per Municipal Code 7.19 (exempt if no tear-off)\"; LBMC Ch. 7.19, Construction and Demolition Waste Disposal; § 7.19.050 submission of waste management plan, § 7.19.070 security deposit; STAGE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"required at issuance\"",
             "url": "https://ecode360.com/42886987",
             "published": true
           }
@@ -2998,7 +3458,7 @@
           "checked_against": "city_record",
           "detail": "The parcel is in a Deferred Certification Zone, which is under the direct jurisdiction of the State rather than the City. All Appendix B forms and the application fees go directly to the California Coastal Commission, not to Laguna Beach. Planning looks at every reroof, so the route determination is where the filing is recorded. The applicant must not wait for it to move through Building intake.",
           "source": {
-            "citation": "Laguna Beach Reroofing guide, \"Coastal Appealable & Deferred Area\": \"Deferred Certification Zone: This is under the direct jurisdiction of the State. Complete and submit all Appendix B forms and send the required application fees directly to the California Coastal Commission\"; a Planning requirement, not a Building one",
+            "citation": "Laguna Beach Reroofing guide, \"Coastal Appealable & Deferred Area\": \"Deferred Certification Zone: This is under the direct jurisdiction of the State. Complete and submit all Appendix B forms and send the required application fees directly to the California Coastal Commission\"; LANE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"coastal commission, that kind of stuff, that’s not for us\"; a Planning requirement, not a Building one",
             "url": "https://www.coastal.ca.gov/",
             "published": true
           }
@@ -3019,9 +3479,9 @@
             }
           ],
           "checked_against": "city_record",
-          "detail": "An issuance gate, not a packet item: the City approves the submitted materials and colors before the permit issues.",
+          "detail": "An issuance gate, not a packet item: the City approves the submitted materials and colors before the permit issues. Planning does that approving — City permit staff, 2026-09-01: \"Planning reviews/approves color samples\" — and it judges the material details and the color samples against the photographs the City publishes at the end of its reroofing guide: light roof colors to avoid, acceptable and not-acceptable shingle colors, metal roofs (acceptable with a matte finish), and acceptable and not-acceptable flat-roof membrane colors.",
           "source": {
-            "citation": "Laguna Beach Reroofing guide, \"Overview\": \"Materials and colors must be approved prior to permit issuance\", and the color guide at the end of the packet; the photographs of light roof colors to avoid, acceptable and not-acceptable shingle colors, metal roofs, and acceptable and not-acceptable flat-roof membrane colors",
+            "citation": "Laguna Beach Reroofing guide, \"Overview\": \"Materials and colors must be approved prior to permit issuance\", and the color guide at the end of the packet; the photographs of light roof colors to avoid, acceptable and not-acceptable shingle colors, metal roofs, and acceptable and not-acceptable flat-roof membrane colors; LANE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"Planning reviews/approves color samples\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -3552,7 +4012,7 @@
           "checked_against": "submittal",
           "detail": "Identify whether the PV scope includes a main service panel upgrade or relocation and whether it includes an energy storage system. When included, state the panel rating and the storage-system size on the application or plans.",
           "source": {
-            "citation": "Energy Storage System (ESS)\"",
+            "citation": "Energy Storage System (ESS)\"; City permit staff's 2026-08-27 heading also names panel relocations",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
@@ -3652,7 +4112,11 @@
       "scopes": [
         {
           "id": "residential-wall-fence",
-          "label": "Fence, block wall or retaining wall"
+          "label": "Fence, gate or freestanding block wall"
+        },
+        {
+          "id": "residential-retaining-wall",
+          "label": "Engineered retaining wall"
         }
       ],
       "items": [
@@ -3664,13 +4128,13 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "checked_against": "submittal",
-          "detail": "The plan dimensions the wall height measured from adjacent grade and the distance from the wall to each property line. These two numbers decide whether a permit is required at all — over 30 inches from adjacent grade, or any height within three feet of a property line — so a drawing that omits either cannot be screened. The bulletin also limits the grade difference across the wall to a maximum 6-inch offset with no surcharge loads, which the same dimensions establish.",
+          "detail": "The plan dimensions the wall height measured from adjacent grade and the distance from the wall to each property line. These two numbers decide whether a permit is required at all — over 30 inches from adjacent grade, or any height within three feet of a property line — so a drawing that omits either cannot be screened. The bulletin also limits the grade difference across the wall to a maximum 6-inch offset with no surcharge loads, which the same dimensions establish. The bulletin's 30-inch line and LBMC 14.50.022's 72-inch exemption disagree for a freestanding block wall between 30 and 72 inches set more than three feet from every property line and the right-of-way; that band is UNSETTLED with the City (see the prose above).",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTES 2 and 3: \"Concrete block wall over 30\\\" in height measured from adjacent grade shall require a building permit\" and \"Concrete block wall in any height within three (3) feet of the property lines shall require a building permit\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27); LBMC 14.50.022, Building item 1: \"Walls and fences not over 72 inches high, unless located within three feet of a property line or public right-of-way\" are exempt from permit",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3683,13 +4147,17 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
             }
           ],
           "checked_against": "city_record",
           "detail": "The Zoning/Planning Division regulates the wall's height and location based on the zone, its position on the property, and community design standards, and approves the plans before any permit issues. Laguna sequences the two lanes here exactly as it does for buildings: the Planning approval exists first, and the Building packet is filed against the plans Planning approved.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 8: \"Zoning/Planning division must approve the plans prior to any permit being issued\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3702,7 +4170,7 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "applies_when": {
@@ -3713,7 +4181,7 @@
           "checked_against": "submittal",
           "detail": "The City's standard detail is all-or-nothing: an applicant relying on it may not modify any portion of it. The June 2026 revision uses the 2025 CBC and ASCE 7-22 with a 95 mph basic wind speed, exposure C. It is designed for the average condition, at an allowable soil bearing pressure of 1,500 psf with passive bearing at 100 psf per foot and footings a minimum 12 inches into undisturbed natural soil. Where the site slope exceeds 10 percent, where soil conditions are adverse — expansive soil, liquefaction, flood hazard — or where the design departs from the detail in any way, a design professional registered in California prepares the plans instead.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), LIMITS OF APPLICABILITY STANDARDS: \"Use of this document shall not permit the applicant to modify any portion(s) of these details\", and the purpose statement naming slopes steeper than 10%, adverse soil conditions and deviation from the bulletin (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3726,13 +4194,13 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "checked_against": "submittal",
           "detail": "A licensed surveyor locates and monuments the property corners before construction starts. This is a pre-construction gate rather than a counter item, so its absence is a condition to satisfy, never a reason to refuse the packet.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 9: \"Property corners shall be monumented (located) by a licensed surveyor prior to starting the construction\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3745,7 +4213,11 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
             }
           ],
           "applies_when": {
@@ -3756,7 +4228,7 @@
           "checked_against": "submittal",
           "detail": "Within three feet of a property line the City draws a line by material. For a masonry or concrete wall, the affected property corners are located and monumented by a California licensed land surveyor or qualified licensed civil engineer and recorded with the county before building or rebuilding — and the survey waiver is not available for it. For a wood, vinyl or wrought-iron fence, a licensed surveyor instead certifies the setback, documenting the placement of the fence and posts relative to the property line, and is retained before construction to identify the property line. That certification lands before the footing inspection and the concrete pour. The waiver route exists only for the light-fence materials: a notarized Request to Waive Survey Requirement signed by each adjoining property owner, filed with the Building Division before the permit issues.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 10; waiver form verified live 2026-08-20)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 10; Laguna Beach Request to Waive Survey Requirement for Fences Within 3 Feet of Property Line, which states the masonry monumentation-and-recording rule, the light-fence setback-certification alternative, and the notarized adjoining-owner waiver (June 2026 bulletin attached by City permit staff on 2026-08-26; waiver form verified live 2026-08-20)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3769,13 +4241,17 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
             }
           ],
           "checked_against": "submittal",
           "detail": "No wall or fence within 36 inches of a fire hydrant. No wall, fence or foundation within 12 inches of a water meter. The meter clearance reaches the footing, not only the wall above it, which is the part a plan most often misses.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 7: \"No wall or fence shall be allowed within 36\\\" of a fire hydrant and no wall, fence, or foundation shall be allowed within 12\\\" of a water meter\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3788,13 +4264,22 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
             }
           ],
+          "applies_when": {
+            "question": "Does any part of the wall, its footing or its cap sit in the public right-of-way without an approved Revocable Encroachment Permit or Public Works encroachment permit that covers it?",
+            "if_yes": "Keep the whole wall, including any stone cap or trim, on private property, or obtain the encroachment approval first.",
+            "if_no": "Nothing is asked: the wall is clear of the right-of-way, or an approved encroachment permit covers the part in it. Staff confirm the approval covers this wall."
+          },
           "checked_against": "submittal",
-          "detail": "Nothing projects into the public right-of-way, and the City names the decorative elements specifically: a stone cap or trim counts as a projection even where the wall face itself is clear.",
+          "detail": "Nothing projects into the public right-of-way, and the City names the decorative elements specifically: a stone cap or trim counts as a projection even where the wall face itself is clear. The rule yields to an encroachment the City has approved. A Revocable Encroachment Permit may allow \"minor structures such as low fences and retaining walls\" in an unimproved, unused right-of-way, and Public Works permits work within the right-of-way. When an approved REP or Public Works encroachment permit covers this wall, the wall or cap in the right-of-way is the approved condition; staff confirm the approval covers this wall and its cap.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 11: \"No projections allowed in the public right of way including stone cap or trim\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27); Laguna Beach Revocable Encroachment Permit Application (updated July 2026), page 1: a REP \"may allow minor construction in an otherwise unimproved, unused public right-of-way\" for \"minor structures such as low fences and retaining walls, walkways, stairs\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3807,13 +4292,18 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
+          "applies_when": {
+            "question": "Is this wall filed against the City's Standard Block Wall Detail rather than an engineered design?",
+            "if_yes": "The wall must stand alone and retain nothing. A standard-detail wall drawn retaining grade, or tied into a structure, needs an engineered design instead.",
+            "if_no": "Omit it for an engineered retaining wall or engineered site wall, and for a wood, vinyl or metal fence."
+          },
           "checked_against": "submittal",
-          "detail": "The standard detail covers a freestanding site wall: it retains no soil and forms no part of a building or other structure. A wall shown retaining grade, or tied into a structure, has left the bulletin and needs an engineered design.",
+          "detail": "The standard detail covers a freestanding site wall: it retains no soil and forms no part of a building or other structure. A wall filed against the standard detail that is shown retaining grade, or tied into a structure, has left the bulletin and needs an engineered design. It never applies to an engineered retaining wall, which is the residential-retaining-wall case, or to a wood, vinyl or metal fence.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 12: \"Site wall is standing alone. No retaining is permitted form part of building or other structure\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3826,7 +4316,7 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "applies_when": {
@@ -3836,7 +4326,7 @@
           "checked_against": "submittal",
           "detail": "A railing, guard or screen may not sit on the wall where the wall plus the attachment exceeds 6 feet 0 inches above the lowest adjacent grade. The measurement is the combined height from the lowest adjacent grade, not the wall height alone.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 13: \"No railing, guard, or screen attachments are permitted where the wall height plus the rail, guard, or screen height exceed 6'-0\\\" above lowest adjacent grade\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3849,7 +4339,7 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "applies_when": {
@@ -3859,7 +4349,7 @@
           "checked_against": "submittal",
           "detail": "The wall is solid grouted. Both footing alternates on page 2 of the June 2026 revision label the wall 6\" MIN. CMU (SOLID GROUTED); the April 2020 revision labelled it only 6\" MIN. CMU. A partially grouted wall that would have passed against the older sheet no longer matches the standard detail. Blocks are laid in running bond so head joints in successive courses offset horizontally by at least a quarter unit length. Cleanouts are provided for all lifts greater than 4 feet. Expansion joint spacing does not exceed 30 feet. The cleanout note is the one that bites in the field, because it is checked at the reinforcing steel inspection before grouting — the same inspection that makes solid grouting verifiable.",
           "source": {
-            "citation": "the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTES 4, 5 and 6, and the page-2 section callouts labelling both footing alternates 6\" MIN. CMU (SOLID GROUTED) (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3872,7 +4362,7 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "applies_when": {
@@ -3895,7 +4385,7 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "applies_when": {
@@ -3919,7 +4409,7 @@
           "scopes": [
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             }
           ],
           "applies_when": {
@@ -3947,7 +4437,7 @@
         },
         {
           "id": "residential-patio-cover",
-          "label": "Patio cover, deck or patio repair"
+          "label": "Deck, balcony or patio cover repair"
         },
         {
           "id": "residential-siding-replacement",
@@ -3959,7 +4449,7 @@
         },
         {
           "id": "residential-wall-fence",
-          "label": "Fence, block wall or retaining wall"
+          "label": "Fence, gate or freestanding block wall"
         },
         {
           "id": "sign",
@@ -3968,6 +4458,10 @@
         {
           "id": "residential-alteration-interior",
           "label": "Residential interior remodel (kitchen, bath, room alteration)"
+        },
+        {
+          "id": "multi-unit-residential-exterior-repair",
+          "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
         },
         {
           "id": "residential-new-dwelling",
@@ -4031,7 +4525,7 @@
         },
         {
           "id": "multi-unit-residential-new",
-          "label": "Multi-unit residential new construction or addition"
+          "label": "Multi-unit residential new construction"
         },
         {
           "id": "commercial-new",
@@ -4056,6 +4550,54 @@
         {
           "id": "commercial-demolition",
           "label": "Commercial demolition"
+        },
+        {
+          "id": "residential-deck-patio-cover-new",
+          "label": "New, extended or replaced deck, balcony or patio cover"
+        },
+        {
+          "id": "residential-site-improvements",
+          "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+        },
+        {
+          "id": "residential-retaining-wall",
+          "label": "Engineered retaining wall"
+        },
+        {
+          "id": "residential-accessory-structure",
+          "label": "Detached accessory or storage structure, shed or container"
+        },
+        {
+          "id": "residential-deferred-submittal",
+          "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
+        },
+        {
+          "id": "commercial-deferred-submittal",
+          "label": "Commercial or multi-unit deferred submittal (roof trusses, elevator, fire sprinklers)"
+        },
+        {
+          "id": "multi-unit-residential-addition",
+          "label": "Multi-unit residential addition"
+        },
+        {
+          "id": "multi-unit-residential-alteration-structural",
+          "label": "Multi-unit residential structural alteration or major remodel"
+        },
+        {
+          "id": "multi-unit-residential-alteration-interior",
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+        },
+        {
+          "id": "residential-solar-thermal",
+          "label": "Residential solar water or pool heating (solar thermal)"
+        },
+        {
+          "id": "commercial-site-improvements",
+          "label": "Commercial or public site work (parking lot, site walls, hardscape)"
+        },
+        {
+          "id": "commercial-solar",
+          "label": "Commercial solar and battery energy storage"
         }
       ],
       "items": [
@@ -4071,7 +4613,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-siding-replacement",
@@ -4083,7 +4625,7 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "sign",
@@ -4092,6 +4634,10 @@
             {
               "id": "residential-alteration-interior",
               "label": "Residential interior remodel (kitchen, bath, room alteration)"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
             }
           ],
           "checked_against": "submittal",
@@ -4166,7 +4712,7 @@
             },
             {
               "id": "residential-patio-cover",
-              "label": "Patio cover, deck or patio repair"
+              "label": "Deck, balcony or patio cover repair"
             },
             {
               "id": "residential-mechanical-plumbing-minor",
@@ -4178,7 +4724,7 @@
             },
             {
               "id": "residential-wall-fence",
-              "label": "Fence, block wall or retaining wall"
+              "label": "Fence, gate or freestanding block wall"
             },
             {
               "id": "residential-demolition",
@@ -4198,7 +4744,7 @@
             },
             {
               "id": "multi-unit-residential-new",
-              "label": "Multi-unit residential new construction or addition"
+              "label": "Multi-unit residential new construction"
             },
             {
               "id": "commercial-new",
@@ -4223,6 +4769,58 @@
             {
               "id": "commercial-demolition",
               "label": "Commercial demolition"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
+            },
+            {
+              "id": "residential-deferred-submittal",
+              "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
+            },
+            {
+              "id": "commercial-deferred-submittal",
+              "label": "Commercial or multi-unit deferred submittal (roof trusses, elevator, fire sprinklers)"
+            },
+            {
+              "id": "multi-unit-residential-addition",
+              "label": "Multi-unit residential addition"
+            },
+            {
+              "id": "multi-unit-residential-alteration-structural",
+              "label": "Multi-unit residential structural alteration or major remodel"
+            },
+            {
+              "id": "multi-unit-residential-alteration-interior",
+              "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+            },
+            {
+              "id": "residential-solar-thermal",
+              "label": "Residential solar water or pool heating (solar thermal)"
+            },
+            {
+              "id": "commercial-site-improvements",
+              "label": "Commercial or public site work (parking lot, site walls, hardscape)"
+            },
+            {
+              "id": "commercial-solar",
+              "label": "Commercial solar and battery energy storage"
             }
           ],
           "checked_against": "submittal",

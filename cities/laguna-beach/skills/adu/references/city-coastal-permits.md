@@ -6,6 +6,8 @@ Source: the City source document (not included in this plugin) (LBMC Ch. 25.07, 
 
 Nearly all of Laguna Beach is within the coastal zone, so most ADUs will need to navigate this chapter.
 
+> **ADU-only CDPs follow state procedure first.** For a CDP that covers only an ADU, Gov. Code 66329(a) and (c) control the procedure: decision within 60 days of a complete application, concurrent with the ADU application, no required public hearing, and no appeal to the Coastal Commission under PRC 30603, even in the appealable area (City ADU & JADU Application, footnote 4; state skill the California ADU (Accessory Dwelling Unit) rules (Permit Process — Ministerial Review, Timelines, and Deemed Approval), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`)). Ord. 1713 lets the City elect to hold a hearing (25.17.010(d)(1)(A)). The Chapter 25.07 notice, hearing and Commission-appeal rules below apply in full to a CDP that also covers other development. Fees: use the fee tool (`estimate_fees`); no amounts are quoted here.
+
 ---
 
 ## CDP Requirement (S 25.07.004)
@@ -30,7 +32,7 @@ Improvements to single-family dwellings are exempt **unless** they fall into cer
 
 ### Other Exemption Disqualifiers (S 25.07.008(A)(1)(b)-(g))
 
-Even a conversion ADU loses its exemption if it falls within the sensitive-area or threshold exceptions. These disqualifiers (b)-(g) implement the state-level exception classes in 14 CCR §13250(b) — see `../../coastal-development/references/cdp-when-required.md` for the full list. Key triggers: sensitive locations (beach, wetland, bluff edge, ESHA), 10% floor area/height thresholds between sea and first public road, water wells/septic, and landform alteration near sensitive areas.
+Even a conversion ADU loses its exemption if it falls within the sensitive-area or threshold exceptions. The 10% floor-area, 10% height and detached-structure items in (A)(1)(c) apply **only** between the sea and the first public road paralleling the sea, or within 300 ft of the inland extent of any beach or of the mean high tide line where there is no beach. The location items in (A)(1)(b) (beach, wetland, stream, seaward of mean high tide, within 50 ft of a bluff edge, ESA, highly scenic area) apply anywhere. These disqualifiers (b)-(g) implement the state-level exception classes in 14 CCR §13250(b) — see `../../coastal-development/references/cdp-when-required.md` for the full list. Key triggers: sensitive locations (beach, wetland, bluff edge, ESHA), 10% floor area/height thresholds between sea and first public road, water wells/septic, and landform alteration near sensitive areas.
 
 ### Record of Exemptions (S 25.07.008(B))
 
@@ -93,10 +95,6 @@ Director must report proposed waivers to the City Council at its next available 
 
 Within **7 calendar days** of issuing the waiver, notify the Coastal Commission and anyone who requested notification in writing.
 
-### Fee
-
-**$125** (per city-adu-faq.md)
-
 ---
 
 ## Minor Development / Administrative CDP (S 25.07.013)
@@ -126,10 +124,6 @@ ALL of the following must be satisfied:
 ### Notice of Final Action (S 25.07.013(B)(3))
 
 For appealable projects: notice mailed first class to applicant, owner/agent, persons who requested notification, and Coastal Commission on or before the **7th calendar day** following end of local appeal period.
-
-### Fee
-
-**$952** (per city-adu-faq.md)
 
 ---
 
@@ -171,9 +165,19 @@ The approving body may impose conditions necessary to enable the required findin
 - **Lapse**: CDP approval lapses and becomes void **2 years** after the effective date if not executed or if construction is not commenced and diligently prosecuted
 - **Extensions**: One 2-year extension, then one final 1-year extension (must be requested in writing before expiration)
 
-### Fee
+---
 
-**$952** (per city-adu-faq.md)
+## Replacement parking for a CDP ADU (UNSETTLED)
+
+| Source | Rule |
+|---|---|
+| Certified LCP 25.17.040(E)(6)(a) (Ord. 1687/1691) | In the coastal zone, parking demolished or converted for an ADU is replaced 1:1 up to the required minimum; may be in the front or side setback |
+| Ord. 1713, 25.17.020(c)(2) (urgency, not certified) | Same 1:1 rule, capped at the dwelling's required minimum; uncovered, tandem, or in a setback at least 3 ft from every property line (not a bluff or watercourse setback) |
+| Ord. 1713, 25.17.010(g)(4)(C) | The no-replacement rule for non-CDP ADUs "does not apply to an ADU or JADU that requires a CDP" |
+| Gov. Code 66314(d)(11) | When parking is demolished with, or converted to, an ADU, "the local agency shall not require that those offstreet parking spaces be replaced" |
+| Gov. Code 66329(a) | The ADU article does not "supersede or in any way alter or lessen the effect or application of the California Coastal Act" |
+
+Reading: the 1:1 rule survives only to the extent it carries out the Coastal Act (for example, protecting public access parking near the coast). The City has not ruled on when that is so. **UNSETTLED; confirm with Planning at pre-application.** In a review: state the 1:1 rule, cite 66314(d)(11) and 66329(a), and FLAG. Do not FAIL a CDP ADU for missing replacement parking, and do not apply the rule to an ADU that needs no CDP.
 
 ---
 
@@ -228,13 +232,13 @@ For appealable development, local appeals must be exhausted before filing with t
 
 ### Coastal Commission Appeals (S 25.07.016(B))
 
-Commission appeals follow the state-level procedures — see `../../coastal-development/references/cdp-appeals.md`. Key local note: **10 working days** from Commission receipt of notice of final action to file. Grounds: non-conformity with certified LCP or Coastal Act Chapter 3 access policies.
+Commission appeals follow the state-level procedures — see `../../coastal-development/references/cdp-appeals.md`. Key local note: **10 working days** from Commission receipt of notice of final action to file. Grounds: non-conformity with certified LCP or Coastal Act Chapter 3 access policies. **Not available for an ADU-only CDP** (Gov. Code 66329(c)).
 
 ---
 
 ## Appealable Development Definition (S 25.07.006)
 
-Laguna Beach's appealable development definition (S 25.07.006) mirrors the state-level geographic triggers in PRC §30603(a) — see `../../coastal-development/references/appealable-areas.md` for the full definition. Key Laguna Beach note: because most of the city is in the Coastal Zone and near the ocean, **a high proportion of ADU projects will be in appealable areas**.
+Laguna Beach's appealable development definition (S 25.07.006) mirrors the state-level geographic triggers in PRC §30603(a) — see `../../coastal-development/references/appealable-areas.md` for the full definition. Key Laguna Beach note: because most of the city is in the Coastal Zone and near the ocean, many ADU sites are in appealable areas. The appealable area still matters for notice and for de minimis eligibility (25.07.009(B)). It does not open a Commission appeal of an ADU-only CDP (Gov. Code 66329(c)).
 
 ---
 
@@ -248,8 +252,8 @@ Not typically applicable to ADUs, but for reference: the Director may grant temp
 
 | Item | Value |
 |------|-------|
-| De minimis waiver fee | $125 |
-| Minor/Standard CDP fee | $952 |
+| Fees | Fee tool (`estimate_fees`); not quoted |
+| ADU-only CDP decision | 60 days, concurrent with the ADU; no Commission appeal (Gov. Code 66329) |
 | De minimis notice radius (owners) | 300 ft |
 | De minimis notice radius (residents) | 100 ft |
 | Appealable notice radius (owners) | 100 ft |

@@ -52,7 +52,7 @@ The parcel is in an appealable area if any of:
 - On tide/submerged lands, beaches, public trust lands
 - Designated appealable in the city's certified Local Coastal Program (LCP)
 
-For downtown restaurants on Forest Avenue, Ocean Avenue, S. Coast Highway / PCH, and Heisler Park-adjacent locations: assume appealable. Cliff-top and oceanfront patios: assume appealable.
+Do not assume appealability from the street name. Use the parcel's appeals-area result from `lookup_property` (site facts). Appealability varies parcel by parcel on S. Coast Highway, Forest Avenue and Ocean Avenue. If site facts return no appeals-area result, say so and ask Planning to confirm; do not guess.
 
 ---
 

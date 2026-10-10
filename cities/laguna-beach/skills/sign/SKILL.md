@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2 CBC Appendix H + Chapter 31; Part 3 CEC Article 600; Chapter 16 structural); LBMC Chapter 25.54 (Sign Regulations), Chapter 25.05 (Design Review)"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2025"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -142,8 +142,8 @@ This skill covers Laguna Beach's city-specific sign regulations. **Laguna Beach 
 6. **Roof signs prohibited** in all use categories
 7. **Pole signs prohibited**
 8. **Backlit awning/canopy signs prohibited**
-9. **Luminance limits** -- Daytime max 5,000 nit; nighttime max 300 nit; automatic dimming required
-10. **Design review** -- Signs subject to Design Review Board or Planning Commission review per Section 25.05.040
+9. **Luminance limits** -- 25.54.010(C)(3) table by ambient light area: 1-70 candelas/sq ft (low), 71-100 (medium), 101-140 (high). No automatic-dimming mandate; the Director may order dimming of a sign found excessively bright
+10. **Approval path** -- Director approves conforming signs (letters 14 in or less, within area cap, or per a master sign program); all others go to the Planning Commission (25.54.018(E), Ord. 1732)
 11. **Sign programs** -- Multi-tenant buildings require coordinated master sign programs
 12. **Downtown area** -- More restrictive limits (wall signs 15 sq ft max; temporary signs 5 sq ft max; window signs 5 sq ft max)
 13. **Franchise/standardized signs prohibited** -- Except logos constituting less than 20% of sign area
@@ -161,7 +161,7 @@ Use Table 1 (in reference file `references/city-sign-ordinance.md`) to determine
 - What use category (residential, commercial, industrial, institutional, recreational)
 - Whether the sign is Allowed (A), Permit Required (P), or Not Allowed (N)
 
-If the sign type/use combination is "N" -- STOP. The sign is prohibited.
+If the sign type/use combination is "N", the sign is prohibited as designed ("not allowed under any circumstances", 25.54.010(A)). Do not stop at "redesign". Go to STEP 2A and give both options.
 
 #### STEP 2 -- Check Prohibited Signs List
 
@@ -172,6 +172,15 @@ Cross-reference against Section 25.54.016 prohibited signs list:
 - Roof signs, pole signs, billboards, portable signs
 - Back-lit awning/canopy signs
 - Signs emitting sound, odor, or visible matter
+
+#### STEP 2A -- Prohibited Type or Over a Table 2 Limit: Two Options
+
+Give the applicant both options:
+
+1. **Redesign to conform.** A conforming sign (for example a monument sign 6 ft or less with external or halo lighting) can be Director-approved under 25.54.018(E)(2).
+2. **Sign permit plus a variance (LBMC 25.05.025).** City practice: the City took in a sign permit with a "Variance for a pole sign" on ZPCC intake (ZPCC-2026-1871, under review, no decision yet), and a sign variance on ZPCC-2026-1638 (a CrossBeam reference that is not included in this plugin section 12). The sign is not eligible for Director approval, so the Planning Commission decides it (25.54.018(E)(5)), and the Commission acts as the Board of Adjustment on a variance tied to a matter it is deciding (25.05.025(J)). Noticed public hearing (25.05.025(E)(1)). All four findings of 25.05.025(F) are required, starting with special circumstances of the property (size, shape, topography, location or surroundings).
+
+Whether a variance can authorize a sign type the code calls "not allowed under any circumstances" (25.54.010(A), 25.54.016) is **UNSETTLED; confirm with Planning at pre-application**. The findings are hard to make for a prohibited type, so say redesign is the surer path. A variance from a Table 2 number (height, area) is the ordinary use of 25.05.025. The 25.54.018(G) "extraordinarily creative" bonus allows up to 25% more area or height at the Planning Commission without a variance, but it does not reach a prohibited type.
 
 #### STEP 3 -- Check Design Standards
 
@@ -188,26 +197,35 @@ If illuminated:
 - Only external, halo, or individual channel letter illumination allowed
 - No internally illuminated cabinet/box signs (except marquees)
 - No backlit awnings
-- Luminance limits: 5,000 nit day / 300 nit night
-- Automatic dimming required
+- Luminance: the 25.54.010(C)(3) table, in candelas per square foot by ambient light area: 1 to 70 for LOW areas (most residential areas and the beaches); 71 to 100 for MEDIUM areas (isolated signs, or next to low areas); 101 to 140 for HIGH areas (downtown, highly lighted streets or parking areas, high sign competition). Measured with a light meter. No automatic dimming is required, but "the director of community development may order the dimming of any sign illumination determined to be excessively bright" (25.54.010(C)(3))
+- Front lighting fixtures mount from the top of the sign structure (25.54.010(C)(3))
+- No high intensity discharge sources (mercury vapor, metal halide, high pressure sodium) (25.54.010(C)(1)); shield the source to light only the sign (25.54.010(C)(2))
 - No glare, flash, blink, or fluctuation
 - No exposed incandescent bulbs
 
 #### STEP 5 -- Determine Approval Path
 
-| Sign Category | Approval Authority | Notes |
-|--------------|-------------------|-------|
-| Signs within an approved sign program | Director (administrative) | Exempt from design review |
-| Simple commercial signs meeting all standards | Director (administrative) / OTC | Same-day OTC review available |
-| Master sign programs | Planning Commission | Multi-tenant coordinated signage |
-| Advertising signs | Planning Commission | |
-| Freestanding signs | Planning Commission | Max 1 per site |
-| Wall signs of unique design | Planning Commission | |
-| Blade/projecting signs | Planning Commission | |
-| Tract/area identity signs | Planning Commission | |
-| Sign independently matching a current Design Review category (for example, an improvement over 15 ft) | DRB or Planning Commission, as applicable | Current §25.05.040(B)(1) |
-| Other sign whose only claimed DR basis is Ch. 25.54's stale `(B)(1)(d)` cross-reference | Planning confirmation / `needs_source` | Ord. 1732 reassigned `(B)(1)(d)` to historic-resource work |
-| Temporary signs | Director | Max 30 days + 30-day extension |
+Sign permits are decided under LBMC 25.54.018 as amended by Ord. 1732 §§ 47-48 (signed text pp. 74-75), not under the §25.05.040 Design Review lists. The approval authority is the Director of Community Development for signs eligible under 25.54.018(E), otherwise the Planning Commission (25.54.006 "Approval authority").
+
+| Sign | Approval authority | Source |
+|------|-------------------|--------|
+| Sign in compliance with an approved master sign program | Director (administrative) | 25.54.018(E)(1) |
+| Sign that meets all Ch. 25.54 design standards (25.54.010, Tables 1 and 2), keeps total site signage within the maximum, and has letter or font height **14 in or less** | Director (administrative) | 25.54.018(E)(2) (Ord. 1732 § 48 raised the limit from 8 in) |
+| Temporary sign complying with 25.54.020 (not City Council special-event signs) | Director | 25.54.018(E)(3) |
+| **Replacement** of a sign previously authorized by a sign permit, meeting all current design standards | Director | 25.54.018(E)(4) (added by Ord. 1732) |
+| Luminous tube (neon) sign | Planning Commission (never administrative) | 25.54.018(E) |
+| Any sign not eligible above (e.g. letters over 14 in, over the site area cap, not meeting a standard) | **Planning Commission** | 25.54.018(E)(5) |
+| Sign of a prohibited type, or over a Table 2 limit, kept as designed | Planning Commission sign permit plus a variance, Commission as Board of Adjustment (STEP 2A) | 25.54.018(E)(5); 25.05.025(J); ZPCC-2026-1871 |
+| Master sign program (new office/shopping center construction or substantial facade work with four or more businesses) | Planning Commission | 25.54.010(D) as amended |
+| **Amending** an approved master sign program (changing its common standards: letter size, sign size, types, placement, lighting, number of signs), or a sign that departs from it | Planning Commission, as a master sign program application ("For new and amended Master Sign Programs, include all existing signs", City Sign Permit application). Ch. 25.54 has no separate amendment rule: the Commission sets the program's conditions (25.54.010(D)), only a sign "in compliance with an approved master sign program" is administrative ((E)(1)), and the 25.05.060 change rule does not list sign permits. A sign that departs from the program can still be administrative if it meets every (E)(2) test on its own; otherwise the Commission. Check the program's approval resolution for a delegated minor-change clause; for an arts or cultural organization's program the Commission may authorize Director approval of changes (25.54.026(C)). Ch. 25.54 does not use "planned sign program"; a program by any name that sets common standards for a multi-business site is read as a master sign program. One business's own "sign program" (the drawings every sign permit files, 25.54.018(A)) changes by a new sign permit routed by (E) | 25.54.010(D); 25.54.018(A), (E)(1), (E)(5); 25.54.026(C) |
+| Up to 25% more sign area or height for an "extraordinarily creative" design | Planning Commission only | 25.54.018(G) as amended |
+| Arts and cultural organizations' signs, facade changes, sign programs | Planning Commission | 25.54.026 as amended ("such as" the six named organizations; no longer a closed list) |
+
+- **Ask whether the building has a sign program before saying it has none.** A center or building with four or more businesses may have an approved master sign program (25.54.010(D)), and the Director route under (E)(1) and every new sign there depend on it. `permit_status` and `lookup_property` do not reliably show one. Ask the resident or the property manager, and say Planning can confirm. Only say "no program" when the resident or a record says so; otherwise give both branches (with a program: must comply or amend; without: the (E)(2) tests).
+- The Director may refer any administrative sign to the Planning Commission (25.54.018(E)).
+- **Appeals:** under §25.05.070 as replaced by Ord. 1732 (on the City form within 14 calendar days). The former 10-business-day sign appeal was deleted (25.54.018(F)).
+- **Design Review lists:** Ord. 1732's §25.05.040 has no sign item and no Sign Quality criterion. A sign is not Design Review unless the sign structure independently matches a (B)(1) item (for example any improvement over 15 ft, (B)(1)(c), or work on a historic resource, (B)(1)(d)/(B)(3)(a)(iv)), or the Director refers it. Where a source still says signs need "design review", say the current route is the 25.54 sign permit and **confirm with Planning**.
+- **Downtown Specific Plan:** signs there are reviewed against the DSP urban design guidelines (25.54.018(D)(5)).
 
 #### STEP 6 -- Check Additional Overlays
 
@@ -241,8 +259,8 @@ After completing city checks, run the state `california-sign` skill for:
 | Pole signs | Allowed (as ground/freestanding) | **Prohibited** |
 | Animated signs | Allowed (with fail-safe device) | **Prohibited** (except interior) |
 | Franchise/standardized signs | No state restriction | **Prohibited** (logos max 20% of sign area) |
-| Design review | Not required by state | Required for most signs |
-| Luminance | No state standard | 5,000 nit day / 300 nit night; auto-dimming |
+| Local approval | Not required by state | Sign permit: Director for conforming signs, Planning Commission otherwise (25.54.018(E)) |
+| Luminance | No state standard | 1-140 candelas/sq ft by ambient light area (25.54.010(C)(3)); no auto-dimming mandate; Director may order dimming |
 | Neon/luminous tube | Allowed per CEC Article 600 | Interior only, 4+ ft from window, 3 sq ft max, single color |
 
 ---
@@ -251,7 +269,7 @@ After completing city checks, run the state `california-sign` skill for:
 
 - **OTC eligible**: Yes -- simple commercial signs meeting all standards
 - **Roof signs**: Prohibited
-- **Pole signs**: Prohibited
+- **Pole signs**: Prohibited (25.54.016(K)); a variance request is possible but UNSETTLED (STEP 2A)
 - **Internally illuminated cabinet signs**: Prohibited (individual channel letters OK)
 - **Digital/EMC signs**: Prohibited (except interior)
 - **Max total sign area**: 1 sq ft per ft of frontage, 150 sq ft cap
@@ -261,9 +279,9 @@ After completing city checks, run the state `california-sign` skill for:
 - **Neon signs**: Interior only, 4+ ft from window, 3 sq ft max
 - **Franchise signs**: Prohibited (logos allowed if <20% of sign area)
 - **Temporary signs**: Max 30 days + 30-day extension, 60 days/year total
-- **Planning route**: match the current §25.05.040 closed lists; do not use Ch. 25.54's stale `(B)(1)(d)` cross-reference as a current sign trigger
+- **Approval**: Director if 25.54.018(E) eligible (letters 14 in or less, meets standards and area cap, master-program sign, temporary, or replacement of a permitted sign); otherwise Planning Commission. Appeals per §25.05.070 (14 calendar days)
 - **Sign programs**: Required for multi-tenant buildings (Planning Commission approval)
-- **Arts organizations**: Special provisions for 6 designated organizations
+- **Arts and cultural organizations**: Planning Commission sign/facade discretion (25.54.026, "such as" the six named organizations)
 
 ---
 

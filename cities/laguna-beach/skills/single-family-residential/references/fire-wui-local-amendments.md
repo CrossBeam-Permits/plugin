@@ -112,6 +112,6 @@ Required outputs for a new SFR fuel-mod plan review:
 If an application calls itself "new SFR" but retains a substantial existing dwelling, also run `laguna-beach-residential-remodel`. An existing building has **two independent sprinkler retrofit triggers, and either one requires the retrofit**:
 
 - **Ch. 14.52.030** (valuation) — the same section quoted above also states that when the cumulative value of additions, alterations and repairs to a one- or two-family dwelling and attached garage in any three-year period exceeds 50% of the pre-work valuation, the entire dwelling and attached garage must be sprinklered throughout. Valuation is per the City's building-permit fee resolution.
-- **Title 15 §1103.5.4** (scope) — alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR an added story.
+- **Title 15 §1103.5.4** (scope) — alteration of ≥50% of the building, OR an added story. Whether work on ≥50% of the exterior fires it by itself is UNSETTLED (two readings in the reference; confirm with Building and Fire at pre-application).
 
 Full rule: `../../residential-remodel/references/city-sprinkler-retrofit.md`.

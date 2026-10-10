@@ -1,6 +1,8 @@
 # Laguna Beach ADU/JADU — FAQ & Coastal Development Permit Process
 
-Source: `adu-jadu-faq.pdf` (City of Laguna Beach, LBMC Chapter 25.17)
+Source: `adu-jadu-faq.pdf` (City of Laguna Beach, LBMC Chapter 25.17). The current City ADU & JADU Application (Updated August 2026) carries a newer FAQ as its Exhibit A.
+
+> **Read with `../SKILL.md`.** This FAQ predates Urgency Ord. 1713 and the 2025 state amendments. Three points below are corrected as of 2026-10-10: (1) a JADU is CDP-exempt only when it converts existing livable space (Ord. 1713, 25.17.010(d)(1)(C)(ii)); (2) an ADU-only CDP is decided within 60 days, concurrently with the ADU, with no required hearing and no Coastal Commission appeal (Gov. Code 66329(a), (c)); (3) fee amounts are removed; use the fee tool (`estimate_fees`, Master Fee Schedule).
 
 ---
 
@@ -26,11 +28,11 @@ Per Cal. Gov. Code § 66313: A unit ≤500 sq ft contained entirely within a sin
 - **CDP required BEFORE building permit** can be issued
 - EXCEPTION: Converting existing *livable* (habitable) space into ADU → exempt from CDP (LBMC § 25.07.008(A)(1)(a))
 - After CDP approved → building permit issued as matter of right
-- Shot clock governed by Permit Streamlining Act (more complex than 60-day ADU shot clock)
+- An ADU-only CDP is decided within 60 days of a complete application, concurrently with the ADU application (Gov. Code 66329(a); state skill). A CDP that also covers other development follows Chapter 25.07 and the Permit Streamlining Act
 
-### JADU (Anywhere)
-- **JADU is EXEMPT from CDP** under City's certified LCP (LBMC § 25.07.008(1)(1)(a))
-- Only needs building permit
+### JADU
+- **A JADU that converts existing livable space in a legally established primary dwelling is EXEMPT from CDP** (LBMC 25.07.008(A)(1)(a); Ord. 1713, 25.17.010(d)(1)(C)(ii)(I)). A JADU in an attached garage or other non-livable space needs a CDP in the coastal zone
+- An exempt JADU needs only a building permit
 - Comply with: State law + LBMC Ch. 25.17 + Building Code
 - **60-day shot clock**
 
@@ -41,7 +43,7 @@ Per Cal. Gov. Code § 66313: A unit ≤500 sq ft contained entirely within a sin
 All development in Coastal Zone must be: (i) exempt, (ii) excluded, or (iii) subject to CDP.
 
 ### i. Exempt
-- ONLY ADUs converting existing livable space (LBMC § 25.07.008(A)(1)(a))
+- ONLY ADUs and JADUs converting existing livable space (LBMC § 25.07.008(A)(1)(a)), unless an exemption-loss item in 25.07.008(A)(1)(b)-(g) applies (see `../SKILL.md` Step 1)
 
 ### ii. Excluded
 - NO ADUs qualify for exclusionary orders (per Coastal Commission determination)
@@ -57,7 +59,7 @@ All development in Coastal Zone must be: (i) exempt, (ii) excluded, or (iii) sub
   - Questions of LCP conformity
   - Known public opposition or probable controversy
   - Outstanding LCP violations on site
-- **Fee: $125**
+- **Fee:** fee tool
 - **Notice**: Mailed to property owners within 300 ft + residents within 100 ft
 
 **b. Minor Development**
@@ -66,15 +68,15 @@ All development in Coastal Zone must be: (i) exempt, (ii) excluded, or (iii) sub
   - Potential adverse effect on coastal resources
   - Questions of LCP conformity
   - ADU accompanied by additional discretionary entitlement
-- **Fee: $952**
+- **Fee:** fee tool
 - **Notice** (appealable area): Property owners within 100 ft + residents within 100 ft
 - **Notice** (non-appealable area): Property owners within 300 ft + residents within 100 ft
 - Public hearing held if requested by noticed party
 
 **c. Standard Development**
 - Required when de minimis and minor processes cannot be used
-- Public hearing before Community Development Director or designee
-- **Fee: $952**
+- Public hearing before Community Development Director or designee. For an ADU-only CDP, state law does not require a hearing (Gov. Code 66329(a)); Ord. 1713 lets the City elect to hold one (25.17.010(d)(1)(A))
+- **Fee:** fee tool
 - Same notice requirements as minor development
 
 ---
@@ -83,7 +85,7 @@ All development in Coastal Zone must be: (i) exempt, (ii) excluded, or (iii) sub
 
 | ADU Type | Notice to Neighbors? |
 |----------|---------------------|
-| JADU (any location) | NO |
+| JADU converting existing livable space | NO |
 | ADU not in Coastal Zone | NO |
 | ADU converting existing livable space | NO |
 | ADU in Coastal Zone (new construction) | **YES** — for CDP only |
@@ -108,7 +110,7 @@ For CDP hearings, decision-maker can ONLY consider:
 
 ## Major Remodel Exemption
 
-ADU construction and remodeling are **EXEMPT** from the major remodel definition. This means building an ADU does not count toward the 50% demolition/addition threshold that triggers "major remodel" status.
+ADU construction and remodeling are **EXEMPT** from the major remodel definition. This means building an ADU does not count toward the 50% demolition/addition threshold that triggers "major remodel" status. Exception: Coastal Act section 30253 work on bluff-top, beachfront and coastal-canyon lots (Ord. 1713, 25.17.020(d)(2)).
 
 ---
 
@@ -116,10 +118,9 @@ ADU construction and remodeling are **EXEMPT** from the major remodel definition
 
 | Parameter | Value |
 |-----------|-------|
-| ADU ordinance | LBMC Chapter 25.17 |
+| ADU ordinance | Urgency Ord. 1713 (LBMC 25.17.010, 25.17.020); certified LCP Chapter 25.17 for the CDP |
 | CDP ordinance | LBMC Chapter 25.07 |
-| CDP de minimis fee | $125 |
-| CDP minor/standard fee | $952 |
-| Shot clock (non-coastal/JADU) | 60 days |
-| Shot clock (coastal CDP) | Permit Streamlining Act rules |
+| Fees | Fee tool (`estimate_fees`); not quoted here |
+| Shot clock (no CDP) | 60 days |
+| Shot clock (ADU-only CDP) | 60 days, concurrent with the ADU (Gov. Code 66329(a)) |
 | Staking | May be required before CDP hearing |

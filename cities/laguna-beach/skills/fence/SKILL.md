@@ -149,10 +149,10 @@ Note: Fence/wall rules are predominantly local — most of this skill's content 
 
 | Condition | Permit Required? |
 |-----------|-----------------|
-| Block wall >30" height from adjacent grade | YES |
+| Block wall >30" height from adjacent grade | YES per City block-wall detail Note 2. LBMC 14.50.022 exempts walls/fences up to 72" (unless within 3' of property line/ROW). UNSETTLED for 31"-72" block walls: see `../block-wall/SKILL.md` |
 | ANY wall/fence within 3' of property line or public right-of-way | YES |
-| Wood/metal fence >6' | YES |
-| Wood/metal fence ≤6' and >3' from property line | NO permit required |
+| Any wall/fence >72" (6') | YES (LBMC 14.50.022 Building item 1) |
+| Wood/metal fence ≤6' and >3' from property line and ROW | NO building permit (LBMC 14.50.022 Building item 1). Planning still applies (STEP 4) |
 
 #### STEP 3: Additional Requirements Check
 
@@ -162,8 +162,25 @@ Note: Fence/wall rules are predominantly local — most of this skill's content 
 | ANY wall/fence | Zoning/Planning must approve BEFORE building permit issued |
 | Near fire hydrant | No wall/fence within 36" |
 | Near water meter | No wall/fence/foundation within 12" |
-| Wall + railing/guard/screen | Total height must not exceed 6'-0" above lowest adjacent grade |
+| Wall + railing/guard/screen **built to the City standard block-wall detail** | Total height must not exceed 6'-0" above lowest adjacent grade (a limit of the standard detail, Note 13; a taller assembly needs an engineered design, not a variance) |
+| Guard or railing **required by the building code** (drop over 30 in) on a wall | Permitted in any yard: "Barricades, railings and security fencing required by the building code are permitted in any yard" (LBMC 25.50.012(B)(2)). Railings are Zone Clearance (B)(2)(r). A rail or screen that is not code-required counts toward the 25.50.012(B)(1)/(3) fence height (4 ft front, 6 ft side and rear) |
 | Slope >10% or adverse soil | Standard detail NOT applicable — engineer required |
+
+#### STEP 4: Planning Route (Ord. 1732, LBMC 25.05.040(B))
+
+No building permit does not mean no Planning approval. Source: the City source document (not included in this plugin); heights from LBMC 25.50.012(B).
+
+| Fence/wall | Planning route |
+|---|---|
+| Meets 25.50.012 heights: 4 ft in the front yard (3 ft front yard on a corner lot), 6 ft in side and rear yards | Zone Clearance, 25.05.040(B)(2)(l) |
+| Permanent chain link or similar woven metal fence, or vinyl that does not simulate natural material (any height) | Design Review, 25.05.040(B)(1)(m). Design Review Board on a single-family or two-family lot; Planning Commission otherwise (25.05.040(F)(1)) |
+| Decorative posts or brick/stone columns up to 12 in above the front-yard limit | Administrative Design Review, 25.05.040(B)(3)(a)(vii) |
+| Any fence/wall in an environmentally sensitive area (includes slopes of 30% or more) | Design Review, 25.05.040(B)(1)(e), unless a licensed professional finds, subject to peer review, no impact on the ESA |
+| Taller than 25.50.012 allows | Not Zone Clearance. Needs relief from the height standard (variance, LBMC 25.05.025). Confirm with Planning |
+| Pedestrian entry feature (arbor, arched entry, arcade or finials only) above the fence height, up to 8 ft high and 6 ft wide, transitions no wider than 3 ft each side | Meets 25.50.012(B)(6) as amended by Ord. 1732 § 45, which deleted "subject to design review": Zone Clearance, 25.05.040(B)(2)(l). The City intake matrix still lists "Pedestrian entry feature" as ADR; confirm with Planning at pre-application |
+| Other metal (non-woven, e.g. wrought iron) fences in residential areas | 25.50.012(B)(5) still says "Chain link fences and other metal fences in residential areas are subject to design review" (not amended by Ord. 1732), but Ord. 1732 (B)(1)(m) names only chain link/woven metal and non-natural vinyl. **UNSETTLED: confirm the route with Planning at pre-application** |
+
+The Director may refer any Zone Clearance or Administrative Design Review fence up to the Design Review Board or Planning Commission (25.05.040(A)(2)(d)). A Coastal Development Permit is a separate check under Ch. 25.07: fences on a single-family lot are normally exempt (25.07.008(A)(1)), but not where an exception applies, e.g. a new fence between the sea and the first public road or within 300 ft of the beach/mean high tide line (25.07.008(A)(1)(c)(3)), or in an ESA, highly scenic area, or within 50 ft of a bluff edge (25.07.008(A)(1)(b)).
 
 ---
 
@@ -182,7 +199,7 @@ Note: Fence/wall rules are predominantly local — most of this skill's content 
 | 9 | Clearances ok? | 36" from hydrant, 12" from water meter, no ROW projections | `references/city-block-wall-detail.md` |
 | 10 | Expansion joints? | Max 30' spacing | `references/city-block-wall-detail.md` |
 | 11 | Clean-outs? | Required for lifts >4' | `references/city-block-wall-detail.md` |
-| 12 | Attachments? | Wall + railing/guard ≤6'-0" above lowest adjacent grade | `references/city-block-wall-detail.md` |
+| 12 | Attachments? | On the standard detail: wall + railing/guard ≤6'-0" above lowest adjacent grade. Code-required guards are allowed in any yard (25.50.012(B)(2)); the zoning height cap does not apply to them | `references/city-block-wall-detail.md` |
 
 ---
 
@@ -193,7 +210,7 @@ Note: Fence/wall rules are predominantly local — most of this skill's content 
 - **Survey required**: Licensed surveyor must certify location before footing inspection (walls within 3' of property line or public ROW)
 - **Survey waiver**: Available for wood/metal fences (not CMU) via Request to Waive Survey form. Survey waiver form requires notarization.
 - **Retaining wall exemption**: Retaining walls not over 48" from footing to top are exempt from permit UNLESS supporting surcharge, impounding flammable liquids, or within 3' of property line/ROW (§14.50.022)
-- **Current planning route**: Fences, walls, and hedges complying with §25.50.012 require Zone Clearance under §25.05.040(B)(2)(l). Permanent chain-link/similar woven-metal fences and vinyl fences that do not simulate natural material require Design Review under §25.05.040(B)(1)(m). Apply the ESA override.
+- **Current planning route**: see STEP 4. Zone Clearance (§25.05.040(B)(2)(l)) for fences/walls meeting §25.50.012; Design Review (§25.05.040(B)(1)(m)) for chain link/woven metal/non-natural vinyl; ESA override (§25.05.040(B)(1)(e)).
 - **Zoning approval**: Required BEFORE building permit — Planning reviews height, location, design standards
 - **Design criteria**: Seismic D, 95 mph basic wind speed exposure C (2025 CBC / ASCE 7-22), 1,500 psf soil bearing
 - **Standard-detail CMU**: both footing alternates are 6" min, solid grouted; a partially grouted wall has left the detail and needs an engineered design

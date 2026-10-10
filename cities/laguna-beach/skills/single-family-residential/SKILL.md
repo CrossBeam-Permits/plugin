@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Standards Code (Title 24, Parts 2, 2.5, 3, 4, 5, 6, 11); LBMC Title 14, Title 15, Title 25; Building Plan Check Submittal Requirements; Bluff Edge Determinations; Zoning Plan-Check Project Submittal Requirements table"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-08-10"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -140,9 +140,9 @@ Use this skill for new one-family dwellings, replacement dwellings, and plan-rev
 
 | Check | Laguna Beach rule |
 |-------|-------------------|
-| **New SFD routing** | Default new-building route is Design Review under current §25.05.040(B)(1)(b). A qualifying new primary dwelling may instead elect Chapter 25.13 and take Zone Clearance under §25.05.040(B)(2)(z), but only when both the Chapter 25.13 development gate and the adopted 2026 objective-design gate pass. |
+| **New SFD routing** | Default new-building route is Design Review under current §25.05.040(B)(1)(b), heard by the Design Review Board ("all single-family or two-family developments", §25.05.040(F)(1)(i)); Downtown Specific Plan parcels: UNSETTLED, (F)(1)(ii) sends "all projects located in the downtown specific plan area" to the Planning Commission. A qualifying new primary dwelling may instead elect Chapter 25.13 and take Zone Clearance under §25.05.040(B)(2)(z), but only when both the Chapter 25.13 development gate and the adopted 2026 objective-design gate pass. |
 | **Chapter 25.13** | Optional, not automatic: one story/≤15 ft, primary ≤1,500 sf, possible second primary ≤800 sf, garage ≤400 sf/two spaces, +20% setbacks, Table A FAR, landscape/light/roof-deck limits, all 13 General Design Standards, and every standard in one applicant-selected Form Group. Major remodels are ineligible; CDP may remain required. |
-| **Coastal zone** | Most parcels are coastal. New SFD is "development" under Ch. 25.07 and is not the routine SFR-improvement exemption. CDP determination is required before building permit issuance. |
+| **Coastal zone** | Most parcels are coastal. New SFD is "development" under Ch. 25.07 and is not the routine SFR-improvement exemption. CDP determination is required before building permit issuance. In a Categorical Exclusion Order E-93-1 area (single-family residential development in eleven areas, Special Condition 8: the LCP or the order, whichever is more restrictive), whether the exclusion clears the new house is for Planning to decide: UNSETTLED, confirm at pre-application. E-93-1 never clears an ADU. |
 | **Bluff/oceanfront** | No building/addition/structure/improvement may be beyond the applicable stringline or closer than 25 ft to oceanfront bluff top; more restrictive rule controls. |
 | **R-1 height** | Slope-based max height: 25 ft at 0-15% slope, then 26/27/28/29 ft at 16/17/18/19%, and 30 ft at 20%+. Additional front/rear-yard height setbacks can reduce the envelope. |
 | **R-1 site coverage** | Max 44% for lots <=4,000 sf; 35% for lots >=8,000 sf; interpolation formula for 4,000-8,000 sf. Oceanfront lots use the reduced "A" area landward of the more restrictive oceanfront setback/bluff line. |
@@ -152,7 +152,7 @@ Use this skill for new one-family dwellings, replacement dwellings, and plan-rev
 | **WUI/VHFHSZ** | Treat WUI/VHFHSZ as active unless parcel-specific evidence shows otherwise. Local amendments require Class A roof, ignition-resistant/noncombustible wall covering options, vinyl-window reinforcing, glass skylights, 144 sq in max vents, defensible space/fuel-modification review. |
 | **Submittal package** | New SFRs use the full Building Plan Check package: 4 plan sets, record survey, building data/coverage sheets, structural/geotech/energy/CALGreen/WQMP/stormwater, Fire site access when required, and deferred sprinkler plans. |
 | **Three Arch Bay (Ch. 25.44)** | If parcel is inside TAB: apply the 5 ft side / 25 ft rear / 4-parking standards, §25.44.050(M)'s 3:12 roof pitch/no-roof-deck rule (2.5:12 view-corridor exception), the two current §25.44.060 findings when Design Review applies, and qualified TABA + TABCSD sequencing. See `references/three-arch-bay.md`. |
-| **Heritage (Ch. 25.45)** | If existing structure on lot is 50+ years old or property is Historic Register-listed: Heritage Committee review precedes demolition; DR authority may extend demolition waiting period up to 180 days. See `references/heritage-historic-committee.md`. |
+| **Heritage (Ch. 25.45)** | If an existing structure is a "historic resource" (§25.45.004 as amended by Ord. 1732: city register, California or National Register listed or determined eligible, or one the City must treat as historic on substantial evidence): demolition follows §25.45.014 (Heritage Committee recommendation, CEQA, Design Review hearing, CDP). Age alone is not a code trigger; staff may ask for a historic resource assessment of an older structure (UNSETTLED; confirm with Planning at pre-application). See `references/heritage-historic-committee.md`. |
 | **Floodplain (Ch. 25.38)** | If parcel is in a FEMA SFHA (V-zone, A-zone): separate Floodplain Development Permit per §25.38.042; V-zone needs open-pile foundation per §25.38.057 + BFE adjusted for 75-yr SLR. Ch. 25.38 (Title 25, Zoning) is the operative chapter — Ch. 14.78 does NOT exist. See `references/floodplain.md`. |
 
 ---
@@ -163,7 +163,7 @@ Use this skill for new one-family dwellings, replacement dwellings, and plan-rev
 
 Ask whether the applicant elects the optional Chapter 25.13 pathway.
 
-- **No election or Chapter 25.13 ineligible:** a new building requires Design Review under current §25.05.040(B)(1)(b). For one-family residential projects, apply the approval-authority rules in §25.05.040(F).
+- **No election or Chapter 25.13 ineligible:** a new building requires Design Review under current §25.05.040(B)(1)(b). The Design Review Board hears it: "The design review board shall conduct a noticed public hearing on design review applications for all single-family or two-family developments" (§25.05.040(F)(1)(i)). The Planning Commission hears it instead only under (F)(1)(ii), for example a Downtown Specific Plan parcel or a project that also needs a CUP (UNSETTLED where both clauses fit; confirm with Planning).
 - **Chapter 25.13 elected:** run `references/objective-primary-dwelling-ch25-13.md`, then load `references/objective-design-standards-2026.md` and exactly one applicant-selected Form Group reference. Return Zone Clearance under §25.05.040(B)(2)(z) and §25.05.045 only when both the development and design gates pass.
 - **Major remodel:** cannot use Chapter 25.13; route to Design Review under §25.05.040(B)(1)(a), and apply §25.56.011's new-building consequences.
 
@@ -182,11 +182,11 @@ Use `references/planning-coastal-routing.md` and the shared `../residential-remo
 
 **Three Arch Bay parcels:** Load `references/three-arch-bay.md` and run the City/private sequencing check at intake. Section 25.44.060 describes TABA review and a comment letter only **to the extent permitted by law**; do not turn that qualifier into an unconditional City entitlement prerequisite. Separate owner consent is still required for work on TABA- or TABCSD-owned property.
 
-**50+ year existing structure:** If a structure 50 years or older is on the lot (or the lot is on the Historic Register), Heritage Committee review precedes demolition. The design review authority may extend the demolition waiting period up to 180 days for relocation. Load `references/heritage-historic-committee.md`.
+**Historic resource on the lot:** If an existing structure is a historic resource under §25.45.004, its demolition follows §25.45.014: the Heritage Committee recommends within 30 days of a complete application, CEQA review, then a Design Review hearing; demolition also requires a CDP (§25.45.014(A)). Age alone is not a code trigger (UNSETTLED whether staff will require an assessment; confirm with Planning at pre-application). Load `references/heritage-historic-committee.md`.
 
 #### Step 3 - Determine Coastal / Bluff / Hillside Overlays
 
-For coastal-zone parcels, new SFD construction is development under Ch. 25.07. Do not treat it as the routine "improvements to single-family dwellings" exemption because there is no existing SFD improvement scope; it is new construction.
+For coastal-zone parcels, new SFD construction is development under Ch. 25.07. Do not treat it as the routine "improvements to single-family dwellings" exemption because there is no existing SFD improvement scope; it is new construction. A CDP that goes with Design Review is decided by the same body at the same time (§25.07.012(D)). Ord. 1732's new lists are not certified by the Coastal Commission; the CDP is judged against the certified LCP (§25.07.012(G)(1)).
 
 For oceanfront/bluff parcels:
 
@@ -336,7 +336,7 @@ Load these on demand. Paths are relative to this file.
 
 - `references/fire-wui-local-amendments.md` — Laguna Beach - Fire, Sprinkler, WUI, and Fuel-Modification Amendments for New SFR
 - `references/floodplain.md` — Laguna Beach - Floodplain Overlay (LBMC Ch. 25.38)
-- `references/heritage-historic-committee.md` — Laguna Beach - Heritage Committee Review (50+ Year Structures)
+- `references/heritage-historic-committee.md` — Laguna Beach - Heritage Committee Review (Historic Resources)
 - `references/objective-design-form-group-a-2026.md` — Laguna Beach Objective Design Standards — Form Group A
 - `references/objective-design-form-group-b-2026.md` — Laguna Beach Objective Design Standards — Form Group B
 - `references/objective-design-form-group-c-2026.md` — Laguna Beach Objective Design Standards — Form Group C

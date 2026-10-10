@@ -12,14 +12,55 @@ triggers**. **Either one firing requires the full retrofit.** Test both on every
 |---------|-------|-----------|------|-----------|
 | **A. LBMC Ch. 14.52.030** (amends CRC R309.2) | **Valuation** | One- and two-family dwellings + garage attached (within 10 ft) | Cumulative value of additions, alterations and repairs in **any three-year period** exceeds **50%** of the valuation before the work | Ord. 1725, 12/18/2025 |
 | **A1. LBMC Ch. 14.52.026** (amends CRC R309.1) | **Valuation** | Townhouses + attached garage; each townhouse is a separate building | Same 50% / three-year test | Ord. 1725, 12/18/2025 |
-| **B. LBMC Title 15 §1103.5.4** (adds CFC Ch. 11 §1103.5.4) | **Scope** | ALL existing Group R fire areas | Alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR addition of one or more stories | Ord. 1726, 12/18/2025 |
+| **B. LBMC Title 15 §1103.5.4** (adds CFC Ch. 11 §1103.5.4) | **Scope** | ALL existing Group R fire areas | Alteration of ≥50% of the building (which, on one reading, must include work on ≥50% of the exterior; UNSETTLED, see Trigger B), OR addition of one or more stories | Ord. 1726, 12/18/2025 |
 
-State law is silent, so both triggers are pure city overlay. The parent state skill
+State law is silent on retrofits for ordinary additions and alterations, so both triggers are city overlay. The parent state skill
 (the California Residential Remodel rules, which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`)) correctly identifies that California amended out the
 IRC R313.2 retrofit, leaving an explicit state-level exemption: existing un-sprinklered SFRs are
 NOT required to retrofit on additions or alterations under state code. (R313 in the 2025 CA CRC
 is "ceiling height," not sprinklers.) Laguna fills that silence twice — once by valuation, once
-by scope.
+by scope. One state rule is not silent and overrides both triggers: the ADU carve-out below.
+
+---
+
+## State ADU carve-out — applies to both triggers
+
+State ADU law sets two limits that no city retrofit rule can override. Verbatim from
+the City source document (not included in this plugin):
+
+> *"(12) Accessory dwelling units shall not be required to provide fire sprinklers if they are
+> not required for the primary residence. The construction of an accessory dwelling unit shall
+> not trigger a requirement for fire sprinklers to be installed in the existing primary
+> dwelling."* — Gov. Code § 66314(d)(12)
+
+> *"(d) The installation of fire sprinklers shall not be required in an accessory dwelling unit
+> or a junior accessory dwelling unit if sprinklers are not required for the primary residence.
+> The construction of an accessory dwelling unit or a junior accessory dwelling unit shall not
+> trigger a requirement for fire sprinklers to be installed in the existing multifamily
+> dwelling."* — Gov. Code § 66323(d) (units approved under 66323, and every JADU)
+
+Laguna's ADU ordinance says the same: sprinklers are required in an ADU "if sprinklers are
+required in the primary residence", and the construction of an ADU "does not trigger a
+requirement for fire sprinklers to be installed in the existing primary dwelling" (LBMC
+25.17.010(f)(3)(A)-(B); `../../adu/SKILL.md`).
+
+How to run it:
+
+1. **The ADU's own work never fires a retrofit of the primary dwelling.** Leave the ADU's
+   valuation out of Trigger A's three-year sum, and leave the ADU's scope out of Trigger B's
+   prongs, including prong 3: an ADU built as a new story on or over the house is not an
+   "addition of one or more stories" for this rule.
+2. **The ADU itself needs sprinklers only if the primary residence requires them.** An existing
+   house with no sprinklers, and no other work in the project that fires a trigger, does not
+   require them, so the ADU needs none, attached, detached or converted. Ch. 14.52.030's
+   new-dwelling mandate does not reach the ADU when the house is not required to have them.
+3. **Other work on the primary dwelling in the same project is tested on its own.** A remodel or a
+   non-ADU addition on the house still runs both triggers without the ADU's numbers. If that work
+   fires a trigger, the house must be sprinklered, and from then on sprinklers are required for
+   the primary residence, so the ADU's exemption under the first sentence no longer holds. Say so
+   when the two pieces are filed together.
+4. **What is an ADU** (versus a guest room or a second story of the house) is decided under the ADU
+   skill (`load_skills('adu')`), not here.
 
 ---
 
@@ -112,9 +153,16 @@ townhouses.
 
 ---
 
-### Trigger B's three independent prongs
+### Trigger B: two readings of the exterior clause (UNSETTLED)
 
-Trigger B fires when work requiring a building permit involves **any** of the following:
+The enacted sentence is: "alteration of 50 percent or more of a building, which includes or involves work on 50 percent or more of the building's exterior, or which involves the addition of one or more stories."
+
+- **Reading 1 (one compound prong):** "which includes or involves work on 50 percent or more of the building's exterior" describes the alteration of 50% of the building. Trigger B then has two prongs: (1) an alteration of 50% or more of the building that also reaches 50% or more of the exterior, and (2) the addition of a story. Exterior-only work under 50% of the building does not trigger it.
+- **Reading 2 (three independent prongs):** the exterior clause stands alone, so work on 50% or more of the exterior triggers sprinklers by itself.
+
+The grammar (a "which" clause modifying "alteration", followed by a parallel "or which" clause) favors Reading 1; the fire-resistant-siding exception, which only makes sense if exterior-only work could trigger the rule, favors Reading 2. The City has not ruled. When the exterior prong is what decides the answer, give both readings, do not say sprinklers are "very likely", and say "confirm with Building and Fire at pre-application." The prong descriptions below follow Reading 2 so that both tests are run; report prong 2 alone as UNSETTLED.
+
+Under Reading 2, Trigger B fires when work requiring a building permit involves **any** of the following:
 
 #### Prong 1 — Alteration of 50% or More of a Building
 
@@ -122,7 +170,7 @@ Use the Step B major-remodel methodology (`city-major-remodel-methodology.md`) a
 
 #### Prong 2 — Work on 50% or More of the Building's Exterior
 
-This is **independent** of major-remodel determination. It catches projects whose scope is concentrated on the building exterior (reroof + reside + fenestration replacement) but that may not hit 50% of the whole-building methodology.
+Under Reading 2 this is **independent** of the major-remodel determination (UNSETTLED; see above). It catches projects whose scope is concentrated on the building exterior (reroof + reside + fenestration replacement) but that may not hit 50% of the whole-building methodology.
 
 Operational test: aggregate the exterior square footage of:
 - Reroof scope (sq ft)
@@ -135,6 +183,25 @@ Compare to total exterior surface area (roof + exterior walls). If ≥50%, prong
 #### Prong 3 — Addition of One or More Stories
 
 Geometric, not %-based. If the scope adds a story (upper-level addition, second-story addition, vertical expansion), prong 3 fires regardless of demolition or exterior percentages.
+
+**Exception for ADU stories (state law).** A story that is an ADU or JADU does not fire prong 3:
+"The construction of an accessory dwelling unit shall not trigger a requirement for fire
+sprinklers to be installed in the existing primary dwelling" (Gov. Code § 66314(d)(12); § 66323(d)).
+See "State ADU carve-out" above. A story added to the house itself, in the same project, still
+fires it.
+
+**Does a basement or lower level count as an "added story"? (UNSETTLED)**
+
+Title 15 does not define "story", so the CFC Chapter 2 definitions apply (2025 CFC §202, same as CBC §202):
+
+> *"STORY. That portion of a building included between the upper surface of a floor and the upper surface of the floor or roof next above (see "Basement," "Building height," "Grade plane" and "Mezzanine")."*
+>
+> *"BASEMENT. A story that is not a story above grade plane."*
+
+- By these definitions a basement **is** a story, and §1103.5.4 says "addition of one or more stories", not "stories above grade plane". So on the plain text, a new basement or a new lower level (for example a level dug out under a hillside house) reads as an added story.
+- A new level that is a "story above grade plane" under §202 (common on a downslope lot) is an added story on any reading.
+- A mezzanine that complies with CBC §505.2 "shall be considered a portion of the story below", so it is not an added story.
+- The City has not ruled on whether excavating a basement or lower level under an existing house fires prong 3. Report it as **UNSETTLED; confirm with Building and Fire at pre-application**. Give the plain-text reading (it fires) and say the City has not confirmed it. Trigger A (valuation) still applies either way, and a basement often pushes it past 50%.
 
 ---
 
@@ -235,12 +302,14 @@ the other file before rewriting this one.
   - If the documents do not state a valuation, report CANNOT DETERMINE and request it. Do not assume.
 **Trigger B — Title 15 §1103.5.4 (scope, Ord. 1726 12/18/2025):** FIRED | NOT FIRED
   - Prong 1 (alteration ≥50% of building per Step B methodology): YES | NO
-  - Prong 2 (work ≥50% of exterior): YES | NO
-  - Prong 3 (added story): YES | NO
+  - Prong 2 (work ≥50% of exterior): YES | NO — if prong 2 alone fires, report UNSETTLED (Reading 1 vs Reading 2) and "confirm with Building and Fire at pre-application"
+  - Prong 3 (added story): YES | NO — a new basement or lower level alone: report UNSETTLED (plain text says yes; City has not ruled). A story that is an ADU or JADU: NO (Gov. Code § 66314(d)(12))
   - Exception ("work that consists only of the installation of fire-resistant siding"): YES | NO
+**State ADU carve-out (Gov. Code § 66314(d)(12); § 66323(d)):** APPLIES | N/A — the ADU's work is left out of both triggers; the ADU needs sprinklers only if the primary residence requires them
 **Either trigger firing requires the retrofit. Report which one(s) fired.**
 **Citations:**
   - Ch. 14.52.030: "If the cumulative value of additions, alterations and repairs done to a one- or two-family dwelling and attached garage in any three-year period exceeds fifty percent of the valuation of the one- or two-family dwelling and attached garage prior to the additions, alterations, and repairs, the entire one- or two-family dwelling and attached garage must be sprinklered throughout."
   - Title 15 §1103.5.4: "An automatic sprinkler system installed in accordance with Section 903.3 shall be provided throughout all existing Group R fire areas when work requiring a building permit that involves alteration of 50 percent or more of a building, which includes or involves work on 50 percent or more of the building's exterior, or which involves the addition of one or more stories."
+  - Gov. Code § 66314(d)(12), when an ADU is in the project: "Accessory dwelling units shall not be required to provide fire sprinklers if they are not required for the primary residence. The construction of an accessory dwelling unit shall not trigger a requirement for fire sprinklers to be installed in the existing primary dwelling."
 **Action required:** [If REQUIRED: full sprinkler retrofit of the ENTIRE dwelling and attached garage per NFPA 13D (SFR) or 13R (multi-family) with city amendments per Title 15 §15.01.070 — attached + detached-within-30-ft garages, attic protection, exterior overhangs ≥48", exterior alarm + interior ≥75 dBA, 24-hr UL central station monitoring (13R). NFPA 13D design is mandatory; the CRC prescriptive method is deleted (Ch. 14.52.032). Cover sheet shall be notated "FIRE SPRINKLERS REQUIRED" per Building Plan Check Submittal Requirements page 4. The project is no longer OTC-eligible — full plan review.]
 ```

@@ -139,8 +139,10 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 | **Before 2026-08-20** | The six-part test is not yet law. Use the prior five-part test in "Before 2026-08-20" below. Wall-mount-at-ground-level and the 3-ft path of travel do not apply yet, and part 2 still excludes the required side yard setbacks. |
 | **HVAC change-out** (same location, clearances, type) | Building-permit OTC may apply (hours below). OTC is the Building Division counter track, **not** a design-review exemption. If the equipment is exterior, still run the §7.25.130(C) test. Fail any part → Administrative Design Review; do not treat OTC as skipping that. |
 | **Exterior HVAC or pool/spa equipment** (any zone from 2026-08-20; before then, only in or adjacent to residential areas) | Run the §7.25.130(C) six-part test below (five-part before 2026-08-20). Pass → Zone Clearance (no Design Review). Fail any part → Administrative Design Review per §25.05.040(B)(3)(a)(v) |
-| **Exterior equipment on a lot in an environmentally sensitive area (ESA)** | Design Review per §25.05.040(B)(1). Zone Clearance is not available in an ESA unless a licensed professional determines, subject to peer review, that the work does not impact the ESA |
+| **Exterior equipment on a lot in an environmentally sensitive area (ESA, includes slopes of 30% or greater)** | Design Review per §25.05.040(B)(1)(e) (Design Review Board for a house or duplex, Planning Commission otherwise, §25.05.040(F)(1)). Zone Clearance is not available in an ESA unless a licensed professional determines, subject to peer review, that the work does not impact the ESA |
 | **Commercial HVAC equipment** | Mechanical permit. The city may require a detailed acoustical study per §7.25.130(B) |
+| **Permanent standby generator** | §7.25.130 names HVAC and pool/spa equipment; Ord. 1732 lists "mechanical equipment, including, but not limited to, air conditioners and pool/spa equipment" at §25.05.040(B)(2)(v) / (B)(3)(a)(v). Whether a generator is routed by the six-part test is **UNSETTLED — confirm with Planning**. It must still meet the §7.25.040 noise limits. Gas and electrical permits apply |
+| **Above-ground utility structure** (e.g. transformer or battery cabinet) | Under 4 ft, with colors/finishes/landscaping to minimize view: Zone Clearance §25.05.040(B)(2)(w); 4 ft or taller: ADR §25.05.040(B)(3)(a)(xiv) |
 
 ---
 
@@ -204,7 +206,9 @@ Residential HVAC change-outs qualify for over-the-counter **building-permit** re
 - **Same type** of equipment (not changing from gas to electric or vice versa)
 - No exterior changes beyond the like-for-like equipment swap
 
-OTC does not exempt exterior equipment from §7.25.130(C). A rooftop unit, a unit in the required front setback, or any other change-out that fails a part of the test still goes to Administrative Design Review per §7.25.130(D) / §25.05.040(B)(3)(a)(v) — same as a new installation. A change-out that relocates the unit is not a change-out; run the test on the new location.
+OTC does not exempt exterior equipment from §7.25.130(C). A rooftop unit, a unit in a required setback (including the required front setback), or any other change-out or new installation that fails a part of the test goes to Administrative Design Review per §7.25.130(D) / §25.05.040(B)(3)(a)(v) — same as a new installation. A change-out that relocates, enlarges, or changes the type of the unit is not in kind; run the test on the new unit.
+
+**Precedence.** The equipment items (B)(2)(v) / (B)(3)(a)(v) govern equipment wherever it sits. A unit on a roof is routed by them (ADR, because it is not "ground-mounted", 7.25.130(C)(1)), not by the 15-ft catch-all (B)(1)(c), even on a building over 15 ft (specific over general; rooftop HVAC at ADR, DR-2026-1491, filed just before Ord. 1732; units on decks and balconies at ADR since, DR-2026-1821, -1836, -1998). A true in-kind replacement of an existing unit (same location, size and type) is (B)(2)(c) in-kind repair: City practice since Ord. 1732 cleared in-kind rooftop AC replacements at the counter without the six-part test (ZPC-2026-1969; commercial ZPCC-2026-1823). Rule source: a CrossBeam reference that is not included in this plugin Step 4d; evidence: a CrossBeam reference that is not included in this plugin section 4.
 
 **OTC-eligible per the city reference OTC item 8** — residential HVAC change-outs in same location, clearances, access and type. Hours and the full OTC list: `../city-reference/SKILL.md` §"Permit Processing Tracks".
 
@@ -233,7 +237,7 @@ Portable mechanical appliances and portable ventilating equipment for a single d
 | LB-HVAC-7 | Path of travel | Equipment does not obstruct a 3-ft path of travel around any structure (§7.25.130(C)(6)) |
 | LB-HVAC-8 | Contractor acknowledgment | Installation contractor's signed noise acknowledgment on file before permit issuance (§7.25.130(A)) |
 | LB-HVAC-9 | Commercial acoustical study | For commercial HVAC mechanical permits, acoustical study submitted or flagged as possibly required (§7.25.130(B)) |
-| LB-HVAC-10 | ESA screen | If the lot is in an environmentally sensitive area, Zone Clearance is unavailable absent a peer-reviewed licensed-professional determination; route to Design Review (§25.05.040(B)(2)) |
+| LB-HVAC-10 | ESA screen | If the lot is in an environmentally sensitive area, Zone Clearance is unavailable absent a peer-reviewed licensed-professional determination; route to Design Review (§25.05.040(B)(2) preamble; (B)(1)(e)) |
 
 ---
 

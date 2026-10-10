@@ -88,7 +88,7 @@ Sources: [CBSC Information Bulletin 25-01](https://www.dgs.ca.gov/-/media/Divisi
 | **Coastal Zone** | **Most of city** — California Coastal Act applies |
 | **Flood Zone** | Portions in FEMA flood zones — NFIP participation |
 | **Sprinklers Required (new construction)** | **Yes — ALL 1&2-family dwellings + attached garages** (Ch. 14.52.030 local amendment of CRC R309.2) |
-| **Sprinkler Retrofit Trigger (existing 1&2-family)** | **Two independent triggers — either one fires.** Ch. 14.52.030 (valuation: cumulative additions/alterations/repairs in any 3-year period > 50% of pre-work valuation) **and** Title 15 §1103.5.4 (scope: 50% of building OR 50% of exterior OR added story). CBC-track Group R and non-residential occupancies must also be checked under §14.50.104/§903.6. |
+| **Sprinkler Retrofit Trigger (existing 1&2-family)** | **Two independent triggers — either one fires.** Ch. 14.52.030 (valuation: cumulative additions/alterations/repairs in any 3-year period > 50% of pre-work valuation) **and** Title 15 §1103.5.4 (scope: alteration of 50% of the building OR an added story; whether 50% exterior work alone fires it is UNSETTLED, see the sprinkler reference). CBC-track Group R and non-residential occupancies must also be checked under §14.50.104/§903.6. |
 | **Mean Annual Temperature** | ~60 degrees F |
 | **Frost Line Depth** | None |
 | **Termite Damage** | Very Heavy |
@@ -103,7 +103,7 @@ and **CBC Appendices G, H, I and J**.
 ### 1. Very High Fire Hazard Severity Zone (VHFHSZ)
 - **Adopted-map baseline (parcel-specific):** CrossBeam's 2026-08-18 parcel-intersection audit found **7,393 of 11,302 addressed parcels** in the Very High tier of the 2025 LRA map. The City states that Council adopted that recommended map on 2025-06-24 ([City FHSZ map and adoption page](https://www.lagunabeachcity.net/government/departments/fire/fire-prevention/new-lra-fhsz-maps-for-public-comments)). Determine each site from that adopted map; never infer VHFHSZ from a citywide percentage or a legacy City viewer.
 - **Mandatory residential sprinklers (new construction)** on ALL 1&2-family dwellings AND attached garages (Ch. 14.52.030, amending CRC R309.2). Garage within 10 feet counts as "attached."
-- **Sprinkler retrofit (existing buildings)** has **two independent triggers on a one- or two-family dwelling, and either one requires the retrofit**: (1) **Ch. 14.52.030** — valuation: cumulative additions, alterations and repairs in any three-year period exceed 50% of the pre-work valuation of the dwelling and attached garage; (2) **Title 15 §1103.5.4** — scope: alteration of 50% or more of the building, work on 50% or more of the exterior, or the addition of one or more stories, with one carve-out for "work that consists only of the installation of fire-resistant siding." See §"Sprinkler Retrofit Triggers" below and `../residential-remodel/references/city-sprinkler-retrofit.md`.
+- **Sprinkler retrofit (existing buildings)** has **two independent triggers on a one- or two-family dwelling, and either one requires the retrofit**: (1) **Ch. 14.52.030** — valuation: cumulative additions, alterations and repairs in any three-year period exceed 50% of the pre-work valuation of the dwelling and attached garage; (2) **Title 15 §1103.5.4** — scope: alteration of 50% or more of the building, or the addition of one or more stories (whether work on 50% or more of the exterior fires it on its own is UNSETTLED; confirm with Building and Fire at pre-application), with one carve-out for "work that consists only of the installation of fire-resistant siding." See §"Sprinkler Retrofit Triggers" below and `../residential-remodel/references/city-sprinkler-retrofit.md`.
 - Sprinkler systems must be per NFPA 13D with flow switch activating exterior alarm + interconnected interior smoke detectors (Ch. 14.52.031)
 - NFPA 13D systems with a separate control valve require central/proprietary/remote-station supervision. The blanket **24-hour UL-certified central-station** mandate in Title 15 §15.01.070 applies to NFPA 13R systems, not every NFPA 13D system.
 - Wildland-Urban Interface Code (Ch. 14.70) has extensive local amendments:
@@ -117,8 +117,8 @@ and **CBC Appendices G, H, I and J**.
 
 ### 2. Coastal Zone
 - Most of the city falls within the California Coastal Zone
-- **Coastal Development Permit (CDP)** required for most development projects
-- Separate application from building permit (see Ch. 25.07)
+- **Coastal Development Permit (CDP)** required for development in the Coastal Zone unless the work is exempt or excluded under Ch. 25.07
+- Separate application from the building permit. Zone Clearance, Administrative Design Review and Design Review never replace it (LBMC 25.05.040(A)(2)(e), 25.05.045(C)(4))
 - May require California Coastal Commission review/appeal
 - Bluff edge determinations required for coastal bluff properties
 
@@ -126,7 +126,7 @@ and **CBC Appendices G, H, I and J**.
 
 Urgency Ordinance No. 1732 replaced the former exterior-work default with three closed lists: 16 Design Review categories, 28 Zone Clearance categories, and 17 Administrative Design Review categories. Do not infer discretionary review merely because work is exterior.
 
-- Design Review hearings route to the DRB or Planning Commission under the code's approval-authority rules. **The Design Review Board meets the 2nd and 4th Thursday of the month at 5:00 p.m. in the City Council Chambers, with a few exceptions.** [source: City of Laguna Beach, "How are building permits processed," as of 2026-06-18 — a CrossBeam reference that is not included in this plugin] This is the single home for the DRB meeting schedule.
+- Design Review hearings route by project type under §25.05.040(F)(1): the **Design Review Board** hears single-family and two-family developments (with their right-of-way work); the **Planning Commission** hears everything else, including three or more units, all Downtown Specific Plan projects, non-residential projects, public works, and projects where the Commission is the primary authority (such as a CUP). **The Design Review Board meets the 2nd and 4th Thursday of the month at 5:00 p.m. in the City Council Chambers, with a few exceptions.** [source: City of Laguna Beach, "How are building permits processed," as of 2026-06-18 — a CrossBeam reference that is not included in this plugin] This is the single home for the DRB meeting schedule.
 - Zone Clearance is issued by the Community Development Department under new §25.05.045.
 - Administrative Design Review is decided by the Director/designee; most categories may use the conditional 15-working-day notice/comment hearing-waiver procedure.
 - Development in an ESA—including slopes of 30% or greater—cannot use Zone Clearance/ADR absent the enacted peer-reviewed professional determination.
@@ -141,9 +141,10 @@ Use `../residential-remodel/references/city-design-review-tiers.md` for the curr
 - Slope stability, soil bearing capacity, foundation recommendations
 
 ### 5. Historic Resources
-- **Heritage Committee** review may be required for properties with historic significance
-- Historic assessment submittal requirements for properties 50+ years old
-- Heritage Register placement process
+- A **historic resource** is defined by LBMC 25.45.004 (as amended by Ord. 1732): City register, California or National Register listing or official eligibility, or CEQA substantial evidence. Age alone does not make a property historic, and the older inventory creates no presumption (25.45.002(H)).
+- Work on a historic resource goes to Administrative Design Review (minor, 25.05.040(B)(3)(a)(iv)) or Design Review (major, (B)(1)(d)), with a **Heritage Committee** recommendation first (25.45.010)
+- The Director may require a historic resource assessment (25.45.010(C)); an inventory rating in site facts flags it
+- Heritage Register placement process (25.45.006). Resident guide: a CrossBeam reference that is not included in this plugin
 
 ---
 
@@ -175,7 +176,7 @@ trigger that applies to it.
 |---|---------|-------|-----------|------|-----------|
 | 1 | **LBMC Ch. 14.52.030** (amends CRC R309.2) | **Valuation** | One- and two-family dwellings + garage attached (within 10 ft) | Cumulative value of additions, alterations and repairs in **any three-year period** exceeds **50% of the valuation before the work** | Ord. 1725, 12/18/2025 |
 | 1a | **LBMC Ch. 14.52.026** (amends CRC R309.1) | **Valuation** | Townhouses + attached garage; each townhouse is a separate building | Same 50% / three-year test | Ord. 1725, 12/18/2025 |
-| 2 | **LBMC Title 15 §1103.5.4** (adds CFC Ch. 11 §1103.5.4) | **Scope** | ALL existing Group R fire areas | Alteration of 50% or more of the building, OR work on 50% or more of the exterior, OR addition of one or more stories | Ord. 1726, 12/18/2025 |
+| 2 | **LBMC Title 15 §1103.5.4** (adds CFC Ch. 11 §1103.5.4) | **Scope** | ALL existing Group R fire areas | Alteration of 50% or more of the building, OR addition of one or more stories. Exterior work of 50% or more as a standalone prong is UNSETTLED (two readings) | Ord. 1726, 12/18/2025 |
 | 3 | **LBMC §14.50.104** (amends CBC §903.6) | **CBC retrofit tests** | CBC-track Group R; other-than-R/U occupancies; additions to already-sprinklered buildings; large additions | Group R: ≥50% valuation, plus a separate substantial-renovation test. Other-than-R/U: post-work building must require sprinklers **and** valuation must reach ≥50%. The section also has addition-specific triggers. Cumulative valuation uses any three-year period. | Ord. 1725, 12/18/2025 |
 
 **Triggers 1 and 2 are different tests that share the number 50.** Trigger 1 compares dollars.
@@ -223,12 +224,17 @@ Verbatim from the City source document (not included in this plugin) §15.01.040
 >
 > **Exception:** Work that consists only of the installation of fire-resistant siding.
 
-Any one of the three prongs independently fires the retrofit:
+Two prongs fire the retrofit on any reading:
 
 1. Alteration of 50% or more of the building — the major-remodel methodology in
    `../residential-remodel/references/city-major-remodel-methodology.md` is the operational test; OR
-2. Work on 50% or more of the building's exterior; OR
-3. Addition of one or more stories.
+2. Addition of one or more stories (whether a new basement or lower level counts is UNSETTLED; see the reference).
+
+Whether work on 50% or more of the building's exterior fires the retrofit **by itself** is
+**UNSETTLED**. The "which includes or involves" clause can be read as part of the 50%-alteration
+prong or as its own prong. The City has not ruled. When exterior work alone decides the answer,
+give both readings and say "confirm with Building and Fire at pre-application". The two readings
+are in `../residential-remodel/references/city-sprinkler-retrofit.md` (Trigger B).
 
 The exception is narrow. It covers work that consists **only** of installing fire-resistant
 siding. Add any other scope and the exception is gone.
@@ -333,13 +339,13 @@ When a contractor asks "what permits do I need?", use this matrix:
 | Trigger | Required Permit/Review | Chapter |
 |---------|----------------------|---------|
 | Any construction/alteration | Building Permit | Ch. 14.50 |
-| Exterior changes visible from public | **Design Review** (DRB hearing) | Title 25 |
-| Property in Coastal Zone | **Coastal Development Permit** | Ch. 25.07 |
+| Work on a §25.05.040(B) closed list | **Zone Clearance**, **Administrative Design Review**, or **Design Review** (DRB for single-/two-family, Planning Commission otherwise — §25.05.040(F)(1)). Exterior work alone is not a trigger. | §25.05.040, §25.05.045 (Ord. 1732) |
+| Property in Coastal Zone | **Coastal Development Permit**, unless the work is exempt (§25.07.008, e.g. most single-family improvements) or categorically excluded (§25.07.010) | Ch. 25.07 |
 | Property in VHFHSZ (most of city) | WUI compliance review | Ch. 14.70 |
 | 1&2-family dwelling (new construction) | **Sprinkler system** required | Ch. 14.52.030 (CRC R309.2 amendment) |
-| Existing 1&2-family dwelling — 3-year cumulative valuation >50% of pre-work valuation, OR alteration ≥50% OR exterior work ≥50% OR added story | **Full sprinkler retrofit** required (either trigger fires it) | Ch. 14.52.030 **and** Title 15 §1103.5.4 |
-| Hillside property | **Geotechnical report** | City standards |
-| Property 50+ years old | **Heritage Committee** review (potential) | Heritage program |
+| Existing 1&2-family dwelling — 3-year cumulative valuation >50% of pre-work valuation, OR alteration ≥50% OR added story (exterior work ≥50% alone: UNSETTLED) | **Full sprinkler retrofit** required (either trigger fires it) | Ch. 14.52.030 **and** Title 15 §1103.5.4 |
+| Hillside property, steep lot, CGS landslide/liquefaction zone | **Geotechnical report**, with City peer review where the Building Division's list requires it; slopes of 30%+ are also an ESA for Planning (§25.08.010, Ord. 1732) | Building Division geotechnical handout (2026-06-17); a CrossBeam reference that is not included in this plugin |
+| Historic resource (register, state/national listing, or CEQA evidence; inventory rating flags a possible assessment) | **Heritage Committee** recommendation before ADR or Design Review | Ch. 25.45 (Ord. 1732) |
 | Near PCH or Laguna Canyon Rd | **Caltrans** encroachment permit | State |
 | In FEMA flood zone | **Floodplain Development Permit** | Ch. 25.38 |
 | Demolition | **Demolition Notification** | City form |
@@ -356,10 +362,13 @@ Laguna Beach has unique zoning with character-preservation focus. Key zones:
 - **R-2** — Two-family residential
 - **R-3** — Multi-family residential
 
-### Commercial Zones
-- **C-1** — Local business
-- **C-N** — Neighborhood commercial
-- **LB/CB** — Laguna Beach / Central business
+### Commercial Zones (LBMC 25.02.006)
+- **LBP** — Local Business-Professional (Ch. 25.18)
+- **C-N** — Commercial-Neighborhood (Ch. 25.19)
+- **C-1** — Local Business (Ch. 25.20)
+- **CH-M** — Commercial Hotel-Motel (Ch. 25.21)
+- **SLV** — South Laguna Village Commercial (Ch. 25.25)
+- **Downtown Specific Plan** (Ch. 25.40) — downtown is zoned by DSP districts, e.g. CBD-1 Resident Serving, CBD-2 Downtown Commercial, CBD-Office, CBD-Central Bluffs, CBD-Arts District, CBD Visitor Commercial (named in LBMC 25.16.050 and 25.23.030(A))
 
 ### Special Overlay Districts
 - **Three Arch Bay** — Private community with additional development application process
@@ -371,7 +380,7 @@ Laguna Beach has unique zoning with character-preservation focus. Key zones:
 ## ADU/JADU (Ch. 25.17)
 
 - ADU/JADU permitted in residential zones per state law + local regulations
-- Subject to Design Review Board in most cases
+- ADUs take **Zone Clearance**, not Design Review, "only as set forth in Chapter 25.17" (§25.05.040(B)(2)(h), Ord. 1732); state ADU law keeps qualifying ADUs ministerial — `load_skills("adu")`
 - Coastal Development Permit may also be required
 - ADU process flowchart and FAQ available as city handouts
 - More complex than flat-terrain cities due to hillside, coastal, fire, and design review overlays

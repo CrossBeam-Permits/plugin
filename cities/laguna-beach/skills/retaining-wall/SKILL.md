@@ -137,7 +137,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 | Topic | State Default | Laguna Beach Override |
 |---|---|---|
 | Permit exemption | CRC/CBC exempt certain retaining walls <=4 ft | LBMC Section 14.50.022 exempts retaining walls not over **48 in measured from bottom of footing to top of wall**, unless supporting surcharge, impounding flammable liquids, or within 3 ft of property line/public ROW |
-| Design review | State silent | Retaining walls <=5 ft exposed height are design-review exempt; retaining walls over 5 ft exposed height are examples of development subject to DRB/Planning Commission review |
+| Planning route (Ord. 1732) | State silent | Exposed height 5 ft or less: Zone Clearance, LBMC 25.05.040(B)(2)(j). Over 5 ft exposed height: Design Review, 25.05.040(B)(1)(g). Any wall in an environmentally sensitive area (including slopes of 30% or more): Design Review under 25.05.040(B)(1)(e) unless a peer-reviewed licensed professional finds no impact |
 | Geotech report | CBC project-specific | Laguna geotech handout requires soils report for retaining walls greater than 5 ft high measured from bottom of footing, retaining walls supporting surcharge, steep slopes, bluff/oceanfront areas, soil/structure failure, or Building Official direction |
 | Coastal/bluff walls | State coastal framework | Repair/maintenance of seawalls, bluff retaining walls, shoreline protective work, and work near bluff/ESHA often loses CDP exemption under LBMC Section 25.07.008 |
 | Property line/ROW | Local permit trigger | Any retaining wall within 3 ft of property line or public right-of-way requires permit even if height would otherwise be exempt |
@@ -150,10 +150,10 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 |---|---|
 | <=48 in from footing bottom to wall top; no surcharge; not within 3 ft of property/ROW | Building permit may be exempt; still check zoning/CDP/drainage |
 | >48 in or any surcharge | Building permit + structural review |
-| >5 ft exposed height | Design Review Board/Planning Commission path likely required |
+| >5 ft exposed height | Design Review, 25.05.040(B)(1)(g): Design Review Board for a single-family or two-family lot, Planning Commission otherwise (25.05.040(F)(1)) |
 | >5 ft measured from bottom footing, or surcharge | Geotechnical report required by city handout |
 | Bluff/oceanfront retaining wall or shoreline protective work | CDP analysis required; exemption often unavailable |
-| Significant cut/fill or hillside stabilization | Check grading, geotech, WQMP, erosion control, and possible DRB path |
+| Grading over 20 cu yd outside the building footprint | Design Review, 25.05.040(B)(1)(f) (20 cu yd or less: Zone Clearance, (B)(2)(i)); also check geotech, WQMP, erosion control |
 
 ---
 
@@ -170,13 +170,16 @@ LBMC Section 14.50.022 exempts retaining walls not over 48 in high measured from
 
 If any exception applies, require permit review.
 
-#### 2. Design Review
+#### 2. Planning Route (Ord. 1732, LBMC 25.05.040(B))
 
-Under LBMC Section 25.05.040:
+Source: the City source document (not included in this plugin).
 
-- Retaining walls **5 ft or less in exposed height** are design-review exempt, subject to zoning plan-check compliance.
-- Retaining walls **in excess of 5 ft exposed height** are examples of physical improvements subject to a Design Review Board or Planning Commission hearing.
-- All physical improvements in environmentally sensitive areas and on lots with slope greater than 30% are DRB/Planning Commission candidates unless a specific exception applies.
+- **Exposed height 5 ft or less:** Zone Clearance, 25.05.040(B)(2)(j). The Community Development Department checks zoning compliance (25.05.045).
+- **Exposed height over 5 ft:** Design Review at a public hearing, 25.05.040(B)(1)(g). The Design Review Board hears it on a single-family or two-family lot; the Planning Commission hears it on any other lot and anywhere in the Downtown Specific Plan area (25.05.040(F)(1)(i)-(ii)).
+- **Environmentally sensitive area** (ESA, which includes slopes of 30% or greater, 25.08 as amended by Ord. 1732): any wall goes to Design Review under 25.05.040(B)(1)(e) unless a licensed professional finds, subject to peer review, that it does not impact the ESA. The (B)(2) preamble bars Zone Clearance for ESA work without that finding.
+- **Grading** over 20 cu yd outside the building footprint is its own Design Review item, 25.05.040(B)(1)(f).
+- The Director may refer a Zone Clearance project up to the Design Review Board or Planning Commission (25.05.040(A)(2)(d)).
+- A Coastal Development Permit is a separate question under Ch. 25.07 (25.05.040(A)(2)(e)); see section 4.
 
 #### 3. Geotechnical Report
 
@@ -204,7 +207,7 @@ For oceanfront parcels, also apply Section 25.50.004(B)(4) bluff setback and blu
 | ID | Check | Pass Criteria |
 |---|---|---|
 | LB-RET-1 | Permit exemption tested | Height <=48 in from footing bottom to top of wall and no surcharge/liquid/property-line/ROW exception |
-| LB-RET-2 | Design-review category | Exposed height <=5 ft exempt or >5 ft routed to DRB/Planning Commission |
+| LB-RET-2 | Planning route | Exposed height <=5 ft: Zone Clearance (25.05.040(B)(2)(j)); >5 ft: Design Review (B)(1)(g), DRB on SFR/duplex lots, Planning Commission otherwise; ESA override (B)(1)(e) applied |
 | LB-RET-3 | Geotech report | Required triggers checked and report provided where required |
 | LB-RET-4 | Coastal/CDP analysis | Section 25.07.008 repair and SFR improvement exceptions checked; bluff/shoreline work not cleared as exempt without support |
 | LB-RET-5 | Bluff-edge constraints | Oceanfront bluff setback, original/buried bluff edge, and safety-factor analysis requested where applicable |
@@ -230,7 +233,7 @@ Every item here is verified at plan-check time, after the Laguna Beach rules abo
 | 8 | **Wall stem design adequate?** | ❌ **fail** | Stem thickness, vertical and horizontal reinforcement, concrete or masonry strength, dowel connections to footing. CMU walls: cells grouted, bond beams provided. | CBC 1807.2; ACI 318 / TMS 402 |
 | 9 | **Drainage system shown?** | ❌ **fail** | Drainage behind wall is critical. Verify: drain rock (12" min width), perforated drain pipe at base (4" min, sloped to daylight), filter fabric between drain rock and native soil. Weep holes as supplemental (4" dia, 6-8 ft OC). Surface drainage graded away from wall top. | Engineering practice; CBC 1805 |
 | 10 | **Waterproofing addressed?** | ⚠️ **flag** | Below-grade portions: dampproofing or waterproofing per CBC 1805 where wall retains habitable space or where required by design. Waterproofing membrane on soil side of wall below grade. | CBC 1805 |
-| 11 | **Guards/railings required?** | ❌ **fail** | Guards required where retaining wall is within 36" of a walking surface AND the drop exceeds 30" from the walking surface to grade below. Guard height: 42" min above walking surface. Openings: 4" sphere test. Loads: 200 lb concentrated at top. | CBC 1807.2.5; CRC R312.1 |
+| 11 | **Guards/railings required?** | ❌ **fail** | Guards required where retaining wall is within 36" of a walking surface AND the drop exceeds 30" from the walking surface to grade below. Guard height: 42" min above walking surface. Openings: 4" sphere test. Loads: 200 lb concentrated at top. | CBC 1807.2.5; CRC R321.1.1-R321.1.3 (2025 CRC; formerly R312.1); loads Table R301.5 |
 | 12 | **Material specifications shown?** | ❌ **fail** | Structural concrete strength/durability follows CBC 1904.1/ACI 318 and the exposure/design; the 3,000-psi minimum is limited to CBC 1904.1's stated Group R-2/R-3 weather-exposed vertical surfaces. Verify CMU/mortar/grout/rebar/SRW specifications under the applicable design. Timber uses an R304.1 naturally durable or treated path; R304.1.2 ground-contact treatment applies only in its stated scope. | CBC 1904.1, 2103; CRC R304.1, R304.1.2; applicable ASTM/ACI/TMS design |
 | 13 | **Tiered walls analyzed correctly?** | ❌ **fail** | If multiple walls, check spacing. Influence zone = 2x height of lower wall measured from base of lower wall. Walls within influence zone must be analyzed as a single composite wall. Walls outside influence zone may be designed independently. | CBC 1807.2 |
 | 14 | **Grading plan consistent?** | ⚠️ **flag** | If retaining wall is part of a grading project, verify consistency with grading plan. Grading permits per CBC Appendix J when cut/fill exceeds thresholds (typically 50 cu yd or 5 ft depth of cut). | CBC Appendix J |

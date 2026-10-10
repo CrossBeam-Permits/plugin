@@ -52,7 +52,7 @@ The following escalate a kitchen/bath remodel from OTC to full plan review:
 | Structural modifications (wall removal, enlarged openings) | Requires structural engineering and calculations |
 | Sprinkler retrofit triggered (50% valuation threshold) | Requires sprinkler design plans |
 | Major remodel triggered (50% demolition threshold) | Treated as new construction |
-| Exterior changes visible from public areas | May trigger Administrative Design Review |
+| Exterior changes (new or changed windows, doors, vents, openings) | Planning Zone Clearance first; ADR or Design Review only if an Ord. 1732 list item applies (see SKILL.md STEP 5, check 4) |
 
 ---
 
@@ -97,7 +97,7 @@ For windows in VHFHSZ areas (Ch. 14.70):
 |-------------|---------|
 | **Green Halo Program** | Sign-up required for C&D recycling and waste diversion compliance |
 | **City Business License** | Required for all contractors performing work in Laguna Beach |
-| **WQMP** | $1,700 deposit + $233 review fee (for projects that trigger WQMP -- typically additions, not interior-only remodels) |
+| **WQMP** | Deposit and review fee apply when WQMP is triggered (typically additions, not interior-only remodels). Amounts: use the fee tool (`estimate_fees`), not a figure from memory |
 | **Construction Staging Plan** | Required for constrained sites (limited access, narrow streets, adjacent to public areas) |
 | **School Fee Receipt** | LBUSD receipt required if applicable |
 

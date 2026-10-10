@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI); LBMC Ch. 14.70 (WUI Code), Ch. 14.50 (Building Code amendments), Ch. 25.05 (Design Review), Title 15 (Fire Prevention)"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-07-22"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -126,7 +126,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 > Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
 
-This skill covers Laguna Beach's city-specific siding and exterior wall covering replacement requirements. **VHFHSZ fire-resistive exterior wall requirements and Design Review Board triggers make Laguna Beach siding replacement significantly more complex than typical CA cities.**
+This skill covers Laguna Beach's city-specific siding and exterior wall covering replacement requirements. **VHFHSZ fire-resistive exterior wall requirements and Design Review triggers make Laguna Beach siding replacement significantly more complex than typical CA cities.**
 
 **How this skill relates to state code**: The `california-siding-replacement` skill covers CRC/CBC state requirements. This skill covers what Laguna Beach adds -- primarily the VHFHSZ fire-resistive exterior wall covering requirements, Design Review triggers, and coastal zone implications. **Load state code first**, then this skill.
 
@@ -186,7 +186,10 @@ Urgency Ordinance No. 1732 repealed the former broad exterior-work default, part
 - In-kind replacement takes Zone Clearance under current §25.05.040(B)(2)(c).
 - Other non-major siding alteration/addition and improvements no more than 15 ft ordinarily take Zone Clearance under (B)(2)(a)-(b), unless another closed-list trigger applies.
 - A major remodel requires Design Review under (B)(1)(a); an improvement over 15 ft under (B)(1)(c); ESA work under (B)(1)(e) absent the enacted peer-reviewed professional determination.
-- The Director retains the enacted referral authority.
+- **Historic resource:** replacing building siding is a minor alteration that takes Administrative Design Review under (B)(3)(a)(iv), after review against the Secretary of the Interior's Standards; no hearing waiver for this item.
+- **Planning first:** Zone Clearance is needed before Building issues the permit, even OTC (§25.05.045(B)(3)).
+- The Director may refer a Zone Clearance or ADR project to the Design Review Board or Planning Commission (§25.05.040(A)(2)(d)).
+- Design Review is heard by the Design Review Board for a house or duplex and by the Planning Commission otherwise (§25.05.040(F)(1)).
 
 WUI fire-resistant material compliance remains mandatory, but it is no longer its own categorical Design Review exemption. Do not cite former `(B)(2)(d)` or `(B)(2)(w)`.
 
@@ -201,7 +204,7 @@ WUI fire-resistant material compliance remains mandatory, but it is no longer it
 - Coastal Development Permit (if in Coastal Zone)
 - WUI material compliance (Ch. 14.70)
 
-A siding replacement can be OTC for the building permit while still requiring a separate DRB hearing or CDP.
+A siding replacement can be OTC for the building permit while still requiring Zone Clearance, ADR, a Design Review hearing, or a CDP.
 
 ---
 
@@ -210,8 +213,9 @@ A siding replacement can be OTC for the building permit while still requiring a 
 Most of Laguna Beach falls within the California Coastal Zone:
 - **Coastal Development Permit (CDP)** may be required per Chapter 25.07
 - Siding replacement that constitutes "development" under the Coastal Act requires a CDP unless exempt under Section 25.07.008
-- Like-for-like replacement or minor repair is generally exempt from CDP
-- Material changes that alter the exterior appearance may trigger CDP review
+- On a single-family home, re-siding is normally an exempt improvement under 25.07.008(A)(1), and like-for-like repair under 25.07.008(A)(3)
+- A material or appearance change is not itself an exception. The exemption is lost where 25.07.008(A)(1) exceptions apply: in a highly scenic area, an ESA, within 50 ft of a bluff edge, on a beach (A)(1)(b); a prior CDP condition requiring future CDPs (A)(1)(f)
+- Non-single-family buildings: 25.07.008(A)(2)
 - May be subject to California Coastal Commission appeal
 
 ---
@@ -220,7 +224,7 @@ Most of Laguna Beach falls within the California Coastal Zone:
 
 **Two triggers, either one fires.** Full rule: `../residential-remodel/references/city-sprinkler-retrofit.md` — the single residential retrofit reference. Do not restate it here.
 
-- **Title 15 §1103.5.4** (scope, Ord. 1726) — alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR an added story.
+- **Title 15 §1103.5.4** (scope, Ord. 1726) — alteration of ≥50% of the building, OR an added story. Whether work on ≥50% of the exterior fires it by itself is UNSETTLED (two readings in the reference; confirm with Building and Fire at pre-application).
 - **Ch. 14.52.030** (valuation, Ord. 1725) — cumulative additions, alterations and repairs in any three-year period exceeding 50% of the pre-work valuation of the dwelling + attached garage.
 
 #### Siding-specific note — the fire-resistant-siding exception is narrow
@@ -238,9 +242,9 @@ Installing fire-resistant siding (fiber cement, stucco, metal) as a standalone p
 
 ### Major Remodel Interaction
 
-If the siding replacement is part of a larger project that constitutes a **major remodel** (50% or more of original gross floor area in additions/alterations):
+If the siding replacement is part of a larger project that constitutes a **major remodel** (test: October 2026 Major Remodel Quick Guide, `../residential-remodel/references/city-major-remodel-methodology.md`; do not restate it here):
 - Full plan review required (not OTC)
-- Full DRB hearing required
+- Design Review hearing under §25.05.040(B)(1)(a) (Design Review Board for a house or duplex)
 - Fuel modification plan may be required (Ch. 14.70, Section 613)
 - Fire Safety Standards Review required for a major remodel (Section 25.05.040(C)(4); Fire Department or Building Division, as applicable)
 - New construction standards apply throughout
@@ -258,7 +262,7 @@ Walk these items AFTER completing the state-level checklist. For every check, re
 | LB-3 | **Minor Repair Exception** | If small area repair with same-as-existing material: building official approval may allow non-compliant material. Full re-clad does NOT qualify. | §14.70.015 (101.2 Exception) | `references/city-wui-exterior-walls.md` |
 | LB-4 | **CBC 705.1 Dual Compliance** | Exterior wall coverings must satisfy BOTH CBC Section 705 AND WUI Chapter 5 -- most restrictive governs. | §14.50.112 (705.1) | `references/city-wui-exterior-walls.md` |
 | LB-5 | **Planning route** | In-kind → Zone Clearance `(B)(2)(c)`; other non-major work ≤15 ft ordinarily → Zone Clearance `(B)(2)(a)-(b)`; apply major-remodel, height, ESA, and Director-referral checks. | §25.05.040(B)(1)(a), (c), (e); (B)(2)(a)-(c) | `references/city-wui-exterior-walls.md` |
-| LB-6 | **Coastal Development Permit** | If property is in Coastal Zone: determine if siding work constitutes "development" requiring CDP. Like-for-like replacement generally exempt; material changes may trigger. | Ch. 25.07 | N/A |
+| LB-6 | **Coastal Development Permit** | If property is in Coastal Zone: check the 25.07.008(A)(1) SFR exemption and its exceptions (scenic area, ESA, 50 ft from bluff edge, prior CDP condition). A material change alone does not defeat the exemption. | Ch. 25.07 | N/A |
 | LB-7 | **Sprinkler Retrofit -- Fire-Resistant Siding Exception** | Installation of fire-resistant siding alone does NOT trigger sprinkler retrofit per §1103.5.4 exception. But verify cumulative 3-year valuation under §903.6. | Title 15 §1103.5.4; CBC §903.6 | `references/city-fire-amendments.md` |
 | LB-8 | **Major Remodel Check** | If the overall project is a major remodel: Design Review applies and §25.56.011 classifies it as a new building. | §25.05.040(B)(1)(a); §25.56.011 | N/A |
 
@@ -282,7 +286,7 @@ For each city-overlay check, produce:
 - **WUI code**: Ch. 14.70 Section 14.70.030 -- noncombustible or ignition-resistant required
 - **Minor repair exception**: Same-material minor repairs OK with building official approval
 - **Planning route**: classify under the current closed lists; WUI upgrading is not itself a categorical exemption
-- **Coastal Zone**: Most of city -- CDP may be required for material changes
+- **Coastal Zone**: SFR re-siding normally CDP-exempt (25.07.008(A)(1)) unless an exception applies (scenic area, ESA, near bluff, prior CDP condition)
 - **Sprinkler exception**: Fire-resistant siding installation alone does NOT fire the Title 15 §1103.5.4 scope trigger. It is NOT exempt from the Ch. 14.52.030 valuation trigger — re-side valuation counts toward the 50% / 3-year cumulative total. See `../residential-remodel/references/city-sprinkler-retrofit.md`
 - **CBC 705.1**: Most restrictive of CBC 705 or WUI Chapter 5 governs
 

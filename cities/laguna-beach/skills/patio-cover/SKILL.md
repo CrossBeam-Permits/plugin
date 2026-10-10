@@ -139,8 +139,8 @@ For related existing deck/patio repair rules, also see `../deck-patio-repair/SKI
 | Topic | State Default | Laguna Beach Override |
 |---|---|---|
 | OTC eligibility | Varies | Only **deck, balcony, patio cover repairs** with no extension/replacement are listed as OTC-eligible in the city reference |
-| New patio cover | State plan review only | New patio covers are exterior physical improvements and require zoning/planning review; may require Administrative Design Review, DRB, CDP, and WUI review depending on site |
-| Design review | State silent | Slabs/patios at or below natural grade are design-review exempt; elevated deck/patio structures over 3 ft can trigger Administrative Design Review or DRB depending on scope/site |
+| New patio cover | State plan review only | Planning acts before Building accepts the set (LBMC 25.05.045(B)(3)). Usually Zone Clearance; Design Review if over 15 ft, part of a major remodel, or in an environmentally sensitive area. CDP and WUI checked separately |
+| Planning route (Ord. 1732) | State silent | Attached cover 15 ft or less, not a major remodel: Zone Clearance, LBMC 25.05.040(B)(2)(a)-(b). Over 15 ft (25.08 height definition): Design Review (B)(1)(c). Cover on a deck over 3 ft above grade: the deck is Administrative Design Review (B)(3)(a)(iii). ESA: Design Review (B)(1)(e). See section 2 |
 | Coastal zone | State CDP framework | Most of Laguna is coastal; SFR improvement exemption must be checked against LBMC Section 25.07.008 exceptions |
 | Oceanfront/bluff | State defers to local | Patio/deck cover projections on oceanfront lots must respect Section 25.50.004(B)(4) stringline/bluff setback rules |
 | WUI | State WUI applies in mapped areas | Laguna applies Ch. 14.70 WUI to exterior materials for new buildings, additions, alterations, and repairs in city WUI areas |
@@ -152,9 +152,9 @@ For related existing deck/patio repair rules, also see `../deck-patio-repair/SKI
 
 | Scope | Laguna Route |
 |---|---|
-| Repair only; no extension/replacement | OTC candidate if no structural expansion, no CDP/design-review trigger, and not part of major remodel |
-| New attached patio cover | Building permit + zoning review; structural ledger review per state skill; check DR/CDP/WUI/geotech |
-| New freestanding patio cover | Building permit + zoning review; check detached-structure CDP exceptions in coastal appealable area |
+| Repair only; no extension/replacement | OTC candidate; in-kind repair is Zone Clearance (B)(2)(c); not part of a major remodel |
+| New attached patio cover | Building permit + Zone Clearance (B)(2)(a)-(b) if 15 ft or less; structural ledger review per state skill; check ESA/CDP/WUI/geotech |
+| New freestanding patio cover | Building permit + Planning (route UNSETTLED, see section 2); check detached-structure CDP exception 25.07.008(A)(1)(c)(3) |
 | Oceanfront or bluff-adjacent cover | Require bluff setback/stringline review and likely CDP/geotech review |
 | Patio cover with electrical lighting/fans/heaters | Add electrical permit/review under state CEC plus Laguna permit routing |
 | Part of addition or major remodel | Route to `residential-addition` or `residential-remodel` city skill |
@@ -169,15 +169,19 @@ Laguna's the city reference lists **deck, balcony, patio cover repairs (no exten
 
 OTC candidates still need the city-specific overlay checks below. OTC means faster plan review, not exemption from zoning, CDP, WUI, or geotechnical constraints.
 
-#### 2. Design Review
+#### 2. Planning Route (Ord. 1732, LBMC 25.05.040(B))
 
-Use LBMC Section 25.05.040 and the city's zoning plan-check table:
+Source: the City source document (not included in this plugin). Check (B)(1) first; the highest list that matches governs.
 
-- Slabs and patios at or below natural grade are exempt from design review.
-- Elevated decks 3 ft or less above adjacent existing grade are exempt.
-- Elevated decks more than 3 ft above adjacent existing grade are Administrative Design Review candidates.
-- All structures and physical improvements on lots with slope greater than 30% or in environmentally sensitive areas are Design Review Board/Planning Commission candidates unless a specific exception applies.
-- If the patio cover is part of an addition, upper-story work, >15 ft height condition, or >=50% aggregate addition/major remodel, route to the complex residential skill.
+- **Attached patio cover, 15 ft or less, not part of a major remodel:** Zone Clearance, (B)(2)(a) (alteration or addition that is not a major remodel) and (B)(2)(b) (improvement not over 15 ft). Staff review, no hearing.
+- **Any part over 15 ft**, measured under the 25.08 "Height, building" definition (from the finished floor or grade below, whichever is lower): Design Review, (B)(1)(c). This catches covers on upper-floor decks or over a downslope.
+- **Cover on a deck, slab, terrace or patio elevated more than 3 ft:** the deck is Administrative Design Review, (B)(3)(a)(iii); the public hearing cannot be waived for this item.
+- **Part of a major remodel:** Design Review, (B)(1)(a). Route to `residential-remodel`.
+- **Environmentally sensitive area** (includes slopes of 30% or greater): Design Review, (B)(1)(e), unless a licensed professional finds, subject to peer review, no impact. The (B)(2) and (B)(3) preambles bar the lower routes in an ESA.
+- **In-kind repair:** Zone Clearance, (B)(2)(c).
+- **Freestanding roofed cover, pergola or gazebo:** 25.08 defines "Building" as "any structure built for the support, shelter or enclosure of persons, animals, chattels or property of any kind", and (B)(1)(b) sends "all new buildings" to Design Review. Whether an open freestanding cover is a "new building" or an improvement under (B)(2)(b) has not been ruled on in our sources. **UNSETTLED: confirm with Planning at pre-application.**
+- **Who hears Design Review:** the Design Review Board for a single-family or two-family lot; the Planning Commission otherwise, including anywhere in the Downtown Specific Plan area (25.05.040(F)(1)(i)-(ii)).
+- The Director may refer a Zone Clearance or ADR project up to the board (25.05.040(A)(2)(d)).
 
 #### 3. Coastal/CDP Review
 
@@ -217,7 +221,7 @@ Laguna Ch. 14.70 applies to exterior materials, systems, and assemblies for new 
 | ID | Check | Pass Criteria |
 |---|---|---|
 | LB-PAT-1 | OTC classification | Scope is repair only, no extension/replacement, and no larger project trigger |
-| LB-PAT-2 | Zoning/design-review path | Section 25.05.040 category identified: exempt, Administrative Design Review, or DRB/Planning Commission |
+| LB-PAT-2 | Planning route | Ord. 1732 item named: Zone Clearance (B)(2)(a)-(c), ADR (B)(3)(a)(iii) for a deck over 3 ft, or Design Review (B)(1)(a)/(c)/(e) (DRB for SFR/duplex, Planning Commission otherwise) |
 | LB-PAT-3 | Coastal/CDP status | Coastal zone status and Section 25.07.008 exemption/exceptions documented |
 | LB-PAT-4 | Bluff/topographic constraints | Oceanfront/bluff setbacks and projection limits checked; bluff edge determination requested if needed |
 | LB-PAT-5 | WUI materials | Ch. 14.70 exterior material and Class A roof/skylight requirements applied |

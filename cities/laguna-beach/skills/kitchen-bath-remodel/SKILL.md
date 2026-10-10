@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 3 CEC, Part 4 CMC, Part 5 CPC, Part 6 Energy, Part 11 CALGreen); Residential Kitchen Remodel Handout, Residential Bathroom Renovation Handout, Residential Room Alteration/Remodel Checklist, Ch. 14.50 (CBC amendments), Ch. 14.52 (CRC amendments), Ch. 14.86 (CalGreen amendments)"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2025"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -163,8 +163,9 @@ the rule here.
 
 - **Trigger A — Ch. 14.52.030 (valuation).** Cumulative value of additions, alterations and
   repairs in any three-year period exceeds 50% of the pre-work valuation.
-- **Trigger B — Title 15 §1103.5.4 (scope).** Alteration of ≥50% of the building, OR work on
-  ≥50% of the exterior, OR an added story.
+- **Trigger B — Title 15 §1103.5.4 (scope).** Alteration of ≥50% of the building, OR an added
+  story. ≥50% of the exterior by itself is UNSETTLED (two readings; confirm with Building and Fire
+  at pre-application).
 
 **Kitchen/bath-specific note.** Trigger A is the one that usually fires on this permit type. A
 high-end kitchen or a kitchen-plus-bath pair carries a large valuation while altering a small
@@ -179,8 +180,9 @@ If the kitchen/bath remodel involves **wall removal or reinforcement**, check wh
 
 | Location | What Counts | Method |
 |----------|-------------|--------|
-| **Coastal zone appealable area** | Foundation LF + Wall LF (each floor) + Roof SF | Removal AND reinforcement |
-| **Coastal zone non-appealable area** | Exterior wall LF only (each floor) | Removal only (not reinforcement) |
+| **Coastal zone appealable area** | 50% or more of the exterior walls alone, or of the roof, exterior walls, load-bearing interior walls and foundation combined (walls counted on each floor); or additions over 50% since January 13, 1993 | Removal AND reinforcement |
+| **Coastal zone non-appealable area** | 50% or more of exterior walls (each floor); or additions over 50% since January 13, 1993 | Removal only (not reinforcement) |
+| **Outside the coastal zone** | The handout gives no method; LBMC 25.10.008(O) is the only code text. **UNSETTLED; confirm with Planning at pre-application** | — |
 
 The City's Major Remodel Interpretation Quick Guide (Updated October 2026) counts walls on each floor and tests each building or structure on the site independently [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09]. Compute each floor's wall percentage and the whole-structure total. The handout does not state how floors combine. If every floor is under 50%, the wall test is not met. If a floor is at 50% or more and the whole-structure total is also at 50% or more, the test is met. If a floor is at 50% or more but the whole-structure total is under 50%, return FLAG (not FAIL, not PASS), show both numbers, and state that the City must confirm how floors combine. Full rule: `../residential-remodel/references/city-major-remodel-methodology.md`.
 
@@ -188,7 +190,7 @@ The City's Major Remodel Interpretation Quick Guide (Updated October 2026) count
 - Removing/reinforcing exterior walls to accommodate kitchen/bath enlargement counts
 - In the coastal zone appealable area, removing or reinforcing a **load-bearing interior wall** counts: the October 2026 handout's combined prong is "the roof, exterior walls, load-bearing interior walls, and foundation combined"
 - Cumulative work since January 13, 1993 baseline is tracked
-- If major remodel is triggered, project is treated as new construction (full plan review, DRB hearing, CalGreen triggers)
+- If major remodel is triggered, project is treated as new construction (full plan review, Design Review under §25.05.040(B)(1)(a) at the Design Review Board for a house or duplex, current zoning standards under §25.56.011, CalGreen triggers)
 
 #### STEP 4: Check Sewer Video Requirement
 
@@ -205,13 +207,13 @@ Walk each item. For every check, record PASS / FAIL / FLAG / N/A.
 
 | # | Check | What to Verify | Source |
 |---|-------|---------------|--------|
-| 1 | **Sprinkler retrofit trigger** | Run BOTH triggers. (A) 3-year cumulative valuation vs. 50% of pre-work valuation. (B) scope: ≥50% of building altered / ≥50% of exterior / added story. Either one firing requires the retrofit. | Ch. 14.52.030 **and** Title 15 §1103.5.4 |
+| 1 | **Sprinkler retrofit trigger** | Run BOTH triggers. (A) 3-year cumulative valuation vs. 50% of pre-work valuation. (B) scope: ≥50% of building altered / added story (≥50% of exterior alone: UNSETTLED). Either one firing requires the retrofit. | Ch. 14.52.030 **and** Title 15 §1103.5.4 |
 | 2 | **Sewer video** | Required if adding fixtures or if >$100K north of Cardinal Dr | City handout |
 | 3 | **Major remodel threshold** | Calculate if wall removal/reinforcement approaches 50% | Major Remodel Handout |
-| 4 | **Design Review** | Interior-only remodels are generally EXEMPT from Design Review. Exterior changes (new windows, enlarged openings visible from public) may trigger Administrative Design Review. | S25.05.040 |
-| 5 | **Coastal Development Permit** | Most of city is in Coastal Zone. Interior-only remodels may be exempt, but check if scope changes trigger CDP. | Ch. 25.07 |
+| 4 | **Planning route** | Interior-only work that does not modify the exterior: Zone Clearance §25.05.040(B)(2)(d); Building accepts it without a prior Planning record (a CrossBeam reference that is not included in this plugin Step 1). New or changed windows, doors, vents or openings make it exterior work: Zone Clearance (B)(2)(a)-(c) before Building issues (§25.05.045(B)(3)); skylight without automatic night shade: ADR (B)(3)(a)(xii); historic resource door/window change: ADR (B)(3)(a)(iv); ESA (slope 30% or more) exterior work: Design Review (B)(1)(e) unless a peer-reviewed no-impact finding. Visibility from the street is not itself a trigger under Ord. 1732. | §25.05.040(B) (Ord. 1732) |
+| 5 | **Coastal Development Permit** | Interior work on a single-family home is normally exempt (§25.07.008(A)(1)); check the exceptions, e.g. a prior CDP condition requiring future CDPs (A)(1)(f), or converting space to an ADU/guest unit (A)(1)(a). Other buildings: a change in intensity of use loses the exemption (A)(2)(b). A major remodel needs a CDP. | Ch. 25.07 |
 | 6 | **VHFHSZ window compliance** | If replacing windows as part of remodel: welded vinyl corners + metal reinforcing required, no plastic skylights (glass only) | Ch. 14.70 |
-| 7 | **Heritage review** | Property 50+ years old may require Heritage Committee review | City policy |
+| 7 | **Heritage review** | Historic resource (Ch. 25.45): exterior door/window changes are ADR (B)(3)(a)(iv) with a Heritage Committee recommendation first (25.45.010). The trigger is the property's status (City register, state or national listing, or a 1981 inventory rating that flags a possible review), not its age (25.45.004; 25.45.002(H)) | Ch. 25.45; City policy |
 | 8 | **Window specifications** | New/replacement windows must be dual pane with one pane tempered | Room Alteration Checklist |
 | 9 | **City business license** | Contractor must hold a Laguna Beach business license | City policy |
 | 10 | **Green Halo Program** | Sign-up required for C&D recycling and waste diversion compliance | City policy |

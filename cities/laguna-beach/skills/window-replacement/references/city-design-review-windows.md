@@ -1,6 +1,6 @@
 # Laguna Beach — Current Window/Door Planning Route
 
-**Law as of:** 2026-07-22
+**Law as of:** 2026-10-10
 
 **Authority:** LBMC §25.05.040 as replaced by Urgency Ordinance No. 1732
 
@@ -15,6 +15,9 @@
 | Work constituting a major remodel | Design Review, §25.05.040(B)(1)(a) |
 | Improvement over 15 ft | Design Review, §25.05.040(B)(1)(c) |
 | Development in an ESA | Design Review, §25.05.040(B)(1)(e), absent the enacted peer-reviewed professional determination |
+| Door/window replacement or modification on a historic resource | Administrative Design Review, §25.05.040(B)(3)(a)(iv) (Secretary of the Interior's Standards review; no hearing waiver) |
+
+Design Review is heard by the Design Review Board for single-family and two-family developments and by the Planning Commission otherwise (§25.05.040(F)(1)).
 
 The prior window-specific `(B)(2)(k)` exemption, adjacent-neighbor consent exception, and no-consent ADR category were repealed. Do not require neighbor consent or cite those former provisions. If no current closed-list category can be matched, return `needs_source`.
 

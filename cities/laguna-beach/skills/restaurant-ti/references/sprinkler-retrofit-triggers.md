@@ -40,10 +40,10 @@ Scope-based, independent of valuation. Applies when the building has any existin
 >
 > Exception: Work that consists only of the installation of fire-resistant siding.
 
-Any ONE of the three prongs independently fires the retrofit:
+Prongs 1 and 3 fire the retrofit on any reading. Prong 2 is **UNSETTLED**: the "which includes or involves" clause can be read as part of prong 1 or as its own prong, and the City has not ruled (`../../residential-remodel/references/city-sprinkler-retrofit.md`, Trigger B). When prong 2 alone decides the answer, give both readings, return FLAG (not FAIL), and say "confirm with Building and Fire at pre-application".
 
 1. **Alteration of 50% or more of the building** — the city's major-remodel methodology (per `../../residential-remodel/references/city-major-remodel-methodology.md`) is the operational test. Counts demolition, removal of structural elements, and new construction toward the percentage.
-2. **Work on 50% or more of the building's exterior** — façade, roof, exterior walls. A storefront overhaul + façade upgrade combined with a roof patch can easily exceed 50%.
+2. **Work on 50% or more of the building's exterior (UNSETTLED as a standalone prong)** — façade, roof, exterior walls. A storefront overhaul + façade upgrade combined with a roof patch can easily exceed 50%.
 3. **Addition of one or more stories** — any vertical addition.
 
 If trigger fires:
@@ -51,7 +51,7 @@ If trigger fires:
 - Same monitoring / FDC / flow test stack as Trigger 1
 - The owner of the residential portion must allow access for installation — this is often a major friction point on mixed-ownership buildings
 
-**Practical effect:** A "modest restaurant TI" with a new storefront, refreshed façade, and new awnings can cross the 50%-of-exterior threshold and pull retrofit obligations onto the residential floors above. Always check.
+**Practical effect:** A "modest restaurant TI" with a new storefront, refreshed façade, and new awnings can cross the 50%-of-exterior mark. Under the standalone reading that pulls retrofit obligations onto the residential floors above; under the compound reading it does not unless 50% of the building is also altered. Always tally it and report both readings.
 
 ### Trigger 3 — New Building Sprinkler Requirement — LBMC Sec. 903.2 (amended)
 
@@ -76,7 +76,7 @@ For each restaurant TI, document:
 | Total altered area (sf) / total building area (sf) | ____ / ____ = ____% |
 | Trigger 2 prong 1 fired? (alteration ≥50%) | Y / N |
 | Exterior work area (sf) / total exterior area (sf) | ____ / ____ = ____% |
-| Trigger 2 prong 2 fired? (exterior ≥50%) | Y / N |
+| Trigger 2 prong 2 reached? (exterior ≥50%; UNSETTLED as a standalone trigger) | Y / N |
 | Stories added | ____ |
 | Trigger 2 prong 3 fired? (added story) | Y / N |
 | Retrofit scope required | None / Group A only / Group R only / Both |
@@ -93,7 +93,7 @@ Where retrofit is required, the state CEBC (California Existing Building Code) g
 
 - **Fire-resistant siding only:** Sec. 1103.5.4 exception. A pure siding replacement project — even if it covers >50% of the building exterior — does NOT fire Trigger 2 prong 2.
 - **Painting / minor repair:** Does not count toward 50%-of-exterior calculation.
-- **Re-roof only (no walls):** May or may not fire Trigger 2 prong 2 depending on city interpretation; the roof is part of the "exterior" envelope. Combined with any wall work the threshold is easier to hit.
+- **Re-roof only (no walls):** Whether it counts toward prong 2, and whether prong 2 stands alone, are UNSETTLED; the roof is part of the "exterior" envelope. Combined with any wall work the threshold is easier to hit.
 
 ---
 

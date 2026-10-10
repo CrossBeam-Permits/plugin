@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen); Building Division OTC policies, Ch. 14.70 WUI Code, Ch. 14.50/14.52 building/residential code amendments, Title 25 zoning/design review, Ch. 25.07 coastal development"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-07-22"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -137,8 +137,10 @@ This skill covers Laguna Beach's city-specific deck, patio, and balcony requirem
 | Project Type | Route |
 |-------------|-------|
 | **Deck/balcony/patio cover repair** (no extension, no replacement) | OTC eligible |
-| **Deck replacement or new deck construction** | Standard plan review + possible design review |
-| **Elevated deck >3 ft above grade** (new or replacement) | Administrative Design Review required |
+| **Deck replacement or new deck construction** | Building permit (no deck exemption in LBMC 14.50.022) + Planning route below |
+| **New elevated deck >3 ft above grade, or a replacement that changes size, height or location** | Administrative Design Review, §25.05.040(B)(3)(a)(iii) |
+| **Like-for-like replacement or repair of an existing elevated deck** (same size, height and location; resurfacing; new railing) | Zone Clearance, in-kind (B)(2)(c) and railings (B)(2)(r); City practice ZPC-2026-1362 (deck replaced like for like), ZPC-2026-1825 (second-floor deck repair with new guard, counter) |
+| **Deck on top of a structure** (roof deck, deck over a room, garage, carport or ADU) | City Planning intake treats it as establishing Design Review; the ordinance item alone gives ADR (iii). See below |
 | **Deck/slab/terrace/patio ≤3 ft above adjacent legal grade** | Zone Clearance under §25.05.040(B)(2)(m) |
 | **Deck wrapping with fire-resistant materials** | Match the current closed lists; the former categorical `(B)(2)(w)` exemption was repealed |
 | **Deck as part of major remodel** | Full plan review + Design Review under §25.05.040(B)(1)(a) |
@@ -175,23 +177,26 @@ Per Section 25.05.040(B)(3)(a)(iii):
 
 - **Elevated decks MORE THAN 3 ft above adjacent existing grade** require an administrative design review hearing before the Director of Community Development
 - This category cannot use the Administrative Design Review hearing waiver
-- Director has discretion to refer to full Design Review Board
+- The Director may refer it to the Design Review Board or Planning Commission (25.05.040(A)(2)(d))
 
-#### Full Design Review Board Required
+#### Design Review Required (public hearing)
 
-Per Section 25.05.040(B)(1):
+Per Section 25.05.040(B)(1). The Design Review Board hears it on a single-family or two-family lot; the Planning Commission hears it on other lots and anywhere in the Downtown Specific Plan area (25.05.040(F)(1)(i)-(ii)):
 
 - The deck work is part of a major remodel, (B)(1)(a)
-- An improvement exceeds 15 ft, (B)(1)(c)
 - The work is development in an ESA (which expressly includes slopes of 30% or greater), absent the enacted peer-reviewed professional determination, (B)(1)(e)
+- A deck on top of enclosed space (a roof deck, or a deck over a room or garage), including an ADU roof deck, **can** move here. Headline ADR (iii), the ordinance item, then give the two facts that could make it Design Review: City Planning intake treats a deck on top of a structure as establishing Design Review (Planning intake ruling, September 2026; no post-Ord. 1732 decision has tested it, a CrossBeam reference that is not included in this plugin section 3), and a roof guard read as a "rooftop appurtenance" with its top more than 15 ft up is (B)(1)(c) (a CrossBeam reference that is not included in this plugin Step 4f). Confirm at pre-application. An open raised deck with nothing enclosed under it is ADR (iii) at any height, never Design Review on this ground; a pool, a ground-level lounge deck or a patio cover alone does not trigger the intake rule.
+
+The deck item (iii) governs the deck itself over the 15-ft catch-all (B)(1)(c) (specific over general, a CrossBeam reference that is not included in this plugin Step 4d). New floor area, a new story or a raised roof built with the deck is a separate piece that can still meet (B)(1)(c). An open deck more than 15 ft up is still ADR (iii); only a deck on top of enclosed space raises the Design Review question above (Step 4f).
+
+The Director may also refer any Zone Clearance or ADR deck to the board (25.05.040(A)(2)(d)).
 
 #### ADU-Attached Decks (Special Rules)
 
-Per Chapter 25.17:
-- Outdoor living space (porches, decks, patios) attached to ADU: max **20% of ADU floor area**
-- Must comply with height and setback standards
-- Elevated decks >3 ft above grade require design review
-- **Roof decks are PROHIBITED** on ADUs
+Per Chapter 25.17 as replaced by Urgency Ord. 1713, LBMC 25.17.020(c)(5) (Coastal Act/LCP requirements for coastal-zone ADUs; text at the City source document (not included in this plugin)):
+- Covered porches, decks, patios and other outdoor living space attached to an ADU must meet the same height and setbacks as the ADU. **ADU that needs a CDP:** the certified LCP also binds it ("the ADU or JADU must comply with the requirements of the City's certified LCP", 25.17.010(d)(1)(B), Ord. 1713), so outdoor living space is also "limited to 20% maximum floor area of the ADU" (certified 25.17.040(E)(5)(c)). An ADU with no CDP has no 20% cap (Ord. 1713 dropped it).
+- **Roof decks are prohibited**: "a deck above the uppermost story of a building, with no access from interior living space at the same floor level."
+- The deck's own Planning route still follows the closed lists above (for example ADR if more than 3 ft above grade). For the ADU itself load `adu`.
 
 ---
 
@@ -253,13 +258,15 @@ Most of Laguna Beach is in the California Coastal Zone. A Coastal Development Pe
 
 Per Section 25.07.008(A):
 
-**Deck repairs/maintenance**: EXEMPT from CDP when:
-- No addition to, enlargement, or expansion of the deck
-- Not involving shoreline protective works
-- Not in environmentally sensitive area, on beach, in wetland, or within 50 ft of coastal bluff edge
+**ESA means habitat here, not slope.** Chapter 25.07 has its own definition, and it governs the CDP questions: "For the purposes of this chapter, the following definitions shall apply: ... 'Environmentally sensitive area' means any area in which plant or animal life or their habitats are either rare or especially valuable because of their special nature or role in an ecosystem and which could be easily disturbed or degraded by human activities and development" (§25.07.006). The "slopes of 30% or greater" wording is in the Ord. 1732 Title 25 definition (§25.08.010) that drives Design Review (B)(1)(e). It is not in §25.07.006. A 30% slope alone does not make a site an ESA for the CDP exemptions. Use the ESA term below only when the parcel has habitat facts (Coastal ESA map, Biological Resource Values "Very High", a stream, or a biological assessment). A steep site still needs the full screen for its other facts (bluff edge, landform alteration).
+
+**Deck repairs/maintenance**: EXEMPT from CDP (§25.07.008(A)(3)) unless the work is a listed exception. For a deck the main ones are:
+- An addition to, enlargement, or expansion of the deck
+- Shoreline protective works
+- Repair or maintenance in a habitat ESA, on a sand area, within 50 ft of a coastal bluff edge or of a habitat ESA, or within 20 ft of coastal waters or streams, where it involves placing or removing solid materials or using mechanized equipment or outdoor storage of construction materials (§25.07.008(A)(3)(d))
 
 **SFR deck improvements**: EXEMPT from CDP unless:
-- Located on a beach, in a wetland/stream, seaward of mean high tide, within 50 ft of coastal bluff edge, in ESA, or in highly scenic area — per 25.07.008(A)(1)(b)
+- Located on a beach, in a wetland/stream, seaward of mean high tide, within 50 ft of coastal bluff edge, in a habitat ESA (§25.07.006; not slope alone), or in highly scenic area — per 25.07.008(A)(1)(b)
 - In the coastal appealable area (between sea and first public road, or within 300 ft of beach/mean high tide) AND the improvement results in >=10% floor area increase or >=10% height increase — per 25.07.008(A)(1)(c)
 - A new detached structure (new freestanding deck could qualify) — per 25.07.008(A)(1)(c)(3)
 
@@ -269,7 +276,7 @@ A CDP IS required when:
 - Building a new freestanding deck in the coastal appealable area
 - Deck addition increases floor area by >=10% in the coastal appealable area
 - Any deck work within 50 ft of a coastal bluff edge
-- Any deck work in an environmentally sensitive area
+- Deck improvements in a habitat ESA (§25.07.006 definition; a 30% slope alone does not count), and repair/maintenance there that meets §25.07.008(A)(3)(d)
 
 ---
 
@@ -282,22 +289,22 @@ Deck work itself is NOT directly measured in the major remodel 50% calculation (
 **Two triggers, either one fires.** See `../residential-remodel/references/city-sprinkler-retrofit.md` — the single residential retrofit reference. Do not restate the rule here.
 
 - **Ch. 14.52.030** (valuation) — cumulative additions, alterations and repairs in any three-year period exceeding 50% of the pre-work valuation.
-- **Title 15 §1103.5.4** (scope) — alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR an added story.
+- **Title 15 §1103.5.4** (scope) — alteration of ≥50% of the building, OR an added story. Whether work on ≥50% of the exterior fires it by itself is UNSETTLED (two readings in the reference; confirm with Building and Fire at pre-application).
 
-**Deck-specific note.** Deck replacements can be high-value work, and deck valuation counts toward the Ch. 14.52.030 three-year cumulative total. A deck also sits on the building exterior, so a large deck rebuild combined with other exterior scope can feed the §1103.5.4 exterior prong. Check both.
+**Deck-specific note.** Deck replacements can be high-value work, and deck valuation counts toward the Ch. 14.52.030 three-year cumulative total. A deck also sits on the building exterior, so a large deck rebuild combined with other exterior scope can feed the §1103.5.4 exterior tally. That prong is UNSETTLED; if it alone decides the answer, give both readings. Check both triggers.
 
 #### Major Remodel (Area-Based)
 
-- If deck work is combined with additions totaling >=50% of existing gross floor area, the project becomes a major remodel
-- Major remodels trigger: full DRB hearing, full plan review, new construction standards, fuel modification plan (in fuel mod areas)
+- Whether the whole project is a major remodel is decided by the October 2026 Major Remodel Quick Guide method in `../residential-remodel/references/city-major-remodel-methodology.md` (exterior walls / structural elements removed or reinforced, and additions over 50% since January 13, 1993). Do not restate it here.
+- A major remodel is Design Review under 25.05.040(B)(1)(a) (Design Review Board for a house or duplex), with Fire Safety Standards Review (25.05.040(C)(4)), and is treated as a new building for current zoning standards (25.56.011)
 
 ---
 
 ### Stainless Steel Fasteners
 
-Per CRC R507.2.3 and Table R507.2.3: within 300 ft of salt water, **all fasteners and connectors must be stainless steel**.
+Per CRC Table R507.2.3 note b: "Fasteners and connectors exposed to salt water or located within 300 feet of a salt water shoreline shall be stainless steel."
 
-Laguna Beach is a coastal city — **virtually every property in the city is within 300 ft of salt water** (the city is approximately 1 mile wide between the ocean and the hills). Most deck projects will require stainless steel fasteners throughout.
+The rule turns on distance to the salt-water shoreline. Oceanfront and near-shore lots are within 300 ft; most hillside and canyon lots are not. Measure or ask; do not assume either way. Outside 300 ft, the table's other options (hot-dip galvanized and the like) apply.
 
 **This affects**: nails, screws, bolts (including nuts and washers), metal connectors, joist hangers, post bases, ledger hardware, and guard post connectors.
 
@@ -307,7 +314,7 @@ Laguna Beach is a coastal city — **virtually every property in the city is wit
 
 Many Laguna Beach properties are on hillsides with challenging geology:
 
-- **Steep slopes (≥30%)**: Included in the amended ESA definition; apply §25.05.040(B)(1)(e) unless a licensed professional determines, subject to peer review, that the work does not impact the ESA
+- **Steep slopes (≥30%)**: Included in the Ord. 1732 Title 25 ESA definition (§25.08.010); apply §25.05.040(B)(1)(e) unless a licensed professional determines, subject to peer review, that the work does not impact the ESA. This is a Design Review rule only. It does not defeat a CDP exemption: Ch. 25.07 defines ESA by habitat (§25.07.006)
 - **Deck foundations on hillsides**: May require geotechnical report for soil bearing capacity, slope stability, and foundation recommendations
 - **Elevated deck posts**: Posts on hillside properties may have significant height — verify against CRC R507.4 post height limits (max 14 ft for 4x4 under 40 psf)
 - **Lateral loads on hillside decks**: Additional engineering may be required for decks cantilevered from hillside structures
@@ -339,15 +346,16 @@ Additional submittals depending on scope:
 ### Key Laguna Beach Deck Facts
 
 - **OTC eligible**: Deck/balcony/patio cover REPAIRS only (no extension/replacement)
-- **Design review exempt**: Decks <=3 ft above grade, patios at/below grade, railing changes, WUI deck wrapping
-- **Admin design review**: Elevated decks >3 ft above grade
+- **Zone Clearance (no hearing)**: Decks/patios 3 ft or less above adjacent legal grade (B)(2)(m), railings (B)(2)(r), in-kind repair (B)(2)(c). WUI deck wrapping has no categorical exemption any more; route it by these lists
+- **Administrative Design Review**: Decks more than 3 ft above adjacent legal grade, (B)(3)(a)(iii); hearing cannot be waived
+- **Building permit**: Laguna's exemption list (LBMC 14.50.022, applied to homes by 14.52.014 / CRC R101.4) has no deck or platform exemption. Treat any new or replacement deck as needing a permit; see a CrossBeam reference that is not included in this plugin
 - **Fire-resistive decking**: Required in VHFHSZ per IWUIC 504.7.3
-- **Stainless steel fasteners**: Effectively mandatory (coastal city, nearly all within 300 ft of salt water)
-- **CDP**: Required in coastal zone unless exempt (repairs/maintenance with no expansion are generally exempt)
+- **Stainless steel fasteners**: Required within 300 ft of a salt-water shoreline or where exposed to salt water (CRC Table R507.2.3 note b); check the lot's distance
+- **CDP**: Required in coastal zone unless exempt (repairs/maintenance with no expansion are generally exempt). Slope alone does not remove the exemption
 - **Sprinkler trigger**: Two triggers — Ch. 14.52.030 (deck valuation counts toward the 50% / 3-year cumulative total) and Title 15 §1103.5.4 (scope). Either fires. See `../residential-remodel/references/city-sprinkler-retrofit.md`
 - **Underfloor vents**: Max 144 sq in per opening under elevated decks (Ch. 14.70.025)
-- **Hillside lots (>30% slope)**: Full design review + potential geotech report
-- **ADU decks**: Max 20% of ADU floor area, roof decks prohibited
+- **Hillside lots (slope 30% or more)**: ESA, so Design Review under (B)(1)(e) unless a peer-reviewed licensed professional finds no impact; potential geotech report
+- **ADU decks**: Same height and setbacks as the ADU; roof decks prohibited (Urgency Ord. 1713)
 
 ---
 
