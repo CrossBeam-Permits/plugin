@@ -34,7 +34,7 @@ Even a conversion ADU loses its exemption if it falls within the sensitive-area 
 
 ### Record of Exemptions (S 25.07.008(B))
 
-The Community Development Director maintains a public record of all exempt development (name, location, description). For exemptions in Coastal Commission appealable areas, the Director must notify the Coastal Commission Executive Director within **7 calendar days**.
+The Community Development Director maintains a record of all exempt development (name, location, description). Ord. 1732 removed the requirement that the record be available on the City's website. For exemptions in Coastal Commission appealable areas, the Director must notify the Coastal Commission Executive Director within **7 calendar days**.
 
 ### Appeal of Exemption Determination (S 25.07.008(C))
 

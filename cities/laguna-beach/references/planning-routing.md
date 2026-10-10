@@ -48,7 +48,9 @@ Record each part separately as yes, no, or unknown. A blanket statement such as
 Administrative Design Review; any unknown leaves the equipment route undetermined.
 
 1. Ground-mounted, or wall-mounted at ground level.
-2. Outside required front and side yard setbacks.
+2. Outside the required front yard setback (Ord. 1731 struck "or side" from this test). The side
+   yard is still closed to AC and pool equipment by LBMC §25.50.004(F)(2), so equipment in a
+   required side yard fails yard conformance even when this test passes.
 3. At least five feet from every property line.
 4. Manufacturer specification sheet supplies the decibel rating; sound is limited to
    60 dB daytime / 50 dB nighttime at the property line; and two maintained sound-
@@ -57,8 +59,9 @@ Administrative Design Review; any unknown leaves the equipment route undetermine
    275 (1984, as amended). The form's published title is not confirmed—do not invent it.
 6. A three-foot path of travel remains around every structure.
 
-Before equipment permit issuance, the installation contractor also signs the
-§7.25.130(A) acknowledgment that the installation will meet §7.25.040 noise limits.
+For equipment in or adjacent to residential areas, the installation contractor also signs
+the §7.25.130(A) acknowledgment, before permit issuance, that the installation will meet
+§7.25.040 noise limits.
 
 ## Coastal, bluff, geotechnical, and hazard branches
 

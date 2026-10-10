@@ -136,9 +136,9 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 | Project Type | Route |
 |-------------|-------|
-| **Before 2026-08-20** | The six-part test is not yet law. Use the prior five-part test in "Before 2026-08-20" below. Wall-mount-at-ground-level and the 3-ft path of travel do not apply yet. |
+| **Before 2026-08-20** | The six-part test is not yet law. Use the prior five-part test in "Before 2026-08-20" below. Wall-mount-at-ground-level and the 3-ft path of travel do not apply yet, and part 2 still excludes the required side yard setbacks. |
 | **HVAC change-out** (same location, clearances, type) | Building-permit OTC may apply (hours below). OTC is the Building Division counter track, **not** a design-review exemption. If the equipment is exterior, still run the §7.25.130(C) test. Fail any part → Administrative Design Review; do not treat OTC as skipping that. |
-| **Exterior HVAC or pool/spa equipment, residential or adjacent to residential** | Run the §7.25.130(C) six-part test below (five-part before 2026-08-20). Pass → Zone Clearance (no Design Review). Fail any part → Administrative Design Review per §25.05.040(B)(3)(a)(v) |
+| **Exterior HVAC or pool/spa equipment** (any zone from 2026-08-20; before then, only in or adjacent to residential areas) | Run the §7.25.130(C) six-part test below (five-part before 2026-08-20). Pass → Zone Clearance (no Design Review). Fail any part → Administrative Design Review per §25.05.040(B)(3)(a)(v) |
 | **Exterior equipment on a lot in an environmentally sensitive area (ESA)** | Design Review per §25.05.040(B)(1). Zone Clearance is not available in an ESA unless a licensed professional determines, subject to peer review, that the work does not impact the ESA |
 | **Commercial HVAC equipment** | Mechanical permit. The city may require a detailed acoustical study per §7.25.130(B) |
 
@@ -146,20 +146,22 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ### §7.25.130(C) — Six-Part Objective Test (effective 2026-08-20)
 
-**Authority:** LBMC §7.25.130, "Heating, venting, and air conditioning (HVAC) and pool/spa equipment—special provisions", as amended by the 2026 Efficiency Ordinance (adopted 2026-07-21, **effective 2026-08-20**). Source: the City source document (not included in this plugin) line 45.
+**Authority:** LBMC §7.25.130, "Heating, venting, and air conditioning (HVAC) and pool/spa equipment—special provisions", as amended by Ord. 1731, the 2026 Efficiency Ordinance (adopted 2026-07-21, **effective 2026-08-20**), now codified on eCode360. Source: the codified text, mirrored in the City source document (not included in this plugin).
 
-Applies to permits for HVAC and pool/spa equipment **in or adjacent to residential areas**. Equipment that meets **all six** requirements is reviewed and approved **without Design Review** (§7.25.130(C)). Equipment that fails **any** requirement is reviewed per §25.05.040 Design Review (§7.25.130(D)).
+Applies to permits for HVAC and pool/spa equipment in any zone. Ord. 1731 struck "in or adjacent to residential areas" from (C); that phrase now limits only the (A) contractor acknowledgment. Equipment that meets **all six** requirements is reviewed and approved **without Design Review** (§7.25.130(C)). Equipment that fails **any** requirement is reviewed per §25.05.040 Design Review (§7.25.130(D)).
 
 | # | Requirement | Pass criteria | Evidence to check |
 |---|---|---|---|
 | 1 | Mounting | Equipment is ground-mounted, or wall-mounted at ground level | Site plan / elevation showing mounting location and height |
-| 2 | Setbacks | Equipment is **not** within the required front or side yard setbacks | Site plan with the zone's required front and side yard setbacks dimensioned |
+| 2 | Front setback | Equipment is **not** within the required **front** yard setback. Ord. 1731 struck "or side": equipment in a side yard setback can pass this part | Site plan with the zone's required front yard setback dimensioned |
 | 3 | Property-line clearance | Equipment maintains a **five-foot clearance from all property lines** | Dimensioned site plan |
 | 4 | Decibel rating + two attenuation techniques | Manufacturer's specification sheet is submitted with the application and includes the decibel rating. Maximum **60 dB day / 50 dB night, measured at the property line**. **Two sound attenuation techniques shall be utilized.** Techniques must be used and maintained per the manufacturer's specifications for the life of the equipment | Manufacturer's spec sheet with dB rating; plans or notes identifying **two** named attenuation techniques. Code examples: physical enclosures such as fencing with insulation, internal sound compression blanket, shock absorption base (the list is "including, but not limited to") |
 | 5 | City sound-level form | Completed city-provided form detailing how the project meets the maximum sound levels measured at the property line. Method of computation is ARI Standard 275, "Standard Application of Sound Rated Outdoor Unitary Equipment" (1984, as amended) | The completed form. **Form name pending** — see "Open item" below |
 | 6 | Path of travel | Equipment **does not obstruct a 3-foot path of travel around any structure** | Site plan showing the clear path of travel around the structure |
 
 **Scoring rule:** all six parts must pass. Any single failure routes the equipment to Administrative Design Review. Do not treat part 4 as satisfied by the decibel rating alone — **the two attenuation techniques are a separate, independent requirement of part 4**, and both must be named in the submittal.
+
+**Side yard is a separate zoning check.** Passing part 2 in a side yard setback settles only the Design Review route. The zone's yard rules still bar air conditioning and pool equipment from required side yards (LBMC §25.50.004(F)(2); in R-1, §25.10.008(E)(3)(a)(2)). Equipment in a required side yard is a yard-conformance failure; record it under the zoning setback review. Do not use it to fail part 2 or to route the equipment to Administrative Design Review.
 
 **Open item — the part 5 form name is not yet known.** The Efficiency Ordinance says only "a form provided by the city." The city's 2026 application set has not yet been harvested. Do not invent a form name. Ask the applicant for the city's sound-level form by description, or direct them to the Community Development Department.
 
@@ -176,7 +178,7 @@ One exception to the Zone Clearance path: §25.05.040(B)(2) states the zone clea
 
 #### Before 2026-08-20
 
-The prior §7.25.130(C) also exempted compliant equipment from Design Review, but its test had **five** requirements. Three differences: it covered "air conditioning units and pool and spa equipment" rather than HVAC generally; part (1) required equipment to be **ground-mounted** only, with no wall-mounted-at-ground-level option; and there was **no part (6)** — the 3-foot path of travel is new. Parts (2) through (5) are substantively unchanged, so the setback, 5-ft clearance, decibel/attenuation, and city-form checks apply the same way in both versions.
+The prior §7.25.130(C) also exempted compliant equipment from Design Review, but its test had **five** requirements. Five differences: it covered "air conditioning units and pool and spa equipment" rather than HVAC generally; it applied only "in or adjacent to residential areas"; part (1) required equipment to be **ground-mounted** only, with no wall-mounted-at-ground-level option; part (2) excluded the required **front or side** yard setbacks (the amendment keeps only front); and there was **no part (6)** — the 3-foot path of travel is new. Parts (3) through (5) are substantively unchanged, so the 5-ft clearance, decibel/attenuation, and city-form checks apply the same way in both versions.
 
 ---
 
@@ -202,7 +204,7 @@ Residential HVAC change-outs qualify for over-the-counter **building-permit** re
 - **Same type** of equipment (not changing from gas to electric or vice versa)
 - No exterior changes beyond the like-for-like equipment swap
 
-OTC does not exempt exterior equipment from §7.25.130(C). A rooftop unit, a unit in a required setback, or any other change-out that fails a part of the test still goes to Administrative Design Review per §7.25.130(D) / §25.05.040(B)(3)(a)(v) — same as a new installation. A change-out that relocates the unit is not a change-out; run the test on the new location.
+OTC does not exempt exterior equipment from §7.25.130(C). A rooftop unit, a unit in the required front setback, or any other change-out that fails a part of the test still goes to Administrative Design Review per §7.25.130(D) / §25.05.040(B)(3)(a)(v) — same as a new installation. A change-out that relocates the unit is not a change-out; run the test on the new location.
 
 **OTC-eligible per the city reference OTC item 8** — residential HVAC change-outs in same location, clearances, access and type. Hours and the full OTC list: `../city-reference/SKILL.md` §"Permit Processing Tracks".
 
@@ -224,7 +226,7 @@ Portable mechanical appliances and portable ventilating equipment for a single d
 |---|---|---|
 | LB-HVAC-1 | Design review route | Equipment passing all six parts of §7.25.130(C) routed to Zone Clearance (no Design Review); equipment failing any part routed to Administrative Design Review per §25.05.040(B)(3)(a)(v) |
 | LB-HVAC-2 | Mounting | Ground-mounted, or wall-mounted at ground level (§7.25.130(C)(1)) |
-| LB-HVAC-3 | Setbacks and clearance | Outside required front and side yard setbacks; 5-ft clearance from all property lines (§7.25.130(C)(2)–(3)) |
+| LB-HVAC-3 | Setbacks and clearance | Outside the required front yard setback; 5-ft clearance from all property lines (§7.25.130(C)(2)–(3)). Before 2026-08-20, also outside the required side yard setbacks |
 | LB-HVAC-4 | Decibel rating | Manufacturer's spec sheet submitted with dB rating; ≤60 dB day / ≤50 dB night at the property line (§7.25.130(C)(4)) |
 | LB-HVAC-5 | Two sound attenuation techniques | Two techniques identified in the submittal, with a note that they are used and maintained per manufacturer's specifications for the life of the equipment (§7.25.130(C)(4)) |
 | LB-HVAC-6 | City sound-level form | City-provided sound-level form completed, computed per ARI Standard 275 (1984, as amended) (§7.25.130(C)(5)). Form name pending city application-set harvest |
