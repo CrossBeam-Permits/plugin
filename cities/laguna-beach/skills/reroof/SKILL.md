@@ -270,7 +270,7 @@ Laguna Beach is predominantly Very High Fire Hazard Severity Zone (citywide cove
 Note: Other fire-resistive roofing details (ember-resistant vents, eave/soffit construction, valley flashings, gutters) come from state Chapter 7A via the `california-reroof` skill — they are NOT Laguna Beach city amendments.
 
 #### Major Remodel vs. Sprinkler Retrofit — different tests, same number
-**Major remodel** (area-based): In the coastal zone appealable area, roof area removed/reinforced counts in the combined roof/walls/foundation test. If the combined roof/walls/foundation of the structure reaches 50% or more, it constitutes a major remodel. This triggers new construction standards and full plan review (not OTC).
+**Major remodel** (area-based): In the coastal zone appealable area, roof area removed or reinforced counts in the combined test (roof, exterior walls, load-bearing interior walls, and foundation). If that combined figure for the structure reaches 50% or more, it constitutes a major remodel. This triggers new construction standards and full plan review (not OTC).
 
 **Sprinkler retrofit** — classify the Group R building before selecting its valuation section (`../city-reference/SKILL.md`, "Sprinkler Retrofit Triggers"; full rule in `../residential-remodel/references/city-sprinkler-retrofit.md`):
 - **LBMC Ch. 14.52.030** (valuation, Ord. 1725 12/18/2025) — cumulative additions, alterations and repairs to a one- or
@@ -290,11 +290,11 @@ Both triggers, when they fire, require full WUI compliance and full plan review 
 
 ### Major Remodel Interaction
 
-Source: City Major Remodel Interpretation Quick Guide, Updated June 2026 [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639179723814800000, as of 2026-09-29].
+Source: City Major Remodel Interpretation Quick Guide, Updated October 2026 [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09].
 
 In the **coastal zone appealable area**, roof replacement is part of the major remodel calculation:
-- Formula: (SF of roof removed/reinforced, including eaves) / (SF of existing roof) x 100
-- The handout's trigger is "Demolition or reinforcement of 50% or more of the exterior walls OR combined roof/walls/foundation of the structure." The roof counts in the combined test. Roof work alone is not a separate trigger.
+- Formula: (SF of roof removed or reinforced, including eaves) / (SF of existing roof) x 100
+- The handout's trigger is "Demolition or reinforcement of 50% or more of either (a) the exterior walls alone, or (b) the roof, exterior walls, load-bearing interior walls, and foundation combined." The roof counts in the combined test. Roof work alone is not a separate trigger.
 - Run the test for each building or structure on the site independently. A reroof of a detached garage is measured against the garage, not the house.
 
 In the **coastal zone non-appealable area**, roof is NOT part of the calculation (only exterior walls count, on each floor).
@@ -333,7 +333,7 @@ Walk these AFTER the state-level checklist. Record PASS / FAIL / FLAG / N/A with
 | LB-9 | **Waste plan + deposit** | Tear-off: Waste Management Plan **and** separate security deposit (check or cash) per LBMC Ch. 7.19. No tear-off (overlay) → exempt. State CALGreen 65% diversion still applies to tear-off. | LBMC Ch. 7.19; CALGreen 5.408 | N/A |
 | LB-10 | **Coastal routing** | Coastal Appealable Area → CDP Exemption + 10-working-day appeal window. Deferred Certification Zone → Appendix B forms + fees direct to the Coastal Commission. Straddling parcels must be reported as straddling. | Ch. 25.07 | `../coastal-development/SKILL.md` |
 | LB-11 | **Sprinkler retrofit** | Classify occupancy first. CRC-track house/townhouse → Ch. 14.52.026/.030 valuation plus Title 15 §1103.5.4 scope. CBC-track Group R → §14.50.104/§903.6(1),(5) plus Title 15 §1103.5.4. Other-than-R/U → apply the conditional §903.6(2) test and addition triggers. | Ch. 14.52.026/.030; Title 15 §1103.5.4; §14.50.104/§903.6 | `../residential-remodel/references/city-sprinkler-retrofit.md`; `references/city-fire-amendments.md` |
-| LB-12 | **Major remodel** | Coastal zone appealable area: roof area removed/reinforced ÷ existing roof area counts in the combined roof/walls/foundation test for that structure; combined 50% or more → major remodel, full plan review. Coastal zone non-appealable area: roof does not count. | §25.05.040 | `../residential-addition/references/city-major-remodel.md` |
+| LB-12 | **Major remodel** | Coastal zone appealable area: roof area removed or reinforced ÷ existing roof area counts in the combined roof / exterior walls / load-bearing interior walls / foundation test for that structure; combined 50% or more → major remodel, full plan review. Coastal zone non-appealable area: roof does not count. | §25.05.040 | `../residential-addition/references/city-major-remodel.md` |
 
 #### Output Format
 
@@ -357,7 +357,7 @@ Walk these AFTER the state-level checklist. Record PASS / FAIL / FLAG / N/A with
 - **Historic**: additional requirements may apply — FLAG for Planning (Ch. 25.45)
 - **Evaluation report**: third-party report number required for all roofing products
 - **Waste**: Waste Management Plan + separate security deposit per LBMC 7.19 on tear-off; exempt if no tear-off
-- **Major remodel**: Roof replacement counted in the combined roof/walls/foundation test in the coastal zone appealable area
+- **Major remodel**: Roof replacement counted in the combined roof / exterior walls / load-bearing interior walls / foundation test in the coastal zone appealable area
 - **Sprinklers**: CRC-track houses/townhouses use Ch. 14.52.026/.030 valuation plus Title 15 §1103.5.4 scope. CBC-track Group R also uses §14.50.104/§903.6(1),(5). Other-than-R/U uses the conditional §903.6(2) test; addition triggers are separate.
 - **Contact**: division phones and the counter address live in `../city-reference/references/contacts-hours.md`. Solid Waste / C&D is a separate line, (949) 464-6677
 

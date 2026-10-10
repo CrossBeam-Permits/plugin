@@ -3,7 +3,7 @@ name: residential-remodel
 description: "Residential Remodel permits in Laguna Beach, CA. A whole-house or multi-room remodel, including bearing-wall work and new openings. Always a plan set. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against the Laguna Beach rules and the City submittal checklists, and prepares a portal-ready submission; (B) CITY REVIEWER — checks a submittal against the Laguna Beach rules and produces tight corrections output. California code compliance comes from the CrossBeam connector when it is connected. Use when the user mentions residential remodel in Laguna Beach."
 metadata:
   version: "2.0"
-  source: "2025 California Existing Building Code (Title 24 Part 10), 2025 California Residential Code (Title 24 Part 2.5), 2025 California Energy Code (Title 24 Part 6), 14 CCR Division 5.5 Coastal Commission Regulations, plus California Coastal Commission settled enforcement interpretation; LBMC Title 15 (Fire Prevention, Ord. 1726 12/18/2025), LBMC Title 25 (Zoning) Chapters 25.05 / 25.07 / 25.10 / 25.50 / 25.56 / 25.17, LBMC Title 14 Chapter 14.50 / 14.52 / 14.70 / 14.86, City of Laguna Beach Land Use Element (LCP), Major Remodel Quick Guide (Updated June 2026; standalone handout 23171 and SB 9 application Exhibit F), Building Plan Check Submittal Requirements (May 2026 republish, mod date 2026-04-30), Bluff Edge Determinations Quick Guide (Mar 2024), Zoning Plan-Check Project Submittal Requirements table, CCC F9a-11-2024 Notice (ADU coastal exemption rejection), LBMC Title 12 (Trees and Vegetation) Chapters 12.08 / 12.16 as amended by the 2026 efficiency ordinance (effective 2026-08-20)"
+  source: "2025 California Existing Building Code (Title 24 Part 10), 2025 California Residential Code (Title 24 Part 2.5), 2025 California Energy Code (Title 24 Part 6), 14 CCR Division 5.5 Coastal Commission Regulations, plus California Coastal Commission settled enforcement interpretation; LBMC Title 15 (Fire Prevention, Ord. 1726 12/18/2025), LBMC Title 25 (Zoning) Chapters 25.05 / 25.07 / 25.10 / 25.50 / 25.56 / 25.17, LBMC Title 14 Chapter 14.50 / 14.52 / 14.70 / 14.86, City of Laguna Beach Land Use Element (LCP), Major Remodel Quick Guide (Updated October 2026; standalone handout 23171 — SB 9 application Exhibit F still prints the June 2026 edition), Building Plan Check Submittal Requirements (May 2026 republish, mod date 2026-04-30), Bluff Edge Determinations Quick Guide (Mar 2024), Zoning Plan-Check Project Submittal Requirements table, CCC F9a-11-2024 Notice (ADU coastal exemption rejection), LBMC Title 12 (Trees and Vegetation) Chapters 12.08 / 12.16 as amended by the 2026 efficiency ordinance (effective 2026-08-20)"
   authority: "California Building Standards Commission and City of Laguna Beach"
   law_as_of: "2026-08-15"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
@@ -135,12 +135,12 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 This skill is the **city overlay** the parent state skill is told to invoke at every Laguna-Beach review. Its job is to (a) classify the project under Laguna's current closed-list planning routes, (b) determine major-remodel status using Laguna's dual coastal zone appealable / coastal zone non-appealable methodology, (c) run Laguna's deterministic 6th phantom-remodel signal on top of the parent's heuristic 5-signal detector, (d) layer in the city's two sprinkler retrofit triggers (Ch. 14.52.030 valuation and Title 15 §1103.5.4 scope), (e) layer in the bluff/CDP/VHFHSZ/view/tree/hillside overlays, and (f) flag the CCC F9a-11-2024 ADU-coastal-exemption pushback when relevant.
 
 **What this covers (12 city-specific topics)**
-1. Major-remodel operative authority chain — LCP Land Use Element → June 2026 Major Remodel Handout → LBMC §25.10.008(O) statutory backstop
+1. Major-remodel operative authority chain — LCP Land Use Element → October 2026 Major Remodel Handout → LBMC §25.10.008(O) statutory backstop
 2. Dual methodology — coastal zone appealable (foundation + walls + roof, removal AND reinforcement count) vs coastal zone non-appealable (exterior walls only, removal only); walls counted on each floor; each structure tested independently
 3. Deterministic phantom-remodel rule from the May 2026 Building Plan Check Submittal Requirements — Laguna's codified 6th signal
 4. Sprinkler retrofit — two independent triggers: Ch. 14.52.030 (valuation) and Title 15 §1103.5.4 (scope). Either fires.
 5. Bluff overlay — §25.50.004(B)(4) 25-ft setback + §25.50.020 site-coverage shrinkage + anti-game buried-bluff rule + report stack
-6. Nonconforming structures — Ch. 25.56 three-rule structure, plus the June 2026 handout rule: nonconforming status ends at a major remodel
+6. Nonconforming structures — Ch. 25.56 three-rule structure, plus the October 2026 handout rule: nonconforming status ends at a major remodel
 7. Current project routing — §25.05.040 closed lists + §25.05.045 Zone Clearance, with ESA override
 8. CDP for major remodel in coastal zone — Ch. 25.07 fires regardless of E-93-1 categorical exclusion
 9. ADU coastal exemption pushback — CCC F9a-11-2024 (flag prominently)
@@ -200,9 +200,9 @@ Full content: `references/city-design-review-tiers.md`.
 
 ### STEP B — Major Remodel Determination (Dual Methodology)
 
-**Source edition.** Apply the City's Major Remodel Interpretation Quick Guide, "Updated June 2026" [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639179723814800000, as of 2026-09-29]. The SB 9 application prints the same June 2026 text as Exhibit F [source: https://www.lagunabeachcity.net/home/showpublisheddocument/26958/639232726993730000, as of 2026-09-29]. The June 2026 edition replaces the August 2025 edition. Do not apply the August 2025 text.
+**Source edition.** Apply the City's Major Remodel Interpretation Quick Guide, "Updated October 2026" [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09]. The October 2026 edition replaces the June 2026 edition, which replaced the August 2025 edition. Do not apply the June 2026 or August 2025 text. The SB 9 application's Exhibit F still prints the June 2026 text [source: https://www.lagunabeachcity.net/home/showpublisheddocument/26958/639232726993730000, as of 2026-10-09]; where they differ, apply the October 2026 handout. What October changed: `references/city-major-remodel-methodology.md` → "What the October 2026 edition changed".
 
-> **OPERATIVE BUT INTERPRETIVE — read the handout's own hedge before applying.** The June 2026 Major Remodel Quick Guide (verbatim): *"Provided below are the calculation methods that City staff believes the CCC staff uses for their assessment of projects in determining whether a project is a major remodel. ... the language below is City staff's best attempt in interpreting CCC staff's analysis based on their previous appeal reports. As such, these calculation methods have not been approved by the CCC staff; and therefore, the City cannot guarantee that the CCC staff will apply the identical interpretation."* The handout further states: *"While a Municipal Code amendment is in process to achieve a long-term resolution, City staff now interprets 'major remodel' in a manner similar to that of the CCC staff for properties located in the appealable area of the coastal zone."* This skill applies the dual methodology as **operative city-staff interpretation**, not as statutory rule. A Municipal Code amendment is in process — re-check this skill when the amendment lands.
+> **OPERATIVE BUT INTERPRETIVE — read the handout's own hedge before applying.** The October 2026 Major Remodel Quick Guide (verbatim): *"Provided below are the calculation methods that City staff believes the CCC staff uses for their assessment of projects in determining whether a project is a major remodel. ... the language below is City staff's best attempt at interpreting CCC staff's analysis based on their previous appeal reports. As such, these calculation methods have not been approved by the CCC staff; and therefore, the City cannot guarantee that the CCC staff will apply the identical interpretation."* The handout further states: *"While the City pursues a Municipal Code amendment as a long-term resolution, City staff now interprets 'major remodel' in a manner similar to that of the CCC staff for projects located in coastal zone appealable areas."* This skill applies the dual methodology as **operative city-staff interpretation**, not as statutory rule. The City is pursuing a Municipal Code amendment — re-check this skill when the amendment lands.
 
 The handout's first paragraph states the consequence, verbatim: *"Whenever modifications to an existing building or structure constitute a major remodel, the building or structure shall be classified as new development subject to current zoning regulations and all requirements applicable to the construction of a new building or structure, including undergrounding requirements, required dedication of on- and off-site improvements, and payment of new development fees."*
 
@@ -211,42 +211,42 @@ The handout's first paragraph states the consequence, verbatim: *"Whenever modif
 Use the deterministic calculator before writing the narrative finding:
 
 1. List each building or structure on the site (primary dwelling, detached garage, each detached accessory building or structure). Run Step B for each one independently (see B.4).
-2. For each structure, extract or confirm Step B measurements from the demolition/existing-conditions sheets: exterior wall LF **on each floor**, load-bearing interior wall LF **on each floor**, foundation LF, roof SF, and cumulative addition square footage against that structure's January 13, 1993/reset baseline.
+2. For each structure, extract or confirm Step B measurements from the demolition/existing-conditions sheets: exterior wall LF **on each floor**, load-bearing interior wall LF **on each floor**, foundation LF, roof SF, and cumulative addition square footage against that structure's January 13, 1993/reset baseline (floor area measured per B.4: from the face of the structure, attached non-habitable area excluded).
 3. When sheet PNGs are available, run the vision extractor in a CrossBeam reference that is not included in this plugin; it uses `gemini-3-flash-preview`, returns counted segment geometry for an audit overlay, and calls the calculator.
 4. When measurements are already provided by the applicant/reviewer, call `computeMajorRemodel(input)` from a CrossBeam reference that is not included in this plugin directly with the Laguna config for the area (`coastal-appealable` for the coastal zone appealable area, `non-coastal-appealable` for the coastal zone non-appealable area). Call it once for each structure.
 5. The calculator takes one wall total per call. It does not split walls by floor. Its wall percentage is the whole-structure total. Compute the percentage on each floor yourself (B.2, B.3), then apply the three-way floor rule in B.2a.
-6. Use the calculator result and intermediate values first, then write the review narrative with the authority chain below: LCP Land Use Element → June 2026 Major Remodel Handout (including the hedge) → LBMC §25.10.008(O).
+6. Use the calculator result and intermediate values first, then write the review narrative with the authority chain below: LCP Land Use Element → October 2026 Major Remodel Handout (including the hedge) → LBMC §25.10.008(O).
 7. If the calculator returns `NEEDS_MEASUREMENT`, or the plans do not give wall LF for each floor, do not pass the Step B check. Request the missing denominator or numerator needed for the applicable methodology.
 
 #### B.1 Authority Chain (cite in this order)
 
 1. **LCP Land Use Element** — statutory base. The LCP defines "major remodel" as *"alteration of or an addition to an existing building or structure that increases the square footage of the existing building or structure by 50% or more; or demolition, removal, replacement, and/or reconstruction of 50% or more of the existing structure."*
-2. **June 2026 Major Remodel Handout** — operational application; what City staff applies in plan review (verbatim quote above).
+2. **October 2026 Major Remodel Handout** — operational application; what City staff applies in plan review (verbatim quote above).
 3. **LBMC §25.10.008(O)** — single-sentence statutory backstop: *"A major remodel is a structural renovation and/or addition, which equals or exceeds fifty percent of the original gross floor area of the structure on the lot."* (Ord. 1475, 2007.) This is the **only** Municipal Code definition of major remodel in the codified LBMC. It is silent on dual methodology, on the cumulative baseline, and on the ADU carveout — those live in the LCP and the handout.
 
 #### B.2 Coastal Zone Appealable Areas Methodology
 
-Verbatim from the June 2026 Major Remodel Handout, "COASTAL ZONE APPEALABLE AREAS" section:
+Verbatim from the October 2026 Major Remodel Handout, "COASTAL ZONE APPEALABLE AREAS" section:
 
 | Component | Formula | What Counts |
 |-----------|---------|-------------|
-| **Foundation** | (LF removed/reinforced) ÷ (LF existing) × 100 | *"For caissons, use the diameter to calculate linear feet and include any associated grade beams, taking care not to count the same linear footage twice where caissons and grade beams overlap."* |
-| **Interior + Exterior Walls (each floor)** | *"(linear feet of walls to be removed/reinforced on each floor) ÷ (linear feet of existing walls on each floor) x 100"* | All exterior walls (load-bearing AND non-load-bearing). Interior walls — load-bearing only. **Both removal AND reinforcement count as demolition.** Drywall/stucco removal does NOT count. Window/door change-outs in same openings do NOT count. Filling in window/door openings does NOT count unless additional structural support is proposed. Compute one percentage for each floor. Combine the floors only by the three-way rule in B.2a. |
-| **Roof** | (SF removed/reinforced including eaves) ÷ (SF existing) × 100 | Both removal AND reinforcement count as demolition. |
+| **Foundation** | (LF removed or reinforced) ÷ (LF existing) × 100 | *"For caissons, use the diameter to calculate linear feet and include any associated grade beams, taking care not to count the same linear footage twice where caissons and grade beams overlap."* |
+| **Interior + Exterior Walls (each floor)** | *"(linear feet of walls to be removed or reinforced on each floor) ÷ (linear feet of existing walls on each floor) x 100"* | All exterior walls (load-bearing AND non-load-bearing). Interior walls — load-bearing only. **Both removal AND reinforcement count as demolition.** Drywall/stucco removal does NOT count. Window/door change-outs in same openings do NOT count. Filling in window/door openings does NOT count unless additional structural support is proposed. Compute one percentage for each floor. Combine the floors only by the three-way rule in B.2a. |
+| **Roof** | (SF removed or reinforced including eaves) ÷ (SF existing) × 100 | Both removal AND reinforcement count as demolition. |
 
 A structure IS a major remodel if **any** of:
-1. Demolition or reinforcement of 50%+ of the **exterior walls** (apply B.2a) OR 50%+ of the **combined roof/walls/foundation** of the structure.
+1. *"Demolition or reinforcement of 50% or more of either (a) the exterior walls alone, or (b) the roof, exterior walls, load-bearing interior walls, and foundation combined."* Apply B.2a to the wall figures. The combined prong includes load-bearing interior walls.
 
 #### B.2a How Floors Combine — Three-Way Rule
 
-The June 2026 handout computes walls "on each floor". It does not state how the floor results combine. For each structure, compute the **floor percentages** (one for each floor) and the **whole-structure total**: (wall LF removed or reinforced on all floors of that structure) ÷ (existing wall LF on all floors of that structure) × 100. Then:
+The October 2026 handout computes walls "on each floor". It does not state how the floor results combine. For each structure, compute the **floor percentages** (one for each floor) and the **whole-structure total**: (wall LF removed or reinforced on all floors of that structure) ÷ (existing wall LF on all floors of that structure) × 100. Then:
 
 1. Every floor percentage is under 50% → the wall test is **not met**.
 2. At least one floor percentage is 50% or more AND the whole-structure total is 50% or more → the wall test is **met**. Both readings agree.
-3. At least one floor percentage is 50% or more BUT the whole-structure total is under 50% → **do not decide**. Return **FLAG** (not FAIL, not PASS). State that the June 2026 handout computes walls per floor but does not state how floors combine, and that the City must confirm. Show both numbers.
+3. At least one floor percentage is 50% or more BUT the whole-structure total is under 50% → **do not decide**. Return **FLAG** (not FAIL, not PASS). State that the October 2026 handout computes walls per floor but does not state how floors combine, and that the City must confirm. Show both numbers.
 
-Use the same rule for the interior + exterior wall formula in the appealable area. For the combined roof/walls/foundation test, compute the combined result with the wall figures both ways. If one reading gives 50% or more and the other gives under 50%, return FLAG and show both results.
-2. *"Addition(s) to an existing structure that individually, or when combined with prior additions, results in greater than a 50% expansion of the existing structure."*
+Use the same rule for the interior + exterior wall formula in the appealable area. For the combined roof / exterior walls / load-bearing interior walls / foundation test, compute the combined result with the wall figures both ways. If one reading gives 50% or more and the other gives under 50%, return FLAG and show both results.
+2. *"Addition(s) to an existing structure that individually, or when combined with prior additions, results in greater than a 50% expansion of the existing structure."* Measure floor area as in B.4.
 
 #### B.3 Coastal Zone Non-Appealable Areas Methodology
 
@@ -258,17 +258,19 @@ Verbatim from the handout, "COASTAL ZONE NON-APPEALABLE AREAS" section: *"City s
 
 A structure IS a major remodel if any of:
 1. *"Demolition of 50% or more of the exterior walls occurs"* (apply the three-way floor rule in B.2a).
-2. Addition(s) to the existing structure that, individually or cumulative with prior additions, result in **>50% expansion** of the existing structure.
+2. Addition(s) to the existing structure that, individually or cumulative with prior additions, result in **>50% expansion** of the existing structure. Measure floor area as in B.4.
 
 #### B.4 Each Structure Separately; Cumulative Baseline — January 13, 1993
 
-Verbatim from the handout: *"For sites with more than one structure (whether primary dwelling unit or detached accessory buildings or structures, or similar) the above calculation methods shall be applied to each such building or structure independently."*
+Verbatim from the handout: *"For sites with more than one structure (whether primary dwelling unit or detached accessory buildings or structures, or similar) the above calculation methods shall be applied to each such building or structure independently to determine whether a project constitutes a major remodel of that structure. For a detached accessory structure that is non-habitable, such as a detached garage, the entire floor area counts."*
 
 - Run B.2 or B.3 for each building or structure on its own. Use only that structure's foundation, walls, roof, and floor area.
 - Do not add a garage or a detached structure to the primary dwelling's totals.
 - Report YES / NO / FLAG for each structure.
 
-Verbatim from the handout (appealable-area section): *"'Existing structure' for the purposes of this section means a structure that legally existed on the site on January 13, 1993. The construction of a new structure or major remodel of an existing structure after January 13, 1993 establishes a new baseline for purposes of calculating cumulative additions over time."* The non-appealable section reads "up to January 13, 1993". The date is the same.
+Verbatim from the handout (both sections, trigger 2): *"The floor area is measured from the face of the structure. For this section, 'existing structure' means a structure that legally existed on the site on January 13, 1993. For purposes of this calculation, attached non-habitable or unconditioned floor area within a principal structure, such as a residence or commercial building, is excluded from the calculation. Examples include attached garages, mechanical areas, and enclosed crawl spaces. The construction of a new structure or major remodel of an existing structure after January 13, 1993 establishes a new baseline for purposes of calculating cumulative additions over time."*
+
+- **Expansion floor area (new in October 2026).** Attached garage and other attached non-habitable area excluded; a detached non-habitable structure counts in full; a garage conversion is a FLAG. Apply the rules in `references/city-major-remodel-methodology.md` → Expansion Floor Area.
 
 - The baseline belongs to each structure. It is not a site-wide total.
 - **NOT a rolling 3-year window.** Earlier Laguna research drafts cited a "3-year rolling cumulative" framing — that does not appear in the handout, the LCP, or LBMC §25.10.008(O). Use Jan 13, 1993.
@@ -281,7 +283,7 @@ Verbatim from the handout (appealable-area section): *"'Existing structure' for 
 
 #### B.6 Practical Cushion (city advisory)
 
-Verbatim from the handout: *"Although not required, City staff advises applicants to provide a cushion that accounts for unplanned demolition that may sometimes occur during the construction phase of the project — there have been instances where a project was proposed to remain under the 50% demolition threshold, but exceeded 50% due to unforeseen circumstances during construction."*
+Verbatim from the handout: *"Although not required, City staff advises applicants to provide a cushion that accounts for unplanned demolition that may sometimes occur during the construction phase of the project – there have been instances where a project was proposed to remain under the 50% demolition threshold, but exceeded 50% due to unforeseen circumstances during construction. Should this occur, construction may be halted until the project can be re-entitled as new development."*
 
 Treat any structure, or any floor of a structure, landing within ~5% of the 50% threshold under either methodology as **FLAG — applicant should provide cushion analysis or be prepared for major-remodel reclassification mid-construction.**
 
@@ -390,9 +392,9 @@ Full content: `references/city-bluff-overlay.md`.
 
 ### STEP F — Nonconforming Structures (Ch. 25.56) — Three Rules, Not One
 
-#### F.0 Major Remodel Ends Nonconforming Status (June 2026 handout)
+#### F.0 Major Remodel Ends Nonconforming Status (October 2026 handout)
 
-Check this first. If Step B classifies a structure as a major remodel, the June 2026 Major Remodel Quick Guide governs its nonconformities [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639179723814800000, as of 2026-09-29]. Verbatim: *"Any legal, non-conforming structure shall be brought into compliance when the threshold for a major remodel is met. When a principal structure undergoes a major remodel, all associated accessory structures and improvements shall be subject to the current zoning regulations and all other applicable requirements, and shall lose their legal, nonconforming status."*
+Check this first. If Step B classifies a structure as a major remodel, the October 2026 Major Remodel Quick Guide governs its nonconformities [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09]. Verbatim: *"Any legal, non-conforming structure shall be brought into compliance when the threshold for a major remodel is met. When a principal structure undergoes a major remodel, all associated accessory structures and improvements shall be subject to the current zoning regulations and all other applicable requirements, and shall lose their legal, nonconforming status."*
 
 - The major-remodel structure must comply with current zoning. Its existing nonconformities do not carry forward.
 - When the principal structure is a major remodel, each associated accessory structure and improvement loses its legal, nonconforming status. Require the plans to bring each one into compliance.
@@ -511,7 +513,7 @@ For each city overlay test that fires, return:
 Aggregate at the end of the city overlay:
 - **Planning route:** Zone Clearance / Administrative Design Review / Design Review / `needs_source` (from Step A; a Step B major-remodel finding matches §25.05.040(B)(1)(a))
 - **Major Remodel:** YES / NO / FLAG for each structure on the site (with methodology applied, the wall percentage for each floor, and the whole-structure wall total)
-- **Nonconforming status ended (June 2026 handout):** list each structure and improvement that loses legal, nonconforming status, or N/A
+- **Nonconforming status ended (October 2026 handout):** list each structure and improvement that loses legal, nonconforming status, or N/A
 - **CDP Required:** YES / NO (with reasons)
 - **Sprinkler Retrofit Required:** YES / NO — state which trigger fired: Ch. 14.52.030 (valuation) and/or Title 15 §1103.5.4 (with which prong). If the documents do not state a valuation, report Trigger A as undetermined and request it.
 - **Bluff Overlay:** APPLICABLE / N/A
@@ -531,7 +533,7 @@ Aggregate at the end of the city overlay:
 6. **ADU is the only major-remodel carveout. No 1,500 sf SFR exception exists.** 1,500 sf is a parking rule (§25.56.008(C)).
 7. **Bluff = §25.50.004(B)(4) + §25.50.020.** Pre-existing rule (Ord. 811 1974 → Ord. 1416 2002), NOT Ord. 1688.
 8. **Ord. 1688 (7/11/2023) amended §25.07 CDP procedures, not bluff setbacks.**
-9. **Ch. 25.56 has three rules, not one.** Below the major-remodel threshold, there is no blanket loss of nonconforming protection at 50%. §25.56.014 50%-damage rule applies to **multi-family only**. At a major remodel, the June 2026 handout ends nonconforming status for the structure and, for a principal structure, for its accessory structures and improvements.
+9. **Ch. 25.56 has three rules, not one.** Below the major-remodel threshold, there is no blanket loss of nonconforming protection at 50%. §25.56.014 50%-damage rule applies to **multi-family only**. At a major remodel, the October 2026 handout ends nonconforming status for the structure and, for a principal structure, for its accessory structures and improvements.
 10. **CDP required for major remodel in coastal zone regardless of E-93-1.** ADUs still need CDP per CCC F9a-11-2024.
 11. **Deterministic phantom rule supplements, not replaces, the parent's heuristic.** Both run.
 12. **Cite verbatim. Trace every load-bearing threshold to a specific on-disk source file in the City source document (not included in this plugin).**

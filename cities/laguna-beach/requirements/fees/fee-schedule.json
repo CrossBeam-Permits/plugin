@@ -3691,7 +3691,219 @@
           }
         ]
       }
-    ]
+    ],
+    "planning": {
+      "note": "Answer only the decisions the filed or established applications raise.",
+      "decisions": [
+        {
+          "id": "zoning_plan_check",
+          "label": "Zoning Plan Check",
+          "question": "Which Zoning Plan Check fee does the filing owe? Small for minor work and ADU/JADU applications; Large for new development or an LCP major remodel.",
+          "options": [
+            "zoning_plan_check_small",
+            "zoning_plan_check_large"
+          ]
+        },
+        {
+          "id": "design_review",
+          "label": "Design Review",
+          "question": "Which Design Review fee matches the established tier?",
+          "options": [
+            "design_review_admin",
+            "design_review_minor",
+            "design_review_board",
+            "design_review_referral",
+            "design_review_major"
+          ]
+        },
+        {
+          "id": "coastal_development_permit",
+          "label": "Coastal Development Permit",
+          "question": "Which CDP fee applies? Decide ADU-only or not, any other discretionary approval, and the appeal area (site facts).",
+          "options": [
+            "cdp_exemption",
+            "cdp_de_minimis_waiver",
+            "cdp_de_minimis_hearing",
+            "cdp_approval_in_concept",
+            "cdp_administrative",
+            "cdp_nonappealable",
+            "cdp_appealable_minor",
+            "cdp_appealable_major"
+          ]
+        },
+        {
+          "id": "variance",
+          "label": "Variance",
+          "question": "Is a Variance filed alone, or with another fee-bearing application?",
+          "options": [
+            "variance_with_other",
+            "variance_standalone"
+          ]
+        },
+        {
+          "id": "conditional_use_permit",
+          "label": "Conditional Use Permit",
+          "question": "Which Conditional Use Permit class applies?",
+          "options": [
+            "cup_minor",
+            "cup_minor_design_review",
+            "cup_major_design_review",
+            "cup_intensification",
+            "cup_amendment"
+          ]
+        },
+        {
+          "id": "administrative_use_permit",
+          "label": "Administrative Use Permit",
+          "question": "Does the filing need an Administrative Use Permit?",
+          "options": [
+            "aup"
+          ]
+        },
+        {
+          "id": "concept_review",
+          "label": "Concept Review",
+          "question": "Is Concept Review requested, and before which body?",
+          "options": [
+            "concept_review_application",
+            "concept_review_planning_commission"
+          ]
+        },
+        {
+          "id": "pre_application_meeting",
+          "label": "Pre-Application Meeting",
+          "question": "Did the applicant request a pre-application meeting, and which kind?",
+          "options": [
+            "pre_application_dmt",
+            "pre_application_onsite"
+          ]
+        },
+        {
+          "id": "revocable_encroachment_permit",
+          "label": "Revocable Encroachment Permit",
+          "question": "Does the filing include a Revocable Encroachment Permit?",
+          "options": [
+            "encroachment_revocable"
+          ]
+        },
+        {
+          "id": "sign_permit",
+          "label": "Sign Permit",
+          "question": "Which Sign Permit fee applies?",
+          "options": [
+            "sign_administrative",
+            "sign_master_program",
+            "sign_planning_commission",
+            "sign_temporary"
+          ]
+        },
+        {
+          "id": "landscape_review",
+          "label": "Landscape Plan Review",
+          "question": "Does the filing need Landscape Plan Review and Inspection?",
+          "options": [
+            "landscape_plan_review_inspection"
+          ]
+        },
+        {
+          "id": "peer_review_deposit",
+          "label": "Peer Review Deposit",
+          "question": "Is a peer-reviewed technical report (geotechnical, coastal hazards, bluff edge, biological, historic, WQMP, hydraulic, traffic, parking) established?",
+          "options": [
+            "peer_review"
+          ]
+        },
+        {
+          "id": "environmental_review",
+          "label": "Environmental Review (CEQA)",
+          "question": "Does the project need an Initial Study, Negative Declaration, MND or EIR? A categorical exemption owes nothing.",
+          "options": [
+            "ceqa"
+          ]
+        },
+        {
+          "id": "historic",
+          "label": "Historic",
+          "question": "Which Historic application does the filing include?",
+          "options": [
+            "historic_alteration_register_structure",
+            "historic_alteration_resource",
+            "historic_resource_determination",
+            "historic_local_determination",
+            "mills_act",
+            "historic_register_removal"
+          ]
+        },
+        {
+          "id": "tree_removal",
+          "label": "Tree Removal Permit",
+          "question": "Which Tree Removal Permit category applies?",
+          "options": [
+            "tree_removal_cat1",
+            "tree_removal_cat2",
+            "tree_removal_cat3",
+            "heritage_tree_application"
+          ]
+        },
+        {
+          "id": "subdivision",
+          "label": "Subdivision",
+          "question": "Which subdivision application does the filing include?",
+          "options": [
+            "lot_line_adjustment",
+            "lot_merger",
+            "tentative_map",
+            "tentative_map_amendment",
+            "final_map",
+            "certificate_of_compliance",
+            "condominium_conversion"
+          ]
+        },
+        {
+          "id": "wireless_facility",
+          "label": "Wireless Facility Permit",
+          "question": "Which Wireless Facility Permit fee applies?",
+          "options": [
+            "wireless_administrative",
+            "wireless_planning_commission"
+          ]
+        },
+        {
+          "id": "temporary_use_permit",
+          "label": "Temporary Use Permit",
+          "question": "Which Temporary Use Permit fee applies?",
+          "options": [
+            "temporary_use_director",
+            "temporary_use_planning_commission"
+          ]
+        },
+        {
+          "id": "extension",
+          "label": "Extension",
+          "question": "Is this an extension of an approval period or a time extension review?",
+          "options": [
+            "extension_of_approval",
+            "time_extension_review"
+          ]
+        },
+        {
+          "id": "use_occupancy_review",
+          "label": "Use and Occupancy Review",
+          "question": "Does the filing need a Use and Occupancy Review?",
+          "options": [
+            "use_occupancy_review"
+          ]
+        },
+        {
+          "id": "address_change",
+          "label": "Address Change",
+          "question": "Does the filing request a street address change?",
+          "options": [
+            "street_address_change"
+          ]
+        }
+      ]
+    }
   },
   "fee_review_triggers": [
     {

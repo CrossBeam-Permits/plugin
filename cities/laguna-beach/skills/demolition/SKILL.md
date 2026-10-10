@@ -167,7 +167,7 @@ Note: Demolition rules are predominantly local — most of this skill's content 
 | Partial demo crossing 50% threshold | Treated as **major remodel** (new construction standards) |
 
 #### Major Remodel Connection
-Demolition of 50%+ of exterior walls (computed on each floor and for the whole structure; if a floor is at 50%+ but the whole-structure total is under 50%, return FLAG — see `../residential-remodel/references/city-major-remodel-methodology.md`), or combined roof/walls/foundation in the coastal zone appealable area, measured for each building or structure separately, triggers the major remodel definition (Major Remodel Interpretation Quick Guide, Updated June 2026), which means the remaining/new construction must meet new construction standards. See `laguna-beach-residential-addition` skill for detailed calculation methods.
+Demolition of 50%+ of exterior walls (computed on each floor and for the whole structure; if a floor is at 50%+ but the whole-structure total is under 50%, return FLAG — see `../residential-remodel/references/city-major-remodel-methodology.md`), or the roof, exterior walls, load-bearing interior walls, and foundation combined in the coastal zone appealable area, measured for each building or structure separately, triggers the major remodel definition (Major Remodel Interpretation Quick Guide, Updated October 2026), which means the remaining/new construction must meet new construction standards. See `laguna-beach-residential-addition` skill for detailed calculation methods.
 
 **ADU demolition is EXEMPT** from the major remodel calculation.
 

@@ -22,7 +22,7 @@ Laguna's rule is **deterministic** because the city has codified the conversion 
 - A wall annotated "existing to remain" but carrying new continuous footings, new shear panels, or new hold-downs IS, by city definition, a new wall.
 - A wall annotated "existing to remain" with drywall removed IS, by city definition, part of the area of renovation.
 
-This means the rule does not "fire" or "not fire" — it converts. The downstream effect is to re-run the Step B coastal zone appealable or coastal zone non-appealable major-remodel methodology with those walls counted in the renovation column instead of the existing column. Recount the walls on each floor of the affected structure; the June 2026 handout counts walls "on each floor". A project that appeared to be at 30% wall demolition under the original plan-set classification may land at 60% under the corrected classification.
+This means the rule does not "fire" or "not fire" — it converts. The downstream effect is to re-run the Step B coastal zone appealable or coastal zone non-appealable major-remodel methodology with those walls counted in the renovation column instead of the existing column. Recount the walls on each floor of the affected structure; the October 2026 handout counts walls "on each floor". A project that appeared to be at 30% wall demolition under the original plan-set classification may land at 60% under the corrected classification.
 
 ---
 
@@ -44,7 +44,7 @@ For every Laguna residential remodel review:
 
 4. **Recompute** the Step B methodology with the converted walls counted in the renovation column. Do this for each structure separately, and for walls on each floor. In the coastal zone appealable area: re-run the foundation + walls + roof calculation. In the coastal zone non-appealable area: re-run the exterior-walls-only calculation.
 
-5. **Compare to 50%.** A project that crosses the 50% threshold under the corrected calculation is a **major remodel** under the June 2026 Major Remodel Quick Guide's coastal zone appealable or coastal zone non-appealable methodology [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639179723814800000, as of 2026-09-29]. Combine the floors with the three-way floor rule in `city-major-remodel-methodology.md` (Unit of Measurement). If a converted floor reaches 50% or more but the whole-structure total stays under 50%, return FLAG with both numbers; the City must confirm how floors combine.
+5. **Compare to 50%.** A project that crosses the 50% threshold under the corrected calculation is a **major remodel** under the October 2026 Major Remodel Quick Guide's coastal zone appealable or coastal zone non-appealable methodology [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09]. Combine the floors with the three-way floor rule in `city-major-remodel-methodology.md` (Unit of Measurement). If a converted floor reaches 50% or more but the whole-structure total stays under 50%, return FLAG with both numbers; the City must confirm how floors combine.
 
 6. **Output PASS / FLAG / TRIGGERED:**
    - **PASS** — no walls converted; project does not change classification.

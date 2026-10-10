@@ -118,7 +118,7 @@ Trigger B fires when work requiring a building permit involves **any** of the fo
 
 #### Prong 1 — Alteration of 50% or More of a Building
 
-Use the Step B major-remodel methodology (`city-major-remodel-methodology.md`) as the operational test. The "50% of a building" prong tracks the major-remodel determination, with the same dual coastal zone appealable vs coastal zone non-appealable methodology (June 2026 handout: walls counted on each floor, each structure tested independently) and the same Jan 13, 1993 cumulative baseline. When Step B classifies the project as a major remodel, prong 1 fires.
+Use the Step B major-remodel methodology (`city-major-remodel-methodology.md`) as the operational test. The "50% of a building" prong tracks the major-remodel determination, with the same dual coastal zone appealable vs coastal zone non-appealable methodology (October 2026 handout: walls counted on each floor, each structure tested independently) and the same Jan 13, 1993 cumulative baseline. When Step B classifies the project as a major remodel, prong 1 fires.
 
 #### Prong 2 — Work on 50% or More of the Building's Exterior
 

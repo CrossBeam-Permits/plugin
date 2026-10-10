@@ -233,6 +233,43 @@ function validatePermitFeeOptions(permitFee) {
   }
 }
 
+/** Every fee in the schedule's planning tables, each carrying its kind. */
+export function planningFeeRows(schedule) {
+  const planning = schedule?.planning ?? {};
+  return [
+    ...(planning.flat ?? []).map((fee) => ({ ...fee, kind: 'flat' })),
+    ...(planning.deposit ?? []).map((fee) => ({ ...fee, kind: 'actual_cost_deposit' })),
+    ...(planning.variable ?? []),
+    ...(planning.known_gaps ?? []),
+  ];
+}
+
+/**
+ * `fee_capture.planning.decisions`: one decision per fee family a Planning
+ * screen settles. Each option is a planning fee id, so the list cannot drift
+ * from the rates, and no fee id answers two decisions.
+ */
+function validatePlanningFeeCapture(obj) {
+  const planning = obj.fee_capture?.planning;
+  if (planning === undefined) return;
+  if (!planning || !Array.isArray(planning.decisions) || !planning.decisions.length)
+    throw new Error('fee_capture.planning requires non-empty decisions');
+  const known = new Set(planningFeeRows(obj).map((fee) => fee.id));
+  const decisionIds = new Set();
+  const optionIds = new Set();
+  for (const decision of planning.decisions) {
+    if (!decision?.id || !decision?.label || !decision?.question || !Array.isArray(decision.options) || !decision.options.length)
+      throw new Error('fee_capture.planning.decisions entries require id, label, question, and non-empty options');
+    if (decisionIds.has(decision.id)) throw new Error(`fee_capture.planning decision ${decision.id} is listed twice`);
+    decisionIds.add(decision.id);
+    for (const option of decision.options) {
+      if (!known.has(option)) throw new Error(`fee_capture.planning.${decision.id} option ${option} is not a planning fee id`);
+      if (optionIds.has(option)) throw new Error(`fee_capture.planning option ${option} answers two decisions`);
+      optionIds.add(option);
+    }
+  }
+}
+
 /** Every fee_capture input must feed a fee line or be a built-in FeeInput. */
 function validateFeeCapture(obj) {
   const capture = obj.fee_capture;
@@ -244,7 +281,10 @@ function validateFeeCapture(obj) {
     if (!groupIds.has(id)) throw new Error(`building.trades_new.replaces_capture_groups ${id} is not a fee_capture group`);
   }
   if (capture === undefined) return;
-  if (!capture || !Array.isArray(capture.groups) || !capture.groups.length)
+  if (!capture) throw new Error('fee_capture must be an object');
+  validatePlanningFeeCapture(obj);
+  if (capture.groups === undefined && capture.planning) return;
+  if (!Array.isArray(capture.groups) || !capture.groups.length)
     throw new Error('fee_capture requires non-empty groups');
   const consumed = new Set(Object.keys(FEE_CAPTURE_BUILT_INS));
   const scopes = new Set();

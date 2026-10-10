@@ -6,9 +6,9 @@ A separate rule applies when a structure is a **major remodel**. Check it first 
 
 ---
 
-## Major Remodel — Nonconforming Status Ends (June 2026 Major Remodel Quick Guide)
+## Major Remodel — Nonconforming Status Ends (October 2026 Major Remodel Quick Guide)
 
-The City's Major Remodel Interpretation Quick Guide, "Updated June 2026", states [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639179723814800000, as of 2026-09-29; same text in SB 9 application Exhibit F, https://www.lagunabeachcity.net/home/showpublisheddocument/26958/639232726993730000]:
+The City's Major Remodel Interpretation Quick Guide, "Updated October 2026", states [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09; the June 2026 edition printed as SB 9 application Exhibit F, https://www.lagunabeachcity.net/home/showpublisheddocument/26958/639232726993730000, has the same sentence]:
 
 > *"Any legal, non-conforming structure shall be brought into compliance when the threshold for a major remodel is met. When a principal structure undergoes a major remodel, all associated accessory structures and improvements shall be subject to the current zoning regulations and all other applicable requirements, and shall lose their legal, nonconforming status."*
 
@@ -131,7 +131,7 @@ Brief notes (full verbatim text in the City source document (not included in thi
 
 | Misattribution | Correct Framing |
 |----------------|-----------------|
-| "Nonconforming protection lost at any 50% threshold in Ch. 25.56" | Ch. 25.56 has no such blanket rule. §25.56.008(A) requires full Title 25 conformance for the expansion portion only (no % threshold). §25.56.014 is multi-family-only. §25.56.020(C) triggers access standards. The loss of nonconforming status at a **major remodel** comes from the June 2026 Major Remodel Quick Guide, not from Ch. 25.56 (see the first section). |
+| "Nonconforming protection lost at any 50% threshold in Ch. 25.56" | Ch. 25.56 has no such blanket rule. §25.56.008(A) requires full Title 25 conformance for the expansion portion only (no % threshold). §25.56.014 is multi-family-only. §25.56.020(C) triggers access standards. The loss of nonconforming status at a **major remodel** comes from the October 2026 Major Remodel Quick Guide, not from Ch. 25.56 (see the first section). |
 | "1,500 sf SFR exception is a major-remodel carveout" | 1,500 sf is the §25.56.008(C) **parking** carveout for nonconforming SFRs. Not a major-remodel exemption. |
 | "50% damage triggers loss of nonconforming protection" | §25.56.014 only triggers Ch. 25.52 **parking** compliance, and ONLY for multi-family. SFRs may reconstruct regardless of damage extent (within 5 yrs). |
 
@@ -144,7 +144,7 @@ Brief notes (full verbatim text in the City source document (not included in thi
 **Existing structure has nonconformities?** YES | NO (basis: zoning compliance review)
 **Type of nonconformities:** [setback / height / coverage / FAR / parking / use / lot / other]
 
-**Step F.0 — Major remodel ends nonconforming status (June 2026 Major Remodel Quick Guide):**
+**Step F.0 — Major remodel ends nonconforming status (October 2026 Major Remodel Quick Guide):**
   - Structure meets the major-remodel threshold (Step B): YES | NO — for each structure
   - If YES, structure brought into compliance with current zoning: YES | NO | NEEDS REVIEW
   - Principal structure is a major remodel: YES | NO

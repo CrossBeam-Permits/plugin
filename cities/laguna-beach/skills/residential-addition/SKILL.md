@@ -154,7 +154,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 #### STEP 2: Is It a Major Remodel?
 
-**CRITICAL**: Determine if the project crosses the 50% threshold. Use the correct calculation method based on location. Apply the City's Major Remodel Interpretation Quick Guide, Updated June 2026 [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639179723814800000, as of 2026-09-29].
+**CRITICAL**: Determine if the project crosses the 50% threshold. Use the correct calculation method based on location. Apply the City's Major Remodel Interpretation Quick Guide, Updated October 2026 [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09].
 
 | Location | Calculation Method | What Counts |
 |----------|-------------------|-------------|
@@ -162,14 +162,16 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 | **Coastal zone non-appealable area** | Exterior wall LF only (each floor) | Removal only (not reinforcement) |
 
 - Run the test for **each building or structure** on the site independently.
-- Compute one wall percentage **for each floor**, and the whole-structure total (all floors of that structure). The June 2026 handout does not state how floors combine. Apply this rule:
+- Compute one wall percentage **for each floor**, and the whole-structure total (all floors of that structure). The October 2026 handout does not state how floors combine. Apply this rule:
   1. Every floor under 50% → wall test not met.
   2. At least one floor at 50%+ AND whole-structure total at 50%+ → wall test met.
   3. At least one floor at 50%+ BUT whole-structure total under 50% → do not decide. Return FLAG (not FAIL, not PASS); the City must confirm how floors combine. Show both numbers.
 
 **Major remodel = 50%+ demolition/reinforcement OR greater than 50% cumulative addition to that structure since its Jan 13, 1993 baseline**
 
-When the principal structure is a major remodel, all associated accessory structures and improvements "shall lose their legal, nonconforming status" (June 2026 handout). See `references/city-major-remodel.md`.
+- **Expansion floor area (October 2026):** attached garage and other attached non-habitable area excluded; a detached non-habitable structure counts in full; a garage conversion is a FLAG. Apply the rules in `references/city-major-remodel.md` → Expansion Floor Area.
+
+When the principal structure is a major remodel, all associated accessory structures and improvements "shall lose their legal, nonconforming status" (October 2026 handout). See `references/city-major-remodel.md`.
 
 #### STEP 3: What Permits/Reviews Are Needed?
 

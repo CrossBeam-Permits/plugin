@@ -334,7 +334,7 @@ Ord. 1732 §37 amended §25.44.060. When Design Review independently applies, th
 
 ### Major Remodel and Nonconformities
 - Major remodel routes to Design Review under §25.05.040(B)(1)(a) and is classified as a new building under §25.56.011
-- Two calculation methods: coastal zone appealable areas (more restrictive) vs. coastal zone non-appealable areas; walls counted on each floor; each building or structure tested independently (Major Remodel Interpretation Quick Guide, Updated June 2026)
+- Two calculation methods: coastal zone appealable areas (more restrictive) vs. coastal zone non-appealable areas; walls counted on each floor; each building or structure tested independently; expansion floor area measured from the face of the structure, excluding attached garages and other attached non-habitable area of a principal structure (Major Remodel Interpretation Quick Guide, Updated October 2026)
 - When a principal structure undergoes a major remodel, all associated accessory structures and improvements "shall lose their legal, nonconforming status" (same handout)
 - ADU construction is EXEMPT from major remodel calculation
 
