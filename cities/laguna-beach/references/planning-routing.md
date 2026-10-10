@@ -59,8 +59,9 @@ Administrative Design Review; any unknown leaves the equipment route undetermine
    275 (1984, as amended). The form's published title is not confirmed—do not invent it.
 6. A three-foot path of travel remains around every structure.
 
-Before equipment permit issuance, the installation contractor also signs the
-§7.25.130(A) acknowledgment that the installation will meet §7.25.040 noise limits.
+For equipment in or adjacent to residential areas, the installation contractor also signs
+the §7.25.130(A) acknowledgment, before permit issuance, that the installation will meet
+§7.25.040 noise limits.
 
 ## Coastal, bluff, geotechnical, and hazard branches
 

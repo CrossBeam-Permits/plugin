@@ -53,8 +53,10 @@ Content:
   hand-off), `portal-account.md`, `after-filing.md`.
 - Law reviewed through 2026-10-10 (no ordinance after 1733). HVAC and pool/spa equipment
   now only has to stay out of the required front yard setback to skip Design Review
-  (Ord. 1731, LBMC §7.25.130(C)(2)); a required side yard is still closed to that
-  equipment under §25.50.004(F)(2).
+  (Ord. 1731, LBMC §7.25.130(C)(2)), and that test applies in any zone, not only in or
+  adjacent to residential areas. A required side yard is still closed to that equipment
+  under §25.50.004(F)(2). The coastal exemption record no longer has to be on the City's
+  website (Ord. 1732, §25.07.008(B)).
 
 ## 0.4.0 (2026-09-08, PR #6)
 
