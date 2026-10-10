@@ -46,6 +46,7 @@ A map can also carry:
 - `required_declarations`: applicant declarations that must be confirmed before the form fills (for the Building application, `permittee.type`; see `applicant-confirmations.md`).
 - `only_when` on a mapping: the field fills only when a confirmed declaration has that value. Contractor blocks fill only on a licensed-contractor permit and stay blank on an owner-builder permit.
 - `signature_blocks`: every place the applicant signs or dates, with page and rectangle. `fill-form.py` refuses any mapping that targets one.
+- `manual_sections`: pages the City built without form fields (the SB 9 application sections, the whole Sign Permit Application). `fill-form.py` prints them and copies them into `review-and-sign.json`; the applicant completes them by hand. A map with no mappings at all refuses to fill.
 
 ## Logical and visual verification
 

@@ -65,7 +65,19 @@ def locate_form(directory: Path, form: dict[str, Any]) -> Path:
     )
 
 
+# Forms whose City PDF has no "Site Address" / "Owner Name" fields. Their only maps are the
+# semantic ones author-semantic-maps.py writes, so the seed carries no explicit mappings.
+UNSEEDED_FORMS = {
+    "lot-line-adjustment-application",
+    "revocable-encroachment-permit-application",
+    "sign-permit-application",
+    "temporary-use-permit-application",
+}
+
+
 def mappings_for(form_id: str) -> tuple[list[dict[str, Any]], list[str]]:
+    if form_id in UNSEEDED_FORMS:
+        return [], []
     if form_id == "building-application":
         # Text32 is the stormwater "Signed:" line; the dates beside signatures and the
         # City-use permit numbers stay review-only.

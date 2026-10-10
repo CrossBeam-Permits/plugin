@@ -259,6 +259,14 @@ def main() -> int:
             f"{field_map['form_id']}: field map status is {status}; "
             f"{field_map.get('status_note') or 'pin and remap the current City revision first'}"
         )
+    manual_sections = field_map.get("manual_sections") or []
+    if not field_map["canonical_mappings"]:
+        pages = "; ".join(f"pages {item['pages']}: {item['title']}" for item in manual_sections)
+        raise SystemExit(
+            f"{field_map['form_id']}: the City form has no fillable fields, so nothing can be filled. "
+            f"The applicant completes it by hand ({pages or 'every page'}); verify the file with "
+            "check-source-freshness.py and list the values for the applicant to transcribe."
+        )
 
     signature_fields = {
         block["pdf_field"]
@@ -464,13 +472,17 @@ def main() -> int:
             "declarations": declarations,
             "review_fields": field_map["review_fields"],
             "signature_blocks": field_map.get("signature_blocks") or [],
+            "manual_sections": manual_sections,
             "instruction": (
                 "User must review the final rendered form and personally complete signatures/attestations. "
+                "Sections listed in manual_sections have no form fields; the applicant completes them by hand. "
                 "After signing, run verify-signed-form.py on the signed file and upload only that file."
             ),
         },
     )
     print(f"Filled {len(answers)} exact fields -> {output}")
+    for section in manual_sections:
+        print(f"MANUAL: pages {section['pages']} have no form fields: {section['title']}")
     if required_unresolved:
         print(f"WARNING: {len(required_unresolved)} required facts remain unresolved")
         return 2

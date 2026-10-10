@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "verified_at": "2026-10-09T00:35:00-07:00",
+  "verified_at": "2026-10-09T21:03:41-07:00",
   "redistribution_policy": "fetch_from_official_source_and_verify; City PDF binaries are not bundled",
   "source_pages": {
     "planning": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
@@ -12,35 +12,40 @@
     {
       "id": "adu-application",
       "lane": "planning",
-      "status": "needs_source",
-      "official_name": "ADU Application",
-      "download_name": "ADU_ 080526_ Application _fillable.pdf",
+      "status": "pinned",
+      "official_name": "ADU & JADU Application",
+      "download_name": "ADU_Application 090126_fillable.pdf",
       "cache_name": "adu-application.pdf",
-      "document_id": "26710",
-      "ticks": "639216203446500000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26710/639216203446500000",
+      "document_id": "27032",
+      "ticks": "639238583151930000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/27032/639238583151930000",
       "printed_revision": "Updated August 2026",
-      "sha256": "9979966e09f4c52dee1540c06efc1289f3d136ac8f02ecddaca381e44f4b970e",
-      "bytes": 8341361,
+      "sha256": "191e46311cc0fef51a79a5efd225e19b8efb4a27feae034bb0d33abff9ff429a",
+      "bytes": 8364098,
       "pages": 43,
       "canonical_fields": 231,
       "widgets": 258,
       "field_tree_sha256": "aa8548a9ebce8dc76b246a8ea580707ecffd30abd8ed834c068f5dba58a9cde9",
-      "field_map_version": "1.0.0",
+      "field_map_version": "2.0.0",
       "redistribution": "fetch_only",
-      "current_source": {
-        "official_name": "ADU & JADU Application",
-        "document_id": "27032",
-        "ticks": "639238583151930000",
-        "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/27032/639238583151930000",
-        "observed_on": "2026-09-08 Applications & Handouts page audit (references/form-coverage.md)",
-        "last_fetch_attempt": {
-          "at": "2026-10-09T00:33:53Z",
-          "method": "curl GET and headless Chromium navigation",
-          "http_status": 403,
-          "server": "AkamaiGHost"
-        },
-        "action": "Download this revision in the applicant's visible browser, inspect it with scripts/inspect-form.py, then pin and remap it. Until then the pinned document 26710 is obsolete and must not be filled."
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T04:01:48Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Tue, 01 Sep 2026 10:18:35 GMT",
+        "pdf_creation_date": "2026-03-26T16:28:27-07:00",
+        "pdf_mod_date": "2026-09-01T10:22:31-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "ADU Application",
+            "observed_at": "2026-10-10T04:01:40Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/27032 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Replaces document 26710 (ADU_ 080526_ Application _fillable.pdf, 8,341,361 bytes). Same 43 pages, same field tree (field_tree_sha256 unchanged), same printed revision line. The only text change: the application and deposit fee in submittal requirement 1 rose from ADU $945 / JADU $945 to ADU $1,390 / JADU $1,390."
       }
     },
     {
@@ -227,6 +232,201 @@
       "field_tree_sha256": "0ccdb721bcac3120c206bcbad8d444549b5b7b192d566998ff8eac464c62f1dd",
       "field_map_version": "2.0.0",
       "redistribution": "fetch_only"
+    },
+    {
+      "id": "sb-9-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "SB 9 Application",
+      "download_name": "SB 9 Application_82526.pdf",
+      "cache_name": "sb-9-application.pdf",
+      "document_id": "26958",
+      "ticks": "639232726993730000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26958/639232726993730000",
+      "printed_revision": "Updated August 2026",
+      "sha256": "adf59beb1e6fa9b2183d8f9ebd625ccbf7c66820933bbb5bfb2a79bb58ac446f",
+      "bytes": 11272328,
+      "pages": 105,
+      "canonical_fields": 200,
+      "widgets": 226,
+      "field_tree_sha256": "83d747d87611cdaa416005828b017a9ae0af82802e963b65886f254dc2ec1494",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T04:03:41Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Tue, 25 Aug 2026 15:38:19 GMT",
+        "pdf_creation_date": "2026-08-19T16:03:16-07:00",
+        "pdf_mod_date": "2026-08-25T13:46:28-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "SB 9 Application",
+            "observed_at": "2026-10-10T04:01:40Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26958 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Replaces the DRAFT document 26708 (SB 9 Application_DRAFT 8526.pdf, 46 pages, 263 fields) that the 2026-08-14 link inventory recorded. 26708 still serves its DRAFT file, but the source page no longer links it. This revision is 105 pages: the SB 9 lot split and two-unit application sections, exhibits A-O, and a bundled Coastal Development Permit application package. Its application sections have no form fields."
+      }
+    },
+    {
+      "id": "sign-permit-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Sign Permit Application",
+      "download_name": "Sign Permit Application_July 2026.pdf",
+      "cache_name": "sign-permit-application.pdf",
+      "document_id": "26375",
+      "ticks": "639192070419070000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26375/639192070419070000",
+      "printed_revision": "Updated July 2026",
+      "sha256": "7b1537b86bf022e9014e67b0bb0d92c7ccab1f3dec270ae257341b8c89fefb70",
+      "bytes": 1252957,
+      "pages": 36,
+      "canonical_fields": 0,
+      "widgets": 0,
+      "field_tree_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T04:01:43Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Thu, 09 Jul 2026 14:17:21 GMT",
+        "pdf_creation_date": "2026-07-09T14:06:44-07:00",
+        "pdf_mod_date": "2026-07-09T14:06:44-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Sign Permit Application",
+            "observed_at": "2026-10-10T04:01:40Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26375 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Same document id, ticks, byte count, page count, and extracted text as the 2026-08-14 link inventory."
+      }
+    },
+    {
+      "id": "temporary-use-permit-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Temporary Use Permit Application",
+      "download_name": "TUP Application 71426_fillable.pdf",
+      "cache_name": "temporary-use-permit-application.pdf",
+      "document_id": "26473",
+      "ticks": "639198118552870000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26473/639198118552870000",
+      "printed_revision": "Updated July 2026",
+      "sha256": "047ce071e2ff5d132730cff202a9542eb8a73787ef402b1c3340eb5765605b05",
+      "bytes": 302434,
+      "pages": 10,
+      "canonical_fields": 31,
+      "widgets": 31,
+      "field_tree_sha256": "5719e449d66d0c97db3000b38be8810bf3ee125bc9e9323b345a3b50fdaf3cf1",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T04:01:43Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Thu, 16 Jul 2026 14:17:35 GMT",
+        "pdf_creation_date": "2026-07-14T12:10:39-07:00",
+        "pdf_mod_date": "2026-07-14T12:14:20-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Temporary Use Permit Application",
+            "observed_at": "2026-10-10T04:01:40Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26473 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Same document id, ticks, byte count, page count, and extracted text as the 2026-08-14 link inventory."
+      }
+    },
+    {
+      "id": "revocable-encroachment-permit-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Revocable Encroachment Permit Application",
+      "download_name": "REP Application 71426_fillable.pdf",
+      "cache_name": "revocable-encroachment-permit-application.pdf",
+      "document_id": "26469",
+      "ticks": "639198116032630000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26469/639198116032630000",
+      "printed_revision": "Updated July 2026",
+      "sha256": "3c2993eb186fe14706cbe868d728184e18080476682cd405a14d442d64c17765",
+      "bytes": 715592,
+      "pages": 17,
+      "canonical_fields": 23,
+      "widgets": 39,
+      "field_tree_sha256": "e99481408bbb350182ad2dc8fd2f51b05e85dbac711dd1d2267b851eb1c48d65",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T04:01:44Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Thu, 16 Jul 2026 14:13:23 GMT",
+        "pdf_creation_date": "2026-04-16T14:47:28-07:00",
+        "pdf_mod_date": "2026-07-14T10:21:53-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Revocable Encroachment Permit Application",
+            "observed_at": "2026-10-10T04:01:40Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26469 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Same document id, ticks, byte count, page count, and extracted text as the 2026-08-14 link inventory."
+      }
+    },
+    {
+      "id": "lot-line-adjustment-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Lot Line Adjustment Application",
+      "download_name": "LLA Application_71426_fillable.pdf",
+      "cache_name": "lot-line-adjustment-application.pdf",
+      "document_id": "26467",
+      "ticks": "639198115671300000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26467/639198115671300000",
+      "printed_revision": "Updated July 2026",
+      "sha256": "2f91a5f07046d9df30701f8ab43fa843555d420929ab827a93c3dc863c8a4f30",
+      "bytes": 335196,
+      "pages": 12,
+      "canonical_fields": 67,
+      "widgets": 67,
+      "field_tree_sha256": "f559db3a66659449d6d42d7066c5291769ee7912cbe976912be1f9ebc2b6532e",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T04:01:44Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Thu, 16 Jul 2026 14:12:47 GMT",
+        "pdf_creation_date": "2026-05-11T14:43:28-07:00",
+        "pdf_mod_date": "2026-07-14T13:30:07-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Lot Line Adjustment Application",
+            "observed_at": "2026-10-10T04:01:40Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26467 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Same document id, ticks, byte count, page count, and extracted text as the 2026-08-14 link inventory."
+      }
     }
   ],
   "status_values": {
@@ -250,103 +450,24 @@
       "id": "building-application-doc-216",
       "retired_at": "2026-10-09",
       "reason": "The portal's type 183 and 214 attachment instructions link the two-page Building Permit Application with the Stormwater Quality Certification, not this one-page form. The two-page form's page 1 carries every block of this form except the MultiFamily box. The City website's Building Applications & Forms page linked this document as of 2026-08-22, but it returned HTTP 403 on 2026-10-09, so current website distribution is unverified. One map avoids two diverging Building applications; a file with this checksum now fails check-source-freshness."
+    },
+    {
+      "official_name": "ADU Application",
+      "download_name": "ADU_ 080526_ Application _fillable.pdf",
+      "document_id": "26710",
+      "ticks": "639216203446500000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26710/639216203446500000",
+      "sha256": "9979966e09f4c52dee1540c06efc1289f3d136ac8f02ecddaca381e44f4b970e",
+      "bytes": 8341361,
+      "pages": 43,
+      "canonical_fields": 231,
+      "widgets": 258,
+      "field_tree_sha256": "aa8548a9ebce8dc76b246a8ea580707ecffd30abd8ed834c068f5dba58a9cde9",
+      "field_map_version": "1.0.0",
+      "id": "adu-application-doc-26710",
+      "retired_at": "2026-10-10",
+      "reason": "The Applications & Handouts page links ADU document 27032 (ADU_Application 090126_fillable.pdf), which replaces this one. The field tree is unchanged, but the printed application and deposit fee rose from $945 to $1,390. Document 26710 still serves this older file; a file with this checksum fails check-source-freshness."
     }
   ],
-  "pending_sources": [
-    {
-      "id": "sb-9-application",
-      "lane": "planning",
-      "status": "needs_source",
-      "official_name": "SB 9 Application",
-      "document_id": "26708",
-      "ticks": "639216201110030000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26708/639216201110030000",
-      "source_page": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
-      "last_seen_revision": "Updated August 2026 (file named SB 9 Application_DRAFT 8526.pdf)",
-      "last_seen": "2026-08-14 Applications & Handouts link inventory of the source_page",
-      "last_fetch_attempt": {
-        "at": "2026-10-09T00:33:53Z",
-        "method": "curl GET and headless Chromium navigation",
-        "http_status": 403,
-        "server": "AkamaiGHost"
-      },
-      "next_step": "Download in a visible browser, confirm the link is still current on the source page, then add a pinned entry with a source receipt, an exact semantic field map, and a round-trip eval."
-    },
-    {
-      "id": "sign-permit-application",
-      "lane": "planning",
-      "status": "needs_source",
-      "official_name": "Sign Permit Application",
-      "document_id": "26375",
-      "ticks": "639192070419070000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26375/639192070419070000",
-      "source_page": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
-      "last_seen_revision": "Updated July 2026",
-      "last_seen": "2026-08-14 Applications & Handouts link inventory of the source_page",
-      "last_fetch_attempt": {
-        "at": "2026-10-09T00:33:53Z",
-        "method": "curl GET and headless Chromium navigation",
-        "http_status": 403,
-        "server": "AkamaiGHost"
-      },
-      "next_step": "Download in a visible browser, confirm the link is still current on the source page, then add a pinned entry with a source receipt, an exact semantic field map, and a round-trip eval."
-    },
-    {
-      "id": "temporary-use-permit-application",
-      "lane": "planning",
-      "status": "needs_source",
-      "official_name": "Temporary Use Permit Application",
-      "document_id": "26473",
-      "ticks": "639198118552870000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26473/639198118552870000",
-      "source_page": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
-      "last_seen_revision": "Updated July 2026",
-      "last_seen": "2026-08-14 Applications & Handouts link inventory of the source_page",
-      "last_fetch_attempt": {
-        "at": "2026-10-09T00:33:53Z",
-        "method": "curl GET and headless Chromium navigation",
-        "http_status": 403,
-        "server": "AkamaiGHost"
-      },
-      "next_step": "Download in a visible browser, confirm the link is still current on the source page, then add a pinned entry with a source receipt, an exact semantic field map, and a round-trip eval."
-    },
-    {
-      "id": "revocable-encroachment-permit-application",
-      "lane": "planning",
-      "status": "needs_source",
-      "official_name": "Revocable Encroachment Permit Application",
-      "document_id": "26469",
-      "ticks": "639198116032630000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26469/639198116032630000",
-      "source_page": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
-      "last_seen_revision": "Updated July 2026",
-      "last_seen": "2026-08-14 Applications & Handouts link inventory of the source_page",
-      "last_fetch_attempt": {
-        "at": "2026-10-09T00:33:53Z",
-        "method": "curl GET and headless Chromium navigation",
-        "http_status": 403,
-        "server": "AkamaiGHost"
-      },
-      "next_step": "Download in a visible browser, confirm the link is still current on the source page, then add a pinned entry with a source receipt, an exact semantic field map, and a round-trip eval."
-    },
-    {
-      "id": "lot-line-adjustment-application",
-      "lane": "planning",
-      "status": "needs_source",
-      "official_name": "Lot Line Adjustment Application",
-      "document_id": "26467",
-      "ticks": "639198115671300000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26467/639198115671300000",
-      "source_page": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
-      "last_seen_revision": "Updated July 2026",
-      "last_seen": "2026-08-14 Applications & Handouts link inventory of the source_page",
-      "last_fetch_attempt": {
-        "at": "2026-10-09T00:33:53Z",
-        "method": "curl GET and headless Chromium navigation",
-        "http_status": 403,
-        "server": "AkamaiGHost"
-      },
-      "next_step": "Download in a visible browser, confirm the link is still current on the source page, then add a pinned entry with a source receipt, an exact semantic field map, and a round-trip eval."
-    }
-  ]
+  "pending_sources": []
 }

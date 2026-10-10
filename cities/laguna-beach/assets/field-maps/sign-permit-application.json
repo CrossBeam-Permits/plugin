@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "sign-permit-application",
+  "field_map_version": "1.0.0",
+  "generated_at": "2026-10-10T05:34:54.444965Z",
+  "source_sha256": "7b1537b86bf022e9014e67b0bb0d92c7ccab1f3dec270ae257341b8c89fefb70",
+  "field_tree_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "canonical_mappings": [],
+  "review_fields": [],
+  "fields": [],
+  "widgets": [],
+  "manual_sections": [
+    {
+      "pages": [
+        3
+      ],
+      "title": "Sign Permit Application Form: project location, contact information, project description"
+    },
+    {
+      "pages": [
+        6
+      ],
+      "title": "Exhibit A Affidavit (owner name line and owner signature)"
+    },
+    {
+      "pages": [
+        7
+      ],
+      "title": "Exhibit B Use and Disclosure of Architectural Drawings (signatures and dates)"
+    },
+    {
+      "pages": [
+        8,
+        9,
+        10
+      ],
+      "title": "Exhibit C Government Code Section 65940 Checklist (applicant signatures)"
+    }
+  ],
+  "review_widgets": []
+}

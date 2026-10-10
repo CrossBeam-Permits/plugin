@@ -1,0 +1,1455 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "revocable-encroachment-permit-application",
+  "field_map_version": "1.0.0",
+  "generated_at": "2026-10-10T05:34:54.512860Z",
+  "source_sha256": "3c2993eb186fe14706cbe868d728184e18080476682cd405a14d442d64c17765",
+  "field_tree_sha256": "e99481408bbb350182ad2dc8fd2f51b05e85dbac711dd1d2267b851eb1c48d65",
+  "canonical_mappings": [
+    {
+      "fact_id": "site.address",
+      "pdf_fields": [
+        "Address"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "site.apn",
+      "pdf_fields": [
+        "APN(s)"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.company_name",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Company Name",
+          "rect": [
+            197.88,
+            458.76,
+            291.72,
+            474.6
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Contact Name",
+          "rect": [
+            405.72,
+            458.76,
+            521.64,
+            474.84
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Mailing Address",
+          "rect": [
+            195.48,
+            441.84,
+            289.44,
+            457.92
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "CityStateZip",
+          "rect": [
+            401.16,
+            441.84,
+            522.48,
+            457.92
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.phone",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Phone",
+          "rect": [
+            152.16,
+            424.92,
+            284.76,
+            440.64
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant.email",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Email Address",
+          "rect": [
+            403.8,
+            424.92,
+            519.72,
+            441.0
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.company_name",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Company Name",
+          "rect": [
+            197.88,
+            373.8,
+            302.76,
+            389.76
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Contact Name",
+          "rect": [
+            405.72,
+            373.8,
+            521.64,
+            389.88
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Mailing Address",
+          "rect": [
+            195.48,
+            356.88,
+            300.48,
+            372.96
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "CityStateZip",
+          "rect": [
+            401.16,
+            356.88,
+            522.48,
+            372.96
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.phone",
+      "pdf_fields": [
+        "Phone_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "applicant_representative.email",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Email Address",
+          "rect": [
+            403.8,
+            339.96,
+            519.72,
+            356.04
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.company_name",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Company Name",
+          "rect": [
+            197.88,
+            288.96,
+            302.76,
+            305.04
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.contact_name",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Contact Name",
+          "rect": [
+            405.72,
+            288.96,
+            521.64,
+            305.04
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.mailing_address",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Mailing Address",
+          "rect": [
+            195.48,
+            272.04,
+            300.48,
+            288.12
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.city_state_zip",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "CityStateZip",
+          "rect": [
+            401.16,
+            272.04,
+            522.48,
+            288.12
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.phone",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Phone",
+          "rect": [
+            152.16,
+            255.12,
+            301.32,
+            270.84
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner.email",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Email Address",
+          "rect": [
+            403.8,
+            255.12,
+            519.72,
+            271.2
+          ]
+        }
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "project.description",
+      "pdf_widgets": [
+        {
+          "page": 3,
+          "field_name": "Descibe proposed improvements",
+          "rect": [
+            72.0,
+            193.92,
+            535.68,
+            210.0
+          ]
+        },
+        {
+          "page": 3,
+          "field_name": "Descibe proposed improvements",
+          "rect": [
+            72.0,
+            177.0,
+            535.68,
+            193.08
+          ]
+        },
+        {
+          "page": 3,
+          "field_name": "Descibe proposed improvements",
+          "rect": [
+            72.0,
+            160.08,
+            535.68,
+            176.16
+          ]
+        },
+        {
+          "page": 3,
+          "field_name": "Descibe proposed improvements",
+          "rect": [
+            72.0,
+            143.04,
+            535.68,
+            159.12
+          ]
+        },
+        {
+          "page": 3,
+          "field_name": "Descibe proposed improvements",
+          "rect": [
+            72.0,
+            126.12,
+            535.68,
+            142.2
+          ]
+        },
+        {
+          "page": 3,
+          "field_name": "Descibe proposed improvements",
+          "rect": [
+            72.0,
+            109.08,
+            535.68,
+            125.16
+          ]
+        }
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "lines",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner_affidavit.owner_name",
+      "pdf_fields": [
+        "Property Owner"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    }
+  ],
+  "review_fields": [
+    "Applicant Signature",
+    "Applicant Signature_2",
+    "Applicant Signature_3",
+    "Assessors Parcel Number",
+    "Description of Encroachment 1",
+    "Description of Encroachment 2",
+    "Description of Encroachment 3",
+    "Description of Encroachment 4",
+    "Legal Description",
+    "Property Owner Signature",
+    "REP No",
+    "Street Address"
+  ],
+  "fields": [
+    {
+      "name": "APN(s)",
+      "type": "/Tx",
+      "tooltip": "APN(s)",
+      "flags": 0
+    },
+    {
+      "name": "Address",
+      "type": "/Tx",
+      "tooltip": "Address",
+      "flags": 0
+    },
+    {
+      "name": "Applicant Signature",
+      "type": "/Sig",
+      "tooltip": "Applicant Signature",
+      "flags": 0
+    },
+    {
+      "name": "Applicant Signature_2",
+      "type": "/Sig",
+      "tooltip": "Applicant Signature",
+      "flags": 0
+    },
+    {
+      "name": "Applicant Signature_3",
+      "type": "/Sig",
+      "tooltip": "Applicant Signature",
+      "flags": 0
+    },
+    {
+      "name": "Assessors Parcel Number",
+      "type": "/Tx",
+      "tooltip": "Assessor’s Parcel Number",
+      "flags": 0
+    },
+    {
+      "name": "CityStateZip",
+      "type": "/Tx",
+      "tooltip": "City/State/Zip",
+      "flags": 0
+    },
+    {
+      "name": "Company Name",
+      "type": "/Tx",
+      "tooltip": "Company Name",
+      "flags": 0
+    },
+    {
+      "name": "Contact Name",
+      "type": "/Tx",
+      "tooltip": "Contact Name",
+      "flags": 0
+    },
+    {
+      "name": "Descibe proposed improvements",
+      "type": "/Tx",
+      "tooltip": "Descibe proposed improvements",
+      "flags": 0
+    },
+    {
+      "name": "Description of Encroachment 1",
+      "type": "/Tx",
+      "tooltip": "Description of Encroachment [1]",
+      "flags": 0
+    },
+    {
+      "name": "Description of Encroachment 2",
+      "type": "/Tx",
+      "tooltip": "Description of Encroachment [2]",
+      "flags": 0
+    },
+    {
+      "name": "Description of Encroachment 3",
+      "type": "/Tx",
+      "tooltip": "Description of Encroachment [3]",
+      "flags": 0
+    },
+    {
+      "name": "Description of Encroachment 4",
+      "type": "/Tx",
+      "tooltip": "Description of Encroachment [4]",
+      "flags": 0
+    },
+    {
+      "name": "Email Address",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "Legal Description",
+      "type": "/Tx",
+      "tooltip": "Legal Description",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address",
+      "type": "/Tx",
+      "tooltip": "Mailing Address",
+      "flags": 0
+    },
+    {
+      "name": "Phone",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Phone_2",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Property Owner",
+      "type": "/Tx",
+      "tooltip": null,
+      "flags": 0
+    },
+    {
+      "name": "Property Owner Signature",
+      "type": "/Sig",
+      "tooltip": "Property Owner Signature",
+      "flags": 0
+    },
+    {
+      "name": "REP No",
+      "type": "/Tx",
+      "tooltip": "REP No.",
+      "flags": 0
+    },
+    {
+      "name": "Street Address",
+      "type": "/Tx",
+      "tooltip": "Street Address",
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 3,
+      "field_name": "Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        191.04,
+        576.6,
+        312.48,
+        592.68
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "APN(s)",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        375.96,
+        576.6,
+        513.96,
+        592.68
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Company Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        197.88,
+        458.76,
+        291.72,
+        474.6
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Contact Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        405.72,
+        458.76,
+        521.64,
+        474.84
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Mailing Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        195.48,
+        441.84,
+        289.44,
+        457.92
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "CityStateZip",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        401.16,
+        441.84,
+        522.48,
+        457.92
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Phone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.16,
+        424.92,
+        284.76,
+        440.64
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        403.8,
+        424.92,
+        519.72,
+        441.0
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Company Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        197.88,
+        373.8,
+        302.76,
+        389.76
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Contact Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        405.72,
+        373.8,
+        521.64,
+        389.88
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Mailing Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        195.48,
+        356.88,
+        300.48,
+        372.96
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "CityStateZip",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        401.16,
+        356.88,
+        522.48,
+        372.96
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Phone_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.16,
+        339.96,
+        301.32,
+        355.68
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        403.8,
+        339.96,
+        519.72,
+        356.04
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Company Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        197.88,
+        288.96,
+        302.76,
+        305.04
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Contact Name",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        405.72,
+        288.96,
+        521.64,
+        305.04
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Mailing Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        195.48,
+        272.04,
+        300.48,
+        288.12
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "CityStateZip",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        401.16,
+        272.04,
+        522.48,
+        288.12
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Phone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        152.16,
+        255.12,
+        301.32,
+        270.84
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        403.8,
+        255.12,
+        519.72,
+        271.2
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Descibe proposed improvements",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        193.92,
+        535.68,
+        210.0
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Descibe proposed improvements",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        177.0,
+        535.68,
+        193.08
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Descibe proposed improvements",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        160.08,
+        535.68,
+        176.16
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Descibe proposed improvements",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        143.04,
+        535.68,
+        159.12
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Descibe proposed improvements",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        126.12,
+        535.68,
+        142.2
+      ]
+    },
+    {
+      "page": 3,
+      "field_name": "Descibe proposed improvements",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        109.08,
+        535.68,
+        125.16
+      ]
+    },
+    {
+      "page": 6,
+      "field_name": "Property Owner",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        80.88,
+        664.8,
+        273.12,
+        693.6
+      ]
+    },
+    {
+      "page": 6,
+      "field_name": "Property Owner Signature",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        108.0,
+        171.96,
+        295.08,
+        200.76
+      ]
+    },
+    {
+      "page": 8,
+      "field_name": "REP No",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        366.48,
+        486.72,
+        424.32,
+        499.44
+      ]
+    },
+    {
+      "page": 8,
+      "field_name": "Street Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        153.48,
+        390.72,
+        504.24,
+        403.44
+      ]
+    },
+    {
+      "page": 8,
+      "field_name": "Assessors Parcel Number",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        213.12,
+        361.2,
+        504.24,
+        373.92
+      ]
+    },
+    {
+      "page": 8,
+      "field_name": "Legal Description",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        180.0,
+        331.92,
+        504.24,
+        344.64
+      ]
+    },
+    {
+      "page": 9,
+      "field_name": "Description of Encroachment 1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        633.48,
+        540.24,
+        655.08
+      ]
+    },
+    {
+      "page": 9,
+      "field_name": "Description of Encroachment 2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        611.52,
+        540.24,
+        633.12
+      ]
+    },
+    {
+      "page": 9,
+      "field_name": "Description of Encroachment 3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        589.56,
+        540.24,
+        611.16
+      ]
+    },
+    {
+      "page": 9,
+      "field_name": "Description of Encroachment 4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        567.6,
+        540.24,
+        589.2
+      ]
+    },
+    {
+      "page": 15,
+      "field_name": "Applicant Signature",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        179.04,
+        608.64,
+        493.8,
+        632.4
+      ]
+    },
+    {
+      "page": 16,
+      "field_name": "Applicant Signature_2",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        179.04,
+        84.6,
+        493.8,
+        108.36
+      ]
+    },
+    {
+      "page": 17,
+      "field_name": "Applicant Signature_3",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        179.04,
+        439.92,
+        493.8,
+        468.72
+      ]
+    }
+  ],
+  "review_widgets": []
+}

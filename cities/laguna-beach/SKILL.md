@@ -153,6 +153,8 @@ python3 scripts/render-preview.py \
 
 Inspect the rendered pages for clipping, overlap, stale appearances, and unresolved signature/declaration fields. The script's logical pass does not replace visual review.
 
+Some City pages have no form fields (the SB 9 application sections, the whole Sign Permit Application). Their maps list `manual_sections`; `fill-form.py` prints them and copies them into `review-and-sign.json`, and refuses a map with no mappings at all. Give the applicant the confirmed values to write on those pages by hand.
+
 The applicant signs the filled PDF themselves. Then check the signed file against the fill (`references/form-source-policy.md`):
 
 ```sh
