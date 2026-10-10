@@ -88,12 +88,17 @@ What each map fills:
 - **Conditional Use Permit**: project location, the three contact blocks (the applicant
   and representative rows share field names, so they are exact widget targets), the
   project description (page 2), and the Project Summary Tables (page 25). The new file
-  lowers every printed CUP fee in submittal requirement 1, replaces the fillable deposit
+  prints the City's earlier fee amounts in submittal requirement 1: they match the
+  February 2026 schedule (for example Zoning Plan Check $945 / $4,743, Minor CUP $4,931), not
+  the adopted FY26/27 schedule ($1,390 / $6,975 / $7,250, MFS pp. 29 and 31) that
+  `requirements/fees/fee-schedule.json` and the fee estimate use. Quote fees from the fee
+  estimate, never from the printed form, and tell the applicant the City confirms the
+  amount at invoicing. The new file also replaces the fillable deposit
   agreement in Exhibit A with a deposit table and the City's deposit procedure (the
   agreement now comes with the first incomplete letter), and adds the owner signature to
   the Exhibit I affidavit. `requirements/planning/conditional-use-permit.md` is generated
-  from the July edition and says items 1-11 are unchanged; the fees in item 1 are not.
-  Take fees from the pinned form or the fee estimate, not that file.
+  from the July edition and says items 1-11 are unchanged; the printed fees and the
+  Exhibit A deposit procedure did change. Fees still come from the fee estimate.
 - **Planning Commission Concept Review**: location, APN, current use, building square
   footage, parking spaces, lot area, and the owner and applicant name, phone, address, and
   email (one address line each, so `owner.full_address` / `applicant.full_address`). The

@@ -68,9 +68,11 @@ Content:
   no mappings instead of writing an unchanged copy.
 - Conditional Use Permit re-pinned (2026-10-10). The City replaced document 26463 in
   place: the new link (ticks 639252307038230000) and the old ticks both serve a 47-page,
-  178-field file printed "Updated August 2026" (sha256 `33b8e97b…`). Every printed CUP fee
-  fell, Exhibit A lost the fillable deposit agreement, and the Exhibit I affidavit gained
-  an owner signature. The July 2026 file (`4855c5cf…`) moves to `retired_forms`; the map
+  178-field file printed "Updated August 2026" (sha256 `33b8e97b…`). The new file prints the
+  City's February 2026 fee amounts, lower than the adopted FY26/27 schedule the fee
+  estimate uses, so fees are quoted from the estimate and never from the form. Exhibit A
+  lost the fillable deposit agreement, and the Exhibit I affidavit gained an owner
+  signature. The July 2026 file (`4855c5cf…`) moves to `retired_forms`; the map
   is now 2.0.0 (applicant and representative rows share field names in the new file).
 - Pinned three more Planning forms with semantic maps and round trips: Planning Commission
   Concept Review (26904), the Starter Home Revitalization Act application (SB 684 /
