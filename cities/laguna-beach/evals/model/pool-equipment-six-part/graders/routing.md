@@ -4,7 +4,7 @@ weight: 1
 ---
 Pass only if the response routes the equipment independently from the structure and
 enumerates all six tests effective 2026-08-20: ground/wall-at-ground mounting; outside
-the required front yard setback (fail it if it also requires staying out of the side setback); at least five feet from all property lines; manufacturer dB
+the required front yard setback (the side yard bar comes from §25.50.004(F)(2), not this test); at least five feet from all property lines; manufacturer dB
 specification, 60/50 dB property-line limits, and two maintained attenuation techniques;
 City sound-form calculation under ARI 275; and a three-foot path around every structure.
 It must say all six yes means Zone Clearance, any no means Administrative Design Review,
