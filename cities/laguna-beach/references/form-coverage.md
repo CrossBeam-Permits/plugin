@@ -14,12 +14,16 @@ Planning:
 
 - ADU & JADU Application (document 27032; see "Planning forms pinned 2026-10-10")
 - Coastal Development Permit Application
-- Conditional Use Permit Application
+- Conditional Use Permit Application (document 26463, re-pinned 2026-10-10)
 - Design Review Application (both DRB and Administrative Design Review)
 - Floodplain Development Permit Application for Residential Development
+- General Plan Amendment Application (document 27396)
 - Lot Line Adjustment Application
+- Planning Commission Concept Review Application (document 26904)
 - Revocable Encroachment Permit Application
 - SB 9 Application (fields only in its exhibits; see below)
+- SB 684 / Starter Home Revitalization Act Application (document 26902; fields only in
+  its exhibits; see below)
 - Sign Permit Application (no fillable fields; see below)
 - Temporary Use Permit Application
 - Variance Application
@@ -52,6 +56,10 @@ SHA-256, page and field counts. A direct script download still returns HTTP 403
 | Temporary Use Permit Application | 26473/639198118552870000 | 10 | 31 / 31 | 1.0.0 | Unchanged. |
 | Revocable Encroachment Permit Application | 26469/639198116032630000 | 17 | 23 / 39 | 1.0.0 | Unchanged. |
 | Lot Line Adjustment Application | 26467/639198115671300000 | 12 | 67 / 67 | 1.0.0 | Unchanged. |
+| Conditional Use Permit Application | 26463/639252307038230000 | 47 | 178 / 208 | 2.0.0 | Re-pinned later the same day (see below). The City replaced the file under the same document id; the July file (53 pages, 194 fields) is in `retired_forms`. |
+| Planning Commission Concept Review Application | 26904/639227554954730000 | 2 | 45 / 45 | 1.0.0 | New on the page (not in the 2026-08-14 inventory). |
+| SB 684 / Starter Home Revitalization Act Application | 26902/639227554030430000 | 133 | 206 / 229 | 1.0.0 | New on the page. Link text "Start Home Revitalization Act (SB684)". |
+| General Plan Amendment Application | 27396/639263715770130000 | 17 | 37 / 36 | 1.0.0 | New on the page ("September 2026"). |
 
 What each map fills:
 
@@ -77,6 +85,33 @@ What each map fills:
 - **Lot Line Adjustment**: the four parcel blocks (address, APN, owner and owner
   contacts), the affidavit owner name, and the Owners / Existing APNs / Proposed Parcel
   table on Exhibits C, D, and E. The City assigns the LLA number.
+- **Conditional Use Permit**: project location, the three contact blocks (the applicant
+  and representative rows share field names, so they are exact widget targets), the
+  project description (page 2), and the Project Summary Tables (page 25). The new file
+  prints the City's earlier fee amounts in submittal requirement 1: they match the
+  February 2026 schedule (for example Zoning Plan Check $945 / $4,743, Minor CUP $4,931), not
+  the adopted FY26/27 schedule ($1,390 / $6,975 / $7,250, MFS pp. 29 and 31) that
+  `requirements/fees/fee-schedule.json` and the fee estimate use. Quote fees from the fee
+  estimate, never from the printed form, and tell the applicant the City confirms the
+  amount at invoicing. The new file also replaces the fillable deposit
+  agreement in Exhibit A with a deposit table and the City's deposit procedure (the
+  agreement now comes with the first incomplete letter), and adds the owner signature to
+  the Exhibit I affidavit. `requirements/planning/conditional-use-permit.md` is generated
+  from the July edition and says items 1-11 are unchanged; the printed fees and the
+  Exhibit A deposit procedure did change. Fees still come from the fee estimate.
+- **Planning Commission Concept Review**: location, APN, current use, building square
+  footage, parking spaces, lot area, and the owner and applicant name, phone, address, and
+  email (one address line each, so `owner.full_address` / `applicant.full_address`). The
+  submittal checklist boxes, the header DATE, and the City's Concept Review Number stay
+  review-only.
+- **SB 684 / SHRA**: only the Project Summary Tables (page 41). As with SB 9, the City
+  built the application sections without fields: the Project Information table (page 1)
+  and the bundled CDP application form (page 77) are `manual_sections`. Appendix A
+  (pages 15-25) is the City's reference checklist, "not part of the application". The
+  package's checklists cite the wrong exhibit letter for the CDP form (see `planning-routing.md`).
+- **General Plan Amendment**: project location, the three contact blocks, and the
+  proposed amendment (page 3). The Application Type boxes (Initiation of Amendment /
+  General Plan Amendment) are not fields, so they are a `manual_sections` entry.
 
 Every signature, signature date, and City-use field stays review-only. Deposit
 agreements, notice addresses, and the water quality form stay review-only, as on the
@@ -110,13 +145,13 @@ These are out of scope for V1 form filling and packet assembly:
 4. SB 330 Application
 5. Tentative Parcel and Tract Map Application
 6. Wireless Facility Permit Application
-7. Planning Commission Concept Review (document 26904 on the 2026-10-10 page)
-8. Start Home Revitalization Act (SB 684) (document 26902 on the 2026-10-10 page)
-9. General Plan Amendment (document 27396 on the 2026-10-10 page)
 
 Each needs a source receipt, an exact semantic field map, and a round-trip eval before
 it is supported. `pending_sources` in the manifest is empty: the five forms queued there
-on 2026-10-09 are pinned above.
+on 2026-10-09 are pinned above, and the three applications new on the 2026-10-10 page
+(Planning Commission Concept Review, SB 684, General Plan Amendment) are pinned too.
+Each pinned form's filing route is in `planning-routing.md`, "Filing routes for the other
+pinned Planning forms".
 
 Short-Term Lodging / Administrative Use Permit is also outside the residential V1 lane;
 its link serves a City account login page, not a PDF. Never silently substitute Design

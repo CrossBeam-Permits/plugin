@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "verified_at": "2026-10-09T21:03:41-07:00",
+  "verified_at": "2026-10-09T22:54:44-07:00",
   "redistribution_policy": "fetch_from_official_source_and_verify; City PDF binaries are not bundled",
   "source_pages": {
     "planning": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
@@ -73,20 +73,39 @@
       "lane": "planning",
       "status": "pinned",
       "official_name": "Conditional Use Permit Application",
-      "download_name": "CUP Application_July 2026_fillable.pdf",
+      "download_name": "CUP Application_Oct 2026_fillable.pdf",
       "cache_name": "conditional-use-permit-application.pdf",
       "document_id": "26463",
-      "ticks": "639198113884500000",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639198113884500000",
-      "printed_revision": "Updated July 2026",
-      "sha256": "4855c5cf3b6cb7fb013894677dcaccadd0e06ebb58a0773f4c6232b3545ab487",
-      "bytes": 2906725,
-      "pages": 53,
-      "canonical_fields": 194,
-      "widgets": 228,
-      "field_tree_sha256": "e0e48373cba457a354352afe291dcb20a3dccde186e7224bfb5f272ba0d144b9",
-      "field_map_version": "1.0.0",
-      "redistribution": "fetch_only"
+      "ticks": "639252307038230000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639252307038230000",
+      "printed_revision": "Updated August 2026",
+      "sha256": "33b8e97b15ad787aa2998063b4f36fd7eaadc89eda02db5f1ab94af7997c3a8f",
+      "bytes": 2429047,
+      "pages": 47,
+      "canonical_fields": 178,
+      "widgets": 208,
+      "field_tree_sha256": "a94eb474ebba6b385ab4055f69da88c79d4410cf5c5290f843415ab1f62f4c79",
+      "field_map_version": "2.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:38Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Fri, 09 Oct 2026 08:25:29 GMT",
+        "pdf_creation_date": "2026-05-05T09:52:54-07:00",
+        "pdf_mod_date": "2026-10-09T09:22:46-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Conditional Use Permit Application",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26463 without ticks served the same bytes, and so did the previously pinned link (ticks 639198113884500000): the City replaced the file under the same document id. The new ticks decode to 2026-09-17; the file's HTTP Last-Modified and PDF ModDate are 2026-10-09.",
+        "compared_with_prior": "Replaces the 2026-07 file pinned under the same document id (CUP Application_July 2026_fillable.pdf, 2,906,725 bytes, 53 pages, 194 fields). The printed revision line moved from Updated July 2026 to Updated August 2026. The application form (page 2) has the same blocks, but the applicant and representative rows now share field names (Text3-Text8), so those targets are exact widgets. Every printed fee in submittal requirement 1 fell (Minor zoning plan check $1,390 to $945, Major $6,975 to $4,743, Intensification of Use $12,680 to $8,629, CUP with Major Design Review $42,740 to $29,081, CUP with Minor Design Review $14,110 to $9,601, Minor (no intensification) $7,250 to $4,931, Amendment $5,425 to $3,934); the $5,000 third-party review deposit is unchanged. The new printed amounts equal the City's February 2026 schedule (Zoning Plan Check $945 / $4,743, Minor CUP $4,931), not the adopted FY26/27 Master Fee Schedule ($1,390 / $6,975 / $7,250, pp. 29 and 31) in requirements/fees/fee-schedule.json, so the form's printed fees are stale and the fee estimate governs. Exhibit A no longer contains the fillable Advance Deposit and Reimbursement Agreement: it is a deposit table and the City's internal deposit procedure, which says the agreement is attached to the first incomplete letter. The Exhibit I affidavit now has applicant and owner signature lines and lists the acceptable signature forms (a typed name alone is not sufficient)."
+      }
     },
     {
       "id": "design-review-application",
@@ -427,6 +446,123 @@
         "id_only_check": "/home/showpublisheddocument/26467 without ticks served the same bytes, so the City has not reissued this document under the same id.",
         "compared_with_prior": "Same document id, ticks, byte count, page count, and extracted text as the 2026-08-14 link inventory."
       }
+    },
+    {
+      "id": "planning-commission-concept-review-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Planning Commission Concept Review Application",
+      "download_name": "PC Concept Review 81926.pdf",
+      "cache_name": "planning-commission-concept-review-application.pdf",
+      "document_id": "26904",
+      "ticks": "639227554954730000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26904/639227554954730000",
+      "printed_revision": null,
+      "sha256": "b06764453b6cfca26acbdc0813d129f1bb022f22dd148ff623e1d8d1e9b4a5da",
+      "bytes": 177572,
+      "pages": 2,
+      "canonical_fields": 45,
+      "widgets": 45,
+      "field_tree_sha256": "54b868f6ddf1231283610e265051090fc055a628e533a44a1ec5c540a2bd9810",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:39Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Wed, 19 Aug 2026 15:58:15 GMT",
+        "pdf_creation_date": "2021-01-12T23:25:31-08:00",
+        "pdf_mod_date": "2026-08-19T14:00:37-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Planning Commission Concept Review",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26904 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Not in the 2026-08-14 link inventory; the page added it by 2026-09-29. Two pages: property and owner/applicant information, the concept submittal checklist, and the affidavit with applicant and owner signatures. No printed revision line."
+      }
+    },
+    {
+      "id": "sb-684-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "Starter Home Revitalization Act (SHRA) Application (SB 684 / SB 1123)",
+      "download_name": "SHRA Application  FINAL 81926.pdf",
+      "cache_name": "sb-684-application.pdf",
+      "document_id": "26902",
+      "ticks": "639227554030430000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26902/639227554030430000",
+      "printed_revision": "Updated August 2026",
+      "sha256": "9f0c7f5457e3f2f4c9cfcfb0f09e4674245d57d4977f7a1d43655f7d8ab3f75f",
+      "bytes": 13264543,
+      "pages": 133,
+      "canonical_fields": 206,
+      "widgets": 229,
+      "field_tree_sha256": "c52a0e80acdd1fdc61b0cf7efc35b24dc04e8330ea849de6da710355010b8de6",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:42Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Wed, 19 Aug 2026 15:56:43 GMT",
+        "pdf_creation_date": "2026-08-13T15:20:31-07:00",
+        "pdf_mod_date": "2026-08-19T15:15:57-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "Start Home Revitalization Act (SB684)",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/26902 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Not in the 2026-08-14 link inventory; the page added it by 2026-09-29 (link text \"Start Home Revitalization Act (SB684)\"). 133 pages: project information, the SHRA subdivision and housing development submittal requirements, the City's reference checklists (Appendix A), exhibits, and a bundled Coastal Development Permit application package. Its application sections have no form fields."
+      }
+    },
+    {
+      "id": "general-plan-amendment-application",
+      "lane": "planning",
+      "status": "pinned",
+      "official_name": "General Plan Amendment Application",
+      "download_name": "General Plan Amendment Application_Sept 2026.pdf",
+      "cache_name": "general-plan-amendment-application.pdf",
+      "document_id": "27396",
+      "ticks": "639263715770130000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/27396/639263715770130000",
+      "printed_revision": "September 2026",
+      "sha256": "55a4fcd64512af5959b5d274eb9c52c523ccc58e109d12fd17666729fb839a0b",
+      "bytes": 635777,
+      "pages": 17,
+      "canonical_fields": 37,
+      "widgets": 36,
+      "field_tree_sha256": "4ff4b2f76b54e3758e264c958ecf84200cfe5d490bf564774a11ea899852881c",
+      "field_map_version": "1.0.0",
+      "redistribution": "fetch_only",
+      "source_receipt": {
+        "retrieved_at": "2026-10-10T05:54:44Z",
+        "method": "headless Chromium (Playwright) loaded the official Applications & Handouts page, then fetched the PDF same-origin from inside the loaded page; a direct curl GET or a direct navigation to the PDF returns HTTP 403 (AkamaiGHost)",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "http_last_modified": "Wed, 30 Sep 2026 12:26:17 GMT",
+        "pdf_creation_date": "2026-09-29T11:17:20-07:00",
+        "pdf_mod_date": "2026-09-29T11:21:47-07:00",
+        "linked_from": [
+          {
+            "where": "Applications & Handouts page, Applications tab",
+            "url": "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts",
+            "link_text": "General Plan Amendment",
+            "observed_at": "2026-10-10T05:54:37Z"
+          }
+        ],
+        "id_only_check": "/home/showpublisheddocument/27396 without ticks served the same bytes, so the City has not reissued this document under the same id.",
+        "compared_with_prior": "Not in the 2026-08-14 link inventory; the page added it by 2026-10-09. 17 pages: the two-stage process (initiation by the City Council, then the application), the application form, submittal requirements, Exhibit A Advance Deposit and Reimbursement Agreement, Exhibit B Owner Affidavit, Exhibit C Government Code 65940 checklist."
+      }
     }
   ],
   "status_values": {
@@ -467,6 +603,23 @@
       "id": "adu-application-doc-26710",
       "retired_at": "2026-10-10",
       "reason": "The Applications & Handouts page links ADU document 27032 (ADU_Application 090126_fillable.pdf), which replaces this one. The field tree is unchanged, but the printed application and deposit fee rose from $945 to $1,390. Document 26710 still serves this older file; a file with this checksum fails check-source-freshness."
+    },
+    {
+      "official_name": "Conditional Use Permit Application",
+      "download_name": "CUP Application_July 2026_fillable.pdf",
+      "document_id": "26463",
+      "ticks": "639198113884500000",
+      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639198113884500000",
+      "sha256": "4855c5cf3b6cb7fb013894677dcaccadd0e06ebb58a0773f4c6232b3545ab487",
+      "bytes": 2906725,
+      "pages": 53,
+      "canonical_fields": 194,
+      "widgets": 228,
+      "field_tree_sha256": "e0e48373cba457a354352afe291dcb20a3dccde186e7224bfb5f272ba0d144b9",
+      "field_map_version": "1.0.0",
+      "id": "conditional-use-permit-application-2026-07",
+      "retired_at": "2026-10-10",
+      "reason": "The Applications & Handouts page links document 26463 with ticks 639252307038230000, and both that link and this older ticks value now serve CUP Application_Oct 2026_fillable.pdf (47 pages, 178 fields, printed Updated August 2026). The City no longer serves this file. The new file lowers every printed CUP fee, drops the fillable deposit agreement from Exhibit A, and adds the owner signature to the Exhibit I affidavit. A file with this checksum fails check-source-freshness."
     }
   ],
   "pending_sources": []

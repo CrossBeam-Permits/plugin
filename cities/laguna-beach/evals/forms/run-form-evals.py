@@ -29,12 +29,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = ROOT / "scripts"
 FORM_ID = "building-application"
-# Planning maps pinned 2026-10-10 that round-trip on every run. sign-permit-application
+# Planning maps pinned or re-pinned 2026-10-10 that round-trip on every run. sign-permit-application
 # is pinned too, but the City form has no fields, so it must refuse to fill instead.
 PLANNING_ROUND_TRIP = (
     "adu-application",
+    "conditional-use-permit-application",
+    "general-plan-amendment-application",
     "lot-line-adjustment-application",
+    "planning-commission-concept-review-application",
     "revocable-encroachment-permit-application",
+    "sb-684-application",
     "sb-9-application",
     "temporary-use-permit-application",
 )
