@@ -96,7 +96,7 @@ Signs shall not be placed or maintained in Laguna Beach unless they conform to t
 
 (C) **Computation of Height.** Sign height shall be computed as the distance from the top of the sign (or sign structure, whichever is taller) to the grade of the nearest adjacent street or access way, unless otherwise noted.
 
-(D) **Maximum Allowable Sign Area.** The combined allowable sign area of all permanent signs not exempt under Section 25.54.014 on any site shall not exceed **1 sq ft per foot of linear building or suite frontage**, up to a maximum of **150 sq ft** total. Single signs shall not exceed **75 sq ft** in size. The following are exempt from the maximum allowable sign area calculation: alley signs, building markers, bulletin boards, incidental signs, marquee signs, open house signs, real estate signs, suspended signs, and temporary signs.
+(D) **Maximum Allowable Sign Area.** The combined allowable sign area of all permanent signs not exempt under Section 25.54.014 on any site shall not exceed **1 sq ft per foot of linear building or suite frontage**, up to a maximum of **150 sq ft** total. Single signs shall not exceed **75 sq ft** in size. Code text: "Alley, blade or projecting, building marker, incidental, marquee, miscellaneous business signs, open house, real estate, temporary and suspended signs are exempt from the maximum combined sign area limit." A blade or projecting sign never counts toward the frontage cap.
 
 ---
 
@@ -106,19 +106,18 @@ Signs shall not be placed or maintained in Laguna Beach unless they conform to t
 
 (B) **Design, Construction and Maintenance.** All signs shall comply with Table 1 and Table 2. All signs shall be maintained in good condition. Torn canopies/awnings, broken elements, faded/flaking paint, or similar evidence of poor maintenance are the responsibility of the owner to repair in a timely manner. Failure to maintain signs may be cause for a code enforcement action.
 
-(C) **Illumination Standards.**
+(C) **Lighting.** Verbatim (codified 25.54.010(C); Ord. 1732 did not amend it):
 
-(1) **Illumination types allowed:**
-- External illumination
-- Halo illumination (reverse channel letters -- light washes behind the sign)
-- Internal illumination of individual channel letters only (NOT internally illuminated cabinet/box signs)
-- Luminous tube signs (neon/argon) -- only in interior building locations 4+ ft from closest window
-- Backlit awning/canopy signs are prohibited
+(1) "Method. Where not otherwise restricted, signs may be indirectly lighted. High intensity discharge light sources including, but not necessarily limited to mercury vapor, metal halide, and high pressure sodium, shall not be permitted."
 
-(2) **Illumination requirements:**
-- Illumination shall not create glare, flash, blink, or fluctuate
-- External light sources shall be directed solely at the sign and shall not cast light on adjacent properties or roadways
-- No exposed incandescent light bulbs
+(2) "Shielding. The lighting source shall be shielded in an appropriate manner to direct light only upon the sign and minimize glare and/or light spillage onto the public way or adjacent properties."
+
+How the lighting rules fit together (our summary, not code text):
+- "Indirectly lighted" means "illumination of a sign by a light source that is externally located to the sign surface. This method of lighting may include, but is not limited to, spotlighting or backlighting" (25.54.006). External spotlighting is allowed; halo (reverse channel) letters with opaque faces read as backlighting (our reading; confirm with Planning).
+- Internally illuminated signs, including channel letters lit through a translucent face, are prohibited except marquees (25.54.016(E), below).
+- Luminous tube (neon/argon) signs: the sign tables' footnote 10 and 25.54.018 (interior location at least 4 ft from the nearest window, by permit).
+- Backlit canopy/awning signs are prohibited (25.54.016; Table 2 canopy/awning row: copy "may not be backlit").
+- Lighting that depicts action makes a sign an animated sign (25.54.006), prohibited except as an interior building sign (25.54.016(A)).
 
 (3) **Luminance.** Verbatim from codified 25.54.010(C)(3) (corpus `ch25-54-sign-regulations.md`; Ord. 1732 did not amend it): "The maximum allowable lighting intensity shall be based on the following table:"
 
@@ -176,7 +175,7 @@ All signs not expressly permitted under this chapter or exempt from regulation a
 (B) A **sign no longer identifying a bona fide existing business** (abandoned signs)
 (C) **Banners and beacons**, except as permitted per Sections 25.54.012 and 25.54.020
 (D) **Billboards**, including mobile billboards on trailers
-(E) **Internally illuminated signs** (excepting marquees and individual channel letters)
+(E) Verbatim: "Excepting marquees, internally illuminated signs;". Marquees are the only exception; channel letters are not excepted. An "internally illuminated sign" is "a sign directly lit from an interior light source contained within the sign structure through a transparent or translucent surface" (25.54.006), which describes a front-lit channel letter
 (F) **Inflated display signs and tethered balloons**, except as permitted per Section 25.54.020 or as part of an approved outdoor display or sign program
 (G) **Portable signs**
 (H) **Roof signs**

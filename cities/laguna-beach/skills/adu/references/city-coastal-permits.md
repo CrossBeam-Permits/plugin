@@ -167,17 +167,17 @@ The approving body may impose conditions necessary to enable the required findin
 
 ---
 
-## Replacement parking for a CDP ADU (UNSETTLED)
+## Replacement parking for a CDP ADU (required)
 
 | Source | Rule |
 |---|---|
 | Certified LCP 25.17.040(E)(6)(a) (Ord. 1687/1691) | In the coastal zone, parking demolished or converted for an ADU is replaced 1:1 up to the required minimum; may be in the front or side setback |
-| Ord. 1713, 25.17.020(c)(2) (urgency, not certified) | Same 1:1 rule, capped at the dwelling's required minimum; uncovered, tandem, or in a setback at least 3 ft from every property line (not a bluff or watercourse setback) |
+| Ord. 1713, 25.17.020(c)(2)(A)(ii) (urgency, not certified) | "The number of existing parking spaces for a single-family or multifamily dwelling must be replaced on-site at a one-to-one ratio", capped at the dwelling's required minimum; uncovered, tandem, or in a setback at least 3 ft from every property line (not a bluff or watercourse setback) |
 | Ord. 1713, 25.17.010(g)(4)(C) | The no-replacement rule for non-CDP ADUs "does not apply to an ADU or JADU that requires a CDP" |
 | Gov. Code 66314(d)(11) | When parking is demolished with, or converted to, an ADU, "the local agency shall not require that those offstreet parking spaces be replaced" |
 | Gov. Code 66329(a) | The ADU article does not "supersede or in any way alter or lessen the effect or application of the California Coastal Act" |
 
-Reading: the 1:1 rule survives only to the extent it carries out the Coastal Act (for example, protecting public access parking near the coast). The City has not ruled on when that is so. **UNSETTLED; confirm with Planning at pre-application.** In a review: state the 1:1 rule, cite 66314(d)(11) and 66329(a), and FLAG. Do not FAIL a CDP ADU for missing replacement parking, and do not apply the rule to an ADU that needs no CDP.
+Reading: both City texts require 1:1 replacement for any ADU or JADU that needs a CDP, a garage conversion included, and Ord. 1713 waives it only for ADUs that need no CDP (25.17.010(g)(4)(C)). Lead with the City rule: replace the spaces on site, up to the dwelling's required minimum. In a review, missing replacement parking on a CDP ADU is a correction. Do not apply the rule to an ADU that needs no CDP. State-law note, one line: 66314(d)(11) bars replacement requirements, but 66329(a) keeps the Coastal Act in force; an applicant who thinks the rule does not carry out the Coastal Act can raise that with Planning.
 
 ---
 
