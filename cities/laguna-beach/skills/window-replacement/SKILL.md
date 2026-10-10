@@ -1,23 +1,26 @@
 ---
-description: "Window Replacement permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions window replacement in Laguna Beach."
-version: "1.0"
-source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI)"
-authority: "California Building Standards Commission"
-law_as_of: "January 1, 2025"
+name: window-replacement
+description: "Window/Door Replacement permits in Laguna Beach, CA. Windows and doors replaced in their existing openings, retrofit or full-frame. NOT a new or enlarged opening, which needs a header and a real review. Skylights are general-building. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions window replacement in Laguna Beach."
+metadata:
+  version: "2.0"
+  source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI); Building Division OTC policies, Ch. 14.70 Wildland-Urban Interface Code, Ch. 14.52 Residential Code amendments, Title 25 Zoning (Design Review & Coastal Development)"
+  authority: "California Building Standards Commission and City of Laguna Beach"
+  law_as_of: "2026-07-22"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
-# Laguna Beach — Window Replacement Permit
+# Laguna Beach — Window/Door Replacement Permit
 
-Handles window replacement permits in Laguna Beach end-to-end.
+Handles window/door replacement permits in Laguna Beach end-to-end. Scope: Windows and doors replaced in their existing openings, retrofit or full-frame. NOT a new or enlarged opening, which needs a header and a real review. Skylights are general-building.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
-> "Are you (A) planning to file a window replacement permit, or (B) a city reviewer checking a submitted one?"
+> "Are you (A) planning to file a window/door replacement permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -34,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
-## Ready to Submit — Laguna Beach Window Replacement Permit
+## Ready to Submit — Laguna Beach Window/Door Replacement Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -73,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -90,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -106,9 +122,143 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
+
+This skill covers Laguna Beach's city-specific window and door replacement requirements. **VHFHSZ status and the vinyl window amendments make Laguna Beach window replacements more complex than typical CA cities.**
+
+**How this skill relates to state code**: The `california-window-replacement` skill covers CBC/CRC/Energy Code/WUI state requirements. This skill covers what Laguna Beach adds -- primarily the vinyl window WUI amendment, skylight restrictions, design review rules, coastal zone analysis, and OTC processing. **Load state code first**, then this skill.
+
+---
+
+### Decision Tree Router
+
+| Project Type | Route |
+|-------------|-------|
+| **Like-for-like replacement** (same opening, same material type) | OTC eligible |
+| **Like-for-like but vinyl frames** | OTC eligible -- verify welded corners + metal reinforcing (Ch. 14.70.035) |
+| **Different size in same rough opening** | OTC eligible ("minor structural mods") |
+| **New or enlarged opening** | Full plan review -- structural + possible Design Review |
+| **New or relocated window** (different wall location) | Match current closed lists; ordinarily Zone Clearance as a non-major alteration no more than 15 ft, unless another trigger applies |
+| **Skylights** | Operable automatic night shade → Zone Clearance `(B)(2)(s)`; without one → ADR `(B)(3)(a)(xii)`; must also be glass in VHFHSZ |
+| **Part of major remodel** | Full plan review + Design Review `(B)(1)(a)` |
+
+---
+
+### VHFHSZ Glazing Requirements
+
+Laguna Beach is predominantly Very High Fire Hazard Severity Zone (citywide coverage: `../city-reference/SKILL.md`). The state WUI Code (Section 504.8) requires multi-pane glazing with at least one tempered pane. Laguna Beach adds the following local amendments:
+
+#### Vinyl Window Amendment (Ch. 14.70.035 -- Section 504.8.3)
+
+**City-specific requirement beyond state code:**
+
+> Glazing frames made of vinyl materials shall have welded corners and metal reinforcing in the interlock area.
+
+This means:
+- **Vinyl-framed windows** in VHFHSZ areas must have welded (not mechanical) corner joints
+- **Metal reinforcing** is required in the interlock area (the interlocking rail where the sash meets the frame on sliding/hung windows)
+- This applies to ALL vinyl windows in the VHFHSZ, not just replacement -- but is especially relevant for replacement since contractors may spec standard vinyl windows that lack these features
+- **Aluminum, fiberglass, and wood-clad windows** are NOT subject to this amendment (it only applies to vinyl frames)
+
+**Review check:** When the application specifies vinyl windows, verify the product spec sheet shows welded corners and metal-reinforced interlocks. FLAG if specs are not provided or if the product uses mechanical corner fasteners instead of welded joints.
+
+#### Skylight and Sloped Glazing Restriction (Ch. 14.70.040 -- Section 504.8.4)
+
+**City-specific requirement beyond state code:**
+
+> Skylights and sloped glazing must comply with Section 504.8 and must be of glass. Plastic skylights and plastic sloped glazing are not allowed.
+
+This means:
+- **No acrylic or polycarbonate skylights** anywhere in the VHFHSZ
+- Replacement skylights must be glass (tempered or laminated per state code)
+- This is more restrictive than state code, which allows plastic skylights in some configurations
+
+#### WUI Minor Repair Exception (Ch. 14.70.015 -- Section 101.2 Exception)
+
+> With the approval of the building official, minor repairs or replacement of exterior materials may be done with the same materials as exists on the building.
+
+This exception allows the building official to approve a window replacement with the same materials as the existing window, even if those materials do not fully comply with current WUI code. This is a discretionary exception -- not automatic. FLAG when an applicant appears to be relying on this exception (e.g., replacing single-pane with single-pane in VHFHSZ).
+
+---
+
+### OTC Eligibility
+
+Window and door replacement is eligible for over-the-counter plan review:
+
+- **Qualified:** Window/door replacement in same openings or with minor structural mods
+- **OTC item:** the city reference OTC item 3 (window and door replacement with minor structural modifications) — hours and the full list live in `../city-reference/SKILL.md`
+- **Not OTC:** New openings requiring structural headers, or work that is part of a major remodel
+
+---
+
+### Design Review
+
+Urgency Ordinance No. 1732 repealed the former window-specific exemption and neighbor-consent ADR split.
+
+- In-kind replacement routes to Zone Clearance under current §25.05.040(B)(2)(c).
+- A non-major alteration/addition and an improvement no more than 15 ft ordinarily route to Zone Clearance under (B)(2)(a)-(b), unless another closed-list trigger or the ESA override applies.
+- Do not require neighbor consent as a statutory prerequisite or cite the repealed `(B)(2)(k)`, `(B)(2)(b)(iii)`, or `(B)(3)(a)(xi)(3)` provisions.
+- A skylight with an operable automatic night shade takes Zone Clearance under (B)(2)(s); without such a shade it takes ADR under (B)(3)(a)(xii).
+
+#### DRB Hearing Trigger
+
+If the overall project constitutes a major remodel, Design Review is required under §25.05.040(B)(1)(a). An improvement over 15 ft independently requires Design Review under (B)(1)(c).
+
+---
+
+### Coastal Zone
+
+Most of Laguna Beach is in the Coastal Zone. Window replacement in single-family dwellings is generally **exempt** from Coastal Development Permit (CDP) requirements under Section 25.07.008(A)(1) as an "improvement to a single-family dwelling."
+
+#### When CDP IS Required
+
+A CDP may be required even for window replacement if the property is:
+
+1. **On a beach, in a wetland or stream, seaward of mean high tide, within 50 feet of a coastal bluff edge, in an environmentally sensitive area, or in a highly scenic area** (Section 25.07.008(A)(1)(b))
+2. **Between the sea and the first public road** (or within 300 feet of the beach/mean high tide) AND the window work is part of a project causing an aggregate increase of 10% or more of internal floor area, or an increase in height of more than 10% (Section 25.07.008(A)(1)(c)) -- unlikely for window-only work
+3. **Subject to a prior CDP condition** that requires future improvements to get a CDP (Section 25.07.008(A)(1)(f))
+
+**For standalone window replacement (no floor area or height change), CDP is typically NOT required** even in the Coastal Zone -- but FLAG if the property is within 50 feet of a bluff edge or in an environmentally sensitive area.
+
+#### De Minimis Waiver (Section 25.07.009)
+
+If a CDP is technically required, the Director of Community Development may issue a **de minimis waiver** for window replacement if the development has no adverse effect on coastal resources and is not in an appeal area. This avoids the full CDP hearing process.
+
+---
+
+### Sprinkler Retrofit
+
+**Two triggers, either one fires.** See `../residential-remodel/references/city-sprinkler-retrofit.md` — the single residential retrofit reference. Do not restate the rule here.
+
+- **Ch. 14.52.030** (valuation, Ord. 1725) — cumulative additions, alterations and repairs in any three-year period exceeding 50% of the pre-work valuation of the dwelling + attached garage.
+- **Title 15 §1103.5.4** (scope, Ord. 1726) — alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR an added story.
+
+**Window-specific notes.**
+- Window replacement alone is unlikely to fire either trigger. Cumulative history is what fires Ch. 14.52.030: if the owner permitted a kitchen remodel, bathroom remodel or re-roof in the past three years, the combined valuation may cross 50%. **Always ask whether other permitted work exists in the three-year window.** If the cumulative valuation approaches 50%, FLAG for sprinkler review.
+- For §1103.5.4 prong 2, window and door openings count toward the exterior tally even on same-opening change-outs, because the cladding around them is necessarily disturbed. Window work combined with a reside or reroof can reach 50% of the exterior.
+- Do **not** substitute §14.50.104 / CBC §903.6 for Ch. 14.52.030 on a CRC-track house. Section 903.6 expressly covers CBC-track Group R, but Ch. 14.52.030 is the specific valuation rule here.
+
+---
+
+### Key Laguna Beach Window Replacement Facts
+
+- **OTC eligible:** Yes -- same/similar openings, minor structural mods
+- **Fenestration:** U-factor max 0.30, SHGC max 0.23 prescriptive for the City's Title 24 climate zone (see the city reference)
+- **VHFHSZ:** dual-pane with tempered required (state WUI 504.8)
+- **Vinyl windows:** Must have welded corners + metal reinforcing in interlock area (Ch. 14.70.035)
+- **Skylights:** Glass only -- no plastic (Ch. 14.70.040)
+- **Planning route:** in-kind replacements take Zone Clearance; other non-major work ordinarily takes Zone Clearance; the former neighbor-consent ADR split was repealed
+- **Coastal Zone:** Generally exempt from CDP for window replacement; FLAG if near bluff edge or ESA
+- **Sprinkler trigger:** For a CRC-track house, run Ch. 14.52.030 (50% cumulative valuation over any 3-year period) and Title 15 §1103.5.4 (scope). Do not mislabel §14.50.104 as non-residential-only; its Group R clauses apply to CBC-track residential buildings. See `../residential-remodel/references/city-sprinkler-retrofit.md`
+- **WUI minor repair exception:** Building official may approve same-material replacement (Ch. 14.70.015)
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
@@ -131,7 +281,7 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 
 ## Deferred to Inspection
 
-These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+The inspector verifies these in the field. They are **not** plan-check corrections; the reviewer does not list them.
 
 | # | Inspector verifies | What to look for | Code |
 |---|---|---|---|
@@ -144,7 +294,24 @@ These items are verified by the inspector in the field — **not** part of plan-
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/window-replacement/`. City overlay source: `skills/cities/laguna-beach/window-replacement/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/egress-requirements.md` — Emergency Egress and Window Requirements
+- `references/fenestration-energy.md` — Fenestration Energy Code Requirements
+- `references/fire-rated-glazing.md` — Fire-Rated Glazing and Fire Separation Requirements
+- `references/safety-glazing.md` — Safety Glazing Requirements
+- `references/structural-openings.md` — Structural Requirements for Window/Door Openings
+- `references/wui-exterior-glazing.md` — WUI Exterior Glazing Requirements
+
+**Laguna Beach rules**
+
+- `references/city-design-review-windows.md` — Laguna Beach — Current Window/Door Planning Route
+- `references/city-wui-glazing.md` — Laguna Beach WUI Glazing Amendments
 
 ---
 

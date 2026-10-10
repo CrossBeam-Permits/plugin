@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-09",
+  "plugin_version": "0.5.0",
+  "scope": "Host behavior the 0.5.0 packaging relies on. Throwaway homes, local copies, fictional inputs. No City site or account touched.",
+  "claude_plugin_root": {
+    "host": "Claude Code 2.1.295",
+    "method": "Installed the plugin from a local-path marketplace into a throwaway HOME, invoked /laguna-beach:laguna-permit-preparer in print mode from an empty task directory, ran a Bash echo of $CLAUDE_PLUGIN_ROOT and a Python os.environ read, and asked the model to copy the substituted text from the skill body.",
+    "bash_env_CLAUDE_PLUGIN_ROOT": "unset (echo printed 'unset'; Python read None)",
+    "skill_body_substitution": "substituted with the absolute plugin path",
+    "documented_at": "https://code.claude.com/docs/en/plugins-reference#environment-variables (variables are not present in Bash tool commands; skill content is substituted inline)",
+    "conclusion": "Never rely on a $CLAUDE_PLUGIN_ROOT shell variable. Put ${CLAUDE_PLUGIN_ROOT} in skill text and fall back to the SKILL.md location on other hosts."
+  },
+  "claude_absolute_paths_activation": {
+    "host": "Claude Code 2.1.295",
+    "method": "Same throwaway install; asked the preparer skill (host check only) to confirm the root and validate permit-work/state/project-facts.json from the task directory.",
+    "commands_run": [
+      "python3 \"<plugin-root>/scripts/plugin_root.py\"  -> exit 0",
+      "python3 \"<plugin-root>/scripts/validate-json.py\" --schema \"<plugin-root>/schemas/project-facts.schema.json\" permit-work/state/project-facts.json  -> exit 1 (expected: the fixture was deliberately incomplete)"
+    ],
+    "conclusion": "The wrapper's root and absolute-path instructions work from the user's task directory."
+  },
+  "connector_unauthenticated": {
+    "claude_code": "plugin:laguna-beach:crossbeam listed as 'Needs authentication'; print-mode session still completed",
+    "codex_cli_0.162.0": "crossbeam listed, enabled, 'Not logged in'; `codex mcp login crossbeam` performs OAuth",
+    "gemini_cli_0.63.0": "crossbeam (from laguna-beach) listed as Disconnected until `/mcp auth crossbeam`",
+    "server_discovery": "POST /mcp without a token returns 401 with resource_metadata; /.well-known/oauth-authorization-server advertises dynamic client registration and S256 PKCE"
+  },
+  "marketplace_pinning": {
+    "method": "Local git repository with two commits; git-subdir entry pointing at the older commit; installed with each host into a throwaway home.",
+    "claude_code_2.1.295": {"ref_plus_sha": "installed the pinned commit", "sha_only": "installed the pinned commit"},
+    "codex_cli_0.162.0": {"ref_plus_sha": "installed the pinned commit", "sha_only": "installed the pinned commit"},
+    "documented_at": [
+      "https://code.claude.com/docs/en/plugins/marketplace-reference#plugin-sources",
+      "https://developers.openai.com/plugins/build/plugins"
+    ]
+  },
+  "codex_auth_policy": "Codex reports authPolicy ON_INSTALL for entries in the Claude-format marketplace. The CLI install did not prompt. The ChatGPT desktop app's behavior with ON_INSTALL was not tested."
+}

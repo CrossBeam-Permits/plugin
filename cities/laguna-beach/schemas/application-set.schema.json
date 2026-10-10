@@ -48,8 +48,8 @@
         "scope_description_fact_id": {"type": "string", "minLength": 1},
         "rationale": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/citation"}},
         "forms": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-        "prerequisites": {"type": "array", "items": {"type": "string"}},
-        "channel": {"enum": ["online", "appointment", "counter"]},
+        "prerequisites": {"type": "array", "items": {"type": "string"}, "description": "Fact IDs for sourced Boolean prerequisite determinations; all must be true before portal readiness."},
+        "channel": {"enum": ["online", "appointment", "counter", "unverified"]},
         "portal": {"anyOf": [{"$ref": "#/$defs/portal"}, {"type": "null"}]},
         "valuation_fact_id": {"type": ["string", "null"]},
         "attachments": {

@@ -10,6 +10,32 @@ from pathlib import Path
 from typing import Any
 
 
+def plugin_root() -> Path:
+    """Absolute path of the installed plugin (the folder that holds scripts/).
+
+    Every helper lives in <plugin-root>/scripts/, so this works in the source
+    repository, in a Claude Code or Codex plugin cache, and in an uploaded copy.
+    It never depends on the current directory or on CLAUDE_PLUGIN_ROOT, which
+    Claude Code does not export to shell commands.
+    """
+    return Path(__file__).resolve().parent.parent
+
+
+def plugin_path(relative: str | Path) -> Path:
+    """Resolve a plugin-relative path such as schemas/x.json to an absolute path.
+
+    Refuses absolute paths and paths that escape the plugin root.
+    """
+    candidate = Path(relative)
+    if candidate.is_absolute():
+        raise ValueError(f"expected a plugin-relative path, got {relative}")
+    root = plugin_root()
+    resolved = (root / candidate).resolve()
+    if resolved != root and root not in resolved.parents:
+        raise ValueError(f"path escapes the plugin root: {relative}")
+    return resolved
+
+
 def load_json(path: str | Path) -> Any:
     with Path(path).open(encoding="utf-8") as stream:
         return json.load(stream)

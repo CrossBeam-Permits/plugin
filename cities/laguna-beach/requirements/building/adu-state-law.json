@@ -1,0 +1,37 @@
+{
+  "source": "CSG Consultants Laguna Beach Jurisdictional Data Sheet, ADU / JADU SPECIFIC rows 2-10",
+  "state_law_as_of": "2026-01-01",
+  "note": "Items from the City plan-check data sheet for ADUs and JADUs, with how California ADU law treats each one.",
+  "decisions": [
+    {
+      "item": "PV required for a new detached ADU",
+      "outcome": "State law already sets this rule; it is not a Laguna addition.",
+      "reason": "The current California Energy Code already controls PV for newly constructed detached ADUs, with its own exceptions. Restating it as Laguna law would obscure those exceptions."
+    },
+    {
+      "item": "Sprinklers only when required for the primary residence",
+      "outcome": "State law already sets this rule; it is not a Laguna addition.",
+      "reason": "This is the exact statewide rule in Government Code section 66314(d)(12), not a Laguna-specific addition."
+    },
+    {
+      "item": "Full kitchen required, including sink, range, and refrigerator",
+      "outcome": "Not enforced as a Laguna rule; state ADU law may preempt it.",
+      "reason": "State law requires complete independent living facilities but the state floor does not impose this exact appliance trio. A refrigerator is not a permanent building provision, and the City source supplied no ordinance establishing an objective local standard."
+    },
+    {
+      "item": "Fire and sound separation; rated eave and exterior wall",
+      "outcome": "Applies as an objective building, health or fire-safety standard.",
+      "reason": "Objective building, health, and fire-safety standards remain applicable to ADUs; the city row points to the applicable CRC assembly tables rather than adding a zoning barrier."
+    },
+    {
+      "item": "Minimum 100 amp electrical service",
+      "outcome": "Applies only when the design proposes a separate electrical service.",
+      "reason": "CEC section 230.79(C) governs a one-family dwelling service, but it does not itself require an ADU to install a separate service. Converted section 66323(a)(1) ADUs cannot be forced into a new or separate utility connection. Apply the rating only when the design actually proposes a separate service."
+    },
+    {
+      "item": "Sewer and water connections optional, notes required",
+      "outcome": "Applies; it is more permissive than state law.",
+      "reason": "Optional connections are no more restrictive than the statewide converted-ADU protection and are more permissive for other ADUs. Plans must still identify the chosen connection approach."
+    }
+  ]
+}

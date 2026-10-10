@@ -28,7 +28,7 @@ Both modes share the same rules. The difference is direction of travel — build
 | Permit system | Not confirmed — verify with City |
 | Permit portal | Not confirmed — verify with City |
 | Municipal code | https://ecode360.com/AL4074 |
-| Fire agency | [object Object] |
+| Fire agency | Albany Fire Department |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 
@@ -57,7 +57,7 @@ When compliance is clean (or flag-only), produce a submission guide:
 **Typical issuance:** same-day OTC if documents complete and no overlay triggers
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, Albany Fire Department clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]

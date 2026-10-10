@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "building-application",
+  "note": "Fictional facts only. Each case runs fill -> verify -> render on the field map; signing cases also run verify-signed-form.",
+  "fill_cases": [
+    {
+      "id": "licensed-contractor",
+      "permittee_type": "licensed_contractor",
+      "declaration_source": "user_confirmed",
+      "expect_exit": 0,
+      "expect_contractor_filled": true
+    },
+    {
+      "id": "owner-builder-leaves-contractor-blank",
+      "permittee_type": "owner_builder",
+      "declaration_source": "user_confirmed",
+      "expect_exit": 0,
+      "expect_contractor_filled": false
+    },
+    {
+      "id": "declaration-missing-blocks-fill",
+      "permittee_type": null,
+      "declaration_source": null,
+      "expect_exit": 2
+    },
+    {
+      "id": "declaration-inferred-from-plans-blocks-fill",
+      "permittee_type": "licensed_contractor",
+      "declaration_source": "plan",
+      "expect_exit": 2
+    }
+  ],
+  "sign_cases": [
+    {"id": "e-signed-fields-kept", "variant": "ink_overlay", "expect_exit": 0, "expect_status": "signed_verified"},
+    {"id": "wet-signed-and-scanned", "variant": "scanned", "expect_exit": 0, "expect_status": "signed_verified"},
+    {"id": "identical-file-not-signed", "variant": "identical", "expect_exit": 2},
+    {"id": "resaved-without-signature", "variant": "resaved", "expect_exit": 2, "expect_status": "signature_missing"},
+    {"id": "value-changed-after-signing", "variant": "tampered", "expect_exit": 1, "expect_status": "fail"}
+  ]
+}

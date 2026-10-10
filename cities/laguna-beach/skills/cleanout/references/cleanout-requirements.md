@@ -2,7 +2,7 @@
 title: "CPC Section 707 — Cleanout Requirements"
 category: "Cleanout Requirements"
 relevance: "Every cleanout review"
-key_code_sections: "CPC 707.1, 707.3, 707.4, 707.5, 707.7, 707.8, 707.9, Table 707.1"
+key_code_sections: "CPC 707.1, 707.3, 707.4, 707.5, 707.8, 707.9, Table 707.1"
 ---
 
 # CPC Section 707 — Cleanout Requirements
@@ -84,9 +84,8 @@ Each horizontal drainage pipe shall be provided with cleanouts in the following 
 
 ---
 
-## Above Grade (707.7 / 707.8)
+## Access and Above-Grade Termination (707.8)
 
-- Cleanouts on stacks shall be located **not less than 42 inches above the floor**
 - Unless under an approved cover plate, cleanouts must be **above grade** and **readily accessible**
 - Cannot be buried under concrete, dirt, or other covering without approved access cover
 

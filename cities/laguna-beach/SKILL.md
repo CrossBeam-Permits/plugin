@@ -1,5 +1,5 @@
 ---
-name: laguna-permit-preparer
+name: laguna-beach
 description: Prepare and, with explicit user approval, submit Laguna Beach Planning and residential Building permit applications online. Use for guided permit intake, entitlement/application-set planning, official form filling, packet assembly, EnerGov portal navigation, draft resumption, final submission, and receipt capture. Also use when a Laguna route must finish through an appointment or counter instead of the portal.
 ---
 
@@ -23,12 +23,18 @@ Take a Laguna Beach project from plain-language scope to the City's real intake 
 |---|---|
 | Start and facts | `references/guided-intake.md`, `references/privacy-and-untrusted-files.md` |
 | Determine lane/stage | `references/process-stage.md` |
+| Plain-language pool request, prior review, drawings, or follow-up | `references/homeowner-journey.md` |
+| No plan set, or plans need drawing or fixing | `references/plan-sheets.md` |
 | Planning record set | `references/planning-routing.md` |
 | Building record set | `references/building-routing.md` |
 | Form coverage / unsupported routes | `references/form-coverage.md` |
+| Plan set completeness | `skills/plan-set-check/SKILL.md`, `requirements/README.md` |
+| Fee estimate | `requirements/fees/README.md`, then `node scripts/estimate-fees.mjs --input <json>` (fields in `scripts/fees/README.md`). Show the ESTIMATE notice, keep Building and other-agency subtotals separate, and never price an item listed as not estimated |
+| City portal account | `references/portal-account.md` |
 | Forms and packets | `references/form-source-policy.md`, `references/packaging-checklist.md` |
 | Browser transaction | `references/online-submission.md`, then `references/portal-checkpoints.md` |
 | Any consequential field/action | `references/applicant-confirmations.md` |
+| After filing: invoices, status, corrections, issuance | `references/after-filing.md` |
 
 Do not front-load every reference or source file.
 
@@ -42,6 +48,7 @@ permit-work/
 ├── state/
 │   ├── project-facts.json
 │   ├── application-set.json
+│   ├── work-class-selection.json
 │   ├── submission-plan.json
 │   └── browser-state.json
 ├── output/
@@ -60,6 +67,10 @@ Runtime requirements are Python 3.11+, `pypdf`, and Poppler's `pdftoppm`; releas
 python3 scripts/validate-json.py --schema schemas/project-facts.schema.json permit-work/state/project-facts.json
 ```
 
+Paths under `scripts/`, `schemas/`, `assets/`, `references/`, `requirements/`, `skills/` and `evals/` are relative to the plugin root. The user's task directory is the working directory, so write them as absolute paths (`skills/laguna-permit-preparer/SKILL.md` explains how to find the root on each host). `permit-work/` paths stay relative to the task directory.
+
+The CrossBeam connector is optional. If its tools are missing or need sign-in, continue without them. For plan-set permits, California code compliance needs the connector. Without it, the permit skills check the Laguna rules and City checklists and list California code as not checked.
+
 ## Workflow
 
 ### 1. Establish scope and stage
@@ -72,6 +83,11 @@ python3 scripts/inventory-files.py permit-work/input --output permit-work/state/
 
 Read every relevant source once and populate `project-facts.json` with provenance. Ask unresolved questions progressively. Reconcile contradictions before using a fact.
 
+For requests such as “we want a pool in Laguna Beach,” own the whole journey in
+`references/homeowner-journey.md`. Ask whether plans exist and whether the City or a
+private reviewer has already reviewed this version. Draft the application and supporting
+materials as far as the evidence permits; identify exactly what is needed next.
+
 ### 2. Propose the filing theory
 
 Use `references/process-stage.md` and the applicable routing reference. Planning can require a set of entitlement forms in one portal record; Building generally requires one record, application, and valuation per distinct scope.
@@ -81,6 +97,7 @@ Write `application-set.json`, then show the user:
 - present stage and prerequisite approvals;
 - each proposed form/record and the reason it is included;
 - online portal type or exact non-online handoff;
+- the portal work class for each online record and why;
 - separate Building valuations and attachment bundles;
 - unresolved routing questions.
 
@@ -88,7 +105,9 @@ Do not fill forms or create portal records until the user confirms this filing t
 
 ### 3. Acquire current official forms
 
-Use `assets/form-manifest.json`. Download from each official URL into `assets/forms-cache/` or the task's private cache, then verify:
+Use `assets/form-manifest.json`. Fill only entries with `status: pinned`. An entry with `status: needs_source` names the current City link; stop that form and tell the user, do not fill an unpinned revision. First inspect the current official source page and compare
+its linked revision with the manifest URL. An old URL can still return a valid, obsolete PDF.
+Download into the task's private cache, then verify:
 
 ```sh
 python3 scripts/check-source-freshness.py \
@@ -134,9 +153,24 @@ python3 scripts/render-preview.py \
 
 Inspect the rendered pages for clipping, overlap, stale appearances, and unresolved signature/declaration fields. The script's logical pass does not replace visual review.
 
+The applicant signs the filled PDF themselves. Then check the signed file against the fill (`references/form-source-policy.md`):
+
+```sh
+python3 scripts/verify-signed-form.py \
+  --signed permit-work/output/forms/building-application-signed.pdf \
+  --filled permit-work/output/forms/building-application-filled.pdf \
+  --answers permit-work/output/forms/building-application-filled.answers-used.json \
+  --field-map assets/field-maps/building-application.json \
+  --output-dir permit-work/output/previews/building-application-signed
+```
+
+View every signature crop it renders. Package only the file named by `signed_sha256`.
+
 ### 5. Assemble portal-specific packets
 
-Create a packet manifest that names every input and exact portal category. For type 114, merge all applicable entitlement applications into one `Application` PDF without duplicating shared forms. For Building, keep every scope record separate.
+Before assembling a packet that carries plans, run the plan-set check on the final merged PDF (`skills/plan-set-check/SKILL.md`, `references/packaging-checklist.md`). Packet inputs are the signed application files from step 4, never the unsigned fills. Create a packet manifest that names every input and exact portal category. For type 114, merge all applicable entitlement applications into one `Application` PDF without duplicating shared forms. For Building, keep every scope record separate.
+
+Choose each online record's work class by reasoning (`references/building-routing.md`, `python3 scripts/list-work-classes.py --type <id>`) and confirm it with the filing theory. Write it to `permit-work/state/work-class-selection.json`.
 
 ```sh
 python3 scripts/assemble-packet.py \
@@ -146,7 +180,8 @@ python3 scripts/assemble-packet.py \
 python3 scripts/build-submission-plan.py \
   --facts permit-work/state/project-facts.json \
   --application-set permit-work/state/application-set.json \
-  --portal-map assets/portal-maps/v1-portal-map.json \
+  --portal-map assets/portal-maps/v2-portal-map.json \
+  --work-class-selection permit-work/state/work-class-selection.json \
   --output permit-work/state/submission-plan.json
 ```
 
@@ -164,13 +199,17 @@ If browser control is unavailable, deliver a `portal_ready` packet, exact deep l
 
 ### 7. Finish at the real channel
 
-- Zone Clearance: produce the current packet and appointment-ready handoff; book only after explicit date/time approval.
-- Standalone demolition: produce the Building packet and current counter/appointment handoff; never label it online-submitted.
+- Zone Clearance: use the verified residential type 114 mapping and its current City instructions; see `references/planning-routing.md`. Perform normal visible portal drift checks and keep submission and fee-dependent receipt separate.
+- Standalone demolition: its own type 183 record in a City Demolition work class (online, Review First); see `references/building-routing.md`.
+- Revision of an issued permit: type 183 Revision work class, Pay First. Not for plan-check corrections.
 - ADU/JADU: submit Planning type 182 first. Create Building type 183 only after the Planning approval is effective.
 - Most Building types: online filing is complete at the confirmation, but later permit issuance is in person.
-- Payment: show invoice details and obtain separate approval; the user enters payment credentials.
+- Payment: show invoice details and obtain separate approval; the user enters payment credentials. Pay First classes ask for fees during filing; the same separate approval applies.
 
 End with the exact status for every record and what happens next.
+
+Continue corrections and issuance using `references/homeowner-journey.md`; retain the
+existing record identity and distinguish filing, payment, approval, and permit issuance.
 
 ## Release self-check
 

@@ -39,7 +39,8 @@
     },
     {
       "id": "non-online-route",
-      "trigger": "zone_clearance_or_demolition",
+      "trigger": "scope_without_mapped_online_work_class",
+      "note": "Zone Clearance (type 114) and standalone demolition (type 183 Demolition work classes) are online in the 2026-10-09 portal map; this case covers scopes with no mapped online work class.",
       "required_actions": ["prepare_handoff", "use_appointment_or_counter_status"],
       "forbidden_actions": ["mark_submitted_without_city_receipt"]
     }

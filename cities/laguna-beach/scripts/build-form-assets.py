@@ -24,10 +24,26 @@ PLANNING_MAPPINGS = [
     {"fact_id": "owner.name", "pdf_fields": ["Owner Name"], "required": True, "applicant_controlled": True, "transform": "string"},
 ]
 
+# Seed mappings for the portal-linked Building Permit Application (2 pages, 96 fields,
+# with the Stormwater Quality Certification on page 2). author-semantic-maps.py replaces
+# these with the full human-reviewed map; the seed only proves the names exist.
 BUILDING_MAPPINGS = [
     {"fact_id": "site.address", "pdf_fields": ["PROJECT ADDRESS"], "required": True, "applicant_controlled": False, "transform": "string"},
-    {"fact_id": "project.is_residential.{record_id}", "pdf_fields": ["Residential"], "required": True, "applicant_controlled": False, "transform": "checkbox", "on_value": "/On"},
     {"fact_id": "project.description.{record_id}", "pdf_fields": ["Description of Work 1", "Description of Work 2", "Description of Work 3", "Description of Work 4", "Description of Work 5", "Description of Work 6"], "required": True, "applicant_controlled": False, "transform": "lines"},
+    {"fact_id": "project.valuation.{record_id}", "pdf_fields": ["Valuation of Work"], "required": True, "applicant_controlled": True, "transform": "currency"},
+    {"fact_id": "applicant.name", "pdf_fields": ["APPLICANT NAME If none of the below 1"], "required": True, "applicant_controlled": True, "transform": "string"},
+    {"fact_id": "applicant.phone", "pdf_fields": ["Phone"], "required": True, "applicant_controlled": True, "transform": "string"},
+    {"fact_id": "applicant.email", "pdf_fields": ["Email Address"], "required": True, "applicant_controlled": True, "transform": "string"},
+    {"fact_id": "owner.name", "pdf_fields": ["LEGAL PROPERTY OWNER NAME"], "required": True, "applicant_controlled": True, "transform": "string"},
+    {"fact_id": "owner.phone", "pdf_fields": ["Phone 1"], "required": False, "applicant_controlled": True, "transform": "string"},
+    {"fact_id": "owner.email", "pdf_fields": ["Email Address_2"], "required": False, "applicant_controlled": True, "transform": "string"},
+    {"fact_id": "owner.mailing_address", "pdf_fields": ["Mailing Address City State Zip"], "required": False, "applicant_controlled": True, "transform": "string"},
+]
+
+# The MEP application keeps the field names of the retired one-page Building form.
+MEP_MAPPINGS = [
+    {"fact_id": "site.address", "pdf_fields": ["PROJECT ADDRESS"], "required": True, "applicant_controlled": False, "transform": "string"},
+    {"fact_id": "project.description.{record_id}", "pdf_fields": ["Description of Work 1", "Description of Work 2", "Description of Work 3", "Description of Work 4", "Description of Work 5"], "required": True, "applicant_controlled": False, "transform": "lines"},
     {"fact_id": "project.valuation.{record_id}", "pdf_fields": ["Valuation of Work"], "required": True, "applicant_controlled": True, "transform": "currency"},
     {"fact_id": "applicant.name", "pdf_fields": ["APPLICANT NAME If none of the below"], "required": True, "applicant_controlled": True, "transform": "string"},
     {"fact_id": "applicant.phone", "pdf_fields": ["Phone"], "required": True, "applicant_controlled": True, "transform": "string"},
@@ -37,15 +53,6 @@ BUILDING_MAPPINGS = [
     {"fact_id": "owner.email", "pdf_fields": ["Email Address_2"], "required": False, "applicant_controlled": True, "transform": "string"},
     {"fact_id": "owner.mailing_address", "pdf_fields": ["Mailing Address City State Zip"], "required": False, "applicant_controlled": True, "transform": "string"},
 ]
-
-MEP_MAPPINGS = [
-    dict(item)
-    for item in BUILDING_MAPPINGS
-    if item["fact_id"] != "project.is_residential.{record_id}"
-]
-for index, mapping in enumerate(MEP_MAPPINGS):
-    if mapping["fact_id"] == "project.description.{record_id}":
-        MEP_MAPPINGS[index] = {**mapping, "pdf_fields": mapping["pdf_fields"][:5]}
 
 
 def locate_form(directory: Path, form: dict[str, Any]) -> Path:
@@ -60,7 +67,9 @@ def locate_form(directory: Path, form: dict[str, Any]) -> Path:
 
 def mappings_for(form_id: str) -> tuple[list[dict[str, Any]], list[str]]:
     if form_id == "building-application":
-        return BUILDING_MAPPINGS, ["Signature3", "Date"]
+        # Text32 is the stormwater "Signed:" line; the dates beside signatures and the
+        # City-use permit numbers stay review-only.
+        return BUILDING_MAPPINGS, ["Text32", "Date34_af_date", "PERMIT NO", "Permit"]
     if form_id == "mep-application":
         return MEP_MAPPINGS, ["Date56_af_date"]
     return PLANNING_MAPPINGS, ["Owner Signature", "Date Signed by Owner"]
@@ -113,6 +122,11 @@ def main() -> int:
     parser.add_argument("--manifest", required=True)
     parser.add_argument("--forms-dir", required=True)
     parser.add_argument("--output-dir", required=True)
+    parser.add_argument(
+        "--only",
+        action="append",
+        help="Rebuild one form id; repeat for more. Other maps are left untouched.",
+    )
     args = parser.parse_args()
 
     pypdf = require_pypdf()
@@ -120,8 +134,20 @@ def main() -> int:
     forms_dir = Path(args.forms_dir)
     output_dir = Path(args.output_dir)
     failures: list[str] = []
+    selected = set(args.only or [])
+    unknown = selected - {item["id"] for item in manifest["forms"]}
+    if unknown:
+        raise SystemExit(f"unknown form ids: {sorted(unknown)}")
+    built = 0
 
     for form in manifest["forms"]:
+        if selected and form["id"] not in selected:
+            continue
+        if form.get("status", "pinned") != "pinned":
+            failures.append(
+                f"{form['id']}: status is {form['status']}; pin the current revision before building its map"
+            )
+            continue
         try:
             path = locate_form(forms_dir, form)
             reader = pypdf.PdfReader(str(path))
@@ -161,6 +187,7 @@ def main() -> int:
                     "widgets": widgets,
                 },
             )
+            built += 1
         except Exception as exc:  # report every affected form in one run
             failures.append(f"{form['id']}: {exc}")
 
@@ -168,7 +195,7 @@ def main() -> int:
         for failure in failures:
             print(f"ERROR: {failure}")
         return 1
-    print(f"Built {len(manifest['forms'])} field maps -> {output_dir}")
+    print(f"Built {built} field maps -> {output_dir}")
     return 0
 
 

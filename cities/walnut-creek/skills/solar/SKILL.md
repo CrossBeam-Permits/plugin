@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Accela Citizen Access |
 | Permit portal | https://aca-prod.accela.com/WC/Default.aspx |
-| Fire agency | [object Object] |
+| Fire agency | Contra Costa County Fire Protection District (Con Fire) |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 
@@ -56,7 +56,7 @@ When compliance is clean (or flag-only), produce a submission guide:
 **Typical issuance:** same-day OTC if documents complete and no overlay triggers
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, Contra Costa County Fire Protection District (Con Fire) clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]

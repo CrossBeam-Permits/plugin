@@ -1,23 +1,26 @@
 ---
-description: "Deck Patio Repair permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions deck patio repair in Laguna Beach."
-version: "1.0"
-source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen)"
-authority: "California Building Standards Commission"
-law_as_of: "January 1, 2025"
+name: deck-patio-repair
+description: "Deck/Patio permits in Laguna Beach, CA. Repair or in-kind rebuild of an existing deck, balcony, stair, or guardrail. NOT a new or enlarged deck, which is a residential addition. NOT flatwork at grade (a slab, walkway, or patio paving), which is general-building. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions deck patio repair in Laguna Beach."
+metadata:
+  version: "2.0"
+  source: "2025 California Building Code (Title 24, Part 2.5 CRC, Part 2 CBC, Part 11 CALGreen); Building Division OTC policies, Ch. 14.70 WUI Code, Ch. 14.50/14.52 building/residential code amendments, Title 25 zoning/design review, Ch. 25.07 coastal development"
+  authority: "California Building Standards Commission and City of Laguna Beach"
+  law_as_of: "2026-07-22"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
-# Laguna Beach — Deck Patio Repair Permit
+# Laguna Beach — Deck/Patio Permit
 
-Handles deck patio repair permits in Laguna Beach end-to-end.
+Handles deck/patio permits in Laguna Beach end-to-end. Scope: Repair or in-kind rebuild of an existing deck, balcony, stair, or guardrail. NOT a new or enlarged deck, which is a residential addition. NOT flatwork at grade (a slab, walkway, or patio paving), which is general-building.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
-> "Are you (A) planning to file a deck patio repair permit, or (B) a city reviewer checking a submitted one?"
+> "Are you (A) planning to file a deck/patio permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -34,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
-## Ready to Submit — Laguna Beach Deck Patio Repair Permit
+## Ready to Submit — Laguna Beach Deck/Patio Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -73,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -90,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -106,9 +122,238 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
+
+This skill covers Laguna Beach's city-specific deck, patio, and balcony requirements. **VHFHSZ fire-resistive material requirements, design review for elevated decks, coastal zone CDP requirements, and stainless steel fastener mandates make Laguna Beach deck permits more complex than typical CA cities.**
+
+**How this skill relates to state code**: The `california-deck-patio-repair` skill covers CRC/CBC state requirements (R507 structural, guards, handrails, stairs, ledger connections, waterproofing). This skill covers what Laguna Beach adds. **Load state code first**, then this skill.
+
+---
+
+### Decision Tree Router
+
+| Project Type | Route |
+|-------------|-------|
+| **Deck/balcony/patio cover repair** (no extension, no replacement) | OTC eligible |
+| **Deck replacement or new deck construction** | Standard plan review + possible design review |
+| **Elevated deck >3 ft above grade** (new or replacement) | Administrative Design Review required |
+| **Deck/slab/terrace/patio ≤3 ft above adjacent legal grade** | Zone Clearance under §25.05.040(B)(2)(m) |
+| **Deck wrapping with fire-resistant materials** | Match the current closed lists; the former categorical `(B)(2)(w)` exemption was repealed |
+| **Deck as part of major remodel** | Full plan review + Design Review under §25.05.040(B)(1)(a) |
+
+---
+
+### OTC-Eligible Deck Work
+
+Deck, balcony, and patio cover **repairs** qualify for over-the-counter review when:
+- Repair only — no extension or replacement of the deck
+- No structural expansion beyond existing footprint
+- Not part of a project triggering major remodel
+
+**OTC-eligible per the city reference OTC item 2** — residential decks, balconies and patio cover repairs with minor structural modifications, no extension or replacement. Hours and the full OTC list: `../city-reference/SKILL.md` §"Permit Processing Tracks".
+
+Deck **replacement** (tear-off and rebuild) or **new construction** does NOT qualify for OTC and requires standard plan review.
+
+---
+
+### Design Review Requirements for Decks
+
+#### Exempt from Design Review — Zone Clearance
+
+Per Section 25.05.040(B)(2):
+
+| Improvement | Condition | Code |
+|------------|-----------|------|
+| **Decks, slabs, terraces, or patios ≤3 ft above adjacent legal grade** | Zone Clearance | 25.05.040(B)(2)(m) |
+| **Railings** | Zone Clearance | 25.05.040(B)(2)(r) |
+
+#### Administrative Design Review Required
+
+Per Section 25.05.040(B)(3)(a)(iii):
+
+- **Elevated decks MORE THAN 3 ft above adjacent existing grade** require an administrative design review hearing before the Director of Community Development
+- This category cannot use the Administrative Design Review hearing waiver
+- Director has discretion to refer to full Design Review Board
+
+#### Full Design Review Board Required
+
+Per Section 25.05.040(B)(1):
+
+- The deck work is part of a major remodel, (B)(1)(a)
+- An improvement exceeds 15 ft, (B)(1)(c)
+- The work is development in an ESA (which expressly includes slopes of 30% or greater), absent the enacted peer-reviewed professional determination, (B)(1)(e)
+
+#### ADU-Attached Decks (Special Rules)
+
+Per Chapter 25.17:
+- Outdoor living space (porches, decks, patios) attached to ADU: max **20% of ADU floor area**
+- Must comply with height and setback standards
+- Elevated decks >3 ft above grade require design review
+- **Roof decks are PROHIBITED** on ADUs
+
+---
+
+### VHFHSZ Fire-Resistive Deck Requirements
+
+Laguna Beach is predominantly Very High Fire Hazard Severity Zone (citywide coverage: `../city-reference/SKILL.md`). The WUI code applies to exterior construction including decks.
+
+#### WUI Scope for Deck Work (Ch. 14.70)
+
+Per Section 14.70.015, the WUI code applies to exterior materials/systems/assemblies for:
+- New buildings
+- Additions
+- Alterations
+- **Repairs**
+
+**Exception**: With building official approval, minor repairs or replacement of exterior materials may use same materials as existing (Section 14.70.015 exception).
+
+#### State WUI Deck Material Requirements (IWUIC 504.7.3)
+
+In VHFHSZ, the walking surface of decks, porches, balconies, and stairs must use one of:
+
+1. Material tested per ASTM E2632 and ASTM E2726 meeting fire performance requirements
+2. Ignition-resistant building material per Section 503.2.4
+3. Material meeting SFM Standard 12-7A-4 and Section 503.2.4
+4. Fire-retardant-treated wood labeled for exterior use per CBC Section 2303.2
+5. Noncombustible material
+6. Material meeting SFM Standard 12-7A-4A (with noncombustible/ignition-resistant attached wall covering)
+7. Material meeting ASTM E2632 performance (with noncombustible/ignition-resistant attached wall covering)
+
+**CRITICAL**: Standard pressure-treated lumber (e.g., ACQ-treated Douglas Fir) does NOT automatically qualify. Decking must be ignition-resistant, fire-retardant-treated, or noncombustible, OR pass the ASTM E2632/E2726 fire tests.
+
+#### Deck-to-Wall Flashing (IWUIC 504.7.3.1)
+
+A minimum **6-inch metal flashing**, applied vertically on the exterior wall, is required at ALL deck-to-wall intersections. This is in addition to the CRC R507.9.1.5 ledger flashing requirements.
+
+#### Laguna Beach WUI Amendments Affecting Decks
+
+| Requirement | Code Section | Impact on Decks |
+|------------|-------------|-----------------|
+| **Exterior wall coverings** | 14.70.030 (504.5.2) | Walls adjacent to decks must be noncombustible or ignition-resistant |
+| **Underfloor vent size** | 14.70.025 (504.10.4) | Vent openings into underfloor spaces (under elevated decks) max 144 sq in |
+| **Minor repair exception** | 14.70.015 | Same material OK for minor repairs with building official approval |
+
+#### Balcony Provisions for Non-Residential / Multi-Story (Ch. 14.50)
+
+Per Section 14.50.116 (amending CBC 705.2.3.1):
+- Balconies/projections of combustible construction must be fire-resistance rated per Table 601 or Type IV construction
+- **Exception 1**: On Type I/II buildings <=3 stories, fire-retardant-treated wood permitted for balconies, porches, decks, and exterior stairways (not used as required exits)
+- **Exception 2**: On Type III/IV/V buildings, Type V construction permitted but must comply with WUI Chapter 5 (Section 504)
+- **Exception 3**: Where sprinkler protection extends to balcony areas, aggregate length limit is removed
+
+---
+
+### Coastal Zone Requirements
+
+Most of Laguna Beach is in the California Coastal Zone. A Coastal Development Permit (CDP) may be required for deck work.
+
+#### CDP Exemptions for Deck Work
+
+Per Section 25.07.008(A):
+
+**Deck repairs/maintenance**: EXEMPT from CDP when:
+- No addition to, enlargement, or expansion of the deck
+- Not involving shoreline protective works
+- Not in environmentally sensitive area, on beach, in wetland, or within 50 ft of coastal bluff edge
+
+**SFR deck improvements**: EXEMPT from CDP unless:
+- Located on a beach, in a wetland/stream, seaward of mean high tide, within 50 ft of coastal bluff edge, in ESA, or in highly scenic area — per 25.07.008(A)(1)(b)
+- In the coastal appealable area (between sea and first public road, or within 300 ft of beach/mean high tide) AND the improvement results in >=10% floor area increase or >=10% height increase — per 25.07.008(A)(1)(c)
+- A new detached structure (new freestanding deck could qualify) — per 25.07.008(A)(1)(c)(3)
+
+#### CDP Required
+
+A CDP IS required when:
+- Building a new freestanding deck in the coastal appealable area
+- Deck addition increases floor area by >=10% in the coastal appealable area
+- Any deck work within 50 ft of a coastal bluff edge
+- Any deck work in an environmentally sensitive area
+
+---
+
+### Major Remodel Interaction
+
+Deck work itself is NOT directly measured in the major remodel 50% calculation (which measures foundation LF, wall LF, and roof SF). However:
+
+#### Sprinkler Retrofit Trigger
+
+**Two triggers, either one fires.** See `../residential-remodel/references/city-sprinkler-retrofit.md` — the single residential retrofit reference. Do not restate the rule here.
+
+- **Ch. 14.52.030** (valuation) — cumulative additions, alterations and repairs in any three-year period exceeding 50% of the pre-work valuation.
+- **Title 15 §1103.5.4** (scope) — alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR an added story.
+
+**Deck-specific note.** Deck replacements can be high-value work, and deck valuation counts toward the Ch. 14.52.030 three-year cumulative total. A deck also sits on the building exterior, so a large deck rebuild combined with other exterior scope can feed the §1103.5.4 exterior prong. Check both.
+
+#### Major Remodel (Area-Based)
+
+- If deck work is combined with additions totaling >=50% of existing gross floor area, the project becomes a major remodel
+- Major remodels trigger: full DRB hearing, full plan review, new construction standards, fuel modification plan (in fuel mod areas)
+
+---
+
+### Stainless Steel Fasteners
+
+Per CRC R507.2.3 and Table R507.2.3: within 300 ft of salt water, **all fasteners and connectors must be stainless steel**.
+
+Laguna Beach is a coastal city — **virtually every property in the city is within 300 ft of salt water** (the city is approximately 1 mile wide between the ocean and the hills). Most deck projects will require stainless steel fasteners throughout.
+
+**This affects**: nails, screws, bolts (including nuts and washers), metal connectors, joist hangers, post bases, ledger hardware, and guard post connectors.
+
+---
+
+### Hillside / Geotechnical Considerations
+
+Many Laguna Beach properties are on hillsides with challenging geology:
+
+- **Steep slopes (≥30%)**: Included in the amended ESA definition; apply §25.05.040(B)(1)(e) unless a licensed professional determines, subject to peer review, that the work does not impact the ESA
+- **Deck foundations on hillsides**: May require geotechnical report for soil bearing capacity, slope stability, and foundation recommendations
+- **Elevated deck posts**: Posts on hillside properties may have significant height — verify against CRC R507.4 post height limits (max 14 ft for 4x4 under 40 psf)
+- **Lateral loads on hillside decks**: Additional engineering may be required for decks cantilevered from hillside structures
+
+---
+
+### Submittal Requirements for Deck Projects
+
+Per city zoning plan check standards, a deck addition requires:
+- Application forms
+- Title sheet
+- Survey
+- Site plan
+- Roof plan
+- Elevations
+- Cross sections
+- Floor area calculations
+- Open space calculations
+
+Additional submittals depending on scope:
+- Structural calculations (if elevated deck, hillside, or engineer-designed)
+- Geotechnical report (if hillside property)
+- WUI compliance documentation (materials certification for VHFHSZ)
+- CDP application (if in coastal zone and not exempt)
+- Design review application (if elevated deck >3 ft)
+
+---
+
+### Key Laguna Beach Deck Facts
+
+- **OTC eligible**: Deck/balcony/patio cover REPAIRS only (no extension/replacement)
+- **Design review exempt**: Decks <=3 ft above grade, patios at/below grade, railing changes, WUI deck wrapping
+- **Admin design review**: Elevated decks >3 ft above grade
+- **Fire-resistive decking**: Required in VHFHSZ per IWUIC 504.7.3
+- **Stainless steel fasteners**: Effectively mandatory (coastal city, nearly all within 300 ft of salt water)
+- **CDP**: Required in coastal zone unless exempt (repairs/maintenance with no expansion are generally exempt)
+- **Sprinkler trigger**: Two triggers — Ch. 14.52.030 (deck valuation counts toward the 50% / 3-year cumulative total) and Title 15 §1103.5.4 (scope). Either fires. See `../residential-remodel/references/city-sprinkler-retrofit.md`
+- **Underfloor vents**: Max 144 sq in per opening under elevated decks (Ch. 14.70.025)
+- **Hillside lots (>30% slope)**: Full design review + potential geotech report
+- **ADU decks**: Max 20% of ADU floor area, roof decks prohibited
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
@@ -133,7 +378,7 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 
 ## Deferred to Inspection
 
-These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+The inspector verifies these in the field. They are **not** plan-check corrections; the reviewer does not list them.
 
 | # | Inspector verifies | What to look for | Code |
 |---|---|---|---|
@@ -143,7 +388,23 @@ These items are verified by the inspector in the field — **not** part of plan-
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/deck-patio-repair/`. City overlay source: `skills/cities/laguna-beach/deck-patio-repair/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/deck-structural.md` — Deck Structural Requirements
+- `references/guards-handrails.md` — Guards and Handrails
+- `references/ledger-connections.md` — Ledger Connections
+- `references/stairs-requirements.md` — Stair Requirements
+- `references/waterproofing-drainage.md` — Waterproofing and Drainage
+
+**Laguna Beach rules**
+
+- `references/city-design-review-decks.md` — Laguna Beach — Current Deck and Patio Planning Route
+- `references/city-wui-decking.md` — Laguna Beach WUI Code — Fire-Resistive Deck & Exterior Construction Requirements
 
 ---
 

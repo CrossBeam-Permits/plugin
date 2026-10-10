@@ -1,23 +1,26 @@
 ---
-description: "Pool Demolition permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions pool demolition in Laguna Beach."
-version: "1.0"
-source: "2025 California Building Code (Title 24, Part 2) — Chapters 18, 33, Appendix J; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6, 7, 12"
-authority: "California Building Standards Commission"
-law_as_of: "January 1, 2025"
+name: pool-demolition
+description: "Pool Demolition permits in Laguna Beach, CA. An existing pool or spa demolished or filled, with utilities disconnected and backfill. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions pool demolition in Laguna Beach."
+metadata:
+  version: "2.0"
+  source: "2025 California Building Code (Title 24, Part 2) — Chapters 18, 33, Appendix J; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 3, 6, 7, 12"
+  authority: "California Building Standards Commission and City of Laguna Beach"
+  law_as_of: "January 1, 2025"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
 # Laguna Beach — Pool Demolition Permit
 
-Handles pool demolition permits in Laguna Beach end-to-end.
+Handles pool demolition permits in Laguna Beach end-to-end. Scope: An existing pool or spa demolished or filled, with utilities disconnected and backfill.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
 > "Are you (A) planning to file a pool demolition permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -34,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
 ## Ready to Submit — Laguna Beach Pool Demolition Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -73,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -90,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -106,9 +122,92 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
+
+**Base skill:** `references/california-baseline.md`  
+**This skill contains ONLY items where Laguna Beach differs from state code.**  
+**All state checklist items apply unless explicitly overridden below.**
+
+---
+
+### Key Delta Summary
+
+| Topic | State Default | Laguna Beach Override |
+|---|---|---|
+| Demolition notification | Varies | Use Laguna Demolition Notification/SCAQMD Rule 1403 screening where shell, structural, or load-supporting demolition is involved |
+| Coastal zone | State Coastal Act | LBMC Section 25.07.006 includes demolition in "development"; coastal-zone pool/spa demolition requires CDP unless a specific exemption applies |
+| Bluff/oceanfront | State project-specific | Pool/spa work on oceanfront bluff lots must check Section 25.50.004(B)(4), bluff edge, geotech, and coastal hazards |
+| Geotech/backfill | State structural baseline | Laguna geotech handout flags soil/structure failure, steep hillside, coastal bluff, liquefaction, floodplain, and Building Official discretion |
+| Drainage/floodplain | State/CBC baseline | Finished grade and fill/excavation must coordinate with floodplain permit, WQMP, erosion control, and city drainage requirements where applicable |
+| Larger project | Permit-specific | If pool demo is part of addition, new construction, or major remodel, route to complex residential skill |
+
+---
+
+### Decision Tree Router
+
+| Scope | Laguna Route |
+|---|---|
+| Partial pool/spa demo for landscape only | Pool-demolition skill + city overlay; no structure over backfilled area unless full removal/geotech path is approved |
+| Full pool removal or future structure over pool area | Require geotech/backfill support; may need full excavation, compaction report, and structural/geotech review |
+| Coastal-zone pool/spa demolition | CDP analysis required before permit clearance |
+| Oceanfront/bluff/hillside lot | Bluff edge/geotech/drainage review; do not treat as simple backfill |
+| Pool demo bundled with remodel/addition/new SFR | Route to corresponding complex city skill |
+
+---
+
+### Laguna-Specific Checks
+
+#### 1. Demolition Notification / SCAQMD
+
+Use the Laguna Demolition Notification form when the scope removes structural pool shell elements, related structural components, or otherwise meets the Rule 1403 demolition definition. Require SCAQMD confirmation and asbestos/abatement documentation where applicable.
+
+If the applicant asserts the pool demo is not Rule 1403 demolition, keep the finding as `ask_the_city` unless the city form or Building Division confirms the exemption.
+
+#### 2. Coastal Development Permit
+
+Pool/spa demolition in the coastal zone is development unless exempt. Because LBMC Section 25.07.006 includes demolition in the development definition, the reviewer must document a Section 25.07.008 exemption before clearing a coastal-zone pool demo.
+
+Watch for exemption loss when the work:
+
+- Is on a beach, in wetland/stream, within 50 ft of coastal bluff edge, in ESA, or in a highly scenic area.
+- Causes significant landform alteration or vegetation removal.
+- Involves mechanized equipment/materials in protected coastal areas.
+- Is tied to shoreline protective work or bluff retaining wall work.
+
+#### 3. Geotech, Backfill, and Drainage
+
+Laguna's terrain makes pool demolition backfill higher risk than flatland cities. Flag geotechnical review when:
+
+- Lot is steep hillside, coastal bluff top, liquefaction zone, floodplain, or oceanfront.
+- Soil failure or structural failure has occurred.
+- A future structure, footing, patio cover, ADU, addition, or new SFR is proposed over the former pool area.
+- Fill/excavation materially changes drainage.
+
+#### 4. Floodplain / Water Quality
+
+If fill/excavation is in a FEMA flood zone or floodway, require floodplain permit screening. If pool water discharge, backfill, stockpiles, or grading can affect storm drains, require erosion control and water-quality notes.
+
+---
+
+### Review Checklist - Laguna Pool Demolition
+
+| ID | Check | Pass Criteria |
+|---|---|---|
+| LB-PDEMO-1 | Correct permit route | Pool/spa demolition only; larger remodel/addition/new construction routed separately |
+| LB-PDEMO-2 | City demolition/SCAQMD | Demolition Notification and Rule 1403 screening completed where structural/shell demolition applies |
+| LB-PDEMO-3 | Coastal/CDP | Coastal-zone status and Section 25.07.008 exemption/exceptions documented |
+| LB-PDEMO-4 | Bluff/hillside/geotech | Bluff edge, slope, liquefaction, failure history, and future structure-over-fill checked |
+| LB-PDEMO-5 | Backfill/compaction | State pool-demolition backfill, compaction, filter fabric, and disclosure requirements shown |
+| LB-PDEMO-6 | Drainage/water quality | Finished drainage, dechlorinated discharge, erosion controls, and WQMP/floodplain triggers checked |
+| LB-PDEMO-7 | Utilities | Electrical, gas, water, sewer, and pool equipment disconnections/caps shown |
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
@@ -128,19 +227,9 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 
 ---
 
-## Documentation Items (informational)
-
-Procedural / informational items with no enforceable rule. Include in the submission record; don't fail or flag in plan check.
-
-| # | Item | Note |
-|---|---|---|
-| 19 | **Owner disclosure signed?** | Real estate disclosure requirement, not a code rule. |
-
----
-
 ## Deferred to Inspection
 
-These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+The inspector verifies these in the field. They are **not** plan-check corrections; the reviewer does not list them.
 
 | # | Inspector verifies | What to look for | Code |
 |---|---|---|---|
@@ -149,12 +238,23 @@ These items are verified by the inspector in the field — **not** part of plan-
 | 13 | **Water supply capped?** | Water supply line to pool fill/autofill disconnected and capped at nearest active branch. | CPC 601.1, 309.6 |
 | 14 | **Sewer/drain capped?** | Pool drain connection to sanitary sewer properly capped to prevent sewer gas and debris entry. | CPC 305.1, 701.1 |
 | 15 | **Above-ground equipment removed?** | All above-ground pool equipment (pump, filter, heater, chlorinator, etc.) and associated plumbing removed. | CBC 3303.6 |
+| 19 | **Owner disclosure signed?** | Owner acknowledges: area for landscape only, no structures; differential settlement risk; disclosure upon sale required (size, location, partial demolition method, backfilled). | -- |
 
 ---
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/pool-demolition/`. City overlay source: `skills/cities/laguna-beach/pool-demolition/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/demolition-structural-cbc.md` — CBC Demolition & Structural Requirements
+- `references/drainage-grading-erosion.md` — Drainage, Grading & Erosion Control
+- `references/electrical-disconnect-cec.md` — CEC Article 680 — Electrical Disconnection for Pool Demolition
+- `references/plumbing-gas-capping-cpc.md` — CPC Plumbing & Gas Line Capping Requirements
 
 ---
 

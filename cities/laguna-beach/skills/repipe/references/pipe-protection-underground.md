@@ -28,11 +28,11 @@ Steel nail plates are required for plastic piping or tubing, and copper or coppe
 
 | Requirement | Detail | Code Section |
 |-------------|--------|-------------|
-| **Bearing support** | Smooth continuous bearing support for pipes in trench | CPC 314.1 |
-| **Firm bed** | Pipe shall be supported on firm bed; no contact with sharp objects | CPC 314.4 |
-| **First 12 in. backfill** | No rocks or debris in the first 12 in. of backfill over pipe | CPC 314.4 |
-| **Backfill layers** | Thin layers (max 6 in.) tamped in place | CPC 314.4 |
-| **Heavy equipment** | No backhoe or grader until 12 in. of earth tamped over pipe | CPC 314.4.1 |
+| **Underground support** | Piping in the ground shall be laid on a firm bed for its entire length; another support method requires approval under Section 301.2 | CPC 313.5 |
+| **Backfill compactness** | Compact backfill around the piping without damaging it, properly compact the fill, and ensure permanent stability in filled or made ground | CPC 314.4 |
+| **First 12 in. backfill** | Backfill in thin layers to 12 in. above the pipe with clean earth free of material that could damage, break, or corrode the pipe | CPC 314.4 |
+| **Thermoplastic sewer/gravity backfill** | Compact along the pipe sides in 6-in. layers to at least 12 in. above the pipe and to at least 85 percent standard Proctor density | CPC 314.4.1 |
+| **Mechanical equipment** | Bulldozers, graders, and similar mechanical devices may be used to finish backfill only after the clean-earth layers reach 12 in. above the pipe | CPC 314.4 |
 | **Parallel trenches** | Shall not run under footings, nor within the area 45 degrees from vertical under footings | CPC 314.1 |
 
 ---
@@ -56,7 +56,7 @@ Water and sewer shall NOT be in the same trench UNLESS both of the following con
 
 ---
 
-## E. Pipes Parallel to Footings (609.3, 314.1)
+## E. Pipes Parallel to Footings (314.1)
 
 Pipes shall NOT be installed within the area **45 degrees from vertical** under footings to prevent structural load on pipes.
 

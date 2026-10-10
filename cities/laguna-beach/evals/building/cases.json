@@ -6,7 +6,7 @@
       "address": "1639 Eleanor Lane, Laguna Beach, CA",
       "records": [
         {"id": "sfr", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.sfr"},
-        {"id": "demolition", "channel": "counter", "portal_type_id": null, "valuation_fact_id": "project.valuation.demolition"},
+        {"id": "demolition", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.demolition"},
         {"id": "grading", "channel": "online", "portal_type_id": 214, "valuation_fact_id": "project.valuation.grading"},
         {"id": "adu", "channel": "online", "portal_type_id": 183, "valuation_fact_id": "project.valuation.adu"}
       ],

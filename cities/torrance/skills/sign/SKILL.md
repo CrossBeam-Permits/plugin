@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://www.torranceca.gov/our-city/community-development/online-permit-portal/building-and-safety |
-| Fire agency | [object Object] |
+| Fire agency | Torrance Fire Department — Community Risk Reduction Division |
 | Code edition | 2025 California Building Standards Code |
 | Code prefix | Local |
 
@@ -56,7 +56,7 @@ When compliance is clean (or flag-only), produce a submission guide:
 **Typical issuance:** same-day OTC if documents complete and no overlay triggers
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, Torrance Fire Department — Community Risk Reduction Division clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]

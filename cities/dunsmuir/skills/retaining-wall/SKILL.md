@@ -27,7 +27,7 @@ Both modes share the same rules. The difference is direction of travel — build
 |---|---|
 | Permit system | Not confirmed — verify with City |
 | Permit portal | https://www.ci.dunsmuir.ca.us/building-department |
-| Fire agency | [object Object] |
+| Fire agency | Dunsmuir-Castella Fire Department |
 | Code edition | Dunsmuir Municipal Code (DMC) |
 | Code prefix | DMC |
 
@@ -56,7 +56,7 @@ When compliance is clean (or flag-only), produce a submission guide:
 **Typical issuance:** same-day OTC if documents complete and no overlay triggers
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, Dunsmuir-Castella Fire Department clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]

@@ -34,7 +34,7 @@ This reference covers **freestanding masonry (CMU) block walls** used as propert
 | Grade | Grade N (moisture-controlled) for exterior use | ASTM C90 |
 | Weight class | Normal weight preferred (for mass and stability) | Lightweight permitted with engineering |
 | Size | 8" x 8" x 16" nominal (standard) | 7-5/8" x 7-5/8" x 15-5/8" actual |
-| Bond pattern | Running bond required | CRC R606.8 |
+| Bond pattern | Running or stack bond, with the applicable R606.3.7 reinforcement | CRC R606.3.7 |
 
 **Note on block types:**
 - Standard hollow CMU (2-cell): most common for freestanding walls
@@ -42,20 +42,22 @@ This reference covers **freestanding masonry (CMU) block walls** used as propert
 - Split-face CMU: decorative textured face, same structural properties as standard
 - Slump block: decorative, slightly lower compressive strength — verify f'm
 
+### Masonry Bonding Pattern (CRC R606.3.7)
+
+- **Running bond:** Head joints in successive courses shall be offset by at least one-fourth of the unit length. Masonry with less offset shall use the stack-bond reinforcement rule.
+- **Stack bond:** Horizontal reinforcement in mortar bed joints or bond beams shall have an area of at least 0.0007 times the vertical cross-sectional area of the wall and shall be spaced not more than 48 in. apart (R606.3.7.2).
+
 ### Mortar
 
-| Type | Compressive Strength | Use |
+Mortar shall meet the proportion specifications of **Table R606.2.8** or the property specifications of **ASTM C270**. Select the mortar type by its use and seismic scope:
+
+| Application | Mortar Selection | Code Section |
 |---|---|---|
-| **Type M** | 2,500 psi | Recommended for below-grade, ground contact, and high-wind areas |
-| **Type S** | 1,800 psi | Acceptable for above-grade freestanding walls |
-| Type N | 750 psi | NOT recommended for freestanding exterior walls |
+| Masonry foundation walls constructed under the referenced R404 tables | Type M or S | R606.2.8.1 |
+| Masonry serving as the lateral force-resisting system in SDC A, B, or C | Type M, S, or N | R606.2.8.2 |
+| Masonry serving as the lateral force-resisting system in SDC D0, D1, or D2 | Type M or S portland cement-lime mortar or mortar cement | R606.2.8.3 |
 
-Mortar proportions per ASTM C270:
-- **Type M (proportion spec):** 1 part portland cement : 1/4 part hydrated lime : 3-3/4 parts sand
-- **Type S (proportion spec):** 1 part portland cement : 1/2 part hydrated lime : 4-1/2 parts sand
-- Pre-mixed mortar (Type M or S) is acceptable when meeting ASTM C270
-
-**CRC R606.5 / CBC 2103.2.1:** Masonry units shall be laid in Type M or S mortar (for structural applications in California seismic zones).
+In SDC D0 and D1—and therefore D2, which must also comply with D1—Type N mortar and masonry cement shall not be used as part of the lateral force-resisting system (R606.12.3.4, R606.12.4). Do not select mortar from a categorical exterior-wall M/S rule; use the applicable row, ASTM C270 specification, structural role, and assigned SDC.
 
 ### Grout
 
@@ -69,143 +71,65 @@ Mortar proportions per ASTM C270:
 
 All cells containing reinforcement must be fully grouted. Grout must completely surround reinforcing bars and fill the cell.
 
-### Reinforcing Steel
+### Reinforcement Selection and Protection
 
-| Property | Requirement |
-|---|---|
-| Standard | ASTM A615 or ASTM A706 |
-| Grade | Grade 60 (60,000 psi yield) |
-| Minimum bar size | #4 (1/2" diameter) for both vertical and horizontal |
-| Cover | 5/8" minimum for bars in grouted cells (per TMS 402) |
-| Lap splice length | 48 bar diameters minimum (e.g., #4 bar = 48 x 0.5" = 24" minimum splice) |
+Bar size, grade, spacing, and development or splice length shall come from the applicable R606 table or figure, or from the approved TMS 402/403 design for the project. The CRC does not establish one universal #4-bar and 48-bar-diameter recipe for every freestanding wall.
+
+Under R606.3.4, bars shall be completely embedded in mortar or grout. Horizontal joint reinforcement shall have at least 5/8 in. of mortar coverage from the exposed face. Other reinforcement requires coverage of at least one bar diameter and not less than 3/4 in.; where exposed to weather or soil, the minimum coverage is 2 in.
 
 ---
 
 ## Reinforcement Requirements for Freestanding Walls
 
-### Vertical Reinforcement
+Do not select wall reinforcement from height alone. Establish the wall's structural role, assigned SDC, bond pattern, thickness, unit and grout configuration, and design loads, then use the applicable R606 prescriptive provision or an approved TMS 402/403 design.
 
-Vertical rebar resists wind and seismic forces that try to overturn the wall. Spacing decreases (more rebar) as wall height increases.
+### Corpus-Direct Routes
 
-| Wall Height | Minimum Vertical Rebar | Spacing |
-|---|---|---|
-| Up to 3 ft | #4 | 32" OC |
-| 3 ft to 4 ft | #4 | 32" OC |
-| 4 ft to 5 ft | #4 | 24" OC |
-| 5 ft to 6 ft | #4 | 24" OC |
-| Over 6 ft | #5 or per engineering | 16"-24" OC per engineering |
+- **Running or stack bond:** Apply R606.3.7.1 or R606.3.7.2 as described above. Stack bond carries its own minimum horizontal-reinforcement area and 48-in. maximum spacing.
+- **R606.12 seismic scope:** R606.12 applies to masonry building elements in SDC D0, D1, and D2; its SDC C provisions apply to townhouses. Do not apply one generic “California SDC D” schedule without establishing the section's scope.
+- **SDC D0 or D1 masonry walls within R606.12.3.2:** Reinforce in both directions; the combined horizontal and vertical area shall be at least 0.002 times the gross wall area, and each direction shall be at least 0.0007 times the gross wall area. Maximum spacing is 48 in. only for the listed solid-grouted/unit configurations; it is 24 in. for other masonry.
+- **SDC D2:** Apply the D1 requirements plus the additional R606.12.4 provisions appropriate to the element. Do not infer an SDC E/F or other TMS recipe from the CRC text.
+- **Other conditions:** Use the applicable R606 figure/table or a project-specific TMS 402/403 design accepted by the building official.
 
-**Notes:**
-- Vertical rebar extends from the footing through the full height of the wall
-- Rebar must be lapped at least 48 bar diameters at splices
-- Footing dowels: same size and spacing as vertical wall rebar, extending minimum 24" into the footing and 24" above the footing
-- Rebar must be centered in the grouted cell, held in place with positioning devices
-
-### Horizontal Reinforcement
-
-Horizontal rebar (in bond beams or joint reinforcement) resists in-plane forces and controls shrinkage cracking.
-
-| Component | Minimum Requirement |
-|---|---|
-| Bond beams | #4 rebar in bond beam block at top course minimum |
-| Additional bond beams | Every 24" OC vertically for walls over 4 ft |
-| Joint reinforcement | Ladder-type or truss-type, 9 gauge (W1.7), as alternative to bond beam rebar at intermediate courses |
-
-**Seismic requirements (CRC R606.11 / TMS 402):**
-- **SDC C:** Minimum horizontal reinforcement of 0.0007 times gross cross-sectional area
-- **SDC D (most of California):** Minimum horizontal AND vertical reinforcement, each not less than 0.0007 Ag, with total not less than 0.002 Ag. Maximum spacing 48 inches. Reinforcement required at all corners, ends, and adjacent to openings.
-- **SDC E/F:** Same as SDC D with additional requirements per TMS 402
+**Removed schedule boundary:** The former height-only #4/#5 vertical-bar table, universal 24-in./32-in. spacing, 48-bar-diameter splice, and fixed intermediate bond-beam schedule are not established by the reviewed CRC provisions for every freestanding wall. Restore a numerical schedule only with an exact current R606 figure/table or fully scoped approved design source.
 
 ### Grouting Requirements
 
-- All cells containing reinforcement: **fully grouted**
-- Non-reinforced cells: grouting optional for standard walls but recommended for durability
-- Grout lifts: maximum 5 ft (60 inches) per lift without cleanouts
-- Walls over 5 ft: provide cleanout openings at base of every grouted cell, or limit lifts to 5 ft and verify consolidation
-- Consolidation: mechanical vibration (low amplitude, high frequency) or puddling with a rod
-- Reconsolidation: 3-5 minutes after initial consolidation to account for grout settlement
+- Cells containing reinforcement shall be **filled solidly with grout** (R606.3.5.3).
+- Grout shall be consolidated by puddling or mechanical vibration during placement and reconsolidated after excess moisture is absorbed but before plasticity is lost (R606.3.5.1).
+- A grout lift shall not exceed **8 ft**. Where the total grout pour exceeds 8 ft, lifts shall not exceed **64 in.** and special inspection is required during grouting (R606.3.5.1).
+- Provide cleanouts in the bottom course for each grout pour exceeding 64 in. where required by the building official. In solid-grouted masonry, required cleanouts shall be spaced not more than 32 in. on center and sealed after inspection and before grouting (R606.3.5.2).
 
 ---
 
 ## Foundation / Footing Requirements
 
-Freestanding masonry walls require a continuous reinforced concrete footing.
+Size and reinforce the foundation from the wall loads, soil and bearing conditions, assigned SDC, wall construction, and the applicable CRC/CBC design path. Footing dimensions, concrete strength, reinforcement, dowels, cover, embedment/development, and stepped-footing details shall come from the applicable current code table/figure or the approved project design—not wall height alone.
 
-### Footing Dimensions by Wall Height
-
-| Wall Height | Minimum Footing Width | Minimum Footing Depth | Footing Rebar (continuous) |
-|---|---|---|---|
-| Up to 3 ft | 12" | 12" | 2 - #4 continuous |
-| 3 ft to 4 ft | 12"-18" | 12" | 2 - #4 continuous |
-| 4 ft to 5 ft | 18"-24" | 18" | 2 - #4 continuous |
-| 5 ft to 6 ft | 24"-30" | 18"-24" | 2 - #5 or 3 - #4 continuous |
-
-**Notes:**
-- Footing width is typically 2x to 2.5x the wall thickness (8" wall = 16"-20" footing)
-- Footing must extend below grade: 12" minimum cover over top of footing
-- Footing must bear on undisturbed native soil or engineered fill
-- Minimum soil bearing capacity assumed: 1,500 psf (clay/silt) per CRC Table R401.4.1(1)
-- Where soil bearing is questionable, soils report may be required
-
-### Footing Reinforcement
-
-- **Longitudinal rebar:** 2 - #4 bars continuous minimum, placed 3" from bottom and 3" from top of footing
-- **Footing dowels:** Vertical bars extending from footing into wall, matching wall vertical rebar size and spacing
-- **Dowel embedment:** Minimum 24" into footing (hooked bars) or per lap splice length into wall
-- **Concrete:** Minimum f'c = 2,500 psi
-
-### Footing Placement
-
-- Footing must be centered under the wall (wall centered on footing)
-- Top of footing should be at or slightly above finished grade on the high side
-- For sloped sites: footing may be stepped, with each step level and not less than 12" in length
-- Minimum 6" of footing on each side of the wall (e.g., 8" wall on 20" footing = 6" each side)
+**Removed footing-schedule boundary:** The former 12-in. through 30-in. height-based footing dimensions; 2-#4, 3-#4, and #5 bar schedules; 24-in. dowel embedment; 3-in. top/bottom bar placement; 1,500-psf bearing and 2,500-psi concrete assumptions; 2-to-2.5-times-width rule; and fixed 6-in. side projection are not established as one statewide recipe by the reviewed R606 corpus. Restore a numerical footing detail only from an exact current code provision or a fully scoped approved design source.
 
 ---
 
 ## Expansion and Control Joints
 
-### Purpose
-CMU walls expand and contract with temperature and moisture changes. Without control joints, walls develop random cracking.
+Locate and detail control joints under the applicable current TMS provision, named jurisdictional standard, or approved project design. The design shall address the wall geometry, openings, restraints/connections, materials, and exposure; do not infer a universal spacing or joint detail from a rule of thumb.
 
-### Spacing
-
-| Standard / Source | Maximum Spacing |
-|---|---|
-| TMS 402 recommendation | Based on L/H ratio; typically 20-25 ft for 6 ft wall |
-| Common city standard details | 20-30 ft maximum |
-| Rule of thumb | 2.5 times the wall height (6 ft wall = 15 ft max) to 3 times wall height |
-
-### Required Locations
-Control joints are required at:
-- Maximum spacing intervals (per above)
-- Changes in wall height
-- Changes in wall thickness
-- Changes in wall direction (corners — use control joint or corner reinforcement)
-- At or near openings in the wall
-- Where the wall connects to a building or other rigid structure
-
-### Construction
-- Use a pre-formed rubber or foam control joint strip
-- Rebar does NOT cross the control joint (joint is a break in the wall)
-- Horizontal reinforcement uses smooth dowels greased on one side to allow movement
-- Seal exterior face with backer rod and elastomeric sealant
+**Control-joint source boundary:** The former 20-ft-to-30-ft spacing range, 2.5H-to-3H formulas, and unsourced joint construction recipe are removed because the complete TMS text and an exact provision were not available in the reviewed corpus. Restore a numerical or construction detail only after recording the named standard or jurisdiction, current edition/effective date, exact provision/detail locator, geographic and project-type scope, and confirmation that the source remains current.
 
 ---
 
 ## Cleanout Openings
 
-- Required at the base of grouted cells where the grout lift exceeds 5 ft
-- Opening: one face shell removed at the bottom course, minimum 3" x 3" opening
-- Allows inspection and removal of debris (mortar droppings) before grouting
-- Must be sealed with a block piece or other approved closure before grouting
-- Walls 4 ft or less: cleanouts typically not required if grouted in a single lift with reconsolidation
+- Provide for cleaning the grout space and remove mortar projections greater than 1/2 in. and other foreign matter before inspection and grouting.
+- Where required by the building official, provide cleanouts in the bottom course for each grout pour exceeding 64 in.
+- In solid-grouted masonry, space required cleanouts not more than 32 in. on center.
+- Seal cleanouts after inspection and before grouting (R606.3.5.2).
 
 ---
 
 ## Capping / Top of Wall
 
-- Bond beam block at top course with continuous horizontal rebar (#4 minimum)
+- Provide the top-course unit, cap, and any bond-beam reinforcement required by the applicable R606 figure/table or approved project design; do not assume a universal top-course #4 bar.
 - Cap options: precast concrete cap, stone cap, stucco-over-block, or exposed bond beam with tooled joints
 - Cap must shed water away from the wall to prevent moisture intrusion
 - Drip edge or drip groove recommended at cap edges
@@ -214,35 +138,34 @@ Control joints are required at:
 
 ## Construction Sequence
 
-1. **Excavate footing trench** to required width and depth, on undisturbed native soil
-2. **Place footing rebar** with chairs/supports for proper cover
-3. **Set vertical dowels** at correct spacing, extending above footing per lap requirements
-4. **Pour footing concrete** (minimum f'c 2,500 psi), level and smooth top
-5. **Cure footing** — minimum 24 hours before starting masonry (3 days preferred)
-6. **Lay first course** of block in full bed of mortar, level and plumb
-7. **Build wall in lifts** — typically 4 ft maximum before grouting (or full height for short walls)
-8. **Install horizontal reinforcement** (bond beam blocks with rebar, or joint reinforcement) at required intervals
-9. **Place vertical rebar** in cells (if not already doweled from footing)
-10. **Grout all reinforced cells** — consolidate with mechanical vibration; reconsolidate after settling
-11. **Install cleanout blocks** at base if required, inspect, seal before grouting
-12. **Install control joints** at required locations
-13. **Cap wall** with bond beam, precast cap, or approved finish
-14. **Apply finish** if required (stucco, paint, sealer)
+1. **Excavate and prepare the foundation** to the approved design dimensions and verified bearing conditions
+2. **Place footing reinforcement and dowels** with the specified size, spacing, cover, development, and supports
+3. **Complete required pre-pour inspection**
+4. **Place and cure the specified footing concrete** in accordance with the approved design and material requirements
+5. **Lay first course** of block in full bed of mortar, level and plumb
+6. **Build masonry and plan grout pours/lifts** under R606.3.5.1 while preserving unobstructed continuity of cells to be filled
+7. **Install horizontal reinforcement** according to the applicable bond, seismic, and approved design requirements
+8. **Place and secure vertical reinforcement** as required by R606.3.5.3 and the approved design
+9. **Provide cleanouts where required** under R606.3.5.2, then seal them after inspection and before grouting
+10. **Fill reinforced cells solidly with grout**; consolidate and reconsolidate under R606.3.5.1
+11. **Install control joints** where required by the applicable standard or approved design
+12. **Cap the wall** according to the applicable material and approved design requirements
+13. **Apply finish** if required (stucco, paint, sealer)
 
 ---
 
 ## Seismic Design Considerations
 
-Most of California falls in **Seismic Design Category D** or higher. This affects masonry wall design:
+Determine the project's assigned SDC before selecting a masonry design path. The CRC does not supply one statewide SDC or reinforcement schedule for every freestanding wall.
 
-| SDC | Key Requirements |
+| Scope | CRC Route |
 |---|---|
-| A, B | Minimal seismic requirements; prescriptive design generally OK |
-| C | Minimum reinforcement per TMS 402 Section 7.4.3; horizontal reinforcement required |
-| **D (most of CA)** | Reinforced masonry required. Min vertical AND horizontal reinforcement each >= 0.0007 Ag, total >= 0.002 Ag. Max spacing 48" OC. Rebar at all corners, ends, openings. |
-| E, F | Same as D with additional requirements per TMS 402 Section 7.4.5 |
+| SDC C | R606.12.2 applies to townhouses; use the provisions for the element's actual structural role |
+| SDC D0 or D1 | Apply R606.12.3 and the applicable figures/tables; use the R606.12.3.2 ratios and conditional spacing only where that subsection governs |
+| SDC D2 | Comply with the D1 requirements plus R606.12.4 |
+| Conditions outside the applicable CRC prescriptive path | Use an approved project-specific TMS 402/403 design |
 
-**Practical impact:** In SDC D (which covers most California cities), every freestanding masonry wall must be reinforced with both vertical and horizontal steel. Unreinforced masonry freestanding walls are not code-compliant.
+Bond-pattern reinforcement under R606.3.7 remains a separate check. Do not turn the D0/D1 ratios, table bar sizes, or spacing limits into a height-only wall recipe.
 
 ---
 

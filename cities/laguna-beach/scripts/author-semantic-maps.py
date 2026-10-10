@@ -372,82 +372,122 @@ def zone_clearance(document: dict[str, Any]) -> list[dict[str, Any]]:
     return mappings
 
 
+# Laguna Beach issues Building permits only to an owner-builder or a contractor with a
+# City business license. The applicant declares which; contractor blocks are filled only
+# after the applicant confirms a licensed-contractor permit (references/applicant-confirmations.md).
+CONTRACTOR_ONLY = {"fact_id": "permittee.type", "equals": "licensed_contractor"}
+
+# Signature locations on the portal-linked Building Permit Application. Page 1 has no
+# signature widget; the box is located from the printed "SIGNATURE:" and "DATE:" labels.
+# The applicant signs these after fill and verify; the agent never fills them.
+BUILDING_SIGNATURE_BLOCKS = [
+    {"id": "application_signature", "page": 1, "rect": [108.0, 15.0, 408.0, 35.0], "kind": "signature", "pdf_field": None, "label": "Page 1 SIGNATURE"},
+    {"id": "application_signature_date", "page": 1, "rect": [444.0, 15.0, 574.0, 35.0], "kind": "date", "pdf_field": None, "label": "Page 1 DATE beside the signature"},
+    {"id": "stormwater_signature", "page": 2, "rect": [78.8845, 143.049, 374.795, 165.049], "kind": "signature", "pdf_field": "Text32", "label": "Stormwater Quality Certification Signed:"},
+    {"id": "stormwater_signature_date", "page": 2, "rect": [415.561, 145.111, 572.78, 167.111], "kind": "date", "pdf_field": "Date34_af_date", "label": "Stormwater Quality Certification Date:"},
+]
+
+
 def building() -> list[dict[str, Any]]:
-    checkbox = {"transform": "checkbox", "on_value": "/On"}
+    """Portal-linked two-page Building Permit Application (PDF modified 2024-09-27).
+
+    Widget names on this form do not follow their labels (for example "Text37" is the
+    architect/designer name and "New SF" is the commercial new-structure area). Each name
+    below was resolved against the rendered page by widget rectangle.
+    """
+
+    checkbox = {"transform": "checkbox", "on_value": "/Yes"}
+    contractor = {"controlled": True}
     mappings = [
-        direct("application.date", "DATE", controlled=True),
+        direct("application.date", "Date31_af_date", controlled=True),
         direct("site.address", "PROJECT ADDRESS", required=True),
         direct("project.description.{record_id}", *(f"Description of Work {number}" for number in range(1, 7)), required=True, transform="lines"),
-        direct("project.use.residential", "Residential", **checkbox),
-        direct("project.use.commercial", "Commercial", **checkbox),
-        direct("project.use.fire", "Fire", **checkbox),
-        direct("project.use.multi_family", "MultiFamily", **checkbox),
+        direct("project.use.residential", "Check Box38", **checkbox),
+        direct("project.use.commercial", "Check Box39", **checkbox),
+        direct("project.use.fire", "Check Box40", **checkbox),
         direct("project.valuation.{record_id}", "Valuation of Work", required=True, controlled=True, transform="currency"),
-        direct("applicant.name", "APPLICANT NAME If none of the below", required=True, controlled=True),
+        direct("applicant.name", "APPLICANT NAME If none of the below 1", required=True, controlled=True),
         direct("applicant.phone", "Phone", required=True, controlled=True),
         direct("applicant.email", "Email Address", required=True, controlled=True),
         direct("owner.name", "LEGAL PROPERTY OWNER NAME", required=True, controlled=True),
-        direct("owner.phone", "Phone_2", controlled=True),
+        direct("owner.phone", "Phone 1", controlled=True),
         direct("owner.email", "Email Address_2", controlled=True),
         direct("owner.mailing_address", "Mailing Address City State Zip", controlled=True),
-        direct("contractor.license_name", "CONTRACTOR As Shown on License", controlled=True),
-        direct("contractor.dba", "DBA", controlled=True),
-        direct("contractor.license_number", "License", controlled=True),
-        direct("contractor.license_class", "Class", controlled=True),
-        direct("contractor.phone", "Phone_3", controlled=True),
-        direct("contractor.email", "Email", controlled=True),
-        direct("contractor.mailing_address", "Mailing Address City State Zip_2", controlled=True),
-        direct("architect_designer.name", "Architect/Designer", controlled=True),
+        direct("contractor.license_name", "CONTRACTOR As Shown on License", **contractor),
+        direct("contractor.dba", "DBA", **contractor),
+        direct("contractor.license_number", "License", **contractor),
+        direct("contractor.license_class", "Class", **contractor),
+        direct("contractor.phone", "Phone 1_2", **contractor),
+        direct("contractor.email", "Email", **contractor),
+        direct("contractor.mailing_address", "Mailing Address City State Zip_2", **contractor),
+        direct("architect_designer.name", "Text37", controlled=True),
         direct("architect_designer.license_number", "License_2", controlled=True),
-        direct("architect_designer.phone", "Phone_4", controlled=True),
+        direct("architect_designer.phone", "Phone 1_3", controlled=True),
         direct("architect_designer.email", "Email_2", controlled=True),
         direct("architect_designer.mailing_address", "Mailing Address City State Zip_3", controlled=True),
         direct("engineer.name", "ENGINEER", controlled=True),
         direct("engineer.license_number", "License_3", controlled=True),
-        direct("engineer.phone", "Phone_5", controlled=True),
+        direct("engineer.phone", "Phone_2", controlled=True),
         direct("engineer.email", "Email_3", controlled=True),
         direct("engineer.mailing_address", "Mailing Address City State Zip_4", controlled=True),
         direct("building.residential.new_structure_sqft", "New Structure SF"),
         direct("building.residential.new_garage_sqft", "New Garage SF"),
-        direct("building.commercial.new_structure_sqft", "New Structure SF_2"),
+        direct("building.commercial.new_structure_sqft", "New SF"),
         direct("building.commercial.new_garage_sqft", "New Garage SF_2"),
         direct("building.residential.adu_sqft", "ADU SF"),
-        direct("building.residential.adu_attached", "Attached", **checkbox),
-        direct("building.residential.adu_detached", "Detached", **checkbox),
-        direct("building.commercial.addition_sqft", "undefined"),
-        direct("building.residential.addition_sqft", "undefined_2"),
+        direct("building.residential.adu_attached", "Check Box42", **checkbox),
+        direct("building.residential.adu_detached", "Check Box43", **checkbox),
+        direct("building.commercial.addition_sqft", "Addition SF"),
+        direct("building.residential.addition_sqft", "Addition SF_3"),
         direct("building.commercial.tenant_improvement_sqft", "Tenant Improvement SF"),
-        direct("building.commercial.tenant_improvement_interior", "Interior", **checkbox),
-        direct("building.commercial.tenant_improvement_exterior", "Exterior", **checkbox),
+        direct("building.commercial.tenant_improvement_interior", "Check Box50", **checkbox),
+        direct("building.commercial.tenant_improvement_exterior", "Check Box51", **checkbox),
         direct("building.residential.remodel_sqft", "Remodel SF"),
-        direct("building.residential.remodel_interior", "Interior_2", **checkbox),
-        direct("building.residential.remodel_exterior", "Exterior_2", **checkbox),
-        direct("building.commercial.outside_seating_sqft", "undefined_3"),
-        direct("building.residential.pool_spa_sqft", "1"),
-        direct("building.residential.patio_cover_sqft", "2"),
+        direct("building.residential.remodel_interior", "Check Box45", **checkbox),
+        direct("building.residential.remodel_exterior", "Check Box44", **checkbox),
+        direct("building.commercial.outside_seating_sqft", "Outside Seating SF"),
+        direct("building.residential.alteration_or_repair", "Alteration  Repair circle one"),
+        direct("building.commercial.alteration_or_repair", "Alteration  Repair circle one_2"),
+        direct("building.residential.pool_spa_sqft", "POOL  SPA SF"),
         direct("building.commercial.sign_awning", "SIGN  Awning"),
-        direct("building.commercial.patio_cover_sqft", "undefined_4"),
-        direct("building.residential.deck_sqft", "undefined_5"),
-        direct("building.commercial.deck_sqft", "undefined_6"),
+        direct("building.residential.patio_cover_sqft", "Patio Cover SF"),
+        direct("building.commercial.patio_cover_sqft", "Patio Cover SF_3"),
+        direct("building.residential.deck_sqft", "Deck SF"),
+        direct("building.commercial.deck_sqft", "Deck SF_3"),
         direct("building.residential.wall_fence_sqft", "Wall  Fence SF"),
-        direct("building.residential.wall_fence_retaining", "Retaining", **checkbox),
-        direct("building.residential.wall_fence_property_line", "Property Line", **checkbox),
+        direct("building.residential.wall_fence_retaining", "Check Box46", **checkbox),
+        direct("building.residential.wall_fence_property_line", "Check Box47", **checkbox),
         direct("building.commercial.wall_fence_sqft", "Wall  Fence SF_2"),
-        direct("building.commercial.wall_fence_retaining", "Retaining_2", **checkbox),
-        direct("building.commercial.wall_fence_property_line", "Property Line_2", **checkbox),
+        direct("building.commercial.wall_fence_retaining", "Check Box52", **checkbox),
+        direct("building.commercial.wall_fence_property_line", "Check Box53", **checkbox),
         direct("building.residential.reroof_sqft", "Reroof SF"),
-        direct("building.residential.reroof_flat", "Flat", **checkbox),
-        direct("building.residential.reroof_changes_color_or_material", "Change Color Material", **checkbox),
+        direct("building.residential.reroof_flat", "Check Box48", **checkbox),
+        direct("building.residential.reroof_changes_color_or_material", "Check Box49", **checkbox),
         direct("building.commercial.reroof_sqft", "Reroof SF_2"),
-        direct("building.commercial.reroof_flat", "Flat_2", **checkbox),
-        direct("building.commercial.reroof_changes_color_or_material", "Change Color Material_2", **checkbox),
+        direct("building.commercial.reroof_flat", "Check Box55", **checkbox),
+        direct("building.commercial.reroof_changes_color_or_material", "Check Box54", **checkbox),
         direct("building.residential.solar_description", "Solar"),
         direct("building.commercial.solar_description", "Solar_2"),
     ]
     for mapping in mappings:
+        if mapping["fact_id"].startswith("contractor."):
+            mapping["only_when"] = dict(CONTRACTOR_ONLY)
         if mapping["transform"] != "checkbox":
             mapping["font_size"] = 7
-    return mappings
+
+    # Page 2: Stormwater Quality Certification. The certifier is "the applicant authorizing
+    # construction activities"; who that is stays an applicant confirmation.
+    stormwater = [
+        direct("stormwater_certification.certifier_name", "I", required=True, controlled=True),
+        direct("site.address", "at", required=True),
+        direct("stormwater_certification.certifier_name", "Text35", required=True, controlled=True),
+        direct("stormwater_certification.certifier_address", "Address", required=True, controlled=True),
+        direct("stormwater_certification.certifier_phone", "Text36", controlled=True),
+        direct("stormwater_certification.certifier_email", "Text33", controlled=True),
+    ]
+    for mapping in stormwater:
+        mapping["font_size"] = 9
+    return mappings + stormwater
 
 
 def target_key(target: dict[str, Any]) -> tuple[Any, ...]:
@@ -458,7 +498,13 @@ def target_key(target: dict[str, Any]) -> tuple[Any, ...]:
     )
 
 
-def finalize(form_id: str, mappings: list[dict[str, Any]]) -> None:
+def finalize(
+    form_id: str,
+    mappings: list[dict[str, Any]],
+    *,
+    version: str = "2.0.0",
+    extras: dict[str, Any] | None = None,
+) -> None:
     path = MAPS / f"{form_id}.json"
     document = load_json(path)
     fields = {item["name"] for item in document["fields"]}
@@ -491,7 +537,19 @@ def finalize(form_id: str, mappings: list[dict[str, Any]]) -> None:
             exact_keys.add(key)
             exact_parent_names.add(target["field_name"])
 
-    document["field_map_version"] = "2.0.0"
+    signature_fields = {
+        block["pdf_field"]
+        for block in (extras or {}).get("signature_blocks") or []
+        if block.get("pdf_field")
+    }
+    if signature_fields & direct_fields:
+        raise ValueError(f"{form_id}: signature fields must never be filled: {sorted(signature_fields & direct_fields)}")
+    if signature_fields - fields:
+        raise ValueError(f"{form_id}: signature field does not exist: {sorted(signature_fields - fields)}")
+
+    document["field_map_version"] = version
+    for key, value in (extras or {}).items():
+        document[key] = value
     document["canonical_mappings"] = mappings
     document["review_fields"] = sorted(fields - direct_fields - exact_parent_names)
     document["review_widgets"] = sorted(
@@ -521,7 +579,15 @@ def main() -> int:
     finalize("coastal-development-permit-application", coastal_development())
     zone_document = load_json(MAPS / "zone-clearance-application.json")
     finalize("zone-clearance-application", zone_clearance(zone_document))
-    finalize("building-application", building())
+    finalize(
+        "building-application",
+        building(),
+        version="3.0.0",
+        extras={
+            "required_declarations": ["permittee.type"],
+            "signature_blocks": BUILDING_SIGNATURE_BLOCKS,
+        },
+    )
     return 0
 
 

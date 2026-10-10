@@ -1,23 +1,26 @@
 ---
-description: "Block Wall permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions block wall in Laguna Beach."
-version: "1.0"
-source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
-authority: "California Building Standards Commission"
-law_as_of: "January 1, 2026"
+name: block-wall
+description: "Block Wall permits in Laguna Beach, CA. A freestanding masonry or CMU wall built with footing and reinforcement, taller than a fence permit covers. NOT a wall that holds soil. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions block wall in Laguna Beach."
+metadata:
+  version: "2.0"
+  source: "2025 California Building Code (Title 24, Part 2 CBC Chapter 21), 2025 California Residential Code (Title 24, Part 2.5 CRC R606), TMS 402/602-22, ASCE 7-22"
+  authority: "California Building Standards Commission and City of Laguna Beach"
+  law_as_of: "January 1, 2026"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
 # Laguna Beach — Block Wall Permit
 
-Handles block wall permits in Laguna Beach end-to-end.
+Handles block wall permits in Laguna Beach end-to-end. Scope: A freestanding masonry or CMU wall built with footing and reinforcement, taller than a fence permit covers. NOT a wall that holds soil.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
 > "Are you (A) planning to file a block wall permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -34,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
 ## Ready to Submit — Laguna Beach Block Wall Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -73,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -90,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -106,9 +122,83 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
+
+**Base skill:** `references/california-baseline.md`  
+**This skill contains ONLY items where Laguna Beach differs from state code.**  
+**All state checklist items apply unless explicitly overridden below.**
+
+For broader fence/wall guidance and the city standard detail reference, see `../fence/SKILL.md`.
+
+---
+
+### Scope
+
+This skill covers **freestanding CMU/block walls** that do not retain soil. If soil is retained on one side, route to `../retaining-wall/SKILL.md`.
+
+---
+
+### Key Delta Summary
+
+| Topic | State Default | Laguna Beach Override |
+|---|---|---|
+| Permit threshold | State fence/wall exemption generally higher | Laguna standard block-wall detail requires permit for block wall over **30 in** from adjacent grade, or any wall/fence within 3 ft of property line/public ROW |
+| Survey/location | Varies | Licensed surveyor must certify location before footing inspection when wall is within 3 ft of property line or public ROW |
+| Zoning approval | State silent | Zoning/Planning approval required before building permit issuance |
+| Standard detail limits | State skill general CMU | City standard detail applies only to freestanding non-retaining wall with slope <10%, grade offset <=6 in, no surcharge, no adverse soil/liquefaction/flood conditions |
+| Design review | State silent | Fences/walls complying with zoning are design-review exempt except permanent chain link/woven metal fences and vinyl fences that do not simulate natural materials |
+| Utility/fire clearances | State/project-specific | City detail requires 36 in from fire hydrant and 12 in from water meter |
+
+---
+
+### Decision Tree Router
+
+| Scope | Laguna Route |
+|---|---|
+| Freestanding CMU/block wall, no retained soil | This skill + state block-wall skill |
+| Wall retaining soil | Route to Laguna retaining-wall skill |
+| Wood/metal fence | Route to Laguna fence skill |
+| Block wall on slope >=10%, adverse soil, liquefaction, flood hazard, surcharge, or >6 in grade offset | Standard detail not applicable; require registered design professional |
+| Within 3 ft of property line or public ROW | Permit + surveyor location certification before footing inspection |
+
+---
+
+### Laguna Standard Detail Requirements
+
+Use `../fence/references/city-block-wall-detail.md` for the city standard detail. Key local requirements:
+
+- Permit required for block wall over 30 in high from adjacent grade.
+- Permit required for any wall/fence within 3 ft of property line or public ROW.
+- Zoning approval required before building permit issuance.
+- Surveyor certification required before footing inspection for walls within 3 ft of property line or public ROW.
+- Standard detail not valid for retaining walls, surcharge, expansive/adverse soils, liquefaction/flood hazard, slope >=10%, or grade offset more than 6 in.
+- Wall plus railing/guard/screen must not exceed 6 ft above lowest adjacent grade.
+- Required inspections: footing, reinforcing steel, final.
+- Fire hydrant clearance: 36 in. Water meter/foundation clearance: 12 in.
+
+---
+
+### Review Checklist - Laguna Block Wall
+
+| ID | Check | Pass Criteria |
+|---|---|---|
+| LB-BLK-1 | Correct skill route | Wall is freestanding and non-retaining; retaining walls routed elsewhere |
+| LB-BLK-2 | Permit trigger | Height <=30 in and >3 ft from property line/ROW if claiming no permit |
+| LB-BLK-3 | Standard detail applicability | Slope <10%, no surcharge, no retaining function, no adverse soil/liquefaction/flood hazard, grade offset <=6 in |
+| LB-BLK-4 | Zoning approval | Planning/Zoning approval shown before building permit issuance |
+| LB-BLK-5 | Survey certification | Within 3 ft of property line/ROW has licensed surveyor certification before footing inspection |
+| LB-BLK-6 | Structural table | Rebar, footing, expansion joints, cleanouts, block specs match city standard detail or engineered design |
+| LB-BLK-7 | Clearances | 36 in from fire hydrants, 12 in from water meters, no unauthorized ROW projection |
+| LB-BLK-8 | Design review | Zoning-compliant decorative wall/fence exemption checked; chain link/woven metal/non-natural vinyl not treated as exempt |
+| LB-BLK-9 | Coastal/CDP | Coastal zone and Section 25.07.008 detached/fence exceptions checked where applicable |
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
@@ -137,7 +227,7 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 
 ## Deferred to Inspection
 
-These items are verified by the inspector in the field — **not** part of plan-check corrections. The reviewer should NOT flag these as corrections to the applicant. Inspector responsibilities:
+The inspector verifies these in the field. They are **not** plan-check corrections; the reviewer does not list them.
 
 | # | Inspector verifies | What to look for | Code |
 |---|---|---|---|
@@ -148,7 +238,18 @@ These items are verified by the inspector in the field — **not** part of plan-
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/block-wall/`. City overlay source: `skills/cities/laguna-beach/block-wall/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/construction-details.md` — Block Wall Construction Details, Sequence, and Inspections
+- `references/foundation-footing.md` — Block Wall Foundation and Footing Requirements
+- `references/materials-specifications.md` — Block Wall Material Specifications
+- `references/permit-thresholds.md` — Block Wall Permit Thresholds and Engineering Triggers
+- `references/reinforcement-design.md` — Block Wall Reinforcement and Structural Design
 
 ---
 

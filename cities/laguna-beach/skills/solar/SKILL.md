@@ -1,23 +1,26 @@
 ---
-description: "Solar permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — walks through project scoping, checks compliance against state code + Laguna Beach local amendments, produces a portal-ready submission guide; (B) CITY REVIEWER — runs the plan-check checklist against a submittal and produces tight corrections output. Inspection items deferred (not listed as corrections). Use when the user mentions solar in Laguna Beach."
-version: "1.0"
-source: "2025 California Electrical Code (Title 24, Part 3) -- Articles 690, 705, 250, 310; 2025 California Fire Code (Title 24, Part 9) -- Chapter 12; 2025 California Residential Code (Title 24, Part 2.5) -- Section R329"
-authority: "California Building Standards Commission / National Electrical Code with California Amendments / International Fire Code with California Amendments"
-law_as_of: "January 1, 2025"
+name: solar
+description: "Solar PV permits in Laguna Beach, CA. Rooftop or ground-mount PV, battery storage, and the service work that ties them in, including SolarAPP+ approvals and remove-and-reinstall of an existing array. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against California code and Laguna Beach rules, and prepares a portal-ready submission; (B) CITY REVIEWER — runs the plan-check checklist on a submittal and produces tight corrections output. Use when the user mentions solar in Laguna Beach."
+metadata:
+  version: "2.0"
+  source: "2025 California Electrical Code (Title 24, Part 3) -- Articles 690, 705, 250, 310; 2025 California Fire Code (Title 24, Part 9) -- Chapter 12; 2025 California Residential Code (Title 24, Part 2.5) -- Section R329"
+  authority: "California Building Standards Commission and City of Laguna Beach"
+  law_as_of: "January 1, 2025"
+  generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
-# Laguna Beach — Solar Permit
+# Laguna Beach — Solar PV Permit
 
-Handles solar permits in Laguna Beach end-to-end.
+Handles solar pv permits in Laguna Beach end-to-end. Scope: Rooftop or ground-mount PV, battery storage, and the service work that ties them in, including SolarAPP+ approvals and remove-and-reinstall of an existing array.
 
-**First thing in every conversation:** ask which mode the user is in.
+**Choose the mode from the request.** A request to plan or file a project selects Builder/Homeowner. Ask only when the role is unclear:
 
-> "Are you (A) planning to file a solar permit, or (B) a city reviewer checking a submitted one?"
+> "Are you (A) planning to file a solar pv permit, or (B) a city reviewer checking a submitted one?"
 
-- Mode A → walk **Builder / Homeowner Intake** below
-- Mode B → walk **City Reviewer Checklist** below
+- Mode A → walk **MODE A — Builder / Homeowner Intake** below
+- Mode B → walk **MODE B — City Reviewer** below
 
-Both modes share the same rules. The difference is direction of travel — builder scopes forward, reviewer checks backward.
+Both modes share the same rules. The Laguna Beach rules come first; the California checklist applies wherever Laguna does not override it.
 
 ---
 
@@ -34,38 +37,51 @@ Both modes share the same rules. The difference is direction of travel — build
 
 ---
 
+## Citywide Overlays
+
+These apply to every permit in Laguna Beach before the rules below.
+
+- **Wildfire — the whole city.** Treat every Laguna Beach parcel as inside a Fire Hazard Severity Zone / WUI area. Say so plainly: "assumed FHSZ based on citywide coverage; confirm the parcel on the City's adopted 2025 LRA map." Never tell an applicant a parcel is outside the zone without that map.
+  Exterior work follows the California WUI Code (Title 24 Part 7; CBC Ch. 7A / CRC R337) as amended by LBMC Ch. 14.70, whose scope is set by LBMC §14.70.015. Class A roofing applies to any building in the City (LBMC §14.50.120, amending CBC §1505.1). Details: `../wildfire-wui/SKILL.md`.
+- **Coastal zone — most of the city.** Check the parcel against the City's coastal zone map before naming a Planning route. Report a parcel that straddles the boundary as straddling. Coastal Development Permit analysis: `../coastal-development/SKILL.md`.
+
+---
+
 ## MODE A — Builder / Homeowner Intake
 
 ### A1. Intake
 
-Collect project information to cover every plan-check item below. Ask questions naturally — don't interrogate. Start with project basics (address, scope, key product selections) then gather the rest as needed. The **Plan-Check Checklist** below enumerates exactly what must be satisfied at submittal; use it as your mental checklist for what to ask.
+Start by reading `../../references/homeowner-journey.md`; its opening exchange applies when this skill is selected directly. Read any files and answers the user already gave. For an idea-stage request with no files, briefly explain the help available and ask at most three opening questions: the address, the scope, and whether drawings exist.
+
+Then establish, from evidence, the facts the **Laguna Beach Rules** below turn on: the Planning route, the coastal zone, overlays, and any triggers they name. Unknown answers stay unknown. Do not assume a route, an exemption, or compliance. Use the checklists below as the coverage floor for what to ask, without interrogating. When preparing files or navigating intake, read `../../SKILL.md` for the canonical artifact and transaction workflow.
 
 ### A2. Pre-submission Compliance Check
 
-Once you have enough info, walk the Plan-Check Checklist below using the user's answers. For every item:
+Once you have enough information, walk the Laguna Beach rules and then the California checklist using the user's answers. For every item:
 - **FAIL** → tell the user the specific change needed before they submit
-- **FLAG** → tell them what additional info or documentation they need to gather
-- **PASS** → confirm, move on
+- **FLAG** → tell them what information or documentation they still need
+- **PASS** → confirm and move on
 
 ### A3. Submission Guide
 
-When compliance is clean (or flag-only), produce a submission guide:
+When compliance is clean (or flag-only), produce a submission guide. Do not promise over-the-counter issuance unless the Laguna Beach rules below say the scope qualifies.
 
 ```
-## Ready to Submit — Laguna Beach Solar Permit
+## Ready to Submit — Laguna Beach Solar PV Permit
 
-**Typical issuance:** same-day OTC if documents complete and no overlay triggers
+**Planning route:** [from the Laguna Beach rules, or "none required"]
+**Parallel applications:** [Coastal Development Permit, Design Review, or none]
 
 ### Required uploads
-[Generated per skill — product data sheets, plan sketches, waste management plan if applicable, HBFD clearance if overlay-triggered, etc.]
+[Generated per skill — plans, product data sheets, calculations, waste management plan if applicable, Laguna Beach Fire clearance if overlay-triggered, etc.]
 
 ### Inspection sequence
 [Generated per skill — standard inspection milestones]
 ```
 
-### A4. Optional — portal automation
+### A4. Filing
 
-If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the portal and walk the user through the form. Never auto-submit — always pause for user confirmation at key moments.
+Hand the confirmed facts and filing theory to this plugin's included `laguna-permit-preparer` skill. It fills only verified official forms, uses a visible browser when portal filing is supported, and stops at `portal_ready` with an exact handoff when browser control is unavailable. It never submits without a fresh final approval and a confirmation receipt.
 
 ---
 
@@ -73,10 +89,10 @@ If browser tools (`mcp__claude-in-chrome__*`) are available, offer to open the p
 
 ### Procedure
 
-1. Accept submitted form data (JSON, PDF, photos, or pasted text)
-2. Extract key fields: project type, scope, materials, dimensions, parcel address, contractor
-3. Walk the Plan-Check Checklist below in order
-4. Produce output in the format below — hard fails first, then flags, then a compliant bundle, then inspection deferrals
+1. Accept the submitted material (form data, PDF, photos, or pasted text)
+2. Extract the key facts: project type, scope, materials, dimensions, parcel address, contractor
+3. Walk the Laguna Beach rules, then the California checklist, in order
+4. Produce output in the format below — hard fails first, then flags, then local flags, then a compliant bundle, then inspection deferrals
 
 ### Output format
 
@@ -90,7 +106,7 @@ PLAN CHECK — {address} ({permit})
    [plan-check severity=flag items needing documentation or clarification]
 
 ℹ️ LOCAL FLAGS (N) — city discretion
-   [LBMC-specific flag items — parcel overlays, city-specific checks]
+   [LBMC-specific items — parcel overlays, city-specific checks]
 
 ✓ {N} checks PASS (expand for detail)
 
@@ -106,9 +122,87 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 ---
 
-## Plan-Check Checklist (applies to both modes)
+## Laguna Beach Rules
 
-Every item here is verified at plan-check time. Severity drives reviewer-mode output.
+> Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
+
+**Base skill:** `references/california-baseline.md`
+**This skill contains ONLY items where Laguna Beach differs from state code.**
+**All state checklist items apply unless explicitly overridden below.**
+
+---
+
+### Decision Tree Router
+
+| Topic | Load These References |
+|-------|----------------------|
+| **Residential rooftop solar permit** | `references/city-solar-ordinance.md` + state skill |
+| **Permit timeline / process** | This SKILL.md |
+| **Fees** | This SKILL.md (§14.84.060) |
+| **Commercial solar** | NOT covered — standard plan review process |
+
+---
+
+### Eligibility for Expedited Review
+
+ALL four conditions must be met:
+1. **≤10 kW AC nameplate** or ≤30 kW thermal
+2. Conforms to all applicable codes as adopted by Laguna Beach
+3. Installed on **single- or duplex-family dwelling**
+4. Does not exceed maximum legal building height
+
+If eligible AND meets city's checklist/standard plan → **3 business day permit**.
+
+---
+
+### Permit Review Checklist
+
+| # | Check | What to Verify |
+|---|-------|---------------|
+| 1 | System eligible? | ≤10 kW AC, single/duplex dwelling, within height limit |
+| 2 | Meets checklist? | City's standard plan/checklist requirements |
+| 3 | State code compliance? | CEC, fire, structural per state solar skill |
+| 4 | Health/safety only? | Review limited to health/safety — no aesthetic review for qualifying systems |
+| 5 | Fee paid? | ≤10% of system cost, max $1,000. Fee may be waived upon WRITTEN DETERMINATION by the Director of Community Development that the system results in no significant aesthetic or view impacts (§14.84.060). This is not automatic. |
+| 6 | HOA not blocking? | City cannot condition on HOA approval |
+
+---
+
+### Key Laguna Beach Solar Facts
+
+| Parameter | Value |
+|-----------|-------|
+| **Ordinance** | Ch. 14.84 (Ord. 1607, 2015) |
+| **Permit type** | Administrative, nondiscretionary |
+| **Expedited timeline** | **3 business days** |
+| **Max fee** | 10% of system cost, max **$1,000** |
+| **Fee waiver** | Requires WRITTEN DETERMINATION by Director of Community Development (§14.84.060) — not automatic |
+| **Inspections** | **1 only** (expedited-eligible) |
+| **Inspection scheduling** | Within **2 business days** of request |
+| **Electronic submittal** | Available (email/web/fax) |
+| **Board of appeals** | Planning Commission |
+| **HOA override** | Cannot condition on HOA approval |
+| **Maintenance/like-kind** | No permit required |
+| **Re-inspection** | If system fails initial inspection, subsequent inspection is authorized but not bound by expedited timeline (§14.84.070(i)) |
+| **Coastal zone** | LBMC §25.07.008(A)(1) exempts improvements to single-family dwellings from a CDP. Rooftop panels add no floor area and no height. The City record shows no CDP exemption for rooftop PV, including on streets next to the ocean. Planning does not review it (Building Division, 2026-09-01). |
+
+---
+
+### Laguna Beach vs. Other Cities
+
+| Aspect | Buena Park | Costa Mesa | Laguna Beach |
+|--------|-----------|-----------|-------------|
+| **Process** | Symbium (SB 379) | SolarAPP+ via TESSA | SolarAPP+ → EnerGov type 124; expedited Ch. 14.84 |
+| **Timeline** | Instant (automated) | Instant (automated) | **3 business days** |
+| **Inspections** | 1 | 1 | **1** |
+| **Max fee** | Varies | Varies | $1,000 or 10% |
+| **Electronic submit** | Yes | Yes | Yes |
+
+---
+
+## California Plan-Check Checklist (applies to both modes)
+
+Every item here is verified at plan-check time, after the Laguna Beach rules above. Severity drives reviewer-mode output. The full state text is in `references/california-baseline.md`.
 
 | # | Check | Severity | What to verify | Code |
 |---|---|---|---|---|
@@ -128,14 +222,32 @@ Every item here is verified at plan-check time. Severity drives reviewer-mode ou
 | 14 | **Labeling complete?** | ❌ **fail** | Rapid shutdown label at service equipment; DC circuit labels (white on red, 3/8" min); power source directory per 705.10; max voltage label at disconnect | CEC 690.12(D), 690.31(D)(2), 690.7(D), 705.10 |
 | 15 | **Structural adequate?** | ❌ **fail** | Roof designed for dead + live loads with PV weight; wind loading per Table R301.2.1; penetrations flashed/sealed | CRC R329.4.1, R329.4.3 |
 | 16 | **Fire classification?** | ❌ **fail** | PV system fire rating matches required roof assembly rating | CRC R329.4.2, R902 |
-| 17 | **ESS requirements met (if applicable)?** | ❌ **fail** | Listed per UL 9540; location restrictions (not in sleeping rooms); smoke/heat alarms; impact protection in garages; capacity limits per Table R328.5 | CRC R328, CFC 1207 |
+| 17 | **ESS requirements met (if applicable)?** | ❌ **fail** | Listed per UL 9540; apply the R330.1 habitable-space exception path and R330.4 sleeping-room restrictions; verify smoke/heat alarms, impact protection, and capacity limits in Table R330.5 | CRC R330, CFC 1207 |
 | 18 | **Inverter anti-islanding?** | ❌ **fail** | Interactive inverter ceases export on grid outage per 705.40; reconnects only after all phases restored | CEC 705.40 |
 
 ---
 
 ## References
 
-Deep-dive references are in `references/` — load on demand for specific code questions. State skill source: `skills/california/solar/`. City overlay source: `skills/cities/laguna-beach/solar/`.
+Load these on demand. Paths are relative to this file.
+
+- `references/california-baseline.md` — the full California rules for this permit (decision tree and checklist)
+- `../city-reference/SKILL.md` — Laguna Beach codes adopted, design criteria, processing tracks, construction hours, and contacts
+
+**California rules**
+
+- `references/ess-requirements.md` — Energy Storage System (ESS) Requirements
+- `references/fire-setbacks-cfc.md` — Fire Setbacks, Access Pathways, and Smoke Ventilation for Solar PV
+- `references/grounding-bonding-690.md` — Grounding and Bonding for PV Systems
+- `references/interconnection-705.md` — CEC Article 705 -- Interconnected Electric Power Production Sources
+- `references/labeling-marking-690.md` — Labeling and Marking Requirements for PV Systems
+- `references/pv-systems-690.md` — CEC Article 690 -- Solar Photovoltaic (PV) Systems
+- `references/structural-roof-crc.md` — Structural and Building Requirements for Solar PV
+- `references/wire-sizing-solar.md` — Wire Sizing and Conduit for Solar PV Circuits
+
+**Laguna Beach rules**
+
+- `references/city-solar-ordinance.md` — Laguna Beach Solar — Municipal Code Ch. 14.84
 
 ---
 
