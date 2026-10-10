@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "jurisdiction": "City of Laguna Beach, California",
-  "lawAsOf": "2026-08-24",
-  "nextReviewOn": "2026-09-24",
-  "reviewMethod": "Official eCode360 ordinance PDFs are checksum-verified headlessly. When eCode360 re-issues a PDF with new bytes, the check passes only if every decoded page-content and image stream is identical to the receipted copy (contentStreamsSha256); any content change fails. Current chapter pages return HTTP 403 to direct clients and require a visible browser or Parallel AI for monthly semantic review.",
+  "lawAsOf": "2026-10-10",
+  "nextReviewOn": "2026-11-10",
+  "reviewMethod": "Official eCode360 ordinance PDFs are checksum-verified headlessly. When eCode360 re-issues a PDF with new bytes, the check passes only if every decoded page-content and image stream is identical to the receipted copy (contentStreamsSha256); any content change fails. Current chapter pages return HTTP 403 to direct clients; the monthly semantic review reads them with headless Chromium from a Claude cloud session (or Parallel AI) and checks City Clerk records and Council agendas for new ordinances. 2026-10-10 review: no ordinance after 1733; Ords. 1731 and 1732 are now codified, and the codified §7.25.130(C)(2) is front yard only.",
   "sources": [
     {
       "id": "laguna-urgency-ordinance-1732",
@@ -53,8 +53,8 @@
       "path": "cities/laguna-beach/skills/swimming-pool/SKILL.md",
       "contains": [
         "law_as_of: \"2026-08-24\"",
-        "\u00a725.05.040(B)(1)(j)",
-        "\u00a725.05.040(B)(2)(t)",
+        "§25.05.040(B)(1)(j)",
+        "§25.05.040(B)(2)(t)",
         "25.05.040(B)(2)(v)",
         "25.05.040(B)(3)(a)(v)",
         "effective 2026-08-20",
@@ -69,7 +69,21 @@
         "Ordinance 1731",
         "https://ecode360.com/LA4953/laws/LF2759074.pdf",
         "https://ecode360.com/LA4953/laws/LF2782335.pdf",
-        "https://ecode360.com/LA4953/laws/LF2759073.pdf"
+        "https://ecode360.com/LA4953/laws/LF2759073.pdf",
+        "LBMC §25.50.004(F)(2)"
+      ]
+    },
+    {
+      "path": "cities/laguna-beach/skills/hvac/SKILL.md",
+      "contains": [
+        "not** within the required **front** yard setback",
+        "Ord. 1731 struck \"or side\""
+      ]
+    },
+    {
+      "path": "cities/laguna-beach/skills/swimming-pool/SKILL.md",
+      "contains": [
+        "Equipment is not within the required front yard setback."
       ]
     }
   ]

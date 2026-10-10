@@ -269,11 +269,12 @@ Fence/wall/hedge heights are regulated in LBMC 25.50.012, with specific standard
 ### Permanent Accessory Structures
 - Subject to underlying zone setback and height standards
 - Pool/spa structures route by height: over 3 ft above adjacent legal grade → Design Review `(B)(1)(j)`; no more than 3 ft, or a portable spa no more than 600 gallons → Zone Clearance `(B)(2)(t)`
-- Pool/spa equipment (and other mechanical equipment): routed by the **Section 7.25.130(C) six-part objective test**, as amended by the 2026 Efficiency Ordinance (adopted 2026-07-21, **effective 2026-08-20**). The six parts: (1) ground-mounted or wall-mounted at ground level; (2) not within required front or side yard setbacks; (3) 5-ft clearance from all property lines; (4) manufacturer's spec sheet with decibel rating, max 60 dB day / 50 dB night at the property line, **two sound attenuation techniques** used and maintained per manufacturer's specifications for the life of the equipment; (5) completed city-provided sound-level form computed per ARI Standard 275 (1984, as amended); (6) does not obstruct a **3-ft path of travel** around any structure.
+- Pool/spa equipment (and other mechanical equipment): routed by the **Section 7.25.130(C) six-part objective test**, as amended by Ord. 1731, the 2026 Efficiency Ordinance (adopted 2026-07-21, **effective 2026-08-20**). The six parts: (1) ground-mounted or wall-mounted at ground level; (2) not within the required front yard setback (Ord. 1731 struck "or side"); (3) 5-ft clearance from all property lines; (4) manufacturer's spec sheet with decibel rating, max 60 dB day / 50 dB night at the property line, **two sound attenuation techniques** used and maintained per manufacturer's specifications for the life of the equipment; (5) completed city-provided sound-level form computed per ARI Standard 275 (1984, as amended); (6) does not obstruct a **3-ft path of travel** around any structure.
   - **Meets all six:** approved **without design review** (Section 7.25.130(C)) — the Zone Clearance path at Section 25.05.040(B)(2)(v), per Section 25.05.045.
   - **Fails any part:** **administrative design review** (Section 7.25.130(D); Section 25.05.040(B)(3)(a)(v)).
   - Zone Clearance is unavailable in an environmentally sensitive area absent a peer-reviewed licensed-professional determination; those projects go to design review under Section 25.05.040(B)(1).
   - This governs equipment only. It does not change design review for the pool or spa structure itself.
+  - The side yard is a separate zoning check: air conditioning and pool equipment may not be in a required side yard (Section 25.50.004(F)(2); in R-1, Section 25.10.008(E)(3)(a)(2)). That is a yard-conformance failure, not a design review route.
 
 ---
 

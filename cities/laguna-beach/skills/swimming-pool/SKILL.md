@@ -176,18 +176,22 @@ Route the pool or spa **structure** and the pool/spa **equipment** separately. T
 
 #### 1a. Pool/Spa Equipment — LBMC Section 7.25.130(C) Six-Part Test (effective 2026-08-20)
 
-**Authority:** LBMC Section 7.25.130, "Heating, venting, and air conditioning (HVAC) and pool/spa equipment—special provisions", as amended by the 2026 Efficiency Ordinance (adopted 2026-07-21, **effective 2026-08-20**). Source: the City source document (not included in this plugin) line 45.
+**Authority:** LBMC Section 7.25.130, "Heating, venting, and air conditioning (HVAC) and pool/spa equipment—special provisions", as amended by Ord. 1731, the 2026 Efficiency Ordinance (adopted 2026-07-21, **effective 2026-08-20**), now codified on eCode360. Source: the codified text, mirrored in the City source document (not included in this plugin).
 
-Pool/spa equipment in or adjacent to residential areas that meets **all six** requirements is reviewed and approved **without Design Review**:
+Pool/spa equipment in any zone that meets **all six** requirements is reviewed and approved **without Design Review**:
 
 1. Equipment is ground-mounted, or wall-mounted at ground level.
-2. Equipment is not within the required front or side yard setbacks.
+2. Equipment is not within the required front yard setback. Ord. 1731 struck "or side", so a side yard setback does not fail this part.
 3. Equipment maintains a five-foot clearance from all property lines.
 4. Manufacturer's specification sheet is provided with the application and includes the decibel rating. Maximum 60 dB day / 50 dB night, measured at the property line. **Two sound attenuation techniques shall be utilized** (code examples: physical enclosures such as fencing with insulation, internal sound compression blanket, shock absorption base), used and maintained per manufacturer's specifications for the life of the equipment.
 5. A city-provided form is completed detailing how the project meets the maximum sound levels measured at the property line, computed per ARI Standard 275, "Standard Application of Sound Rated Outdoor Unitary Equipment" (1984, as amended). The form's name is not yet confirmed — do not invent one.
 6. Equipment does not obstruct a 3-foot path of travel around any structure.
 
 Equipment that fails any part is reviewed per Section 25.05.040 Design Review (Section 7.25.130(D)), and appears on the Administrative Design Review list at Section 25.05.040(B)(3)(a)(v).
+
+Before 2026-08-20 the test had five parts, applied only in or adjacent to residential areas, and part 2 also excluded the required side yard setbacks.
+
+The side yard is still a zoning check: pool equipment may not be in a required side yard (Section 25.50.004(F)(2); in R-1, Section 25.10.008(E)(3)(a)(2)). Equipment there is a yard-conformance failure. It does not fail part 2 and does not change the design review route.
 
 **Zone Clearance is the exempt-from-design-review path — the two framings agree.** Section 25.05.040(B)(2)(v) lists mechanical equipment meeting Section 7.25.130(c) under "Exempt from Design Review (Zone Clearance)" (urgency DR Efficiency Ordinance, effective 2026-07-22). Passing the six-part test means Zone Clearance under Section 25.05.045 plus the building permit — no hearing, no notice period.
 
