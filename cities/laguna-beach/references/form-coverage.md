@@ -96,9 +96,9 @@ What each map fills:
   amount at invoicing. The new file also replaces the fillable deposit
   agreement in Exhibit A with a deposit table and the City's deposit procedure (the
   agreement now comes with the first incomplete letter), and adds the owner signature to
-  the Exhibit I affidavit. `requirements/planning/conditional-use-permit.md` is generated
-  from the July edition and says items 1-11 are unchanged; the printed fees and the
-  Exhibit A deposit procedure did change. Fees still come from the fee estimate.
+  the Exhibit I affidavit. `requirements/planning/conditional-use-permit.md` lists the
+  same deliverables (unchanged in this edition) and notes the Exhibit A change. Fees
+  still come from the fee estimate.
 - **Planning Commission Concept Review**: location, APN, current use, building square
   footage, parking spaces, lot area, and the owner and applicant name, phone, address, and
   email (one address line each, so `owner.full_address` / `applicant.full_address`). The
