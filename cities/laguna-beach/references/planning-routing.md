@@ -98,10 +98,12 @@ Read `form-coverage.md` before promising form preparation for any other applicat
 
 ## Filing routes for the other pinned Planning forms (sourced 2026-10-10)
 
-Every form below says, on its first page, that new applications go through the Public
-Permit Portal, online or on a City computer at City Hall, with a hard-copy submittal only
-as an accommodation requested from Community Development at (949) 497-0713. None of them
-names a portal record type, and the portal has no record type for any of them. Route each
+Every form below except the Concept Review form says, in its opening instructions (page 1,
+or page 2 of the SB 684 and General Plan Amendment packages), that new applications go
+through the Public Permit Portal, online or on a City computer at City Hall, with a
+hard-copy submittal only as an accommodation requested from Community Development at
+(949) 497-0713. The Concept Review form names no filing channel. None of them names a
+portal record type, and the portal has no record type of its own for any of them. Route each
 from the evidence below. Choosing which form applies is a judgment over the project facts;
 never pick it from a keyword or a filename.
 
@@ -133,16 +135,19 @@ type 114 entries match `assets/portal-maps/v2-portal-map.json`):
 |---|---|---|---|
 | Temporary Use Permit (`temporary-use-permit-application`) | Residential site: type 114, Zoning Plan Check, the TUP form in the `Application` PDF. Commercial site: type 116 with the activity description in `Temporary Uses` (unsupported in V1). File at least 30 days before a use of 5 days or less (Director), 90 days before a longer one (Planning Commission). A temporary use that needs a CDP files a separate CDP application. | `online` (114) | TUP form p. 1 and footnote 1; type 114 and 116 instructions and slots |
 | Revocable Encroachment Permit (`revocable-encroachment-permit-application`) | Type 114, Zoning Plan Check, in the `Application` PDF with the Design Review Application when that is also required ("Submit concurrent, if required"). The REP fee is charged in addition to the Zoning Plan Check fee. Commercial site: type 116, `Revocable Encroachment Permit Application` slot. After approval and the 14-day appeal period, the notarized license agreement (pp. 8-9) is recorded. This is a Planning approval, not the Public Works Right-of-Way Permit (type 315); the form does not say whether construction in the right-of-way also needs a type 315 permit, so ask Public Works. | `online` (114) | REP form pp. 1, 4-5; type 114 and 116 instructions and slots |
-| Lot Line Adjustment (`lot-line-adjustment-application`) | Type 114, Zoning Plan Check, in the `Application` PDF; the LLA fee is charged in addition to the Zoning Plan Check fee. Commercial parcels: type 116, `Lot Line Adjustment` slot. A CDP or other entitlement is a separate application. | `online` (114) | LLA form pp. 1, 3; type 114 and 116 instructions and slots |
+| Lot Line Adjustment (`lot-line-adjustment-application`) | Type 114, Zoning Plan Check, in the `Application` PDF; the LLA fee is charged in addition to the Zoning Plan Check fee. Commercial parcels: type 116, `Lot Line Adjustment` slot. The LLA "must be submitted with a Coastal Development Permit application, appropriate fees, and a proper public hearing noticing package" (item 7); any other entitlement is its own application. | `online` (114) | LLA form pp. 1, 3-4; type 114 and 116 instructions and slots |
 | SB 9 (`sb-9-application`) | Type 114, Zoning Plan Check, in the `Application` PDF; the SB 9 fee is charged in addition to the Zoning Plan Check fee. The application is not complete without the approved, final CDP, so the CDP is its own earlier type 114 filing. | `online` (114) | SB 9 form pp. 1, 5, 7, 10, 14 and footnote 1; type 114 instruction |
 | Sign Permit, Planning (`sign-permit-application`) | Two filings. (1) The Planning Sign Permit Application, screened by a planner: type 116 for a commercial site, with drawings in `Sign Plans` (unsupported in V1); type 114 for a residential site. (2) "Except for window decal signs, new signs generally require a building permit prior to installation": the Building Sign Permit, type 197, with the Building Division's permit application, never the Planning form. A new business also needs a City business license (LBMC Chapter 5.08). | `unverified` (116 and 197 are not in the portal map) | Sign Permit form pp. 1-2; type 116 and 197 setup and instructions |
-| Planning Commission Concept Review (`planning-commission-concept-review-application`) | Only after consulting Planning staff, and only when staff recommend a concept review hearing. Commercial: type 116, `Planning Commission Concept Review Application` slot. Residential: type 114, in the `Application` PDF. Needs a 300-foot mailed neighborhood notification and the concept review fee. | `online` (114) | Concept Review form p. 1, section I and III; type 116 slot description; type 114 instruction |
+| Planning Commission Concept Review (`planning-commission-concept-review-application`) | Consult Planning staff before submitting (the form asks for this; it names no filing channel). Commercial: type 116, `Planning Commission Concept Review Application` slot, which the portal marks "Required if a concept review hearing is recommended by Planning staff." Residential: type 114, in the `Application` PDF. Needs a 300-foot mailed neighborhood notification and the concept review fee. | `online` (114) | Concept Review form p. 1, section I and III; type 116 slot description; type 114 instruction |
 | SB 684 / SHRA (`sb-684-application`) | The housing development part is "an application for Zoning Plan Check (Ministerial Design Review)"; the subdivision part pays the Zoning Plan Check fee in addition to the map deposit. File both on type 114, Zoning Plan Check, in the `Application` PDF; the portal has no SHRA or tentative map record type (type 116 has a `Tentative Map` slot, but it is the commercial type). Each part needs a legally approved, final CDP first. | `online` (114) | SB 684 package pp. 2-3, 5, 8, 13; type 114 instruction |
 | General Plan Amendment (`general-plan-amendment-application`) | Two stages. First a request to initiate (Application Type "Initiation of Amendment", the initiation deposit, a narrative and exhibits); the City Council decides at a noticed hearing, and without initiation the City will not accept the application. Then the amendment application, within two years. The form says to file through the Public Permit Portal; it does not say which record type, and neither type 114 nor 116 names legislative amendments. Ask Planning, (949) 497-0713, which record takes the request before filing. | `unverified` | GPA form pp. 1-4 |
 
-The SB 684 package labels its own exhibits inconsistently: its checklists say to sign
-"Exhibit H" (the affidavit is Exhibit I, page 67) and call the CDP form "Exhibit I" (the
-bundled CDP package starts on page 76). Use the page, not the letter.
+The SB 684 package labels its own exhibits inconsistently. Its exhibit list (page 26)
+names H Affidavit (pages 50-51), I WQMP Submittal Form, and K Coastal Development Permit
+Application, but its checklists call the CDP form "Exhibit I" (pages 5 and 13); the
+bundled CDP package starts on page 76. Pages 60-75 repeat a second, differently lettered
+exhibit run (G-L, with another affidavit as Exhibit I on page 67). Use the page, not the
+letter.
 
 ## Sources
 

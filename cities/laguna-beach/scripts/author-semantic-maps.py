@@ -745,8 +745,7 @@ def concept_review() -> list[dict[str, Any]]:
         direct("site.current_parking_spaces", "Number"),
         direct("zoning.lot_area_sqft.existing", "Lot Area (SF)"),
     ]
-    for role, suffix in (("owner", ""), ("applicant", "_2")):
-        name_field = "Legal Owner" if role == "owner" else "Applicant"
+    for role, name_field, suffix in (("owner", "Legal Owner", ""), ("applicant", "Applicant", "_2")):
         for item, field in (("contact_name", name_field), ("phone", f"Telephone{suffix}"), ("full_address", f"Address{suffix}"), ("email", f"Email{suffix}")):
             fact_id = f"{role}.{item}"
             mappings.append(direct(fact_id, field, required=fact_id in REQUIRED_CONTACTS, controlled=True))

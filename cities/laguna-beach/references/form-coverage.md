@@ -103,7 +103,7 @@ What each map fills:
   built the application sections without fields: the Project Information table (page 1)
   and the bundled CDP application form (page 77) are `manual_sections`. Appendix A
   (pages 15-25) is the City's reference checklist, "not part of the application". The
-  package's checklists cite the wrong exhibit letters (see `planning-routing.md`).
+  package's checklists cite the wrong exhibit letter for the CDP form (see `planning-routing.md`).
 - **General Plan Amendment**: project location, the three contact blocks, and the
   proposed amendment (page 3). The Application Type boxes (Initiation of Amendment /
   General Plan Amendment) are not fields, so they are a `manual_sections` entry.
