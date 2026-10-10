@@ -379,15 +379,14 @@ def run_planning_round_trips(manifest: dict, temp: Path, forms_dir: str | None) 
         )
         answers = output.with_name(output.stem + ".answers-used.json")
         run(str(SCRIPTS / "verify-form.py"), "--pdf", str(output), "--answers", str(answers))
+        # A lines fact fills as many targets as its text needs, so count only single-value targets.
+        lines_facts = {m["fact_id"] for m in active_map["canonical_mappings"] if m["transform"] == "lines"}
         expected_targets = sum(
             len(mapping.get("pdf_fields") or mapping.get("pdf_widgets") or [])
             for mapping in active_map["canonical_mappings"]
-            if mapping["transform"] != "lines"
+            if mapping["fact_id"] not in lines_facts
         )
-        filled = [item for item in load(answers)["answers"]]
-        single = [item for item in filled if not any(
-            m["transform"] == "lines" and m["fact_id"] == item["fact_id"] for m in active_map["canonical_mappings"]
-        )]
+        single = [item for item in load(answers)["answers"] if item["fact_id"] not in lines_facts]
         assert len(single) == expected_targets, (form_id, len(single), expected_targets)
         unresolved = load(output.with_name(output.stem + ".unresolved-fields.json"))["unresolved"]
         assert not unresolved, (form_id, unresolved)

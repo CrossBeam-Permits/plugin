@@ -68,6 +68,62 @@ def widgets_named(document: dict[str, Any], page: int, name: str) -> list[dict[s
     )
 
 
+def stacked(document: dict[str, Any], page: int, name: str, count: int) -> list[dict[str, Any]]:
+    """Widgets that share one field name on one page, top of the page first."""
+
+    widgets = sorted(widgets_named(document, page, name), key=lambda item: -item["rect"][3])
+    if len(widgets) != count:
+        raise ValueError(f"{name} page {page}: expected {count} widgets, got {len(widgets)}")
+    return widgets
+
+
+def stacked_lines(fact_id: str, document: dict[str, Any], page: int, name: str, count: int) -> dict[str, Any]:
+    """A multi-line answer over one field's stacked widgets (one field name, several lines)."""
+
+    return {
+        "fact_id": fact_id,
+        "pdf_widgets": [
+            {"page": page, "field_name": widget["field_name"], "rect": widget["rect"]}
+            for widget in stacked(document, page, name, count)
+        ],
+        "required": True,
+        "applicant_controlled": False,
+        "transform": "lines",
+    }
+
+
+CONTACT_ROLES = ("applicant", "applicant_representative", "owner")
+CONTACT_ITEMS = ("company_name", "contact_name", "mailing_address", "city_state_zip", "phone", "email")
+REQUIRED_CONTACTS = {"applicant.contact_name", "applicant.phone", "applicant.email", "owner.contact_name"}
+
+
+def contact_block(targets: dict[str, list[Any]]) -> list[dict[str, Any]]:
+    """Applicant, representative, and owner rows of the City's Planning application face.
+
+    `targets` gives, per contact item, three targets in role order: a PDF field name, or
+    a widget (page/field_name/rect) where the City reused one name across blocks.
+    """
+
+    mappings = []
+    for index, role in enumerate(CONTACT_ROLES):
+        for item in CONTACT_ITEMS:
+            fact_id = f"{role}.{item}"
+            target = targets[item][index]
+            options = {"required": fact_id in REQUIRED_CONTACTS, "controlled": True}
+            if isinstance(target, str):
+                mappings.append(direct(fact_id, target, **options))
+            else:
+                mappings.append(exact(fact_id, target["page"], target["field_name"], target["rect"], **options))
+    return mappings
+
+
+def with_font(mappings: list[dict[str, Any]], size: float = 7) -> list[dict[str, Any]]:
+    for mapping in mappings:
+        if mapping["transform"] != "checkbox":
+            mapping["font_size"] = size
+    return mappings
+
+
 def add_column_widgets(
     mappings: list[dict[str, Any]],
     document: dict[str, Any],
@@ -92,33 +148,21 @@ def add_column_widgets(
 
 
 def common_planning_face(prefix: str = "") -> list[dict[str, Any]]:
-    field = lambda value: f"{prefix}{value}"
+    rows = {
+        "company_name": (6, 16, 22),
+        "contact_name": (8, 17, 23),
+        "mailing_address": (10, 18, 24),
+        "city_state_zip": (12, 19, 26),
+        "phone": (14, 20, 27),
+        "email": (15, 21, 28),
+    }
     mappings = [
-        direct("site.address", field("Text2"), required=True),
-        direct("site.apn", field("Text4")),
-        direct("applicant.company_name", field("Text6"), controlled=True),
-        direct("applicant.contact_name", field("Text8"), required=True, controlled=True),
-        direct("applicant.mailing_address", field("Text10"), controlled=True),
-        direct("applicant.city_state_zip", field("Text12"), controlled=True),
-        direct("applicant.phone", field("Text14"), required=True, controlled=True),
-        direct("applicant.email", field("Text15"), required=True, controlled=True),
-        direct("applicant_representative.company_name", field("Text16"), controlled=True),
-        direct("applicant_representative.contact_name", field("Text17"), controlled=True),
-        direct("applicant_representative.mailing_address", field("Text18"), controlled=True),
-        direct("applicant_representative.city_state_zip", field("Text19"), controlled=True),
-        direct("applicant_representative.phone", field("Text20"), controlled=True),
-        direct("applicant_representative.email", field("Text21"), controlled=True),
-        direct("owner.company_name", field("Text22"), controlled=True),
-        direct("owner.contact_name", field("Text23"), required=True, controlled=True),
-        direct("owner.mailing_address", field("Text24"), controlled=True),
-        direct("owner.city_state_zip", field("Text26"), controlled=True),
-        direct("owner.phone", field("Text27"), controlled=True),
-        direct("owner.email", field("Text28"), controlled=True),
-        direct("project.description", field("Text32"), required=True),
+        direct("site.address", f"{prefix}Text2", required=True),
+        direct("site.apn", f"{prefix}Text4"),
+        *contact_block({item: [f"{prefix}Text{n}" for n in numbers] for item, numbers in rows.items()}),
+        direct("project.description", f"{prefix}Text32", required=True),
     ]
-    for mapping in mappings:
-        mapping["font_size"] = 7
-    return mappings
+    return with_font(mappings)
 
 
 def design_review(document: dict[str, Any]) -> list[dict[str, Any]]:
@@ -497,46 +541,6 @@ def building() -> list[dict[str, Any]]:
     return mappings + stormwater
 
 
-def stacked(document: dict[str, Any], page: int, name: str, count: int) -> list[dict[str, Any]]:
-    """Widgets that share one field name on one page, top of the page first."""
-
-    widgets = sorted(
-        [item for item in document["widgets"] if item["page"] == page and item["field_name"] == name],
-        key=lambda item: -item["rect"][3],
-    )
-    if len(widgets) != count:
-        raise ValueError(f"{name} page {page}: expected {count} widgets, got {len(widgets)}")
-    return widgets
-
-
-CONTACT_ROLES = ("applicant", "applicant_representative", "owner")
-CONTACT_ITEMS = ("company_name", "contact_name", "mailing_address", "city_state_zip", "phone", "email")
-REQUIRED_CONTACTS = {"applicant.contact_name", "applicant.phone", "applicant.email", "owner.contact_name"}
-
-
-def contact_block(names: dict[str, list[str]]) -> list[dict[str, Any]]:
-    """Applicant, representative, and owner rows of the July 2026 application face.
-
-    `names` gives, per contact item, the three PDF field names in role order.
-    """
-
-    mappings = []
-    for index, role in enumerate(CONTACT_ROLES):
-        for item in CONTACT_ITEMS:
-            fact_id = f"{role}.{item}"
-            mappings.append(
-                direct(fact_id, names[item][index], required=fact_id in REQUIRED_CONTACTS, controlled=True)
-            )
-    return mappings
-
-
-def with_font(mappings: list[dict[str, Any]], size: float = 7) -> list[dict[str, Any]]:
-    for mapping in mappings:
-        if mapping["transform"] != "checkbox":
-            mapping["font_size"] = size
-    return mappings
-
-
 def adu(document: dict[str, Any]) -> list[dict[str, Any]]:
     """ADU & JADU Application, document 27032 (file ADU_Application 090126_fillable.pdf).
 
@@ -554,26 +558,14 @@ def adu(document: dict[str, Any]) -> list[dict[str, Any]]:
         direct("site.address", "Text38", required=True),
         direct("site.apn", "Text39"),
     ]
-    numbered = [f"Text{number}" for number in range(40, 58)]
-    names = {item: [] for item in CONTACT_ITEMS}
-    for role_index in range(3):
-        row = numbered[role_index * 6:(role_index + 1) * 6]
-        # Each role block reads left to right, top to bottom: company, contact,
-        # mailing address, city/state/zip, phone, email.
-        for item, name in zip(CONTACT_ITEMS, row):
-            names[item].append(name)
-    mappings.extend(contact_block(names))
-    description = {
-        "fact_id": "project.description",
-        "pdf_widgets": [
-            {"page": 4, "field_name": "Text58", "rect": widget["rect"]}
-            for widget in stacked(document, 4, "Text58", 5)
-        ],
-        "required": True,
-        "applicant_controlled": False,
-        "transform": "lines",
-    }
-    mappings.append(description)
+    # Text40-57: six fields per role block, read left to right, top to bottom: company,
+    # contact, mailing address, city/state/zip, phone, email.
+    mappings.extend(
+        contact_block(
+            {item: [f"Text{40 + role * 6 + offset}" for role in range(3)] for offset, item in enumerate(CONTACT_ITEMS)}
+        )
+    )
+    mappings.append(stacked_lines("project.description", document, 4, "Text58", 5))
     mappings.append(direct("adu.projected_annualized_rent", "Text59", controlled=True))
     return with_font(mappings) + project_summary_tables(document, 34)
 
@@ -662,28 +654,9 @@ def revocable_encroachment(document: dict[str, Any]) -> list[dict[str, Any]]:
     }
     columns = {item: stacked(document, 3, name, 3) for item, name in shared.items()}
     applicant_phone, owner_phone = stacked(document, 3, "Phone", 2)
-    columns["phone"] = [applicant_phone, None, owner_phone]
-    for index, role in enumerate(CONTACT_ROLES):
-        for item in CONTACT_ITEMS:
-            fact_id = f"{role}.{item}"
-            required = fact_id in REQUIRED_CONTACTS
-            widget = columns[item][index]
-            if widget is None:  # the representative's phone is its own field
-                mappings.append(direct(fact_id, "Phone_2", required=required, controlled=True))
-                continue
-            mappings.append(exact(fact_id, 3, widget["field_name"], widget["rect"], required=required, controlled=True))
-    mappings.append(
-        {
-            "fact_id": "project.description",
-            "pdf_widgets": [
-                {"page": 3, "field_name": widget["field_name"], "rect": widget["rect"]}
-                for widget in stacked(document, 3, "Descibe proposed improvements", 6)
-            ],
-            "required": True,
-            "applicant_controlled": False,
-            "transform": "lines",
-        }
-    )
+    columns["phone"] = [applicant_phone, "Phone_2", owner_phone]  # the representative's phone is its own field
+    mappings.extend(contact_block(columns))
+    mappings.append(stacked_lines("project.description", document, 3, "Descibe proposed improvements", 6))
     # Exhibit A: "I, ____, hereby certify that I am the property owner ..."
     mappings.append(direct("owner_affidavit.owner_name", "Property Owner", controlled=True))
     return with_font(mappings)
