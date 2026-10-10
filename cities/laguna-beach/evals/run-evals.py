@@ -293,12 +293,19 @@ def check_policy_contract() -> None:
 
 def check_manifests_and_maps() -> None:
     manifest = load(ROOT / "assets/form-manifest.json")
-    assert len(manifest["forms"]) == 9
+    assert len(manifest["forms"]) == 14
+    assert not manifest.get("pending_sources"), "every queued Planning form is pinned"
     semantic_forms = {
+        "adu-application",
         "building-application",
         "coastal-development-permit-application",
         "design-review-application",
         "floodplain-development-residential",
+        "lot-line-adjustment-application",
+        "revocable-encroachment-permit-application",
+        "sb-9-application",
+        "sign-permit-application",
+        "temporary-use-permit-application",
         "zone-clearance-application",
     }
     for form in manifest["forms"]:
@@ -556,7 +563,7 @@ def main() -> int:
         ("manifest consistency", check_manifest_consistency),
         ("approval/privacy policy", check_policy_contract),
         ("manifests and drift maps", check_manifests_and_maps),
-        ("form sources, sign-before-upload, and Building map round trip", check_form_evals),
+        ("form sources, sign-before-upload, and form map round trips", check_form_evals),
         ("portal map v2", check_portal_map_v2),
     ]
     for name, check in checks:

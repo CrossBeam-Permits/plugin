@@ -15,15 +15,25 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = ROOT / "scripts"
 SEMANTIC_FORM_IDS = (
+    "adu-application",
     "coastal-development-permit-application",
     "design-review-application",
     "floodplain-development-residential",
+    "lot-line-adjustment-application",
+    "revocable-encroachment-permit-application",
+    "sb-9-application",
+    "temporary-use-permit-application",
     "zone-clearance-application",
 )
 PREVIEW_PAGES = {
+    "adu-application": (3, 4, 9, 34),
     "coastal-development-permit-application": (2,),
     "design-review-application": (2, 25),
     "floodplain-development-residential": (1,),
+    "lot-line-adjustment-application": (2, 5, 10),
+    "revocable-encroachment-permit-application": (3, 6),
+    "sb-9-application": (29,),
+    "temporary-use-permit-application": (3, 6),
     "zone-clearance-application": (1, 2),
 }
 

@@ -1,0 +1,2464 @@
+{
+  "schema_version": "1.0.0",
+  "form_id": "lot-line-adjustment-application",
+  "field_map_version": "1.0.0",
+  "generated_at": "2026-10-10T05:34:54.590711Z",
+  "source_sha256": "2f91a5f07046d9df30701f8ab43fa843555d420929ab827a93c3dc863c8a4f30",
+  "field_tree_sha256": "f559db3a66659449d6d42d7066c5291769ee7912cbe976912be1f9ebc2b6532e",
+  "canonical_mappings": [
+    {
+      "fact_id": "lot_line_adjustment.parcels.1.address",
+      "pdf_fields": [
+        "Address"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.1.apn",
+      "pdf_fields": [
+        "APNs"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.1.owner_name",
+      "pdf_fields": [
+        "Property Owner"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.1.owner_mailing_address",
+      "pdf_fields": [
+        "Mailing Address"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.1.owner_city_state_zip",
+      "pdf_fields": [
+        "CityStateZip"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.1.owner_phone",
+      "pdf_fields": [
+        "Phone"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.1.owner_email",
+      "pdf_fields": [
+        "Email Address"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.2.address",
+      "pdf_fields": [
+        "Address_2"
+      ],
+      "required": true,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.2.apn",
+      "pdf_fields": [
+        "APNs_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.2.owner_name",
+      "pdf_fields": [
+        "Property Owner_2"
+      ],
+      "required": true,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.2.owner_mailing_address",
+      "pdf_fields": [
+        "Mailing Address_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.2.owner_city_state_zip",
+      "pdf_fields": [
+        "CityStateZip_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.2.owner_phone",
+      "pdf_fields": [
+        "Phone_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.2.owner_email",
+      "pdf_fields": [
+        "Email Address_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.3.address",
+      "pdf_fields": [
+        "Address_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.3.apn",
+      "pdf_fields": [
+        "APNs_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.3.owner_name",
+      "pdf_fields": [
+        "Property Owner_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.3.owner_mailing_address",
+      "pdf_fields": [
+        "Mailing Address_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.3.owner_city_state_zip",
+      "pdf_fields": [
+        "CityStateZip_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.3.owner_phone",
+      "pdf_fields": [
+        "Phone_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.3.owner_email",
+      "pdf_fields": [
+        "Email Address_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.4.address",
+      "pdf_fields": [
+        "Address_4"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.4.apn",
+      "pdf_fields": [
+        "APNs_4"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.4.owner_name",
+      "pdf_fields": [
+        "Property Owner_4"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.4.owner_mailing_address",
+      "pdf_fields": [
+        "Mailing Address_4"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.4.owner_city_state_zip",
+      "pdf_fields": [
+        "CityStateZip_4"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.4.owner_phone",
+      "pdf_fields": [
+        "Phone_4"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.parcels.4.owner_email",
+      "pdf_fields": [
+        "Email Address_4"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "owner_affidavit.owner_name",
+      "pdf_fields": [
+        "property for which this application is submitted and hereby further certify to the following"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.owners",
+      "pdf_fields": [
+        "OwnersRow1"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow1"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.owners",
+      "pdf_fields": [
+        "OwnersRow2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.owners",
+      "pdf_fields": [
+        "OwnersRow3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.owners",
+      "pdf_fields": [
+        "OwnersRow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow1_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.owners",
+      "pdf_fields": [
+        "OwnersRow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow2_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.owners",
+      "pdf_fields": [
+        "OwnersRow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow3_2"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.owners",
+      "pdf_fields": [
+        "OwnersRow1_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow1_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.1.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow1_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.owners",
+      "pdf_fields": [
+        "OwnersRow2_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow2_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.2.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow2_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.owners",
+      "pdf_fields": [
+        "OwnersRow3_3"
+      ],
+      "required": false,
+      "applicant_controlled": true,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.existing_apns",
+      "pdf_fields": [
+        "Existing Parcels AP NumbersRow3_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    },
+    {
+      "fact_id": "lot_line_adjustment.exhibit_table.rows.3.proposed_parcel_reference",
+      "pdf_fields": [
+        "Proposed Parcel Reference NumberRow3_3"
+      ],
+      "required": false,
+      "applicant_controlled": false,
+      "transform": "string",
+      "font_size": 7
+    }
+  ],
+  "review_fields": [
+    "Applicant Signature",
+    "Applicant Signature_2",
+    "Applicant Signature_3",
+    "LOT LINE ADJUSTMENT NO",
+    "LOT LINE ADJUSTMENT NO_2",
+    "LOT LINE ADJUSTMENT NO_3",
+    "OWNERS SIGNATURE",
+    "Signatures of Owners of Parcel 1",
+    "Signatures of Owners of Parcel 2",
+    "Signatures of Owners of Parcel 3",
+    "Signatures of Owners of Parcel 4"
+  ],
+  "fields": [
+    {
+      "name": "APNs",
+      "type": "/Tx",
+      "tooltip": "APN(s",
+      "flags": 0
+    },
+    {
+      "name": "APNs_2",
+      "type": "/Tx",
+      "tooltip": "APN(s",
+      "flags": 0
+    },
+    {
+      "name": "APNs_3",
+      "type": "/Tx",
+      "tooltip": "APN(s",
+      "flags": 0
+    },
+    {
+      "name": "APNs_4",
+      "type": "/Tx",
+      "tooltip": "APN(s",
+      "flags": 0
+    },
+    {
+      "name": "Address",
+      "type": "/Tx",
+      "tooltip": "Address",
+      "flags": 0
+    },
+    {
+      "name": "Address_2",
+      "type": "/Tx",
+      "tooltip": "Address",
+      "flags": 0
+    },
+    {
+      "name": "Address_3",
+      "type": "/Tx",
+      "tooltip": "Address",
+      "flags": 0
+    },
+    {
+      "name": "Address_4",
+      "type": "/Tx",
+      "tooltip": "Address",
+      "flags": 0
+    },
+    {
+      "name": "Applicant Signature",
+      "type": "/Sig",
+      "tooltip": "Applicant Signature",
+      "flags": 0
+    },
+    {
+      "name": "Applicant Signature_2",
+      "type": "/Sig",
+      "tooltip": "Applicant Signature",
+      "flags": 0
+    },
+    {
+      "name": "Applicant Signature_3",
+      "type": "/Sig",
+      "tooltip": "Applicant Signature",
+      "flags": 0
+    },
+    {
+      "name": "CityStateZip",
+      "type": "/Tx",
+      "tooltip": "City/State/Zip",
+      "flags": 0
+    },
+    {
+      "name": "CityStateZip_2",
+      "type": "/Tx",
+      "tooltip": "City/State/Zip",
+      "flags": 0
+    },
+    {
+      "name": "CityStateZip_3",
+      "type": "/Tx",
+      "tooltip": "City/State/Zip",
+      "flags": 0
+    },
+    {
+      "name": "CityStateZip_4",
+      "type": "/Tx",
+      "tooltip": "City/State/Zip",
+      "flags": 0
+    },
+    {
+      "name": "Email Address",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "Email Address_2",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "Email Address_3",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "Email Address_4",
+      "type": "/Tx",
+      "tooltip": "Email Address",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow1",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow1_2",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow1_3",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow2",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow2_2",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow2_3",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow3",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow3_2",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "Existing Parcels AP NumbersRow3_3",
+      "type": "/Tx",
+      "tooltip": "Existing Parcels AP Numbers_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "LOT LINE ADJUSTMENT NO",
+      "type": "/Tx",
+      "tooltip": "LOT LINE ADJUSTMENT NO",
+      "flags": 0
+    },
+    {
+      "name": "LOT LINE ADJUSTMENT NO_2",
+      "type": "/Tx",
+      "tooltip": "LOT LINE ADJUSTMENT NO",
+      "flags": 0
+    },
+    {
+      "name": "LOT LINE ADJUSTMENT NO_3",
+      "type": "/Tx",
+      "tooltip": "LOT LINE ADJUSTMENT NO",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address",
+      "type": "/Tx",
+      "tooltip": "Mailing Address",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address_2",
+      "type": "/Tx",
+      "tooltip": "Mailing Address",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address_3",
+      "type": "/Tx",
+      "tooltip": "Mailing Address",
+      "flags": 0
+    },
+    {
+      "name": "Mailing Address_4",
+      "type": "/Tx",
+      "tooltip": "Mailing Address",
+      "flags": 0
+    },
+    {
+      "name": "OWNERS SIGNATURE",
+      "type": "/Sig",
+      "tooltip": "OWNER’S SIGNATURE",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow1",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow1_2",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow1_3",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow2",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow2_2",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow2_3",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow3",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow3_2",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "OwnersRow3_3",
+      "type": "/Tx",
+      "tooltip": "Owners_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "Phone",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Phone_2",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Phone_3",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Phone_4",
+      "type": "/Tx",
+      "tooltip": "Phone",
+      "flags": 0
+    },
+    {
+      "name": "Property Owner",
+      "type": "/Tx",
+      "tooltip": "Property Owner",
+      "flags": 0
+    },
+    {
+      "name": "Property Owner_2",
+      "type": "/Tx",
+      "tooltip": "Property Owner",
+      "flags": 0
+    },
+    {
+      "name": "Property Owner_3",
+      "type": "/Tx",
+      "tooltip": "Property Owner",
+      "flags": 0
+    },
+    {
+      "name": "Property Owner_4",
+      "type": "/Tx",
+      "tooltip": "Property Owner",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow1",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow1_2",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow1_3",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_1",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow2",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow2_2",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow2_3",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_2",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow3",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow3_2",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "Proposed Parcel Reference NumberRow3_3",
+      "type": "/Tx",
+      "tooltip": "Proposed Parcel Reference Number_Row_3",
+      "flags": 0
+    },
+    {
+      "name": "Signatures of Owners of Parcel 1",
+      "type": "/Sig",
+      "tooltip": "Signature(s) of Owner(s) of Parcel 1",
+      "flags": 0
+    },
+    {
+      "name": "Signatures of Owners of Parcel 2",
+      "type": "/Sig",
+      "tooltip": "Signature(s) of Owner(s) of Parcel 2",
+      "flags": 0
+    },
+    {
+      "name": "Signatures of Owners of Parcel 3",
+      "type": "/Sig",
+      "tooltip": "Signature(s) of Owner(s) of Parcel 3",
+      "flags": 0
+    },
+    {
+      "name": "Signatures of Owners of Parcel 4",
+      "type": "/Sig",
+      "tooltip": "Signature(s) of Owner(s) of Parcel 4",
+      "flags": 0
+    },
+    {
+      "name": "property for which this application is submitted and hereby further certify to the following",
+      "type": "/Tx",
+      "tooltip": "property for which this application is submitted and hereby further certify to the following",
+      "flags": 0
+    }
+  ],
+  "widgets": [
+    {
+      "page": 2,
+      "field_name": "Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        187.2,
+        604.08,
+        298.44,
+        618.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "APNs",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        359.88,
+        604.08,
+        486.24,
+        618.6
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Property Owner",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        241.32,
+        588.48,
+        347.4,
+        603.0
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Mailing Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        573.0,
+        343.44,
+        587.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "CityStateZip",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        232.56,
+        557.4,
+        343.8,
+        571.92
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Phone",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        202.68,
+        541.92,
+        344.28,
+        556.32
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Email Address",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        235.2,
+        526.32,
+        346.32,
+        540.84
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Address_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        187.2,
+        502.8,
+        298.44,
+        517.32
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "APNs_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        359.88,
+        502.8,
+        486.24,
+        517.32
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Property Owner_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        241.32,
+        487.2,
+        347.4,
+        501.72
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Mailing Address_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        471.6,
+        343.44,
+        486.12
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "CityStateZip_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        232.56,
+        456.12,
+        343.8,
+        470.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Phone_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        202.68,
+        440.52,
+        344.28,
+        455.04
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Email Address_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        235.2,
+        425.04,
+        346.32,
+        439.56
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Address_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        187.2,
+        401.4,
+        298.44,
+        415.92
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "APNs_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        359.88,
+        401.4,
+        486.24,
+        415.92
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Property Owner_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        241.32,
+        385.92,
+        347.4,
+        400.32
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Mailing Address_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        370.32,
+        343.44,
+        384.84
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "CityStateZip_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        232.56,
+        354.6,
+        343.8,
+        369.12
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Phone_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        202.68,
+        339.12,
+        344.28,
+        353.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Email Address_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        235.2,
+        323.52,
+        346.32,
+        338.04
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Address_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        187.2,
+        300.0,
+        298.44,
+        314.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "APNs_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        359.88,
+        300.0,
+        486.24,
+        314.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Property Owner_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        241.32,
+        284.4,
+        347.4,
+        298.92
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Mailing Address_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        242.4,
+        268.92,
+        343.44,
+        283.44
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "CityStateZip_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        232.56,
+        253.32,
+        343.8,
+        267.84
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Phone_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        202.68,
+        237.72,
+        344.28,
+        252.24
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Email Address_4",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        235.2,
+        222.24,
+        346.32,
+        236.76
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Signatures of Owners of Parcel 1",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        74.28,
+        144.0,
+        241.08,
+        158.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Signatures of Owners of Parcel 2",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        290.28,
+        144.0,
+        487.44,
+        158.52
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Signatures of Owners of Parcel 3",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.0,
+        104.88,
+        243.96,
+        119.4
+      ]
+    },
+    {
+      "page": 2,
+      "field_name": "Signatures of Owners of Parcel 4",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        290.28,
+        104.88,
+        487.44,
+        119.4
+      ]
+    },
+    {
+      "page": 5,
+      "field_name": "property for which this application is submitted and hereby further certify to the following",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        80.88,
+        664.8,
+        273.12,
+        693.6
+      ]
+    },
+    {
+      "page": 5,
+      "field_name": "OWNERS SIGNATURE",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        108.0,
+        171.96,
+        295.08,
+        200.76
+      ]
+    },
+    {
+      "page": 7,
+      "field_name": "Applicant Signature",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        179.04,
+        608.64,
+        493.8,
+        632.4
+      ]
+    },
+    {
+      "page": 8,
+      "field_name": "Applicant Signature_2",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        179.04,
+        84.6,
+        493.8,
+        108.36
+      ]
+    },
+    {
+      "page": 9,
+      "field_name": "Applicant Signature_3",
+      "field_type": "/Sig",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        179.04,
+        439.92,
+        493.8,
+        468.72
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "LOT LINE ADJUSTMENT NO",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        366.6,
+        690.6,
+        394.2,
+        719.4
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "OwnersRow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        624.12,
+        227.4,
+        638.16
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "Existing Parcels AP NumbersRow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        624.12,
+        383.4,
+        638.16
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "Proposed Parcel Reference NumberRow1",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        624.12,
+        539.28,
+        638.16
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "OwnersRow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        609.0,
+        227.4,
+        623.04
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "Existing Parcels AP NumbersRow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        609.0,
+        383.4,
+        623.04
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "Proposed Parcel Reference NumberRow2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        609.0,
+        539.28,
+        623.04
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "OwnersRow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        593.88,
+        227.4,
+        607.92
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "Existing Parcels AP NumbersRow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        593.88,
+        383.4,
+        607.92
+      ]
+    },
+    {
+      "page": 10,
+      "field_name": "Proposed Parcel Reference NumberRow3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        593.88,
+        539.28,
+        607.92
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "LOT LINE ADJUSTMENT NO_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        369.36,
+        690.6,
+        391.44,
+        719.4
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "OwnersRow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        624.12,
+        227.4,
+        638.16
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "Existing Parcels AP NumbersRow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        624.12,
+        383.4,
+        638.16
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "Proposed Parcel Reference NumberRow1_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        624.12,
+        539.28,
+        638.16
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "OwnersRow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        609.0,
+        227.4,
+        623.04
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "Existing Parcels AP NumbersRow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        609.0,
+        383.4,
+        623.04
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "Proposed Parcel Reference NumberRow2_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        609.0,
+        539.28,
+        623.04
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "OwnersRow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        593.88,
+        227.4,
+        607.92
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "Existing Parcels AP NumbersRow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        593.88,
+        383.4,
+        607.92
+      ]
+    },
+    {
+      "page": 11,
+      "field_name": "Proposed Parcel Reference NumberRow3_2",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        593.88,
+        539.28,
+        607.92
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "LOT LINE ADJUSTMENT NO_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        369.36,
+        690.6,
+        391.44,
+        719.4
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "OwnersRow1_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        623.76,
+        227.4,
+        638.16
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Existing Parcels AP NumbersRow1_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        623.76,
+        383.4,
+        638.16
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Proposed Parcel Reference NumberRow1_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        623.76,
+        539.28,
+        638.16
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "OwnersRow2_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        608.28,
+        227.4,
+        622.68
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Existing Parcels AP NumbersRow2_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        608.28,
+        383.4,
+        622.68
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Proposed Parcel Reference NumberRow2_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        608.28,
+        539.28,
+        622.68
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "OwnersRow3_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        72.96,
+        592.8,
+        227.4,
+        607.2
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Existing Parcels AP NumbersRow3_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        228.72,
+        592.8,
+        383.4,
+        607.2
+      ]
+    },
+    {
+      "page": 12,
+      "field_name": "Proposed Parcel Reference NumberRow3_3",
+      "field_type": "/Tx",
+      "value": null,
+      "appearance_state": null,
+      "has_normal_appearance": true,
+      "normal_appearance_states": [
+        "/BBox",
+        "/FormType",
+        "/Matrix",
+        "/Resources",
+        "/Subtype",
+        "/Type"
+      ],
+      "rect": [
+        384.72,
+        592.8,
+        539.28,
+        607.2
+      ]
+    }
+  ],
+  "review_widgets": []
+}

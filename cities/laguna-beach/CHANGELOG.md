@@ -57,6 +57,15 @@ Content:
   adjacent to residential areas. A required side yard is still closed to that equipment
   under §25.50.004(F)(2). The coastal exemption record no longer has to be on the City's
   website (Ord. 1732, §25.07.008(B)).
+- Pinned six Planning forms from the City's Applications & Handouts page (2026-10-10,
+  headless browser, same-origin fetch from the loaded page; receipts in the manifest):
+  ADU & JADU (document 27032, replacing 26710, which moves to `retired_forms`), SB 9
+  (26958, replacing the DRAFT 26708), Temporary Use Permit, Revocable Encroachment
+  Permit, Lot Line Adjustment, and Sign Permit. Each fillable form has an exact semantic
+  map and a fill/verify round trip in `evals/forms`. `pending_sources` is empty.
+- The Sign Permit Application and the SB 9 application sections have no form fields.
+  Their maps list `manual_sections`; `fill-form.py` prints them, and refuses a map with
+  no mappings instead of writing an unchanged copy.
 
 ## 0.4.0 (2026-09-08, PR #6)
 

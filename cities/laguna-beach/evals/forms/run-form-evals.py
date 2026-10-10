@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Round-trip evals for the Building Permit Application map and the sign-before-upload step.
+"""Round-trip evals for the pinned form maps and the sign-before-upload step.
+
+The Building Permit Application runs the full fill -> verify -> render -> sign cases.
+Every other Planning map in PLANNING_ROUND_TRIP runs fill -> verify with a value for
+every mapped fact. A form with no fillable fields must refuse to fill.
 
 Default mode needs no City PDF. It builds a replica of the pinned form from the map's
 own field tree (same names, types, pages, and rectangles), so CI exercises the exact map.
-With --forms-dir it runs the same cases against the official PDF the user downloaded.
+With --forms-dir it runs the same cases against the official PDFs the user downloaded.
 
 Every fact here is fictional.
 """
@@ -25,6 +29,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = ROOT / "scripts"
 FORM_ID = "building-application"
+# Planning maps pinned 2026-10-10 that round-trip on every run. sign-permit-application
+# is pinned too, but the City form has no fields, so it must refuse to fill instead.
+PLANNING_ROUND_TRIP = (
+    "adu-application",
+    "lot-line-adjustment-application",
+    "revocable-encroachment-permit-application",
+    "sb-9-application",
+    "temporary-use-permit-application",
+)
+FLAT_FORMS = ("sign-permit-application",)
 sys.path.insert(0, str(SCRIPTS))
 
 from _schema import validate_instance  # noqa: E402
@@ -260,15 +274,145 @@ def check_map_contract(field_map: dict, manifest: dict) -> None:
 
 
 def check_needs_source_refusal(temp: Path, source: Path) -> None:
+    """A map marked needs_source refuses to fill and names the City link it is waiting on.
+
+    No shipped map is needs_source today, so the case marks a copy of a pinned map.
+    """
+
     facts = temp / "empty-facts.json"
     dump(facts, {"schema_version": "1.0.0", "run_id": "x", "jurisdiction": "laguna-beach-ca", "created_at": now(), "updated_at": now(), "facts": []})
+    stale = load(ROOT / "assets/field-maps/adu-application.json")
+    stale["status"] = "needs_source"
+    stale["status_note"] = "The City links document 99999; download, pin, and remap it before filling."
+    stale_path = temp / "needs-source-map.json"
+    dump(stale_path, stale)
     result = run(
         str(SCRIPTS / "fill-form.py"), "--input", str(source), "--facts", str(facts),
-        "--field-map", str(ROOT / "assets/field-maps/adu-application.json"),
-        "--output", str(temp / "adu-must-not-exist.pdf"), expected=1,
+        "--field-map", str(stale_path),
+        "--output", str(temp / "needs-source-must-not-exist.pdf"), expected=1,
     )
-    assert "needs_source" in result.stdout and "27032" in result.stdout, result.stdout
-    assert not (temp / "adu-must-not-exist.pdf").exists()
+    assert "needs_source" in result.stdout and "99999" in result.stdout, result.stdout
+    assert not (temp / "needs-source-must-not-exist.pdf").exists()
+
+
+def planning_value(mapping: dict, fact_id: str):
+    if mapping["transform"] in {"checkbox", "yes_no"}:
+        return True
+    if mapping["transform"] == "lines":
+        return "Fictional eval description for a form map round trip."
+    if mapping["transform"] == "currency":
+        return 1000
+    return f"Eval {fact_id.rsplit('.', 1)[-1]}"
+
+
+def planning_facts(field_map: dict) -> dict:
+    facts: list[dict] = []
+    seen: set[str] = set()
+    for mapping in field_map["canonical_mappings"]:
+        fact_id = mapping["fact_id"]
+        if fact_id in seen:
+            continue
+        seen.add(fact_id)
+        facts.append(fact(fact_id, planning_value(mapping, fact_id), controlled=bool(mapping.get("applicant_controlled"))))
+    return {
+        "schema_version": "1.0.0",
+        "run_id": f"form-eval-{field_map['form_id']}",
+        "jurisdiction": "laguna-beach-ca",
+        "created_at": now(),
+        "updated_at": now(),
+        "facts": facts,
+    }
+
+
+def check_planning_map_contract(form_id: str, field_map: dict, form: dict) -> None:
+    assert form["status"] == "pinned" and form["redistribution"] == "fetch_only", form_id
+    assert form["url"].startswith("https://www.lagunabeachcity.net/home/showpublisheddocument/"), form_id
+    assert form["url"].endswith(f"/{form['document_id']}/{form['ticks']}"), form_id
+    receipt = form["source_receipt"]
+    assert receipt["http_status"] == 200 and receipt["linked_from"], form_id
+    assert all(item["url"].startswith("https://www.lagunabeachcity.net/") for item in receipt["linked_from"])
+    assert field_map["source_sha256"] == form["sha256"] and field_map["field_map_version"] == form["field_map_version"]
+    signature_fields = {item["name"] for item in field_map["fields"] if item["type"] == "/Sig"}
+    targeted = {name for mapping in field_map["canonical_mappings"] for name in mapping.get("pdf_fields") or []}
+    targeted |= {widget["field_name"] for mapping in field_map["canonical_mappings"] for widget in mapping.get("pdf_widgets") or []}
+    assert not signature_fields & targeted, (form_id, sorted(signature_fields & targeted))
+    assert signature_fields <= set(field_map["review_fields"]), form_id
+    assert not any(mapping["fact_id"].startswith(f"form.{form_id}.field.") for mapping in field_map["canonical_mappings"]), form_id
+    for section in field_map.get("manual_sections") or []:
+        assert section["title"] and all(1 <= page <= form["pages"] for page in section["pages"]), form_id
+
+
+def official_source(forms_dir: str, form: dict) -> Path:
+    run(
+        str(SCRIPTS / "check-source-freshness.py"), "--manifest", str(ROOT / "assets/form-manifest.json"),
+        "--forms-dir", forms_dir, "--only", form["id"],
+    )
+    source = Path(forms_dir) / form["cache_name"]
+    return source if source.is_file() else Path(forms_dir) / form["download_name"]
+
+
+def run_planning_round_trips(manifest: dict, temp: Path, forms_dir: str | None) -> list[str]:
+    forms = {item["id"]: item for item in manifest["forms"]}
+    passed: list[str] = []
+    for form_id in PLANNING_ROUND_TRIP:
+        form = forms[form_id]
+        field_map = load(ROOT / "assets/field-maps" / f"{form_id}.json")
+        check_planning_map_contract(form_id, field_map, form)
+        work = temp / form_id
+        work.mkdir(parents=True, exist_ok=True)
+        if forms_dir:
+            source, map_path, active_map = official_source(forms_dir, form), ROOT / "assets/field-maps" / f"{form_id}.json", field_map
+        else:
+            source = work / f"replica-{form_id}.pdf"
+            build_replica(field_map, source)
+            active_map = replica_map(field_map, source)
+            map_path = work / "replica-field-map.json"
+            dump(map_path, active_map)
+        facts_document = planning_facts(active_map)
+        assert not validate_instance(facts_document, load(ROOT / "schemas/project-facts.schema.json"))
+        facts_path = work / "project-facts.json"
+        dump(facts_path, facts_document)
+        output = work / f"{form_id}-filled.pdf"
+        run(
+            str(SCRIPTS / "fill-form.py"), "--input", str(source), "--facts", str(facts_path),
+            "--field-map", str(map_path), "--output", str(output),
+        )
+        answers = output.with_name(output.stem + ".answers-used.json")
+        run(str(SCRIPTS / "verify-form.py"), "--pdf", str(output), "--answers", str(answers))
+        expected_targets = sum(
+            len(mapping.get("pdf_fields") or mapping.get("pdf_widgets") or [])
+            for mapping in active_map["canonical_mappings"]
+            if mapping["transform"] != "lines"
+        )
+        filled = [item for item in load(answers)["answers"]]
+        single = [item for item in filled if not any(
+            m["transform"] == "lines" and m["fact_id"] == item["fact_id"] for m in active_map["canonical_mappings"]
+        )]
+        assert len(single) == expected_targets, (form_id, len(single), expected_targets)
+        unresolved = load(output.with_name(output.stem + ".unresolved-fields.json"))["unresolved"]
+        assert not unresolved, (form_id, unresolved)
+        sign_sheet = load(output.with_name(output.stem + ".review-and-sign.json"))
+        assert sign_sheet["manual_sections"] == (field_map.get("manual_sections") or []), form_id
+        passed.append(form_id)
+
+    for form_id in FLAT_FORMS:
+        form = forms[form_id]
+        field_map = load(ROOT / "assets/field-maps" / f"{form_id}.json")
+        assert form["status"] == "pinned" and form["canonical_fields"] == 0 and form["widgets"] == 0, form_id
+        assert not field_map["canonical_mappings"] and field_map["manual_sections"], form_id
+        # The refusal comes before any checksum check, so any PDF stands in for the replica.
+        source = official_source(forms_dir, form) if forms_dir else temp / "adu-application" / "replica-adu-application.pdf"
+        facts = temp / "empty-facts.json"
+        dump(facts, {"schema_version": "1.0.0", "run_id": "x", "jurisdiction": "laguna-beach-ca", "created_at": now(), "updated_at": now(), "facts": []})
+        result = run(
+            str(SCRIPTS / "fill-form.py"), "--input", str(source), "--facts", str(facts),
+            "--field-map", str(ROOT / "assets/field-maps" / f"{form_id}.json"),
+            "--output", str(temp / f"{form_id}-must-not-exist.pdf"), expected=1,
+        )
+        assert "no fillable fields" in result.stdout and "pages [3]" in result.stdout, result.stdout
+        assert not (temp / f"{form_id}-must-not-exist.pdf").exists()
+        passed.append(f"{form_id} (flat: refuses to fill)")
+    return passed
 
 
 def draw_ink_overlay(field_map: dict, destination: Path) -> None:
@@ -458,6 +602,8 @@ def main() -> int:
         print("PASS needs_source map refuses to fill")
         passed = run_cases(active_map, source, map_path, temp, cases)
         print(f"PASS building round trip on {label}: {', '.join(passed)}")
+        planning = run_planning_round_trips(manifest, temp / "planning", args.forms_dir)
+        print(f"PASS planning round trips on {label}: {', '.join(planning)}")
     return 0
 
 

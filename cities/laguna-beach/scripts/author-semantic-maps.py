@@ -73,16 +73,17 @@ def add_column_widgets(
     document: dict[str, Any],
     field_name: str,
     fact_base: str,
+    page: int,
 ) -> None:
-    widgets = widgets_named(document, 25, field_name)
+    widgets = widgets_named(document, page, field_name)
     if len(widgets) != 4:
-        raise ValueError(f"{field_name}: expected four page-25 widgets, got {len(widgets)}")
+        raise ValueError(f"{field_name}: expected four page-{page} widgets, got {len(widgets)}")
     columns = ("required", "existing", "proposed", "conforms")
     for column, widget in zip(columns, widgets):
         mappings.append(
             exact(
                 f"{fact_base}.{column}",
-                25,
+                page,
                 field_name,
                 widget["rect"],
                 transform="yes_no" if column == "conforms" else "string",
@@ -121,7 +122,13 @@ def common_planning_face(prefix: str = "") -> list[dict[str, Any]]:
 
 
 def design_review(document: dict[str, Any]) -> list[dict[str, Any]]:
-    mappings = common_planning_face()
+    return common_planning_face() + project_summary_tables(document, 25)
+
+
+def project_summary_tables(document: dict[str, Any], page: int) -> list[dict[str, Any]]:
+    """The City's Project Summary Tables exhibit (one page, same field names in every package)."""
+
+    mappings: list[dict[str, Any]] = []
     mappings.extend(
         [
             direct("site.use", "USE"),
@@ -163,7 +170,7 @@ def design_review(document: dict[str, Any]) -> list[dict[str, Any]]:
         "PARKING": "zoning.parking_spaces",
     }
     for field_name, fact_base in repeated_zoning.items():
-        add_column_widgets(mappings, document, field_name, fact_base)
+        add_column_widgets(mappings, document, field_name, fact_base, page)
 
     project_metrics = {
         "LIVING AREA": "living_area_sqft",
@@ -490,6 +497,242 @@ def building() -> list[dict[str, Any]]:
     return mappings + stormwater
 
 
+def stacked(document: dict[str, Any], page: int, name: str, count: int) -> list[dict[str, Any]]:
+    """Widgets that share one field name on one page, top of the page first."""
+
+    widgets = sorted(
+        [item for item in document["widgets"] if item["page"] == page and item["field_name"] == name],
+        key=lambda item: -item["rect"][3],
+    )
+    if len(widgets) != count:
+        raise ValueError(f"{name} page {page}: expected {count} widgets, got {len(widgets)}")
+    return widgets
+
+
+CONTACT_ROLES = ("applicant", "applicant_representative", "owner")
+CONTACT_ITEMS = ("company_name", "contact_name", "mailing_address", "city_state_zip", "phone", "email")
+REQUIRED_CONTACTS = {"applicant.contact_name", "applicant.phone", "applicant.email", "owner.contact_name"}
+
+
+def contact_block(names: dict[str, list[str]]) -> list[dict[str, Any]]:
+    """Applicant, representative, and owner rows of the July 2026 application face.
+
+    `names` gives, per contact item, the three PDF field names in role order.
+    """
+
+    mappings = []
+    for index, role in enumerate(CONTACT_ROLES):
+        for item in CONTACT_ITEMS:
+            fact_id = f"{role}.{item}"
+            mappings.append(
+                direct(fact_id, names[item][index], required=fact_id in REQUIRED_CONTACTS, controlled=True)
+            )
+    return mappings
+
+
+def with_font(mappings: list[dict[str, Any]], size: float = 7) -> list[dict[str, Any]]:
+    for mapping in mappings:
+        if mapping["transform"] != "checkbox":
+            mapping["font_size"] = size
+    return mappings
+
+
+def adu(document: dict[str, Any]) -> list[dict[str, Any]]:
+    """ADU & JADU Application, document 27032 (file ADU_Application 090126_fillable.pdf).
+
+    Page 3 is the application face, page 4 the five description lines (one field, five
+    widgets), page 9 the rent-reporting line, page 34 the Project Summary Tables.
+    The deposit agreement, notices, Exhibit J dates, and the water quality form stay
+    review-only, as on the other planning packages.
+    """
+
+    checkbox = {"transform": "checkbox", "on_value": "/Yes"}
+    mappings = [
+        direct("adu.application_type.adu_jadu_only", "Check Box35", **checkbox),
+        direct("adu.application_type.adu_jadu_and_cdp", "Check Box36", **checkbox),
+        direct("adu.application_type.with_new_dwelling", "Check Box37", **checkbox),
+        direct("site.address", "Text38", required=True),
+        direct("site.apn", "Text39"),
+    ]
+    numbered = [f"Text{number}" for number in range(40, 58)]
+    names = {item: [] for item in CONTACT_ITEMS}
+    for role_index in range(3):
+        row = numbered[role_index * 6:(role_index + 1) * 6]
+        # Each role block reads left to right, top to bottom: company, contact,
+        # mailing address, city/state/zip, phone, email.
+        for item, name in zip(CONTACT_ITEMS, row):
+            names[item].append(name)
+    mappings.extend(contact_block(names))
+    description = {
+        "fact_id": "project.description",
+        "pdf_widgets": [
+            {"page": 4, "field_name": "Text58", "rect": widget["rect"]}
+            for widget in stacked(document, 4, "Text58", 5)
+        ],
+        "required": True,
+        "applicant_controlled": False,
+        "transform": "lines",
+    }
+    mappings.append(description)
+    mappings.append(direct("adu.projected_annualized_rent", "Text59", controlled=True))
+    return with_font(mappings) + project_summary_tables(document, 34)
+
+
+SB9_MANUAL_SECTIONS = [
+    {"pages": [2, 3, 4, 5], "title": "SB 9 Lot Split Application: I. Application Information, II. Property Owner's Letter of Agency, III. Project Information (questions 1-21)"},
+    {"pages": [8, 9, 10], "title": "SB 9 Two-Unit Application: I. Application Information, II. Property Owner's Letter of Agency, III. Project Information"},
+    {"pages": [38], "title": "Exhibit H Affidavit (owner name line)"},
+    {"pages": [49], "title": "Bundled Coastal Development Permit Application Form"},
+]
+
+
+def sb9(document: dict[str, Any]) -> list[dict[str, Any]]:
+    """SB 9 Application, document 26958 (file SB 9 Application_82526.pdf).
+
+    The City built the application sections without form fields; only the exhibits are
+    fillable. The Project Summary Tables (page 29) are mapped. The deposit agreement,
+    notices, and water quality form stay review-only, as on the other planning packages.
+    The flat sections are listed in `manual_sections` for the applicant to complete.
+    """
+
+    return project_summary_tables(document, 29)
+
+
+SIGN_MANUAL_SECTIONS = [
+    {"pages": [3], "title": "Sign Permit Application Form: project location, contact information, project description"},
+    {"pages": [6], "title": "Exhibit A Affidavit (owner name line and owner signature)"},
+    {"pages": [7], "title": "Exhibit B Use and Disclosure of Architectural Drawings (signatures and dates)"},
+    {"pages": [8, 9, 10], "title": "Exhibit C Government Code Section 65940 Checklist (applicant signatures)"},
+]
+
+
+def temporary_use() -> list[dict[str, Any]]:
+    """Temporary Use Permit Application, document 26473 (TUP Application 71426_fillable.pdf)."""
+
+    mappings = [
+        direct("site.address", "a Address", required=True),
+        direct("site.apn", "b APNs"),
+    ]
+    mappings.extend(
+        contact_block(
+            {
+                "company_name": ["Company Name", "Company Name_2", "Company Name_3"],
+                "contact_name": ["Contact Name", "Contact Name_2", "Contact Name_3"],
+                "mailing_address": ["Mailing Address", "Mailing Address_2", "Mailing Address_3"],
+                "city_state_zip": ["CityStateZip", "CityStateZip_2", "CityStateZip_3"],
+                "phone": ["Phone", "Phone_2", "Phone_3"],
+                "email": ["Email Address", "Email Address_2", "Email Address_3"],
+            }
+        )
+    )
+    event_lines = [
+        f"events number of attendees food and alcohol service live entertainment or amplification {line}"
+        for line in range(1, 7)
+    ]
+    mappings.append(direct("temporary_use.event_description", *event_lines, required=True, transform="lines"))
+    # Exhibit A: "I, ____, hereby certify that I am the property owner ..."
+    mappings.append(
+        direct(
+            "owner_affidavit.owner_name",
+            "property for which this application is submitted and hereby further certify to the following",
+            controlled=True,
+        )
+    )
+    return with_font(mappings)
+
+
+def revocable_encroachment(document: dict[str, Any]) -> list[dict[str, Any]]:
+    """Revocable Encroachment Permit Application, document 26469 (REP Application 71426_fillable.pdf).
+
+    The City reused one field name for the same item in all three contact blocks, so those
+    targets are exact widgets (top block = applicant). Pages 8-9 are the recordable license
+    agreement the applicant completes after DRB approval; they stay review-only.
+    """
+
+    mappings = [
+        direct("site.address", "Address", required=True),
+        direct("site.apn", "APN(s)"),
+    ]
+    shared = {
+        "company_name": "Company Name",
+        "contact_name": "Contact Name",
+        "mailing_address": "Mailing Address",
+        "city_state_zip": "CityStateZip",
+        "email": "Email Address",
+    }
+    columns = {item: stacked(document, 3, name, 3) for item, name in shared.items()}
+    applicant_phone, owner_phone = stacked(document, 3, "Phone", 2)
+    columns["phone"] = [applicant_phone, None, owner_phone]
+    for index, role in enumerate(CONTACT_ROLES):
+        for item in CONTACT_ITEMS:
+            fact_id = f"{role}.{item}"
+            required = fact_id in REQUIRED_CONTACTS
+            widget = columns[item][index]
+            if widget is None:  # the representative's phone is its own field
+                mappings.append(direct(fact_id, "Phone_2", required=required, controlled=True))
+                continue
+            mappings.append(exact(fact_id, 3, widget["field_name"], widget["rect"], required=required, controlled=True))
+    mappings.append(
+        {
+            "fact_id": "project.description",
+            "pdf_widgets": [
+                {"page": 3, "field_name": widget["field_name"], "rect": widget["rect"]}
+                for widget in stacked(document, 3, "Descibe proposed improvements", 6)
+            ],
+            "required": True,
+            "applicant_controlled": False,
+            "transform": "lines",
+        }
+    )
+    # Exhibit A: "I, ____, hereby certify that I am the property owner ..."
+    mappings.append(direct("owner_affidavit.owner_name", "Property Owner", controlled=True))
+    return with_font(mappings)
+
+
+def lot_line_adjustment() -> list[dict[str, Any]]:
+    """Lot Line Adjustment Application, document 26467 (LLA Application_71426_fillable.pdf).
+
+    Page 2 has one block per parcel (four). Pages 10-12 are Exhibits C, D, and E, each
+    headed by the same Owners / Existing Parcels AP Numbers / Proposed Parcel Reference
+    Number table; each row fact fills all three. The City assigns the LLA number.
+    """
+
+    mappings = []
+    for parcel in range(1, 5):
+        suffix = "" if parcel == 1 else f"_{parcel}"
+        base = f"lot_line_adjustment.parcels.{parcel}"
+        required = parcel <= 2
+        mappings.extend(
+            [
+                direct(f"{base}.address", f"Address{suffix}", required=required),
+                direct(f"{base}.apn", f"APNs{suffix}"),
+                direct(f"{base}.owner_name", f"Property Owner{suffix}", required=required, controlled=True),
+                direct(f"{base}.owner_mailing_address", f"Mailing Address{suffix}", controlled=True),
+                direct(f"{base}.owner_city_state_zip", f"CityStateZip{suffix}", controlled=True),
+                direct(f"{base}.owner_phone", f"Phone{suffix}", controlled=True),
+                direct(f"{base}.owner_email", f"Email Address{suffix}", controlled=True),
+            ]
+        )
+    mappings.append(
+        direct(
+            "owner_affidavit.owner_name",
+            "property for which this application is submitted and hereby further certify to the following",
+            controlled=True,
+        )
+    )
+    for exhibit_suffix in ("", "_2", "_3"):
+        for row in range(1, 4):
+            base = f"lot_line_adjustment.exhibit_table.rows.{row}"
+            mappings.extend(
+                [
+                    direct(f"{base}.owners", f"OwnersRow{row}{exhibit_suffix}", controlled=True),
+                    direct(f"{base}.existing_apns", f"Existing Parcels AP NumbersRow{row}{exhibit_suffix}"),
+                    direct(f"{base}.proposed_parcel_reference", f"Proposed Parcel Reference NumberRow{row}{exhibit_suffix}"),
+                ]
+            )
+    return with_font(mappings)
+
+
 def target_key(target: dict[str, Any]) -> tuple[Any, ...]:
     return (
         target["page"],
@@ -588,6 +831,26 @@ def main() -> int:
             "signature_blocks": BUILDING_SIGNATURE_BLOCKS,
         },
     )
+    finalize("adu-application", adu(load_json(MAPS / "adu-application.json")))
+    finalize(
+        "sb-9-application",
+        sb9(load_json(MAPS / "sb-9-application.json")),
+        version="1.0.0",
+        extras={"manual_sections": SB9_MANUAL_SECTIONS},
+    )
+    finalize(
+        "sign-permit-application",
+        [],
+        version="1.0.0",
+        extras={"manual_sections": SIGN_MANUAL_SECTIONS},
+    )
+    finalize("temporary-use-permit-application", temporary_use(), version="1.0.0")
+    finalize(
+        "revocable-encroachment-permit-application",
+        revocable_encroachment(load_json(MAPS / "revocable-encroachment-permit-application.json")),
+        version="1.0.0",
+    )
+    finalize("lot-line-adjustment-application", lot_line_adjustment(), version="1.0.0")
     return 0
 
 
