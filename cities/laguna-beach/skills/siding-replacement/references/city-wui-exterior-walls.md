@@ -131,6 +131,7 @@ Urgency Ordinance No. 1732 repealed the former siding-specific partial-facade an
 - major remodel → Design Review under (B)(1)(a);
 - improvement over 15 ft → Design Review under (B)(1)(c); and
 - ESA development → Design Review under (B)(1)(e), absent the enacted peer-reviewed professional determination.
+- siding replacement on a historic resource → Administrative Design Review under (B)(3)(a)(iv) (no hearing waiver).
 
 WUI compliance remains a separate, mandatory material standard. Do not cite repealed `(B)(2)(d)` or `(B)(2)(w)` as current Design Review exemptions.
 

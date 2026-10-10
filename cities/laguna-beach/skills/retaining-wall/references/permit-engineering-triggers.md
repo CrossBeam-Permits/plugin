@@ -162,7 +162,7 @@ Guards are required at retaining walls that meet BOTH conditions:
 
 ### Guard Specifications
 
-| Requirement | Residential (CRC R312.1) | Commercial (CBC 1015.3) |
+| Requirement | Residential (CRC R321.1) | Commercial (CBC 1015.3) |
 |-------------|--------------------------|------------------------|
 | Minimum height | 42 inches above walking surface | 42 inches above walking surface |
 | Opening limit | 4-inch sphere shall not pass | 4-inch sphere shall not pass |

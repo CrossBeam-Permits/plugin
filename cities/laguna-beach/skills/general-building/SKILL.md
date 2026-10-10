@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2), California Residential Code (Part 2.5), California Plumbing Code (Part 5), California Energy Code (Part 6); California Business and Professions Code Division 3, Chapter 9; LBMC Ch. 14.70 (WUI Code), Ch. 14.50 (Building Code amendments), Ch. 14.52 (Fire sprinklers), Ch. 25.05 (Design Review), Ch. 25.07 (Coastal), Title 15 (Fire Prevention); City of Laguna Beach 'Building Plan Review Services' 06/08/2026"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-09-08"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -199,10 +199,19 @@ trigger is one of the two above.
 - Match the current §25.05.040 closed lists. In-kind replacement takes Zone Clearance under
   §25.05.040(B)(2)(c); other non-major work no more than 15 ft ordinarily takes Zone Clearance
   under (B)(2)(a)-(b). Exterior work is **not** a default Design Review trigger — Urgency
-  Ordinance No. 1732 repealed that default. The Director retains referral authority.
-- Most of the city is in the Coastal Zone. Minor repair and like-for-like replacement is
-  generally exempt; a change that alters exterior appearance can require a Coastal Development
-  Permit under Ch. 25.07. A shed or hardscape can be development.
+  Ordinance No. 1732 repealed that default. The Director may refer a Zone Clearance or ADR
+  project up (§25.05.040(A)(2)(d)).
+- Item-specific routes that catch minor work: skylight without automatic night shade, ADR
+  (B)(3)(a)(xii); door, window, siding or roofing change on a historic resource, ADR (B)(3)(a)(iv);
+  any exterior work in an environmentally sensitive area (includes slopes of 30% or greater),
+  Design Review (B)(1)(e) unless a peer-reviewed licensed professional finds no impact.
+- Planning acts before Building issues for exterior work (§25.05.045(B)(3)); interior-only work is
+  (B)(2)(d) and Building accepts it without a prior Planning record.
+- Most of the city is in the Coastal Zone. On a single-family lot, minor work is normally an exempt
+  improvement (§25.07.008(A)(1)) and like-for-like repair is exempt (§25.07.008(A)(3)). A change in
+  appearance is not itself an exception; the exemption is lost in the listed cases (highly scenic
+  area, ESA, within 50 ft of a bluff edge, prior CDP condition, and the first-road/300-ft strip
+  triggers in (A)(1)(c)). A new detached shed in that strip is one of them.
 - A building permit that is OTC-eligible is not thereby exempt from Design Review, Zone
   Clearance, or a CDP.
 

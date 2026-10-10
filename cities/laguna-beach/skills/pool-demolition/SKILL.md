@@ -142,6 +142,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 | Geotech/backfill | State structural baseline | Laguna geotech handout flags soil/structure failure, steep hillside, coastal bluff, liquefaction, floodplain, and Building Official discretion |
 | Drainage/floodplain | State/CBC baseline | Finished grade and fill/excavation must coordinate with floodplain permit, WQMP, erosion control, and city drainage requirements where applicable |
 | Larger project | Permit-specific | If pool demo is part of addition, new construction, or major remodel, route to complex residential skill |
+| Planning route | State silent | Ord. 1732, LBMC 25.05.040(B): see check 0 below. Planning acts before Building issues the permit (25.05.045(B)(3)) |
 
 ---
 
@@ -158,6 +159,16 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 ---
 
 ### Laguna-Specific Checks
+
+#### 0. Planning Route (Ord. 1732)
+
+Source: the City source document (not included in this plugin).
+
+- **Pool/spa demolition that is not part of a major remodel:** Zone Clearance, 25.05.040(B)(2)(a) ("Demolition, alteration, or addition that does not constitute a major remodel").
+- **Backfill and grading:** grading of more than 20 cu yd outside the building footprint is Design Review, 25.05.040(B)(1)(f); 20 cu yd or less is Zone Clearance, (B)(2)(i). Both items read "except as specified in Section 22.10.010(e)". Ord. 1732 § 54 (signed text, p. 81) added 22.10.010(e)(6): a grading permit is not required for "Backfill for a swimming pool if authorized by a valid building permit." So pool backfill under the pool demolition building permit falls in the 22.10.010(e) exception and does not by itself trigger (B)(1)(f). Other grading on the site (regrading the yard, new slopes) still counts. The rest of 22.10.010(e) is not in our sources. Design Review, when triggered, is heard by the Design Review Board on a single-family or two-family lot, the Planning Commission otherwise (25.05.040(F)(1)).
+- **Environmentally sensitive area** (includes slopes of 30% or greater): Design Review, (B)(1)(e), unless a licensed professional finds, subject to peer review, no impact.
+- **Part of a major remodel or new building:** rides with that Design Review, (B)(1)(a)-(b).
+- The Director may refer a Zone Clearance project up (25.05.040(A)(2)(d)). A CDP is a separate question (check 2).
 
 #### 1. Demolition Notification / SCAQMD
 
@@ -195,7 +206,7 @@ If fill/excavation is in a FEMA flood zone or floodway, require floodplain permi
 
 | ID | Check | Pass Criteria |
 |---|---|---|
-| LB-PDEMO-1 | Correct permit route | Pool/spa demolition only; larger remodel/addition/new construction routed separately |
+| LB-PDEMO-1 | Correct permit route | Pool/spa demolition only; larger remodel/addition/new construction routed separately; Planning route named (Zone Clearance (B)(2)(a), or Design Review for ESA (B)(1)(e) / grading over 20 cu yd (B)(1)(f); pool backfill under a valid building permit is excepted by 22.10.010(e)(6)) |
 | LB-PDEMO-2 | City demolition/SCAQMD | Demolition Notification and Rule 1403 screening completed where structural/shell demolition applies |
 | LB-PDEMO-3 | Coastal/CDP | Coastal-zone status and Section 25.07.008 exemption/exceptions documented |
 | LB-PDEMO-4 | Bluff/hillside/geotech | Bluff edge, slope, liquefaction, failure history, and future structure-over-fill checked |

@@ -1,6 +1,6 @@
 # Laguna Beach — Current Restaurant TI Planning Route
 
-**Law as of:** 2026-07-22
+**Law as of:** 2026-10-10
 
 **Authority:** LBMC §§25.05.040 and 25.05.045 as replaced/added by Urgency Ordinance No. 1732
 
@@ -26,7 +26,7 @@ Chapter 25.54 retains a broken cross-reference to former `(B)(1)(d)` for signs; 
 
 ## Authority, ESA, and timing
 
-- When Design Review is triggered for a non-residential project, the Planning Commission is the hearing authority under §25.05.040(F).
+- When Design Review is triggered for a non-residential project, the Planning Commission is the hearing authority under §25.05.040(F)(1)(ii) (non-residential development, Downtown Specific Plan area, and projects where the Planning Commission decides a CUP).
 - Zone Clearance is issued by the Community Development Department.
 - ADR is decided by the Director/designee; except for elevated decks and minor historic work, its hearing may be waived only through the 15-working-day notice/comment procedure when no other entitlement is required.
 - ESA development routes to Design Review absent the enacted peer-reviewed professional determination.

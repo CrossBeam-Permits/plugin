@@ -3,9 +3,9 @@ name: demolition
 description: "Demolition (Full Structure) permits in Laguna Beach, CA. Works in two modes: (A) BUILDER/HOMEOWNER — scopes the project, checks it against the Laguna Beach rules and the City submittal checklists, and prepares a portal-ready submission; (B) CITY REVIEWER — checks a submittal against the Laguna Beach rules and produces tight corrections output. California code compliance comes from the CrossBeam connector when it is connected. Use when the user mentions demolition in Laguna Beach."
 metadata:
   version: "2.0"
-  source: "2025 California Building Code (Title 24, Part 2), Chapter 33; 2025 California Existing Building Code (Title 24, Part 10), Chapter 15; 2025 California Green Building Standards Code (Title 24, Part 11), §4.408 / §5.408; SCAQMD Rule 1403; BAAQMD Regulation 11 Rule 2; EPA Lead Renovation, Repair & Painting Rule (40 CFR Part 745, Subpart E); CDPH Title 17 CCR §35001 et seq.; California Government Code §§7260–7277"
+  source: "2025 California Building Code (Title 24, Part 2), Chapter 33; 2025 California Existing Building Code (Title 24, Part 10), Chapter 15; 2025 California Green Building Standards Code (Title 24, Part 11), §4.408 / §5.408; SCAQMD Rule 1403; BAAQMD Regulation 11 Rule 2; EPA Lead Renovation, Repair & Painting Rule (40 CFR Part 745, Subpart E); CDPH Title 17 CCR §35001 et seq.; California Government Code §§7260–7277; Urgency Ord. 1732 (LBMC 25.05.040, 25.05.045, 25.45.004, 25.45.010); LBMC Ch. 25.07, 25.45.014; Urgency Ord. 1713 (LBMC 25.17.010(e)(2)(D), 25.17.020(c)(2)); Major Remodel Interpretation Quick Guide (Updated October 2026); LBMC 14.50.132"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "January 1, 2026 (2025 Code Cycle effective date)"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -144,9 +144,10 @@ Note: Demolition rules are predominantly local — most of this skill's content 
 
 | Topic | Route |
 |-------|-------|
-| **Full demolition of structure** | Demolition Notification form required + permits below |
-| **Partial demolition (remodel)** | Check major remodel threshold first (see `laguna-beach-residential-addition`) |
-| **Heritage/historic property** | Heritage Committee review may be required |
+| **Full demolition of a structure** | Demolition Notification form + the permits below |
+| **Partial demolition (remodel)** | Run the major-remodel test first (`../residential-remodel/references/city-major-remodel-methodology.md`) |
+| **Garage demolished for an ADU** | Reviewed and issued with the ADU application (Ord. 1713, LBMC 25.17.010(e)(2)(D); coastal: 25.17.020(c)(2)(A)(i)). Load `../adu/SKILL.md` |
+| **Historic resource** | §25.45.014 demolition procedure (below) |
 
 ---
 
@@ -161,15 +162,22 @@ Note: Demolition rules are predominantly local — most of this skill's content 
 | Trigger | Required |
 |---------|----------|
 | Any demolition | Building Permit + Demolition Notification |
-| Property in Coastal Zone | **Coastal Development Permit REQUIRED** — §25.07.004 + §25.07.006(D) explicitly include demolition in definition of development |
-| Property 50+ years old | **Heritage Committee review** potential |
+| Property in Coastal Zone | **CDP review.** "Development" includes "the construction, reconstruction, demolition or alteration of the size of any structure" (§25.07.006). No §25.07.008 exemption names demolition. A CDP is required unless Planning finds an exemption or a categorical exclusion (§25.07.010; E-93-1 covers single-family residential development in eleven areas, subject to Special Condition 8). Demolition of a historic resource always requires a CDP (§25.45.014(A)). Whether E-93-1 clears a stand-alone single-family demolition is UNSETTLED; confirm with Planning at pre-application |
+| Demolition that is part of a major remodel | **Design Review**, §25.05.040(B)(1)(a); heard by the Design Review Board for a single-family or two-family project (§25.05.040(F)(1)) |
+| Demolition that is not part of a major remodel | **Zone Clearance**, §25.05.040(B)(2)(a) ("Demolition, alteration, or addition that does not constitute a major remodel"), unless another (B)(1) item or the ESA override applies |
+| Full demolition followed by a new building | The new building is Design Review, §25.05.040(B)(1)(b), unless it is an ADU or a Chapter 25.13 primary dwelling ((B)(2)(h), (z)). File the demolition with the new-building application |
+| Full demolition with no replacement | Zone Clearance (B)(2)(a) is the closest list item. UNSETTLED; confirm with Planning at pre-application |
+| Historic resource (§25.45.004) | Heritage Committee recommendation, CEQA, then a public hearing before the design review authority (§25.45.014(B)-(C)). An approved demolition waits 90 calendar days for relocation or documentation, with monthly newspaper advertisement for the first two months; the authority may extend the wait up to 180 days if relocation is imminent (§25.45.014) |
 | Any demolition | **SCAQMD Rule 1403 notification** required for ALL demolitions (SCAQMD defines demolition broadly as "wrecking or taking out of any load-supporting structural member") |
-| Partial demo crossing 50% threshold | Treated as **major remodel** (new construction standards) |
+
+**Historic resource** means a property or structure on the City's historic register, listed on or officially determined eligible for the California Register or the National Register, or one "the City is mandated by law to treat as a historic resource based on substantial evidence in light of the whole record" (§25.45.004, as amended by Ord. 1732). Building age alone is not a code trigger. Staff may ask for a historic resource assessment of an older building (UNSETTLED; confirm with Planning at pre-application).
+
+**ESA override.** Zone Clearance "may not be used for any listed project in an environmentally sensitive area" (now including slopes of 30% or more, §25.08 as amended by Ord. 1732) unless a licensed professional finds, subject to peer review, no impact; otherwise Design Review applies (§25.05.040(B)(2), (B)(1)(e)).
 
 #### Major Remodel Connection
-Demolition of 50%+ of exterior walls (computed on each floor and for the whole structure; if a floor is at 50%+ but the whole-structure total is under 50%, return FLAG — see `../residential-remodel/references/city-major-remodel-methodology.md`), or the roof, exterior walls, load-bearing interior walls, and foundation combined in the coastal zone appealable area, measured for each building or structure separately, triggers the major remodel definition (Major Remodel Interpretation Quick Guide, Updated October 2026), which means the remaining/new construction must meet new construction standards. See `laguna-beach-residential-addition` skill for detailed calculation methods.
+Demolition of 50%+ of exterior walls (computed on each floor and for the whole structure; if a floor is at 50%+ but the whole-structure total is under 50%, return FLAG — how floors combine is UNSETTLED, see `../residential-remodel/references/city-major-remodel-methodology.md`), or, in the coastal zone appealable area, of the roof, exterior walls, load-bearing interior walls, and foundation combined, measured for each building or structure separately, makes the work a major remodel (Major Remodel Interpretation Quick Guide, Updated October 2026). The structure is then a new building subject to current zoning, undergrounding, dedications and new-development fees (§25.56.011). In the non-appealable area only removal counts; reinforcement does not.
 
-**ADU demolition is EXEMPT** from the major remodel calculation.
+**ADU demolition is EXEMPT** from the major remodel calculation (except Coastal Act section 30253 work on bluff-top, beachfront and coastal-canyon lots; Ord. 1713, LBMC 25.17.020(d)(2)).
 
 ---
 
@@ -191,8 +199,10 @@ Per §14.50.132, the applicant must provide:
 ### Key Facts
 
 - **Demolition Notification**: Required form, submitted to Building Division
-- **Heritage review**: Properties 50+ years old may trigger Heritage Committee review
-- **Coastal Zone**: CDP REQUIRED for demolition in Coastal Zone (§25.07.004 + §25.07.006(D))
+- **Planning route**: major-remodel demolition → Design Review (B)(1)(a); other demolition → Zone Clearance (B)(2)(a), subject to the ESA override
+- **Historic resource**: §25.45.014 — Heritage Committee, CEQA, hearing, CDP; age alone is not a code trigger
+- **Coastal Zone**: demolition is development (§25.07.006); CDP unless Planning finds an exemption or exclusion
+- **Garage for an ADU**: reviewed and issued with the ADU (Ord. 1713, 25.17.010(e)(2)(D))
 - **SCAQMD**: Rule 1403 notification required for ALL demolitions
 - **Utility meters**: Must be removed/disconnected before demolition
 - **C&D diversion**: Green Halo Program recycling/diversion required

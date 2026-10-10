@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2) — Chapter 31, Section 3109, Section 1808.7.3; 2025 California Residential Code (Title 24, Part 2.5) — Appendix CI; 2025 California Mechanical Code (Title 24, Part 4) — Chapter 8; 2025 California Electrical Code (Title 24, Part 3) — Article 680; 2025 California Plumbing Code (Title 24, Part 5) — Chapters 7, 12; California Health & Safety Code 115920-115929"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-08-24"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -136,12 +136,13 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 | Topic | State Default | Laguna Beach Override |
 |---|---|---|
-| Design review | State silent | Current §25.05.040 (Ord. 1732) routes the pool/spa structure by height: more than 3 ft above adjacent legal ground elevation → Design Review under (B)(1)(j); no more than 3 ft, or a portable spa of no more than 600 gallons → Zone Clearance under (B)(2)(t) and §25.05.045 |
-| Pool/spa equipment | State mechanical/electrical | LBMC Section 7.25.130(C) six-part objective test (effective 2026-08-20): equipment meeting all six parts is approved without Design Review (Zone Clearance); equipment failing any part goes to Administrative Design Review per Section 25.05.040(B)(3)(a)(v). Ord. 1732 removed the pool/spa design criteria from §25.05.040(H); equipment noise is judged by the §7.25.130(C) test |
+| Design review | State silent | Ord. 1732 3-ft test: portable and in-ground pools/spas **no more than 3 ft** above adjacent legal ground elevation, and portable spas of **600 gallons or less**, take **Zone Clearance** (LBMC 25.05.040(B)(2)(t)); pools/spas **more than 3 ft** above that grade (except portable spas of 600 gallons or less) take **Design Review** (25.05.040(B)(1)(j)). The City intake matrix (built-in = DRB/PC, pre-fab spa = ADR) conflicts; the ordinance governs, confirm at pre-application |
+| Pool/spa equipment | State mechanical/electrical | LBMC Section 7.25.130(C) six-part objective test (effective 2026-08-20): equipment meeting all six parts is approved without Design Review (Zone Clearance); equipment failing any part goes to Administrative Design Review per Section 25.05.040(B)(3)(a)(v). Under any route the installer signs the Section 7.25.130(A) noise acknowledgment and the equipment must meet the Section 7.25.040 limits |
+| Pool/spa siting | State silent | LBMC 25.50.016: pool, spa and accessory equipment not in the required front yard, and at least 5 ft from any side or required rear property line (steep-lot front exception, see §1b) |
 | Oceanfront bluff | State defers to local | LBMC Section 25.50.004(B)(4): pools and spas must be no closer than 25 ft to top of bluff |
 | Geotech | State project-specific | City geotech handout requires soils report for new pools on ungraded lots, floodplain areas, coastal bluff top, and other hillside/hazard conditions |
 | Coastal/CDP | State Coastal Act | SFR pools can be exempt under Section 25.07.008(A)(1), but exemption is lost for bluff/beach/wetland/ESA/highly scenic areas, certain appealable-area impacts, critical water supply areas, prior CDP conditions, or landform/vegetation alteration |
-| WUI/VHFHSZ | State WUI/fire code | Most of Laguna is VHFHSZ; fuel modification, defensible space, and site fire access can affect pool/spa site work |
+| WUI/VHFHSZ | State WUI/fire code | Use the parcel's fire hazard zone from `lookup_property` (much of Laguna is VHFHSZ, not all); fuel modification, defensible space, and site fire access can affect pool/spa site work |
 | Floodplain | FEMA/CBC baseline | Residential floodplain permit application applies to development involving new construction, fill, improvement, or watercourse alteration in mapped flood areas |
 
 ---
@@ -150,9 +151,10 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 | Scope | Laguna Route |
 |---|---|
-| Pool or spa structure more than 3 ft above adjacent legal ground elevation | Design Review Board / Planning Commission under §25.05.040(B)(1)(j), using the one Design Review Application, plus building permit |
-| Pool or spa no more than 3 ft above adjacent legal ground elevation, or a portable spa of no more than 600 gallons | Zone Clearance under §25.05.040(B)(2)(t) and §25.05.045, plus building permit |
+| Pool or spa (in-ground or portable) no more than 3 ft above adjacent legal grade, or a portable spa of no more than 600 gallons at any height | Zone Clearance (25.05.040(B)(2)(t)) plus building permit; check the stacking triggers in §1 |
+| Pool or spa more than 3 ft above adjacent legal grade | Design Review (25.05.040(B)(1)(j)): DRB for single-/two-family, Planning Commission otherwise (25.05.040(F)(1)) |
 | Height above adjacent legal grade unknown | Route undetermined. Establish the height from the plans before naming a route |
+| Any pool/spa | Siting check: not in the required front yard, 5 ft from side and rear lines (25.50.016, §1b) |
 | Pool/spa on oceanfront or bluff lot | Bluff edge determination/geotech + 25-ft pool/spa bluff setback |
 | Pool/spa in coastal zone | CDP exemption analysis; do not assume exemption |
 | Pool/spa on ungraded lot, bluff, floodplain, steep hillside, liquefaction zone | Geotechnical report required or likely required |
@@ -164,15 +166,26 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 #### 1. Design Review Routing
 
-Use the city zoning plan-check table and LBMC Section 25.05.040:
+Urgency Ordinance No. 1732 (effective 2026-07-22) routes the pool or spa **structure** by its height above the adjacent, legal ground elevation. The City's intake matrix (zoning plan-check table) still prints built-in pool/spa = DRB/Planning Commission and pre-fab spa = Administrative Design Review. The ordinance governs; give the ordinance route, name the matrix conflict, and say "confirm with Planning at pre-application". Source: a CrossBeam reference that is not included in this plugin and `dr-tier-b2-zone-clearance.md`.
 
-- **Structure more than 3 feet above adjacent legal ground elevation:** Design Review Board / Planning Commission under LBMC §25.05.040(B)(1)(j), using the one Design Review Application.
-- **Structure no more than 3 feet, or a portable spa of no more than 600 gallons:** Zone Clearance under §25.05.040(B)(2)(t) and §25.05.045. The current official Zone Clearance form requires online submission; read `../../references/planning-routing.md` for the portal route. Do not promise an appointment-only process.
-- **Height unknown:** the route is undetermined. Do not assume Design Review or Zone Clearance.
-- **Environmentally sensitive area:** an otherwise lower-tier item goes to Design Review under (B)(1) unless a licensed professional determines, subject to peer review, that it does not impact the ESA.
-- The former swimming pool, spa, and water-feature design criteria are not current §25.05.040(H) criteria under Ord. 1732. Equipment noise is handled by the §7.25.130(C) test below; geology is handled by the geotechnical triggers in check 3.
+- **Zone Clearance — LBMC 25.05.040(B)(2)(t):** "Portable and in-ground swimming pools and spas no more than 3 feet above adjacent, legal ground elevation, and portable spas that do not exceed 600 gallons."
+- **Design Review — LBMC 25.05.040(B)(1)(j):** "Portable and in-ground swimming pools and spas more than 3 feet above adjacent, legal ground elevation, except for portable spas that do not exceed 600 gallons." The DRB hears single-family and two-family projects; the Planning Commission hears all others (25.05.040(F)(1)).
+- **Water features** are Zone Clearance (25.05.040(B)(2)(u)).
 
-Route the pool or spa **structure** and the pool/spa **equipment** separately. The six-part test below governs equipment only. It does not change the structure route above.
+A pool that passes the 3-ft test can still land in Design Review or Administrative Design Review through another item on the closed lists. Check each one:
+
+- environmentally sensitive area, including slopes of 30% or more, without a peer-reviewed no-impact finding → Design Review (25.05.040(B)(1)(e), (B)(2));
+- grading of more than 20 cubic yards outside the building footprint → Design Review (25.05.040(B)(1)(f)). The item excepts 22.10.010(e), and Ord. 1732 § 54 added 22.10.010(e)(6): "Backfill for a swimming pool if authorized by a valid building permit" needs no grading permit, so pool backfill under the pool building permit does not count. Other site grading still counts. 22.10.010(e)(2) also exempts "An excavation for a swimming pool if authorized by a valid building permit or valid swimming pool permit", so on the plain text the pool dig does not count either. No City record rules on it directly: confirm with Planning at pre-application;
+- retaining walls more than 5 ft in exposed height → Design Review (25.05.040(B)(1)(g));
+- pool decks, slabs, terraces or patios more than 3 ft above adjacent legal grade → Administrative Design Review, always with a hearing (25.05.040(B)(3)(a)(iii), (B)(3)(b));
+- a pool that is part of a new building or major remodel rides with that Design Review (25.05.040(B)(1)(a)-(b));
+- the Director may refer a Zone Clearance project to the DRB or Planning Commission (25.05.040(A)(2)(d)).
+
+A Coastal Development Permit may still be required (25.05.040(A)(2)(e); see §4). Ord. 1732 is local law not yet certified by the Coastal Commission; in the Coastal Zone, confirm the route with Planning at pre-application.
+
+When a pool does go to Design Review, the reviewer applies the 11 criteria in 25.05.040(H) (for example environmental context, landscaping, privacy, view equity). The former pool-specific criterion (geology, equipment noise, compatible fencing) was not carried into Ord. 1732. Equipment noise is handled by the LBMC 7.25.040 limits and the §1a test below.
+
+Route the pool or spa **structure** and the pool/spa **equipment** separately. The six-part test below governs equipment only. It does not change the 3-ft structure routing above.
 
 #### 1a. Pool/Spa Equipment — LBMC Section 7.25.130(C) Six-Part Test (effective 2026-08-20)
 
@@ -198,6 +211,15 @@ The side yard is still a zoning check: pool equipment may not be in a required s
 Exception: Section 25.05.040(B)(2) bars the Zone Clearance process for listed projects in an environmentally sensitive area, unless a licensed professional determines, subject to peer review, that the development does not impact the ESA. Those go to Design Review under Section 25.05.040(B)(1).
 
 Section 7.25.130(A) applies to pool/spa equipment permits regardless of routing: the installation contractor must sign an acknowledgment that the installation will meet the Section 7.25.040 noise limits before the permit is issued.
+
+#### 1b. Pool/Spa Siting — LBMC 25.50.016
+
+Verbatim (codified text; Ord. 1732 did not amend 25.50.016, it amended only 25.50.012(B)(6) in this chapter): "A swimming pool or spa and its accessory equipment shall not be located in the required front yard, nor closer than five feet from any side or required rear property line, except that on lots having a slope of twenty-five percent or greater over the rear one-half of such lots, the swimming pool or spa itself may be permitted to within ten feet of the front property line."
+
+- Measure from the plan: the pool or spa water's edge and the equipment pad to each side and rear property line (5 ft minimum), and confirm neither sits in the zone's required front yard.
+- The front-yard exception covers only the pool or spa itself, not the equipment, and only where the rear half of the lot slopes 25% or more; it then allows the pool or spa to within 10 ft of the front property line. Ask for the slope calculation on the rear half.
+- The equipment also has to meet 7.25.130(C) parts 2 and 3 (§1a).
+- A siting that does not meet 25.50.016 does not conform as designed. Report it as a correction (move the pool or equipment) and name the variance route (25.05.025) as the alternative; Design Review cannot waive it.
 
 #### 2. Oceanfront Bluff Setback
 
@@ -240,8 +262,9 @@ Pool projects can affect defensible space, vegetation, fuel modification, and fi
 
 | ID | Check | Pass Criteria |
 |---|---|---|
-| LB-POOL-1 | Design review route | Pool/spa structure routed by height above adjacent legal grade — more than 3 ft → Design Review under (B)(1)(j); no more than 3 ft, or a portable spa of no more than 600 gallons → Zone Clearance under (B)(2)(t); pool/spa equipment routed by the Section 7.25.130(C) six-part test (effective 2026-08-20) — pass all six → Zone Clearance with no Design Review, fail any part → Administrative Design Review per Section 25.05.040(B)(3)(a)(v) |
+| LB-POOL-1 | Design review route | Pool/spa structure routed by the Ord. 1732 3-ft test: no more than 3 ft above adjacent legal grade (or portable spa of 600 gallons or less) → Zone Clearance per 25.05.040(B)(2)(t); more than 3 ft → Design Review per 25.05.040(B)(1)(j); stacking triggers (ESA, grading over 20 cy, retaining wall over 5 ft, deck over 3 ft) checked separately; pool/spa equipment routed by the Section 7.25.130(C) six-part test (effective 2026-08-20) — pass all six → Zone Clearance with no Design Review, fail any part → Administrative Design Review per Section 25.05.040(B)(3)(a)(v) |
 | LB-POOL-2 | Equipment six-part test and design criteria | All six Section 7.25.130(C) parts checked by name, including the two sound attenuation techniques (part 4) and the 3-ft path of travel (part 6); contractor noise acknowledgment per Section 7.25.130(A) on file. Equipment that fails any part is routed to Administrative Design Review; geology is checked under the geotechnical triggers (check 3) |
+| LB-POOL-2a | Pool/spa siting | Pool, spa and equipment outside the required front yard and at least 5 ft from side and required rear property lines; front exception (pool/spa only, to within 10 ft of the front line) only with 25%+ slope over the rear half of the lot (25.50.016) |
 | LB-POOL-3 | Bluff setback | Oceanfront/bluff pools and spas at least 25 ft from top of bluff with bluff edge established |
 | LB-POOL-4 | Geotech report | Required city geotech triggers checked and report included where required |
 | LB-POOL-5 | Coastal/CDP | Section 25.07.008 SFR pool exemption and exceptions documented |

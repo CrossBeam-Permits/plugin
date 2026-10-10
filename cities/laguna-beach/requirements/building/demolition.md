@@ -39,7 +39,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - id: `laguna_demo_utility_meter_removal_notice`
 - Scopes: Standalone demolition permit
 - What the City asks for: Accept written notice from the gas and electric utilities that meter removal is scheduled or complete. The page also expressly accepts evidence that the applicant notified both utilities; the notice does not have to be a utility-issued confirmation.
-- Source: City of Laguna Beach Building Division staff guidance
+- Source: "a notification to utility companies will suffice" per City building staff on 2025-08-27
 - Note: Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division.
 
 ### Replacement construction submittal or Building Official demo-only approval on file

@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Standards Code (Title 24, Parts 2, 2.5, 3, 4, 5, 6, 9, 11); LBMC Title 14, 15, 25; 2025 CBC/CRC; Gov. Code §65915 et seq.; 6th-cycle Housing Element"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-07-22"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -132,7 +132,9 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 > Laguna Beach's local layer for this permit. It adds to or overrides California law, which comes from the CrossBeam connector. Paths are relative to this file.
 
-> **Volume context.** Multi-unit residential is RARE in Laguna Beach (<5 ground-up R-3 permits/year expected; city is built-out, predominantly VHFHSZ, almost entirely in the Coastal Zone, 394-unit 6th-cycle RHNA met primarily via rezones of church/hospital surface lots plus one active condo expansion at Pyne Castle, 770 Hillcrest Dr). This skill is **deliberately lean** and optimizes for the paths actually used: (a) ADU additions to existing multi-family under Ch. 25.17(D)(3); (b) condominium conversions under Ch. 25.47/§25.07.008(A)(2)(c); (c) Downtown Specific Plan upper-floor mixed-use; (d) state-preempted streamlined paths. Ground-up R-3 is covered at the basics only.
+> **Volume context.** Multi-unit residential is RARE in Laguna Beach (<5 ground-up R-3 permits/year expected; city is built-out, predominantly VHFHSZ, almost entirely in the Coastal Zone, 394-unit 6th-cycle RHNA met primarily via rezones of church/hospital surface lots plus one active condo expansion at Pyne Castle, 770 Hillcrest Dr). This skill is **deliberately lean** and optimizes for the paths actually used: (a) homes added to commercial buildings in the commercial zones, which Ord. 1712 (2025) made a permitted use in C-N, C-1, SLV and LBP; (b) ADU additions to existing multi-family under Urgency Ord. 1713 (LBMC 25.17.010(d)(1)-(2)); (c) condominium conversions under Ch. 25.47/§25.07.008(A)(2)(c); (d) Downtown Specific Plan upper-floor mixed-use; (e) state-preempted streamlined paths. Ground-up R-3 is covered at the basics only.
+
+> **Zone standards differ.** The R-3 numbers below (1 du / 2,000 sf, 30-35 ft) are Ch. 25.14 rules. They do not apply in commercial zones. Example: C-N allows 30 ft and two floors (§25.19.008(E)(2)) and has no residential density limit after Ord. 1712. The only citywide height rule is the §25.51.010 ceiling: "Notwithstanding any section to the contrary, no building shall exceed thirty-six feet in height." Zone limits are usually lower.
 
 ---
 
@@ -142,10 +144,11 @@ These determine which path the skill takes. Run them in order; first match wins.
 
 | Check | Route to |
 |-------|----------|
-| **Is this actually an ADU addition to a multi-family lot?** (Project narrative says "add 1-2 units to existing apartment/condo lot," <=25% of existing unit count, or <=2 detached at 18 ft / 4 ft setbacks.) | **STOP — route to `../adu/SKILL.md` skill**. Ch. 25.17(D)(3) is the controlling chapter, not Ch. 25.14. Multi-unit precheck does not apply. |
+| **Is this in the Downtown Specific Plan (DSP) boundary with residential over commercial?** (Site facts zone CBD-1, CBD-2, CBD-V, CBD-O, CBDCB or CA.) | Load `references/dsp-mixed-use.md` for use permission, density, height and parking. DSP rules govern, NOT Title 25 R-3 or the Ord. 1712 commercial-zone rules. For the CDP, Design Review and building-permit steps, also load `references/mixed-use-conversion.md`. |
+| **Does the project add dwelling units to an existing commercial or mixed-use building, or build residential over commercial, in a commercial or industrial zone?** (Office-to-apartment conversion, upper-floor units over shops, "add homes to my commercial building"; zones C-N, C-1, SLV, LBP, CH-M, M-1A, M-1B.) | Load `references/mixed-use-conversion.md` (law: use permission by zone, density, nonconforming buildings, parking, 25.96.030 exceptions, permit stack). Add `references/laguna-practice-mixed-use.md` when the question is how the City has handled these cases, and `references/submittal-kit-office-to-residential.md` when the question is what to file. A building with no existing dwelling units is never an ADU project. |
+| **Is this actually an ADU addition to a multi-family lot?** (Project narrative says "add 1-2 units to existing apartment/condo lot," <=25% of existing unit count, or <=2 detached at 18 ft / 4 ft setbacks.) | **STOP — route to `../adu/SKILL.md` skill**. Chapter 25.17 (Urgency Ord. 1713: 25.17.010(d)(2)(C)-(D) without a CDP, or (d)(1) with a CDP in the coastal zone, plus 25.17.020) is the controlling chapter, not Ch. 25.14. Multi-unit precheck does not apply. Requires existing multifamily dwellings on the lot. |
 | **Is this a condominium conversion of existing apartments?** (No physical new units; tenure change only, or tenure change + interior reconfiguration.) | Load `references/condo-conversion.md`. Ch. 25.47 process + **CDP always required** per §25.07.008(A)(2)(c). |
-| **Is this in the Downtown Specific Plan (DSP) boundary with residential over commercial?** | Load `references/dsp-mixed-use.md`. DSP density rules govern, NOT Title 25 R-3. |
-| **Is the applicant invoking a state-preempted streamlined path?** (SB 9 / SB 35 / SB 423 / AB 2011 / Density Bonus Law / AB 1287 stacked bonus / Ch. 25.96 inclusionary.) | Load `references/state-preemption.md`. State law overrides Laguna's local restrictions (including the 36 ft height cap) for qualifying projects. |
+| **Is the applicant invoking a state-preempted streamlined path?** (SB 9 / SB 35 / SB 423 / AB 2011 / AB 507 office conversion / Density Bonus Law / AB 1287 stacked bonus / Ch. 25.96 inclusionary.) | Load `references/state-preemption.md`. State law overrides Laguna's local restrictions (including zone height limits and the §25.51.010 36 ft ceiling) for qualifying projects. For a commercial building, `references/mixed-use-conversion.md` lists when each state path fits. |
 | **Ground-up new R-3 (3+ units) on an R-3 / R-2 parcel?** | Load `references/zoning-r2-r3-envelope.md` + the full overlay stack (Planning Commission Design Review + CDP + WUI + sprinklers + hillside). |
 
 ---
@@ -154,34 +157,46 @@ These determine which path the skill takes. Run them in order; first match wins.
 
 | Item | Laguna Beach rule | State baseline | Delta |
 |------|-------------------|----------------|-------|
-| **Primary multi-family zone** | R-3 Residential High Density (Ch. 25.14); R-2 (Ch. 25.12) two-family | No state zone | City-specific |
-| **R-3 density** | **1 dwelling unit / 2,000 sf net lot area** (Ch. 25.14); historic-preservation bonus to 1 du / 1,000 sf available via Ch. 25.96 | No state density limit | City-specific |
-| **Height** | **36 ft citywide cap** (LBMC §25.51.010); applies to ALL zones, no by-right exceptions absent state-preempted density bonus relief | None | **City cap** |
+| **Primary multi-family zone** | R-3 Residential High Density (Ch. 25.14); R-2 (Ch. 25.12) two-family. Homes in commercial buildings follow the commercial zone chapter instead (see `references/mixed-use-conversion.md`). | No state zone | City-specific |
+| **R-3 density (R-3 only)** | **1 dwelling unit / 2,000 sf net lot area** (§25.14.008(B)(1)). Commercial zones differ: C-N, C-1 and SLV have no residential density limit after Ord. 1712; LBP keeps 1 du / 2,000 sf less one unit per 1,000 sf of commercial floor area (§25.18.002(Q)); CH-M uses R-3 density (§25.21.004(A)(5)). | No state density limit | City-specific |
+| **Height** | **Zone limit first.** R-3: 30 ft at 0-15% slope, rising to 35 ft at 20%+ (§25.14.008(D)(1)), plus rear-lot/through-lot planes (§25.14.008(D)(2)). C-N: 30 ft and two floors (§25.19.008(E)(2)). C-1, LBP, CH-M: 36 ft. SLV: two stories / 22 ft excluding roof / 30 ft. DSP: 12 ft and one floor (General Development Standard E). **Citywide ceiling:** no building over 36 ft (§25.51.010), absent state-law relief. | None | **City caps** |
 | **Front yard (R-3)** | >=20 ft | None | City-specific |
 | **Side/rear setbacks, open space** | §25.14.008(C): 20 ft front; side = 10% avg lot width (max 12 ft, min 4 ft); 10 ft rear; open space per §25.50.010 plus 50 sf per attached du/guest house/guest room. See `references/zoning-r2-r3-envelope.md`. | None | City-specific |
 | **Planning route** | A new building requires Design Review under current §25.05.040(B)(1)(b); apply §25.05.040(F) for the proper authority. Other scopes must match the current closed lists. DR mailed notice, staking, posting and appeal deadlines are in `../city-reference/SKILL.md` §"Design Review / Zone Clearance". | None | City-specific |
 | **Coastal Development Permit (CDP)** | Required for almost every multi-unit project under Ch. 25.07.004. **§25.07.008(A)(2)(c) carves out condominium / stock cooperative conversions from the "improvements to existing structures" CDP exemption — they ALWAYS need a CDP.** Appealable area triggers Coastal Commission jurisdiction. | None | City-specific |
 | **VHFHSZ / WUI** | Ch. 14.70 with local amendments: Class A roof (§14.70.020), noncombustible/ignition-resistant exterior (§14.70.030), vinyl windows welded+reinforced (§14.70.035), **no plastic skylights — glass only** (§14.70.040), vent openings <=144 sq in (§14.70.025), defensible space (§14.70.060), fuel modification plans (§14.70.070) | CBC Ch. 7A / CRC R327 ignition-resistant in FHSZ | **More restrictive** |
-| **Sprinklers — new R-2/R-3 multi-family (CBC track, 3+ units)** | **NFPA 13R baseline per CBC §903.3.1.2.** Laguna does NOT override 13R to 13D for multi-family. The Ch. 14.52.030 local amendment targets CRC R309.2 — that's the 1- and 2-family stack (and CRC-track townhomes), not 3+ unit R-2/R-3. **Confirm hydraulic design and LBFD review with the Building Official (CBO).** | CBC 903.3.1.2 (13R) | **Conforming (no override)** |
+| **Sprinklers — new R-2/R-3 multi-family (CBC track, 3+ units)** | **NFPA 13R baseline per CBC §903.3.1.2.** Laguna does NOT override 13R to 13D for multi-family. The Ch. 14.52.030 local amendment targets CRC R309.2 — that's the 1- and 2-family stack (and CRC-track townhomes), not 3+ unit R-2/R-3. **Confirm hydraulic design and LBFD review with the Building Official.** | CBC 903.3.1.2 (13R) | **Conforming (no override)** |
 | **Sprinkler retrofit — existing R-2/R-3 multi-family** | Run both applicable city frameworks: **Title 15 §1103.5.4** (scope: alteration >=50%, exterior work >=50%, or added story; fire-resistant-siding-only exception) and **LBMC §14.50.104/CBC §903.6(1),(5)** (Group R valuation >=50% over any three-year period, or a Building Official substantial-renovation finding). | None | **City retrofit triggers** |
-| **Multi-family parking ratio** | Ch. 25.52 (§25.52.012 sub-section) | None |  |
+| **Multi-family parking ratio** | §25.52.012(G) "Dwelling, multi-family": "1 1/2 spaces for every studio or 1-bedroom unit; 2 spaces for every unit with 2 or more bedrooms and 1 additional guest space for 4 units and every 4 thereafter. At least 50% of the spaces must be covered." Covered spaces are not required for multifamily in commercial zones with non-residential use on the same site (same row, Exception (1)). **In C-N, C-1 and SLV the zone text sets its own unit rate** (0.5 or 1 per unit) — see `references/mixed-use-conversion.md`. | None | City-specific |
 | **Tandem parking** | §25.52.008(D) — only allowed for required residential spaces with DRB approval for SFR/two-family; **multi-family tandem not by-right** | None | City-specific |
 | **Density Bonus parking override** | Gov. Code §65915(p): 0.5/studio, 1/1BR, 1.5/2-3BR, 2.5/4+BR for qualifying affordable projects — **preempts Laguna's local ratios** | None | State preempt |
 | **Coastal Zone parking** | Cannot drop below replacement minimum per Ch. 25.07 coastal access policy | None | City-specific |
 | **Hillside / bluff** | Most R-3 parcels are hillside or coastal-bluff. Geotechnical report required; bluff-edge determinations on bluff-top sites; structural calcs must reconcile geotech with CBC Ch. 16 (Risk Cat II, SDC D, Site Class per geotech); SWPPP for pads >50 cy | None | City-specific |
-| **Heritage Committee** | Required for buildings >=50 years old. Many R-3 buildings in Laguna are 1950s-70s vintage — automatic trigger. | None | City-specific |
+| **Heritage Committee** | Required before Design Review or Administrative Design Review of work on a "historic resource" (§25.45.004 as amended by Ord. 1732: city register, California or National Register listed or determined eligible, or one the City must treat as historic) and before demolition of one (§§25.45.010, 25.45.014). Building age alone is not a code trigger; staff may ask for a historic resource assessment of an older building (UNSETTLED; confirm with Planning at pre-application). | None | City-specific |
 | **Fire agency** | **LBFD (Laguna Beach Fire Department)** — NOT OCFA. Own department. Title 15 fire-flow, hydrant flow, fire access | None | City-specific |
 | **Roof class** | Class A on ALL roofs and re-roofs citywide (§14.70.020 — VHFHSZ overlay applies citywide for practical purposes) | CBC Table 1505.1 allows Class B/C in some configurations | **More restrictive** |
-| **Construction hours** | Mon-Fri 7:00 AM - 6:00 PM; Sat 8:00 AM - 5:00 PM; Sun + federal holidays PROHIBITED | None | **More restrictive than neighbors** |
+| **Construction hours** | Weekdays 7:30 AM - 6:00 PM only; Saturday, Sunday and federal holidays PROHIBITED (§7.25.080) | None | **More restrictive than neighbors** |
 | **Permit portal** | Tyler EnerGov CivicAccess — lagunabeachca-energovweb.tylerhost.net/apps/SelfService | None | City-specific |
 
 ---
 
 ### Decision Tree
 
-#### Step 2 — Run the Five Critical First Checks (top of this file)
+#### Step 2 — Run the Critical First Checks (top of this file)
 
 The most likely scenarios route OUT of this skill or to a narrow reference. Run those checks first before applying the citywide baseline.
+
+**Homes in a commercial building** (office-to-residential, residential over commercial):
+
+| Question | Load |
+|---|---|
+| Is the use allowed here, how many units, what height/stories, what parking, what about the existing nonconforming building, which permits? | `references/mixed-use-conversion.md` |
+| How did the City treat similar cases (records, outcomes, what staff asked for)? | `references/laguna-practice-mixed-use.md` |
+| What exactly do I file with Planning, and which plan sheets? | `references/submittal-kit-office-to-residential.md` |
+| Is the site in the Downtown Specific Plan? | `references/dsp-mixed-use.md` (replaces the use/density/height parts of `references/mixed-use-conversion.md`) |
+| Does a state law (AB 507, AB 2011, SB 6, SB 330/HAA, Density Bonus) offer a better path? | the "State alternatives" table in `references/mixed-use-conversion.md`, then `references/state-preemption.md`. State rules: `california-adaptive-reuse` (AB 507), `california-commercial-corridor-housing` (AB 2011; SB 6 in `references/sb6.md`) |
+
+For these projects skip Step 5 (R-3 envelope). Steps 3, 4, 6 and 8 still apply through the shared references; `references/mixed-use-conversion.md` states the commercial-building deltas.
 
 #### Step 3 — Apply Current Design Review Routing
 
@@ -193,7 +208,7 @@ Use `../residential-remodel/references/city-design-review-tiers.md` (shared) for
 - Appeals: 14 calendar days to City Council (§25.05.070(B)(2)).
 - Pre-DRB submittal: massing study, story poles where required, materials/color board.
 - Findings: both current §25.05.040(I) findings, applying the 11 criteria in §25.05.040(H).
-- Fire Department review required **before** design-review action for new construction.
+- Fire Safety Standards Review **before** design-review action for new construction and major remodels: the Fire Department or Building Division, as applicable (§25.05.040(C)(4)).
 
 #### Step 4 — Apply CDP Routing
 
@@ -210,10 +225,10 @@ Use `../residential-remodel/references/city-cdp-coastal-zone.md` (shared) for fu
 
 Load `references/zoning-r2-r3-envelope.md`.
 
-Minimum checks for ground-up R-3:
+Minimum checks for ground-up R-3 (Ch. 25.14 only; commercial zones use `references/mixed-use-conversion.md`):
 
-- Lot area >= density / unit count math (1 du / 2,000 sf net lot area; or 1 du / 1,000 sf with historic-preservation bonus under Ch. 25.96).
-- Height <= **36 ft per §25.51.010** (citywide cap; no by-right exceptions absent state-preempted density bonus).
+- Lot area >= density / unit count math (1 du / 2,000 sf net lot area per §25.14.008(B)(1); historic-preservation bonuses are zone-specific — confirm the governing section before applying one).
+- Height <= the R-3 slope table in §25.14.008(D)(1) (30 ft at 0-15% slope, up to 35 ft at 20%+) and the rear-lot/through-lot planes in §25.14.008(D)(2); never over the §25.51.010 36 ft ceiling absent state-law relief.
 - Front yard >= 20 ft.
 - Side/rear setbacks, open space per §25.14.008(C) — verified verbatim 2026-05-12.
 - Design Review compliance per Ch. 25.40 (baked into R-3 purpose statement).
@@ -241,20 +256,20 @@ Use `../residential-remodel/references/city-bluff-overlay.md` (shared). Multi-un
 
 #### Step 8 — Check Heritage Committee Trigger
 
-- Buildings >=50 years old: Heritage Committee review may be required (city historic register / California Register placement process).
-- Many R-3 buildings in Laguna are 1950s-70s vintage = automatic trigger.
-- If retaining any existing structure as part of the project, route through Heritage screening early.
+- Historic resource (§25.45.004): Heritage Committee recommendation before Administrative Design Review (B)(3)(a)(iv) or Design Review (B)(1)(d) of an alteration (§25.45.010), and before the design review authority acts on a demolition (§25.45.014, which also requires a CDP).
+- Age alone is not a code trigger. Many R-3 buildings are 1950s-70s vintage; staff may ask for a historic resource assessment (UNSETTLED; confirm with Planning at pre-application).
+- If retaining any existing structure as part of the project, check historic status early.
 
 #### Step 9 — State Preemption Cross-Check
 
-Load `references/state-preemption.md` if applicant invokes ANY state housing law. State preemption **overrides Laguna's local restrictions** — including the 36 ft height cap, density limits, parking ratios, and DRB discretion — for qualifying projects.
+Load `references/state-preemption.md` if applicant invokes ANY state housing law. State preemption **overrides Laguna's local restrictions** — including zone height limits, the §25.51.010 36 ft ceiling, density limits, parking ratios, and DRB discretion — for qualifying projects.
 
 Key paths:
 
 - **SB 35 / SB 423** (Gov. Code §65913.4) — Ministerial streamlining for qualifying mixed-income projects when city lags RHNA. Laguna has historically lagged. SB 423 narrowed Coastal Zone exemption — some Coastal Zone parcels are now eligible.
-- **AB 2011** (Gov. Code §65912.100-65912.139) — Ministerial approval for 100% affordable on commercial corridors, and mixed-income on commercial corridors. Pairs with DSP Phase II direction.
+- **AB 2011** (Gov. Code §65912.100-65912.139) — Ministerial approval for 100% affordable on commercial corridors, and mixed-income on commercial corridors. The 2025 Housing Element progress report counts 0 units under AB 2011 / SB 6 (City record; see `references/laguna-practice-mixed-use.md`).
 - **AB 1287** (effective Jan 1 2024) — Stacked density bonus, up to 100% bonus for very-low + moderate-income projects. Layers on top of Ch. 25.96.
-- **Density Bonus Law** (Gov. Code §65915) — Codified in Laguna at Ch. 25.96. Forces concessions, parking reductions, waiver of development standards (including the 36 ft cap) when no feasibility-justified denial is supported.
+- **Density Bonus Law** (Gov. Code §65915) — Codified in Laguna at Ch. 25.96. Forces concessions, parking reductions, waiver of development standards (including zone height limits and the §25.51.010 ceiling) when no feasibility-justified denial is supported.
 - **SB 9** (Gov. Code §66411.7) — Codified at Ch. 25.95 with restrictive Laguna posture (1,000 sf cap, 16 ft height, 3-year owner-occupancy, no rooftop decks). SB 9 is an R-1 pathway but can produce duplex/4-plex outcomes that flow through this skill.
 
 #### Step 10 — Verify Submittal Package
@@ -273,6 +288,8 @@ For ground-up multi-unit:
 
 For condo conversions: use `references/condo-conversion.md` — Ch. 25.47 process + tenant noticing + parking compliance + **CDP always required**.
 
+For homes added to a commercial building: use `references/submittal-kit-office-to-residential.md` — one set of Planning applications for all units, plan set built to the "New Multi-family (2+ units)" matrix row (row choice UNSETTLED), then one Mixed Use building permit.
+
 ---
 
 ### Output Format
@@ -281,11 +298,11 @@ Every Laguna Beach multi-unit residential review should include these city findi
 
 ```markdown
 ## Laguna Beach City Overlay — Multi-Unit Residential
-**Routing check:** Ground-up R-3 | ADU-to-MF (routed to ADU skill) | Condo conversion | DSP mixed-use | State-preempted streamlined
+**Routing check:** Ground-up R-3 | Homes added to commercial building (zone + use-permission section) | ADU-to-MF (routed to ADU skill) | Condo conversion | DSP mixed-use | State-preempted streamlined
 **Planning route:** Design Review | Zone Clearance | ADR | state-preempted route; include exact current category and staking if applicable
-**Coastal/CDP:** Required (always for condo conversions) | Standard CDP | Appealable area | Admin CDP | De minimis waiver
-**R-3 zoning:** PASS | FAIL | FLAG (density, 36 ft height, setbacks, coverage, open space)
-**Parking:** PASS | FAIL | FLAG (multi-family ratio, guest parking, density-bonus override applied)
+**Coastal/CDP:** Required (always for condo conversions; always when units are added, §25.07.008(A)(2)(b)) | Standard CDP | Appealable area | Admin CDP | De minimis waiver
+**Zoning envelope:** PASS | FAIL | FLAG (R-3: density, slope-table height, setbacks, open space; commercial zone: use permission, zone height/stories, nonconforming status, open space)
+**Parking:** PASS | FAIL | FLAG (multi-family ratio or commercial-zone unit rate, guest parking, change-of-use credit, density-bonus override applied)
 **Sprinklers/LBFD:** PASS | FAIL | FLAG (NFPA 13R for new MF; Title 15 §1103.5.4 plus LBMC §14.50.104/CBC §903.6 retrofit checks for alterations)
 **WUI/fuel modification:** PASS | FAIL | FLAG (Class A roof, ignition-resistant exterior, glass skylights, 144 sq in vents)
 **Hillside/bluff/geotech:** PASS | FAIL | FLAG | N/A
@@ -344,8 +361,11 @@ Load these on demand. Paths are relative to this file.
 **Laguna Beach rules**
 
 - `references/condo-conversion.md` — Laguna Beach Condominium Conversion (Ch. 25.47)
-- `references/dsp-mixed-use.md` — Laguna Beach Downtown Specific Plan — Mixed-Use Residential
+- `references/dsp-mixed-use.md` — Downtown Specific Plan — Housing over Commercial
+- `references/laguna-practice-mixed-use.md` — Laguna Beach Practice — Homes in Commercial Buildings
+- `references/mixed-use-conversion.md` — Adding Dwelling Units to a Commercial Building
 - `references/state-preemption.md` — State Housing Law Preemption — Laguna Beach Multi-Unit
+- `references/submittal-kit-office-to-residential.md` — Planning Submittal Kit — Adding Apartments to a Commercial Building
 - `references/zoning-r2-r3-envelope.md` — Laguna Beach R-2 / R-3 Zoning Envelope
 
 ---

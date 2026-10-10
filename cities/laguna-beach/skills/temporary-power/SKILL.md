@@ -191,9 +191,9 @@ Verbatim from §7.25.080(A)–(B): "No person ... shall operate any tool, equipm
 
 | When required | Pass criteria |
 |---------------|---------------|
-| Temp power pole, generator, or any conductor staged within the public ROW (sidewalk, parkway, curb cut, alley) | Separate Public Works Permit issued by PW Department in addition to the building/electrical permit. Traffic Control Plan Review ($155/page) if lane/sidewalk closure. Night work requires advance written justification approved by City Engineer. |
+| Temp power pole, generator, or any conductor staged within the public ROW (sidewalk, parkway, curb cut, alley) | Separate Public Works Permit issued by PW Department in addition to the building/electrical permit. Traffic Control Plan Review (per-page fee) if lane/sidewalk closure. Night work requires advance written justification approved by City Engineer. |
 
-Very common on tight Laguna lots where the pole stages on the sidewalk/parkway. Fee schedule: Utility Non-Excavation $160; Miscellaneous Permit 10% of first $2,000 + 1% above (min $250).
+Very common on tight Laguna lots where the pole stages on the sidewalk/parkway. Fees: Public Works encroachment permit fees (Utility Street Excavation "Non-Excavation", Miscellaneous Encroachment Permit, Traffic Control Plan Review) are in the FY 2026-27 Master Fee Schedule, Public Works section (the City source document (not included in this plugin)). The chat fee tool does not carry them; quote the current MFS row, never an older figure.
 
 ---
 

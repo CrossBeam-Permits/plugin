@@ -76,27 +76,45 @@ A reroof application that names a product but no color — or a color with no sa
 for issuance**, even when every state-code check passes. Say that plainly rather than passing the application.
 
 **Historic properties:** the handout warns that "Additional requirements may apply to historic properties"
-without stating them. Do not invent the extra review. The Heritage Committee / 50-year trigger lives in
+without stating them. Do not invent the extra review. The historic-resource trigger (register, state or national listing, or the 1981 inventory rating; not age, LBMC 25.45.004) lives in
 `../../city-reference/SKILL.md` §5 (Historic Resources) and
 `../../single-family-residential/references/heritage-historic-committee.md` (LBMC Ch. 25.45) — point there,
-and treat a Register-listed or 50+-year structure as a FLAG for Planning, not a Building-side determination.
+and treat a Register-listed or inventory-rated property as a FLAG for Planning, not a Building-side determination. A building's age alone is not a trigger.
 
 ---
 
 ## Conflict to watch: dark flat roofs vs. the state cool-roof standard
 
-Laguna Beach is **Title 24 Climate Zone 6** (`../../city-reference/SKILL.md`, Climatic and Geographic Design Criteria). Where
-the state cool-roof requirement in Energy Code §150.2(b)1I reaches the project — in CZ 6 that is
-**nonresidential low-slope** reroofs (see `cool-roof-energy.md` for the
-zone tables and exemptions) — the state asks for an aged solar reflectance of **0.63** (or SRI 75), and the
-reflectance/insulation trade-off table bottoms out around **0.45**. A dark brown / dark gray / black membrane
-is nowhere near either number.
+Laguna Beach is **Title 24 Climate Zone 6** (`../../city-reference/SKILL.md`, Climatic and Geographic Design Criteria). The
+state low-slope cool-roof rule reaches **houses**, not only commercial buildings:
 
-The City's color rule and the state energy standard therefore point in opposite directions on nonresidential
-low-slope work, and a local aesthetic standard cannot waive a Title 24 Part 6 requirement. **Do not resolve
-this in the review and do not assume either side yields.** FLAG it and ask the applicant for the specific
-compliance path they are using — an applicable §150.2(b)1I alteration exception, an insulation trade-off, or
-performance-path (whole-building) compliance documentation.
+- **Single-family house (including a flat-roofed house or a flat roof section):** Energy Code §150.2(b)1Iiia,
+  the residential alterations section. When more than 50 percent of the roof is replaced, new low-slope roofing
+  in CZ 6 needs an aged solar reflectance of **0.63** and thermal emittance of **0.75**, or **SRI 75**.
+- **Multifamily:** §180.2(b)1A, same values. **Nonresidential / hotel-motel:** §141.0(b)2B.
 
-Residential steep-slope reroofs in CZ 6 have no state cool-roof requirement, so the ordinary Laguna house
-reroof carries no such tension.
+Exceptions to §150.2(b)1Iiia: the Table 150.2-E insulation trade-off; roof area under building-integrated PV or
+solar thermal panels; roofs weighing at least 25 lb/ft². Full text and tables:
+`cool-roof-energy.md`.
+
+The City's rule for flat roofs (dark brown, dark gray or black; white, light tan and light gray "not acceptable")
+points the other way. A local color standard cannot waive Title 24 Part 6. **Both can be met:**
+
+1. **Insulation trade-off (Table 150.2-E, CZ 6–7 column).** With at least **R-10 continuous insulation at the
+   roof deck**, there is no reflectance requirement, so a dark membrane complies. Lower reflectance steps:
+   0.60 with R-2, 0.55 with R-4, 0.50 with R-6, 0.45 with R-8. This is the usual answer for a dark flat roof on
+   a house. Check that the added insulation keeps flashing heights at walls, parapets and rooftop equipment.
+2. **A dark product that meets the number.** Some dark-colored "cool" membranes and coatings may reach SRI 75 or
+   0.63 aged reflectance; verify the CRRC-rated values. Few dark products reach 0.63, so expect path 1.
+3. **Other exceptions:** roof area under BIPV panels, or a roof of at least 25 lb/ft².
+4. **Performance (CF1R) compliance** for the alteration is a fourth route.
+
+A reroof replacing 50 percent or less of the roof does not trigger §150.2(b)1I at all.
+
+**Review rule:** do not FAIL a dark flat roof on color, and do not FAIL it on reflectance alone. Ask which
+Title 24 path the applicant uses and check the CF2R/plans for it (insulation R-value at the roof deck, or the
+product's CRRC aged values). Whether the City would accept a light-colored but not white cool membrane on a house
+where the applicant refuses the trade-off is **UNSETTLED; confirm with Planning at pre-application**.
+
+Steep-slope reroofs in CZ 6 have no state cool-roof requirement (§150.2(b)1Ii lists CZ 4 and 8-15 only), so the
+ordinary pitched Laguna house reroof carries no such tension.

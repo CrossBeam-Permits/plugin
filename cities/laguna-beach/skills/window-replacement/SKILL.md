@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Title 24, Part 2 CBC, Part 2.5 CRC, Part 6 Energy, Part 7 WUI); Building Division OTC policies, Ch. 14.70 Wildland-Urban Interface Code, Ch. 14.52 Residential Code amendments, Title 25 Zoning (Design Review & Coastal Development)"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-07-22"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -126,7 +126,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 > Laguna Beach's local layer for this permit. It adds to or overrides the California checklist below. Paths are relative to this file.
 
-This skill covers Laguna Beach's city-specific window and door replacement requirements. **VHFHSZ status and the vinyl window amendments make Laguna Beach window replacements more complex than typical CA cities.**
+This skill covers Laguna Beach's city-specific window and door replacement requirements. **On parcels in a fire hazard severity zone (check the parcel in `lookup_property`), the WUI glazing rules and the vinyl window amendments make Laguna Beach window replacements more complex than typical CA cities.**
 
 **How this skill relates to state code**: The `california-window-replacement` skill covers CBC/CRC/Energy Code/WUI state requirements. This skill covers what Laguna Beach adds -- primarily the vinyl window WUI amendment, skylight restrictions, design review rules, coastal zone analysis, and OTC processing. **Load state code first**, then this skill.
 
@@ -148,7 +148,7 @@ This skill covers Laguna Beach's city-specific window and door replacement requi
 
 ### VHFHSZ Glazing Requirements
 
-Laguna Beach is predominantly Very High Fire Hazard Severity Zone (citywide coverage: `../city-reference/SKILL.md`). The state WUI Code (Section 504.8) requires multi-pane glazing with at least one tempered pane. Laguna Beach adds the following local amendments:
+Use the parcel's actual fire hazard severity zone from `lookup_property` (site facts). Do not assume it from a citywide share; many Laguna parcels are Very High, but not all (`../city-reference/SKILL.md`). Where the parcel is in a WUI area (LBMC 14.70.010, 101.2), the state WUI Code (Section 504.8) requires multi-pane glazing with at least one tempered pane, and Laguna Beach adds the following local amendments:
 
 #### Vinyl Window Amendment (Ch. 14.70.035 -- Section 504.8.3)
 
@@ -190,6 +190,7 @@ Window and door replacement is eligible for over-the-counter plan review:
 - **Qualified:** Window/door replacement in same openings or with minor structural mods
 - **OTC item:** the city reference OTC item 3 (window and door replacement with minor structural modifications) — hours and the full list live in `../city-reference/SKILL.md`
 - **Not OTC:** New openings requiring structural headers, or work that is part of a major remodel
+- **Where to file:** City practice is to take simple permits such as a like-for-like window replacement at the Building counter, not through the online portal (R26-1837; a CrossBeam reference that is not included in this plugin). Tell the applicant to bring it to the counter after Planning's Zone Clearance. Which other simple permits are counter-only is still an open City question.
 
 ---
 
@@ -201,10 +202,14 @@ Urgency Ordinance No. 1732 repealed the former window-specific exemption and nei
 - A non-major alteration/addition and an improvement no more than 15 ft ordinarily route to Zone Clearance under (B)(2)(a)-(b), unless another closed-list trigger or the ESA override applies.
 - Do not require neighbor consent as a statutory prerequisite or cite the repealed `(B)(2)(k)`, `(B)(2)(b)(iii)`, or `(B)(3)(a)(xi)(3)` provisions.
 - A skylight with an operable automatic night shade takes Zone Clearance under (B)(2)(s); without such a shade it takes ADR under (B)(3)(a)(xii).
+- **Historic resource:** replacing or modifying doors and windows is a minor alteration that takes Administrative Design Review under (B)(3)(a)(iv), after review against the Secretary of the Interior's Standards; the hearing cannot be waived for this item. Larger historic changes are Design Review under (B)(1)(d).
+- **Planning first:** Zone Clearance is required before Building issues the permit (§25.05.045(B)(3)), including for OTC change-outs.
+- **ESA** (includes slopes of 30% or greater): (B)(2) and (B)(3) are unavailable unless a licensed professional finds, subject to peer review, no impact; otherwise Design Review under (B)(1)(e).
+- The Director may refer a Zone Clearance or ADR window project up to the board (§25.05.040(A)(2)(d)).
 
-#### DRB Hearing Trigger
+#### Design Review Trigger
 
-If the overall project constitutes a major remodel, Design Review is required under §25.05.040(B)(1)(a). An improvement over 15 ft independently requires Design Review under (B)(1)(c).
+If the overall project constitutes a major remodel, Design Review is required under §25.05.040(B)(1)(a). An improvement over 15 ft independently requires Design Review under (B)(1)(c). The Design Review Board hears it for a single-family home or duplex; the Planning Commission hears it for 3+ units, nonresidential buildings, and anything in the Downtown Specific Plan area (§25.05.040(F)(1)(i)-(ii)).
 
 ---
 
@@ -222,6 +227,14 @@ A CDP may be required even for window replacement if the property is:
 
 **For standalone window replacement (no floor area or height change), CDP is typically NOT required** even in the Coastal Zone -- but FLAG if the property is within 50 feet of a bluff edge or in an environmentally sensitive area.
 
+#### Multi-unit, commercial and mixed-use buildings
+
+The single-family exemption (A)(1) does not apply. **Default: exempt.** Two exemptions fit window and door replacement on an apartment, condominium, commercial or mixed-use building:
+- §25.07.008(A)(2): "Improvements to an existing structure (including attached fixtures and landscaping) other than single-family dwellings or public works facilities are exempt unless classified under one of the following": (a) development described in (A)(1) through (6) or in a stream or lake; (b) a "change in the intensity of use"; (c) a condominium, stock cooperative or similar conversion; (d) significant landform alteration near a bluff or stream, in a highly scenic area or an ESA.
+- §25.07.008(A)(3): "Repair and maintenance activities that do not result in an addition to, or enlargement or expansion of, the object of such repair and maintenance activities" are exempt; its exceptions are shoreline works and work on sand, bluffs, ESAs or near coastal waters.
+
+So give the exemption as the answer, and test only the exceptions: items 1-3 under "When CDP IS Required" above, which reach these buildings through (A)(2)(a); a change in use intensity; a conversion. If none applies, the CDP step is the City's exemption record, not an administrative CDP. City practice: coastal-zone exterior projects routinely file a CDP exemption record. One older multi-unit window and door job took an administrative CDP (CDP-2023-1175, before Ord. 1732); give it only as a reason to confirm with Planning, not as the default.
+
 #### De Minimis Waiver (Section 25.07.009)
 
 If a CDP is technically required, the Director of Community Development may issue a **de minimis waiver** for window replacement if the development has no adverse effect on coastal resources and is not in an appeal area. This avoids the full CDP hearing process.
@@ -233,11 +246,11 @@ If a CDP is technically required, the Director of Community Development may issu
 **Two triggers, either one fires.** See `../residential-remodel/references/city-sprinkler-retrofit.md` — the single residential retrofit reference. Do not restate the rule here.
 
 - **Ch. 14.52.030** (valuation, Ord. 1725) — cumulative additions, alterations and repairs in any three-year period exceeding 50% of the pre-work valuation of the dwelling + attached garage.
-- **Title 15 §1103.5.4** (scope, Ord. 1726) — alteration of ≥50% of the building, OR work on ≥50% of the exterior, OR an added story.
+- **Title 15 §1103.5.4** (scope, Ord. 1726) — alteration of ≥50% of the building, OR an added story. Whether work on ≥50% of the exterior fires it by itself is UNSETTLED (two readings in the reference; confirm with Building and Fire at pre-application).
 
 **Window-specific notes.**
 - Window replacement alone is unlikely to fire either trigger. Cumulative history is what fires Ch. 14.52.030: if the owner permitted a kitchen remodel, bathroom remodel or re-roof in the past three years, the combined valuation may cross 50%. **Always ask whether other permitted work exists in the three-year window.** If the cumulative valuation approaches 50%, FLAG for sprinkler review.
-- For §1103.5.4 prong 2, window and door openings count toward the exterior tally even on same-opening change-outs, because the cladding around them is necessarily disturbed. Window work combined with a reside or reroof can reach 50% of the exterior.
+- If the exterior prong is tested, window and door openings count toward the exterior tally even on same-opening change-outs, because the cladding around them is disturbed. Window work combined with a reside or reroof can reach 50% of the exterior. That prong is UNSETTLED: when it alone decides the answer, give both readings and do not say sprinklers are required.
 - Do **not** substitute §14.50.104 / CBC §903.6 for Ch. 14.52.030 on a CRC-track house. Section 903.6 expressly covers CBC-track Group R, but Ch. 14.52.030 is the specific valuation rule here.
 
 ---
@@ -245,8 +258,8 @@ If a CDP is technically required, the Director of Community Development may issu
 ### Key Laguna Beach Window Replacement Facts
 
 - **OTC eligible:** Yes -- same/similar openings, minor structural mods
-- **Fenestration:** U-factor max 0.30, SHGC max 0.23 prescriptive for the City's Title 24 climate zone (see the city reference)
-- **VHFHSZ:** dual-pane with tempered required (state WUI 504.8)
+- **Fenestration energy:** state rule, not a city delta; apply it from the state skill. Laguna is Climate Zone 6 (ZIPs 92651, 92652). Replacement windows: U-factor 0.30 and SHGC 0.23 (Energy Code 150.2(b)1B, Table 150.1-A), or, for up to 75 sq ft of replaced vertical fenestration, U-factor 0.40 and SHGC 0.35 (Exception 1). Added window area uses Table 150.1-A (150.2(b)1A)
+- **Fire hazard zone:** parcel-specific. Use the parcel's fire hazard severity zone from `lookup_property`; WUI glazing (state WUI 504.8, dual-pane with a tempered pane) and the city amendments apply where the parcel is in a WUI area
 - **Vinyl windows:** Must have welded corners + metal reinforcing in interlock area (Ch. 14.70.035)
 - **Skylights:** Glass only -- no plastic (Ch. 14.70.040)
 - **Planning route:** in-kind replacements take Zone Clearance; other non-major work ordinarily takes Zone Clearance; the former neighbor-consent ADR split was repealed

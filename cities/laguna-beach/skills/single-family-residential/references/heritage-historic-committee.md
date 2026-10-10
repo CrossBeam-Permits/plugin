@@ -1,4 +1,4 @@
-# Laguna Beach - Heritage Committee Review (50+ Year Structures)
+# Laguna Beach - Heritage Committee Review (Historic Resources)
 
 Sources:
 
@@ -7,7 +7,7 @@ Sources:
 - City handout: `historic-assessment-submittal.pdf` (companion document for the historic assessment report itself)
 - Citywide reference: `../../city-reference/SKILL.md` (Heritage Committee row in permit decision matrix)
 
-Use this reference when a new SFR replaces, alters, or demolishes a structure 50 years or older on the same lot. The trigger is the **age of the existing structure**, not the construction value of the new SFR.
+Use this reference when a new SFR replaces, alters, or demolishes a structure on the same lot that is, or may be, a historic resource (§25.45.004). Law as of 2026-10-10.
 
 ---
 
@@ -17,7 +17,7 @@ Heritage Committee review is established under **LBMC Chapter 25.45 (Historic Pr
 
 - Alterations to historic structures and properties on the city's Historic Register.
 - Requests to add a structure to the Historic Register.
-- Demolition applications for structures 50 years or older.
+- Demolition applications for historic resources (§25.45.014).
 - Historic-assessment reports submitted as part of plan check.
 
 **Meeting schedule:** Heritage Committee usually meets the **3rd Monday of each month at 6:00 PM** in the City Council Chambers. Verify exact date and submittal deadline with city staff.
@@ -26,13 +26,16 @@ Heritage Committee review is established under **LBMC Chapter 25.45 (Historic Pr
 
 ## When Heritage Review Is Triggered for a New SFR
 
-A new SFR project triggers Heritage Committee review when:
+The code trigger is whether the existing structure is a **historic resource**, not its age. §25.45.004 (as amended by Ord. 1732) defines a historic resource as a property or structure that "(1) is listed on the City's historic register, (2) is listed on the California Register of Historical Resources, (3) has been officially determined to be eligible for the California Register ... (4) is listed on the National Register of Historic Places, (5) has been officially determined to be eligible for the National Register ... or (6) the City is mandated by law to treat as a historic resource based on substantial evidence in light of the whole record." The absence of a recorded preservation agreement is not, on its own, conclusive evidence that a property is not on the City register.
 
-1. **An existing structure 50 years or older is on the lot** and the new SFR will demolish, relocate, or substantially alter it; OR
-2. **The lot is already on the city's Historic Register** (alteration of any contributing structure or character-defining feature is in scope); OR
-3. **The Historical Assessment** submitted with the permit identifies the existing structure as historically or architecturally significant (regardless of age).
+A new SFR project triggers Heritage Committee review when it will demolish, relocate, or alter a historic resource on the lot:
 
-If none of those apply (i.e., the existing structure is under 50 years old and the lot is not Register-listed), Heritage Committee review is not required and this reference does not apply.
+1. **Demolition** follows §25.45.014: the department schedules the Heritage Committee within 30 days of a complete application; the design review authority acts after CEQA and the Committee's recommendation, at a public hearing; demolition "require[s] that the applicant obtain a Coastal Development Permit".
+2. **Alteration** follows §25.45.010: Administrative Design Review under §25.05.040(B)(3) for qualifying minor work, or Design Review under §25.05.040(B)(1)(d) for major modifications; the Heritage Committee reviews and recommends first either way.
+
+**Age alone.** No code section makes 50 years of age a trigger. Staff may still ask for a historic resource assessment for an older structure so they can decide item (6). UNSETTLED; confirm with Planning at pre-application.
+
+If the existing structure is not a historic resource and staff do not ask for an assessment, this reference does not apply.
 
 ---
 
@@ -51,7 +54,7 @@ The Heritage Committee review path runs in parallel with, and BEFORE, the demoli
 6. **Demolition permit** — only issued after the Heritage Committee has acted and any extended waiting period has expired.
 7. **Building permit for new SFR** — issued after demolition permit and after DRB approval.
 
-The new SFR review cannot short-circuit Heritage by demolishing the 50+ year structure under a separate demolition permit before the Heritage path closes. Run Heritage **before** demo.
+The new SFR review cannot short-circuit Heritage by demolishing a historic resource under a separate demolition permit before the Heritage path closes. Run Heritage **before** demo.
 
 ---
 
@@ -80,8 +83,8 @@ When Heritage review is triggered, add a row to the city overlay output:
 
 ```markdown
 **Heritage / Historic:** PASS | FAIL | FLAG | N/A
-- Existing structure age: [years]
-- Historic Register status: [Listed | Eligible | Not listed | Unknown]
+- Existing structure age: [years] (context only; not a code trigger)
+- Historic resource status (§25.45.004): [Listed | Eligible | Not listed | Unknown]
 - Heritage Committee review status: [Required - not yet scheduled | Pending | Cleared | N/A]
 - Demolition waiting-period extension: [None | Up to 180 days | Expired]
 ```
@@ -94,4 +97,4 @@ Cite **LBMC Ch. 25.45** (or the current re-codified section) and reference the h
 
 - `../../city-reference/SKILL.md` — Heritage row in citywide permit decision matrix.
 - `../../demolition/SKILL.md` — demo-permit-specific Heritage routing.
-- `../SKILL.md` — Step 2 (Planning Route) calls this reference when a 50+ year structure is on the lot.
+- `../SKILL.md` — Step 2 (Planning Route) calls this reference when a historic resource is on the lot.

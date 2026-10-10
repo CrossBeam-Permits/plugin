@@ -35,7 +35,7 @@ Laguna Beach uses DIFFERENT calculation methods depending on whether the propert
 - Run the calculation for each building or structure on the site on its own.
 - Do not add a garage or detached structure to the primary dwelling's totals.
 
-**How floors combine.** The October 2026 handout computes walls "on each floor". It does not state how the floor results combine. Compute each floor's percentage and the whole-structure total (all floors of that structure). Then:
+**How floors combine (UNSETTLED; confirm with Planning at pre-application).** The October 2026 handout computes walls "on each floor". It does not state how the floor results combine, and the City has not ruled on it. Compute each floor's percentage and the whole-structure total (all floors of that structure). Then:
 
 1. Every floor under 50% → the wall test is not met.
 2. At least one floor at 50% or more AND the whole-structure total at 50% or more → the wall test is met.
@@ -153,5 +153,5 @@ A "major remodel" triggers the same review requirements as new construction:
 4. In the appealable area: reinforcement counts as demolition; all three components measured
 5. In the non-appealable area: only removal counts; only exterior walls measured
 6. Cumulative additions to each structure since its Jan 13, 1993 baseline matter. Measure from the face of the structure; exclude an attached garage and other attached non-habitable area of the principal structure; count a detached garage's entire floor area
-7. ADU construction is always exempt from the calculation
+7. ADU construction is exempt from the calculation, except Coastal Act section 30253 work on bluff-top, beachfront and coastal-canyon lots (Ord. 1713, LBMC 25.17.020(d)(2)); FLAG those lots for Planning
 8. A major remodel ends legal, nonconforming status (and, for a principal structure, for its accessory structures and improvements)

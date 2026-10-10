@@ -1,7 +1,7 @@
 # Laguna Beach Sign Regulations (LBMC Chapter 25.54)
 
 Source: https://ecode360.com/42902015
-Scraped: 2026-03-14
+Scraped: 2026-03-14. Sections 25.54.010(D), 25.54.018 and 25.54.026 updated 2026-10-10 to the codified text (through 2026-04-28) as amended by Ord. 1732 §§ 47-49.
 
 ---
 
@@ -120,10 +120,17 @@ Signs shall not be placed or maintained in Laguna Beach unless they conform to t
 - External light sources shall be directed solely at the sign and shall not cast light on adjacent properties or roadways
 - No exposed incandescent light bulbs
 
-(3) **Sign Luminance Table:**
-- Daytime (sunrise to sunset): Max 5,000 cd/m2 (nit)
-- Nighttime (sunset to sunrise): Max 300 cd/m2 (nit)
-- Note: Illuminated signs must have automatic dimming controls to reduce brightness at sunset
+(3) **Luminance.** Verbatim from codified 25.54.010(C)(3) (corpus `ch25-54-sign-regulations.md`; Ord. 1732 did not amend it): "The maximum allowable lighting intensity shall be based on the following table:"
+
+| Range of Sign Luminance (Candelas/square foot) | Ambient Light Environment |
+|---|---|
+| 1 to 70 | LOW areas with no exterior lighting, other than street lighting. Such areas include, but are not limited to, most residential areas and the beaches. |
+| 71 to 100 | MEDIUM areas where signs are relatively isolated or areas adjacent to "Low" ambient light areas. |
+| 101 to 140 | HIGH areas such as the downtown, streets or parking areas that are highly lighted or areas with high sign competition. |
+
+"Illumination of signs shall be measured with a light meter using appropriate methodology that ensures accurate luminance readings. notwithstanding the above standards, the director of community development may order the dimming of any sign illumination determined to be excessively bright. Lighting fixtures used to illuminate signs from the front shall be mounted from the top of the sign structure."
+
+The code sets no day/night nit limits and does not require automatic dimming controls.
 
 ---
 
@@ -185,38 +192,28 @@ All signs not expressly permitted under this chapter or exempt from regulation a
 
 ## Section 25.54.018: General permit procedures
 
-(A) **Applications.** All applications for sign permits or master sign programs shall be submitted to the department of community development on an approved form. The sign permit application shall include scaled drawings showing dimensions, computation of sign area, location, height, sign copy, letter size, materials, colors and lighting elements for all existing and proposed signs on the site. Construction specifications shall be provided including electrical components, wiring, and method of attachment.
+Current text: codified 25.54.018 (the City source document (not included in this plugin), codified through 2026-04-28) as amended by Ord. 1732 § 48 (signed text pp. 74-75, effective 2026-07-22; not yet certified by the Coastal Commission).
 
-Master sign program applications shall include a complete set of coordinated, common sign standards including letter styles, sizes, colors, materials, location parameters, sign types and lighting methods.
+(A) **Applications.** Sign permit and master sign program applications go to Community Development on the City form, with scaled drawings (dimensions, sign area, location, height, copy, letter size, materials, colors, lighting) for all existing and proposed signs on the site, and construction specifications (electrical, attachment). Master sign programs add common standards and a plot plan.
 
-(B) **Fees.** Each application shall be accompanied by applicable fees as established by city council resolution.
+(B) **Fees.** Set by City Council resolution. Use the fee tool; do not quote an amount from memory.
 
-(C) **Approval Authority -- Planning Commission.** The planning commission shall approve, conditionally approve, or deny applications for:
-1. Master sign programs
-2. Signs requiring design review under the applicable current Section 25.05.040 route. The codified `(B)(1)(d)` cross-reference predates Ord. 1732 and is no longer a sign category; obtain Planning confirmation where no current closed-list category independently applies.
-3. Advertising signs
-4. Freestanding signs
-5. Tract/area identity signs
-6. Wall signs of unique design
-7. Blade or projecting signs
-8. City-sponsored signs or master sign programs in the public right-of-way
+(C) **Approval required.** "The modification of an existing sign or the construction, creation or installation of a new sign requiring a sign permit shall be subject to the review and approval of the approval authority." The approval authority is the Director for (E)-eligible signs, otherwise the Planning Commission (25.54.006).
 
-(D) **Design Standards:**
-1. Signs shall be incorporated into the architecture of the structure
-2. Signs shall be made of high quality materials, be simple in design, and visually compatible with the surrounding environment in terms of color, scale and size
-3. Use of natural materials in the construction of signs is encouraged
-4. Signs shall be designed using the least number and most effective and visually attractive signs possible
-5. Signs with standardized, universal or franchise design shall not be permitted (except logos constituting less than 20% of the sign area)
-6. **Luminous tube (neon) sign specifications:** Only in interior building locations 4+ ft from closest window; 3 sq ft max; may have only one color; may not flash, rotate, or be animated; tube diameter max 15 mm; must be safely mounted; content only: business name, product identification, or generic terms (no obscenities)
+(D) **Design criteria** considered in review: compatibility with the architecture, high-quality and natural materials (blade, projecting and suspended signs strongly encouraged), opaque canopies and awnings, font size proportional to sign size and location (smaller downtown), Downtown Specific Plan urban design guidelines in the DSP area, and luminous tube signs as one-of-a-kind artistic elements.
 
-(E) **Administrative Approval by Director.** Certain signs may be approved administratively by the Director of Community Development:
-1. Signs conforming with an approved master sign program
-2. Signs in conformance with Chapter 25.54 that do not require planning commission review
-3. Sign modifications that do not change the overall design character
+(E) **Signs eligible for administrative approval** (Director). Except for luminous tube signs. The Director may refer any of them to the Planning Commission. Eligible:
+1. Signs in compliance with an approved master sign program;
+2. Signs that meet all of: (a) all design standards in this chapter, including 25.54.010 and Tables 1 and 2; (b) total site signage within the maximum allowable sign area; (c) "The letter or font height must not exceed fourteen inches" (Ord. 1732 changed eight to fourteen);
+3. Temporary signs complying with 25.54.020 (not temporary signs or programs for City Council special events);
+4. "Replacement of signs previously authorized by a sign permit provided that the sign meets all applicable design standards" (added by Ord. 1732);
+5. "Signs that are not eligible for Administrative Approval shall be considered by the Planning Commission." (added by Ord. 1732)
 
-(F) **Sign Permit Term.** Sign permits shall be valid as long as the sign is properly maintained and the business for which it was approved continues to operate. A sign permit shall become void 6 months after issuance if the sign has not been installed.
+(F) **Appeals.** A person disagreeing with a determination of the Community Development Director or Planning Commission may appeal "in accordance with the appeal provisions in Section 25.05.070" (Ord. 1732 deleted the former ten-business-day sign appeal; 25.05.070 now sets 14 calendar days on the City form).
 
-(G) **Appeals.** Appeals of sign permit decisions are subject to the provisions of Section 25.05.070.
+(G) **Creativity encouraged.** "The Planning Commission may, at its discretion, grant permits for signs not otherwise in conformance with this chapter up to a twenty-five percent increase in allowable sign area or height, if it finds the sign design to be extraordinarily creative and significantly contributing to the charm and character of Laguna Beach."
+
+Master sign programs (25.54.010(D) as amended by Ord. 1732 § 47): required before sign permits for new office or shopping center construction, or substantial facade improvements, with four or more businesses; the **Planning Commission** may set conditions.
 
 ---
 
@@ -279,9 +276,9 @@ Master sign program applications shall include a complete set of coordinated, co
 
 ---
 
-## Section 25.54.026: Arts organizations
+## Section 25.54.026: Arts and cultural organizations
 
-(A) Recognized arts organizations (Festival of Arts, Sawdust Festival, Art-A-Fair, Laguna Playhouse, Laguna Art Museum, Laguna College of Art and Design) may apply for sign permits or sign programs, including facade changes, from the planning commission.
+(A) Public benefit non-profit arts **and cultural** organizations, "such as" the Festival of Arts, Sawdust Festival, Art-A-Fair, Laguna Playhouse, Laguna Art Museum and Laguna College of Art and Design, may apply for sign permits or sign programs, including facade changes, from the planning commission (Ord. 1732 § 49 retitled the section "Arts and cultural organizations" and replaced "specifically" with "such as").
 
 (B) The planning commission has complete discretion for size, design, maximum display term, and location regardless of other provisions of this chapter.
 
@@ -362,14 +359,11 @@ Master sign program applications shall include a complete set of coordinated, co
 
 ## Design Review Interaction After Ord. 1732
 
-Chapter 25.54's codified sign procedure still points to former §25.05.040(B)(1)(d), but Ord. 1732 repealed/replaced §25.05.040 and current `(B)(1)(d)` governs major historic-resource work. Current §25.05.040(H) also no longer contains the former Sign Quality criterion, and current `(B)(2)(q)` governs screened side-yard trash storage rather than approved sign programs.
+Ord. 1732 replaced §25.05.040. The current Design Review, Zone Clearance and Administrative Design Review lists have no sign item, and the 11 criteria in §25.05.040(H) no longer include the former Sign Quality criterion. Chapter 25.54 itself decides sign permits (25.54.018 above). Therefore:
 
-Therefore:
-
-- continue to apply Chapter 25.54's independent sign permit, sign-program, approval-authority, and design standards;
-- classify any physical improvement against the current §25.05.040 closed lists (including height, ESA, and Director-referral rules);
-- do not cite the superseded `(B)(1)(d)`, `(B)(2)(q)`, or former criterion (H)(13) as current law; and
-- where Chapter 25.54 appears to demand Design Review but no current §25.05.040 category matches, return `needs_source` and obtain Planning's interpretation of the broken cross-reference.
+- route a sign by 25.54.018(E): Director if eligible, Planning Commission otherwise;
+- a sign is Design Review only if the sign or its structure independently matches a §25.05.040(B)(1) item (for example any improvement over 15 ft, (B)(1)(c); historic-resource work, (B)(1)(d), or minor historic work, ADR (B)(3)(a)(iv)), or the Director refers it;
+- murals: 25.54.024 still applies the "design criteria ... and Section 25.05.040 for design review"; how that maps onto Ord. 1732's lists is **UNSETTLED; confirm with Planning**.
 
 ---
 
@@ -379,7 +373,7 @@ Therefore:
 
 - **Turnaround:** Same day (30-min appointment or walk-in)
 
-Note: This applies to straightforward commercial signs that meet all code requirements and do not require planning commission review (i.e., not master sign programs, advertising signs, freestanding signs, or signs requiring design review).
+Note: This applies to straightforward commercial signs that the Director can approve under 25.54.018(E) (conforming signs with letters 14 in or less, master-program signs, replacements of permitted signs). Signs that go to the Planning Commission under 25.54.018(E)(5) are not same-day.
 
 ---
 

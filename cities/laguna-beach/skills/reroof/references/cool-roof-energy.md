@@ -1,8 +1,8 @@
 ---
 title: "Cool Roof Energy Code Requirements"
 category: "Energy Code"
-relevance: "When reviewing commercial low-slope or residential steep-slope reroof in applicable climate zones"
-key_code_sections: "Energy Code 150.2(b)1I, Table 150.2-E, Table 150.2-F"
+relevance: "When reviewing a single-family reroof (steep-slope or low-slope) in applicable climate zones; multifamily and nonresidential use 180.2 and 141.0"
+key_code_sections: "Energy Code 150.2(b)1I, Table 150.2-E, Table 150.2-F; 180.2(b)1A; 141.0(b)2B"
 ---
 
 # Cool Roof Energy Code Requirements
@@ -16,7 +16,7 @@ Source: 2025 California Energy Code (Title 24, Part 6), Section 150.2(b)1I — R
 California's Energy Code requires minimum solar reflectance and thermal emittance values for roof coverings installed during reroof projects. The requirements vary by:
 - **Roof slope** (steep-slope vs. low-slope)
 - **Climate zone** (16 zones across California)
-- **Building type** (residential vs. nonresidential)
+- **Building type**: single-family (150.2), multifamily (180.2), nonresidential (141.0)
 
 Cool roofs reduce heat absorption, lower cooling energy demand, and mitigate urban heat islands.
 
@@ -53,18 +53,22 @@ Cool roof is NOT required if any of the following apply:
 
 ---
 
-## Low-Slope Roofs (Commercial / Nonresidential)
+## Low-Slope Roofs (Single-Family Residential, 150.2(b)1Iii)
 
-Applies to built-up, modified bitumen, single-ply, SPF, and other low-slope systems.
+Section 150.2 is the **single-family residential** alterations section. Its low-slope rule applies to houses, including a flat-roofed house or a flat roof section of a house. Applies to built-up, modified bitumen, single-ply, SPF, coatings and other low-slope systems. It applies when more than 50 percent of the roof is replaced (150.2(b)1I).
 
-### Climate Zones That Require Cool Roof
+Other occupancies use their own sections, not 150.2: multifamily 180.2(b)1A (same 0.63 / 0.75 / SRI 75 values in CZ 2, 4, 6-15, trade-off Table 180.2-A); nonresidential and hotel/motel 141.0(b)2B (0.63 reflectance or the Table 141.0-B roof/ceiling U-factor trade-off).
+
+### Climate Zones That Require Cool Roof (Single-Family)
 
 | Climate Zones | Requirement |
 |---|---|
-| **CZ 4, 6–15** | Cool roof required |
+| **CZ 4, 6–15** | Cool roof required (150.2(b)1Iiia) |
 | CZ 1–3, 5, 16 | Cool roof NOT required |
 
-### Minimum Values (Low-Slope, Commercial)
+### Minimum Values (Low-Slope, Single-Family)
+
+Verbatim: "New roofing products in Climate Zones 4 and 6 through 15 shall have an aged solar reflectance equal to or greater than 0.63 and a thermal emittance equal or greater than 0.75, or a minimum SRI of 75." (150.2(b)1Iiia)
 
 | Property | Minimum Value |
 |---|---|
@@ -72,28 +76,32 @@ Applies to built-up, modified bitumen, single-ply, SPF, and other low-slope syst
 | Thermal emittance | **0.75** |
 | OR Solar Reflectance Index (SRI) | **75** |
 
-These are significantly higher than steep-slope requirements because low-slope roofs absorb more heat due to their near-horizontal orientation.
+### Exceptions to 150.2(b)1Iiia
 
-### Insulation Requirements (Table 150.2-F)
+1. **Insulation trade-off (Table 150.2-E).** "The aged solar reflectance can be met by using insulation at the roof deck specified in Table 150.2-E."
+2. Roof area covered by building-integrated PV or building-integrated solar thermal panels.
+3. Roof constructions weighing at least 25 lb/ft².
 
-When reroofing low-slope commercial:
+### Table 150.2-E — Aged Solar Reflectance Insulation Trade-Off
 
-| Climate Zones | Required Insulation | Max U-factor |
+| Minimum aged solar reflectance | Roof deck continuous insulation, CZ 6–7 | Roof deck continuous insulation, CZ 2, 4, 8–15 |
 |---|---|---|
-| CZ 1–2, 4, 8–16 | R-14 continuous insulation | 0.039 |
-| CZ 3, 5–7 | No insulation requirement | — |
+| 0.60 | R-2 | R-16 |
+| 0.55 | R-4 | R-18 |
+| 0.50 | R-6 | R-20 |
+| 0.45 | R-8 | R-22 |
+| No requirement | R-10 | R-24 |
 
-### Reflectance / Insulation Trade-Off (Table 150.2-E)
+So in CZ 6 or 7, a low-slope roof of **any color**, including black, complies when it has at least R-10 continuous insulation at the roof deck.
 
-If the roof covering has lower reflectance than required, higher insulation can compensate:
+### Insulation Requirements (Table 150.2-F, 150.2(b)1Iiib)
 
-| Aged Solar Reflectance | Required Insulation R-Value |
-|---|---|
-| ≥0.63 | R-14 (standard) |
-| 0.60 | R-21–22 |
-| 0.55 | R-18 |
-| 0.50 | R-20 |
-| 0.45 | R-22 (CZ 6–7 only) |
+| Climate Zones | Continuous insulation | Max roof assembly U-factor |
+|---|---|---|
+| CZ 1, 2, 4, 8–16 | R-14 | 0.039 |
+| CZ 3, 5–7 | N.A. | N.A. |
+
+Table 150.2-F has its own exceptions (existing R-10 or greater continuous insulation; existing U-factor 0.056 or less or R-19 between rafters in CZ 1, 2, 4, 8-10; reduction to R-4 at rooftop equipment or abutting walls, and others). Read them in the code text before writing a correction.
 
 ---
 
@@ -123,7 +131,8 @@ When reviewing a reroof application:
 2. **Determine roof type** — steep-slope or low-slope
 3. **Check if cool roof is required** per tables above
 4. **If required:** Verify that the specified roofing product meets minimum reflectance/emittance OR that an exemption applies
-5. **Document exemption** if applicable (insulation level, radiant barrier, solar panels, heavy roof)
+5. **Document exemption** if applicable (insulation level, radiant barrier, solar panels, heavy roof; low-slope: Table 150.2-E roof deck insulation)
+6. **Scope check:** the cool-roof rules apply only when more than 50 percent of the roof is replaced (150.2(b)1I)
 
 ### Common Materials and Cool Roof Compliance
 
@@ -136,4 +145,4 @@ When reviewing a reroof application:
 | Dark built-up w/ gravel | N/A | Usually no — may need coating |
 | White elastomeric coating | N/A | Yes |
 
-**Note:** The 0.20 reflectance threshold for steep-slope residential is relatively easy to meet — most materials except very dark shingles will comply. The 0.63 threshold for low-slope commercial is much more restrictive and typically requires white or highly reflective surfaces.
+**Note:** The 0.20 reflectance threshold for steep-slope residential is relatively easy to meet — most materials except very dark shingles will comply. The 0.63 threshold for low-slope roofs (houses included, in CZ 4 and 6-15) is much more restrictive and typically requires white or highly reflective surfaces, unless the Table 150.2-E insulation trade-off is used.

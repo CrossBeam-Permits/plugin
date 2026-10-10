@@ -26,7 +26,7 @@ This is the most consequential parking analysis for restaurant TIs. Per Sec. 25.
 If intensification fires, two independent entitlements are triggered:
 
 1. **Coastal Development Permit** — under Ch. 25.07, intensification is "development" requiring CDP regardless of building scope.
-2. **Conditional Use Permit** — per Sec. 25.05.030, intensification is a CUP trigger even in zones where the new use is otherwise by-right.
+2. **Parking requirement** — the added spaces must be provided (25.52.004). Relief: in-lieu certificates only in a Council-designated special parking district (25.52.006(E)); otherwise a CUP for joint use, shared parking, valet, off-site spaces or the 25.52.006(G) incentive reduction (Planning Commission since Ord. 1732 § 46), or a variance. Intensification is not itself a CUP trigger in our sources; the zone use list decides whether the restaurant needs a CUP (`conditional-use-permit.md`).
 
 ### How to Run the Test
 
@@ -35,18 +35,21 @@ If intensification fires, two independent entitlements are triggered:
 | 1 | Identify prior legal use of the tenant space (lease history, certificate of occupancy, business license records) |
 | 2 | Apply the relevant Ch. 25.52 ratio to the prior use to get prior-use demand |
 | 3 | Apply the relevant ratio to the proposed restaurant to get proposed demand |
-| 4 | If proposed > prior → intensification of use → CDP + CUP triggers |
+| 4 | If proposed > prior → intensification of use → CDP trigger; provide or relieve the added spaces |
 | 5 | If proposed = prior or <= prior → no intensification (rare for retail→restaurant conversion) |
 
 ### Common Prior-Use Ratios
 
-| Prior use | Typical Ch. 25.52 ratio |
+Ratios are from the LBMC 25.52.012 parking table (gross floor area unless noted). Check the table for any use not listed here.
+
+| Prior use | LBMC 25.52.012 ratio |
 |-----------|-------------------------|
-| Retail | 1 space per 250 sf |
-| Office | 1 space per 300 sf |
-| Personal service (salon, etc.) | 1 space per 200 sf |
-| Bank | 1 space per 300 sf |
-| Warehouse / storage | 1 space per 1,000 sf |
+| General retail store | 1 space per 250 sf |
+| General office (business, technical, service, administrative or professional) | 1 space per 250 sf |
+| Hair salon or barbershop | 1 space per 1 1/2 chairs or 1 per 250 sf, whichever is greater |
+| Other personal service (tanning, nail salon, massage, similar) | 1 space per 250 sf |
+| Bank, savings and loan, other financial institution | 1 space per 250 sf (includes drive-up service lane spaces) |
+| Warehouse or storage building | 2 spaces, plus 1 space per 1,000 sf |
 | Vacant (no prior legal use) | Use the most recent legal use; if none, planning director determination |
 
 ### Worked Example
@@ -60,15 +63,15 @@ If intensification fires, two independent entitlements are triggered:
 | Proposed demand (citywide, 1 per 100 sf) | **25 spaces** |
 | Intensification? | **YES — 25 > 8** |
 | CDP trigger | YES |
-| CUP trigger | YES |
+| CUP | Per zone use list; parking-relief CUP if relief is sought |
 | Parking shortfall (assuming 8 stalls available on-site) | 17 spaces |
-| Remedy | In-lieu fee, parking study, shared parking agreement, or PC variance |
+| Remedy | In-lieu certificates (special parking district only), parking-relief CUP (joint/shared/valet/off-site/incentive), or variance |
 
 ---
 
 ## In-Lieu Fee Program
 
-Citywide, the in-lieu fee program allows a restaurant to satisfy its parking shortfall by paying a per-stall fee into the city parking fund. Check the current per-stall fee on the city fee schedule before quoting numbers. The fee is a one-time payment at permit issuance.
+In-lieu parking certificates are **not citywide**. They are "allowed only as described in Section 25.52.006(E)" (25.52.004): areas the City Council designates as hardship areas with special parking districts. Four or more certificates need a parking demand study (25.52.006(E)). Fees are set by Council resolution; use the fee tool or the current Master Fee Schedule, never a remembered figure. Payment is due before the first business license or building permit unless the Council says otherwise.
 
 In the DSP area, the in-lieu program is more aggressively used because downtown parking is harder to provide on-site. The DSP's lower ratio also reduces the underlying demand.
 
@@ -109,7 +112,7 @@ Where the standard ratio overstates real demand (e.g., shared-use scenario with 
 
 ## Output Findings
 
-- **PASS** — Correct ratio applied (DSP vs citywide); prior-vs-proposed analysis complete; intensification finding documented; CDP/CUP triggered as appropriate; ADA and EV-ready spaces shown.
+- **PASS** — Correct ratio applied (DSP vs citywide); prior-vs-proposed analysis complete; intensification finding documented; CDP triggered; CUP per zone list or parking relief; ADA and EV-ready spaces shown.
 - **FAIL** — Restaurant ratio mis-applied (e.g., DSP ratio used on a non-DSP parcel); outdoor seating omitted from GFA; intensification ignored.
 - **FLAG** — Prior legal use ambiguous; lease/CofO records incomplete; in-lieu fee accepted but funding source not documented.
 - **N/A** — Identical use replacement (e.g., restaurant-for-restaurant with same seat count, same operation).

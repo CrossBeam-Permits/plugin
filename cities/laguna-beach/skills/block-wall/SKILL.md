@@ -144,11 +144,11 @@ This skill covers **freestanding CMU/block walls** that do not retain soil. If s
 
 | Topic | State Default | Laguna Beach Override |
 |---|---|---|
-| Permit threshold | State fence/wall exemption generally higher | Laguna standard block-wall detail requires permit for block wall over **30 in** from adjacent grade, or any wall/fence within 3 ft of property line/public ROW |
+| Permit threshold | State fence/wall exemption generally higher | LBMC 14.50.022 (Building item 1) exempts walls and fences **not over 72 in** high unless within 3 ft of a property line or public ROW. The City standard block-wall detail (General Note 2) says a block wall over **30 in** from adjacent grade needs a permit. See "Permit trigger conflict" below |
 | Survey/location | Varies | Licensed surveyor must certify location before footing inspection when wall is within 3 ft of property line or public ROW |
 | Zoning approval | State silent | Zoning/Planning approval required before building permit issuance |
 | Standard detail limits | State skill general CMU | City standard detail applies only to freestanding non-retaining wall with slope <10%, grade offset <=6 in, no surcharge, no adverse soil/liquefaction/flood conditions |
-| Design review | State silent | Fences/walls complying with zoning are design-review exempt except permanent chain link/woven metal fences and vinyl fences that do not simulate natural materials |
+| Planning route (Ord. 1732) | State silent | A wall that meets LBMC 25.50.012 height limits (4 ft front yard, 3 ft front yard on a corner lot, 6 ft side/rear) needs Zone Clearance, 25.05.040(B)(2)(l). Decorative posts/columns up to 12 in above the front-yard limit: Administrative Design Review, (B)(3)(a)(vii). In an environmentally sensitive area (including slopes of 30% or more): Design Review, (B)(1)(e), unless a peer-reviewed licensed professional finds no impact |
 | Utility/fire clearances | State/project-specific | City detail requires 36 in from fire hydrant and 12 in from water meter |
 
 ---
@@ -169,7 +169,7 @@ This skill covers **freestanding CMU/block walls** that do not retain soil. If s
 
 Use `../fence/references/city-block-wall-detail.md` for the city standard detail. Key local requirements:
 
-- Permit required for block wall over 30 in high from adjacent grade.
+- City detail General Note 2: permit required for block wall over 30 in high from adjacent grade (see conflict note below).
 - Permit required for any wall/fence within 3 ft of property line or public ROW.
 - Zoning approval required before building permit issuance.
 - Surveyor certification required before footing inspection for walls within 3 ft of property line or public ROW.
@@ -178,6 +178,10 @@ Use `../fence/references/city-block-wall-detail.md` for the city standard detail
 - Required inspections: footing, reinforcing steel, final.
 - Fire hydrant clearance: 36 in. Water meter/foundation clearance: 12 in.
 
+#### Permit trigger conflict (UNSETTLED)
+
+LBMC 14.50.022 (Ord. 1725, 2025-12-18), Building item 1, reads: "Walls and fences not over 72 inches high, unless located within three feet of a property line or public right-of-way." LBMC 14.52.014 (CRC R101.4) applies that list to homes too. The City's standard block-wall detail (June 2026, General Note 2) still says a block wall over 30 in from adjacent grade needs a building permit. For a block wall between 31 and 72 in that is more than 3 ft from every property line and the right-of-way, the code says no permit and the City detail says permit. The code text is the ordinance; the detail is a Building Division handout. **UNSETTLED: confirm with the Building Division before telling a resident no permit is needed.** Either way, Planning (Zone Clearance) and the CDP check still apply.
+
 ---
 
 ### Review Checklist - Laguna Block Wall
@@ -185,13 +189,13 @@ Use `../fence/references/city-block-wall-detail.md` for the city standard detail
 | ID | Check | Pass Criteria |
 |---|---|---|
 | LB-BLK-1 | Correct skill route | Wall is freestanding and non-retaining; retaining walls routed elsewhere |
-| LB-BLK-2 | Permit trigger | Height <=30 in and >3 ft from property line/ROW if claiming no permit |
+| LB-BLK-2 | Permit trigger | Not within 3 ft of property line/ROW and not over 72 in (14.50.022) if claiming no permit; flag the 30 in City-detail conflict for walls 31-72 in |
 | LB-BLK-3 | Standard detail applicability | Slope <10%, no surcharge, no retaining function, no adverse soil/liquefaction/flood hazard, grade offset <=6 in |
 | LB-BLK-4 | Zoning approval | Planning/Zoning approval shown before building permit issuance |
 | LB-BLK-5 | Survey certification | Within 3 ft of property line/ROW has licensed surveyor certification before footing inspection |
 | LB-BLK-6 | Structural table | Rebar, footing, expansion joints, cleanouts, block specs match city standard detail or engineered design |
 | LB-BLK-7 | Clearances | 36 in from fire hydrants, 12 in from water meters, no unauthorized ROW projection |
-| LB-BLK-8 | Design review | Zoning-compliant decorative wall/fence exemption checked; chain link/woven metal/non-natural vinyl not treated as exempt |
+| LB-BLK-8 | Planning route | Zone Clearance (25.05.040(B)(2)(l)) only if the wall meets 25.50.012 heights and is outside an ESA; front-yard posts over the limit = ADR (B)(3)(a)(vii); ESA without peer-reviewed no-impact finding = Design Review (B)(1)(e) |
 | LB-BLK-9 | Coastal/CDP | Coastal zone and Section 25.07.008 detached/fence exceptions checked where applicable |
 
 ---

@@ -143,7 +143,8 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 | **Load calculation verification** | `references/city-ev-guide.md` (load calc worksheet + panel sizing table) |
 | **Wire/conduit sizing** | `references/city-ev-guide.md` (wire/conduit table) |
 | **Permit process / timeline** | This SKILL.md (below) |
-| **Local ordinance** | This SKILL.md + municipal code Ch. 14.85 (when scraped) |
+| **Local ordinance** | This SKILL.md + `references/city-ev-ordinance.md` (Ch. 14.85; source text the City source document (not included in this plugin)) |
+| **Planning / coastal approval?** | "Planning Route" below |
 
 #### STEP 2: Determine Building Type
 
@@ -176,6 +177,15 @@ Use the state skill's checklist but augment with city-specific details from `ref
 Same format as state skill — PASS/FAIL/FLAG/N/A per item with code citations.
 
 > **Reminder**: For checklist item #4 (load calc arithmetic), always show your independent addition of the line items. This is the most common error.
+
+---
+
+### Planning Route
+
+- **Building review is administrative and nondiscretionary** (§14.85.060(a)). A use permit is possible only on a building-official finding of a specific adverse health/safety impact (§14.85.060(d)-(e)); denial is appealable to the Planning Commission under §25.05.070, which Ord. 1732 replaced (appeal within 14 calendar days on the City form).
+- **Planning (Ord. 1732): a Zone Clearance sign-off is needed, at the counter.** "A zoning clearance shall be obtained before the City issues a new or modified building permit" (§25.05.045(B)(3)), so every EV charger building permit gets a Planning Zone Clearance first. No list item names EV chargers. A charger in a garage is interior work, Zone Clearance item §25.05.040(B)(2)(d); an exterior wall unit or pedestal is a non-major-remodel alteration, Zone Clearance (B)(2)(a). City practice: the Planning counter takes EV chargers over the counter (a CrossBeam reference that is not included in this plugin section 16). Do not tell the applicant no Planning step is needed. Related items that do have a route: a new transformer or utility cabinet under 4 ft is Zone Clearance (B)(2)(w), 4 ft or taller is ADR (B)(3)(a)(xiv); a new or widened driveway at the street is Design Review (B)(1)(k); any exterior work in an environmentally sensitive area is Design Review (B)(1)(e) absent a peer-reviewed no-impact finding.
+- **Commercial or multifamily chargers that change parking:** commercial parking and loading areas are Design Review (B)(1)(l), heard by the Planning Commission (§25.05.040(F)(1)(ii)). Check Ch. 25.52 for lost required spaces.
+- **Coastal:** on a single-family lot, a charger is normally an exempt improvement (§25.07.008(A)(1)); utility connections are exempt under §25.07.008(A)(4).
 
 ---
 

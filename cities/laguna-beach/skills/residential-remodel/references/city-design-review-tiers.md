@@ -29,6 +29,8 @@ the City source document (not included in this plugin).
 | Zone Clearance, §25.05.040(B)(2) and §25.05.045 | Community Development Department | Ministerial compliance check; no Design Review |
 | Administrative Design Review, §25.05.040(B)(3) | Community Development Director or designee | Public hearing unless the enacted waiver procedure applies |
 
+**Which body hears Design Review (§25.05.040(F)(1)).** "The design review board shall conduct a noticed public hearing on design review applications for all single-family or two-family developments, including associated public right-of-way improvements." The Planning Commission hears "all other design review applications, including but not limited to: residential development of three-families or more, all projects located in the downtown specific plan area, all non-residential development, public works projects, and projects for which the planning commission is the primary discretionary review authority, such as approval of a conditional use permit." A single-family or two-family project in the Downtown Specific Plan area, or one that also needs a CUP, fits both clauses: UNSETTLED, confirm with Planning at pre-application.
+
 The Director may refer a Zone Clearance or Administrative Design Review project to the DRB or Planning Commission when the project may affect an unusually sensitive/highly visible area, may affect surrounding properties, or presents other circumstances warranting referral. All three routes may still require a CDP under Chapter 25.07.
 
 ## Residential routing matrix

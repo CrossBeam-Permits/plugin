@@ -46,7 +46,7 @@ This standard detail covers simple freestanding concrete masonry unit (CMU) bloc
 10. **Licensed surveyor must certify location of ALL new fences within 3' of property line BEFORE footing inspection/concrete pour**
 11. No projections in public right of way (including stone cap or trim)
 12. Freestanding only — no retaining, no part of building or other structure
-13. No railing/guard/screen where wall + attachment exceeds 6'-0" above lowest adjacent grade
+13. No railing/guard/screen where wall + attachment exceeds 6'-0" above lowest adjacent grade. This limits use of the standard detail; it is not a zoning height rule. Zoning permits code-required guards and railings in any yard (LBMC 25.50.012(B)(2)); a taller assembly needs an engineered design.
 
 ---
 

@@ -13,7 +13,7 @@ Sources:
 
 ## New SFR Planning Route
 
-Default: a new building requires Design Review under current §25.05.040(B)(1)(b). For one-family residential projects, Section 25.05.040(F) supplies the hearing authority.
+Default: a new building requires Design Review under current §25.05.040(B)(1)(b). The Design Review Board hears it: "The design review board shall conduct a noticed public hearing on design review applications for all single-family or two-family developments, including associated public right-of-way improvements" (§25.05.040(F)(1)(i)). The Planning Commission hears "all projects located in the downtown specific plan area" and projects where it is the primary authority, such as a CUP (§25.05.040(F)(1)(ii)); where both clauses fit, UNSETTLED, confirm with Planning at pre-application.
 
 Optional alternative: a qualifying new primary dwelling may elect Chapter 25.13 and take Zone Clearance under §25.05.040(B)(2)(z). Run `objective-primary-dwelling-ch25-13.md`, then the 2026 objective-design overview and exactly one applicant-selected Form Group reference. The Chapter 25.13 development gate and every applicable design standard must pass. A major remodel is ineligible, other simultaneous structures may be separately reviewed, and a CDP may remain required.
 
@@ -51,6 +51,8 @@ For a new SFR:
 
 - Treat the work as new "development" under Section 25.07.006.
 - Do not use the routine "improvements to single-family dwellings" exemption in Section 25.07.008(A)(1) because new SFD construction is not an improvement to an existing SFD.
+- Categorical Exclusion Order E-93-1 (Section 25.07.010) excludes single-family residential development in eleven areas, subject to Special Condition 8 (the LCP or the order, whichever is more restrictive). Whether it clears a new house in one of those areas is UNSETTLED; confirm with Planning at pre-application. It never clears an ADU (Coastal Commission report F9a, Nov. 2024).
+- When Design Review is also required, the same body decides the CDP at the same time (Section 25.07.012(D)), with the added Section 25.07.012(F)-(G) findings (Section 25.05.040(F)(3)).
 - Determine whether the parcel is in the appealable area.
 - If appealable, apply the 10-working-day Coastal Commission appeal window after CCC receipt of final local action.
 

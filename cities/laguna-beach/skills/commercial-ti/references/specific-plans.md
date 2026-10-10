@@ -1,6 +1,6 @@
 # Laguna Beach — Specific Plans and Overlay Districts for Commercial TI
 
-**Authority:** LBMC **Chapter 25.40** (Downtown Specific Plan). LBMC **Chapter 25.35** (Arch Beach Heights Specific Plan). LBMC Title 25, Chapter 25.20 series (baseline commercial zones). City-administered Three Arch Bay private community process.
+**Authority:** LBMC **Chapter 25.40** (Downtown Specific Plan). LBMC **Chapter 25.35** (Arch Beach Heights Specific Plan). LBMC Title 25 commercial zone chapters (LBMC 25.02.006): 25.18 LBP, 25.19 C-N, 25.20 C-1, 25.21 CH-M, 25.25 SLV. City-administered Three Arch Bay private community process.
 
 Identifying the applicable specific plan or overlay district is a **first-step gate** for any commercial TI. A specific plan may layer development standards, route restrictions, and (in the case of Downtown) Coastal Commission-approved LCP standards on top of baseline zoning; do not assume every plan still supplies separate design guidelines after Ord. 1732.
 
@@ -72,25 +72,28 @@ Identifying the applicable specific plan or overlay district is a **first-step g
 - Coastal commercial frontage along North Coast Hwy / Hwy 1
 - Heavy intersect with the Coastal Zone (most parcels) and frequently inside the **CCC-appealable area** (within 300 ft inland extent of beach / MHW, or between sea and first public road)
 - Many parcels in VHFHSZ
-- Many older commercial buildings (50+ years) → Heritage Committee trigger likely
+- Many older commercial buildings carry a 1981 inventory rating or register listing → check `historic` in site facts; age alone is not a trigger (§25.45.004)
 - Caltrans encroachment permit required for any work touching the Hwy 1 ROW
 
 **Routing implications:** Match the current Design Review/Zone Clearance/ADR lists; CDP and CCC-appealability checks remain mandatory; Caltrans encroachment permit may be required.
 
 ---
 
-## 5. Baseline Commercial Zones (LBMC Ch. 25.20 series)
+## 5. Baseline Commercial Zones (LBMC 25.02.006)
 
-The baseline commercial zones in Laguna Beach are:
+LBMC 25.02.006 lists five mixed-use/commercial zones. Each has its own chapter:
 
-| Zone | Name | Typical use |
-|------|------|-------------|
-| **C-1** | Local Business | Local-serving retail and service commercial; baseline commercial zone outside specific plans |
-| **CN** | Neighborhood Commercial | Smaller-scale neighborhood-serving commercial |
-| **LB** | Laguna Beach | Central business / mixed use (downtown periphery) |
-| **CB** | Central Business | Central business / downtown core (when not in DSP) |
+| Zone | Name | Chapter | Intent (from the chapter's intent section) |
+|------|------|---------|-------------|
+| **LBP** (also written LB/P) | Local Business-Professional | Ch. 25.18 | Office/professional and service uses, residential, secondarily retail (25.18.001) |
+| **C-N** | Commercial-Neighborhood | Ch. 25.19 | Resident-serving retail, service, office; residential as part of a mixed-use site (25.19.001) |
+| **C-1** | Local Business | Ch. 25.20 | Local retail and commercial needs, some highway-related uses; residential as part of a mixed-use site (25.20.002) |
+| **CH-M** | Commercial Hotel-Motel | Ch. 25.21 | Hotel-motel operations with supporting commercial and service uses (25.21.001) |
+| **SLV** | South Laguna Village Commercial | Ch. 25.25 | Resident-serving retail; second-floor office; residential as part of mixed-use sites (25.25.001) |
 
-Refer to the §25.20 series for permitted/conditional use lists, lot/setback/height/coverage standards, and parking ratios per zone. Use-permit triggers (CUP) vary by zone and use.
+Downtown parcels are zoned by the Downtown Specific Plan (Ch. 25.40), not by these chapters. The DSP districts named in Title 25 include CBD-1 Resident Serving, CBD-2 Downtown Commercial, CBD-Office, CBD-Central Bluffs, CBD-Arts District and CBD Visitor Commercial (LBMC 25.16.050 and 25.23.030(A)). Read the DSP map for the parcel's district. Commercial uses also occur in M-1A Light Industrial (Ch. 25.32) and the Laguna Canyon Annexation Area Specific Plan (Ch. 25.48).
+
+Read the zone's own chapter for permitted and conditional uses, lot, setback, height and coverage standards. Parking ratios are in LBMC 25.52.012 for every zone outside the DSP. CUP triggers vary by zone and use.
 
 ---
 
@@ -117,12 +120,12 @@ For each commercial TI specific-plan / overlay review, output:
   - Arch Beach Heights SP (Ch. 25.35): IN | OUT
   - Three Arch Bay: IN | OUT (if IN — TABA + TABCSD letters required, doc ID 11971)
   - Village Entrance / N. Coast Hwy corridor: IN | OUT
-**Baseline zone (if outside SPs):** C-1 | CN | LB | CB | Other (specify)
+**Baseline zone (if outside SPs):** LBP | C-N | C-1 | CH-M | SLV | M-1A | Other (specify)
 **CIP route, if City project:** Major DR | De minimis Zone Clearance | Minor ADR | N/A
 **Coastal Zone:** IN | OUT
 **CCC-appealable area:** YES | NO
 **VHFHSZ:** YES | NO
-**50+ year historic trigger:** YES | NO
+**Historic status (register / listing / inventory rating):** <status> | none
 **Caltrans frontage:** YES (encroachment permit required) | NO
 ```
 

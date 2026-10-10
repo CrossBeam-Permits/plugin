@@ -38,7 +38,7 @@ These items come after Building plan check approval and before the permit issues
 | 16 | SCAQMD Asbestos Notification (submit email receipt of 1403 notification) | DEMOLITIONS, REMODELS (WE KEEP COPY OF 1403 NOTIFICATION) | Decided from the project scope |
 | 17 | Structure Demolition Only (gas meter removed) | FOR SCOPES THAT INDLUDE DEMO OF BUILDING (LIKE A SFR): NOTIFICATION FROM UTILITY COMPANIES THAT METERS WERE REMOVED | Decided from the project scope |
 | 18 | Structure Demolition Only (electric meter removed) | FOR SCOPES THAT INDLUDE DEMO OF BUILDING (LIKE A SFR): NOTIFICATION FROM UTILITY COMPANIES THAT METERS WERE REMOVED | Decided from the project scope |
-| 19 | Water Quality "Forward Lateral" (submit sewer video and payment to the Water Quality Department and provide email confirmation of receipt) | RES & COMM. VALUATION OVER $100K - Scope must include NEW plumbing per City staff. ***SOUTH LAGUNA EXEMPT (5 DIGIT ADDRESSES)*** POOLS ARE EXEMPT*** | Decided from the project scope |
+| 19 | Water Quality "Forward Lateral" (submit sewer video and payment to the Water Quality Department and provide email confirmation of receipt) | RES & COMM. VALUATION OVER $100K - Scope must include NEW plumbing per City staff and City building staff. ***SOUTH LAGUNA EXEMPT (5 DIGIT ADDRESSES)*** POOLS ARE EXEMPT*** | Decided from the project scope |
 | 20 | Schedule Pre-Grade Meeting | NEW CONSTRUCTION (TO BE SCHEDULED AT ISSUANCE) | Decided from the project scope |
 | 21 | Schedule Pre-Construction Meeting | NEW CONSTRUCTION (TO BE SCHEDULED AT ISSUANCE) | Decided from the project scope |
 

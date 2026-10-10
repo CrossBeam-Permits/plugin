@@ -118,9 +118,9 @@ Balconies and similar projections of combustible construction (other than fire-r
 
 ## Stainless Steel Fastener Requirement (Coastal Proximity)
 
-Per CRC R507.2.3 and Table R507.2.3 (state code): within 300 ft of salt water, ALL fasteners and connectors must be **stainless steel**.
+Per CRC Table R507.2.3 note b (state code): "Fasteners and connectors exposed to salt water or located within 300 feet of a salt water shoreline shall be stainless steel."
 
-Laguna Beach is a narrow coastal city — the vast majority of properties are within 300 ft of the ocean or tidal lagoons. **For practical purposes, assume stainless steel is required for ALL deck projects in Laguna Beach** unless the property is verified to be more than 300 ft from salt water.
+The rule turns on the lot's distance to the salt-water shoreline. Oceanfront and near-shore lots are within 300 ft; most hillside and canyon lots are farther. Check the distance; do not assume stainless is required citywide.
 
 ### Affected Hardware:
 - Nails (framing, decking attachment)
@@ -144,4 +144,4 @@ Standard hot-dipped galvanized hardware is NOT acceptable within 300 ft of salt 
 | **Underfloor vent size** | Ch. 14.70.025 (504.10.4) | Max 144 sq in per opening |
 | **Balcony fire-resistance** | Ch. 14.50.116 (705.2.3.1) | Combustible balconies must be fire-rated or comply with WUI Ch. 5 |
 | **Minor repair exception** | Ch. 14.70.015 | Same material OK with building official approval |
-| **Stainless steel fasteners** | CRC R507.2.3 | Required within 300 ft of salt water (nearly all of Laguna Beach) |
+| **Stainless steel fasteners** | CRC R507.2.3 | Required within 300 ft of a salt-water shoreline or where exposed to salt water; check the lot's distance |

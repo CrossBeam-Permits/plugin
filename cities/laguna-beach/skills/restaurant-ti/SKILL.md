@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "California Retail Food Code (CRFC) 2025, AB 671, AB 592, CBC Part 2, CMC Part 4, CPC Part 5, CFC Part 9, Energy Code Part 6, Existing Building Code Part 10; LBMC Title 14 (Building), Title 15 (Fire), Title 25 (Zoning); 2025 CBC/CFC/CMC/CPC/CEC; California Retail Food Code (HSC Division 104 Part 7); AB 592; AB 671"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-07-22"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -149,11 +149,11 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 |-------|-------------------|
 | **Health review agency** | OCHCA Environmental Health (same as unincorporated OC). Building permit issuance is conditioned on OCHCA plan-approval letter. |
 | **Fire review agency** | **LBFD Fire Prevention** (NOT OCFA). Required for all commercial new construction and remodels prior to building permit issuance. Contact: fireprevention@lagunabeachcity.net / 949-497-0352. |
-| **Planning route** | Match Ord. 1732's closed lists; exterior work is not a default Design Review trigger. Interior-only work takes Zone Clearance `(B)(2)(d)`. If Design Review is independently triggered for non-residential scope, the Planning Commission is the authority. ADR applies only to its 17 listed categories. |
+| **Planning route** | Match Ord. 1732's closed lists; exterior work is not a default Design Review trigger. Interior-only work takes Zone Clearance `(B)(2)(d)`. If Design Review is independently triggered for non-residential scope, the Planning Commission is the authority. ADR applies only to its 17 listed categories. A major remodel is Design Review under `(B)(1)(a)`; measure it with `../residential-remodel/references/city-major-remodel-methodology.md` (the City's guide applies it to a "residence or commercial building"). |
 | **Coastal Development Permit (Ch. 25.07)** | Presumptively required. Virtually all of Laguna is in the Coastal Zone. Sec. 25.07.006 defines "development" to include any change in intensity of use; retail-to-restaurant conversion is an "intensification of use" and trips CDP independently of any building scope. Categories: exempt, de-minimis waiver (Sec. 25.07.009), administrative CDP w/ public-hearing waiver (Sec. 25.07.013), non-appealable CDP, appealable CDP (within ~300 ft of sea / first public road — 10-working-day CCC appeal window before effective date). |
-| **Conditional Use Permit (Sec. 25.05.030)** | REQUIRED — even in the Downtown Specific Plan where most uses became by-right in the 2022 CCC-certified update — for restaurants serving alcohol, restaurants with entertainment, late-hour operation, drive-thru/drive-up, outdoor dining beyond temporary, and any "intensification of use" (use change that requires more parking than the prior legal use). Planning-Commission-issued. |
-| **Outdoor dining** | Public ROW (sidewalk) = Public Works encroachment permit + Temporary Use Permit (Sec. 25.05.035); 3 ft min unobstructed sidewalk; ADA path-of-travel; AB 592 preempts over-restriction but local ROW conditions apply. Private property (patios, parking-lot conversions) = AUP or CUP + DRB if visible + CDP + revised parking calc (outdoor seating counts toward GFA). |
-| **Parking (Ch. 25.52)** | Citywide food-service ratio: **1 space per 100 sf GFA** (including outdoor seating) OR 1 per 3 seats, whichever is greater. **Downtown Specific Plan area: 3 spaces per 1,000 sf** for non-residential (much more lenient). In-lieu fee program available. Compare prior legal use to proposed restaurant — any parking increase = intensification of use → CUP + CDP. |
+| **Conditional Use Permit** | Set by the **zone chapter's use lists**; Sec. 25.05.030 is only the procedure. Examples: Local Business Professional — all cafes, full-service and take-out restaurants are CUP (25.18.004); C-N — full-service restaurants without alcohol are permitted, with alcohol or take-out are CUP (25.19.002, .006); C-1 — full-service without alcohol or entertainment permitted, with alcohol/entertainment, take-out or drive-in are CUP (25.20.004, .006); SLV — restaurants are listed as CUP uses (25.25.006); CH-M — only incidental to a hotel, CUP (25.21.004); Downtown Specific Plan — Ch. 25.40 use tables and full-service-restaurant special findings. Read the zone from site facts and quote its list. Planning Commission decides; its CUP makes it the Design Review body too (25.05.040(F)(1)(ii)). Parking relief by joint use, shared parking, valet, off-site spaces or the 25.52.006(G) incentive reduction also needs a CUP (Ch. 25.52); Ord. 1732 § 46 moved the incentive CUP from the City Council to the Planning Commission. No citywide late-hour CUP trigger appears in our sources; hours are set by CUP conditions. |
+| **Outdoor dining** | Public ROW (sidewalk) = Public Works encroachment permit + Temporary Use Permit (Sec. 25.05.035); 3 ft min unobstructed sidewalk; ADA path-of-travel; AB 592 preempts over-restriction but local ROW conditions apply. Private property (patios, parking-lot conversions): use status per the zone list (e.g. C-1 permits outdoor tables for a non-alcohol full-service restaurant operated within a building, 25.20.004; alcohol or take-out seating needs the CUP) + Ord. 1732 route for the physical work (a commercial parking area is Design Review (B)(1)(l), Planning Commission) + CDP + revised parking calc (outdoor seating counts toward GFA). |
+| **Parking (Ch. 25.52)** | Citywide food-service ratio: **1 space per 100 sf GFA** (including outdoor seating) OR 1 per 3 seats, whichever is greater. **Downtown Specific Plan area: 3 spaces per 1,000 sf** for non-residential (much more lenient). In-lieu parking certificates only in Council-designated special parking districts (25.52.006(E)); four or more need a parking demand study. Compare prior legal use to proposed restaurant — any parking increase = intensification of use (25.07.006) → CDP (25.07.008(A)(2)(b)), and the added spaces must be provided or relieved (CUP options above). |
 | **Sprinkler retrofit** | **LBMC Sec. 14.50.104 (Group A trigger, CBC Sec. 903.6 valuation-based, 50% over 3-year rolling)** applies to restaurant-only buildings. **LBMC Title 15 Sec. 1103.5.4 (scope-based: alteration of 50%+ of building OR work on 50%+ of exterior OR added story)** applies to any Group R component above or attached to the restaurant in a mixed-use building. New restaurants in shell buildings are sprinklered as new under Sec. 903.2. |
 | **Construction hours (Sec. 7.25.080)** | **Weekdays only, 7:30 AM – 6:00 PM**. **Saturday, Sunday, and federal holidays all PROHIBITED** — Saturday is a weekend day per §7.25.080(B), no Sat window in Laguna. Downtown summer moratorium Memorial Day – Labor Day. Note on Sheet G-1 General Notes. |
 | **Submittal package** | Multi-track. Architectural + Mech (hood/HVAC/grease duct) + Plumbing (sinks/grease interceptor) + Electrical + Fire Sprinkler (deferred) + Fire Alarm (deferred) + Signage (if exterior). Exterior-touching scope adds DR exhibits (elevations, materials board, color samples, lighting cut sheets, awning details). |
@@ -170,7 +170,7 @@ For each scope, answer the three entitlement questions in order:
 |----------|--------------|
 | **Q1.** What current §25.05.040 closed-list category matches each interior/exterior component? | `references/planning-design-review-routing.md` — Design Review, Zone Clearance, ADR, or `needs_source`; no exterior-work default |
 | **Q2.** Is the parcel in the Coastal Zone (assume YES unless parcel-specific evidence shows otherwise)? | `references/coastal-development-permit.md` — Ch. 25.07 categories, intensification-of-use trigger, CCC appeal window |
-| **Q3.** Does the operation include alcohol, entertainment, late hours, drive-thru, outdoor dining beyond temporary, or any use intensification? | `references/conditional-use-permit.md` — Sec. 25.05.030 triggers, Downtown Specific Plan CUP carve-out, conditions of approval |
+| **Q3.** Does the zone list make this restaurant a CUP use (alcohol, entertainment, take-out, drive-in, or all restaurants in some zones), or does parking relief need a CUP? | `references/conditional-use-permit.md` — zone-by-zone CUP lists, Downtown Specific Plan, conditions of approval |
 
 If the TI is interior-only, it still requires Zone Clearance under §25.05.040(B)(2)(d), in addition to the applicable Building, LBFD, and OCHCA tracks.
 
@@ -190,7 +190,7 @@ Always load `references/lbfd-fire-prevention.md` when commercial cooking equipme
 If outdoor dining is in scope, load `references/outdoor-dining-row.md`. Two parallel paths:
 
 - **Public ROW (sidewalk cafe):** Public Works encroachment permit + Temporary Use Permit (Sec. 25.05.035). AB 592 (2024) preempts over-restriction; 3 ft min unobstructed sidewalk; ADA path-of-travel; no blocking of entries.
-- **Private property:** Administrative Use Permit or CUP depending on zone + intensity; DRB if visible; CDP; revised parking calc (outdoor seating counts toward GFA).
+- **Private property:** use status per the zone list (CUP where the zone requires it); Ord. 1732 route for the physical work (Planning Commission if Design Review); CDP; revised parking calc (outdoor seating counts toward GFA).
 
 #### Step 5 — Sprinkler Retrofit
 
@@ -207,10 +207,10 @@ Load `references/sprinkler-retrofit-triggers.md` for the analysis worksheet.
 
 Load `references/parking-intensification.md`. Compute:
 
-1. Prior legal use parking demand (often retail @ 1 space per 250 sf or office @ 1 per 300 sf).
+1. Prior legal use parking demand (retail and general office are both 1 space per 250 sf GFA under LBMC 25.52.012).
 2. Proposed restaurant parking demand (citywide: 1 per 100 sf GFA incl. outdoor seating, or 1 per 3 seats — whichever greater; DSP: 3 per 1,000 sf non-res).
-3. If proposed > prior → "intensification of use" per Sec. 25.07.006 → CDP trigger + CUP trigger independent of any other scope.
-4. Shortfall? Use in-lieu fee program (citywide) or parking demand study with planning-director discretion.
+3. If proposed > prior → "intensification of use" per Sec. 25.07.006 → CDP trigger independent of any other scope (25.07.008(A)(2)(b)), and the added spaces are required (25.52.004).
+4. Shortfall? In-lieu parking certificates only inside a Council-designated special parking district (25.52.006(E)); otherwise a CUP for joint use, shared parking, valet, off-site spaces, or the 25.52.006(G) incentive reduction (Planning Commission, Ord. 1732 § 46), or a variance.
 
 #### Step 7 — Construction Hours & Noise
 
@@ -246,7 +246,7 @@ For each Laguna-specific checklist item, output PASS / FAIL / FLAG / N/A with th
 | Interior-only, no entitlement | 4-8 weeks | — | — | — | 4-8 weeks |
 | Exterior touched (Admin DR only) | 4-8 weeks | 4-6 weeks | 2-4 weeks (admin) | — | 10-18 weeks |
 | Exterior + appealable CDP | 4-8 weeks | 6-10 weeks (PC hearing) | 8-12 weeks (incl. CCC appeal window) | — | 18-30 weeks |
-| Alcohol / late hours / intensification | 4-8 weeks | 6-10 weeks | 8-12 weeks | 12-20 weeks | 30-50 weeks |
+| Alcohol / entertainment CUP (zone list) or parking-relief CUP | 4-8 weeks | 6-10 weeks | 8-12 weeks | 12-20 weeks | 30-50 weeks |
 
 Most full-scope restaurant TIs in Laguna realistically run 4-8 months end-to-end. Plan the OCHCA submittal in parallel from day 1 — it is the most common late-stage blocker.
 

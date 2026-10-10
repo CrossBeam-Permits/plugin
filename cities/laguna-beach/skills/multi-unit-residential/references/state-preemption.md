@@ -7,7 +7,7 @@ key_code_sections: "Gov. Code §65915 (Density Bonus); Gov. Code §65913.4 (SB 3
 
 # State Housing Law Preemption — Laguna Beach Multi-Unit
 
-Use when an applicant invokes any state housing law to override Laguna's local restrictions. State preemption frequently overrides Laguna's local rules — **including the 36 ft citywide height cap, R-3 density limits, multi-family parking ratios, and DRB discretion** — for qualifying projects.
+Use when an applicant invokes any state housing law to override Laguna's local restrictions. State preemption frequently overrides Laguna's local rules — **including zone height limits, the 36 ft citywide ceiling, R-3 density limits, multi-family parking ratios, and DRB discretion** — for qualifying projects.
 
 This reference covers the **Laguna-specific interaction** with state law. For the state law mechanics themselves, load the California Multi-Unit Residential rules (Density & Zoning — State Housing Laws for Multi-Unit Residential Projects), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`) and the California Multi-Unit Residential rules (Permit Process — Plan Review, Streamlining, CEQA, Inspections, and Certificate of Occupancy), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`).
 
@@ -26,12 +26,12 @@ This reference covers the **Laguna-specific interaction** with state law. For th
 
 ## Laguna-Specific Notes
 
-### The 36 ft Cap is Override-able
+### Height Limits Are Override-able
 
-LBMC §25.51.010's 36 ft citywide height cap is a development standard that can be **waived** under Density Bonus Law (Gov. Code §65915(e), (k)) when the city cannot make a feasibility-justified denial finding. This is the most common state-preempted override in Laguna for ground-up multi-unit. Common pattern:
+Zone height limits (R-3 30-35 ft by slope, §25.14.008(D); C-N 30 ft and two floors, §25.19.008(E)(2); DSP 12 ft and 1 floor) and the §25.51.010 36 ft citywide ceiling are development standards that can be **waived** under Density Bonus Law (Gov. Code §65915(e), (k)) when the city cannot make a feasibility-justified denial finding. This is the most common state-preempted override in Laguna for ground-up multi-unit. Common pattern:
 
 1. Applicant designs a qualifying affordable project under Ch. 25.96.
-2. Requests density bonus + concessions + waiver of the 36 ft cap.
+2. Requests density bonus + concessions + waiver of the zone height limit (and of the 36 ft ceiling if the design exceeds it).
 3. City must either grant the waiver or articulate a specific, feasibility-justified denial finding (e.g., physical/environmental impact that cannot be mitigated, specific public health/safety risk).
 4. Laguna's view-corridor concern alone is **not** a sufficient basis to deny a §65915 waiver — must be tied to a specific physical / environmental / health-safety finding.
 
@@ -51,7 +51,7 @@ Ch. 25.96 is titled "Housing Programs and Incentives" and contains six substanti
 |---|---|---|
 | §25.96.010 | Density bonuses | Pure deferral to state Gov. Code §65915. Coastal Act consistency clause; LCP-deviation findings required in Coastal Zone. |
 | §25.96.020 | **Lot consolidation incentives** | Available for 100% affordable OR 100% senior projects (≥55 years) on R-3 / LBP / C-N / C-1 / CH-M / SLV / I parcels, up to 25,000 sf consolidated. Incentives: 5–10 ft setback reduction (10 ft if ≥25% VLI/ELI units), parking reduced to 0.5/unit, 50–70% open-space reduction, full refund of building + planning fees on final inspection. |
-| §25.96.030 | Infill / mixed-use exceptions | Applies in C-N, C-1, SLV zones only. Setback waivers for upper-floor residential. Requires recorded covenant prohibiting short-term lodging. |
+| §25.96.030 | Infill / mixed-use exceptions | C-N, C-1 and SLV only. Three exceptions, each requiring a recorded covenant against short-term lodging: (C)(1) added-setback waiver, (C)(2) nonconforming open space, (C)(3) floor-area-only major remodel need not cure nonresidential nonconformities. Full rules: `mixed-use-conversion.md` Section 7. |
 | §25.96.040–.060 | Home occupations, SROs, transitional/supportive housing | Standard state-law alignment. |
 | **§25.96.070** | **Citywide Inclusionary Housing Program** | See requirements below. |
 
@@ -59,16 +59,16 @@ Ch. 25.96 is titled "Housing Programs and Incentives" and contains six substanti
 
 | Parameter | Requirement | Citation |
 |---|---|---|
-| **Applicability threshold** | **10 or more residential units or lots** — applies to new development, conversion, adaptive reuse, redevelopment, AND subdivision | §25.96.070(D) |
-| **For-sale projects** | **15% of total units** affordable to moderate-income households | §25.96.070(G) |
-| **Rental projects** | **15% of total units** to moderate-income households, OR **10% of total units** restricted to very-low or low-income households | §25.96.070(G) |
-| **Affordability cost cap** | Inclusionary housing cost limited to **30% of household income** | §25.96.070(D) |
-| **Minimum on-site** | At least **1 inclusionary unit** required even when math yields a fraction; fractions above the first whole unit may be satisfied with a fractional in-lieu fee (e.g., a 1.3-unit requirement = 1 on-site + 0.3 fee) | §25.96.070 |
+| **Applicability threshold** | **10 or more residential units or lots** — applies to new development, conversion, adaptive reuse, redevelopment, AND subdivision | §25.96.070(C) |
+| **For-sale projects** | **15% of total units** affordable to moderate-income households | §25.96.070(E)(1)(a) |
+| **Rental projects** | **15% of total units** to moderate-income households, OR **10% of total units** restricted to very-low or low-income households | §25.96.070(E)(1)(b) |
+| **Affordability cost cap** | Inclusionary housing cost limited to **30% of household income** | §25.96.070 |
+| **Minimum on-site** | At least **1 inclusionary unit** required even when math yields a fraction; fractions above the first whole unit may be satisfied with a fractional in-lieu fee (e.g., a 1.3-unit requirement = 1 on-site + 0.3 fee) | §25.96.070(E)(2) |
 | **Income definition (moderate, rental)** | For rental inclusionary units on the same site as market-rate rentals, "moderate income" means ≤80% of area median income (stricter than Cal HSC §50093(b)) | §25.96.070 (definitions) |
 | **Affordable housing covenants** | Continued affordability required for the life of the deed restriction (typically 35+ years for lot-consolidation projects per §25.96.020(B)(2); §25.96.070 covenant duration set in affordable housing agreement) | §25.96.070 |
 | **In-lieu fee** | Available for fractional units and (subject to Director approval) for whole-project alternatives. Set by Council resolution, deposited in Housing In-Lieu Fund | §25.96.070 |
-| **Adjustment / waiver** | Applicant may request via substantial-evidence showing; decided by the planning-permit decision-making body | §25.96.070(G)(2) |
-| **Exemption** | Projects with approved planning permits prior to §25.96.070's enactment are waived; if the permit lapses or is revoked, requirements apply on resubmittal | §25.96.070(G)(1)(a) |
+| **Adjustment / waiver** | Applicant may request via substantial-evidence showing; decided by the planning-permit decision-making body | §25.96.070(L) |
+| **Exemption** | Planning permit applications formally submitted and accepted before January 1, 2024 are exempt; if the permit expires or is revoked, requirements apply on resubmittal. Other exemptions: development agreements, adaptive reuse projects filed within two years of the ordinance's effective date | §25.96.070(D)(2)-(4) |
 
 **Density bonus interaction:** A project providing 15% moderate (for-sale or rental) OR 10% very-low/low (rental) at the §25.96.070 baseline can stack a state Density Bonus on top — the inclusionary baseline is a floor, not a ceiling, and density bonus law's §65915(d) "additional bonus for additional affordability" mechanic still applies.
 
@@ -86,7 +86,7 @@ SB 9 is a single-family-residential (R-1) preemption pathway. It can produce dup
 
 | Pattern | Severity | Citation |
 |---------|----------|----------|
-| City staff applies 36 ft cap to deny a qualifying density bonus project without feasibility-justified finding | **FAIL** | Gov. Code §65915(e), (k); Ch. 25.96 |
+| City staff applies a zone height limit or the 36 ft ceiling to deny a qualifying density bonus project without feasibility-justified finding | **FAIL** | Gov. Code §65915(e), (k); Ch. 25.96 |
 | Project disqualified from SB 35/423 solely for being in Coastal Zone (no SB 423 eligibility test run) | **FAIL** | Gov. Code §65913.4 as amended by SB 423 |
 | AB 2011 project routed to DRB / Planning Commission | **FAIL** | Gov. Code §65912.100-139 — ministerial only |
 | DRB applies subjective design findings to deny a density bonus project | **FAIL** | Gov. Code §65915 + §65589.5 (HAA) — only objective standards apply |

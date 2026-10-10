@@ -34,7 +34,7 @@ Existing Group R (residential) buildings must be retrofitted with sprinklers whe
 
 **This is only one of the two residential retrofit triggers.** The other is **LBMC Ch. 14.52.030** (CRC R309.2 amendment, Ord. 1725, 12/18/2025) — a **valuation** test: cumulative additions, alterations and repairs to a one- or two-family dwelling and attached garage in any three-year period exceeding 50% of the pre-work valuation. **Either trigger firing requires the retrofit.** Run both from the single residential reference, `../../residential-remodel/references/city-sprinkler-retrofit.md`.
 
-**Re-roofing impact:** A full re-roof alone is unlikely to trigger this (it is exterior work but typically not "alteration of 50% or more of a building"). However, if a re-roof is combined with other work that collectively reaches the 50% threshold, sprinkler retrofit is required.
+**Re-roofing impact:** A full re-roof alone is not "alteration of 50% or more of a building". If a re-roof is combined with other work that reaches the 50%-of-building test, or with an added story, the retrofit is required. Whether exterior work of 50% or more (re-roof plus re-side, for example) fires it on its own is UNSETTLED: the "which includes or involves" clause has two readings, and the City has not ruled. Give both readings and say "confirm with Building and Fire at pre-application" (`../../residential-remodel/references/city-sprinkler-retrofit.md`, Trigger B).
 
 ---
 
@@ -189,7 +189,7 @@ Aggregate capacity of any LPG installation in congested/populated areas: maximum
 
 ### Re-Roofing
 
-- **Sprinkler retrofit trigger — two triggers, either fires:** (a) **§1103.5.4** (scope) — a re-roof alone does not typically fire it, but combined with other alterations reaching 50% of the building or 50% of the exterior, or an added story, sprinklers are required throughout. (b) **Ch. 14.52.030** (valuation) — a re-roof valuation counts toward the 50% / three-year cumulative total, so a re-roof can fire the retrofit through Ch. 14.52.030 even when §1103.5.4 is nowhere near. Run both: `../../residential-remodel/references/city-sprinkler-retrofit.md`.
+- **Sprinkler retrofit trigger — two triggers, either fires:** (a) **§1103.5.4** (scope) — a re-roof alone does not fire it; combined with other alterations reaching 50% of the building, or an added story, sprinklers are required throughout. Exterior work of 50% or more by itself is UNSETTLED (two readings; confirm with Building and Fire at pre-application). (b) **Ch. 14.52.030** (valuation) — a re-roof valuation counts toward the 50% / three-year cumulative total, so a re-roof can fire the retrofit through Ch. 14.52.030 even when §1103.5.4 is nowhere near. Run both: `../../residential-remodel/references/city-sprinkler-retrofit.md`.
 - **Siding exception:** Installation of fire-resistant siding only is explicitly exempt from the §1103.5.4 scope trigger. It is not exempt from the Ch. 14.52.030 valuation trigger.
 - **Defensible space:** Any re-roof project on an existing structure in the VHFHSZ should verify defensible space compliance (Section 304.1.3.2). The fire department may flag non-compliance during plan review.
 - **WUI materials:** All roofing in the VHFHSZ must comply with Chapter 7A fire-resistive construction requirements (see `city-wui-roofing.md`).

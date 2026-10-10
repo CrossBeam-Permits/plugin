@@ -1,6 +1,6 @@
 # Laguna Beach — Current Commercial TI Planning Route (Ord. 1732)
 
-**Law as of:** 2026-07-22
+**Law as of:** 2026-10-10
 
 **Authority:** LBMC §§25.05.040 and 25.05.045 as replaced/added by Urgency Ordinance No. 1732
 
@@ -8,7 +8,7 @@
 
 Do not send a commercial TI to discretionary Design Review merely because it has exterior work. Match the current closed lists: 16 Design Review categories, 28 Zone Clearance categories, and 17 Administrative Design Review categories.
 
-When Design Review is required for non-residential development, apply §25.05.040(F)'s Planning Commission jurisdiction. Jurisdiction does not itself create a Design Review trigger.
+When Design Review is required for non-residential development, apply §25.05.040(F)(1)(ii)'s Planning Commission jurisdiction (also for any project in the Downtown Specific Plan area and any project where the Planning Commission decides another permit, such as a CUP). Jurisdiction does not itself create a Design Review trigger.
 
 ## Common TI matches
 
@@ -27,9 +27,11 @@ When Design Review is required for non-residential development, apply §25.05.04
 | White/light or potentially glaring reroof | Administrative Design Review, (B)(3)(a)(ix) |
 | Roof dimension/SF/pitch change | Administrative Design Review, (B)(3)(a)(x) |
 
+**Precedence between rows.** A specific row governs its subject over the general "Improvement over 15 ft" and "non-major alteration" rows. Rooftop mechanical equipment is routed by the two equipment rows (a roof unit is not ground-mounted, so ADR under (B)(3)(a)(v)), not by (B)(1)(c), even on a building over 15 ft (rooftop HVAC serving an office, DR-2026-1491, ADR, filed just before Ord. 1732). A true in-kind replacement of an existing roof unit is (B)(2)(c) (ZPCC-2026-1823, counter). New floor area, a new building or a raised roof is a separate piece that keeps (B)(1)(b) or (c). Method: a CrossBeam reference that is not included in this plugin Step 4d; HVAC detail: `../../hvac/SKILL.md`.
+
 Storefronts, awnings, facade finishes, exterior lights, signs, and visible hood components are not categorical triggers by name in the new lists. Classify their actual improvement/height/ESA and related scope. If no closed-list category matches, return `needs_source`; do not revive the former exterior-change default.
 
-For signs, Chapter 25.54 still points to the old `(B)(1)(d)` sign category, but Ord. 1732 reassigned current `(B)(1)(d)` to historic resources. Apply Chapter 25.54's independent standards and approval provisions, but flag the broken routing cross-reference for Planning when no current category independently applies.
+For signs, the current lists have no sign item. A sign permit is decided under §25.54.018 as amended by Ord. 1732: Director for eligible signs (master-program signs, replacements of permitted signs, conforming signs with letters 14 in or less), Planning Commission for all others. Load the `sign` skill. Current `(B)(1)(d)` is historic-resource work, not signs.
 
 ## Historic resources
 

@@ -5,7 +5,7 @@ metadata:
   version: "2.0"
   source: "2025 California Building Code (Part 2), California Existing Building Code (Part 10), California Fire Code (Part 9), California Mechanical Code (Part 4), California Electrical Code (Part 3), California Energy Code (Part 6 — §141.0), California Green Building Standards Code / CALGreen (Part 11 — Ch.3, Ch.5), ADA Title III (28 CFR 36.403); LBMC Title 14 (Building Code amendments), Title 15 (Fire Code amendments), Title 25 (Zoning / Coastal / Specific Plans / Heritage); 2025 CBC/CFC/CWUIC effective 2026-01-01; Ord. 1725/1726"
   authority: "California Building Standards Commission and City of Laguna Beach"
-  law_as_of: "2026-07-22"
+  law_as_of: "2026-10-10"
   generated: "Generated from the CrossBeam corpus. Edit the source, not this file."
 ---
 
@@ -146,11 +146,11 @@ Use this skill for any non-residential tenant improvement, change of occupancy, 
 | **Sprinkler retrofit (commercial)** | **LBMC §14.50.104 (amending CBC §903.6)** — valuation-based, 50% of pre-work valuation cumulative over a rolling 3-year window AND the completed building would be required to be sprinklered under Laguna's tightened §903.2 thresholds. **This is DISTINCT from Title 15 §1103.5.4 (Group R only).** Use §14.50.104 for all commercial occupancies. |
 | **Sprinkler thresholds (new state)** | Laguna tightens CBC §903.2 for Group A, B, E, F-1, M, S-1, S-2 to "**>2 stories OR >5,000 sf**"; Group M with upholstered furniture display sprinklered regardless of size; Group A occupant-load thresholds (100 / 300) unchanged. |
 | **WUI / VHFHSZ exterior** | LBMC Ch. 14.70 applies to ANY commercial exterior work in VHFHSZ. Class A roof citywide regardless of VHFHSZ status. Noncombustible/ignition-resistant walls, vinyl-window welded corners, glass-only skylights, 144-sq-in vent openings, defensible space, fuel modification. |
-| **Heritage Committee** | Properties 50+ years old or on the 1980-81 inventory route through Heritage Committee (Ch. 25.45). Interior alterations to historic structures are NOT exempt from design review. |
+| **Heritage Committee** | Properties on the City register, a state or national register, or with a 1980-81 inventory rating (not age alone, §25.45.004): screen historic-resource status (Ch. 25.45). Minor historic alterations are ADR (§25.05.040(B)(3)(a)(iv)); major ones Design Review (B)(1)(d) after Heritage Committee review (§25.45.010). Interior-only work is (B)(2)(d) unless Planning finds it is an action pertaining to the historic resource; see `references/heritage.md`. |
 | **LBFD (not OCFA)** | Laguna runs its own municipal fire department. Routing, forms, and contact channel are LBFD-specific. LBFD review is **mandatory and concurrent** for all commercial TIs at both entitlement and building-plan-check phases. **Current §25.05.040(C)(4) requires Fire Department or Building Division review, as applicable, before Design Review action on new construction and major remodels.** The former 50%-alteration Fire-Department-only trigger is not current. |
 | **Construction hours** | **Weekdays only, 7:30 AM – 6:00 PM** (§7.25.080(A)). **Saturday, Sunday, federal holidays all PROHIBITED** (§7.25.080(B) — no Sat window in Laguna). Materially stricter than Costa Mesa / OC norm. |
 | **Submittal sequence** | Planning (zoning) → Public Works → Building Division plan check. Building does not accept submittals without Planning and Public Works sign-offs. |
-| **Sheet sets** | 3 sets 24"×36" (arch / structural / MEP / energy / green) + 2 sets supporting (geotech / structural calcs / energy calcs). |
+| **Sheet sets** | 3 sets 24"×36" (arch / structural / MEP / energy / green) + 2 sets supporting (structural calcs / energy calcs; a geotech soils report only when the work touches foundations, grading or new structure, not for interior-only TI). |
 | **OTC eligibility** | Commercial **signs** (and simple sign change-outs) are OTC-eligible. Full commercial TIs are not OTC. |
 
 ---
@@ -163,10 +163,14 @@ Use this skill for any non-residential tenant improvement, change of occupancy, 
 |-----------------|----------|-----------|------------|----------|
 | Interior-only, no exterior, no occupancy change, no historic action | Zone Clearance (§25.05.040(B)(2)(d)) | Likely exempt unless intensity-of-use change | Building-plan-check review | Screen property/status |
 | Interior + storefront / signage / awning / lighting / paint / roof equipment | Match current closed lists; `needs_source` if no category matches | Determine independently | Entitlement + plan-check review as applicable | Required if historic action |
-| Change of occupancy (e.g., retail B → restaurant A-2) | Planning Commission DR | Required — intensity-of-use trigger | Entitlement + plan-check review | Required if 50+ yr / inventory |
-| Major remodel | Planning Commission DR if a (B)(1) category matches (LBFD/Building concurrent review under current §25.05.040(C)(4)) | Required | Entitlement + plan-check review | Required if 50+ yr / inventory |
-| Demolition + commercial rebuild | Planning Commission DR | Required; appealable analysis if within 300 ft beach/MHW/bluff | Entitlement + plan-check review | Required if 50+ yr / inventory |
-| Sign-only (within approved sign program) | Administrative (Director) | Typically exempt | Skip unless illuminated > thresholds | Skip |
+| Change of use or occupancy (e.g., retail B → restaurant A-2) | A use change is not itself a Design Review category. It needs Zone Clearance (§25.05.045(B)(2)) plus any use permit the zone requires (AUP/CUP per the zone chapter). Classify the physical work separately: interior-only work is Zone Clearance (§25.05.040(B)(2)(d)); exterior work goes to DR only if a (B)(1) category matches | CDP required if the new use needs more parking than the prior legal use (intensification of use, §25.07.006) | Entitlement + plan-check review | Required if historic action |
+| Major remodel | Planning Commission DR under §25.05.040(B)(1)(a) (LBFD/Building concurrent review under current §25.05.040(C)(4)). Measure major remodel with `../residential-remodel/references/city-major-remodel-methodology.md`; the City's guide applies it to a "residence or commercial building" | Required | Entitlement + plan-check review | Required if historic resource / inventory-rated |
+| Demolition + commercial rebuild | Planning Commission DR | Required; appealable analysis if within 300 ft beach/MHW/bluff | Entitlement + plan-check review | Required if historic resource / inventory-rated |
+| Sign-only | Sign permit under §25.54.018 (Ord. 1732): Director if in an approved master sign program, a replacement of a permitted sign, or conforming with letters 14 in or less; Planning Commission otherwise. Load `sign` | Typically exempt | Skip unless illuminated > thresholds | Skip |
+
+**Ord. 1732 coastal-zone caveat (applies to every row above).** Ord. 1732 (effective 2026-07-22, extended by Ord. 1733) set the closed Design Review / Zone Clearance / ADR lists. The Coastal Commission has not certified it yet; Council adopted a PRC 30510(a) resubmittal resolution on 2026-09-22. The certified zone text still says "All buildings, structures and improvements are subject to design review as provided in Section 25.05.040" (C-N §25.19.008(D); same in LBP §25.18.008(E), C-1 §25.20.008(B), SLV §25.25.008(E)). The City applies Ord. 1732 locally. For a coastal-zone project, state the Ord. 1732 route and tell the applicant to confirm the track with Planning at pre-application. UNSETTLED.
+
+**Adding dwelling units to a commercial building** (office or retail to apartments, residential over commercial, mixed-use conversion): this is not a commercial TI. Load the multi-unit residential skill: `../multi-unit-residential/references/mixed-use-conversion.md` first, then `laguna-practice-mixed-use.md` (how the City has handled recent housing-over-commercial cases) and `submittal-kit-office-to-residential.md` (what to submit) from the same folder. Keep this overlay only for any remaining commercial space and its fire/building items.
 
 Then load:
 
@@ -174,9 +178,10 @@ Then load:
 - `references/coastal-development-permit.md` — CDP tiers, exemptions, intensity-of-use, appealable area.
 - `references/sprinkler-retrofit-commercial.md` — §14.50.104 valuation math + §903.2 tightened thresholds + NFPA 13 amendments.
 - `references/wui-commercial.md` — WUI exterior, Class A roof, noncombustible walls, vinyl windows, skylights, vents.
-- `references/heritage.md` — Heritage Committee, 50-year inventory, historic interior alterations.
+- `references/heritage.md` — Heritage Committee, Historic Register and Historic Resources Inventory status, historic interior alterations.
 - `references/specific-plans.md` — Downtown Specific Plan, Arch Beach Heights, Three Arch Bay, North Coast Highway corridor.
 - `references/submittal-package.md` — sheet sets, applications, supporting docs, department sequence.
+- `references/zoning-use-routing.md` — is the tenant's use permitted, CUP, AUP or not listed in the parcel's commercial zone (LB/P, C-N, C-1, CH-M, SLV, M-1A, and the DSP Table 5-1 method). Load for any use or change-of-use question.
 
 #### STEP 3 — Apply State Floor + City Overrides
 
@@ -198,7 +203,7 @@ For each loaded state checklist item, run the state rule first. Then apply Lagun
 - **Fire alarm — Group A ≥100 occupant load** (§15.01.035 amending CFC §907.2.1) — manual fire alarm w/ occupant notification.
 - **HMMP / HMIS** (§15.01.050) — required at fire-code-official discretion; dry cleaners, photo labs, salons, bulk-CO2 restaurants routinely tripped.
 - **Permit exemptions** (§14.50.022 amending CBC §105.2) — painting, papering, tiling, carpeting, cabinets, counter tops, similar finish work exempt; non-fixed movable fixtures/cases/racks/counters/partitions ≤5'9" exempt.
-- **Construction hours** — Mon–Fri 7–6, Sat 8–5, Sun/holiday prohibited.
+- **Construction hours** — weekdays 7:30 AM – 6:00 PM only; Saturday, Sunday and federal holidays prohibited (§7.25.080).
 
 #### STEP 4 — Output the Review Result
 
@@ -260,7 +265,7 @@ Building permit expiration and extension are a citywide rule (§14.50.024) — s
 
 | # | Item | Requirement | Source |
 |---|------|-------------|--------|
-| **LB-CTI-1** | Design review authority | Non-residential development routes to **Planning Commission** (not DRB). Administrative Design Review (Director) available for limited minor scope under §25.05.040(B). | LBMC §25.05.040(F)(1)(b) |
+| **LB-CTI-1** | Design review authority | Non-residential development routes to **Planning Commission** (not DRB). Administrative Design Review (Director) available for limited minor scope under §25.05.040(B)(3). | LBMC §25.05.040(F)(1)(ii) (Ord. 1732) |
 | **LB-CTI-2** | Current planning route | Match actual scope to the 16/28/17 closed lists. Record the exact category; do not use exterior visibility as a residual trigger. | LBMC §25.05.040(B); Ord. 1732 §7 |
 | **LB-CTI-3** | Interior-only route | Interior modification with no exterior modification → Zone Clearance. Historic-resource actions separately route under current `(B)(1)(d)` or `(B)(3)(a)(iv)`. | LBMC §25.05.040(B)(2)(d) |
 | **LB-CTI-4** | DR public notice | ≥21 calendar days mailed (Planning Commission); ≥14 days (ADR); ≥10 days posted on site. Notice radius 300 ft owners / 100 ft tenants / 300 ft HOA / CCC if CDP. | LBMC §25.05.065(D) |
@@ -268,7 +273,7 @@ Building permit expiration and extension are a citywide rule (§14.50.024) — s
 | **LB-CTI-6** | Fire Safety Standards Review on DR | For new construction and major remodels, the Fire Department or Building Division, as applicable, must review/approve or conditionally approve prior to Design Review action. Public-safety conditions cannot be modified without that review authority's concurrence. The former 50%-alteration Fire-Department-only trigger is not current. | LBMC §25.05.040(C)(4) |
 | **LB-CTI-7** | CDP required in Coastal Zone | Required for development in Coastal Zone except for items specifically exempted in §§25.07.008 / 25.07.010. ~95% of city is Coastal Zone. | LBMC §25.07.004 |
 | **LB-CTI-8** | CDP intensity-of-use trigger | Improvements to non-SFR structures exempt **UNLESS** improvement results in a change in the intensity of use (the principal commercial trigger), OR is in the SFR-exemption-restricted areas (between sea and first public road, near bluff/wetland/ESHA), OR is a conversion of multi-unit/visitor-serving commercial to fee/long-term-leasehold ownership, OR significant landform alteration. | LBMC §25.07.008(A)(2) |
-| **LB-CTI-9** | CDP de minimis waiver | Director may waive CDP for development that is non-appealable, consistent with LCP, no adverse effect, with similar projects routinely approved without conditions. 10-day public notice. | LBMC §25.07.009 |
+| **LB-CTI-9** | CDP de minimis waiver | Director may waive CDP for development that is non-appealable, consistent with LCP, no adverse effect, with similar projects routinely approved without conditions. 10-day public notice. Not available if the site involves a violation or the work addresses a violation (§25.07.009(B)(3)), or with known opposition or alleged/outstanding LCP violations (§25.07.009(D)(2)). | LBMC §25.07.009 |
 | **LB-CTI-10** | Administrative CDP | Public hearing may be waived for "minor development" with Director consistency finding; 15-working-day public-hearing-request window; deemed approved if no request. | LBMC §25.07.013 |
 | **LB-CTI-11** | Appealable CDP / CCC appeal | Appealable to CCC within **10 working days** if project is between sea and first public road, within 300 ft of inland extent of beach/MHW, within 100 ft of wetland/estuary/stream, within 300 ft of seaward face of coastal bluff, OR major public works / energy facility. | LBMC §25.07.016, §25.07.006 |
 | **LB-CTI-12** | CDP effective date | Non-appealable: effective on adequate notice of final action. Appealable: not effective until 10-working-day CCC appeal period expires with no appeal. | LBMC §25.07.012 |
@@ -291,13 +296,13 @@ Building permit expiration and extension are a citywide rule (§14.50.024) — s
 | **LB-CTI-29** | WUI exterior materials | In VHFHSZ, exterior walls noncombustible/ignition-resistant; vinyl windows welded corners + metal reinforcing; skylights glass only (no plastic); vent openings ≤144 sq in or 1⅜" solid-core door equivalent. Exception: minor repair/replacement of exterior materials with same materials. | LBMC Ch. 14.70 (§§14.70.015 / 14.70.025 / 14.70.030 / 14.70.035 / 14.70.040) |
 | **LB-CTI-30** | Defensible space | All habitable structures in VHFHSZ must maintain defensible space per August 2021 guideline; maintenance obligation regardless of permit status. | LBMC §14.70.060; CFC §304.1.3.2 |
 | **LB-CTI-31** | Fuel modification | For new construction or major remodels in Fuel Modification designation areas — preliminary plans concurrent with tentative map; final plans approved by Fire Code Official before building permit issuance. | LBMC §14.70.070; CFC §324 |
-| **LB-CTI-32** | Heritage Committee review | Properties 50+ years old or on 1980-81 inventory route through Heritage Committee for alterations, Mills Act, Historic Register placement. Demolition of historic-register structure requires published newspaper notice. | LBMC Ch. 25.45; §25.05.065(F) |
+| **LB-CTI-32** | Heritage Committee review | Historic resources (register, state/national listing, substantial evidence) route through; an inventory rating flags a possible assessment; age alone is not a trigger (§25.45.004). Covers Heritage Committee for alterations, Mills Act, Historic Register placement. Demolition of historic-register structure requires published newspaper notice. | LBMC Ch. 25.45; §25.05.065(F) |
 | **LB-CTI-33** | Historic alterations | Qualifying minor action → ADR after Heritage Committee recommendation; major action → Design Review after recommendation. Apply current §25.45.010. | LBMC §25.05.040(B)(1)(d), (B)(3)(a)(iv); §25.45.010 |
 | **LB-CTI-34** | Downtown Specific Plan | Apply Ch. 25.40 standards, then match current §25.05.040 lists. Do not use the repealed DSP Public Works ADR exclusion; CIP routing now uses major/de minimis/minor CIP categories. | LBMC Ch. 25.40; §25.05.040(B)(1)(p), (B)(2)(bb), (B)(3)(a)(xvii) |
 | **LB-CTI-35** | Specific Plan / overlay districts | Identify any applicable specific plan: Downtown SP (Ch. 25.40), Arch Beach Heights SP (Ch. 25.35), Three Arch Bay (private community — separate application doc ID 11971), Village Entrance / North Coast Highway corridor (Coastal commercial frontage; CDP + Planning Commission DR very likely; CCC appealability check). | LBMC Title 25, Chs. 25.35 / 25.40 |
-| **LB-CTI-36** | Sign programs (Ch. 25.54) | Planning Commission may delegate administrative approval to Director for new signs or changes to existing signs **subject to an approved sign program**. Without an approved program, exterior signs route to hearing. Sign sizing: 1 sf per linear foot of frontage, 150 sf max per site, 75 sf max per sign. Commercial signs are OTC-eligible at counter. | LBMC Ch. 25.54 |
+| **LB-CTI-36** | Signs and sign programs (Ch. 25.54) | Director approves signs in an approved master sign program, replacements of permitted signs, and conforming signs with letters 14 in or less within the site area cap (§25.54.018(E), Ord. 1732); all others, and every master sign program (4+ businesses), go to the Planning Commission (§25.54.018(E)(5), §25.54.010(D)). Sign sizing: 1 sf per linear foot of frontage, 150 sf max per site, 75 sf max per sign. Director-approvable commercial signs are OTC-eligible at counter. | LBMC §§25.54.010(D), 25.54.018 |
 | **LB-CTI-37** | LBFD review (not OCFA) | Multi-family, commercial, industrial new construction and remodel projects route to LBFD at entitlement and at building-plan-check. Contact: fireprevention@lagunabeachcity.net / (949) 497-0352. | LBFD Fire Prevention Division |
-| **LB-CTI-38** | Submittal sets | 3 sets 24"×36" construction drawings (architectural, structural, MEP, energy, green building) + 2 sets supporting (geotech soils report, structural calcs, energy calcs). | the city reference / Plan Check FAQ |
+| **LB-CTI-38** | Submittal sets | 3 sets 24"×36" construction drawings (architectural, structural, MEP, energy, green building) + 2 sets supporting (structural calcs, energy calcs; geotech soils report only when the scope adds foundations, grading or new structure — N/A for interior-only TI). | the city reference / Plan Check FAQ |
 | **LB-CTI-39** | Submittal sequence | Planning Division (Zoning Plan Check) → Public Works → Building Division. Building does not accept without Planning and Public Works sign-offs. | City policy |
 | **LB-CTI-40** | Applications required | Building application (doc ID 216); EMP permit application (doc ID 11955); Planning application (doc ID 23183); Design Review application (doc ID 25175) only if a current `(B)(1)` category matches; CDP application (doc ID 25230) if not exempt; Demolition Notification (doc ID 10699) if demo; Subcontractor list (doc ID 5143). | Permit manifest |
 | **LB-CTI-41** | Caltrans encroachment | Required when work touches PCH (Coast Hwy / Hwy 1) or Laguna Canyon Road (Hwy 133) frontages. | State |
@@ -386,6 +391,7 @@ Load these on demand. Paths are relative to this file.
 - `references/sprinkler-retrofit-commercial.md` — Laguna Beach — Commercial Sprinkler Retrofit (LBMC §14.50.104)
 - `references/submittal-package.md` — Laguna Beach — Commercial TI Submittal Package
 - `references/wui-commercial.md` — Laguna Beach — WUI / VHFHSZ Requirements for Commercial TI
+- `references/zoning-use-routing.md` — Laguna Beach — Commercial Zoning Use-Routing (the "WHAT" layer)
 
 ---
 

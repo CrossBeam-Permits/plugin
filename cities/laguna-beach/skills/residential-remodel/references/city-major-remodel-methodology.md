@@ -86,7 +86,7 @@ The October 2026 edition prints this bullet under trigger 2 (expansion). Its tex
 
 **Each floor separately (walls).** Both methodologies now count walls "on each floor". Compute one percentage for each floor. Report each floor's numerator, denominator, and percentage.
 
-**How floors combine — the handout does not say.** The October 2026 handout computes walls "on each floor". It does not state how the floor results combine into one result for the structure. Compute two numbers for each structure:
+**How floors combine — the handout does not say (UNSETTLED; confirm with Planning at pre-application).** The October 2026 handout computes walls "on each floor". It does not state how the floor results combine into one result for the structure. The City has not ruled on it. Compute two numbers for each structure:
 
 - the **floor percentages**: (wall LF removed or reinforced on that floor) ÷ (existing wall LF on that floor) × 100, one for each floor;
 - the **whole-structure total**: (wall LF removed or reinforced on all floors of that structure) ÷ (existing wall LF on all floors of that structure) × 100.
@@ -214,7 +214,9 @@ Verbatim from the handout, both sections, item 3:
 
 This is the **only** carveout. ADU square footage is not counted in the expansion prong. ADU demolition/reinforcement is not counted in the demolition prong.
 
-> **Note on ADU coastal exemption pushback (CCC F9a-11-2024):** Even though ADUs are exempt from the **major-remodel** calculation, ADUs in the coastal zone still need a Coastal Development Permit per CCC F9a-11-2024. See `city-cdp-coastal-zone.md`.
+The code states one exception. ADUs do not count toward the major-remodel calculation "except as necessary to comply with section 30253 of the Coastal Act limiting alterations of existing bluff top, beachfront, and coastal canyons" (Urgency Ord. 1713, LBMC 25.17.020(d)(2); certified LCP 25.17.030(A)(3)). On a bluff-top, beachfront or coastal-canyon lot, FLAG the carveout for Planning confirmation.
+
+> **Note on ADUs and CDPs:** Even though ADUs are exempt from the **major-remodel** calculation, a new or garage-conversion ADU in the coastal zone still needs a Coastal Development Permit; Categorical Exclusion E-93-1 does not clear it (Coastal Commission report F9a, Nov. 2024). See `city-cdp-coastal-zone.md` and `../../adu/SKILL.md`.
 
 ---
 
@@ -290,7 +292,7 @@ Keep classification and consequence separate. Section 25.56.011 does not change 
 
 For every Laguna residential remodel review:
 
-1. Determine coastal zone appealable vs coastal zone non-appealable status (Step J point-in-polygon or applicant-supplied).
+1. Determine coastal zone appealable vs coastal zone non-appealable status (Step J point-in-polygon or applicant-supplied). Outside the coastal zone the October 2026 handout gives no method; §25.10.008(O) still applies. UNSETTLED which calculation staff use there; report both methods and confirm with Planning at pre-application.
 2. Apply the corresponding methodology.
 3. List each building or structure on the site. Run steps 4–9 for each one independently.
 4. Compute each component for that structure (foundation / walls / roof in the appealable area; exterior walls only in the non-appealable area). Compute the wall percentage **on each floor**.
@@ -305,7 +307,7 @@ When **YES** fires, route the project to **Design Review** under §25.05.040(B)(
 - §25.56.011 new-building classification: current zone development standards, utility undergrounding, required on-/off-site dedications, and new-development fees
 - Sprinkler retrofit — **two triggers, either one fires** (see `city-sprinkler-retrofit.md`): §1103.5.4 scope (a major remodel likely fires prong 1, 2 or 3) and Ch. 14.52.030 valuation (50% cumulative over any three-year period). **The major-remodel 50% is its own test.** It decides Design Review and CDP tier. It is not the sprinkler test, and a project can fire a sprinkler trigger without being a major remodel.
 - §25.05.040(C)(4) Fire Safety Standards Review (Fire Department or Building Division, as applicable)
-- Ch. 25.07 CDP (in coastal zone, regardless of E-93-1)
+- Ch. 25.07 CDP (in coastal zone; a major remodel is new development. In an E-93-1 categorical-exclusion area: UNSETTLED, confirm with Planning)
 - Nonconforming status ends: the major-remodel structure must be brought into compliance, and when it is the principal structure, all associated accessory structures and improvements lose their legal, nonconforming status (October 2026 handout; see Nonconforming Structures After a Major Remodel)
 - §25.56.008(A) full Title 25 conformance for any expansion portion (if existing structure is nonconforming)
 - CEBC additions framework (parent skill, if scope adds SF)
