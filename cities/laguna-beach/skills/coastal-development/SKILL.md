@@ -228,7 +228,7 @@ For appealable CDPs, local decision finality depends on Coastal Commission notic
 
 Urgency Ord. 1732 (effective 2026-07-22) amended Chapter 25.07. These amendments, like the rest of Ord. 1732, are not certified by the Coastal Commission; the City Council adopted a resubmittal resolution on 2026-09-22. Whether they bind a CDP before certification is UNSETTLED; confirm with Planning at pre-application.
 
-- §25.07.008(B): the record of exemptions is kept on the City's website; exemptions for appealable development are reported to the Commission's Executive Director within 7 calendar days.
+- §25.07.008(B): the Director keeps a record of exemptions (Ord. 1732 deleted the sentence putting it on the City's website); exemptions for appealable development are reported to the Commission's Executive Director within 7 calendar days.
 - §25.07.012(J): changes to an approved CDP. The Director may approve minor changes without a hearing only if they are consistent with the LCP, do not touch a feature that was a basis for the environmental finding or a condition, do not expand the use, and do not alter the §25.07.012(G) findings. Other changes go back to the original review authority on a new application. Commission-issued CDPs are amended by the Commission.
 - §25.07.012(K): CDP staking. Poles and ribbons showing the full structure, including decks and eaves, in place and surveyor-certified at least 21 calendar days before the first public hearing; re-staked at least 14 days before a later hearing if required; removed within 20 days after the final decision. The Director may waive staking in writing.
 - §25.07.006: adds a definition of "Director of Community Development" (includes a designee).

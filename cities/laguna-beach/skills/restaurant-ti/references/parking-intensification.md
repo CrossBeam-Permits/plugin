@@ -33,10 +33,10 @@ If intensification fires, two independent entitlements are triggered:
 | Step | Detail |
 |------|--------|
 | 1 | Identify prior legal use of the tenant space (lease history, certificate of occupancy, business license records) |
-| 2 | Apply the relevant Ch. 25.52 ratio to the prior use to get prior-use demand |
-| 3 | Apply the relevant ratio to the proposed restaurant to get proposed demand |
+| 2 | Pick the ratio of the parcel's governing plan ("based upon the provisions of the underlying zone", 25.07.006): the Downtown Specific Plan's single non-residential ratio (3 per 1,000 sf for office, retail and food service) inside the DSP; Ch. 25.52 elsewhere or where the plan defers to it. Apply it to the prior use |
+| 3 | Apply the same plan's ratio to the proposed restaurant to get proposed demand |
 | 4 | If proposed > prior → intensification of use → CDP trigger; provide or relieve the added spaces |
-| 5 | If proposed = prior or <= prior → no intensification (rare for retail→restaurant conversion) |
+| 5 | If proposed = prior or <= prior → no intensification. Under Ch. 25.52 this is rare for retail→restaurant; inside the DSP a same-size retail→food change is not intensification, because both uses share one ratio (added floor area, including outdoor seating counted as floor area, can still raise it) |
 
 ### Common Prior-Use Ratios
 

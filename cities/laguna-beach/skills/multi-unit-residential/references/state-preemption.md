@@ -2,7 +2,7 @@
 title: "State Housing Law Preemption — Laguna Beach Multi-Unit"
 category: preemption
 relevance: critical
-key_code_sections: "Gov. Code §65915 (Density Bonus); Gov. Code §65913.4 (SB 35 / SB 423 streamlining); Gov. Code §65912.100-65912.139 (AB 2011); Gov. Code §66411.7 (SB 9); Gov. Code §65589.5 (Housing Accountability Act); LBMC Ch. 25.95 (SB 9 local impl.); LBMC Ch. 25.96 (Affordable Housing Programs / Density Bonus local impl.)"
+key_code_sections: "Gov. Code §65915 (Density Bonus); Gov. Code §65913.4 (SB 35 / SB 423 streamlining); Gov. Code §65913.16 (SB 4, faith and college land); Gov. Code §65913.6 (AB 2244, religious-use parking); Gov. Code §65912.100-65912.139 (AB 2011); Gov. Code §66411.7 (SB 9); Gov. Code §65589.5 (Housing Accountability Act); LBMC Ch. 25.95 (SB 9 local impl.); LBMC Ch. 25.96 (Affordable Housing Programs / Density Bonus local impl.)"
 ---
 
 # State Housing Law Preemption — Laguna Beach Multi-Unit
@@ -19,6 +19,7 @@ This reference covers the **Laguna-specific interaction** with state law. For th
 | **AB 1287 (eff. Jan 1, 2024)** | Stacked density bonus — up to 100% bonus for very-low + moderate-income combo | Layers on Ch. 25.96 | Same — Coastal Act applies but cannot deny |
 | **SB 35 (Gov. Code §65913.4 base)** | DRB discretion (becomes ministerial) for qualifying mixed-income projects when city lags RHNA | None (state preempts directly) | **Historical Coastal Zone exemption — narrowed by SB 423** |
 | **SB 423 (eff. Jan 1, 2024)** | Same as SB 35 but extends streamlining + narrows Coastal Zone exemption | None | **Some Coastal Zone parcels now SB 35/423 eligible** |
+| **SB 4 (Gov. Code §65913.16, as amended by SB 597)** | Zoning use, density, height (plus one story or 11 ft) and discretionary review for a 100% lower-income project on land a religious institution or independent college owned by Jan 1, 2024 | None (state preempts directly) | **Coastal zone is not an exclusion**, but a CDP is still required (see "SB 4" below) |
 | **AB 2011 (Gov. Code §65912.100-139)** | Discretionary review on commercial-corridor parcels (becomes ministerial) for 100% affordable or mixed-income housing | None | Coastal Act applies but project is ministerial |
 | **SB 9 (Gov. Code §66411.7)** | R-1 only — urban lot splits + duplex by-right | **Ch. 25.95** (Laguna's restrictive impl.: 1,000 sf cap, 16 ft height, 3-year owner-occupancy, no rooftop decks) | Coastal Zone partially preemption-limited; CCC reviewed Laguna SB 9 impl. in 2024 |
 | **Housing Accountability Act (Gov. Code §65589.5)** | DRB / Planning Commission ability to deny or downzone housing | None (state preempts directly) | Coastal Act doesn't override HAA findings standard |
@@ -42,6 +43,75 @@ Laguna has historically lagged on RHNA progress. The city's 6th-cycle Housing El
 ### SB 423 Narrowed the Coastal Zone Exemption
 
 SB 35's original Coastal Zone exemption was a routine reason Laguna disqualified streamlined projects. SB 423 (eff. Jan 1, 2024) narrowed that exemption — **some Coastal Zone parcels in Laguna are now SB 35/423-eligible**. Do not auto-disqualify a project for being in the Coastal Zone without running the SB 423 eligibility test.
+
+### SB 4: housing on faith and college land (Gov. Code §65913.16)
+
+Use for any housing proposal on land owned by a church or other religious institution, or by an
+independent (nonprofit) college, whether or not the applicant says "SB 4". Run the test in order.
+
+1. **Eligibility (65913.16(c)); all must hold.**
+   - Land owned on or before Jan 1, 2024 by a religious institution or an independent institution
+     of higher education, including through an affiliated nonprofit ((c)(1)). The applicant must be
+     a "qualified developer" ((b)(9)).
+   - Infill: a legal parcel in an urbanized area, with at least 75% of the site perimeter adjoining
+     urban uses ((c)(2), citing 65913.4(a)(2)(A)-(B)).
+   - Site exclusions of 65913.4(a)(6)(B)-(K) ((c)(3)): farmland, wetlands, a very high fire hazard
+     severity zone unless the site adopts the state fire mitigation standards (PRC 4290-4291 or Gov.
+     Code 51182, CBC Ch. 7A), a listed hazardous waste site, an earthquake fault zone unless built
+     to the seismic standards, a FEMA flood zone or floodway (with the stated cures), conservation
+     plan lands, protected-species habitat and conservation easements. Subparagraph (A), the
+     coastal zone exclusion, is left out on purpose: being in Laguna's coastal zone does not
+     disqualify a site.
+   - No demolition of rent-restricted, rent-controlled or tenant-occupied (past 10 years) housing,
+     no site where tenant housing was demolished in the past 10 years, and no demolition of a
+     historic structure on a national, state or local register ((c)(4), citing 65913.4(a)(7)). In
+     Laguna, check the City historic register before any building on the site comes down.
+   - Industrial and oil buffers ((c)(5)-(8)); 100% of units for lower-income households, except up
+     to 20% moderate-income and 5% staff, at affordable cost for 55 years (rental) or 45 years
+     (owner) ((c)(9)); every objective City standard not in conflict with the section ((c)(10));
+     replacement under Gov. Code 66300(d) when units are demolished ((c)(11)); prevailing wage
+     certification ((c)(12)); and the remaining (c) items.
+2. **By-right objective review.** A qualifying project is a "use by right": no CUP or other
+   discretionary local review, and not a CEQA project ((b)(12), (c)). The City must send written
+   notice of any conflict with an objective standard within 60 days of submittal (150 or fewer
+   units) or 90 days (more than 150); with no timely notice the project is deemed consistent
+   ((l)(1)-(2)). Design review, if any, is objective only and may be held by the Planning
+   Commission or an equivalent body; it must finish within 90 or 180 days by the same unit split
+   ((l)(5)). Approval life, changes and later permits follow 65913.4(f), (g), (h) ((l)(8), (9),
+   (11)). The City may not add fees or inclusionary rules because a project uses SB 4 ((l)(10)).
+3. **Density and height (j).** In a zone allowing housing, the Housing Element default density
+   for lower-income housing (Gov. Code 65583.2(c)(3)(B)) or the City's higher figure; in a zone
+   that does not allow housing, 40 units per acre. Height is one story or 11 ft above the height
+   otherwise applicable to the parcel. Density bonus concessions and waivers stay available
+   ((j)(1)(C), (j)(2)(C)); in a nonresidential zone they cannot push height past the (j)(2)(B)
+   limit. The religious use and any existing permitted use stay on the site by right within their
+   existing floor area and conditions ((i)); ground-floor childcare, community and (outside
+   single-family zones) by-right commercial uses are allowed ((h)).
+4. **Parking cap (k).** The whole development, the religious use included, provides at most one
+   space per unit; none may be required within one-half mile walking distance of a high-quality
+   transit corridor or major transit stop, or within one block of a car share vehicle.
+5. **Church parking (AB 2244, Gov. Code §65913.6).** This also applies outside SB 4, to any housing
+   project that qualifies for a density bonus on land wholly owned by a religious institution and
+   on, beside, or within 0.1 mile of a parcel holding the religious use's required parking
+   ((a)(5)). The City may not require replacement of up to 50% of those religious-use spaces
+   ((b)(1)-(2)), may not make the project cure an existing parking deficit ((c)), must count the
+   remaining spaces toward the housing's own parking ((d)), and may not deny the project only
+   because church parking drops by 50% or less ((e)). Under this section alone the City may still
+   require up to one space per unit, except near transit or a car share ((f)); accessible and EV
+   space requirements stay ((g)). On an SB 4 project, the (k) cap above also applies.
+6. **A CDP is still required.** Section 65913.16 contains no Coastal Act exemption, so the
+   project needs a CDP under Ch. 25.07 (25.07.004) unless a 25.07.008 exemption applies; new
+   multi-unit housing is not an improvement to an existing structure. **Who decides follows
+   25.07.012(D):** the CDP goes to the same body that approves the project's other City permits
+   (for example the body holding the objective design review, or a parcel map), processed
+   together; when the CDP is the only City permit, the Director decides it at a public hearing
+   ((D)(1)). Appealable-area rules and Coastal Commission appeal apply as for any CDP. Lean (City
+   practice): the City has sent an SB 4 project's CDP to the Planning Commission as a
+   discretionary CDP with findings under 25.07.012(F)-(G), alongside its map; expect the Planning
+   Commission when the project also needs a map or Commission design review.
+
+The section sunsets Jan 1, 2036 ((p)). Confirm the current text before relying on a detail; SB 597
+(2025) amended it.
 
 ### Ch. 25.96 Housing Programs and Incentives (verbatim from ecode360.com/46473710, scraped 2026-05-12)
 
@@ -88,6 +158,9 @@ SB 9 is a single-family-residential (R-1) preemption pathway. It can produce dup
 |---------|----------|----------|
 | City staff applies a zone height limit or the 36 ft ceiling to deny a qualifying density bonus project without feasibility-justified finding | **FAIL** | Gov. Code §65915(e), (k); Ch. 25.96 |
 | Project disqualified from SB 35/423 solely for being in Coastal Zone (no SB 423 eligibility test run) | **FAIL** | Gov. Code §65913.4 as amended by SB 423 |
+| SB 4 site disqualified for being in the coastal zone, or sent to a CUP or discretionary design review | FLAG | Gov. Code §65913.16(b)(12), (c)(3), (l)(5) |
+| SB 4 project treated as needing no CDP | FLAG | LBMC 25.07.004, 25.07.012(D); §65913.16 has no Coastal Act exemption |
+| Church-site housing required to replace up to 50% of religious-use parking or cure an existing deficit | FLAG | Gov. Code §65913.6(b)-(c) |
 | AB 2011 project routed to DRB / Planning Commission | **FAIL** | Gov. Code §65912.100-139 — ministerial only |
 | DRB applies subjective design findings to deny a density bonus project | **FAIL** | Gov. Code §65915 + §65589.5 (HAA) — only objective standards apply |
 | Density Bonus parking treated as base ratio (not §65915(p)) | **FAIL** | Gov. Code §65915(p) — 0.5/studio, 1/1BR, 1.5/2-3BR, 2.5/4+BR |
@@ -100,7 +173,8 @@ When ANY of the following appears in the project narrative, load this reference 
 
 - "Density bonus"
 - "Affordable" / "very low income" / "low income" / "moderate income"
-- "SB 9" / "SB 35" / "SB 423" / "AB 2011" / "AB 1287"
+- "SB 9" / "SB 35" / "SB 423" / "AB 2011" / "AB 1287" / "SB 4" / "AB 2244"
+- Housing on land owned by a church, religious institution or independent college
 - "Ministerial review" / "streamlined approval"
 - "Builder's Remedy"
 - "Housing Accountability Act"
