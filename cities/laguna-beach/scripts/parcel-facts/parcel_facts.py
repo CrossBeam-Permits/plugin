@@ -1006,7 +1006,6 @@ def build_parcel_shape(geometry):
         "frame": frame,
         "rings": rings,
         "bbox": bbox(rings),
-        "bbox_ll": box_ll,
         "vertices": [p for ring in rings for p in ring],
         "segments": segments(rings, True),
         "samples": samples,

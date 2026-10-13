@@ -10,17 +10,17 @@
       "scripts/plugin-publish/laguna/index.mjs": "3275befa230fa159121f29b516e72a3a831c0a52c05397977d15346166f07ee1",
       "scripts/plugin-publish/laguna/lib.mjs": "eb8c20e4ee4b955d0f0a7a20bf9d503530a1baed61e4aa8d995f32c89fff4a8f",
       "scripts/plugin-publish/laguna/modules/fees.mjs": "f8860deaa8c3a74930be26126852071e79a17485d8562e0d5b540669219266e5",
-      "scripts/plugin-publish/laguna/modules/parcel-facts.mjs": "34b4087ecbe6eecff252607d538dc060c3fe90249941aa3d34b1e538a7a0ac60",
+      "scripts/plugin-publish/laguna/modules/parcel-facts.mjs": "cefe47a39ba318afacfb285695d13c4cdfe2fdd7c8af49a13d764da83b5329ca",
       "scripts/plugin-publish/laguna/modules/requirements-sanitize.mjs": "9f4d074608189de8b16700195637d5cc160db73821bdd40ab1f7499c84a9f905",
       "scripts/plugin-publish/laguna/modules/requirements.mjs": "1be4bb6a40a1cfa43eb3264a462b738e51b4f63a0737d42555d9f65fdec7a619",
-      "scripts/plugin-publish/laguna/modules/skills.mjs": "7fc4eaf898557cf2f405654576632198d7df170338b04992e1684adb09a3a982",
+      "scripts/plugin-publish/laguna/modules/skills.mjs": "90a6fc10e00b8c86aa244f76e4e43c31dcb2c86583be77affeab16f6377d8368",
       "scripts/plugin-publish/laguna/planning-check.mjs": "55bf28f958f64cd8e705b72bb1dd782796820df9280fb1a701ff0044c1c1b172",
       "scripts/plugin-publish/package-lock.json": "356af1aae271e45cd2ece5e789f64764ff13e3ee7a7e7a9d590bdb835dcbdd2a",
       "scripts/plugin-publish/package.json": "b4cfb27b30d2dd667b3109a57b59d20e50e75e777840d024ce5e0cb879bfe30f"
     }
   },
   "privateRepo": {
-    "commit": "37f51aa5aedaeca785e956134fa4d14d145b001c",
+    "commit": "cc9954d783982e28d0951cae4893f849be1a4919",
     "dirty": false
   },
   "options": {
@@ -405,7 +405,7 @@
     "66e38c6c16e0632f3fc83c0ae5c0ac9ea4879c0ecb850e3d391c46139b08f427": "0b61eac64d2fa0b8b2c5478d1363899d494a4f31debd73918a9bc82abe06a328",
     "5b7d460a4489d573554924644ff9e1dec44ffd7a51f02431b5ff2148c054e6bf": "e860dce0531493db46dd936a1fb54cd81883ace5bf1b9742a1b7798f898617aa",
     "7c51833ebcf655f42ce2fa96865d8ecb067dc68dea61f47d7cf06f75ec705a1a": "6a0a2ca66c1070702060fff5331a50994588a19b4c7dccb124ad94c92e69b9fd",
-    "10477712af1ce7ae0555b9f41b620512707c5d23f4a870489b060287eaec8eb5": "4bc5980353fe96c6b9a9027a50af0dad656c9a88c8cba9d21d59a260cea703e7",
+    "10477712af1ce7ae0555b9f41b620512707c5d23f4a870489b060287eaec8eb5": "7438223cadee9e12e971db3b012d92608f7590808f108a6339b1ce1b804d6ef1",
     "a9f5d87c998c2228f8a972ab3ba9f9f023b53763f57297470cc863183283bcc4": "b0de40abe942e119c0e679298a1636e8ef1bb708bb16b6658c33de17821cc875",
     "d314b09ea174e683d9d67344950db4549398d6be53f01c630dcb201f5ea36279": "bf0acbcb546e362e893968aa41623c94b95c0e0a49f0116d37171095c95d6dd6",
     "9e35ed468f5c1ab4d6cf61966e6a4cb79a94dc3216597cdb7400ea96c290638c": "b7db02b5791c9e240f7f2ca793ec6db921e97a2ef42ad9e3b70bc40cb1a32755",
@@ -481,7 +481,7 @@
     "scripts/fees/README.md": "1800cc0cd4030a80e775de63c024c8933497dd64bbcd6009e78119909dbd40f0",
     "scripts/fees/fee-calc.mjs": "92da8774cee0b6b24b653f118fac1c826111bc628bc73330886a21e5ba03d9fe",
     "scripts/parcel-facts/README.md": "09339d5f405ec0cb55938e113f375d1222d514e21fcbc9829ae3fdf924f4922c",
-    "scripts/parcel-facts/parcel_facts.py": "5ec2d8bb43fdb6bd9b059aecf1b02878440644a25c4ab6e96548024d1b75db95",
+    "scripts/parcel-facts/parcel_facts.py": "4baface1bf6ffff01e2bde13d7bb791231b6185d8b3958bb866cb9b9bae7a32b",
     "skills/adu/SKILL.md": "5bec05f027b5b6e8d5d1d6e7b867da2a9539abe669f412cb74e9342f028cf39e",
     "skills/adu/references/city-adu-faq.md": "edfc17d00bef43801c3de525ad191c83d481ae50eec090115688beba55c29cbf",
     "skills/adu/references/city-adu-ordinance.md": "d875754301f80209ae983546f410648d77d29500c49ff56549c2a0159af09693",
