@@ -51,8 +51,19 @@ names start with `crossbeam_`), call `crossbeam_get_site_facts` with the address
 each returned value with the tool name and the time as its receipt. Treat the result as
 evidence: if it conflicts with the plans or a City document, follow the conflict protocol.
 
-**Without the connector.** Use the City's public GIS. These are read-only public pages;
-nothing is submitted.
+**Without the connector.** Run the parcel lookup, which reads the City's public map layers
+(read-only; nothing is submitted):
+
+```sh
+python3 "<plugin-root>/scripts/parcel-facts/parcel_facts.py" --address "<number> <street>, Laguna Beach, CA" \
+  --out permit-work/state/parcel-facts.json
+```
+
+Store each fact with the script's `queried_at` time as its receipt. Exit code 2 means
+several parcels or none matched: show the candidates and ask which one. Facts it lists
+under `not_available` (coastal zone, fire hazard tier, slope, bluff edge and others) come
+from the source it names; keep them null until then. `scripts/parcel-facts/README.md`
+explains each fact. If the host cannot run Python, use the City's public GIS directly:
 
 - City public GIS viewer: https://gis.lagunabeachcity.net/Html5Viewer/index.html?viewer=LagunaBeachPublicGIS
   (the City's "City Maps & GIS" menu opens this viewer).

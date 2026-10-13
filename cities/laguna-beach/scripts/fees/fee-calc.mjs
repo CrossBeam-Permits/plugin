@@ -7,7 +7,7 @@
  */
 
 // ── Cities with an authored fee schedule ──
-export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county'];
+export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver'];
 
 // ── ICC Building Valuation Data anchors (Feb 2026, Type V-B / typical wood frame) ──
 // $/sqft by occupancy. Used to DERIVE a valuation when the applicant gives only
@@ -336,6 +336,20 @@ function validateFeeCapture(obj) {
  * I/O that produces `input` stays per-runtime; this shared check guarantees the
  * chatbot, the publish script, and the sandbox tool reject the same bad data.
  */
+// Plan review: the building-wide rate, the optional exempt-through valuation, and the optional
+// per-permit-type rate.
+function validatePlanReviewOptions(building, permitTypes) {
+  if (typeof building.plan_review_pct !== 'number')
+    throw new Error('fee schedule missing building.plan_review_pct');
+  if (building.plan_review_exempt_through_valuation !== undefined &&
+      typeof building.plan_review_exempt_through_valuation !== 'number')
+    throw new Error('building.plan_review_exempt_through_valuation must be numeric');
+  for (const [permitType, cfg] of Object.entries(permitTypes ?? {})) {
+    if (cfg?.plan_review_pct !== undefined && (typeof cfg.plan_review_pct !== 'number' || cfg.plan_review_pct < 0))
+      throw new Error(`permit_types.${permitType}.plan_review_pct must be a non-negative number`);
+  }
+}
+
 export function validateFeeSchedule(input) {
   const obj = input;
   if (!obj || typeof obj !== 'object') throw new Error('fee schedule is not an object');
@@ -405,8 +419,7 @@ export function validateFeeSchedule(input) {
     if (Math.abs(split.building_permit_pct + split.plan_review_pct - 1) > 0.000001)
       throw new Error('area_stepped combined_fee_split must total 1');
   }
-  if (typeof obj.building.plan_review_pct !== 'number')
-    throw new Error('fee schedule missing building.plan_review_pct');
+  validatePlanReviewOptions(obj.building, obj.permit_types);
   for (const [permitType, exemptThrough] of Object.entries(obj.statewide?.school_fee_exempt_through_sqft_by_permit_type ?? {})) {
     if (!permitType || typeof exemptThrough !== 'number' || !Number.isFinite(exemptThrough) || exemptThrough < 0)
       throw new Error('statewide.school_fee_exempt_through_sqft_by_permit_type entries require non-negative numeric thresholds');
@@ -1095,10 +1108,16 @@ export function calcFees(schedule, inputs) {
     permitFee = buildingPermitFee(valuation, b.permit_fee);
     firm.push({ id: 'building_permit', label: 'Building permit fee', amount: permitFee, tag: 'computable_now', cite: b.permit_fee.cite, ownerDivision: buildingOwner });
 
-    const planRate = b.plan_review_pct;
-    let planFee = round2(permitFee * planRate);
-    if (b.plan_review_min) planFee = Math.max(planFee, b.plan_review_min);
-    firm.push({ id: 'plan_review', label: `Plan review (${Math.round(planRate * 100)}% of permit fee)`, amount: planFee, tag: 'percent_of_base', cite: b.plan_review_cite, ownerDivision: buildingOwner });
+    // A permit type may carry its own plan-review rate (0 = no plan review), and a
+    // schedule may publish a valuation at or below which no plan review is charged.
+    const planRate = ptCfg?.plan_review_pct ?? b.plan_review_pct;
+    const planReviewCharged = planRate > 0 &&
+      !(typeof b.plan_review_exempt_through_valuation === 'number' && valuation <= b.plan_review_exempt_through_valuation);
+    if (planReviewCharged) {
+      let planFee = round2(permitFee * planRate);
+      if (b.plan_review_min) planFee = Math.max(planFee, b.plan_review_min);
+      firm.push({ id: 'plan_review', label: `Plan review (${Math.round(planRate * 100)}% of permit fee)`, amount: planFee, tag: 'percent_of_base', cite: b.plan_review_cite, ownerDivision: buildingOwner });
+    }
   } else {
     confirm.push({ id: 'building_permit', label: 'Building permit + plan review', note: 'Provide the project valuation or new floor area (sq ft) and I can compute these exactly.', ownerDivision: buildingOwner });
   }

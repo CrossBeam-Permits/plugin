@@ -88,7 +88,11 @@ State the scope in plain words, with the page that shows each part. Then choose:
 - the plan-sheet matrix row or rows (`rows[].project_type`). A project can match more
   than one row, for example a major remodel with a new pool. Then it needs every sheet
   any matching row marks.
-- the Planning application(s), from `requirements/planning/application-index.md`.
+- the Planning application(s): run the guide's method (`../guide/references/planning-approvals.md`)
+  on every piece of the scope, then name each application from
+  `requirements/planning/application-index.md`. If forms were drafted or filed, check them
+  against that route with `../guide/references/before-you-file.md` (wrong application, and
+  for a Building filing whether the Planning approval must come first and is in effect).
 - the Building checklist(s) whose scopes match, from `requirements/building/`.
 
 Show the user the scope and the rows you chose, with the evidence, before the detailed

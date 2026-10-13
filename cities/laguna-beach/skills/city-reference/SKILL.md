@@ -126,7 +126,7 @@ and **CBC Appendices G, H, I and J**.
 
 Urgency Ordinance No. 1732 replaced the former exterior-work default with three closed lists: 16 Design Review categories, 28 Zone Clearance categories, and 17 Administrative Design Review categories. Do not infer discretionary review merely because work is exterior.
 
-- Design Review hearings route by project type under §25.05.040(F)(1): the **Design Review Board** hears single-family and two-family developments (with their right-of-way work); the **Planning Commission** hears everything else, including three or more units, all Downtown Specific Plan projects, non-residential projects, public works, and projects where the Commission is the primary authority (such as a CUP). **The Design Review Board meets the 2nd and 4th Thursday of the month at 5:00 p.m. in the City Council Chambers, with a few exceptions.** [source: City of Laguna Beach, "How are building permits processed," as of 2026-06-18 — a CrossBeam reference that is not included in this plugin] This is the single home for the DRB meeting schedule.
+- Design Review hearings route by project type under §25.05.040(F)(1): the **Design Review Board** hears single-family and two-family developments (with their right-of-way work); the **Planning Commission** hears everything else, including three or more units, all Downtown Specific Plan projects, non-residential projects, public works, and projects where the Commission is the primary authority (such as a CUP). **The Design Review Board meets the 2nd and 4th Thursday of the month at 5:00 p.m. in the City Council Chambers, with a few exceptions.** [source: City of Laguna Beach, "How are building permits processed," as of 2026-06-18 — `../city-website/references/planning-applications.md`] This is the single home for the DRB meeting schedule.
 - Zone Clearance is issued by the Community Development Department under new §25.05.045.
 - Administrative Design Review is decided by the Director/designee; most categories may use the conditional 15-working-day notice/comment hearing-waiver procedure.
 - Development in an ESA—including slopes of 30% or greater—cannot use Zone Clearance/ADR absent the enacted peer-reviewed professional determination.
@@ -144,7 +144,7 @@ Use `../residential-remodel/references/city-design-review-tiers.md` for the curr
 - A **historic resource** is defined by LBMC 25.45.004 (as amended by Ord. 1732): City register, California or National Register listing or official eligibility, or CEQA substantial evidence. Age alone does not make a property historic, and the older inventory creates no presumption (25.45.002(H)).
 - Work on a historic resource goes to Administrative Design Review (minor, 25.05.040(B)(3)(a)(iv)) or Design Review (major, (B)(1)(d)), with a **Heritage Committee** recommendation first (25.45.010)
 - The Director may require a historic resource assessment (25.45.010(C)); an inventory rating in site facts flags it
-- Heritage Register placement process (25.45.006). Resident guide: a CrossBeam reference that is not included in this plugin
+- Heritage Register placement process (25.45.006). Resident guide: `../guide/references/historic-properties.md`
 
 ---
 
@@ -344,7 +344,7 @@ When a contractor asks "what permits do I need?", use this matrix:
 | Property in VHFHSZ (most of city) | WUI compliance review | Ch. 14.70 |
 | 1&2-family dwelling (new construction) | **Sprinkler system** required | Ch. 14.52.030 (CRC R309.2 amendment) |
 | Existing 1&2-family dwelling — 3-year cumulative valuation >50% of pre-work valuation, OR alteration ≥50% OR added story (exterior work ≥50% alone: UNSETTLED) | **Full sprinkler retrofit** required (either trigger fires it) | Ch. 14.52.030 **and** Title 15 §1103.5.4 |
-| Hillside property, steep lot, CGS landslide/liquefaction zone | **Geotechnical report**, with City peer review where the Building Division's list requires it; slopes of 30%+ are also an ESA for Planning (§25.08.010, Ord. 1732) | Building Division geotechnical handout (2026-06-17); a CrossBeam reference that is not included in this plugin |
+| Hillside property, steep lot, CGS landslide/liquefaction zone | **Geotechnical report**, with City peer review where the Building Division's list requires it; slopes of 30%+ are also an ESA for Planning (§25.08.010, Ord. 1732) | Building Division geotechnical handout (2026-06-17); `../guide/references/grading-drainage.md` |
 | Historic resource (register, state/national listing, or CEQA evidence; inventory rating flags a possible assessment) | **Heritage Committee** recommendation before ADR or Design Review | Ch. 25.45 (Ord. 1732) |
 | Near PCH or Laguna Canyon Rd | **Caltrans** encroachment permit | State |
 | In FEMA flood zone | **Floodplain Development Permit** | Ch. 25.38 |

@@ -184,7 +184,7 @@ The local path in C-N, C-1 and SLV already allows small upper-floor units by rig
 ## 12. Filing shape
 
 - **One project, one set of Planning applications** covering every unit (CDP, plus Zone Clearance or Design Review). Not one per unit.
-- Then **one building permit**: the EnerGov "Mixed Use Permit" (type 374) for a building with both residential and non-residential use (a CrossBeam reference that is not included in this plugin). Fire sprinklers are a separate fire permit.
+- Then **one building permit**: the EnerGov "Mixed Use Permit" (type 374) for a building with both residential and non-residential use (`../../city-website/references/submit-mixed-use.md`). Fire sprinklers are a separate fire permit.
 - Change of occupancy B (office) to R-2 is a building-code question. Use the state floor: CEBC Chapter 10 (change of occupancy), CBC 508 (mixed-occupancy separation), and CBC 1006.3.4 (single exit for R-2: at most 4 dwelling units per story, through the third story, sprinklered). Start with the California Multi-Unit Residential rules (Change of Occupancy — Office (B) to R-2 Apartments), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`); egress detail is in the California Multi-Unit Residential rules (Egress and Exits — Number of Exits, Separation, Travel Distance, and Emergency Escape Openings), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`). Laguna deltas: VHFHSZ Ch. 14.70 and the sprinkler retrofit triggers (`../../residential-remodel/references/city-vhfhsz-wui.md`, `city-sprinkler-retrofit.md`).
 - What to put in the Planning submittal: `submittal-kit-office-to-residential.md`.
 

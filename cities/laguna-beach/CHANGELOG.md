@@ -8,7 +8,27 @@ fails when they differ or when this file has no section for the current version.
 `main` is the release line. Hosts that install from the marketplace get whatever
 `main` holds for `cities/laguna-beach`. See "Pinning a release" at the end.
 
-## 0.5.0 (unreleased)
+## 0.6.0 (unreleased)
+
+Which application to file, without a CrossBeam server:
+
+- New `guide` skill: for any project on any parcel, which approvals it needs, which City
+  application to file (Zone Clearance, Administrative Design Review, Design Review Board
+  or Planning Commission, plus CDP, ADU, variance or use permit), and in what order. Its
+  `before-you-file` reference checks a drafted or filed packet against that route: the
+  wrong application, and a Building filing made before the Planning approval is in
+  effect.
+- New `city-website` skill: counter hours and contacts, the building and planning
+  process, forms, FAQs, and how each application is submitted online.
+- New `scripts/parcel-facts/parcel_facts.py`: zone, specific plan, coastal appeal and
+  deferred-certification areas, historic rating, habitat, oceanfront, fuel modification
+  and other overlays from the City's public map layers. Standard library only; never
+  requests owner fields. `guided-intake.md` uses it when the connector is absent.
+- Permit skills that pointed to "a CrossBeam reference that is not included in this
+  plugin" now link to the guide.
+- The root skill, `plan-set-check` and `planning-routing.md` route through the guide.
+
+## 0.5.0
 
 Host packaging:
 
