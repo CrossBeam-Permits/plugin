@@ -154,7 +154,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 
 #### STEP 2: Is It a Major Remodel?
 
-**CRITICAL**: Determine if the project crosses the 50% threshold. Use the correct calculation method based on location. Apply the City's Major Remodel Interpretation Quick Guide, Updated October 2026 [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09].
+Determine whether the project crosses the 50% threshold: it decides Design Review, the Coastal Development Permit and the new-building rules in STEP 3. Use the correct calculation method based on location. Apply the City's Major Remodel Interpretation Quick Guide, Updated October 2026 [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, as of 2026-10-09].
 
 | Location | Calculation Method | What Counts |
 |----------|-------------------|-------------|

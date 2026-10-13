@@ -334,7 +334,7 @@ Zoning/Planning approval, including the 14-day Design Review appeal period where
 
 ## Permit Decision Matrix
 
-When a contractor asks "what permits do I need?", use this matrix:
+Each row names a trigger and the permit or review it adds. Apply a row only when the project's facts meet its trigger.
 
 | Trigger | Required Permit/Review | Chapter |
 |---------|----------------------|---------|

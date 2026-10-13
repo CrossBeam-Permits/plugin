@@ -27,6 +27,8 @@ Which application to file, without a CrossBeam server:
 - Permit skills that pointed to "a CrossBeam reference that is not included in this
   plugin" now link to the guide.
 - The root skill, `plan-set-check` and `planning-routing.md` route through the guide.
+- Synced with the private source's short-answer change: the guide answers lead with one
+  route, and the Planning entitlements page links each form directly.
 
 ## 0.5.0
 

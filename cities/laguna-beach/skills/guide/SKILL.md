@@ -30,18 +30,30 @@ metadata:
 route: what to file, with whom, and in what order. Build it the way a planner at the counter would:
 from the facts given, the ordinance default for that kind of work, and the usual case where a fact
 is missing. Then:
-- **Alternatives get one line each**, and only when a fact could actually trigger them: "changes to
+- **Alternatives get one line each, two at most**, and only when a fact could actually trigger them: "changes to
   X if Y" (for example "changes to Design Review if the new roof is over 15 ft").
-- **Documents only for the lead filing(s).** Never list documents for a branch you did not lead with.
+- **Documents only for the first filing.** List what goes in with the application(s) filed first
+  (usually the Planning application). A later filing (the building permit after Planning) is one
+  numbered step with its link; give its documents when the resident asks. Never list documents for
+  a branch you did not lead with.
+- **Link every form you name.** Each filing step names the City's application form as a link to
+  the City's current copy: the Planning application links are in the applications table of the
+  `planning-applications` reference; the online filing links are in the `submit-*` guides. Never
+  invent a link; with none in hand, link the City's applications and handouts page
+  (https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts).
+- **Short: aim for about 150 words; 250 at most, for any answer.** Bottom line; numbered steps with the forms
+  linked; one line offering to list what to submit with the first form (the list comes when the
+  resident asks); at most one "this changes if" line; one question. A list, when asked for, is a
+  few words per item. No side notes, tables, citation column, overlay catalog or unasked code rules; detail comes when asked. City staff get full detail.
 - **UNSETTLED only when it changes what the applicant files.** A fact or open question that routes
   the same either way (which of two parcels, which of two readings that land on the same
   application) gets no branch at all; settle it in a clause or leave it out.
 - **Ask for a missing fact only when the route turns on it.** Otherwise answer on the usual case.
 - **Too few facts to pick a branch** (for example "add a bedroom, what permits?" with no address or
-  size): give the likely route in one or two lines, then a short branch map (one line per branch),
-  then 3 to 5 deciding questions, picked from the facts that move the route: the address (zone,
-  coastal, slope, historic); stories or height of the new work; its size compared with the existing
-  house; how much exterior wall or roof comes off; decks, grading or retaining walls. Hold the
+  size): give the likely route in one or two lines, then at most one "changes to X if Y" line for
+  the branch that would most change the filing, then the one question that moves the route most,
+  usually the address (it settles zone, coastal, slope and historic at once); otherwise stories or
+  height, size against the existing house, or how much exterior wall or roof comes off. Hold the
   document checklists until the branch is known.
 
 The shape to aim for, on a fire station adding solar batteries: "This is administered by the
@@ -58,20 +70,22 @@ Method behind the lead lines:
    address; do not assume one was checked.
 2. Any "what do I need" question about a project, listed anywhere or not: pull `planning-approvals`
    and run its method on every piece. Never answer from a remembered example.
-3. Under the lead lines, name the approval and who decides for each piece (staff, Director, Design
-   Review Board, Planning Commission), the rule that picked it, the add-ons, and how the pieces
-   combine. Keep it short; the lead lines already gave the answer.
-4. Then the documents: call the City checklists once per lane the lead filing(s) name
-   (planning, building), in the same round as other lookups, and list each lead filing's documents
-   from it. Never pad the document list from a permit skill.
-5. Cite every rule (LBMC section, Ord. 1732, state code, or "City practice since Ord. 1732").
+3. Work out every piece's approval and who decides (staff, Director, Design Review Board, Planning
+   Commission), but write only what changes the filing: a piece that rides the lead application gets
+   a clause in that step ("covers the house, garage, decks and walls"); a piece that needs its own
+   application or a different body gets its own step.
+4. Then the documents: call the City checklists for the first filing's lane, in the same
+   round as other lookups, for the form and its link. Offer the filing's document list in one line;
+   give it from that result when the resident asks. Never pad the document list from a permit skill.
+5. Cite the rule that decides the route (LBMC section, Ord. 1732, state code, or "City practice since
+   Ord. 1732") in parentheses; the resident can ask for the rest.
 6. The City has not ruled and the answer changes the filing: say UNSETTLED, lead with the reading
    the code text and City practice favor (weighed by the `city-practice` method), give the other as
    one "changes to" line, and say "confirm with Planning at pre-application". Never guess a
    threshold.
 7. A deciding fact is unknown (height, slope, coastal status, historic status, deck height): lead
    with the usual case, give the other branch as one "changes to X if Y" line, and ask for the
-   fact.
+   fact (one question per answer: the one that moves the route most).
 8. Plain, short sentences.
 
 ## How many references to pull
@@ -82,6 +96,9 @@ unpermitted work, unit removal, disaster rebuild, temporary use), plus
 `process-timeline-appeals` when there are two or more pieces or the resident asks about steps. A
 single small piece may need two files; a multi-part project on a constrained lot may need six or
 more. Pull what the pieces need, not everything.
+A reference's "What to tell the resident" list covers a question about that topic alone. In a
+project answer, an overlay that changes the filing gets a clause in the step it changes or one
+"changes to X if Y" line; the rest of that list waits until the resident asks.
 
 ## Router — by kind of question
 

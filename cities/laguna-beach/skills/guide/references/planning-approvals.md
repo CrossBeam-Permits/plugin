@@ -608,7 +608,8 @@ lot, including when the resident states a dimension. Test each stated or likely 
 standard and say plainly when it fails: a stated 3-ft side setback, a 16-ft garage on a 14-ft
 street, a roof deck in a zone that bans them. Never leave the variance to "the designer will check".
 
-**Stated-number check, every piece.** Before routing is final, write one line per piece:
+**Stated-number check, every piece.** Before routing is final, check each piece against these; the
+answer names only a number that fails or a Variance the route may need:
 - **Coverage.** Compute the limit from lot area and zone: R-1 is 44% at 4,000 sf or less, 35% at
   8,000 sf or more, and 35 + ((8,000 - lot area) x 9) / 4,000 between (25.10.008(E)(1)(c)); other
   zones and specific plans use their own table (6b). Add existing plus new habitable enclosed space
@@ -793,16 +794,14 @@ Citywide rules for accessory space:
 - **Write the lead route first.** After combining, state the single most likely route in the
   answer's first lines: what to file, with whom, and in what order (for example "File a Zone
   Clearance at the Planning counter, then the building permit"). It comes from the facts given, the
-  ordinance default and the usual case for that kind of work. Every other route gets one line,
-  "changes to X if Y", and only when a fact could trigger it. A fact that routes the same either way
-  (which of two parcels, which of two readings with the same filing) gets no line. Mark UNSETTLED
-  only where the answer would change what the applicant files, and ask for a missing fact only when
-  the route turns on it. Documents are listed for the lead filing(s) only.
+  ordinance default and the usual case for that kind of work. Write the answer in the guide's
+  contract shape (How to write the answer).
 - **Headline tier: the ordinance default.** The tier you lead with comes from the code: the list item
   the precedence rules pick (Step 4), plus any overlay or standard that the facts in hand trigger
-  (Steps 5-6). City intake-practice notes and UNSETTLED questions never set the headline. List them
-  after it as facts that could move the project up a tier, each with what would decide it ("if the
-  City applies its roof-deck intake rule, Design Review instead of ADR"). A default the code itself
+  (Steps 5-6). City intake-practice notes and UNSETTLED questions never set the headline. Give only
+  the one that most changes the filing, as a "changes to X if Y" line (one at most, per the guide
+  contract), with what would decide it ("if the City applies its roof-deck intake rule, Design
+  Review instead of ADR"). A default the code itself
   sets on known facts, such as Design Review on a lot screened at 30% slope (Step 1), is the
   ordinance default, not practice.
 - **One Design Review Application** covers every Design Review and ADR piece; the City publishes no
@@ -836,8 +835,9 @@ Citywide rules for accessory space:
   Planning intake ruling, Sept. 2026). A remodel, an ADU and a pool on one building application is
   incomplete even with complete drawings. Grading over 20 cy is its own application.
 - Load the permit skill for each piece that has one (list in the guide router) for plan detail.
-- **Documents:** after the approvals, call the City checklists once per lane the approvals
-  name (planning, building) and give each filing's document list from it.
+- **Documents:** after the approvals, call the City checklists for the first filing's lane,
+  link its form, and offer its document list; give the list when the resident asks (How to write
+  the answer).
 
 ## Step 8 — City matrix versus the ordinance
 
@@ -895,18 +895,12 @@ How to weigh practice against the code: `city-practice.md`.
 
 ## How to write the answer
 
-1. **The lead route** in the first one to three lines: what to file, with whom, in what order
-   (Step 7). Then the alternatives, one "changes to X if Y" line each.
-2. Address and facts used, naming only the facts that change the route.
-3. One short block per piece: building permit; list item, the precedence rule that picked it, and
-   who decides; overlays; standards it fails and what that needs (variance, modification, redesign).
-   The headline tier is the ordinance default (Step 7); practice and UNSETTLED points that could
-   raise it follow it, one line each.
-4. The order of steps (`process-timeline-appeals.md`) when there are two or more
-   filings.
-5. The documents for the lead filing(s), from the City checklists per lane.
-6. The UNSETTLED points that would change what the applicant files, phrased as questions for
-   pre-application. Leave out open questions that do not change the filing.
+Work through every step above, then write only what the resident acts on, in the shape the guide's
+contract gives ("Short": 250 words at most). The analysis stays behind the answer: per-piece list
+items, overlays that do not change the first filing, and open questions that route the same either
+way come out only when the resident asks. The steps link the City's forms from the applications
+table in `../../city-website/references/planning-applications.md`, and the order of filings comes from
+`process-timeline-appeals.md` when there are two or more.
 
 ## Illustrations of the method
 
@@ -946,7 +940,8 @@ hearing (66317(a)(3)). Remodel: Illustration C; if a major remodel, DRB plus Fir
 Review, fuel modification plan, a CDP decided with the Design Review (25.07.012(D)), and a variance
 for any nonconformity that stays. Sauna: Illustration B. Combined: one Design Review Application if
 any non-ADU piece reaches ADR or Design Review. Building: three applications; geotechnical report
-with peer review; Public Works water quality (WQESA). Documents: planning and building lanes.
+with peer review; Public Works water quality (WQESA). Documents: offer the first filing's (Planning) list;
+give it, or the building lane, when the resident asks.
 
 **E. A new house.** Design Review (B)(1)(b) at the DRB with Fire Safety Standards Review, or Zone
 Clearance (B)(2)(z) if the applicant elects the Ch. 25.13 objective path at filing and meets both
