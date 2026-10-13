@@ -15,11 +15,11 @@
       "scripts/plugin-publish/laguna/modules/skills.mjs": "dc2762e16ec820b4d71715d8a929be759f48fc6f8dd5d24b7b953aa5168ad704",
       "scripts/plugin-publish/laguna/planning-check.mjs": "55bf28f958f64cd8e705b72bb1dd782796820df9280fb1a701ff0044c1c1b172",
       "scripts/plugin-publish/package-lock.json": "356af1aae271e45cd2ece5e789f64764ff13e3ee7a7e7a9d590bdb835dcbdd2a",
-      "scripts/plugin-publish/package.json": "95b2a1380d5f6568994e364f86bf55d3b1e92ac711b7f99c44fea2276fe77c59"
+      "scripts/plugin-publish/package.json": "b4cfb27b30d2dd667b3109a57b59d20e50e75e777840d024ce5e0cb879bfe30f"
     }
   },
   "privateRepo": {
-    "commit": "1dd6ea64d0639c396fb2acd5bd2acccb85df3223",
+    "commit": "fd4a83cd7e8ed055b6b054440a4095747261c412",
     "dirty": false
   },
   "options": {
@@ -38,7 +38,7 @@
     }
   },
   "inputs": {
-    "285f7e819af6602bf688e7d394704d37e9739dbf353acfd41acc69f4e7112723": "cd9f15cb818a005772e2d75c6c8b1edd9b4ace932f5711c520ca7dba7af553b7",
+    "285f7e819af6602bf688e7d394704d37e9739dbf353acfd41acc69f4e7112723": "692aaefa4755c1d040b12f94b5b3d8ae13bef14c2b0bce68a2599df7d3cad26e",
     "ba418a844d8f0cf6c05e2e98406c58548c4b4e07b5df7d0c19648c2f12e83e2e": "0f28eacf7e745f1dbf0507706f7affd4d377738acf2cae1b5c2733e34805639e",
     "6a063b4a314ffb13ad124db95bd7accdeefa20332759299b534496de6a267b33": "6bd0baee7edcd83db20b87e9b100ef39a7aa4d9700b3d041cb6d109a7223ec97",
     "a38156e6621765ecd256d65064805fbe59e857c7934ae2aab88ef34db62a5a9c": "e2dcf8ff40b289b6a0081cd6122e83351deda3e19fb00960d8bb415f252dda00",
@@ -250,7 +250,7 @@
     "56dde5681ae6848c303bf1b72c9a954b1c9cde732b43d6f2f7192a9c5c871c4c": "2535a72b30632f9ae992ca827fa2f22e40e3bf6ba47e11de3472c2e26b24c936",
     "358e05ca41ab437bf075f2aa0e1e25716685da9c16986310da49b9f7f202a8dd": "a8b2823a7be39a0f8a160b54f2406106bf4cfa5941260eb9ccbd53870d51ece9",
     "39e46918c5dcbea8d3cf25b83d21dc532f59c6b62bd19358bed4f4536c411a19": "e62008f2af577af5f4293fdca65c5a5ffc9ba595149cdae4664a3aeac0ffc8ab",
-    "767fe2d8204525c702b90ddde5cb33bfc3ddc4529cac7c51e1e39498d0578d22": "4cceaa06839b126fdebb8f4766e261b3a943a84ca5f6673b1b58247091fc7203",
+    "767fe2d8204525c702b90ddde5cb33bfc3ddc4529cac7c51e1e39498d0578d22": "890d6a08d2b0b6772f5d44705e2ccff675ce660f6a506f9f83e7969445b550d2",
     "81b9a98c5e598b70ff24c360396478a027742dc1a0c685ba250327f08985f6b2": "8873feeb1a8002765e52a1d5297abe7e75c01f09e5ee51dffd8d56bf66047e91",
     "c7969507244623c68290af9b93eda28af1d206f6f98a710b8d54493a4aa5c023": "edfc17d00bef43801c3de525ad191c83d481ae50eec090115688beba55c29cbf",
     "a18b6f6e225ae92aa06457baf6fe2368404ab5de9a7ea241cf3c6d87d7b58f19": "be45d8c6d7f0baa9e2426b59a22b1243bef19d138b35347fa86016084ee9390f",
@@ -300,7 +300,7 @@
     "98a6f11fc1538d9c3315dc201236780d4920408e898c16f46dab74afaf4e4bb2": "8048cfb37a1fa8e328c85d6c81061bec6aa33a65fd0e68ef474762413729177e",
     "95318b50cd532abb5c916c19c2affc3cf40ec9f58f49373a3d0a7af122d1117a": "6559e908d0870467a2c122ac35c2a7afdb76d4615e71dd905b1897c355122f86",
     "4a52c33769f10ab7c75e57d12f09faf1ab8657f7ab98d5431c40fe5102567ddc": "6b89e27463dd2099df2a09e33effe1671f1df30cbf5a4ac257b440da93faa1e5",
-    "b8516d8659801094777ceabe2a8c8b42f8424934c5560e71eed7aff25f20c082": "ecc521d861d3f724ab29118834ce75267bf385d8751750d21e321424640c3d75",
+    "b8516d8659801094777ceabe2a8c8b42f8424934c5560e71eed7aff25f20c082": "1963b5e3a2d283d82858323c2b755339aafab66a7b20bccf7edf7898e1c1feea",
     "b2f448bc49bfea7bcc9bcbd2f5e3d8b3a1ebb672fb49cafdb768ee8349477ad9": "0b21e3b744c2e59697f4e73d507b34465a1110f1f3403f24afa21ad10270627d",
     "67019db407593749d9a675ae4e8c71a965d1fe18d3d47644c22ab4b76adee5b5": "adf9316e571155b0a275b56aaaa4a7585f12b11067c2507bbd5db2705c8d806a",
     "bb48c64d311ea3531d5027c75ad7ec3f047afae2e42803a07ca667593459c166": "78fb42d038a765f4a98c8c3c1626153ddf219ca1065fa297749e4c922e0fe209",
@@ -421,7 +421,7 @@
     "requirements/planning/wireless-facility-permit.md": "aad42dec39303a37942f6ddf6364da9fa2c96933b1538b5c4dade24d3fe0ffb5",
     "requirements/planning/zone-clearance.md": "2941e37f03428da8cab98783399a65ecc8a6e3af0a41f5792e9d95ba6fed4351",
     "scripts/fees/README.md": "1800cc0cd4030a80e775de63c024c8933497dd64bbcd6009e78119909dbd40f0",
-    "scripts/fees/fee-calc.mjs": "9983f163644ae788a83a3700e43ed59c66c7819f1378ee14d01e1d8be478d9cd",
+    "scripts/fees/fee-calc.mjs": "92da8774cee0b6b24b653f118fac1c826111bc628bc73330886a21e5ba03d9fe",
     "skills/adu/SKILL.md": "205d80b37a808e1ff89dff582420cbd58fed6bce7771aa5d5cce1d9b0e156dd8",
     "skills/adu/references/city-adu-faq.md": "edfc17d00bef43801c3de525ad191c83d481ae50eec090115688beba55c29cbf",
     "skills/adu/references/city-adu-ordinance.md": "d875754301f80209ae983546f410648d77d29500c49ff56549c2a0159af09693",
@@ -433,7 +433,7 @@
     "skills/block-wall/references/materials-specifications.md": "7456933bf0768ddfa74c15c72ac0f875de6a2e41cddcce04e299deedf3e6cfa9",
     "skills/block-wall/references/permit-thresholds.md": "b1f6465ef9808d1187c091f585f961b384368ee2a4d4ce03f566448073e10bbd",
     "skills/block-wall/references/reinforcement-design.md": "23bda2d5f7621e740dec6beff6e7fd7243a4d06cf873ed2564823ef3bda31dc5",
-    "skills/city-reference/SKILL.md": "0d5d2d78f163bc938aad3df4c27e670d554e73c73fa1ded1c33f0d789ee3a447",
+    "skills/city-reference/SKILL.md": "ff445de38828a14bf267823b00de08a9c7d0fea0b7671592339c24a0cbbd23f4",
     "skills/city-reference/references/city-zoning-standards.md": "d44c666e3ae4328b1ffd450d7d9819065450a688d4ce327c3471a0d299bd8e51",
     "skills/city-reference/references/contacts-hours.md": "7f3174d5104c0c15eaeedc18a710ac8b8f1aac2e69818ae2305d4cfe9d3fb043",
     "skills/cleanout/SKILL.md": "4243842075b52e1b3d70771beae2f4c7ad12bf46135b7db66f973764b2f0107e",
@@ -579,7 +579,7 @@
     "skills/reroof/references/smoke-co-alarms.md": "67bb4ece78d1bf16e7c6289a0a0b428e231ce4d0e68dd0d01e1f0ec0002a6824",
     "skills/reroof/references/tile-structural.md": "094cdab557e0dd8ad05cf4cdc87564c933f51c5c1869d640651ede69efe9f6e4",
     "skills/reroof/references/waste-diversion.md": "fdfb791ba4b8269f237812b83e725fd797173f9f50ac48e6f493554a535a00c9",
-    "skills/residential-addition/SKILL.md": "7971209e95d99fbb8dfc27553d9126cbdb3012713d25ad5743c6273f069c48fb",
+    "skills/residential-addition/SKILL.md": "dbe2218a95a3ea32b0c5b22b282d62f342a696ea7efeee2545decf96a70ad10b",
     "skills/residential-addition/references/city-major-remodel.md": "0b21e3b744c2e59697f4e73d507b34465a1110f1f3403f24afa21ad10270627d",
     "skills/residential-remodel/SKILL.md": "a472787ba6d3261ae690abff7ebb29336680db36602c0dc407c5849805098656",
     "skills/residential-remodel/references/city-bluff-overlay.md": "7fa910e33fa44f4a2a45d872a2f7d7bb0e824f370231cf3c0d599a30e15dad1c",
