@@ -30,7 +30,7 @@ This is a completeness reference. It does not check the design against the build
 - `building/ev-charging.md` — EV charging stations (14 items)
 - `building/solar.md` — Residential solar (8 items)
 - `building/walls-fences.md` — Fences, block walls and retaining walls (13 items)
-- `building/staff-reported.md` — Other counter requirements reported by City staff (2 items)
+- `building/staff-reported.md` — Other counter requirements reported by City staff (3 items)
 
 ## Planning applications
 

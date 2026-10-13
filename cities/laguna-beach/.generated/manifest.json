@@ -20,7 +20,7 @@
     }
   },
   "privateRepo": {
-    "commit": "b3b226d1c4b10250bc03ecd93b2b47a9c1d4fb4e",
+    "commit": "37f51aa5aedaeca785e956134fa4d14d145b001c",
     "dirty": false
   },
   "options": {
@@ -388,7 +388,7 @@
     "ba74cc51cd5d6d8908f25a20ee55284441daf86ccffa5fff7fac767441d8ebeb": "3182586c4b1466e9a9dd3052c7135d9dd22be72cd981d6054c544a2835fc8d0a",
     "9e8775949c897c36d77ed50fbd412a9f088395758781671a9ad2bae2293a111d": "0670ba9feebf32a2881f1ad33c17bc594f841f6aecf6015adf2cb5126f0a9146",
     "d02908cb55c9bf817423ea6dd64a82af0e1f14340e489328f25e2dff722b5f2d": "fac99f0626dccad933e40c76d90c328f5809db26c7e617671223d072706d1de1",
-    "1e26bb481b954bafe21df725a07cb18802d290605ba17bf4a7060144373a5dab": "36edad9c16450286d78cf3acd94212f4584b1a083a63bb00998c2dc2dece8632",
+    "1e26bb481b954bafe21df725a07cb18802d290605ba17bf4a7060144373a5dab": "0083c1e9b307b1cc1a9a63ab8b0247ffa44b1a6d413ca0290f0fbc7df8d6ec08",
     "add8506fbc7fe01ba000216985a7b795d70cc31f30a6bd19ba36650486f4d1c5": "21b8f24754c46aa5ffc4de688235260eb89c495a898a1da9c1d69eea44dbff14",
     "fdf0bc789558e9eeeb3cb56f1ece7ca1c9f0ff2e9e7a6fb93d293120adeb1227": "7f1a346d3bb61fd4e3fefb4bdef0a153e8bea5934633374669978458cab5428b",
     "03633522211859b6a16bbd66ac851a26cda4503e2a3462035d3a3e8ce10c4a14": "79cd3b0387979e843286def80515868cbf183235832f7ab73a7f7be7f1660742",
@@ -442,10 +442,10 @@
     "cities/laguna-beach/meta.json": "5fa78f6e238b6d2e92a039c9708ae137d8c5bc36e642b6ba92bd225c9c1bef58"
   },
   "outputs": {
-    "requirements/README.md": "12a44f33dc7859a73b8820201573fedb20b9560d41822233f9215e490ab6edab",
+    "requirements/README.md": "bd4a2d5e3cb0b30f457e7582987223447c62364ca5effec0f728a6b391bfa3ff",
     "requirements/building/adu-state-law.json": "614bc47990fb5773c170120dec1b83ccab1b4b52449a31361444af4f17f2d8b8",
     "requirements/building/adu-state-law.md": "e591950ae9f654ca05f6ce5ea65262d4fb14fd5daf8f0e845ff9f5435cdb527b",
-    "requirements/building/checklists.json": "e5b195527962a955cb774c722fe9a97e14ac39a134c614e07c30122b779aaf72",
+    "requirements/building/checklists.json": "482619fe2459c7fa6373921cb6634cb07e883a16686ed6308659beccb6d3c91b",
     "requirements/building/demolition.md": "b551aa4b88744a8e52331daa38d9dbb3d2fe7fd7d7d086657fe0f59081a17dd3",
     "requirements/building/ev-charging.md": "5ecebd5879a9b5a658fadfc89ba4521d819c2ea00d0df6979617a00ce9b9222d",
     "requirements/building/express-permits.md": "5684fe8f719650e7bc440b4869ee1812b517cf78c24516ee560211ca172b6e90",
@@ -457,7 +457,7 @@
     "requirements/building/review-triggers.json": "0416b6b38ef7f92825af1f9a88dac5d5b5d3b2bf21f40cfd370958714411a7e7",
     "requirements/building/review-triggers.md": "bba7ccdc2f7f13a3ef92e322bf6dc95034b8d655d130ace734df7682d8f1dd30",
     "requirements/building/solar.md": "ece5f5f5279c984d6e8baf40aaedb5f8c56464814e16e2d03b57a35790e9411e",
-    "requirements/building/staff-reported.md": "918be87a1fc0fe9f32dcc8203f17ae703b96aebcc50f011e2d6097c971e2788b",
+    "requirements/building/staff-reported.md": "99a3c780a7c890b7364e0e4b90a06b2fd1af4a192b834a931082a1a5a8824dc9",
     "requirements/building/walls-fences.md": "91ccb729b73f47a87e90897039d63c9df0f3d1e23c1dbe49c733186ac7191e5e",
     "requirements/building/wui-amendments.md": "73498f4975cfa4edff601529ce4c15b706331344132fcd0fbee6631826e75292",
     "requirements/fees/README.md": "fed2a3a446b9fbb9ad2b7a42ed41a7f6b056a1a7020e50d3acb53b5fe3f9599e",

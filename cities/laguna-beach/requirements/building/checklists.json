@@ -4830,6 +4830,189 @@
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
+        },
+        {
+          "id": "laguna_staff_site_inside_city_limits",
+          "label": "The work site is inside Laguna Beach city limits",
+          "stage": "intake",
+          "level": "city",
+          "scopes": [
+            {
+              "id": "residential-new-dwelling",
+              "label": "Residential new dwelling"
+            },
+            {
+              "id": "residential-addition",
+              "label": "Residential addition"
+            },
+            {
+              "id": "residential-adu",
+              "label": "Accessory dwelling unit or JADU"
+            },
+            {
+              "id": "residential-alteration-structural",
+              "label": "Residential major remodel or structural alteration"
+            },
+            {
+              "id": "residential-panel-upgrade",
+              "label": "Residential panel upgrade e-permit (to 400A / 2 meters)"
+            },
+            {
+              "id": "residential-water-heater",
+              "label": "Residential interior water heater replacement e-permit"
+            },
+            {
+              "id": "residential-reroof",
+              "label": "Residential reroof"
+            },
+            {
+              "id": "commercial-reroof",
+              "label": "Commercial reroof"
+            },
+            {
+              "id": "residential-alteration-interior",
+              "label": "Residential interior remodel (kitchen, bath, room alteration)"
+            },
+            {
+              "id": "residential-evse",
+              "label": "Residential EV charging station"
+            },
+            {
+              "id": "multi-unit-residential-evse",
+              "label": "Multi-family EV charging station"
+            },
+            {
+              "id": "commercial-evse",
+              "label": "Non-residential EV charging station"
+            },
+            {
+              "id": "residential-window-replacement",
+              "label": "Window or door replacement"
+            },
+            {
+              "id": "residential-siding-replacement",
+              "label": "Siding or exterior finish replacement"
+            },
+            {
+              "id": "residential-patio-cover",
+              "label": "Deck, balcony or patio cover repair"
+            },
+            {
+              "id": "residential-mechanical-plumbing-minor",
+              "label": "Minor mechanical, plumbing or temporary-power permit"
+            },
+            {
+              "id": "sign",
+              "label": "Sign permit"
+            },
+            {
+              "id": "residential-wall-fence",
+              "label": "Fence, gate or freestanding block wall"
+            },
+            {
+              "id": "residential-demolition",
+              "label": "Standalone demolition permit"
+            },
+            {
+              "id": "residential-pool-spa",
+              "label": "Pool or spa permit"
+            },
+            {
+              "id": "residential-grading",
+              "label": "Grading permit over 20 cubic yards"
+            },
+            {
+              "id": "residential-solar",
+              "label": "Residential solar"
+            },
+            {
+              "id": "multi-unit-residential-new",
+              "label": "Multi-unit residential new construction"
+            },
+            {
+              "id": "commercial-new",
+              "label": "Commercial new construction"
+            },
+            {
+              "id": "commercial-addition",
+              "label": "Commercial addition"
+            },
+            {
+              "id": "commercial-alteration-structural",
+              "label": "Commercial structural alteration"
+            },
+            {
+              "id": "commercial-alteration-interior",
+              "label": "Commercial interior alteration"
+            },
+            {
+              "id": "commercial-ti",
+              "label": "Commercial or restaurant tenant improvement"
+            },
+            {
+              "id": "commercial-demolition",
+              "label": "Commercial demolition"
+            },
+            {
+              "id": "residential-deck-patio-cover-new",
+              "label": "New, extended or replaced deck, balcony or patio cover"
+            },
+            {
+              "id": "residential-site-improvements",
+              "label": "Hardscape, flatwork, site stairs, or outdoor kitchen and site utilities"
+            },
+            {
+              "id": "residential-retaining-wall",
+              "label": "Engineered retaining wall"
+            },
+            {
+              "id": "residential-accessory-structure",
+              "label": "Detached accessory or storage structure, shed or container"
+            },
+            {
+              "id": "residential-deferred-submittal",
+              "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
+            },
+            {
+              "id": "commercial-deferred-submittal",
+              "label": "Commercial or multi-unit deferred submittal (roof trusses, elevator, fire sprinklers)"
+            },
+            {
+              "id": "multi-unit-residential-addition",
+              "label": "Multi-unit residential addition"
+            },
+            {
+              "id": "multi-unit-residential-alteration-structural",
+              "label": "Multi-unit residential structural alteration or major remodel"
+            },
+            {
+              "id": "multi-unit-residential-alteration-interior",
+              "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+            },
+            {
+              "id": "multi-unit-residential-exterior-repair",
+              "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+            },
+            {
+              "id": "residential-solar-thermal",
+              "label": "Residential solar water or pool heating (solar thermal)"
+            },
+            {
+              "id": "commercial-site-improvements",
+              "label": "Commercial or public site work (parking lot, site walls, hardscape)"
+            },
+            {
+              "id": "commercial-solar",
+              "label": "Commercial solar and battery energy storage"
+            }
+          ],
+          "checked_against": "submittal",
+          "detail": "The EnerGov portal accepts a free-text address, so a filing for a property in a neighboring city can reach Laguna Beach. Applicant action: The property at ADDRESS is in the City of CITY, not the City of Laguna Beach (name the sheet or document that says so). The City of Laguna Beach cannot review or issue this permit; please apply to the City of CITY. This Laguna Beach record will be closed.",
+          "source": {
+            "citation": "City of Laguna Beach Building Division staff guidance",
+            "published": false,
+            "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
+          }
         }
       ]
     }
