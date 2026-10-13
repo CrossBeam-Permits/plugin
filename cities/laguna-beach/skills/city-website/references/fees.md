@@ -2,7 +2,7 @@
 
 **Modeled fees never get a dollar amount from this file.** Permits, plan check,
 planning applications, sewer connection, and the other catalog items below are
-computed from a CrossBeam reference that is not included in this plugin and served
+computed from `../../../requirements/fees/fee-schedule.json` and served
 through the fee estimate. Call that tool for any figure. Do not quote a permit or
 planning fee from this page.
 
@@ -34,7 +34,7 @@ on separate itemized fees. **Fees must be paid at first plan check submittal and
 at permit issuance.**
 [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits, as of 2026-07-08]
 
-The valuation table in `fee-schedule.yaml` computes the building permit fee the
+The valuation table in `../../../requirements/fees/fee-schedule.json` computes the building permit fee the
 way EnerGov does. Call the fee estimate for it; do not work a formula by hand or
 state a valuation-based building permit fee from this page.
 
@@ -117,7 +117,7 @@ and tell the resident the deposit is a minimum, not the final cost.
 
 Art in Public Places, the library impact fee, General Plan maintenance,
 landscape plan review, CARITS, the Diamond/Crestview Specific Plan fees, and
-Central Drainage Area fees for subdivisions are modeled in `fee-schedule.yaml`.
+Central Drainage Area fees for subdivisions are modeled in `../../../requirements/fees/fee-schedule.json`.
 Art in Public Places and the library impact fee are set by the Municipal Code,
 not the Master Fee Schedule; the rest are in the Master Fee Schedule.
 

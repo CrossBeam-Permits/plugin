@@ -76,7 +76,7 @@ Exceptions [source: https://www.lagunabeachcity.net/government/departments/commu
 
 The tile on the Code Enforcement landing page is not a phone link at all — it
 points to the Police Department's Dispatch page,
-a CrossBeam reference that is not included in this plugin, which publishes the
+`https://www.lagunabeachcity.net/government/departments/police/support-services/dispatch`, which publishes the
 number. The City's wording there: "If you have a non-emergency matter that
 requires police or fire assistance, please dial (949) 497-0701. If you have an
 emergency and need immediate assistance, please dial 9-1-1."

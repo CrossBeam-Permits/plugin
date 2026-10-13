@@ -2,7 +2,7 @@
 
 Process, counter rules, inspections, and what does/doesn't need a permit, as the
 City publishes it. For code requirements themselves, use the permit-type skills
-under a CrossBeam reference that is not included in this plugin — this file is about *how the City runs the
+under the permit skills in this plugin — this file is about *how the City runs the
 counter*, not what the code says.
 
 ## Do you need a permit?

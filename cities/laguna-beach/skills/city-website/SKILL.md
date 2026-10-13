@@ -32,12 +32,12 @@ directory and the fee schedule PDF, **and** the City's Tyler EnerGov permit
 portal — all 18 online application types, their wizard instructions, intake
 questions, and attachment requirements. **Not** in scope: municipal code text and
 zoning standards — those live in the sibling skills under
-a CrossBeam reference that is not included in this plugin and in the City source document (not included in this plugin).
+the permit skills in this plugin and in the City source document (not included in this plugin).
 (The submittal checklists here are the *portal's* — what the online form demands
 before it will accept a filing — not code compliance.)
 
 > **Dollar amounts for modeled fees come from the fee estimate, not this pack.**
-> They live in the city's a CrossBeam reference that is not included in this plugin. A reference file here may
+> They live in the city's `../../requirements/fees/fee-schedule.json`. A reference file here may
 > describe *which* fees exist, who bills them, and when they are due — never how
 > much.
 

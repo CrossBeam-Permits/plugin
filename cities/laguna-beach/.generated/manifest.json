@@ -13,14 +13,14 @@
       "scripts/plugin-publish/laguna/modules/parcel-facts.mjs": "cefe47a39ba318afacfb285695d13c4cdfe2fdd7c8af49a13d764da83b5329ca",
       "scripts/plugin-publish/laguna/modules/requirements-sanitize.mjs": "9f4d074608189de8b16700195637d5cc160db73821bdd40ab1f7499c84a9f905",
       "scripts/plugin-publish/laguna/modules/requirements.mjs": "1be4bb6a40a1cfa43eb3264a462b738e51b4f63a0737d42555d9f65fdec7a619",
-      "scripts/plugin-publish/laguna/modules/skills.mjs": "90a6fc10e00b8c86aa244f76e4e43c31dcb2c86583be77affeab16f6377d8368",
+      "scripts/plugin-publish/laguna/modules/skills.mjs": "9c60c413df544c02a0204c07723dcebcaf7886b68a66b151b86c4fc57b91c4b7",
       "scripts/plugin-publish/laguna/planning-check.mjs": "55bf28f958f64cd8e705b72bb1dd782796820df9280fb1a701ff0044c1c1b172",
       "scripts/plugin-publish/package-lock.json": "356af1aae271e45cd2ece5e789f64764ff13e3ee7a7e7a9d590bdb835dcbdd2a",
       "scripts/plugin-publish/package.json": "b4cfb27b30d2dd667b3109a57b59d20e50e75e777840d024ce5e0cb879bfe30f"
     }
   },
   "privateRepo": {
-    "commit": "cc9954d783982e28d0951cae4893f849be1a4919",
+    "commit": "0ce1bc278cd25b4c4e599aa8d05cec0350eac60a",
     "dirty": false
   },
   "options": {
@@ -496,11 +496,11 @@
     "skills/city-reference/SKILL.md": "a0074310626cfc69f174e38a0c915bf28b1ae92b231675469e604d6690523268",
     "skills/city-reference/references/city-zoning-standards.md": "d44c666e3ae4328b1ffd450d7d9819065450a688d4ce327c3471a0d299bd8e51",
     "skills/city-reference/references/contacts-hours.md": "7f3174d5104c0c15eaeedc18a710ac8b8f1aac2e69818ae2305d4cfe9d3fb043",
-    "skills/city-website/SKILL.md": "d4ddde871d45aff74303c18e2765dcd32efb30fa55f0f62eb7d04f01ce6467e6",
-    "skills/city-website/references/building-permits.md": "790797cf0007e59496d14cec5822b4e0a90b4fe5df58e00f9caffd6b88a90f82",
-    "skills/city-website/references/code-enforcement.md": "c512a480d41383f6fec9d3fd25775ef08a319d946d0b5b261984467a98350344",
+    "skills/city-website/SKILL.md": "af64d0959e6ebd52297ca6f9c5ee4481537e3389378810c0225b251780b21ee2",
+    "skills/city-website/references/building-permits.md": "128b75b5ba5487b6f6b6f60e15a3d6b774dfd734e6ac723d04e73a6ba63a9876",
+    "skills/city-website/references/code-enforcement.md": "6daacc54ddcb453973a9bba607cfe312dd26ae7633b8b3c98caa6a81dcd48c92",
     "skills/city-website/references/faqs.md": "acd8dd5d76a2ee90b99d5717d8dcd415b54df575a323bfe5767d55d9fd3c70b2",
-    "skills/city-website/references/fees.md": "54bad319952c3f1fe6da0fab666f63944f5ca38e29e36a2dccdf1e389ceb8818",
+    "skills/city-website/references/fees.md": "63f57b71a338415376335da9f0de599308d65f9c3ce9b936c3f8aa52e10863ad",
     "skills/city-website/references/forms-index.md": "9bb1111f4e9daf1c3d334a00102e9d1d6878cdc9d30e3fc30487e63b29100271",
     "skills/city-website/references/how-to-submit.md": "7ef8141bd9664b024e01d9501c4a715d2a69e47023b0e4aa26bd33757ed4a2ed",
     "skills/city-website/references/planning-applications.md": "caf7d6f26ec4dcf775e439082b523c5353f9723c0b6df755ea2de17a03c4b315",
@@ -634,7 +634,7 @@
     "skills/multi-unit-residential/references/condo-conversion.md": "c487922def379e67ce135672a6ce50e9eb6cf67f44c51ddac023d07fd0257ab7",
     "skills/multi-unit-residential/references/dsp-mixed-use.md": "862240d3b15e9a4fabdb944671cfd321d3d920c16af14e7545de34200e5a0306",
     "skills/multi-unit-residential/references/laguna-practice-mixed-use.md": "f977f19865e88a1385d4db246c10fdd1453c1ff76f080c326bf7d93470d57276",
-    "skills/multi-unit-residential/references/mixed-use-conversion.md": "f66bdf3fe9e8699a69e710e75b3cee0752e03c9f401a6eda944522418d44d9a6",
+    "skills/multi-unit-residential/references/mixed-use-conversion.md": "fffc81ac90f82192e5e80002a22e23932cd6eedd56b3839a7440b7b706d9be82",
     "skills/multi-unit-residential/references/state-preemption.md": "47811f205e85e7212a5375e45d64494ac00c43650fcfe4f903d4ee722f1cf9a1",
     "skills/multi-unit-residential/references/submittal-kit-office-to-residential.md": "a07ca8de9167d4805e9187255578c87d4e889c436381b34611cedd9743efe570",
     "skills/multi-unit-residential/references/zoning-r2-r3-envelope.md": "2d0f4809688adab70a3d666242be420200cebce18e569c7dcb603c17b061c89d",
