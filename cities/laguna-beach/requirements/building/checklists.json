@@ -562,11 +562,11 @@
           ],
           "applies_when": {
             "question": "Does any exact City soils-report trigger apply: new construction, except an ADU (new, attached, or a conversion), which is not new construction here and needs this report only for a lot slope over 20%, a deep foundation (grade beams or piles), or a retaining wall over 5 ft, and is omitted when none of those apply; an SFR addition over 1,200 square feet, a new upper floor, or at least 50 percent total floor-area increase; retaining wall over 5 feet or supporting surcharge; shoring over 6 feet of cut; slope steeper than 1V:2H; beach/ocean front, coastal bluff top, steep hillside or liquefaction site; prior soil/structure failure; nonconventional foundation; qualifying new pool; or a Building Official determination?",
-            "if_yes": "Submit two bounded copies of the signed soils report for paper intake, dated within one year of submittal, and carry its recommendations onto the foundation and earth-retaining plans.",
+            "if_yes": "Submit the signed soils report, dated within one year of submittal, and carry its recommendations onto the foundation and earth-retaining plans.",
             "if_no": "No Laguna soils report is submitted under this handout. This negative is about the report list only and does not decide peer review."
           },
           "checked_against": "submittal",
-          "detail": "Submit two bounded copies for paper intake, dated within one year of submittal. The report trigger list is broader than peer review: any new construction; an SFR addition over 1,200 square feet, a new upper floor, or total floor-area increase of 50 percent or more; a retaining wall over 5 feet or supporting surcharge; shoring over 6 feet of cut; a lot steeper than 1 vertical to 2 horizontal; construction at a beach/ocean front, coastal bluff top, steep hillside or liquefaction zone; soil or structure failure; a nonconventional foundation; a new pool on an ungraded lot, flood plain or coastal bluff top; or a Building Official determination. Do not substitute the separate peer-review list. An ADU (new, attached, or a conversion) is not \"any new construction\" on this list: it needs this report only for a lot slope over 20%, a deep foundation (grade beams or piles), or a retaining wall over 5 ft.",
+          "detail": "Submit the signed soils report, dated within one year of submittal. The report trigger list is broader than peer review: any new construction; an SFR addition over 1,200 square feet, a new upper floor, or total floor-area increase of 50 percent or more; a retaining wall over 5 feet or supporting surcharge; shoring over 6 feet of cut; a lot steeper than 1 vertical to 2 horizontal; construction at a beach/ocean front, coastal bluff top, steep hillside or liquefaction zone; soil or structure failure; a nonconventional foundation; a new pool on an ungraded lot, flood plain or coastal bluff top; or a Building Official determination. Do not substitute the separate peer-review list. An ADU (new, attached, or a conversion) is not \"any new construction\" on this list: it needs this report only for a lot slope over 20%, a deep foundation (grade beams or piles), or a retaining wall over 5 ft.",
           "source": {
             "citation": "Laguna Beach Geotechnical/Soils Report Requirements, \"A geotechnical (soils) report is required\" (effective 6/17/2026; received 2026-08-14)",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -1192,7 +1192,7 @@
             "if_no": "No staging affidavit applies when no staging program is required."
           },
           "checked_against": "submittal",
-          "detail": "This is an issuance gate, separate from the staging-plan submittal. Before canvassing, the Building Official approves the notice; the contractor then canvasses neighbors within 300 feet (plus any added by the official), and the owner, contractor and architect sign the acknowledgement before permit issuance. Staff verify the approved notice, 300-foot canvass and signed affidavit before issuance.",
+          "detail": "This is an issuance gate, separate from the staging-plan submittal. Before canvassing, the Building Official approves the notice; the contractor or owner-builder canvasses neighbors within 300 feet (plus any added by the official) and signs the acknowledgement before permit issuance (Word revision of the procedures, 2026-03). Staff verify the approved notice, 300-foot canvass and signed affidavit before issuance.",
           "source": {
             "citation": "Laguna Beach Construction Staging Management handout, \"Neighbor notification and the affidavit\"; Laguna Beach 2026 Issuance Requirements Checklist, \"Construction Staging Plan and Affidavit\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -1437,7 +1437,7 @@
         },
         {
           "id": "laguna_interior_full_plan_check_set",
-          "label": "Two sets of scaled 24″ × 36″ drawings for Building Plan Check",
+          "label": "Scaled 24″ × 36″ drawings for Building Plan Check",
           "stage": "intake",
           "level": "city",
           "scopes": [
@@ -1451,7 +1451,7 @@
             "if_no": "The City calls for no plan-check set on a renovation that stays within the existing layout and structure; the legible renovation floor plan is what is filed."
           },
           "checked_against": "submittal",
-          "detail": "Laguna's plan-check intake for a room alteration is two sets of scaled drawings at 24 inches by 36 inches.",
+          "detail": "Laguna's plan-check intake for a room alteration is scaled drawings at 24 inches by 36 inches.",
           "source": {
             "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, SUBMITTAL CHECKLIST: \"two (2) sets of scaled drawing 24\\\" X 36\\\"\" (document 5129, republished 2026-05-09; verified live 2026-08-20); escalation trigger from the Kitchen Remodel and Bathroom Renovation handouts",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
@@ -1652,7 +1652,7 @@
         },
         {
           "id": "laguna_interior_structural_calculations_two_sets",
-          "label": "Two sets of structural calculations",
+          "label": "Structural calculations",
           "stage": "intake",
           "level": "city",
           "scopes": [
@@ -1663,11 +1663,11 @@
           ],
           "applies_when": {
             "question": "Does this remodel modify the structural system — remove or alter a wall, install or change a header or beam, alter framing, or change a footing?",
-            "if_yes": "Submit two sets of structural calculations covering framing and beam sizes, footing and reinforcement sizes, and the lateral system and its connections.",
+            "if_yes": "Submit structural calculations covering framing and beam sizes, footing and reinforcement sizes, and the lateral system and its connections.",
             "if_no": "No structural calculations are submitted for a remodel that touches no structural element."
           },
           "checked_against": "submittal",
-          "detail": "Two sets, justifying the proposed framing member and beam sizes, the footing and reinforcement sizes, and the lateral resisting system and its connections. The count is the City's own; one set is short of the published list.",
+          "detail": "Calculations justifying the proposed framing member and beam sizes, the footing and reinforcement sizes, and the lateral resisting system and its connections.",
           "source": {
             "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"STRUCTURAL CALCULATIONS – Two (2) sets are required\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
@@ -1676,7 +1676,7 @@
         },
         {
           "id": "laguna_interior_energy_forms_two_sets",
-          "label": "Two sets of energy compliance forms",
+          "label": "Energy compliance forms",
           "stage": "intake",
           "level": "city",
           "scopes": [
@@ -1687,11 +1687,11 @@
           ],
           "applies_when": {
             "question": "Does this remodel alter anything the California Energy Code regulates — lighting, the building envelope, HVAC, ductwork, or water heating?",
-            "if_yes": "Submit two sets of the Title 24 energy compliance forms, including the CF-1R and MF-1R.",
+            "if_yes": "Submit the Title 24 energy compliance forms, including the CF-1R and MF-1R.",
             "if_no": "No energy compliance forms are submitted for a remodel that alters no regulated system."
           },
           "checked_against": "submittal",
-          "detail": "Laguna asks for two sets of the Title 24 energy compliance forms — the CF-1R and MF-1R the checklist names — where the work triggers energy compliance.",
+          "detail": "Laguna asks for the Title 24 energy compliance forms — the CF-1R and MF-1R the checklist names — where the work triggers energy compliance.",
           "source": {
             "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"ENERGY COMPLIANCE FORMS – Two (2) sets will be required\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",

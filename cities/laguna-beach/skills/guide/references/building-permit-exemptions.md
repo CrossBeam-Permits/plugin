@@ -85,6 +85,7 @@ is not on this list, it probably requires a permit."
 | Driveway or patio paving | **Not on Laguna's list.** Confirm with Building. Planning: hardscape rules (section 2). |
 | Replace water heater, HVAC unit, reroof, windows, solar, EV charger | Yes. Load the permit type: `water-heater`/`hvac`/`reroof`/`window-replacement`/`solar`/`ev-charger`. |
 | Replace a breaker or a light fixture | Lamp replacement is exempt. Other electrical work: confirm with Building. |
+| Sandblast a house, wall or deck | **Yes: a sandblasting permit** (LBMC 14.38), even though painting is exempt. A licensed person pulls it. No dry sandblasting. Notify adjoining owners in writing and post two signs 24 hours before work. The Building Official approves a runoff control plan (a written description or a site drawing that keeps runoff and material out of the gutter and storm drain), and a City inspector checks it in the field before work starts: (949) 497-0707. Source: City "Sandblasting Requirements" handout (the City source document (not included in this plugin)). |
 
 Even exempt work must follow City construction rules, including the weekday-only construction
 hours (LBMC 7.25.080; see `noise-lighting-equipment.md`).
