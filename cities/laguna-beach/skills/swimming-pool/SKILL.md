@@ -153,7 +153,7 @@ Do not list inspection items as corrections. Do not enumerate every passing item
 |---|---|
 | Pool or spa (in-ground or portable) no more than 3 ft above adjacent legal grade, or a portable spa of no more than 600 gallons at any height | Zone Clearance (25.05.040(B)(2)(t)) plus building permit; check the stacking triggers in §1 |
 | Pool or spa more than 3 ft above adjacent legal grade | Design Review (25.05.040(B)(1)(j)): DRB for single-/two-family, Planning Commission otherwise (25.05.040(F)(1)) |
-| Height above adjacent legal grade unknown | Route undetermined. Establish the height from the plans before naming a route |
+| Height above adjacent legal grade unknown | Establish the height above legal grade from a survey; a section dimensioned to paving or finished grade does not establish it. Until then, give the route the stated scope supports, name the Design Review branch ("moves to Design Review if the survey shows more than 3 ft"), and ask for the survey |
 | Any pool/spa | Siting check: not in the required front yard, 5 ft from side and rear lines (25.50.016, §1b) |
 | Pool/spa on oceanfront or bluff lot | Bluff edge determination/geotech + 25-ft pool/spa bluff setback |
 | Pool/spa in coastal zone | CDP exemption analysis; do not assume exemption |

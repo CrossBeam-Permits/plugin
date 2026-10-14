@@ -210,7 +210,8 @@
         "portal_link_as_published": "http://gis.lagunabeachcity.net/MapsLinks/PublicGIS/BuildingPermitApplication.pdf",
         "portal_link_note": "The portal publishes the http:// URL, which returned HTTP 404 on 2026-10-09. The same path over https returns this file.",
         "website_page_check": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms returned HTTP 403 (AkamaiGHost) to curl and to headless Chromium on 2026-10-09; it was not re-read."
-      }
+      },
+      "older_revision_note": "The City's counter has accepted the older one-page Building Permit Application (no page 2). On a packet that used it, the page-2 Stormwater Quality Certification and its signature are 'added by the current form': a Tidy-up, not a missing page or a missing signature. New filings use this two-page form. See references/form-coverage.md."
     },
     {
       "id": "mep-application",

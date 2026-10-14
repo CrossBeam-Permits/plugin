@@ -1,0 +1,155 @@
+{
+  "note": "City counter practice: how City staff apply the published lists at intake, as staff have stated it or as City review decisions show it. It is not code and not a published handout, and it can change. Confirm with the City before relying on it.",
+  "items": [
+    {
+      "id": "landscape_plan",
+      "title": "Landscape plan",
+      "covers": "Landscape Plan, including the same-named Plan Sheet Matrix column and application exhibits.",
+      "timing": "Needed only when a trigger stated here applies.",
+      "applies_when": "Due for a major remodel (LBMC 25.05.040(B)(1)(a)); a new building subject to the (B)(2) ADU and new-primary-dwelling carve-out (B)(1)(b); an improvement over 15 feet high or a new upper level (B)(1)(c); or proposed landscaping modifications. A pool, ground-level lounge deck, patio cover or incidental lawn alone is not a trigger. For the first three triggers, an as-built landscape plan satisfies intake when no landscape work is proposed.",
+      "exceptions": [
+        {
+          "when": "A trigger above is established and the selected matrix cell is not blank.",
+          "timing": "Due at intake. The City returns an application that lacks it.",
+          "detail": "The plan is required at intake; it must meet the published content requirements and the as-built landscape allowance where applicable.",
+          "source": "Planning Division staff guidance, September 2026"
+        },
+        {
+          "when": "A trigger is established but the selected matrix cell is blank.",
+          "timing": "The City decides case by case. Ask the City.",
+          "raise_with_city": "Does the ordinance or the blank Plan Sheet Matrix cell govern Landscape Plan intake for this scope?",
+          "source": "Planning Division staff guidance, September 2026"
+        }
+      ],
+      "source": "Planning Division staff guidance, September 2026"
+    },
+    {
+      "id": "lighting_plan",
+      "title": "Exterior lighting plan",
+      "covers": "Exterior Lighting Plan, including the Lighting Plan matrix column.",
+      "timing": "Needed only when a trigger stated here applies.",
+      "applies_when": "Under LBMC 25.05.040(B)(1)(a)–(c): a major remodel; a new building subject to the (B)(2) ADU and new-primary-dwelling carve-out; or an improvement over 15 feet high or a new upper level.",
+      "exceptions": [
+        {
+          "when": "A trigger above is established and the selected matrix cell is not blank.",
+          "timing": "Due at intake. The City returns an application that lacks it.",
+          "detail": "The plan is required at intake; it must meet the published content requirements.",
+          "source": "Planning Division staff guidance, September 2026"
+        },
+        {
+          "when": "A trigger is established but the selected matrix cell is blank, including Upper-Level Additions or >15 ft above grade.",
+          "timing": "The City decides case by case. Ask the City.",
+          "raise_with_city": "LBMC 25.05.040(B)(1)(c) requires an exterior lighting plan, but the matrix cell is blank. Which governs at intake?",
+          "source": "Planning Division staff guidance, September 2026"
+        }
+      ],
+      "source": "Planning Division staff guidance, September 2026"
+    },
+    {
+      "id": "historic_assessment",
+      "title": "Historic assessment",
+      "covers": "The historic resource assessment (character-defining features; what is removed and retained).",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "The City initiates the historic assessment at the applicant's first resubmittal, because the design may change in response to first-round comments. Not a sufficiency item at intake.",
+      "exceptions": [
+        {
+          "when": "The proposed work is truly minor and akin to repair, maintenance, or in-kind replacement of a historic resource (the City's example: roof replacement). An addition, new floor area, or a new unit is NOT minor in-kind work.",
+          "timing": "The City decides case by case. Ask the City.",
+          "raise_with_city": "Minor in-kind work on a historic resource: the City initiates the historian's review at intake. Confirm the packet contains either (i) a deposit for a City-retained historic assessment, or (ii) the applicant's consultant assessment plus the peer-review deposit — and in either case an executed Advance Deposit and Reimbursement Agreement.",
+          "source": "Planning Division staff guidance, August 2026"
+        }
+      ],
+      "source": "Planning Division staff guidance, August 2026"
+    },
+    {
+      "id": "colored_elevations",
+      "title": "Colored elevations",
+      "covers": "Colored elevations of all sides (Design Review application).",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "Colored elevations may be deferred to the applicant's resubmittal. The City does not treat them as an application-sufficiency issue.",
+      "source": "Planning Division staff guidance, August 2026"
+    },
+    {
+      "id": "staking_plan",
+      "title": "Staking plan (story poles)",
+      "covers": "The staking plan (story-pole layout, datum-referenced pole elevations, certification table).",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "The staking plan may be deferred — the City recognizes that project designs often change between first and second iterations.",
+      "source": "Planning Division staff guidance, August 2026"
+    },
+    {
+      "id": "objective_design_standards_checklist",
+      "title": "Objective Design Standards checklists (Chapter 25.13 pathway)",
+      "covers": "The completed Chapter 2 General Design Standards checklist and exactly one applicant-selected Chapter 3 Form Group checklist, with plan-sheet locators, for an elected Chapter 25.13 pathway.",
+      "timing": "The City decides case by case. Ask the City.",
+      "applies_when": "The applicant elects Chapter 25.13 for a new single-family or two-family primary dwelling, including SB 9.",
+      "practice": "City document 26790 says both checklists belong in the application package, but the intake consequence has not been confirmed by staff.",
+      "raise_with_city": "Confirm whether omission of either completed objective-design checklist is intake-blocking, and whether the City provides a separately fillable checklist instead of the pages in document 26790.",
+      "source": "City of Laguna Beach Objective Design Standards for Single-Family and Two-Family Residential Development, City document 26790 (August 2026)"
+    },
+    {
+      "id": "noticing",
+      "title": "Public-hearing noticing (posting, mailing labels, mailed notices, affidavit)",
+      "covers": "Public-hearing noticing, including property posting, listing-service payment, mailing labels, mailed notices, and affidavit of mailing.",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "Noticing is due before the City notices a hearing, not at zoning-plan-check intake.",
+      "source": "Planning Division staff guidance, September 2026"
+    },
+    {
+      "id": "early_neighbor_communication",
+      "title": "Early neighbor communication (Design Review)",
+      "covers": "Early Neighbor Communication materials, certified mailing list, outreach notice, and outreach report for a Design Review project.",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "Neighbor communication is due before hearing scheduling, not at zoning-plan-check intake.",
+      "source": "Planning Division staff guidance, September 2026"
+    },
+    {
+      "id": "cdp_noticing",
+      "title": "Coastal Development Permit noticing",
+      "covers": "CDP-specific noticing for a hearing, de minimis waiver notice, or minor-development notice under the Coastal Development Permit application.",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "CDP noticing is due when the City prepares the later notice.",
+      "source": "Planning Division staff guidance, September 2026"
+    },
+    {
+      "id": "paint_swatches",
+      "title": "Paint swatches at the site",
+      "covers": "The two-foot-square exterior paint swatches installed at the project site before a Design Review hearing.",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "Paint swatches are a later pre-hearing site action, not an electronic zoning-plan-check intake item.",
+      "source": "Planning Division staff guidance, September 2026"
+    },
+    {
+      "id": "adu_deed_restriction",
+      "title": "JADU deed restriction",
+      "covers": "The recorded deed restriction required for a JADU that shares sanitation facilities.",
+      "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
+      "practice": "The deed restriction must be recorded before building permit issuance, not at zoning plan check.",
+      "source": "Planning Division staff guidance, September 2026"
+    }
+  ],
+  "sheet_sufficiency": {
+    "sheets": [
+      "Site Plan",
+      "Title Sheet",
+      "Cross Sections",
+      "Elevation Views",
+      "Floor Plans"
+    ],
+    "threshold_percent": 50,
+    "source": "Planning Division staff guidance, September 2026; Planning Division staff guidance, May 2026",
+    "labelled_items": [
+      {
+        "id": "digital_site_photos",
+        "title": "Digital site photos",
+        "elements": [
+          "the direction of the photo",
+          "a description"
+        ],
+        "exempt_when": "The scope of work is minor exterior work. The City's example is a Design Review for a minor exterior alteration. New development, new floor area, a new unit, or a major remodel is NOT minor exterior work.",
+        "practice": "At this scope the City does not require the direction label or the description.",
+        "source": "Planning Division staff guidance, September 2026"
+      }
+    ]
+  }
+}

@@ -40,7 +40,7 @@
               "key": "color_material_selections",
               "title": "Color and Material Selections",
               "required": "conditional",
-              "detail": "include specifications and pictures of all exterior building finishes and roofing. Identify all proposed exterior colors, including manufacturer code specifications."
+              "detail": "include specifications and pictures of all exterior building finishes and roofing. Identify all proposed exterior colors, including manufacturer code specifications. Color follows scope: Applies only when the project actually proposes new or changed exterior finishes, colors, or roofing."
             },
             {
               "key": "paint_swatches",
@@ -493,7 +493,7 @@
               "key": "record_of_survey",
               "title": "Record of Survey",
               "required": "conditional",
-              "detail": "Show all property boundary lines, public and private easements, and whether new monuments were set to show the boundary lines. Prepared, signed, and stamped by a licensed surveyor or civil engineer, and filed for processing with the County Surveyor's Office for review and recordation."
+              "detail": "Applies only when the project involves boundary or monument work, including resolving unclear lot lines or locating, resetting, or setting monuments. Show all property boundary lines, public and private easements, and whether new monuments were set to show the boundary lines. Prepared, signed, and stamped by a licensed surveyor or civil engineer, and filed for processing with the County Surveyor's Office for review and recordation."
             }
           ]
         },
@@ -690,7 +690,7 @@
               "key": "site_right_of_way_improvement_plan",
               "title": "Site and Right-of-Way Improvement Plan",
               "required": "conditional",
-              "detail": "Required scale 1/8\" = 1'-0\". When applicable, provide a topographic survey (including public and private easements) and the improvement overlay."
+              "detail": "Applies for a new home or a major remodel under the Local Coastal Program's 50-percent test; for other projects, evaluate it only when site or right-of-way improvements are actually in scope. Required scale 1/8\" = 1'-0\". When applicable, provide a topographic survey (including public and private easements) and the improvement overlay."
             }
           ]
         },

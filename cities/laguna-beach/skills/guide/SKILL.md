@@ -108,7 +108,9 @@ Pull with the reference file `references/<name>.md`. These are the guide's topic
 `building-permit-exemptions`, `grading-drainage`, `fire-hazard-and-wui`, `historic-properties`,
 `trees-views-hedges`, `noise-lighting-equipment`, `short-term-lodging`, `home-business`,
 `right-of-way-utilities`, `unpermitted-work`, `unit-removal`, `disaster-rebuild`, `temporary-uses`,
-`before-you-file` (a drafted or filed packet: right application? Planning before Building?).
+`before-you-file` (a drafted or filed packet: right application? Planning before Building?),
+`common-corrections` (a drafted plan set: what Laguna's plan check most often corrects, by permit
+type, and how to check the City's numeric standards on the drawings).
 They are reference topics, not permit skills: never pass them to the permit skills. City website pages
 (`planning-applications`, `forms-index`, `fees`, `submit-right-of-way`, `code-enforcement`) are also
 reference topics.
@@ -127,6 +129,7 @@ reference topics.
 | Historic house, ratings, Heritage Committee, Mills Act | `historic-properties` | |
 | Trees, views, hedges, landscaping height | `trees-views-hedges` | |
 | Equipment noise, outdoor lighting, construction hours | `noise-lighting-equipment` | |
+| What will plan check correct on my plans? Checking height, setbacks, coverage, the 50% major remodel test, equipment or WUI on the drawings | `common-corrections` (a plan-check preview, never an intake defect) | `before-you-file` first for the intake side |
 | Variance, CUP, AUP, TUP, changing an approved plan, lot line, SB 9, right-of-way encroachment | `discretionary-permits` | SB 9 state law: `../single-family-residential/SKILL.md` |
 | Work in the street, sidewalk or parkway; utility boxes, poles, undergrounding; cell antennas in the right-of-way; Coast Highway or Laguna Canyon Road (Caltrans); address outside City limits (Emerald Bay) | `right-of-way-utilities` | `discretionary-permits` for the encroachment permit |
 | Unpermitted work: legalizing it, code enforcement case, stop-work order, as-built plans | `unpermitted-work` | `planning-approvals` for the pieces |
@@ -207,6 +210,7 @@ Load these on demand. Paths are relative to this file.
 - `references/building-permit-exemptions.md` — Laguna Beach — Work that needs no building permit, and work that still needs Planning
 - `references/city-practice.md` — Laguna Beach — Weighing City practice against the code (method)
 - `references/coastal-development-permits.md` — Laguna Beach — Coastal Development Permits (resident guide)
+- `references/common-corrections.md` — Laguna Beach — Common plan-check corrections: check the drawings before the City does
 - `references/design-review-lists.md` — Laguna Beach — the three Design Review lists (Ord. 1732)
 - `references/disaster-rebuild.md` — Laguna Beach — Rebuilding after a fire, landslide or other disaster (resident guide)
 - `references/discretionary-permits.md` — Laguna Beach — Variances, use permits, and other Planning permits
