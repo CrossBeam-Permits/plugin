@@ -15,7 +15,7 @@ The Building checklists in this folder cover both what the counter needs to acce
 
 ### The work site is inside Laguna Beach city limits
 
-- City practice: The property at ADDRESS is in the City of CITY, not the City of Laguna Beach (name the sheet or document that says so). The City of Laguna Beach cannot review or issue this permit; please apply to the City of CITY. This Laguna Beach record will be closed.
+- City practice: The City of Laguna Beach reviews and issues permits only for property inside its city limits. When the plans or application place the property in another city, the City closes the Laguna Beach record and the applicant applies to that city. A mailing address or ZIP code alone does not decide it: parts of unincorporated Orange County carry a Laguna Beach mailing address.
 
 ### Simple permits are issued at the counter, not online
 
@@ -26,7 +26,7 @@ The Building checklists in this folder cover both what the counter needs to acce
 
 ### The plans must be a drawing of this work
 
-- Applies when: A contractor estimate or proposal, a quote, a specification or product data sheet, product literature, or a floor-plan graphic that does not locate the proposed work (a listing or brochure plan with a scope list pasted beside it) is not a drawing of this work, wherever it was uploaded. An estimate may stay in the packet as supporting documentation. Whether a hand-drawn plan is enough is not settled; do not fail a legible hand drawing that locates the work on that ground alone.
+- Applies when: A contractor estimate or proposal, a quote, a specification or product data sheet, product literature, or a floor-plan graphic that does not locate the proposed work (a listing or brochure plan with a scope list pasted beside it) is not a drawing of this work, wherever it was uploaded. An estimate may stay in the packet as supporting documentation.
 - City practice: Please provide a complete plan set that shows enough to identify and review the proposed scope of work. An estimate or contractor proposal may be included as supporting documentation, but it does not replace the construction plans. At a minimum: a title or cover sheet with the property address, the complete scope of work, the applicable codes and the designer or preparer; existing and proposed floor plans, drawn to scale and dimensioned, that identify the areas and walls affected; existing construction, new construction and any demolition shown distinctly; details for any new wall (height, framing, finishes); the use of each affected room, with door openings, windows, stairs and other relevant existing features; any electrical, plumbing or mechanical work, or a note on the plans that there is none; and enough notes and details to show how the work will be built. Plan sizes: 8.5 x 11, 11 x 17 or 24 x 36. Combine all plan sheets into one PDF plan set.
 - Exceptions: The express e-permits (panel upgrade, water heater, reroof) keep their own guide lists.
 - Basis: Building counter decisions, September 2026
@@ -111,9 +111,9 @@ Exterior work on the (B)(2) list must hold Planning approval before Building int
 
 Basis: Building Division staff answer, September 2026
 
-### When the parcel carries several Planning records, which one answers the Building intake Planning block — and is a Zone Clearance Application an approval?
+### When the parcel has several Planning records, which one clears Building intake, and is a filed Zone Clearance application an approval?
 
-The record whose description is THIS work. A sibling ZPC does not cover a pedestrian-bridge waterproofing filing on the same APN. Counter practice is a description comparison, fairly close, not a drawing-to-drawing match. Status is the approval signal; "Zone Clearance Application" is a type or a form to file, not an approval.
+The Planning record whose description covers this work. An approval for other work on the same parcel does not cover it. Staff compare the descriptions; they must match closely, not drawing for drawing. What counts is the record's approved status: a Zone Clearance application that is filed but not yet approved is not an approval.
 
 Basis: Building Division staff answer, September 2026
 

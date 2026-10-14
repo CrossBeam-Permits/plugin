@@ -11,7 +11,7 @@
         {
           "when": "A trigger above is established and the selected matrix cell is not blank.",
           "timing": "Due at intake. The City returns an application that lacks it.",
-          "detail": "The plan is required at intake; apply the published content requirements and the as-built landscape allowance where applicable.",
+          "detail": "The plan is required at intake; it must meet the published content requirements and the as-built landscape allowance where applicable.",
           "source": "Planning Division staff guidance, September 2026"
         },
         {
@@ -28,12 +28,12 @@
       "title": "Exterior lighting plan",
       "covers": "Exterior Lighting Plan, including the Lighting Plan matrix column.",
       "timing": "Needed only when a trigger stated here applies.",
-      "applies_when": "Resolve residential exterior-lighting-plan intake from LBMC 25.05.040(B)(1)(a)–(c): a major remodel; a new building subject to the (B)(2) ADU and new-primary-dwelling carve-out; or an improvement over 15 feet high or a new upper level.",
+      "applies_when": "Under LBMC 25.05.040(B)(1)(a)–(c): a major remodel; a new building subject to the (B)(2) ADU and new-primary-dwelling carve-out; or an improvement over 15 feet high or a new upper level.",
       "exceptions": [
         {
           "when": "A trigger above is established and the selected matrix cell is not blank.",
           "timing": "Due at intake. The City returns an application that lacks it.",
-          "detail": "The plan is required at intake; apply the published content requirements.",
+          "detail": "The plan is required at intake; it must meet the published content requirements.",
           "source": "Planning Division staff guidance, September 2026"
         },
         {
@@ -74,7 +74,7 @@
       "title": "Staking plan (story poles)",
       "covers": "The staking plan (story-pole layout, datum-referenced pole elevations, certification table).",
       "timing": "Not needed for the intake check. The City asks for it at a later step, stated below.",
-      "practice": "The staking plan may be deferred — the City recognizes that project designs often change between first and second iterations. Absence at intake never fails the packet; it only informs the reviewer that the staking plan is not present.",
+      "practice": "The staking plan may be deferred — the City recognizes that project designs often change between first and second iterations.",
       "source": "Planning Division staff guidance, August 2026"
     },
     {
@@ -136,7 +136,7 @@
       "Floor Plans"
     ],
     "threshold_percent": 50,
-    "source": "Planning Division staff guidance, September 2026; City Planning Division Application Procedures (May 2026 review draft)",
+    "source": "Planning Division staff guidance, September 2026; Planning Division staff guidance, May 2026",
     "labelled_items": [
       {
         "id": "digital_site_photos",

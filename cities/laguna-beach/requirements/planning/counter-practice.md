@@ -10,7 +10,7 @@ The City's published lists (the plan-sheet matrix, `residential-plan-sheets.md` 
 
 For the Site Plan, Title Sheet, Cross Sections, Elevation Views and Floor Plans, the intake planner accepts the sheet when the elements the City lists for it are substantially shown. As observed at the City's intake, a sheet is generally accepted when at least 50% of the elements that apply to the project are shown. An element that does not apply to the project is not counted. When a sheet falls short, the City names each missing element in the words of its application, not just the sheet.
 
-Basis: Planning Division staff guidance, September 2026; City Planning Division Application Procedures (May 2026 review draft)
+Basis: Planning Division staff guidance, September 2026; Planning Division staff guidance, May 2026
 
 ### Digital site photos
 
@@ -31,7 +31,7 @@ Basis: Planning Division staff guidance, September 2026
 - Applies when: Due for a major remodel (LBMC 25.05.040(B)(1)(a)); a new building subject to the (B)(2) ADU and new-primary-dwelling carve-out (B)(1)(b); an improvement over 15 feet high or a new upper level (B)(1)(c); or proposed landscaping modifications. A pool, ground-level lounge deck, patio cover or incidental lawn alone is not a trigger. For the first three triggers, an as-built landscape plan satisfies intake when no landscape work is proposed.
 - Exception: A trigger above is established and the selected matrix cell is not blank.
   - When: Due at intake. The City returns an application that lacks it.
-  - The plan is required at intake; apply the published content requirements and the as-built landscape allowance where applicable.
+  - The plan is required at intake; it must meet the published content requirements and the as-built landscape allowance where applicable.
 - Exception: A trigger is established but the selected matrix cell is blank.
   - When: The City decides case by case. Ask the City.
   - To settle with the City: Does the ordinance or the blank Plan Sheet Matrix cell govern Landscape Plan intake for this scope?
@@ -41,10 +41,10 @@ Basis: Planning Division staff guidance, September 2026
 
 - Covers: Exterior Lighting Plan, including the Lighting Plan matrix column.
 - When: Needed only when a trigger stated here applies.
-- Applies when: Resolve residential exterior-lighting-plan intake from LBMC 25.05.040(B)(1)(a)–(c): a major remodel; a new building subject to the (B)(2) ADU and new-primary-dwelling carve-out; or an improvement over 15 feet high or a new upper level.
+- Applies when: Under LBMC 25.05.040(B)(1)(a)–(c): a major remodel; a new building subject to the (B)(2) ADU and new-primary-dwelling carve-out; or an improvement over 15 feet high or a new upper level.
 - Exception: A trigger above is established and the selected matrix cell is not blank.
   - When: Due at intake. The City returns an application that lacks it.
-  - The plan is required at intake; apply the published content requirements.
+  - The plan is required at intake; it must meet the published content requirements.
 - Exception: A trigger is established but the selected matrix cell is blank, including Upper-Level Additions or >15 ft above grade.
   - When: The City decides case by case. Ask the City.
   - To settle with the City: LBMC 25.05.040(B)(1)(c) requires an exterior lighting plan, but the matrix cell is blank. Which governs at intake?
@@ -71,7 +71,7 @@ Basis: Planning Division staff guidance, September 2026
 
 - Covers: The staking plan (story-pole layout, datum-referenced pole elevations, certification table).
 - When: Not needed for the intake check. The City asks for it at a later step, stated below.
-- City practice: The staking plan may be deferred — the City recognizes that project designs often change between first and second iterations. Absence at intake never fails the packet; it only informs the reviewer that the staking plan is not present.
+- City practice: The staking plan may be deferred — the City recognizes that project designs often change between first and second iterations.
 - Basis: Planning Division staff guidance, August 2026
 
 ### Objective Design Standards checklists (Chapter 25.13 pathway)
