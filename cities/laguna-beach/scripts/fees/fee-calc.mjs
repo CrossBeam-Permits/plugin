@@ -330,6 +330,36 @@ function validateFeeCapture(obj) {
   }
 }
 
+/** Each separate permit names real fee lines, each line under one permit, and real permit types. */
+function validateSeparatePermits(obj) {
+  if (obj.separate_permits === undefined) return;
+  if (!Array.isArray(obj.separate_permits)) throw new Error('separate_permits must be a list');
+  const feeIds = new Set([
+    ...(obj.scope_addons ?? []),
+    ...(obj.building?.deposit ?? []),
+    ...(obj.public_works?.deposit ?? []),
+  ].map((fee) => fee.id));
+  const permitTypes = new Set(Object.keys(obj.permit_types ?? {}));
+  const ids = new Set();
+  const claimed = new Set();
+  for (const spec of obj.separate_permits) {
+    if (!spec?.id || !spec?.label || !Array.isArray(spec.fee_ids) || !spec.fee_ids.length)
+      throw new Error('separate_permits entries require id, label, and non-empty fee_ids');
+    if (ids.has(spec.id)) throw new Error(`separate_permits ${spec.id} is listed twice`);
+    ids.add(spec.id);
+    for (const id of spec.fee_ids) {
+      if (!feeIds.has(id)) throw new Error(`separate_permits.${spec.id} fee ${id} is not a scope add-on or deposit`);
+      if (claimed.has(id)) throw new Error(`separate_permits fee ${id} is filed under two permits`);
+      claimed.add(id);
+    }
+    for (const type of spec.permit_types ?? []) {
+      if (!permitTypes.has(type)) throw new Error(`separate_permits.${spec.id} permit type ${type} is not in permit_types`);
+    }
+    if (spec.over !== undefined && (!spec.over?.input || typeof spec.over.value !== 'number'))
+      throw new Error(`separate_permits.${spec.id}.over requires an input and a numeric value`);
+  }
+}
+
 /**
  * Validate + default a fee-schedule OBJECT (parsed from YAML, or read from the
  * store JSONB / a JSON snapshot). Lenient-in, strict-out. Pure — the YAML/JSON
@@ -563,6 +593,7 @@ export function validateFeeSchedule(input) {
     }
   }
   validateFeeCapture(obj);
+  validateSeparatePermits(obj);
   // Fill safe defaults for optional blocks.
   obj.statewide ??= {};
   obj.status ??= 'scaffolded';
@@ -940,6 +971,67 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
   }
 
   return scopes;
+}
+
+/** A surcharge deferred until scoped is charged on its base lines and on lines that carry it. */
+function feedsScopedSurcharge(s, line) {
+  return Boolean(s.base_line_ids?.includes(line.id) || line.surchargeIds?.includes(s.id) ||
+    line.surchargeIds?.some((id) => s.base_surcharge_ids?.includes(id)));
+}
+
+/**
+ * One estimate, split by the permit the City files each fee under: the screened
+ * record first, then each `separate_permits` entry with a firm line here. A fee
+ * charged as a percent of other lines (expedited plan review) and a surcharge
+ * deferred until scoped follow their base, so a separate permit carries the
+ * share its own lines add and the record keeps the rest. A refundable deposit
+ * is not a fee, so the subtotals add up to the firm lines less refundable
+ * deposits. Null when nothing is filed separately.
+ */
+export function feeSubtotalsByPermit(schedule, breakdown, inputs = {}) {
+  const recordType = normalizePermitType(breakdown.permitType);
+  const sum = (lines) => lines.reduce((total, line) => total + line.amount, 0);
+  const derived = (schedule.scope_addons ?? [])
+    .filter((addon) => addon.rule?.type === 'percent_of_lines')
+    .flatMap((addon) => {
+      const line = breakdown.firmLines.find((entry) => entry.id === addon.id);
+      const base = sum(breakdown.firmLines.filter((entry) => addon.rule.line_ids.includes(entry.id)));
+      return line && base > 0 ? [{ line, lineIds: addon.rule.line_ids, base }] : [];
+    });
+  const surcharges = (schedule.building?.surcharges ?? [])
+    .filter((s) => s.defer_until_scoped && breakdown.firmLines.some((line) => line.id === s.id));
+  const separate = [];
+  for (const spec of schedule.separate_permits ?? []) {
+    // On a record of the separate permit's own type, its lines are the record's.
+    if (spec.permit_types?.some((type) => normalizePermitType(type) === recordType)) continue;
+    if (spec.over && !(quantityFor(spec.over.input, inputs, breakdown.valuation, null) > spec.over.value)) continue;
+    const lines = breakdown.firmLines.filter((line) => spec.fee_ids.includes(line.id));
+    if (!lines.length) continue;
+    // A percent-of-lines fee splits in proportion to its base, minimum included.
+    const shares = derived.flatMap(({ line, lineIds, base }) => {
+      const own = sum(lines.filter((entry) => lineIds.includes(entry.id)));
+      return own > 0 ? [{ ...line, amount: round2(line.amount * own / base) }] : [];
+    });
+    const charged = [...lines.filter((line) => !line.refundable), ...shares];
+    const surchargeShare = surcharges.reduce((total, s) => total + round2(sum(charged.filter((line) => feedsScopedSurcharge(s, line))) * s.pct), 0);
+    separate.push({
+      id: spec.id,
+      label: spec.label,
+      lineIds: lines.map((line) => line.id),
+      subtotal: round2(sum(charged) + surchargeShare),
+    });
+  }
+  if (!separate.length) return null;
+  const taken = new Set(separate.flatMap((permit) => permit.lineIds));
+  return [
+    {
+      id: 'record',
+      label: null,
+      lineIds: breakdown.firmLines.filter((line) => !taken.has(line.id)).map((line) => line.id),
+      subtotal: round2(sum(breakdown.firmLines.filter((line) => !line.refundable)) - separate.reduce((total, permit) => total + permit.subtotal, 0)),
+    },
+    ...separate,
+  ];
 }
 
 export function recomputeFeeTotals(breakdown) {
@@ -1359,10 +1451,7 @@ export function calcFees(schedule, inputs) {
   if (ptCfg?.surcharges !== false) {
     for (const s of b.surcharges ?? []) {
       if (!s.defer_until_scoped) continue;
-      const base = firm
-        .filter((line) => s.base_line_ids?.includes(line.id) || line.surchargeIds?.includes(s.id) ||
-          line.surchargeIds?.some((id) => s.base_surcharge_ids?.includes(id)))
-        .reduce((sum, line) => sum + line.amount, 0);
+      const base = firm.filter((line) => feedsScopedSurcharge(s, line)).reduce((sum, line) => sum + line.amount, 0);
       if (base > 0) firm.push({ id: s.id, label: `${s.label} (${formatPercent(s.pct)}%)`, amount: round2(base * s.pct), tag: 'percent_of_base', cite: s.note, ownerDivision: s.owner_division });
     }
   }

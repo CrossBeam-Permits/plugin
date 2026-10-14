@@ -3486,6 +3486,43 @@
       "cite": "Building Division written operational rule, 2026-08-13"
     }
   ],
+  "separate_permits": [
+    {
+      "id": "demolition",
+      "label": "Demolition permit",
+      "permit_types": [
+        "demolition-one-family",
+        "demolition-multifamily",
+        "demolition-simple-structure",
+        "demolition-other"
+      ],
+      "fee_ids": [
+        "demolition_one_family_permit",
+        "demolition_one_family_plan_review",
+        "demolition_multifamily_permit",
+        "demolition_multifamily_plan_review",
+        "demolition_simple_structure_permit",
+        "demolition_simple_structure_plan_review",
+        "demolition_other_permit",
+        "demolition_other_plan_review"
+      ]
+    },
+    {
+      "id": "grading",
+      "label": "Grading permit (over 20 CY outside the footprint)",
+      "permit_types": [
+        "grading"
+      ],
+      "fee_ids": [
+        "grading_permit",
+        "grading_plan_review"
+      ],
+      "over": {
+        "input": "grading_cubic_yards",
+        "value": 20
+      }
+    }
+  ],
   "fee_capture": {
     "note": "Values come from what the packet states: the application, a schedule or table on the plans, or a count form. A count is never tallied from drawing symbols.",
     "groups": [
