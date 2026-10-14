@@ -20,7 +20,7 @@
     }
   },
   "privateRepo": {
-    "commit": "0ce1bc278cd25b4c4e599aa8d05cec0350eac60a",
+    "commit": "aba8b11da83dd391d4c9394f2277bfe0b8b52ea9",
     "dirty": false
   },
   "options": {
@@ -283,7 +283,7 @@
     "bad69243472fe2771416875a692c72a22b3848623e688a5433cc03560754f1a6": "91b0e56b63df86d4615b00492e1f5d0ef6874c63dc1cecea11a0a8a2418c9a65",
     "a294ea3dcd88e1e3681baec621243946d9066eba998fe40a00ea25ca31683904": "a1510fa7d4e5d6a7387fcfba4fe84cc101aff1a21f0f57fd24c41a4818aa668f",
     "cfb531ee99e1974c45b374b42b581af0309ebe0ea3ec6af87b7a9733430d4066": "1620e4b27658e434a556cdbd28929e13bd69ad3d6c84f512826a4c54866fa540",
-    "6d4407f7fdc6d2c77c01497e88ddfd70f429ba4f7d88a63d584ed4aeef1e64c5": "b40dbaea177aef53cf93b992e5b5e00b2ba570bc1f98299afc7da4c76f9e4037",
+    "6d4407f7fdc6d2c77c01497e88ddfd70f429ba4f7d88a63d584ed4aeef1e64c5": "682e16e1d6ccd7d8b4e162d7dced2442051497b4f0c31f66ae9e993a08ea2b7c",
     "d617714c7d73d432d32b7bf38032a75f0ceadaf93de74fe09c4997748b8bcef1": "43843a6416dda7d9c925a252f2a0e39f343f83bb6aec786fbb179ce931a45a13",
     "3c2b82a66cccf045ceaf1543838d913ab01b333c107caedc412aac1eb14d55be": "dceabff79e59e5823c857940ea5a4d86de3742713985aa4abdfa30f2a34f0fe7",
     "bebec2117f0c6eea432f8ee546046f994531bb484c21deb74277ffaf7b0a83ee": "e0653eb7ff0969228cbe5b232f610b8111699fdafc62590f6aee60ee988b29e8",
@@ -460,8 +460,8 @@
     "requirements/building/staff-reported.md": "99a3c780a7c890b7364e0e4b90a06b2fd1af4a192b834a931082a1a5a8824dc9",
     "requirements/building/walls-fences.md": "91ccb729b73f47a87e90897039d63c9df0f3d1e23c1dbe49c733186ac7191e5e",
     "requirements/building/wui-amendments.md": "73498f4975cfa4edff601529ce4c15b706331344132fcd0fbee6631826e75292",
-    "requirements/fees/README.md": "fed2a3a446b9fbb9ad2b7a42ed41a7f6b056a1a7020e50d3acb53b5fe3f9599e",
-    "requirements/fees/fee-schedule.json": "a1bf0e1f3270cb92c5c8cc80d8db6e68b6a45d5c531e189a91e34579cea61cef",
+    "requirements/fees/README.md": "e9a726acc9b249f3153fc1cf942d81d3693fad341ba9ff212f0bd33013058314",
+    "requirements/fees/fee-schedule.json": "394168b9f704586a91593bd457ee2349d8a9108b54b638390c7a66756e7ef5c6",
     "requirements/issuance/issuance-checklist.json": "727395964fc21ac0888d2a4b42cf42c621221b125915015884735b2e24b1feb3",
     "requirements/issuance/issuance-checklist.md": "ddee4bd6c7523747cf1ef65f17093cd81736a4ac54fc1fc4a9f281dfce2d4598",
     "requirements/plan-sheets/plan-sheet-matrix.json": "df1f8cd2e431061343f8e93369d2c106203d7e61dc520f7da30cec93a915a672",
@@ -479,7 +479,7 @@
     "requirements/planning/wireless-facility-permit.md": "aad42dec39303a37942f6ddf6364da9fa2c96933b1538b5c4dade24d3fe0ffb5",
     "requirements/planning/zone-clearance.md": "2941e37f03428da8cab98783399a65ecc8a6e3af0a41f5792e9d95ba6fed4351",
     "scripts/fees/README.md": "1800cc0cd4030a80e775de63c024c8933497dd64bbcd6009e78119909dbd40f0",
-    "scripts/fees/fee-calc.mjs": "92da8774cee0b6b24b653f118fac1c826111bc628bc73330886a21e5ba03d9fe",
+    "scripts/fees/fee-calc.mjs": "a19c9288e44c8b1b56ae0f43851daae85523d0b0c5645bc672d805625dd0a81e",
     "scripts/parcel-facts/README.md": "09339d5f405ec0cb55938e113f375d1222d514e21fcbc9829ae3fdf924f4922c",
     "scripts/parcel-facts/parcel_facts.py": "4baface1bf6ffff01e2bde13d7bb791231b6185d8b3958bb866cb9b9bae7a32b",
     "skills/adu/SKILL.md": "5bec05f027b5b6e8d5d1d6e7b867da2a9539abe669f412cb74e9342f028cf39e",

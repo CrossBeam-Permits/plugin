@@ -32,8 +32,8 @@ export const FEE_CAPTURE_BUILT_INS = {
   adu_sqft: { field: 'aduSqft', kind: 'number', label: 'ADU floor area', unit: 'sq ft' },
   primary_dwelling_sqft: { field: 'primaryDwellingSqft', kind: 'number', label: 'Primary dwelling floor area', unit: 'sq ft' },
   new_dwelling_units: { field: 'newDwellingUnits', kind: 'number', label: 'New dwelling units', unit: 'units' },
-  stories: { field: 'stories', kind: 'number', label: 'Stories', unit: 'stories' },
-  structure_use: { field: 'structureUse', kind: 'choice', label: 'Structure use', choices: ['residential', 'nonresidential'] },
+  stories: { field: 'stories', kind: 'number', label: 'Stories of the building after the work (area table, elevations or sections)', unit: 'stories' },
+  structure_use: { field: 'structureUse', kind: 'choice', label: 'Residential or nonresidential (occupancy group)', choices: ['residential', 'nonresidential'] },
   existing_habitable_conversion: { field: 'existingHabitableConversion', kind: 'boolean', label: 'Converts existing habitable space' },
   is_combination_permit: { field: 'isCombinationPermit', kind: 'boolean', label: 'Combination M/E/P permit' },
 };
@@ -429,9 +429,22 @@ export function validateFeeSchedule(input) {
     throw new Error('statewide.school_fee_excludes_existing_habitable_conversion must be boolean');
   if (obj.sewer_connection?.condition && !obj.sewer_connection.condition_group)
     throw new Error('sewer_connection.condition requires condition_group');
+  const lineGroupIds = new Set();
+  for (const group of obj.fee_line_groups ?? []) {
+    if (!group?.id || !group?.label)
+      throw new Error('fee_line_groups entries require id and label');
+    if (lineGroupIds.has(group.id))
+      throw new Error(`fee_line_groups.${group.id} is declared twice`);
+    lineGroupIds.add(group.id);
+  }
+  const validateLineGroup = (entry, path) => {
+    if (entry.line_group !== undefined && !lineGroupIds.has(entry.line_group))
+      throw new Error(`${path}.line_group must name a fee_line_groups id`);
+  };
   for (const addon of obj.scope_addons ?? []) {
     if (!addon?.id || !addon?.label || !addon?.trigger_scope)
       throw new Error('scope_addons entries require id, label, and trigger_scope');
+    validateLineGroup(addon, `scope_addons.${addon.id}`);
     if (addon.outside_valuation !== true)
       throw new Error(`scope_addons.${addon.id}.outside_valuation must be true`);
     if ((typeof addon.amount === 'number') === Boolean(addon.rule))
@@ -450,6 +463,7 @@ export function validateFeeSchedule(input) {
           (typeof deposit.amount !== 'number' && typeof deposit.min !== 'number'))
         throw new Error(`${owner}.deposit entries require id, label, trigger_scope, and numeric amount or min`);
       validateDueAt(deposit.due_at, `${owner}.deposit.${deposit.id}.due_at`);
+      validateLineGroup(deposit, `${owner}.deposit.${deposit.id}`);
     }
   }
   for (const fee of obj.excluded_fees ?? []) {
@@ -813,13 +827,20 @@ function evaluateAddon(addon, inputs, valuation, area, firm) {
   return { note: 'Confirm this fee with the collecting division.' };
 }
 
+/** The labeled group a schedule puts a fee line in, spread onto the line. */
+function lineGroup(schedule, entry) {
+  const group = entry.line_group && schedule.fee_line_groups?.find((candidate) => candidate.id === entry.line_group);
+  return group ? { group: { id: group.id, label: group.label } } : {};
+}
+
 function applyScopedFees(schedule, inputs, context, firm, confirm) {
   const scopes = inferredScopes(context.permitType, inputs);
   const captureGroups = schedule.fee_capture?.groups ?? [];
+  const countedGroups = new Set(captureGroups
+    .filter((group) => group.inputs.some((entry) => inputs.scopeQuantities?.[feeCaptureInputId(entry)] > 0))
+    .map((group) => group.id));
   for (const group of captureGroups) {
-    if (group.scope && group.inputs.some((entry) => inputs.scopeQuantities?.[feeCaptureInputId(entry)] > 0)) {
-      scopes.add(group.scope);
-    }
+    if (group.scope && countedGroups.has(group.id)) scopes.add(group.scope);
   }
   // A combination permit asserts its trade scopes and replaces the itemized unit rows.
   for (const scope of context.combinationTrades?.asserts_scopes ?? []) scopes.add(scope);
@@ -834,6 +855,23 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
       confirm.push(line);
     }
   };
+  // A trade the work includes but whose unit counts the packet does not state:
+  // its base fee prices from the scope, and the counts are asked for, never assumed.
+  // A permit type that already requires those counts asks for them itself.
+  const requiredInputs = new Set(context.requiredAnyInputs ?? []);
+  for (const group of captureGroups) {
+    if (!group.scope || !scopes.has(group.scope) || replacedGroups.includes(group.id) || countedGroups.has(group.id)) continue;
+    if (group.inputs.some((entry) => requiredInputs.has(feeCaptureInputId(entry)))) continue;
+    const baseFee = (schedule.scope_addons ?? []).find((addon) => addon.trigger_scope === group.scope);
+    const trade = group.label.toLowerCase();
+    addConfirm({
+      id: `counts_${group.id}`,
+      label: `${group.label} unit counts`,
+      note: `The work includes ${trade} work, but the packet states no ${trade} unit counts. Provide them to price the per-unit ${trade} fees.`,
+      cite: baseFee?.cite,
+      ownerDivision: baseFee?.owner_division,
+    });
+  }
   for (const addon of schedule.scope_addons ?? []) {
     if (!scopes.has(addon.trigger_scope)) continue;
     if (addon.permit_types?.length && !addon.permit_types.includes(context.permitType)) continue;
@@ -865,6 +903,7 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
       cite: addon.cite,
       ownerDivision: addon.owner_division,
       surchargeIds: addon.surcharge_ids,
+      ...lineGroup(schedule, addon),
     });
   }
 
@@ -885,6 +924,7 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
           cite: deposit.cite,
           ownerDivision: owner,
           refundable: deposit.refundable === true,
+          ...lineGroup(schedule, deposit),
         });
       } else {
         addConfirm({
@@ -1188,7 +1228,11 @@ export function calcFees(schedule, inputs) {
         ownerDivision: schedule.statewide.smip_owner_division,
       });
     } else {
-      confirm.push({ id: 'smip', label: 'SMIP classification', note: 'Provide the explicit residential/nonresidential classification and, for a residential structure, its story count. The published Laguna residential row applies only below three stories; other buildings use the statewide other-building rate.', cite: schedule.statewide.smip_cite, ownerDivision: schedule.statewide.smip_owner_division });
+      // Ask only for the part that is missing: the use, or (use known, so residential) the stories.
+      const note = explicitUse
+        ? 'Provide the number of stories of the building after the work. A residential building under three stories uses the residential rate; a taller one uses the statewide other-building rate.'
+        : 'Provide whether the building is residential or nonresidential, and for a residential building its number of stories after the work. A residential building under three stories uses the residential rate; other buildings use the statewide other-building rate.';
+      confirm.push({ id: 'smip', label: 'SMIP (state strong-motion fee)', note, cite: schedule.statewide.smip_cite, ownerDivision: schedule.statewide.smip_owner_division });
     }
   }
   if (statewideFeesApply && valuation > 0 && schedule.statewide.bsasrf !== false) {
@@ -1222,7 +1266,8 @@ export function calcFees(schedule, inputs) {
   const sewerApplies = ptCfg?.sewer_connection ?? (!ptCfg && (isAdu || permitType === 'new_sfr'));
   const sewerMinArea = isAdu ? (sc?.adu_min_area_sqft ?? sc?.applies_min_area_sqft ?? 500) : (sc?.applies_min_area_sqft ?? 500);
   const sewerState = sc ? conditionState(sc, inputs) : 'not_matched';
-  if (sc && sewerApplies && area && area >= sewerMinArea && sewerState === 'unresolved') {
+  // An unknown area cannot rule the fee out, so the location question stays open.
+  if (sc && sewerApplies && (!(area > 0) || area >= sewerMinArea) && sewerState === 'unresolved') {
     confirm.push({
       id: `condition_${sc.condition_group}`,
       label: sc.condition_label ?? 'Sewer connection applicability',
@@ -1282,7 +1327,7 @@ export function calcFees(schedule, inputs) {
 
   // 12) Data-driven scope add-ons, refundable deposits, conditionally located
   // fees, and structured exclusions/open questions. No city-specific branches.
-  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades }, firm, confirm);
+  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades, requiredAnyInputs: ptCfg?.required_any_inputs }, firm, confirm);
   if (ptCfg?.plan_review_of_scope_addons?.line_ids?.length) {
     const spec = ptCfg.plan_review_of_scope_addons;
     const base = firm.filter((line) => spec.line_ids.includes(line.id)).reduce((sum, line) => sum + line.amount, 0);
