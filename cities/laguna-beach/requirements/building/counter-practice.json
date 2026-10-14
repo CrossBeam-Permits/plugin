@@ -1,0 +1,142 @@
+{
+  "note": "City counter practice: how City staff apply the published lists at intake, as staff have stated it or as City review decisions show it. It is not code and not a published handout, and it can change. Confirm with the City before relying on it.",
+  "counter_requirements": [
+    {
+      "id": "condominium_application_type",
+      "title": "A condominium of 3 or more units files a Multifamily permit",
+      "practice": "Residential condominium filings must be refiled as multi-family; the residential record will close.",
+      "source": "Building Division staff direction, September 2026, with the City Multifamily Permit Type Guidelines (April 2026)"
+    },
+    {
+      "id": "work_site_outside_city",
+      "title": "The work site is inside Laguna Beach city limits",
+      "practice": "The property at ADDRESS is in the City of CITY, not the City of Laguna Beach (name the sheet or document that says so). The City of Laguna Beach cannot review or issue this permit; please apply to the City of CITY. This Laguna Beach record will be closed."
+    },
+    {
+      "id": "counter_issued_simple_permit",
+      "title": "Simple permits are issued at the counter, not online",
+      "applies_when": "The filing is a simple permit: its work is an item on the City's \"Qualified Projects for OTC\" list and no OTC disqualifier applies. It was filed through the portal. The express permits (panel upgrade, water heater, reroof) are accepted on the portal and are never this item.",
+      "source": "Building Division staff direction, September 2026",
+      "status": "The City has not yet said which items this covers.",
+      "open_question": "Items: (1) kitchen and bath remodels; (2) residential decks, balconies and patio cover repairs with minor structural modifications; (3) window and door replacement with minor structural modifications; (4) construction revisions to approved plans; (5) exterior siding replacement; (6) meter upgrade to 200A; (7) reroof with same material or lighter; (8) residential HVAC change outs; (9) minor plumbing, electrical or mechanical repairs or replacements; (10) wood or metal fences; (11) commercial signs without structural alterations. Items 6 and 7 are express permits today and stay on the portal unless the City says otherwise."
+    },
+    {
+      "id": "plan_is_a_drawing_of_this_work",
+      "title": "The plans must be a drawing of this work",
+      "applies_when": "A contractor estimate or proposal, a quote, a specification or product data sheet, product literature, or a floor-plan graphic that does not locate the proposed work (a listing or brochure plan with a scope list pasted beside it) is not a drawing of this work, wherever it was uploaded. An estimate may stay in the packet as supporting documentation. Whether a hand-drawn plan is enough is not settled; do not fail a legible hand drawing that locates the work on that ground alone.",
+      "practice": "Please provide a complete plan set that shows enough to identify and review the proposed scope of work. An estimate or contractor proposal may be included as supporting documentation, but it does not replace the construction plans. At a minimum: a title or cover sheet with the property address, the complete scope of work, the applicable codes and the designer or preparer; existing and proposed floor plans, drawn to scale and dimensioned, that identify the areas and walls affected; existing construction, new construction and any demolition shown distinctly; details for any new wall (height, framing, finishes); the use of each affected room, with door openings, windows, stairs and other relevant existing features; any electrical, plumbing or mechanical work, or a note on the plans that there is none; and enough notes and details to show how the work will be built. Plan sizes: 8.5 x 11, 11 x 17 or 24 x 36. Combine all plan sheets into one PDF plan set.",
+      "source": "Building counter decisions, September 2026",
+      "exceptions": "The express e-permits (panel upgrade, water heater, reroof) keep their own guide lists."
+    }
+  ],
+  "items": [
+    {
+      "id": "soils_report",
+      "title": "Soils (geotechnical) report",
+      "covers": "The geotechnical (soils) report for this site and this project.",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "A geotechnical report is required before plan check begins, but it is not required to submit the packet for intake.",
+      "exceptions": [
+        {
+          "when": "The filed work constructs a new building and no soils report for this property and project is in the packet. A new building is a new single-family dwelling, a new multifamily or commercial building, or a new detached structure with habitable space other than an ADU. It is not an addition, a JADU, a conversion, a remodel, or a new detached structure with no habitable space, such as a detached garage. A City review letter or checklist that approves a report is not the report.",
+          "timing": "Due at intake. The City returns an application that lacks it.",
+          "source": "Building Official guidance, September 2026"
+        },
+        {
+          "when": "The filed work creates an ADU (detached, attached, or a conversion) and no soils report for this property and project is in the packet, AND at least one of these applies: the lot slope is over 20%; the plans propose a deep foundation, such as grade beams or piles; or the plans propose a retaining wall over 5 ft. An ADU that meets none of the three is not this exception: it needs no soils report.",
+          "timing": "Due at intake. The City returns an application that lacks it.",
+          "source": "Building Official and permit technician guidance, September 2026"
+        }
+      ],
+      "source": "Building Division intake decisions, March to August 2026"
+    },
+    {
+      "id": "structural_calculations",
+      "title": "Structural calculations",
+      "covers": "A separate structural calculation package supporting engineered parts of the design.",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The structural calculation package is required before plan check begins, but it is not required to submit the packet for intake.",
+      "source": "Building Division intake decisions, March to August 2026"
+    },
+    {
+      "id": "structural_design_information",
+      "title": "Structural design information",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The structural design information is required before plan check begins, but it is not required to submit the packet for intake.",
+      "source": "Building Division intake decisions, March to August 2026"
+    },
+    {
+      "id": "special_inspection_documents",
+      "title": "Statement of special inspections",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The statement of special inspections is required before plan check begins, but it is not required to submit the packet for intake.",
+      "source": "Building Division intake decisions, March to August 2026"
+    },
+    {
+      "id": "energy_compliance_certificates",
+      "title": "Title 24 energy compliance certificate",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The applicable Energy Certificate of Compliance is required before plan check begins, but it is not required to submit the packet for intake.",
+      "source": "Building Division intake decisions, March to August 2026"
+    },
+    {
+      "id": "photovoltaic_compliance_documents",
+      "title": "Photovoltaic (solar) compliance documents",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The photovoltaic compliance documents are required before plan check begins, but they are not required to submit the packet for intake.",
+      "source": "Building Division intake decisions, March to August 2026"
+    },
+    {
+      "id": "automatic_sprinkler_documents",
+      "title": "Residential fire sprinkler documents",
+      "covers": "It does not change any separate application, routing, or Fire review trigger.",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The applicable sprinkler documentation is required before plan check begins, but it is not required to submit the packet for intake.",
+      "source": "Building Division intake decisions, March to August 2026"
+    },
+    {
+      "id": "wui_material_details",
+      "title": "Wildland-urban interface material details",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "WUI material-compliance details are required before plan check begins, but they are not required to submit the packet for intake.",
+      "source": "The City's E-Plan checklist for a complete submittal, as the Building counter applies it (August 2026)"
+    },
+    {
+      "id": "cortese_statement",
+      "title": "Hazardous waste and substances site statement (Cortese list)",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The hazardous-waste-site statement is collected in plan check, not at intake.",
+      "source": "Building Division staff guidance, August 2026"
+    },
+    {
+      "id": "construction_staging_plan",
+      "title": "Construction staging plan",
+      "covers": "The scaled construction staging and management plan or program from the City's Construction Staging Management handout. Not the neighbor-notification affidavit, which is an issuance item.",
+      "timing": "Not needed to file the application. Due during Building plan check.",
+      "practice": "The plan checker decides whether a staging plan is required.",
+      "source": "Building Division staff guidance, August 2026"
+    }
+  ],
+  "answered_questions": [
+    {
+      "question": "For a Building submittal whose scope falls on the §25.05.040(B)(2) list (exempt from Design Review, Zone Clearance under §25.05.045), must the applicant hold Planning approval before Building accepts the set, or does the counter clear it at intake?",
+      "answer": "Exterior work on the (B)(2) list must hold Planning approval before Building intake. Interior-only work ((B)(2)(d)) is accepted at Building intake without a prior Planning record.",
+      "source": "Building Division staff answer, September 2026"
+    },
+    {
+      "question": "When the parcel carries several Planning records, which one answers the Building intake Planning block — and is a Zone Clearance Application an approval?",
+      "answer": "The record whose description is THIS work. A sibling ZPC does not cover a pedestrian-bridge waterproofing filing on the same APN. Counter practice is a description comparison, fairly close, not a drawing-to-drawing match. Status is the approval signal; \"Zone Clearance Application\" is a type or a form to file, not an approval.",
+      "source": "Building Division staff answer, September 2026"
+    },
+    {
+      "question": "Roof-mounted PV on an existing single-family dwelling changes the exterior. Must the applicant hold Planning approval (Zone Clearance, or a CDP exemption in the Coastal Zone appealable area) before Building intake?",
+      "answer": "No. LBMC Chapter 14.84 and Government Code §65850.5 make the solar permit an administrative, nondiscretionary building permit. §14.84.070(b) limits review to the building official's health and safety check. LBMC §25.07.008(A)(1) exempts improvements to single-family dwellings from a CDP, and rooftop panels add no floor area and no height.",
+      "source": "Building Division staff answer, September 2026"
+    },
+    {
+      "question": "A reroof is (B)(2)(e) exterior work. Must the applicant hold Planning approval before Building intake, as for other exterior (B)(2) scopes?",
+      "answer": "Yes. \"Planning is always going to look at a reroof... 100%.\" The City record shows the reroof Zoning Plan Check filed on or before the Building application day, then the Building permit.",
+      "source": "Building Division staff answer, September 2026"
+    }
+  ]
+}

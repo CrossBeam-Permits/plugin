@@ -29,6 +29,11 @@ Which application to file, without a CrossBeam server:
 - The root skill, `plan-set-check` and `planning-routing.md` route through the guide.
 - Synced with the private source's short-answer change: the guide answers lead with one
   route, and the Planning entitlements page links each form directly.
+- New guide reference `common-corrections`: what Laguna's plan check corrects most often, by
+  permit type, with how to check each item on the drawings and how to check height, setbacks,
+  coverage, the major remodel 50% test, the equipment test and WUI against the City's values.
+  `plan-set-check` gains an optional step 8a that runs it as a plan-check preview and reports
+  its findings apart from the intake fix list.
 
 ## 0.5.0
 

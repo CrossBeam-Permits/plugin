@@ -67,6 +67,9 @@ result for Planning records (DR, ZPC, CDP, VAR, CUP, HCR) and building permits a
    expiration). When the record check says no decision date is published, say the lapse date cannot
    be computed from the public record, and ask for the resolution or Notice of Decision; never
    estimate one from the applied date. A stated approval expiration governs over your own count.
+   When the applicant says the project is approved and no decision or expiration date is in hand,
+   route as if the approval is in effect and name the lapse check as something to confirm, with the
+   dates that settle it. Never lead with a lapse or a refiling worked out from a year alone.
 2. **Alive, same scope, more time needed:** an extension, asked in writing before expiry. Design
    Review: two years, then a final one year, granted "through the administrative design review
    process" by the Director (25.05.040(K)(3); ADR item (B)(3)(a)(xvi)), on findings that the rules and

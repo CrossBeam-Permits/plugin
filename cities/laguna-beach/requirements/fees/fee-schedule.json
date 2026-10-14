@@ -2938,8 +2938,9 @@
     },
     {
       "id": "construction_demolition_administration",
-      "label": "Construction & Demolition waste diversion administration",
+      "label": "C&D waste (Green Halo) administration fee",
       "trigger_scope": "construction_demolition",
+      "line_group": "construction_demolition_waste",
       "amount": 61,
       "outside_valuation": true,
       "due_at": "issuance",
@@ -3321,12 +3322,19 @@
       "cite": "OCPW FY26/27 live Road_Fee_Rates table; CARITS 2C/2D"
     }
   ],
+  "fee_line_groups": [
+    {
+      "id": "construction_demolition_waste",
+      "label": "Construction & demolition waste (Green Halo), set at issuance"
+    }
+  ],
   "public_works": {
     "deposit": [
       {
         "id": "construction_demolition_deposit_new",
-        "label": "Construction & Demolition refundable security deposit — new construction",
+        "label": "C&D waste (Green Halo) refundable deposit — new construction",
         "trigger_scope": "construction_demolition",
+        "line_group": "construction_demolition_waste",
         "permit_types": [
           "new_sfr",
           "adu"
@@ -3338,8 +3346,9 @@
       },
       {
         "id": "construction_demolition_deposit_addition",
-        "label": "Construction & Demolition refundable security deposit — addition",
+        "label": "C&D waste (Green Halo) refundable deposit — addition",
         "trigger_scope": "construction_demolition",
+        "line_group": "construction_demolition_waste",
         "permit_types": [
           "addition"
         ],
@@ -3350,8 +3359,9 @@
       },
       {
         "id": "construction_demolition_deposit_remodel",
-        "label": "Construction & Demolition refundable security deposit — remodel/renovation",
+        "label": "C&D waste (Green Halo) refundable deposit — remodel/renovation",
         "trigger_scope": "construction_demolition",
+        "line_group": "construction_demolition_waste",
         "permit_types": [
           "remodel",
           "commercial-ti"
@@ -3363,8 +3373,9 @@
       },
       {
         "id": "construction_demolition_deposit_reroof",
-        "label": "Construction & Demolition refundable security deposit — tear-off reroof",
+        "label": "C&D waste (Green Halo) refundable deposit — tear-off reroof",
         "trigger_scope": "construction_demolition",
+        "line_group": "construction_demolition_waste",
         "permit_types": [
           "reroof"
         ],
@@ -3620,6 +3631,18 @@
       {
         "id": "demolition_simple_structure",
         "question": "Does this permit demolish a simple structure such as a detached garage or shed?"
+      },
+      {
+        "id": "electrical_permit",
+        "question": "Does the work include electrical work (new or altered lighting, receptacles, circuits, appliances or service)?"
+      },
+      {
+        "id": "mechanical_permit",
+        "question": "Does the work include mechanical work (new or altered exhaust fans, ducts, heating, cooling or vents)?"
+      },
+      {
+        "id": "plumbing_permit",
+        "question": "Does the work include plumbing work (new or altered fixtures, piping, water heaters or gas lines)?"
       }
     ],
     "conditions": [
@@ -3683,7 +3706,7 @@
       },
       {
         "group": "central_drainage_area",
-        "label": "Central drainage area",
+        "label": "Central Drainage Area (subdivision drainage fee)",
         "choices": [
           {
             "id": "city:central_drainage_area",
