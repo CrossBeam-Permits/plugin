@@ -105,11 +105,12 @@ The City's confirmation message on this type is, verbatim:
 
 This is the only type in the catalog that issues on submit. It does **not** carry
 the "FINAL PERMIT ISSUANCE IS CONDUCTED IN PERSON AT THE BUILDING COUNTER"
-warning that 11 of the 13 permit types carry — consistent with an instant-issuance
+warning that 11 of the 14 permit types carry — consistent with an instant-issuance
 path, and consistent with LBMC Ch. 14.84's expedited small-residential-rooftop-solar
 review. Inspection is still required: requests go by email to
 lbinspectors@lagunabeachcity.net before 4:00 p.m. for next-business-day service.
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/124/0/0, as of 2026-08-10]
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, permit-type count, as of 2026-10-12]
 [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits, as of 2026-07-08]
 
 ## Next step

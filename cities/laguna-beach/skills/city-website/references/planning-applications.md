@@ -32,7 +32,7 @@ tab; full list including handouts in forms-index.md):
 |---|---|
 | ADU | https://www.lagunabeachcity.net/home/showpublisheddocument/27032/639238583151930000 |
 | Coastal Development Permit | https://www.lagunabeachcity.net/home/showpublisheddocument/26712/639216204320300000 |
-| Conditional Use Permit | https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639252307038230000 |
+| Conditional Use Permit | https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639271347299500000 |
 | Design Review | https://www.lagunabeachcity.net/home/showpublisheddocument/26714/639216204685500000 |
 | Lot Line Adjustment | https://www.lagunabeachcity.net/home/showpublisheddocument/26467/639198115671300000 |
 | Reasonable Accommodation | https://www.lagunabeachcity.net/home/showpublisheddocument/26584/639208529202030000 |
@@ -45,6 +45,7 @@ tab; full list including handouts in forms-index.md):
 | Tentative Parcel and Tract Map | https://www.lagunabeachcity.net/home/showpublisheddocument/26471/639198118248270000 |
 | Variance | https://www.lagunabeachcity.net/home/showpublisheddocument/26716/639216205093070000 |
 | Zone Clearance | https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000 |
+| Zoning Ordinance Amendment (also Specific Plan Amendment; added 2026-10-14) | https://www.lagunabeachcity.net/home/showpublisheddocument/27550 |
 | Floodplain Development Permit (Residential) | https://www.lagunabeachcity.net/home/showpublisheddocument/5331/638533529030300000 |
 | Historic Register Placement | https://www.lagunabeachcity.net/home/showpublisheddocument/13780/638533529670170000 |
 | Wireless Facility Permit | https://www.lagunabeachcity.net/home/showpublisheddocument/10523/639128851051000000 |
@@ -55,7 +56,18 @@ tab; full list including handouts in forms-index.md):
 | Start Home Revitalization Act (SB684) | https://www.lagunabeachcity.net/home/showpublisheddocument/26902/639227554030430000 |
 | General Plan Amendment | https://www.lagunabeachcity.net/home/showpublisheddocument/27396/639263715770130000 |
 
-Every link above now carries a version stamp. The City replaced the ADU
+**Zoning Ordinance Amendment** (application package dated October 2026). It is
+for a request to amend Title 25 (Zoning) or a specific plan, filed through the
+Public Permit Portal. The Planning Commission holds a noticed hearing and makes a
+recommendation. The City Council then holds its own noticed hearing, and adoption
+takes two readings at separate Council meetings. The package states that, as of
+October 2026, all of Title 25 is part of the City's certified Local Coastal
+Program, so any Title 25 amendment is also an LCP amendment and does not take
+effect until the California Coastal Commission certifies it. The package bills
+actual cost against a deposit (see fees.md).
+[source: https://www.lagunabeachcity.net/home/showpublisheddocument/27550 , as of 2026-10-14]
+
+Every link above except the Zoning Ordinance Amendment (published without one) carries a version stamp. The City replaced the ADU
 application (document 26710 → 27032, built September 1, 2026) and the SB 9
 application (document 26708 → 26958, published August 25, 2026), and
 republished the Conditional Use Permit application on September 17, 2026. We
@@ -92,6 +104,7 @@ Development Permit. What the General Plan Amendment package says:
 [source: https://www.lagunabeachcity.net/home/showpublisheddocument/27396/639263715770130000, "September 2026" edition, as of 2026-10-09]
 
 - The general **Planning Application** form and its checklist is document id 23183: https://www.lagunabeachcity.net/home/showdocument?id=23183&t=639053636283354826 [source: https://www.lagunabeachcity.net/government/departments/community-development/planning/design-review-process, as of 2026-02-22]
+  ⚠️ The City retired this universal Planning Application on July 22, 2026. File the application for the specific entitlement instead (Design Review, Coastal Development Permit, Zone Clearance and so on), from the links table above. [source: City Planning Division Update, July 22, 2026, the City source document (not included in this plugin) ("Entitlement-Specific Applications"), as of 2026-10-14]
 
 ⚠️ **Conflict on how applications are accepted.** The design review process page
 says discretionary applications are "accepted only through the City's on-line
@@ -103,17 +116,120 @@ routes — book through the appointment portal
 and submit through the Public Permit Portal — and suggest confirming with
 Planning at (949) 497-0713 which applies to their application type.
 
+## Does my project need design review or a hearing? (rules since July 22, 2026)
+
+The City Council adopted the **Design Review Efficiency Ordinance** (Urgency
+Ordinance No. 1732) on July 21, 2026. It took effect July 22, 2026. It changed
+which projects need Design Review, cut the design review criteria from 16 to 11,
+and added a hearing waiver for Administrative Design Review. Some City material
+is older than the ordinance: the nine steps below, the FAQ answer in `faqs.md`,
+and the eCode360 copy of LBMC § 25.05.040. Where they differ, the ordinance
+governs.
+[source: https://www.lagunabeachcity.net/government/departments/community-development/planning/current-projects/design-review-efficiency-ordinance, as of 2026-10-14]
+[source: signed Ord. 1732, https://www.lagunabeachcity.net/home/showpublisheddocument/27472/639268910819100000, pp. 82-83 (adoption and vote), as of 2026-10-14]
+
+**Three levels.** Exterior work no longer needs Design Review by default. Each
+part of a project is matched to one of three closed lists in LBMC § 25.05.040(B):
+- **Zone Clearance.** Staff check the work against the zoning standards. There is
+  no design review and no hearing. The list has 28 categories (§ 25.05.040(B)(2),
+  § 25.05.045). Examples: an alteration or addition that is not a major remodel and
+  is no more than 15 ft high; interior work; a re-roof that is not white or light
+  colored and causes no glare; retaining walls 5 ft or less; decks 3 ft or less
+  above grade; fences that meet § 25.50.012; ADUs (under Chapter 25.17).
+- **Administrative Design Review (ADR).** The Community Development Director or a
+  designee decides, after a hearing unless the hearing is waived (see below). The
+  list has 17 categories (§ 25.05.040(B)(3)). Examples: decks more than 3 ft above
+  grade; tall landscaping; minor alterations to a historic resource; roof changes
+  to dimensions, square footage or pitch; white or light colored roofs; equipment
+  that fails the § 7.25.130(C) test; skylights without automatic night shades.
+- **Design Review.** A noticed public hearing. The list has 16 categories
+  (§ 25.05.040(B)(1)). The **Design Review Board** hears single-family and
+  two-family developments. The **Planning Commission** hears all other Design
+  Review, including three or more units, anything in the Downtown Specific Plan
+  area, nonresidential projects, public works, and projects the Commission decides
+  anyway, such as one needing a Conditional Use Permit (§ 25.05.040(F)(1)).
+  Examples: a major remodel; a new building; a new structure or a raised roof over 15 ft high; grading over 20 cubic yards outside the building footprint;
+  retaining walls over 5 ft; work in an environmentally sensitive area.
+- A named item (landscaping, a deck, equipment, an above-ground utility structure)
+  keeps that item's review level even when it is over 15 ft. The over-15-ft rule
+  applies when the work itself creates new height — a new building, an addition or
+  other new structure whose own roof is over 15 ft, a raised roof, or a new
+  exterior elevator or other non-equipment rooftop appurtenance — and not to
+  work on a building that stays the same height. When two specific items cover the
+  same work, the higher list governs. The highest list any part reaches sets the
+  project's application and who decides; other parts stay on their own lists.
+  Work in an environmentally sensitive area, which includes slopes of 30%
+  or more, goes to Design Review, unless a licensed professional finds, subject to
+  peer review, that it does not affect the area. The Director may refer a Zone
+  Clearance or ADR project to the Design Review Board or Planning Commission. At
+  any level, a Coastal Development Permit may still be required.
+- List text, item by item: `../../guide/references/design-review-lists.md`. Who decides:
+  `../../guide/references/review-bodies.md`. How to route a whole project, including when
+  the over-15-ft catch-all applies: `../../guide/references/planning-approvals.md` Step 4d.
+[source: LBMC § 25.05.040(A)(2)(d)-(e), (B), (F)(1) and § 25.05.045 as enacted by Ord. 1732 §§ 7-8, the City source document (not included in this plugin), as of 2026-10-14]
+
+**New single-family homes that skip Design Review (Chapter 25.13).** The City's
+page says some single-story new homes no more than 15 ft high may be exempt if
+they "meet other requirements". The other requirements are in Chapter 25.13:
+- The path is optional. The applicant must elect it when filing.
+- It covers a new primary dwelling unit in a single-family residential zone. A
+  major remodel does not qualify.
+- The house and its new garage are one story and no more than 15 ft high.
+- The house is no more than 1,500 sq ft gross floor area. A second primary unit,
+  where otherwise allowed, is no more than 800 sq ft. The house has a new two-car
+  garage of no more than 400 sq ft.
+- Front, side and rear setbacks are at least 20% greater than the zone requires.
+  There is no side-yard redistribution and no reduced setback under § 25.50.004(E).
+- Total floor area stays within the chapter's Table A floor-area ratio for the lot
+  size.
+- Landscaping is kept at or below 15 ft in the buildable area, 6 ft in side and
+  rear yards, and 4 ft in the front yard (3 ft on a corner lot). Exterior lighting
+  is fully shielded and aimed downward. There is no roof deck.
+- The design meets all 13 General Design Standards and every standard in one Form
+  Group (A, B, C or D; the applicant chooses one and may not mix them) of the
+  City's *Objective Design Standards for Single-Family and Two-Family Residential
+  Development* (August 2026):
+  https://www.lagunabeachcity.net/home/showpublisheddocument/26790/639220316898470000
+
+A home that meets every standard gets Zone Clearance instead of Design Review
+(§ 25.05.040(B)(2)(z)). It may still need a Coastal Development Permit. Other
+structures or site work proposed with it may still need Design Review. A home
+that misses a standard can go through regular Design Review instead
+(§ 25.13.020(B)). The full standards are in the single-family-residential skill,
+`objective-primary-dwelling-ch25-13.md`.
+[source: LBMC §§ 25.13.020-25.13.040 as enacted by Ord. 1732 § 24, the City source document (not included in this plugin), as of 2026-10-14]
+[source: City document 26790, the City source document (not included in this plugin), as of 2026-10-14]
+
+**The 11 design review criteria** (§ 25.05.040(H)): Access; Design Articulation;
+Environmental Context; General Plan Compliance; Historic Preservation;
+Landscaping; Lighting and Glare; Neighborhood Compatibility; Pedestrian
+Orientation; Privacy; View Equity. To approve, the decider must find two things.
+The project complies with the Municipal Code, including any specific plan. Its
+design is consistent with these criteria (§ 25.05.040(I)).
+[source: Ord. 1732 § 7, LBMC § 25.05.040(H)-(I), the City source document (not included in this plugin) lines 1155-1245, checked against the signed copy (document 27472) pp. 27-28, as of 2026-10-14]
+
+⚠️ **Coastal zone.** Ord. 1732 amends the City's Local Coastal Program, and the
+Coastal Commission had not certified it as of 2026-10-01. The City applies the new
+rules citywide. In the coastal zone, tell the resident to confirm the review level
+with Planning at pre-application. Ordinance No. 1733 (August 4, 2026) extended the
+urgency ordinance. Details: `../../guide/references/design-review-lists.md`, "Coastal zone
+caveat".
+[source: the City source document (not included in this plugin) section 4; the City source document (not included in this plugin) (status note), as of 2026-10-14]
+
 ## Design review process — the City's nine steps
 
 [source: https://www.lagunabeachcity.net/government/departments/community-development/planning/design-review-process, as of 2026-02-22]
+
+⚠️ This page predates Ord. 1732; see the section above for which projects need
+Design Review now. Two steps are out of date, and they are flagged where they appear.
 
 1. **Pre-submission.** Investigate applicable ordinances and policies before preparing construction plans. Most projects need discretionary approval before structural drawings go to the Building Division. Review applicable Specific Plans, zoning regulations, the General Plan, and the Local Coastal Program. Planning staff are available at the planning counter to help.
 2. **Preliminary zoning review.** Submit the preliminary design online for a Commercial or Residential Planning Entitlement through the Public Permit Portal. There is a fee. The application gets a Zoning Plan Check number (ZPC#). A planner reviews and sends a detailed letter listing required discretionary applications, inconsistencies, and staff concerns. **Concluded in approximately 30 days; the Zoning Plan Check fee is good for up to three reviews.**
 3. **Early neighbor communication.** LBMC § 25.05.040(C)(1) requires early neighbor communication for all Design Review projects before a scheduled public hearing. The Design Review Board has published Best Practices, and an optional Neighborhood Outreach Report form exists for documenting outreach.
 4. **Discretionary entitlement application.** Design Review and companion applications (Coastal Development Permit, Variance, Revocable Encroachment Permit, others) are **accepted only through the online public permitting portal**. Incomplete applications and applications without full fee payment will not be accepted for processing.
-5. **Planner review and feedback.** The project is assigned to a planner who checks completeness, performs a detailed plan check, and routes the project to other City divisions and departments. **Within approximately 30 days** the planner sends a status letter saying the application is complete or incomplete. Complete applications are tentatively scheduled for public hearing **approximately 45 days thereafter**, assuming the project qualifies for a CEQA exemption. After an incomplete letter, the applicant has **six months** to correct and resubmit or the application may be deemed abandoned and withdrawn. Some projects also require Public Works, Water Quality, and/or Fire Department review, which issue their own separate corrections.
+5. **Planner review and feedback.** The project is assigned to a planner who checks completeness, performs a detailed plan check, and routes the project to other City divisions and departments. **Within approximately 30 days** the planner sends a status letter saying the application is complete or incomplete. Complete applications are tentatively scheduled for public hearing **approximately 45 days thereafter**, assuming the project qualifies for a CEQA exemption. After an incomplete letter, the applicant has **six months** to correct and resubmit or the application may be deemed abandoned and withdrawn. ⚠️ *Out of date:* since July 22, 2026 the applicant has **90 days** to supply the requested information after an incomplete determination. After that the application expires, and a new application and fee are needed (LBMC § 25.05.015(G), Ord. 1732 § 4). The City's July 22 notice says files found incomplete before that date keep six months; the signed ordinance does not say so, so tell the resident to confirm with the planner (`../../guide/references/process-timeline-appeals.md`, step 6). [source: the City source document (not included in this plugin) § 25.05.015; the City source document (not included in this plugin), as of 2026-10-14] Some projects also require Public Works, Water Quality, and/or Fire Department review, which issue their own separate corrections.
 6. **Hearing preparation.** The planner drafts a Public Hearing Notice and Staff Report. **The notice is posted at the project site and two other places in the City, and mailed to neighboring property owners within 300 feet and tenants within 100 feet.**
-7. **Hearing.** Administrative Design Review meetings are conducted by the Community Development Director or designee in the Council Chambers. Design Review Board hearings and Planning Commission hearings each occur **twice a month** in the Council Chambers. Order of business: staff presentation → questions → applicant presentation → questions → public comment → applicant rebuttal → hearing closed → decision or continuance. **The Municipal Code limits a project to three substantive hearings and two non-substantive continuances**, and the City Council has more recently directed decision-makers to decide within two hearings.
+7. **Hearing.** Administrative Design Review meetings are conducted by the Community Development Director or designee in the Council Chambers. ⚠️ *Out of date:* many ADR applications can now be approved without a hearing; see "ADR without a hearing" above. Design Review Board hearings and Planning Commission hearings each occur **twice a month** in the Council Chambers. Order of business: staff presentation → questions → applicant presentation → questions → public comment → applicant rebuttal → hearing closed → decision or continuance. **The Municipal Code limits a project to three substantive hearings and two non-substantive continuances**, and the City Council has more recently directed decision-makers to decide within two hearings.
 8. **Appeal and call-for-review period.** A **14-day** appeal period starts after final action by the Director, DRB, or Planning Commission. During it, required staking must remain in place and **no building permit application may be filed**. Property owners within 300 feet may appeal to the City Clerk for City Council review; a Council member may call the item for review. If appealed, the Code requires a City Council hearing **within 60 days**. Where a Coastal Development Permit is involved and the site is in an appealable area, staff file a Notice of Final Action with the California Coastal Commission; an aggrieved party or the Commission may appeal **within 10 business days** of receiving the NOFA.
 9. **Building permit application.** Once the approval is effective, submit a building permit application with construction plans. **Design Review approvals and associated applications are valid for two years**, extensions available for a fee.
 
@@ -126,6 +242,10 @@ resident to confirm the deadline with their assigned planner or Community
 Development at (949) 497-0712.
 [source: https://www.lagunabeachcity.net/government/departments/community-development/planning/design-review-process, as of 2026-02-22]
 [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits/how-are-building-permits-processed, as of 2026-06-18]
+The code supports the 14-day figure. Under Ord. 1732, a Design Review decision
+takes effect 14 calendar days after the decision unless it is appealed
+(LBMC § 25.05.040(K)(1)).
+[source: Ord. 1732 § 7, the City source document (not included in this plugin) § 25.05.040(K)(1), checked against the signed copy (document 27472) p. 28, as of 2026-10-14]
 
 - The Design Review Board meets **every 2nd and 4th Thursday evening of the month, with a few exceptions, at 5:00 p.m. in the City Council Chambers**. It reviews building designs, grading permits, and projects in environmentally sensitive areas. [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits/how-are-building-permits-processed, as of 2026-06-18]
 

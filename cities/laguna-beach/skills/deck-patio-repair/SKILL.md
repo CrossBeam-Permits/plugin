@@ -139,7 +139,7 @@ This skill covers Laguna Beach's city-specific deck, patio, and balcony requirem
 | **Deck/balcony/patio cover repair** (no extension, no replacement) | OTC eligible |
 | **Deck replacement or new deck construction** | Building permit (no deck exemption in LBMC 14.50.022) + Planning route below |
 | **New elevated deck >3 ft above grade, or a replacement that changes size, height or location** | Administrative Design Review, §25.05.040(B)(3)(a)(iii) |
-| **Like-for-like replacement or repair of an existing elevated deck** (same size, height and location; resurfacing; new railing) | Zone Clearance, in-kind (B)(2)(c) and railings (B)(2)(r); City practice ZPC-2026-1362 (deck replaced like for like), ZPC-2026-1825 (second-floor deck repair with new guard, counter) |
+| **Like-for-like replacement or repair of an existing elevated deck** (same size, height and location; resurfacing; new railing) | Zone Clearance, in-kind (B)(2)(c) and railings (B)(2)(r); City practice (deck replaced like for like; second-floor deck repair with new guard, counter) |
 | **Deck on top of a structure** (roof deck, deck over a room, garage, carport or ADU) | City Planning intake treats it as establishing Design Review; the ordinance item alone gives ADR (iii). See below |
 | **Deck/slab/terrace/patio ≤3 ft above adjacent legal grade** | Zone Clearance under §25.05.040(B)(2)(m) |
 | **Deck wrapping with fire-resistant materials** | Match the current closed lists; the former categorical `(B)(2)(w)` exemption was repealed |

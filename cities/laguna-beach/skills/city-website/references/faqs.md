@@ -75,6 +75,18 @@ Commission**.
 Common projects generally exempt from design review:
 https://www.lagunabeachcity.net/home/showdocument?id=13590
 
+⚠️ This City FAQ answer is older than Ord. 1732, which took effect July 22, 2026.
+Do not answer from it.
+- There are now three levels, not two: Zone Clearance, Administrative Design
+  Review, and Design Review.
+- The eCode360 page it links still shows the old § 25.05.040.
+- The "exempt" list (document 13590) is the 2022 list under Ordinance No. 1677,
+  and the 2026 ordinance replaced it.
+
+Answer from `planning-applications.md`, "Does my project need design review or a
+hearing?". Do not send residents to document 13590.
+[source: document 13590 read 2026-10-14 (headed "Projects Exempt from Design Review — Ordinance No. 1677", created November 2022); https://www.lagunabeachcity.net/government/departments/community-development/planning/current-projects/design-review-efficiency-ordinance, as of 2026-10-14]
+
 ## How can I make an appointment with a planner?
 
 Through the appointment portal:

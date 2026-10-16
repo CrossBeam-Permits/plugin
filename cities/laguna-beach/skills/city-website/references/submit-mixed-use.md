@@ -3,8 +3,8 @@
 The building permit for **buildings that combine residential and non-residential
 use** — the mixed-use sibling of the Residential (183), Commercial (184), and
 Multifamily (322) permits. Same wizard, same 39-slot file set, same 113-field MEP
-count sheet; what differs is the category and the contact configuration (see
-"Contacts and licences", the one real trap here).
+count sheet, and — since October 2026 — the same required contacts as 183 and
+184; what differs is the category.
 
 **Apply:** https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/374/0/0 (portal account required)
 **Catalog name, verbatim:** "Mixed Use Permit" — category MIXED USE, module PERMITS.
@@ -39,10 +39,9 @@ City's own field warning, verbatim: "\*\* Square Footage is for office use only.
 Do Not use."
 
 **3 — Contacts.** Click **+** to search by person or business name, then **Add**;
-if not found, **Enter Manually**. The City's written instruction lists
-**Applicant** and **Owner** under "Required Contacts", plus **Contractor**,
-**Architect/Designer**, and **Engineer** "if applicable" — but the form itself
-does not enforce any of it. See "Contacts and licences".
+if not found, **Enter Manually**. The City lists **Applicant** and **Owner**
+(required), plus **Contractor**, **Architect/Designer**, and **Engineer** "if
+applicable". See "Contacts and licences".
 
 **4 — More info.** "Please enter the number of items each for Electrical,
 Mechanical, and Plumbing if applicable." See the next section.
@@ -74,17 +73,22 @@ itemized fees, so these numbers become money.
 
 The City added a separate online work class to this type in September 2026:
 **"Revision"** (template "Building Permit - Revision", portal filing behavior
-"Pay First"). It is not on the portal's apply menu. Its intake sheet has a
-"Revison" group (the City's spelling) with a required **Revision Number** field
-and an optional **Additional Valuation** field, followed by the Mechanical and
-Plumbing count sheets. The City changed it in early October 2026: the
-Electrical count sheet was removed from the revision intake, a project
-**address is now required**, and the portal's permit search list now shows it as
-"Mixed Use Revision Permit". As of 2026-10-05 no other building permit type
-(Residential 183, Commercial 184, Multifamily 322) had this work class. To
+"Pay First"). It is not on the portal's apply menu, and the portal's permit
+search list shows it as "Mixed Use Revision Permit". A project **address is
+required**, and no contact is. Two PDFs are required, one file each:
+**Revised Plans** and **Original Plans Approved/Stamped by City**. Its intake sheet opens with a
+"Revision Info" group — a required **Revision Number** field and an optional
+**Additional Valuation** field — followed by the full Electrical, Mechanical, and
+Plumbing count sheets, the same 113 items as the main form. The City has
+reshaped it twice: in early October 2026 it dropped the Electrical sheet and
+required the address; by 2026-10-12 the Electrical sheet was back and the group
+heading, until then spelled "Revison", was corrected. The portal does not say
+whether to count the whole job again or only what the revision adds — ask the
+Building Division. As of 2026-10-12 the Residential (183) and Commercial (184)
+permits carry the same Revision work class; Multifamily (322) still does not. To
 revise an issued mixed-use permit, or if you cannot find the revision path in
 the portal, call the Building Division, (949) 497-0715.
-[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService (permit application intake questions and setup), as of 2026-10-05]
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService (permit application intake questions and setup), as of 2026-10-12]
 
 ## Required attachments
 
@@ -120,17 +124,10 @@ is complete:
 
 ## Contacts and licences
 
-**This type has no required contacts.** All 22 contact types on it are optional,
-including Applicant and Owner — a real difference from the Residential (183) and
-Commercial (184) permits, which both require Applicant and Owner. The City's own
-on-screen instruction still says "Required Contacts: Applicant, Owner", so **the
-portal does not enforce a required contact on this type; still list Applicant and
-Owner.** A second reason to: on the public side you must be logged in *and*
-listed as a contact on a record to see its Fees, Reviews, Attachments, Contacts,
-or Meetings tabs. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/search, as of 2026-08-10]
-
-- Optional (all 22): Agent, Applicant, Architect, Architect - Prior, Claimant, Contractor, Contractor – Prior, Customer/Resident, Designer, Designer - Prior, Engineer, Engineer - Prior, Geotechnical, Other, Owner, Owner - Prior, Owner/Builder, Site Contact, Special Inspector, Subcontractor, Tenant, Vegetation Owner. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/374/0/0, as of 2026-09-14]
-- **Contractor and Subcontractor entries are licence-validated** by the portal.
+- Required: **Applicant, Owner**. Optional: Architect, Contractor, Designer, Engineer. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/374/0/0, as of 2026-10-12]
+- **Contractor entries are licence-validated** by the portal.
+- Until October 2026 this type required no contact at all and offered 22 optional contact types (Subcontractor, Owner/Builder, Agent and others among them). The City has since cut it to the six above and made Applicant and Owner required, matching the Residential (183) and Commercial (184) permits. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/374/0/0, as of 2026-10-12]
+- Being listed matters after submit too: on the public side you must be logged in *and* listed as a contact on a record to see its Fees, Reviews, Attachments, Contacts, or Meetings tabs. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/search, as of 2026-08-10]
 - Permits issue only to an owner-builder or a **City-licensed** contractor, and every business working in the city needs a Laguna Beach business licence. [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits, as of 2026-07-08]
 
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/374/0/0, as of 2026-08-10]

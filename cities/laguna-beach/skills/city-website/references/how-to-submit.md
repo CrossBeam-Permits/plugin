@@ -10,7 +10,7 @@ inside it, load the matching `submit-<type>.md` guide.
 
 | # | Channel | What it is | Entry point |
 |---|---|---|---|
-| A | **EnerGov online portal** | Tyler EnerGov CivicAccess self-service. 18 application types can be started online — 13 permits + 5 plans. | https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService |
+| A | **EnerGov online portal** | Tyler EnerGov CivicAccess self-service. 19 application types can be started online — 14 permits + 5 plans. | https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService |
 | B | **SolarAPP+ → then EnerGov** | Residential rooftop PV only. Two steps, in order: SolarAPP+ approval first, then permit type 124 in the portal. | https://gosolarapp.org/ then `#/permit/apply/124/0/0` |
 | C | **Appointment** | Book a Planner or Building Plan Reviewer. The route for anything the portal has no application type for — Zone Clearance above all. | https://lbwaitlist.cxmflow.com/OABS/Appointment/Index/2c052fc7-571f-4b76-9790-7e91f103c408 |
 | D | **Counter / in person** | 505 Forest Ave. **Where nearly every building permit is actually issued**, even when it was applied for online. | See `../../city-reference/references/contacts-hours.md` for hours (⚠️ the City publishes two different sets) |
@@ -38,6 +38,7 @@ EnerGov case-type ID; the deep link is relative to
 | Fire sprinklers, commercial | A | 191 | `#/permit/apply/191/0/0` | `submit-fire-commercial.md` |
 | Fire sprinklers, residential | A | 190 | `#/permit/apply/190/0/0` | `submit-fire-residential.md` |
 | Grading / earth moving | A | 214 | `#/permit/apply/214/0/0` | `submit-grading.md` |
+| Haul route / wide or overweight load on City streets / traffic control review | A | 394 | `#/permit/apply/394/0/0` | `submit-right-of-way.md` |
 | HVAC / A/C / furnace | A | 186 | `#/permit/apply/186/0/0` | `submit-mechanical.md` |
 | Mixed-use building work | A | 374 | `#/permit/apply/374/0/0` | `submit-mixed-use.md` |
 | Multifamily (apartment/condo) building work | A | 322 | `#/permit/apply/322/0/0` | `submit-multifamily.md` |
@@ -45,6 +46,7 @@ EnerGov case-type ID; the deep link is relative to
 | Plumbing / repipe / sewer | A | 188 | `#/permit/apply/188/0/0` | `submit-plumbing.md` |
 | Real Property Report (selling a house) | A | 192 | `#/plan/apply/192/0/0` | `submit-real-property-report.md` |
 | Reroof | A | 183 | `#/permit/apply/183/0/0` | `submit-residential-permit.md` |
+| Revision to an issued building permit | A | 183, 184 or 374 | that type's link, work class Revision | `submit-residential-permit.md`, `submit-commercial-permit.md`, `submit-mixed-use.md` |
 | Sign | A | 197 | `#/permit/apply/197/0/0` | `submit-sign.md` |
 | Solar (residential rooftop PV) | **B** | 124 | SolarAPP+ **first**, then `#/permit/apply/124/0/0` | `submit-solar.md` |
 | Variance / Conditional Use Permit | A | 114 or 116 | `#/plan/apply/114/0/0` | `submit-residential-planning-entitlements.md` |
@@ -52,13 +54,14 @@ EnerGov case-type ID; the deep link is relative to
 | Zone Clearance | A | 114 | `#/plan/apply/114/0/0`, work class Zoning Plan Check | `submit-residential-planning-entitlements.md` |
 
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, as of 2026-08-10]
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, work classes read through the portal's public API, as of 2026-10-12]
 
-## Channel A — the 18 types you can start online
+## Channel A — the 19 types you can start online
 
 Ordered by module, then by case-type ID. All Apply links require a portal
 account; the catalog itself is readable logged out.
 
-### PERMITS (module 2) — 13 types
+### PERMITS (module 2) — 14 types
 
 | Type | Name in the catalog | Category | Deep link |
 |---|---|---|---|
@@ -75,6 +78,7 @@ account; the catalog itself is readable logged out.
 | 315 | Right-of-Way Permits | RIGHT-OF-WAY | `#/permit/apply/315/0/0` |
 | 322 | Multifamily Permit | MULTIFAMILY | `#/permit/apply/322/0/0` |
 | 374 | Mixed Use Permit | MIXED USE | `#/permit/apply/374/0/0` |
+| 394 | Transportation Permits | RIGHT-OF-WAY | `#/permit/apply/394/0/0` |
 
 ### PLANS (module 3) — 5 types, all under PLANNING ENTITLEMENTS
 
@@ -126,9 +130,10 @@ say otherwise. Confirm with Planning, (949) 497-0713.
 
 ## Channel D — the counter, and the caveat that catches everyone
 
-- **11 of the 13 online permit types still require in-person issuance.** Their catalog descriptions carry, verbatim: "\*PLEASE BE ADVISED THAT THE FINAL PERMIT ISSUANCE IS CONDUCTED IN PERSON AT THE BUILDING COUNTER." That covers 183, 184, 186, 187, 188, 190, 191, 197, 214, 322, and 374 — the only exceptions are 124 (SolarAPP+) and 315 (Right-of-Way). **"Apply online" is real but partial**: the applicant still ends up at 505 Forest Ave to pick up the permit. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, as of 2026-08-10]
+- **11 of the 14 online permit types still require in-person issuance.** Their catalog descriptions carry, verbatim: "\*PLEASE BE ADVISED THAT THE FINAL PERMIT ISSUANCE IS CONDUCTED IN PERSON AT THE BUILDING COUNTER." That covers 183, 184, 186, 187, 188, 190, 191, 197, 214, 322, and 374 — the only exceptions are 124 (SolarAPP+), 315 (Right-of-Way), and 394 (Transportation, added October 2026). **"Apply online" is real but partial**: the applicant still ends up at 505 Forest Ave to pick up the permit. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, as of 2026-08-10] [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, as of 2026-10-12]
 - None of the five PLANS types carries the warning — a plan record is reviewed and invoiced, not issued over a counter.
 - **Demolition** and **Zone Clearance** have no application type of their own, but both are filed online as work classes: standalone demolition under 183 (Demolition; Demolition - Single Family Residence; Demolition - ADU/JADU; Demolition - Duplex, all Review First), and Zone Clearance under 114 (Zoning Plan Check). An earlier read (2026-08-10) looked only at application types and called both counter matters. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, work classes read through the portal's public API, as of 2026-10-09]
+- **A revision to an issued building permit** is a work class too, not an application type: **Revision** (portal filing behavior "Pay First") under Residential (183), Commercial (184), and Mixed Use (374). Multifamily (322) has none. The intake asks for the revision number, any added valuation, and the MEP count sheet; each type's guide has the detail. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, work classes read through the portal's public API, as of 2026-10-12]
 
 ## Sharp edges — the four things that actually trip people up
 
@@ -170,8 +175,8 @@ say otherwise. Confirm with Planning, (949) 497-0713.
 
 ## What no public surface will tell a resident
 
-- **There is no per-type document checklist visible before login.** EnerGov holds a written submittal checklist for all 18 types; the Application Assistant shows only a one-line description. The `submit-<type>.md` guides in this pack exist to close exactly that gap. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, as of 2026-08-10]
-- **No fee estimator is surfaced anywhere.** Only two of the 18 types even have fee estimation enabled in the back end (197 Sign, 214 Grading), and no estimator entry point is rendered in the portal. Fees are quoted by staff after review. For a current amount, call
+- **There is no per-type document checklist visible before login.** EnerGov holds a written submittal checklist for all 19 types; the Application Assistant shows only a one-line description. The `submit-<type>.md` guides in this pack exist to close exactly that gap. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/applicationassistant?sectionName=All&showTemplates=false, as of 2026-08-10]
+- **No fee estimator is surfaced anywhere.** Only two of the 19 types even have fee estimation enabled in the back end (197 Sign, 214 Grading), and no estimator entry point is rendered in the portal. Fees are quoted by staff after review. For a current amount, call
 the fee estimate; do not quote figures from `fees.md`. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/home, as of 2026-08-10]
 - **You cannot see your own fees or plan-check comments from the public side.** On a record page the Fees, Reviews, Attachments, Contacts, and Meetings tabs return "You must be a contact on this record to see this information" — you must log in *and* be listed as a contact on that record. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/search, as of 2026-08-10]
 

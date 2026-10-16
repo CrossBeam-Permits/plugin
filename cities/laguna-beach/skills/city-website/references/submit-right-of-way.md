@@ -1,12 +1,18 @@
-# Submit: Right-of-Way Permits — EnerGov type 315
+# Submit: Right-of-Way Permits — EnerGov type 315 (and Transportation Permits, type 394)
 
 **The Public Works permit for working in the street**: trenching, pavement cuts
 and restoration, curb and gutter, sidewalk and driveway approaches, potholing and
 boring, and the traffic control that goes with them. It is a **permit**, not a
-plan — and one of only **two** permit types in the Laguna Beach catalog with
-**no** in-person-issuance warning (the other is SolarAPP+ 124). It is also the
-one type whose confirmation does not promise an invoice outright: one comes
+plan — and one of only **three** permit types in the Laguna Beach catalog with
+**no** in-person-issuance warning (the others are SolarAPP+ 124 and
+Transportation Permits 394). It and its sibling Transportation Permits (394) are
+the only types whose confirmation does not promise an invoice outright: one comes
 **"if your application has been approved"**.
+
+**Moving a haul route, a wide or overweight load, or a stand-alone traffic
+control review through City streets?** That is a different application in the
+same RIGHT-OF-WAY category: **Transportation Permits (type 394)**, added to the
+portal in October 2026 — see "Transportation Permits (type 394)" below.
 
 **Apply:** https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/315/0/0 (portal account required)
 **Catalog name, verbatim:** "Right-of-Way Permits" — category RIGHT-OF-WAY, module PERMITS. **Description, verbatim:** "Use this to apply for Right-of-Way permits."
@@ -128,12 +134,80 @@ The City's confirmation message, verbatim:
 > an invoice to you within 2 - 3 business days for payment if your application
 > has been approved.
 
-Read the last clause: unlike every other type, the invoice is **conditional on
-approval**, so silence after 2–3 business days may mean the application did not
-clear review rather than a slow queue — chase it with Public Works. Note also
-what is absent: **no** in-person-issuance warning, one of only two permit types
-in the catalog without one (`how-to-submit.md`, Channel D).
+Read the last clause: unlike every other type except Transportation (394), the
+invoice is **conditional on approval**, so silence after 2–3 business days may
+mean the application did not clear review rather than a slow queue — chase it
+with Public Works. Note also what is absent: **no** in-person-issuance warning,
+one of only three permit types in the catalog without one (`how-to-submit.md`,
+Channel D).
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/315/0/0, as of 2026-08-10]
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/394/0/0, as of 2026-10-12]
+
+## Transportation Permits (type 394) — haul routes, wide and overweight loads, traffic control
+
+**Apply:** https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/394/0/0 (portal account required)
+**Catalog name, verbatim:** "Transportation Permits" — category RIGHT-OF-WAY, module PERMITS. **Description, verbatim:** "Use this to apply for Haul Routes, Wide & Overload, and Traffic Control Review."
+The City added it to the portal in October 2026. The mirrored pull is
+the City source document (not included in this plugin). Its work
+classes are **Haul Route**, **Wide & Overload**, **Traffic Control**, and
+**Other**, all "Review First".
+
+**Before you start.**
+- **Haul route? Have the grading permit number.** The first thing the City asks for in the description is "What is your grading permit number for this Haul Route?" — the haul route follows a grading permit (`submit-grading.md`).
+- **Business licence number.** A required field; the City's note, verbatim: "Business License # - REQUIRED FOR ALL BUSINESSES DOING WORK IN THE CITY ROW": https://www.lagunabeachcity.net/government/departments/administrative-services/finance-division/business-licenses
+- **Workers' compensation details** — carrier, policy number, and expiration date are required fields, as on type 315.
+- **Vehicle dimensions and weight** for a wide or overweight move, the number of days, and the page count of any traffic control plan.
+- *Our note, not the City's:* Coast Highway (State Route 1) and Laguna Canyon Road (State Route 133) are State highways. An oversize or overweight move on them likely needs a Caltrans transportation permit as well. The City's form offers "Caltrans ROW" as a Street Classification but does not say what the City permit covers there, so confirm with Public Works.
+
+**The wizard.**
+1. **Location** — "ATTENTION: This application is for a Public Transportation Permit only." Add the address; if none fits, find the nearest one with the [LB Public GIS viewer](https://gis.lagunabeachcity.net/Html5Viewer/index.html?viewer=LagunaBeachPublicGIS) or click **Enter Manually**. Address is required. (The instruction says "the primary residence" — boilerplate; enter the work location.)
+2. **Basic info** — description required. The City's list, verbatim: "What is your grading permit number for this Haul Route? What is your Haul Route (Origin to Destination)? What is your proposed start and end date? If utilizing CA MUTCD/WATCH Manual, then attach typical application." Valuation and square footage are not required.
+3. **Contacts** — the City lists **Applicant** (required), plus **Customer/Resident** and **Site Contact** "(If applicable)".
+4. **More info** — "Please enter the details for Vehicle, Wide & Overload (# of Days), and Traffic Control (# of pages) if applicable." Additional forms are on the City's [Public Works permit page](https://www.lagunabeachcity.net/government/departments/public-works/public-works-permit).
+5. **Attachments** — nine slots, none required.
+6. **Signature and submit** — an electronic signature is required.
+
+**The questions (25 fields, 2 groups).** *Transportation Permit Info* (14 fields):
+**Street Name(s)/Intersection(s)** and **Business License #** are required;
+the rest are optional — Public Utility Company, Work Order #, **Vehicle Height**,
+**Vehicle Length (ft)**, **Vehicle Width (ft)**, **Vehicle Weight (lbs)**, **Wide &
+Overload** (days), **Traffic Control Plan** (pages), Other (Please Specify), Other
+Finals, Separate Permits, Street Classification. *Workers' Compensation
+Declaration* (11 fields): the same statements as on 315, with **Policy Number**,
+**Carrier**, a second **Policy Number**, and **Expiration Date** required. Unlike
+315 there is **no Owner-Builder or Licensed Contractor's Declaration**, so no
+contractor licence number or class is asked.
+
+**Attachments.** None required. The City's instruction asks, verbatim:
+"Applicants must submit the following: Haul Route (if applicable) / CA MUTCD /
+WATCH application (if applicable)". The nine optional slots: **Business
+License**, **Conditions of Approval**, **Haul Route**, **Insurance**, **Letter of
+Authorization**, **Location Map**, **Plans** (PDF only), **ROW Photos**, **Traffic
+Control** — the rest take PDF plus JPEG/JPG/TIF/TIFF/PNG. There is no slot named
+for the MUTCD/WATCH application; ask Public Works where it goes.
+
+**Contacts.** On the default work class: Applicant is required; Customer/Resident,
+Other, and Site Contact are optional, and there is no Contractor slot. The Haul
+Route, Wide & Overload, Traffic Control, and Other work classes offer the full
+22-type contact list, none required, with Contractor and Subcontractor
+licence-validated.
+
+**After you submit.** The City's confirmation message, verbatim:
+
+> Thank you for your Transportation Permit application. We will review your
+> application to ensure all required information has been submitted and will
+> send an invoice to you within 7 business days for payment if your application
+> has been approved.
+
+As on 315, the invoice is **conditional on approval**, but the window is **7
+business days**, not 2–3. There is no in-person-issuance warning on this type.
+
+⚠️ **Traffic control appears on both types.** Type 315 has a Traffic Control
+Plan quantity field for the traffic control that goes with street work; type 394
+offers a Traffic Control work class for "Traffic Control Review". The portal does
+not say which to use when traffic control goes with a 315 job — ask Public Works
+before filing twice.
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/394/0/0, as of 2026-10-12]
 
 ## Next step
 
@@ -147,3 +221,8 @@ in the catalog without one (`how-to-submit.md`, Channel D).
 > before scheduling; the [Public Works permit page](https://www.lagunabeachcity.net/government/departments/public-works/public-works-permit)
 > has the City's other forms. You'll need a portal account —
 > [registration guide](https://www.lagunabeachcity.net/home/showpublisheddocument/20625/638678768735230000).
+>
+> **Haul route, wide or overweight load, or traffic control review?** File a
+> [Transportation Permit (type 394)](https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/394/0/0)
+> instead, with your grading permit number (for a haul route), business licence
+> number, vehicle details, and workers' comp details ready.

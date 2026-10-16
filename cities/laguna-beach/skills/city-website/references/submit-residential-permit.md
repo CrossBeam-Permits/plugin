@@ -76,6 +76,18 @@ band edge, confirm the fee with the Building Division, (949) 497-0715.
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/183/0/0, as of 2026-08-10]
 [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits, as of 2026-07-08]
 
+The City added a separate online work class to this type in October 2026:
+**"Revision"** (portal filing behavior "Pay First"). It is not on the portal's
+apply menu, and the portal's permit search list shows it as "Residential
+Revision Permit". A project **address is required**, and no contact is. Two PDFs are required, one file each: **Revised Plans** and **Original Plans Approved/Stamped by City**. Its intake sheet opens with a "Revision Info" group — a required
+**Revision Number** field and an optional **Additional Valuation** field —
+followed by the same 113-item Electrical, Mechanical, and Plumbing count sheet as
+above. The portal does not say whether to count the whole job again or only what
+the revision adds — ask the Building Division. To revise an issued residential
+permit, or if you cannot find the revision path in the portal, call the Building
+Division, (949) 497-0715.
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService (permit application intake questions and setup), as of 2026-10-12]
+
 ## Required attachments
 
 Two, both PDF, one file each:

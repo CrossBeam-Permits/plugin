@@ -34,7 +34,7 @@ The rules below are the certified 2022 DSP as amended by the Phase I update. Pha
 
 Key: P permitted; AUP Administrative Use Permit (§25.05.020); CUP Conditional Use Permit (§25.05.030); "--" not allowed.
 
-**Conflict, CBD VC (UNSETTLED).** The corpus extract shows multifamily as AUP in CBD VC. City notes on 276 S Coast Hwy (2026), citing the certified DSP Table 5-1, record "Residential" and "Mixed-Use with Residential on Second Floor" as **CUP** in CBD VC. Until the certified PDF is checked, tell the user a use permit is required and that its level (AUP or CUP) must be confirmed with Planning at pre-application. Changes to DSP permit levels need an LCP amendment (§25.40.010(B)).
+**Conflict, CBD VC (UNSETTLED).** The corpus extract shows multifamily as AUP in CBD VC. City notes on one recent project (2026), citing the certified DSP Table 5-1, record "Residential" and "Mixed-Use with Residential on Second Floor" as **CUP** in CBD VC. Until the certified PDF is checked, tell the user a use permit is required and that its level (AUP or CUP) must be confirmed with Planning at pre-application. Changes to DSP permit levels need an LCP amendment (§25.40.010(B)).
 
 ## 3. Development limits
 
@@ -56,7 +56,7 @@ Key: P permitted; AUP Administrative Use Permit (§25.05.020); CUP Conditional U
 Reading notes:
 - The 12 ft and 1 floor limit means most DSP sites cannot add a second floor for housing without an exception, a variance, or a state-law waiver.
 - An existing two-story building is legal nonconforming. Adding units inside its walls does not add height. Adding floor area is capped at the lesser of 10% or 100 sf.
-- The VC 50% cap is measured against gross floor area. The 276 S Coast Hwy concept letter (2026-08-20) applied it as 50% of floor area on the second floor and paired it with the 12 ft limit and the 10% / 100 sf expansion cap. That matches GDS E and H.
+- The VC 50% cap is measured against gross floor area. One recent project's concept letter (2026-08-20) applied it as 50% of floor area on the second floor and paired it with the 12 ft limit and the 10% / 100 sf expansion cap. That matches GDS E and H.
 
 ## 4. Parking (GDS O)
 
@@ -67,21 +67,21 @@ LBMC Ch. 25.52 applies except:
 
 The Ord. 1712 rate of 0.5 space per small unit near transit applies in C-N, C-1 and SLV only. It does not apply in the DSP.
 
-City notes on 276 S Coast Hwy quote the certified DSP parking section: "All uses having legal nonconforming parking conditions may be maintained or changed to uses with the same or lesser parking requirements." That sentence is **not in the corpus extract**. Treat it as City record and confirm it against the certified PDF. Read with GDS O, a change from retail or office (3 per 1,000 sf) to small units (1 each) can be same-or-lesser for the converted area. Show the comparison.
+City notes on one recent project quote the certified DSP parking section: "All uses having legal nonconforming parking conditions may be maintained or changed to uses with the same or lesser parking requirements." That sentence is **not in the corpus extract**. Treat it as City record and confirm it against the certified PDF. Read with GDS O, a change from retail or office (3 per 1,000 sf) to small units (1 each) can be same-or-lesser for the converted area. Show the comparison.
 
-At 276 the City found the project about 9 spaces short and offered no reduction path (concept letter 2026-08-20).
+On that project the City found the project about 9 spaces short and offered no reduction path (concept letter 2026-08-20).
 
 ## 5. Permits and review
 
 - **Use permit:** AUP in most districts (see the VC conflict in Section 2). CUP findings in the DSP add "a balanced mix of uses" and "village character" tests (DSP CUP General Findings 1-4).
 - **Design Review:** every project in the DSP goes to the **Planning Commission**: "all projects located in the downtown specific plan area" (§25.05.040(F)(1)(ii), Ord. 1732). Chapter 4 Guideline 2.9 (Second Story Residential) applies: privacy and security for units, private residential entrances and stairs, landscaping at the commercial-to-residential transition, night lighting kept off units, private open space where possible.
 - **Coastal Development Permit:** the DSP is in the coastal zone, and adding units is a change in intensity of use (§25.07.008(A)(2)(b)). Check the appeal area from site facts. Use `mixed-use-conversion.md` Section 9 for the CDP rules.
-- **Variances:** at 276 S Coast Hwy staff listed at least five variances and said the findings likely could not be made (City record).
+- **Variances:** on one recent project staff listed at least five variances and said the findings likely could not be made (City record).
 
 ## 6. State-law routes
 
 The DSP limits above are the local floor that state law can override.
-- **Density Bonus** (Gov. Code §65915; LBMC §25.96.010) waivers can reach height, floors, density and parking. At 276 the City pointed to a 100% affordable project under State Density Bonus Law as the alternative to redesign (City record).
+- **Density Bonus** (Gov. Code §65915; LBMC §25.96.010) waivers can reach height, floors, density and parking. On that project the City pointed to a 100% affordable project under State Density Bonus Law as the alternative to redesign (City record).
 - **AB 2011, SB 6, AB 507:** see the State alternatives table in `mixed-use-conversion.md` Section 11 and `state-preemption.md`.
 
 Building-code content (occupancy separation, sprinklers, accessibility, exits) is state floor. Use `california-multi-unit-residential`, starting with `references/change-of-occupancy-commercial-to-r2.md`. Laguna has no DSP-specific building-code delta.

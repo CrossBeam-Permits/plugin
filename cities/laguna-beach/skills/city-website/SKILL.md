@@ -29,7 +29,7 @@ to go hunting on lagunabeachcity.net.
 **Scope:** 34 pages under
 `lagunabeachcity.net/government/departments/community-development` plus the staff
 directory and the fee schedule PDF, **and** the City's Tyler EnerGov permit
-portal — all 18 online application types, their wizard instructions, intake
+portal — all 19 online application types, their wizard instructions, intake
 questions, and attachment requirements. **Not** in scope: municipal code text and
 zoning standards — those live in the sibling skills under
 the permit skills in this plugin and in the City source document (not included in this plugin).
@@ -50,7 +50,7 @@ else unmodeled is named there without an amount.
 | Topic | Reference file | Load it when the resident asks… |
 |---|---|---|
 | **Submitting: which channel, which link** | `references/how-to-submit.md` | "How do I apply for X?" "Where do I file this?" "Can I do it online?" "What's the link?" — **the router for every submission question.** Maps any project type to one of four channels (EnerGov portal / SolarAPP+ then EnerGov / appointment / counter) and gives the exact deep link. |
-| **Submitting: one specific application type** | `references/submit-<type>.md` | Load the matching guide when the resident is ready to apply — one per online type (`references/submit-adu.md`, `references/submit-solar.md`, `references/submit-residential-permit.md`, `references/submit-plumbing.md`, …, 18 in all). `references/how-to-submit.md` names the right one. Each covers prerequisites, the wizard step by step in the City's own words, the intake questions, required and optional attachments with file rules, contacts and licences, and what happens after submit. |
+| **Submitting: one specific application type** | `references/submit-<type>.md` | Load the matching guide when the resident is ready to apply — one per online type (`references/submit-adu.md`, `references/submit-solar.md`, `references/submit-residential-permit.md`, `references/submit-plumbing.md`, …, 18 in all; Transportation Permits (394) is covered inside `references/submit-right-of-way.md`). `references/how-to-submit.md` names the right one. Each covers prerequisites, the wizard step by step in the City's own words, the intake questions, required and optional attachments with file rules, contacts and licences, and what happens after submit. |
 | Hours, addresses, division phones, appointments, portals | `../city-reference/references/contacts-hours.md` | "When are you open?" "What's the number for Planning?" "Where do I go?" "How do I book an appointment?" |
 | Building permits: need one?, process, counter review, inspections | `references/building-permits.md` | "Do I need a permit for X?" "How do I get an inspection?" "Can I do this over the counter?" "How long is my permit good for?" |
 | Planning applications, design review, historic, views/trees | `references/planning-applications.md` | "How does design review work?" "What application do I file?" "How long until my hearing?" "Can I appeal?" |
@@ -64,7 +64,7 @@ else unmodeled is named there without an amount.
 1. **Always carry the source.** Every fact line ends with `[source: <url>, as of <YYYY-MM-DD>]`. Give the resident the date and the link — the SOW requires a source reference on every response, and it lets them verify a fact that may have moved.
 2. **The "as of" date is the City's own `lastmod`**, not the day you're answering. Say "as of July 8, 2026 the City published…", not "currently".
 4. **Six things on the City's site contradict themselves or mislead** — the Planning phone number, the permit-counter closing time, the design-review appeal period, how planning applications are accepted (portal vs. appointment), the Code Enforcement click-to-call that dials Police dispatch, and the over-the-counter walk-in hours (the appointment page still prints the 2021 "afternoon" window; the City's 06/08/2026 handout says Monday–Thursday 7:30 a.m. – 2:00 p.m., last check-in 12:45 p.m.). All are flagged in place with ⚠️. Present both readings and the safe fallback; never silently pick one.
-5. **Never give a staff member's own email address, even where a City page prints one.** (CrossBeam ruling, 2026-09-29.) A few City pages print an individual's address, for example the Interested Parties page. Send the resident to the City's staff contact form instead: the "Email" link next to the staff member on the [Community Development staff directory](https://www.lagunabeachcity.net/government/departments/community-development/community-development-staff-directory). The City's form delivers the message. Also give the person's direct phone line. A shared mailbox that is not a person, such as lbinspectors@lagunabeachcity.net, is fine to give. Never guess an address from a name pattern — that would be fabrication.
+5. **Never give a staff member's own email address, even where a City page prints one.** A few City pages print an individual's address, for example the Interested Parties page. Send the resident to the City's staff contact form instead: the "Email" link next to the staff member on the [Community Development staff directory](https://www.lagunabeachcity.net/government/departments/community-development/community-development-staff-directory). The City's form delivers the message. Also give the person's direct phone line. A shared mailbox that is not a person, such as lbinspectors@lagunabeachcity.net, is fine to give. Never guess an address from a name pattern — that would be fabrication.
 6. **When you can't answer**, route to Ask Laguna (https://clients.comcate.com/newrequest.php?id=167, 24/7) plus the relevant division phone from `../city-reference/references/contacts-hours.md`.
 7. **Every "how do I get a permit for X" answer ENDS with a "Next step" line.** Name the channel and give the link as a **labelled markdown link — never a bare URL** (the voice rules already require labelled links). If an account is needed first, say so in the same line. Example:
    > **Next step:** file a Residential Permit in the City's permit portal — [Residential Permit (type 183)](https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/183/0/0). You'll need a portal account first — [registration guide](https://www.lagunabeachcity.net/home/showpublisheddocument/20625/638678768735230000).
@@ -115,7 +115,7 @@ Load these on demand. Paths are relative to this file.
 - `references/submit-real-property-report.md` — Submit: Real Property Report — EnerGov type 192
 - `references/submit-residential-permit.md` — Submit: Residential Permit — EnerGov type 183
 - `references/submit-residential-planning-entitlements.md` — Submit: Residential Planning Entitlements — EnerGov type 114
-- `references/submit-right-of-way.md` — Submit: Right-of-Way Permits — EnerGov type 315
+- `references/submit-right-of-way.md` — Submit: Right-of-Way Permits — EnerGov type 315 (and Transportation Permits, type 394)
 - `references/submit-sign.md` — Submit: Sign Permit — EnerGov type 197
 - `references/submit-solar.md` — Submit: SolarAPP+ Permit — EnerGov type 124
 - `references/submit-view-preservation.md` — Submit: View Preservation — EnerGov type 301

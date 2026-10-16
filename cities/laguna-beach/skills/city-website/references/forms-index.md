@@ -30,13 +30,13 @@ found on carries its own `lastmod` in `baseline.json`.
 | ADU/JADU Frequently Asked Questions | 20356 / 638651045595800000 |
 | ADU/JADU Application Process Flowchart | 20358 / 638651045605800000 |
 
-The 24 planning **application** forms (ADU, CDP, CUP, Design Review, Lot Line
+The 25 planning **application** forms (ADU, CDP, CUP, Design Review, Lot Line
 Adjustment, Reasonable Accommodation, Revocable Encroachment, SB 9, SB 330,
 Short-Term Lodging AUP, Sign Permit, Temporary Use Permit, Tentative Parcel/Tract
 Map, Variance, Zone Clearance, Floodplain Development, Historic Register
 Placement, Wireless Facility, Artist Occupancy Permit, Planning Commission
 Concept Review, Start Home Revitalization Act (SB684), General Plan Amendment,
-and both Appeals forms) are listed with their links in planning-applications.md.
+Zoning Ordinance Amendment (added 2026-10-14), and both Appeals forms) are listed with their links in planning-applications.md.
 
 ## Planning handouts — the full inventory
 
