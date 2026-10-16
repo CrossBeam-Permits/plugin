@@ -6,8 +6,7 @@
     "name": "crossbeam/scripts/plugin-publish/laguna",
     "version": "1.1.0",
     "files": {
-      "scripts/plugin-publish/laguna/check-drift.mjs": "56320d513d090c436e1db12dfe3b9bf9a9db86dbe456c3f6762510848d3a7b6b",
-      "scripts/plugin-publish/laguna/index.mjs": "3275befa230fa159121f29b516e72a3a831c0a52c05397977d15346166f07ee1",
+      "scripts/plugin-publish/laguna/index.mjs": "1b09db0e3c178eea15014c35064ef464f7aa5fe0a013b69732e6bd68c3b7bfe5",
       "scripts/plugin-publish/laguna/lib.mjs": "eb8c20e4ee4b955d0f0a7a20bf9d503530a1baed61e4aa8d995f32c89fff4a8f",
       "scripts/plugin-publish/laguna/modules/fees.mjs": "f8860deaa8c3a74930be26126852071e79a17485d8562e0d5b540669219266e5",
       "scripts/plugin-publish/laguna/modules/parcel-facts.mjs": "cefe47a39ba318afacfb285695d13c4cdfe2fdd7c8af49a13d764da83b5329ca",
@@ -21,7 +20,7 @@
     }
   },
   "privateRepo": {
-    "commit": "d2da7d315c94fa61e45e129e7755efd22ba1b5d2",
+    "commit": "53999dacc728b5c10f79994d7186c15df998bb97",
     "dirty": false
   },
   "options": {
