@@ -25,12 +25,15 @@ Take a Laguna Beach project from plain-language scope to the City's real intake 
 | Determine lane/stage | `references/process-stage.md` |
 | Plain-language pool request, prior review, drawings, or follow-up | `references/homeowner-journey.md` |
 | No plan set, or plans need drawing or fixing | `references/plan-sheets.md` |
-| Planning record set | `references/planning-routing.md` |
+| Which approvals the project needs, which application, Planning or Building first | `skills/guide/SKILL.md` (start with `skills/guide/references/planning-approvals.md`) |
+| Check a drafted or filed packet: right application? Planning approved before Building? | `skills/guide/references/before-you-file.md` |
+| Planning record set (portal types and filing channel) | `references/planning-routing.md` |
 | Building record set | `references/building-routing.md` |
 | Form coverage / unsupported routes | `references/form-coverage.md` |
 | Plan set completeness | `skills/plan-set-check/SKILL.md`, `requirements/README.md` |
 | Fee estimate | `requirements/fees/README.md`, then `node scripts/estimate-fees.mjs --input <json>` (fields in `scripts/fees/README.md`). Show the ESTIMATE notice, keep Building and other-agency subtotals separate, and never price an item listed as not estimated |
 | City portal account | `references/portal-account.md` |
+| City website facts: counter hours, contacts, how each application is submitted online | `skills/city-website/SKILL.md` |
 | Forms and packets | `references/form-source-policy.md`, `references/packaging-checklist.md` |
 | Browser transaction | `references/online-submission.md`, then `references/portal-checkpoints.md` |
 | Any consequential field/action | `references/applicant-confirmations.md` |

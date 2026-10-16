@@ -139,7 +139,7 @@ This skill covers Laguna Beach's city-specific deck, patio, and balcony requirem
 | **Deck/balcony/patio cover repair** (no extension, no replacement) | OTC eligible |
 | **Deck replacement or new deck construction** | Building permit (no deck exemption in LBMC 14.50.022) + Planning route below |
 | **New elevated deck >3 ft above grade, or a replacement that changes size, height or location** | Administrative Design Review, §25.05.040(B)(3)(a)(iii) |
-| **Like-for-like replacement or repair of an existing elevated deck** (same size, height and location; resurfacing; new railing) | Zone Clearance, in-kind (B)(2)(c) and railings (B)(2)(r); City practice ZPC-2026-1362 (deck replaced like for like), ZPC-2026-1825 (second-floor deck repair with new guard, counter) |
+| **Like-for-like replacement or repair of an existing elevated deck** (same size, height and location; resurfacing; new railing) | Zone Clearance, in-kind (B)(2)(c) and railings (B)(2)(r); City practice (deck replaced like for like; second-floor deck repair with new guard, counter) |
 | **Deck on top of a structure** (roof deck, deck over a room, garage, carport or ADU) | City Planning intake treats it as establishing Design Review; the ordinance item alone gives ADR (iii). See below |
 | **Deck/slab/terrace/patio ≤3 ft above adjacent legal grade** | Zone Clearance under §25.05.040(B)(2)(m) |
 | **Deck wrapping with fire-resistant materials** | Match the current closed lists; the former categorical `(B)(2)(w)` exemption was repealed |
@@ -185,9 +185,9 @@ Per Section 25.05.040(B)(1). The Design Review Board hears it on a single-family
 
 - The deck work is part of a major remodel, (B)(1)(a)
 - The work is development in an ESA (which expressly includes slopes of 30% or greater), absent the enacted peer-reviewed professional determination, (B)(1)(e)
-- A deck on top of enclosed space (a roof deck, or a deck over a room or garage), including an ADU roof deck, **can** move here. Headline ADR (iii), the ordinance item, then give the two facts that could make it Design Review: City Planning intake treats a deck on top of a structure as establishing Design Review (Planning intake ruling, September 2026; no post-Ord. 1732 decision has tested it), and a roof guard read as a "rooftop appurtenance" with its top more than 15 ft up is (B)(1)(c) (a CrossBeam reference that is not included in this plugin Step 4f). Confirm at pre-application. An open raised deck with nothing enclosed under it is ADR (iii) at any height, never Design Review on this ground; a pool, a ground-level lounge deck or a patio cover alone does not trigger the intake rule.
+- A deck on top of enclosed space (a roof deck, or a deck over a room or garage), including an ADU roof deck, **can** move here. Headline ADR (iii), the ordinance item, then give the two facts that could make it Design Review: City Planning intake treats a deck on top of a structure as establishing Design Review (Planning intake ruling, September 2026; no post-Ord. 1732 decision has tested it), and a roof guard read as a "rooftop appurtenance" with its top more than 15 ft up is (B)(1)(c) (`../guide/references/planning-approvals.md` Step 4f). Confirm at pre-application. An open raised deck with nothing enclosed under it is ADR (iii) at any height, never Design Review on this ground; a pool, a ground-level lounge deck or a patio cover alone does not trigger the intake rule.
 
-The deck item (iii) governs the deck itself over the 15-ft catch-all (B)(1)(c) (specific over general, a CrossBeam reference that is not included in this plugin Step 4d). New floor area, a new story or a raised roof built with the deck is a separate piece that can still meet (B)(1)(c). An open deck more than 15 ft up is still ADR (iii); only a deck on top of enclosed space raises the Design Review question above (Step 4f).
+The deck item (iii) governs the deck itself over the 15-ft catch-all (B)(1)(c) (specific over general, `../guide/references/planning-approvals.md` Step 4d). New floor area, a new story or a raised roof built with the deck is a separate piece that can still meet (B)(1)(c). An open deck more than 15 ft up is still ADR (iii); only a deck on top of enclosed space raises the Design Review question above (Step 4f).
 
 The Director may also refer any Zone Clearance or ADR deck to the board (25.05.040(A)(2)(d)).
 
@@ -348,7 +348,7 @@ Additional submittals depending on scope:
 - **OTC eligible**: Deck/balcony/patio cover REPAIRS only (no extension/replacement)
 - **Zone Clearance (no hearing)**: Decks/patios 3 ft or less above adjacent legal grade (B)(2)(m), railings (B)(2)(r), in-kind repair (B)(2)(c). WUI deck wrapping has no categorical exemption any more; route it by these lists
 - **Administrative Design Review**: Decks more than 3 ft above adjacent legal grade, (B)(3)(a)(iii); hearing cannot be waived
-- **Building permit**: Laguna's exemption list (LBMC 14.50.022, applied to homes by 14.52.014 / CRC R101.4) has no deck or platform exemption. Treat any new or replacement deck as needing a permit; see a CrossBeam reference that is not included in this plugin
+- **Building permit**: Laguna's exemption list (LBMC 14.50.022, applied to homes by 14.52.014 / CRC R101.4) has no deck or platform exemption. Treat any new or replacement deck as needing a permit; see `../guide/references/building-permit-exemptions.md`
 - **Fire-resistive decking**: Required in VHFHSZ per IWUIC 504.7.3
 - **Stainless steel fasteners**: Required within 300 ft of a salt-water shoreline or where exposed to salt water (CRC Table R507.2.3 note b); check the lot's distance
 - **CDP**: Required in coastal zone unless exempt (repairs/maintenance with no expansion are generally exempt). Slope alone does not remove the exemption

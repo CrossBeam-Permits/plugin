@@ -57,7 +57,7 @@ The school developer fee is paid to Laguna Beach Unified School District, not to
 - Community Development: Library impact fee — new residential unit; Library impact fee — ADU proportional rule
 - Building / Fire: Fire review of building plan/permit; Fire inspection of building plan/permit
 - Cultural Arts / Planning: Art in Public Places in-lieu contribution (1.25%)
-- Public Works: Construction & Demolition waste diversion administration
+- Public Works: C&D waste (Green Halo) administration fee
 - OCPW / City Building: OCPW Moulton Parkway road fee — single-family; OCPW Moulton Parkway road fee — ADU proportional rule; OCPW Moulton Parkway road fee — multifamily; OCPW Moulton Parkway road fee — commercial; OCPW CARITS Zone 2A/2B road fee — single-family; OCPW CARITS Zone 2A/2B road fee — ADU proportional rule; OCPW CARITS Zone 2A/2B road fee — multifamily; OCPW CARITS Zone 2A/2B road fee — commercial; OCPW CARITS Zone 2C/2D road fee — single-family; OCPW CARITS Zone 2C/2D road fee — ADU proportional rule; OCPW CARITS Zone 2C/2D road fee — multifamily; OCPW CARITS Zone 2C/2D road fee — commercial
 
 ## Billed outside the permit

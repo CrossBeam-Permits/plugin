@@ -7,7 +7,7 @@
  */
 
 // ── Cities with an authored fee schedule ──
-export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county'];
+export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver'];
 
 // ── ICC Building Valuation Data anchors (Feb 2026, Type V-B / typical wood frame) ──
 // $/sqft by occupancy. Used to DERIVE a valuation when the applicant gives only
@@ -32,8 +32,8 @@ export const FEE_CAPTURE_BUILT_INS = {
   adu_sqft: { field: 'aduSqft', kind: 'number', label: 'ADU floor area', unit: 'sq ft' },
   primary_dwelling_sqft: { field: 'primaryDwellingSqft', kind: 'number', label: 'Primary dwelling floor area', unit: 'sq ft' },
   new_dwelling_units: { field: 'newDwellingUnits', kind: 'number', label: 'New dwelling units', unit: 'units' },
-  stories: { field: 'stories', kind: 'number', label: 'Stories', unit: 'stories' },
-  structure_use: { field: 'structureUse', kind: 'choice', label: 'Structure use', choices: ['residential', 'nonresidential'] },
+  stories: { field: 'stories', kind: 'number', label: 'Stories of the building after the work (area table, elevations or sections)', unit: 'stories' },
+  structure_use: { field: 'structureUse', kind: 'choice', label: 'Residential or nonresidential (occupancy group)', choices: ['residential', 'nonresidential'] },
   existing_habitable_conversion: { field: 'existingHabitableConversion', kind: 'boolean', label: 'Converts existing habitable space' },
   is_combination_permit: { field: 'isCombinationPermit', kind: 'boolean', label: 'Combination M/E/P permit' },
 };
@@ -330,12 +330,56 @@ function validateFeeCapture(obj) {
   }
 }
 
+/** Each separate permit names real fee lines, each line under one permit, and real permit types. */
+function validateSeparatePermits(obj) {
+  if (obj.separate_permits === undefined) return;
+  if (!Array.isArray(obj.separate_permits)) throw new Error('separate_permits must be a list');
+  const feeIds = new Set([
+    ...(obj.scope_addons ?? []),
+    ...(obj.building?.deposit ?? []),
+    ...(obj.public_works?.deposit ?? []),
+  ].map((fee) => fee.id));
+  const permitTypes = new Set(Object.keys(obj.permit_types ?? {}));
+  const ids = new Set();
+  const claimed = new Set();
+  for (const spec of obj.separate_permits) {
+    if (!spec?.id || !spec?.label || !Array.isArray(spec.fee_ids) || !spec.fee_ids.length)
+      throw new Error('separate_permits entries require id, label, and non-empty fee_ids');
+    if (ids.has(spec.id)) throw new Error(`separate_permits ${spec.id} is listed twice`);
+    ids.add(spec.id);
+    for (const id of spec.fee_ids) {
+      if (!feeIds.has(id)) throw new Error(`separate_permits.${spec.id} fee ${id} is not a scope add-on or deposit`);
+      if (claimed.has(id)) throw new Error(`separate_permits fee ${id} is filed under two permits`);
+      claimed.add(id);
+    }
+    for (const type of spec.permit_types ?? []) {
+      if (!permitTypes.has(type)) throw new Error(`separate_permits.${spec.id} permit type ${type} is not in permit_types`);
+    }
+    if (spec.over !== undefined && (!spec.over?.input || typeof spec.over.value !== 'number'))
+      throw new Error(`separate_permits.${spec.id}.over requires an input and a numeric value`);
+  }
+}
+
 /**
  * Validate + default a fee-schedule OBJECT (parsed from YAML, or read from the
  * store JSONB / a JSON snapshot). Lenient-in, strict-out. Pure — the YAML/JSON
  * I/O that produces `input` stays per-runtime; this shared check guarantees the
  * chatbot, the publish script, and the sandbox tool reject the same bad data.
  */
+// Plan review: the building-wide rate, the optional exempt-through valuation, and the optional
+// per-permit-type rate.
+function validatePlanReviewOptions(building, permitTypes) {
+  if (typeof building.plan_review_pct !== 'number')
+    throw new Error('fee schedule missing building.plan_review_pct');
+  if (building.plan_review_exempt_through_valuation !== undefined &&
+      typeof building.plan_review_exempt_through_valuation !== 'number')
+    throw new Error('building.plan_review_exempt_through_valuation must be numeric');
+  for (const [permitType, cfg] of Object.entries(permitTypes ?? {})) {
+    if (cfg?.plan_review_pct !== undefined && (typeof cfg.plan_review_pct !== 'number' || cfg.plan_review_pct < 0))
+      throw new Error(`permit_types.${permitType}.plan_review_pct must be a non-negative number`);
+  }
+}
+
 export function validateFeeSchedule(input) {
   const obj = input;
   if (!obj || typeof obj !== 'object') throw new Error('fee schedule is not an object');
@@ -405,8 +449,7 @@ export function validateFeeSchedule(input) {
     if (Math.abs(split.building_permit_pct + split.plan_review_pct - 1) > 0.000001)
       throw new Error('area_stepped combined_fee_split must total 1');
   }
-  if (typeof obj.building.plan_review_pct !== 'number')
-    throw new Error('fee schedule missing building.plan_review_pct');
+  validatePlanReviewOptions(obj.building, obj.permit_types);
   for (const [permitType, exemptThrough] of Object.entries(obj.statewide?.school_fee_exempt_through_sqft_by_permit_type ?? {})) {
     if (!permitType || typeof exemptThrough !== 'number' || !Number.isFinite(exemptThrough) || exemptThrough < 0)
       throw new Error('statewide.school_fee_exempt_through_sqft_by_permit_type entries require non-negative numeric thresholds');
@@ -416,9 +459,22 @@ export function validateFeeSchedule(input) {
     throw new Error('statewide.school_fee_excludes_existing_habitable_conversion must be boolean');
   if (obj.sewer_connection?.condition && !obj.sewer_connection.condition_group)
     throw new Error('sewer_connection.condition requires condition_group');
+  const lineGroupIds = new Set();
+  for (const group of obj.fee_line_groups ?? []) {
+    if (!group?.id || !group?.label)
+      throw new Error('fee_line_groups entries require id and label');
+    if (lineGroupIds.has(group.id))
+      throw new Error(`fee_line_groups.${group.id} is declared twice`);
+    lineGroupIds.add(group.id);
+  }
+  const validateLineGroup = (entry, path) => {
+    if (entry.line_group !== undefined && !lineGroupIds.has(entry.line_group))
+      throw new Error(`${path}.line_group must name a fee_line_groups id`);
+  };
   for (const addon of obj.scope_addons ?? []) {
     if (!addon?.id || !addon?.label || !addon?.trigger_scope)
       throw new Error('scope_addons entries require id, label, and trigger_scope');
+    validateLineGroup(addon, `scope_addons.${addon.id}`);
     if (addon.outside_valuation !== true)
       throw new Error(`scope_addons.${addon.id}.outside_valuation must be true`);
     if ((typeof addon.amount === 'number') === Boolean(addon.rule))
@@ -437,6 +493,7 @@ export function validateFeeSchedule(input) {
           (typeof deposit.amount !== 'number' && typeof deposit.min !== 'number'))
         throw new Error(`${owner}.deposit entries require id, label, trigger_scope, and numeric amount or min`);
       validateDueAt(deposit.due_at, `${owner}.deposit.${deposit.id}.due_at`);
+      validateLineGroup(deposit, `${owner}.deposit.${deposit.id}`);
     }
   }
   for (const fee of obj.excluded_fees ?? []) {
@@ -536,6 +593,7 @@ export function validateFeeSchedule(input) {
     }
   }
   validateFeeCapture(obj);
+  validateSeparatePermits(obj);
   // Fill safe defaults for optional blocks.
   obj.statewide ??= {};
   obj.status ??= 'scaffolded';
@@ -800,13 +858,20 @@ function evaluateAddon(addon, inputs, valuation, area, firm) {
   return { note: 'Confirm this fee with the collecting division.' };
 }
 
+/** The labeled group a schedule puts a fee line in, spread onto the line. */
+function lineGroup(schedule, entry) {
+  const group = entry.line_group && schedule.fee_line_groups?.find((candidate) => candidate.id === entry.line_group);
+  return group ? { group: { id: group.id, label: group.label } } : {};
+}
+
 function applyScopedFees(schedule, inputs, context, firm, confirm) {
   const scopes = inferredScopes(context.permitType, inputs);
   const captureGroups = schedule.fee_capture?.groups ?? [];
+  const countedGroups = new Set(captureGroups
+    .filter((group) => group.inputs.some((entry) => inputs.scopeQuantities?.[feeCaptureInputId(entry)] > 0))
+    .map((group) => group.id));
   for (const group of captureGroups) {
-    if (group.scope && group.inputs.some((entry) => inputs.scopeQuantities?.[feeCaptureInputId(entry)] > 0)) {
-      scopes.add(group.scope);
-    }
+    if (group.scope && countedGroups.has(group.id)) scopes.add(group.scope);
   }
   // A combination permit asserts its trade scopes and replaces the itemized unit rows.
   for (const scope of context.combinationTrades?.asserts_scopes ?? []) scopes.add(scope);
@@ -821,6 +886,23 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
       confirm.push(line);
     }
   };
+  // A trade the work includes but whose unit counts the packet does not state:
+  // its base fee prices from the scope, and the counts are asked for, never assumed.
+  // A permit type that already requires those counts asks for them itself.
+  const requiredInputs = new Set(context.requiredAnyInputs ?? []);
+  for (const group of captureGroups) {
+    if (!group.scope || !scopes.has(group.scope) || replacedGroups.includes(group.id) || countedGroups.has(group.id)) continue;
+    if (group.inputs.some((entry) => requiredInputs.has(feeCaptureInputId(entry)))) continue;
+    const baseFee = (schedule.scope_addons ?? []).find((addon) => addon.trigger_scope === group.scope);
+    const trade = group.label.toLowerCase();
+    addConfirm({
+      id: `counts_${group.id}`,
+      label: `${group.label} unit counts`,
+      note: `The work includes ${trade} work, but the packet states no ${trade} unit counts. Provide them to price the per-unit ${trade} fees.`,
+      cite: baseFee?.cite,
+      ownerDivision: baseFee?.owner_division,
+    });
+  }
   for (const addon of schedule.scope_addons ?? []) {
     if (!scopes.has(addon.trigger_scope)) continue;
     if (addon.permit_types?.length && !addon.permit_types.includes(context.permitType)) continue;
@@ -852,6 +934,7 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
       cite: addon.cite,
       ownerDivision: addon.owner_division,
       surchargeIds: addon.surcharge_ids,
+      ...lineGroup(schedule, addon),
     });
   }
 
@@ -872,6 +955,7 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
           cite: deposit.cite,
           ownerDivision: owner,
           refundable: deposit.refundable === true,
+          ...lineGroup(schedule, deposit),
         });
       } else {
         addConfirm({
@@ -887,6 +971,67 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
   }
 
   return scopes;
+}
+
+/** A surcharge deferred until scoped is charged on its base lines and on lines that carry it. */
+function feedsScopedSurcharge(s, line) {
+  return Boolean(s.base_line_ids?.includes(line.id) || line.surchargeIds?.includes(s.id) ||
+    line.surchargeIds?.some((id) => s.base_surcharge_ids?.includes(id)));
+}
+
+/**
+ * One estimate, split by the permit the City files each fee under: the screened
+ * record first, then each `separate_permits` entry with a firm line here. A fee
+ * charged as a percent of other lines (expedited plan review) and a surcharge
+ * deferred until scoped follow their base, so a separate permit carries the
+ * share its own lines add and the record keeps the rest. A refundable deposit
+ * is not a fee, so the subtotals add up to the firm lines less refundable
+ * deposits. Null when nothing is filed separately.
+ */
+export function feeSubtotalsByPermit(schedule, breakdown, inputs = {}) {
+  const recordType = normalizePermitType(breakdown.permitType);
+  const sum = (lines) => lines.reduce((total, line) => total + line.amount, 0);
+  const derived = (schedule.scope_addons ?? [])
+    .filter((addon) => addon.rule?.type === 'percent_of_lines')
+    .flatMap((addon) => {
+      const line = breakdown.firmLines.find((entry) => entry.id === addon.id);
+      const base = sum(breakdown.firmLines.filter((entry) => addon.rule.line_ids.includes(entry.id)));
+      return line && base > 0 ? [{ line, lineIds: addon.rule.line_ids, base }] : [];
+    });
+  const surcharges = (schedule.building?.surcharges ?? [])
+    .filter((s) => s.defer_until_scoped && breakdown.firmLines.some((line) => line.id === s.id));
+  const separate = [];
+  for (const spec of schedule.separate_permits ?? []) {
+    // On a record of the separate permit's own type, its lines are the record's.
+    if (spec.permit_types?.some((type) => normalizePermitType(type) === recordType)) continue;
+    if (spec.over && !(quantityFor(spec.over.input, inputs, breakdown.valuation, null) > spec.over.value)) continue;
+    const lines = breakdown.firmLines.filter((line) => spec.fee_ids.includes(line.id));
+    if (!lines.length) continue;
+    // A percent-of-lines fee splits in proportion to its base, minimum included.
+    const shares = derived.flatMap(({ line, lineIds, base }) => {
+      const own = sum(lines.filter((entry) => lineIds.includes(entry.id)));
+      return own > 0 ? [{ ...line, amount: round2(line.amount * own / base) }] : [];
+    });
+    const charged = [...lines.filter((line) => !line.refundable), ...shares];
+    const surchargeShare = surcharges.reduce((total, s) => total + round2(sum(charged.filter((line) => feedsScopedSurcharge(s, line))) * s.pct), 0);
+    separate.push({
+      id: spec.id,
+      label: spec.label,
+      lineIds: lines.map((line) => line.id),
+      subtotal: round2(sum(charged) + surchargeShare),
+    });
+  }
+  if (!separate.length) return null;
+  const taken = new Set(separate.flatMap((permit) => permit.lineIds));
+  return [
+    {
+      id: 'record',
+      label: null,
+      lineIds: breakdown.firmLines.filter((line) => !taken.has(line.id)).map((line) => line.id),
+      subtotal: round2(sum(breakdown.firmLines.filter((line) => !line.refundable)) - separate.reduce((total, permit) => total + permit.subtotal, 0)),
+    },
+    ...separate,
+  ];
 }
 
 export function recomputeFeeTotals(breakdown) {
@@ -1095,10 +1240,16 @@ export function calcFees(schedule, inputs) {
     permitFee = buildingPermitFee(valuation, b.permit_fee);
     firm.push({ id: 'building_permit', label: 'Building permit fee', amount: permitFee, tag: 'computable_now', cite: b.permit_fee.cite, ownerDivision: buildingOwner });
 
-    const planRate = b.plan_review_pct;
-    let planFee = round2(permitFee * planRate);
-    if (b.plan_review_min) planFee = Math.max(planFee, b.plan_review_min);
-    firm.push({ id: 'plan_review', label: `Plan review (${Math.round(planRate * 100)}% of permit fee)`, amount: planFee, tag: 'percent_of_base', cite: b.plan_review_cite, ownerDivision: buildingOwner });
+    // A permit type may carry its own plan-review rate (0 = no plan review), and a
+    // schedule may publish a valuation at or below which no plan review is charged.
+    const planRate = ptCfg?.plan_review_pct ?? b.plan_review_pct;
+    const planReviewCharged = planRate > 0 &&
+      !(typeof b.plan_review_exempt_through_valuation === 'number' && valuation <= b.plan_review_exempt_through_valuation);
+    if (planReviewCharged) {
+      let planFee = round2(permitFee * planRate);
+      if (b.plan_review_min) planFee = Math.max(planFee, b.plan_review_min);
+      firm.push({ id: 'plan_review', label: `Plan review (${Math.round(planRate * 100)}% of permit fee)`, amount: planFee, tag: 'percent_of_base', cite: b.plan_review_cite, ownerDivision: buildingOwner });
+    }
   } else {
     confirm.push({ id: 'building_permit', label: 'Building permit + plan review', note: 'Provide the project valuation or new floor area (sq ft) and I can compute these exactly.', ownerDivision: buildingOwner });
   }
@@ -1169,7 +1320,11 @@ export function calcFees(schedule, inputs) {
         ownerDivision: schedule.statewide.smip_owner_division,
       });
     } else {
-      confirm.push({ id: 'smip', label: 'SMIP classification', note: 'Provide the explicit residential/nonresidential classification and, for a residential structure, its story count. The published Laguna residential row applies only below three stories; other buildings use the statewide other-building rate.', cite: schedule.statewide.smip_cite, ownerDivision: schedule.statewide.smip_owner_division });
+      // Ask only for the part that is missing: the use, or (use known, so residential) the stories.
+      const note = explicitUse
+        ? 'Provide the number of stories of the building after the work. A residential building under three stories uses the residential rate; a taller one uses the statewide other-building rate.'
+        : 'Provide whether the building is residential or nonresidential, and for a residential building its number of stories after the work. A residential building under three stories uses the residential rate; other buildings use the statewide other-building rate.';
+      confirm.push({ id: 'smip', label: 'SMIP (state strong-motion fee)', note, cite: schedule.statewide.smip_cite, ownerDivision: schedule.statewide.smip_owner_division });
     }
   }
   if (statewideFeesApply && valuation > 0 && schedule.statewide.bsasrf !== false) {
@@ -1203,7 +1358,8 @@ export function calcFees(schedule, inputs) {
   const sewerApplies = ptCfg?.sewer_connection ?? (!ptCfg && (isAdu || permitType === 'new_sfr'));
   const sewerMinArea = isAdu ? (sc?.adu_min_area_sqft ?? sc?.applies_min_area_sqft ?? 500) : (sc?.applies_min_area_sqft ?? 500);
   const sewerState = sc ? conditionState(sc, inputs) : 'not_matched';
-  if (sc && sewerApplies && area && area >= sewerMinArea && sewerState === 'unresolved') {
+  // An unknown area cannot rule the fee out, so the location question stays open.
+  if (sc && sewerApplies && (!(area > 0) || area >= sewerMinArea) && sewerState === 'unresolved') {
     confirm.push({
       id: `condition_${sc.condition_group}`,
       label: sc.condition_label ?? 'Sewer connection applicability',
@@ -1263,7 +1419,7 @@ export function calcFees(schedule, inputs) {
 
   // 12) Data-driven scope add-ons, refundable deposits, conditionally located
   // fees, and structured exclusions/open questions. No city-specific branches.
-  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades }, firm, confirm);
+  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades, requiredAnyInputs: ptCfg?.required_any_inputs }, firm, confirm);
   if (ptCfg?.plan_review_of_scope_addons?.line_ids?.length) {
     const spec = ptCfg.plan_review_of_scope_addons;
     const base = firm.filter((line) => spec.line_ids.includes(line.id)).reduce((sum, line) => sum + line.amount, 0);
@@ -1295,10 +1451,7 @@ export function calcFees(schedule, inputs) {
   if (ptCfg?.surcharges !== false) {
     for (const s of b.surcharges ?? []) {
       if (!s.defer_until_scoped) continue;
-      const base = firm
-        .filter((line) => s.base_line_ids?.includes(line.id) || line.surchargeIds?.includes(s.id) ||
-          line.surchargeIds?.some((id) => s.base_surcharge_ids?.includes(id)))
-        .reduce((sum, line) => sum + line.amount, 0);
+      const base = firm.filter((line) => feedsScopedSurcharge(s, line)).reduce((sum, line) => sum + line.amount, 0);
       if (base > 0) firm.push({ id: s.id, label: `${s.label} (${formatPercent(s.pct)}%)`, amount: round2(base * s.pct), tag: 'percent_of_base', cite: s.note, ownerDivision: s.owner_division });
     }
   }

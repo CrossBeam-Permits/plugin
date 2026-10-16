@@ -74,7 +74,7 @@ Source: City of Laguna Beach Zone Clearance Application, "Updated July 2026", Se
 Source: City of Laguna Beach Zone Clearance Application, "Updated July 2026", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance). https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000
 
 - **Topographic Survey** (Conditional) — trigger: Exhibit C requires a survey for the project's type. Required scale 1/8" = 1'-0". Depict existing conditions and all public and private easements. Prepared, signed, and stamped by a licensed surveyor or civil engineer. The Site Survey Requirements handout (Exhibit E) carries additional requirements.
-- **Record of Survey** (Conditional) — Show all property boundary lines, public and private easements, and whether new monuments were set to show the boundary lines. Prepared, signed, and stamped by a licensed surveyor or civil engineer, and filed for processing with the County Surveyor's Office for review and recordation.
+- **Record of Survey** (Conditional) — Applies only when the project involves boundary or monument work, including resolving unclear lot lines or locating, resetting, or setting monuments. Show all property boundary lines, public and private easements, and whether new monuments were set to show the boundary lines. Prepared, signed, and stamped by a licensed surveyor or civil engineer, and filed for processing with the County Surveyor's Office for review and recordation.
 
 ### Site Plan (`site-plan`)
 
@@ -189,7 +189,7 @@ Source: City of Laguna Beach Zone Clearance Application, "Updated July 2026", Se
 
 Source: City of Laguna Beach Zone Clearance Application, "Updated July 2026", Section V (Application Submittal Requirements) and the exhibits that section cites. Retrieved 2026-08-14. Governing section: LBMC 25.05.045 (Zone Clearance). https://www.lagunabeachcity.net/home/showpublisheddocument/26718/639216211418770000
 
-- **Site and Right-of-Way Improvement Plan** (Conditional) — Required scale 1/8" = 1'-0". When applicable, provide a topographic survey (including public and private easements) and the improvement overlay.
+- **Site and Right-of-Way Improvement Plan** (Conditional) — Applies for a new home or a major remodel under the Local Coastal Program's 50-percent test; for other projects, evaluate it only when site or right-of-way improvements are actually in scope. Required scale 1/8" = 1'-0". When applicable, provide a topographic survey (including public and private easements) and the improvement overlay.
 
 ### Additional information for certain sites
 

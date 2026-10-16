@@ -8,7 +8,42 @@ fails when they differ or when this file has no section for the current version.
 `main` is the release line. Hosts that install from the marketplace get whatever
 `main` holds for `cities/laguna-beach`. See "Pinning a release" at the end.
 
-## 0.5.0 (unreleased)
+## 0.6.0 (unreleased)
+
+Which application to file, without a CrossBeam server:
+
+- New `guide` skill: for any project on any parcel, which approvals it needs, which City
+  application to file (Zone Clearance, Administrative Design Review, Design Review Board
+  or Planning Commission, plus CDP, ADU, variance or use permit), and in what order. Its
+  `before-you-file` reference checks a drafted or filed packet against that route: the
+  wrong application, and a Building filing made before the Planning approval is in
+  effect.
+- New `city-website` skill: counter hours and contacts, the building and planning
+  process, forms, FAQs, and how each application is submitted online.
+- New `scripts/parcel-facts/parcel_facts.py`: zone, specific plan, coastal appeal and
+  deferred-certification areas, historic rating, habitat, oceanfront, fuel modification
+  and other overlays from the City's public map layers. Standard library only; never
+  requests owner fields. `guided-intake.md` uses it when the connector is absent.
+- Permit skills that pointed to "a CrossBeam reference that is not included in this
+  plugin" now link to the guide.
+- The root skill, `plan-set-check` and `planning-routing.md` route through the guide.
+- Synced with the private source's short-answer change: the guide answers lead with one
+  route, and the Planning entitlements page links each form directly.
+- New guide reference `common-corrections`: what Laguna's plan check corrects most often, by
+  permit type, with how to check each item on the drawings and how to check height, setbacks,
+  coverage, the major remodel 50% test, the equipment test and WUI against the City's values.
+  `plan-set-check` gains an optional step 8a that runs it as a plan-check preview and reports
+  its findings apart from the intake fix list.
+- `requirements/` now carries the intake rules the City's counter applies: Building and
+  Planning counter practice (`counter-practice.md` / `.json`), plan-sheet lists, submittal
+  structure, valuation, deferred submittals, multi-unit, site improvements, resubmittal
+  mechanics and the online sheet-size rule. Staff names, record numbers and the City's
+  draft intake procedure stay out.
+- `plan-set-check` 0.5 applies those intake bars, separates Tidy-ups from the fix list, and
+  treats an already-filled older one-page Building form as a Tidy-up (the current form adds
+  the stormwater certification page).
+
+## 0.5.0
 
 Host packaging:
 

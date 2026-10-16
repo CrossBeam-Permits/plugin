@@ -15,7 +15,7 @@
 | New floor area, a story or a raised roof over 15 ft built with the deck | Design Review, §25.05.040(B)(1)(c), for that piece. The deck itself stays under its own item (specific over general); a deck surface or guard more than 15 ft up is UNSETTLED |
 | Development in an ESA | Design Review, §25.05.040(B)(1)(e), unless a licensed professional determines, subject to peer review, that it does not impact the ESA |
 | Deck on top of a structure, including an ADU roof deck | Design Review (City Planning intake ruling, September 2026; untested since Ord. 1732). Ordinance reading: ADR (iii) |
-| In-kind repair or like-for-like replacement (same size, height, location) | Zone Clearance, §25.05.040(B)(2)(c); it governs over the elevated-deck ADR item (ZPC-2026-1362, ZPC-2026-1825) |
+| In-kind repair or like-for-like replacement (same size, height, location) | Zone Clearance, §25.05.040(B)(2)(c); it governs over the elevated-deck ADR item |
 
 **Who hears Design Review:** the Design Review Board for single-family or two-family developments; the Planning Commission for 3+ units, the Downtown Specific Plan area, nonresidential and other projects (§25.05.040(F)(1)(i)-(ii)). The Director may refer any (B)(2) or (B)(3) deck up (§25.05.040(A)(2)(d)).
 

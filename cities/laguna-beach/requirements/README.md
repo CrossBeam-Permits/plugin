@@ -9,9 +9,14 @@ This is a completeness reference. It does not check the design against the build
 | Need | Read |
 |---|---|
 | Which plan sheets a project needs, and what each sheet must show | `plan-sheets/plan-sheet-matrix.md` (data: `plan-sheet-matrix.json`) |
+| What each Planning plan sheet must show, sheet by sheet | `planning/residential-plan-sheets.md`, `planning/commercial-plan-sheets.md` (data: `planning/plan-sheet-lists.json`) |
+| How to draw and package a plan set the City accepts (cover sheet, title block, scale, files) | `plan-sheets/plan-set-standards.md` |
 | Which Planning application to file | `planning/application-index.md` |
 | What a Planning application must include | `planning/<application>.md` |
+| How Planning intake judges a submittal; what it takes later | `planning/counter-practice.md` (data: `planning/counter-practice.json`) |
 | What a Building submittal must include | `building/<checklist>.md` (data: `building/checklists.json`) |
+| What the Building counter requires before it accepts an application; what waits for plan check | `building/counter-practice.md` (data: `building/counter-practice.json`) |
+| Which Building permit type to file; one plan set with separate applications; valuation; resubmittals | `building/permit-type-classification.md`, `building/submittal-structure.md`, `building/valuation.md`, `building/resubmittal-mechanics.md` |
 | Outside reviews (grading, fire, geotechnical, water quality) | `building/review-triggers.md` |
 | ADU items that state law changes | `building/adu-state-law.md` |
 | What is due after approval, before the permit issues | `issuance/issuance-checklist.md` |
@@ -30,7 +35,10 @@ This is a completeness reference. It does not check the design against the build
 - `building/ev-charging.md` — EV charging stations (14 items)
 - `building/solar.md` — Residential solar (8 items)
 - `building/walls-fences.md` — Fences, block walls and retaining walls (13 items)
-- `building/staff-reported.md` — Other counter requirements reported by City staff (2 items)
+- `building/staff-reported.md` — Other counter requirements reported by City staff (3 items)
+- `building/site-improvements.md` — New decks and patio covers, hardscape, retaining walls and accessory structures (full review) (5 items)
+- `building/deferred-submittals.md` — Deferred submittals (roof trusses, elevator, fire sprinklers) (2 items)
+- `building/multi-unit.md` — Multi-unit residential (3 or more units) (1 item)
 
 ## Planning applications
 
@@ -45,6 +53,23 @@ This is a completeness reference. It does not check the design against the build
 - `planning/wireless-facility-permit.md` — Wireless Facility Permit Application
 - `planning/filing-context.md` — existing applications and public-owner authorization
 
+## Planning plan sheets and intake
+
+- `planning/residential-plan-sheets.md` — Residential plan sheets
+- `planning/commercial-plan-sheets.md` — Commercial and mixed-use plan sheets
+- `planning/landscape-plan.md` — what a landscape plan shows
+- `planning/historic-assessment.md` — when the City asks for a historic assessment
+- `planning/counter-practice.md` — City counter practice: when each item is due, and when a sheet is complete enough
+
+## Building practice
+
+- `building/counter-practice.md` — City counter practice: what the counter requires, what waits for plan check, answered questions
+- `building/permit-type-classification.md` — Residential, Multifamily, Mixed Use or Commercial
+- `building/submittal-structure.md` — one plan set for the project, separate applications per scope
+- `building/valuation.md` — how the City checks the valuation on each application
+- `building/resubmittal-mechanics.md` — how to resubmit on the portal
+- `plan-sheets/plan-set-standards.md` — plan-set standards for both lanes
+
 The plan-sheet matrix lists 21 project types across 16 columns.
 
 Rules for using this data:
@@ -52,4 +77,5 @@ Rules for using this data:
 - Decide the project type, triggers and whether a sheet shows what it must from the evidence. Never from a keyword, file name or sheet title alone.
 - Keep unknown facts unknown. Say what would settle them.
 - Items marked as reported by City staff are not in a published handout. Tell the applicant to confirm them with the City.
+- City counter practice says how staff apply the lists. It is not code. State it as City practice, not as law.
 - The City may ask for more after it reviews the first submittal.

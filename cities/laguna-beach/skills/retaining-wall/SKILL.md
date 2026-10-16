@@ -192,7 +192,7 @@ Laguna's geotechnical handout requires a soils/geotechnical report for:
 - Any construction or repair where soil failure or structure failure has occurred.
 - Non-conventional foundation systems or Building Official direction.
 
-Require two bounded copies dated within one year of submittal when the handout applies.
+Require the signed report, dated within one year of submittal, when the handout applies. The handout's paper copy count is never a missing item (the Online Permit Services Supervisor, 2026-10-13).
 
 #### 4. Coastal and Bluff Retaining Walls
 

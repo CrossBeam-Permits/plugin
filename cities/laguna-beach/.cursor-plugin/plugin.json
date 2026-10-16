@@ -1,6 +1,6 @@
 {
   "name": "laguna-beach",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Laguna Beach, CA permit skills: decide what to file, check compliance against state code plus LBMC local amendments, and prepare the official City forms. Portal filing needs a host with user-visible browser control.",
   "author": {
     "name": "Onboard Dot AI LLC",

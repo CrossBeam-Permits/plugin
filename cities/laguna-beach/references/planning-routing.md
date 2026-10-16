@@ -2,6 +2,11 @@
 
 ## Authority and method
 
+Decide the route with the project guide first: `skills/guide/references/planning-approvals.md`
+runs the method on every piece of the project, and `skills/guide/references/before-you-file.md`
+checks a drafted or filed packet against it. This file maps that route to portal record types
+and filing channels, and keeps the pool and spa details the forms need.
+
 Reason over the complete project evidence and hard site facts against the closed lists in
 LBMC §25.05.040(B). Never choose a route from a keyword, filename, regex, or permit-type
 enum. Unknown facts stay null and the route stays `undetermined`; do not invent a Design

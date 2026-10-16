@@ -10,7 +10,7 @@ law_as_of: "2026-10-10"
 
 Use this file to tell an owner or designer what to put in the **Planning** submittal for converting commercial floor area (office, retail) into apartments, or adding apartments to a commercial building, in C-N, C-1 or SLV. For LBP, CH-M, M-1 and DSP sites, start from the same list and add the zone's use permit (see `mixed-use-conversion.md` Section 2). The building permit comes later and is not covered here.
 
-Sources: the City's July-August 2026 application forms as encoded in a CrossBeam reference that is not included in this plugin (coastal-development-permit.md, design-review.md, zone-clearance.md, conditional-use-permit.md) and a CrossBeam reference that is not included in this plugin; the Plan Sheet Submittal Matrix (a CrossBeam reference that is not included in this plugin, read-only). Code rules are in `mixed-use-conversion.md`. City practice is in `laguna-practice-mixed-use.md`.
+Sources: the City's July-August 2026 application forms as encoded in a CrossBeam reference that is not included in this plugin (coastal-development-permit.md, design-review.md, zone-clearance.md, conditional-use-permit.md) and a CrossBeam reference that is not included in this plugin; the Plan Sheet Submittal Matrix (a CrossBeam reference that is not included in this plugin, read-only). Code rules are in `mixed-use-conversion.md`. City practice is in a CrossBeam reference that is not included in this plugin.
 
 ## 1. Which matrix row — UNSETTLED
 
@@ -41,7 +41,7 @@ Measure major remodel before choosing the path (`../../residential-remodel/refer
 | Design Review Application | Path B with a (B)(1) item | Design Review application (Aug 2026) |
 | Conditional Use Permit Application | Only for parking relief (§25.52.006(B), (C), (G), (H)), artists' work/live, or a separate CUP use on the site. Not for ordinary units in C-N, C-1, SLV | CUP application (July 2026) |
 | Advance Deposit and Reimbursement Agreement, with title report | Only when the City will peer-review a study (traffic, parking, historic) | All entitlement forms, Exhibit B |
-| City Attorney deposit | Exhibit A lists $5,000 for a "Housing Development Project" "When requested by CAO"; 670 S Coast Hwy was charged $10,000. Amount and trigger UNSETTLED | `mixed-use-conversion.md` Section 13, item 6 |
+| City Attorney deposit | Exhibit A lists $5,000 for a "Housing Development Project" "When requested by CAO"; one recent project was charged $10,000. Amount and trigger UNSETTLED | `mixed-use-conversion.md` Section 13, item 6 |
 | Affidavit and Use and Disclosure of Architectural Drawings | Always | CDP and DR applications |
 | Gov. Code 65962.5 hazardous-site certification | Always (in the Gov. Code 65940 checklist exhibit of each form) | July 2026 application forms |
 | Digital site photos | Always; label direction and description | CDP and DR applications |
@@ -70,7 +70,7 @@ Under the row choice, a sheet marked "not applicable" still appears in the matri
 
 ## 5. Supporting documents for a conversion
 
-These carry the case. Staff asked for each of them on recent projects (see `laguna-practice-mixed-use.md`).
+These carry the case. Staff asked for each of them on recent projects (see a CrossBeam reference that is not included in this plugin).
 
 1. **Parking table for every use on the site.** Existing and proposed uses, floor area, the §25.52.012(G) ratio for each, spaces provided, and the prior legal use's demand. Show that office at 1 per 250 sf needs more than the units (§25.52.004(E)(1) is triggered only by a change to a use with a greater requirement). State any credit claimed under §25.52.004(E)(1)(a)-(d). If claiming 0.5 per unit, show the walking route and distance to the fixed transit stop.
 2. **Nonconformity statement.** List each legal nonconformity (height, floors, parking, open space, setbacks) with its basis (original permit, Real Property Report). For an over-height floor, add a structural engineer's letter that the work does not trigger the rebuild-to-conform rule of §25.56.009.
@@ -78,7 +78,7 @@ These carry the case. Staff asked for each of them on recent projects (see `lagu
 4. **§25.96.030 exceptions**, if used: name each one and state that the owner will record the covenant against short-term lodging before building permit (§25.96.030(C)).
 5. **Code analysis summary.** Change of occupancy from office to R-2, occupancy separation, exits, accessibility. Staff asked for these items at entitlement on 1391, 670 and 2940. The building-code rules are in the California Multi-Unit Residential rules (Change of Occupancy — Office (B) to R-2 Apartments), which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`).
 6. **Fire Protection Plan** when the site is in the Very High Fire Hazard Severity Zone (CDP application, item n; LBMC 15.01.010 and 14.70.045).
-7. **Tenant Mix Table** and **Hazardous Waste & Substances Form (Exhibit K)**: required by the CUP form only. Without a CUP, include them as advisory for a multi-tenant mixed-use site; staff asked for the Tenant Mix Table at 2940 and marked the Hazardous Waste Form at 670.
+7. **Tenant Mix Table** and **Hazardous Waste & Substances Form (Exhibit K)**: required by the CUP form only. Without a CUP, include them as advisory for a multi-tenant mixed-use site; staff asked for the Tenant Mix Table on that project and marked the Hazardous Waste Form at 670.
 8. **Before a hearing** (path B or a requested CDP hearing): property-owner noticing at least 30 days before the hearing; early neighbor communication within 300 ft for Design Review (§25.05.040(C)(1)).
 
 ## 6. Not required, and why

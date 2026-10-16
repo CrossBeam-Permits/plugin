@@ -190,7 +190,7 @@ Window and door replacement is eligible for over-the-counter plan review:
 - **Qualified:** Window/door replacement in same openings or with minor structural mods
 - **OTC item:** the city reference OTC item 3 (window and door replacement with minor structural modifications) — hours and the full list live in `../city-reference/SKILL.md`
 - **Not OTC:** New openings requiring structural headers, or work that is part of a major remodel
-- **Where to file:** City practice is to take simple permits such as a like-for-like window replacement at the Building counter, not through the online portal (R26-1837; a CrossBeam reference that is not included in this plugin). Tell the applicant to bring it to the counter after Planning's Zone Clearance. Which other simple permits are counter-only is still an open City question.
+- **Where to file:** City practice is to take simple permits such as a like-for-like window replacement at the Building counter, not through the online portal (a CrossBeam reference that is not included in this plugin). Tell the applicant to bring it to the counter after Planning's Zone Clearance. Which other simple permits are counter-only is still an open City question.
 
 ---
 
@@ -233,7 +233,7 @@ The single-family exemption (A)(1) does not apply. **Default: exempt.** Two exem
 - §25.07.008(A)(2): "Improvements to an existing structure (including attached fixtures and landscaping) other than single-family dwellings or public works facilities are exempt unless classified under one of the following": (a) development described in (A)(1) through (6) or in a stream or lake; (b) a "change in the intensity of use"; (c) a condominium, stock cooperative or similar conversion; (d) significant landform alteration near a bluff or stream, in a highly scenic area or an ESA.
 - §25.07.008(A)(3): "Repair and maintenance activities that do not result in an addition to, or enlargement or expansion of, the object of such repair and maintenance activities" are exempt; its exceptions are shoreline works and work on sand, bluffs, ESAs or near coastal waters.
 
-So give the exemption as the answer, and test only the exceptions: items 1-3 under "When CDP IS Required" above, which reach these buildings through (A)(2)(a); a change in use intensity; a conversion. If none applies, the CDP step is the City's exemption record, not an administrative CDP. City practice: coastal-zone exterior projects routinely file a CDP exemption record. One older multi-unit window and door job took an administrative CDP (CDP-2023-1175, before Ord. 1732); give it only as a reason to confirm with Planning, not as the default.
+So give the exemption as the answer, and test only the exceptions: items 1-3 under "When CDP IS Required" above, which reach these buildings through (A)(2)(a); a change in use intensity; a conversion. If none applies, the CDP step is the City's exemption record, not an administrative CDP. City practice: coastal-zone exterior projects routinely file a CDP exemption record. One older multi-unit window and door job took an administrative CDP (before Ord. 1732); give it only as a reason to confirm with Planning, not as the default.
 
 #### De Minimis Waiver (Section 25.07.009)
 

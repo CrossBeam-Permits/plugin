@@ -8,10 +8,10 @@ Sources:
 
 ---
 
-## Plan Set Count (per doc 5103, current 2025-cycle version)
+## Sheet Size and Scale (per doc 5103, current 2025-cycle version)
 
-- **Four (4) complete plan sets** at **24" x 36"** for new SFRs and large additions (≥500 sf). Distribution: (1) Building, (2) Planning/Zoning, (3) Fire Department, (4) Water Quality.
-- **Two (2) sets** for small additions (<500 sf) and interior renovations.
+- **Ignore the paper set counts.** Doc 5103 asks for four paper sets (new SFRs and additions of 500 sf or more) or two (smaller work). Laguna takes one electronic plan set. the Online Permit Services Supervisor (Online Permit Services Supervisor) told us on 2026-10-13 to ignore the set-count requirements. Never report a set count as missing.
+- **24" x 36"** sheets.
 - **11"x17" minimum** permitted for minor projects ONLY with prior written approval from the Building Official or Zoning Administrator. Scale must be maintained.
 - Typical scales: **1/8" for site plan and plot plan; 1/4" for floor plan, elevations, sections.** Other scales require prior written approval.
 
@@ -72,7 +72,7 @@ Cover sheet should identify:
 
 ## Deferred Fire Sprinkler Submittal
 
-When sprinklers are required, the handout allows deferred residential sprinkler plans. Require 2 copies for residential sprinkler plans and track as a deferred submittal before installation/inspection.
+When sprinklers are required, the handout allows deferred residential sprinkler plans. Track as a deferred submittal before installation/inspection.
 
 ---
 

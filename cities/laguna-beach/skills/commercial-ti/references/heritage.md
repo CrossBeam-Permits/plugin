@@ -15,7 +15,7 @@
 | Building is old but on no register, listing or inventory | **No age trigger.** Age alone does not make a property a historic resource (§25.45.004). Review only if Planning finds substantial evidence that it is a historic resource (§25.45.004 item (6), the CEQA standard); the Director may require an assessment (§25.45.010(C)) |
 | Demolition of historic-register structure | Published newspaper notice required (§25.05.065(F)); up to 180-day waiting period |
 
-Laguna keys historic review off the property's status, not its age: City register, California or National Register listing or official eligibility, or substantial evidence (§25.45.004 as amended by Ord. 1732). The 1981 inventory "is ineffective for the purposes of creating a presumption of historicity" (§25.45.002(H)), but an inventory rating (`historic.rating` in `lookup_property`) flags the property for a possible City-paid historic assessment (§25.45.010(C); a CrossBeam reference that is not included in this plugin). When status is unclear, FLAG for Planning; do not infer it from the year built.
+Laguna keys historic review off the property's status, not its age: City register, California or National Register listing or official eligibility, or substantial evidence (§25.45.004 as amended by Ord. 1732). The 1981 inventory "is ineffective for the purposes of creating a presumption of historicity" (§25.45.002(H)), but an inventory rating (`historic.rating` in `lookup_property`) flags the property for a possible City-paid historic assessment (§25.45.010(C); `../../guide/references/historic-properties.md`). When status is unclear, FLAG for Planning; do not infer it from the year built.
 
 ---
 

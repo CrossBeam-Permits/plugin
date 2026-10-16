@@ -134,6 +134,10 @@ other Planning packages.
   unverified. The two-page form's page 1 has every block of the old form except the
   MultiFamily box. If the City asks for the old form by name, ask the Building Division,
   (949) 497-0715, which form it wants; do not keep two Building maps.
+- Retired from this plugin's manifest is not the same as refused by the City. The counter
+  has accepted the one-page form. When an applicant already filled it, list "the current form
+  adds a signed stormwater certification page" under Tidy-ups, not the fix list, unless a City
+  note says the counter now returns the one-page form. New filings use the two-page form.
 
 ## Uncovered Planning application types
 

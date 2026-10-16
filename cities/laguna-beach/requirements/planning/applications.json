@@ -40,7 +40,7 @@
               "key": "color_material_selections",
               "title": "Color and Material Selections",
               "required": "conditional",
-              "detail": "include specifications and pictures of all exterior building finishes and roofing. Identify all proposed exterior colors, including manufacturer code specifications."
+              "detail": "include specifications and pictures of all exterior building finishes and roofing. Identify all proposed exterior colors, including manufacturer code specifications. Color follows scope: Applies only when the project actually proposes new or changed exterior finishes, colors, or roofing."
             },
             {
               "key": "paint_swatches",
@@ -493,7 +493,7 @@
               "key": "record_of_survey",
               "title": "Record of Survey",
               "required": "conditional",
-              "detail": "Show all property boundary lines, public and private easements, and whether new monuments were set to show the boundary lines. Prepared, signed, and stamped by a licensed surveyor or civil engineer, and filed for processing with the County Surveyor's Office for review and recordation."
+              "detail": "Applies only when the project involves boundary or monument work, including resolving unclear lot lines or locating, resetting, or setting monuments. Show all property boundary lines, public and private easements, and whether new monuments were set to show the boundary lines. Prepared, signed, and stamped by a licensed surveyor or civil engineer, and filed for processing with the County Surveyor's Office for review and recordation."
             }
           ]
         },
@@ -690,7 +690,7 @@
               "key": "site_right_of_way_improvement_plan",
               "title": "Site and Right-of-Way Improvement Plan",
               "required": "conditional",
-              "detail": "Required scale 1/8\" = 1'-0\". When applicable, provide a topographic survey (including public and private easements) and the improvement overlay."
+              "detail": "Applies for a new home or a major remodel under the Local Coastal Program's 50-percent test; for other projects, evaluate it only when site or right-of-way improvements are actually in scope. Required scale 1/8\" = 1'-0\". When applicable, provide a topographic survey (including public and private easements) and the improvement overlay."
             }
           ]
         },
@@ -788,8 +788,7 @@
     {
       "id": "conditional-use-permit",
       "title": "Conditional Use Permit Application",
-      "source": "City of Laguna Beach Conditional Use Permit Application, \"Updated July 2026\", the section headed APPLICATION SUBMITTAL REQUIREMENTS, items 1 through 11. Retrieved 2026-08-14. The City republished the form on 2026-09-17 as \"Updated August 2026\" (https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639252307038230000). The deliverables in items 1 through 11 are unchanged in that edition. Exhibit A dropped the agreement form itself: it is now the deposit table plus the City's procedure, under which the Planner attaches the Reimbursement Agreement to the first incomplete letter.",
-      "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639198113884500000",
+      "source": "City of Laguna Beach Conditional Use Permit Application, \"Updated July 2026\", the section headed APPLICATION SUBMITTAL REQUIREMENTS, items 1 through 11. Current source URL: https://www.lagunabeachcity.net/home/showpublisheddocument/26463/639271347299500000. The July 2026 edition was retrieved 2026-08-14; the City republished the form on 2026-09-17 as \"Updated August 2026\" and re-linked that same file on 2026-10-14. The deliverables in items 1 through 11 are unchanged in the August edition. Exhibit A dropped the agreement form itself: it is now the deposit table plus the City's procedure, under which the Planner attaches the Reimbursement Agreement to the first incomplete letter.",
       "when_to_file": "The City states the trigger on page 1: \"Some uses are allowed in a zoning district but may not fit every location because of their size, intensity, or other characteristics. These uses require a CUP because they could have moderate to significant impacts on the site or nearby properties.\" The form covers \"an application for a Conditional Use Permit ('CUP'), including a CUP amendment.\" The City states the Planning Commission reviews all CUP applications, and that where a project requires multiple entitlements the Planning Commission is the approval authority except as the Municipal Code otherwise specifies. The City also states: \"Additional applications are required when an applicant is requesting additional entitlements, such as a permit for Design Review and/or a Coastal Development Permit.\"",
       "sections": [
         {

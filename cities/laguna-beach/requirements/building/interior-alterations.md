@@ -15,13 +15,13 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - What the City asks for: Every permitted interior renovation carries at least one legible floor plan showing the layout of the work. This is the floor of Laguna's interior-alteration intake: a permit application with no plan at all is incomplete even for the simplest in-kind bath refit. The plan must depict the renovation: it locates the work in the unit. A listing or brochure floor plan with a contractor estimate or scope list pasted beside it does not depict the renovation, and neither does an estimate, proposal or product sheet on its own.
 - Source: Laguna Beach Residential Kitchen Remodel handout and Residential Bathroom Renovation handout, INTRODUCTION: "At a minimum, a legible floor plan depicting the layout of the renovation is required for permitting" (documents 5127 and 5125, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
-### Two sets of scaled 24″ × 36″ drawings for Building Plan Check
+### Scaled 24″ × 36″ drawings for Building Plan Check
 
 - id: `laguna_interior_full_plan_check_set`
 - Scopes: Residential interior remodel (kitchen, bath, room alteration)
 - Applies when: Does the scope of work reconfigure the room layout, modify the structural system, or remove a wall to accommodate an enlarged wall opening?
   - If no: The City calls for no plan-check set on a renovation that stays within the existing layout and structure; the legible renovation floor plan is what is filed.
-- What the City asks for: Laguna's plan-check intake for a room alteration is two sets of scaled drawings at 24 inches by 36 inches.
+- What the City asks for: Laguna's plan-check intake for a room alteration is scaled drawings at 24 inches by 36 inches.
 - Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, SUBMITTAL CHECKLIST: "two (2) sets of scaled drawing 24\" X 36\"" (document 5129, republished 2026-05-09; verified live 2026-08-20); escalation trigger from the Kitchen Remodel and Bathroom Renovation handouts (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Title sheet with the City's named contents
@@ -104,24 +104,24 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - What the City asks for: The structural sheets indicate framing member sizes, beam sizes, the lateral resisting system, footings and construction details. Wall removal for an enlarged opening is the common trigger on a remodel: the header and its supports below are structural work even when the room reads as a finish project.
 - Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "STRUCTURAL PLANS" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
-### Two sets of structural calculations
+### Structural calculations
 
 - id: `laguna_interior_structural_calculations_two_sets`
 - Scopes: Residential interior remodel (kitchen, bath, room alteration)
 - Applies when: Does this remodel modify the structural system — remove or alter a wall, install or change a header or beam, alter framing, or change a footing?
-  - If yes: Submit two sets of structural calculations covering framing and beam sizes, footing and reinforcement sizes, and the lateral system and its connections.
+  - If yes: Submit structural calculations covering framing and beam sizes, footing and reinforcement sizes, and the lateral system and its connections.
   - If no: No structural calculations are submitted for a remodel that touches no structural element.
-- What the City asks for: Two sets, justifying the proposed framing member and beam sizes, the footing and reinforcement sizes, and the lateral resisting system and its connections. The count is the City's own; one set is short of the published list.
+- What the City asks for: Calculations justifying the proposed framing member and beam sizes, the footing and reinforcement sizes, and the lateral resisting system and its connections.
 - Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "STRUCTURAL CALCULATIONS – Two (2) sets are required" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
-### Two sets of energy compliance forms
+### Energy compliance forms
 
 - id: `laguna_interior_energy_forms_two_sets`
 - Scopes: Residential interior remodel (kitchen, bath, room alteration)
 - Applies when: Does this remodel alter anything the California Energy Code regulates — lighting, the building envelope, HVAC, ductwork, or water heating?
-  - If yes: Submit two sets of the Title 24 energy compliance forms, including the CF-1R and MF-1R.
+  - If yes: Submit the Title 24 energy compliance forms, including the CF-1R and MF-1R.
   - If no: No energy compliance forms are submitted for a remodel that alters no regulated system.
-- What the City asks for: Laguna asks for two sets of the Title 24 energy compliance forms — the CF-1R and MF-1R the checklist names — where the work triggers energy compliance.
+- What the City asks for: Laguna asks for the Title 24 energy compliance forms — the CF-1R and MF-1R the checklist names — where the work triggers energy compliance.
 - Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "ENERGY COMPLIANCE FORMS – Two (2) sets will be required" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Sewer video
