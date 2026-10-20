@@ -3542,7 +3542,7 @@
           "checked_against": "submittal",
           "detail": "The City issues the permit to the owner of record in its GIS unless the applicant provides a recorded grant deed. This is a judgment about people and entities, never a string match. The same party: the same person with a different name order, middle initial, spelling or case; the person's own trust (\"Smith Family Trust\", \"Jane Smith, Trustee\", \"Smith Jane Tr\"); one of several co-owners or co-trustees named in GIS; a married couple where the application names one spouse and GIS names both. A different party: a different person, including a relative or a prior owner; a different company or LLC; a trust named for someone else; an LLC on one side and a person or trust on the other, unless the packet shows the same principal on both. Applicant action: The property owner on the application does not match the City's owner of record for this parcel. The permit is issued to the owner of record unless a recorded grant deed is provided; if ownership has changed, please upload a copy of the recorded grant deed.",
           "source": {
-            "citation": "the City's Online Permit Services Supervisor, Teams message of 2026-10-14: \"If there is a discrepancy, we issue to the owner listed on GIS unless a grant deed is provided.\"",
+            "citation": "City of Laguna Beach Building Division staff guidance",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
