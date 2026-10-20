@@ -297,6 +297,8 @@ function validateFeeCapture(obj) {
   if (!Array.isArray(capture.groups) || !capture.groups.length)
     throw new Error('fee_capture requires non-empty groups');
   const consumed = new Set(Object.keys(FEE_CAPTURE_BUILT_INS));
+  // A separate permit's own valuation prices that permit's record.
+  for (const spec of obj.separate_permits ?? []) if (spec?.valuation_input) consumed.add(spec.valuation_input);
   const scopes = new Set();
   for (const addon of obj.scope_addons ?? []) {
     scopes.add(addon.trigger_scope);
@@ -340,30 +342,46 @@ function validateFeeCapture(obj) {
   }
 }
 
-/** Each separate permit names real fee lines, each line under one permit, and real permit types. */
+/** The capture inputs a separate permit takes off the screened record, its valuation included. */
+function separatePermitInputs(spec) {
+  return [...(spec.inputs ?? []), ...(spec.valuation_input ? [spec.valuation_input] : [])];
+}
+
+/**
+ * Each separate permit is priced as its own record: a real permit type, scopes
+ * that trigger fee lines, capture inputs the schedule asks for, and no scope or
+ * input claimed by two permits.
+ */
 function validateSeparatePermits(obj) {
   if (obj.separate_permits === undefined) return;
   if (!Array.isArray(obj.separate_permits)) throw new Error('separate_permits must be a list');
-  const feeIds = new Set([
-    ...(obj.scope_addons ?? []),
-    ...(obj.building?.deposit ?? []),
-    ...(obj.public_works?.deposit ?? []),
-  ].map((fee) => fee.id));
   const permitTypes = new Set(Object.keys(obj.permit_types ?? {}));
+  const triggers = new Set((obj.scope_addons ?? []).map((addon) => addon.trigger_scope));
+  // validateFeeCapture runs after this and reports a malformed groups list.
+  const groups = Array.isArray(obj.fee_capture?.groups) ? obj.fee_capture.groups : [];
+  const captureInputs = new Set(groups.flatMap((group) => (Array.isArray(group?.inputs) ? group.inputs.map(feeCaptureInputId) : [])));
   const ids = new Set();
   const claimed = new Set();
   for (const spec of obj.separate_permits) {
-    if (!spec?.id || !spec?.label || !Array.isArray(spec.fee_ids) || !spec.fee_ids.length)
-      throw new Error('separate_permits entries require id, label, and non-empty fee_ids');
+    if (!spec?.id || !spec?.label || !permitTypes.has(spec.permit_type))
+      throw new Error(`separate_permits entries require id, label, and a permit_type in permit_types (${spec?.id})`);
     if (ids.has(spec.id)) throw new Error(`separate_permits ${spec.id} is listed twice`);
     ids.add(spec.id);
-    for (const id of spec.fee_ids) {
-      if (!feeIds.has(id)) throw new Error(`separate_permits.${spec.id} fee ${id} is not a scope add-on or deposit`);
-      if (claimed.has(id)) throw new Error(`separate_permits fee ${id} is filed under two permits`);
-      claimed.add(id);
-    }
     for (const type of spec.permit_types ?? []) {
       if (!permitTypes.has(type)) throw new Error(`separate_permits.${spec.id} permit type ${type} is not in permit_types`);
+    }
+    for (const scope of spec.scopes ?? []) {
+      if (!triggers.has(scope)) throw new Error(`separate_permits.${spec.id} scope ${scope} triggers no fee line`);
+    }
+    const inputs = separatePermitInputs(spec);
+    for (const input of inputs) {
+      if (!captureInputs.has(input)) throw new Error(`separate_permits.${spec.id} input ${input} is not a fee_capture input`);
+    }
+    if (!spec.scopes?.length && !inputs.length)
+      throw new Error(`separate_permits.${spec.id} needs scopes or inputs that say when it applies`);
+    for (const key of [...(spec.scopes ?? []), ...inputs]) {
+      if (claimed.has(key)) throw new Error(`separate_permits ${key} is filed under two permits`);
+      claimed.add(key);
     }
     if (spec.over !== undefined && (!spec.over?.input || typeof spec.over.value !== 'number'))
       throw new Error(`separate_permits.${spec.id}.over requires an input and a numeric value`);
@@ -606,8 +624,8 @@ export function validateFeeSchedule(input) {
     }
     validateLookupDisplay(lookup);
   }
-  validateFeeCapture(obj);
   validateSeparatePermits(obj);
+  validateFeeCapture(obj);
   // Fill safe defaults for optional blocks.
   obj.statewide ??= {};
   obj.status ??= 'scaffolded';
@@ -993,59 +1011,80 @@ function feedsScopedSurcharge(s, line) {
     line.surchargeIds?.some((id) => s.base_surcharge_ids?.includes(id)));
 }
 
+/** A capture input's value on FeeInputs: a built-in field or a scope quantity. */
+function captureInputValue(inputs, id) {
+  const field = FEE_CAPTURE_BUILT_INS[id]?.field;
+  const value = field ? inputs[field] : inputs.scopeQuantities?.[id];
+  return typeof value === 'number' && Number.isFinite(value) ? value : null;
+}
+
+function withoutCaptureInputs(inputs, ids) {
+  const next = { ...inputs, scopeQuantities: { ...(inputs.scopeQuantities ?? {}) } };
+  for (const id of ids) {
+    const field = FEE_CAPTURE_BUILT_INS[id]?.field;
+    if (field) delete next[field];
+    else delete next.scopeQuantities[id];
+  }
+  return next;
+}
+
 /**
- * One estimate, split by the permit the City files each fee under: the screened
- * record first, then each `separate_permits` entry with a firm line here. A fee
- * charged as a percent of other lines (expedited plan review) and a surcharge
- * deferred until scoped follow their base, so a separate permit carries the
- * share its own lines add and the record keeps the rest. A refundable deposit
- * is not a fee, so the subtotals add up to the firm lines less refundable
- * deposits. Null when nothing is filed separately.
+ * The FeeInputs of every City record the project files, the screened record
+ * first. Each `separate_permits` entry that applies is its own record, priced
+ * like one: its own permit type and valuation (`valuation_input`, the value on
+ * its own application), the scopes and inputs it takes off the screened
+ * record, and what every record shares (use, stories, location conditions, and
+ * a percent-of-plan-review scope such as expedited review). Laguna's ledgers
+ * show each record carries its own plan check, SMIP, SB 1473 and surcharges,
+ * so a combined estimate cannot be split after the fact.
+ *
+ * An entry applies when one of its scopes does, or (with no scopes) when one of
+ * its inputs or its valuation is above zero; `over` adds a threshold. It never
+ * applies on a record of one of its own `permit_types`. The record is filed as
+ * the entry's permit type that implies an applying scope (a shed demolition is
+ * a simple-structure demolition record), else as `permit_type`.
  */
-export function feeSubtotalsByPermit(schedule, breakdown, inputs = {}) {
-  const recordType = normalizePermitType(breakdown.permitType);
-  const sum = (lines) => lines.reduce((total, line) => total + line.amount, 0);
-  const derived = (schedule.scope_addons ?? [])
+export function feeInputsByPermit(schedule, inputs) {
+  const recordType = normalizePermitType(inputs.permitType);
+  const scopes = inputs.scopes ?? [];
+  const shared = new Set((schedule.scope_addons ?? [])
     .filter((addon) => addon.rule?.type === 'percent_of_lines')
-    .flatMap((addon) => {
-      const line = breakdown.firmLines.find((entry) => entry.id === addon.id);
-      const base = sum(breakdown.firmLines.filter((entry) => addon.rule.line_ids.includes(entry.id)));
-      return line && base > 0 ? [{ line, lineIds: addon.rule.line_ids, base }] : [];
-    });
-  const surcharges = (schedule.building?.surcharges ?? [])
-    .filter((s) => s.defer_until_scoped && breakdown.firmLines.some((line) => line.id === s.id));
+    .map((addon) => addon.trigger_scope));
+  let record = inputs;
   const separate = [];
   for (const spec of schedule.separate_permits ?? []) {
-    // On a record of the separate permit's own type, its lines are the record's.
     if (spec.permit_types?.some((type) => normalizePermitType(type) === recordType)) continue;
-    if (spec.over && !(quantityFor(spec.over.input, inputs, breakdown.valuation, null) > spec.over.value)) continue;
-    const lines = breakdown.firmLines.filter((line) => spec.fee_ids.includes(line.id));
-    if (!lines.length) continue;
-    // A percent-of-lines fee splits in proportion to its base, minimum included.
-    const shares = derived.flatMap(({ line, lineIds, base }) => {
-      const own = sum(lines.filter((entry) => lineIds.includes(entry.id)));
-      return own > 0 ? [{ ...line, amount: round2(line.amount * own / base) }] : [];
-    });
-    const charged = [...lines.filter((line) => !line.refundable), ...shares];
-    const surchargeShare = surcharges.reduce((total, s) => total + round2(sum(charged.filter((line) => feedsScopedSurcharge(s, line))) * s.pct), 0);
-    separate.push({
-      id: spec.id,
-      label: spec.label,
-      lineIds: lines.map((line) => line.id),
-      subtotal: round2(sum(charged) + surchargeShare),
-    });
+    const own = separatePermitInputs(spec);
+    const applying = (spec.scopes ?? []).filter((scope) => scopes.includes(scope));
+    const applies = spec.scopes?.length ? applying.length > 0 : own.some((id) => captureInputValue(inputs, id) > 0);
+    if (!applies) continue;
+    if (spec.over && !(captureInputValue(inputs, spec.over.input) > spec.over.value)) continue;
+    const permitInputs = {
+      permitType: spec.permit_types?.find((type) =>
+        applying.some((scope) => inferredScopes(normalizePermitType(type), {}).has(scope))) ?? spec.permit_type,
+      valuation: spec.valuation_input ? captureInputValue(inputs, spec.valuation_input) : null,
+      structureUse: inputs.structureUse,
+      stories: inputs.stories,
+      conditions: inputs.conditions,
+      resolvedConditionGroups: inputs.resolvedConditionGroups,
+      scopes: scopes.filter((scope) => spec.scopes?.includes(scope) || shared.has(scope)),
+      scopeQuantities: {},
+    };
+    for (const id of spec.inputs ?? []) {
+      const field = FEE_CAPTURE_BUILT_INS[id]?.field;
+      if (field) permitInputs[field] = inputs[field];
+      else if (inputs.scopeQuantities?.[id] !== undefined) permitInputs.scopeQuantities[id] = inputs.scopeQuantities[id];
+    }
+    separate.push({ id: spec.id, label: spec.label, inputs: permitInputs });
+    record = withoutCaptureInputs(record, own);
+    record.scopes = (record.scopes ?? []).filter((scope) => !spec.scopes?.includes(scope));
   }
-  if (!separate.length) return null;
-  const taken = new Set(separate.flatMap((permit) => permit.lineIds));
-  return [
-    {
-      id: 'record',
-      label: null,
-      lineIds: breakdown.firmLines.filter((line) => !taken.has(line.id)).map((line) => line.id),
-      subtotal: round2(sum(breakdown.firmLines.filter((line) => !line.refundable)) - separate.reduce((total, permit) => total + permit.subtotal, 0)),
-    },
-    ...separate,
-  ];
+  return [{ id: 'record', label: null, inputs: record }, ...separate];
+}
+
+/** `calcFees` for each record `feeInputsByPermit` returns, the screened record first. */
+export function calcFeesByPermit(schedule, inputs) {
+  return feeInputsByPermit(schedule, inputs).map((permit) => ({ ...permit, breakdown: calcFees(schedule, permit.inputs) }));
 }
 
 export function recomputeFeeTotals(breakdown) {
@@ -1304,8 +1343,9 @@ export function calcFees(schedule, inputs) {
   if (permitFee > 0 && b.npdes_pct) firm.push({ id: 'npdes', label: `NPDES / water-quality (${Math.round(b.npdes_pct * 100)}% of permit fee)`, amount: round2(permitFee * b.npdes_pct), tag: 'percent_of_base' });
 
   // 5) State-mandated layer (default-on).
+  // `bsasrf_only`: a record that pays SB 1473 on its valuation but no SMIP (a grading permit).
   const statewideFeesApply = ptCfg?.statewide_fees !== false;
-  if (statewideFeesApply && valuation > 0 && schedule.statewide.smip !== false) {
+  if (statewideFeesApply && ptCfg?.statewide_fees !== 'bsasrf_only' && valuation > 0 && schedule.statewide.smip !== false) {
     const explicitSmip = schedule.statewide.smip_requires_explicit_classification === true;
     const explicitUse = ['residential', 'nonresidential'].includes(inputs.structureUse) ? inputs.structureUse : null;
     const explicitStories = typeof inputs.stories === 'number' && Number.isFinite(inputs.stories) && inputs.stories >= 1

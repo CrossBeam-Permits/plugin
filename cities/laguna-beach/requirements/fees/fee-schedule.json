@@ -1265,6 +1265,28 @@
       "cite": "FY26/27 MFS Building Fees p. 24 row 53"
     },
     {
+      "id": "building_fire_misc_items",
+      "label": "Fire sprinkler/alarm/miscellaneous (each)",
+      "trigger_scope": "building_fire_misc_items",
+      "permit_types": [
+        "adu",
+        "jadu",
+        "new_sfr",
+        "addition",
+        "remodel",
+        "detached-garage",
+        "swimming-pool"
+      ],
+      "rule": {
+        "type": "per_unit",
+        "input": "building_fire_misc_items",
+        "rate": 335.1
+      },
+      "outside_valuation": true,
+      "owner_division": "Building",
+      "cite": "FY26/27 MFS Building Fees p. 24 row 53"
+    },
+    {
       "id": "building_fire_misc_plan_review",
       "label": "Building fire sprinkler/alarm/miscellaneous plan review",
       "trigger_scope": "building_fire_misc",
@@ -3515,39 +3537,62 @@
   ],
   "separate_permits": [
     {
+      "id": "grading",
+      "label": "Grading permit (over 20 CY outside the footprint)",
+      "permit_type": "grading",
+      "permit_types": [
+        "grading"
+      ],
+      "scopes": [
+        "grading"
+      ],
+      "inputs": [
+        "grading_cubic_yards"
+      ],
+      "valuation_input": "grading_valuation",
+      "over": {
+        "input": "grading_cubic_yards",
+        "value": 20
+      }
+    },
+    {
+      "id": "adu",
+      "label": "ADU permit",
+      "permit_type": "adu",
+      "permit_types": [
+        "adu",
+        "jadu"
+      ],
+      "inputs": [
+        "adu_sqft"
+      ],
+      "valuation_input": "adu_valuation"
+    },
+    {
+      "id": "pool_spa",
+      "label": "Pool/spa permit",
+      "permit_type": "swimming-pool",
+      "permit_types": [
+        "swimming-pool"
+      ],
+      "valuation_input": "pool_spa_valuation"
+    },
+    {
       "id": "demolition",
       "label": "Demolition permit",
+      "permit_type": "demolition-one-family",
       "permit_types": [
         "demolition-one-family",
         "demolition-multifamily",
         "demolition-simple-structure",
         "demolition-other"
       ],
-      "fee_ids": [
-        "demolition_one_family_permit",
-        "demolition_one_family_plan_review",
-        "demolition_multifamily_permit",
-        "demolition_multifamily_plan_review",
-        "demolition_simple_structure_permit",
-        "demolition_simple_structure_plan_review",
-        "demolition_other_permit",
-        "demolition_other_plan_review"
+      "scopes": [
+        "demolition_one_family",
+        "demolition_multifamily",
+        "demolition_simple_structure",
+        "demolition_other"
       ]
-    },
-    {
-      "id": "grading",
-      "label": "Grading permit (over 20 CY outside the footprint)",
-      "permit_types": [
-        "grading"
-      ],
-      "fee_ids": [
-        "grading_permit",
-        "grading_plan_review"
-      ],
-      "over": {
-        "input": "grading_cubic_yards",
-        "value": 20
-      }
     }
   ],
   "fee_capture": {
@@ -3585,6 +3630,27 @@
             "id": "subdivision_gross_acres",
             "label": "Subdivision gross acres",
             "unit": "acres"
+          }
+        ]
+      },
+      {
+        "id": "separate_permits",
+        "label": "Separate permits",
+        "inputs": [
+          {
+            "id": "adu_valuation",
+            "label": "ADU valuation (on the ADU's own application)",
+            "unit": "USD"
+          },
+          {
+            "id": "pool_spa_valuation",
+            "label": "Pool/spa valuation (on the pool's own application)",
+            "unit": "USD"
+          },
+          {
+            "id": "grading_valuation",
+            "label": "Grading valuation (on the grading application)",
+            "unit": "USD"
           }
         ]
       },
@@ -3650,6 +3716,17 @@
           "mechanical_commercial_incinerators",
           "mechanical_duct_registers",
           "mechanical_other_equipment"
+        ]
+      },
+      {
+        "id": "fire_misc",
+        "label": "Fire sprinkler / alarm / miscellaneous",
+        "inputs": [
+          {
+            "id": "building_fire_misc_items",
+            "label": "Fire sprinkler, alarm and miscellaneous items (each)",
+            "unit": "count"
+          }
         ]
       },
       {
@@ -4342,7 +4419,7 @@
       "school_fee": false,
       "sewer_connection": false,
       "combination_trades": false,
-      "statewide_fees": false
+      "statewide_fees": "bsasrf_only"
     },
     "building-fire-misc": {
       "building_fee_rule": "scope_addons_only",

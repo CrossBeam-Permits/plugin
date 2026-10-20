@@ -36,4 +36,4 @@ Add `--json out.json` to also write the full breakdown. The agent decides the in
 | `existingHabitableConversion` | `true` when the work converts existing habitable space. |
 | `planningFeeIds` | Not a calculator field. Planning fee ids to list as published (`--list`). |
 
-The schedule has 83 unit-row ids for `scopeQuantities`.
+The schedule has 84 unit-row ids for `scopeQuantities`.
