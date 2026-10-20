@@ -271,6 +271,16 @@ function validatePlanningFeeCapture(obj) {
 }
 
 /** Every fee_capture input must feed a fee line or be a built-in FeeInput. */
+/** The staff-facing text a lookup may declare: its map name and site-flag chips. */
+function validateLookupDisplay(lookup) {
+  const flag = lookup.site_flag;
+  if (lookup.source_label !== undefined && (typeof lookup.source_label !== 'string' || !lookup.source_label.trim()))
+    throw new Error(`external_lookups.${lookup.id}.source_label must be a non-empty string`);
+  if (flag !== undefined && (!flag || typeof flag !== 'object' ||
+      ['inside', 'outside', 'unknown'].some((key) => typeof flag[key] !== 'string' || !flag[key].trim())))
+    throw new Error(`external_lookups.${lookup.id}.site_flag requires inside, outside and unknown labels`);
+}
+
 function validateFeeCapture(obj) {
   const capture = obj.fee_capture;
   // A combination permit's replaced groups must name real capture groups: a typo
@@ -367,7 +377,7 @@ function validateSeparatePermits(obj) {
  * chatbot, the publish script, and the sandbox tool reject the same bad data.
  */
 // Plan review: the building-wide rate, the optional exempt-through valuation, and the optional
-// per-permit-type rate.
+// per-permit-type rate. Also checks each permit type's optional display label.
 function validatePlanReviewOptions(building, permitTypes) {
   if (typeof building.plan_review_pct !== 'number')
     throw new Error('fee schedule missing building.plan_review_pct');
@@ -375,6 +385,8 @@ function validatePlanReviewOptions(building, permitTypes) {
       typeof building.plan_review_exempt_through_valuation !== 'number')
     throw new Error('building.plan_review_exempt_through_valuation must be numeric');
   for (const [permitType, cfg] of Object.entries(permitTypes ?? {})) {
+    if (cfg?.label !== undefined && (typeof cfg.label !== 'string' || !cfg.label.trim()))
+      throw new Error(`permit_types.${permitType}.label must be a non-empty string`);
     if (cfg?.plan_review_pct !== undefined && (typeof cfg.plan_review_pct !== 'number' || cfg.plan_review_pct < 0))
       throw new Error(`permit_types.${permitType}.plan_review_pct must be a non-negative number`);
   }
@@ -587,10 +599,12 @@ export function validateFeeSchedule(input) {
         !lookup?.boundary_layer_url || !lookup?.out_fields?.length || !lookup?.matches?.length)
       throw new Error('external_lookups entries require a supported kind, ids, ArcGIS layer fields/URLs, and matches');
     for (const match of lookup.matches) {
+      // `fields: {}` matches any intersecting feature (a one-polygon service area).
       if (!match?.condition || !match?.fields || typeof match.fields !== 'object' || Array.isArray(match.fields) ||
-          !Object.keys(match.fields).length || Object.values(match.fields).some((value) => typeof value !== 'string'))
+          Object.values(match.fields).some((value) => typeof value !== 'string'))
         throw new Error(`external_lookups.${lookup.id}.matches require a condition and string field values`);
     }
+    validateLookupDisplay(lookup);
   }
   validateFeeCapture(obj);
   validateSeparatePermits(obj);
@@ -1359,7 +1373,8 @@ export function calcFees(schedule, inputs) {
   const sewerMinArea = isAdu ? (sc?.adu_min_area_sqft ?? sc?.applies_min_area_sqft ?? 500) : (sc?.applies_min_area_sqft ?? 500);
   const sewerState = sc ? conditionState(sc, inputs) : 'not_matched';
   // An unknown area cannot rule the fee out, so the location question stays open.
-  if (sc && sewerApplies && (!(area > 0) || area >= sewerMinArea) && sewerState === 'unresolved') {
+  // A known 0 sq ft (no new area) rules it out.
+  if (sc && sewerApplies && (area == null || area >= sewerMinArea) && sewerState === 'unresolved') {
     confirm.push({
       id: `condition_${sc.condition_group}`,
       label: sc.condition_label ?? 'Sewer connection applicability',
