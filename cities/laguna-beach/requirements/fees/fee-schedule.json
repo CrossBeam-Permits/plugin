@@ -3399,6 +3399,7 @@
       "id": "ocpw_road_fee_boundary",
       "kind": "arcgis_address_polygon_intersect",
       "condition_group": "ocpw_road_fee",
+      "source_label": "OC Road Fees Map",
       "address_service_url": "https://www.ocgis.com/arcpub/rest/services/Map_Layers/Road_Fee_Address_Info_On_Parcels/MapServer",
       "address_layer": 0,
       "address_search_fields": [
@@ -3466,6 +3467,32 @@
             "Name": "Diamond Crest Specific Plan"
           },
           "condition": "specific_plan:diamond_crest"
+        }
+      ]
+    },
+    {
+      "id": "laguna_main_sewer_boundary",
+      "kind": "arcgis_address_polygon_intersect",
+      "condition_group": "laguna_main_sewer",
+      "source_label": "City Sewer Service Area map",
+      "site_flag": {
+        "inside": "City sewer",
+        "outside": "Not City sewer",
+        "unknown": "Sewer: confirm in City GIS"
+      },
+      "address_service_url": "https://www.ocgis.com/arcpub/rest/services/Map_Layers/Road_Fee_Address_Info_On_Parcels/MapServer",
+      "address_layer": 0,
+      "address_search_fields": [
+        "Address"
+      ],
+      "boundary_layer_url": "https://services9.arcgis.com/DPQ7yLDIWIyMUXzD/arcgis/rest/services/SewerServiceArea/FeatureServer/0",
+      "out_fields": [
+        "OBJECTID"
+      ],
+      "matches": [
+        {
+          "fields": {},
+          "condition": "utility:laguna_main_sewer"
         }
       ]
     }
@@ -4212,6 +4239,7 @@
       "combination_trades": false
     },
     "remodel": {
+      "label": "Remodel / alteration (no new floor area)",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": true,
