@@ -195,8 +195,9 @@
     "condition": "utility:laguna_main_sewer",
     "condition_group": "laguna_main_sewer",
     "condition_label": "City main-sewer service",
-    "applies_when": "Additions and new construction over 500 sq ft; for an ADU, 750 sq ft or more. Apply only when the property uses the City's main sewer. Credit demolished floor area before testing the net-new square footage. Commercial amounts are calculated by Public Works, not by this estimator.",
-    "cite": "FY26/27 MFS Sewer Connection Fees",
+    "unresolved_note": "Confirm with Public Works whether this property pays the City sewer connection fee. The City's 2020 sewer map leaves out most of South Laguna, but the City has charged this fee on South Laguna permits outside that map.",
+    "applies_when": "Additions and new construction over 500 sq ft; for an ADU, 750 sq ft or more. Apply when the property connects to the City's main sewer. Inside the City sewer map the fee applies; outside it, confirm with Public Works, because the City has charged it on South Laguna permits outside the map. Credit demolished floor area before testing the net-new square footage. Commercial amounts are calculated by Public Works, not by this estimator.",
+    "cite": "FY26/27 MFS Sewer Connection Fees; EnerGov fee ledgers FY26/27",
     "owner_division": "Public Works / Water Quality"
   },
   "planning": {
@@ -1284,6 +1285,7 @@
       },
       "outside_valuation": true,
       "owner_division": "Building",
+      "confirm_note": "The applicant typed this count in the online application's Alarms/Fire Sprinklers/Misc Electrical box, and EnerGov charges $335.10 for each one. The City rarely charges it, though most new homes have several smoke and CO alarms. Confirm with Building before collecting it.",
       "cite": "FY26/27 MFS Building Fees p. 24 row 53"
     },
     {
@@ -3496,10 +3498,11 @@
       "id": "laguna_main_sewer_boundary",
       "kind": "arcgis_address_polygon_intersect",
       "condition_group": "laguna_main_sewer",
+      "outside_resolves": false,
       "source_label": "City Sewer Service Area map",
       "site_flag": {
         "inside": "City sewer",
-        "outside": "Not City sewer",
+        "outside": "Outside City sewer map",
         "unknown": "Sewer: confirm in City GIS"
       },
       "address_service_url": "https://www.ocgis.com/arcpub/rest/services/Map_Layers/Road_Fee_Address_Info_On_Parcels/MapServer",
@@ -3724,7 +3727,7 @@
         "inputs": [
           {
             "id": "building_fire_misc_items",
-            "label": "Fire sprinkler, alarm and miscellaneous items (each)",
+            "label": "Fire sprinkler, alarm and miscellaneous items (each), as typed in the online application",
             "unit": "count"
           }
         ]

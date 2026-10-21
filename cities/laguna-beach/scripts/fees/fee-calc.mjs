@@ -197,8 +197,8 @@ function round2HalfEven(n) {
   return round2(n);
 }
 
-function formatDollars(n) {
-  return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+function formatDollars(n, { cents = false } = {}) {
+  return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: cents ? 2 : 0, maximumFractionDigits: cents ? 2 : 0 });
 }
 
 function formatPercent(decimal) {
@@ -513,6 +513,8 @@ export function validateFeeSchedule(input) {
     if (addon.rule) validateAddonRule(addon.rule, `scope_addons.${addon.id}.rule`);
     if (addon.rule?.omit_when_exempt !== undefined && typeof addon.rule.omit_when_exempt !== 'boolean')
       throw new Error(`scope_addons.${addon.id}.rule.omit_when_exempt must be boolean`);
+    if (addon.confirm_note !== undefined && (typeof addon.confirm_note !== 'string' || !addon.confirm_note.trim()))
+      throw new Error(`scope_addons.${addon.id}.confirm_note must be a non-empty string`);
   }
   for (const [owner, deposits] of [
     ['building', obj.building?.deposit],
@@ -622,6 +624,8 @@ export function validateFeeSchedule(input) {
           Object.values(match.fields).some((value) => typeof value !== 'string'))
         throw new Error(`external_lookups.${lookup.id}.matches require a condition and string field values`);
     }
+    if (lookup.outside_resolves !== undefined && typeof lookup.outside_resolves !== 'boolean')
+      throw new Error(`external_lookups.${lookup.id}.outside_resolves must be a boolean`);
     validateLookupDisplay(lookup);
   }
   validateSeparatePermits(obj);
@@ -953,8 +957,11 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
       });
       continue;
     }
-    if (result.note) {
-      addConfirm({ id: `scope_${addon.id}`, label: addon.label, note: result.note, cite: addon.cite, ownerDivision: addon.owner_division });
+    // A `confirm_note` add-on is priced, but staff decide whether the City collects it.
+    const confirmNote = result.note ??
+      (addon.confirm_note && `${addon.confirm_note} As entered: ${formatDollars(result.amount, { cents: true })}.`);
+    if (confirmNote) {
+      addConfirm({ id: `scope_${addon.id}`, label: addon.label, note: confirmNote, cite: addon.cite, ownerDivision: addon.owner_division });
       continue;
     }
     firm.push({
@@ -1356,7 +1363,7 @@ export function calcFees(schedule, inputs) {
     );
     if (!needsClassification) {
       const residentialCategory = explicitSmip
-        ? explicitUse === 'residential' && explicitStories < 3
+        ? explicitUse === 'residential' && explicitStories <= 3
         : isResidential;
       firm.push({
         id: 'smip',
@@ -1376,8 +1383,8 @@ export function calcFees(schedule, inputs) {
     } else {
       // Ask only for the part that is missing: the use, or (use known, so residential) the stories.
       const note = explicitUse
-        ? 'Provide the number of stories of the building after the work. A residential building under three stories uses the residential rate; a taller one uses the statewide other-building rate.'
-        : 'Provide whether the building is residential or nonresidential, and for a residential building its number of stories after the work. A residential building under three stories uses the residential rate; other buildings use the statewide other-building rate.';
+        ? 'Provide the number of stories of the building after the work. A residential building of one to three stories uses the residential rate; a taller one uses the statewide other-building rate.'
+        : 'Provide whether the building is residential or nonresidential, and for a residential building its number of stories after the work. A residential building of one to three stories uses the residential rate; other buildings use the statewide other-building rate.';
       confirm.push({ id: 'smip', label: 'SMIP (state strong-motion fee)', note, cite: schedule.statewide.smip_cite, ownerDivision: schedule.statewide.smip_owner_division });
     }
   }
