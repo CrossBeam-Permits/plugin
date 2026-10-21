@@ -330,6 +330,15 @@ Zoning/Planning approval, including the 14-day Design Review appeal period where
 - Building permits **expire after 1 year** if work has not commenced
 - **180-day extensions** available upon request
 
+### Building plan-check applications (CBC/CRC 105.3.2)
+
+- Laguna adopts CBC/CRC 105.3.2 without amendment (LBMC 14.50.010; 14.52.014 adds CRC R101.4). An
+  application is **deemed abandoned 180 days after filing**, unless the applicant is pursuing it
+  in good faith or the permit has been issued. The building official may extend it in writing for
+  justifiable cause: up to 90 days at a time under the CBC, 180 days under the CRC.
+- This clock runs from filing, not from a corrections letter. The City's Building correction
+  letters state no response deadline.
+
 ---
 
 ## Permit Decision Matrix
