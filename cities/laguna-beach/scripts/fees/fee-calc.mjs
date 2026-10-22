@@ -7,7 +7,7 @@
  */
 
 // ── Cities with an authored fee schedule ──
-export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver'];
+export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona'];
 
 // ── ICC Building Valuation Data anchors (Feb 2026, Type V-B / typical wood frame) ──
 // $/sqft by occupancy. Used to DERIVE a valuation when the applicant gives only
