@@ -6,7 +6,7 @@ The parent state skill (the California Residential Remodel rules, which come fro
 
 ## Source Verbatim
 
-From the City source document (not included in this plugin), Page 4 (file mod date **2026-04-30**, May 2026 republish), under "PLAN INFORMATION":
+From `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/5103/639131379244970000`, Page 4 (file mod date **2026-04-30**, May 2026 republish), under "PLAN INFORMATION":
 
 > *"Show the existing and proposed floor plan that includes the existing walls to remain, demolished walls (unless a detailed demolition plan is included) and the new walls. Include a wall legend for the existing walls to remain, walls to be demolished and new walls shall be provided. **Existing walls with structural upgrades/modifications affecting the foundation or the lateral support (shear) are considered new walls. Existing walls with the drywall removed are considered part of the area of renovation.**"*
 

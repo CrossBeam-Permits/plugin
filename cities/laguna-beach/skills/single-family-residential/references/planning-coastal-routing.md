@@ -7,7 +7,7 @@ Sources:
 - Objective Design Standards, City document 26790: the City source document (not included in this plugin)
 - LBMC Chapter 25.07, Coastal Development Permits: the City source document (not included in this plugin)
 - LBMC Section 25.50.004 and 25.50.020: the City source document (not included in this plugin)
-- Bluff Edge Determinations Quick Guide: the City source document (not included in this plugin)
+- Bluff Edge Determinations Quick Guide: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10222/638533536501570000`
 
 ---
 

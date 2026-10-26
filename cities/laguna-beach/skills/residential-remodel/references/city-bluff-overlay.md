@@ -98,7 +98,7 @@ Same ordinance lineage as §25.50.004 — pre-existing rule.
 
 ## Anti-Game Buried-Bluff Rule
 
-From the Bluff Edge Determinations Quick Guide (March 2024), the City source document (not included in this plugin), verbatim:
+From the Bluff Edge Determinations Quick Guide (March 2024), `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10222/638533536501570000`, verbatim:
 
 > *"Oceanfront bluff edge or coastal bluff edge is defined as the upper termination of a bluff, cliff, or seacliff. In cases where the top edge of the bluff is rounded away from the face of the bluff, the bluff edge shall be defined as that point nearest the bluff face beyond which a downward gradient is maintained continuously to the base of the bluff. In a case where there is a step like feature at the top of the bluff, the landward edge of the topmost riser shall be considered the bluff edge. Bluff edges typically retreat over time as a result of erosional processes, landslides, development of gullies, or by grading (cut). **In areas where fill has been placed near or over the bluff edge, the original bluff edge, even if buried beneath fill, shall be taken to be the bluff edge.**"*
 

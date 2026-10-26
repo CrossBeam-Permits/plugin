@@ -4,7 +4,7 @@
 
 **No dedicated "commercial TI checklist" handout exists.** Commercial TI is handled through the general building-application + planning-application + design-review-application + (when applicable) coastal-development-permit-application stack. The governing handout is `building-plan-check-submittal-requirements.pdf` (doc ID 5103, current 2025-cycle version) — verbatim source for plan-set counts, fee deposits, and cover-sheet content. The pre-permit checklist `building-submittal-requirements-prior-to-permit.pdf` (doc ID 10228) covers post-approval-pre-permit items.
 
-**Both PDFs are mirrored locally** at the City source document (not included in this plugin).
+**The text of both PDFs is in `crossbeam.source_documents`** (Section 11 has the locators; `node scripts/source-corpus.mjs get laguna-beach --url <url>`).
 
 ---
 
@@ -208,6 +208,6 @@ For each commercial TI submittal completeness review, output:
 ## 11. Source Mirror and Open Items
 
 **Resolved 2026-05-12:**
-- ✅ `building-plan-check-submittal-requirements.pdf` (doc 5103, current 2025-cycle) — mirrored at the City source document (not included in this plugin). 4-set / 2-set rule, fees, code-edition statement, and commercial-food add-ons now reflect doc 5103 verbatim.
-- ✅ `building-submittal-requirements-prior-to-permit.pdf` (doc 10228) — mirrored locally.
+- ✅ `building-plan-check-submittal-requirements.pdf` (doc 5103, current 2025-cycle) — text at `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/5103/639131379244970000`. 4-set / 2-set rule, fees, code-edition statement, and commercial-food add-ons now reflect doc 5103 verbatim.
+- ✅ `building-submittal-requirements-prior-to-permit.pdf` (doc 10228) — text at `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10228/638784320997170000`.
 - ✅ **Downtown Specific Plan, amended February 15, 2022** (Resolution 22.013, Ordinance 1667) — full 9.5 MB CCC-certified PDF mirrored at the City source document (not included in this plugin). Read the DSP directly for storefront design specifics on a per-block basis.

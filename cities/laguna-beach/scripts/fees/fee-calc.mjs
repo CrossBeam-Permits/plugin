@@ -7,7 +7,7 @@
  */
 
 // ── Cities with an authored fee schedule ──
-export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona'];
+export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona', 'orange', 'lancaster'];
 
 // ── ICC Building Valuation Data anchors (Feb 2026, Type V-B / typical wood frame) ──
 // $/sqft by occupancy. Used to DERIVE a valuation when the applicant gives only
@@ -840,6 +840,18 @@ function conditionState(addon, inputs) {
   return 'not_matched';
 }
 
+/**
+ * A rule's published range can stop short of the quantity (e.g. a row printed
+ * only "1,001 To 2,500 Square Feet"). Above `withhold_above` the fee is not
+ * priced; the line becomes a confirm-at-intake note instead of a charge.
+ */
+function withheldAbove(rule, quantity) {
+  if (typeof rule.withhold_above === 'number' && quantity > rule.withhold_above) {
+    return { note: rule.withhold_note ?? `The published calculation is incomplete above ${rule.withhold_above.toLocaleString()} units; confirm the operational amount with the city.` };
+  }
+  return null;
+}
+
 function evaluateAddon(addon, inputs, valuation, area, firm) {
   if (typeof addon.amount === 'number') return { amount: addon.amount, tag: 'computable_now' };
   const rule = addon.rule;
@@ -857,15 +869,16 @@ function evaluateAddon(addon, inputs, valuation, area, firm) {
   if (rule.type === 'stepped') {
     const quantity = quantityFor(rule.input ?? 'valuation', inputs, valuation, area);
     if (typeof quantity !== 'number' || quantity < 0) return { note: `Provide ${rule.input ?? 'valuation'} to compute this fee.` };
+    const withheld = withheldAbove(rule, quantity);
+    if (withheld) return withheld;
     return { amount: round2(steppedSchedule(quantity, rule.brackets) * (rule.multiplier ?? 1)), tag: 'computable_now' };
   }
   if (rule.type === 'per_unit') {
     const quantity = quantityFor(rule.input, inputs, valuation, area);
     if (typeof quantity !== 'number' || quantity < 0) return { note: `Provide ${rule.input.replace(/_/g, ' ')} to compute this fee.` };
     if (typeof rule.min_input === 'number' && quantity < rule.min_input) return { skip: true };
-    if (typeof rule.withhold_above === 'number' && quantity > rule.withhold_above) {
-      return { note: rule.withhold_note ?? `The published calculation is incomplete above ${rule.withhold_above.toLocaleString()} units; confirm the operational amount with the city.` };
-    }
+    const withheld = withheldAbove(rule, quantity);
+    if (withheld) return withheld;
     const unit = rule.unit ?? 1;
     const adjustedQuantity = Math.max(0, quantity - (rule.offset ?? 0));
     const count = rule.rounding === 'ceil' ? Math.ceil(adjustedQuantity / unit) : adjustedQuantity / unit;

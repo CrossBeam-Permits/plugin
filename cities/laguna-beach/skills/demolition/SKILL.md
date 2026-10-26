@@ -154,7 +154,7 @@ Note: Demolition rules are predominantly local — most of this skill's content 
 ### Demolition Requirements
 
 #### Demolition Notification
-- **Demolition Notification form required** (standard-plans/demolition-notification.pdf)
+- **Demolition Notification form required** (`source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10699/638883457642930000`)
 - Must be submitted to Building Division before permit issuance
 
 #### Required Permits/Reviews
