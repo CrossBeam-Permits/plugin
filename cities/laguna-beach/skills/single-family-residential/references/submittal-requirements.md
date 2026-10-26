@@ -2,9 +2,9 @@
 
 Sources:
 
-- Building Plan Check Submittal Requirements: the City source document (not included in this plugin)
-- Zoning Plan-Check Project Submittal Requirements table: the City source document (not included in this plugin)
-- Bluff Edge Determinations Quick Guide: the City source document (not included in this plugin)
+- Building Plan Check Submittal Requirements: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/5103/639131379244970000`
+- Zoning Plan-Check Project Submittal Requirements table: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10220/637981472622100000`
+- Bluff Edge Determinations Quick Guide: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10222/638533536501570000`
 
 ---
 

@@ -120,6 +120,6 @@ Both footings: 12" thick, 15" deep, 6" min CMU **solid grouted**, 3#4 bars conti
 
 For walls/fences **within 3 feet of property line**, Laguna Beach requires either:
 - A licensed surveyor certifies the fence location before footing inspection, OR
-- A **Request to Waive Survey** form (standard-plans/waive-survey-walls-fences.pdf)
+- A **Request to Waive Survey** form (`source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/5155/638397885224870000`)
 
 The survey waiver is available for wood or metal fences (OTC eligible). CMU block walls within 3' of property line always require surveyor certification.

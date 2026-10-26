@@ -20,7 +20,7 @@ This is the **statutory base**. The LCP is a CCC-certified document, so this lan
 
 The handout is what city staff actually applies in plan review. The operative dual methodology — coastal zone appealable areas vs coastal zone non-appealable areas — lives in the handout, not in the codified Municipal Code.
 
-**Edition and source.** The current edition is "CITY OF LAGUNA BEACH QUICK GUIDE — Updated October 2026", titled "MAJOR REMODEL INTERPRETATION" (file "Major Remodel Interpretation_Oct 2026.pdf"). It is the standalone handout on the Planning Applications & Handouts page [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, "Updated October 2026", as of 2026-10-09]. Local copy: the City source document (not included in this plugin) (text: `extracted/major-remodel-handout.txt`).
+**Edition and source.** The current edition is "CITY OF LAGUNA BEACH QUICK GUIDE — Updated October 2026", titled "MAJOR REMODEL INTERPRETATION" (file "Major Remodel Interpretation_Oct 2026.pdf"). It is the standalone handout on the Planning Applications & Handouts page [source: https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000, "Updated October 2026", as of 2026-10-09]. Local copy: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/23171/639264703759000000`.
 
 Exhibit F of the SB 9 application, "Major Remodel Handout", printed the June 2026 text [source: https://www.lagunabeachcity.net/home/showpublisheddocument/26958/639232726993730000, Exhibit F, as of 2026-09-29]. The City did not reissue the SB 9 application with the October handout (same link on 2026-10-09). Where an application exhibit and the October 2026 handout differ, apply the October 2026 handout.
 
