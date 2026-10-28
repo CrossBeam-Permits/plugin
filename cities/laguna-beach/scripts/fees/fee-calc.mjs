@@ -325,12 +325,7 @@ function validateFeeCapture(obj) {
     if (!scope?.id || !scope?.question) throw new Error('fee_capture.scopes entries require id and question');
     if (!scopes.has(scope.id)) throw new Error(`fee_capture scope ${scope.id} triggers no fee line`);
   }
-  const conditionsByGroup = new Map();
-  for (const spec of [...(obj.scope_addons ?? []), obj.sewer_connection ?? {}]) {
-    if (!spec.condition_group || !spec.condition) continue;
-    if (!conditionsByGroup.has(spec.condition_group)) conditionsByGroup.set(spec.condition_group, new Set());
-    conditionsByGroup.get(spec.condition_group).add(spec.condition);
-  }
+  const conditionsByGroup = conditionsByGroupOf(obj);
   for (const group of capture.conditions ?? []) {
     const known = conditionsByGroup.get(group?.group);
     if (!known || !group.label || !Array.isArray(group.choices) || !group.choices.length)
@@ -338,6 +333,78 @@ function validateFeeCapture(obj) {
     for (const choice of group.choices) {
       if (!choice?.label || !known.has(choice.id))
         throw new Error(`fee_capture.conditions.${group.group} choice ${choice?.id} is not a condition of that group`);
+    }
+  }
+}
+
+/**
+ * Every condition a schedule's fee lines and location lookups can set, by
+ * condition group: scope add-ons, the sewer connection, site-fact conditions
+ * and external lookups. With a permit type, a scope add-on limited to other
+ * permit types does not count (its condition prices nothing for this project).
+ */
+function conditionsByGroupOf(obj, permitType) {
+  const byGroup = new Map();
+  const add = (group, condition) => {
+    if (!group || !condition) return;
+    if (!byGroup.has(group)) byGroup.set(group, new Set());
+    byGroup.get(group).add(condition);
+  };
+  for (const addon of obj.scope_addons ?? []) {
+    if (permitType && addon?.permit_types?.length && !addon.permit_types.includes(permitType)) continue;
+    add(addon?.condition_group, addon?.condition);
+  }
+  for (const spec of [obj.sewer_connection ?? {}, ...(obj.site_fact_conditions ?? [])]) {
+    add(spec?.condition_group, spec?.condition);
+  }
+  for (const lookup of obj.external_lookups ?? []) {
+    for (const match of lookup?.matches ?? []) add(lookup.condition_group, match?.condition);
+  }
+  return byGroup;
+}
+
+/**
+ * `condition_questions`: a condition group put to the person asking, in their
+ * words. One plain question per group, one option per condition the group's
+ * fee lines price (so the question can never offer less than the schedule
+ * prices), and at most one option marked `default_when_unknown` — the option
+ * priced when the person does not know, with the note to tell them and the
+ * source that makes it the right default.
+ */
+function validateConditionQuestions(obj) {
+  if (obj.condition_questions === undefined) return;
+  if (!Array.isArray(obj.condition_questions)) throw new Error('condition_questions must be a list');
+  const byGroup = conditionsByGroupOf(obj);
+  const groups = new Set();
+  for (const spec of obj.condition_questions) {
+    const known = byGroup.get(spec?.group);
+    if (!known) throw new Error(`condition_questions ${spec?.group} must name a fee condition group`);
+    if (groups.has(spec.group)) throw new Error(`condition_questions ${spec.group} is listed twice`);
+    groups.add(spec.group);
+    if (typeof spec.question !== 'string' || !spec.question.trim() || !Array.isArray(spec.options) || !spec.options.length)
+      throw new Error(`condition_questions.${spec.group} requires a question and non-empty options`);
+    const offered = new Set();
+    let defaults = 0;
+    for (const option of spec.options) {
+      if (!known.has(option?.condition))
+        throw new Error(`condition_questions.${spec.group} option ${option?.condition} is not a condition of that group`);
+      if (offered.has(option.condition))
+        throw new Error(`condition_questions.${spec.group} option ${option.condition} is listed twice`);
+      offered.add(option.condition);
+      if (typeof option.label !== 'string' || !option.label.trim())
+        throw new Error(`condition_questions.${spec.group} option ${option.condition} requires a label`);
+      if (option.default_when_unknown !== undefined) {
+        const fallback = option.default_when_unknown;
+        if (!fallback || typeof fallback.note !== 'string' || !fallback.note.trim() ||
+            typeof fallback.cite !== 'string' || !fallback.cite.trim())
+          throw new Error(`condition_questions.${spec.group} option ${option.condition} default_when_unknown requires a note and a cite`);
+        defaults++;
+      }
+    }
+    if (defaults > 1) throw new Error(`condition_questions.${spec.group} marks more than one default_when_unknown option`);
+    for (const condition of known) {
+      if (!offered.has(condition))
+        throw new Error(`condition_questions.${spec.group} offers no option for condition ${condition}`);
     }
   }
 }
@@ -630,6 +697,7 @@ export function validateFeeSchedule(input) {
   }
   validateSeparatePermits(obj);
   validateFeeCapture(obj);
+  validateConditionQuestions(obj);
   // Fill safe defaults for optional blocks.
   obj.statewide ??= {};
   obj.status ??= 'scaffolded';
@@ -832,6 +900,49 @@ function quantityFor(name, inputs, valuation, area) {
   return typeof value === 'number' && Number.isFinite(value) ? value : null;
 }
 
+/**
+ * The schedule's plain-language question for an unresolved condition group,
+ * offering only the options a fee line prices for this permit type (a
+ * garage-conversion row priced only for ADUs is not offered on a new house).
+ * Undefined when the schedule declares no question for the group.
+ */
+function conditionAsk(schedule, group, permitType) {
+  const spec = (schedule.condition_questions ?? []).find((entry) => entry.group === group);
+  if (!spec) return undefined;
+  const priced = conditionsByGroupOf(schedule, permitType).get(group) ?? new Set();
+  const options = spec.options
+    .filter((option) => priced.has(option.condition))
+    .map((option) => ({
+      condition: option.condition,
+      label: option.label,
+      ...(option.default_when_unknown ? { defaultWhenUnknown: option.default_when_unknown } : {}),
+    }));
+  return options.length ? { group, question: spec.question, options } : undefined;
+}
+
+/**
+ * Groups the person said they do not know: each is priced on the option the
+ * schedule marks `default_when_unknown`, and the assumption is returned so the
+ * estimate says what it priced. A group with no default stays unresolved (its
+ * fee lines stay confirm-at-intake); a group already resolved is left alone.
+ */
+function applyUnknownConditionDefaults(schedule, inputs, permitType) {
+  const assumptions = [];
+  const unknown = inputs.unknownConditionGroups ?? [];
+  if (!unknown.length) return { inputs, assumptions };
+  const conditions = new Set(inputs.conditions ?? []);
+  const resolved = new Set(inputs.resolvedConditionGroups ?? []);
+  for (const group of unknown) {
+    if (resolved.has(group)) continue;
+    const option = conditionAsk(schedule, group, permitType)?.options.find((entry) => entry.defaultWhenUnknown);
+    if (!option) continue;
+    conditions.add(option.condition);
+    resolved.add(group);
+    assumptions.push({ group, condition: option.condition, note: option.defaultWhenUnknown.note, cite: option.defaultWhenUnknown.cite });
+  }
+  return { inputs: { ...inputs, conditions: [...conditions], resolvedConditionGroups: [...resolved] }, assumptions };
+}
+
 function conditionState(addon, inputs) {
   if (!addon.condition) return 'matched';
   const conditions = new Set(inputs.conditions ?? []);
@@ -856,7 +967,7 @@ function evaluateAddon(addon, inputs, valuation, area, firm) {
   if (typeof addon.amount === 'number') return { amount: addon.amount, tag: 'computable_now' };
   const rule = addon.rule;
   if (rule.type === 'percent_of_valuation') {
-    if (!(valuation > 0)) return { note: 'Provide the project valuation to compute this fee.' };
+    if (!(valuation > 0)) return { note: 'Provide the project valuation to compute this fee.', needs: ['valuation'] };
     return { amount: round2(valuation * rule.pct), tag: 'percent_of_base' };
   }
   if (rule.type === 'percent_of_lines') {
@@ -868,14 +979,14 @@ function evaluateAddon(addon, inputs, valuation, area, firm) {
   }
   if (rule.type === 'stepped') {
     const quantity = quantityFor(rule.input ?? 'valuation', inputs, valuation, area);
-    if (typeof quantity !== 'number' || quantity < 0) return { note: `Provide ${rule.input ?? 'valuation'} to compute this fee.` };
+    if (typeof quantity !== 'number' || quantity < 0) return { note: `Provide ${rule.input ?? 'valuation'} to compute this fee.`, needs: [rule.input ?? 'valuation'] };
     const withheld = withheldAbove(rule, quantity);
     if (withheld) return withheld;
     return { amount: round2(steppedSchedule(quantity, rule.brackets) * (rule.multiplier ?? 1)), tag: 'computable_now' };
   }
   if (rule.type === 'per_unit') {
     const quantity = quantityFor(rule.input, inputs, valuation, area);
-    if (typeof quantity !== 'number' || quantity < 0) return { note: `Provide ${rule.input.replace(/_/g, ' ')} to compute this fee.` };
+    if (typeof quantity !== 'number' || quantity < 0) return { note: `Provide ${rule.input.replace(/_/g, ' ')} to compute this fee.`, needs: [rule.input] };
     if (typeof rule.min_input === 'number' && quantity < rule.min_input) return { skip: true };
     const withheld = withheldAbove(rule, quantity);
     if (withheld) return withheld;
@@ -890,18 +1001,24 @@ function evaluateAddon(addon, inputs, valuation, area, firm) {
   if (rule.type === 'lesser_of') {
     const first = quantityFor(rule.first_input, inputs, valuation, area);
     const second = quantityFor(rule.second_input, inputs, valuation, area);
-    if (!(first >= 0) || !(second >= 0)) {
-      return { note: `Provide ${rule.first_input.replace(/_/g, ' ')} and ${rule.second_input.replace(/_/g, ' ')} to compute the published lesser-of formula.` };
+    // quantityFor returns null for a missing input, and `null >= 0` is true:
+    // test for a number, or a missing input would price as a firm $0.
+    const present = (value) => typeof value === 'number' && value >= 0;
+    if (!present(first) || !present(second)) {
+      return {
+        note: `Provide ${rule.first_input.replace(/_/g, ' ')} and ${rule.second_input.replace(/_/g, ' ')} to compute the published lesser-of formula.`,
+        needs: [[rule.first_input, first], [rule.second_input, second]].filter(([, value]) => !present(value)).map(([input]) => input),
+      };
     }
     return { amount: round2(Math.min(first * rule.first_rate, second * rule.second_rate)), tag: 'per_unit_lookup' };
   }
   if (rule.type === 'adu_proportional') {
     const aduSqft = quantityFor(rule.input ?? 'adu_sqft', inputs, valuation, area);
-    if (!(aduSqft > 0)) return { note: 'Provide the ADU floor area to classify this impact fee.' };
+    if (!(aduSqft > 0)) return { note: 'Provide the ADU floor area to classify this impact fee.', needs: [rule.input ?? 'adu_sqft'] };
     const exemptThrough = rule.exempt_through_sqft ?? 750;
     if (aduSqft <= exemptThrough) return rule.omit_when_exempt ? { skip: true } : { amount: 0, tag: 'exempt' };
     const primary = quantityFor(rule.primary_input ?? 'primary_dwelling_sqft', inputs, valuation, area);
-    if (!(primary > 0)) return { note: `ADUs over ${exemptThrough} sq ft pay this fee proportionally to the primary dwelling; provide the primary dwelling area.` };
+    if (!(primary > 0)) return { note: `ADUs over ${exemptThrough} sq ft pay this fee proportionally to the primary dwelling; provide the primary dwelling area.`, needs: [rule.primary_input ?? 'primary_dwelling_sqft'] };
     return { amount: round2(rule.full_amount * (aduSqft / primary)), tag: 'per_unit_lookup' };
   }
   return { note: 'Confirm this fee with the collecting division.' };
@@ -961,6 +1078,7 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
     const state = conditionState(addon, inputs);
     if (state === 'not_matched') continue;
     if (state === 'unresolved') {
+      context.unresolvedGroups.add(addon.condition_group);
       addConfirm({
         id: `condition_${addon.condition_group}`,
         label: addon.condition_label ?? 'Location-based fee applicability',
@@ -974,7 +1092,14 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
     const confirmNote = result.note ??
       (addon.confirm_note && `${addon.confirm_note} As entered: ${formatDollars(result.amount, { cents: true })}.`);
     if (confirmNote) {
-      addConfirm({ id: `scope_${addon.id}`, label: addon.label, note: confirmNote, cite: addon.cite, ownerDivision: addon.owner_division });
+      addConfirm({
+        id: `scope_${addon.id}`,
+        label: addon.label,
+        note: confirmNote,
+        cite: addon.cite,
+        ownerDivision: addon.owner_division,
+        ...(result.needs?.length ? { needsInputs: result.needs } : {}),
+      });
       continue;
     }
     firm.push({
@@ -1140,9 +1265,10 @@ function issuanceLine(b, ptCfg, rawPermitCount, buildingFeeAtIntake) {
 }
 
 /** Run a project through a city's schedule → itemized, two-bucket breakdown. */
-export function calcFees(schedule, inputs) {
+export function calcFees(schedule, rawInputs) {
   const displayName = schedule.display_name ?? schedule.city_slug;
-  const permitType = normalizePermitType(inputs.permitType);
+  const permitType = normalizePermitType(rawInputs.permitType);
+  const { inputs, assumptions } = applyUnknownConditionDefaults(schedule, rawInputs, permitType);
   const isResidential = RESIDENTIAL_TYPES.has(permitType);
   const isAdu = permitType === 'adu' || permitType === 'jadu';
   const occupancy = inputs.occupancy ?? (
@@ -1180,6 +1306,7 @@ export function calcFees(schedule, inputs) {
 
   const firm = [];
   const confirm = [];
+  const unresolvedGroups = new Set();
   const b = schedule.building;
   const ptCfg = schedule.permit_types?.[permitType];
   const buildingOwner = b.owner_division;
@@ -1442,6 +1569,7 @@ export function calcFees(schedule, inputs) {
       cite: sc.cite,
       ownerDivision: sc.owner_division,
     });
+    unresolvedGroups.add(sc.condition_group);
   } else if (sc && sewerApplies && area && area >= sewerMinArea && sewerState === 'matched') {
     if ((isAdu || ['addition', 'remodel'].includes(permitType)) && sc.adu_addition_per_100sqft) {
       firm.push({ id: 'sewer', label: `Sewer connection ($${sc.adu_addition_per_100sqft}/100 sq ft)`, amount: round2((area / 100) * sc.adu_addition_per_100sqft), tag: 'per_unit_lookup', cite: sc.cite, ownerDivision: sc.owner_division });
@@ -1464,6 +1592,7 @@ export function calcFees(schedule, inputs) {
         label: aduArea <= 750 ? 'Impact-fee exemption' : 'Development impact fees',
         note: exemption.note,
         cite: 'Gov. Code §66311.5',
+        ...(aduArea > 750 && !(inputs.primaryDwellingSqft > 0) ? { needsInputs: ['primary_dwelling_sqft'] } : {}),
       });
     } else {
       confirm.push({
@@ -1471,6 +1600,7 @@ export function calcFees(schedule, inputs) {
         label: 'ADU impact-fee exemption',
         note: 'Provide the ADU floor area to classify the impact-fee rule: ADUs 750 sq ft or smaller are exempt; larger ADUs are charged proportionally to the primary dwelling.',
         cite: 'Gov. Code §66311.5',
+        needsInputs: ['adu_sqft'],
       });
     }
   } else if (rule === 'confirm_at_intake') {
@@ -1494,7 +1624,7 @@ export function calcFees(schedule, inputs) {
 
   // 12) Data-driven scope add-ons, refundable deposits, conditionally located
   // fees, and structured exclusions/open questions. No city-specific branches.
-  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades, requiredAnyInputs: ptCfg?.required_any_inputs }, firm, confirm);
+  const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades, requiredAnyInputs: ptCfg?.required_any_inputs, unresolvedGroups }, firm, confirm);
   if (ptCfg?.plan_review_of_scope_addons?.line_ids?.length) {
     const spec = ptCfg.plan_review_of_scope_addons;
     const base = firm.filter((line) => spec.line_ids.includes(line.id)).reduce((sum, line) => sum + line.amount, 0);
@@ -1551,6 +1681,9 @@ export function calcFees(schedule, inputs) {
     confirmAtIntake: confirm,
     excludedFees: schedule.excluded_fees ?? [],
     openAsks,
+    // One plain question per unresolved condition group the schedule words for the applicant.
+    conditionAsks: [...unresolvedGroups].flatMap((group) => conditionAsk(schedule, group, permitType) ?? []),
+    assumptions,
     source: { resolution: schedule.source.resolution, url: schedule.source.url },
     escalatorNote: schedule.escalator?.note,
   };
