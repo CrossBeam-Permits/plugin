@@ -79,7 +79,7 @@ band edge, confirm the fee with the Building Division, (949) 497-0715.
 The City added a separate online work class to this type in October 2026:
 **"Revision"** (portal filing behavior "Pay First"). It is not on the portal's
 apply menu, and the portal's permit search list shows it as "Residential
-Revision Permit". A project **address is required**, and no contact is. Two PDFs are required, one file each: **Revised Plans** and **Original Plans Approved/Stamped by City**. Its intake sheet opens with a "Revision Info" group — a required
+Revision Permit". A project **address is required**, and no contact is. Three PDFs are required, one file each: **Revised Plans**, **Original Plans Approved/Stamped by City**, and a **Revision Form**. The Revision Form became required between 2026-10-19 and 2026-10-26 (it was optional before). Its slot points to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService (Revision work class file set read through the portal's public API), as of 2026-10-26] Its intake sheet opens with a "Revision Info" group — a required
 **Revision Number** field and an optional **Additional Valuation** field —
 followed by the same 113-item Electrical, Mechanical, and Plumbing count sheet as
 above. The portal does not say whether to count the whole job again or only what
@@ -104,7 +104,7 @@ plans are reviewed at all — and **sign applications before uploading**.
 
 ## Optional attachment slots worth knowing
 
-37 more categories exist on this type. The ones that carry a real Laguna
+39 more categories exist on this type. The ones that carry a real Laguna
 requirement or commonly decide whether a submittal is complete:
 
 - **Roof Material Color Swatch** — the City's own note: "REQUIRED FOR REROOF PERMITS. Please circle or otherwise clearly indicate the exact color you are using." Filed as optional, described as required. On a reroof, treat it as required.
@@ -114,6 +114,8 @@ requirement or commonly decide whether a submittal is complete:
 - **WQMP**, **WQ LID Checklist**, **WELO Calculations/Report**, **Hydrology Report** — water quality and landscape efficiency; expected on larger projects.
 - **Fuel Modification or Fire Study** — Laguna is a very-high fire hazard severity zone city.
 - **Asbestos Report** and **Asbestos Clearance Certification** — on demolition or older-structure work.
+- **Health Approval** and **Hydrant Flow Report** — two slots the City added between 2026-10-19 and 2026-10-26. Both are optional, and the portal describes each only by its name. Two City rules use the same names. A project with a fire sprinkler system needs an LBFD Hydrant Flow Report from a water-purveyor flow test no more than 6 months old (LBMC Title 15 §15.01.070, amending NFPA 13 §28.1.3). A project with a food operation or another Environmental Health-regulated use needs Orange County Environmental Health approval (the City's 2026 building issuance-requirements checklist). The portal does not tie either slot to those rules, so ask the Building Division, (949) 497-0715, before telling an applicant a slot is required. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/183/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
+- **Revision Form** — its description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/183/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
 - **Plan Check Responses** and the per-division response slots (Building, Fire, Planning, Public Works, Water Quality) — where you upload your answers to a correction letter on a resubmittal.
 - **Plans: Reference Only Digitized Paper (NO REVIEW)** — exactly what it says; do not put review plans here.
 

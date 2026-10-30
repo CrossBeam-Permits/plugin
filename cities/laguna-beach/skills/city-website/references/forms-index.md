@@ -117,6 +117,7 @@ broken-link fix.
 |---|---|
 | City regulations about construction | 218 / 637360372607900000 |
 | Leaf Blower Handout | 8840 / 637513492123130000 |
+| Leaf Blower Handout (the one the Code Enforcement FAQ links; not yet read) | 18647 / 638506679000070000 |
 | Real Property Maintenance | 8842 / 637513493472130000 |
 | Code Enforcement Brochure | 12308 / 637952189186430000 |
 | Sign Brochure | 12310 / 637952216925200000 |
