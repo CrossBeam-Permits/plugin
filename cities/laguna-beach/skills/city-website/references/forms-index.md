@@ -46,7 +46,7 @@ Zoning Ordinance Amendment (added 2026-10-14), and both Appeals forms) are liste
 
 **Zoning Plan Check and Design Review** — ADU Estimated Rental Amount 19545/638582740289930000 · Administrative Design Review Meeting: How to Participate 8856/638536224876170000 · Consultant List 20784/638696036245970000 · Design Review Board Meeting: How to Participate 18029/638536236641930000 · Early Neighbor Communications Best Practices 22727/638868925251170000 · Early Neighbor Outreach Report Template 22771/638870738565600000 · Good Neighbor Lighting 18948/638536242066570000 · **Major Remodel handout 23171/639264703759000000 (reissued "Updated October 2026"; first seen 2026-10-09)** · Mechanical Equipment Guide 9959/638586590648770000 · Project Summary Table Template 8922/637756216143570000 · Site Survey Requirements 8926/637515917960370000 · Staking a Design Review Project 8928/638581189502000000 · Three Arch Bay Development Application Process 11971/638070664305670000 · Zoning Plan Check Table 10220/637981472622100000
 
-**Coastal Development** — Bluff Edge Determinations 10222/638533536501570000
+**Coastal Development** — Bluff Edge Determinations 10222/638533536501570000 · **Storm Damage Response and Recovery 27636/639280132862470000** (quick guide, "Updated October 2026"; first seen 2026-10-30): emergency coastal development permits for storm, surf or erosion damage, with the City and Coastal Commission contacts
 
 **Application Guides** — Guidelines for Site Selection and Visual Impact and Screening of Telecommunication Facilities 8896/638533543228170000 · Variance 8930/637515917987400000
 

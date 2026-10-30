@@ -20,7 +20,7 @@
     }
   },
   "privateRepo": {
-    "commit": "411672de52c949def97628cff5f10f3757d71ea3",
+    "commit": "9821dfc6f428a429ce85cfa7a5dc28f8ea7d0c56",
     "dirty": false
   },
   "options": {
@@ -302,7 +302,7 @@
     "6dbd37a2b0c0aacb7d3a54c803b8eb7797bc3622eb91ccc30acbc0d3d85b12fe": "02a2e8ce4c9b11857c0abe267ee02d08dadf83ddcdf5f1ecc3f91df0140b728a",
     "9a541230e650b6c62fc8491175b5c198dfba3a741d6b9775eaf0e010d0ee3d24": "9f692411b2ad4ff2625564365c1cd0c01990501fd19f50f4d6b3b8204dcfaab0",
     "73570bcc23dcad0ff5feb61637a11074dcf2c979ec487d3b742a458816214a61": "c85029242ce295acb23aba3bec0fa316dfd836534bf39dcde14ad4572d900449",
-    "2a446d1af7bc8be7bd32ee4d41adafc0cb36bad0646ef9c9dbd9e970e34dac04": "ca53e37266e5368da5d7d8c1a55c9ad220aef8c64c61bce972e85d47b5d4164b",
+    "2a446d1af7bc8be7bd32ee4d41adafc0cb36bad0646ef9c9dbd9e970e34dac04": "313ae8f21421e800d4c175ad3368c7f81e0eb7423c1dec6ffa187f0b9c5470af",
     "6b8636bbbf1c63b7602044d0ed739edeca0d79ef870fb8d4d7c8247e3ff38e82": "b06efe1141e35f35210cd2bd5195ea4822e655fb78b3f0f2caf26356344e3b12",
     "911333ca5edbb97563cbcdd02acb0515e65d4492cac758ea86afc18642dc9ee6": "ea367a817faec559e97477625547ac926236c0c062badd02fcfacebf458b07f1",
     "0db640d6d17d67c893ff8f9203b9ac5331722cb6540f95a1e0c3ce98f2364fd7": "3e49a51859e2252e2c6bc07d77a4d4eb966b3e8e25f94daf2b2471eaf5efbcb2",
@@ -534,7 +534,7 @@
     "1af6f5306b82350add2553c6e600bdb5aa809fb701e45fde6f96b70923c4c2de": "69f1a8c39159ee4d92e9a6e2bedfff36940b9e87baa970ef77043fe6722d796c",
     "f015bdf48d7ee849eb9cd85f935d0d31b5f120b2185e7c115871502e18a8cf34": "dd35a2244fccac85c4e671baccc805cc353ebefe4bfee87e9bee8ca7e9f37378",
     "8ec19bbe4bdc0c45bab91289c38c373df4899a9f058a3647d3cc143b6e11e3c6": "cfe4e7300f9de8a0f30b8a47322c0412d2f4c34b974e2f0d8c6a1f170704313b",
-    "abd568700b7363a65eeeedbcb070718e2ab45585185d58deffb3175f2981f0b3": "d126c30056551d0d95d0e37ec124d049b00b4a22cf1d255555cb4ae0fd63818f",
+    "abd568700b7363a65eeeedbcb070718e2ab45585185d58deffb3175f2981f0b3": "71382919c2cc7762439e2135fdf66e705199391dbe3718046bf4625ea4858c68",
     "cb3df922dacf27b7d931be6ebe52fb65152bb083135fa837bd9cdff390dfd505": "c6cec9572a2b347bb12d6b6d336b2e51e2195659c8bd1a08fc5467a68834d8cb",
     "f807e035be8303cf66a0cffc0d647463c1b94c305653b63be09fdef125ed3662": "17e6713de21596011f9b4703f3d4035a77facf27a213cda79f9d9457f7ce86b4",
     "f5f0e6fb9bb7518cc95780428425d9e7a3524737c8568976f03a988b5cded648": "29c02efba2ad446ac4fe8f182c9ac679576304fedc0e9ab72baebc6a34c91eaa",
@@ -642,7 +642,7 @@
     "skills/city-website/references/code-enforcement.md": "3d8e4146e40242beb7dc76674d4b0bd82cf120e188ecfc521775aa1f3413084e",
     "skills/city-website/references/faqs.md": "c38f41960b2e4a951ef4dca7ef59663afd457849e0d48c636b27028e5c5819be",
     "skills/city-website/references/fees.md": "63f57b71a338415376335da9f0de599308d65f9c3ce9b936c3f8aa52e10863ad",
-    "skills/city-website/references/forms-index.md": "1572fe72add06a984ff5e9c1dd9e35869f3406f0365e3bfc60f9f17cbe912a93",
+    "skills/city-website/references/forms-index.md": "3ef579d6bdd605830d0a79b71c58889d64896849c3de84f02a84b45695cf440a",
     "skills/city-website/references/how-to-submit.md": "69cf0965d893d7ec7329af7d2094f625d7aaf4d9b388347852f2e3c125c20639",
     "skills/city-website/references/planning-applications.md": "2f76ea3d3346cef1b5c5611432f88149d89be3cdb2b69c5edc0bee38d7a31b11",
     "skills/city-website/references/submit-adu.md": "dfb5274dc76d787f6a39a92c899cebd0dc02b9e0c5ac168c1a8be8e071086a8d",
@@ -728,7 +728,7 @@
     "skills/guide/references/before-you-file.md": "633158cb8cb83bfb7d4e7377a777745997fec9d6bea99c3f6ad7beac4e1e7d8c",
     "skills/guide/references/building-permit-exemptions.md": "5e99adfe78532c6a345f0e1a71c39014cddbfd0099fc33dee5f0596086184413",
     "skills/guide/references/city-practice.md": "c85029242ce295acb23aba3bec0fa316dfd836534bf39dcde14ad4572d900449",
-    "skills/guide/references/coastal-development-permits.md": "d3a7d00d43a96d659cdc5f830cdb1094af9270ba916a79e95ad7fb057daacf28",
+    "skills/guide/references/coastal-development-permits.md": "84470336e2d374235952aaca27f08cd53603d6bc12ee5438aefb7f03150d729b",
     "skills/guide/references/common-corrections.md": "059d7cce42f74c013d05653026983e1f371b1264b6e0f14f38ae4b8164896777",
     "skills/guide/references/design-review-lists.md": "99aa6a1e0d1d0b6c8a632cbc927b22933641f75382091d538824b218a0e6d4e2",
     "skills/guide/references/disaster-rebuild.md": "db2eb1b6109e238f5389794cb3d8c26e11049581fcd0c6cd4bbd9f7734d1e5ec",
