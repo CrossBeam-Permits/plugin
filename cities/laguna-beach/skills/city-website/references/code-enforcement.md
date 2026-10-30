@@ -39,6 +39,7 @@ reaches dispatch rather than Code Enforcement. Use 0301 for code matters.
 ## Leaf blowers — the actual rule
 
 - The use of electrical or gasoline powered blowers, such as those commonly used by gardeners and others for cleaning lawns, yards, driveways, gutters, and other property, **is prohibited at any time within the city limits**. [source: https://www.lagunabeachcity.net/government/departments/community-development/code-enforcement/frequently-asked-questions, as of 2026-06-18]
+- The FAQ now links its own Leaf Blower Handout, https://www.lagunabeachcity.net/home/showpublisheddocument/18647/638506679000070000. It is a different document from the handout on the "What do we enforce" page (8840, above). We have not read 18647 yet; until we do, quote the rule from this section, not from either handout. [source: https://www.lagunabeachcity.net/government/departments/community-development/code-enforcement/frequently-asked-questions, as of 2026-10-20]
 
 Exceptions [source: https://www.lagunabeachcity.net/government/departments/community-development/code-enforcement/frequently-asked-questions, as of 2026-06-18]:
 
@@ -65,7 +66,7 @@ Exceptions [source: https://www.lagunabeachcity.net/government/departments/commu
 
 ## Tenant / landlord disputes
 
-- Typically civil matters unless they involve building safety and/or unpermitted construction. The City refers residents to Fair Housing Orange County (http://www.fairhousingoc.org/contact/) and the Legal Aid Society of the Orange County Bar Association (https://legalaidocba.org/). [source: https://www.lagunabeachcity.net/government/departments/community-development/code-enforcement/frequently-asked-questions, as of 2026-06-18]
+- Typically civil matters unless they involve building safety and/or unpermitted construction. The City refers residents to Fair Housing Orange County (http://www.fairhousingoc.org/contact/) and Community Legal Aid SoCal (https://www.communitylegalsocal.org/). It used to name the Legal Aid Society of the Orange County Bar Association instead. [source: https://www.lagunabeachcity.net/government/departments/community-development/code-enforcement/frequently-asked-questions, as of 2026-10-20]
 
 ## Unpermitted construction
 

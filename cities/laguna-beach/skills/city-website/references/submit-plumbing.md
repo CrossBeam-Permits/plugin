@@ -102,7 +102,7 @@ unless noted:
 - **Specification Sheets** — "Project Specification Sheets". The water-heater or backflow-device cut sheet, which is the fastest way to settle a reviewer's question about the model.
 - **Energy Calculations** and **Energy Calculation Addendum** — Title 24 compliance; expected when the scope triggers it.
 - **Plan Check Responses** (.doc/.docx/.pdf/.jpg/.jpeg) — where you upload your answers to a correction letter on a resubmittal.
-- **Revision Form** — for a change after the permit exists.
+- **Revision Form** — for a change after the permit exists. The slot's description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/188/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
 - **Mechanical Equipment Guide** — the slot exists on this type too, but the "REQUIRED FOR ALL A/C PERMITS BY PLANNING" instruction is written only on the Mechanical Permit (186). See `submit-mechanical.md`.
 - **Miscellaneous** (.pdf/.tif/.tiff/.jpeg/.jpg/.png) — everything else.
 
