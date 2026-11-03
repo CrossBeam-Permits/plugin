@@ -38,6 +38,34 @@ Placement, Wireless Facility, Artist Occupancy Permit, Planning Commission
 Concept Review, Start Home Revitalization Act (SB684), General Plan Amendment,
 Zoning Ordinance Amendment (added 2026-10-14), and both Appeals forms) are listed with their links in planning-applications.md.
 
+## Building Division applications and forms
+
+The Building Division's own forms page lists these 12 on its "Application & Forms" tab.
+Its "Handouts" tab is rendered by JavaScript and has not been read yet, so the EV
+checklists and other Building handouts are not listed here.
+[source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, as of 2026-11-03]
+
+| Document | id / ticks |
+|---|---|
+| Permit Application - Building | 26986 / 639235139904170000 |
+| Permit Application - Electrical, Mechanical, & Plumbing | 26988 / 639235144050430000 |
+| Building Plan Revision (posted 2026-10-13) | 23603 / 639274900407100000 |
+| Change of Design Professional | 5105 / 639081581138170000 |
+| Owner/Builder Permit - Property Owner's Package for Permit Issuance | 26990 / 639235153657800000 |
+| AM&M - Building and Fire Alternative Materials, Design & Methods Request | 26994 / 639235205639130000 |
+| SCAQMD Rule 1403 Asbestos/Demolition Notification | 26992 / 639235201904370000 |
+| Smoke Detector & Carbon Monoxide Self Certification | 5131 / 637381783557400000 |
+| Special Inspector Application | 5133 / 639153871268070000 |
+| Structural Observation Report | 5141 / 637908999656070000 |
+| Plan Duplication Request Form | 5153 / 637636661850230000 |
+| Walls & Fences - Survey Requirements Waiver Request | 5155 / 638397885224870000 |
+
+**Building Plan Revision** is the only revision form on the page. The portal's
+**Revision Form** attachment slot (required on the Revision work class since late
+October 2026) sends residents to this page for the form. The City has not said in so
+many words that the two are the same form; if a resident asks, give this link and the
+Building Division's number, (949) 497-0715.
+
 ## Planning handouts — the full inventory
 
 32 documents in 10 categories, recovered 2026-08-09. All ids resolve as
@@ -46,7 +74,7 @@ Zoning Ordinance Amendment (added 2026-10-14), and both Appeals forms) are liste
 
 **Zoning Plan Check and Design Review** — ADU Estimated Rental Amount 19545/638582740289930000 · Administrative Design Review Meeting: How to Participate 8856/638536224876170000 · Consultant List 20784/638696036245970000 · Design Review Board Meeting: How to Participate 18029/638536236641930000 · Early Neighbor Communications Best Practices 22727/638868925251170000 · Early Neighbor Outreach Report Template 22771/638870738565600000 · Good Neighbor Lighting 18948/638536242066570000 · **Major Remodel handout 23171/639264703759000000 (reissued "Updated October 2026"; first seen 2026-10-09)** · Mechanical Equipment Guide 9959/638586590648770000 · Project Summary Table Template 8922/637756216143570000 · Site Survey Requirements 8926/637515917960370000 · Staking a Design Review Project 8928/638581189502000000 · Three Arch Bay Development Application Process 11971/638070664305670000 · Zoning Plan Check Table 10220/637981472622100000
 
-**Coastal Development** — Bluff Edge Determinations 10222/638533536501570000
+**Coastal Development** — Bluff Edge Determinations 10222/638533536501570000 · **Storm Damage Response and Recovery 27636/639280132862470000** (quick guide, "Updated October 2026"; first seen 2026-10-30): emergency coastal development permits for storm, surf or erosion damage, with the City and Coastal Commission contacts
 
 **Application Guides** — Guidelines for Site Selection and Visual Impact and Screening of Telecommunication Facilities 8896/638533543228170000 · Variance 8930/637515917987400000
 
@@ -117,6 +145,7 @@ broken-link fix.
 |---|---|
 | City regulations about construction | 218 / 637360372607900000 |
 | Leaf Blower Handout | 8840 / 637513492123130000 |
+| Leaf Blower Handout (the one the Code Enforcement FAQ links; not yet read) | 18647 / 638506679000070000 |
 | Real Property Maintenance | 8842 / 637513493472130000 |
 | Code Enforcement Brochure | 12308 / 637952189186430000 |
 | Sign Brochure | 12310 / 637952216925200000 |

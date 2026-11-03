@@ -65,21 +65,23 @@ Emergencies are **911**.
 - **Hard last sign-in is 12:45 p.m.**, so all business can be completed by the 2:00 p.m. close. This note appears on every Community Development page. [source: https://www.lagunabeachcity.net/government/departments/community-development, as of 2026-07-16]
 - Staff begin monitoring the check-in queue roughly **1½ hours before closing**. Once staff determine the queue has reached capacity during that final 1½ hours, **no additional sign-ins are accepted** for the day. Residents are told to arrive early or book an appointment. [source: https://www.lagunabeachcity.net/government/departments/community-development, as of 2026-07-16]
 
-#### ⚠️ Counter-hours discrepancy — two different closing times, both live
+#### Building Division forms page now agrees (discrepancy closed 2026-11-03)
 
-Two City pages published two different sets of permit-counter hours, both live on
-2026-08-10:
+From at least 2026-08-10 the Building Applications and Forms page's sidebar published
+different hours (Monday – Thursday 7:30 a.m. – 3:00 p.m., plus alternating Fridays
+7:30 a.m. – 12:00 p.m.). On 2026-11-03 it matches the landing page:
 
-- **Community Development landing page**, "Important Notice – Permit Center Counter Hours": **Monday through Thursday, 7:30 a.m. – 2:00 p.m.**, with the hard 12:45 p.m. last sign-in and the queue-capacity cut-off described above. No Friday hours. [source: https://www.lagunabeachcity.net/government/departments/community-development, as of 2026-07-16]
-- **Building Applications and Forms page**, sidebar "Counter Hours": **Monday – Thursday, 7:30 a.m. – 3:00 p.m.**, plus **alternating Fridays 7:30 a.m. – 12:00 p.m.** No queue cut-off mentioned. [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, as of 2026-08-10]
+- **Counter Hours: Monday – Thursday, 7:30 a.m. – 2:00 p.m.** The last sign-in is at
+  **12:45 p.m.** so all business is complete by the 2:00 p.m. close. **The Building
+  counter is closed Fridays.** [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, as of 2026-11-03]
+- **Building Counter Plan Review: Monday – Thursday, 7:30 a.m. – 11:00 a.m., by
+  appointment only.** [source: same, as of 2026-11-03]
+- The page also says City Hall is closed alternate Fridays. [source: same, as of 2026-11-03]
 
-An hour of closing time and a whole Friday separate the two. **How to answer:**
-never assert either set as fact. Give the earlier close (2:00 p.m.) as the safe
-planning assumption, say the City publishes a later one elsewhere, and steer the
-resident to book the appointment
+**How to answer:** give Monday – Thursday, 7:30 a.m. – 2:00 p.m., last sign-in 12:45 p.m.,
+and no Friday counter. Do not offer Friday hours. To skip the queue, book the appointment
 (https://lbwaitlist.cxmflow.com/OABS/Appointment/Index/2c052fc7-571f-4b76-9790-7e91f103c408)
-or call (949) 497-0712 to confirm before driving over. Alternating Fridays are
-published on the City calendar: https://www.lagunabeachcity.net/live-here/city-calendar
+or call (949) 497-0712.
 
 ### Building plan review (over-the-counter)
 

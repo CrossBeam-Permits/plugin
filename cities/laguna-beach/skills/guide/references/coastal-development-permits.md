@@ -324,6 +324,13 @@ Which major remodel method applies in Three Arch Bay is UNSETTLED; confirm with 
   resident to go to the Commission before expecting a City sign-off.
 - An emergency permit lasts 60 days. Before it ends, the owner must file a regular CDP application,
   even if only to remove the emergency work and restore the site (25.07.020(E)).
+- **Storm damage on the coast:** the City's quick guide "Storm Damage Response and Recovery"
+  (Updated October 2026, https://www.lagunabeachcity.net/home/showpublisheddocument/27636/639280132862470000)
+  tells residents to contact both the City (Planning, 949-497-0713) and the Coastal Commission's
+  South Coast District Office before any seawall, bulkhead, bluff or building work. Emergency work
+  is limited to temporary measures (rip rap, sand cubes, removing an undermined deck), not hard
+  armor upgrades. A City building permit, if needed, follows the emergency CDP. The follow-up regular
+  CDP is due within the period the emergency permit sets; the guide says typically 60 to 90 days.
 
 ## Changing an approved CDP
 
