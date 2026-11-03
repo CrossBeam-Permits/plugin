@@ -65,6 +65,9 @@ on if it is not connected.
 - Codex: `codex mcp login crossbeam`.
 - Cowork and claude.ai: open the plugin's **Connectors** tab. Installing does not connect it.
 - Gemini CLI: `/mcp auth crossbeam`.
+- Microsoft Copilot Studio: open your agent, choose **Tools → Add a tool → New tool → Model
+  Context Protocol**, paste the address above, pick **OAuth 2.0 → Dynamic discovery**, and sign in.
+  This adds the connector only; the plugin's skills don't install in Copilot Studio.
 
 For ChatGPT Work distribution, follow the [official plugin guidance](https://learn.chatgpt.com/docs/build-skills); this repository is not evidence of a public directory listing.
 
