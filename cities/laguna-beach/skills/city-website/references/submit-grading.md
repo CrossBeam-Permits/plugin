@@ -8,7 +8,7 @@ entitlement (114). See `submit-residential-permit.md` and
 `submit-residential-planning-entitlements.md`.
 
 Two things set this type apart from the light MEP and Sign applications: it
-carries the City's **full 39-slot file set** (the same one the Residential Permit
+carries the City's **full 41-slot file set** (the same one the Residential Permit
 uses), and **Plans is required here**, not optional.
 
 **Apply:** https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/214/0/0 (portal account required)
@@ -82,7 +82,7 @@ plans are reviewed at all — and **sign applications before uploading**.
 
 ## Optional attachment slots worth knowing
 
-37 more categories exist on this type — the City's full file set. The ones that
+39 more categories exist on this type — the City's full file set. The ones that
 actually decide whether a grading submittal is complete:
 
 - **Soils Report or Geotechnical Report** (and **Geotechnical Report Addendum**) — the foundation of any grading review in a hillside city. Nothing about cut, fill, or slope stability gets settled without it.
@@ -95,6 +95,8 @@ actually decide whether a grading submittal is complete:
 - **WELO Calculations/Report** — landscape water efficiency, on jobs that re-landscape.
 - **Asbestos Report** and **Asbestos Clearance Certification** — on demolition or older-structure work.
 - **Plan Check Responses** plus the per-division response slots — **Building**, **Fire**, **Planning**, **Public Works**, and **Water Quality Plan Check Response** — where you upload your answers to a correction letter on a resubmittal. All five divisions have their own slot on this type; that is a fair map of who reviews a grading permit.
+- **Health Approval** and **Hydrant Flow Report** — two slots the City added between 2026-10-19 and 2026-10-26. Both are optional, and the portal describes each only by its name. Two City rules use the same names. A project with a fire sprinkler system needs an LBFD Hydrant Flow Report from a water-purveyor flow test no more than 6 months old (LBMC Title 15 §15.01.070, amending NFPA 13 §28.1.3). A project with a food operation or another Environmental Health-regulated use needs Orange County Environmental Health approval (the City's 2026 building issuance-requirements checklist). The portal does not tie either slot to those rules, so ask the Building Division, (949) 497-0715, before telling an applicant a slot is required. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/214/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
+- **Revision Form** — its description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/214/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
 - **Plans: Reference Only Digitized Paper (NO REVIEW)** and **For Reference Only** — exactly what they say; do not put review plans here.
 
 The rest of the set — AM&M, Address Assignment Request, Change of Registered

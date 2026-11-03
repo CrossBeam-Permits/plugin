@@ -89,7 +89,7 @@ below (see next section) — the City just does not call it out here.
 
 ## Optional attachment slots worth knowing
 
-37 more categories exist on this type — the City gave it the **same 39-slot file
+39 more categories exist on this type — the City gave it the **same 41-slot file
 set as the Residential and Commercial permits**, so several slots are plainly
 inherited boilerplate rather than fire-specific asks. The ones most likely to
 matter here:
@@ -99,7 +99,8 @@ matter here:
 - **Fuel Modification or Fire Study** — Laguna is a very-high fire hazard severity zone city.
 - **Structural Calculations** (and the addendum) and **Revised Structural Calculations** — for bracing and support of the system.
 - **Fire Plan Check Response** and the general **Plan Check Responses** slot — where you upload your answers to a correction letter on a resubmittal. Per-division response slots also exist for Building, Planning, Public Works, and Water Quality.
-- **Revision Form** and **Revised Permit Application** — for changes after submittal.
+- **Revision Form** and **Revised Permit Application** — for changes after submittal. The Revision Form slot's description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/191/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
+- **Health Approval** and **Hydrant Flow Report** — two slots the City added between 2026-10-19 and 2026-10-26. Both are optional, and the portal describes each only by its name. Two City rules use the same names. A project with a fire sprinkler system needs an LBFD Hydrant Flow Report from a water-purveyor flow test no more than 6 months old (LBMC Title 15 §15.01.070, amending NFPA 13 §28.1.3). A project with a food operation or another Environmental Health-regulated use needs Orange County Environmental Health approval (the City's 2026 building issuance-requirements checklist). The portal does not tie either slot to those rules, so ask the Building Division, (949) 497-0715, before telling an applicant a slot is required. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/191/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
 - **Miscellaneous** — the catch-all; it is the only slot that also takes images.
 - Inherited-boilerplate slots you can ignore unless they genuinely apply: **Roof Material Color Swatch**, **Mechanical Equipment Guide**, **WQMP**, **WELO Calculations/Report**, **Grading Plans**, **Survey**, **Energy Calculations**, **Asbestos Report**.
 

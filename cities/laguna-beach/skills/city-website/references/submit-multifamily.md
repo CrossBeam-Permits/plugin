@@ -2,7 +2,7 @@
 
 The building permit for **apartment and condominium buildings** — the multifamily
 sibling of the Residential (183) and Commercial (184) permits. Same wizard, same
-39-slot file set, same 113-field MEP count sheet; what differs is the category,
+41-slot file set, same 113-field MEP count sheet; what differs is the category,
 and the contact configuration (see "Contacts and licences", which is the one real
 trap on this type).
 
@@ -89,7 +89,7 @@ step repeats the Mechanical Equipment Guide line for A/C work.
 
 ## Optional attachment slots worth knowing
 
-37 more categories exist on this type — the same set as 183 and 184. The ones
+39 more categories exist on this type — the same set as 183 and 184. The ones
 that carry a real Laguna requirement or commonly decide whether a submittal is
 complete:
 
@@ -101,6 +101,8 @@ complete:
 - **Fuel Modification or Fire Study** — Laguna is a very-high fire hazard severity zone city.
 - **Asbestos Report** and **Asbestos Clearance Certification** — on demolition or older-building work.
 - **Roof Material Color Swatch** — the City's own note: "REQUIRED FOR REROOF PERMITS. Please circle or otherwise clearly indicate the exact color you are using." On a reroof, treat it as required.
+- **Health Approval** and **Hydrant Flow Report** — two slots the City added between 2026-10-19 and 2026-10-26. Both are optional, and the portal describes each only by its name. Two City rules use the same names. A project with a fire sprinkler system needs an LBFD Hydrant Flow Report from a water-purveyor flow test no more than 6 months old (LBMC Title 15 §15.01.070, amending NFPA 13 §28.1.3). A project with a food operation or another Environmental Health-regulated use needs Orange County Environmental Health approval (the City's 2026 building issuance-requirements checklist). The portal does not tie either slot to those rules, so ask the Building Division, (949) 497-0715, before telling an applicant a slot is required. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/322/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
+- **Revision Form** — its description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/322/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
 - **Plan Check Responses** and the per-division response slots (Building, Fire, Planning, Public Works, Water Quality) — where you upload your answers to a correction letter on a resubmittal.
 - **Plans: Reference Only Digitized Paper (NO REVIEW)** — exactly what it says; do not put review plans here.
 
