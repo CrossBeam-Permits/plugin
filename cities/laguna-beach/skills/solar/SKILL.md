@@ -183,12 +183,15 @@ A system over 10 kW AC is not a Ch. 14.84 expedited system, so the 3-business-da
 
 | # | Check | What to Verify |
 |---|-------|---------------|
-| 1 | System eligible? | ≤10 kW AC, single/duplex dwelling, within height limit |
+| 1 | System eligible? | ≤10 kW AC, single/duplex dwelling, within height limit. Record the PV inverter AC nameplate AND the exportable ESS inverter output separately; whether storage counts toward 10 kW AC is the City's call, so state both numbers rather than deciding |
 | 2 | Meets checklist? | City's standard plan/checklist requirements |
 | 3 | State code compliance? | CEC, fire, structural per state solar skill |
 | 4 | Health/safety only? | Review limited to health/safety — no aesthetic review for qualifying systems |
 | 5 | Fee paid? | Amount from the fee tool, not from memory. §14.84.060 caps the building permit fee at 10% of system cost and "in no case more than one thousand dollars", and requires conformity with Gov. Code 65850.55 and 66015. Fee may be waived upon WRITTEN DETERMINATION by the Director of Community Development that the system results in no significant aesthetic or view impacts (§14.84.060). This is not automatic. |
 | 6 | HOA not blocking? | City cannot condition on HOA approval |
+| 7 | No exposed exterior EMT? | EMT only for concealed work inside enclosed construction; every exterior run uses a listed raceway approved for exposed work. Published: the City's "Informational Guide for the Photo-Voltaic Plan Check" (2018) says "EMT is prohibited where installed in exterior locations". Plan-check letters cite it as "CEC 358.10(B) and Laguna Beach Building department policy EC-1" (19 of 28 solar letters, 2025-2026) |
+| 8 | Roof structure engineered? | The same guide asks for a partial roof plan with the size, span and spacing of the framing under each array, and calculations by a licensed engineer or architect. City letters add a lateral analysis (CEBC 503.3, 503.4; 2025 CRC R329.4.1), exposure C wind, and complete calculations, not a software summary. A tile roof always needs it |
+| 9 | Working space inside the parcel? | City letters require the CEC 110.26 working space to lie entirely on the project parcel, dimensioned to the property line on the site plan |
 
 ---
 
@@ -293,6 +296,17 @@ Every item here is verified at plan-check time, after the Laguna Beach rules abo
 | 16 | **Fire classification?** | ❌ **fail** | PV system fire rating matches required roof assembly rating | CRC R329.4.2, R902 |
 | 17 | **ESS requirements met (if applicable)?** | ❌ **fail** | Listed per UL 9540; apply the R330.1 habitable-space exception path and R330.4 sleeping-room restrictions; verify smoke/heat alarms, impact protection, and capacity limits in Table R330.5 | CRC R330, CFC 1207 |
 | 18 | **Inverter anti-islanding?** | ❌ **fail** | Interactive inverter ceases export on grid outage per 705.40; reconnects only after all phases restored | CEC 705.40 |
+
+### Checklist rows to place
+
+These state rows have no current stage tag. For each one, decide from its text whether it is a plan-check item (and whether a miss is a correction or a flag) or an inspection item.
+
+| # | Check | What to verify | Code |
+|---|---|---|---|
+| 19 | **Scope and ratings stated?** | Title sheet states PV kW DC and AC, inverter and ESS models, each ESS kWh and output, total ESS kWh, and all new panels, meter collars and gateways; values match the line diagram | CRC R106.1.1, R330.5 |
+| 20 | **Each system designated?** | Where there are two or more PV or ESS systems, or an existing system stays, each is named on the roof plan, line diagram and placards, with the array area each rapid shutdown initiator controls | CEC 690.12, 690.13, 705.10 |
+| 21 | **Working space shown?** | 30 in wide (or equipment width) x 36 in deep x 6.5 ft high in front of each new and affected panel, ESS, gateway and disconnect, dimensioned on the site plan or wall elevation | CEC 110.26 |
+| 22 | **Raceway suits the location?** | Conduit schedule names the raceway type and route of each run; exterior and exposed runs use a raceway suitable for the environment, and steel EMT in a severe corrosive area has approved corrosion protection | CEC 358.10, 300.6, 110.11 |
 
 ---
 

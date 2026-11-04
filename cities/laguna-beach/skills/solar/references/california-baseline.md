@@ -24,7 +24,7 @@ After loading references, check the **Quick-Reference Tables** below for the key
 
 | Review Type | Load These References |
 |-------------|----------------------|
-| **Full permit review** (standard plan form data in, pass/fail out) | `pv-systems-690.md`, `interconnection-705.md`, `fire-setbacks-cfc.md`, `wire-sizing-solar.md` |
+| **Full permit review** (standard plan form data in, pass/fail out) | `pv-systems-690.md`, `interconnection-705.md`, `fire-setbacks-cfc.md`, `wire-sizing-solar.md`, `structural-roof-crc.md`; add `ess-requirements.md` and `labeling-marking-690.md` when the system has storage |
 | **Microinverter/AC module standard plan** | `pv-systems-690.md`, `interconnection-705.md`, `wire-sizing-solar.md` |
 | **Wire/conduit sizing question only** | `wire-sizing-solar.md` |
 | **Fire setback or access pathway question** | `fire-setbacks-cfc.md` |
@@ -60,11 +60,15 @@ For a full permit review, check each item in order. The checklist tells you whic
 | 16 | **Fire classification?** | PV system fire rating matches required roof assembly rating | CRC R329.4.2, R902 | `structural-roof-crc.md` |
 | 17 | **ESS requirements met (if applicable)?** | Listed per UL 9540; apply the R330.1 habitable-space exception path and R330.4 sleeping-room restrictions; verify smoke/heat alarms, impact protection, and capacity limits in Table R330.5 | CRC R330, CFC 1207 | `ess-requirements.md` |
 | 18 | **Inverter anti-islanding?** | Interactive inverter ceases export on grid outage per 705.40; reconnects only after all phases restored | CEC 705.40 | `interconnection-705.md` |
+| 19 | **Scope and ratings stated?** | Title sheet states PV kW DC and AC, inverter and ESS models, each ESS kWh and output, total ESS kWh, and all new panels, meter collars and gateways; values match the line diagram | CRC R106.1.1, R330.5 | This SKILL.md |
+| 20 | **Each system designated?** | Where there are two or more PV or ESS systems, or an existing system stays, each is named on the roof plan, line diagram and placards, with the array area each rapid shutdown initiator controls | CEC 690.12, 690.13, 705.10 | `labeling-marking-690.md` |
+| 21 | **Working space shown?** | 30 in wide (or equipment width) x 36 in deep x 6.5 ft high in front of each new and affected panel, ESS, gateway and disconnect, dimensioned on the site plan or wall elevation | CEC 110.26 | This SKILL.md |
+| 22 | **Raceway suits the location?** | Conduit schedule names the raceway type and route of each run; exterior and exposed runs use a raceway suitable for the environment, and steel EMT in a severe corrosive area has approved corrosion protection | CEC 358.10, 300.6, 110.11 | `wire-sizing-solar.md` |
 
 #### STEP 3: Output the Review Result
 
 For each checklist item, output one of:
-- **PASS** -- requirement met, cite code section
+- **PASS** -- requirement met: cite the code section AND the sheet and value that show it (for structure, the calculation page and the framing size and span it checked; for raceways, each exterior run's type and route; for labels, each placard read). A general note, a racking span table, or a software summary is not evidence; without evidence the item is FLAG
 - **FAIL** -- requirement not met, cite code section and explain what is wrong
 - **FLAG** -- cannot determine from submitted data, explain what additional info is needed
 - **N/A** -- does not apply to this installation
