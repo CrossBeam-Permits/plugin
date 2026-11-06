@@ -143,6 +143,7 @@ For cross-cutting city info (portal, contact, codes, VHFHSZ, coastal zone, DRB),
 | **Sewer overlay** | LBMC Title 17, Chapter 17.50 (Private Sewer Laterals) + Chapter 17.12 (Connections) |
 | **Conflict rule** | LBMC §14.64.010 — "more restrictive shall govern" when Title 17 stacks on CPC §707/§710 |
 | **Reimbursement** | Up to 50% of cost, max $1,600/parcel, per Laguna PSL Program FAQ |
+| **How the video is submitted** | Per the City's Public Works Forward Lateral Sewer Video Inspection Program handout (posted 2026-10-23, `https://www.lagunabeachcity.net/home/showpublisheddocument/27700/639283494542630000`): a plumber with a state license and a Laguna Beach business license submits the report and video through the City's Forward Lateral platform (goforwardlateral.com) and pays a fee per submittal. The Building Division issues the permit only after it sees the email confirming that submittal. The 50% reimbursement is for residential properties with three or fewer units, and the application must go in after the video and before any repair work starts. |
 
 ---
 

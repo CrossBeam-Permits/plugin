@@ -116,7 +116,7 @@
             "residential-accessory-structure"
           ],
           "checked_against": "submittal",
-          "detail": "Laguna files one application per scope off one complete plan set, each with its own description and valuation. The baseline scopes are: new SFR/addition/remodel with site work and grading of 20 CY or less outside the building footprint; demolition; ADU/JADU; grading of more than 20 CY outside the building footprint; and pool/spa. Each ADU or JADU normally has its own permit, but a JADU may ride with the main house; main house + JADU + ADU is two applications. Demolishing a unit requires its own demolition permit; demo-only normally also needs a construction submittal on file or Building Official approval. GRADING TEST: count only grading OUTSIDE the building footprint, using the greater of cut or fill. More than 20 CY outside the footprint needs its own grading application, valuation, permit and plan submittal; 20 CY or less rides with construction. Grading inside the footprint never counts toward the 20 CY, though it still gets review and a fee. Apply the test in one of three cases. (1) The plans or application state the inside and outside quantities: apply the test to the outside quantity. Evidence of outside grading includes grading or civil sheets, a referenced civil grading plan that is not in the packet, site or retaining walls, a new driveway or pad cut, and a subterranean garage or basement whose excavation extends beyond the footprint. Decide which case applies by reading the plans; never from a keyword. Shoring may issue with grading, but the plan checker decides which permit carries it. A house with an ADU may share one plan check but issues as two permits, one per address. Application pages may be combined into one PDF. When the City record for the named permit is available, compare its description with this filing's scope, the way a Planning record is compared: a grading record opened for another permit's work does not cover this filing's grading.",
+          "detail": "Laguna files one application per scope off one complete plan set, each with its own description and valuation. The baseline scopes are: new SFR/addition/remodel with site work and grading of 20 CY or less outside the building footprint; demolition; ADU/JADU; grading of more than 20 CY outside the building footprint; and pool/spa. Each ADU or JADU normally has its own permit, but a JADU may ride with the main house; main house + JADU + ADU is two applications. Demolishing a unit requires its own demolition permit; demo-only normally also needs a construction submittal on file or Building Official approval. GRADING TEST: count only grading OUTSIDE the building footprint, using the greater of cut or fill. More than 20 CY outside the footprint needs its own grading application, valuation, permit and plan submittal; 20 CY or less rides with construction. Grading inside the footprint never counts toward the 20 CY, though it still gets review and a fee. Apply the test in one of three cases. (1) The plans or application state the inside and outside quantities: apply the test to the outside quantity. Decide which case applies by reading the plans; never from a keyword. Shoring may issue with grading, but the plan checker decides which permit carries it. A house with an ADU may share one plan check but issues as two permits, one per address. Application pages may be combined into one PDF. When the City record for the named permit is available, compare its description with this filing's scope, the way a Planning record is compared: a grading record opened for another permit's work does not cover this filing's grading.",
           "source": {
             "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Building Permit Application(s)\"; Laguna Beach 2026 Building Requirement Sheet, GENERAL INFORMATION row 4",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -316,7 +316,7 @@
           "checked_against": "submittal",
           "detail": "Submit the signed soils report, dated within one year of submittal. The report trigger list is broader than peer review: any new construction; an SFR addition over 1,200 square feet, a new upper floor, or total floor-area increase of 50 percent or more; a retaining wall over 5 feet or supporting surcharge; shoring over 6 feet of cut; a lot steeper than 1 vertical to 2 horizontal; construction at a beach/ocean front, coastal bluff top, steep hillside or liquefaction zone; soil or structure failure; a nonconventional foundation; a new pool on an ungraded lot, flood plain or coastal bluff top; or a Building Official determination. Do not substitute the separate peer-review list. An ADU (new, attached, or a conversion) is not \"any new construction\" on this list: it needs this report only for a lot slope over 20%, a deep foundation (grade beams or piles), or a retaining wall over 5 ft.",
           "source": {
-            "citation": "Laguna Beach Geotechnical/Soils Report Requirements, \"A geotechnical (soils) report is required\" (effective 6/17/2026; received 2026-08-14)",
+            "citation": "Laguna Beach Geotechnical/Soils Report Requirements, \"A geotechnical (soils) report is required\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -440,7 +440,7 @@
           "checked_against": "submittal",
           "detail": "The scaled staging/management program is submitted with the construction plans. Triggers include steep or hillside sites, narrow/tight access, tight road bends, a rear-lot crane from the street, a busy intersection, limited frontage or on-site storage, excessive grading/heavy equipment, or a Building Official determination that the project could affect the neighborhood or public.",
           "source": {
-            "citation": "Laguna Beach Construction Staging Management handout, \"When a staging program is required\" and \"Neighbor notification and the affidavit\" (Rev 10/24; received 2026-08-14)",
+            "citation": "Laguna Beach Construction Staging Management handout, \"When a staging program is required\" and \"Neighbor notification and the affidavit\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -489,7 +489,7 @@
           "checked_against": "city_record",
           "detail": "The published thresholds remain the legal context and match current MWELO at 23 CCR section 491(a), effective 2025-01-02 (the same state text was numbered section 490.1 before that amendment; section 490.1 is now General Provisions): (a)(1) a NEW CONSTRUCTION project — a new building with a landscape area, or another new landscape project — with a landscape area of 500 sq. ft. or more requiring a building permit, plan check or design review; (a)(2) a REHABILITATED LANDSCAPE project with a modified landscape area of 2,500 sq. ft. or more. Section 490.2(a)(41) defines landscape area as the irrigated planting, turf and water-feature areas only; it excludes building and structure footprints, hardscape, and non-irrigated areas. Section 491(b) lets any project at or under 2,500 sq. ft. of landscape area choose the prescriptive option in section 492 rather than the performance path.",
           "source": {
-            "citation": "Laguna Beach Water Efficient Landscape Requirements Information Guide, Applicability (Chapter 19.01; effective 2016-02-01)",
+            "citation": "Laguna Beach Water Efficient Landscape Requirements Information Guide, Applicability",
             "url": "https://www.lagunabeachcity.net/home/showpublisheddocument/14294/638121479980870000",
             "published": true
           }
@@ -866,7 +866,7 @@
           "checked_against": "submittal",
           "detail": "Every permitted interior renovation carries at least one legible floor plan showing the layout of the work. This is the floor of Laguna's interior-alteration intake: a permit application with no plan at all is incomplete even for the simplest in-kind bath refit. The plan must depict the renovation: it locates the work in the unit. A listing or brochure floor plan with a contractor estimate or scope list pasted beside it does not depict the renovation, and neither does an estimate, proposal or product sheet on its own.",
           "source": {
-            "citation": "Laguna Beach Residential Kitchen Remodel handout and Residential Bathroom Renovation handout, INTRODUCTION: \"At a minimum, a legible floor plan depicting the layout of the renovation is required for permitting\" (documents 5127 and 5125, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Kitchen Remodel handout and Residential Bathroom Renovation handout, INTRODUCTION: \"At a minimum, a legible floor plan depicting the layout of the renovation is required for permitting\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -886,7 +886,7 @@
           "checked_against": "submittal",
           "detail": "Laguna's plan-check intake for a room alteration is scaled drawings at 24 inches by 36 inches.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, SUBMITTAL CHECKLIST: \"two (2) sets of scaled drawing 24\\\" X 36\\\"\" (document 5129, republished 2026-05-09; verified live 2026-08-20); escalation trigger from the Kitchen Remodel and Bathroom Renovation handouts",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, SUBMITTAL CHECKLIST: \"two (2) sets of scaled drawing 24\\\" X 36\\\"\"; escalation trigger from the Kitchen Remodel and Bathroom Renovation handouts",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -907,7 +907,7 @@
           "checked_against": "submittal",
           "detail": "The title sheet carries seven named items: the owner's name, the owner's address, the project address, the scope of work, an index sheet, a vicinity map, and the list of deferred submittals.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"TITLE SHEET\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"TITLE SHEET\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -928,7 +928,7 @@
           "checked_against": "submittal",
           "detail": "The plans state that all work complies with the California Residential, Building, Mechanical, Electrical, Plumbing, Green Building Standards and Energy Codes in effect, together with local codes and ordinances. The edition is the adopted cycle — currently 2025, as printed on the City's kitchen, bathroom and master plan-check handouts. Checklist 5129 still prints \"2022 editions\"; that line is stale in the City's own document and is not applied to an applicant.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"SPECIFY ADOPTED CODES\"; editions read from the Kitchen Remodel and Bathroom Renovation handouts republished in the same batch and from Building Plan Check Submittal Requirements (documents 5127, 5125 and 5103; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"SPECIFY ADOPTED CODES\"; editions read from the Kitchen Remodel and Bathroom Renovation handouts republished in the same batch and from Building Plan Check Submittal Requirements",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -949,7 +949,7 @@
           "checked_against": "submittal",
           "detail": "Where exterior work is in scope, the site plan delineates all projecting elements and dimensions their distance to the property lines and to adjacent structures. The City ties this sheet to exterior work specifically, so a purely interior remodel is not held to it.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"SITE PLAN – If the project includes exterior work\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"SITE PLAN – If the project includes exterior work\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -970,7 +970,7 @@
           "checked_against": "submittal",
           "detail": "The plan-check set carries both the existing floor plan and the proposed floor plan. The proposed plan indicates the new areas, door sizes, window sizes, headers, electrical outlets, light switches, the FAU, registers and plumbing fixtures. A proposed-only set is incomplete: the City reads the pair to see what changed.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"FLOOR PLAN\": \"Existing floor plan to be included as well\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"FLOOR PLAN\": \"Existing floor plan to be included as well\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -991,7 +991,7 @@
           "checked_against": "submittal",
           "detail": "The section shows the framing of the new work, its relationship to the existing structure, and how it attaches. The City asks for the cut through both the new work and the existing building, not through the new work alone.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"Section(s) cut through additions and existing structure\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"Section(s) cut through additions and existing structure\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1012,7 +1012,7 @@
           "checked_against": "submittal",
           "detail": "Where roof work is in scope, the roof plan indicates slopes, ridges, valleys, flashing, overhangs and drainage, and it names a Class A roofing assembly together with its approved evaluation report number. Laguna asks for the report number on the sheet, not merely the word \"Class A.\"",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"ROOF PLAN\": \"Class A Roofing Assembly with an approved evaluation report number is required\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"ROOF PLAN\": \"Class A Roofing Assembly with an approved evaluation report number is required\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1033,7 +1033,7 @@
           "checked_against": "submittal",
           "detail": "Where the exterior changes, the elevations indicate finish materials — stucco, siding, fire-treated shakes — window and door openings, and building heights, and they show compliance with the Very High Fire Hazard Severity Zone requirements and CBC Chapter 7A. Laguna names Chapter 7A on the elevations for room alterations, not only on new construction.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"EXTERIOR ELEVATIONS\": \"Comply with VHFSZ and Chapter 7A\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"EXTERIOR ELEVATIONS\": \"Comply with VHFSZ and Chapter 7A\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1054,7 +1054,7 @@
           "checked_against": "submittal",
           "detail": "The structural sheets indicate framing member sizes, beam sizes, the lateral resisting system, footings and construction details. Wall removal for an enlarged opening is the common trigger on a remodel: the header and its supports below are structural work even when the room reads as a finish project.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"STRUCTURAL PLANS\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"STRUCTURAL PLANS\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1075,7 +1075,7 @@
           "checked_against": "submittal",
           "detail": "Calculations justifying the proposed framing member and beam sizes, the footing and reinforcement sizes, and the lateral resisting system and its connections.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"STRUCTURAL CALCULATIONS – Two (2) sets are required\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"STRUCTURAL CALCULATIONS – Two (2) sets are required\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1096,7 +1096,7 @@
           "checked_against": "submittal",
           "detail": "Laguna asks for the Title 24 energy compliance forms — the CF-1R and MF-1R the checklist names — where the work triggers energy compliance.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"ENERGY COMPLIANCE FORMS – Two (2) sets will be required\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"ENERGY COMPLIANCE FORMS – Two (2) sets will be required\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1117,7 +1117,7 @@
           "checked_against": "submittal",
           "detail": "Laguna states two independent triggers and either one fires: an increase to the plumbing fixture count, or permitted work valued over $100,000 within certain areas, which the checklist locates north of Cardinal Drive. A bathroom renovation that adds a fixture reaches the first trigger on its own. The City does not publish the area boundary on this handout, so confirm the affected area with the Building Division rather than reading \"north of Cardinal Drive\" as a mapped limit.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"SEWER VIDEO – required for any increase to plumbing fixture count or involves any work requiring a building permit valued at over $100,000 within certain areas (north of Cardinal Drive)\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"SEWER VIDEO – required for any increase to plumbing fixture count or involves any work requiring a building permit valued at over $100,000 within certain areas (north of Cardinal Drive)\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1137,7 +1137,7 @@
           "checked_against": "submittal",
           "detail": "Where windows or glazed doors are in scope, the schedule or the plan notes identify dual-pane glazing with one pane tempered. This is read as content of the plan set, not as a separate standalone document.",
           "source": {
-            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"WINDOWS & DOORS – must be dual pane with one pane tempered\" (document 5129, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, \"WINDOWS & DOORS – must be dual pane with one pane tempered\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1158,7 +1158,7 @@
           "checked_against": "submittal",
           "detail": "Above a $1,000 project value the alarm upgrade reaches the whole dwelling, not just the remodeled room. Smoke alarms go in every sleeping room, outside each sleeping area in the immediate vicinity of the bedrooms, on every floor level including basements and habitable attics but excluding crawl spaces and uninhabitable attics, in the immediate vicinity of a sleeping loft, and within a room or space open to a sleeping loft, with specific installed locations per CRC R310.3.3. Carbon monoxide alarms are required where fuel-fired appliances or fireplaces are installed or the dwelling has an attached garage, either condition alone being enough; they go outside each separate sleeping area, on every occupiable level including basements, and inside a bedroom where a fuel-burning appliance is located in that bedroom or its attached bathroom. In existing construction the alarms may be battery-operated where the work removes no wall or ceiling finish and there is no access by attic, basement or crawlspace. Multipurpose alarms must meet both R310 and R311 and be listed by the Office of the State Fire Marshal. This is a plan-check note the City attaches to the permit, so an absent note is a correction to make, never a reason to refuse the packet at the counter.",
           "source": {
-            "citation": "Laguna Beach Residential Kitchen Remodel and Residential Bathroom Renovation handouts: \"Project valuation over $1,000 will require the smoke and carbon monoxide alarms for the dwelling to meet the current code (CRC sections R310 and R311)\" (documents 5127 and 5125, republished 2026-05-09; verified live 2026-08-20)",
+            "citation": "Laguna Beach Residential Kitchen Remodel and Residential Bathroom Renovation handouts: \"Project valuation over $1,000 will require the smoke and carbon monoxide alarms for the dwelling to meet the current code (CRC sections R310 and R311)\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -1354,7 +1354,7 @@
           "checked_against": "submittal",
           "detail": "Accept written notice from the gas and electric utilities that meter removal is scheduled or complete. The page also expressly accepts evidence that the applicant notified both utilities; the notice does not have to be a utility-issued confirmation.",
           "source": {
-            "citation": "\"a notification to utility companies will suffice\" per City building staff on 2025-08-27",
+            "citation": "City of Laguna Beach Building Division staff guidance",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
@@ -2003,7 +2003,7 @@
           "checked_against": "submittal",
           "detail": "The contractor holds a current Laguna Beach business license, issued in the same name as the CSLB record. The Building Permit Application form states the rule for every building permit and extends it past the general contractor: \"All contractors, including subcontractors, will need to obtain a city business license pursuant to section 5.08.200 of the Laguna Beach Municipal Code.\" It is due at ISSUANCE, not at submittal. City permit staff ruled this on 2026-09-01: Laguna issues these simple permits only at the counter, and the technician asks for the license there. An applicant who cannot produce one is sent to the Finance counter, which is where the license is verified. Its absence therefore never makes a submittal incomplete.",
           "source": {
-            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Contractors to possess a current city business license\"; Reroofing guide, \"Contractors: Must have a valid City Business License matching CSLB records\"; Building Permit Application form, contractor block (\"CONTRACTOR (As Shown on License)… License #… Class\") and printed note \"City Business License required. All contractors, including subcontractors, will need to obtain a city business license pursuant to section 5.08.200 of the Laguna Beach Municipal Code\"; STAGE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"Required for issuance. Need a way to verify when issuing online\"",
+            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Contractors to possess a current city business license\"; Reroofing guide, \"Contractors: Must have a valid City Business License matching CSLB records\"; Building Permit Application form, contractor block (\"CONTRACTOR (As Shown on License)… License #… Class\") and printed note \"City Business License required. All contractors, including subcontractors, will need to obtain a city business license pursuant to section 5.08.200 of the Laguna Beach Municipal Code\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -2102,7 +2102,7 @@
           "checked_against": "submittal",
           "detail": "The letter is on company letterhead and carries four things: the name of the authorized agent, the license holder's printed name, the license holder's signature and date, and the CSLB license number. It is due at ISSUANCE, not at submittal. City permit staff ruled this on 2026-09-01: Laguna issues these simple permits only at the counter, so the technician collects the letter when the permit issues. Its absence never makes a submittal incomplete.",
           "source": {
-            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Authorized Agent Requirements\"; Reroofing guide, \"Authorized Agent (contractor): Must provide an authorization letter on company letter head\"; STAGE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"needed for issuance, not submittal\"",
+            "citation": "Laguna Beach Panel Upgrade E-Permit guide and Water Heater Replacement E-Permit guide, \"Authorized Agent Requirements\"; Reroofing guide, \"Authorized Agent (contractor): Must provide an authorization letter on company letter head\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -2359,7 +2359,7 @@
           "checked_against": "submittal",
           "detail": "Two deliverables, not one: the Waste Management Plan, and a separate security deposit paid by check or cash. The City's Solid Waste Division administers the C&D requirements at (949) 464-6677 or Recycle@LagunaBeachCity.net; deposit amounts changed effective 2026-07-01, so read the current fee schedule rather than quoting a figure. Both are due at ISSUANCE, not at submittal. City permit staff ruled this on 2026-09-01: the Solid Waste Division takes the plan and the deposit at a different counter, the deposit is paid in cash or by check there, and Laguna issues reroof permits only in person. Their absence never makes a submittal incomplete. A PARTIAL reroof is still a reroof: the City files it as a Residential - Reroof permit, and the guide's only exemption is \"no tear-off\". Whether LBMC 7.19 itself exempts a small project by size or valuation is not in our sources: UNSETTLED, confirm with the Solid Waste Division. Never treat a small tear-off as exempt on our own reading.",
           "source": {
-            "citation": "Laguna Beach Reroofing guide, \"Rules & Color Restrictions\": \"Submit a Waste Management Plan and separate security deposit (check or cash) for tear-off reroofs, per Municipal Code 7.19 (exempt if no tear-off)\"; LBMC Ch. 7.19, Construction and Demolition Waste Disposal; § 7.19.050 submission of waste management plan, § 7.19.070 security deposit; STAGE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"required at issuance\"",
+            "citation": "Laguna Beach Reroofing guide, \"Rules & Color Restrictions\": \"Submit a Waste Management Plan and separate security deposit (check or cash) for tear-off reroofs, per Municipal Code 7.19 (exempt if no tear-off)\"; LBMC Ch. 7.19, Construction and Demolition Waste Disposal; § 7.19.050 submission of waste management plan, § 7.19.070 security deposit",
             "url": "https://ecode360.com/42886987",
             "published": true
           }
@@ -2399,7 +2399,7 @@
           "checked_against": "city_record",
           "detail": "The parcel is in a Deferred Certification Zone, which is under the direct jurisdiction of the State rather than the City. All Appendix B forms and the application fees go directly to the California Coastal Commission, not to Laguna Beach. Planning looks at every reroof, so the route determination is where the filing is recorded. The applicant must not wait for it to move through Building intake.",
           "source": {
-            "citation": "Laguna Beach Reroofing guide, \"Coastal Appealable & Deferred Area\": \"Deferred Certification Zone: This is under the direct jurisdiction of the State. Complete and submit all Appendix B forms and send the required application fees directly to the California Coastal Commission\"; LANE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"coastal commission, that kind of stuff, that’s not for us\"; a Planning requirement, not a Building one",
+            "citation": "Laguna Beach Reroofing guide, \"Coastal Appealable & Deferred Area\": \"Deferred Certification Zone: This is under the direct jurisdiction of the State. Complete and submit all Appendix B forms and send the required application fees directly to the California Coastal Commission\"; a Planning requirement, not a Building one",
             "url": "https://www.coastal.ca.gov/",
             "published": true
           }
@@ -2416,7 +2416,7 @@
           "checked_against": "city_record",
           "detail": "An issuance gate, not a packet item: the City approves the submitted materials and colors before the permit issues. Planning does that approving — City permit staff, 2026-09-01: \"Planning reviews/approves color samples\" — and it judges the material details and the color samples against the photographs the City publishes at the end of its reroofing guide: light roof colors to avoid, acceptable and not-acceptable shingle colors, metal roofs (acceptable with a matte finish), and acceptable and not-acceptable flat-roof membrane colors.",
           "source": {
-            "citation": "Laguna Beach Reroofing guide, \"Overview\": \"Materials and colors must be approved prior to permit issuance\", and the color guide at the end of the packet; the photographs of light roof colors to avoid, acceptable and not-acceptable shingle colors, metal roofs, and acceptable and not-acceptable flat-roof membrane colors; LANE from the City's Online Permit Services Supervisor, 2026-09-01 working session: \"Planning reviews/approves color samples\"",
+            "citation": "Laguna Beach Reroofing guide, \"Overview\": \"Materials and colors must be approved prior to permit issuance\", and the color guide at the end of the packet; the photographs of light roof colors to avoid, acceptable and not-acceptable shingle colors, metal roofs, and acceptable and not-acceptable flat-roof membrane colors",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -2487,7 +2487,7 @@
           "checked_against": "submittal",
           "detail": "An EV charging station is filed on the City's Electrical Permit Application, not the general Building Permit Application. Laguna publishes a combined Electrical/Mechanical/Plumbing permit application for this purpose.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Permit Submittal Requirements\": \"Completed Electrical Permit Application\" (document 5111; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Permit Submittal Requirements\": \"Completed Electrical Permit Application\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2505,7 +2505,7 @@
           "checked_against": "submittal",
           "detail": "The equipment manufacturer's specification sheets and its installation guidelines are submitted with the application.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Permit Submittal Requirements\": \"Manufacturer's specifications sheets and installation guidelines\"; Multi-Family and Non-Residential Eligibility Checklists, \"Permit Application Requirements\" (documents 5111, 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Permit Submittal Requirements\": \"Manufacturer's specifications sheets and installation guidelines\"; Multi-Family and Non-Residential Eligibility Checklists, \"Permit Application Requirements\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2523,7 +2523,7 @@
           "checked_against": "submittal",
           "detail": "The City's checklist is itself a submitted document: the applicant signs and dates it, prints their name, and identifies whether they are the contractor, the owner, or the owner's agent. On the multi-family and non-residential checklists the contractor's license number and type are written in as well. An unsigned checklist is an incomplete filing even when every box is ticked.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, certification block: \"I certify that I have read and acknowledged all of the Code Requirements noted above\", with Contractor / Owner / Owner's Agent selection; Multi-Family and Non-Residential Eligibility Checklists, applicant signature, printed name and contractor's license number and type (documents 5111, 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, certification block: \"I certify that I have read and acknowledged all of the Code Requirements noted above\", with Contractor / Owner / Owner's Agent selection; Multi-Family and Non-Residential Eligibility Checklists, applicant signature, printed name and contractor's license number and type",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2545,7 +2545,7 @@
           "checked_against": "submittal",
           "detail": "For an outdoor installation the packet demonstrates that neither the equipment nor the parked vehicle occupies the public right-of-way, including over the sidewalk. The burden is on the applicant to show it. Public Works may approve an encroachment, and that approval is the alternative — not an exemption the Building Division grants.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging: \"Installations in outdoor locations must demonstrate that the parked vehicle and all components of the EV charging station will NOT be in the Public Right of Way (i.e. on or over the sidewalk) unless otherwise approved by the Department of Public Works\" (document 5111; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging: \"Installations in outdoor locations must demonstrate that the parked vehicle and all components of the EV charging station will NOT be in the Public Right of Way (i.e. on or over the sidewalk) unless otherwise approved by the Department of Public Works\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2562,7 +2562,7 @@
           "checked_against": "submittal",
           "detail": "The site plan is fully dimensioned and drawn to scale. It shows the building footprint with distances to the property lines, the parking areas, the location of the electrical service and subpanels, and the location of existing and proposed EV charging stations, together with the location, size and use of all structures, the panel-to-charger routing, and the type and mounting of the charging system. It also carries project information: the project address, the owner's information, and a scope-of-work statement. The City exempts single-family, duplex and ADU installations from this sheet entirely.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Schematic Site Plan (Not required for single-family, duplex or ADU)\"; Multi-Family and Non-Residential Eligibility Checklists, \"Site Plan and Single Line Drawing\" (documents 5111, 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Schematic Site Plan (Not required for single-family, duplex or ADU)\"; Multi-Family and Non-Residential Eligibility Checklists, \"Site Plan and Single Line Drawing\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2580,7 +2580,7 @@
           "requires_seal": true,
           "detail": "A separate electrical plan, stamped and signed by a California licensed electrical engineer or a C-10 electrical contractor. It carries the single-line diagram; the existing electrical service size and the number of meters; the size, type and insulation ratings — voltage and temperature — of all conductors and associated wiring components; and the type, size and material of the raceways. The existing panel schedule shows room for the additional breakers. Single-family, duplex and ADU installations are exempt from this sheet.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Signed Electrical Plans (Not required for single-family, duplex or ADU)\"; Multi-Family and Non-Residential Eligibility Checklists: \"Electrical plans shall be completed, stamped and signed by a California Licensed Electrical Engineer or a C-10 electrical contractor\" (documents 5111, 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Signed Electrical Plans (Not required for single-family, duplex or ADU)\"; Multi-Family and Non-Residential Eligibility Checklists: \"Electrical plans shall be completed, stamped and signed by a California Licensed Electrical Engineer or a C-10 electrical contractor\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2597,7 +2597,7 @@
           "checked_against": "submittal",
           "detail": "A load calculation worksheet under CEC Article 220, sized for a continuous load at 125 percent. Where the worksheet shows the existing service cannot carry the charger, the same submittal includes the service panel upgrade — the City does not accept a worksheet that identifies an upgrade and plans that omit it. The voluntary homeowner load estimator the City publishes separately is not this worksheet.",
           "source": {
-            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Electrical Load Calculation Worksheet\": \"Is an electrical load calculation worksheet included? (CEC 220)\" and \"Based on the load calculation worksheet, is a new electrical service panel upgrade required? If yes, do plans include the electrical service panel upgrade?\" (documents 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Electrical Load Calculation Worksheet\": \"Is an electrical load calculation worksheet included? (CEC 220)\" and \"Based on the load calculation worksheet, is a new electrical service panel upgrade required? If yes, do plans include the electrical service panel upgrade?\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2619,7 +2619,7 @@
           "checked_against": "submittal",
           "detail": "At Level 2 — 9.6 kW and a circuit rating of 50 amps or higher, a completed circuit card with electrical calculations travels with the single-line diagram. The City's own power table runs Level 1 at 15 or 20 amps through Level 2 at 20, 30, 40, 50 and 100 amps, and the applicant checks the proposed rating on the checklist.",
           "source": {
-            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Electrical Load Calculation Worksheet\" item D: \"If charging equipment proposed is a Level 2 – 9.6 kW station with a circuit rating of 50 Amps or higher, is a completed circuit card with electrical calculations included with the single line diagram?\" (documents 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Electrical Load Calculation Worksheet\" item D: \"If charging equipment proposed is a Level 2 – 9.6 kW station with a circuit rating of 50 Amps or higher, is a completed circuit card with electrical calculations included with the single line diagram?\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2641,7 +2641,7 @@
           "checked_against": "submittal",
           "detail": "Where the installation triggers the indoor ventilation requirements of CEC § 625.52(B), a mechanical plan is filed with the permit application.",
           "source": {
-            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Site Plan and Single Line Drawing\": \"If mechanical ventilation requirements are triggered for indoor venting requirements (CEC 625.52 (B)), is a mechanical plan included with the permit application?\" (documents 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Site Plan and Single Line Drawing\": \"If mechanical ventilation requirements are triggered for indoor venting requirements (CEC 625.52 (B)), is a mechanical plan included with the permit application?\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2663,7 +2663,7 @@
           "checked_against": "submittal",
           "detail": "Where the run is trenched, the plans call out the trenching detail and show the minimum cover for the wiring method — 18 inches for direct burial under CEC § 300.5.",
           "source": {
-            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Compliance with the California Electrical Code\" item E: \"If trenching is required, is the trenching detail called out?\" and \"Is the trenching in compliance with minimum cover requirements for wiring methods or circuits? (18\\\" for direct burial per CEC 300.5)\" (documents 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Compliance with the California Electrical Code\" item E: \"If trenching is required, is the trenching detail called out?\" and \"Is the trenching in compliance with minimum cover requirements for wiring methods or circuits? (18\\\" for direct burial per CEC 300.5)\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2681,7 +2681,7 @@
           "checked_against": "submittal",
           "detail": "The charging outlet sits on its own branch circuit with no other outlets on it, under CEC § 210.17. This is a plan-check item the City lists among its code requirements, so an absent note is a correction rather than a counter rejection.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Electric Vehicle Branch Circuit\": \"An outlet(s) installed for the purpose of charging electric vehicles shall be supplied by a separate branch circuit. This circuit shall have no other outlets. [CEC §210.17]\" (document 5111; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Electric Vehicle Branch Circuit\": \"An outlet(s) installed for the purpose of charging electric vehicles shall be supplied by a separate branch circuit. This circuit shall have no other outlets. [CEC §210.17]\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2704,7 +2704,7 @@
           "checked_against": "submittal",
           "detail": "For supply equipment rated over 60 amperes or over 150 volts to ground, a disconnecting means is installed in a readily accessible location, in line of sight, and lockable in the open position under CEC § 110.25.",
           "source": {
-            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Disconnecting Means\" citing CEC §§ 625.42 and 110.25; Multi-Family and Non-Residential Eligibility Checklists item C citing CEC § 625.43 (documents 5111, 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Code Compliance Checklist; Electric Vehicle (EV) Charging, \"Disconnecting Means\" citing CEC §§ 625.42 and 110.25; Multi-Family and Non-Residential Eligibility Checklists item C citing CEC § 625.43",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2721,7 +2721,7 @@
           "checked_against": "submittal",
           "detail": "The equipment carries a Nationally Recognized Testing Laboratory approved listing mark, which the City identifies as UL 2202 or UL 2200. The manufacturer's specification sheet is normally where this is shown.",
           "source": {
-            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Compliance with the California Electrical Code\" item D: \"Does the charging equipment have a Nationally Recognized Testing Laboratory (NRTL) approved listing mark? (UL 2202/UL 2200)\" (documents 11685 and 11683; verified live 2026-08-20)",
+            "citation": "Laguna Beach Multi-Family and Non-Residential Eligibility Checklists, \"Compliance with the California Electrical Code\" item D: \"Does the charging equipment have a Nationally Recognized Testing Laboratory (NRTL) approved listing mark? (UL 2202/UL 2200)\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2742,7 +2742,7 @@
           "checked_against": "submittal",
           "detail": "Where CALGreen EV-readiness applies, the plans show 10 percent of total parking spaces across all parking facility types as EV spaces capable of supporting future charging stations, with the required count rounded up to the nearest whole number. The construction documents locate the proposed EV spaces, at least one of them in a common-use area available to all residents. Where chargers are installed, each EV space required by § 4.106.4.2.2 item 3 satisfies at least one option: adjacent to an accessible parking space complying with CBC Chapter 11A so the charger can be used from it, on an accessible route as defined by CBC Chapter 2, or compliance with § 4.106.4.2.2 items 1, 2 and 3.",
           "source": {
-            "citation": "Laguna Beach Multi-Family Eligibility Checklist, \"Compliance with California Green Building Standards Code\", citing CALGreen §§ 4.106.4.2, 4.106.4.2.1 and 4.106.4.2.2 (document 11685; verified live 2026-08-20)",
+            "citation": "Laguna Beach Multi-Family Eligibility Checklist, \"Compliance with California Green Building Standards Code\", citing CALGreen §§ 4.106.4.2, 4.106.4.2.1 and 4.106.4.2.2",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2827,7 +2827,7 @@
           "checked_against": "submittal",
           "detail": "Identify whether the PV scope includes a main service panel upgrade or relocation and whether it includes an energy storage system. When included, state the panel rating and the storage-system size on the application or plans.",
           "source": {
-            "citation": "Energy Storage System (ESS)\"; City permit staff's 2026-08-27 heading also names panel relocations",
+            "citation": "City of Laguna Beach Building Division staff guidance",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
@@ -2882,7 +2882,7 @@
           "checked_against": "city_record",
           "detail": "For removal and reinstallation after a reroof, staff ensure that the originally approved stamped solar set is in the City's e-review files under the For Reference file name.",
           "source": {
-            "citation": "last reviewed and updated 2026-07-30), \"Make sure original stamped set is in the e-review files\" and use \"For Reference\" file name",
+            "citation": "City of Laguna Beach Building Division staff guidance",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
@@ -2934,7 +2934,7 @@
           "checked_against": "submittal",
           "detail": "The plan dimensions the wall height measured from adjacent grade and the distance from the wall to each property line. These two numbers decide whether a permit is required at all — over 30 inches from adjacent grade, or any height within three feet of a property line — so a drawing that omits either cannot be checked. The bulletin also limits the grade difference across the wall to a maximum 6-inch offset with no surcharge loads, which the same dimensions establish. The bulletin's 30-inch line and LBMC 14.50.022's 72-inch exemption disagree for a freestanding block wall between 30 and 72 inches set more than three feet from every property line and the right-of-way; that band is UNSETTLED with the City (see the prose above).",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTES 2 and 3: \"Concrete block wall over 30\\\" in height measured from adjacent grade shall require a building permit\" and \"Concrete block wall in any height within three (3) feet of the property lines shall require a building permit\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27); LBMC 14.50.022, Building item 1: \"Walls and fences not over 72 inches high, unless located within three feet of a property line or public right-of-way\" are exempt from permit",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTES 2 and 3: \"Concrete block wall over 30\\\" in height measured from adjacent grade shall require a building permit\" and \"Concrete block wall in any height within three (3) feet of the property lines shall require a building permit\"; LBMC 14.50.022, Building item 1: \"Walls and fences not over 72 inches high, unless located within three feet of a property line or public right-of-way\" are exempt from permit",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2951,7 +2951,7 @@
           "checked_against": "city_record",
           "detail": "The Zoning/Planning Division regulates the wall's height and location based on the zone, its position on the property, and community design standards, and approves the plans before any permit issues. Laguna sequences the two lanes here exactly as it does for buildings: the Planning approval exists first, and the Building packet is filed against the plans Planning approved.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 8: \"Zoning/Planning division must approve the plans prior to any permit being issued\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 8: \"Zoning/Planning division must approve the plans prior to any permit being issued\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2972,7 +2972,7 @@
           "checked_against": "submittal",
           "detail": "The City's standard detail is all-or-nothing: an applicant relying on it may not modify any portion of it. The June 2026 revision uses the 2025 CBC and ASCE 7-22 with a 95 mph basic wind speed, exposure C. It is designed for the average condition, at an allowable soil bearing pressure of 1,500 psf with passive bearing at 100 psf per foot and footings a minimum 12 inches into undisturbed natural soil. Where the site slope exceeds 10 percent, where soil conditions are adverse — expansive soil, liquefaction, flood hazard — or where the design departs from the detail in any way, a design professional registered in California prepares the plans instead.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), LIMITS OF APPLICABILITY STANDARDS: \"Use of this document shall not permit the applicant to modify any portion(s) of these details\", and the purpose statement naming slopes steeper than 10%, adverse soil conditions and deviation from the bulletin (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), LIMITS OF APPLICABILITY STANDARDS: \"Use of this document shall not permit the applicant to modify any portion(s) of these details\", and the purpose statement naming slopes steeper than 10%, adverse soil conditions and deviation from the bulletin",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -2988,7 +2988,7 @@
           "checked_against": "submittal",
           "detail": "A licensed surveyor locates and monuments the property corners before construction starts. This is a pre-construction gate rather than a counter item, so its absence is a condition to satisfy, never a reason to refuse the packet.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 9: \"Property corners shall be monumented (located) by a licensed surveyor prior to starting the construction\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 9: \"Property corners shall be monumented (located) by a licensed surveyor prior to starting the construction\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3010,7 +3010,7 @@
           "checked_against": "submittal",
           "detail": "Within three feet of a property line the City draws a line by material. For a masonry or concrete wall, the affected property corners are located and monumented by a California licensed land surveyor or qualified licensed civil engineer and recorded with the county before building or rebuilding — and the survey waiver is not available for it. For a wood, vinyl or wrought-iron fence, a licensed surveyor instead certifies the setback, documenting the placement of the fence and posts relative to the property line, and is retained before construction to identify the property line. That certification lands before the footing inspection and the concrete pour. The waiver route exists only for the light-fence materials: a notarized Request to Waive Survey Requirement signed by each adjoining property owner, filed with the Building Division before the permit issues.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 10; Laguna Beach Request to Waive Survey Requirement for Fences Within 3 Feet of Property Line, which states the masonry monumentation-and-recording rule, the light-fence setback-certification alternative, and the notarized adjoining-owner waiver (June 2026 bulletin attached by City permit staff on 2026-08-26; waiver form verified live 2026-08-20)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 10; Laguna Beach Request to Waive Survey Requirement for Fences Within 3 Feet of Property Line, which states the masonry monumentation-and-recording rule, the light-fence setback-certification alternative, and the notarized adjoining-owner waiver",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3027,7 +3027,7 @@
           "checked_against": "submittal",
           "detail": "No wall or fence within 36 inches of a fire hydrant. No wall, fence or foundation within 12 inches of a water meter. The meter clearance reaches the footing, not only the wall above it, which is the part a plan most often misses.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 7: \"No wall or fence shall be allowed within 36\\\" of a fire hydrant and no wall, fence, or foundation shall be allowed within 12\\\" of a water meter\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 7: \"No wall or fence shall be allowed within 36\\\" of a fire hydrant and no wall, fence, or foundation shall be allowed within 12\\\" of a water meter\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3049,7 +3049,7 @@
           "checked_against": "submittal",
           "detail": "Nothing projects into the public right-of-way, and the City names the decorative elements specifically: a stone cap or trim counts as a projection even where the wall face itself is clear. The rule yields to an encroachment the City has approved. A Revocable Encroachment Permit may allow \"minor structures such as low fences and retaining walls\" in an unimproved, unused right-of-way, and Public Works permits work within the right-of-way. When an approved REP or Public Works encroachment permit covers this wall, the wall or cap in the right-of-way is the approved condition; staff confirm the approval covers this wall and its cap.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 11: \"No projections allowed in the public right of way including stone cap or trim\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27); Laguna Beach Revocable Encroachment Permit Application (updated July 2026), page 1: a REP \"may allow minor construction in an otherwise unimproved, unused public right-of-way\" for \"minor structures such as low fences and retaining walls, walkways, stairs\"",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 11: \"No projections allowed in the public right of way including stone cap or trim\"; Laguna Beach Revocable Encroachment Permit Application (updated July 2026), page 1: a REP \"may allow minor construction in an otherwise unimproved, unused public right-of-way\" for \"minor structures such as low fences and retaining walls, walkways, stairs\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3070,7 +3070,7 @@
           "checked_against": "submittal",
           "detail": "The standard detail covers a freestanding site wall: it retains no soil and forms no part of a building or other structure. A wall filed against the standard detail that is shown retaining grade, or tied into a structure, has left the bulletin and needs an engineered design. It never applies to an engineered retaining wall, which is the residential-retaining-wall case, or to a wood, vinyl or metal fence.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 12: \"Site wall is standing alone. No retaining is permitted form part of building or other structure\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 12: \"Site wall is standing alone. No retaining is permitted form part of building or other structure\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3090,7 +3090,7 @@
           "checked_against": "submittal",
           "detail": "A railing, guard or screen may not sit on the wall where the wall plus the attachment exceeds 6 feet 0 inches above the lowest adjacent grade. The measurement is the combined height from the lowest adjacent grade, not the wall height alone.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 13: \"No railing, guard, or screen attachments are permitted where the wall height plus the rail, guard, or screen height exceed 6'-0\\\" above lowest adjacent grade\" (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTE 13: \"No railing, guard, or screen attachments are permitted where the wall height plus the rail, guard, or screen height exceed 6'-0\\\" above lowest adjacent grade\"",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3110,7 +3110,7 @@
           "checked_against": "submittal",
           "detail": "The wall is solid grouted. Both footing alternates on page 2 of the June 2026 revision label the wall 6\" MIN. CMU (SOLID GROUTED); the April 2020 revision labelled it only 6\" MIN. CMU. A partially grouted wall that would have passed against the older sheet no longer matches the standard detail. Blocks are laid in running bond so head joints in successive courses offset horizontally by at least a quarter unit length. Cleanouts are provided for all lifts greater than 4 feet. Expansion joint spacing does not exceed 30 feet. The cleanout note is the one that bites in the field, because it is checked at the reinforcing steel inspection before grouting — the same inspection that makes solid grouting verifiable.",
           "source": {
-            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTES 4, 5 and 6, and the page-2 section callouts labelling both footing alternates 6\" MIN. CMU (SOLID GROUTED) (City-issued applicant bulletin attached by City permit staff on 2026-08-26; the City's published copy, document 5099, still served the April 2020 revision when checked 2026-08-27)",
+            "citation": "Laguna Beach Standard Block Wall Detail (Information Bulletin, revised June 2026), GENERAL NOTES 4, 5 and 6, and the page-2 section callouts labelling both footing alternates 6\" MIN. CMU (SOLID GROUTED)",
             "url": "https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms",
             "published": true
           }
@@ -3483,9 +3483,9 @@
             "commercial-solar"
           ],
           "checked_against": "submittal",
-          "detail": "The EnerGov portal accepts a free-text address, so a filing for a property in a neighboring city can reach Laguna Beach. Applicant action: The property at ADDRESS is in the City of CITY, not the City of Laguna Beach (name the sheet or document that says so). The City of Laguna Beach cannot review or issue this permit; please apply to the City of CITY. This Laguna Beach record will be closed.",
+          "detail": "The EnerGov portal accepts a free-text address, and sometimes no street at all, so a filing for a property in a neighboring city or on unincorporated county land can reach Laguna Beach. The packet's Laguna Beach mailing address agrees with this, because unincorporated Emerald Bay mails as Laguna Beach. Applicant action, another city: The property at ADDRESS is in the City of CITY, not the City of Laguna Beach (name the sheet or document that says so). The City of Laguna Beach cannot review or issue this permit; please apply to the City of CITY. Applicant action, county land: This WORK at ADDRESS is in unincorporated Orange County (name the community, such as Emerald Bay, when the packet or the address names it) and is not under the jurisdiction of the City of Laguna Beach. Please submit your plans and permit application to the County of Orange (OC Public Works, Development Services) instead of to the City's Building Division.",
           "source": {
-            "citation": "City of Laguna Beach Building Division staff guidance",
+            "citation": "California Health and Safety Code §17960: a city's building department enforces the building standards within its jurisdiction, so Laguna Beach Building intake has no authority over work in another city or on unincorporated county land.",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }

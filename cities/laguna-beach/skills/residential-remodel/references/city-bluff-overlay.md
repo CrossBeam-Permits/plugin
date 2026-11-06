@@ -98,7 +98,7 @@ Same ordinance lineage as §25.50.004 — pre-existing rule.
 
 ## Anti-Game Buried-Bluff Rule
 
-From the Bluff Edge Determinations Quick Guide (March 2024), `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10222/638533536501570000`, verbatim:
+From the Bluff Edge Determinations Quick Guide (Updated November 2026), `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10222/639292482707359202`, verbatim:
 
 > *"Oceanfront bluff edge or coastal bluff edge is defined as the upper termination of a bluff, cliff, or seacliff. In cases where the top edge of the bluff is rounded away from the face of the bluff, the bluff edge shall be defined as that point nearest the bluff face beyond which a downward gradient is maintained continuously to the base of the bluff. In a case where there is a step like feature at the top of the bluff, the landward edge of the topmost riser shall be considered the bluff edge. Bluff edges typically retreat over time as a result of erosional processes, landslides, development of gullies, or by grading (cut). **In areas where fill has been placed near or over the bluff edge, the original bluff edge, even if buried beneath fill, shall be taken to be the bluff edge.**"*
 
@@ -129,12 +129,14 @@ From the Bluff Edge Determinations Quick Guide ("Minimum Content Requirements" s
 
 ### Sea Level Rise
 
-> *"Range of sea level rise scenarios, based on the best available science, which is currently the **2018 Sea-Level Rise Guidance**, including the **medium-high risk aversion scenario of approximately 6.6'** in the erosion analysis."*
+> *"Evaluation of sea level rise in the erosion analysis using the best available science, which is currently the **2024 Sea-Level Rise Guidance**. Consistent with the guidance, residential and commercial structures should be evaluated using the **intermediate-high risk aversion scenario of 4.6'** of sea level rise."*
 
 | SLR scenario | Required value |
 |--------------|----------------|
-| Reference document | 2018 California SLR Guidance (best available science as of Mar 2024) |
-| Medium-high risk aversion scenario | ≈6.6 ft rise |
+| Reference document | 2024 California Sea-Level Rise Guidance (best available science as of Nov 2026) |
+| Residential and commercial structures | Intermediate-high risk aversion scenario, 4.6 ft rise |
+
+The November 2026 edition replaced the March 2024 text, which asked for a range of scenarios under the 2018 Guidance including the medium-high scenario of about 6.6 ft. A report that still analyzes only the 2018 medium-high 6.6 ft case assumes a larger rise than the City now asks for, so it is not unsafe on that point: FLAG that it cites superseded guidance and let staff decide whether to ask for the 2024 intermediate-high case. Do not FAIL it for that alone.
 
 ### Wave Uprush and Impact
 
@@ -164,7 +166,7 @@ i.e., the operative interpretation of these report requirements aligns with CCC'
 ## Bluff Overlay — §25.50.004(B)(4) + §25.50.020
 **Applicability:** Oceanfront / oceanfront-bluff property: YES | NO (basis: GeoJSON polygon hit | applicant-supplied | site survey)
 **Result:** PASS | FAIL | FLAG | N/A
-**Code:** LBMC §25.50.004(B)(4); §25.50.020(B); Bluff Edge Determinations Quick Guide (Mar 2024)
+**Code:** LBMC §25.50.004(B)(4); §25.50.020(B); Bluff Edge Determinations Quick Guide (Nov 2026)
 
 **Bluff-top setback (≥25 ft, more-restrictive-stringline applies):**
   - Distance from nearest building wall to bluff edge: [X ft]
@@ -191,8 +193,8 @@ i.e., the operative interpretation of these report requirements aligns with CCC'
 **Required reports (for oceanfront/bluff-top major remodels):**
   - Geologic hazards report: SUBMITTED | MISSING
   - Slope stability F.S. ≥1.5 static / ≥1.2 pseudostatic (k=0.15): MET | NOT MET | MISSING
-  - SLR analysis using 2018 Guidance, medium-high 6.6 ft scenario: MET | NOT MET | MISSING
+  - SLR analysis using 2024 Guidance, intermediate-high 4.6 ft scenario: MET | FLAG (only the superseded 2018 case) | NOT MET | MISSING
   - Wave uprush report (seasonally eroded beach + 75-yr erosion + high tide + 75-yr SLR + 100-yr storm OR 1982/83 El Niño): MET | NOT MET | MISSING
 
-**Action required:** [If FAIL on any component: redesign + re-submit. If FLAG on buried bluff: require historical analysis. If MISSING reports: cite Bluff Edge Determinations Quick Guide and require submittal before plan check completion.]
+**Action required:** [If FAIL on any component: redesign + re-submit. If FLAG on buried bluff: require historical analysis. If FLAG on SLR: note that the report cites superseded 2018 guidance; staff decides whether to ask for the 2024 intermediate-high case. If MISSING reports: cite Bluff Edge Determinations Quick Guide and require submittal before plan check completion.]
 ```

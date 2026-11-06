@@ -42,7 +42,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - Applies when: Does the PV scope include a main service panel upgrade or relocation, an energy storage system, or both?
   - If yes: Identify each included component and state the panel rating and energy-storage size on the application or plans.
 - What the City asks for: Identify whether the PV scope includes a main service panel upgrade or relocation and whether it includes an energy storage system. When included, state the panel rating and the storage-system size on the application or plans.
-- Source: Energy Storage System (ESS)"; City permit staff's 2026-08-27 heading also names panel relocations
+- Source: City of Laguna Beach Building Division staff guidance
 - Note: Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division.
 
 ### Original approved stamped solar set in the City's e-review files for a solar reset
@@ -52,7 +52,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - Checked against: the City permit record, not the plan set
 - Applies when: Is this a remove-and-reinstall of a previously approved solar system after a reroof?
 - What the City asks for: For removal and reinstallation after a reroof, staff ensure that the originally approved stamped solar set is in the City's e-review files under the For Reference file name.
-- Source: last reviewed and updated 2026-07-30), "Make sure original stamped set is in the e-review files" and use "For Reference" file name
+- Source: City of Laguna Beach Building Division staff guidance
 - Note: Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division.
 
 ## Raised during plan check

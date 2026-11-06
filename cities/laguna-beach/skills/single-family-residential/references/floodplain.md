@@ -57,7 +57,7 @@ For new construction or substantial improvements in a designated V-zone (open-co
 - Portions below Base Flood Elevation (BFE) must be built with **flood-damage-resistant materials**.
 - No fill for structural support below BFE.
 - No habitable enclosed space below BFE; below-BFE space limited to parking, access, or storage.
-- **BFE adjusted for sea-level rise** for the expected life of the development, **minimum 75 years**, using the 2018 California SLR Guidance medium-high scenario (≈6.6 ft).
+- **BFE adjusted for sea-level rise** for the expected life of the development, **minimum 75 years**, using the 2024 California SLR Guidance intermediate-high scenario (4.6 ft), per the City's Bluff Edge Determinations Quick Guide (Updated November 2026). The code section does not name a scenario.
 - **Elevation Certificate** required at foundation stage AND at finished-construction stage.
 
 ---
@@ -82,7 +82,7 @@ In addition to the standard SFR submittal package (`submittal-requirements.md`):
 - **Floodplain Development Permit application** — §25.38.042 (separate city form per `floodplain-development-permit-residential.pdf` handout).
 - **FIRM/FBFM panel** showing parcel and flood zone designation.
 - **BFE determination** (from FIS or city floodplain administrator).
-- **SLR-adjusted BFE calculation** for V-zone projects (75-year design life, 2018 SLR Guidance medium-high scenario).
+- **SLR-adjusted BFE calculation** for V-zone projects (75-year design life, 2024 SLR Guidance intermediate-high 4.6 ft scenario).
 - **Elevation Certificate** (FEMA Form 086-0-33) at foundation stage AND finished construction stage.
 - **Open-foundation structural calculations** (V-zone) demonstrating capacity to resist storm surge / wave forces.
 - **Wave runup / coastal hazards report** (V-zone; ties into the bluff-edge package on oceanfront lots — see `../../residential-remodel/references/city-bluff-overlay.md`).
