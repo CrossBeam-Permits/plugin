@@ -13,7 +13,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - id: `laguna_interior_minimum_floor_plan`
 - Scopes: Residential interior remodel (kitchen, bath, room alteration)
 - What the City asks for: Every permitted interior renovation carries at least one legible floor plan showing the layout of the work. This is the floor of Laguna's interior-alteration intake: a permit application with no plan at all is incomplete even for the simplest in-kind bath refit. The plan must depict the renovation: it locates the work in the unit. A listing or brochure floor plan with a contractor estimate or scope list pasted beside it does not depict the renovation, and neither does an estimate, proposal or product sheet on its own.
-- Source: Laguna Beach Residential Kitchen Remodel handout and Residential Bathroom Renovation handout, INTRODUCTION: "At a minimum, a legible floor plan depicting the layout of the renovation is required for permitting" (documents 5127 and 5125, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Kitchen Remodel handout and Residential Bathroom Renovation handout, INTRODUCTION: "At a minimum, a legible floor plan depicting the layout of the renovation is required for permitting" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Scaled 24″ × 36″ drawings for Building Plan Check
 
@@ -22,7 +22,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - Applies when: Does the scope of work reconfigure the room layout, modify the structural system, or remove a wall to accommodate an enlarged wall opening?
   - If no: The City calls for no plan-check set on a renovation that stays within the existing layout and structure; the legible renovation floor plan is what is filed.
 - What the City asks for: Laguna's plan-check intake for a room alteration is scaled drawings at 24 inches by 36 inches.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, SUBMITTAL CHECKLIST: "two (2) sets of scaled drawing 24\" X 36\"" (document 5129, republished 2026-05-09; verified live 2026-08-20); escalation trigger from the Kitchen Remodel and Bathroom Renovation handouts (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, SUBMITTAL CHECKLIST: "two (2) sets of scaled drawing 24\" X 36\""; escalation trigger from the Kitchen Remodel and Bathroom Renovation handouts (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Title sheet with the City's named contents
 
@@ -32,7 +32,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: The plan-check set opens with a title sheet carrying the owner's name and address, the project address, the scope of work, the sheet index, a vicinity map, and the deferred-submittal list.
   - If no: No title sheet is called for on a renovation filed with the minimum legible floor plan.
 - What the City asks for: The title sheet carries seven named items: the owner's name, the owner's address, the project address, the scope of work, an index sheet, a vicinity map, and the list of deferred submittals.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "TITLE SHEET" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "TITLE SHEET" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Adopted code editions stated on the plans
 
@@ -42,7 +42,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: The plan set states the adopted code editions in effect on the title sheet or in the general notes.
   - If no: No code-edition statement is called for on a renovation filed with the minimum legible floor plan; the current cycle still governs the work.
 - What the City asks for: The plans state that all work complies with the California Residential, Building, Mechanical, Electrical, Plumbing, Green Building Standards and Energy Codes in effect, together with local codes and ordinances. The edition is the adopted cycle — currently 2025, as printed on the City's kitchen, bathroom and master plan-check handouts. Checklist 5129 still prints "2022 editions"; that line is stale in the City's own document and is not applied to an applicant.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "SPECIFY ADOPTED CODES"; editions read from the Kitchen Remodel and Bathroom Renovation handouts republished in the same batch and from Building Plan Check Submittal Requirements (documents 5127, 5125 and 5103; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "SPECIFY ADOPTED CODES"; editions read from the Kitchen Remodel and Bathroom Renovation handouts republished in the same batch and from Building Plan Check Submittal Requirements (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Site plan showing projecting elements and property-line distances
 
@@ -52,7 +52,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit a site plan delineating all projecting elements with dimensioned distances to the property lines and to adjacent structures.
   - If no: No site plan is submitted for a remodel contained entirely within the existing envelope.
 - What the City asks for: Where exterior work is in scope, the site plan delineates all projecting elements and dimensions their distance to the property lines and to adjacent structures. The City ties this sheet to exterior work specifically, so a purely interior remodel is not held to it.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "SITE PLAN – If the project includes exterior work" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "SITE PLAN – If the project includes exterior work" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Existing and proposed floor plans with the City's named content
 
@@ -62,7 +62,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit the existing floor plan alongside the proposed floor plan, with new areas, door and window sizes, headers, outlets, switches, the FAU, registers and plumbing fixtures indicated.
   - If no: The single legible renovation floor plan governs; no paired existing-and-proposed set is called for.
 - What the City asks for: The plan-check set carries both the existing floor plan and the proposed floor plan. The proposed plan indicates the new areas, door sizes, window sizes, headers, electrical outlets, light switches, the FAU, registers and plumbing fixtures. A proposed-only set is incomplete: the City reads the pair to see what changed.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "FLOOR PLAN": "Existing floor plan to be included as well" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "FLOOR PLAN": "Existing floor plan to be included as well" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Section cut through the new work and the existing structure
 
@@ -72,7 +72,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit a section cut through the new work and the existing structure showing framing, the relationship between them, and the attachment.
   - If no: No section is submitted for a remodel that adds no framed area and alters no framing.
 - What the City asks for: The section shows the framing of the new work, its relationship to the existing structure, and how it attaches. The City asks for the cut through both the new work and the existing building, not through the new work alone.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "Section(s) cut through additions and existing structure" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "Section(s) cut through additions and existing structure" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Roof plan with a Class A assembly and evaluation report number
 
@@ -82,7 +82,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit a roof plan showing slopes, ridges, valleys, flashing, overhangs and drainage, naming the Class A assembly and its approved evaluation report number.
   - If no: No roof plan is submitted for a remodel that leaves the roof untouched.
 - What the City asks for: Where roof work is in scope, the roof plan indicates slopes, ridges, valleys, flashing, overhangs and drainage, and it names a Class A roofing assembly together with its approved evaluation report number. Laguna asks for the report number on the sheet, not merely the word "Class A."
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "ROOF PLAN": "Class A Roofing Assembly with an approved evaluation report number is required" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "ROOF PLAN": "Class A Roofing Assembly with an approved evaluation report number is required" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Exterior elevations with materials, openings and heights
 
@@ -92,7 +92,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit exterior elevations indicating finish materials, window and door openings and building heights, showing VHFHSZ and CBC Chapter 7A compliance.
   - If no: No exterior elevations are submitted for a remodel that leaves the exterior unchanged.
 - What the City asks for: Where the exterior changes, the elevations indicate finish materials — stucco, siding, fire-treated shakes — window and door openings, and building heights, and they show compliance with the Very High Fire Hazard Severity Zone requirements and CBC Chapter 7A. Laguna names Chapter 7A on the elevations for room alterations, not only on new construction.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "EXTERIOR ELEVATIONS": "Comply with VHFSZ and Chapter 7A" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "EXTERIOR ELEVATIONS": "Comply with VHFSZ and Chapter 7A" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Structural plans
 
@@ -102,7 +102,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit structural plans indicating framing member sizes, beam sizes, the lateral resisting system, footings and construction details.
   - If no: No structural plans are submitted for a remodel that touches no structural element.
 - What the City asks for: The structural sheets indicate framing member sizes, beam sizes, the lateral resisting system, footings and construction details. Wall removal for an enlarged opening is the common trigger on a remodel: the header and its supports below are structural work even when the room reads as a finish project.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "STRUCTURAL PLANS" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "STRUCTURAL PLANS" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Structural calculations
 
@@ -112,7 +112,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit structural calculations covering framing and beam sizes, footing and reinforcement sizes, and the lateral system and its connections.
   - If no: No structural calculations are submitted for a remodel that touches no structural element.
 - What the City asks for: Calculations justifying the proposed framing member and beam sizes, the footing and reinforcement sizes, and the lateral resisting system and its connections.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "STRUCTURAL CALCULATIONS – Two (2) sets are required" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "STRUCTURAL CALCULATIONS – Two (2) sets are required" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Energy compliance forms
 
@@ -122,7 +122,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit the Title 24 energy compliance forms, including the CF-1R and MF-1R.
   - If no: No energy compliance forms are submitted for a remodel that alters no regulated system.
 - What the City asks for: Laguna asks for the Title 24 energy compliance forms — the CF-1R and MF-1R the checklist names — where the work triggers energy compliance.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "ENERGY COMPLIANCE FORMS – Two (2) sets will be required" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "ENERGY COMPLIANCE FORMS – Two (2) sets will be required" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Sewer video
 
@@ -132,7 +132,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: Submit the sewer video with the packet.
   - If no: No sewer video is submitted where neither trigger applies.
 - What the City asks for: Laguna states two independent triggers and either one fires: an increase to the plumbing fixture count, or permitted work valued over $100,000 within certain areas, which the checklist locates north of Cardinal Drive. A bathroom renovation that adds a fixture reaches the first trigger on its own. The City does not publish the area boundary on this handout, so confirm the affected area with the Building Division rather than reading "north of Cardinal Drive" as a mapped limit.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "SEWER VIDEO – required for any increase to plumbing fixture count or involves any work requiring a building permit valued at over $100,000 within certain areas (north of Cardinal Drive)" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "SEWER VIDEO – required for any increase to plumbing fixture count or involves any work requiring a building permit valued at over $100,000 within certain areas (north of Cardinal Drive)" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Dual-pane glazing with one tempered pane
 
@@ -141,7 +141,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - Applies when: Does this remodel install or replace any window or glazed door?
   - If yes: The window and door schedule or the plan notes identify dual-pane glazing with one pane tempered.
 - What the City asks for: Where windows or glazed doors are in scope, the schedule or the plan notes identify dual-pane glazing with one pane tempered. This is read as content of the plan set, not as a separate standalone document.
-- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "WINDOWS & DOORS – must be dual pane with one pane tempered" (document 5129, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Submittal Checklist; Residential Room Alterations/Remodels, "WINDOWS & DOORS – must be dual pane with one pane tempered" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
 
 ### Energy Certificate of Compliance
 
@@ -163,4 +163,4 @@ Each item names when it is due and what triggers it. A conditional item applies 
   - If yes: The plans carry the dwelling-wide smoke and carbon monoxide alarm notes required by CRC R310 and R311.
   - If no: The dwelling-wide alarm upgrade is not attached to a project at or under $1,000.
 - What the City asks for: Above a $1,000 project value the alarm upgrade reaches the whole dwelling, not just the remodeled room. Smoke alarms go in every sleeping room, outside each sleeping area in the immediate vicinity of the bedrooms, on every floor level including basements and habitable attics but excluding crawl spaces and uninhabitable attics, in the immediate vicinity of a sleeping loft, and within a room or space open to a sleeping loft, with specific installed locations per CRC R310.3.3. Carbon monoxide alarms are required where fuel-fired appliances or fireplaces are installed or the dwelling has an attached garage, either condition alone being enough; they go outside each separate sleeping area, on every occupiable level including basements, and inside a bedroom where a fuel-burning appliance is located in that bedroom or its attached bathroom. In existing construction the alarms may be battery-operated where the work removes no wall or ceiling finish and there is no access by attic, basement or crawlspace. Multipurpose alarms must meet both R310 and R311 and be listed by the Office of the State Fire Marshal. This is a plan-check note the City attaches to the permit, so an absent note is a correction to make, never a reason to refuse the packet at the counter.
-- Source: Laguna Beach Residential Kitchen Remodel and Residential Bathroom Renovation handouts: "Project valuation over $1,000 will require the smoke and carbon monoxide alarms for the dwelling to meet the current code (CRC sections R310 and R311)" (documents 5127 and 5125, republished 2026-05-09; verified live 2026-08-20) (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)
+- Source: Laguna Beach Residential Kitchen Remodel and Residential Bathroom Renovation handouts: "Project valuation over $1,000 will require the smoke and carbon monoxide alarms for the dwelling to meet the current code (CRC sections R310 and R311)" (https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms)

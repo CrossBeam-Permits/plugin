@@ -4,7 +4,7 @@ Sources:
 
 - Building Plan Check Submittal Requirements: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/5103/639131379244970000`
 - Zoning Plan-Check Project Submittal Requirements table: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10220/637981472622100000`
-- Bluff Edge Determinations Quick Guide: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10222/638533536501570000`
+- Bluff Edge Determinations Quick Guide: `source-corpus:laguna-beach/cdd/https://www.lagunabeachcity.net/home/showpublisheddocument/10222/639292482707359202`
 
 ---
 
@@ -105,7 +105,7 @@ For new development on oceanfront or oceanfront-bluff property, require a bluff-
 - Geologic hazards report.
 - Suitability/safe economic life statement.
 - Slope stability analysis with minimum factor of safety 1.5 static and 1.2 pseudostatic.
-- Sea-level-rise analysis using the 2018 SLR Guidance and the medium-high scenario of about 6.6 ft.
+- Sea-level-rise analysis using the 2024 SLR Guidance and the intermediate-high scenario of 4.6 ft (Quick Guide updated November 2026; it replaced the 2018 medium-high 6.6 ft scenario).
 - Wave uprush/impact report considering seasonally eroded beach, 75-year erosion, high tide, 75-year SLR, and 100-year storm or 1982/83 El Nino comparison.
 
 ---

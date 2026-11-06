@@ -41,8 +41,7 @@ Zoning Ordinance Amendment (added 2026-10-14), and both Appeals forms) are liste
 ## Building Division applications and forms
 
 The Building Division's own forms page lists these 12 on its "Application & Forms" tab.
-Its "Handouts" tab is rendered by JavaScript and has not been read yet, so the EV
-checklists and other Building handouts are not listed here.
+Its "Handouts" tab is listed in the next section.
 [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, as of 2026-11-03]
 
 | Document | id / ticks |
@@ -66,6 +65,38 @@ October 2026) sends residents to this page for the form. The City has not said i
 many words that the two are the same form; if a resident asks, give this link and the
 Building Division's number, (949) 497-0715.
 
+## Building Division handouts
+
+The "Handouts" tab on the same Building forms page lists these 18. The tab is drawn by
+JavaScript, so it was read with the browser pass.
+[source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, Handouts tab, as of 2026-11-05]
+
+| Document | id / ticks |
+|---|---|
+| Block Wall - Standard CMU Detail | 5099 / 637381783505200000 |
+| Building Submittal Requirements Prior to Permit Issuance | 10228 / 638784320997170000 |
+| Building Plan Review Services (2021; still lists alternate-Friday closures and the old 2019 code cycle) | 5101 / 637553869291330000 |
+| Building Plan Check Submittal Requirements (New-Additions-Major Remodel) | 5103 / 639131379244970000 |
+| Electric Vehicle Charger Installation Guidelines | 5109 / 637381783520130000 |
+| Electric Vehicle Charging (Code Compliance Checklist) | 5111 / 637381783523470000 |
+| Electric Vehicle Charging (Code Compliance Checklist) Non-Residential | 11683 / 637889197027530000 |
+| Electric Vehicle Charging (Code Compliance Checklist) Multi-Family Dwellings | 11685 / 637889198181070000 |
+| Fire Hydrant Flow Form - LB Building Division (R3: homes, duplexes, ADUs; the water purveyor fills Section B) | 11178 / 637848381999430000 |
+| Geotechnical Report Requirements | 15836 / 638247580851900000 |
+| Public Works Forward Lateral Sewer Video Inspection Program (posted 2026-10-23) | 27700 / 639283494542630000 |
+| Residential Bathroom Remodel | 5125 / 639131379645500000 |
+| Residential Kitchen Remodel | 5127 / 639131379932030000 |
+| Residential Room Alteration-Remodel Submittal Checklist | 5129 / 639131380451600000 |
+| Special Inspector Manual | 5135 / 637381783564770000 |
+| Unreasonable Hardship Exception to Disabled Access Requirements | 5145 / 639131380965030000 |
+| Water Quality Checklist - Non-Priority Development | 5149 / 637381783981130000 |
+| Water Quality Notes | 5151 / 637381783984300000 |
+
+**Building Plan Review Services** is a 2021 handout. Its counter hours (Monday to Friday,
+closed alternate Fridays) are out of date: use `../../city-reference/references/contacts-hours.md` for current hours.
+**Forward Lateral** is how the sewer video gets to the City; the cleanout skill has the
+process and the reimbursement rule.
+
 ## Planning handouts — the full inventory
 
 32 documents in 10 categories, recovered 2026-08-09. All ids resolve as
@@ -74,7 +105,7 @@ Building Division's number, (949) 497-0715.
 
 **Zoning Plan Check and Design Review** — ADU Estimated Rental Amount 19545/638582740289930000 · Administrative Design Review Meeting: How to Participate 8856/638536224876170000 · Consultant List 20784/638696036245970000 · Design Review Board Meeting: How to Participate 18029/638536236641930000 · Early Neighbor Communications Best Practices 22727/638868925251170000 · Early Neighbor Outreach Report Template 22771/638870738565600000 · Good Neighbor Lighting 18948/638536242066570000 · **Major Remodel handout 23171/639264703759000000 (reissued "Updated October 2026"; first seen 2026-10-09)** · Mechanical Equipment Guide 9959/638586590648770000 · Project Summary Table Template 8922/637756216143570000 · Site Survey Requirements 8926/637515917960370000 · Staking a Design Review Project 8928/638581189502000000 · Three Arch Bay Development Application Process 11971/638070664305670000 · Zoning Plan Check Table 10220/637981472622100000
 
-**Coastal Development** — Bluff Edge Determinations 10222/638533536501570000 · **Storm Damage Response and Recovery 27636/639280132862470000** (quick guide, "Updated October 2026"; first seen 2026-10-30): emergency coastal development permits for storm, surf or erosion damage, with the City and Coastal Commission contacts
+**Coastal Development** — Bluff Edge Determinations 10222/639292482707359202 · **Storm Damage Response and Recovery 27636/639280132862470000** (quick guide, "Updated October 2026"; first seen 2026-10-30): emergency coastal development permits for storm, surf or erosion damage, with the City and Coastal Commission contacts
 
 **Application Guides** — Guidelines for Site Selection and Visual Impact and Screening of Telecommunication Facilities 8896/638533543228170000 · Variance 8930/637515917987400000
 
