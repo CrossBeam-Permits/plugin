@@ -31,7 +31,7 @@ Triggered when any of these is true:
 
 Source: When Is a Geotechnical/Soils Report Required?, effective 6/17/2026
 
-## Residential Fire (Fire Department)
+## Residential Fire (Building Safety (residential fire))
 
 Triggered when any of these is true:
 
@@ -44,7 +44,34 @@ Triggered when any of these is true:
 - all of: Landscape or hardscape work; and Fire Hazard Severity Zone is one of very_high
 - Fire Department site access plan required
 
+Not triggered when:
+
+- The building is commercial, industrial or mixed use, or multifamily other than townhomes (the Fire Department review applies instead)
+
 Source: Matrix for Grading and Residential Fire Plan Review Determination, effective 08/13/2026
+
+## Fire Department (commercial and multifamily) (Laguna Beach Fire Department)
+
+Triggered when any of these is true:
+
+- all of: Commercial, industrial or mixed-use building, or multifamily other than townhomes; and any of: Project scope is new building; or Addition area (sq ft) is more than 0; or Change of occupancy group; or Work in an assembly space (A occupancy); or Commercial cooking equipment (range, oven, fryer, hood); or Battery energy storage system; or Fire sprinkler, fire alarm or fire monitoring work; or New or modified wireless facility; or Temporary tent, membrane structure or event booths; or Hazardous process or materials (spray booth, hazardous materials storage); or Fire Department site access plan required
+
+Staff decide when:
+
+- Other full plan review work in a commercial, industrial, mixed-use or multifamily building that matches none of the triggers above and none of the not-triggered cases below: a same-use office or retail tenant improvement, hotel guest room work, a demolition, an interior alteration
+
+Not triggered when:
+
+- The building is a single family home, duplex, ADU, JADU or townhome
+- Work on the City's over-the-counter list, a reroof, or a sign
+- Exterior repair or refinish of an existing building with no added floor area (siding, stucco, awnings, stairs, windows or doors)
+- Interior repair (drywall, finishes, fixtures in place)
+- Interior remodel of a dwelling unit, a deck, or a balcony in a multifamily building with no change of occupancy and no added floor area
+- EV chargers, or solar with no battery storage
+- Removing a wireless facility with nothing added
+- Site work with no building (retaining wall, paving, parking, accessible route, playground)
+
+Source: LBFD "Construction & the Fire Code" page (multi-family, commercial and industrial new construction and remodel projects are routed to the Fire Department); Building Permit Issuance handout row 2 (Fire Department Approval criterion)
 
 ## Geotechnical peer review (Building / City geotechnical consultant)
 
@@ -78,7 +105,11 @@ Source: Water Quality Requirements for Land Development, Section C
 ## Approvals the Building Division collects
 
 - Planning Division Approval: Planning approval applies to the project
-- Fire Department Approval
+- Residential Fire Review
+- Fire Department Review (commercial and multifamily)
 - Public Works Department Approval: Work, improvements, grading, drainage, or staging within Public Works jurisdiction (submit a separate set of plans)
 - Water Quality Management Plan Approval (submit a separate set of plans)
+- Grading Review
+- Shoring Permit
+- Geotechnical Peer Review
 - Orange County Environmental Health Approval: Project includes a food operation or another Environmental Health-regulated use

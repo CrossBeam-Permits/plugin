@@ -6,19 +6,16 @@
  * over its own fee-schedule data.
  */
 
+// The full ICC table and the ICC valuation calculation live in icc-bvd.mjs,
+// shared by every city. A schedule's `valuation.minimum_icc_bvd` decides when it applies.
+import { ALTERATION_EXTENTS, ICC_BVD, ICC_BVD_EDITIONS, ICC_CONSTRUCTION_TYPES, ICC_OCCUPANCY_GROUPS, ICC_FLAG_BAND, compareToIcc, defaultIccOccupancy, iccLineMath, iccOccupancyRow, normalizeConstructionType, iccValuation, validateIccMinimum, valuationFromArea } from './icc-bvd.mjs';
+
 // ── Cities with an authored fee schedule ──
 export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona', 'orange', 'lancaster'];
 
-// ── ICC Building Valuation Data anchors (Feb 2026, Type V-B / typical wood frame) ──
-// $/sqft by occupancy. Used to DERIVE a valuation when the applicant gives only
-// square footage. Persist the edition so an estimate is reproducible.
-export const ICC_BVD_EDITION = 'ICC BVD February 2026 (Type V-B)';
-const ICC_BVD_PER_SQFT = {
-  'R-3': 175.92, // one/two-family dwellings
-  'R-2': 158.18, // multifamily
-  U: 71.07, // private garages / utility
-  B: 213.27, // business
-};
+// ── ICC Building Valuation Data: the full table lives in icc-bvd.mjs ──
+export { valuationFromArea };
+export const ICC_BVD_EDITION = ICC_BVD.label;
 
 export const FEE_DUE_AT = ['application', 'issuance', 'certificate_of_occupancy'];
 
@@ -35,6 +32,14 @@ export const FEE_CAPTURE_BUILT_INS = {
   stories: { field: 'stories', kind: 'number', label: 'Stories of the building after the work (area table, elevations or sections)', unit: 'stories' },
   structure_use: { field: 'structureUse', kind: 'choice', label: 'Residential or nonresidential (occupancy group)', choices: ['residential', 'nonresidential'] },
   existing_habitable_conversion: { field: 'existingHabitableConversion', kind: 'boolean', label: 'Converts existing habitable space' },
+  construction_type: { field: 'constructionType', kind: 'choice', label: 'Construction type (cover sheet code data)', choices: ICC_CONSTRUCTION_TYPES, normalize: normalizeConstructionType, feeds: 'icc_valuation' },
+  occupancy_group: { field: 'occupancy', kind: 'choice', label: 'Occupancy group of the new area (cover sheet code data)', choices: ICC_OCCUPANCY_GROUPS, normalize: iccOccupancyRow, feeds: 'icc_valuation' },
+  icc_new_area_sqft: { field: 'iccNewAreaSqft', kind: 'number', label: 'New enclosed floor area at that occupancy (not garage, deck or porch)', unit: 'sq ft', feeds: 'icc_valuation' },
+  icc_garage_area_sqft: { field: 'iccGarageAreaSqft', kind: 'number', label: 'New private garage or carport area', unit: 'sq ft', feeds: 'icc_valuation' },
+  icc_conversion_area_sqft: { field: 'iccConversionAreaSqft', kind: 'number', label: 'Existing non-habitable area converted to habitable space', unit: 'sq ft', feeds: 'icc_valuation' },
+  icc_hardscape_area_sqft: { field: 'iccHardscapeAreaSqft', kind: 'number', label: 'Total hardscape area of site work on this application', unit: 'sq ft', feeds: 'icc_valuation' },
+  icc_alteration_area_sqft: { field: 'iccAlterationAreaSqft', kind: 'number', label: 'Existing floor area the remodel works on (not new or converted area)', unit: 'sq ft', feeds: 'icc_valuation' },
+  alteration_extent: { field: 'alterationExtent', kind: 'choice', label: 'Extent of the remodel (minor, medium, major, full)', choices: ALTERATION_EXTENTS, feeds: 'icc_valuation' },
   is_combination_permit: { field: 'isCombinationPermit', kind: 'boolean', label: 'Combination M/E/P permit' },
 };
 
@@ -133,12 +138,6 @@ export function buildingPermitFee(valuation, b) {
     return steppedSchedule(valuation, b.brackets, { increment: b.increment, rounding: b.rounding });
   if (b.bands?.length) return flatBand(valuation, b.bands);
   return 0;
-}
-
-/** Derive a valuation from floor area × ICC BVD when none was stated. */
-export function valuationFromArea(areaSqft, occupancy = 'R-3') {
-  const rate = ICC_BVD_PER_SQFT[occupancy] ?? ICC_BVD_PER_SQFT['R-3'];
-  return { valuation: round2(areaSqft * rate), rate };
 }
 
 /** SMIP (CGS): schedule may override the published residential rate; $0.50 min. */
@@ -317,6 +316,8 @@ function validateFeeCapture(obj) {
       const input = feeCaptureInputId(entry);
       if (!input) throw new Error(`fee_capture.groups.${group.id}.inputs entries require an id`);
       if (!consumed.has(input)) throw new Error(`fee_capture input ${input} feeds no fee line`);
+      if (FEE_CAPTURE_BUILT_INS[input]?.feeds === 'icc_valuation' && obj.valuation?.minimum_icc_bvd?.enabled !== true)
+        throw new Error(`fee_capture input ${input} feeds the ICC valuation minimum, which valuation.minimum_icc_bvd does not enable`);
       if (seen.has(input)) throw new Error(`fee_capture input ${input} is listed twice`);
       seen.add(input);
     }
@@ -441,12 +442,13 @@ function validateSeparatePermits(obj) {
       if (!triggers.has(scope)) throw new Error(`separate_permits.${spec.id} scope ${scope} triggers no fee line`);
     }
     const inputs = separatePermitInputs(spec);
-    for (const input of inputs) {
+    if (spec.carries !== undefined && !Array.isArray(spec.carries)) throw new Error(`separate_permits.${spec.id}.carries must be a list`);
+    for (const input of [...inputs, ...(spec.carries ?? [])]) {
       if (!captureInputs.has(input)) throw new Error(`separate_permits.${spec.id} input ${input} is not a fee_capture input`);
     }
     if (!spec.scopes?.length && !inputs.length)
       throw new Error(`separate_permits.${spec.id} needs scopes or inputs that say when it applies`);
-    for (const key of [...(spec.scopes ?? []), ...inputs]) {
+    for (const key of [...(spec.scopes ?? []), ...inputs, ...(spec.carries ?? [])]) {
       if (claimed.has(key)) throw new Error(`separate_permits ${key} is filed under two permits`);
       claimed.add(key);
     }
@@ -619,6 +621,39 @@ export function validateFeeSchedule(input) {
       }
     }
   }
+  validatePlanningFees(obj);
+  for (const spec of obj.site_fact_conditions ?? []) {
+    if (!spec?.path || typeof spec.equals !== 'string' || !spec.equals || !spec?.condition || !spec?.condition_group)
+      throw new Error('site_fact_conditions entries require path, string equals, condition, and condition_group');
+  }
+  for (const lookup of obj.external_lookups ?? []) {
+    if (lookup?.kind !== 'arcgis_address_polygon_intersect' || !lookup?.id || !lookup?.condition_group ||
+        !lookup?.address_service_url || !Number.isInteger(lookup?.address_layer) || !lookup?.address_search_fields?.length ||
+        !lookup?.boundary_layer_url || !lookup?.out_fields?.length || !lookup?.matches?.length)
+      throw new Error('external_lookups entries require a supported kind, ids, ArcGIS layer fields/URLs, and matches');
+    for (const match of lookup.matches) {
+      // `fields: {}` matches any intersecting feature (a one-polygon service area).
+      if (!match?.condition || !match?.fields || typeof match.fields !== 'object' || Array.isArray(match.fields) ||
+          Object.values(match.fields).some((value) => typeof value !== 'string'))
+        throw new Error(`external_lookups.${lookup.id}.matches require a condition and string field values`);
+    }
+    if (lookup.outside_resolves !== undefined && typeof lookup.outside_resolves !== 'boolean')
+      throw new Error(`external_lookups.${lookup.id}.outside_resolves must be a boolean`);
+    validateLookupDisplay(lookup);
+  }
+  validateSeparatePermits(obj);
+  validateFeeCapture(obj);
+  validateConditionQuestions(obj);
+  validateIccMinimum(obj.valuation?.minimum_icc_bvd);
+  // Fill safe defaults for optional blocks.
+  obj.statewide ??= {};
+  obj.status ??= 'scaffolded';
+  obj.valuation ??= { source: 'applicant_or_icc_bvd' };
+  return obj;
+}
+
+/** Planning fee rows (flat, deposit, variable, known gaps) and the peer-review package metadata. */
+function validatePlanningFees(obj) {
   const planningIds = new Set();
   const registerPlanningFee = (fee, path) => {
     if (!fee?.id || !fee?.label) throw new Error(`${path} entries require id and label`);
@@ -676,33 +711,6 @@ export function validateFeeSchedule(input) {
   }
   if (planningIds.has('peer_review') && peerReviewPackages.length === 0)
     throw new Error('planning.deposit.peer_review requires planning.peer_review_packages metadata');
-  for (const spec of obj.site_fact_conditions ?? []) {
-    if (!spec?.path || typeof spec.equals !== 'string' || !spec.equals || !spec?.condition || !spec?.condition_group)
-      throw new Error('site_fact_conditions entries require path, string equals, condition, and condition_group');
-  }
-  for (const lookup of obj.external_lookups ?? []) {
-    if (lookup?.kind !== 'arcgis_address_polygon_intersect' || !lookup?.id || !lookup?.condition_group ||
-        !lookup?.address_service_url || !Number.isInteger(lookup?.address_layer) || !lookup?.address_search_fields?.length ||
-        !lookup?.boundary_layer_url || !lookup?.out_fields?.length || !lookup?.matches?.length)
-      throw new Error('external_lookups entries require a supported kind, ids, ArcGIS layer fields/URLs, and matches');
-    for (const match of lookup.matches) {
-      // `fields: {}` matches any intersecting feature (a one-polygon service area).
-      if (!match?.condition || !match?.fields || typeof match.fields !== 'object' || Array.isArray(match.fields) ||
-          Object.values(match.fields).some((value) => typeof value !== 'string'))
-        throw new Error(`external_lookups.${lookup.id}.matches require a condition and string field values`);
-    }
-    if (lookup.outside_resolves !== undefined && typeof lookup.outside_resolves !== 'boolean')
-      throw new Error(`external_lookups.${lookup.id}.outside_resolves must be a boolean`);
-    validateLookupDisplay(lookup);
-  }
-  validateSeparatePermits(obj);
-  validateFeeCapture(obj);
-  validateConditionQuestions(obj);
-  // Fill safe defaults for optional blocks.
-  obj.statewide ??= {};
-  obj.status ??= 'scaffolded';
-  obj.valuation ??= { source: 'applicant_or_icc_bvd' };
-  return obj;
 }
 
 function validateDueAt(value, path) {
@@ -1210,18 +1218,19 @@ export function feeInputsByPermit(schedule, inputs) {
       valuation: spec.valuation_input ? captureInputValue(inputs, spec.valuation_input) : null,
       structureUse: inputs.structureUse,
       stories: inputs.stories,
+      constructionType: inputs.constructionType,
       conditions: inputs.conditions,
       resolvedConditionGroups: inputs.resolvedConditionGroups,
       scopes: scopes.filter((scope) => spec.scopes?.includes(scope) || shared.has(scope)),
       scopeQuantities: {},
     };
-    for (const id of spec.inputs ?? []) {
+    for (const id of [...(spec.inputs ?? []), ...(spec.carries ?? [])]) {
       const field = FEE_CAPTURE_BUILT_INS[id]?.field;
       if (field) permitInputs[field] = inputs[field];
       else if (inputs.scopeQuantities?.[id] !== undefined) permitInputs.scopeQuantities[id] = inputs.scopeQuantities[id];
     }
     separate.push({ id: spec.id, label: spec.label, inputs: permitInputs });
-    record = withoutCaptureInputs(record, own);
+    record = withoutCaptureInputs(record, [...own, ...(spec.carries ?? [])]);
     record.scopes = (record.scopes ?? []).filter((scope) => !spec.scopes?.includes(scope));
   }
   return [{ id: 'record', label: null, inputs: record }, ...separate];
@@ -1264,6 +1273,49 @@ function issuanceLine(b, ptCfg, rawPermitCount, buildingFeeAtIntake) {
   };
 }
 
+/**
+ * The valuation a record is priced on. The applicant's figure whenever one is
+ * stated; a schedule whose ICC rule says `prices_on: higher` raises it to the
+ * ICC figure. With no applicant figure the ICC figure fills in, so the estimate
+ * keeps moving; the applicant can replace it with their own. With no ICC rule,
+ * the area at the ICC rate stands in. `icc` and `valuationCheck` carry the
+ * comparison the Fees tab shows.
+ */
+function resolveValuation(schedule, inputs, permitType) {
+  const applicant = typeof inputs.valuation === 'number' && inputs.valuation > 0 ? inputs.valuation : 0;
+  const icc = iccValuation(schedule.valuation?.minimum_icc_bvd, inputs, permitType);
+  const valuationCheck = compareToIcc(applicant, icc, schedule.valuation?.minimum_icc_bvd);
+  if (valuationCheck?.uses === 'icc') {
+    const priced = `${icc.lines.map(iccLineMath).join(' + ')}, ${ICC_BVD_EDITIONS[icc.edition].label}`;
+    return {
+      valuation: icc.total,
+      valuationSource: applicant > 0 ? 'icc_floor' : 'derived',
+      valuationBasisNote: applicant > 0
+        ? `The applicant valuation (${formatDollars(applicant)}) is below the city's ICC minimum, which the city applies, so the estimate uses ${priced}.`
+        : `No valuation was given, so the estimate uses the ICC figure: ${priced}. The applicant can give their own valuation to replace it.`,
+      icc,
+      valuationCheck,
+    };
+  }
+  const area = inputs.newFloorAreaSqft ?? inputs.aduSqft ?? null;
+  if (!applicant && area && area > 0) {
+    const occupancy = iccOccupancyRow(inputs.occupancy) ?? defaultIccOccupancy(permitType);
+    const constructionType = normalizeConstructionType(inputs.constructionType) ?? 'V-B';
+    const derived = valuationFromArea(area, occupancy, constructionType);
+    return {
+      valuation: derived.valuation,
+      valuationSource: 'derived',
+      valuationBasisNote: `Estimated from ${area.toLocaleString()} sq ft at $${derived.rate.toFixed(2)}/sq ft (${ICC_BVD_EDITION}, ${occupancy}, Type ${constructionType}). Give a contractor bid value for a tighter number.`,
+      icc,
+      valuationCheck,
+    };
+  }
+  const flagNote = valuationCheck?.flag && valuationCheck.ratio !== null
+    ? `The applicant valuation is ${Math.floor(valuationCheck.ratio * 100)}% of the ICC figure (${formatDollars(icc.total)}), more than ${Math.round(ICC_FLAG_BAND * 100)}% ${valuationCheck.flag}. The estimate still uses the applicant figure.`
+    : undefined;
+  return { valuation: applicant, valuationSource: applicant ? 'applicant' : 'none', valuationBasisNote: flagNote, icc, valuationCheck };
+}
+
 /** Run a project through a city's schedule → itemized, two-bucket breakdown. */
 export function calcFees(schedule, rawInputs) {
   const displayName = schedule.display_name ?? schedule.city_slug;
@@ -1271,38 +1323,8 @@ export function calcFees(schedule, rawInputs) {
   const { inputs, assumptions } = applyUnknownConditionDefaults(schedule, rawInputs, permitType);
   const isResidential = RESIDENTIAL_TYPES.has(permitType);
   const isAdu = permitType === 'adu' || permitType === 'jadu';
-  const occupancy = inputs.occupancy ?? (
-    permitType === 'detached-garage' ? 'U' : permitType === 'commercial-ti' ? 'B' : 'R-3'
-  );
-
-  // 1) Valuation: applicant-stated, else derive from area × ICC BVD. A schedule
-  // may opt new-square-foot scopes into an ICC minimum without city branches.
-  let valuation = typeof inputs.valuation === 'number' && inputs.valuation > 0 ? inputs.valuation : 0;
-  let valuationSource = 'applicant';
-  let valuationBasisNote;
+  const { valuation, valuationSource, valuationBasisNote, icc, valuationCheck } = resolveValuation(schedule, inputs, permitType);
   const area = inputs.newFloorAreaSqft ?? inputs.aduSqft ?? null;
-  const valuationFloor = schedule.valuation?.minimum_icc_bvd;
-  const floorApplies =
-    valuationFloor?.enabled === true &&
-    area && area > 0 &&
-    (!valuationFloor.permit_types?.length || valuationFloor.permit_types.includes(permitType));
-  if (floorApplies) {
-    const derived = valuationFromArea(area, occupancy);
-    if (!valuation || valuation < derived.valuation) {
-      const applicant = valuation;
-      valuation = derived.valuation;
-      valuationSource = applicant > 0 ? 'icc_floor' : 'derived';
-      valuationBasisNote = applicant > 0
-        ? `The applicant valuation (${formatDollars(applicant)}) is below the city's ICC minimum for this new-floor-area scope, so the estimate uses ${area.toLocaleString()} sq ft at $${derived.rate.toFixed(2)}/sq ft (${ICC_BVD_EDITION}, ${occupancy}).`
-        : `Estimated from ${area.toLocaleString()} sq ft at $${derived.rate.toFixed(2)}/sq ft (${ICC_BVD_EDITION}, ${occupancy}). Give a contractor bid value for a tighter number.`;
-    }
-  } else if (!valuation && area && area > 0) {
-    const derived = valuationFromArea(area, occupancy);
-    valuation = derived.valuation;
-    valuationSource = 'derived';
-    valuationBasisNote = `Estimated from ${area.toLocaleString()} sq ft at $${derived.rate.toFixed(2)}/sq ft (${ICC_BVD_EDITION}, ${occupancy}). Give a contractor bid value for a tighter number.`;
-  }
-  if (!valuation) valuationSource = 'none';
 
   const firm = [];
   const confirm = [];
@@ -1673,6 +1695,8 @@ export function calcFees(schedule, rawInputs) {
     valuation,
     valuationSource,
     valuationBasisNote,
+    icc,
+    valuationCheck,
     departmentScoped: schedule.output_policy?.building_subtotal_only === true,
     firmLines: firm,
     firmSubtotal: 0,

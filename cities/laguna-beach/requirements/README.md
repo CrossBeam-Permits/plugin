@@ -38,7 +38,7 @@ This is a completeness reference. It does not check the design against the build
 - `building/staff-reported.md` — Other counter requirements reported by City staff (4 items)
 - `building/site-improvements.md` — New decks and patio covers, hardscape, retaining walls and accessory structures (full review) (5 items)
 - `building/deferred-submittals.md` — Deferred submittals (roof trusses, elevator, fire sprinklers) (2 items)
-- `building/multi-unit.md` — Multi-unit residential (3 or more units) (1 item)
+- `building/multi-unit.md` — Multi-unit residential (3 or more units) (13 items)
 
 ## Planning applications
 

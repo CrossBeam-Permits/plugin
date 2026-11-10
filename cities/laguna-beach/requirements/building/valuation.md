@@ -22,8 +22,8 @@ That is the City doing arithmetic, not the applicant filing an incomplete packet
 
 ## Minimums the counter computes
 
-These are counter calculations, not new applicant completeness tests.
+These are counter calculations, not new applicant completeness tests. They never change the rule above: an application's amount is not the test.
 
-- **Non-habitable area converted to habitable space.** For work such as garage-to-ADU or attic-to-bedroom conversion, staff run the EnerGov Valuation Calculator using R-3, the construction type and remodeled square footage, then use 50 percent of the generated valuation as the conversion basis.
+- **Non-habitable area converted to habitable space.** For work such as garage-to-ADU or attic-to-bedroom conversion, staff run the EnerGov Valuation Calculator using R-3, the construction type and remodeled square footage, then use 50 percent of the generated valuation as the conversion basis. The 50-percent factor is the counter's documented calculation.
 - **Site work has its own valuation.** If the submitted site-work figure is too low, the tech asks for total hardscape square footage, runs that area through the calculator under U occupancy, and uses the greater figure. The application still supplies the site-work valuation; the calculator is City process.
 - **Credit demolished square footage.** When staff enter square footage for tax/sewer fee generation, they credit demolished area and enter the net new square footage. This is a fee-input convention, not permission to bundle scopes or valuations.

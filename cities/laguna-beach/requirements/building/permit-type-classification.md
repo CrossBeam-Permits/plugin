@@ -22,12 +22,13 @@ Source: City of Laguna Beach Building Division, Multifamily Permit Type Guidelin
 
 City Building staff directed on 2026-09-08 that a confirmed condominium filing be submitted as multi-family and that the current residential record would close.
 
-Two units remain Residential. This does not decide the unresolved ADU/JADU question below.
+Two units remain Residential. ADUs and JADUs do not count toward the 3-unit line (see below).
 
-The multifamily list and routing change wait for the City to supply the list.
+## ADUs and JADUs do not make a project multifamily
 
-## Open City question: when ADUs make a project multifamily
+City permit staff raised the question on 2026-08-19: *"Waiting for confirmation from a plan checker to provide clarification on project classifications on threshold quantities of ADUs and JADUs that change a residential application from single-family to multifamily for our review process."* No written answer has come, but the City's own issuance record since the 2026-04-08 guideline answers it:
 
-**The ADU/JADU count that flips a residential application to multifamily is unresolved.** City permit staff, 2026-08-19: *"Waiting for confirmation from a plan checker to provide clarification on project classifications on threshold quantities of ADUs and JADUs that change a residential application from single-family to multifamily for our review process."*
+- **The type follows the primary dwellings.** One or two primary units is Residential, whatever the ADU/JADU count. Three or more primary units is Multifamily.
+- An ADU added to a property that already has three units is filed on the Multifamily type, "Multifamily - ADU - Detached". The Multifamily type has its own ADU Attached and ADU Detached work classes.
 
-The 3-unit rule is stated for apartments, condos and townhomes; whether ADUs and JADUs count toward it is the open question, not the answer. A single-family dwelling with ADUs/JADUs is Residential under the note the City gave us, with no stated ceiling.
+**How to apply it.** Count the primary dwellings, not the ADUs and JADUs. The City can still confirm this in writing; a written answer that differs replaces this section.

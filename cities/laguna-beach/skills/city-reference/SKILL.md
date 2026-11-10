@@ -44,6 +44,7 @@ Cross-cutting city information for all permit types. This document provides base
 | **Phone** | (949) 497-0715 |
 | **Code Adoption Contact** | the Building Official (CBO) — (949) 497-0719 |
 | **Inspection Email** | lbinspectors@lagunabeachcity.net |
+| **Book a counter appointment** | https://lbwaitlist.cxmflow.com/OABS/Appointment/Index/2c052fc7-571f-4b76-9790-7e91f103c408 (Planner or Building Plan Reviewer) |
 | **Address** | City Hall, 505 Forest Ave, Laguna Beach, CA 92651 |
 
 ---
@@ -274,7 +275,7 @@ skill cites it by OTC item number. No permit-type skill restates the hours or th
 ### 1. Over-the-Counter (OTC) Plan Review
 - **Turnaround:** Same day (30-min appointment or walk-in). An OTC review does not guarantee a same-day permit.
 - **OTC walk-in, no appointment:** Monday-Thursday 7:30am-2:00pm, **last check-in 12:45pm**. Subject to plan-reviewer availability; wait times can be lengthy.
-- **OTC by appointment:** Monday-Thursday 7:30am-11:00am. Half-hour slots, 30-minute maximum, first-come first-served. Book at `https://www.lagunabeachcity.net/government/departments/community-development/building-permits/appointment-for-counter-plan-review`
+- **OTC by appointment:** Monday-Thursday 7:30am-11:00am. Half-hour slots, 30-minute maximum, first-come first-served. Book online at https://lbwaitlist.cxmflow.com/OABS/Appointment/Index/2c052fc7-571f-4b76-9790-7e91f103c408 (the same booking system for a Planner or a Building Plan Reviewer; the City's page about it: `https://www.lagunabeachcity.net/government/departments/community-development/building-permits/appointment-for-counter-plan-review`)
 - **Both tracks cover** first review, rechecks and revisions. An applicant who employs a design professional must have that design professional present.
 - **Scope limit:** projects that are not complex and are small in scope-of-work — reviewable in approximately 30 minutes.
 

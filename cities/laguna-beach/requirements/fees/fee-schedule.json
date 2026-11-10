@@ -47,8 +47,30 @@
       "permit_types": [
         "adu",
         "new_sfr",
-        "addition"
-      ]
+        "addition",
+        "detached-garage"
+      ],
+      "prices_on": "applicant",
+      "cite": "the City applies the higher of the two",
+      "default_construction_type": "V-B",
+      "edition": "2026-02",
+      "multiplier": 2,
+      "conversion": {
+        "occupancy": "R-3",
+        "factor": 0.5,
+        "cite": "11 (City practice): non-habitable area converted to habitable uses 50% of the R-3 calculator value"
+      },
+      "site_work": {
+        "occupancy": "U",
+        "cite": "20 (City practice): site work uses total hardscape area at the U rate"
+      },
+      "alteration": {
+        "permit_types": [
+          "remodel"
+        ],
+        "factor": 0.8,
+        "cite": "Estimate from the City's own valuations: staff valued remodel area at 80% of the calculator rate"
+      }
     }
   },
   "building": {
@@ -3569,6 +3591,9 @@
       "inputs": [
         "adu_sqft"
       ],
+      "carries": [
+        "icc_conversion_area_sqft"
+      ],
       "valuation_input": "adu_valuation"
     },
     {
@@ -3599,7 +3624,7 @@
     }
   ],
   "fee_capture": {
-    "note": "Values come from what the packet states: the application, a schedule or table on the plans, or a count form. A count is never tallied from drawing symbols.",
+    "note": "Values come from what the packet states: the application, a schedule or table on the plans, or a count form. A count is never tallied from drawing symbols. Leave an area null when the packet does not state it; 0 when the work has none.",
     "groups": [
       {
         "id": "project",
@@ -3618,6 +3643,19 @@
           "structure_use",
           "existing_habitable_conversion",
           "is_combination_permit"
+        ]
+      },
+      {
+        "id": "valuation",
+        "label": "ICC valuation check",
+        "inputs": [
+          "construction_type",
+          "occupancy_group",
+          "icc_new_area_sqft",
+          "icc_garage_area_sqft",
+          "icc_conversion_area_sqft",
+          "icc_hardscape_area_sqft",
+          "icc_alteration_area_sqft"
         ]
       },
       {
