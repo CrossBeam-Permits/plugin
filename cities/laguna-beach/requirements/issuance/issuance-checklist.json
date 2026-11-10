@@ -29,7 +29,9 @@
       "handout_label": "Planning Division Approval",
       "when_it_applies": "FOR ALL EXTERIOR WORK, ADDITIONS, NEW CONSTRUCTION, COMMERCIAL",
       "decided_by": "project_scope",
-      "required_review": "planning"
+      "required_reviews": [
+        "planning"
+      ]
     },
     {
       "id": "fire_approval",
@@ -39,7 +41,10 @@
       "handout_label": "Fire Department Approval",
       "when_it_applies": "COMMERCIAL & MULTI-FAMILY: FIRE SPRINKLERS, FIRE ALARM, FIRE MONITORING, ADDITIONS, CELL SITES WITH BATTERY, COMMERCIAL OR MULTIFAMILY ENERGY SOTRAGE SYSTEMS (ESS)",
       "decided_by": "project_scope",
-      "required_review": "fire"
+      "required_reviews": [
+        "fire",
+        "fire_commercial"
+      ]
     },
     {
       "id": "public_works_approval",
@@ -49,7 +54,9 @@
       "handout_label": "Public Works Department Approval (submit separate set of plans)",
       "when_it_applies": "R.O.W. ONLY",
       "decided_by": "project_scope",
-      "required_review": "public_works"
+      "required_reviews": [
+        "public_works"
+      ]
     },
     {
       "id": "water_quality_approval",
@@ -59,7 +66,9 @@
       "handout_label": "Water Quality Management Plan Approval (submit separate set of plans)",
       "when_it_applies": "NEW CONSTRUCTION, LANDSCAPE, HARDSCAPE, T.I.s with work done to kitchen",
       "decided_by": "project_scope",
-      "required_review": "water_quality"
+      "required_reviews": [
+        "water_quality"
+      ]
     },
     {
       "id": "health_approval",
@@ -69,7 +78,9 @@
       "handout_label": "Health Department Approval Letter (submit to Orange County Environmental Health)",
       "when_it_applies": "FOOD ESTABLISHMENTS",
       "decided_by": "project_scope",
-      "required_review": "oc_environmental_health"
+      "required_reviews": [
+        "oc_environmental_health"
+      ]
     },
     {
       "id": "unpermitted_work_cleared",

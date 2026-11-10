@@ -71,11 +71,11 @@
         },
         {
           "id": "multi-unit-residential-alteration-structural",
-          "label": "Multi-unit residential structural alteration or major remodel"
+          "label": "Multi-unit residential structural alteration, major remodel, or deck, balcony, stair or guard replacement"
         },
         {
           "id": "multi-unit-residential-alteration-interior",
-          "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath, layout, damage repair)"
         },
         {
           "id": "multi-unit-residential-exterior-repair",
@@ -88,6 +88,42 @@
         {
           "id": "commercial-site-improvements",
           "label": "Commercial or public site work (parking lot, site walls, hardscape)"
+        },
+        {
+          "id": "commercial-new",
+          "label": "Commercial new construction"
+        },
+        {
+          "id": "commercial-addition",
+          "label": "Commercial addition"
+        },
+        {
+          "id": "commercial-alteration-structural",
+          "label": "Commercial structural alteration"
+        },
+        {
+          "id": "commercial-alteration-interior",
+          "label": "Commercial interior alteration (office, shop, hotel)"
+        },
+        {
+          "id": "commercial-ti",
+          "label": "Commercial or restaurant tenant improvement"
+        },
+        {
+          "id": "commercial-exterior-repair",
+          "label": "Commercial exterior alteration or repair (storefront, window, door, siding, awning repair or minor trade repair)"
+        },
+        {
+          "id": "commercial-wireless",
+          "label": "Wireless telecommunications facility (new, modified or removed antennas and equipment)"
+        },
+        {
+          "id": "commercial-temporary-structure",
+          "label": "Temporary structure or event (tent, stage, outdoor dining structure)"
+        },
+        {
+          "id": "sign",
+          "label": "Sign permit"
         },
         {
           "id": "residential-deferred-submittal",
@@ -170,16 +206,25 @@
             "multi-unit-residential-alteration-interior",
             "multi-unit-residential-exterior-repair",
             "multi-unit-residential-new",
-            "commercial-site-improvements"
+            "commercial-site-improvements",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "commercial-exterior-repair",
+            "commercial-wireless",
+            "commercial-temporary-structure",
+            "sign"
           ],
           "applies_when": {
             "question": "Does this project need any Laguna Beach Planning Division approval — design review, administrative design review, a coastal development permit, a variance, a conditional use permit, or a Zone Clearance for work that changes the exterior — before it can be built?",
             "if_yes": "The Planning approval must already be granted when the Building application is filed. Include the approval and its conditions with the Building submittal."
           },
           "checked_against": "city_record",
-          "detail": "\"Planning approval must be completed prior to Building submittal (if required).\" Laguna sequences the lanes: the Building packet is filed after the Planning entitlement or design review is approved, not alongside it. A packet can carry affirmative evidence that an approval exists — a DRB or CDP reference, a conditions sheet, a plan-check redline naming the approved plans — and that evidence is supporting, never conclusive. No packet can show that no Planning record exists. A reroof is (B)(2)(e) exterior work (Administrative Design Review, not Design Review, when the roof is white or light colored and may glare — LBMC 25.05.040(B)(3)(a)(ix) — or when the roof changes dimension, square footage or pitch — (B)(3)(a)(x); Ord. 1732), and Planning reviews every reroof.",
+          "detail": "\"Planning approval must be completed prior to Building submittal (if required).\" Laguna sequences the lanes: the Building packet is filed after the Planning entitlement or design review is approved, not alongside it. A packet can carry affirmative evidence that an approval exists — a DRB or CDP reference, a conditions sheet, a plan-check redline naming the approved plans — and that evidence is supporting, never conclusive. No packet can show that no Planning record exists. A reroof is (B)(2)(e) exterior work (Administrative Design Review, not Design Review, when the roof is white or light colored and may glare — LBMC 25.05.040(B)(3)(a)(ix) — or when the roof changes dimension, square footage or pitch — (B)(3)(a)(x); Ord. 1732), and Planning reviews every reroof. Commercial interior work that changes the use or its intensity (retail to food, added seats) is not an interior-only (B)(2)(d) scope. Code 65850.5, 65850.7).",
           "source": {
-            "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Before You Submit\" and \"Checklist for a Complete Submittal\"",
+            "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Before You Submit\" and \"Checklist for a Complete Submittal\"; Laguna Beach Building Plan Review Services (06/08/2026): \"Zoning/Planning approval, including the 14-day Design Review appeal period (if applicable), is required for all submittal plan reviews\", and the OTC process: \"Sign in for Zoning/Planning first (if applicable)\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -203,7 +248,13 @@
             "multi-unit-residential-alteration-interior",
             "multi-unit-residential-exterior-repair",
             "multi-unit-residential-new",
-            "commercial-site-improvements"
+            "commercial-site-improvements",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "commercial-exterior-repair"
           ],
           "applies_when": {
             "question": "Did this project receive a Laguna Beach Planning approval for THIS work, and does the Building application description match that record's description?",
@@ -212,7 +263,7 @@
           "checked_against": "city_record",
           "detail": "Where a Planning approval exists, it must be the Planning record for THIS work, not a sibling on the parcel. The counter compares descriptions: the cleared ZPC (or governing child) description against the Building application description. Fairly close is acceptable. Status on the record is the approval signal; a type or form name such as Zone Clearance Application is not an approval.",
           "source": {
-            "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Before You Submit\": \"Plans must match approved Planning plans\"",
+            "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Before You Submit\": \"Plans must match approved Planning plans\"; Laguna Beach Building Plan Check Submittal Requirements (2025), DESIGN REVIEW: \"BPC plans must be consistent with the approved plans\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -230,7 +281,14 @@
             "residential-deck-patio-cover-new",
             "residential-site-improvements",
             "residential-retaining-wall",
-            "residential-accessory-structure"
+            "residential-accessory-structure",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
           ],
           "checked_against": "submittal",
           "detail": "The title or cover sheet states that the project complies with the 2025 CBC, CRC, CMC, CPC and CEC; the 2025 California Green Building Standards Code; the 2025 California Energy Efficiency Standards; and City of Laguna Beach regulations and ordinances.",
@@ -306,7 +364,10 @@
             "residential-deck-patio-cover-new",
             "residential-site-improvements",
             "residential-retaining-wall",
-            "residential-accessory-structure"
+            "residential-accessory-structure",
+            "commercial-new",
+            "commercial-addition",
+            "multi-unit-residential-addition"
           ],
           "applies_when": {
             "question": "Does any exact City soils-report trigger apply: new construction, except an ADU (new, attached, or a conversion), which is not new construction here and needs this report only for a lot slope over 20%, a deep foundation (grade beams or piles), or a retaining wall over 5 ft, and is omitted when none of those apply; an SFR addition over 1,200 square feet, a new upper floor, or at least 50 percent total floor-area increase; retaining wall over 5 feet or supporting surcharge; shoring over 6 feet of cut; slope steeper than 1V:2H; beach/ocean front, coastal bluff top, steep hillside or liquefaction site; prior soil/structure failure; nonconventional foundation; qualifying new pool; or a Building Official determination?",
@@ -455,7 +516,13 @@
             "residential-addition",
             "residential-adu",
             "residential-alteration-structural",
-            "residential-site-improvements"
+            "residential-site-improvements",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-site-improvements",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
           ],
           "applies_when": {
             "question": "Does the project meet any WQMP threshold: at least 10,000 square feet impervious area; at least 5,000 square feet and redevelopment; at least 5,000 square feet and lot slope at least 25 percent; or at least 2,500 square feet and within/adjacent to an ESA? Also identify the form's separate 200-foot WQESA direct-discharge and LID-checklist answers.",
@@ -503,7 +570,14 @@
             "residential-new-dwelling",
             "residential-addition",
             "residential-adu",
-            "residential-alteration-structural"
+            "residential-alteration-structural",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
           ],
           "applies_when": {
             "question": "Does the design defer a fire-sprinkler, structural-roof-truss or elevator package?",
@@ -549,7 +623,14 @@
             "residential-new-dwelling",
             "residential-addition",
             "residential-adu",
-            "residential-alteration-structural"
+            "residential-alteration-structural",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
           ],
           "checked_against": "submittal",
           "detail": "The cover sheet contains the project address; owner; designer, architect, engineer of record and consultant contacts; plan preparer; APN/legal description; occupancy group; construction type; existing and new floor-area calculations; lot area and coverage percentage; vicinity map, north arrow and sheet index; and whether a fire-sprinkler system is installed. When a new sprinkler system is required, the cover is notated \"FIRE SPRINKLERS REQUIRED\".",
@@ -572,7 +653,14 @@
             "residential-deck-patio-cover-new",
             "residential-site-improvements",
             "residential-retaining-wall",
-            "residential-accessory-structure"
+            "residential-accessory-structure",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
           ],
           "applies_when": {
             "question": "Did Administrative Design Review, the Design Review Board or the Planning Commission impose conditions of approval on this project?",
@@ -594,7 +682,13 @@
           "level": "city",
           "scopes": [
             "residential-addition",
-            "residential-alteration-structural"
+            "residential-alteration-structural",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
           ],
           "checked_against": "submittal",
           "detail": "Existing and proposed floor plans distinguish walls to remain, walls to be demolished and new walls. For Laguna's area accounting, an existing wall with a structural upgrade affecting the foundation or lateral support counts as new, and an existing wall with drywall removed counts in the area of renovation.",
@@ -720,7 +814,15 @@
             "residential-deck-patio-cover-new",
             "residential-site-improvements",
             "residential-retaining-wall",
-            "residential-accessory-structure"
+            "residential-accessory-structure",
+            "commercial-new",
+            "commercial-addition",
+            "commercial-alteration-structural",
+            "commercial-alteration-interior",
+            "commercial-ti",
+            "commercial-site-improvements",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
           ],
           "checked_against": "city_record",
           "detail": "Any unpermitted work or expired permit found in City records must be cleared or included in the current submittal.",
@@ -1562,6 +1664,14 @@
         {
           "id": "multi-unit-residential-exterior-repair",
           "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
+        },
+        {
+          "id": "commercial-exterior-repair",
+          "label": "Commercial exterior alteration or repair (storefront, window, door, siding, awning repair or minor trade repair)"
+        },
+        {
+          "id": "multi-unit-residential-alteration-interior",
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath, layout, damage repair)"
         }
       ],
       "items": [
@@ -1577,7 +1687,9 @@
             "residential-mechanical-plumbing-minor",
             "residential-wall-fence",
             "sign",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "commercial-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "checked_against": "submittal",
           "detail": "The deliverable is the City's Building Permit Application page. The City asks for two things about it: that it is complete and that the project address on it is correct. Complete means the form's own blocks are filled — the description of work, the valuation, and the applicant, owner and contractor blocks the form prints. An accurate address matters more here than on a plan-checked project, because an OTC permit can issue the same day against whatever address the application carries. A blank block that applies to the project makes the application incomplete: the description of work, the valuation, and the contractor block on a contractor-pulled permit. A block that does not apply to the project may be blank — the architect and engineer blocks on a job with no design professional, the contractor block on an owner-builder permit — and a blank there is not a defect.",
@@ -1599,7 +1711,9 @@
             "residential-mechanical-plumbing-minor",
             "residential-wall-fence",
             "sign",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "commercial-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "checked_against": "submittal",
           "detail": "Judge the file, not the EnerGov (or other portal) slot it was uploaded into. A site plan shows the parcel: the property lines, the building footprint on the lot, and where the work sits on the site. A drawing that does that is a site plan even if the applicant parked it in For Reference Only or another label; a file sitting in Plans that is a product specification, waterproofing spec, or catalog cut is not a site plan. Do not rebuild the City's file-category taxonomy. The City also uses a reference slot for original stamped sets — decide from the document whether this file is this filing's working drawings or an archived original set. The City states this item without a condition, so it is asked on every OTC scope, including an in-kind replacement. Do not soften it and do not read the floor-plan item below as an alternative to it — the handout lists both.",
@@ -1621,7 +1735,9 @@
             "residential-mechanical-plumbing-minor",
             "residential-wall-fence",
             "sign",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "commercial-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "checked_against": "submittal",
           "detail": "Judge the file, not the portal slot. The working drawings identify the whole scope of work — every item the permit covers, at the level of detail the trade needs — and the cover (or the sheet that functions as the cover) carries the project address and that complete scope, including a small repair. On a window job that is the count, the locations and the type of every opening being changed. On a deck or waterproofing repair it is which members or surfaces are being replaced, and it states whether a guardrail is being removed and replaced when that is in play. A specification sitting in Plans does not show scope. Judge it against the application's own description of work.",
@@ -1643,7 +1759,9 @@
             "residential-mechanical-plumbing-minor",
             "residential-wall-fence",
             "sign",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "commercial-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "checked_against": "submittal",
           "detail": "Judge the file, not the portal slot. The working drawings contain a floor plan (or, on a scope with no interior work such as a fence or a sign, the drawing that locates the work on the structure or the site), and that drawing locates two things: what exists and what is proposed. Locating is the test — the reviewer must be able to point at the sheet and say where each item of work happens. A specification, product cut, unstamped catalog sheet, captioned photograph, or annotated aerial is not a floor plan — even on an exterior-only repair. The cover of the working drawings must carry the project address and the complete scope of work, the same identity the site-plan and scope rows require.",
@@ -1665,7 +1783,9 @@
             "residential-mechanical-plumbing-minor",
             "residential-wall-fence",
             "sign",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "commercial-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "applies_when": {
             "question": "Does the work include structural modification of a building, deck or sign support — a new or enlarged opening, a header, a beam, or a change to a load path? Ordinary fence posts and a wall that follows the City's unmodified standard detail do not count. A sign counts as OTC item 11 only when it is \"without structural alterations\"; when its support or mounting alters a structure, answer yes.",
@@ -1692,7 +1812,9 @@
             "residential-mechanical-plumbing-minor",
             "residential-wall-fence",
             "sign",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "commercial-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "checked_against": "submittal",
           "detail": "The handout counts paper: two sets of every plan, at 24 by 36 inches, handed across the counter during OTC hours. Staff confirm the sets and the sheet size at the counter. The related fact staff need: the City's separate E-Plan guide accepts a digital submittal for the full-review track, so the same project filed online is not short two sets — it is on the other track.",
@@ -1712,7 +1834,8 @@
             "residential-siding-replacement",
             "residential-wall-fence",
             "sign",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "applies_when": {
             "question": "Is the proposed work regulated by Title 24, Part 6?",
@@ -1894,7 +2017,7 @@
         },
         {
           "id": "commercial-alteration-interior",
-          "label": "Commercial interior alteration"
+          "label": "Commercial interior alteration (office, shop, hotel)"
         },
         {
           "id": "commercial-ti",
@@ -1938,11 +2061,11 @@
         },
         {
           "id": "multi-unit-residential-alteration-structural",
-          "label": "Multi-unit residential structural alteration or major remodel"
+          "label": "Multi-unit residential structural alteration, major remodel, or deck, balcony, stair or guard replacement"
         },
         {
           "id": "multi-unit-residential-alteration-interior",
-          "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath, layout, damage repair)"
         },
         {
           "id": "multi-unit-residential-exterior-repair",
@@ -1959,6 +2082,18 @@
         {
           "id": "commercial-solar",
           "label": "Commercial solar and battery energy storage"
+        },
+        {
+          "id": "commercial-exterior-repair",
+          "label": "Commercial exterior alteration or repair (storefront, window, door, siding, awning repair or minor trade repair)"
+        },
+        {
+          "id": "commercial-wireless",
+          "label": "Wireless telecommunications facility (new, modified or removed antennas and equipment)"
+        },
+        {
+          "id": "commercial-temporary-structure",
+          "label": "Temporary structure or event (tent, stage, outdoor dining structure)"
         }
       ],
       "items": [
@@ -2051,7 +2186,10 @@
             "multi-unit-residential-exterior-repair",
             "residential-solar-thermal",
             "commercial-site-improvements",
-            "commercial-solar"
+            "commercial-solar",
+            "commercial-exterior-repair",
+            "commercial-wireless",
+            "commercial-temporary-structure"
           ],
           "applies_when": {
             "question": "Is a licensed contractor pulling this permit, rather than the property owner as an Owner-Builder?",
@@ -3216,6 +3354,14 @@
           "label": "Multi-unit exterior repair (deck, balcony, window, door, siding or minor trade repair)"
         },
         {
+          "id": "commercial-exterior-repair",
+          "label": "Commercial exterior alteration or repair (storefront, window, door, siding, awning repair or minor trade repair)"
+        },
+        {
+          "id": "multi-unit-residential-alteration-interior",
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath, layout, damage repair)"
+        },
+        {
           "id": "residential-new-dwelling",
           "label": "Residential new dwelling"
         },
@@ -3293,7 +3439,7 @@
         },
         {
           "id": "commercial-alteration-interior",
-          "label": "Commercial interior alteration"
+          "label": "Commercial interior alteration (office, shop, hotel)"
         },
         {
           "id": "commercial-ti",
@@ -3333,11 +3479,7 @@
         },
         {
           "id": "multi-unit-residential-alteration-structural",
-          "label": "Multi-unit residential structural alteration or major remodel"
-        },
-        {
-          "id": "multi-unit-residential-alteration-interior",
-          "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+          "label": "Multi-unit residential structural alteration, major remodel, or deck, balcony, stair or guard replacement"
         },
         {
           "id": "residential-solar-thermal",
@@ -3350,6 +3492,14 @@
         {
           "id": "commercial-solar",
           "label": "Commercial solar and battery energy storage"
+        },
+        {
+          "id": "commercial-wireless",
+          "label": "Wireless telecommunications facility (new, modified or removed antennas and equipment)"
+        },
+        {
+          "id": "commercial-temporary-structure",
+          "label": "Temporary structure or event (tent, stage, outdoor dining structure)"
         }
       ],
       "items": [
@@ -3366,7 +3516,9 @@
             "residential-wall-fence",
             "sign",
             "residential-alteration-interior",
-            "multi-unit-residential-exterior-repair"
+            "multi-unit-residential-exterior-repair",
+            "commercial-exterior-repair",
+            "multi-unit-residential-alteration-interior"
           ],
           "checked_against": "submittal",
           "detail": "The disqualifiers are review by another City department, outside-agency approval, geotechnical report review, extensive structural design and modifications, a change of construction type, and a change to a more restrictive occupancy. The Planning sign-in at the counter is part of the counter visit (the same letter: \"sign in to see the planning division first\"), so a scope that needs only that sign-in is still a simple permit. A scope that needs a Planning hearing item (Design Review, a Coastal Development Permit) is not.",
@@ -3423,7 +3575,10 @@
             "multi-unit-residential-exterior-repair",
             "residential-solar-thermal",
             "commercial-site-improvements",
-            "commercial-solar"
+            "commercial-solar",
+            "commercial-exterior-repair",
+            "commercial-wireless",
+            "commercial-temporary-structure"
           ],
           "checked_against": "submittal",
           "detail": "Also read this filing's application description, which often names the original permit. Decide whether this filing's work is part of the scope of a listed permit that is open or recently issued. A deferred submittal, a revision to approved plans, or a supplement that names that permit is part of it. A different project on the same parcel is not. Decide from the two descriptions; never from a permit prefix, a date, or a shared word. When the filing names another permit that the block does not list, or the block is absent, name the permit from the filing in the same question.",
@@ -3480,7 +3635,10 @@
             "multi-unit-residential-exterior-repair",
             "residential-solar-thermal",
             "commercial-site-improvements",
-            "commercial-solar"
+            "commercial-solar",
+            "commercial-exterior-repair",
+            "commercial-wireless",
+            "commercial-temporary-structure"
           ],
           "checked_against": "submittal",
           "detail": "The EnerGov portal accepts a free-text address, and sometimes no street at all, so a filing for a property in a neighboring city or on unincorporated county land can reach Laguna Beach. The packet's Laguna Beach mailing address agrees with this, because unincorporated Emerald Bay mails as Laguna Beach. Applicant action, another city: The property at ADDRESS is in the City of CITY, not the City of Laguna Beach (name the sheet or document that says so). The City of Laguna Beach cannot review or issue this permit; please apply to the City of CITY. Applicant action, county land: This WORK at ADDRESS is in unincorporated Orange County (name the community, such as Emerald Bay, when the packet or the address names it) and is not under the jurisdiction of the City of Laguna Beach. Please submit your plans and permit application to the County of Orange (OC Public Works, Development Services) instead of to the City's Building Division.",
@@ -3537,7 +3695,10 @@
             "multi-unit-residential-exterior-repair",
             "residential-solar-thermal",
             "commercial-site-improvements",
-            "commercial-solar"
+            "commercial-solar",
+            "commercial-exterior-repair",
+            "commercial-wireless",
+            "commercial-temporary-structure"
           ],
           "checked_against": "submittal",
           "detail": "The City issues the permit to the owner of record in its GIS unless the applicant provides a recorded grant deed. This is a judgment about people and entities, never a string match. The same party: the same person with a different name order, middle initial, spelling or case; the person's own trust (\"Smith Family Trust\", \"Jane Smith, Trustee\", \"Smith Jane Tr\"); one of several co-owners or co-trustees named in GIS; a married couple where the application names one spouse and GIS names both. A different party: a different person, including a relative or a prior owner; a different company or LLC; a trust named for someone else; an LLC on one side and a person or trust on the other, unless the packet shows the same principal on both. The evidence names both values and the application page, and for a different party says that the City GIS owner data dates from about 2013, so the property may simply have sold since.",
@@ -3727,7 +3888,7 @@
     {
       "id": "multi-unit",
       "title": "Multi-unit residential (3 or more units)",
-      "note": "The City has published no Building submittal checklist for multi-unit new construction, additions or alterations. The item below is the one City rule specific to multi-unit permits; exterior repairs on a multi-unit building follow the over-the-counter list (`otc.md`), and `permit-type-classification.md` says when a project is multi-unit. Confirm the rest of the submittal with the Building Division.",
+      "note": "The City has published no Building submittal checklist for multi-unit work. The items below are the City's portal and counter rules for multi-unit permits, plus suggestions the City has not confirmed. Interior work and exterior repairs on a multi-unit building also follow the over-the-counter list (`otc.md`), and `permit-type-classification.md` says when a project is multi-unit. Confirm the rest of the submittal with the Building Division.",
       "scopes": [
         {
           "id": "multi-unit-residential-new",
@@ -3739,11 +3900,11 @@
         },
         {
           "id": "multi-unit-residential-alteration-structural",
-          "label": "Multi-unit residential structural alteration or major remodel"
+          "label": "Multi-unit residential structural alteration, major remodel, or deck, balcony, stair or guard replacement"
         },
         {
           "id": "multi-unit-residential-alteration-interior",
-          "label": "Multi-unit residential interior remodel (unit kitchen, bath or layout)"
+          "label": "Multi-unit residential interior remodel (unit kitchen, bath, layout, damage repair)"
         },
         {
           "id": "multi-unit-residential-exterior-repair",
@@ -3751,6 +3912,165 @@
         }
       ],
       "items": [
+        {
+          "id": "laguna_multifamily_signed_application",
+          "label": "Signed Building Permit Application uploaded with the plans",
+          "stage": "intake",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-new",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural",
+            "multi-unit-residential-alteration-interior",
+            "multi-unit-residential-exterior-repair"
+          ],
+          "checked_against": "submittal",
+          "detail": "The Multifamily application takes two attachments: the City's Building Permit Application, signed, and the plans. The Building Division returned a Multifamily filing whose application was not signed. The signature is on the application form itself; the portal's electronic signature at submit does not replace it.",
+          "source": {
+            "citation": "Laguna Beach online permit portal, Multifamily Permit (type 322), Required attachments: \"Permit Application: Building Application\", the signed Building Permit Application PDF, and the instruction to sign applications before uploading",
+            "url": "https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/322/0/0",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_multifamily_separate_application_per_scope",
+          "label": "A separate application, with its own valuation, for each new unit or ADU, demolition, grading over 20 cubic yards and a pool",
+          "stage": "intake",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-new",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "When the work adds dwelling units or an ADU, or includes demolition of a structure, grading over 20 cubic yards, or a pool, each is filed as its own application with its own valuation. The Building Division returned new multifamily filings for both. A fire sprinkler or alarm system is a Fire Department submittal on its own application.",
+          "source": {
+            "citation": "Laguna Beach Building Division completeness returns on multifamily filings: application and plans disagree, with one application per unit and ADU; separate application per scope with Planning first, the wrong permit type, structural calculations, a soils report and an old code cycle",
+            "published": false,
+            "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
+          }
+        },
+        {
+          "id": "laguna_multifamily_units_identified",
+          "label": "The unit or units worked on, and the building's number of units, on the application or the cover sheet",
+          "stage": "intake",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-new",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural",
+            "multi-unit-residential-alteration-interior",
+            "multi-unit-residential-exterior-repair"
+          ],
+          "checked_against": "submittal",
+          "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. Laguna's accepted filings usually name the unit in the description (\"Unit #52\"), and the unit count is what decides the Multifamily type, so stating both keeps the type and the scope clear.",
+          "source": {
+            "citation": "Laguna's own filings name the unit in the description, and the permit type turns on the unit count",
+            "published": false,
+            "note": "A suggestion drawn from other cities' lists, the code or the City's own record. The City has not confirmed it. Confirm with the Building Division."
+          }
+        },
+        {
+          "id": "laguna_multifamily_condo_hoa_approval",
+          "label": "HOA approval letter or HOA-stamped plans for condominium exterior or common-area work",
+          "stage": "intake",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-exterior-repair",
+            "multi-unit-residential-alteration-structural",
+            "multi-unit-residential-addition"
+          ],
+          "applies_when": {
+            "question": "Is the building a condominium, and does the work change its exterior or a common area?",
+            "if_yes": "Include the HOA approval letter or HOA-stamped plans."
+          },
+          "checked_against": "submittal",
+          "detail": "A suggestion, not a City requirement: Laguna has not confirmed it.",
+          "source": {
+            "citation": "not asked for at intake in the Laguna record. Civil Code 714 (solar), 4745 (EV charging) and 4751 (ADUs) bar an association from blocking that work",
+            "published": false,
+            "note": "A suggestion drawn from other cities' lists, the code or the City's own record. The City has not confirmed it. Confirm with the Building Division."
+          }
+        },
+        {
+          "id": "laguna_multifamily_balcony_inspection_report",
+          "label": "The exterior elevated element inspection report (SB 721 or SB 326) when the repair follows one",
+          "stage": "intake",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-exterior-repair",
+            "multi-unit-residential-alteration-structural"
+          ],
+          "applies_when": {
+            "question": "Does this balcony, deck, stair or walkway repair follow an SB 721 or SB 326 inspection?",
+            "if_yes": "Include the inspection report and the inspector's repair recommendations."
+          },
+          "checked_against": "submittal",
+          "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. Balconies, decks, stairs and walkways more than six feet above grade on apartment and condominium buildings are inspected under SB 721 and SB 326. When the repair answers such an inspection, the inspector's report and repair recommendations tell plan check what was found and what must be fixed. Deck and balcony repairs are the largest group of multifamily exterior work in Laguna's record.",
+          "source": {
+            "citation": "Health & Safety Code 17973 (SB 721, apartments) and Civil Code 5551 (SB 326, condominiums) require an inspector's report with repair recommendations, and non-emergency repairs to be permitted within 120 days of the report",
+            "published": false,
+            "note": "A suggestion drawn from other cities' lists, the code or the City's own record. The City has not confirmed it. Confirm with the Building Division."
+          }
+        },
+        {
+          "id": "laguna_multifamily_asbestos_survey",
+          "label": "Asbestos survey, and the SCAQMD Rule 1403 notice where asbestos is disturbed, before work that opens walls, ceilings or floors",
+          "stage": "issuance",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-alteration-interior",
+            "multi-unit-residential-alteration-structural",
+            "multi-unit-residential-addition"
+          ],
+          "checked_against": "submittal",
+          "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. An apartment or condominium building never takes the single-residence exemption in SCAQMD Rule 1403, so a remodel, repair or interior demolition that disturbs walls, ceilings or floors needs an asbestos survey first, and a notice to the air district when asbestos is found. Two of Laguna's multifamily filings were asbestos removals. It is a before-issuance item: it never sends a filing back.",
+          "source": {
+            "citation": "Cal. Health & Safety Code 19827.5 bars a demolition permit until the notification is shown; Huntington Beach asks for the survey, and Irvine and Laguna Niguel for the notification before demolition",
+            "published": false,
+            "note": "A suggestion drawn from other cities' lists, the code or the City's own record. The City has not confirmed it. Confirm with the Building Division."
+          }
+        },
+        {
+          "id": "laguna_multifamily_shared_assembly_detail",
+          "label": "Detail of the fire- and sound-rated wall, floor or ceiling where work opens an assembly shared with another unit",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-alteration-interior",
+            "multi-unit-residential-alteration-structural"
+          ],
+          "applies_when": {
+            "question": "Does the work open a wall, floor or ceiling shared with another unit?",
+            "if_yes": "Show the rated assembly and how it is restored."
+          },
+          "checked_against": "submittal",
+          "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. Walls and floor-ceilings between dwelling units are fire-rated separations (CBC 420) and sound-rated assemblies (CBC 1206). When the work opens one (a new recessed light, a relocated drain, a removed wall at the demising line), plan check needs the assembly detail or the building's original plans to confirm it is restored. A plan-check item: it never sends a filing back.",
+          "source": {
+            "citation": "CBC 420.2 and 420.3 dwelling unit separations; CBC 1206 sound transmission",
+            "published": false,
+            "note": "A suggestion drawn from other cities' lists, the code or the City's own record. The City has not confirmed it. Confirm with the Building Division."
+          }
+        },
+        {
+          "id": "laguna_multifamily_sprinkler_status",
+          "label": "Whether the building is sprinklered and alarmed, and, in a sprinklered building, how the work affects the system",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "multi-unit-residential-new",
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural",
+            "multi-unit-residential-alteration-interior"
+          ],
+          "checked_against": "submittal",
+          "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. Whether the building is sprinklered comes from the cover sheet's building data. When it is and the work moves walls or ceilings, plan check expects either Fire sprinkler plans on their own Fire permit or a fire contractor's letter that the system is unaffected. A plan-check item: it never sends a filing back.",
+          "source": {
+            "citation": "Laguna's New/Major handout asks for fire sprinkler plans as a deferred submittal",
+            "published": false,
+            "note": "A suggestion drawn from other cities' lists, the code or the City's own record. The City has not confirmed it. Confirm with the Building Division."
+          }
+        },
         {
           "id": "laguna_multifamily_owner_builder_limit",
           "label": "Owner-builder may not pull a Multifamily permit, except a triplex owner living in one unit",
@@ -3769,6 +4089,78 @@
             "citation": "City of Laguna Beach Building Division staff guidance",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
+          }
+        },
+        {
+          "id": "cbc_construction_documents",
+          "label": "Dimensioned construction documents",
+          "stage": "intake",
+          "level": "state",
+          "scopes": [
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "Dimensioned construction documents showing the location, nature and extent of work and code compliance.",
+          "source": {
+            "citation": "2025 CBC §§107.1, 107.2.1",
+            "url": "https://www.dgs.ca.gov/BSC/Codes",
+            "published": true
+          }
+        },
+        {
+          "id": "cbc_site_plan",
+          "label": "Survey-based site plan",
+          "stage": "intake",
+          "level": "state",
+          "scopes": [
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "A site plan to scale, drawn from an accurate boundary-line survey, showing structures, lot-line distances, grades and applicable flood information. The official may waive or modify it for alterations or repairs.",
+          "source": {
+            "citation": "2025 CBC §107.2.6",
+            "url": "https://www.dgs.ca.gov/BSC/Codes",
+            "published": true
+          }
+        },
+        {
+          "id": "cbc_structural_information",
+          "label": "Structural design information",
+          "stage": "intake",
+          "level": "state",
+          "scopes": [
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "Include the structural design information required by CBC §1603.",
+          "source": {
+            "citation": "2025 CBC §§107.2.7, 1603",
+            "url": "https://www.dgs.ca.gov/BSC/Codes",
+            "published": true
+          }
+        },
+        {
+          "id": "state_energy_compliance_certificate",
+          "label": "Energy Certificate of Compliance",
+          "stage": "intake",
+          "level": "state",
+          "scopes": [
+            "multi-unit-residential-addition",
+            "multi-unit-residential-alteration-structural"
+          ],
+          "applies_when": {
+            "question": "Is the proposed work regulated by Title 24, Part 6?",
+            "if_yes": "Include the applicable Certificate of Compliance with the permit documents."
+          },
+          "checked_against": "submittal",
+          "detail": "Submit the applicable current-cycle Certificate of Compliance produced by approved compliance software; a form-family naming mismatch is not a completeness failure.",
+          "source": {
+            "citation": "2025 Title 24, Part 1, §10-103(a)2",
+            "url": "https://www.energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards/2025-building-energy-efficiency",
+            "published": true
           }
         }
       ]
