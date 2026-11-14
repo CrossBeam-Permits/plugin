@@ -376,8 +376,8 @@ so and ask the City; never supply one from memory.
   limits by zone, section 2. In R-1, whether equipment may sit in a side yard is UNSETTLED
   (`planning-approvals.md` Step 6 item 1).
 - **Check:** on the site plan, the unit's location (ground or wall at ground level, not on a roof,
-  deck or balcony), the distance to every property line, and that it is outside the front and side
-  setbacks and does not block the clear path around the building. Then the spec sheet's sound
+  deck or balcony), the distance to every property line, and that it is outside the front setback (the side yard
+  is the separate yard question above) and does not block the clear path around the building. Then the spec sheet's sound
   rating, the City's sound-level form, and two sound-attenuation measures.
 - **Passing sheet:** the unit drawn and dimensioned to the property lines, the spec sheet and the
   sound-level form in the set, the two attenuation measures noted. Failing any part is not a

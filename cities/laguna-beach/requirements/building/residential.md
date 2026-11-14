@@ -159,7 +159,7 @@ Each item names when it is due and what triggers it. A conditional item applies 
 
 - id: `laguna_cover_sheet_building_data`
 - Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration; Commercial new construction; Commercial addition; Commercial structural alteration; Commercial interior alteration (office, shop, hotel); Commercial or restaurant tenant improvement; Multi-unit residential addition; Multi-unit residential structural alteration, major remodel, or deck, balcony, stair or guard replacement
-- What the City asks for: The cover sheet contains the project address; owner; designer, architect, engineer of record and consultant contacts; plan preparer; APN/legal description; occupancy group; construction type; existing and new floor-area calculations; lot area and coverage percentage; vicinity map, north arrow and sheet index; and whether a fire-sprinkler system is installed. When a new sprinkler system is required, the cover is notated "FIRE SPRINKLERS REQUIRED".
+- What the City asks for: The cover sheet contains the project address; owner; designer, architect, engineer of record and consultant contacts; plan preparer; APN/legal description; occupancy group; construction type; existing and new floor-area calculations; lot area and coverage percentage; and whether a fire-sprinkler system is installed. When a new sprinkler system is required, the cover is notated "FIRE SPRINKLERS REQUIRED". The vicinity map, north arrow and index are their own row.
 - Source: Laguna Beach New and Major Building Submittal Requirements (2025), "Building Data Legend" and "Provide the following with each set of plans" (https://www.lagunabeachcity.net/departments/community-development/building-division)
 
 ### Applicable Planning conditions of approval on the first plan sheet
@@ -259,6 +259,64 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - What the City asks for: When the design proposes a separate one-family-dwelling service for the ADU, the plans identify at least 100 amperes under CEC 230.79(C). This narrowly states the rating of a proposed service; it does not require a separate service or override the utility-connection protections for converted ADUs.
 - Source: Laguna Beach 2026 Building Requirement Sheet, ADU / JADU SPECIFIC row 8 (https://www.lagunabeachcity.net/departments/community-development/building-division)
 
+### Floor plans, elevations and sections
+
+- id: `laguna_floor_plans_elevations_sections`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- What the City asks for: A floor plan per affected level, elevations of affected sides, and a section.
+- Source: New and Major Building Submittal Requirements (2025), plan set list (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
+### Demolition plan
+
+- id: `laguna_demolition_plan`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- Applies when: Does the work demolish existing structure?
+  - If yes: Show it.
+  - If no: Not needed.
+- What the City asks for: Demolition on a floor plan, roof plan and elevations.
+- Source: New and Major Building Submittal Requirements (2025), "Demolition Plan" (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
+### Vicinity map, north arrow and sheet index
+
+- id: `laguna_cover_sheet_vicinity_map_index`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- What the City asks for: On the cover.
+- Source: New and Major Building Submittal Requirements (2025), cover sheet (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
+### Cover sheet notes: unpermitted work; storm drain
+
+- id: `laguna_cover_sheet_required_notes`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- What the City asks for: Unpermitted work may be removed for inspection; no pollutants to the storm drain.
+- Source: New and Major Building Submittal Requirements (2025), cover sheet notes (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
+### Projecting elements dimensioned to property lines
+
+- id: `laguna_projecting_elements_to_property_lines`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- Applies when: Does the project include exterior work?
+  - If yes: Show them.
+  - If no: Not needed.
+- What the City asks for: Eaves, balconies, decks, bays, chimneys and stairs, dimensioned.
+- Source: New and Major Building Submittal Requirements (2025), projecting elements (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
+### MEP plan details
+
+- id: `laguna_mep_plan_details`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- What the City asks for: HVAC, exhaust, plumbing and gas piping, panel schedules, outlets, smoke and CO alarms.
+- Source: New and Major Building Submittal Requirements (2025), MEP plans (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
+### Energy analysis special conditions on the cover
+
+- id: `laguna_cover_sheet_energy_special_conditions`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- Applies when: Does the project carry an energy analysis?
+  - If yes: Repeat its conditions.
+  - If no: Not needed.
+- What the City asks for: HERS, cool roof and the like, repeated on the cover.
+- Source: New and Major Building Submittal Requirements (2025), energy analysis (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
 ## Due before the permit issues
 
 ### Soils engineer review, stamp and signature on foundation and retaining plans
@@ -288,3 +346,10 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - Checked against: the City permit record, not the plan set
 - What the City asks for: Any unpermitted work or expired permit found in City records must be cleared or included in the current submittal.
 - Source: Laguna Beach 2026 Issuance Requirements Checklist, REQUIRED REVIEWS rows "Unpermitted work" and "Expired permits" (https://www.lagunabeachcity.net/departments/community-development/building-division)
+
+### Designer and engineer signatures
+
+- id: `laguna_design_professional_signatures`
+- Scopes: Residential new dwelling; Residential addition; Accessory dwelling unit or JADU; Residential major remodel or structural alteration
+- What the City asks for: Due before issuance, not at intake.
+- Source: 2026 Issuance Requirements Checklist, design professional signatures (https://www.lagunabeachcity.net/departments/community-development/building-division)

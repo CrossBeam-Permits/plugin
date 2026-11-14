@@ -24,7 +24,7 @@ This is a completeness reference. It does not check the design against the build
 
 ## Building checklists
 
-- `building/residential.md` — New homes, additions, ADUs and major remodels (31 items)
+- `building/residential.md` — New homes, additions, ADUs and major remodels (39 items)
 - `building/interior-alterations.md` — Interior alterations (kitchen, bath, room remodel) (16 items)
 - `building/grading.md` — Grading permit (more than 20 cubic yards outside the footprint) (5 items)
 - `building/demolition.md` — Standalone demolition (6 items)

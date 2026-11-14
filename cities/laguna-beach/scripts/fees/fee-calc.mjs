@@ -38,7 +38,7 @@ export const FEE_CAPTURE_BUILT_INS = {
   icc_garage_area_sqft: { field: 'iccGarageAreaSqft', kind: 'number', label: 'New private garage or carport area', unit: 'sq ft', feeds: 'icc_valuation' },
   icc_conversion_area_sqft: { field: 'iccConversionAreaSqft', kind: 'number', label: 'Existing non-habitable area converted to habitable space', unit: 'sq ft', feeds: 'icc_valuation' },
   icc_hardscape_area_sqft: { field: 'iccHardscapeAreaSqft', kind: 'number', label: 'Total hardscape area of site work on this application', unit: 'sq ft', feeds: 'icc_valuation' },
-  icc_alteration_area_sqft: { field: 'iccAlterationAreaSqft', kind: 'number', label: 'Existing floor area the remodel works on (not new or converted area)', unit: 'sq ft', feeds: 'icc_valuation' },
+  icc_alteration_area_sqft: { field: 'iccAlterationAreaSqft', kind: 'number', label: 'Existing floor area a remodel, or an ADU or JADU inside existing living space, works on (not new or converted area)', unit: 'sq ft', feeds: 'icc_valuation' },
   alteration_extent: { field: 'alterationExtent', kind: 'choice', label: 'Extent of the remodel (minor, medium, major, full)', choices: ALTERATION_EXTENTS, feeds: 'icc_valuation' },
   is_combination_permit: { field: 'isCombinationPermit', kind: 'boolean', label: 'Combination M/E/P permit' },
 };
@@ -298,6 +298,8 @@ function validateFeeCapture(obj) {
   const consumed = new Set(Object.keys(FEE_CAPTURE_BUILT_INS));
   // A separate permit's own valuation prices that permit's record.
   for (const spec of obj.separate_permits ?? []) if (spec?.valuation_input) consumed.add(spec.valuation_input);
+  // A unit cost's quantity feeds the staff valuation estimate.
+  for (const item of unitCostsOf(obj)) consumed.add(item.input);
   const scopes = new Set();
   for (const addon of obj.scope_addons ?? []) {
     scopes.add(addon.trigger_scope);
@@ -306,6 +308,8 @@ function validateFeeCapture(obj) {
   }
   for (const deposit of [...(obj.building?.deposit ?? []), ...(obj.public_works?.deposit ?? [])]) scopes.add(deposit.trigger_scope);
   for (const route of obj.fee_review_triggers ?? []) for (const scope of route.trigger_scopes ?? []) scopes.add(scope);
+  // A scope that files its own record is priced by that record's permit type.
+  for (const spec of obj.separate_permits ?? []) for (const scope of spec?.scopes ?? []) scopes.add(scope);
   const seen = new Set();
   for (const group of capture.groups) {
     if (!group?.id || !group?.label || !Array.isArray(group.inputs) || !group.inputs.length)
@@ -322,6 +326,7 @@ function validateFeeCapture(obj) {
       seen.add(input);
     }
   }
+  validateUnitCostRefs(obj, seen);
   for (const scope of capture.scopes ?? []) {
     if (!scope?.id || !scope?.question) throw new Error('fee_capture.scopes entries require id and question');
     if (!scopes.has(scope.id)) throw new Error(`fee_capture scope ${scope.id} triggers no fee line`);
@@ -335,6 +340,20 @@ function validateFeeCapture(obj) {
       if (!choice?.label || !known.has(choice.id))
         throw new Error(`fee_capture.conditions.${group.group} choice ${choice?.id} is not a condition of that group`);
     }
+  }
+}
+
+function unitCostsOf(obj) {
+  return obj.valuation?.minimum_icc_bvd?.unit_costs ?? [];
+}
+
+/** A unit cost reads a real capture input and names a real separate permit. */
+function validateUnitCostRefs(obj, captureInputs) {
+  const separateIds = new Set((obj.separate_permits ?? []).map((spec) => spec?.id));
+  for (const item of unitCostsOf(obj)) {
+    if (!captureInputs.has(item.input)) throw new Error(`valuation.minimum_icc_bvd.unit_costs.${item.id}.input ${item.input} is not a fee_capture input`);
+    if (item.own_application !== undefined && !separateIds.has(item.own_application))
+      throw new Error(`valuation.minimum_icc_bvd.unit_costs.${item.id}.own_application ${item.own_application} is not a separate_permits id`);
   }
 }
 
@@ -424,7 +443,12 @@ function validateSeparatePermits(obj) {
   if (obj.separate_permits === undefined) return;
   if (!Array.isArray(obj.separate_permits)) throw new Error('separate_permits must be a list');
   const permitTypes = new Set(Object.keys(obj.permit_types ?? {}));
-  const triggers = new Set((obj.scope_addons ?? []).map((addon) => addon.trigger_scope));
+  // A scope that opens a separate record must mean something: it triggers a fee
+  // line, or the screener asks it as a fee_capture scope.
+  const triggers = new Set([
+    ...(obj.scope_addons ?? []).map((addon) => addon.trigger_scope),
+    ...(Array.isArray(obj.fee_capture?.scopes) ? obj.fee_capture.scopes.map((scope) => scope?.id) : []),
+  ]);
   // validateFeeCapture runs after this and reports a malformed groups list.
   const groups = Array.isArray(obj.fee_capture?.groups) ? obj.fee_capture.groups : [];
   const captureInputs = new Set(groups.flatMap((group) => (Array.isArray(group?.inputs) ? group.inputs.map(feeCaptureInputId) : [])));
@@ -438,8 +462,11 @@ function validateSeparatePermits(obj) {
     for (const type of spec.permit_types ?? []) {
       if (!permitTypes.has(type)) throw new Error(`separate_permits.${spec.id} permit type ${type} is not in permit_types`);
     }
+    // A scope one of its own permit types implies picks that type for the record.
+    const typeScopes = new Set((spec.permit_types ?? []).flatMap((type) => [...inferredScopes(normalizePermitType(type), {})]));
     for (const scope of spec.scopes ?? []) {
-      if (!triggers.has(scope)) throw new Error(`separate_permits.${spec.id} scope ${scope} triggers no fee line`);
+      if (!triggers.has(scope) && !typeScopes.has(scope))
+        throw new Error(`separate_permits.${spec.id} scope ${scope} triggers no fee line, is not a fee_capture scope, and no permit type of it implies it`);
     }
     const inputs = separatePermitInputs(spec);
     if (spec.carries !== undefined && !Array.isArray(spec.carries)) throw new Error(`separate_permits.${spec.id}.carries must be a list`);
@@ -476,6 +503,18 @@ function validatePlanReviewOptions(building, permitTypes) {
       throw new Error(`permit_types.${permitType}.label must be a non-empty string`);
     if (cfg?.plan_review_pct !== undefined && (typeof cfg.plan_review_pct !== 'number' || cfg.plan_review_pct < 0))
       throw new Error(`permit_types.${permitType}.plan_review_pct must be a non-negative number`);
+    const prTrigger = cfg?.plan_review_of_scope_addons?.trigger_scope;
+    if (prTrigger !== undefined && (typeof prTrigger !== 'string' || !prTrigger.trim()))
+      throw new Error(`permit_types.${permitType}.plan_review_of_scope_addons.trigger_scope must be a non-empty string`);
+    const prMin = cfg?.plan_review_of_scope_addons?.minimum;
+    if (prMin !== undefined && (typeof prMin !== 'number' || prMin < 0))
+      throw new Error(`permit_types.${permitType}.plan_review_of_scope_addons.minimum must be a non-negative number`);
+    for (const [surchargeId, lineIds] of Object.entries(cfg?.surcharge_bases ?? {})) {
+      if (!(building.surcharges ?? []).some((surcharge) => surcharge.id === surchargeId && surcharge.defer_until_scoped))
+        throw new Error(`permit_types.${permitType}.surcharge_bases.${surchargeId} names no scoped surcharge`);
+      if (!Array.isArray(lineIds) || lineIds.some((id) => typeof id !== 'string'))
+        throw new Error(`permit_types.${permitType}.surcharge_bases.${surchargeId} must be a list of fee line ids`);
+    }
   }
 }
 
@@ -1075,6 +1114,7 @@ function applyScopedFees(schedule, inputs, context, firm, confirm) {
       note: `The work includes ${trade} work, but the packet states no ${trade} unit counts. Provide them to price the per-unit ${trade} fees.`,
       cite: baseFee?.cite,
       ownerDivision: baseFee?.owner_division,
+      anyOfInputs: group.inputs.map(feeCaptureInputId),
     });
   }
   for (const addon of schedule.scope_addons ?? []) {
@@ -1205,6 +1245,11 @@ export function feeInputsByPermit(schedule, inputs) {
     .map((addon) => addon.trigger_scope));
   let record = inputs;
   const separate = [];
+  // A remodel prices its own alteration area. On a new-area record that area
+  // is the separate ADU's interior work, so it moves with the ADU record.
+  const alterationTypes = schedule.valuation?.minimum_icc_bvd?.alteration?.permit_types;
+  const parentKeepsAlteration = Array.isArray(alterationTypes)
+    && alterationTypes.some((type) => normalizePermitType(type) === recordType);
   for (const spec of schedule.separate_permits ?? []) {
     if (spec.permit_types?.some((type) => normalizePermitType(type) === recordType)) continue;
     const own = separatePermitInputs(spec);
@@ -1224,13 +1269,14 @@ export function feeInputsByPermit(schedule, inputs) {
       scopes: scopes.filter((scope) => spec.scopes?.includes(scope) || shared.has(scope)),
       scopeQuantities: {},
     };
-    for (const id of [...(spec.inputs ?? []), ...(spec.carries ?? [])]) {
+    const carryIds = (spec.carries ?? []).filter((id) => !(parentKeepsAlteration && id === 'icc_alteration_area_sqft'));
+    for (const id of [...(spec.inputs ?? []), ...carryIds]) {
       const field = FEE_CAPTURE_BUILT_INS[id]?.field;
       if (field) permitInputs[field] = inputs[field];
       else if (inputs.scopeQuantities?.[id] !== undefined) permitInputs.scopeQuantities[id] = inputs.scopeQuantities[id];
     }
     separate.push({ id: spec.id, label: spec.label, inputs: permitInputs });
-    record = withoutCaptureInputs(record, [...own, ...(spec.carries ?? [])]);
+    record = withoutCaptureInputs(record, [...own, ...carryIds]);
     record.scopes = (record.scopes ?? []).filter((scope) => !spec.scopes?.includes(scope));
   }
   return [{ id: 'record', label: null, inputs: record }, ...separate];
@@ -1283,7 +1329,16 @@ function issuanceLine(b, ptCfg, rawPermitCount, buildingFeeAtIntake) {
  */
 function resolveValuation(schedule, inputs, permitType) {
   const applicant = typeof inputs.valuation === 'number' && inputs.valuation > 0 ? inputs.valuation : 0;
-  const icc = iccValuation(schedule.valuation?.minimum_icc_bvd, inputs, permitType);
+  const icc = iccValuation(schedule.valuation?.minimum_icc_bvd, inputs, permitType, (id) => captureInputValue(inputs, id));
+  // A unit-cost line names the separate application the City files that work
+  // on, unless this record is that application or the work is under the size
+  // that needs one (grading of 20 CY or less stays on the building permit).
+  for (const line of icc?.unitLines ?? []) {
+    const spec = (schedule.separate_permits ?? []).find((entry) => entry.id === line.ownApplication);
+    const ownRecord = spec?.permit_types?.some((type) => normalizePermitType(type) === permitType) || spec?.permit_type === permitType;
+    const underThreshold = spec?.over && !(captureInputValue(inputs, spec.over.input) > spec.over.value);
+    line.ownApplication = spec && !ownRecord && !underThreshold ? spec.label : null;
+  }
   const valuationCheck = compareToIcc(applicant, icc, schedule.valuation?.minimum_icc_bvd);
   if (valuationCheck?.uses === 'icc') {
     const priced = `${icc.lines.map(iccLineMath).join(' + ')}, ${ICC_BVD_EDITIONS[icc.edition].label}`;
@@ -1314,6 +1369,55 @@ function resolveValuation(schedule, inputs, permitType) {
     ? `The applicant valuation is ${Math.floor(valuationCheck.ratio * 100)}% of the ICC figure (${formatDollars(icc.total)}), more than ${Math.round(ICC_FLAG_BAND * 100)}% ${valuationCheck.flag}. The estimate still uses the applicant figure.`
     : undefined;
   return { valuation: applicant, valuationSource: applicant ? 'applicant' : 'none', valuationBasisNote: flagNote, icc, valuationCheck };
+}
+
+function scopeAddonPlanReview(spec, firm, confirm, scopes, ownerDivision) {
+  if (!spec?.line_ids?.length) return;
+  const base = firm.filter((line) => spec.line_ids.includes(line.id)).reduce((sum, line) => sum + line.amount, 0);
+  if (base <= 0) return;
+  const id = spec.id ?? 'plan_review_mep';
+  const planFee = Math.max(round2(base * spec.pct), spec.minimum ?? 0);
+  if (spec.trigger_scope && !scopes.has(spec.trigger_scope)) {
+    confirm.push({
+      id,
+      label: spec.label ?? 'Plan review',
+      note: `${spec.when_note ?? 'Charged only when the City plan-checks drawings for this work.'} If charged: ${formatDollars(planFee, { cents: true })}. Not in the subtotal.`,
+      cite: spec.cite,
+      ownerDivision,
+    });
+    return;
+  }
+  firm.push({
+    id,
+    label: spec.label ?? `Plan review (${formatPercent(spec.pct)}% of permit fee)`,
+    amount: planFee,
+    tag: 'percent_of_base',
+    dueAt: spec.due_at ?? 'application',
+    cite: spec.cite,
+    ownerDivision,
+    surchargeIds: spec.surcharge_ids,
+  });
+}
+
+/**
+ * The deferred (scoped) surcharges on the firm lines. A permit type can name the
+ * lines a surcharge is charged on (EnerGov's stand-alone trade permit charges
+ * Technology on its base fee and plan check, never on its unit rows).
+ */
+function scopedSurchargeLines(surcharges, surchargeBases, firm) {
+  const lines = [];
+  for (const s of surcharges ?? []) {
+    if (!s.defer_until_scoped) continue;
+    const ownBase = surchargeBases?.[s.id];
+    // The permit type's own base replaces the schedule-wide one; a line that names
+    // this surcharge itself (an extension or expedite fee) still carries it.
+    const feeds = ownBase
+      ? (line) => ownBase.includes(line.id) || Boolean(line.surchargeIds?.includes(s.id))
+      : (line) => feedsScopedSurcharge(s, line);
+    const base = firm.filter(feeds).reduce((sum, line) => sum + line.amount, 0);
+    if (base > 0) lines.push({ id: s.id, label: `${s.label} (${formatPercent(s.pct)}%)`, amount: round2(base * s.pct), tag: 'percent_of_base', cite: s.note, ownerDivision: s.owner_division });
+  }
+  return lines;
 }
 
 /** Run a project through a city's schedule → itemized, two-bucket breakdown. */
@@ -1647,22 +1751,7 @@ export function calcFees(schedule, rawInputs) {
   // 12) Data-driven scope add-ons, refundable deposits, conditionally located
   // fees, and structured exclusions/open questions. No city-specific branches.
   const scopes = applyScopedFees(schedule, inputs, { permitType, valuation, area, combinationTrades, requiredAnyInputs: ptCfg?.required_any_inputs, unresolvedGroups }, firm, confirm);
-  if (ptCfg?.plan_review_of_scope_addons?.line_ids?.length) {
-    const spec = ptCfg.plan_review_of_scope_addons;
-    const base = firm.filter((line) => spec.line_ids.includes(line.id)).reduce((sum, line) => sum + line.amount, 0);
-    if (base > 0) {
-      firm.push({
-        id: spec.id ?? 'plan_review_mep',
-        label: spec.label ?? `Plan review (${formatPercent(spec.pct)}% of permit fee)`,
-        amount: round2(base * spec.pct),
-        tag: 'percent_of_base',
-        dueAt: spec.due_at ?? 'application',
-        cite: spec.cite,
-        ownerDivision: buildingOwner,
-        surchargeIds: spec.surcharge_ids,
-      });
-    }
-  }
+  scopeAddonPlanReview(ptCfg?.plan_review_of_scope_addons, firm, confirm, scopes, buildingOwner);
   if (ptCfg?.required_any_inputs?.length) {
     const hasAnyInput = ptCfg.required_any_inputs.some((input) => quantityFor(input, inputs, valuation, area) !== null);
     if (!hasAnyInput) {
@@ -1672,16 +1761,11 @@ export function calcFees(schedule, rawInputs) {
         note: ptCfg.building_fee_note ?? `Provide at least one applicable published quantity: ${ptCfg.required_any_inputs.join(', ')}.`,
         cite: ptCfg.building_fee_cite,
         ownerDivision: buildingOwner,
+        anyOfInputs: [...ptCfg.required_any_inputs],
       });
     }
   }
-  if (ptCfg?.surcharges !== false) {
-    for (const s of b.surcharges ?? []) {
-      if (!s.defer_until_scoped) continue;
-      const base = firm.filter((line) => feedsScopedSurcharge(s, line)).reduce((sum, line) => sum + line.amount, 0);
-      if (base > 0) firm.push({ id: s.id, label: `${s.label} (${formatPercent(s.pct)}%)`, amount: round2(base * s.pct), tag: 'percent_of_base', cite: s.note, ownerDivision: s.owner_division });
-    }
-  }
+  if (ptCfg?.surcharges !== false) firm.push(...scopedSurchargeLines(b.surcharges, ptCfg?.surcharge_bases, firm));
   if (unresolvedBuildingBand?.ask_scope) scopes.add(unresolvedBuildingBand.ask_scope);
   const openAsks = (schedule.open_asks ?? []).filter((ask) =>
     !ask.trigger_scopes?.length || ask.trigger_scopes.some((scope) => scopes.has(scope)));

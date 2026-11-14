@@ -112,8 +112,8 @@ export const ICC_BVD_EDITIONS = {
 };
 
 /**
- * An applicant figure more than this share away from the ICC figure, either
- * way, is flagged for the screener. A flag never changes the figure the fees use.
+ * An applicant figure more than this share under the ICC figure is flagged
+ * for the screener. A flag never changes the figure the fees use.
  */
 export const ICC_FLAG_BAND = 0.3;
 
@@ -123,7 +123,9 @@ const DEFAULT_CONSTRUCTION_TYPE = 'V-B';
  * How much of a remodel the work touches, as building departments grade it
  * when they value an alteration from the new-construction rate. A city's rule
  * sets the share of the ICC rate for each (`minimum_icc_bvd.alteration.extents`),
- * or one flat share (`alteration.factor`) when its own valuations use one.
+ * or one flat share (`alteration.factor`) when its own valuations use one, with
+ * a different share for a permit type its valuations treat differently
+ * (`alteration.permit_type_factors`, e.g. an ADU made inside existing living space).
  */
 export const ALTERATION_EXTENTS = ['minor', 'medium', 'major', 'full'];
 
@@ -194,6 +196,7 @@ export function validateIccMinimum(rule) {
   if (rule.default_construction_type !== undefined && !normalizeConstructionType(rule.default_construction_type))
     throw new Error(`valuation.minimum_icc_bvd.default_construction_type ${rule.default_construction_type} is not an ICC construction type`);
   validateAlteration(rule.alteration);
+  validateUnitCosts(rule.unit_costs);
   for (const key of ['conversion', 'site_work']) {
     const practice = rule[key];
     if (practice === undefined) continue;
@@ -211,9 +214,21 @@ function validateAlteration(alteration) {
   if (alteration.factor !== undefined) {
     if (!(typeof alteration.factor === 'number' && alteration.factor > 0 && alteration.factor <= 1))
       throw new Error('valuation.minimum_icc_bvd.alteration.factor must be a number above 0 and at most 1');
+    validatePermitTypeFactors(alteration.permit_type_factors);
+  } else if (alteration.permit_type_factors !== undefined) {
+    throw new Error('valuation.minimum_icc_bvd.alteration.permit_type_factors needs a flat factor');
   } else validateAlterationExtents(alteration);
   if (alteration.permit_types !== undefined && (!Array.isArray(alteration.permit_types) || alteration.permit_types.some((type) => typeof type !== 'string' || type === '')))
     throw new Error('valuation.minimum_icc_bvd.alteration.permit_types must be a list of permit types');
+}
+
+function validatePermitTypeFactors(byType) {
+  if (byType === undefined) return;
+  if (!byType || typeof byType !== 'object') throw new Error('valuation.minimum_icc_bvd.alteration.permit_type_factors must map permit types to { factor, cite }');
+  for (const [permitType, entry] of Object.entries(byType)) {
+    if (!(typeof entry?.factor === 'number' && entry.factor > 0 && entry.factor <= 1) || !entry.cite)
+      throw new Error(`valuation.minimum_icc_bvd.alteration.permit_type_factors.${permitType} needs a factor above 0 and at most 1 and a cite`);
+  }
 }
 
 function validateAlterationExtents(alteration) {
@@ -223,6 +238,102 @@ function validateAlterationExtents(alteration) {
   }
   if (!(alteration.default_extent in alteration.extents))
     throw new Error('valuation.minimum_icc_bvd.alteration.default_extent must name one of its extents');
+}
+
+/** Where a unit cost comes from, in the order a city's schedule should prefer them. */
+export const UNIT_COST_SOURCES = ['city_practice', 'city_history', 'published_table', 'industry'];
+
+function validRange(range) {
+  return Array.isArray(range) && range.length === 2 && range.every((value) => typeof value === 'number' && value >= 0) && range[0] <= range[1];
+}
+
+/**
+ * Validate `minimum_icc_bvd.unit_costs`: the scope the ICC table has no row
+ * for (a pool, grading, a deck, an exterior-only renovation), each priced by
+ * exactly one of `rate` (dollars per unit), `bands` (a typical valuation by
+ * quantity) or `calculator_share` (a share of the record's calculator rate),
+ * with its source named. Throws on a shape the estimate cannot use.
+ */
+function validateUnitCosts(items) {
+  if (items === undefined) return;
+  if (!Array.isArray(items)) throw new Error('valuation.minimum_icc_bvd.unit_costs must be a list');
+  const seen = new Set();
+  for (const item of items) {
+    const path = `valuation.minimum_icc_bvd.unit_costs.${item?.id ?? '?'}`;
+    if (!item?.id || !item.label || !item.input || !item.unit || !item.cite || !item.source_label)
+      throw new Error(`${path} requires id, label, input, unit, source_label and cite`);
+    if (seen.has(item.id)) throw new Error(`${path} is listed twice`);
+    seen.add(item.id);
+    if (!UNIT_COST_SOURCES.includes(item.source)) throw new Error(`${path}.source must be one of ${UNIT_COST_SOURCES.join(', ')}`);
+    const methods = ['rate', 'bands', 'calculator_share'].filter((key) => item[key] !== undefined);
+    if (methods.length !== 1) throw new Error(`${path} needs exactly one of rate, bands or calculator_share`);
+    if (item.rate !== undefined && !(typeof item.rate === 'number' && item.rate > 0)) throw new Error(`${path}.rate must be a number above 0`);
+    if (item.calculator_share !== undefined && !(typeof item.calculator_share === 'number' && item.calculator_share > 0 && item.calculator_share <= 1))
+      throw new Error(`${path}.calculator_share must be a number above 0 and at most 1`);
+    if (item.range !== undefined && (item.rate === undefined || !validRange(item.range) || item.rate < item.range[0] || item.rate > item.range[1]))
+      throw new Error(`${path}.range is a [low, high] rate around rate`);
+    if (item.bands !== undefined) {
+      if (!Array.isArray(item.bands) || !item.bands.length) throw new Error(`${path}.bands must be a non-empty list`);
+      item.bands.forEach((band, index) => {
+        const last = index === item.bands.length - 1;
+        if (!(typeof band?.amount === 'number' && band.amount > 0)) throw new Error(`${path}.bands[${index}].amount must be a number above 0`);
+        if (last ? band.up_to !== null : !(typeof band.up_to === 'number' && band.up_to > (item.bands[index - 1]?.up_to ?? 0)))
+          throw new Error(`${path}.bands must rise, the last one up_to: null`);
+        if (band.range !== undefined && !validRange(band.range)) throw new Error(`${path}.bands[${index}].range must be [low, high]`);
+      });
+    }
+  }
+}
+
+/**
+ * The unit-cost lines for one record: each `unit_costs` item whose quantity
+ * the record carries, at its rate, band or share of the calculator rate.
+ * A line is an estimate for staff: it never feeds the fees.
+ */
+function unitCostLines(rule, quantityOf, permitType, calculatorRate) {
+  const lines = [];
+  for (const item of rule.unit_costs ?? []) {
+    const quantity = quantityOf(item.input);
+    if (!(typeof quantity === 'number' && quantity > 0)) continue;
+    let rate = null;
+    let amount;
+    let range = null;
+    let band = null;
+    if (item.bands) {
+      band = item.bands.find((entry) => entry.up_to === null || quantity <= entry.up_to);
+      amount = band.amount;
+      range = band.range ? [...band.range] : null;
+    } else if (item.calculator_share !== undefined) {
+      if (calculatorRate === null) continue;
+      rate = round2(calculatorRate * item.calculator_share);
+      amount = round2(quantity * rate);
+    } else {
+      rate = item.rate;
+      amount = round2(quantity * rate);
+      range = item.range ? [round2(quantity * item.range[0]), round2(quantity * item.range[1])] : null;
+    }
+    lines.push({
+      id: item.id,
+      label: item.label,
+      input: item.input,
+      quantity,
+      unit: item.unit,
+      rate,
+      calculatorShare: item.calculator_share ?? null,
+      calculatorRate: item.calculator_share !== undefined ? calculatorRate : null,
+      bandUpTo: band ? band.up_to : null,
+      bandFloor: band ? (item.bands[item.bands.indexOf(band) - 1]?.up_to ?? 0) : null,
+      amount,
+      low: range ? range[0] : amount,
+      high: range ? range[1] : amount,
+      source: item.source,
+      sourceLabel: item.source_label,
+      cite: item.cite,
+      note: item.note ?? null,
+      ownApplication: item.own_application ?? null,
+    });
+  }
+  return lines;
 }
 
 /** The occupancy row a record's new area takes when the packet names none. */
@@ -263,7 +374,8 @@ function alterationApplies(rule, permitType, newAreaType) {
  *   - new: new area at the record's occupancy and construction type, for a
  *     permit type the schedule lists as new square footage. The area is
  *     `iccNewAreaSqft`; without it, the new floor area (or the ADU's area)
- *     less the captured garage and, for an ADU's area, the converted part.
+ *     less the captured garage and, for an ADU's area, the converted part
+ *     and any interior alteration already priced on its own line.
  *   - garage: new private garage area at U (ICC footnote a).
  *   - conversion: existing non-habitable area made habitable, at the
  *     schedule's occupancy × factor (a documented counter practice).
@@ -275,13 +387,19 @@ function alterationApplies(rule, permitType, newAreaType) {
  *     that is not new square footage. A re-roof, tenant improvement or repair
  *     stays "no ICC figure" when the list does not name it.
  *
+ * `unitLines` price the scope the ICC table has no row for, from the
+ * schedule's `unit_costs` (a pool by water area, grading by cubic yards, a
+ * deck, an exterior-only renovation), each with its source. They are an
+ * estimate for staff: `total`, the figure the fees can use, leaves them out,
+ * and `estimateTotal` (with `estimateLow` and `estimateHigh`) adds them in.
+ *
  * `reason` says why there is no figure: 'not_new_area' for work the table does
  * not price, 'no_new_area' when the packet shows zero new area, 'needs_area'
  * for a new-area record with no area captured yet. `partial` is true when the
  * figure is site work alone: the application's valuation also covers the
  * building work, so the figure says nothing about the whole valuation.
  */
-export function iccValuation(rule, inputs, permitType) {
+export function iccValuation(rule, inputs, permitType, quantityOf = (id) => inputs.scopeQuantities?.[id] ?? null) {
   if (rule?.enabled !== true) return null;
   const captured = normalizeConstructionType(inputs.constructionType);
   const constructionType = captured ?? normalizeConstructionType(rule.default_construction_type) ?? DEFAULT_CONSTRUCTION_TYPE;
@@ -308,7 +426,7 @@ export function iccValuation(rule, inputs, permitType) {
       const aduArea = floorArea === null ? area(inputs.aduSqft) : null;
       const total = floorArea ?? aduArea;
       if (total !== null) {
-        newArea = Math.max(0, total - (garage ?? 0) - (aduArea !== null ? conversion ?? 0 : 0));
+        newArea = Math.max(0, total - (garage ?? 0) - (aduArea !== null ? (conversion ?? 0) + (remodeled ?? 0) : 0));
         newAreaSource = floorArea !== null ? 'new_floor_area' : 'adu_area';
       }
     }
@@ -346,9 +464,16 @@ export function iccValuation(rule, inputs, permitType) {
   }
   if (rule.conversion) push('conversion', conversion, iccOccupancyRow(rule.conversion.occupancy), rule.conversion.factor ?? 1, 'city_practice', rule.conversion.cite);
   if (rule.site_work) push('site_work', hardscape, iccOccupancyRow(rule.site_work.occupancy), rule.site_work.factor ?? 1, 'city_practice', rule.site_work.cite);
-  if (alterationType) push('alteration', remodeled, occupancy, extents ? extents[extent] : rule.alteration.factor, 'estimate', rule.alteration.cite, extent);
+  if (alterationType) {
+    const byType = extents ? null : rule.alteration.permit_type_factors?.[permitType] ?? null;
+    const factor = extents ? extents[extent] : byType?.factor ?? rule.alteration.factor;
+    push('alteration', remodeled, occupancy, factor, 'estimate', byType?.cite ?? rule.alteration.cite, extent);
+  }
 
   const total = round2(lines.reduce((sum, line) => sum + line.amount, 0));
+  const nationalRecordRate = iccRate(occupancy, constructionType, edition.edition);
+  const unitLines = unitCostLines(rule, quantityOf, permitType, nationalRecordRate === null ? null : round2(nationalRecordRate * multiplier));
+  const unitTotal = round2(unitLines.reduce((sum, line) => sum + line.amount, 0));
   const areaKnown = [inputs.iccNewAreaSqft, inputs.newFloorAreaSqft, inputs.aduSqft, inputs.iccGarageAreaSqft, inputs.iccConversionAreaSqft, inputs.iccHardscapeAreaSqft, inputs.iccAlterationAreaSqft]
     .some((value) => typeof value === 'number' && Number.isFinite(value));
   let reason = null;
@@ -372,6 +497,10 @@ export function iccValuation(rule, inputs, permitType) {
     estimated: lines.some((line) => line.basis === 'estimate'),
     extentAssumed: extents !== null && lines.some((line) => line.kind === 'alteration') && capturedExtent === null,
     reason,
+    unitLines,
+    estimateTotal: round2(total + unitTotal),
+    estimateLow: round2(total + unitLines.reduce((sum, line) => sum + line.low, 0)),
+    estimateHigh: round2(total + unitLines.reduce((sum, line) => sum + line.high, 0)),
   };
 }
 
@@ -383,27 +512,29 @@ export function iccValuation(rule, inputs, permitType) {
  * higher. With no applicant figure the ICC figure fills in, unless it is
  * `partial` (it would price part of the work as the whole), then null. An
  * `estimated` figure (a remodel graded by extent) never raises a stated one.
- * `flag` marks an applicant figure more than ICC_FLAG_BAND under or over the
- * ICC figure; a partial figure is never flagged.
+ * `flag` marks an applicant figure more than ICC_FLAG_BAND under the ICC
+ * figure; a partial figure is never flagged. A figure well above it is not
+ * flagged: on real screens that is an addition whose valuation also covers
+ * remodel work, not a problem for the screener.
  */
 export function compareToIcc(applicant, icc, rule = null) {
   if (!icc || !(icc.total > 0)) return null;
   const stated = typeof applicant === 'number' && applicant > 0 ? applicant : null;
-  const cents = (value) => Math.round(value * 100);
-  const band = Math.round(ICC_FLAG_BAND * 100);
-  let flag = null;
-  if (stated !== null && !icc.partial) {
-    if (cents(stated) * 100 < cents(icc.total) * (100 - band)) flag = 'under';
-    else if (cents(stated) * 100 > cents(icc.total) * (100 + band)) flag = 'over';
-  }
   let uses = 'applicant';
   if (stated === null) uses = icc.partial ? null : 'icc';
   else if (rule?.prices_on === 'higher' && !icc.partial && !icc.estimated && stated < icc.total) uses = 'icc';
-  return {
-    applicant: stated,
-    icc: icc.total,
-    uses,
-    ratio: stated === null ? null : Math.floor((stated / icc.total) * 1000) / 1000,
-    flag,
-  };
+  return { applicant: stated, icc: icc.total, uses, ...compareFigures(stated, icc.total, icc.partial) };
+}
+
+/**
+ * The applicant's figure as a share of a comparison figure (floored to 0.1%),
+ * and `flag: 'under'` when it is more than ICC_FLAG_BAND under it. Compared in
+ * cents. A `partial` figure (site work alone) is never flagged.
+ */
+export function compareFigures(applicant, figure, partial = false) {
+  if (applicant === null || !(figure > 0)) return { ratio: null, flag: null };
+  const cents = (value) => Math.round(value * 100);
+  const band = Math.round(ICC_FLAG_BAND * 100);
+  const under = !partial && cents(applicant) * 100 < cents(figure) * (100 - band);
+  return { ratio: Math.floor((applicant / figure) * 1000) / 1000, flag: under ? 'under' : null };
 }

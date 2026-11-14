@@ -52,7 +52,11 @@ Mechanical equipment is routed by the six-part test in **LBMC 7.25.130(C)** (eff
 **without Design Review** (Zone Clearance, LBMC 25.05.040(B)(2)(v)):
 
 1. ground-mounted, or wall-mounted at ground level;
-2. not in the required front or side yard setback;
+2. not in the required front yard setback (Ord. 1731 struck "or side"). A required side yard is a
+   separate zoning yard question, not a route to Administrative Design Review: the general yard rule
+   still bars AC and pool equipment there (LBMC 25.50.004(F)(2)); in R-1, Ord. 1732 removed them from
+   the R-1 side-yard ban (25.10.008(E)(3)(a)(2)), and which governs is UNSETTLED (`planning-approvals`
+   Step 6 item 1);
 3. at least **5 ft** from every property line;
 4. manufacturer's spec sheet with the decibel rating; maximum **60 dB day / 50 dB night at the
    property line**; and **two** sound-attenuation methods (for example an insulated enclosure, a

@@ -24,7 +24,7 @@ metadata:
 
 ---
 
-## How to answer (contract)
+## How to answer
 
 **Lead with the likely route.** The first lines of every project answer name the single most likely
 route: what to file, with whom, and in what order. Build it the way a planner at the counter would:
@@ -41,10 +41,8 @@ is missing. Then:
   `planning-applications` reference; the online filing links are in the `submit-*` guides. Never
   invent a link; with none in hand, link the City's applications and handouts page
   (https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts).
-- **Short: aim for about 150 words; 250 at most, for any answer.** Bottom line; numbered steps with the forms
-  linked; one line offering to list what to submit with the first form (the list comes when the
-  resident asks); at most one "this changes if" line; one question. A list, when asked for, is a
-  few words per item. No side notes, tables, citation column, overlay catalog or unasked code rules; detail comes when asked. City staff get full detail.
+- **Offer the submittal list in one line** with the first form; the list comes when the resident
+  asks, a few words per item. No overlay catalog or unasked code rules; detail comes when asked.
 - **UNSETTLED only when it changes what the applicant files.** A fact or open question that routes
   the same either way (which of two parcels, which of two readings that land on the same
   application) gets no branch at all; settle it in a clause or leave it out.
@@ -77,8 +75,8 @@ Method behind the lead lines:
 4. Then the documents: call the City checklists for the first filing's lane, in the same
    round as other lookups, for the form and its link. Offer the filing's document list in one line;
    give it from that result when the resident asks. Never pad the document list from a permit skill.
-5. Cite the rule that decides the route (LBMC section, Ord. 1732, state code, or "City practice since
-   Ord. 1732") in parentheses; the resident can ask for the rest.
+5. Base the route on the rule that decides it (LBMC section, Ord. 1732, state code, or "City
+   practice since Ord. 1732").
 6. The City has not ruled and the answer changes the filing: say UNSETTLED, lead with the reading
    the code text and City practice favor (weighed by the `city-practice` method), give the other as
    one "changes to" line, and say "confirm with Planning at pre-application". Never guess a
@@ -86,7 +84,6 @@ Method behind the lead lines:
 7. A deciding fact is unknown (height, slope, coastal status, historic status, deck height): lead
    with the usual case, give the other branch as one "changes to X if Y" line, and ask for the
    fact (one question per answer: the one that moves the route most).
-8. Plain, short sentences.
 
 ## How many references to pull
 
