@@ -66,11 +66,216 @@
       },
       "alteration": {
         "permit_types": [
-          "remodel"
+          "remodel",
+          "adu",
+          "jadu"
         ],
         "factor": 0.8,
-        "cite": "Estimate from the City's own valuations: staff valued remodel area at 80% of the calculator rate"
-      }
+        "cite": "Estimate from the City's own valuations: staff valued remodel area at 80% of the calculator rate",
+        "permit_type_factors": {
+          "adu": {
+            "factor": 0.2,
+            "cite": "Estimate from the City's own valuations: an ADU made inside existing living space was accepted at $52-94/sq ft in Tyler, about 20% of the calculator rate"
+          },
+          "jadu": {
+            "factor": 0.2,
+            "cite": "Estimate from the City's own valuations: an ADU made inside existing living space was accepted at $52-94/sq ft in Tyler, about 20% of the calculator rate"
+          }
+        }
+      },
+      "unit_costs": [
+        {
+          "id": "pool_spa",
+          "label": "Pool and spa",
+          "input": "pool_spa_area_sqft",
+          "unit": "sq ft",
+          "rate": 197,
+          "range": [
+            140,
+            333
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 30 new pool/spa permits 2023-26",
+          "cite": "Median valuation per sq ft of water surface on 30 new in-ground pool/spa permits in Tyler, 2023-2026",
+          "own_application": "pool_spa"
+        },
+        {
+          "id": "grading",
+          "label": "Grading",
+          "input": "grading_cubic_yards",
+          "unit": "CY",
+          "bands": [
+            {
+              "up_to": 250,
+              "amount": 20000,
+              "range": [
+                10000,
+                50000
+              ]
+            },
+            {
+              "up_to": 1500,
+              "amount": 50000,
+              "range": [
+                23750,
+                80000
+              ]
+            },
+            {
+              "up_to": null,
+              "amount": 70000,
+              "range": [
+                27500,
+                325000
+              ]
+            }
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · grading permits of a like size",
+          "cite": "Median grading valuation in Tyler by size, 2023-2026 (middle half as the range): 65 permits up to 250 CY, 56 from 251 to 1,500 CY, 15 over 1,500 CY (hotel, college and commercial sites left out)",
+          "note": "Laguna grading valuations do not scale with cubic yards; this is the typical figure for a job of this size.",
+          "own_application": "grading"
+        },
+        {
+          "id": "deck",
+          "label": "Deck or balcony",
+          "input": "deck_area_sqft",
+          "unit": "sq ft",
+          "rate": 100,
+          "range": [
+            44,
+            165
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 89 new or rebuilt deck permits 2023-26",
+          "cite": "Median valuation per sq ft on 89 Residential - Balcony/Deck and Patio/Deck permits in Tyler that build, extend or rebuild a deck, 2023-2026 (resurfacing and waterproofing left out); Newport Beach 2024 table: $32/sq ft"
+        },
+        {
+          "id": "deck_resurface",
+          "label": "Deck or balcony resurfacing",
+          "input": "deck_resurface_area_sqft",
+          "unit": "sq ft",
+          "rate": 47.5,
+          "range": [
+            18,
+            99
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 47 deck resurfacing permits 2023-26",
+          "cite": "Median valuation per sq ft on 47 Residential deck permits in Tyler that resurface, recoat or waterproof an existing deck, 2023-2026"
+        },
+        {
+          "id": "patio_cover",
+          "label": "Patio cover or pergola",
+          "input": "patio_cover_area_sqft",
+          "unit": "sq ft",
+          "rate": 119,
+          "range": [
+            85,
+            179
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 14 patio cover permits 2016-26",
+          "cite": "Median valuation per sq ft on 14 Residential - Patio/Patio Cover permits in Tyler that state the cover's area, 2016-2026 (a thin sample; Newport Beach 2024 table: solid patio cover $36/sq ft)",
+          "note": "Few Laguna patio cover permits state their area, so this rests on 14 permits."
+        },
+        {
+          "id": "reroof",
+          "label": "Re-roof",
+          "input": "reroof_area_sqft",
+          "unit": "sq ft",
+          "rate": 8.11,
+          "range": [
+            5.96,
+            11.48
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 311 re-roof permits 2023-26",
+          "cite": "Median valuation per sq ft on 311 re-roof permits of 1,000 sq ft or more in Tyler (Residential - Reroof), 2023-2026 (shingle $7.15, tile $9.42, flat $10.11, standing-seam metal $20.97/sq ft)",
+          "note": "A standing-seam metal roof runs about $21/sq ft in Laguna filings."
+        },
+        {
+          "id": "solar",
+          "label": "Solar PV system",
+          "input": "solar_kw",
+          "unit": "kW",
+          "rate": 3086,
+          "range": [
+            2500,
+            4370
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 446 solar permits 2023-26",
+          "cite": "Median valuation per kW on 446 solar permits in Tyler (Residential - Solar and SolarAPP+) that state the system size, 2023-2026"
+        },
+        {
+          "id": "windows_doors",
+          "label": "Windows and doors",
+          "input": "window_door_count",
+          "unit": "each",
+          "rate": 2500,
+          "range": [
+            1620,
+            4050
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 23 window/door permits 2023-26",
+          "cite": "Median valuation per window or door on 23 Residential - Window permits in Tyler that state how many windows and doors they replace, 2023-2026"
+        },
+        {
+          "id": "retaining_wall",
+          "label": "Retaining wall",
+          "input": "retaining_wall_lf",
+          "unit": "lin ft",
+          "rate": 292,
+          "range": [
+            138,
+            457
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 32 retaining wall permits 2023-26",
+          "cite": "Median valuation per linear foot on 32 Residential - Fence/Wall permits for retaining walls in Tyler that state the length, 2023-2026"
+        },
+        {
+          "id": "fence_wall",
+          "label": "Garden wall or fence",
+          "input": "fence_wall_lf",
+          "unit": "lin ft",
+          "rate": 107,
+          "range": [
+            67,
+            197
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 50 wall/fence permits 2023-26",
+          "cite": "Median valuation per linear foot on 50 Residential - Fence/Wall permits (not retaining) in Tyler that state the length, 2023-2026"
+        },
+        {
+          "id": "demolition",
+          "label": "Demolition",
+          "input": "demolition_area_sqft",
+          "unit": "sq ft",
+          "rate": 34.48,
+          "range": [
+            13.33,
+            78.86
+          ],
+          "source": "city_history",
+          "source_label": "Laguna history · 41 demolition permits 2023-26",
+          "cite": "Median valuation per sq ft on 41 Residential - Demolition permits in Tyler that state the area demolished, 2023-2026",
+          "own_application": "demolition"
+        },
+        {
+          "id": "exterior_renovation",
+          "label": "Exterior renovation",
+          "input": "icc_exterior_area_sqft",
+          "unit": "sq ft",
+          "calculator_share": 0.2,
+          "source": "industry",
+          "source_label": "Industry share · minor alteration 20%",
+          "cite": "Minor alteration at 20% of the new-construction rate (Tukwila WA alteration valuation 20/40/60/80%; Kitsap and Pierce WA 20% minor); applied to the City calculator rate"
+        }
+      ]
     }
   },
   "building": {
@@ -1037,32 +1242,6 @@
   },
   "scope_addons": [
     {
-      "id": "reroof_permit",
-      "label": "Re-roof permit",
-      "trigger_scope": "reroof",
-      "amount": 358.25,
-      "outside_valuation": true,
-      "due_at": "issuance",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 22 row 9"
-    },
-    {
-      "id": "reroof_plan_review",
-      "label": "Re-roof plan review",
-      "trigger_scope": "reroof",
-      "amount": 200.62,
-      "outside_valuation": true,
-      "due_at": "application",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 26 row 115"
-    },
-    {
       "id": "residential_solar_permit",
       "label": "Residential solar permit",
       "trigger_scope": "residential_solar",
@@ -1117,110 +1296,6 @@
         "technology"
       ],
       "cite": "FY26/27 MFS Building Fees p. 26 row 112"
-    },
-    {
-      "id": "demolition_one_family_permit",
-      "label": "Demolition permit - one-family structure",
-      "trigger_scope": "demolition_one_family",
-      "amount": 358.25,
-      "outside_valuation": true,
-      "due_at": "issuance",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 22 row 12"
-    },
-    {
-      "id": "demolition_multifamily_permit",
-      "label": "Demolition permit - multifamily structure",
-      "trigger_scope": "demolition_multifamily",
-      "amount": 478.4,
-      "outside_valuation": true,
-      "due_at": "issuance",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 22 row 13"
-    },
-    {
-      "id": "demolition_simple_structure_permit",
-      "label": "Demolition permit - simple structure",
-      "trigger_scope": "demolition_simple_structure",
-      "amount": 119.05,
-      "outside_valuation": true,
-      "due_at": "issuance",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 22 row 14"
-    },
-    {
-      "id": "demolition_other_permit",
-      "label": "Demolition permit - other than structure",
-      "trigger_scope": "demolition_other",
-      "amount": 478.4,
-      "outside_valuation": true,
-      "due_at": "issuance",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 22 row 15"
-    },
-    {
-      "id": "demolition_one_family_plan_review",
-      "label": "Demolition plan review",
-      "trigger_scope": "demolition_one_family",
-      "amount": 373.68,
-      "outside_valuation": true,
-      "due_at": "application",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 26 row 113"
-    },
-    {
-      "id": "demolition_multifamily_plan_review",
-      "label": "Demolition plan review",
-      "trigger_scope": "demolition_multifamily",
-      "amount": 373.68,
-      "outside_valuation": true,
-      "due_at": "application",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 26 row 113"
-    },
-    {
-      "id": "demolition_simple_structure_plan_review",
-      "label": "Demolition plan review",
-      "trigger_scope": "demolition_simple_structure",
-      "amount": 373.68,
-      "outside_valuation": true,
-      "due_at": "application",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 26 row 113"
-    },
-    {
-      "id": "demolition_other_plan_review",
-      "label": "Demolition plan review",
-      "trigger_scope": "demolition_other",
-      "amount": 373.68,
-      "outside_valuation": true,
-      "due_at": "application",
-      "owner_division": "Building",
-      "surcharge_ids": [
-        "technology"
-      ],
-      "cite": "FY26/27 MFS Building Fees p. 26 row 113"
     },
     {
       "id": "permit_extension",
@@ -2694,14 +2769,9 @@
         "type": "percent_of_lines",
         "line_ids": [
           "plan_review",
-          "reroof_plan_review",
           "residential_solar_plan_review",
           "commercial_solar_plan_review",
           "pool_spa_plan_review",
-          "demolition_one_family_plan_review",
-          "demolition_multifamily_plan_review",
-          "demolition_simple_structure_plan_review",
-          "demolition_other_plan_review",
           "drainage_alteration_plan_review",
           "building_fire_misc_plan_review",
           "grading_plan_review"
@@ -3592,7 +3662,8 @@
         "adu_sqft"
       ],
       "carries": [
-        "icc_conversion_area_sqft"
+        "icc_conversion_area_sqft",
+        "icc_alteration_area_sqft"
       ],
       "valuation_input": "adu_valuation"
     },
@@ -3603,7 +3674,10 @@
       "permit_types": [
         "swimming-pool"
       ],
-      "valuation_input": "pool_spa_valuation"
+      "valuation_input": "pool_spa_valuation",
+      "carries": [
+        "pool_spa_area_sqft"
+      ]
     },
     {
       "id": "demolition",
@@ -3620,7 +3694,11 @@
         "demolition_multifamily",
         "demolition_simple_structure",
         "demolition_other"
-      ]
+      ],
+      "carries": [
+        "demolition_area_sqft"
+      ],
+      "valuation_input": "demolition_valuation"
     }
   ],
   "fee_capture": {
@@ -3655,7 +3733,62 @@
           "icc_garage_area_sqft",
           "icc_conversion_area_sqft",
           "icc_hardscape_area_sqft",
-          "icc_alteration_area_sqft"
+          "icc_alteration_area_sqft",
+          {
+            "id": "icc_exterior_area_sqft",
+            "label": "Floor area of the existing building whose outside only is renovated (siding, stone, windows, doors; no interior remodel)",
+            "unit": "sq ft"
+          },
+          {
+            "id": "pool_spa_area_sqft",
+            "label": "New pool and spa water surface area",
+            "unit": "sq ft"
+          },
+          {
+            "id": "deck_area_sqft",
+            "label": "New, enlarged or rebuilt deck or balcony area",
+            "unit": "sq ft"
+          },
+          {
+            "id": "deck_resurface_area_sqft",
+            "label": "Existing deck or balcony area resurfaced, recoated or waterproofed (no new framing)",
+            "unit": "sq ft"
+          },
+          {
+            "id": "patio_cover_area_sqft",
+            "label": "New patio cover, pergola or trellis area (its footprint)",
+            "unit": "sq ft"
+          },
+          {
+            "id": "reroof_area_sqft",
+            "label": "Roof area re-roofed on an existing building (not a new roof on new construction)",
+            "unit": "sq ft"
+          },
+          {
+            "id": "solar_kw",
+            "label": "Solar PV system size (kW DC)",
+            "unit": "kW"
+          },
+          {
+            "id": "window_door_count",
+            "label": "Windows and exterior doors replaced or added (on a window or door job; an exterior renovation already counts them)",
+            "unit": "each"
+          },
+          {
+            "id": "retaining_wall_lf",
+            "label": "Retaining wall length",
+            "unit": "lin ft"
+          },
+          {
+            "id": "fence_wall_lf",
+            "label": "Garden wall or fence length (not retaining)",
+            "unit": "lin ft"
+          },
+          {
+            "id": "demolition_area_sqft",
+            "label": "Floor area of whole structures removed under a demolition permit",
+            "unit": "sq ft"
+          }
         ]
       },
       {
@@ -3691,6 +3824,11 @@
           {
             "id": "grading_valuation",
             "label": "Grading valuation (on the grading application)",
+            "unit": "USD"
+          },
+          {
+            "id": "demolition_valuation",
+            "label": "Demolition valuation (on the demolition application)",
             "unit": "USD"
           }
         ]
@@ -4334,23 +4472,27 @@
   ],
   "permit_types": {
     "adu": {
+      "label": "Accessory dwelling unit (new, addition or conversion)",
       "impact_fee_rule": "ca_adu_exemption",
       "school_fee": true,
       "sewer_connection": true,
       "combination_trades": false
     },
     "jadu": {
+      "label": "Junior ADU inside the house",
       "impact_fee_rule": "ca_adu_exemption",
       "school_fee": true,
       "combination_trades": false
     },
     "new_sfr": {
+      "label": "New single-family house",
       "impact_fee_rule": "none",
       "school_fee": true,
       "sewer_connection": true,
       "combination_trades": false
     },
     "addition": {
+      "label": "Addition to a house",
       "impact_fee_rule": "none",
       "school_fee": true,
       "sewer_connection": true,
@@ -4364,24 +4506,27 @@
       "combination_trades": false
     },
     "commercial-ti": {
+      "label": "Commercial tenant improvement",
       "impact_fee_rule": "none",
       "school_fee": false,
       "combination_trades": false
     },
     "detached-garage": {
+      "label": "Detached garage or carport",
       "impact_fee_rule": "none",
       "school_fee": false,
       "combination_trades": false
     },
     "reroof": {
-      "building_fee_rule": "scope_addons_only",
+      "label": "Re-roof",
+      "plan_review_pct": 0,
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
-      "combination_trades": false,
-      "statewide_fees": false
+      "combination_trades": false
     },
     "solar": {
+      "label": "Residential solar PV system (with or without batteries)",
       "building_fee_rule": "scope_addons_only",
       "impact_fee_rule": "none",
       "school_fee": false,
@@ -4390,6 +4535,7 @@
       "statewide_fees": false
     },
     "commercial-solar": {
+      "label": "Commercial solar PV",
       "building_fee_rule": "scope_addons_only",
       "building_fee_cite": "FY26/27 MFS Building Fees p. 22 row 11",
       "required_any_inputs": [
@@ -4403,44 +4549,42 @@
       "statewide_fees": false
     },
     "swimming-pool": {
+      "label": "Pool or spa",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
       "combination_trades": false
     },
     "demolition-one-family": {
-      "building_fee_rule": "scope_addons_only",
+      "label": "Demolition of a one-family house",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
-      "combination_trades": false,
-      "statewide_fees": false
+      "combination_trades": false
     },
     "demolition-multifamily": {
-      "building_fee_rule": "scope_addons_only",
+      "label": "Demolition of a multifamily building",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
-      "combination_trades": false,
-      "statewide_fees": false
+      "combination_trades": false
     },
     "demolition-simple-structure": {
-      "building_fee_rule": "scope_addons_only",
+      "label": "Demolition of a simple structure (detached garage, shed)",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
-      "combination_trades": false,
-      "statewide_fees": false
+      "combination_trades": false
     },
     "demolition-other": {
-      "building_fee_rule": "scope_addons_only",
+      "label": "Other demolition",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
-      "combination_trades": false,
-      "statewide_fees": false
+      "combination_trades": false
     },
     "drainage-alteration": {
+      "label": "Drainage alteration",
       "building_fee_rule": "scope_addons_only",
       "impact_fee_rule": "none",
       "school_fee": false,
@@ -4449,6 +4593,7 @@
       "statewide_fees": false
     },
     "grading": {
+      "label": "Stand-alone grading permit",
       "building_fee_rule": "scope_addons_only",
       "building_fee_note": "The grading permit is a stepped bracket on cubic yards; grading plan review is 50% of the permit fee.",
       "building_fee_cite": "FY26/27 MFS Building Fees pp. 22-23 rows 20-31; p. 26 row 116",
@@ -4463,6 +4608,7 @@
       "statewide_fees": "bsasrf_only"
     },
     "building-fire-misc": {
+      "label": "Building fire sprinkler / alarm / miscellaneous",
       "building_fee_rule": "scope_addons_only",
       "impact_fee_rule": "none",
       "school_fee": false,
@@ -4471,12 +4617,14 @@
       "statewide_fees": false
     },
     "curb-gutter-paving-erosion": {
+      "label": "Curb, gutter, paving or erosion control",
       "impact_fee_rule": "none",
       "school_fee": false,
       "sewer_connection": false,
       "combination_trades": false
     },
     "electrical": {
+      "label": "Stand-alone electrical permit (trade-only work such as a panel upgrade, subpanel, EV charger, a battery added to existing solar, or temporary power), priced per unit",
       "building_fee_rule": "scope_addons_only",
       "building_fee_note": "Provide the count or measured quantity for at least one applicable electrical row (35-58). Only explicitly supplied unit rows are included.",
       "building_fee_cite": "FY26/27 MFS Building Fees pp. 23-24 rows 35-58",
@@ -4508,8 +4656,9 @@
       "required_inputs_label": "Electrical unit quantities",
       "plan_review_of_scope_addons": {
         "id": "plan_review_mep",
-        "label": "Electrical plan review (50% of unit permit fees)",
+        "label": "Electrical plan check (50% of permit fees)",
         "line_ids": [
+          "electrical_permit_base_fee",
           "electrical_outlets",
           "electrical_lighting_fixtures",
           "electrical_power_apparatus_1hp",
@@ -4535,10 +4684,20 @@
           "electrical_nonresidential_appliances_1hp"
         ],
         "pct": 0.5,
-        "cite": "FY26/27 MFS Building Fees p. 26 row 110",
+        "minimum": 68,
+        "cite": "FY26/27 MFS Building Fees p. 26 row 110; $68 minimum as EnerGov charges it",
         "surcharge_ids": [
           "technology"
-        ]
+        ],
+        "trigger_scope": "trade_plan_check",
+        "when_note": "Staff add plan check only when they plan-check drawings for the work (for example a tankless conversion, a relocation or a repipe); an in-kind change-out has none."
+      },
+      "surcharge_bases": {
+        "technology": [
+          "electrical_permit_base_fee",
+          "plan_review_mep"
+        ],
+        "general_plan_maintenance": []
       },
       "impact_fee_rule": "none",
       "school_fee": false,
@@ -4547,6 +4706,7 @@
       "statewide_fees": false
     },
     "mechanical": {
+      "label": "Stand-alone mechanical permit (trade-only work such as a furnace, A/C, heat pump or mini-split change-out), priced per unit",
       "building_fee_rule": "scope_addons_only",
       "building_fee_note": "Provide the count for at least one applicable mechanical row (59-85). Only explicitly supplied unit rows are included.",
       "building_fee_cite": "FY26/27 MFS Building Fees pp. 24-25 rows 59-85",
@@ -4582,8 +4742,9 @@
       "required_inputs_label": "Mechanical unit quantities",
       "plan_review_of_scope_addons": {
         "id": "plan_review_mep",
-        "label": "Mechanical plan review (50% of unit permit fees)",
+        "label": "Mechanical plan check (50% of permit fees)",
         "line_ids": [
+          "mechanical_permit_base_fee",
           "mechanical_furnaces_100k_btu",
           "mechanical_furnaces_over_100k_btu",
           "mechanical_floor_furnaces",
@@ -4613,10 +4774,20 @@
           "mechanical_other_equipment"
         ],
         "pct": 0.5,
-        "cite": "FY26/27 MFS Building Fees p. 26 row 110",
+        "minimum": 68,
+        "cite": "FY26/27 MFS Building Fees p. 26 row 110; $68 minimum as EnerGov charges it",
         "surcharge_ids": [
           "technology"
-        ]
+        ],
+        "trigger_scope": "trade_plan_check",
+        "when_note": "Staff add plan check only when they plan-check drawings for the work (for example a tankless conversion, a relocation or a repipe); an in-kind change-out has none."
+      },
+      "surcharge_bases": {
+        "technology": [
+          "mechanical_permit_base_fee",
+          "plan_review_mep"
+        ],
+        "general_plan_maintenance": []
       },
       "impact_fee_rule": "none",
       "school_fee": false,
@@ -4625,6 +4796,7 @@
       "statewide_fees": false
     },
     "plumbing": {
+      "label": "Stand-alone plumbing permit (trade-only work such as a water heater change-out, repipe, gas line or sewer lateral repair), priced per unit",
       "building_fee_rule": "scope_addons_only",
       "building_fee_note": "Provide the count for at least one applicable plumbing row (86-99). Only explicitly supplied unit rows are included.",
       "building_fee_cite": "FY26/27 MFS Building Fees p. 25 rows 86-99",
@@ -4648,8 +4820,9 @@
       "required_inputs_label": "Plumbing unit quantities",
       "plan_review_of_scope_addons": {
         "id": "plan_review_mep",
-        "label": "Plumbing plan review (50% of unit permit fees)",
+        "label": "Plumbing plan check (50% of permit fees)",
         "line_ids": [
+          "plumbing_permit_base_fee",
           "plumbing_fixtures_traps",
           "plumbing_building_sewers",
           "plumbing_rainwater_drains",
@@ -4668,10 +4841,20 @@
           "plumbing_tankless_water_heaters"
         ],
         "pct": 0.5,
-        "cite": "FY26/27 MFS Building Fees p. 26 row 110",
+        "minimum": 68,
+        "cite": "FY26/27 MFS Building Fees p. 26 row 110; $68 minimum as EnerGov charges it",
         "surcharge_ids": [
           "technology"
-        ]
+        ],
+        "trigger_scope": "trade_plan_check",
+        "when_note": "Staff add plan check only when they plan-check drawings for the work (for example a tankless conversion, a relocation or a repipe); an in-kind change-out has none."
+      },
+      "surcharge_bases": {
+        "technology": [
+          "plumbing_permit_base_fee",
+          "plan_review_mep"
+        ],
+        "general_plan_maintenance": []
       },
       "impact_fee_rule": "none",
       "school_fee": false,

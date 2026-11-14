@@ -633,7 +633,7 @@
             "multi-unit-residential-alteration-structural"
           ],
           "checked_against": "submittal",
-          "detail": "The cover sheet contains the project address; owner; designer, architect, engineer of record and consultant contacts; plan preparer; APN/legal description; occupancy group; construction type; existing and new floor-area calculations; lot area and coverage percentage; vicinity map, north arrow and sheet index; and whether a fire-sprinkler system is installed. When a new sprinkler system is required, the cover is notated \"FIRE SPRINKLERS REQUIRED\".",
+          "detail": "The cover sheet contains the project address; owner; designer, architect, engineer of record and consultant contacts; plan preparer; APN/legal description; occupancy group; construction type; existing and new floor-area calculations; lot area and coverage percentage; and whether a fire-sprinkler system is installed. When a new sprinkler system is required, the cover is notated \"FIRE SPRINKLERS REQUIRED\". The vicinity map, north arrow and index are their own row.",
           "source": {
             "citation": "Laguna Beach New and Major Building Submittal Requirements (2025), \"Building Data Legend\" and \"Provide the following with each set of plans\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -880,6 +880,173 @@
           "detail": "When the design proposes a separate one-family-dwelling service for the ADU, the plans identify at least 100 amperes under CEC 230.79(C). This narrowly states the rating of a proposed service; it does not require a separate service or override the utility-connection protections for converted ADUs.",
           "source": {
             "citation": "Laguna Beach 2026 Building Requirement Sheet, ADU / JADU SPECIFIC row 8",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_floor_plans_elevations_sections",
+          "label": "Floor plans, elevations and sections",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "A floor plan per affected level, elevations of affected sides, and a section.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), plan set list",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_demolition_plan",
+          "label": "Demolition plan",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "applies_when": {
+            "question": "Does the work demolish existing structure?",
+            "if_yes": "Show it.",
+            "if_no": "Not needed."
+          },
+          "checked_against": "submittal",
+          "detail": "Demolition on a floor plan, roof plan and elevations.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), \"Demolition Plan\"",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_cover_sheet_vicinity_map_index",
+          "label": "Vicinity map, north arrow and sheet index",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "On the cover.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), cover sheet",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_cover_sheet_required_notes",
+          "label": "Cover sheet notes: unpermitted work; storm drain",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "Unpermitted work may be removed for inspection; no pollutants to the storm drain.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), cover sheet notes",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_projecting_elements_to_property_lines",
+          "label": "Projecting elements dimensioned to property lines",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "applies_when": {
+            "question": "Does the project include exterior work?",
+            "if_yes": "Show them.",
+            "if_no": "Not needed."
+          },
+          "checked_against": "submittal",
+          "detail": "Eaves, balconies, decks, bays, chimneys and stairs, dimensioned.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), projecting elements",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_mep_plan_details",
+          "label": "MEP plan details",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "HVAC, exhaust, plumbing and gas piping, panel schedules, outlets, smoke and CO alarms.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), MEP plans",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_cover_sheet_energy_special_conditions",
+          "label": "Energy analysis special conditions on the cover",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "applies_when": {
+            "question": "Does the project carry an energy analysis?",
+            "if_yes": "Repeat its conditions.",
+            "if_no": "Not needed."
+          },
+          "checked_against": "submittal",
+          "detail": "HERS, cool roof and the like, repeated on the cover.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), energy analysis",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_design_professional_signatures",
+          "label": "Designer and engineer signatures",
+          "stage": "issuance",
+          "level": "city",
+          "scopes": [
+            "residential-new-dwelling",
+            "residential-addition",
+            "residential-adu",
+            "residential-alteration-structural"
+          ],
+          "checked_against": "submittal",
+          "detail": "Due before issuance, not at intake.",
+          "source": {
+            "citation": "2026 Issuance Requirements Checklist, design professional signatures",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }

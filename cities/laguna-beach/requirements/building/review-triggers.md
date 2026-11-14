@@ -54,24 +54,31 @@ Source: Matrix for Grading and Residential Fire Plan Review Determination, effec
 
 Triggered when any of these is true:
 
-- all of: Commercial, industrial or mixed-use building, or multifamily other than townhomes; and any of: Project scope is new building; or Addition area (sq ft) is more than 0; or Change of occupancy group; or Work in an assembly space (A occupancy); or Commercial cooking equipment (range, oven, fryer, hood); or Battery energy storage system; or Fire sprinkler, fire alarm or fire monitoring work; or New or modified wireless facility; or Temporary tent, membrane structure or event booths; or Hazardous process or materials (spray booth, hazardous materials storage); or Fire Department site access plan required
+- all of: Commercial, industrial or mixed-use building, or multifamily other than townhomes; and any of: Project scope is new building; or Addition area (sq ft) is more than 0; or Major remodel (as the City's Major Remodel handout decides it); or Change of occupancy group; or Tenant spaces joined, or a demising wall opened between them; or Work in an assembly space (A occupancy); or Commercial cooking equipment (range, oven, fryer, hood); or Battery energy storage system; or Fire sprinkler, fire alarm or fire monitoring work; or New or modified wireless facility; or Temporary tent, membrane structure or event booths; or Hazardous process or materials (spray booth, hazardous materials storage); or Fire Department site access plan required
 
 Staff decide when:
 
-- Other full plan review work in a commercial, industrial, mixed-use or multifamily building that matches none of the triggers above and none of the not-triggered cases below: a same-use office or retail tenant improvement, hotel guest room work, a demolition, an interior alteration
+- Hotel or other lodging guest room or suite layout changes, with none of the triggers above
+- Part of the building's structure (roof, floor, exterior walls or overhangs) removed while the rest stays in use. Demolishing interior partitions or finishes inside a tenant improvement is not this case
+- The plans show removal or reinforcement of the building's structure (roof, floor, exterior walls or overhangs), or an addition, and the City's Major Remodel handout does not decide it or the numbers that would decide it are not on the plans
+- A grocery or food store adding refrigerated display or service-case equipment, with no cooking equipment
+- Work in a school, day care, care facility or other institutional occupancy (Group E, I or R-4), or in a high-rise, with none of the triggers above
+- The plans do not show the occupancy group or the suite boundaries, or the sheets that would show sprinkler or alarm scope are not in the set or contradict each other
 
 Not triggered when:
 
 - The building is a single family home, duplex, ADU, JADU or townhome
 - Work on the City's over-the-counter list, a reroof, or a sign
+- Interior tenant improvement inside one office, retail, personal service or similar suite that stays in the same occupancy group, with no tenant spaces joined, no sprinkler or alarm work, no cooking equipment, no assembly room, no added floor area, and no removal or reinforcement of the building's structure (roof, floor, exterior walls or overhangs)
 - Exterior repair or refinish of an existing building with no added floor area (siding, stucco, awnings, stairs, windows or doors)
 - Interior repair (drywall, finishes, fixtures in place)
 - Interior remodel of a dwelling unit, a deck, or a balcony in a multifamily building with no change of occupancy and no added floor area
+- Demolition of an entire building, with no fire service or hydrant work
 - EV chargers, or solar with no battery storage
 - Removing a wireless facility with nothing added
 - Site work with no building (retaining wall, paving, parking, accessible route, playground)
 
-Source: LBFD "Construction & the Fire Code" page (multi-family, commercial and industrial new construction and remodel projects are routed to the Fire Department); Building Permit Issuance handout row 2 (Fire Department Approval criterion)
+Source: LBFD "Construction & the Fire Code" page (multi-family, commercial and industrial new construction and remodel projects are routed to the Fire Department); Building Permit Issuance handout row 2 (Fire Department Approval criterion); CBC 1.11.1 and 1.11.2.1.1 (State Fire Marshal scope, enforced by the city fire department); LBMC 25.05.040(C)(4), 25.10.008(O) and 14.50.104 (CBC 903.6)
 
 ## Geotechnical peer review (Building / City geotechnical consultant)
 

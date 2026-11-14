@@ -797,13 +797,12 @@ Citywide rules for accessory space:
 - **Write the lead route first.** After combining, state the single most likely route in the
   answer's first lines: what to file, with whom, and in what order (for example "File a Zone
   Clearance at the Planning counter, then the building permit"). It comes from the facts given, the
-  ordinance default and the usual case for that kind of work. Write the answer in the guide's
-  contract shape (How to write the answer).
+  ordinance default and the usual case for that kind of work. Then follow How to write the answer.
 - **Headline tier: the ordinance default.** The tier you lead with comes from the code: the list item
   the precedence rules pick (Step 4), plus any overlay or standard that the facts in hand trigger
   (Steps 5-6). City intake-practice notes and UNSETTLED questions never set the headline. Give only
-  the one that most changes the filing, as a "changes to X if Y" line (one at most, per the guide
-  contract), with what would decide it ("if the City applies its roof-deck intake rule, Design
+  the one that most changes the filing, as a "changes to X if Y" line (one at most), with what
+  would decide it ("if the City applies its roof-deck intake rule, Design
   Review instead of ADR"). A default the code itself
   sets on known facts, such as Design Review on a lot screened at 30% slope (Step 1), is the
   ordinance default, not practice.
@@ -898,8 +897,8 @@ How to weigh practice against the code: `city-practice.md`.
 
 ## How to write the answer
 
-Work through every step above, then write only what the resident acts on, in the shape the guide's
-contract gives ("Short": 250 words at most). The analysis stays behind the answer: per-piece list
+Work through every step above, then write only what the resident acts on. The analysis stays
+behind the answer: per-piece list
 items, overlays that do not change the first filing, and open questions that route the same either
 way come out only when the resident asks. The steps link the City's forms from the applications
 table in `../../city-website/references/planning-applications.md`, and the order of filings comes from
