@@ -140,17 +140,7 @@
           "label": "A separate Building Permit Application for each listed scope",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-solar",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-solar", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "checked_against": "submittal",
           "detail": "Laguna files one application per scope off one complete plan set, each with its own description and valuation. The baseline scopes are: new SFR/addition/remodel with site work and grading of 20 CY or less outside the building footprint; demolition; ADU/JADU; grading of more than 20 CY outside the building footprint; and pool/spa. Each ADU or JADU normally has its own permit, but a JADU may ride with the main house; main house + JADU + ADU is two applications. Demolishing a unit requires its own demolition permit; demo-only normally also needs a construction submittal on file or Building Official approval. GRADING TEST: count only grading OUTSIDE the building footprint, using the greater of cut or fill. More than 20 CY outside the footprint needs its own grading application, valuation, permit and plan submittal; 20 CY or less rides with construction. Grading inside the footprint never counts toward the 20 CY, though it still gets review and a fee. Apply the test in one of three cases. (1) The plans or application state the inside and outside quantities: apply the test to the outside quantity. Decide which case applies by reading the plans; never from a keyword. Shoring may issue with grading, but the plan checker decides which permit carries it. A house with an ADU may share one plan check but issues as two permits, one per address. Application pages may be combined into one PDF. When the City record for the named permit is available, compare its description with this filing's scope, the way a Planning record is compared: a grading record opened for another permit's work does not cover this filing's grading.",
           "source": {
@@ -164,16 +154,7 @@
           "label": "Each application's valuation covers its own scope and only its own scope",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "checked_against": "submittal",
           "detail": "The City settled the amount question on 2026-08-19: it computes its own minimum from the Occupancy Group, construction type and square footage of NEW square footage, and applies \"either the city minimum or the valuation provided by the applicant, whichever of the two is higher.\"",
           "source": {
@@ -187,36 +168,7 @@
           "label": "Planning approval completed before the Building submittal",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-alteration-interior",
-            "residential-window-replacement",
-            "residential-siding-replacement",
-            "residential-patio-cover",
-            "residential-reroof",
-            "commercial-reroof",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-accessory-structure",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair",
-            "multi-unit-residential-new",
-            "commercial-site-improvements",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "commercial-exterior-repair",
-            "commercial-wireless",
-            "commercial-temporary-structure",
-            "sign"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-alteration-interior", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-reroof", "commercial-reroof", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-accessory-structure", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "multi-unit-residential-new", "commercial-site-improvements", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "sign"],
           "applies_when": {
             "question": "Does this project need any Laguna Beach Planning Division approval — design review, administrative design review, a coastal development permit, a variance, a conditional use permit, or a Zone Clearance for work that changes the exterior — before it can be built?",
             "if_yes": "The Planning approval must already be granted when the Building application is filed. Include the approval and its conditions with the Building submittal."
@@ -234,28 +186,7 @@
           "label": "ZPC description matches this Building filing",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair",
-            "multi-unit-residential-new",
-            "commercial-site-improvements",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "commercial-exterior-repair"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "multi-unit-residential-new", "commercial-site-improvements", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-exterior-repair"],
           "applies_when": {
             "question": "Did this project receive a Laguna Beach Planning approval for THIS work, and does the Building application description match that record's description?",
             "if_yes": "The descriptions are fairly close; proceed. Status on the record is the approval, not the form name."
@@ -273,23 +204,7 @@
           "label": "Current code cycle stated on the cover sheet",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "The title or cover sheet states that the project complies with the 2025 CBC, CRC, CMC, CPC and CEC; the 2025 California Green Building Standards Code; the 2025 California Energy Efficiency Standards; and City of Laguna Beach regulations and ordinances.",
           "source": {
@@ -303,18 +218,7 @@
           "label": "Unlocked digital files",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "residential-deferred-submittal",
-            "commercial-deferred-submittal"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-deferred-submittal", "commercial-deferred-submittal"],
           "checked_against": "submittal",
           "detail": "Every uploaded file opens without a password and carries no security restrictions. Laguna's E-Plan review stamps and marks up the PDFs, so a locked or permission-restricted file stops the review before it starts.",
           "source": {
@@ -328,16 +232,7 @@
           "label": "Structural calculations",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "applies_when": {
             "question": "Does any part of this design depend on engineering rather than the prescriptive code tables — an engineered lateral system, a moment frame, a beam or header outside the span tables, manufactured trusses, a retaining wall, or a hillside or pile foundation?",
             "if_yes": "Submit the signed structural calculations for those elements, and detail their results on the plans.",
@@ -356,19 +251,7 @@
           "label": "Soils report",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "commercial-new",
-            "commercial-addition",
-            "multi-unit-residential-addition"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "commercial-new", "commercial-addition", "multi-unit-residential-addition"],
           "applies_when": {
             "question": "Does any exact City soils-report trigger apply: new construction, except an ADU (new, attached, or a conversion), which is not new construction here and needs this report only for a lot slope over 20%, a deep foundation (grade beams or piles), or a retaining wall over 5 ft, and is omitted when none of those apply; an SFR addition over 1,200 square feet, a new upper floor, or at least 50 percent total floor-area increase; retaining wall over 5 feet or supporting surcharge; shoring over 6 feet of cut; slope steeper than 1V:2H; beach/ocean front, coastal bluff top, steep hillside or liquefaction site; prior soil/structure failure; nonconventional foundation; qualifying new pool; or a Building Official determination?",
             "if_yes": "Submit the signed soils report, dated within one year of submittal, and carry its recommendations onto the foundation and earth-retaining plans.",
@@ -387,16 +270,7 @@
           "label": "Grading and drainage plans",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "applies_when": {
             "question": "Does the project cut or fill earth, change finished grade, or change where site runoff goes — including new hardscape, a new driveway, retaining walls, or a relocated area drain?",
             "if_yes": "Submit the grading and drainage plans showing existing and proposed grades, earthwork quantities, and the drainage path to its point of discharge.",
@@ -415,15 +289,7 @@
           "label": "Erosion control plans",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "applies_when": {
             "question": "Will the project leave soil exposed or stockpiled on the site — from grading, trenching, foundation excavation, or demolition?",
             "if_yes": "Submit the erosion control plan showing the perimeter controls, inlet protection and stabilized access for the disturbed area.",
@@ -441,12 +307,7 @@
           "label": "Hydrology calculations",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "applies_when": {
             "question": "Does the project change the volume or the path of storm runoff leaving the site — new or enlarged roof area, new paving, a new or resized storm drain, or a detention or infiltration device?",
             "if_yes": "Submit the hydrology calculations supporting the drainage design.",
@@ -464,12 +325,7 @@
           "label": "Fire access plan",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "applies_when": {
             "question": "Is this a new dwelling or ADU, or does the project change fire apparatus access, the driveway, the address or unit numbering, or the water supply and hydrant serving the site?",
             "if_yes": "Submit the fire access plan showing apparatus access, driveway width and grade, turnaround, hydrant location and address visibility.",
@@ -487,12 +343,7 @@
           "label": "Construction staging plan",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "applies_when": {
             "question": "Does the project have a City staging trigger: steep/hillside conditions, narrow or tight access, a tight bend, rear-lot crane access from the street, a busy intersection, limited frontage or storage, excessive grading/heavy equipment, or a Building Official neighborhood/public-impact determination?",
             "if_yes": "Submit the scaled construction staging and management plan with the construction drawings, including on-site delivery, storage, parking, dumpster, toilet, traffic, erosion, fencing and emergency-access arrangements.",
@@ -511,19 +362,7 @@
           "label": "Water Quality Management Plan (WQMP)",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-site-improvements",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-site-improvements",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-site-improvements", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-site-improvements", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "applies_when": {
             "question": "Does the project meet any WQMP threshold: at least 10,000 square feet impervious area; at least 5,000 square feet and redevelopment; at least 5,000 square feet and lot slope at least 25 percent; or at least 2,500 square feet and within/adjacent to an ESA? Also identify the form's separate 200-foot WQESA direct-discharge and LID-checklist answers.",
             "if_yes": "Submit the WQMP with the grading/drainage, street-improvement, erosion-control, geotechnical and hydrology companion plans.",
@@ -542,12 +381,7 @@
           "label": "Water Efficient Landscape Ordinance (WELO) documentation",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "applies_when": {
             "question": "Did Planning call out WELO (prescriptive or performative) on the ZPC notes for THIS work? If the notes are silent or unclear, also say whether the cover sheet or landscape sheet states a landscape area that could meet a 23 CCR section 491(a) threshold — 500 sq. ft. or more of new landscape, or 2,500 sq. ft. or more of existing landscape area. Landscape area is irrigated planting, turf and water features only (section 490.2(a)(41)).",
             "if_yes": "Staff look up the Planning record. Record the Planning call when it is clear (prescriptive or performative). Cover-sheet landscape area rides along as supporting evidence.",
@@ -566,19 +400,7 @@
           "label": "Deferred submittals are identified on the cover sheet",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "applies_when": {
             "question": "Does the design defer a fire-sprinkler, structural-roof-truss or elevator package?",
             "if_yes": "List the eligible deferred item on the cover sheet and state that it will be approved and permitted before framing inspection.",
@@ -597,10 +419,7 @@
           "label": "Residential automatic-sprinkler documentation or a valid Laguna deferral",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-adu"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-adu"],
           "applies_when": {
             "question": "Is an automatic sprinkler system actually required for this work? A new primary dwelling is required to be sprinklered (CRC R309.2 as amended by LBMC 14.52.030). An ADU is required to be sprinklered ONLY when the primary residence is sprinklered or is being sprinklered by this project — Government Code section 66314(d)(12) and LBMC 25.17.010(f)(3) (Urgency Ord. 1713). Read the cover sheet's existing-sprinkler statement for the primary residence before answering.",
             "if_yes": "Submit the sprinkler design or the Laguna deferred-submittal cover note committing to approval and a separate permit before framing inspection.",
@@ -619,21 +438,9 @@
           "label": "Cover sheet with the Building Data Legend",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
-          "detail": "The cover sheet contains the project address; owner; designer, architect, engineer of record and consultant contacts; plan preparer; APN/legal description; occupancy group; construction type; existing and new floor-area calculations; lot area and coverage percentage; vicinity map, north arrow and sheet index; and whether a fire-sprinkler system is installed. When a new sprinkler system is required, the cover is notated \"FIRE SPRINKLERS REQUIRED\".",
+          "detail": "The cover sheet contains the project address; owner; designer, architect, engineer of record and consultant contacts; plan preparer; APN/legal description; occupancy group; construction type; existing and new floor-area calculations; lot area and coverage percentage; and whether a fire-sprinkler system is installed. When a new sprinkler system is required, the cover is notated \"FIRE SPRINKLERS REQUIRED\". The vicinity map, north arrow and index are their own row.",
           "source": {
             "citation": "Laguna Beach New and Major Building Submittal Requirements (2025), \"Building Data Legend\" and \"Provide the following with each set of plans\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -645,23 +452,7 @@
           "label": "Applicable Planning conditions of approval on the first plan sheet",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "applies_when": {
             "question": "Did Administrative Design Review, the Design Review Board or the Planning Commission impose conditions of approval on this project?",
             "if_yes": "Place the conditions of approval on the first sheet and show the plans' compliance with them.",
@@ -680,16 +471,7 @@
           "label": "Existing, demolished and new-wall legend for remodel work",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-addition",
-            "residential-alteration-structural",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["residential-addition", "residential-alteration-structural", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "Existing and proposed floor plans distinguish walls to remain, walls to be demolished and new walls. For Laguna's area accounting, an existing wall with a structural upgrade affecting the foundation or lateral support counts as new, and an existing wall with drywall removed counts in the area of renovation.",
           "source": {
@@ -703,12 +485,7 @@
           "label": "Window and door schedule or notes identify Laguna glazing",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "applies_when": {
             "question": "Does the project install or replace windows or glazed doors?",
             "if_yes": "Show the window/door schedule or plan note identifying dual-pane glazing with one pane tempered."
@@ -726,16 +503,7 @@
           "label": "Special-inspection documents identify an independent inspector",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "applies_when": {
             "question": "Does CBC Chapter 17 or the structural design require special inspection, including shear-wall nailing or epoxy holdowns?",
             "if_yes": "Submit the special-inspection documents and identify an eligible independent special inspector; the EOR may be listed for structural observation but not for those two special inspections.",
@@ -754,16 +522,7 @@
           "label": "Soils engineer review, stamp and signature on foundation and retaining plans",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "applies_when": {
             "question": "Is a soils report or accepted update letter part of this project's design basis?",
             "if_yes": "Provide the soils engineer's review, stamp and signature on the foundation and earth-retaining plans and details, or the specifically approved waiver letter."
@@ -782,12 +541,7 @@
           "label": "Construction-staging neighbor-notification affidavit before issuance",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "applies_when": {
             "question": "Is a construction staging and management program required for this project?",
             "if_yes": "Staff verifies the approved notice, 300-foot canvass and signed affidavit before issuance; these do not block initial submittal completeness.",
@@ -806,24 +560,7 @@
           "label": "Unpermitted work and expired permits cleared or included before issuance",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "commercial-site-improvements",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-site-improvements", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "city_record",
           "detail": "Any unpermitted work or expired permit found in City records must be cleared or included in the current submittal.",
           "source": {
@@ -837,9 +574,7 @@
           "label": "ADU fire/sound separation and rated exterior details",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-adu"
-          ],
+          "scopes": ["residential-adu"],
           "checked_against": "submittal",
           "detail": "ADU plans identify the required fire and sound separation and show the applicable fire-rated eave and exterior-wall construction under CRC Table R302.1(1) or R302.1(2). These objective building/fire-safety standards survive the ADU preemption check; they do not authorize a zoning or discretionary barrier.",
           "source": {
@@ -853,9 +588,7 @@
           "label": "ADU water and sewer connection approach shown on the plans",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-adu"
-          ],
+          "scopes": ["residential-adu"],
           "checked_against": "submittal",
           "detail": "Laguna treats separate water and sewer connections as optional but requires plan notes showing the chosen connection approach. This is more permissive than the state floor. It does not erase Government Code section 66311.5(d), which prohibits a new or separate utility connection for a qualifying converted section 66323(a)(1) unit except in the statute's limited cases.",
           "source": {
@@ -869,9 +602,7 @@
           "label": "Separate ADU electrical service rating shown when one is proposed",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-adu"
-          ],
+          "scopes": ["residential-adu"],
           "applies_when": {
             "question": "Does the ADU design propose its own separate electrical service rather than a feeder from the primary service?",
             "if_yes": "Show the separate service rating at not less than 100 amperes and provide the service/load information."
@@ -885,16 +616,138 @@
           }
         },
         {
+          "id": "laguna_floor_plans_elevations_sections",
+          "label": "Floor plans, elevations and sections",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "checked_against": "submittal",
+          "detail": "A floor plan per affected level, elevations of affected sides, and a section.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), plan set list",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_demolition_plan",
+          "label": "Demolition plan",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "applies_when": {
+            "question": "Does the work demolish existing structure?",
+            "if_yes": "Show it.",
+            "if_no": "Not needed."
+          },
+          "checked_against": "submittal",
+          "detail": "Demolition on a floor plan, roof plan and elevations.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), \"Demolition Plan\"",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_cover_sheet_vicinity_map_index",
+          "label": "Vicinity map, north arrow and sheet index",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "checked_against": "submittal",
+          "detail": "On the cover.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), cover sheet",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_cover_sheet_required_notes",
+          "label": "Cover sheet notes: unpermitted work; storm drain",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "checked_against": "submittal",
+          "detail": "Unpermitted work may be removed for inspection; no pollutants to the storm drain.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), cover sheet notes",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_projecting_elements_to_property_lines",
+          "label": "Projecting elements dimensioned to property lines",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "applies_when": {
+            "question": "Does the project include exterior work?",
+            "if_yes": "Show them.",
+            "if_no": "Not needed."
+          },
+          "checked_against": "submittal",
+          "detail": "Eaves, balconies, decks, bays, chimneys and stairs, dimensioned.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), projecting elements",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_mep_plan_details",
+          "label": "MEP plan details",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "checked_against": "submittal",
+          "detail": "HVAC, exhaust, plumbing and gas piping, panel schedules, outlets, smoke and CO alarms.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), MEP plans",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_cover_sheet_energy_special_conditions",
+          "label": "Energy analysis special conditions on the cover",
+          "stage": "plan_check",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "applies_when": {
+            "question": "Does the project carry an energy analysis?",
+            "if_yes": "Repeat its conditions.",
+            "if_no": "Not needed."
+          },
+          "checked_against": "submittal",
+          "detail": "HERS, cool roof and the like, repeated on the cover.",
+          "source": {
+            "citation": "New and Major Building Submittal Requirements (2025), energy analysis",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
+          "id": "laguna_design_professional_signatures",
+          "label": "Designer and engineer signatures",
+          "stage": "issuance",
+          "level": "city",
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
+          "checked_against": "submittal",
+          "detail": "Due before issuance, not at intake.",
+          "source": {
+            "citation": "2026 Issuance Requirements Checklist, design professional signatures",
+            "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
+            "published": true
+          }
+        },
+        {
           "id": "crc_construction_documents",
           "label": "Construction documents",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "Construction documents and other data, clear enough to show the location, nature and extent of the proposed work and code compliance.",
           "source": {
@@ -908,12 +761,7 @@
           "label": "Site or plot plan",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "Show the size and location of new and existing structures and distances from lot lines. The building official may waive or modify this for alteration or repair work.",
           "source": {
@@ -927,12 +775,7 @@
           "label": "Energy Certificate of Compliance",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural"],
           "applies_when": {
             "question": "Is the proposed work regulated by Title 24, Part 6?",
             "if_yes": "Include the applicable Certificate of Compliance with the permit documents."
@@ -962,9 +805,7 @@
           "label": "Legible floor plan of the renovation layout",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "Every permitted interior renovation carries at least one legible floor plan showing the layout of the work. This is the floor of Laguna's interior-alteration intake: a permit application with no plan at all is incomplete even for the simplest in-kind bath refit. The plan must depict the renovation: it locates the work in the unit. A listing or brochure floor plan with a contractor estimate or scope list pasted beside it does not depict the renovation, and neither does an estimate, proposal or product sheet on its own.",
           "source": {
@@ -978,9 +819,7 @@
           "label": "Scaled 24″ × 36″ drawings for Building Plan Check",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does the scope of work reconfigure the room layout, modify the structural system, or remove a wall to accommodate an enlarged wall opening?",
             "if_no": "The City calls for no plan-check set on a renovation that stays within the existing layout and structure; the legible renovation floor plan is what is filed."
@@ -998,9 +837,7 @@
           "label": "Title sheet with the City's named contents",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does the scope of work reconfigure the room layout, modify the structural system, or remove a wall to accommodate an enlarged wall opening?",
             "if_yes": "The plan-check set opens with a title sheet carrying the owner's name and address, the project address, the scope of work, the sheet index, a vicinity map, and the deferred-submittal list.",
@@ -1019,9 +856,7 @@
           "label": "Adopted code editions stated on the plans",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does the scope of work reconfigure the room layout, modify the structural system, or remove a wall to accommodate an enlarged wall opening?",
             "if_yes": "The plan set states the adopted code editions in effect on the title sheet or in the general notes.",
@@ -1040,9 +875,7 @@
           "label": "Site plan showing projecting elements and property-line distances",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel include any exterior work — a new or enlarged opening in an exterior wall, a projecting element, exterior equipment, or any change visible outside the existing envelope?",
             "if_yes": "Submit a site plan delineating all projecting elements with dimensioned distances to the property lines and to adjacent structures.",
@@ -1061,9 +894,7 @@
           "label": "Existing and proposed floor plans with the City's named content",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does the scope of work reconfigure the room layout, modify the structural system, or remove a wall to accommodate an enlarged wall opening?",
             "if_yes": "Submit the existing floor plan alongside the proposed floor plan, with new areas, door and window sizes, headers, outlets, switches, the FAU, registers and plumbing fixtures indicated.",
@@ -1082,9 +913,7 @@
           "label": "Section cut through the new work and the existing structure",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel add framed area, alter framing, or attach new construction to the existing structure?",
             "if_yes": "Submit a section cut through the new work and the existing structure showing framing, the relationship between them, and the attachment.",
@@ -1103,9 +932,7 @@
           "label": "Roof plan with a Class A assembly and evaluation report number",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel include roof work — new or altered roof framing, a re-covered roof area, a new opening through the roof, or a change in roof drainage?",
             "if_yes": "Submit a roof plan showing slopes, ridges, valleys, flashing, overhangs and drainage, naming the Class A assembly and its approved evaluation report number.",
@@ -1124,9 +951,7 @@
           "label": "Exterior elevations with materials, openings and heights",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel change the exterior appearance of the building — finish materials, window or door openings, or building height?",
             "if_yes": "Submit exterior elevations indicating finish materials, window and door openings and building heights, showing VHFHSZ and CBC Chapter 7A compliance.",
@@ -1145,9 +970,7 @@
           "label": "Structural plans",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel modify the structural system — remove or alter a wall, install or change a header or beam, alter framing, or change a footing?",
             "if_yes": "Submit structural plans indicating framing member sizes, beam sizes, the lateral resisting system, footings and construction details.",
@@ -1166,9 +989,7 @@
           "label": "Structural calculations",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel modify the structural system — remove or alter a wall, install or change a header or beam, alter framing, or change a footing?",
             "if_yes": "Submit structural calculations covering framing and beam sizes, footing and reinforcement sizes, and the lateral system and its connections.",
@@ -1187,9 +1008,7 @@
           "label": "Energy compliance forms",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel alter anything the California Energy Code regulates — lighting, the building envelope, HVAC, ductwork, or water heating?",
             "if_yes": "Submit the Title 24 energy compliance forms, including the CF-1R and MF-1R.",
@@ -1208,9 +1027,7 @@
           "label": "Sewer video",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel increase the plumbing fixture count, or is the permitted work valued over $100,000 on a property in the City's sewer-video area north of Cardinal Drive?",
             "if_yes": "Submit the sewer video with the packet.",
@@ -1229,9 +1046,7 @@
           "label": "Dual-pane glazing with one tempered pane",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Does this remodel install or replace any window or glazed door?",
             "if_yes": "The window and door schedule or the plan notes identify dual-pane glazing with one pane tempered."
@@ -1249,9 +1064,7 @@
           "label": "Dwelling-wide smoke and carbon monoxide alarms brought to current code",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Is this renovation valued over $1,000?",
             "if_yes": "The plans carry the dwelling-wide smoke and carbon monoxide alarm notes required by CRC R310 and R311.",
@@ -1270,9 +1083,7 @@
           "label": "Energy Certificate of Compliance",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-alteration-interior"
-          ],
+          "scopes": ["residential-alteration-interior"],
           "applies_when": {
             "question": "Is the proposed work regulated by Title 24, Part 6?",
             "if_yes": "Include the applicable Certificate of Compliance with the permit documents."
@@ -1302,9 +1113,7 @@
           "label": "Grading summary table split outside and inside the building footprint",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-grading"
-          ],
+          "scopes": ["residential-grading"],
           "checked_against": "submittal",
           "detail": "Show a grading summary table on the plans with cut, fill, and net import or export separated into outside-building-footprint, inside-building-footprint, pool/spa, and total columns. The counter reads the permit quantity and hauling quantity from that table.",
           "source": {
@@ -1318,9 +1127,7 @@
           "label": "Total cubic yards of grading stated on the application",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-grading"
-          ],
+          "scopes": ["residential-grading"],
           "checked_against": "submittal",
           "detail": "State the total cubic yards of grading on the grading application. The counter asks for this quantity at submittal; it is the grading-scope quantity paired with the application's own valuation structure.",
           "source": {
@@ -1334,9 +1141,7 @@
           "label": "Cubic yards of import or export stated on the application or plans",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-grading"
-          ],
+          "scopes": ["residential-grading"],
           "checked_against": "submittal",
           "detail": "State the cubic yards to be imported or exported on the application or grading plans. The applicant supplies the number; the permit technician uses it in the permit description to communicate hauling activity and potential neighborhood impact.",
           "source": {
@@ -1350,9 +1155,7 @@
           "label": "Separate grading plan submittal when outside-footprint grading exceeds 20 cubic yards",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-grading"
-          ],
+          "scopes": ["residential-grading"],
           "applies_when": {
             "question": "Does the greater of cut or fill outside the building footprint exceed 20 cubic yards?",
             "if_yes": "Submit the grading plans as a separate plan submittal."
@@ -1370,9 +1173,7 @@
           "label": "Temporary or permanent shoring scope declared",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-grading"
-          ],
+          "scopes": ["residential-grading"],
           "checked_against": "submittal",
           "detail": "At intake, establish whether the project includes temporary or permanent shoring.",
           "source": {
@@ -1398,9 +1199,7 @@
           "label": "Completed City demolition form (\"demo form\")",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-demolition"
-          ],
+          "scopes": ["residential-demolition"],
           "checked_against": "submittal",
           "detail": "Submit the City's completed form by its counter name, the \"demo form.\"",
           "source": {
@@ -1414,9 +1213,7 @@
           "label": "South Coast AQMD Rule 1403 demolition notification",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-demolition"
-          ],
+          "scopes": ["residential-demolition"],
           "checked_against": "submittal",
           "detail": "Submit the Rule 1403 demolition notification. Laguna's counter does not wait ten days from its Origin Date, so a newly originated notification is not deficient merely because ten days have not elapsed.",
           "source": {
@@ -1430,9 +1227,7 @@
           "label": "Rule 1403 asbestos notification, or the under-100-square-foot not-applicable marking",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-demolition"
-          ],
+          "scopes": ["residential-demolition"],
           "applies_when": {
             "question": "Is the asbestos-containing area at least 100 square feet?",
             "if_yes": "Submit the Rule 1403 asbestos notification and, if the asbestos has already been abated, the abatement certificate."
@@ -1450,9 +1245,7 @@
           "label": "Gas and electric utility meter-removal notice",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-demolition"
-          ],
+          "scopes": ["residential-demolition"],
           "checked_against": "submittal",
           "detail": "Accept written notice from the gas and electric utilities that meter removal is scheduled or complete. The page also expressly accepts evidence that the applicant notified both utilities; the notice does not have to be a utility-issued confirmation.",
           "source": {
@@ -1466,9 +1259,7 @@
           "label": "Replacement construction submittal or Building Official demo-only approval on file",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-demolition"
-          ],
+          "scopes": ["residential-demolition"],
           "checked_against": "city_record",
           "detail": "This is a City-record check, not a document request to the applicant. Staff confirm that the replacement project's formal construction submittal is already on file or that the Building Official approved proceeding with a demolition-only permit.",
           "source": {
@@ -1482,9 +1273,7 @@
           "label": "Contractor license acceptable for demolition permit issuance",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-demolition"
-          ],
+          "scopes": ["residential-demolition"],
           "checked_against": "submittal",
           "detail": "The counter may issue a demolition permit to a contractor holding a California Class B general building contractor license. The page states what is acceptable, not an exclusive list; it does not exclude a licensed demolition contractor.",
           "source": {
@@ -1510,9 +1299,7 @@
           "label": "Pool or spa Building Permit Application with its own valuation",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-pool-spa"
-          ],
+          "scopes": ["residential-pool-spa"],
           "checked_against": "submittal",
           "detail": "Submit the pool/spa's own Building Permit Application and state the valuation for this scope on that application.",
           "source": {
@@ -1526,9 +1313,7 @@
           "label": "Pool or spa plan set for Building and Planning review",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-pool-spa"
-          ],
+          "scopes": ["residential-pool-spa"],
           "checked_against": "submittal",
           "detail": "Submit the digital pool/spa plan set. The City routes the same set to Building and Planning.",
           "source": {
@@ -1542,9 +1327,7 @@
           "label": "Drainage, landscape, or other site-work sheets for Water Quality",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-pool-spa"
-          ],
+          "scopes": ["residential-pool-spa"],
           "applies_when": {
             "question": "Does the pool or spa scope include drainage, landscaping, or other site work?",
             "if_yes": "Include the drainage, landscape, or other site-work sheets for Water Quality review.",
@@ -1563,9 +1346,7 @@
           "label": "Staff determination whether included soils documentation needs third-party peer review",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-pool-spa"
-          ],
+          "scopes": ["residential-pool-spa"],
           "applies_when": {
             "question": "Does the pool/spa packet include soils documentation?",
             "if_no": "No soils peer-review determination is needed from this page."
@@ -1598,12 +1379,8 @@
           "label": "Replacement glazing identified to the WUI glazing standard",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement"
-          ],
-          "site_conditions": [
-            "The site is in a very high Fire Hazard Severity Zone."
-          ],
+          "scopes": ["residential-window-replacement"],
+          "site_conditions": ["The site is in a very high Fire Hazard Severity Zone."],
           "checked_against": "submittal",
           "detail": "The window schedule or the manufacturer's product specification identifies the replacement glazing against the CWUIC §504.8 standard cited above. Where the frames are vinyl, the same schedule or specification also shows the two things §504.8.3 as added by LBMC 14.70.035 requires: welded corners, and metal reinforcing in the interlock area. Aluminum, fiberglass, wood and wood-clad frames are outside §504.8.3; the §504.8 glazing standard still applies to them.",
           "source": {
@@ -1617,12 +1394,8 @@
           "label": "Replacement exterior wall covering identified to the WUI material standard",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-siding-replacement"
-          ],
-          "site_conditions": [
-            "The site is in a very high Fire Hazard Severity Zone."
-          ],
+          "scopes": ["residential-siding-replacement"],
+          "site_conditions": ["The site is in a very high Fire Hazard Severity Zone."],
           "checked_against": "submittal",
           "detail": "The elevations, the wall sections or the manufacturer's product specification identify the replacement exterior wall covering — or the wall assembly, including insulation — against CWUIC §504.5.2 as amended by LBMC 14.70.030. That section lists four ways to comply: noncombustible material; ignition-resistant building material labeled for exterior use; fire-retardant-treated wood labeled for exterior use and complying with California Building Code §2303.2; or fire-retardant-treated wood shingles and shakes qualified under California Building Code §1505.6 as a Class B roof covering, installed over solid sheathing. Name which one the product meets and carry the label or listing.",
           "source": {
@@ -1680,17 +1453,7 @@
           "label": "Completed Building Permit Application with the correct project address",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement",
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-mechanical-plumbing-minor",
-            "residential-wall-fence",
-            "sign",
-            "multi-unit-residential-exterior-repair",
-            "commercial-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-window-replacement", "residential-patio-cover", "residential-siding-replacement", "residential-mechanical-plumbing-minor", "residential-wall-fence", "sign", "multi-unit-residential-exterior-repair", "commercial-exterior-repair", "multi-unit-residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "The deliverable is the City's Building Permit Application page. The City asks for two things about it: that it is complete and that the project address on it is correct. Complete means the form's own blocks are filled — the description of work, the valuation, and the applicant, owner and contractor blocks the form prints. An accurate address matters more here than on a plan-checked project, because an OTC permit can issue the same day against whatever address the application carries. A blank block that applies to the project makes the application incomplete: the description of work, the valuation, and the contractor block on a contractor-pulled permit. A block that does not apply to the project may be blank — the architect and engineer blocks on a job with no design professional, the contractor block on an owner-builder permit — and a blank there is not a defect.",
           "source": {
@@ -1704,17 +1467,7 @@
           "label": "Plans include an accurate site plan",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement",
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-mechanical-plumbing-minor",
-            "residential-wall-fence",
-            "sign",
-            "multi-unit-residential-exterior-repair",
-            "commercial-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-window-replacement", "residential-patio-cover", "residential-siding-replacement", "residential-mechanical-plumbing-minor", "residential-wall-fence", "sign", "multi-unit-residential-exterior-repair", "commercial-exterior-repair", "multi-unit-residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "Judge the file, not the EnerGov (or other portal) slot it was uploaded into. A site plan shows the parcel: the property lines, the building footprint on the lot, and where the work sits on the site. A drawing that does that is a site plan even if the applicant parked it in For Reference Only or another label; a file sitting in Plans that is a product specification, waterproofing spec, or catalog cut is not a site plan. Do not rebuild the City's file-category taxonomy. The City also uses a reference slot for original stamped sets — decide from the document whether this file is this filing's working drawings or an archived original set. The City states this item without a condition, so it is asked on every OTC scope, including an in-kind replacement. Do not soften it and do not read the floor-plan item below as an alternative to it — the handout lists both.",
           "source": {
@@ -1728,17 +1481,7 @@
           "label": "Plans show the complete scope of work",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement",
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-mechanical-plumbing-minor",
-            "residential-wall-fence",
-            "sign",
-            "multi-unit-residential-exterior-repair",
-            "commercial-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-window-replacement", "residential-patio-cover", "residential-siding-replacement", "residential-mechanical-plumbing-minor", "residential-wall-fence", "sign", "multi-unit-residential-exterior-repair", "commercial-exterior-repair", "multi-unit-residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "Judge the file, not the portal slot. The working drawings identify the whole scope of work — every item the permit covers, at the level of detail the trade needs — and the cover (or the sheet that functions as the cover) carries the project address and that complete scope, including a small repair. On a window job that is the count, the locations and the type of every opening being changed. On a deck or waterproofing repair it is which members or surfaces are being replaced, and it states whether a guardrail is being removed and replaced when that is in play. A specification sitting in Plans does not show scope. Judge it against the application's own description of work.",
           "source": {
@@ -1752,17 +1495,7 @@
           "label": "Floor plan locating existing and all new proposed work",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement",
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-mechanical-plumbing-minor",
-            "residential-wall-fence",
-            "sign",
-            "multi-unit-residential-exterior-repair",
-            "commercial-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-window-replacement", "residential-patio-cover", "residential-siding-replacement", "residential-mechanical-plumbing-minor", "residential-wall-fence", "sign", "multi-unit-residential-exterior-repair", "commercial-exterior-repair", "multi-unit-residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "Judge the file, not the portal slot. The working drawings contain a floor plan (or, on a scope with no interior work such as a fence or a sign, the drawing that locates the work on the structure or the site), and that drawing locates two things: what exists and what is proposed. Locating is the test — the reviewer must be able to point at the sheet and say where each item of work happens. A specification, product cut, unstamped catalog sheet, captioned photograph, or annotated aerial is not a floor plan — even on an exterior-only repair. The cover of the working drawings must carry the project address and the complete scope of work, the same identity the site-plan and scope rows require.",
           "source": {
@@ -1776,17 +1509,7 @@
           "label": "Stamped and signed engineered plans and calculations",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement",
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-mechanical-plumbing-minor",
-            "residential-wall-fence",
-            "sign",
-            "multi-unit-residential-exterior-repair",
-            "commercial-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-window-replacement", "residential-patio-cover", "residential-siding-replacement", "residential-mechanical-plumbing-minor", "residential-wall-fence", "sign", "multi-unit-residential-exterior-repair", "commercial-exterior-repair", "multi-unit-residential-alteration-interior"],
           "applies_when": {
             "question": "Does the work include structural modification of a building, deck or sign support — a new or enlarged opening, a header, a beam, or a change to a load path? Ordinary fence posts and a wall that follows the City's unmodified standard detail do not count. A sign counts as OTC item 11 only when it is \"without structural alterations\"; when its support or mounting alters a structure, answer yes.",
             "if_yes": "Submit the engineered drawings, stamped and signed by the California-registered design professional who prepared them. The supporting calculation package is due before plan check, not at this intake counter.",
@@ -1805,17 +1528,7 @@
           "label": "OTC submittal sets and sheet size",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement",
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-mechanical-plumbing-minor",
-            "residential-wall-fence",
-            "sign",
-            "multi-unit-residential-exterior-repair",
-            "commercial-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-window-replacement", "residential-patio-cover", "residential-siding-replacement", "residential-mechanical-plumbing-minor", "residential-wall-fence", "sign", "multi-unit-residential-exterior-repair", "commercial-exterior-repair", "multi-unit-residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "The handout counts paper: two sets of every plan, at 24 by 36 inches, handed across the counter during OTC hours. Staff confirm the sets and the sheet size at the counter. The related fact staff need: the City's separate E-Plan guide accepts a digital submittal for the full-review track, so the same project filed online is not short two sets — it is on the other track.",
           "source": {
@@ -1829,14 +1542,7 @@
           "label": "Energy Certificate of Compliance",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-wall-fence",
-            "sign",
-            "multi-unit-residential-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-patio-cover", "residential-siding-replacement", "residential-wall-fence", "sign", "multi-unit-residential-exterior-repair", "multi-unit-residential-alteration-interior"],
           "applies_when": {
             "question": "Is the proposed work regulated by Title 24, Part 6?",
             "if_yes": "Include the applicable Certificate of Compliance with the permit documents."
@@ -1854,9 +1560,7 @@
           "label": "Energy Certificate of Compliance for replacement fenestration",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-window-replacement"
-          ],
+          "scopes": ["residential-window-replacement"],
           "applies_when": {
             "question": "Does the work replace fenestration — windows, glazed doors or skylights — in an existing dwelling?",
             "if_yes": "Include the CF1R-ALT-05-E Certificate of Compliance, or CF1R-ALT-01-E with section H completed, with the permit application, unless Exception 1 to §150.2(b)1B covers the whole job."
@@ -1874,9 +1578,7 @@
           "label": "Energy Certificate of Compliance for a space-conditioning change-out",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-mechanical-plumbing-minor"
-          ],
+          "scopes": ["residential-mechanical-plumbing-minor"],
           "applies_when": {
             "question": "Does the work replace or alter a space-conditioning system, including its ducts?",
             "if_yes": "Include the CF1R-ALT-02-E Certificate of Compliance with the permit application."
@@ -1894,9 +1596,7 @@
           "label": "Energy Certificate of Compliance for a water-heater replacement",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-mechanical-plumbing-minor"
-          ],
+          "scopes": ["residential-mechanical-plumbing-minor"],
           "applies_when": {
             "question": "Does the work replace a water heater or alter the hot-water distribution system?",
             "if_yes": "Include CF1R-ALT-05-E with section K completed with the permit application."
@@ -2094,6 +1794,26 @@
         {
           "id": "commercial-temporary-structure",
           "label": "Temporary structure or event (tent, stage, outdoor dining structure)"
+        },
+        {
+          "id": "residential-energy-storage",
+          "label": "Residential battery energy storage (no new solar) or standby generator"
+        },
+        {
+          "id": "multi-unit-residential-electrical-service",
+          "label": "Multi-unit electrical service, meter or panel work (more than 2 meters or a building service)"
+        },
+        {
+          "id": "commercial-electrical-service",
+          "label": "Commercial electrical service, meter or switchgear work"
+        },
+        {
+          "id": "multi-unit-residential-hvac",
+          "label": "Multi-unit HVAC: rooftop units, a central plant, or equipment for the building or several units"
+        },
+        {
+          "id": "commercial-hvac",
+          "label": "Commercial HVAC, kitchen hood or exhaust"
         }
       ],
       "items": [
@@ -2102,12 +1822,7 @@
           "label": "Contractor information matching CSLB records",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof"],
           "applies_when": {
             "question": "Is a licensed contractor pulling this permit, rather than the property owner as an Owner-Builder?",
             "if_yes": "The application carries the contractor's CSLB-matching name and license number."
@@ -2125,12 +1840,7 @@
           "label": "Current City of Laguna Beach business license",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof"],
           "applies_when": {
             "question": "Is a licensed contractor pulling this permit, rather than the property owner as an Owner-Builder?",
             "if_yes": "The contractor's current City business license is on file or submitted with the application."
@@ -2148,49 +1858,7 @@
           "label": "Contractor CSLB record and City business license, from the City's own records",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-alteration-interior",
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse",
-            "residential-demolition",
-            "residential-pool-spa",
-            "residential-grading",
-            "residential-solar",
-            "residential-window-replacement",
-            "residential-siding-replacement",
-            "residential-patio-cover",
-            "residential-wall-fence",
-            "residential-mechanical-plumbing-minor",
-            "multi-unit-residential-new",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "commercial-demolition",
-            "sign",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "residential-deferred-submittal",
-            "commercial-deferred-submittal",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair",
-            "residential-solar-thermal",
-            "commercial-site-improvements",
-            "commercial-solar",
-            "commercial-exterior-repair",
-            "commercial-wireless",
-            "commercial-temporary-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-alteration-interior", "residential-evse", "multi-unit-residential-evse", "commercial-evse", "residential-demolition", "residential-pool-spa", "residential-grading", "residential-solar", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-wall-fence", "residential-mechanical-plumbing-minor", "multi-unit-residential-new", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-demolition", "sign", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-deferred-submittal", "commercial-deferred-submittal", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "residential-solar-thermal", "commercial-site-improvements", "commercial-solar", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "residential-energy-storage", "multi-unit-residential-electrical-service", "commercial-electrical-service", "multi-unit-residential-hvac", "commercial-hvac"],
           "applies_when": {
             "question": "Is a licensed contractor pulling this permit, rather than the property owner as an Owner-Builder?",
             "if_yes": "Staff read the City business-license register and the CSLB record for the contractor named on the application, and for any named subcontractors.",
@@ -2209,10 +1877,7 @@
           "label": "Contractor or Owner-Builder listed correctly on the application",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater"],
           "checked_against": "submittal",
           "detail": "The application declares one of the two — contractor or Owner-Builder — and the rest of the packet matches that declaration.",
           "source": {
@@ -2226,12 +1891,7 @@
           "label": "Authorization letter for an agent applying for a contractor",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof"],
           "applies_when": {
             "question": "Is someone other than the licensed contractor — a permit service, an office manager, an expediter — filing this application on the contractor's behalf?",
             "if_yes": "Upload the authorization letter on company letterhead with the agent's name, the license holder's printed name, signature and date, and the CSLB license number.",
@@ -2250,12 +1910,7 @@
           "label": "Owner-Builder package, government ID and ownership documents",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof"],
           "applies_when": {
             "question": "Is the property owner applying as an Owner-Builder rather than through a licensed contractor?",
             "if_yes": "Upload the completed Property Owner's Package, current government-issued ID, deed or ownership documentation, and Registered Agent documentation where the owner of record is an entity."
@@ -2273,10 +1928,7 @@
           "label": "Owner-Builder authorization of an agent",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater"],
           "applies_when": {
             "question": "Is someone other than the property owner filing this Owner-Builder application on the owner's behalf?",
             "if_yes": "The owner completes the authorization section within the Property Owner's Package, and the agent is entered as both Applicant and Agent in the online application."
@@ -2293,12 +1945,7 @@
           "label": "Owner-Builder and contractor roles kept separate on the application",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof"],
           "checked_against": "submittal",
           "detail": "Two City rules, checked on the face of the application: a property owner cannot pull a permit on behalf of a contractor without an authorization letter, and a contractor is not listed on an Owner-Builder permit. An application naming both an Owner-Builder and a contractor is the common failure.",
           "source": {
@@ -2312,10 +1959,7 @@
           "label": "Correct addressing including unit numbers",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade",
-            "residential-water-heater"
-          ],
+          "scopes": ["residential-panel-upgrade", "residential-water-heater"],
           "checked_against": "submittal",
           "detail": "The application carries the full site address and the unit number. The panel-upgrade guide goes further: a panel serving more than one address lists every property address it serves, not just the one where the panel hangs.",
           "source": {
@@ -2329,9 +1973,7 @@
           "label": "Utility approval documentation",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade"
-          ],
+          "scopes": ["residential-panel-upgrade"],
           "checked_against": "submittal",
           "detail": "Upload one of the two, whichever utility serves the property: a Southern California Edison **Meter Spot**, or a San Diego Gas & Electric **Work Order**. The e-permit does not issue without one of them.",
           "source": {
@@ -2345,9 +1987,7 @@
           "label": "Panel upgrade within the 400-amp, 2-meter e-permit scope",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-panel-upgrade"
-          ],
+          "scopes": ["residential-panel-upgrade"],
           "applies_when": {
             "question": "Is the proposed residential main panel 400 amps or less, and does it serve no more than 2 meters?",
             "if_yes": "The work is inside the e-permit scope and the checklist above is the whole packet.",
@@ -2366,9 +2006,7 @@
           "label": "Water heater replacement within the in-kind e-permit scope",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-water-heater"
-          ],
+          "scopes": ["residential-water-heater"],
           "applies_when": {
             "question": "Is this a tank-type residential interior water heater being replaced in the same location with a unit of the same type, size and rating?",
             "if_yes": "The work is inside the e-permit scope and the checklist above is the whole packet.",
@@ -2387,9 +2025,7 @@
           "label": "Unit type stated in the application description",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-water-heater"
-          ],
+          "scopes": ["residential-water-heater"],
           "checked_against": "submittal",
           "detail": "The description names the unit type — the City's own examples are \"tank-type gas\" and \"tank-type electric.\" A description reading only \"water heater replacement\" is incomplete.",
           "source": {
@@ -2403,9 +2039,7 @@
           "label": "Interior location of the water heater notated on the application",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-water-heater"
-          ],
+          "scopes": ["residential-water-heater"],
           "checked_against": "submittal",
           "detail": "The application says where inside the dwelling the unit sits — the closet, hall, laundry room or interior garage wall. The e-permit is an interior-replacement permit, so the stated location is what establishes eligibility.",
           "source": {
@@ -2419,10 +2053,7 @@
           "label": "Reroof application using the City's standard description format",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
           "checked_against": "submittal",
           "detail": "The City publishes the exact description text to copy onto the application, swapping in the project's own details: \"Tear off and reroof with GAF Timberline composition shingles ESR-1475 (Color: Charcoal Gray): 2811 SF. (1) layer of synthetic underlayment. *No light or white colors in Laguna Beach* CO/Smoke Detectors Required* Sheathing Inspection Required * Class A Fire Rated Materials Required\". A complete description therefore names: tear-off or overlay, manufacturer and product, the evaluation report number, the color, the roof area in square feet, the number and type of underlayment layers, and the four standard notes. The COLOR NAME is what the Building counter needs at intake, because Planning approves the color itself and the technician has nothing to forward without a name. City permit staff, 2026-09-01: \"they need ESR for roofing material, need name of color for planning.\" A description reading \"color: TBD\" is incomplete on that ground, and she confirmed it happens often.",
           "source": {
@@ -2436,10 +2067,7 @@
           "label": "Reroof site plan",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
           "checked_against": "submittal",
           "source": {
             "citation": "Laguna Beach Reroofing guide, \"3 Steps to Apply\"; \"Gather Materials\"",
@@ -2452,10 +2080,7 @@
           "label": "Roof specifications",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
           "checked_against": "submittal",
           "source": {
             "citation": "Laguna Beach Reroofing guide, \"3 Steps to Apply\"; \"Gather Materials\"",
@@ -2468,10 +2093,7 @@
           "label": "Third-party evaluation report number from an approved testing agency",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
           "checked_against": "submittal",
           "detail": "\"A third party verified evaluation report number from an approved testing agency is required (Example: ICC, PRI, UL product IQ, QAI, IAPMO, etc.).\" The number appears in the application description alongside the product — the City's own example is \"GAF Timberline composition shingles ESR-1475\".",
           "source": {
@@ -2485,10 +2107,7 @@
           "label": "Waste Management Plan and security deposit for tear-off reroofs",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
           "applies_when": {
             "question": "Does this reroof tear off any of the existing roofing, including a partial tear-off of one roof section, or is it an overlay over the existing material with nothing removed?",
             "if_yes": "A tear-off requires the Waste Management Plan and the separate security deposit, by check or cash, under LBMC 7.19.",
@@ -2507,13 +2126,8 @@
           "label": "Coastal Development Permit Exemption and 10-working-day appeal period",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
-          "site_conditions": [
-            "The site is in the Coastal Commission appeal jurisdiction."
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
+          "site_conditions": ["The site is in the Coastal Commission appeal jurisdiction."],
           "checked_against": "submittal",
           "detail": "The parcel is in the City's Coastal Appealable Area. File a Coastal Development Permit Exemption and wait out the 10-working-day appeal period; the reroof permit does not issue inside that window. The City directs applicants to confirm the zone on the Laguna Beach Public GIS Map Viewer.",
           "source": {
@@ -2527,13 +2141,8 @@
           "label": "Coastal Commission Appendix B filing in the Deferred Certification Zone (Planning lane pointer)",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
-          "site_conditions": [
-            "The site is in an area of deferred certification (the Coastal Commission issues the CDP)."
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
+          "site_conditions": ["The site is in an area of deferred certification (the Coastal Commission issues the CDP)."],
           "checked_against": "city_record",
           "detail": "The parcel is in a Deferred Certification Zone, which is under the direct jurisdiction of the State rather than the City. All Appendix B forms and the application fees go directly to the California Coastal Commission, not to Laguna Beach. Planning looks at every reroof, so the route determination is where the filing is recorded. The applicant must not wait for it to move through Building intake.",
           "source": {
@@ -2547,10 +2156,7 @@
           "label": "Materials and colors approved before permit issuance",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
           "checked_against": "city_record",
           "detail": "An issuance gate, not a packet item: the City approves the submitted materials and colors before the permit issues. Planning does that approving — City permit staff, 2026-09-01: \"Planning reviews/approves color samples\" — and it judges the material details and the color samples against the photographs the City publishes at the end of its reroofing guide: light roof colors to avoid, acceptable and not-acceptable shingle colors, metal roofs (acceptable with a matte finish), and acceptable and not-acceptable flat-roof membrane colors.",
           "source": {
@@ -2564,10 +2170,7 @@
           "label": "Reroof submittal sets and intake channel",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-reroof",
-            "commercial-reroof"
-          ],
+          "scopes": ["residential-reroof", "commercial-reroof"],
           "checked_against": "submittal",
           "detail": "The guide states two sets in person or one digital set online, then overrides itself with a dated note: as of 2026-06-23 all reroof permits are issued in person at the counter. Treat the counter-only note as current, and treat both as process routing with a shelf life — verify with the Building Division before repeating it.",
           "source": {
@@ -2581,9 +2184,7 @@
           "label": "Licensed contractor required on commercial reroof permits",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "commercial-reroof"
-          ],
+          "scopes": ["commercial-reroof"],
           "checked_against": "submittal",
           "detail": "There is no Owner-Builder path on a commercial property reroof. An application filed by an Owner-Builder for a commercial property is not issuable as filed.",
           "source": {
@@ -2617,11 +2218,7 @@
           "label": "Completed Electrical Permit Application",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["residential-evse", "multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "detail": "An EV charging station is filed on the City's Electrical Permit Application, not the general Building Permit Application. Laguna publishes a combined Electrical/Mechanical/Plumbing permit application for this purpose.",
           "source": {
@@ -2635,11 +2232,7 @@
           "label": "Manufacturer's specification sheets and installation guidelines",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["residential-evse", "multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "detail": "The equipment manufacturer's specification sheets and its installation guidelines are submitted with the application.",
           "source": {
@@ -2653,11 +2246,7 @@
           "label": "Signed applicant certification on the City's checklist",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["residential-evse", "multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "detail": "The City's checklist is itself a submitted document: the applicant signs and dates it, prints their name, and identifies whether they are the contractor, the owner, or the owner's agent. On the multi-family and non-residential checklists the contractor's license number and type are written in as well. An unsigned checklist is an incomplete filing even when every box is ticked.",
           "source": {
@@ -2671,11 +2260,7 @@
           "label": "Charger and parked vehicle shown clear of the public right-of-way",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["residential-evse", "multi-unit-residential-evse", "commercial-evse"],
           "applies_when": {
             "question": "Is any part of this EV charging installation, or the space where the charging vehicle parks, in an outdoor location?",
             "if_yes": "Show that the equipment and the parked vehicle stay clear of the public right-of-way, or submit the Department of Public Works approval for the encroachment."
@@ -2693,10 +2278,7 @@
           "label": "Dimensioned schematic site plan",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "detail": "The site plan is fully dimensioned and drawn to scale. It shows the building footprint with distances to the property lines, the parking areas, the location of the electrical service and subpanels, and the location of existing and proposed EV charging stations, together with the location, size and use of all structures, the panel-to-charger routing, and the type and mounting of the charging system. It also carries project information: the project address, the owner's information, and a scope-of-work statement. The City exempts single-family, duplex and ADU installations from this sheet entirely.",
           "source": {
@@ -2710,10 +2292,7 @@
           "label": "Signed electrical plans with a single-line diagram",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "requires_seal": true,
           "detail": "A separate electrical plan, stamped and signed by a California licensed electrical engineer or a C-10 electrical contractor. It carries the single-line diagram; the existing electrical service size and the number of meters; the size, type and insulation ratings — voltage and temperature — of all conductors and associated wiring components; and the type, size and material of the raceways. The existing panel schedule shows room for the additional breakers. Single-family, duplex and ADU installations are exempt from this sheet.",
@@ -2728,10 +2307,7 @@
           "label": "Electrical load calculation worksheet",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "detail": "A load calculation worksheet under CEC Article 220, sized for a continuous load at 125 percent. Where the worksheet shows the existing service cannot carry the charger, the same submittal includes the service panel upgrade — the City does not accept a worksheet that identifies an upgrade and plans that omit it. The voluntary homeowner load estimator the City publishes separately is not this worksheet.",
           "source": {
@@ -2745,10 +2321,7 @@
           "label": "Circuit card with electrical calculations for a 50-amp or larger station",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse", "commercial-evse"],
           "applies_when": {
             "question": "Is any proposed charging station a Level 2 unit at 9.6 kW or above with a circuit rating of 50 amps or higher?",
             "if_yes": "Include a completed circuit card with electrical calculations alongside the single-line diagram.",
@@ -2767,10 +2340,7 @@
           "label": "Mechanical plan where indoor ventilation is triggered",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse", "commercial-evse"],
           "applies_when": {
             "question": "Is the charging equipment installed indoors in a way that triggers the mechanical ventilation requirements of CEC § 625.52(B)?",
             "if_yes": "Include a mechanical plan with the permit application.",
@@ -2789,10 +2359,7 @@
           "label": "Trenching detail with minimum cover called out",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse", "commercial-evse"],
           "applies_when": {
             "question": "Does the installation trench any part of the circuit run between the panel and the charging equipment?",
             "if_yes": "Call out the trenching detail on the plans with the minimum cover for the wiring method used.",
@@ -2811,11 +2378,7 @@
           "label": "Separate branch circuit serving the charging outlet",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["residential-evse", "multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "detail": "The charging outlet sits on its own branch circuit with no other outlets on it, under CEC § 210.17. This is a plan-check item the City lists among its code requirements, so an absent note is a correction rather than a counter rejection.",
           "source": {
@@ -2829,11 +2392,7 @@
           "label": "Lockable disconnecting means for high-rated equipment",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["residential-evse", "multi-unit-residential-evse", "commercial-evse"],
           "applies_when": {
             "question": "Is the charging equipment rated more than 60 amperes, or more than 150 volts to ground?",
             "if_yes": "The plans show a readily accessible, in-line-of-sight disconnecting means lockable in the open position.",
@@ -2852,10 +2411,7 @@
           "label": "NRTL listing mark on the charging equipment",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse",
-            "commercial-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse", "commercial-evse"],
           "checked_against": "submittal",
           "detail": "The equipment carries a Nationally Recognized Testing Laboratory approved listing mark, which the City identifies as UL 2202 or UL 2200. The manufacturer's specification sheet is normally where this is shown.",
           "source": {
@@ -2869,9 +2425,7 @@
           "label": "CALGreen EV-readiness measures for new multifamily parking",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-evse"
-          ],
+          "scopes": ["multi-unit-residential-evse"],
           "applies_when": {
             "question": "Is this charging work part of a new multifamily building, so that the CALGreen EV-readiness installation requirements apply?",
             "if_yes": "The plans demonstrate the 10 percent EV-space provision, locate the spaces including one in a common-use area, and satisfy one of the accessible-route options.",
@@ -2902,9 +2456,7 @@
           "label": "Building Permit Application for the roof-mounted PV system",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "checked_against": "submittal",
           "detail": "Submit the Building Permit Application for the roof-mounted photovoltaic system.",
           "source": {
@@ -2918,9 +2470,7 @@
           "label": "Roof-mounted PV plan set",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "applies_when": {
             "question": "Is this an ordinary roof-mounted PV plan-check submittal, including a mixed packet whose other application is a reroof, remodel, or similar non-SolarAPP+ filing, rather than a standalone SolarAPP+ automated issuance packet?",
             "if_yes": "Submit the digital plan set for the roof-mounted PV system.",
@@ -2939,9 +2489,7 @@
           "label": "PV system size, panel count, and inverter count stated",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "checked_against": "submittal",
           "detail": "State the PV system size in kilowatts, the panel count, and the inverter or microinverter count on the application or plans. The applicant supplies the numbers; the permit technician uses them in the City's description format.",
           "source": {
@@ -2955,9 +2503,7 @@
           "label": "Panel upgrade or relocation and energy storage scope identified",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "applies_when": {
             "question": "Does the PV scope include a main service panel upgrade or relocation, an energy storage system, or both?",
             "if_yes": "Identify each included component and state the panel rating and energy-storage size on the application or plans."
@@ -2975,9 +2521,7 @@
           "label": "Utility approval for a panel upgrade or relocation before issuance",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "applies_when": {
             "question": "Does the PV scope include a main service panel upgrade or relocation?",
             "if_yes": "Provide the utility approval before permit issuance; it is not due at submittal."
@@ -2995,9 +2539,7 @@
           "label": "Licensed contractor for residential solar permit issuance",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "checked_against": "submittal",
           "detail": "The residential solar permit issues to a licensed contractor, not an owner-builder.",
           "source": {
@@ -3011,9 +2553,7 @@
           "label": "Original approved stamped solar set in the City's e-review files for a solar reset",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "applies_when": {
             "question": "Is this a remove-and-reinstall of a previously approved solar system after a reroof?"
           },
@@ -3030,9 +2570,7 @@
           "label": "City staff determination that the approved solar components can be reinstalled",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-solar"
-          ],
+          "scopes": ["residential-solar"],
           "applies_when": {
             "question": "Is this a remove-and-reinstall of a previously approved solar system after a reroof?",
             "if_no": "This plan-check determination does not apply to a new roof-mounted PV system."
@@ -3066,9 +2604,7 @@
           "label": "Wall height above adjacent grade and distance to the property line shown",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "checked_against": "submittal",
           "detail": "The plan dimensions the wall height measured from adjacent grade and the distance from the wall to each property line. These two numbers decide whether a permit is required at all — over 30 inches from adjacent grade, or any height within three feet of a property line — so a drawing that omits either cannot be checked. The bulletin also limits the grade difference across the wall to a maximum 6-inch offset with no surcharge loads, which the same dimensions establish. The bulletin's 30-inch line and LBMC 14.50.022's 72-inch exemption disagree for a freestanding block wall between 30 and 72 inches set more than three feet from every property line and the right-of-way; that band is UNSETTLED with the City (see the prose above).",
           "source": {
@@ -3082,10 +2618,7 @@
           "label": "Zoning/Planning Division approval of the wall plans",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence",
-            "residential-retaining-wall"
-          ],
+          "scopes": ["residential-wall-fence", "residential-retaining-wall"],
           "checked_against": "city_record",
           "detail": "The Zoning/Planning Division regulates the wall's height and location based on the zone, its position on the property, and community design standards, and approves the plans before any permit issues. Laguna sequences the two lanes here exactly as it does for buildings: the Planning approval exists first, and the Building packet is filed against the plans Planning approved.",
           "source": {
@@ -3099,9 +2632,7 @@
           "label": "Standard detail followed exactly, or plans by a registered design professional",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "applies_when": {
             "question": "Does this wall follow the City's standard detail without modification, on a site under 10 percent slope with no adverse soil conditions?",
             "if_yes": "File against the standard detail; no engineered design is submitted.",
@@ -3120,9 +2651,7 @@
           "label": "Property corners monumented by a licensed surveyor before construction",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "checked_against": "submittal",
           "detail": "A licensed surveyor locates and monuments the property corners before construction starts. This is a pre-construction gate rather than a counter item, so its absence is a condition to satisfy, never a reason to refuse the packet.",
           "source": {
@@ -3136,10 +2665,7 @@
           "label": "Surveyor certification for a wall or fence within three feet of a property line",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence",
-            "residential-retaining-wall"
-          ],
+          "scopes": ["residential-wall-fence", "residential-retaining-wall"],
           "applies_when": {
             "question": "Is any part of the new wall or fence within three feet of a property line?",
             "if_yes": "For a masonry or concrete wall, submit the county-recorded corner monumentation by a licensed land surveyor or civil engineer. For a wood, vinyl or wrought-iron fence, submit the surveyor's setback certification, or the notarized waiver signed by each adjoining owner.",
@@ -3158,10 +2684,7 @@
           "label": "Clearances to fire hydrants and water meters",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence",
-            "residential-retaining-wall"
-          ],
+          "scopes": ["residential-wall-fence", "residential-retaining-wall"],
           "checked_against": "submittal",
           "detail": "No wall or fence within 36 inches of a fire hydrant. No wall, fence or foundation within 12 inches of a water meter. The meter clearance reaches the footing, not only the wall above it, which is the part a plan most often misses.",
           "source": {
@@ -3175,10 +2698,7 @@
           "label": "No projection into the public right-of-way",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence",
-            "residential-retaining-wall"
-          ],
+          "scopes": ["residential-wall-fence", "residential-retaining-wall"],
           "applies_when": {
             "question": "Does any part of the wall, its footing or its cap sit in the public right-of-way without an approved Revocable Encroachment Permit or Public Works encroachment permit that covers it?",
             "if_yes": "Keep the whole wall, including any stone cap or trim, on private property, or obtain the encroachment approval first.",
@@ -3197,9 +2717,7 @@
           "label": "Site wall stands alone and retains nothing",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "applies_when": {
             "question": "Is this wall filed against the City's Standard Block Wall Detail rather than an engineered design?",
             "if_yes": "The wall must stand alone and retain nothing. A standard-detail wall drawn retaining grade, or tied into a structure, needs an engineered design instead.",
@@ -3218,9 +2736,7 @@
           "label": "Combined wall and attachment height at or under six feet",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "applies_when": {
             "question": "Does the design mount a railing, guard or screen on top of the wall?",
             "if_yes": "The plan dimensions the combined wall-plus-attachment height from the lowest adjacent grade and keeps it at or under 6 feet 0 inches."
@@ -3238,9 +2754,7 @@
           "label": "Solid grouting, bond pattern, cleanouts and expansion joints called out",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "applies_when": {
             "question": "Is this a concrete block or masonry wall?",
             "if_yes": "Call out solid grouting of the CMU, running-bond pattern, cleanouts for lifts greater than 4 feet, and expansion joints at no more than 30 feet."
@@ -3258,9 +2772,7 @@
           "label": "Fence construction details show materials, design, specifications, post layout, fasteners and finishes",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "applies_when": {
             "question": "Is this a wood, vinyl, wrought-iron or metal fence rather than a masonry or concrete wall?",
             "if_yes": "Staff look for construction details identifying the fence material and design, the applicable specifications, post layout, fasteners and finishes.",
@@ -3278,9 +2790,7 @@
           "label": "Fence attachment details show post attachment to the ground and bracket specifications",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "applies_when": {
             "question": "Is this a wood, vinyl, wrought-iron or metal fence rather than a masonry or concrete wall?",
             "if_yes": "Staff look for how each post attaches to the ground and for bracket specifications.",
@@ -3299,9 +2809,7 @@
           "label": "“Survey Required” stamp on approved plans accepted for permit issuance",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "residential-wall-fence"
-          ],
+          "scopes": ["residential-wall-fence"],
           "applies_when": {
             "question": "Do the plan-check-approved plans carry a “Survey Required” stamp?",
             "if_yes": "Accept the stamp for permit issuance; the survey condition is handled in the field.",
@@ -3334,10 +2842,6 @@
           "label": "Siding or exterior finish replacement"
         },
         {
-          "id": "residential-mechanical-plumbing-minor",
-          "label": "Minor mechanical, plumbing or temporary-power permit"
-        },
-        {
           "id": "residential-wall-fence",
           "label": "Fence, gate or freestanding block wall"
         },
@@ -3362,6 +2866,18 @@
           "label": "Multi-unit residential interior remodel (unit kitchen, bath, layout, damage repair)"
         },
         {
+          "id": "residential-mechanical-plumbing-minor",
+          "label": "Minor mechanical, plumbing or temporary-power permit"
+        },
+        {
+          "id": "residential-panel-upgrade",
+          "label": "Residential panel upgrade e-permit (to 400A / 2 meters)"
+        },
+        {
+          "id": "residential-water-heater",
+          "label": "Residential interior water heater replacement e-permit"
+        },
+        {
           "id": "residential-new-dwelling",
           "label": "Residential new dwelling"
         },
@@ -3376,14 +2892,6 @@
         {
           "id": "residential-alteration-structural",
           "label": "Residential major remodel or structural alteration"
-        },
-        {
-          "id": "residential-panel-upgrade",
-          "label": "Residential panel upgrade e-permit (to 400A / 2 meters)"
-        },
-        {
-          "id": "residential-water-heater",
-          "label": "Residential interior water heater replacement e-permit"
         },
         {
           "id": "residential-reroof",
@@ -3500,6 +3008,26 @@
         {
           "id": "commercial-temporary-structure",
           "label": "Temporary structure or event (tent, stage, outdoor dining structure)"
+        },
+        {
+          "id": "residential-energy-storage",
+          "label": "Residential battery energy storage (no new solar) or standby generator"
+        },
+        {
+          "id": "multi-unit-residential-electrical-service",
+          "label": "Multi-unit electrical service, meter or panel work (more than 2 meters or a building service)"
+        },
+        {
+          "id": "commercial-electrical-service",
+          "label": "Commercial electrical service, meter or switchgear work"
+        },
+        {
+          "id": "multi-unit-residential-hvac",
+          "label": "Multi-unit HVAC: rooftop units, a central plant, or equipment for the building or several units"
+        },
+        {
+          "id": "commercial-hvac",
+          "label": "Commercial HVAC, kitchen hood or exhaust"
         }
       ],
       "items": [
@@ -3508,18 +3036,7 @@
           "label": "A simple permit filed through the portal is not one the City issues only at the counter",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-window-replacement",
-            "residential-patio-cover",
-            "residential-siding-replacement",
-            "residential-mechanical-plumbing-minor",
-            "residential-wall-fence",
-            "sign",
-            "residential-alteration-interior",
-            "multi-unit-residential-exterior-repair",
-            "commercial-exterior-repair",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["residential-window-replacement", "residential-patio-cover", "residential-siding-replacement", "residential-wall-fence", "sign", "residential-alteration-interior", "multi-unit-residential-exterior-repair", "commercial-exterior-repair", "multi-unit-residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "The disqualifiers are review by another City department, outside-agency approval, geotechnical report review, extensive structural design and modifications, a change of construction type, and a change to a more restrictive occupancy. The Planning sign-in at the counter is part of the counter visit (the same letter: \"sign in to see the planning division first\"), so a scope that needs only that sign-in is still a simple permit. A scope that needs a Planning hearing item (Design Review, a Coastal Development Permit) is not.",
           "source": {
@@ -3529,57 +3046,25 @@
           }
         },
         {
+          "id": "laguna_staff_counter_trade_permit_route",
+          "label": "Note: the City currently issues this simple trade permit (OTC items 6, 8 and 9) only in person at the Building counter",
+          "stage": "intake",
+          "level": "city",
+          "scopes": ["residential-mechanical-plumbing-minor", "residential-panel-upgrade", "residential-water-heater", "multi-unit-residential-exterior-repair", "commercial-exterior-repair"],
+          "checked_against": "submittal",
+          "detail": "Decide from the plans and the application description, never from a permit prefix or a word match.",
+          "source": {
+            "citation": "Building Completeness Check returns of simple residential trade permits, 2026-07 to 2026-11",
+            "published": false,
+            "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
+          }
+        },
+        {
           "id": "laguna_staff_work_under_existing_permit",
           "label": "The work does not belong under a permit already on file for the parcel",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof",
-            "residential-alteration-interior",
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse",
-            "residential-window-replacement",
-            "residential-siding-replacement",
-            "residential-patio-cover",
-            "residential-mechanical-plumbing-minor",
-            "sign",
-            "residential-wall-fence",
-            "residential-demolition",
-            "residential-pool-spa",
-            "residential-grading",
-            "residential-solar",
-            "multi-unit-residential-new",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "commercial-demolition",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "residential-deferred-submittal",
-            "commercial-deferred-submittal",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair",
-            "residential-solar-thermal",
-            "commercial-site-improvements",
-            "commercial-solar",
-            "commercial-exterior-repair",
-            "commercial-wireless",
-            "commercial-temporary-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof", "residential-alteration-interior", "residential-evse", "multi-unit-residential-evse", "commercial-evse", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-mechanical-plumbing-minor", "sign", "residential-wall-fence", "residential-demolition", "residential-pool-spa", "residential-grading", "residential-solar", "multi-unit-residential-new", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-demolition", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-deferred-submittal", "commercial-deferred-submittal", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "residential-solar-thermal", "commercial-site-improvements", "commercial-solar", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "residential-energy-storage", "multi-unit-residential-electrical-service", "commercial-electrical-service", "multi-unit-residential-hvac", "commercial-hvac"],
           "checked_against": "submittal",
           "detail": "Also read this filing's application description, which often names the original permit. Decide whether this filing's work is part of the scope of a listed permit that is open or recently issued. A deferred submittal, a revision to approved plans, or a supplement that names that permit is part of it. A different project on the same parcel is not. Decide from the two descriptions; never from a permit prefix, a date, or a shared word. When the filing names another permit that the block does not list, or the block is absent, name the permit from the filing in the same question.",
           "source": {
@@ -3593,53 +3078,7 @@
           "label": "The work site is inside Laguna Beach city limits",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof",
-            "residential-alteration-interior",
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse",
-            "residential-window-replacement",
-            "residential-siding-replacement",
-            "residential-patio-cover",
-            "residential-mechanical-plumbing-minor",
-            "sign",
-            "residential-wall-fence",
-            "residential-demolition",
-            "residential-pool-spa",
-            "residential-grading",
-            "residential-solar",
-            "multi-unit-residential-new",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "commercial-demolition",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "residential-deferred-submittal",
-            "commercial-deferred-submittal",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair",
-            "residential-solar-thermal",
-            "commercial-site-improvements",
-            "commercial-solar",
-            "commercial-exterior-repair",
-            "commercial-wireless",
-            "commercial-temporary-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof", "residential-alteration-interior", "residential-evse", "multi-unit-residential-evse", "commercial-evse", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-mechanical-plumbing-minor", "sign", "residential-wall-fence", "residential-demolition", "residential-pool-spa", "residential-grading", "residential-solar", "multi-unit-residential-new", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-demolition", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-deferred-submittal", "commercial-deferred-submittal", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "residential-solar-thermal", "commercial-site-improvements", "commercial-solar", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "residential-energy-storage", "multi-unit-residential-electrical-service", "commercial-electrical-service", "multi-unit-residential-hvac", "commercial-hvac"],
           "checked_against": "submittal",
           "detail": "The EnerGov portal accepts a free-text address, and sometimes no street at all, so a filing for a property in a neighboring city or on unincorporated county land can reach Laguna Beach. The packet's Laguna Beach mailing address agrees with this, because unincorporated Emerald Bay mails as Laguna Beach. Applicant action, another city: The property at ADDRESS is in the City of CITY, not the City of Laguna Beach (name the sheet or document that says so). The City of Laguna Beach cannot review or issue this permit; please apply to the City of CITY. Applicant action, county land: This WORK at ADDRESS is in unincorporated Orange County (name the community, such as Emerald Bay, when the packet or the address names it) and is not under the jurisdiction of the City of Laguna Beach. Please submit your plans and permit application to the County of Orange (OC Public Works, Development Services) instead of to the City's Building Division.",
           "source": {
@@ -3653,53 +3092,7 @@
           "label": "The property owner on the application is the City's owner of record",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-new-dwelling",
-            "residential-addition",
-            "residential-adu",
-            "residential-alteration-structural",
-            "residential-panel-upgrade",
-            "residential-water-heater",
-            "residential-reroof",
-            "commercial-reroof",
-            "residential-alteration-interior",
-            "residential-evse",
-            "multi-unit-residential-evse",
-            "commercial-evse",
-            "residential-window-replacement",
-            "residential-siding-replacement",
-            "residential-patio-cover",
-            "residential-mechanical-plumbing-minor",
-            "sign",
-            "residential-wall-fence",
-            "residential-demolition",
-            "residential-pool-spa",
-            "residential-grading",
-            "residential-solar",
-            "multi-unit-residential-new",
-            "commercial-new",
-            "commercial-addition",
-            "commercial-alteration-structural",
-            "commercial-alteration-interior",
-            "commercial-ti",
-            "commercial-demolition",
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure",
-            "residential-deferred-submittal",
-            "commercial-deferred-submittal",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair",
-            "residential-solar-thermal",
-            "commercial-site-improvements",
-            "commercial-solar",
-            "commercial-exterior-repair",
-            "commercial-wireless",
-            "commercial-temporary-structure"
-          ],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof", "residential-alteration-interior", "residential-evse", "multi-unit-residential-evse", "commercial-evse", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-mechanical-plumbing-minor", "sign", "residential-wall-fence", "residential-demolition", "residential-pool-spa", "residential-grading", "residential-solar", "multi-unit-residential-new", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-demolition", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-deferred-submittal", "commercial-deferred-submittal", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "residential-solar-thermal", "commercial-site-improvements", "commercial-solar", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "residential-energy-storage", "multi-unit-residential-electrical-service", "commercial-electrical-service", "multi-unit-residential-hvac", "commercial-hvac"],
           "checked_against": "submittal",
           "detail": "The City issues the permit to the owner of record in its GIS unless the applicant provides a recorded grant deed. This is a judgment about people and entities, never a string match. The same party: the same person with a different name order, middle initial, spelling or case; the person's own trust (\"Smith Family Trust\", \"Jane Smith, Trustee\", \"Smith Jane Tr\"); one of several co-owners or co-trustees named in GIS; a married couple where the application names one spouse and GIS names both. A different party: a different person, including a relative or a prior owner; a different company or LLC; a trust named for someone else; an LLC on one side and a person or trust on the other, unless the packet shows the same principal on both. The evidence names both values and the application page, and for a different party says that the City GIS owner data dates from about 2013, so the property may simply have sold since.",
           "source": {
@@ -3737,12 +3130,7 @@
           "label": "Dimensioned site plan locating the work",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "checked_against": "submittal",
           "detail": "The plan set includes a site plan drawn to scale that shows the property lines, the existing buildings, and where the new deck, cover, wall, hardscape, outdoor kitchen, utility run or accessory structure sits on the lot, with its distance to each property line and to the nearby structures. The cover or first sheet carries the project address. The City's handout says not every item applies to every scope; the site plan is the item every one of these exterior scopes needs, so it is asked without a condition.",
           "source": {
@@ -3756,12 +3144,7 @@
           "label": "Construction drawings of the structure or site work, signed by the preparer",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "checked_against": "submittal",
           "detail": "Beyond the site plan, the set draws the work itself at a readable scale, complete enough to build from: for example the framing, footings, guards and attachment to the house for a deck or patio cover; the wall section from the bottom of the footing to the top, with its drainage, for a retaining wall; the extent, materials, steps, rails and finished grades for hardscape; the layout of a built-in barbecue, firepit or shower for an outdoor kitchen; and the floor plan, elevations, section and foundation for an accessory structure. Every sheet is signed by the person who prepared it, and stamped when a licensed professional prepared it. A product brochure, a contractor's proposal or a photo with notes is not a construction drawing. An 11-by-17 set is acceptable for a minor project when scale and text stay legible.",
           "source": {
@@ -3775,12 +3158,7 @@
           "label": "Plan view of the gas, plumbing and electrical work",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "applies_when": {
             "question": "Does the work add or extend any gas, water, drain or electrical line, fixture, appliance, outlet or light?",
             "if_yes": "Show each line in plan view from its point of connection, with the fixtures, appliances, outlets and lights it serves; a gas line shows loads, pipe sizes and developed length.",
@@ -3799,9 +3177,7 @@
           "label": "Retaining wall height from the bottom of the footing, any surcharge, and distance to the property line and right-of-way",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-retaining-wall"
-          ],
+          "scopes": ["residential-retaining-wall"],
           "checked_against": "submittal",
           "detail": "The drawings dimension the wall height measured from the bottom of the footing to the top of the wall, show any surcharge the wall supports (a slope, a driveway, a structure or a load above it), and dimension the wall's distance to each property line and to the public right-of-way. Those facts decide whether Laguna's code requires a permit at all: a retaining wall over 48 inches from the bottom of the footing, one that supports a surcharge, or one within three feet of a property line or the right-of-way needs one. Note the measuring point: the bottom of the footing, not the exposed face. A wall drawn without these dimensions cannot be checked.",
           "source": {
@@ -3815,12 +3191,7 @@
           "label": "Energy Certificate of Compliance",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "residential-deck-patio-cover-new",
-            "residential-site-improvements",
-            "residential-retaining-wall",
-            "residential-accessory-structure"
-          ],
+          "scopes": ["residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
           "applies_when": {
             "question": "Is the proposed work regulated by Title 24, Part 6?",
             "if_yes": "Include the applicable Certificate of Compliance with the permit documents."
@@ -3854,10 +3225,7 @@
           "label": "The deferred item was listed as a deferred submittal on the approved plan set",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-deferred-submittal",
-            "commercial-deferred-submittal"
-          ],
+          "scopes": ["residential-deferred-submittal", "commercial-deferred-submittal"],
           "checked_against": "submittal",
           "detail": "A deferred submittal finishes a permit that already exists. The main permit's cover sheet must have listed the item as deferred, and the package must be approved and permitted before the framing inspection. A packet that includes the approved cover sheet showing the deferral is supporting evidence. Eligibility: the City does not approve life-safety items for deferral, except fire sprinklers and roof trusses. The City has accepted elevator calculations as a deferred item, and the existing residential deferral row names fire-sprinkler, roof-truss and elevator packages.",
           "source": {
@@ -3871,10 +3239,7 @@
           "label": "Plans and calculations for the deferred item",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "residential-deferred-submittal",
-            "commercial-deferred-submittal"
-          ],
+          "scopes": ["residential-deferred-submittal", "commercial-deferred-submittal"],
           "checked_against": "submittal",
           "detail": "The package is the drawings and calculations for the deferred item itself: the truss layout and truss calculations, the elevator or its guiderail and support calculations, or the fire-sprinkler plans and hydraulic calculations. Structural drawings and calculations are stamped and signed by the registered Civil Engineer, Structural Engineer or Architect who prepared them. The package names the main permit it completes. A cover letter or a manufacturer's brochure alone is not the package.",
           "source": {
@@ -3917,13 +3282,7 @@
           "label": "Signed Building Permit Application uploaded with the plans",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-new",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair"
-          ],
+          "scopes": ["multi-unit-residential-new", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair"],
           "checked_against": "submittal",
           "detail": "The Multifamily application takes two attachments: the City's Building Permit Application, signed, and the plans. The Building Division returned a Multifamily filing whose application was not signed. The signature is on the application form itself; the portal's electronic signature at submit does not replace it.",
           "source": {
@@ -3937,11 +3296,7 @@
           "label": "A separate application, with its own valuation, for each new unit or ADU, demolition, grading over 20 cubic yards and a pool",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-new",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["multi-unit-residential-new", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "When the work adds dwelling units or an ADU, or includes demolition of a structure, grading over 20 cubic yards, or a pool, each is filed as its own application with its own valuation. The Building Division returned new multifamily filings for both. A fire sprinkler or alarm system is a Fire Department submittal on its own application.",
           "source": {
@@ -3955,13 +3310,7 @@
           "label": "The unit or units worked on, and the building's number of units, on the application or the cover sheet",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-new",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair"
-          ],
+          "scopes": ["multi-unit-residential-new", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair"],
           "checked_against": "submittal",
           "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. Laguna's accepted filings usually name the unit in the description (\"Unit #52\"), and the unit count is what decides the Multifamily type, so stating both keeps the type and the scope clear.",
           "source": {
@@ -3975,11 +3324,7 @@
           "label": "HOA approval letter or HOA-stamped plans for condominium exterior or common-area work",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-exterior-repair",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-addition"
-          ],
+          "scopes": ["multi-unit-residential-exterior-repair", "multi-unit-residential-alteration-structural", "multi-unit-residential-addition"],
           "applies_when": {
             "question": "Is the building a condominium, and does the work change its exterior or a common area?",
             "if_yes": "Include the HOA approval letter or HOA-stamped plans."
@@ -3997,10 +3342,7 @@
           "label": "The exterior elevated element inspection report (SB 721 or SB 326) when the repair follows one",
           "stage": "intake",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-exterior-repair",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["multi-unit-residential-exterior-repair", "multi-unit-residential-alteration-structural"],
           "applies_when": {
             "question": "Does this balcony, deck, stair or walkway repair follow an SB 721 or SB 326 inspection?",
             "if_yes": "Include the inspection report and the inspector's repair recommendations."
@@ -4018,11 +3360,7 @@
           "label": "Asbestos survey, and the SCAQMD Rule 1403 notice where asbestos is disturbed, before work that opens walls, ceilings or floors",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-addition"
-          ],
+          "scopes": ["multi-unit-residential-alteration-interior", "multi-unit-residential-alteration-structural", "multi-unit-residential-addition"],
           "checked_against": "submittal",
           "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. An apartment or condominium building never takes the single-residence exemption in SCAQMD Rule 1403, so a remodel, repair or interior demolition that disturbs walls, ceilings or floors needs an asbestos survey first, and a notice to the air district when asbestos is found. Two of Laguna's multifamily filings were asbestos removals. It is a before-issuance item: it never sends a filing back.",
           "source": {
@@ -4036,10 +3374,7 @@
           "label": "Detail of the fire- and sound-rated wall, floor or ceiling where work opens an assembly shared with another unit",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["multi-unit-residential-alteration-interior", "multi-unit-residential-alteration-structural"],
           "applies_when": {
             "question": "Does the work open a wall, floor or ceiling shared with another unit?",
             "if_yes": "Show the rated assembly and how it is restored."
@@ -4057,12 +3392,7 @@
           "label": "Whether the building is sprinklered and alarmed, and, in a sprinklered building, how the work affects the system",
           "stage": "plan_check",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-new",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior"
-          ],
+          "scopes": ["multi-unit-residential-new", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior"],
           "checked_against": "submittal",
           "detail": "A suggestion, not a City requirement: Laguna has not confirmed it. Whether the building is sprinklered comes from the cover sheet's building data. When it is and the work moves walls or ceilings, plan check expects either Fire sprinkler plans on their own Fire permit or a fire contractor's letter that the system is unaffected. A plan-check item: it never sends a filing back.",
           "source": {
@@ -4076,13 +3406,7 @@
           "label": "Owner-builder may not pull a Multifamily permit, except a triplex owner living in one unit",
           "stage": "issuance",
           "level": "city",
-          "scopes": [
-            "multi-unit-residential-new",
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural",
-            "multi-unit-residential-alteration-interior",
-            "multi-unit-residential-exterior-repair"
-          ],
+          "scopes": ["multi-unit-residential-new", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair"],
           "checked_against": "submittal",
           "detail": "A Multifamily permit issues to a licensed contractor, not an owner-builder. The one exception the City states: an owner-builder may pull the permit for a triplex when the owner lives in one of the units. When the application names an owner-builder on a building of four or more units, or on a triplex with no evidence the owner lives there, raise it to staff.",
           "source": {
@@ -4096,10 +3420,7 @@
           "label": "Dimensioned construction documents",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "Dimensioned construction documents showing the location, nature and extent of work and code compliance.",
           "source": {
@@ -4113,10 +3434,7 @@
           "label": "Survey-based site plan",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "A site plan to scale, drawn from an accurate boundary-line survey, showing structures, lot-line distances, grades and applicable flood information. The official may waive or modify it for alterations or repairs.",
           "source": {
@@ -4130,10 +3448,7 @@
           "label": "Structural design information",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
           "detail": "Include the structural design information required by CBC §1603.",
           "source": {
@@ -4147,10 +3462,7 @@
           "label": "Energy Certificate of Compliance",
           "stage": "intake",
           "level": "state",
-          "scopes": [
-            "multi-unit-residential-addition",
-            "multi-unit-residential-alteration-structural"
-          ],
+          "scopes": ["multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "applies_when": {
             "question": "Is the proposed work regulated by Title 24, Part 6?",
             "if_yes": "Include the applicable Certificate of Compliance with the permit documents."

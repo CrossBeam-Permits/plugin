@@ -218,11 +218,10 @@ Use the deterministic calculator before writing the narrative finding:
 
 1. List each building or structure on the site (primary dwelling, detached garage, each detached accessory building or structure). Run Step B for each one independently (see B.4).
 2. For each structure, extract or confirm Step B measurements from the demolition/existing-conditions sheets: exterior wall LF **on each floor**, load-bearing interior wall LF **on each floor**, foundation LF, roof SF, and cumulative addition square footage against that structure's January 13, 1993/reset baseline (floor area measured per B.4: from the face of the structure, attached non-habitable area excluded).
-3. When sheet PNGs are available, run the vision extractor in a CrossBeam reference that is not included in this plugin; it uses `gemini-3-flash-preview`, returns counted segment geometry for an audit overlay, and calls the calculator.
-4. When measurements are already provided by the applicant/reviewer, call `computeMajorRemodel(input)` from a CrossBeam reference that is not included in this plugin directly with the Laguna config for the area (`coastal-appealable` for the coastal zone appealable area, `non-coastal-appealable` for the coastal zone non-appealable area). Call it once for each structure.
-5. The calculator takes one wall total per call. It does not split walls by floor. Its wall percentage is the whole-structure total. Compute the percentage on each floor yourself (B.2, B.3), then apply the three-way floor rule in B.2a.
-6. Use the calculator result and intermediate values first, then write the review narrative with the authority chain below: LCP Land Use Element → October 2026 Major Remodel Handout (including the hedge) → LBMC §25.10.008(O).
-7. If the calculator returns `NEEDS_MEASUREMENT`, or the plans do not give wall LF for each floor, do not pass the Step B check. Request the missing denominator or numerator needed for the applicable methodology.
+3. When measurements are already provided by the applicant/reviewer, call `computeMajorRemodel(input)` from a CrossBeam reference that is not included in this plugin directly with the Laguna config for the area (`coastal-appealable` for the coastal zone appealable area, `non-coastal-appealable` for the coastal zone non-appealable area). Call it once for each structure.
+4. The calculator takes one wall total per call. It does not split walls by floor. Its wall percentage is the whole-structure total. Compute the percentage on each floor yourself (B.2, B.3), then apply the three-way floor rule in B.2a.
+5. Use the calculator result and intermediate values first, then write the review narrative with the authority chain below: LCP Land Use Element → October 2026 Major Remodel Handout (including the hedge) → LBMC §25.10.008(O).
+6. If the calculator returns `NEEDS_MEASUREMENT`, or the plans do not give wall LF for each floor, do not pass the Step B check. Request the missing denominator or numerator needed for the applicable methodology.
 
 #### B.1 Authority Chain (cite in this order)
 

@@ -24,7 +24,7 @@ This is a completeness reference. It does not check the design against the build
 
 ## Building checklists
 
-- `building/residential.md` — New homes, additions, ADUs and major remodels (31 items)
+- `building/residential.md` — New homes, additions, ADUs and major remodels (39 items)
 - `building/interior-alterations.md` — Interior alterations (kitchen, bath, room remodel) (16 items)
 - `building/grading.md` — Grading permit (more than 20 cubic yards outside the footprint) (5 items)
 - `building/demolition.md` — Standalone demolition (6 items)
@@ -35,7 +35,7 @@ This is a completeness reference. It does not check the design against the build
 - `building/ev-charging.md` — EV charging stations (14 items)
 - `building/solar.md` — Residential solar (8 items)
 - `building/walls-fences.md` — Fences, block walls and retaining walls (13 items)
-- `building/staff-reported.md` — Other counter requirements reported by City staff (4 items)
+- `building/staff-reported.md` — Other counter requirements reported by City staff (5 items)
 - `building/site-improvements.md` — New decks and patio covers, hardscape, retaining walls and accessory structures (full review) (5 items)
 - `building/deferred-submittals.md` — Deferred submittals (roof trusses, elevator, fire sprinklers) (2 items)
 - `building/multi-unit.md` — Multi-unit residential (3 or more units) (13 items)
