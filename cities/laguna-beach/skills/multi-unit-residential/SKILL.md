@@ -194,7 +194,7 @@ The most likely scenarios route OUT of this skill or to a narrow reference. Run 
 | How did the City treat similar cases (records, outcomes, what staff asked for)? | a CrossBeam reference that is not included in this plugin |
 | What exactly do I file with Planning, and which plan sheets? | `references/submittal-kit-office-to-residential.md` |
 | Is the site in the Downtown Specific Plan? | `references/dsp-mixed-use.md` (replaces the use/density/height parts of `references/mixed-use-conversion.md`) |
-| Does a state law (AB 507, AB 2011, SB 6, SB 330/HAA, Density Bonus) offer a better path? | the "State alternatives" table in `references/mixed-use-conversion.md`, then `references/state-preemption.md`. State rules: `california-adaptive-reuse` (AB 507), `california-commercial-corridor-housing` (AB 2011; SB 6 in `references/sb6.md`) |
+| Does a state law (AB 507, AB 2011, SB 6, SB 330/HAA, Density Bonus) offer a better path? | the "State alternatives" table in `references/mixed-use-conversion.md`, then `references/state-preemption.md`. State rules: `california-adaptive-reuse` (AB 507), `california-commercial-corridor-housing` (AB 2011; SB 6 in a CrossBeam reference that is not included in this plugin) |
 
 For these projects skip Step 5 (R-3 envelope). Steps 3, 4, 6 and 8 still apply through the shared references; `references/mixed-use-conversion.md` states the commercial-building deltas.
 

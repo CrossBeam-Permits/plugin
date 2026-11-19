@@ -24,7 +24,7 @@ metadata:
 
 ---
 
-## How to answer (contract)
+## How to answer
 
 **Lead with the likely route.** The first lines of every project answer name the single most likely
 route: what to file, with whom, and in what order. Build it the way a planner at the counter would:
@@ -41,10 +41,8 @@ is missing. Then:
   `planning-applications` reference; the online filing links are in the `submit-*` guides. Never
   invent a link; with none in hand, link the City's applications and handouts page
   (https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/applications-handouts).
-- **Short: aim for about 150 words; 250 at most, for any answer.** Bottom line; numbered steps with the forms
-  linked; one line offering to list what to submit with the first form (the list comes when the
-  resident asks); at most one "this changes if" line; one question. A list, when asked for, is a
-  few words per item. No side notes, tables, citation column, overlay catalog or unasked code rules; detail comes when asked. City staff get full detail.
+- **Offer the submittal list in one line** with the first form; the list comes when the resident
+  asks, a few words per item. No overlay catalog or unasked code rules; detail comes when asked.
 - **UNSETTLED only when it changes what the applicant files.** A fact or open question that routes
   the same either way (which of two parcels, which of two readings that land on the same
   application) gets no branch at all; settle it in a clause or leave it out.
@@ -77,8 +75,8 @@ Method behind the lead lines:
 4. Then the documents: call the City checklists for the first filing's lane, in the same
    round as other lookups, for the form and its link. Offer the filing's document list in one line;
    give it from that result when the resident asks. Never pad the document list from a permit skill.
-5. Cite the rule that decides the route (LBMC section, Ord. 1732, state code, or "City practice since
-   Ord. 1732") in parentheses; the resident can ask for the rest.
+5. Base the route on the rule that decides it (LBMC section, Ord. 1732, state code, or "City
+   practice since Ord. 1732").
 6. The City has not ruled and the answer changes the filing: say UNSETTLED, lead with the reading
    the code text and City practice favor (weighed by the `city-practice` method), give the other as
    one "changes to" line, and say "confirm with Planning at pre-application". Never guess a
@@ -86,7 +84,6 @@ Method behind the lead lines:
 7. A deciding fact is unknown (height, slope, coastal status, historic status, deck height): lead
    with the usual case, give the other branch as one "changes to X if Y" line, and ask for the
    fact (one question per answer: the one that moves the route most).
-8. Plain, short sentences.
 
 ## How many references to pull
 
@@ -109,6 +106,10 @@ Pull with the reference file `references/<name>.md`. These are the guide's topic
 `trees-views-hedges`, `noise-lighting-equipment`, `short-term-lodging`, `home-business`,
 `right-of-way-utilities`, `unpermitted-work`, `unit-removal`, `disaster-rebuild`, `temporary-uses`,
 `before-you-file` (a drafted or filed packet: right application? Planning before Building?),
+`building-counter-practice` (how the Building Division wants applications, descriptions, fees and
+resubmittals done on the portal),
+`review-times` (how long a Building review takes, what the portal due date means, and how the
+Division answers "where is my review?"),
 `common-corrections` (a drafted plan set: what Laguna's plan check most often corrects, by permit
 type, and how to check the City's numeric standards on the drawings).
 They are reference topics, not permit skills: never pass them to the permit skills. City website pages
@@ -123,6 +124,8 @@ reference topics.
 | Who decides? DRB or Planning Commission? Heritage Committee? Coastal Commission? | `review-bodies` | |
 | Do I need a CDP? Coastal zone, appealable area, exclusion area, highly scenic? Three Arch Bay or Irvine Cove filing, beach event, emergency CDP, changing a CDP | `coastal-development-permits` | `../coastal-development/SKILL.md` for plan detail |
 | How do I apply? How long? Several applications at once? Staking, notice, hearing, appeals, approval life | `process-timeline-appeals` | the fee estimate for any dollar amount |
+| Filing a Building permit on the portal: which applications, what the description says, ADU address, PV or sprinklers separate, geotechnical deposit, paying fees ("I paid, now what?"), resubmitting, picking up corrections | `building-counter-practice` | the fee estimate for fee amounts; `contacts-hours` for counter hours |
+| How long does Building review take? Where is my review? It is past the due date. Staff answering a status email | `review-times` | the record check for the record |
 | Do I need a permit at all? | `building-permit-exemptions` | |
 | Moving dirt, steep lot, soils report, landslide or liquefaction zone, drainage, water quality (WQESA) | `grading-drainage` | |
 | Fire zone, fuel modification, wildfire materials, accessory structures in the fire zone | `fire-hazard-and-wui` | |
@@ -207,6 +210,7 @@ Load these on demand. Paths are relative to this file.
 **Laguna Beach rules**
 
 - `references/before-you-file.md` — Laguna Beach — Before you file: does the packet match the route?
+- `references/building-counter-practice.md` — Laguna Beach — Building Division counter practice: applications, fees, resubmittals
 - `references/building-permit-exemptions.md` — Laguna Beach — Work that needs no building permit, and work that still needs Planning
 - `references/city-practice.md` — Laguna Beach — Weighing City practice against the code (method)
 - `references/coastal-development-permits.md` — Laguna Beach — Coastal Development Permits (resident guide)
@@ -222,6 +226,7 @@ Load these on demand. Paths are relative to this file.
 - `references/planning-approvals.md` — Laguna Beach — Does my project need Planning approval, and which? (the method)
 - `references/process-timeline-appeals.md` — Laguna Beach — Planning process, timelines, and appeals
 - `references/review-bodies.md` — Laguna Beach — Who decides (review bodies)
+- `references/review-times.md` — Laguna Beach — Building Division review times and "where is my review?" replies
 - `references/right-of-way-utilities.md` — Laguna Beach — Work in the street, utilities, wireless, Caltrans and sites outside City limits (resident guide)
 - `references/short-term-lodging.md` — Laguna Beach — Short-term lodging (resident guide)
 - `references/temporary-uses.md` — Laguna Beach — Temporary uses, events, containers and temporary structures (resident guide)

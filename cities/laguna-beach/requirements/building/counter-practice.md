@@ -15,8 +15,8 @@ The Building checklists in this folder cover both what the counter needs to acce
 
 ### Some work files a different permit type
 
-- City practice: Solar water or pool heating (solar thermal) is permitted as a Plumbing permit, applied for with the City's MEP application, not as a Building solar permit. Planning reviews these submittals, and a solar contractor can pull the permit.
-- Basis: Building Division staff direction, October 2026
+- City practice: Solar water or pool heating (solar thermal) is permitted as a Plumbing permit, applied for with the City's MEP application, not as a Building solar permit. Planning reviews these submittals, and a solar contractor can pull the permit. Rooftop solar photovoltaic is permitted as a Residential - Solar permit or through SolarAPP+, not as an Electrical permit. A battery added with no new solar stays an Electrical permit.
+- Basis: Building Division staff direction, October 2026; Building Division completeness returns on Electrical permits, 2025-2026
 
 ### The work site is inside Laguna Beach city limits
 
@@ -24,10 +24,10 @@ The Building checklists in this folder cover both what the counter needs to acce
 
 ### Simple permits are issued at the counter, not online
 
-- Status: The City has not yet said which items this covers.
-- Open City question: which over-the-counter items are simple permits the City issues only in person. Items: (1) kitchen and bath remodels; (2) residential decks, balconies and patio cover repairs with minor structural modifications; (3) window and door replacement with minor structural modifications; (4) construction revisions to approved plans; (5) exterior siding replacement; (6) meter upgrade to 200A; (7) reroof with same material or lighter; (8) residential HVAC change outs; (9) minor plumbing, electrical or mechanical repairs or replacements; (10) wood or metal fences; (11) commercial signs without structural alterations. Items 6 and 7 are express permits today and stay on the portal unless the City says otherwise.
+- Status: The City's permit record marks these as in-person permits: Meter upgrade to 200A, with the Residential Panel Upgrade E-Permit scope (a panel, sub-panel or meter change-out up to 400 amps and 2 meters); Residential HVAC change outs (A/C, heat pump, furnace, mini-split, an added condenser and coil); Minor plumbing, electrical or mechanical repairs or replacements (a like-for-like water heater in the same location, a sewer liner or spot repair, temporary power, a single circuit). The other over-the-counter items are still an open question.
+- Open City question: which over-the-counter items are simple permits the City issues only in person. Confirm with the Building Division: which of the 11 "Qualified Projects for OTC" items are simple permits that must be pulled in person at the counter, and which stay on the portal? Items: (1) kitchen and bath remodels; (2) residential decks, balconies and patio cover repairs with minor structural modifications; (3) window and door replacement with minor structural modifications; (4) construction revisions to approved plans; (5) exterior siding replacement; (6) meter upgrade to 200A; (7) reroof with same material or lighter; (8) residential HVAC change outs; (9) minor plumbing, electrical or mechanical repairs or replacements; (10) wood or metal fences; (11) commercial signs without structural alterations.
 - City practice: For simple permits, applications are not processed through the portal, as permits are not issued online.
-- Basis: Building Division staff direction, September 2026
+- Basis: Building Division staff direction, September 2026; Building Division completeness returns on trade permits, July to November 2026
 
 ### The plans must be a drawing of this work
 
