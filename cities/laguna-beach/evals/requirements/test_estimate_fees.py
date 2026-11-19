@@ -91,11 +91,21 @@ class MatchesSharedCalculator(unittest.TestCase):
         self.assertIn(school[0]["ownerDivision"], other_section)
 
     def test_flat_line_carries_its_surcharge(self):
-        result, _ = estimate({"permitType": "reroof"})
+        # Re-roof is priced on valuation now (as EnerGov charges it), so a flat
+        # stand-alone line is the residential solar permit.
+        result, _ = estimate({"permitType": "residential_solar"})
         lines = amounts(result["breakdown"]["firmLines"])
-        self.assertIn("reroof_permit", lines)
+        self.assertIn("residential_solar_permit", lines)
         self.assertIn("technology", lines)
-        self.assertEqual(lines, amounts(direct({"permitType": "reroof"})["firmLines"]))
+        self.assertEqual(lines, amounts(direct({"permitType": "residential_solar"})["firmLines"]))
+
+    def test_reroof_is_priced_on_valuation(self):
+        inputs = {"permitType": "reroof", "valuation": 30000}
+        result, _ = estimate(inputs)
+        lines = amounts(result["breakdown"]["firmLines"])
+        self.assertIn("building_permit", lines)
+        self.assertNotIn("reroof_permit", lines)
+        self.assertEqual(lines, amounts(direct(inputs)["firmLines"]))
 
     def test_stepped_grading_line(self):
         inputs = {"permitType": "grading", "scopeQuantities": {"grading_cubic_yards": 350}}
