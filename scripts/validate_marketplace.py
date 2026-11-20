@@ -11,9 +11,8 @@ plugin manifests:
 - plugin names must be unique
 - every folder under cities/ must be listed (no orphan city that nobody can install)
 
-Source formats it accepts:
-- `{"source": "git-subdir", "url": <this repo>, "path": "cities/<slug>"}` (current)
-- a relative string, `"./cities/<slug>"`, or a plain slug under `metadata.pluginRoot`
+Every source must be `{"source": "git-subdir", "url": <this repo>, "path": "cities/<slug>"}`,
+the format all entries use.
 
 Exit code 0 on success, 1 on any validation failure.
 """
@@ -38,34 +37,26 @@ def err(msg: str) -> None:
 
 
 def rel(path: Path) -> str:
-    try:
-        return str(path.relative_to(REPO_ROOT))
-    except ValueError:
-        return str(path)
+    return str(path.relative_to(REPO_ROOT))
 
 
-def resolve_source(name: str, src: object, plugin_root: str) -> Path | None:
-    """Return the plugin folder a marketplace `source` points at, or None after recording why."""
-    if isinstance(src, dict):
-        if src.get("source") != "git-subdir":
-            err(f"plugin[{name}]: unsupported source type {src.get('source')!r}")
-            return None
-        if src.get("url") not in REPO_URLS:
-            err(f"plugin[{name}]: git-subdir url {src.get('url')!r} is not this repository")
-            return None
-        path = src.get("path")
-        if not isinstance(path, str) or not path:
-            err(f"plugin[{name}]: git-subdir source has no 'path'")
-            return None
-        return REPO_ROOT / path.lstrip("./")
-    if isinstance(src, str):
-        if src.startswith("./"):
-            return REPO_ROOT / src[2:]
-        if plugin_root:
-            return REPO_ROOT / plugin_root / src
-        return REPO_ROOT / src
-    err(f"plugin[{name}]: 'source' must be a git-subdir object or a path (got {type(src).__name__})")
-    return None
+def resolve_source(name: str, src: object) -> Path | None:
+    """Return the plugin folder a git-subdir `source` points at, or None after recording why."""
+    if not isinstance(src, dict) or src.get("source") != "git-subdir":
+        err(f"plugin[{name}]: 'source' must be a git-subdir object (got {src!r})")
+        return None
+    if src.get("url") not in REPO_URLS:
+        err(f"plugin[{name}]: git-subdir url {src.get('url')!r} is not this repository")
+        return None
+    path = src.get("path")
+    if not isinstance(path, str) or not path:
+        err(f"plugin[{name}]: git-subdir source has no 'path'")
+        return None
+    parts = Path(path).parts
+    if Path(path).is_absolute() or ".." in parts or (parts and parts[0].startswith(".")):
+        err(f"plugin[{name}]: git-subdir path {path!r} must be a plain path inside this repository")
+        return None
+    return REPO_ROOT / path
 
 
 def main() -> int:
@@ -78,15 +69,24 @@ def main() -> int:
         print(f"FAIL: {rel(MARKETPLACE)} is not valid JSON: {e}")
         return 1
 
+    if not isinstance(md, dict):
+        print(f"FAIL: {rel(MARKETPLACE)} must be a JSON object")
+        return 1
+
     for required in ("name", "owner", "plugins"):
         if required not in md:
             err(f"marketplace.json missing required field: {required!r}")
 
-    plugin_root = md.get("metadata", {}).get("pluginRoot", "").removeprefix("./").rstrip("/")
-
     seen_names: set[str] = set()
     listed_dirs: set[Path] = set()
-    for i, p in enumerate(md.get("plugins", [])):
+    plugins = md.get("plugins")
+    if not isinstance(plugins, list):
+        err("marketplace.json 'plugins' must be a list")
+        plugins = []
+    for i, p in enumerate(plugins):
+        if not isinstance(p, dict):
+            err(f"plugin[{i}]: entry must be an object")
+            continue
         name = p.get("name")
         if not name:
             err(f"plugin[{i}]: missing 'name'")
@@ -95,7 +95,7 @@ def main() -> int:
             err(f"plugin[{name}]: duplicate name")
         seen_names.add(name)
 
-        plugin_dir = resolve_source(name, p.get("source"), plugin_root)
+        plugin_dir = resolve_source(name, p.get("source"))
         if plugin_dir is None:
             continue
         if not plugin_dir.is_dir():
@@ -109,9 +109,10 @@ def main() -> int:
         else:
             try:
                 pj = json.loads(plugin_json.read_text())
-                if pj.get("name") != name:
+                if not isinstance(pj, dict) or pj.get("name") != name:
                     err(
-                        f"plugin[{name}]: plugin.json name {pj.get('name')!r} "
+                        f"plugin[{name}]: plugin.json name "
+                        f"{pj.get('name') if isinstance(pj, dict) else pj!r} "
                         f"does not match marketplace name {name!r}"
                     )
             except json.JSONDecodeError as e:
