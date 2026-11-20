@@ -28,7 +28,7 @@ SCHEMA_PATH = ROOT / "schemas" / "permit-drawings-handoff.schema.json"
 # The schema is a byte-identical copy of the one permit-drawings ships
 # (skills/shared/permit-drawings/schemas/city-plugin-handoff.schema.json).
 # Change this pin only when that schema changes in the same release.
-SCHEMA_SHA256 = "0a426a57962a4187188f568e5ac20c62137edff86668ea65bb109758ad98ad80"
+SCHEMA_SHA256 = "7b788765104c4252e3bd9b6482f72927d138386275eab32b93e4fb137a704c0e"
 SCHEMA_ID = "crossbeam.permit-drawings-handoff/1"
 PROVENANCE = "permit-drawings project.json"
 ARCH_D = (2592, 1728)  # 36 x 24 in, in points
