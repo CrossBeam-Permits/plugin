@@ -4,13 +4,13 @@
 
 1. Get the parcel's zone from `lookup_property`. If the parcel is in the Downtown Specific Plan (CBD districts), use the DSP section below, not the zone rows.
 2. Classify the tenant's use from the plans and application. Match it to the closest listed use. The zone chapters list uses by name; a use that is not listed is not permitted by right.
-3. Read the cell. Then open the cited section with `lookup_municipal_code` (chapter 25.18, 25.19, 25.20, 25.21, 25.25, 25.32 or 25.40) and confirm the wording before you answer. Conditions sit in the section text (enclosed building, floor limits, Main Beach alcohol rule).
+3. Read the cell. Then open the cited section with the municipal code (chapter 25.18, 25.19, 25.20, 25.21, 25.25, 25.32 or 25.40) and confirm the wording before you answer. Conditions sit in the section text (enclosed building, floor limits, Main Beach alcohol rule).
 4. Restaurant and bar scopes: this table says only whether the use is allowed. Review the work under the `restaurant-ti` skill.
 5. A use change also needs a Zone Clearance (§25.05.045(B)(2)), and a CDP if the new use needs more parking than the prior legal use (intensification of use, §25.07.006). See `coastal-development-permit.md`.
 
 **Legend.** P = permitted by right. CUP = Conditional Use Permit, Planning Commission (§25.05.030). AUP = Administrative Use Permit (§25.05.020). "Not listed" = not permitted by right; every zone except M-1A lets the Planning Commission approve, by CUP after a public hearing, a use it finds "similar to and no more obnoxious or detrimental" than a listed use (LB/P §25.18.004(Z); C-N §25.19.006(N); C-1 §25.20.006(R); CH-M §25.21.004(A)(6) with a hotel; SLV §25.25.006(O)). Present that as a possible route, never as likely. M-1A prohibits "All uses not specifically listed" (§25.32.004(A)) except its own similar-use CUP (§25.32.003(L)).
 
-**Source and limits.** Use lists are from the codified LBMC (eCode360, codified through 2026-04-28; the published LBMC (`lookup_municipal_code`)). Ord. 1732 did not amend these use lists (the City source document (not included in this plugin)). Ord. 1730 was adopted 2026-07-21 but is not yet codified; if it touches a use list, the corpus does not show it. Confirm the cell with Planning at pre-application; the table is the answer, the confirmation is a caveat.
+**Source and limits.** Use lists are from the codified LBMC (eCode360, codified through 2026-04-28; the published LBMC (the municipal code)). Ord. 1732 did not amend these use lists (the City source document (not included in this plugin)). Ord. 1730 was adopted 2026-07-21 but is not yet codified; if it touches a use list, the corpus does not show it. Confirm the cell with Planning at pre-application; the table is the answer, the confirmation is a caveat.
 
 ## Zones
 
@@ -46,7 +46,7 @@ LB/P = Local Business-Professional (Ch. 25.18). C-N = Commercial Neighborhood (C
 
 **LB/P Three Arch Bay commercial area (§25.18.010).** The LB/P area on South Coast Highway next to Three Arch Bay has its own use list. Read §25.18.010 instead of the LB/P column.
 
-**Other zones.** Uses in the Laguna Canyon Annexation Specific Plan (Ch. 25.48), Lagunita (Ch. 25.24), Institutional (Ch. 25.28) and other districts are not in this table. Open the chapter with `lookup_municipal_code` and read its uses permitted and CUP sections; if a use is not there, route the question to Planning without a verdict.
+**Other zones.** Uses in the Laguna Canyon Annexation Specific Plan (Ch. 25.48), Lagunita (Ch. 25.24), Institutional (Ch. 25.28) and other districts are not in this table. Open the chapter with the municipal code and read its uses permitted and CUP sections; if a use is not there, route the question to Planning without a verdict.
 
 ## Downtown Specific Plan (Ch. 25.40)
 

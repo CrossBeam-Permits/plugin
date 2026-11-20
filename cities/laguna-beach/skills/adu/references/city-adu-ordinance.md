@@ -2,7 +2,7 @@
 
 Sources:
 - Urgency Ord. 1713, adopted 2025-03-11, effective on adoption; LBMC 25.17.010 and 25.17.020. Text: the City source document (not included in this plugin) (official PDF https://ecode360.com/LA4953/laws/LF2319836.pdf).
-- Certified LCP Chapter 25.17 (Ord. 1687 § 3, 2023; Ord. 1691 § 3, 2023; certified 2023-09-07). Text: `lookup_municipal_code("25.17")`.
+- Certified LCP Chapter 25.17 (Ord. 1687 § 3, 2023; Ord. 1691 § 3, 2023; certified 2023-09-07). Text: the municipal code (LBMC 25.17).
 - Certification status: the City source document (not included in this plugin).
 
 Law as of 2026-10-10. This file lists Laguna rules. Where a rule only repeats state ADU law, it says "state floor" and points to the California ADU (Accessory Dwelling Unit) rules, which come from the CrossBeam connector (see "California Code Compliance" in `../SKILL.md`).

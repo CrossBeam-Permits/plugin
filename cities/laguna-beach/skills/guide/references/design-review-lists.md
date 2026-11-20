@@ -226,7 +226,7 @@ hearing is held, the Director decides after it (25.05.040(B)(3)(c)). A revocable
   City will carry out its certified LCP in full conformity with the Coastal Act, so the package can
   be resubmitted (City Council staff report, 2026-09-22). We have not checked the minutes for the vote.
 - A CDP must be found consistent with the **certified** LCP (PRC 30604(b); LBMC 25.07.012(G)(1)).
-  The certified Chapter 25.05 is the pre-Ord. 1732 text (`corpus/ch25-05-administration.md`).
+  The certified Chapter 25.05 is the pre-Ord. 1732 text (the municipal code (LBMC 25.05)).
 - **UNSETTLED.** The City applies Ord. 1732 citywide today. Whether a coastal-zone project that
   needs a CDP is also held to the older, certified design review rules, or whether the Commission
   would see the new lists differently on appeal, the City has not said. Tell the resident: "In the
