@@ -4,7 +4,7 @@
 **Authority:** LBMC 25.07.008(A)(5) (certified LCP); PRC 30610(g)
 (the City source document (not included in this plugin)); LBMC 25.56.014 (restoration of
 nonconforming structures) and 25.56.011 (major remodels, Ord. 1732), texts at
-the City source document (not included in this plugin) and
+the municipal code (LBMC 25.56) and
 the City source document (not included in this plugin); LBMC 25.05.040(B)(1)(a)-(b), (B)(2)(c)
 (Ord. 1732); LBMC Ch. 14.70.
 **Use for:** "My house burned down; what do I need to rebuild?", "Can I rebuild the same house?",

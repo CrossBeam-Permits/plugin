@@ -5,9 +5,9 @@
 "How do I move a lot line?", "Can I split my lot under SB 9?", "Can my wall sit in the city
 right-of-way?"
 
-**Sources.** Integrated LBMC Chapter 25.05 (the City source document (not included in this plugin)),
+**Sources.** Integrated LBMC Chapter 25.05 (the municipal code (LBMC 25.05)),
 as amended by Urgency Ord. 1732 §§5, 6, 9 (effective dates and new 25.05.060); Chapter 21.08 as
-amended by Ord. 1732 (the City source document (not included in this plugin)); Chapter 25.95 (the City source document (not included in this plugin));
+amended by Ord. 1732 (`corpus/ch21-08-subdivisions.md`); Chapter 25.95 (`corpus/ch25-95-sb9-two-unit-urban-lot-splits.md`);
 Chapter 11.50 (a CrossBeam reference that is not included in this plugin). City application list and
 links: `../../city-website/references/planning-applications.md`. Fees: call the fee estimate.
 

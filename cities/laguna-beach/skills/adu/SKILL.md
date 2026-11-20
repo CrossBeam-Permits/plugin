@@ -145,7 +145,7 @@ Laguna ADUs are harder than in most California cities. Most of the city is in th
 | Text | Status as of 2026-10-10 | Use it for | Source |
 |---|---|---|---|
 | **Urgency Ord. 1713** (sections 25.17.010 and 25.17.020) | In force. Applies to applications that include an ADU or JADU filed on or after March 12, 2025. eCode360 lists it "Expires December 9, 2026". Not certified by the Coastal Commission. | The local ADU permit: approval path, local standards, process | the City source document (not included in this plugin); City ADU & JADU Application (Aug. 2026), footnote 3: "As of March 2025, LBMC Chapter 25.17 is replaced by Urgency Ordinance No. 1713." |
-| **Certified LCP Chapter 25.17** (Ord. 1687 and 1691; sections 25.17.010-25.17.110) | Certified 2023-09-07. Still the text eCode360 shows. | The LCP-conformity finding for an ADU that needs a CDP | the City source document (not included in this plugin); the City source document (not included in this plugin) |
+| **Certified LCP Chapter 25.17** (Ord. 1687 and 1691; sections 25.17.010-25.17.110) | Certified 2023-09-07. Still the text eCode360 shows. | The LCP-conformity finding for an ADU that needs a CDP | `lookup_municipal_code("25.17")`; the City source document (not included in this plugin) |
 | Urgency Ord. 1707 / 1709 | Applied to ADU applications filed 12/11/2024-1/14/2025 (1707) and 1/1/2025-3/11/2025 (1709) | Older applications only | eCode360 editor's note, recorded in the Ord. 1713 file |
 | **Ord. 1715** (permanent replacement, adopted 2025-03-25) | NOT certified. Pending as LCP-5-LGB-25-0036-1; on the October 2026 Commission agenda (item 17b) and postponed | Nothing yet | the City source document (not included in this plugin) |
 
