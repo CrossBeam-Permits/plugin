@@ -191,7 +191,7 @@ All signs not expressly permitted under this chapter or exempt from regulation a
 
 ## Section 25.54.018: General permit procedures
 
-Current text: codified 25.54.018 (`lookup_municipal_code("25.54")`, codified through 2026-04-28) as amended by Ord. 1732 § 48 (signed text pp. 74-75, effective 2026-07-22; not yet certified by the Coastal Commission).
+Current text: codified 25.54.018 (the municipal code (LBMC 25.54), codified through 2026-04-28) as amended by Ord. 1732 § 48 (signed text pp. 74-75, effective 2026-07-22; not yet certified by the Coastal Commission).
 
 (A) **Applications.** Sign permit and master sign program applications go to Community Development on the City form, with scaled drawings (dimensions, sign area, location, height, copy, letter size, materials, colors, lighting) for all existing and proposed signs on the site, and construction specifications (electrical, attachment). Master sign programs add common standards and a plot plan.
 
