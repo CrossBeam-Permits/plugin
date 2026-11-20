@@ -8,7 +8,7 @@ Heritage Committee do?", "Can the Coastal Commission overturn my approval?"
 (a CrossBeam reference that is not included in this plugin;
 the City source document (not included in this plugin) lines
 468-501, 1086-1105, 1475-1700); integrated Chapter 25.05, 25.07, 25.45 and 21.08 text in
-the City source document (not included in this plugin) and the City source document (not included in this plugin). Meeting
+the published LBMC (the municipal code) and the City source document (not included in this plugin). Meeting
 times: `../../city-website/references/planning-applications.md`. Do not name staff; cite the body.
 
 ## Quick table

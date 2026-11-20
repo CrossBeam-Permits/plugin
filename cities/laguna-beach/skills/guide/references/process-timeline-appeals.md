@@ -7,7 +7,7 @@ appeal?", "How long is my approval good for?", "What does it cost?"
 **Sources.** LBMC 25.05.015, 25.05.040(C), (F), (K), 25.05.065 and 25.05.070 as amended or replaced
 by Urgency Ord. 1732 §§4, 7, 10-12 (the City source document (not included in this plugin);
 ordinance text the City source document (not included in this plugin));
-Chapter 25.07 (the City source document (not included in this plugin)); Permit Streamlining Act (Gov. Code
+Chapter 25.07 (`corpus/ch25-07-coastal-development-permits.md`); Permit Streamlining Act (Gov. Code
 65943, 65950 in the City source document (not included in this plugin)); the City's design review
 process page and application list (`../../city-website/references/planning-applications.md`,
 `../../city-website/references/how-to-submit.md`).

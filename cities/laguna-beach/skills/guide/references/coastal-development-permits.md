@@ -7,7 +7,7 @@ Irvine Cove filings, beach events, public works and energy projects, emergency C
 approved CDP
 **Go deeper:** `../../coastal-development/SKILL.md` for plan-review detail. The certified code text
 is a CrossBeam reference that is not included in this plugin and
-the City source document (not included in this plugin).
+the municipal code (LBMC 25.07).
 
 A CDP is separate from Design Review or Zone Clearance. It is not a substitute for either
 (25.05.040(A)(2)(e)). It is a parallel package with its own completeness check (City Planning intake

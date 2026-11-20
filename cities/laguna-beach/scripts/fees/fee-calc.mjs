@@ -11,7 +11,7 @@
 import { ALTERATION_EXTENTS, ICC_BVD, ICC_BVD_EDITIONS, ICC_CONSTRUCTION_TYPES, ICC_OCCUPANCY_GROUPS, ICC_FLAG_BAND, compareToIcc, defaultIccOccupancy, iccLineMath, iccOccupancyRow, normalizeConstructionType, iccValuation, validateIccMinimum, valuationFromArea } from './icc-bvd.mjs';
 
 // ── Cities with an authored fee schedule ──
-export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona', 'orange', 'lancaster'];
+export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona', 'orange', 'lancaster', 'yorba-linda', 'hermosa-beach'];
 
 // ── ICC Building Valuation Data: the full table lives in icc-bvd.mjs ──
 export { valuationFromArea };

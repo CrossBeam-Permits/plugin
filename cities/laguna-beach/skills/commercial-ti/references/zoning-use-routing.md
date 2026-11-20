@@ -10,7 +10,7 @@
 
 **Legend.** P = permitted by right. CUP = Conditional Use Permit, Planning Commission (§25.05.030). AUP = Administrative Use Permit (§25.05.020). "Not listed" = not permitted by right; every zone except M-1A lets the Planning Commission approve, by CUP after a public hearing, a use it finds "similar to and no more obnoxious or detrimental" than a listed use (LB/P §25.18.004(Z); C-N §25.19.006(N); C-1 §25.20.006(R); CH-M §25.21.004(A)(6) with a hotel; SLV §25.25.006(O)). Present that as a possible route, never as likely. M-1A prohibits "All uses not specifically listed" (§25.32.004(A)) except its own similar-use CUP (§25.32.003(L)).
 
-**Source and limits.** Use lists are from the codified LBMC (eCode360, codified through 2026-04-28; the City source document (not included in this plugin)). Ord. 1732 did not amend these use lists (the City source document (not included in this plugin)). Ord. 1730 was adopted 2026-07-21 but is not yet codified; if it touches a use list, the corpus does not show it. Confirm the cell with Planning at pre-application; the table is the answer, the confirmation is a caveat.
+**Source and limits.** Use lists are from the codified LBMC (eCode360, codified through 2026-04-28; the published LBMC (`lookup_municipal_code`)). Ord. 1732 did not amend these use lists (the City source document (not included in this plugin)). Ord. 1730 was adopted 2026-07-21 but is not yet codified; if it touches a use list, the corpus does not show it. Confirm the cell with Planning at pre-application; the table is the answer, the confirmation is a caveat.
 
 ## Zones
 

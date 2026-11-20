@@ -6,7 +6,7 @@
 
 ## When CUP Is Required
 
-The trigger is the **zone chapter's use list**, not Sec. 25.05.030 (which sets the CUP procedure and findings). Read the parcel's zone from site facts and quote the list. Corpus: the City source document (not included in this plugin) (codified through 2026-04-28).
+The trigger is the **zone chapter's use list**, not Sec. 25.05.030 (which sets the CUP procedure and findings). Read the parcel's zone from site facts and quote the list. Corpus: the published LBMC (`lookup_municipal_code`) (codified through 2026-04-28).
 
 | Zone | Restaurant without alcohol | CUP uses | Source |
 |------|----------------------------|----------|--------|

@@ -10,7 +10,7 @@ law_as_of: "2026-10-10"
 
 Use this file when a project adds dwelling units to an existing commercial building, converts office or retail floor area to apartments, or builds residential over commercial. It covers the Laguna deltas only. Load the state floor (`california-multi-unit-residential`) for building-code content.
 
-Sources: LBMC Title 25 corpus (the City source document (not included in this plugin), codified through 2026-04-28); Ord. 1732 overlay (the City source document (not included in this plugin), the City source document (not included in this plugin)); the LCP certification record (the City source document (not included in this plugin)). Ord. 1732 (adopted 2026-07-21, extended by Ord. 1733) is in effect locally but **not yet certified by the Coastal Commission**.
+Sources: LBMC Title 25 corpus (the published LBMC (`lookup_municipal_code`), codified through 2026-04-28); Ord. 1732 overlay (the City source document (not included in this plugin), the City source document (not included in this plugin)); the LCP certification record (the City source document (not included in this plugin)). Ord. 1732 (adopted 2026-07-21, extended by Ord. 1733) is in effect locally but **not yet certified by the Coastal Commission**.
 
 ## 1. Ord. 1712 in one paragraph
 
