@@ -1,6 +1,6 @@
 # CrossBeam Permits
 
-Open-source permit guidance for all 484 California cities. **One plugin per city.** Each provides 22 simple-permit skills for homeowners, builders, and public-agency reviewers. Laguna Beach goes further: the same plugin also prepares verified official City forms and guides a user-controlled Tyler EnerGov filing.
+Open-source permit guidance for all 484 California cities. **One plugin per city.** Each provides 22 simple-permit skills for homeowners, builders, and public-agency reviewers. Laguna Beach goes further: the same plugin also prepares verified official City forms and guides a user-controlled Tyler EnerGov filing. Two skill plugins work in any city: **permit-drawings** draws a permit plan set, and **feasibility-report** writes a feasibility report for a lot and a proposed project.
 
 ## Install
 
@@ -70,6 +70,23 @@ on if it is not connected.
   This adds the connector only; the plugin's skills don't install in Copilot Studio.
 
 For ChatGPT Work distribution, follow the [official plugin guidance](https://learn.chatgpt.com/docs/build-skills); this repository is not evidence of a public directory listing.
+
+## Skill plugins for any city
+
+Two plugins are not tied to a city. Both use the CrossBeam connector and ask you to sign in.
+
+| Plugin | What it does |
+|---|---|
+| `permit-drawings` | Turns sketches, tape measurements and photos into a true-scale permit drawing set, checks it against the city's rules, packages it the way the city wants, and answers plan-check corrections. Includes a local drafting kit (Python 3, standard library only). |
+| `feasibility-report` | Writes a pre-design feasibility report for one lot and one proposed project (an ADU, a new house, an addition, a lot split, a commercial tenant improvement, or anything else): a verdict up top, each answer tagged by its source, the questions to take to the City, and an intake checklist. Markdown and an HTML report template, no scripts. |
+
+```sh
+claude plugin marketplace add CrossBeam-Permits/plugin --sparse .claude-plugin
+claude plugin install feasibility-report@crossbeam-permits
+claude plugin install permit-drawings@crossbeam-permits
+```
+
+In Cowork and claude.ai, add the marketplace as above and install **CrossBeam Feasibility Report** or **CrossBeam Permit Drawings**. Both are generated from CrossBeam's own skills (`plugins/<name>/.generated/manifest.json` records the source and a hash of every file); do not edit them by hand.
 
 ## What each city includes
 

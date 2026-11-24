@@ -1,0 +1,1528 @@
+{
+ "about": "Title 24 Part 6 (2025 California Energy Code) limits for single-family additions and alterations, cut verbatim from the CrossBeam code corpus. Each limit names the corpus file it was read from. A climate zone a row could not be read for is listed in unread_cz and the kit asks the drafter instead of guessing.",
+ "edition": "2025 California Energy Code (Title 24, Part 6), effective 2026-01-01",
+ "corpus": "data/state-code in the CrossBeam repo (scraped from codes.iccsafe.org/content/CAEC2025P2)",
+ "definitions": {
+  "cfa": {
+   "citation": "2025 CEnC 100.1, CONDITIONED FLOOR AREA",
+   "file": "part-06-energy/subchapter-1-all-occupancies-general-provisions--section-100-1-definitions-and-rules-of-construction.md",
+   "quote": "CONDITIONED FLOOR AREA (CFA) is the floor area (in square feet) of enclosed conditioned space on all floors of a building, as measured at the floor level of the exterior surfaces of exterior walls enclosing the conditioned space."
+  },
+  "fenestration-area": {
+   "citation": "2025 CEnC 100.1, FENESTRATION AREA",
+   "file": "part-06-energy/subchapter-1-all-occupancies-general-provisions--section-100-1-definitions-and-rules-of-construction.md",
+   "quote": "FENESTRATION AREA is the rough opening area of any fenestration product."
+  },
+  "west-facing": {
+   "citation": "2025 CEnC 100.1, ORIENTATION, WEST-FACING",
+   "file": "part-06-energy/subchapter-1-all-occupancies-general-provisions--section-100-1-definitions-and-rules-of-construction.md",
+   "quote": "WEST-FACING is oriented to within 45 degrees of true west, including 45°00'00\" north of due west (NW), but excluding 45°00'00\" south of west (SW)."
+  }
+ },
+ "limits": {
+  "T150.1-A:fen-u": {
+   "element": "fenestration U-factor (maximum)",
+   "citation": "2025 CEnC Table 150.1-A, Fenestration - Maximum U-factor",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Fenestration - Maximum U-factor12 | 0.27 | 0.27 | 0.27 | 0.27 | 0.27 | 0.30 | 0.30 | 0.30 | 0.30 | 0.30 | 0.27 | 0.27 | 0.27 | 0.27 | 0.30 | 0.27 |",
+   "table_row": "Fenestration - Maximum U-factor12",
+   "op": "<=",
+   "unit": "u-factor",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      14,
+      16
+     ],
+     "limit": 0.27,
+     "evidence": "0.27"
+    },
+    {
+     "cz": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      15
+     ],
+     "limit": 0.3,
+     "evidence": "0.30"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "T150.1-A:fen-shgc": {
+   "element": "fenestration SHGC (maximum)",
+   "citation": "2025 CEnC Table 150.1-A, Fenestration - Maximum SHGC",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Fenestration - Maximum SHGC | NR | 0.23 | NR | 0.23 | NR | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 | 0.203 | NR |",
+   "table_row": "Fenestration - Maximum SHGC",
+   "op": "<=",
+   "unit": "ratio",
+   "values": [
+    {
+     "cz": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "limit": 0.23,
+     "evidence": "0.23"
+    }
+   ],
+   "no_requirement_cz": [
+    1,
+    3,
+    5,
+    16
+   ],
+   "unread_cz": {
+    "15": "The corpus cell reads '0.203' (a footnote marker or a scrape error); the kit does not guess. Sections 150.2(a)1Aiii and 150.2(b)1A Exception 1 state 0.23 for Climate Zone 15 where they apply; otherwise read the printed table."
+   }
+  },
+  "T150.1-A:fen-total-pct": {
+   "element": "total fenestration area (maximum, percent of CFA)",
+   "citation": "2025 CEnC Table 150.1-A, Fenestration - Maximum Total Area",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Fenestration - Maximum Total Area | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% | 20% |",
+   "table_row": "Fenestration - Maximum Total Area",
+   "op": "<=",
+   "unit": "pct",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 20.0,
+     "evidence": "20%"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "T150.1-A:fen-west-pct": {
+   "element": "west-facing fenestration area (maximum, percent of CFA)",
+   "citation": "2025 CEnC Table 150.1-A, Fenestration - Maximum West Facing Area",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Fenestration - Maximum West Facing Area | NR | 5% | NR | 5% | NR | 5% | 5% | 5% | 5% | 5% | 5% | 5% | 5% | 5% | 5% | NR |",
+   "table_row": "Fenestration - Maximum West Facing Area",
+   "op": "<=",
+   "unit": "pct",
+   "values": [
+    {
+     "cz": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "limit": 5.0,
+     "evidence": "5%"
+    }
+   ],
+   "no_requirement_cz": [
+    1,
+    3,
+    5,
+    16
+   ],
+   "unread_cz": {}
+  },
+  "T150.1-A:door-u": {
+   "element": "opaque swinging door U-factor (maximum)",
+   "citation": "2025 CEnC Table 150.1-A, Door - Maximum U-Factor",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Door - Maximum U-Factor | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 |",
+   "table_row": "Door - Maximum U-Factor",
+   "op": "<=",
+   "unit": "u-factor",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 0.2,
+     "evidence": "0.20"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "T150.1-A:wall-u": {
+   "element": "above-grade framed wall assembly U-factor (maximum)",
+   "citation": "2025 CEnC Table 150.1-A, Above Grade Framed Walls",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Above Grade Framed Walls3 | U-0.048 | U-0.048 | U-0.048 | U-0.048 | U-0.048 | U-0.065 | U-0.065 | U-0.048 | U-0.048 | U-0.048 | U-0.048 | U-0.048 | U-0.048 | U-0.048 | U-0.048 | U-0.048 |",
+   "table_row": "Above Grade Framed Walls3",
+   "op": "<=",
+   "unit": "u-factor",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 0.048,
+     "evidence": "U-0.048"
+    },
+    {
+     "cz": [
+      6,
+      7
+     ],
+     "limit": 0.065,
+     "evidence": "U-0.065"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(a)1Bi:ceiling-r": {
+   "element": "vented-attic ceiling insulation, addition 700 sq ft or less (minimum)",
+   "citation": "2025 CEnC 150.2(a)1Bi",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "i. Roof and ceiling insulation in a ventilated attic shall meet one of the following requirements:a.  In Climate Zones 1, 2, 4, and 8 through 16, achieve an overall assembly U-factor not exceeding 0.025. In wood framed assemblies, compliance with U-factors may be demonstrated by installing insulation with an R-value of R-38 or greater.b. In Climate Zones 3, and 5 through 7, achieve an overall assembly U-factor not exceeding 0.031. In wood framed assemblies, compliance with U-factors may be demonstrated by installing insulation with an R-value of R-30 or greater.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 38,
+     "evidence": "R-38"
+    },
+    {
+     "cz": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "limit": 30,
+     "evidence": "R-30"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "cz_evidence": [
+    "Climate Zones 1, 2, 4, and 8 through 16",
+    "Climate Zones 3, and 5 through 7"
+   ]
+  },
+  "150.2(a)1:wall-ext-2x4": {
+   "element": "cavity insulation, extension of an existing 2x4 wood-framed wall in an addition (minimum)",
+   "citation": "2025 CEnC 150.2(a)1Ai and 150.2(a)1Biii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "iii.Extensions of existing wood-framed walls may retain the dimensions of the existing walls and shall install cavity insulation of R-15 in a 2 × 4 framing and R-21 in a 2 × 6 framing.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 15,
+     "evidence": "R-15 in a 2 × 4 framing"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(a)1:wall-ext-2x6": {
+   "element": "cavity insulation, extension of an existing 2x6 wood-framed wall in an addition (minimum)",
+   "citation": "2025 CEnC 150.2(a)1Ai and 150.2(a)1Biii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "iii.Extensions of existing wood-framed walls may retain the dimensions of the existing walls and shall install cavity insulation of R-15 in a 2 × 4 framing and R-21 in a 2 × 6 framing.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 21,
+     "evidence": "R-21 in a 2 × 6 framing"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(a)1Biv:west-60": {
+   "element": "west-facing fenestration area, addition 700 sq ft or less (maximum)",
+   "citation": "2025 CEnC 150.2(a)1Biv",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "iv. In Climate Zones 2, 4 and 6-15; the maximum allowed west-facing fenestration area shall not be greater than 60 square feet; and shall also comply with either a or b below:",
+   "op": "<=",
+   "unit": "sf",
+   "values": [
+    {
+     "cz": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "limit": 60,
+     "evidence": "60 square feet"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "cz_evidence": [
+    "Climate Zones 2, 4 and 6-15"
+   ]
+  },
+  "150.2(a)1Biv-a:total-400-700": {
+   "element": "total fenestration area, addition over 400 and up to 700 sq ft (maximum)",
+   "citation": "2025 CEnC 150.2(a)1Biv(a)",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "a. For additions that are 700 square feet or less but greater than 400 square feet, the maximum allowed fenestration area limit is the greater of 120 square feet or 25 percent of the conditioned floor area of the addition.",
+   "op": "<=",
+   "unit": "sf",
+   "values": [
+    {
+     "cz": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "limit": null,
+     "evidence": "120 square feet"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "kind": "greater_of",
+   "floor_sf": 120,
+   "pct_of_cfa": 25,
+   "evidence_pct": "25 percent",
+   "cz_from": "150.2(a)1Biv:west-60"
+  },
+  "150.2(a)1Biv-b:total-400": {
+   "element": "total fenestration area, addition 400 sq ft or less (maximum)",
+   "citation": "2025 CEnC 150.2(a)1Biv(b)",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "b. For additions that are 400 square feet or less, the maximum allowed fenestration area is the greater of 75 square feet or 30 percent of the conditioned floor area of the addition.",
+   "op": "<=",
+   "unit": "sf",
+   "values": [
+    {
+     "cz": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "limit": null,
+     "evidence": "75 square feet"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "kind": "greater_of",
+   "floor_sf": 75,
+   "pct_of_cfa": 30,
+   "evidence_pct": "30 percent",
+   "cz_from": "150.2(a)1Biv:west-60"
+  },
+  "150.2(a)1Aii:total-700": {
+   "element": "total fenestration area, addition over 700 sq ft (maximum)",
+   "citation": "2025 CEnC 150.2(a)1Aii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "ii. The maximum allowed fenestration area shall be the greater of 175 square feet or 20 percent of the addition floor area, and the maximum allowed west-facing fenestration area shall be the greater of 70 square feet or the requirements of Section 150.1(c).",
+   "op": "<=",
+   "unit": "sf",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": null,
+     "evidence": "175 square feet"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "kind": "greater_of",
+   "floor_sf": 175,
+   "pct_of_cfa": 20,
+   "evidence_pct": "20 percent"
+  },
+  "150.2(a)1Aiii:cz15-shgc": {
+   "element": "fenestration SHGC in Climate Zone 15, addition over 700 sq ft (maximum)",
+   "citation": "2025 CEnC 150.2(a)1Aiii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "iii.Alterations that add fenestration area shall have a maximum SHGC value of 0.23 in Climate Zone 15.",
+   "op": "<=",
+   "unit": "ratio",
+   "values": [
+    {
+     "cz": [
+      15
+     ],
+     "limit": 0.23,
+     "evidence": "0.23"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(b)1A-x1:cz15-shgc": {
+   "element": "SHGC of fenestration that increases area, Climate Zone 15 (maximum)",
+   "citation": "2025 CEnC 150.2(b)1A Exception 1",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 1 to Section 150.2(b)1A: Alterations that increase fenestration area shall have a maximum SHGC value of 0.23 in Climate Zone 15.",
+   "op": "<=",
+   "unit": "ratio",
+   "values": [
+    {
+     "cz": [
+      15
+     ],
+     "limit": 0.23,
+     "evidence": "0.23"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(b)1B-x1:u": {
+   "element": "replacement vertical fenestration U-factor, 75 sq ft or less (maximum)",
+   "citation": "2025 CEnC 150.2(b)1B Exception 1",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 1 to Section 150.2(b)1B:  Replacement of vertical fenestration no greater than 75 square feet with a U-factor no greater than 0.40 in Climate Zones 1–16, and a SHGC value no greater than 0.35 in Climate Zones 2, 4 and 6 through 15.",
+   "op": "<=",
+   "unit": "u-factor",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 0.4,
+     "evidence": "U-factor no greater than 0.40 in Climate Zones 1–16"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(b)1B-x1:shgc": {
+   "element": "replacement vertical fenestration SHGC, 75 sq ft or less (maximum)",
+   "citation": "2025 CEnC 150.2(b)1B Exception 1",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 1 to Section 150.2(b)1B:  Replacement of vertical fenestration no greater than 75 square feet with a U-factor no greater than 0.40 in Climate Zones 1–16, and a SHGC value no greater than 0.35 in Climate Zones 2, 4 and 6 through 15.",
+   "op": "<=",
+   "unit": "ratio",
+   "values": [
+    {
+     "cz": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "limit": 0.35,
+     "evidence": "SHGC value no greater than 0.35"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "cz_evidence": [
+    "Climate Zones 2, 4 and 6 through 15"
+   ]
+  },
+  "150.2(b)1B-x2:skylight-u": {
+   "element": "replaced skylight U-factor (maximum)",
+   "citation": "2025 CEnC 150.2(b)1B Exception 2",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 2 to Section 150.2(b)1B:  Replaced skylights must meet a U-factor no greater than 0.40, and a SHGC value no greater than 0.30.",
+   "op": "<=",
+   "unit": "u-factor",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 0.4,
+     "evidence": "U-factor no greater than 0.40"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(b)1B-x2:skylight-shgc": {
+   "element": "replaced skylight SHGC (maximum)",
+   "citation": "2025 CEnC 150.2(b)1B Exception 2",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 2 to Section 150.2(b)1B:  Replaced skylights must meet a U-factor no greater than 0.40, and a SHGC value no greater than 0.30.",
+   "op": "<=",
+   "unit": "ratio",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 0.3,
+     "evidence": "SHGC value no greater than 0.30"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(b)1B-x3:cz15-shgc": {
+   "element": "replacement vertical fenestration SHGC, Climate Zone 15 (maximum)",
+   "citation": "2025 CEnC 150.2(b)1B Exception 3",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 3 to Section 150.2(b)1B: Replacement of vertical fenestration shall have a maximum SHGC value not greater than 0.23 in Climate Zone 15.",
+   "op": "<=",
+   "unit": "ratio",
+   "values": [
+    {
+     "cz": [
+      15
+     ],
+     "limit": 0.23,
+     "evidence": "0.23"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(b)1Ji:ceiling-r49": {
+   "element": "vented-attic ceiling insulation, altered ceiling (minimum)",
+   "citation": "2025 CEnC 150.2(b)1Ji",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "i.In Climate Zones 1 through 4, 6, and 8 through 16 insulation shall be installed to achieve a weighted U-factor of 0.020 or insulation installed at the ceiling level shall result in an insulated thermal resistance of R-49 or greater for the insulation alone",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 49,
+     "evidence": "R-49"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "cz_evidence": [
+    "Climate Zones 1 through 4, 6, and 8 through 16"
+   ]
+  },
+  "T150.2-D:duct-r": {
+   "element": "insulation of new ducts in unconditioned space (minimum)",
+   "citation": "2025 CEnC Table 150.2-D",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "TABLE 150.2-D—DUCT INSULATION R-VALUE Climate Zone3, 5 through 71, 2, 4, 8 through 16Duct R-ValueR-6R-8",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "limit": 6,
+     "evidence": "R-6"
+    },
+    {
+     "cz": [
+      1,
+      2,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 8,
+     "evidence": "R-8"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "cz_evidence": [
+    "3, 5 through 7",
+    "1, 2, 4, 8 through 16"
+   ]
+  },
+  "150.0(q):u-040": {
+   "element": "fenestration weighted average U-factor, mandatory (maximum)",
+   "citation": "2025 CEnC 150.0(q)",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "- (q) Fenestration products. Fenestration, including skylight products,  separating conditioned space from unconditioned space or outdoors shall have a maximum weighted average U-factor of 0.40.",
+   "op": "<=",
+   "unit": "u-factor",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 0.4,
+     "evidence": "0.40"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.0(d):floor-r19": {
+   "element": "raised-floor insulation, wood framed, mandatory (minimum)",
+   "citation": "2025 CEnC 150.0(d)",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "- (d) Raised-floor insulation. Raised floors separating conditioned space from unconditioned space or ambient air shall have an overall assembly U-factor not exceeding U-0.037. In a wood framed assembly, compliance with the U-factor may be demonstrated by installing insulation with an R-value of 19 or greater.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 19,
+     "evidence": "R-value of 19"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.0(c)6:wall-2x4": {
+   "element": "wall cavity insulation, 2x4 wood framing, mandatory (minimum)",
+   "citation": "2025 CEnC 150.0(c)6",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "6. In wood framed assemblies, compliance with U-factors may be demonstrated by installing wall insulation with an R-value of R-15 in 2x4 assemblies, and R-21 in 2x6 assemblies with 16 inches on center spacing.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 15,
+     "evidence": "R-15 in 2x4 assemblies"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.0(c)6:wall-2x6": {
+   "element": "wall cavity insulation, 2x6 wood framing, mandatory (minimum)",
+   "citation": "2025 CEnC 150.0(c)6",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "6. In wood framed assemblies, compliance with U-factors may be demonstrated by installing wall insulation with an R-value of R-15 in 2x4 assemblies, and R-21 in 2x6 assemblies with 16 inches on center spacing.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 21,
+     "evidence": "R-21 in 2x6 assemblies"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.0(a)2-x:ceiling-alt-r19": {
+   "element": "ceiling or rafter-roof insulation in an alteration, mandatory (minimum)",
+   "citation": "2025 CEnC 150.0(a)2 Exception",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "Exception to Section 150.0(a)2: Ceilings and rafter roofs in an alteration shall be insulated to achieve an area-weighted average U-factor not exceeding 0.054 or shall be insulated between wood-framing members with insulation resulting in an installed thermal resistance of R-19 or greater.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 19,
+     "evidence": "R-19"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  },
+  "150.2(b)1N:door-u": {
+   "element": "opaque door U-factor where an alteration adds exterior door area (maximum)",
+   "citation": "2025 CEnC 150.2(b)1N and Table 150.1-A, Door - Maximum U-Factor",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Door - Maximum U-Factor | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 |",
+   "table_row": "Door - Maximum U-Factor",
+   "op": "<=",
+   "unit": "u-factor",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 0.2,
+     "evidence": "0.20"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "also_quote": "N.Exterior doors. Alterations that add exterior door area shall meet the U-factor requirement of Section 150.1(c)5.",
+   "also_file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md"
+  },
+  "150.2(a)1Aii:west-700": {
+   "element": "west-facing fenestration area, addition over 700 sq ft (maximum)",
+   "citation": "2025 CEnC 150.2(a)1Aii and Table 150.1-A, Fenestration - Maximum West Facing Area",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "ii. The maximum allowed fenestration area shall be the greater of 175 square feet or 20 percent of the addition floor area, and the maximum allowed west-facing fenestration area shall be the greater of 70 square feet or the requirements of Section 150.1(c).",
+   "op": "<=",
+   "unit": "sf",
+   "values": [
+    {
+     "cz": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "limit": null,
+     "evidence": "70 square feet"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {},
+   "kind": "greater_of",
+   "floor_sf": 70,
+   "pct_from": "T150.1-A:fen-west-pct",
+   "nr_note": "Where Table 150.1-A shows NR for west-facing area, 150.1(c) sets no percentage; the kit prints no limit."
+  },
+  "150.0(a)2:ceiling-r22": {
+   "element": "ceiling or rafter-roof insulation, mandatory (minimum)",
+   "citation": "2025 CEnC 150.0(a)2",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "2. Ceilings and rafter roofs shall be insulated to achieve an area-weighted average U-factor not exceeding U-0.043 or shall be insulated between wood-framing members with insulation resulting in an installed thermal resistance of R-22 or greater for the insulation alone.",
+   "op": ">=",
+   "unit": "R-value",
+   "values": [
+    {
+     "cz": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "limit": 22,
+     "evidence": "R-22"
+    }
+   ],
+   "no_requirement_cz": [],
+   "unread_cz": {}
+  }
+ },
+ "table_requirements": {
+  "T150.1-A:refrig-hp": {
+   "citation": "2025 CEnC Table 150.1-A, Refrigerant Charge Verification Heat Pumps",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Refrigerant Charge Verification Heat Pumps | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ |",
+   "table_row": "Refrigerant Charge Verification Heat Pumps",
+   "req_cz": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  "T150.1-A:refrig-ac": {
+   "citation": "2025 CEnC Table 150.1-A, Refrigerant Charge Verification Air Conditioners",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Refrigerant Charge Verification Air Conditioners | NR | REQ | NR | NR | NR | NR | NR | REQ | REQ | REQ | REQ | REQ | REQ | REQ | REQ | NR |",
+   "table_row": "Refrigerant Charge Verification Air Conditioners",
+   "req_cz": [
+    2,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  "T150.1-A:qii": {
+   "citation": "2025 CEnC Table 150.1-A, Quality Insulation Installation",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "| Quality Insulation Installation | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |",
+   "table_row": "Quality Insulation Installation",
+   "req_cz": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ]
+  }
+ },
+ "thresholds": {
+  "addition-small": {
+   "value": 700,
+   "unit": "sf",
+   "citation": "2025 CEnC 150.2(a)1B",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "B. Additions that are 700 square feet or less shall meet the requirements of Section 150.1(c), with the following modifications:",
+   "evidence": "700 square feet"
+  },
+  "addition-tiny": {
+   "value": 400,
+   "unit": "sf",
+   "citation": "2025 CEnC 150.2(a)1Biv(b)",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "b. For additions that are 400 square feet or less",
+   "evidence": "400 square feet"
+  },
+  "addition-roofing": {
+   "value": 300,
+   "unit": "sf",
+   "citation": "2025 CEnC 150.2(a) Exception 1",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 1 to Section 150.2(a):  Additions of 300 square feet or less are not required to comply with the roofing requirements of Section 150.1(c)11.",
+   "evidence": "300 square feet"
+  },
+  "addition-ventilation": {
+   "value": 1000,
+   "unit": "sf",
+   "citation": "2025 CEnC 150.2(a)1Ci(a)1",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "1. Additions to an existing dwelling unit that increase the conditioned floor area of the existing dwelling unit by less than or equal to 1000 square feet.",
+   "evidence": "1000 square feet"
+  },
+  "alteration-added-fen": {
+   "value": 16,
+   "unit": "sf",
+   "citation": "2025 CEnC 150.2(b)1A Exception 2",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 2 to Section 150.2(b)1A:  Alterations that add up to 16 square feet of new fenestration or skylight area shall not be required to meet the total fenestration area and west-facing fenestration area requirements of Sections 150.1(c)3B and C.",
+   "evidence": "16 square feet"
+  },
+  "alteration-replaced-fen": {
+   "value": 75,
+   "unit": "sf",
+   "citation": "2025 CEnC 150.2(b)1B Exception 1",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 1 to Section 150.2(b)1B:  Replacement of vertical fenestration no greater than 75 square feet with a U-factor no greater than 0.40 in Climate Zones 1–16",
+   "evidence": "75 square feet"
+  },
+  "alteration-new-duct-ft": {
+   "value": 25,
+   "unit": "ft",
+   "citation": "2025 CEnC 150.2(b)1D",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "D. Altered duct systems—duct sealing. In all climate zones, when more than 25 feet of new or replacement space-conditioning system ducts are installed",
+   "evidence": "more than 25 feet"
+  },
+  "addition-wh-point-of-use": {
+   "value": 500,
+   "unit": "sf",
+   "citation": "2025 CEnC 150.2(a)1Diii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "iii. For additions that are 500 square feet or less, an electric water heater with point of use distribution as specified in RA4.4.5",
+   "evidence": "500 square feet"
+  }
+ },
+ "requirements": {
+  "150.2(a):scope": {
+   "title": "Additions: mandatory measures and a compliance path",
+   "citation": "2025 CEnC 150.2(a)",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "- (a)Additions. Additions to existing single-family residential buildings shall meet the requirements of Sections 110.0 through 110.9; Sections 150.0(a) through (n), (p) and (q); and either Section 150.2(a)1 or 2.",
+   "plain": "An addition meets Sections 110.0 to 110.9, the listed 150.0 mandatory measures, and either the prescriptive or the performance approach.",
+   "ecc": false
+  },
+  "150.2(a)-x6:pv": {
+   "title": "Additions: no PV system required",
+   "citation": "2025 CEnC 150.2(a) Exception 6",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 6 to Section 150.2(a):  Photovoltaic systems, as specified in Section 150.1(c)14, are not required for additions.",
+   "plain": "A photovoltaic system is not required for an addition.",
+   "ecc": false
+  },
+  "150.2(a)-x3:hvac-extended": {
+   "title": "Additions: heating or cooling extended from the existing system",
+   "citation": "2025 CEnC 150.2(a) Exception 3",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 3 to Section 150.2(a): Space-conditioning system.  When heating or cooling will be extended to an addition from the existing system(s), the existing heating and cooling equipment need not comply with Part 6. The heating system capacity must be adequate to meet the minimum requirements of CRC 303.10.",
+   "plain": "Existing heating and cooling equipment extended to the addition need not comply with Part 6; capacity must meet CRC 303.10.",
+   "ecc": false
+  },
+  "150.2(a)-x4:ducts-extended": {
+   "title": "Additions: ducts extended from the existing duct system",
+   "citation": "2025 CEnC 150.2(a) Exception 4",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "Exception 4 to Section 150.2(a): Space-conditioning system ducts. When any length of duct is extended from an existing duct system to serve the addition, the existing duct system and the extended duct shall meet the applicable requirements specified in Section 150.2(b)1Di and 150.2(b)1Dii.",
+   "plain": "Extended and existing ducts meet 150.2(b)1Di (insulation) and 150.2(b)1Dii (sealing, field verified).",
+   "ecc": true
+  },
+  "150.2(a)1Bv:no-qii": {
+   "title": "Additions 700 sq ft or less: QII not required",
+   "citation": "2025 CEnC 150.2(a)1Bv",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "v. Quality Insulation Installation (QII) requirements of Section 150.1(c)1E do not apply.",
+   "plain": "Quality Insulation Installation (QII) does not apply to an addition of 700 sq ft or less.",
+   "ecc": false
+  },
+  "150.2(a)1Bii:radiant-barrier": {
+   "title": "Additions 700 sq ft or less: radiant barrier",
+   "citation": "2025 CEnC 150.2(a)1Bii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "ii. Radiant barriers shall be installed in Climate Zones 2-15.",
+   "plain": "A radiant barrier is installed (Climate Zones 2 to 15).",
+   "ecc": false,
+   "zones": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "zones_evidence": "Climate Zones 2-15"
+  },
+  "150.2(a)1A:qii": {
+   "title": "Additions over 700 sq ft: QII",
+   "citation": "2025 CEnC 150.2(a)1A; 150.1(c)1E",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "E. All buildings shall comply with the quality insulation installation (QII) requirements shown in Table 150.1-A. When QII is required, insulation installation shall meet the criteria specified in Reference Appendix RA3.5.",
+   "plain": "Quality Insulation Installation applies (Table 150.1-A: Yes in every climate zone) and is field verified.",
+   "ecc": true
+  },
+  "150.2(a)1Ci:ventilation": {
+   "title": "Additions: whole-dwelling ventilation airflow",
+   "citation": "2025 CEnC 150.2(a)1Ci",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "a. Dwelling units that meet the conditions in Subsection 1 or 2 below shall not be required to comply with the whole-dwelling unit ventilation airflow specified in Section 150.0(o)1C, 150.0(o)1E or 150.0(o)1F.1. Additions to an existing dwelling unit that increase the conditioned floor area of the existing dwelling unit by less than or equal to 1000 square feet.",
+   "plain": "An addition of 1,000 sq ft or less of conditioned floor area does not trigger the whole-dwelling ventilation airflow of 150.0(o)1C, E or F.",
+   "ecc": false
+  },
+  "150.2(a)1Cii:local-exhaust": {
+   "title": "Additions: local mechanical exhaust",
+   "citation": "2025 CEnC 150.2(a)1Cii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "ii. Local mechanical exhaust. Additions to existing buildings shall comply with all applicable requirements specified in Sections 150.0(o)1G and 150.0(o)2.",
+   "plain": "Bathroom and kitchen local exhaust in the addition meets 150.0(o)1G and 150.0(o)2.",
+   "ecc": false
+  },
+  "150.2(a)1D:water-heater": {
+   "title": "Additions: an additional water heater",
+   "citation": "2025 CEnC 150.2(a)1D",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "D. Water heater. When an additional water heater is installed as part of the addition, one of the following types of water heaters shall be installed:i.A single heat pump water heater. The storage tank shall not be located outdoors and shall be placed on an incompressible, rigid insulated surface with a minimum thermal resistance of R-10. The water heater shall be installed with a communication interface that either meets the requirements of Section 110.12(a) or has an ANSI/CTA-2045-B communication port; or",
+   "plain": "A new water heater for the addition is a heat pump water heater (or another type 150.2(a)1D lists).",
+   "ecc": false
+  },
+  "150.2(a)1E:loads": {
+   "title": "Additions: load calculations and system capacity",
+   "citation": "2025 CEnC 150.2(a)1E",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "E.Space-conditioning load calculations and system capacity.i.Minimum capacity limits and supplemental heating requirements are as described in Section 150.0(h).",
+   "plain": "Space-conditioning equipment for the addition is sized from a load calculation (150.0(h)).",
+   "ecc": false
+  },
+  "150.1(c)7A:refrigerant": {
+   "title": "New heat pump or air conditioner: refrigerant charge and airflow verification",
+   "citation": "2025 CEnC 150.1(c)7A; Table 150.1-A, Refrigerant Charge Verification",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "A. Refrigerant charge. When refrigerant charge verification is shown as  required by Table 150.1-A, the system shall comply with either Section 150.1(c)7Ai or 150.1(c)7Aii:i. Air-cooled air conditioners and air-source heat pumps, including but not limited to ducted split systems, ducted packaged systems, small duct high velocity systems, and mini-split systems",
+   "plain": "Where Table 150.1-A requires it (heat pumps: every climate zone), refrigerant charge and system airflow are field verified.",
+   "ecc": true
+  },
+  "150.2(b)1:scope": {
+   "title": "Alterations: altered components meet the mandatory measures",
+   "citation": "2025 CEnC 150.2(b)1",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "1. Prescriptive approach. The altered component and any newly installed equipment serving the alteration shall meet the applicable requirements of Sections 110.0 through 110.9, all applicable requirements of Sections 150.0(a) through (l), 150.0(m)1 through 150.0 (m)10, and 150.0(p) through (q); and",
+   "plain": "The altered component and new equipment serving it meet Sections 110.0 to 110.9 and the listed 150.0 mandatory measures.",
+   "ecc": false
+  },
+  "150.2(b)1C:complete-replacement": {
+   "title": "Alterations: entirely new or complete replacement space-conditioning system",
+   "citation": "2025 CEnC 150.2(b)1C",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "C. Entirely new or complete replacement space-conditioning systems installed as part of an alteration, shall include all the system heating or cooling equipment, including but not limited to: condensing unit, cooling or heating coil, and air handler for split systems; or complete replacement of a packaged unit; plus entirely new or replacement duct system [Section 150.2(b)1Diia]. Entirely new or complete replacement space-conditioning systems shall meet the requirements of Sections 150.0(h), 150.0(i), 150.0(j)1, 150.0(j)2, 150.0(m)1 through 150.0(m)10, 150.0(m)12, 150.0(m)13, 150.1(c)7, 150.2(b)1Fii,  150.2(b)1G and Table 150.2-A.",
+   "plain": "A complete new or replacement system meets 150.0(h), (i), (j), (m) and 150.2(b)1F and G.",
+   "ecc": false
+  },
+  "150.2(b)1D:duct-sealing": {
+   "title": "Alterations: more than 25 ft of new or replacement ducts",
+   "citation": "2025 CEnC 150.2(b)1D",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "D. Altered duct systems—duct sealing. In all climate zones, when more than 25 feet of new or replacement space-conditioning system ducts are installed, the ducts shall comply with the applicable requirements of Subsections i and ii below.",
+   "plain": "Ducts are insulated per Table 150.2-D and the altered duct system is sealed and field verified.",
+   "ecc": true
+  },
+  "150.2(b)1E:duct-sealing": {
+   "title": "Alterations: altered space-conditioning equipment, duct sealing",
+   "citation": "2025 CEnC 150.2(b)1E",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "E. Altered space-conditioning system—duct sealing. In all climate zones, when a space-conditioning system serving a single-family dwelling is altered by the installation or replacement of space-conditioning system equipment, including replacement of the air handler, outdoor condensing unit of a split system air conditioner or heat pump, or cooling or heating coil, the duct system that is connected to the altered space-conditioning system equipment shall be sealed, as confirmed through field verification and diagnostic testing in accordance with the applicable procedures for duct sealing of altered existing duct systems as specified in Reference Residential Appendix RA3.1,",
+   "plain": "Installing or replacing an air handler, condensing unit or coil triggers duct sealing with field verification (exceptions apply).",
+   "ecc": true
+  },
+  "150.2(b)1F:refrigerant": {
+   "title": "Alterations: altered refrigerant-containing components",
+   "citation": "2025 CEnC 150.2(b)1F",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "F. Altered space-conditioning system—mechanical cooling. When a space-conditioning system is an air conditioner or heat pump that is altered by the installation or replacement of refrigerant-containing system components such as the compressor, condensing coil, evaporator coil, refrigerant metering device or refrigerant piping, the altered system shall comply with the following requirements:i. All thermostats associated with the system shall be replaced with setback thermostats meeting the requirements of Section 110.2(c).",
+   "plain": "Thermostats are replaced with setback thermostats; refrigerant charge and airflow are field verified where 150.2(b)1Fii applies.",
+   "ecc": true
+  },
+  "150.2(b)1Fii:verify": {
+   "title": "Alterations: which altered systems get charge and airflow verification",
+   "citation": "2025 CEnC 150.2(b)1Fii",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "ii.Air-cooled air conditioners in Climate Zones 2 and 8 through 15 and air-source heat pumps in all climate zones, including but not limited to ducted split systems, ducted package systems, small duct high-velocity air systems, and minisplit systems shall comply with Subsections a and b,",
+   "plain": "Air conditioners in Climate Zones 2 and 8 to 15, and heat pumps in every climate zone, get refrigerant charge and airflow verification.",
+   "ecc": true
+  },
+  "150.2(b)1G:no-resistance": {
+   "title": "Alterations: altered space-heating system",
+   "citation": "2025 CEnC 150.2(b)1G",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "G.  Altered space-heating system. Altered or replacement space-heating systems shall not use electric resistance as the primary heat source.",
+   "plain": "An altered or replacement space-heating system does not use electric resistance as the primary heat source (exceptions apply).",
+   "ecc": false
+  },
+  "150.2(b)1H:water-heater": {
+   "title": "Alterations: altered or replacement water heating",
+   "citation": "2025 CEnC 150.2(b)1H",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "iii.Water heating system. The water heating system shall meet one of the following:a. A natural gas or propane water-heating system; orb.  A single heat pump water heater. The storage tank shall not be located outdoors and be placed on an incompressible, rigid insulated surface with a minimum thermal resistance of R-10. The water heater shall be installed with a communication interface that either meets the requirements of Section 110.12(a) or has an ANSI/CTA-2045-B communication port; orc. A single heat pump water heater that meets the requirements of NEEA Advanced Water Heater Specification Tier 3 or higher; ord. If the existing water heater is an electric resistance water heater, a consumer electric water heater; or",
+   "plain": "A replacement water heater is gas or propane, a heat pump water heater, or a consumer electric water heater where the existing one is electric resistance.",
+   "ecc": false
+  },
+  "150.2(b)1K:lighting": {
+   "title": "Alterations: altered lighting",
+   "citation": "2025 CEnC 150.2(b)1K",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "K.Lighting. The altered lighting system shall meet the lighting requirements of Section 150.0(k). The altered luminaires shall meet the luminaire efficacy requirements of Section 150.0(k).",
+   "plain": "Altered lighting meets Section 150.0(k).",
+   "ecc": false
+  },
+  "150.2(b)2:performance": {
+   "title": "Alterations: performance approach",
+   "citation": "2025 CEnC 150.2(b)2",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "2.Performance approach. The energy budget for alterations is expressed in terms of long-term system cost (LSC), and the altered component(s) and any newly installed equipment serving the alteration shall meet the applicable requirements of Subsections A, B, and C below.",
+   "plain": "Performance compliance compares long-term system cost with Commission-certified software (CBECC-Res).",
+   "ecc": false
+  },
+  "150.2(a)2:performance": {
+   "title": "Additions: performance approach",
+   "citation": "2025 CEnC 150.2(a)2",
+   "file": "part-06-energy/subchapter-9-single-family-residential-buildings-additions-and-alterations-to-existing-residential-buildings.md",
+   "quote": "2. Performance approach. The energy budget for additions is expressed in terms of long-term system cost (LSC). Performance calculations shall meet the requirements of Section 150.1(a) through (c), pursuant to the applicable requirements in Items A, B and C below.",
+   "plain": "Performance compliance compares long-term system cost with Commission-certified software (CBECC-Res).",
+   "ecc": false
+  },
+  "150.1(b):software": {
+   "title": "Performance approach: certified software",
+   "citation": "2025 CEnC 150.1(b)",
+   "file": "part-06-energy/subchapter-8-single-family-residential-buildings-performance-and-prescriptive-compliance-approaches.md",
+   "quote": "- (b) Performance approach. A building complies with the performance approach if the energy consumption calculated for the proposed design building is no greater than the energy budget calculated for the standard design building using Commission-certified compliance software as specified by Sections 10-109(c) and 10-116.",
+   "plain": "Performance compliance uses Commission-certified compliance software.",
+   "ecc": false
+  },
+  "150.0(k)1A:ja8": {
+   "title": "Lighting: luminaire efficacy (JA8)",
+   "citation": "2025 CEnC 150.0(k)1A",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "A.Luminaire efficacy. All installed luminaires and light sources shall comply with Reference Joint Appendix JA8 and shall be certified and marked as required by JA8.",
+   "plain": "Every installed luminaire and light source is JA8 compliant, certified and marked.",
+   "ecc": false
+  },
+  "150.0(k)1C:recessed": {
+   "title": "Lighting: recessed downlights",
+   "citation": "2025 CEnC 150.0(k)1C",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "C. Recessed downlight luminaires in ceilings. Luminaires recessed into ceilings shall meet all of the following requirements:i. Shall not contain screw base lamp sockets; and ii. Have a label that certifies the luminaire is airtight with air leakage less than 2.0 cfm at 75 Pascals when tested in accordance with ASTM E283.",
+   "plain": "Recessed ceiling luminaires have no screw-base sockets and are labeled airtight.",
+   "ecc": false
+  },
+  "150.0(k)1E:blank-boxes": {
+   "title": "Lighting: blank electrical boxes",
+   "citation": "2025 CEnC 150.0(k)1E",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "E. Blank electrical boxes. The number of electrical boxes that are more than 5 feet above the finished floor and do not contain a luminaire or other device shall be no greater than the number of bedrooms.",
+   "plain": "Blank boxes more than 5 ft above the floor do not outnumber the bedrooms.",
+   "ecc": false
+  },
+  "150.0(k)2A:on-off": {
+   "title": "Lighting: wall-mounted ON/OFF controls",
+   "citation": "2025 CEnC 150.0(k)2A",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "A. Lighting shall have readily accessible wall-mounted controls that allow the lighting to be manually turned ON and OFF.",
+   "plain": "Lighting has readily accessible wall-mounted ON/OFF controls.",
+   "ecc": false
+  },
+  "150.0(k)2E:auto-off": {
+   "title": "Lighting: automatic-off controls",
+   "citation": "2025 CEnC 150.0(k)2E",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "i.In bathrooms, garages, laundry rooms, utility rooms and walk-in closets, at least one installed luminaire shall be controlled by an occupancy or vacancy sensor providing automatic-off functionality.",
+   "plain": "In bathrooms, garages, laundry, utility rooms and walk-in closets one luminaire is on an occupancy or vacancy sensor.",
+   "ecc": false
+  },
+  "150.0(k)2F:dimming": {
+   "title": "Lighting: dimming controls in habitable spaces",
+   "citation": "2025 CEnC 150.0(k)2F",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "F.Dimming controls. Lighting in habitable spaces, including living rooms, dining rooms, kitchens, and bedrooms, shall have readily accessible wall-mounted dimming controls that allow the lighting to be manually adjusted up and down.",
+   "plain": "Lighting in habitable spaces, including kitchens and bedrooms, has wall-mounted dimmers.",
+   "ecc": false
+  },
+  "150.0(k)2G:independent": {
+   "title": "Lighting: independent controls",
+   "citation": "2025 CEnC 150.0(k)2G",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "G. Independent controls. Lighting integrated with the exhaust fans shall be controlled independently from the fans. The following shall be controlled separately from ceiling-installed lighting such that one can be turned on without turning on the other:i. Undercabinet lighting.ii. Undershelf lighting.iii.Interior lighting of display cabinets.iv. Switched outlets.",
+   "plain": "Undercabinet, undershelf and display-cabinet lighting and switched outlets are controlled separately from ceiling lighting.",
+   "ecc": false
+  },
+  "150.0(k)3A:outdoor": {
+   "title": "Lighting: outdoor lighting on the building",
+   "citation": "2025 CEnC 150.0(k)3A",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "A.Outdoor lighting permanently mounted to a residential building or to other buildings on the same lot shall meet the following requirements:i. Controlled by a manual ON and OFF control switch that permits the automatic actions of Item ii below; andii. Controlled by one of the following controls:a. A photocell and a motion sensor; orb.A photocell and an automatic time switch control; orc. Controlled by an astronomical time clock control.",
+   "plain": "Outdoor lighting mounted to the building has a manual switch plus photocell/motion, photocell/time switch, or astronomical clock control.",
+   "ecc": false
+  },
+  "150.0(q):fenestration": {
+   "title": "Fenestration: mandatory maximum U-factor",
+   "citation": "2025 CEnC 150.0(q)",
+   "file": "part-06-energy/subchapter-7-single-family-residential-buildings-mandatory-features-and-devices.md",
+   "quote": "- (q) Fenestration products. Fenestration, including skylight products,  separating conditioned space from unconditioned space or outdoors shall have a maximum weighted average U-factor of 0.40.Exception 1 to Section 150.0(q): Up to 10 square feet of fenestration area or 0.5 percent of the conditioned floor area, whichever is greater, is not required to comply with the maximum U-factor requirement.Exception 2 to  Section 150.0(q): For dual-glazed greenhouse or garden windows, up to 30 square feet of fenestration area is not required to comply with the maximum U-factor requirement.Exception 3 to Section 150.0(q): Fenestration installed in buildings meeting Part 7 of the California Building Code, California Wildland-Urban Interface Code, where the building is located in Fire Hazard Severity Zones or Wildland-Urban Interface (WUI) Fire Areas as designated by the local enforcement agency.",
+   "plain": "Fenestration has a weighted average U-factor of 0.40 or less (exceptions for small areas, garden windows and WUI areas).",
+   "ecc": false
+  },
+  "10-103(a)1B:registration": {
+   "title": "Registration when field verification is required",
+   "citation": "2025 Title 24 Part 1 §10-103(a)1B",
+   "file": "part-01-admin/chapter-10-administrative-regulations-for-the-california-energy-commission-cec.md",
+   "quote": "B. For all low-rise residential buildings for which compliance requires field verification, the person(s) responsible for the Certificate(s) of Compliance shall submit the Certificate(s) and their associated Compliance Registration Packages for registration and retention to an ECC-Provider data registry in compliance with Section 10-103.3.",
+   "plain": "When compliance requires field verification, the Certificate of Compliance is registered with an ECC-Provider data registry.",
+   "ecc": false
+  },
+  "10-103(a)1C:discretion": {
+   "title": "Small alterations without field verification",
+   "citation": "2025 Title 24 Part 1 §10-103(a)1C",
+   "file": "part-01-admin/chapter-10-administrative-regulations-for-the-california-energy-commission-cec.md",
+   "quote": "C. For alterations to existing residential buildings for which field verification is not required, including but not limited to water heater and window replacements, and for additions to existing residential buildings that are less than 300 square feet for which field verification is not required, the enforcement agencies may at their discretion not require any Certificate of Compliance documentation, or may develop simplified Certificate of Compliance documentation for demonstrating compliance with the Standards.",
+   "plain": "For window or water-heater replacements and additions under 300 sq ft with no field verification, the city may waive or simplify the CF1R.",
+   "ecc": false
+  },
+  "10-103:signatures": {
+   "title": "Who signs the Certificate of Compliance",
+   "citation": "2025 Title 24 Part 1 §10-103(a)",
+   "file": "part-01-admin/chapter-10-administrative-regulations-for-the-california-energy-commission-cec.md",
+   "quote": "v. Be signed by the documentation author to certify the documentation is accurate and complete. When document registration is required by Section 10-103(a)1, the signature shall be an electronic signature on an electronic document in accordance with the electronic signature specifications in Reference Joint Appendix JA7.vi. Be signed by the responsible person eligible under Division 3 of the Business and Professions Code to accept responsibility for the design to certify conformance with Part 6.",
+   "plain": "The CF1R is signed by its documentation author and by the person responsible for the design.",
+   "ecc": false
+  },
+  "ecc-rater": {
+   "title": "ECC-Rater",
+   "citation": "2025 Title 24 Part 1 §10-102, ECC-RATER",
+   "file": "part-01-admin/chapter-10-administrative-regulations-for-the-california-energy-commission-cec.md",
+   "quote": "ECC-RATER is a person trained, tested, and certified by an ECC-Provider to perform field verification and diagnostic testing for the ECC program pursuant to the requirements of Section 10-103.",
+   "plain": "Field verification and diagnostic testing is done by a certified ECC-Rater (earlier cycles called this a HERS Rater).",
+   "ecc": false
+  }
+ },
+ "forms": [
+  {
+   "id": "CF1R-ALT-05-E",
+   "for": "replacement fenestration (also section H of CF1R-ALT-01-E); water-heater replacement uses section K",
+   "source": "skills/california/submittal-requirements/building/requirements.json rows state_energy_alteration_fenestration and state_energy_alteration_water_heater",
+   "confidence": "CrossBeam state requirement rows; confirm on the Energy Commission's 2025 forms page"
+  },
+  {
+   "id": "CF1R-ALT-02-E",
+   "for": "space-conditioning system change-out (150.2(b)1C, E, F, G)",
+   "source": "skills/california/submittal-requirements/building/requirements.json row state_energy_alteration_hvac",
+   "confidence": "CrossBeam state requirement row; confirm on the Energy Commission's 2025 forms page"
+  },
+  {
+   "id": "CF1R-ALT-01-E",
+   "for": "other prescriptive alterations (general alteration certificate)",
+   "source": "skills/california/submittal-requirements/building/requirements.json row state_energy_alteration_fenestration (section H)",
+   "confidence": "named by a CrossBeam state requirement row; confirm the sections on the 2025 form"
+  },
+  {
+   "id": "CF1R-ADD",
+   "for": "prescriptive addition certificate (CrossBeam has no sourced 2025 form number)",
+   "source": "no CrossBeam state row names the 2025 addition form number",
+   "confidence": "unsourced form number: take it from the Energy Commission's 2025 forms page or the city's handout"
+  },
+  {
+   "id": "CF1R-PRF-01-E",
+   "for": "performance certificate printed by CBECC-Res (addition or alteration)",
+   "source": "city skills that cite CBECC-Res output (for example skills/cities/*/residential-addition)",
+   "confidence": "cited by city skills; the software prints the form"
+  }
+ ]
+}

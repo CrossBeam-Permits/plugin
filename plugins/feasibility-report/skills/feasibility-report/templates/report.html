@@ -1,0 +1,182 @@
+<!doctype html>
+<!--
+  Feasibility report, print layout (US Letter). Fill each {{...}}, repeat the blocks marked REPEAT,
+  delete blocks that do not apply, then print to PDF. The report carries the builder's name, not
+  CrossBeam's. Colors are variables: set --brand to the builder's color if they give one.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{Street address}} feasibility</title>
+<style>
+  :root {
+    --brand: #1f5f8b;
+    --ink: #1c2430;
+    --muted: #5d6673;
+    --rule: #d9dee5;
+    --shade: #eaf1f7;
+    --code-bg: #e3f3e8; --code-fg: #22693a;
+    --cb-bg: #e6eefb; --cb-fg: #2a4f8f;
+    --field-bg: #eeeaf7; --field-fg: #55418f;
+    --inf-bg: #fbf0d9; --inf-fg: #8a5a00;
+    --warn-bg: #fdecea; --warn-fg: #a3271b;
+  }
+  @page { size: letter; margin: 0.6in 0.6in 0.7in; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fff; color: var(--ink); font: 10.5pt/1.45 "Inter", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 7.3in; margin: 0 auto; padding: 16px; }
+  header.top { display: flex; justify-content: space-between; gap: 24px; border-bottom: 3px solid var(--brand); padding-bottom: 10px; }
+  .builder strong { display: block; color: var(--brand); font-size: 15pt; letter-spacing: .02em; }
+  .builder span, .meta { color: var(--muted); font-size: 8.5pt; }
+  .meta { text-align: right; max-width: 3.4in; }
+  .kicker { margin: 18px 0 2px; color: var(--brand); font-size: 8.5pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+  h1 { margin: 0; font-size: 22pt; line-height: 1.15; }
+  .sub { color: var(--muted); font-size: 8.5pt; margin-top: 2px; }
+  .verdict { margin: 14px 0; padding: 12px 16px; background: var(--shade); border-left: 5px solid var(--brand); font-size: 12.5pt; font-weight: 700; }
+  .check { margin: 12px 0; padding: 10px 12px; background: var(--warn-bg); border: 1px solid #f3c2bd; border-radius: 6px; color: var(--warn-fg); font-size: 9pt; }
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0; }
+  .tile { border: 1px solid var(--rule); border-radius: 6px; padding: 8px 10px; }
+  .tile b { display: block; color: var(--brand); font-size: 14pt; }
+  .tile span { color: var(--muted); font-size: 8pt; }
+  h2 { color: var(--brand); font-size: 13pt; margin: 20px 0 6px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+  th { background: #f3f5f8; }
+  td.k { width: 28%; font-weight: 600; }
+  .src { color: var(--muted); font-size: 8pt; }
+  .legend { font-size: 8pt; color: var(--muted); margin: 4px 0 8px; }
+  .card { border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; margin: 8px 0; break-inside: avoid; }
+  .card h3 { margin: 0 0 4px; font-size: 11pt; display: flex; gap: 8px; align-items: center; }
+  .card h3 .n { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--brand); color: #fff; font-size: 8.5pt; }
+  .card .answer { font-weight: 700; margin: 0 0 4px; }
+  .card ul { margin: 0; padding-left: 18px; }
+  .tag { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: 7pt; font-weight: 700; letter-spacing: .06em; vertical-align: 1px; }
+  .tag.code { background: var(--code-bg); color: var(--code-fg); }
+  .tag.crossbeam { background: var(--cb-bg); color: var(--cb-fg); }
+  .tag.field { background: var(--field-bg); color: var(--field-fg); }
+  .tag.inferred { background: var(--inf-bg); color: var(--inf-fg); }
+  .photos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 8px; }
+  .photos figure { margin: 0; font-size: 7.5pt; color: var(--muted); }
+  .photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+  .aerial img { width: 100%; max-height: 3in; object-fit: cover; border-radius: 6px; }
+  ol li, ul li { margin: 2px 0; }
+  .status { display: inline-block; padding: 0 6px; border-radius: 3px; font-size: 7.5pt; font-weight: 700; }
+  .status.fits { background: var(--code-bg); color: var(--code-fg); }
+  .status.nofit { background: var(--warn-bg); color: var(--warn-fg); }
+  .status.confirm { background: var(--inf-bg); color: var(--inf-fg); }
+  h3.dept { font-size: 10pt; margin: 10px 0 2px; }
+  .disclaimer { border-top: 2px solid var(--brand); margin-top: 22px; padding-top: 8px; font-weight: 700; font-size: 8.5pt; }
+  .sources { color: var(--muted); font-size: 8pt; }
+  @media (max-width: 640px) {
+    header.top { flex-direction: column; }
+    .meta { text-align: left; }
+    .tiles, .photos { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <div class="builder"><strong>{{BUILDER NAME}}</strong><span>{{license line}} · {{website}}</span></div>
+    <div class="meta">Prepared {{date}} · Site visit {{date}} ({{who}})<br>Research: CrossBeam + {{other sources}} · {{City not yet consulted}}</div>
+  </header>
+
+  <div class="kicker">{{City}} · {{Project type}} feasibility</div>
+  <h1>{{Street address, City, State ZIP}}</h1>
+  <div class="sub">{{Client, if shown}} · APN {{apn}} · Program: {{program}}</div>
+
+  <div class="verdict">{{Verdict word}}: {{one sentence with the deciding numbers}}.</div>
+
+  <p><b>Summary.</b> {{what fits and the governing limits, with sections}}</p>
+  <p><b>Recommended path:</b> {{how to file and why}}</p>
+  <p><b>Biggest constraints:</b> {{two or three items}}</p>
+
+  <!-- Only when the address needed checking -->
+  <div class="check"><b>Address check (assumption):</b> {{what differed, what this report used, whether the conclusions hold either way}}</div>
+
+  <div class="tiles">
+    <!-- REPEAT 3 or 4 times -->
+    <div class="tile"><b>{{value}}</b><span>{{what it is; source}}</span></div>
+  </div>
+
+  <h2>Does it fit</h2>
+  <table>
+    <tr><th>Limit</th><th>Proposed</th><th>Margin</th><th>Status</th><th>Source</th></tr>
+    <!-- REPEAT per governing limit; status is fits, nofit or confirm -->
+    <tr><td>{{rule and value}}</td><td>{{program value}}</td><td>{{margin}}</td><td><span class="status fits">{{Fits}}</span></td><td class="src">{{source}}</td></tr>
+  </table>
+
+  <h2>Site facts</h2>
+  <table>
+    <!-- REPEAT per row -->
+    <tr><td class="k">{{Row}}</td><td>{{facts}} <span class="src">({{source}})</span></td></tr>
+  </table>
+  <!-- Only when site facts returned an aerial image -->
+  <figure class="aerial"><img src="{{aerial image}}" alt="Aerial view of the lot"><figcaption class="src">{{source, date}}</figcaption></figure>
+
+  <h2>Risks, highest first</h2>
+  <ol>
+    <!-- REPEAT -->
+    <li><b>{{Risk}}:</b> {{what could happen}}; {{how much it moves cost or schedule}}. Settled by {{step}}.</li>
+  </ol>
+
+  <h2>The project questions</h2>
+  <div class="legend">
+    <span class="tag code">CODE</span> law text we read
+    <span class="tag crossbeam">CROSSBEAM</span> CrossBeam data
+    <span class="tag field">FIELD</span> site visit or owner
+    <span class="tag inferred">INFERRED</span> our reading; confirm with the City
+  </div>
+  <!-- REPEAT per question -->
+  <section class="card">
+    <h3><span class="n">{{n}}</span>{{Question}} {{(field note: ...)}}</h3>
+    <p class="answer">{{One-sentence answer.}}</p>
+    <ul>
+      <li><span class="tag code">CODE</span> {{rule}} ({{citation}}).</li>
+      <li><span class="tag inferred">INFERRED</span> {{reading}}</li>
+    </ul>
+  </section>
+
+  <h2>Field conditions (inspection {{date}})</h2>
+  <table>
+    <tr><th>Item</th><th>Observed</th><th>What it means</th></tr>
+    <!-- REPEAT per item -->
+    <tr><td>{{item}}</td><td>{{observed}}</td><td>{{meaning}}</td></tr>
+  </table>
+  <div class="photos">
+    <!-- REPEAT per photo -->
+    <figure><img src="{{photo}}" alt="{{caption}}"><figcaption>{{caption}}</figcaption></figure>
+  </div>
+
+  <!-- Only when something does not fit or needs a discretionary approval -->
+  <h2>What would fit</h2>
+  <p>{{The nearest by-right version.}} <span class="tag inferred">INFERRED</span></p>
+
+  <h2>Recommended path</h2>
+  <ol>
+    <!-- REPEAT -->
+    <li><b>{{Step.}}</b> {{detail}}</li>
+  </ol>
+  <p class="src">Review: {{departments}}; {{hearing or none}}; {{decision clock, only if read in the law}}.</p>
+
+  <h2>Ask the City first</h2>
+  <!-- REPEAT per department -->
+  <h3 class="dept">{{Department}}</h3>
+  <div class="src">{{contact, only if given or published}}</div>
+  <ul>
+    <li>{{question}}</li>
+  </ul>
+
+  <h2>Intake checklist</h2>
+  <table>
+    <tr><th>Item</th><th>Status / note</th></tr>
+    <!-- REPEAT -->
+    <tr><td>{{item}}</td><td>{{note}}</td></tr>
+  </table>
+
+  <p class="disclaimer">Preliminary feasibility only. Scope of work and final design are not guaranteed and remain pending City review and full plan submittal. {{builder's exclusions}}</p>
+  <p class="sources">Sources: {{every source with its date}}. {{What CrossBeam did not have.}}<br>{{Builder name}} · {{license line}} · {{website}}</p>
+</main>
+</body>
+</html>

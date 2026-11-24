@@ -12375,6 +12375,60 @@
       ],
       "category": "permits",
       "displayName": "Yucca Valley"
+    },
+    {
+      "name": "permit-drawings",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/CrossBeam-Permits/plugin.git",
+        "path": "plugins/permit-drawings"
+      },
+      "description": "Draw your own building-permit plans with CrossBeam: turn sketches, tape measurements and photos into a true-scale permit drawing set, check it against your city's rules until it passes, package it the way the city wants, and answer plan-check corrections. For homeowners, owner-builders and builders.",
+      "version": "0.9.10",
+      "author": {
+        "name": "Onboard Dot AI LLC"
+      },
+      "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/plugins/permit-drawings",
+      "license": "Apache-2.0",
+      "keywords": [
+        "permits",
+        "permit-drawings",
+        "plan-set",
+        "floor-plan",
+        "adu",
+        "owner-builder",
+        "plan-check",
+        "crossbeam"
+      ],
+      "category": "permits",
+      "displayName": "CrossBeam Permit Drawings"
+    },
+    {
+      "name": "feasibility-report",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/CrossBeam-Permits/plugin.git",
+        "path": "plugins/feasibility-report"
+      },
+      "description": "Write a pre-design feasibility report for a lot and a proposed project with CrossBeam: parcel facts, the city's code, state law (including law that starts later), fees, and a verdict up top with every answer tagged by its source, the questions to take to the City, and an intake checklist. For builders, designers and owners.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Onboard Dot AI LLC"
+      },
+      "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/plugins/feasibility-report",
+      "license": "Apache-2.0",
+      "keywords": [
+        "permits",
+        "feasibility",
+        "feasibility-report",
+        "site-feasibility",
+        "adu",
+        "due-diligence",
+        "zoning",
+        "crossbeam"
+      ],
+      "category": "permits",
+      "displayName": "CrossBeam Feasibility Report"
     }
   ]
 }

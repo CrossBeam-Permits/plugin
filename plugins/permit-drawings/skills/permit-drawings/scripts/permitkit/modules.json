@@ -1,0 +1,39 @@
+{
+  "comment": "Optional kit modules. The core install leaves these files out; crossbeam_get_skill serves each module as its own download. `when` is shown to agents on the install card and by `permitkit modules`, so it says when to offer the module, not only what needs it. permitkit/optional.py and mcp-server/scripts/skill-bundles.mjs both read this file. Paths are relative to the skill folder.",
+  "modules": {
+    "energy": {
+      "title": "Title 24 energy and CALGreen",
+      "when": "every California set drawn from scratch (its Title 24 energy and CALGreen sheets): ask the owner at the start of the set (references/02-path.md section 7). Also the energy or green block in project.json, the energy and green commands, T sheets",
+      "reference": "references/energy-and-green.md",
+      "blocks": ["energy", "green"],
+      "files": [
+        "scripts/permitkit/energy.py",
+        "scripts/permitkit/greensheets.py",
+        "scripts/permitkit/data/t24-2025-sfr.json",
+        "scripts/permitkit/data/make_t24_2025_sfr.py",
+        "scripts/permitkit/data/calgreen-2025-residential.json",
+        "scripts/permitkit/data/make_calgreen_2025_residential.py",
+        "scripts/permitkit/data/cec-building-climate-zones-by-zip.csv"
+      ]
+    },
+    "structural": {
+      "title": "Structural table checks and preliminary calcs",
+      "when": "every set drawn from scratch (its structural sheet): ask the owner at the start of the set (references/02-path.md section 7). Also the structure block in project.json, the struct command, framing sizes on a sheet",
+      "reference": "references/structural.md",
+      "blocks": ["structure"],
+      "files": [
+        "scripts/permitkit/struct.py",
+        "scripts/permitkit/data/crc2025_structural.json"
+      ]
+    },
+    "3d": {
+      "title": "3D views",
+      "when": "the owner's choice: offer it at the start of the set (references/02-path.md section 7). Also the model3d block in project.json, a 3D view on a sheet",
+      "reference": "references/3d-views.md",
+      "blocks": ["model3d"],
+      "files": [
+        "scripts/permitkit/render3d.py"
+      ]
+    }
+  }
+}

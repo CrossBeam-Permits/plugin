@@ -1,0 +1,581 @@
+{
+ "schema": "permitkit/1",
+ "units": "in",
+ "axes": {
+  "x": "east",
+  "y": "north",
+  "z": "up",
+  "origin": "SW interior corner of the garage, at slab"
+ },
+ "project": {
+  "title": "DETACHED GARAGE TO ADU CONVERSION",
+  "address": "1234 EXAMPLE AVE, ANYTOWN, CA 90000",
+  "owner": "A. OWNER",
+  "preparer": {
+   "name": "A. OWNER",
+   "role": "OWNER-BUILDER"
+  },
+  "date": "2026-10-09",
+  "status_label": "DRAFT - NOT FOR PERMIT OR CONSTRUCTION"
+ },
+ "drawing": {
+  "sheet_size": "ARCH_D",
+  "dim_style": "ftin",
+  "set_name": "adu-conversion"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "kind": "sketch",
+   "path": "sources/sketch.jpg",
+   "orientation_note": "north up"
+  },
+  {
+   "id": "S2",
+   "kind": "tape",
+   "by": "owner",
+   "date": "2026-10-05"
+  },
+  {
+   "id": "S4",
+   "kind": "document",
+   "note": "assessor map"
+  },
+  {
+   "id": "S5",
+   "kind": "tape",
+   "by": "owner",
+   "note": "site tape from fence lines"
+  }
+ ],
+ "values": {
+  "ext_w": {
+   "v": 240,
+   "status": "MEASURED",
+   "source": "S2",
+   "between": [
+    "W wall stucco face",
+    "E wall stucco face"
+   ]
+  },
+  "ext_d": {
+   "v": 264,
+   "status": "MEASURED",
+   "source": "S2",
+   "between": [
+    "S wall stucco face",
+    "N wall stucco face"
+   ]
+  },
+  "t_ext": {
+   "v": 5,
+   "status": "MEASURED",
+   "source": "S2",
+   "note": "2x4 stud + 7/8 stucco + 1/2 gyp; taped at the side door jamb"
+  },
+  "t_int": {
+   "v": 4.5,
+   "status": "PROPOSED"
+  },
+  "int_w": {
+   "expr": "ext_w - 2 * t_ext",
+   "status": "DERIVED"
+  },
+  "int_d": {
+   "expr": "ext_d - 2 * t_ext",
+   "status": "DERIVED"
+  },
+  "plate": {
+   "v": 96,
+   "status": "MEASURED",
+   "source": "S2",
+   "between": [
+    "slab",
+    "underside of ceiling joists"
+   ],
+   "along": "plumb"
+  },
+  "roof_pitch": {
+   "v": 4,
+   "status": "MEASURED",
+   "source": "S2",
+   "unit": "in/ft",
+   "note": "rise per 12, digital level on rafter"
+  },
+  "overhang": {
+   "v": 12,
+   "status": "MEASURED",
+   "source": "S2"
+  },
+  "gd_off": {
+   "v": 19,
+   "status": "MEASURED",
+   "source": "S2",
+   "between": [
+    "W wall interior face",
+    "garage door W jamb"
+   ]
+  },
+  "gd_w": {
+   "v": 192,
+   "status": "MEASURED",
+   "source": "S2"
+  },
+  "gd_h": {
+   "v": 84,
+   "status": "MEASURED",
+   "source": "S2"
+  },
+  "gd_e": {
+   "expr": "int_w - gd_off - gd_w",
+   "status": "DERIVED"
+  },
+  "sd_off": {
+   "v": 30,
+   "status": "MEASURED",
+   "source": "S2",
+   "between": [
+    "S wall interior face",
+    "side door S jamb"
+   ]
+  },
+  "sd_w": {
+   "v": 32,
+   "status": "MEASURED",
+   "source": "S2"
+  },
+  "sd_n": {
+   "expr": "int_d - sd_off - sd_w",
+   "status": "DERIVED"
+  },
+  "ed_off": {
+   "v": 40,
+   "status": "PROPOSED"
+  },
+  "ed_w": {
+   "v": 36,
+   "status": "PROPOSED"
+  },
+  "ed_h": {
+   "v": 80,
+   "status": "PROPOSED"
+  },
+  "lw_off": {
+   "v": 130,
+   "status": "PROPOSED"
+  },
+  "lw_w": {
+   "v": 48,
+   "status": "PROPOSED"
+  },
+  "lw_h": {
+   "v": 48,
+   "status": "PROPOSED"
+  },
+  "lw_sill": {
+   "v": 36,
+   "status": "PROPOSED"
+  },
+  "inf_a": {
+   "expr": "ed_off - gd_off",
+   "status": "DERIVED"
+  },
+  "inf_b": {
+   "expr": "lw_off - ed_off - ed_w",
+   "status": "DERIVED"
+  },
+  "inf_c": {
+   "expr": "gd_off + gd_w - lw_off - lw_w",
+   "status": "DERIVED"
+  },
+  "s_e": {
+   "expr": "int_w - lw_off - lw_w",
+   "status": "DERIVED"
+  },
+  "bed_s": {
+   "v": 135.5,
+   "status": "PROPOSED",
+   "note": "S face of the bedroom/bath partition"
+  },
+  "bath_w": {
+   "v": 60,
+   "status": "PROPOSED"
+  },
+  "bath_d": {
+   "expr": "int_d - bed_s - t_int",
+   "status": "DERIVED"
+  },
+  "bed_w": {
+   "expr": "int_w - bath_w - t_int",
+   "status": "DERIVED"
+  },
+  "bed_d": {
+   "expr": "int_d - bed_s - t_int",
+   "status": "DERIVED"
+  },
+  "liv_d": {
+   "expr": "bed_s",
+   "status": "DERIVED"
+  },
+  "bed_area": {
+   "expr": "bed_w * bed_d / 144",
+   "status": "DERIVED",
+   "unit": "sf"
+  },
+  "bath_area": {
+   "expr": "bath_w * bath_d / 144",
+   "status": "DERIVED",
+   "unit": "sf"
+  },
+  "liv_area": {
+   "expr": "int_w * liv_d / 144",
+   "status": "DERIVED",
+   "unit": "sf"
+  },
+  "floor_area": {
+   "expr": "ext_w * ext_d / 144",
+   "status": "DERIVED",
+   "unit": "sf"
+  },
+  "bd_off": {
+   "v": 85.5,
+   "status": "PROPOSED",
+   "note": "from the bath E wall E face to the bedroom door W jamb"
+  },
+  "bd_w": {
+   "v": 32,
+   "status": "PROPOSED"
+  },
+  "bd_e": {
+   "expr": "bed_w - bd_off - bd_w",
+   "status": "DERIVED"
+  },
+  "btd_off": {
+   "v": 16,
+   "status": "PROPOSED"
+  },
+  "btd_w": {
+   "v": 28,
+   "status": "PROPOSED"
+  },
+  "btd_e": {
+   "expr": "bath_w - btd_off - btd_w",
+   "status": "DERIVED"
+  },
+  "clo_d": {
+   "v": 24,
+   "status": "PROPOSED"
+  },
+  "clo_w": {
+   "v": 80,
+   "status": "PROPOSED"
+  },
+  "egw_off": {
+   "v": 42,
+   "status": "PROPOSED",
+   "note": "from bedroom S wall N face to window S jamb"
+  },
+  "egw_w": {
+   "v": 48,
+   "status": "PROPOSED"
+  },
+  "egw_h": {
+   "v": 48,
+   "status": "PROPOSED"
+  },
+  "egw_sill": {
+   "v": 36,
+   "status": "PROPOSED"
+  },
+  "egw_n": {
+   "expr": "bed_d - egw_off - egw_w",
+   "status": "DERIVED"
+  },
+  "btw_off": {
+   "v": 18,
+   "status": "PROPOSED"
+  },
+  "btw_w": {
+   "v": 24,
+   "status": "PROPOSED"
+  },
+  "btw_h": {
+   "v": 36,
+   "status": "PROPOSED"
+  },
+  "btw_sill": {
+   "v": 54,
+   "status": "PROPOSED"
+  },
+  "btw_e": {
+   "expr": "bath_w - btw_off - btw_w",
+   "status": "DERIVED"
+  },
+  "ped": {
+   "expr": "bed_s + t_int",
+   "status": "DERIVED"
+  },
+  "kit_y0": {
+   "v": 10,
+   "status": "PROPOSED"
+  },
+  "kit_len": {
+   "v": 85,
+   "status": "PROPOSED"
+  },
+  "ctr_d": {
+   "v": 25,
+   "status": "PROPOSED"
+  },
+  "ref_w": {
+   "v": 30,
+   "status": "PROPOSED"
+  },
+  "kit_rest": {
+   "expr": "liv_d - kit_y0 - kit_len - ref_w",
+   "status": "DERIVED"
+  },
+  "lot_w": {
+   "v": 600,
+   "status": "MEASURED",
+   "source": "S4"
+  },
+  "lot_d": {
+   "v": 1440,
+   "status": "MEASURED",
+   "source": "S4"
+  },
+  "set_side": {
+   "expr": "lot_w - adu_x - ext_w",
+   "status": "DERIVED"
+  },
+  "set_rear": {
+   "expr": "lot_d - adu_y - ext_d",
+   "status": "DERIVED"
+  },
+  "adu_x": {
+   "v": 300,
+   "status": "MEASURED",
+   "source": "S5",
+   "between": [
+    "W property line",
+    "ADU W wall"
+   ]
+  },
+  "adu_y": {
+   "v": 1116,
+   "status": "MEASURED",
+   "source": "S5",
+   "between": [
+    "S property line",
+    "ADU S wall"
+   ]
+  },
+  "house_x": {
+   "v": 60,
+   "status": "MEASURED",
+   "source": "S5"
+  },
+  "house_y": {
+   "v": 240,
+   "status": "MEASURED",
+   "source": "S5"
+  },
+  "house_w": {
+   "v": 360,
+   "status": "MEASURED",
+   "source": "S5"
+  },
+  "house_d": {
+   "v": 540,
+   "status": "MEASURED",
+   "source": "S5"
+  },
+  "sep": {
+   "expr": "adu_y - house_y - house_d",
+   "status": "DERIVED"
+  },
+  "house_e": {
+   "expr": "lot_w - house_x - house_w",
+   "status": "DERIVED"
+  }
+ },
+ "field_verify": [],
+ "openings": [
+  {
+   "id": "GD-1",
+   "mark": "GD-1",
+   "type": "overhead",
+   "action": "demo",
+   "wall": "S",
+   "offset": "$gd_off",
+   "width": "$gd_w",
+   "height": "$gd_h",
+   "note": "remove door and track; infill per 2"
+  },
+  {
+   "id": "D-1",
+   "mark": "D-1",
+   "type": "door",
+   "action": "new",
+   "wall": "S",
+   "offset": "$ed_off",
+   "width": "$ed_w",
+   "height": "$ed_h",
+   "note": "exterior, insulated fiberglass, 3'-0\" x 6'-8\""
+  },
+  {
+   "id": "D-2",
+   "mark": "D-2",
+   "type": "door",
+   "action": "existing",
+   "wall": "W",
+   "offset": "$sd_off",
+   "width": "$sd_w",
+   "note": "existing side door to remain"
+  },
+  {
+   "id": "D-3",
+   "mark": "D-3",
+   "type": "door",
+   "action": "new",
+   "wall": "P1",
+   "offset": "$bd_off",
+   "width": "$bd_w",
+   "height": "$ed_h",
+   "note": "bedroom, solid core"
+  },
+  {
+   "id": "D-4",
+   "mark": "D-4",
+   "type": "door",
+   "action": "new",
+   "wall": "P1",
+   "offset": "$btd_off",
+   "width": "$btd_w",
+   "height": "$ed_h",
+   "note": "bath, privacy set"
+  },
+  {
+   "id": "W-1",
+   "mark": "W-1",
+   "type": "window",
+   "action": "new",
+   "wall": "S",
+   "offset": "$lw_off",
+   "width": "$lw_w",
+   "height": "$lw_h",
+   "sill": "$lw_sill",
+   "note": "XO slider"
+  },
+  {
+   "id": "W-2",
+   "mark": "W-2",
+   "type": "window",
+   "action": "new",
+   "wall": "E",
+   "offset": "$egw_off",
+   "width": "$egw_w",
+   "height": "$egw_h",
+   "sill": "$egw_sill",
+   "note": "XO slider, bedroom emergency escape"
+  },
+  {
+   "id": "W-3",
+   "mark": "W-3",
+   "type": "window",
+   "action": "new",
+   "wall": "N",
+   "offset": "$btw_off",
+   "width": "$btw_w",
+   "height": "$btw_h",
+   "sill": "$btw_sill",
+   "note": "casement, tempered (tub)"
+  }
+ ],
+ "walls": [
+  {
+   "id": "N",
+   "action": "existing",
+   "t": "$t_ext"
+  },
+  {
+   "id": "S",
+   "action": "existing",
+   "t": "$t_ext"
+  },
+  {
+   "id": "E",
+   "action": "existing",
+   "t": "$t_ext"
+  },
+  {
+   "id": "W",
+   "action": "existing",
+   "t": "$t_ext"
+  },
+  {
+   "id": "P1",
+   "action": "new",
+   "t": "$t_int"
+  },
+  {
+   "id": "P2",
+   "action": "new",
+   "t": "$t_int"
+  }
+ ],
+ "chains": [
+  {
+   "id": "S-wall-E",
+   "total": "$int_w",
+   "segments": [
+    {
+     "len": "$gd_off",
+     "what": "wall"
+    },
+    {
+     "len": "$gd_w",
+     "what": "opening"
+    },
+    {
+     "len": "$gd_e",
+     "what": "wall"
+    }
+   ]
+  }
+ ],
+ "sheets": [
+  {
+   "id": "A-0",
+   "title": "COVER SHEET",
+   "script": "sheets/a0_cover.py"
+  },
+  {
+   "id": "A-1",
+   "title": "SITE PLAN",
+   "script": "sheets/a1_site.py"
+  },
+  {
+   "id": "A-2",
+   "title": "EXISTING / DEMOLITION PLAN",
+   "script": "sheets/a2_existing.py"
+  },
+  {
+   "id": "A-3",
+   "title": "PROPOSED FLOOR PLAN",
+   "script": "sheets/a3_proposed.py"
+  },
+  {
+   "id": "A-4",
+   "title": "EXTERIOR ELEVATIONS",
+   "script": "sheets/a4_elev.py"
+  },
+  {
+   "id": "A-5",
+   "title": "BUILDING SECTION",
+   "script": "sheets/a5_section.py"
+  }
+ ],
+ "revisions": []
+}

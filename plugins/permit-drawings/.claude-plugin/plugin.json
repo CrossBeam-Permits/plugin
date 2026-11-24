@@ -1,0 +1,24 @@
+{
+  "name": "permit-drawings",
+  "displayName": "CrossBeam Permit Drawings",
+  "description": "Draw your own building-permit plans with CrossBeam: turn sketches, tape measurements and photos into a true-scale permit drawing set, check it against your city's rules until it passes, package it the way the city wants, and answer plan-check corrections. For homeowners, owner-builders and builders.",
+  "version": "0.9.10",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "privacyPolicyUrl": "https://www.crossbeam-permits.com/privacy",
+  "keywords": [
+    "permits",
+    "permit-drawings",
+    "plan-set",
+    "floor-plan",
+    "adu",
+    "owner-builder",
+    "plan-check",
+    "crossbeam"
+  ],
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/plugins/permit-drawings",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0"
+}
