@@ -1,0 +1,24 @@
+{
+  "name": "feasibility-report",
+  "displayName": "CrossBeam Feasibility Report",
+  "description": "Write a pre-design feasibility report for a lot and a proposed project with CrossBeam: parcel facts, the city's code, state law (including law that starts later), fees, and a verdict up top with every answer tagged by its source, the questions to take to the City, and an intake checklist. For builders, designers and owners.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Onboard Dot AI LLC",
+    "email": "info@crossbeam-permits.com"
+  },
+  "privacyPolicyUrl": "https://www.crossbeam-permits.com/privacy",
+  "keywords": [
+    "permits",
+    "feasibility",
+    "feasibility-report",
+    "site-feasibility",
+    "adu",
+    "due-diligence",
+    "zoning",
+    "crossbeam"
+  ],
+  "homepage": "https://github.com/CrossBeam-Permits/plugin/tree/main/plugins/feasibility-report",
+  "repository": "https://github.com/CrossBeam-Permits/plugin",
+  "license": "Apache-2.0"
+}

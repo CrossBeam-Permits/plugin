@@ -1,0 +1,634 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "permitkit/project/1",
+  "title": "permitkit project file",
+  "description": "One source of truth for a permit drawing set. Lengths are real inches. Axes: x = east, y = north, z = up. Every dimensional number is a Value with a status.",
+  "type": "object",
+  "required": ["schema", "units", "axes", "project", "values"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "permitkit/1"},
+    "units": {"const": "in"},
+    "axes": {
+      "type": "object",
+      "required": ["x", "y", "z"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {"const": "east"},
+        "y": {"const": "north"},
+        "z": {"const": "up"},
+        "origin": {"type": "string", "description": "The physical point at x = 0, y = 0, z = 0."},
+        "true_north_deg": {
+          "oneOf": [
+            {"type": "number"},
+            {"allOf": [
+              {"$ref": "#/$defs/Value"},
+              {"properties": {"v": {"type": "number"}, "unit": {"const": "deg"}}}
+            ], "description": "A Value whose v is one number (not a point) and whose unit, if given, is deg."}
+          ],
+          "description": "Clockwise angle from plan north (+y) to true north, in degrees. Prefer a Value with a status (for example ASSUMED with an fv tag for a phone-compass reading). A plain number is still accepted and has no status."
+        },
+        "note": {"type": "string"}
+      }
+    },
+    "project": {
+      "type": "object",
+      "required": ["title", "address", "owner", "preparer", "date", "status_label"],
+      "properties": {
+        "title": {"$ref": "#/$defs/Text"},
+        "address": {"$ref": "#/$defs/Text"},
+        "owner": {"$ref": "#/$defs/Text"},
+        "preparer": {
+          "type": "object",
+          "required": ["name"],
+          "properties": {
+            "name": {"$ref": "#/$defs/Text"},
+            "role": {"type": "string"},
+            "statement": {"$ref": "#/$defs/Text", "description": "Optional preparer statement printed in every title block. It comes from the jurisdiction; the kit never writes one. Leave it out when the jurisdiction needs none, and the title block omits the line."}
+          }
+        },
+        "date": {"$ref": "#/$defs/Text"},
+        "status_label": {"$ref": "#/$defs/Text", "description": "Release label in every title block, for example REVIEW - NOT FOR CONSTRUCTION."},
+        "contractor": {"type": "string"},
+        "jurisdiction": {"type": "object"},
+        "permit_no": {"type": "string"},
+        "stamp_label": {"type": "string"}
+      }
+    },
+    "drawing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sheet_size": {"enum": ["ARCH_E", "ARCH_D", "ARCH_C", "ANSI_B", "LETTER"]},
+        "orientation": {"enum": ["landscape", "portrait"]},
+        "precision_denominator": {"enum": [2, 4, 8, 16, 32]},
+        "dim_style": {"enum": ["ftin", "in", "both", "auto"]},
+        "set_name": {"type": "string", "pattern": "^[A-Za-z0-9._-]+$"}
+      }
+    },
+    "values": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+      "additionalProperties": {"$ref": "#/$defs/Value"}
+    },
+    "sources": {"type": "array", "items": {"$ref": "#/$defs/Source"}},
+    "field_verify": {"type": "array", "items": {"$ref": "#/$defs/FieldVerify"}},
+    "code_notes": {"type": "array", "items": {"$ref": "#/$defs/CodeNote"},
+                   "description": "Code-decision entries (logs/code-decisions.md) whose quoted rule has conditions. QA lists each printed note that names one of them."},
+    "rules": {"type": "array", "items": {"$ref": "#/$defs/Rule"},
+              "description": "Code rules the drawn values must meet, one entry per drawn value. Usually copied from the kit_checks of a crossbeam_rules answer. QA check `rules` compares each referenced value with its limit."},
+    "structure": {"$ref": "#/$defs/Structure",
+                  "description": "Structural members, design criteria and engineered-design triggers (references/structural.md). struct.py checks each member against the sourced 2025 CRC tables and adds the result to the `rules` QA check; a member past the tables reports ENGINEER REQUIRED."},
+    "chains": {"type": "array", "items": {"$ref": "#/$defs/Chain"}},
+    "levels": {"type": "array", "items": {"$ref": "#/$defs/Item"}},
+    "walls": {"type": "array", "items": {"$ref": "#/$defs/Item"}},
+    "openings": {"type": "array", "items": {"$ref": "#/$defs/Opening"}},
+    "rooms": {"type": "array", "items": {"$ref": "#/$defs/Item"}},
+    "stairs": {"type": "array", "items": {"$ref": "#/$defs/Item"}},
+    "guards": {"type": "array", "items": {"$ref": "#/$defs/Item"}},
+    "fixtures": {"type": "array", "items": {"$ref": "#/$defs/Item"}},
+    "sheets": {"type": "array", "items": {"$ref": "#/$defs/Sheet"}, "description": "May be empty while measuring; build refuses an empty list."},
+    "revisions": {"type": "array", "items": {"$ref": "#/$defs/Revision"}},
+    "notes": {"type": "object", "description": "Free text blocks keyed by name. Sheet scripts read them."},
+    "connections": {"type": "array", "items": {"$ref": "#/$defs/Connection"}, "description": "Connections that carry a load the kit does not size (a newel post that takes the rail load, a ledger, a post base, a hanger): what each joins, its design load, and its basis, the maker's tested detail or an engineer's calculation (references/kit-elevations-sections.md, Connections that carry a load)."},
+    "images": {"type": "array", "items": {"$ref": "#/$defs/Image"}, "description": "Raster images placed on sheets by id: owner photos, concept renderings, aerials, product photos (references/images-and-finishes.md)."},
+    "finishes": {"type": "array", "items": {"$ref": "#/$defs/Finish"}, "description": "The finish and color schedule. finishes.schedule() and finishes.board() draw it; finishes.rgb(project, id) gives other modules the color (references/images-and-finishes.md)."},
+    "energy": {"$ref": "#/$defs/Energy"},
+    "green": {"$ref": "#/$defs/Green"},
+    "model3d": {"$ref": "#/$defs/Model3D"}
+  },
+  "$defs": {
+    "Status": {"enum": ["MEASURED", "DERIVED", "ASSUMED", "PROPOSED", "MANUFACTURER", "PLACEHOLDER"]},
+    "Text": {"type": "string", "pattern": "\\S", "description": "Text that must not be empty or only spaces."},
+    "Ident": {"type": "string", "pattern": "^[A-Za-z0-9_][A-Za-z0-9_-]*$", "description": "An item or chain id. Letters, digits, underscore and hyphen; no dot, because the id becomes part of a value key such as openings.W-1.width."},
+    "Action": {"enum": ["existing", "new", "demo", "relocate"], "description": "existing = (E) existing to remain; new = (N); demo = remove; relocate = (E) moved to a new place."},
+    "Tag": {"type": "string", "pattern": "^FV-[A-Z]{0,3}[0-9]+[A-Z]?$", "description": "A field-verify tag: FV-, up to three letters that group it, a number and an optional letter (FV-3, FV-2A, FV-H11)."},
+    "Ref": {"type": "string", "pattern": "^\\$[A-Za-z_][A-Za-z0-9_]*(\\.[A-Za-z0-9_-]+)*$"},
+    "Value": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": false,
+      "oneOf": [{"required": ["v"]}, {"required": ["expr"]}],
+      "properties": {
+        "v": {"type": ["number", "array"], "items": {"type": "number"}, "minItems": 2, "maxItems": 2, "description": "A number, or a point [x, y] in inches."},
+        "expr": {"type": "string", "description": "Arithmetic over other value keys: + - * / ( ) min max abs sqrt hypot."},
+        "range": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2, "description": "ASSUMED only: [low, high], the estimates the true number lies between; v (the number drawn) is inside it. Prints as 9/16\" TO 5/8\", and so does a DERIVED value computed from it. The rules check tests both ends: a rule broken at every estimate fails QA."},
+        "status": {"$ref": "#/$defs/Status"},
+        "unit": {"enum": ["in", "sf", "count", "deg", "pct", "ratio", "cfm", "gpm", "gpf", "A", "psf", "lb", "mph", "degF", "u-factor", "in/ft", "R-value", "index", "psi", "hr", "days"], "description": "in (default: a value with no unit is a length), sf, count, deg, pct and ratio convert within their kind, as do hr and days (time); cfm, gpm, gpf, A, psf, psi, lb, mph, degF, u-factor, in/ft, R-value and index compare only against a rule limit in the same unit. Print a number with its unit word with the format code u ({fan_cfm:u} -> 50 CFM)."},
+        "fv": {"$ref": "#/$defs/Tag"},
+        "source": {"type": "string"},
+        "note": {"type": "string"},
+        "between": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}},
+        "along": {"enum": ["floor", "slope", "level", "plumb", "horizontal", "vertical", "diagonal"]},
+        "ref_level": {"type": "string"},
+        "by": {"type": "string"},
+        "date": {"type": "string"}
+      }
+    },
+    "Dim": {"oneOf": [{"$ref": "#/$defs/Ref"}, {"$ref": "#/$defs/Value"}]},
+    "Source": {
+      "type": "object",
+      "required": ["id", "kind"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string"},
+        "kind": {"enum": ["sketch", "photo", "scan", "tape", "answer", "document", "mfr_doc", "survey", "plan", "other"]},
+        "path": {"type": "string"},
+        "orientation_note": {"type": "string", "description": "Which compass direction is up in the image, and how it was checked."},
+        "by": {"type": "string"},
+        "date": {"type": "string"},
+        "note": {"type": "string"}
+      }
+    },
+    "CodeNote": {
+      "type": "object",
+      "required": ["cd", "conditions"],
+      "additionalProperties": false,
+      "properties": {
+        "cd": {"type": "string", "pattern": "^CD-[0-9]+[A-Z]?$"},
+        "conditions": {"type": "boolean"},
+        "note": {"type": "string"}
+      }
+    },
+    "Rule": {
+      "type": "object",
+      "required": ["id", "element", "check"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "element": {"$ref": "#/$defs/Text", "description": "The thing the rule is about, as crossbeam_rules named it, for example 'habitable room ceiling height'."},
+        "citation": {"type": "string", "description": "Code, edition and section, as the rule's source gives it."},
+        "source_from": {"enum": ["city", "state", "code"], "description": "source.from of the crossbeam_rules answer."},
+        "cd": {"type": "string", "pattern": "^CD-[0-9]+[A-Z]?$", "description": "The logs/code-decisions.md entry that records this rule."},
+        "kit_key": {"type": "string", "description": "The kit_checks key crossbeam_rules returned, kept for tracing."},
+        "accepted": {"type": "string", "pattern": "^DEC-[0-9]+[A-Z]?$", "description": "The logs/decisions.md entry in which the owner chose to keep a design that breaks this rule and seek the city's relief. QA then reports the rule's FAIL as a WARN that names the decision, so the set is not blocked; the sheets must still label the conflict."},
+        "check": {
+          "type": "object",
+          "required": ["op", "limit", "unit"],
+          "oneOf": [{"required": ["value"]}, {"required": ["spread"]}],
+          "additionalProperties": false,
+          "properties": {
+            "value": {"$ref": "#/$defs/Ref", "description": "The drawn value, as a reference such as $ceiling_h or $openings.D-1.width."},
+            "spread": {"type": "array", "items": {"$ref": "#/$defs/Ref"}, "minItems": 2, "description": "In place of value: drawn values whose spread (the largest minus the smallest) the rule limits, such as every riser of one flight against the 3/8 in. variation limit."},
+            "op": {"enum": [">=", "<=", "=="]},
+            "limit": {"type": "number"},
+            "close": {"type": "number", "minimum": 0, "description": "How near the limit (in the rule's unit) an unverified value counts as close, so QA warns. Default: 10 % of the limit. An estimate farther inside the limit than this, at every estimate, passes; set it larger where a guess can be far off."},
+            "unit": {"type": "string", "pattern": "\\S", "description": "Unit of limit: in, ft, sf (sq ft), sq in, pct (%), ratio, deg or count, which QA converts the drawn value to; hr or days (time); or cfm, gpm, gpf, A, psf, psi, lb, mph, degF, u-factor, in/ft, R-value or index, which QA compares only with a drawn value in the same unit."}
+          }
+        },
+        "note": {"type": "string"}
+      }
+    },
+    "FieldVerify": {
+      "type": "object",
+      "required": ["tag", "what", "why"],
+      "additionalProperties": false,
+      "properties": {
+        "tag": {"$ref": "#/$defs/Tag"},
+        "what": {"type": "string"},
+        "why": {"type": "string"},
+        "rank": {"type": "integer", "minimum": 1},
+        "values": {"type": "array", "items": {"type": "string"}},
+        "signed_off": {
+          "type": "object",
+          "required": ["by", "date"],
+          "properties": {"by": {"type": "string"}, "date": {"type": "string"}, "result": {"type": "string"}}
+        }
+      }
+    },
+    "Chain": {
+      "type": "object",
+      "required": ["id", "total", "segments"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "along": {"type": "string"},
+        "note": {"type": "string"},
+        "total": {"$ref": "#/$defs/Dim"},
+        "tol": {"type": "number", "exclusiveMinimum": 0},
+        "segments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["len"],
+            "additionalProperties": false,
+            "properties": {
+              "len": {"$ref": "#/$defs/Dim"},
+              "what": {"enum": ["wall", "opening", "other"]},
+              "opening": {"type": "string"},
+              "note": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "Item": {
+      "type": "object",
+      "required": ["id"],
+      "propertyNames": {"pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "action": {"$ref": "#/$defs/Action"}
+      }
+    },
+    "Opening": {
+      "type": "object",
+      "required": ["id", "type", "width"],
+      "propertyNames": {"pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "mark": {"type": "string"},
+        "type": {"enum": ["door", "window", "slider", "bifold", "bypass", "cased", "dutch_door", "pocket", "overhead", "skylight"]},
+        "action": {"$ref": "#/$defs/Action"},
+        "wall": {"type": "string", "description": "The id of the item in walls that holds this opening. validate warns when walls exist and none has this id."},
+        "width": {"$ref": "#/$defs/Dim"},
+        "height": {"$ref": "#/$defs/Dim"},
+        "sill": {"$ref": "#/$defs/Dim"},
+        "head": {"$ref": "#/$defs/Dim"},
+        "offset": {"$ref": "#/$defs/Dim"}
+      }
+    },
+    "Sheet": {
+      "type": "object",
+      "required": ["id", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Z]{1,3}-[0-9]+(\\.[0-9]+)?[A-Z]?$"},
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "script": {"type": "string", "pattern": "^sheets/[A-Za-z0-9._-]+\\.py$", "description": "Sheet script path, relative to project.json, inside the sheets folder."},
+        "attach": {"type": "string", "pattern": "^(?!.*\\.\\.)[A-Za-z0-9_][A-Za-z0-9._/ -]*\\.(pdf|PDF)$", "description": "An external PDF bound in this position instead of a drawn sheet. A relative path inside the project folder, without '..'."}
+      }
+    },
+    "Energy": {
+      "type": "object",
+      "description": "Title 24 Part 6 scope and product data for a single-family addition or alteration (energy.py, references/energy-and-green.md). Every number is a $key reference to a Value.",
+      "required": ["building", "work", "climate_zone", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "building": {"enum": ["single-family"], "description": "Part 6 building category. Only single-family (150.2) is built in."},
+        "work": {"type": "array", "minItems": 1, "items": {"enum": ["addition", "alteration"]}},
+        "zip": {"type": "string", "pattern": "^[0-9]{5}$"},
+        "climate_zone": {"$ref": "#/$defs/Ref", "description": "The climate-zone Value (unit count), for example from `permitkit energy --zip`."},
+        "path": {"enum": ["prescriptive", "performance"]},
+        "path_reason": {"type": "string"},
+        "cd": {"type": "string", "pattern": "^CD-[0-9]+[A-Z]?$"},
+        "addition": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "cfa": {"$ref": "#/$defs/Ref"}, "existing_cfa": {"$ref": "#/$defs/Ref"},
+            "fenestration_area": {"$ref": "#/$defs/Ref"}, "west_fenestration_area": {"$ref": "#/$defs/Ref"},
+            "new_dwelling_unit": {"type": "boolean"}, "note": {"type": "string"}
+          }
+        },
+        "house": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "cfa": {"$ref": "#/$defs/Ref"}, "fenestration_area": {"$ref": "#/$defs/Ref"},
+            "west_fenestration_area": {"$ref": "#/$defs/Ref"}, "note": {"type": "string"}
+          }
+        },
+        "fenestration": {"type": "array", "items": {
+          "type": "object", "required": ["id", "kind", "change", "area"], "additionalProperties": false,
+          "properties": {
+            "id": {"$ref": "#/$defs/Ident"}, "kind": {"enum": ["window", "glazed_door", "skylight"]},
+            "change": {"enum": ["addition", "added", "replacement"]},
+            "area": {"$ref": "#/$defs/Ref"}, "replaces_area": {"$ref": "#/$defs/Ref"},
+            "u_factor": {"$ref": "#/$defs/Ref"}, "shgc": {"$ref": "#/$defs/Ref"},
+            "orientation": {"enum": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]},
+            "product": {"type": "string"}, "note": {"type": "string"}
+          }}},
+        "doors": {"type": "array", "items": {
+          "type": "object", "required": ["id", "change"], "additionalProperties": false,
+          "properties": {
+            "id": {"$ref": "#/$defs/Ident"}, "change": {"enum": ["addition", "added"]},
+            "area": {"$ref": "#/$defs/Ref"}, "u_factor": {"$ref": "#/$defs/Ref"},
+            "product": {"type": "string"}, "note": {"type": "string"}
+          }}},
+        "insulation": {"type": "array", "items": {
+          "type": "object", "required": ["id", "assembly", "change"], "additionalProperties": false,
+          "properties": {
+            "id": {"$ref": "#/$defs/Ident"},
+            "assembly": {"enum": ["vented_attic_ceiling", "rafter_roof", "wall_2x4", "wall_2x6",
+                                  "wall_extension_2x4", "wall_extension_2x6", "raised_floor"]},
+            "change": {"enum": ["addition", "altered"]},
+            "r_value": {"$ref": "#/$defs/Ref"}, "u_factor": {"$ref": "#/$defs/Ref"},
+            "product": {"type": "string"}, "note": {"type": "string"}
+          }}},
+        "ducts": {"type": "array", "items": {
+          "type": "object", "required": ["id", "change", "location"], "additionalProperties": false,
+          "properties": {
+            "id": {"$ref": "#/$defs/Ident"}, "change": {"enum": ["extension", "new", "replacement"]},
+            "location": {"enum": ["unconditioned", "conditioned"]},
+            "length": {"$ref": "#/$defs/Ref"}, "r_value": {"$ref": "#/$defs/Ref"},
+            "ecc_exception": {"type": "string"}, "note": {"type": "string"}
+          }}},
+        "hvac": {"type": "array", "items": {
+          "type": "object", "required": ["id", "change", "system"], "additionalProperties": false,
+          "properties": {
+            "id": {"$ref": "#/$defs/Ident"},
+            "change": {"enum": ["new", "extended", "complete_replacement", "equipment_replaced", "refrigerant_altered"]},
+            "system": {"enum": ["heat_pump", "air_conditioner", "gas_furnace", "electric_resistance", "other"]},
+            "ducted": {"type": "boolean"}, "product": {"type": "string"},
+            "exception": {"type": "string"}, "ecc_exception": {"type": "string"}, "note": {"type": "string"}
+          }}},
+        "water_heating": {"type": "array", "items": {
+          "type": "object", "required": ["id", "change", "type"], "additionalProperties": false,
+          "properties": {
+            "id": {"$ref": "#/$defs/Ident"}, "change": {"enum": ["new", "replacement"]},
+            "type": {"enum": ["heat_pump", "gas", "propane", "consumer_electric", "electric_point_of_use", "other"]},
+            "existing_type": {"enum": ["heat_pump", "gas", "propane", "electric_resistance", "none", "other"]},
+            "product": {"type": "string"}, "note": {"type": "string"}
+          }}},
+        "lighting": {"type": "object", "additionalProperties": false, "required": ["change"],
+                     "properties": {"change": {"enum": ["none", "altered", "new"]}, "note": {"type": "string"}}},
+        "note": {"type": "string"}
+      }
+    },
+    "Green": {
+      "type": "object",
+      "description": "CALGreen residential mandatory measures the drafter applies, each with the reason (greensheets.py, references/energy-and-green.md).",
+      "required": ["trigger"],
+      "additionalProperties": false,
+      "properties": {
+        "trigger": {"type": "object", "required": ["increases_area_volume_or_size", "reason"], "additionalProperties": false,
+                    "description": "CALGreen 301.1.1: does the addition or alteration increase the building's conditioned area, volume or size? The drafter's reading, with the reason.",
+                    "properties": {"increases_area_volume_or_size": {"type": "boolean"}, "reason": {"$ref": "#/$defs/Text"},
+                                   "cd": {"type": "string", "pattern": "^CD-[0-9]+[A-Z]?$"}}},
+        "measures": {"type": "array", "items": {
+          "type": "object", "required": ["section", "applies", "reason"], "additionalProperties": false,
+          "properties": {
+            "section": {"type": "string"}, "applies": {"type": "boolean"}, "reason": {"$ref": "#/$defs/Text"},
+            "responsibility": {"type": "string"}, "verification": {"type": "string"},
+            "cd": {"type": "string", "pattern": "^CD-[0-9]+[A-Z]?$"}
+          }}},
+        "local": {"type": "array", "items": {
+          "type": "object", "required": ["section", "text", "source", "reason"], "additionalProperties": false,
+          "description": "A city amendment or other sourced measure, quoted from its source.",
+          "properties": {
+            "section": {"type": "string"}, "text": {"$ref": "#/$defs/Text"}, "source": {"$ref": "#/$defs/Text"},
+            "reason": {"$ref": "#/$defs/Text"}, "responsibility": {"type": "string"}, "verification": {"type": "string"},
+            "cd": {"type": "string", "pattern": "^CD-[0-9]+[A-Z]?$"}
+          }}}
+      }
+    },
+    "Model3D": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The 3D model the kit draws 3D views from (render3d.py, references/3d-views.md). Element sizes are Dims, like every other geometry item.",
+      "properties": {
+        "materials": {"type": "object", "propertyNames": {"pattern": "^[a-z][a-z0-9_]*$"},
+                      "additionalProperties": {"oneOf": [
+                        {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
+                        {"type": "object", "required": ["rgb"], "additionalProperties": false,
+                         "properties": {"rgb": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
+                                        "label": {"type": "string", "description": "The finish as it prints in a swatch legend, for example 3-COAT STUCCO, MATCH (E)."}}}]}},
+        "sun": {"type": "object", "additionalProperties": false,
+                "properties": {"azimuth": {"type": "number"}, "altitude": {"type": "number"}}},
+        "elements": {"type": "array", "items": {"$ref": "#/$defs/Element3D"}},
+        "cameras": {"type": "array", "items": {"$ref": "#/$defs/Camera3D"}},
+        "note": {"type": "string"}
+      }
+    },
+    "Element3D": {
+      "type": "object",
+      "required": ["id", "kind"],
+      "propertyNames": {"pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+      "additionalProperties": {"$ref": "#/$defs/Dim"},
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "kind": {"enum": ["box", "wall", "slab", "roof", "member", "device"]},
+        "action": {"$ref": "#/$defs/Action"},
+        "material": {"type": "string"},
+        "inner": {"type": "string", "description": "wall: material of the face on the body side."},
+        "wall_material": {"type": "string"},
+        "fascia_material": {"type": "string"},
+        "label": {"type": "string"},
+        "note": {"type": "string"},
+        "style": {"enum": ["plain", "base", "upper", "tall", "range", "fridge", "hood", "basin", "panel"]},
+        "front": {"enum": ["N", "S", "E", "W"]},
+        "face": {"enum": ["N", "S", "E", "W", "U"]},
+        "body": {"enum": ["N", "S", "E", "W", "left", "right"]},
+        "form": {"enum": ["gable", "hip", "shed", "flat"]},
+        "ridge": {"enum": ["x", "y"]},
+        "low": {"enum": ["N", "S", "E", "W"]},
+        "assumed": {"type": "object", "required": ["fv"], "additionalProperties": false,
+                    "properties": {"fv": {"$ref": "#/$defs/Tag"}, "note": {"type": "string"}},
+                    "description": "The element's form (not a number) is not recorded, for example an (E) roof form. It draws as unverified with this FV tag."},
+        "openings": {"type": "array", "items": {"$ref": "#/$defs/Opening3D"}}
+      }
+    },
+    "Opening3D": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ref": {"type": "string", "description": "The id of an item in openings; its width, height, sill and offset are used unless given here."},
+        "id": {"$ref": "#/$defs/Ident"},
+        "kind": {"enum": ["window", "door", "glass_door", "opening"]},
+        "style": {"enum": ["fixed", "XO", "pair"]},
+        "material": {"type": "string"},
+        "offset": {"$ref": "#/$defs/Dim"},
+        "width": {"$ref": "#/$defs/Dim"},
+        "sill": {"$ref": "#/$defs/Dim"},
+        "height": {"$ref": "#/$defs/Dim"}
+      }
+    },
+    "Camera3D": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": false,
+      "description": "A camera preset. Camera numbers set the view only; they never print.",
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "type": {"enum": ["axon", "perspective"]},
+        "projection": {"enum": ["iso", "dimetric", "plan_oblique", "custom"]},
+        "azimuth": {"type": "number", "description": "Compass bearing from the target to the viewer, degrees clockwise from plan north."},
+        "elevation": {"type": "number"},
+        "rotate": {"type": "number"},
+        "vscale": {"type": "number"},
+        "eye": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"oneOf": [{"type": "number"}, {"$ref": "#/$defs/Ref"}]}},
+        "target": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"oneOf": [{"type": "number"}, {"$ref": "#/$defs/Ref"}]}},
+        "lens": {"type": "number", "exclusiveMinimum": 0},
+        "near": {"type": "number", "exclusiveMinimum": 0},
+        "shift": {"type": "number"},
+        "cut_z": {"oneOf": [{"type": "number"}, {"$ref": "#/$defs/Ref"}]},
+        "hide": {"type": "array", "items": {"type": "string"}},
+        "light": {"enum": ["sun", "interior"]},
+        "fit": {"type": "array", "items": {"type": "string"}, "description": "Axon only: frame the view on these element ids and clip the rest at the frame."},
+        "sun": {"type": "object", "required": ["azimuth", "altitude"], "additionalProperties": false,
+                "properties": {"azimuth": {"type": "number"}, "altitude": {"type": "number"}}},
+        "note": {"type": "string"}
+      }
+    },
+    "Revision": {
+      "type": "object",
+      "required": ["delta", "date", "desc"],
+      "additionalProperties": false,
+      "properties": {
+        "delta": {"type": "integer", "minimum": 1},
+        "date": {"type": "string"},
+        "desc": {"type": "string"},
+        "sheets": {"type": "array", "items": {"type": "string"}, "description": "Sheet ids this revision changes. A record for the reader; QA does not check it."}
+      }
+    },
+    "Connection": {
+      "type": "object",
+      "required": ["id", "what", "basis"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident", "description": "Prints as CONNECTION <id>, for example C-1."},
+        "what": {"$ref": "#/$defs/Text", "description": "What it joins, in words: NEWEL POST D TO THE STAIR STRINGER."},
+        "load": {"$ref": "#/$defs/Text", "description": "The load it must carry, as the code decision states it. Needs cd."},
+        "cd": {"type": "string", "description": "The logs/code-decisions.md entry the load comes from."},
+        "basis": {"enum": ["open", "manufacturer", "engineer"], "description": "open: not settled yet; the sheet prints that a maker's tested detail or an engineer's calculation is to be placed. manufacturer: the maker's tested detail, with its evaluation report and rated load. engineer: an engineer's calculation."},
+        "evidence": {"$ref": "#/$defs/Text", "description": "manufacturer: product, report number and the table or detail with the rated load. engineer: who calculated it and the calculation document. Prints on the sheet."},
+        "note": {"type": "string"}
+      }
+    },
+    "Image": {
+      "type": "object",
+      "required": ["id", "path", "kind", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "path": {"type": "string", "pattern": "^(?!.*\\.\\.)[A-Za-z0-9_][A-Za-z0-9._/ -]*\\.(jpg|jpeg|png|JPG|JPEG|PNG)$", "description": "A JPEG or PNG file inside the project folder: a relative path without '..'."},
+        "kind": {"enum": ["photo", "concept", "aerial", "product"], "description": "photo: the site or the existing work. concept: a rendering or AI image of the intended look; it prints only with the concept label and never in a drawing view. aerial: an aerial or map image for the vicinity map. product: a manufacturer's product image."},
+        "source": {"$ref": "#/$defs/Text", "description": "Who made the image and when; prints under it. For example OWNER PHOTO 2026-10-08, or AERIAL (C) <PROVIDER> 2026."},
+        "date": {"type": "string"},
+        "caption": {"type": "string", "description": "Default caption printed under the image."},
+        "source_id": {"type": "string", "description": "The sources entry this image is, when there is one."},
+        "north_deg": {"type": "number", "description": "aerial: degrees clockwise from the image's up direction to true north (0 when north is up). The vicinity map needs it for its north arrow."},
+        "site_px": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2, "description": "aerial: the site's pixel position in the upright image, [column, row] from the top-left corner."},
+        "note": {"type": "string"}
+      }
+    },
+    "Finish": {
+      "type": "object",
+      "required": ["id", "location", "item", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident", "description": "The finish mark, such as T-1 or PT-2."},
+        "location": {"$ref": "#/$defs/Text", "description": "Room or area, such as HALL BATH."},
+        "item": {"$ref": "#/$defs/Text", "description": "What gets the finish, such as FLOOR TILE or UPPER CABINETS."},
+        "material": {"type": "string"},
+        "color_name": {"type": "string"},
+        "rgb": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$", "description": "Display color of the swatch, #RRGGBB. Required unless status is TBD."},
+        "rgb_source": {"type": "string", "description": "Where the RGB came from, such as MFR PUBLISHED RGB or MATCHED FROM PHOTO."},
+        "manufacturer": {"type": "string"},
+        "product": {"type": "string"},
+        "finish": {"type": "string", "description": "Finish or sheen, such as MATTE or EGGSHELL."},
+        "status": {"enum": ["SELECTED", "PROPOSED", "TBD"], "description": "SELECTED: the owner chose it. PROPOSED: suggested, the owner confirms. TBD: the owner selects later; the swatch prints hatched."},
+        "image": {"type": "string", "description": "Id of an images entry (product or photo) shown on the materials board."},
+        "note": {"type": "string"}
+      }
+    },
+    "StructText": {
+      "type": "object", "required": ["text", "status"], "additionalProperties": false,
+      "description": "A design criterion that is a word, not a number (seismic design category, wind exposure), with its status.",
+      "properties": {"text": {"type": "string", "minLength": 1}, "status": {"$ref": "#/$defs/Status"},
+                     "fv": {"$ref": "#/$defs/Tag"}, "source": {"type": "string"}, "note": {"type": "string"}}
+    },
+    "DesignValue": {
+      "type": "object", "required": ["v", "status", "citation"], "additionalProperties": false,
+      "description": "A reference design value, adjustment factor or line load for the preliminary calc. citation is required: the kit has no default design values.",
+      "properties": {"v": {"type": "number"}, "unit": {"enum": ["psi", "plf", "lb", "in", "factor"]},
+                     "status": {"$ref": "#/$defs/Status"}, "citation": {"type": "string", "minLength": 1},
+                     "fv": {"$ref": "#/$defs/Tag"}, "source": {"type": "string"}, "note": {"type": "string"}}
+    },
+    "Structure": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "ground_snow_load": {"$ref": "#/$defs/Dim", "description": "psf, from the jurisdiction's Table R301.2."},
+            "roof_live_load": {"$ref": "#/$defs/Dim", "description": "psf, Table R301.6."},
+            "wind_speed": {"$ref": "#/$defs/Dim", "description": "Ultimate design wind speed, mph."},
+            "wind_exposure": {"$ref": "#/$defs/StructText"},
+            "seismic_design_category": {"$ref": "#/$defs/StructText"},
+            "stories": {"$ref": "#/$defs/Dim", "description": "Stories above grade plane, count."},
+            "note": {"type": "string"}
+          }
+        },
+        "members": {"type": "array", "items": {"$ref": "#/$defs/StructMember"}},
+        "triggers": {"type": "array", "items": {
+          "type": "object", "required": ["id", "citation", "question"], "additionalProperties": false,
+          "properties": {"id": {"$ref": "#/$defs/Ident"}, "citation": {"type": "string"},
+                         "question": {"type": "string"}, "applies": {"$ref": "#/$defs/Dim"},
+                         "member": {"type": "string"}, "note": {"type": "string"},
+                         "engineer": {"$ref": "#/$defs/StructEngineer"}}}},
+        "bracing": {"type": "array", "items": {
+          "type": "object", "required": ["id"], "additionalProperties": false,
+          "properties": {"id": {"$ref": "#/$defs/Ident"}, "spacing": {"$ref": "#/$defs/Dim"},
+                         "building": {"enum": ["detached", "townhouse"]},
+                         "exception": {"enum": ["single_room_900sf", "adjusted_bracing"]},
+                         "required_length": {"$ref": "#/$defs/Dim"}, "required_citation": {"type": "string"},
+                         "provided_length": {"$ref": "#/$defs/Dim"}, "note": {"type": "string"}}}},
+        "note": {"type": "string"}
+      }
+    },
+    "StructEngineer": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"name": {"type": "string"}, "license": {"type": "string"}, "calc_ref": {"type": "string"},
+                     "stamped": {"type": "boolean", "description": "true only when the engineer's stamped design for this member is in hand."}}
+    },
+    "StructMember": {
+      "type": "object", "required": ["id", "type"], "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/Ident"},
+        "type": {"enum": ["floor_joist", "rafter", "ceiling_joist", "header", "beam", "post", "footing"]},
+        "label": {"type": "string"}, "size": {"type": "string"},
+        "species": {"enum": ["Douglas fir-larch", "Hem-fir", "Southern pine", "Spruce-pine-fir"]},
+        "grade": {"enum": ["SS", "#1", "#2", "#3"]},
+        "design": {"enum": ["table", "prelim", "engineer"], "description": "table (default): checked against the CRC tables. prelim: sized with the preliminary calc only; prints PRELIM — BY ENGINEER. engineer: by a California-licensed engineer (engineer.stamped once the stamped design is in hand); until then it prints BY ENGINEER (PENDING) and QA lists it as an open ENGINEER REQUIRED item."},
+        "engineer": {"$ref": "#/$defs/StructEngineer"},
+        "span": {"$ref": "#/$defs/Dim"}, "spacing": {"$ref": "#/$defs/Dim"},
+        "live_load": {"$ref": "#/$defs/Dim"}, "dead_load": {"$ref": "#/$defs/Dim"},
+        "slope": {"$ref": "#/$defs/Dim"}, "ceiling_attached": {"type": "boolean"},
+        "tie_height_ratio": {"$ref": "#/$defs/Dim"},
+        "attic": {"enum": ["no_storage", "limited_storage"]},
+        "wall": {"enum": ["exterior", "interior"]}, "supporting": {"type": "string"},
+        "building_width": {"$ref": "#/$defs/Dim"}, "top_braced": {"type": "boolean"},
+        "jack_studs": {"$ref": "#/$defs/Dim"}, "full_height_studs": {"$ref": "#/$defs/Dim"},
+        "story": {"type": "string"}, "soil_bearing": {"$ref": "#/$defs/Dim"},
+        "width": {"$ref": "#/$defs/Dim"}, "thickness": {"$ref": "#/$defs/Dim"},
+        "tributary_width": {"$ref": "#/$defs/Dim"},
+        "note": {"type": "string"},
+        "calc": {"$ref": "#/$defs/StructCalc"}
+      }
+    },
+    "StructCalc": {
+      "type": "object", "additionalProperties": false,
+      "description": "Inputs of the preliminary calc (simply supported member). Design values and factors are DesignValues with a citation.",
+      "properties": {
+        "material": {"enum": ["sawn", "glulam", "scl"]},
+        "span": {"$ref": "#/$defs/Dim"},
+        "b": {"anyOf": [{"$ref": "#/$defs/Dim"}, {"$ref": "#/$defs/DesignValue"}]},
+        "d": {"anyOf": [{"$ref": "#/$defs/Dim"}, {"$ref": "#/$defs/DesignValue"}]},
+        "plies": {"type": "integer", "minimum": 1},
+        "Fb": {"$ref": "#/$defs/DesignValue"}, "Fv": {"$ref": "#/$defs/DesignValue"}, "E": {"$ref": "#/$defs/DesignValue"},
+        "factors": {"type": "object", "additionalProperties": false,
+                    "properties": {"Fb": {"type": "object", "additionalProperties": {"$ref": "#/$defs/DesignValue"}},
+                                   "Fv": {"type": "object", "additionalProperties": {"$ref": "#/$defs/DesignValue"}},
+                                   "E": {"type": "object", "additionalProperties": {"$ref": "#/$defs/DesignValue"}}}},
+        "loads": {"type": "array", "items": {
+          "type": "object", "required": ["kind", "case"], "additionalProperties": false,
+          "properties": {"id": {"$ref": "#/$defs/Ident"}, "kind": {"enum": ["uniform", "point"]},
+                         "case": {"enum": ["D", "L", "Lr", "S"]}, "psf": {"$ref": "#/$defs/Dim"},
+                         "trib": {"$ref": "#/$defs/Dim"}, "plf": {"$ref": "#/$defs/DesignValue"},
+                         "P": {"$ref": "#/$defs/Dim"}, "a": {"$ref": "#/$defs/Dim"}, "note": {"type": "string"}}}},
+        "combos": {"type": "array", "items": {
+          "type": "object", "required": ["name", "factors", "CD", "citation"], "additionalProperties": false,
+          "properties": {"name": {"type": "string"}, "citation": {"type": "string", "minLength": 1},
+                         "factors": {"type": "object", "additionalProperties": {"type": "number"}},
+                         "CD": {"$ref": "#/$defs/DesignValue"}}}},
+        "deflection": {"type": "object", "additionalProperties": false,
+                       "properties": {"live": {"type": "string", "description": "A STRUCTURAL MEMBER row of CRC Table R301.7, e.g. Floors."},
+                                      "total": {"type": "string", "description": "A CONSTRUCTION row of CBC Table 1604.3 with a D + L limit, e.g. Floor members."},
+                                      "dry_service": {"type": "boolean"}}},
+        "note": {"type": "string"}
+      }
+    }
+  }
+}

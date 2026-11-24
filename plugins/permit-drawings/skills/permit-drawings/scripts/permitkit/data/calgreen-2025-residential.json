@@ -1,0 +1,340 @@
+{
+ "about": "CALGreen (2025 California Green Building Standards Code, Title 24 Part 11) Chapter 4 residential mandatory measures that commonly reach additions and alterations, with short quotes cut verbatim from the CrossBeam code corpus. The drafter decides which apply to the project and records why; the kit never selects a measure by itself. responsibility and verification are suggested defaults the drafter may change; they are not code text.",
+ "edition": "2025 California Green Building Standards Code (CALGreen, Title 24, Part 11), effective 2026-01-01",
+ "corpus": "data/state-code in the CrossBeam repo (scraped from codes.iccsafe.org/content/CAGBC2025P3)",
+ "divisions": {
+  "4.1": "DIVISION 4.1 PLANNING AND DESIGN",
+  "4.3": "DIVISION 4.3 WATER EFFICIENCY AND CONSERVATION",
+  "4.4": "DIVISION 4.4 MATERIAL CONSERVATION AND RESOURCE EFFICIENCY",
+  "4.5": "DIVISION 4.5 ENVIRONMENTAL QUALITY"
+ },
+ "trigger": {
+  "section": "301.1.1",
+  "title": "Additions and alterations",
+  "file": "part-11-green-building/chapter-3-green-building.md",
+  "quote": "[HCD] The mandatory provisions of Chapter 4 shall be applied to additions or alterations of existing residential buildings where the addition or alteration increases the building’s conditioned area, volume or size. The requirements shall apply only to and/or within the specific area of the addition or alteration.",
+  "note_quote": "Note: Repairs including, but not limited to, resurfacing, restriping, and repairing or maintaining existing lighting fixtures are not considered alterations for the purpose of this section."
+ },
+ "measures": [
+  {
+   "section": "4.106.2",
+   "division": "4.1",
+   "title": "Storm water drainage and retention during construction",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Projects which disturb less than one acre of soil and are not part of a larger common plan of development which in total disturbs one acre or more, shall manage storm water drainage during construction.",
+   "responsibility": "CONTRACTOR",
+   "verification": "INSPECTOR DURING CONSTRUCTION",
+   "guidance": "Site work that disturbs soil (footings, grading). Interior-only work usually disturbs none."
+  },
+  {
+   "section": "4.106.3",
+   "division": "4.1",
+   "title": "Grading and paving",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Construction plans shall indicate how the site grading or drainage system will manage all surface water flows to keep water from entering buildings.",
+   "responsibility": "DESIGNER (SHOW ON SITE PLAN)",
+   "verification": "PLAN CHECK; INSPECTOR",
+   "guidance": "Has its own exception: additions and alterations not altering the drainage path."
+  },
+  {
+   "section": "4.106.4",
+   "division": "4.1",
+   "title": "Electric vehicle (EV) charging for new construction",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "New construction shall comply with Section 4.106.4.1 or 4.106.4.2.",
+   "responsibility": "DESIGNER / ELECTRICIAN",
+   "verification": "PLAN CHECK; INSPECTOR",
+   "guidance": "The text names new construction. An addition or alteration needs a sourced reason (for example a city amendment) to apply it."
+  },
+  {
+   "section": "4.303.1",
+   "division": "4.3",
+   "title": "Water conserving plumbing fixtures and fittings",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Plumbing fixtures (water closets and urinals) and fittings (faucets and showerheads) shall comply with Sections 4.303.1.1, 4.303.1.2, 4.303.1.3 and 4.303.1.4.",
+   "responsibility": "CONTRACTOR / PLUMBER",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "New or replaced fixtures and fittings in the area of work."
+  },
+  {
+   "section": "4.303.1 Note",
+   "division": "4.3",
+   "title": "Noncompliant plumbing fixtures (Civil Code 1101.1)",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Note:  All noncompliant plumbing fixtures in any residential real property shall be replaced with water-conserving plumbing fixtures. Plumbing fixture replacement is required prior to issuance of a certificate of final completion, certificate of occupancy, or final permit approval by the local building department.",
+   "responsibility": "OWNER / CONTRACTOR",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "A note to the Civil Code: read Civil Code 1101.1 et seq. for which homes and fixtures it covers (age of the building, the kind of permit) before applying it."
+  },
+  {
+   "section": "4.303.1.1",
+   "division": "4.3",
+   "title": "Water closets",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "The effective flush volume of all water closets shall not exceed 1.28 gallons per flush. Tank-type water closets shall be certified to the performance criteria of the US EPA WaterSense Specification for Tank-type Toilets.",
+   "responsibility": "CONTRACTOR / PLUMBER",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "A new or replaced water closet."
+  },
+  {
+   "section": "4.303.1.3.1",
+   "division": "4.3",
+   "title": "Showerheads",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "4.303.1.3.1 Single showerhead. Showerheads shall have a maximum flow rate of not more than 1.8 gallons per minute at 80 psi. Showerheads shall be certified to the performance criteria of the US EPA WaterSense Specification for Showerheads.",
+   "responsibility": "CONTRACTOR / PLUMBER",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "A new or replaced showerhead (a hand-held shower counts)."
+  },
+  {
+   "section": "4.303.1.3.2",
+   "division": "4.3",
+   "title": "Multiple showerheads serving one shower",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "4.303.1.3.2 Multiple showerheads serving one shower. When a shower is served by more than one showerhead, the combined flow rate of all showerheads and/or other shower outlets controlled by a single valve shall not exceed 1.8 gallons per minute at 80 psi, or the shower shall be designed to allow only one shower outlet to be in operation at a time.",
+   "responsibility": "CONTRACTOR / PLUMBER",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "A shower with more than one outlet."
+  },
+  {
+   "section": "4.303.1.4.1",
+   "division": "4.3",
+   "title": "Residential lavatory faucets",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "4.303.1.4.1 Residential lavatory faucets. The maximum flow rate of residential lavatory faucets shall not exceed 1.2 gallons per minute at 60 psi. The minimum flow rate of residential lavatory faucets shall not be less than 0.8 gallons per minute at 20 psi.",
+   "responsibility": "CONTRACTOR / PLUMBER",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "A new or replaced lavatory faucet."
+  },
+  {
+   "section": "4.303.1.4.4",
+   "division": "4.3",
+   "title": "Kitchen faucets",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "4.303.1.4.4 Kitchen faucets. The maximum flow rate of kitchen faucets shall not exceed 1.8 gallons per minute at 60 psi. Kitchen faucets may temporarily increase the flow above the maximum rate, but not to exceed 2.2 gallons per minute at 60 psi, and must default to a maximum flow rate of 1.8 gallons per minute at 60 psi.",
+   "responsibility": "CONTRACTOR / PLUMBER",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "A new or replaced kitchen faucet."
+  },
+  {
+   "section": "4.303.3",
+   "division": "4.3",
+   "title": "Standards for plumbing fixtures and fittings",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Plumbing fixtures and fittings shall be installed in accordance with the California Plumbing Code, and shall meet the applicable standards referenced in Table 1701.1 of the California Plumbing Code.",
+   "responsibility": "CONTRACTOR / PLUMBER",
+   "verification": "INSPECTOR",
+   "guidance": "Any new plumbing fixture or fitting."
+  },
+  {
+   "section": "4.304.1",
+   "division": "4.3",
+   "title": "Outdoor potable water use in landscape areas",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Residential developments shall comply with a local water efficient landscape ordinance or the current California Department of Water Resources’ Model Water Efficient Landscape Ordinance (MWELO), whichever is more stringent.",
+   "responsibility": "OWNER / LANDSCAPE CONTRACTOR",
+   "verification": "PLAN CHECK (LANDSCAPE PLAN)",
+   "guidance": "New or rehabilitated landscape that the project installs; read MWELO for its own area thresholds."
+  },
+  {
+   "section": "4.406.1",
+   "division": "4.4",
+   "title": "Rodent proofing",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Annular spaces around pipes, electric cables, conduits or other openings in sole/bottom plates at exterior walls shall be protected against the passage of rodents by closing such openings with cement mortar, concrete masonry or a similar method acceptable to the enforcing agency.",
+   "responsibility": "CONTRACTOR",
+   "verification": "INSPECTOR AT FRAMING",
+   "guidance": "New exterior wall sole plates with penetrations."
+  },
+  {
+   "section": "4.408.1",
+   "division": "4.4",
+   "title": "Construction waste management",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Recycle and/or salvage for reuse a minimum of 65 percent of the nonhazardous construction and demolition waste in accordance with either Section 4.408.2, 4.408.3 or 4.408.4, or meet a more stringent local construction and demolition waste management ordinance.",
+   "responsibility": "CONTRACTOR",
+   "verification": "DOCUMENTATION TO THE CITY (4.408.5)",
+   "guidance": "Construction or demolition waste from the work."
+  },
+  {
+   "section": "4.408.2",
+   "division": "4.4",
+   "title": "Construction waste management plan",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Submit a construction waste management plan in conformance with Items 1 through 5. The construction waste management plan shall be updated as necessary and shall be available during construction for examination by the enforcing agency.",
+   "responsibility": "CONTRACTOR",
+   "verification": "PLAN SUBMITTED; KEPT ON SITE",
+   "guidance": "One of the three ways to show 4.408.1 (4.408.2, 4.408.3 or 4.408.4)."
+  },
+  {
+   "section": "4.408.3",
+   "division": "4.4",
+   "title": "Waste management company",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Utilize a waste management company, approved by the enforcing agency, which can provide verifiable documentation that the percentage of construction and demolition waste material diverted from the landfill complies with Section 4.408.1.",
+   "responsibility": "CONTRACTOR",
+   "verification": "HAULER DIVERSION RECORDS",
+   "guidance": "One of the three ways to show 4.408.1."
+  },
+  {
+   "section": "4.408.4",
+   "division": "4.4",
+   "title": "Waste stream reduction alternative [LR]",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Projects that generate a total combined weight of construction and demolition waste disposed of in landfills, which do not exceed 3.4 pounds per square foot of the building area shall meet the minimum 65 percent construction waste reduction requirement in Section 4.408.1.",
+   "responsibility": "CONTRACTOR",
+   "verification": "DISPOSAL WEIGHT RECORDS",
+   "guidance": "One of the three ways to show 4.408.1."
+  },
+  {
+   "section": "4.408.5",
+   "division": "4.4",
+   "title": "Documentation",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Documentation shall be provided to the enforcing agency which demonstrates compliance with Section 4.408.2, Items 1 through 5, Section 4.408.3 or Section 4.408.4.",
+   "responsibility": "CONTRACTOR",
+   "verification": "BEFORE FINAL INSPECTION",
+   "guidance": "Goes with 4.408.1."
+  },
+  {
+   "section": "4.410.1",
+   "division": "4.4",
+   "title": "Operation and maintenance manual",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "At the time of final inspection, a manual, compact disc, web-based reference or other media acceptable to the enforcing agency which includes all of the following shall be placed in the building:",
+   "responsibility": "CONTRACTOR",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "Read the list of contents; it is written for whole buildings."
+  },
+  {
+   "section": "4.503.1",
+   "division": "4.5",
+   "title": "Fireplaces",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Any installed gas fireplace shall be a direct-vent sealed-combustion type. Any installed woodstove or pellet stove shall comply with US EPA New Source Performance Standards (NSPS) emission limits as applicable, and shall have a permanent label indicating they are certified to meet the emission limits.",
+   "responsibility": "CONTRACTOR",
+   "verification": "INSPECTOR",
+   "guidance": "A fireplace, woodstove or pellet stove the project installs."
+  },
+  {
+   "section": "4.504.1",
+   "division": "4.5",
+   "title": "Covering of duct openings and protection of mechanical equipment during construction",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "At the time of rough installation, during storage on the construction site and until final startup of the heating, cooling and ventilating equipment, all duct and other related air distribution component openings shall be covered with tape, plastic, sheet metal or other methods acceptable to the enforcing agency to reduce the amount of water, dust and debris, which may enter the system.",
+   "responsibility": "CONTRACTOR (MECHANICAL)",
+   "verification": "INSPECTOR AT ROUGH",
+   "guidance": "New or altered ducts or air-distribution equipment."
+  },
+  {
+   "section": "4.504.2.1",
+   "division": "4.5",
+   "title": "Adhesives, sealants and caulks",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Adhesives, sealants and caulks used on the project shall meet the requirements of the following standards unless more stringent local or regional air pollution or air quality management district rules apply:",
+   "responsibility": "CONTRACTOR",
+   "verification": "PRODUCT DATA AT THE CITY'S REQUEST (4.504.2.4)",
+   "guidance": "Adhesives, sealants or caulks used on the job."
+  },
+  {
+   "section": "4.504.2.2",
+   "division": "4.5",
+   "title": "Paints and coatings",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Architectural paints and coatings shall comply with VOC limits in Table 1 of the ARB Architectural Suggested Control Measure, as shown in Table 4.504.3, unless more stringent local limits apply.",
+   "responsibility": "CONTRACTOR",
+   "verification": "PRODUCT DATA AT THE CITY'S REQUEST (4.504.2.4)",
+   "guidance": "Paint or coating applied on the job."
+  },
+  {
+   "section": "4.504.2.3",
+   "division": "4.5",
+   "title": "Aerosol paints and coatings",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Aerosol paints and coatings shall meet the Product-weighted MIR Limits for ROC in Section 94522(a)(2) and other requirements, including prohibitions on use of certain toxic compounds and ozone depleting substances, in Sections 94522(e)(1) and (f)(1) of California Code of Regulations, Title 17, commencing with Section 94520",
+   "responsibility": "CONTRACTOR",
+   "verification": "PRODUCT DATA AT THE CITY'S REQUEST (4.504.2.4)",
+   "guidance": "Aerosol paint used on the job."
+  },
+  {
+   "section": "4.504.2.4",
+   "division": "4.5",
+   "title": "Verification",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Verification of compliance with this section shall be provided at the request of the enforcing agency.",
+   "responsibility": "CONTRACTOR",
+   "verification": "AT THE CITY'S REQUEST",
+   "guidance": "Goes with 4.504.2.1 to 4.504.2.3."
+  },
+  {
+   "section": "4.504.3",
+   "division": "4.5",
+   "title": "Carpet systems",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "All carpet installed in the building interior shall meet the requirements of the California Department of Public Health, “Standard Method for the Testing and Evaluation of Volatile Organic Chemical Emissions from Indoor Sources Using Environmental Chambers,” Version 1.2, January 2017 (Emission testing method for California Specification 01350).",
+   "responsibility": "CONTRACTOR / FLOORING",
+   "verification": "PRODUCT DATA",
+   "guidance": "Carpet the project installs."
+  },
+  {
+   "section": "4.504.4",
+   "division": "4.5",
+   "title": "Resilient flooring systems",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Where resilient flooring is installed, at least 80 percent of floor area receiving resilient flooring shall meet the requirements of the California Department of Public Health, “Standard Method for the Testing and Evaluation of Volatile Organic Chemical Emissions from Indoor Sources Using Environmental Chambers,” Version 1.2, January 2017 (Emission testing method for California Specification 01350).",
+   "responsibility": "CONTRACTOR / FLOORING",
+   "verification": "PRODUCT DATA",
+   "guidance": "Resilient flooring (vinyl, LVT, linoleum, rubber) the project installs."
+  },
+  {
+   "section": "4.504.5",
+   "division": "4.5",
+   "title": "Composite wood products",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Hardwood plywood, particleboard and medium density fiberboard composite wood products used on the interior or exterior of the building shall meet the requirements for formaldehyde as specified in ARB’s Air Toxics Control Measure for Composite Wood (17 CCR 93120 et seq.) as shown in Table 4.504.5.",
+   "responsibility": "CONTRACTOR / CABINET SUPPLIER",
+   "verification": "PRODUCT DATA (4.504.5.1)",
+   "guidance": "Cabinets, shelving or panels of plywood, particleboard or MDF."
+  },
+  {
+   "section": "4.505.2",
+   "division": "4.5",
+   "title": "Concrete slab foundations",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Concrete slab foundations required to have a vapor retarder by the California Building Code, Chapter 19 or concrete slab-on-ground floors required to have a vapor retarder by the California Residential Code, Chapter 5, shall also comply with this section.",
+   "responsibility": "CONTRACTOR",
+   "verification": "INSPECTOR BEFORE POUR",
+   "guidance": "A new slab that needs a vapor retarder; then 4.505.2.1 (capillary break)."
+  },
+  {
+   "section": "4.505.3",
+   "division": "4.5",
+   "title": "Moisture content of building materials",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Building materials with visible signs of water damage shall not be installed. Wall and floor framing shall not be enclosed when the framing members exceed 19 percent moisture content.",
+   "responsibility": "CONTRACTOR",
+   "verification": "INSPECTOR BEFORE COVER (READINGS RECORDED)",
+   "guidance": "New wall or floor framing that will be enclosed."
+  },
+  {
+   "section": "4.506.1",
+   "division": "4.5",
+   "title": "Bathroom exhaust fans",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Each bathroom shall be mechanically ventilated and shall comply with the following:\n\n- 1. Fans shall be ENERGY STAR compliant and be ducted to terminate outside the building.\n- 2. Unless functioning as a component of a whole house ventilation system, fans must be controlled by a humidity control.",
+   "responsibility": "CONTRACTOR (ELECTRICAL / MECHANICAL)",
+   "verification": "INSPECTOR AT FINAL",
+   "guidance": "A bathroom (a room with a bathtub or shower) in the area of work."
+  },
+  {
+   "section": "4.507.2",
+   "division": "4.5",
+   "title": "Heating and air-conditioning system design",
+   "file": "part-11-green-building/chapter-4-residential-mandatory-measures.md",
+   "quote": "Heating and air-conditioning systems shall be sized, designed and have their equipment selected using the following methods:\n\n- 1. The heat loss and heat gain is established according to ANSI/ACCA 2 Manual J—2016 (Residential Load Calculation), ASHRAE handbooks or other equivalent design software or methods.\n- 2. Duct systems are sized according to ANSI/ACCA 1 Manual D—2016 (Residential Duct Systems),  ASHRAE handbooks or other equivalent design software or methods.\n- 3. Select heating and cooling equipment according to ANSI/ACCA 3 Manual S—2014 (Residential Equipment Selection) or other equivalent design software or methods.",
+   "responsibility": "MECHANICAL DESIGNER / CONTRACTOR",
+   "verification": "LOAD CALCULATIONS AT PLAN CHECK",
+   "guidance": "A new or replaced heating or cooling system."
+  }
+ ]
+}

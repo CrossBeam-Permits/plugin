@@ -1,0 +1,33 @@
+{
+  "generator": "feasibility-report",
+  "generator_version": "1.0.0",
+  "skill_version": "0.2.0",
+  "private_commit": "789c8f614bffb0c3a0ef10230d1564fb0799d0fd",
+  "files": {
+    ".claude-plugin/plugin.json": "be551e4b3f7e366394e43bcf36872cb5dcda4e0b4b5a6620dec6d7ac6ebc0375",
+    ".mcp.json": "f187902f74efae09622613a25c2f90245466c4f19ceab470903b8bf0728d3bf1",
+    "README.md": "eca7ec381ea5a05ec765f6aacc6c76c92f9a45e4e5677b1e6e8d0bd758ce1dc3",
+    "commands/report.md": "b50213b334f8862ae560c4322c48df84bd9676b86cfb884b97c148483d9e7e65",
+    "skills/feasibility-report/SKILL.md": "c922cb08538261add0e8e12ca30705f3fb45a094c3ef9b016a072e7a980c901c",
+    "skills/feasibility-report/examples/detached-adu.md": "ed18079895f135390f65f069450c6d1e1d5224f0d0ead85272cf838d5a6b042a",
+    "skills/feasibility-report/references/00-connect.md": "bb3417fdc215039bf7a27583ef298ceaacaaa3f237c1d71c864ee6f8f8a1b1e0",
+    "skills/feasibility-report/references/01-intake.md": "d966ee2479631545258e7152b093a50e06308bc1fad58146f4aabd48e5f7c9df",
+    "skills/feasibility-report/references/02-site.md": "8e47e0994dbdede1281ab6b3995cf4fd95eebd822da6305323a79b53e27764eb",
+    "skills/feasibility-report/references/03-city-code.md": "52568e6b09c5cfbbcbe3dfa498614911756d49c4adaad343c88240d96f62da50",
+    "skills/feasibility-report/references/04-state-law.md": "445e8512525a9f0b670654042cc2fdec8a7a916c77415e71448b22751b803e2c",
+    "skills/feasibility-report/references/05-fees.md": "1c9559ca7d0bd976c20aaad46dfb58d8d8d601cb4b1fcadae8184854567fba34",
+    "skills/feasibility-report/references/06-synthesize.md": "154f28a0a49f1797aa3e022a4b75512824e0f1c67b4a1cb45332f6f43a823326",
+    "skills/feasibility-report/references/07-report.md": "58c257eb85de06e35dc11da9dd827a8214f728abc41aadd67f51fe371449a770",
+    "skills/feasibility-report/references/find-local-law.md": "36c5963f14138e50023a83ce1f6604e63db9ea5cbfcd41efde9d607fdf9ea013",
+    "skills/feasibility-report/references/tags.md": "f69065f5cb85a08368194fa13814eb6b5157500dc5e7fe36522c13d6430a4710",
+    "skills/feasibility-report/references/types/README.md": "4615bb225475e7655fd9a047124e2ab97bb3ca360ba692a7b3de0a3da55dc339",
+    "skills/feasibility-report/references/types/addition-remodel.md": "9a8636866ead14163d12408db46f1505a9aebe6058b18ac9950da0ba36f2252b",
+    "skills/feasibility-report/references/types/commercial-ti.md": "61588bbf033fe270623867faa5e9647ea147826fade4df4fcd1db083a6dadbff",
+    "skills/feasibility-report/references/types/general.md": "1f247ec7dddd298982646a93d1a00aa4a50d7e44133e8224d3c35e2894ffd89b",
+    "skills/feasibility-report/references/types/multi-unit.md": "86ea16ebfd16464d720d897704693074d95dec40483b6616e37d837e6b4ade66",
+    "skills/feasibility-report/references/types/new-house.md": "c84944143ca43f086f04785137d5df27f77bc9795315146f37de17bc0b8761a5",
+    "skills/feasibility-report/references/types/new-unit.md": "6224c1eb721ac0264c85d2590f23e0c0caa0d82f482732017bff0e05ad371477",
+    "skills/feasibility-report/templates/report.html": "c6876f71924fe1c330d82f3917451110383943e7262281233cbe347c5ee95992",
+    "skills/feasibility-report/templates/report.md": "68a57582787baac5a4b95bd854e3fa4909e7da024797282ffafb96a3cb860d59"
+  }
+}
