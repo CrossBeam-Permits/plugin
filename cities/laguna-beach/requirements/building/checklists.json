@@ -42,6 +42,14 @@
           "label": "Detached accessory or storage structure, shed or container"
         },
         {
+          "id": "residential-pool-spa",
+          "label": "Pool or spa permit"
+        },
+        {
+          "id": "residential-mechanical-plumbing-minor",
+          "label": "Minor mechanical, plumbing or temporary-power permit"
+        },
+        {
           "id": "residential-alteration-interior",
           "label": "Residential interior remodel (kitchen, bath, room alteration)"
         },
@@ -126,6 +134,18 @@
           "label": "Sign permit"
         },
         {
+          "id": "residential-energy-storage",
+          "label": "Residential battery energy storage (no new solar) or standby generator"
+        },
+        {
+          "id": "multi-unit-residential-hvac",
+          "label": "Multi-unit HVAC: rooftop units, a central plant, or equipment for the building or several units"
+        },
+        {
+          "id": "commercial-hvac",
+          "label": "Commercial HVAC, kitchen hood or exhaust"
+        },
+        {
           "id": "residential-deferred-submittal",
           "label": "Residential deferred submittal (roof trusses, elevator, fire sprinklers)"
         },
@@ -140,9 +160,9 @@
           "label": "A separate Building Permit Application for each listed scope",
           "stage": "intake",
           "level": "city",
-          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-solar", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure"],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-solar", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-pool-spa", "residential-mechanical-plumbing-minor"],
           "checked_against": "submittal",
-          "detail": "Laguna files one application per scope off one complete plan set, each with its own description and valuation. The baseline scopes are: new SFR/addition/remodel with site work and grading of 20 CY or less outside the building footprint; demolition; ADU/JADU; grading of more than 20 CY outside the building footprint; and pool/spa. Each ADU or JADU normally has its own permit, but a JADU may ride with the main house; main house + JADU + ADU is two applications. Demolishing a unit requires its own demolition permit; demo-only normally also needs a construction submittal on file or Building Official approval. GRADING TEST: count only grading OUTSIDE the building footprint, using the greater of cut or fill. More than 20 CY outside the footprint needs its own grading application, valuation, permit and plan submittal; 20 CY or less rides with construction. Grading inside the footprint never counts toward the 20 CY, though it still gets review and a fee. Apply the test in one of three cases. (1) The plans or application state the inside and outside quantities: apply the test to the outside quantity. Decide which case applies by reading the plans; never from a keyword. Shoring may issue with grading, but the plan checker decides which permit carries it. A house with an ADU may share one plan check but issues as two permits, one per address. Application pages may be combined into one PDF. When the City record for the named permit is available, compare its description with this filing's scope, the way a Planning record is compared: a grading record opened for another permit's work does not cover this filing's grading.",
+          "detail": "Laguna files one application per scope off one complete plan set, each with its own description and valuation. The baseline scopes are: new SFR/addition/remodel with site work and grading of 20 CY or less outside the building footprint; demolition; ADU/JADU; grading of more than 20 CY outside the building footprint; and pool/spa. Each ADU or JADU normally has its own permit, but a JADU may ride with the main house; main house + JADU + ADU is two applications. Demolishing a unit requires its own demolition permit; demo-only normally also needs a construction submittal on file or Building Official approval. GRADING TEST: count only grading OUTSIDE the building footprint, using the greater of cut or fill. More than 20 CY outside the footprint needs its own grading application, valuation, permit and plan submittal; 20 CY or less rides with construction. Grading inside the footprint never counts toward the 20 CY, though it still gets review and a fee. Apply the test in one of three cases. (1) The plans or application state the inside and outside quantities: apply the test to the outside quantity. Decide which case applies by reading the plans; never from a keyword. Shoring may issue with grading, but the plan checker decides which permit carries it. A house with an ADU may share one plan check but issues as two permits, one per address. POOL OR SPA: every pool or spa in the work is its own application with its own description and valuation, and the main application's description and valuation leave it out. A pool or spa drawn only as a future outline marked not part of this work, with no design, is not in this filing's scope. TEMPORARY POWER: temporary construction power is its own Electrical permit on the City's MEP application, one pole per parent permit, naming the permit it serves. Temporary power written into the main application's description is the same failure. Application pages may be combined into one PDF. A COVER NOTE IS NOT A FILING. A note on the cover or in the scope that a listed scope (a pool or spa, grading over 20 CY, demolition, an ADU, temporary power) is \"under separate permit\", \"by others\" or \"separate application\" does not file it. The City breaks every permit off this one plan set, so a listed scope drawn in this set has its application uploaded with this submittal. Work outside the list that the cover sends to its own or a deferred permit (site walls that ride with the house's site work, PV panels, fire sprinklers) is not asked for here. A listed scope already filed on its own Building record for this parcel counts as a named record and is compared the same way. When the City record for the named permit is available, compare its description with this filing's scope, the way a Planning record is compared: a grading record opened for another permit's work does not cover this filing's grading. On a pool/spa-only filing the grading split needs a STATED quantity of more than 20 CY outside the footprint apart from the pool and spa's own shell excavation, such as deck or terrace fill or cut for walls; the shell excavation rides with the pool application. Add the MEP application for temporary power when the packet shows it, and in grading case (2) the grading summary table.",
           "source": {
             "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Building Permit Application(s)\"; Laguna Beach 2026 Building Requirement Sheet, GENERAL INFORMATION row 4",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
@@ -168,7 +188,7 @@
           "label": "Planning approval completed before the Building submittal",
           "stage": "intake",
           "level": "city",
-          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-alteration-interior", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-reroof", "commercial-reroof", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-accessory-structure", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "multi-unit-residential-new", "commercial-site-improvements", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "sign"],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-alteration-interior", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-reroof", "commercial-reroof", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-accessory-structure", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "multi-unit-residential-new", "commercial-site-improvements", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "sign", "residential-energy-storage", "multi-unit-residential-hvac", "commercial-hvac"],
           "applies_when": {
             "question": "Does this project need any Laguna Beach Planning Division approval — design review, administrative design review, a coastal development permit, a variance, a conditional use permit, or a Zone Clearance for work that changes the exterior — before it can be built?",
             "if_yes": "The Planning approval must already be granted when the Building application is filed. Include the approval and its conditions with the Building submittal."
@@ -206,9 +226,9 @@
           "level": "city",
           "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
-          "detail": "The title or cover sheet states that the project complies with the 2025 CBC, CRC, CMC, CPC and CEC; the 2025 California Green Building Standards Code; the 2025 California Energy Efficiency Standards; and City of Laguna Beach regulations and ordinances.",
+          "detail": "The title or cover sheet states that the project complies with the codes in force on the Building application date. For an application received on or after 2026-01-01 that is the 2025 cycle, as the City prints it: the 2025 CBC, CRC, CMC, CPC and CEC; the 2025 California Green Building Standards Code; the 2025 California Energy Efficiency Standards; and City of Laguna Beach regulations and ordinances. Name the edition the plans state now and the sheet it is on.",
           "source": {
-            "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Building Plan Set\"; Laguna Beach New and Major Building Submittal Requirements (2025), \"PLAN INFORMATION\"",
+            "citation": "Laguna Beach Digital Plan Submittal Guide (E-Plan), \"Building Plan Set\": \"Include current code cycle on cover sheet\"; Laguna Beach New and Major Building Submittal Requirements (2025), \"PLAN INFORMATION\"",
             "url": "https://www.lagunabeachcity.net/departments/community-development/building-division",
             "published": true
           }
@@ -1855,10 +1875,10 @@
         },
         {
           "id": "laguna_contractor_credentials_on_record",
-          "label": "Contractor CSLB record and City business license, from the City's own records",
+          "label": "Contractor's CSLB license and City business license",
           "stage": "intake",
           "level": "city",
-          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-alteration-interior", "residential-evse", "multi-unit-residential-evse", "commercial-evse", "residential-demolition", "residential-pool-spa", "residential-grading", "residential-solar", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-wall-fence", "residential-mechanical-plumbing-minor", "multi-unit-residential-new", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-demolition", "sign", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-deferred-submittal", "commercial-deferred-submittal", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "residential-solar-thermal", "commercial-site-improvements", "commercial-solar", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "residential-energy-storage", "multi-unit-residential-electrical-service", "commercial-electrical-service", "multi-unit-residential-hvac", "commercial-hvac"],
+          "scopes": ["residential-new-dwelling", "residential-addition", "residential-adu", "residential-alteration-structural", "residential-alteration-interior", "residential-evse", "multi-unit-residential-evse", "commercial-evse", "residential-demolition", "residential-pool-spa", "residential-grading", "residential-solar", "residential-window-replacement", "residential-siding-replacement", "residential-patio-cover", "residential-wall-fence", "residential-mechanical-plumbing-minor", "multi-unit-residential-new", "commercial-new", "commercial-addition", "commercial-alteration-structural", "commercial-alteration-interior", "commercial-ti", "commercial-demolition", "sign", "residential-deck-patio-cover-new", "residential-site-improvements", "residential-retaining-wall", "residential-accessory-structure", "residential-deferred-submittal", "commercial-deferred-submittal", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural", "multi-unit-residential-alteration-interior", "multi-unit-residential-exterior-repair", "residential-solar-thermal", "commercial-site-improvements", "commercial-solar", "commercial-exterior-repair", "commercial-wireless", "commercial-temporary-structure", "residential-energy-storage", "multi-unit-residential-electrical-service", "commercial-electrical-service", "multi-unit-residential-hvac", "commercial-hvac", "residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof"],
           "applies_when": {
             "question": "Is a licensed contractor pulling this permit, rather than the property owner as an Owner-Builder?",
             "if_yes": "Staff read the City business-license register and the CSLB record for the contractor named on the application, and for any named subcontractors.",
@@ -2878,6 +2898,14 @@
           "label": "Residential interior water heater replacement e-permit"
         },
         {
+          "id": "residential-reroof",
+          "label": "Residential reroof"
+        },
+        {
+          "id": "commercial-reroof",
+          "label": "Commercial reroof"
+        },
+        {
           "id": "residential-new-dwelling",
           "label": "Residential new dwelling"
         },
@@ -2892,14 +2920,6 @@
         {
           "id": "residential-alteration-structural",
           "label": "Residential major remodel or structural alteration"
-        },
-        {
-          "id": "residential-reroof",
-          "label": "Residential reroof"
-        },
-        {
-          "id": "commercial-reroof",
-          "label": "Commercial reroof"
         },
         {
           "id": "residential-evse",
@@ -3047,14 +3067,14 @@
         },
         {
           "id": "laguna_staff_counter_trade_permit_route",
-          "label": "Note: the City currently issues this simple trade permit (OTC items 6, 8 and 9) only in person at the Building counter",
+          "label": "The filing is not a simple permit the City currently issues only in person at the Building counter (the counter list: OTC items 6, 7, 8 and 9)",
           "stage": "intake",
           "level": "city",
-          "scopes": ["residential-mechanical-plumbing-minor", "residential-panel-upgrade", "residential-water-heater", "multi-unit-residential-exterior-repair", "commercial-exterior-repair"],
+          "scopes": ["residential-mechanical-plumbing-minor", "residential-panel-upgrade", "residential-water-heater", "residential-reroof", "commercial-reroof", "multi-unit-residential-exterior-repair", "commercial-exterior-repair"],
           "checked_against": "submittal",
-          "detail": "Decide from the plans and the application description, never from a permit prefix or a word match.",
+          "detail": "The Planning sign-in at the counter is part of the visit, so a Zone Clearance or a Coastal Development Permit exemption does not take a reroof off the list. Decide from the plans and the application description, never from a permit prefix or a word match. Applicant action, in the City's words with the scope named: This [reroof / water heater replacement / panel upgrade] is a simple permit. For simple permits, applications are not processed through the portal, as permits are not issued online. For this permit, please come in person to the Community Development counter to pull the permit.",
           "source": {
-            "citation": "Building Completeness Check returns of simple residential trade permits, 2026-07 to 2026-11",
+            "citation": "City of Laguna Beach reroofing guide: \"As of 6/23/26, all reroof permits are issued in person at the counter.\" Building Completeness Check returns, 2026-07 to 2026-11: 23 of 29 simple residential trade filings and all 13 online reroof filings since September sent to the counter. The City's counter letter: \"For simple permits, applications are not processed through the portal, as permits are not issued online. The portal is intended for scopes of work that require a formal 2-3 week plan review. For this permit, please come in person to the Community Development counter to pull the permit. Please be sure to bring all documentation and be sure to sign-in to see the Planning Division first when you visit City Hall.\"",
             "published": false,
             "note": "Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division."
           }
@@ -3293,12 +3313,12 @@
         },
         {
           "id": "laguna_multifamily_separate_application_per_scope",
-          "label": "A separate application, with its own valuation, for each new unit or ADU, demolition, grading over 20 cubic yards and a pool",
+          "label": "A separate application, with its own valuation, for each new unit or ADU, demolition, grading over 20 cubic yards, a pool or spa, and temporary power",
           "stage": "intake",
           "level": "city",
           "scopes": ["multi-unit-residential-new", "multi-unit-residential-addition", "multi-unit-residential-alteration-structural"],
           "checked_against": "submittal",
-          "detail": "When the work adds dwelling units or an ADU, or includes demolition of a structure, grading over 20 cubic yards, or a pool, each is filed as its own application with its own valuation. The Building Division returned new multifamily filings for both. A fire sprinkler or alarm system is a Fire Department submittal on its own application.",
+          "detail": "When the work adds dwelling units or an ADU, or includes demolition of a structure, grading over 20 cubic yards, a pool or spa (with its engineering in the set), or temporary power shown on the plans (an MEP application), each is filed as its own application with its own valuation. A cover note that one of these is \"under separate permit\" does not file it unless it names a City record that covers the work. The Building Division returned new multifamily filings for both. A fire sprinkler or alarm system is a Fire Department submittal on its own application.",
           "source": {
             "citation": "Laguna Beach Building Division completeness returns on multifamily filings: application and plans disagree, with one application per unit and ADU; separate application per scope with Planning first, the wrong permit type, structural calculations, a soils report and an old code cycle",
             "published": false,

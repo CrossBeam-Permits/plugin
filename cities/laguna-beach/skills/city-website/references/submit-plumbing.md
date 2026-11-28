@@ -102,11 +102,33 @@ unless noted:
 - **Specification Sheets** — "Project Specification Sheets". The water-heater or backflow-device cut sheet, which is the fastest way to settle a reviewer's question about the model.
 - **Energy Calculations** and **Energy Calculation Addendum** — Title 24 compliance; expected when the scope triggers it.
 - **Plan Check Responses** (.doc/.docx/.pdf/.jpg/.jpeg) — where you upload your answers to a correction letter on a resubmittal.
-- **Revision Form** — for a change after the permit exists. The slot's description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/188/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
-- **Mechanical Equipment Guide** — the slot exists on this type too, but the "REQUIRED FOR ALL A/C PERMITS BY PLANNING" instruction is written only on the Mechanical Permit (186). See `submit-mechanical.md`.
+- **Revision Form** — for a change after the permit exists. The slot's description now links the City's **Building Plan Revision** form directly, https://www.lagunabeachcity.net/home/showpublisheddocument/23603/639274900407100000 (it pointed to the Applications & Forms page before). [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/188/0/0, attachment setup read through the portal's public API, as of 2026-11-24]
+- **Mechanical Equipment Guide** — the slot exists on this type too, and its description carries the same "REQUIRED FOR ALL A/C PERMITS BY PLANNING" words as on every type that has it. Only the Mechanical Permit (186) repeats the instruction on its More Info step. See `submit-mechanical.md`.
 - **Miscellaneous** (.pdf/.tif/.tiff/.jpeg/.jpg/.png) — everything else.
 
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/188/0/0, as of 2026-08-10]
+
+## Revising an issued permit (Revision work class)
+
+The City added a **Revision** work class to this type in November 2026 (portal filing
+behavior "Pay First"), the same revision path Residential, Commercial and Mixed Use
+already had. Use it to change a Plumbing Permit the City has already issued. It is not
+on the portal's apply menu. If you cannot find the revision path in the portal, call the
+Building Division, (949) 497-0715.
+
+- **Three PDFs are required, one file each:** **Original Plans Approved/Stamped by City**
+  ("Reference Only"), **Revised Plans**, and the **Revision Form**. The Revision Form slot
+  links the City's **Building Plan Revision** form directly: https://www.lagunabeachcity.net/home/showpublisheddocument/23603/639274900407100000. The form asks for a
+  sheet-by-sheet list of changes, and each change must also be identified on the plans.
+- **Optional slots:** Energy Calculations and Energy Calculation Addendum, the Mechanical
+  Equipment Guide, Specification Sheets, Plan Check Responses, Permit Application, and
+  Miscellaneous.
+- **The intake** opens with a required **Revision Number** and an optional **Additional
+  Valuation**, then an "Additional Plumbing" count sheet (37 fields, all optional). The portal does not
+  say whether to count the whole job again or only what the revision adds; the group name
+  ("Additional …") suggests only the added items. Ask the Building Division, (949) 497-0715.
+
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService (Revision work class, file set and intake layout read through the portal's public API), as of 2026-11-24]
 
 ## Contacts and licences
 

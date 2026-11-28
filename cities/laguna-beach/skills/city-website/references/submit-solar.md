@@ -80,7 +80,7 @@ readings. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfServi
 Eight more categories exist on this type, all PDF unless noted, unlimited files:
 Equipment or Component Data Sheets; Miscellaneous (also accepts .tif/.tiff/.jpeg/.jpg/.png);
 Plan Check Responses (.doc/.docx/.pdf/.jpg/.jpeg); Revision Form (its description
-links the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, as of 2026-10-26); Single Line
+links the City's Building Plan Revision form directly, https://www.lagunabeachcity.net/home/showpublisheddocument/23603/639274900407100000, as of 2026-11-24); Single Line
 Diagram; Site Plan or Roof Plan; Structural Calculations; Utility Company
 Approval Documents.
 

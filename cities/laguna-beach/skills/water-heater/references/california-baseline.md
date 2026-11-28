@@ -4,7 +4,7 @@
 
 ## California Water Heater -- State Regulatory Decision Engine
 
-This skill contains California state-level water heater replacement rules extracted from the 2025 California Plumbing Code (CPC), California Mechanical Code (CMC), and California Energy Code (Title 24 Part 6). It covers residential water heater replacements -- the most common plumbing permit type.
+This skill contains California state-level water heater replacement rules extracted from the 2025 California Plumbing Code (CPC), California Mechanical Code (CMC), and California Energy Code (Title 24 Part 6). It covers residential water heater replacements -- the most common plumbing permit type -- and routes a water heater in a nonresidential building to `commercial-building.md` (STEP 0).
 
 **What this covers**: State plumbing, mechanical, and energy code -- the requirements that apply everywhere in California. Every city must enforce at least these standards.
 
@@ -12,13 +12,19 @@ This skill contains California state-level water heater replacement rules extrac
 
 ### How to Use This Skill
 
-When reviewing a water heater permit or answering a water heater code question, follow the decision tree below. The first branch point is **gas vs. electric** -- this determines which code sections apply.
+When reviewing a water heater permit or answering a water heater code question, follow the decision tree below. The first branch point is **house or commercial building** (STEP 0); for a house, the next is **gas vs. electric**, which determines which code sections apply.
 
 Load only the reference files you need. Most reviews require 3-5 reference files, not all of them.
 
 ---
 
 ### Decision Tree Router
+
+#### STEP 0: House or commercial building?
+
+Decide from the plans, the photos and the panel directory whether the heater serves a dwelling or a nonresidential building (a restaurant, coffee shop, store, office, warehouse).
+- **Dwelling** (house, ADU, apartment unit): continue with STEP 1 below.
+- **Nonresidential building**: load `commercial-building.md` and use its checklist in place of STEP 3. It is still a counter-permit review. Steps 1, 2 and 4 and the references below still apply for the detail of each topic.
 
 #### STEP 1: Gas or Electric?
 

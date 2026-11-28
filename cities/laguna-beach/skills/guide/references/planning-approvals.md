@@ -439,6 +439,10 @@ finds, subject to peer review, no impact; such projects go to (B)(1). Two open q
   openings, and re-cladding or re-siding an existing wall with no ground disturbance all add nothing
   new. A new structure, addition, deck or rooftop appurtenance on a lot
   over 30% is Design Review under 25.50.040 whatever ground it disturbs (Step 1, slope row).
+  City practice so far is lighter for minor work off the steep ground: an exterior battery gateway
+  on a lot screened at 42% was approved as Zone Clearance (2026-11-12). Say Design
+  Review is the reading of the code, that the City has cleared small equipment and repair-scale
+  work like this as Zone Clearance, and that Planning confirms at intake. UNSETTLED.
 - **ADUs.** State law requires ADU permits to be "considered and approved ministerially without
   discretionary review or a hearing, notwithstanding ... any local ordinance" (Gov. Code
   66317(a)(1)), and no local rule outside a conforming ADU ordinance may delay or deny one

@@ -95,15 +95,38 @@ unless noted:
 - **Specification Sheets** — "Project Specification Sheets". The equipment cut sheets a reviewer will look for when the count sheet is ambiguous.
 - **Energy Calculations** and **Energy Calculation Addendum** — Title 24 compliance; expected when the scope triggers it.
 - **Plan Check Responses** (.doc/.docx/.pdf/.jpg/.jpeg) — where you upload your answers to a correction letter on a resubmittal.
-- **Revision Form** — for a change after the permit exists. The slot's description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/186/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
+- **Revision Form** — for a change after the permit exists. The slot's description now links the City's **Building Plan Revision** form directly, https://www.lagunabeachcity.net/home/showpublisheddocument/23603/639274900407100000 (it pointed to the Applications & Forms page before). [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/186/0/0, attachment setup read through the portal's public API, as of 2026-11-24]
 - **Miscellaneous** (.pdf/.tif/.tiff/.jpeg/.jpg/.png) — everything else.
 
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/186/0/0, as of 2026-08-10]
+
+## Revising an issued permit (Revision work class)
+
+The City added a **Revision** work class to this type in November 2026 (portal filing
+behavior "Pay First"), the same revision path Residential, Commercial and Mixed Use
+already had. Use it to change a Mechanical Permit the City has already issued. It is not
+on the portal's apply menu. If you cannot find the revision path in the portal, call the
+Building Division, (949) 497-0715.
+
+- **Three PDFs are required, one file each:** **Original Plans Approved/Stamped by City**
+  ("Reference Only"), **Revised Plans**, and the **Revision Form**. The Revision Form slot
+  links the City's **Building Plan Revision** form directly: https://www.lagunabeachcity.net/home/showpublisheddocument/23603/639274900407100000. The form asks for a
+  sheet-by-sheet list of changes, and each change must also be identified on the plans.
+- **Optional slots:** Energy Calculations and Energy Calculation Addendum, the Mechanical
+  Equipment Guide, Specification Sheets, Plan Check Responses, Permit Application, and
+  Miscellaneous.
+- **The intake** opens with a required **Revision Number** and an optional **Additional
+  Valuation**, then an "Additional Mechanical" count sheet (36 fields, all optional). The portal does not
+  say whether to count the whole job again or only what the revision adds; the group name
+  ("Additional …") suggests only the added items. Ask the Building Division, (949) 497-0715.
+
+[source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService (Revision work class, file set and intake layout read through the portal's public API), as of 2026-11-24]
 
 ## Contacts and licences
 
 - Required: **Applicant, Owner**. Optional: Agent, Architect, Contractor, Contractor – Prior, Designer, Engineer, Other, Owner - Prior, Owner/Builder, Subcontractor, Tenant.
 - **Contractor and Subcontractor entries are licence-validated** by the portal.
+- **Licence setting (added November 2026).** The main Mechanical work class and its Revision work class now carry the same contractor-licence setting that most Residential (183) and Commercial (184) work classes already carry, and owner-builders file those types. The public setup does not show what the setting asks of an owner-builder. If the portal will not let a homeowner file as owner-builder, call the Building Division, (949) 497-0715, rather than guessing. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/186/0/0, work class licence setup read through the portal's public API, as of 2026-11-24]
 - Permits issue only to an owner-builder or a **City-licensed** contractor, and every business working in the city needs a Laguna Beach business licence. [source: https://www.lagunabeachcity.net/government/departments/community-development/building-permits, as of 2026-07-08]
 
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/186/0/0, as of 2026-08-10]

@@ -209,7 +209,8 @@
           ],
           "source": "city_history",
           "source_label": "Laguna history · 446 solar permits 2023-26",
-          "cite": "Median valuation per kW on 446 solar permits in Tyler (Residential - Solar and SolarAPP+) that state the system size, 2023-2026"
+          "cite": "Median valuation per kW on 446 solar permits in Tyler (Residential - Solar and SolarAPP+) that state the system size, 2023-2026",
+          "note": "Most Laguna solar jobs include one or two batteries, and this rate covers them: a job with batteries files a median $5,400 over the panels alone."
         },
         {
           "id": "windows_doors",

@@ -18,6 +18,8 @@ Source: City of Laguna Beach Building Division, Multifamily Permit Type Guidelin
 
 **Commercial** — hotels, motels, and similar lodging uses *"should remain under commercial permit types."* Lodging is commercial no matter how residential the units look.
 
+**A community building with no dwelling is Commercial.** A guard gatehouse, clubhouse, recreation or maintenance building that belongs to a homeowners association of single-family homes and holds no dwelling unit is not a house, a duplex or 3 or more dwelling units. The 2026-04-08 guideline does not name this case; it is Building Division practice from October 2026. An accessory building on one house or duplex lot (a garage, a cabana, a shed) stays Residential.
+
 ## A condominium filed as Residential
 
 City Building staff directed on 2026-09-08 that a confirmed condominium filing be submitted as multi-family and that the current residential record would close.

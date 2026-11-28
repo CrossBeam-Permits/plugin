@@ -56,8 +56,10 @@ These are permit/application splits, never plan-set splits:
 - **Demolition.** Demolishing a dwelling unit requires a separate demolition permit. A demo-only permit is normally not issued unless a formal replacement-construction submittal is on file or the Building Official approves it.
 - **Grading.** Use the greater of cut or fill outside the building footprint for the 20-CY permit test. More than 20 CY gets its own grading application, valuation, permit and plan submittal. 20 CY or less rides on the applicable construction permit. Grading wholly inside the footprint still receives grading review and a fee; it never counts toward the 20 CY and never needs its own application.
 - **Pool or spa with a new house.** The E-Plan guide already makes the pool/spa its own application with its own valuation.
-
-The reason for every split is traceability: each EnerGov record has one scope, description, valuation and fee set while the technical reviewers work from one coordinated drawing set.
+- **Any spa, including a portable hot tub.** A spa wired or plumbed as part of other work is its own application.
+- **Pool engineering travels with the pool application.**
+- **Temporary power.** Temporary construction power is its own Electrical permit on the MEP application, one pole per parent permit, naming the permit it serves.
+- **Grading beside a pool-only filing.**
 
 ## MEP applications
 
