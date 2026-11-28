@@ -494,6 +494,8 @@ export function iccValuation(rule, inputs, permitType, quantityOf = (id) => inpu
     notPermitted,
     total,
     partial: lines.length > 0 && lines.every((line) => line.kind === 'site_work'),
+    // A remodel the permit type carries with no remodeled area captured: other lines may be priced, but not it.
+    alterationUnpriced: Boolean(alterationType) && remodeled === null,
     estimated: lines.some((line) => line.basis === 'estimate'),
     extentAssumed: extents !== null && lines.some((line) => line.kind === 'alteration') && capturedExtent === null,
     reason,

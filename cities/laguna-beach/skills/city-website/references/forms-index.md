@@ -59,11 +59,14 @@ Its "Handouts" tab is listed in the next section.
 | Plan Duplication Request Form | 5153 / 637636661850230000 |
 | Walls & Fences - Survey Requirements Waiver Request | 5155 / 638397885224870000 |
 
-**Building Plan Revision** is the only revision form on the page. The portal's
-**Revision Form** attachment slot (required on the Revision work class since late
-October 2026) sends residents to this page for the form. The City has not said in so
-many words that the two are the same form; if a resident asks, give this link and the
-Building Division's number, (949) 497-0715.
+**Building Plan Revision** is the only revision form on the page, and it is the form
+the portal's **Revision Form** attachment slot wants. The slot (required on the Building Revision work classes since late October 2026, and on
+the trade ones since they were added in November) linked only this page at the previous
+portal read; it now links the form itself, document 23603. The form asks for the permit and revision
+numbers, the address, a contact, a brief description of the overall change and any
+increased valuation, and a sheet-by-sheet list of changes, which must also be identified
+on the plans. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService (Revision Form slot descriptions read through the portal's public API), as of 2026-11-24]
+[source: https://www.lagunabeachcity.net/home/showpublisheddocument/23603/639274900407100000, as of 2026-11-24]
 
 ## Building Division handouts
 

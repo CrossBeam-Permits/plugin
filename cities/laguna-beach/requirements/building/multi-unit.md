@@ -17,11 +17,11 @@ Each item names when it is due and what triggers it. A conditional item applies 
 - What the City asks for: The Multifamily application takes two attachments: the City's Building Permit Application, signed, and the plans. The Building Division returned a Multifamily filing whose application was not signed. The signature is on the application form itself; the portal's electronic signature at submit does not replace it.
 - Source: Laguna Beach online permit portal, Multifamily Permit (type 322), Required attachments: "Permit Application: Building Application", the signed Building Permit Application PDF, and the instruction to sign applications before uploading (https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/322/0/0)
 
-### A separate application, with its own valuation, for each new unit or ADU, demolition, grading over 20 cubic yards and a pool
+### A separate application, with its own valuation, for each new unit or ADU, demolition, grading over 20 cubic yards, a pool or spa, and temporary power
 
 - id: `laguna_multifamily_separate_application_per_scope`
 - Scopes: Multi-unit residential new construction; Multi-unit residential addition; Multi-unit residential structural alteration, major remodel, or deck, balcony, stair or guard replacement
-- What the City asks for: When the work adds dwelling units or an ADU, or includes demolition of a structure, grading over 20 cubic yards, or a pool, each is filed as its own application with its own valuation. The Building Division returned new multifamily filings for both. A fire sprinkler or alarm system is a Fire Department submittal on its own application.
+- What the City asks for: When the work adds dwelling units or an ADU, or includes demolition of a structure, grading over 20 cubic yards, a pool or spa (with its engineering in the set), or temporary power shown on the plans (an MEP application), each is filed as its own application with its own valuation. A cover note that one of these is "under separate permit" does not file it unless it names a City record that covers the work. The Building Division returned new multifamily filings for both. A fire sprinkler or alarm system is a Fire Department submittal on its own application.
 - Source: Laguna Beach Building Division completeness returns on multifamily filings: application and plans disagree, with one application per unit and ADU; separate application per scope with Planning first, the wrong permit type, structural calculations, a soils report and an old code cycle
 - Note: Reported by City staff. It is not printed in a published City handout. Confirm with the Building Division.
 

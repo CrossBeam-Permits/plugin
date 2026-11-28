@@ -11,7 +11,7 @@
 import { ALTERATION_EXTENTS, ICC_BVD, ICC_BVD_EDITIONS, ICC_CONSTRUCTION_TYPES, ICC_OCCUPANCY_GROUPS, ICC_FLAG_BAND, compareToIcc, defaultIccOccupancy, iccLineMath, iccOccupancyRow, normalizeConstructionType, iccValuation, validateIccMinimum, valuationFromArea } from './icc-bvd.mjs';
 
 // ── Cities with an authored fee schedule ──
-export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona', 'orange', 'lancaster', 'yorba-linda', 'hermosa-beach'];
+export const FEE_CITIES = ['laguna-beach', 'buena-park', 'newport-beach', 'costa-mesa', 'anaheim', 'los-altos-hills', 'stanislaus-county', 'denver', 'corona', 'orange', 'lancaster', 'yorba-linda', 'hermosa-beach', 'frisco-co', 'la-county', 'los-alamitos', 'orange-county', 'la-mirada', 'santa-clarita', 'huntington-beach', 'laguna-niguel', 'marina', 'san-clemente', 'thousand-oaks', 'las-vegas', 'clark-county', 'north-las-vegas', 'boulder-city', 'mesquite', 'henderson'];
 
 // ── ICC Building Valuation Data: the full table lives in icc-bvd.mjs ──
 export { valuationFromArea };
@@ -498,6 +498,7 @@ function validatePlanReviewOptions(building, permitTypes) {
   if (building.plan_review_exempt_through_valuation !== undefined &&
       typeof building.plan_review_exempt_through_valuation !== 'number')
     throw new Error('building.plan_review_exempt_through_valuation must be numeric');
+  validatePlanReviewSchedule(building.plan_review_schedule);
   for (const [permitType, cfg] of Object.entries(permitTypes ?? {})) {
     if (cfg?.label !== undefined && (typeof cfg.label !== 'string' || !cfg.label.trim()))
       throw new Error(`permit_types.${permitType}.label must be a non-empty string`);
@@ -515,6 +516,43 @@ function validatePlanReviewOptions(building, permitTypes) {
       if (!Array.isArray(lineIds) || lineIds.some((id) => typeof id !== 'string'))
         throw new Error(`permit_types.${permitType}.surcharge_bases.${surchargeId} must be a list of fee line ids`);
     }
+  }
+}
+
+/** `unresolved_bands`: valuation ranges an adopted table leaves unpriced; each needs a note. */
+function validateUnresolvedBands(bands, path) {
+  for (const band of bands ?? []) {
+    if ((band.from !== undefined && typeof band.from !== 'number') ||
+        (band.up_to !== null && typeof band.up_to !== 'number') || !band.note)
+      throw new Error(`${path}.unresolved_bands entries require numeric/null bounds and a note`);
+  }
+}
+
+/** The band a valuation falls in, or undefined. */
+function unresolvedBandFor(bands, valuation) {
+  return (bands ?? []).find((band) =>
+    valuation > (band.from ?? 0) && (band.up_to === null || valuation <= band.up_to));
+}
+
+/** `building.plan_review_schedule`: plan review priced from the city's own valuation table. */
+function validatePlanReviewSchedule(schedule) {
+  if (schedule === undefined) return;
+  if (schedule?.method !== 'stepped' || !Array.isArray(schedule.brackets) || !schedule.brackets.length)
+    throw new Error('building.plan_review_schedule must be method stepped with brackets');
+  for (const bracket of schedule.brackets) {
+    if (typeof bracket?.floor !== 'number' || (bracket.up_to !== null && typeof bracket.up_to !== 'number') ||
+        typeof bracket.base !== 'number' || typeof bracket.per !== 'number' || typeof bracket.unit !== 'number')
+      throw new Error('building.plan_review_schedule brackets require numeric floor, base, per, unit and a numeric/null up_to');
+  }
+  validateUnresolvedBands(schedule.unresolved_bands, 'building.plan_review_schedule');
+  // A valuation between two brackets would otherwise price at the top bracket.
+  for (let i = 1; i < schedule.brackets.length; i++) {
+    const gapFrom = schedule.brackets[i - 1].up_to;
+    const gapTo = schedule.brackets[i].floor;
+    if (gapFrom === gapTo) continue;
+    if (gapFrom === null || gapFrom > gapTo ||
+        !(schedule.unresolved_bands ?? []).some((band) => (band.from ?? 0) <= gapFrom && band.up_to !== null && band.up_to >= gapTo))
+      throw new Error(`building.plan_review_schedule brackets must be ascending, with any gap (${gapFrom} to ${gapTo}) covered by an unresolved band`);
   }
 }
 
@@ -565,11 +603,7 @@ export function validateFeeSchedule(input) {
   if (m === 'stepped' && !obj.building.permit_fee.brackets?.length)
     throw new Error('stepped permit_fee missing brackets');
   validatePermitFeeOptions(obj.building.permit_fee);
-  for (const band of obj.building.permit_fee.unresolved_bands ?? []) {
-    if ((band.from !== undefined && typeof band.from !== 'number') ||
-        (band.up_to !== null && typeof band.up_to !== 'number') || !band.note)
-      throw new Error('building.permit_fee.unresolved_bands entries require numeric/null bounds and a note');
-  }
+  validateUnresolvedBands(obj.building.permit_fee.unresolved_bands, 'building.permit_fee');
   if (m === 'area_band') {
     const pf = obj.building.permit_fee;
     if (!pf.area_tables || typeof pf.area_tables !== 'object')
@@ -830,6 +864,7 @@ const RESIDENTIAL_TYPES = new Set([
   'remodel',
   'residential-remodel',
   'residential-addition',
+  'kitchen-bath-remodel',
 ]);
 
 export function normalizePermitType(value) {
@@ -930,7 +965,7 @@ function inferredScopes(permitType, inputs) {
     for (const scope of ['jadu', 'new_residential_unit', 'new_floor_area', 'construction_demolition']) scopes.add(scope);
   } else if (permitType === 'addition') {
     for (const scope of ['addition', 'new_floor_area', 'construction_demolition']) scopes.add(scope);
-  } else if (permitType === 'remodel') {
+  } else if (permitType === 'remodel' || permitType === 'kitchen-bath-remodel') {
     for (const scope of ['remodel', 'construction_demolition']) scopes.add(scope);
   } else if (permitType === 'commercial-ti') {
     for (const scope of ['commercial_tenant_improvement', 'remodel', 'construction_demolition']) scopes.add(scope);
@@ -1457,8 +1492,7 @@ export function calcFees(schedule, rawInputs) {
   const ptCfg = schedule.permit_types?.[permitType];
   const buildingOwner = b.owner_division;
   const scopedOnly = ptCfg?.building_fee_rule === 'scope_addons_only';
-  const unresolvedBuildingBand = (b.permit_fee.unresolved_bands ?? []).find((band) =>
-    valuation > (band.from ?? 0) && (band.up_to === null || valuation <= band.up_to));
+  const unresolvedBuildingBand = unresolvedBandFor(b.permit_fee.unresolved_bands, valuation);
   const publishedBuildingRows = Array.isArray(b.permit_fee.published_rows)
     ? b.permit_fee.published_rows
     : [];
@@ -1591,7 +1625,13 @@ export function calcFees(schedule, rawInputs) {
     const planRate = ptCfg?.plan_review_pct ?? b.plan_review_pct;
     const planReviewCharged = planRate > 0 &&
       !(typeof b.plan_review_exempt_through_valuation === 'number' && valuation <= b.plan_review_exempt_through_valuation);
-    if (planReviewCharged) {
+    const planSchedule = b.plan_review_schedule;
+    if (planSchedule && ptCfg?.plan_review_pct !== 0) {
+      const planLine = { id: 'plan_review', label: 'Plan review (valuation table)', cite: planSchedule.cite, ownerDivision: buildingOwner };
+      const unresolvedPlanBand = unresolvedBandFor(planSchedule.unresolved_bands, valuation);
+      if (unresolvedPlanBand) confirm.push({ ...planLine, note: unresolvedPlanBand.note });
+      else firm.push({ ...planLine, amount: steppedSchedule(valuation, planSchedule.brackets), tag: 'computable_now' });
+    } else if (planReviewCharged) {
       let planFee = round2(permitFee * planRate);
       if (b.plan_review_min) planFee = Math.max(planFee, b.plan_review_min);
       firm.push({ id: 'plan_review', label: `Plan review (${Math.round(planRate * 100)}% of permit fee)`, amount: planFee, tag: 'percent_of_base', cite: b.plan_review_cite, ownerDivision: buildingOwner });

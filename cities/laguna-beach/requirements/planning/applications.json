@@ -1253,7 +1253,7 @@
               "key": "wireless_facility_permit_application",
               "title": "Wireless Facility Permit Application",
               "required": "baseline",
-              "detail": "— A.1 and A.18: completed application/checklist, with applicable sections answered (explained N/A allowed) and owner affidavit/drawing disclosure, Exhibits B and C. Record the exhibits' evidence within this application. §III requests representative authorization when representative and applicant differ, and an operator engineering/maintenance contact."
+              "detail": "— A.1 and A.18: completed application/checklist, with applicable sections answered (explained N/A allowed) and owner affidavit/drawing disclosure, Exhibits B and C."
             },
             {
               "key": "fee_signal",

@@ -181,6 +181,8 @@ Load these on demand. Paths are relative to this file.
 **California rules**
 
 - `references/clearances-location.md` — Clearances, Location & Access Requirements
+- `references/commercial-building.md` — Commercial building water heater: counter-permit checklist
+- `references/commercial-food-facility-health.md` — Food facility: the health department's part of a water heater change
 - `references/energy-efficiency.md` — Energy Code & Efficiency Requirements for Water Heater Permits
 - `references/gas-line-sizing.md` — Gas Line Sizing & Connections
 - `references/piping-materials-joints.md` — Piping Materials, Joints & Connections

@@ -16,11 +16,11 @@ Basis: Planning Division staff guidance, September 2026; Planning Division staff
 
 The photographs themselves are required. The elements are labels the applicant writes for each photo: the direction of the photo; a description.
 
-Not required at this scope: The scope of work is minor exterior work. The City's example is a Design Review for a minor exterior alteration. New development, new floor area, a new unit, or a major remodel is NOT minor exterior work.
+Not required at this scope: Every scope.
 
-City practice: At this scope the City does not require the direction label or the description. The photographs themselves are still required.
+City practice: The direction label and the description are not asked at intake. The photographs themselves are still required.
 
-Basis: Planning Division staff guidance, September 2026
+Basis: Planning Division intake decisions, October to November 2026
 
 ## When each item is due
 

@@ -91,9 +91,9 @@ unless noted:
 - **Plans** — "Project Plans for Reviews", one file. Optional on this type, but the City's instruction asks for it "if applicable" and a sign is a drawing-driven review. Volunteer it: elevation, dimensions, mounting, and the sign in context on the façade.
 - **Specification Sheets** — "Project Specification Sheets". Materials, illumination, and cabinet details.
 - **Plan Check Responses** (.doc/.docx/.pdf/.jpg/.jpeg) — where you upload your answers to a correction letter on a resubmittal.
-- **Revision Form** — for a change after the permit exists. The slot's description is now a link to the Building Division's Applications & Forms page, https://www.lagunabeachcity.net/government/departments/community-development/building-permits/applications-forms, which is where the portal points you for the form. [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/197/0/0, attachment setup read through the portal's public API, as of 2026-10-26]
+- **Revision Form** — for a change after the permit exists. The slot's description now links the City's **Building Plan Revision** form directly, https://www.lagunabeachcity.net/home/showpublisheddocument/23603/639274900407100000 (it pointed to the Applications & Forms page before). [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/197/0/0, attachment setup read through the portal's public API, as of 2026-11-24]
 - **Energy Calculations** and **Energy Calculation Addendum** — Title 24; relevant only if the scope triggers it.
-- **Mechanical Equipment Guide** — the slot is inherited from the City's standard file set; its "REQUIRED FOR ALL A/C PERMITS BY PLANNING" instruction is written only on the Mechanical Permit (186) and has nothing to do with a sign.
+- **Mechanical Equipment Guide** — the slot is inherited from the City's standard file set; its description carries the standard "REQUIRED FOR ALL A/C PERMITS BY PLANNING" words, which have nothing to do with a sign. Only the Mechanical Permit (186) repeats the instruction on its More Info step.
 - **Miscellaneous** (.pdf/.tif/.tiff/.jpeg/.jpg/.png) — photos of the existing façade go well here.
 
 [source: https://lagunabeachca-energovweb.tylerhost.net/apps/SelfService#/permit/apply/197/0/0, as of 2026-08-10]

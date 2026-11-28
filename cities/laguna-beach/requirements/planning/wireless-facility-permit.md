@@ -8,7 +8,7 @@ Source: Wireless Facility Permit Application, Updated April 2026, §VIII REQUIRE
 
 ## APPLICATION AND FEES
 
-- **Wireless Facility Permit Application** (Required) — — A.1 and A.18: completed application/checklist, with applicable sections answered (explained N/A allowed) and owner affidavit/drawing disclosure, Exhibits B and C. Record the exhibits' evidence within this application. §III requests representative authorization when representative and applicant differ, and an operator engineering/maintenance contact.
+- **Wireless Facility Permit Application** (Required) — — A.1 and A.18: completed application/checklist, with applicable sections answered (explained N/A allowed) and owner affidavit/drawing disclosure, Exhibits B and C.
 - **Wireless fee and deposit status** (Required) — Preserve the lane's fee timing rule.
 - **Advance Deposit and Reimbursement Agreement** (Conditional) — At intake, require the agreement and a current title report only when the City will peer-review a geotechnical or coastal-hazards report.
 - **Property owner's authorization** (Conditional) — A.2: when facility and property owners differ, an executed letter authorizing submission.

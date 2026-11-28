@@ -10,7 +10,7 @@
     {
       "id": "scope_filed_under_wrong_permit_type",
       "title": "Some work files a different permit type",
-      "practice": "Solar water or pool heating (solar thermal) is permitted as a Plumbing permit, applied for with the City's MEP application, not as a Building solar permit. Planning reviews these submittals, and a solar contractor can pull the permit. Rooftop solar photovoltaic is permitted as a Residential - Solar permit or through SolarAPP+, not as an Electrical permit. A battery added with no new solar stays an Electrical permit.",
+      "practice": "Solar water or pool heating (solar thermal) is permitted as a Plumbing permit, applied for with the City's MEP application, not as a Building solar permit. Planning reviews these submittals, and a solar contractor can pull the permit. Rooftop solar photovoltaic is permitted as a Residential - Solar permit or through SolarAPP+, not as an Electrical permit. A battery added with no new solar stays an Electrical permit. Work on a building with no dwelling unit that serves a homeowners association of single-family homes, such as a guard gatehouse or a clubhouse, is permitted as a Commercial permit, not as a Residential permit. Common-area work on a condominium building with 3 or more units is permitted as a Multifamily permit.",
       "source": "Building Division staff direction, October 2026; Building Division completeness returns on Electrical permits, 2025-2026"
     },
     {
@@ -21,9 +21,9 @@
     {
       "id": "counter_issued_simple_permit",
       "title": "Simple permits are issued at the counter, not online",
-      "source": "Building Division staff direction, September 2026; Building Division completeness returns on trade permits, July to November 2026",
+      "source": "Building Division staff direction, September 2026; Building Division completeness returns on trade permits, July to November 2026; City of Laguna Beach reroofing guide (June 2026) and Building Division completeness returns on reroof permits, October to November 2026",
       "practice": "For simple permits, applications are not processed through the portal, as permits are not issued online.",
-      "status": "The City's permit record marks these as in-person permits: Meter upgrade to 200A, with the Residential Panel Upgrade E-Permit scope (a panel, sub-panel or meter change-out up to 400 amps and 2 meters); Residential HVAC change outs (A/C, heat pump, furnace, mini-split, an added condenser and coil); Minor plumbing, electrical or mechanical repairs or replacements (a like-for-like water heater in the same location, a sewer liner or spot repair, temporary power, a single circuit). The other over-the-counter items are still an open question.",
+      "status": "The City's permit record marks these as in-person permits: Meter upgrade to 200A, with the Residential Panel Upgrade E-Permit scope (a panel, sub-panel or meter change-out up to 400 amps and 2 meters); Reroof with same material or lighter (a tear-off and reroof, a re-cover, a tile lift and relay, or a roof coating, on a house, an apartment building or a commercial building, with no structural change); Residential HVAC change outs (A/C, heat pump, furnace, mini-split, an added condenser and coil); Minor plumbing, electrical or mechanical repairs or replacements (a like-for-like water heater in the same location, a sewer liner or spot repair, temporary power, a single circuit). The other over-the-counter items are still an open question.",
       "open_question": "Confirm with the Building Division: which of the 11 \"Qualified Projects for OTC\" items are simple permits that must be pulled in person at the counter, and which stay on the portal? Items: (1) kitchen and bath remodels; (2) residential decks, balconies and patio cover repairs with minor structural modifications; (3) window and door replacement with minor structural modifications; (4) construction revisions to approved plans; (5) exterior siding replacement; (6) meter upgrade to 200A; (7) reroof with same material or lighter; (8) residential HVAC change outs; (9) minor plumbing, electrical or mechanical repairs or replacements; (10) wood or metal fences; (11) commercial signs without structural alterations."
     },
     {
@@ -151,6 +151,11 @@
     {
       "question": "Interior-only work on an existing house ((B)(2)(d)) is accepted at Building intake with no Planning record.",
       "answer": "No. LBMC §25.07.008(A)(1) and (A)(3) exempt interior improvements and repair to single-family dwellings from a CDP; the appealable-area exceptions in (A)(1)(c) reach only floor-area or height increases and new detached structures. LBMC §25.45.010(A) excludes interior changes from historic review unless they alter a character-defining feature or a publicly accessible interior.",
+      "source": "Building Division staff answer, November 2026"
+    },
+    {
+      "question": "Window work is (B)(2) exterior work. Must an online window filing hold Planning approval before Building routes it for plan review, as other exterior (B)(2) scopes do?",
+      "answer": "No, unless the property is historic. \"We can route for review even if planning hasn't given an approval prior to the building submittal. This is true unless the property is historic.\" Planning reviews the windows during Building plan check. Asked whether that holds for all windows in online (eplan) processing or for one site only, Planning answered: \"Yes. Unless the property is historic.\"",
       "source": "Building Division staff answer, November 2026"
     },
     {
